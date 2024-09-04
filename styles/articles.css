@@ -11,9 +11,9 @@ body {
 h1 {
     font-family: "SimSun", 宋体, serif;
     color: #222;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    /* border-bottom: 2px solid #ccc; */
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 10px; */
 }
 
 .content {
@@ -23,6 +23,16 @@ h1 {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+}
+
+.creation-date {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+    text-align: right;
 }
 
 .back-to-top {
