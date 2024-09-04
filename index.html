@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heyang Shang的个人网站</title>
+    <title>Heyang Shang</title>
     <style>
         body {
-            font-family: "SimSun", 宋体, serif;
+            font-family: "Aptos", "Simsun", 宋体, serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -16,38 +17,66 @@
             align-items: center;
             min-height: 100vh;
         }
+
         .container {
             width: 1000px;
             background-color: #ffffff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* border-radius: 8px; */
             box-sizing: border-box;
             min-height: 90vh;
         }
+
         header {
-            display: flex;
-            align-items: center;
             background-color: #4CAF50;
             color: white;
             padding: 10px;
-            border-radius: 8px 8px 8px 8px;
-            height: 80px;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
         }
+
         .header-img {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-right: 15px;
             overflow: hidden;
         }
+
         .header-img img {
             width: 100%;
             height: auto;
         }
+
         .header-text {
             flex: 1;
+            font-family: "Simsun", serif;
         }
+
+        nav {
+            display: flex;
+        }
+
+        .nav-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-family: "Simsun", 宋体, serif;
+            font-size: 18px;
+        }
+
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+
         footer {
             background-color: #6f6f6f;
             color: white;
@@ -55,58 +84,67 @@
             padding: 10px 0;
             border-radius: 0 0 8px 8px;
         }
+
         h2 {
             border-bottom: 2px solid #6f6f6f;
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         ul li {
             margin-bottom: 10px;
         }
+
         a {
             color: #4CAF50;
             text-decoration: none;
         }
+
         a:hover {
-            text-decoration: underline;
+            color: #3b9140;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="header-img">
-                <img src="profile.jpg" alt="Heyang Shang">
+                <img src="profilewhite.png" alt="Heyang Shang">
             </div>
             <div class="header-text">
-                <h1>Heyang Shang的个人网站</h1>
+                <h1>Heyang Shang</h1>
             </div>
+            <nav>
+                <button class="nav-button"><a href="#about" style="color: white;">关于我</a></button>
+                <button class="nav-button"><a href="#articles" style="color: white;">我的文章</a></button>
+                <button class="nav-button"><a href="#contact" style="color: white;">联系我</a></button>
+            </nav>
         </header>
-        
+
         <div id="main">
-            <h2>关于我</h2>
+            <h2 id="about">关于我</h2>
             <p>你好，我是Heyang Shang。</p>
 
-            <h2>我的文章</h2>
+            <h2 id="articles">我的文章</h2>
             <p>以下是我在公众号中发表过的文章：</p>
             <ul>
-                <li><a href="articles/hotpot.html">我在北京的一户人家里吃了一顿晚饭</a></li>
+                <li><a href="hotpot/new.html">我在北京的一户人家里吃了一顿晚饭</a></li>
             </ul>
 
-            <h2>联系我</h2>
+            <h2 id="contact">联系我</h2>
             <p>你可以通过以下方式与我联系：</p>
             <ul>
                 <li>Email: <a href="mailto:2537978512@qq.com">2537978512@qq.com</a></li>
             </ul>
         </div>
 
-        <!-- <footer>
-            <p>&copy; 2024 Heyang Shang. 保留所有权利。</p>
-        </footer> -->
     </div>
 </body>
+
 </html>
