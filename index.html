@@ -11,72 +11,99 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 1000px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* border-radius: 8px; */
+            box-sizing: border-box;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 10px 0;
             text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #main {
-            padding: 20px;
+            border-radius: 8px 8px 8px 8px;
+            height: 80px;
         }
         .profile-picture {
-            float: center;
-            margin-right: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .profile-picture img {
-            border-radius: 80%;
+            border-radius: 50%;
             width: 150px;
             height: 150px;
+            
+            /* border: 3px solid #4CAF50; */
         }
         footer {
             background-color: #6f6f6f;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            border-radius: 0 0 8px 8px;
+        }
+        h2 {
+            border-bottom: 2px solid #6f6f6f;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <header>
             <h1>Heyang Shang的个人网站</h1>
-        </div>  
-    </header>
+        </header>
 
-    <div id="main" class="container">
         <div class="profile-picture">
             <img src="profile.jpg" alt="Heyang Shang">
         </div>
-        <h2>关于我</h2>
-        <p>你好，我是Heyang Shang。</p>
         
-        <h2>我的文章</h2>
-        <p>以下是我在公众号中发表过的文章：</p>
-        <ul>
-            <li><a href="articles/hotpot.html">我在北京的一户人家里吃了一顿晚饭</a></li>
-        </ul>
+        <div id="main">
+            <h2>关于我</h2>
+            <p>你好，我是Heyang Shang。</p>
 
-        <h2>联系我</h2>
-        <p>你可以通过以下方式与我联系：</p>
-        <ul>
-            <li>Email: <a href="mailto:your-email@example.com">2537978512@qq.com</a></li>
-            <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin/">linkedin.com/in/your-linkedin/</a></li>
-            <li>GitHub: <a href="https://github.com/your-github/">github.com/your-github/</a></li> -->
-        </ul>
+            <h2>我的文章</h2>
+            <p>以下是我在公众号中发表过的文章：</p>
+            <ul>
+                <li><a href="articles/hotpot.html">我在北京的一户人家里吃了一顿晚饭</a></li>
+            </ul>
+
+            <h2>联系我</h2>
+            <p>你可以通过以下方式与我联系：</p>
+            <ul>
+                <li>Email: <a href="mailto:2537978512@qq.com">2537978512@qq.com</a></li>
+                <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin/">linkedin.com/in/your-linkedin/</a></li>
+                <li>GitHub: <a href="https://github.com/your-github/">github.com/your-github/</a></li> -->
+            </ul>
+        </div>
+
+        <!-- <footer>
+            <p>&copy; 2024 Heyang Shang. 保留所有权利。</p>
+        </footer> -->
     </div>
-
-    <!-- <footer>
-        <p>&copy; 2024 Heyang Shang. 保留所有权利。</p>
-    </footer> -->
 </body>
 </html>
