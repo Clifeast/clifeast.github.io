@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             margin: 20px;
             padding: 0;
         }
+
         h1 {
             font-family: "SimSun", 宋体, serif;
             color: #222;
@@ -20,16 +22,36 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
+
         .content {
             background: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 1000px;
             width: 100%;
             margin: 0 auto;
         }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+
+        .back-to-top:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
+
 <body>
     <div class="content">
         <h1>我在北京的一户人家里吃了一顿晚饭</h1>
@@ -56,8 +78,9 @@
             向东走出小街，来到红灯前，又拿出手机打开美团查看这家店。评论有一千余条，希望这并不是男人和女人找人刷的——这并不是出于想要确认我吃的这家店好评如潮，口碑上佳。
             <br><br>
             ……
-            </p>
+        </p>
     </div>
+    <a href="../index.html" class="back-to-top">返回主页</a>
 </body>
-</html>
 
+</html>

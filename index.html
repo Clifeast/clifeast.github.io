@@ -23,26 +23,30 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             /* border-radius: 8px; */
             box-sizing: border-box;
+            min-height: 90vh;
         }
         header {
+            display: flex;
+            align-items: center;
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            padding: 10px;
             border-radius: 8px 8px 8px 8px;
             height: 80px;
         }
-        .profile-picture {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .profile-picture img {
+        .header-img {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            
-            /* border: 3px solid #4CAF50; */
+            margin-right: 20px;
+            overflow: hidden;
+        }
+        .header-img img {
+            width: 100%;
+            height: auto;
+        }
+        .header-text {
+            flex: 1;
         }
         footer {
             background-color: #6f6f6f;
@@ -75,12 +79,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>Heyang Shang的个人网站</h1>
+            <div class="header-img">
+                <img src="profile.jpg" alt="Heyang Shang">
+            </div>
+            <div class="header-text">
+                <h1>Heyang Shang的个人网站</h1>
+            </div>
         </header>
-
-        <div class="profile-picture">
-            <img src="profile.jpg" alt="Heyang Shang">
-        </div>
         
         <div id="main">
             <h2>关于我</h2>
@@ -96,8 +101,6 @@
             <p>你可以通过以下方式与我联系：</p>
             <ul>
                 <li>Email: <a href="mailto:2537978512@qq.com">2537978512@qq.com</a></li>
-                <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin/">linkedin.com/in/your-linkedin/</a></li>
-                <li>GitHub: <a href="https://github.com/your-github/">github.com/your-github/</a></li> -->
             </ul>
         </div>
 
