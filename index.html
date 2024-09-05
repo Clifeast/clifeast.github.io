@@ -7,6 +7,31 @@
     <title>Heyang Shang</title>
     <link rel="icon" type="image/png" href="image/profileblack.png">
     <link rel="stylesheet" href="styles/index.css">
+    <style>
+        .news-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item h3 {
+            font-size: 1.4em;
+            margin: 0 0 -5px 0;
+            color: #333;
+        }
+
+        .news-item .date {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: -5px;
+        }
+        .news-item p {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,14 +49,19 @@
             <h2 id="about">关于我</h2>
             <p>你好，我是Heyang Shang。</p>
 
-            <h2 id="articles">新闻</h2>
-            <p>[2024年3月1日] 我在公众号中发表了文章：<a href="articles/hotpot.html">我在北京的一户人家里吃了一顿晚饭</a></p>
-
             <h2 id="contact">联系我</h2>
             <p>你可以通过以下方式与我联系：</p>
             <ul>
                 <li>Email: <a href="mailto:2537978512@qq.com">2537978512@qq.com</a></li>
             </ul>
+
+            <h2 id="articles">新闻</h2>
+            <div class="news-item">
+                <h3>文章更新</h3>
+                <p class="date">2024年3月1日</p>
+                <p>我在公众号中发表了文章：<a href="articles/hotpot.html">我在北京的一户人家里吃了一顿晚饭</a></p>
+            </div>
+
         </div>
 
     </div>
