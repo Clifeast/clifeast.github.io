@@ -12,6 +12,7 @@
     min-height: 100vh;
 } */
 /* background-color: #f4f4f4; */
+
 body {
     font-family: "Aptos", "Simsun", 宋体, serif;
     margin: 0;
@@ -35,8 +36,8 @@ body::before {
     background-image: url("../image/bg.jpg");
     background-size: cover; 
     background-position: center;
-    opacity: 0.6; /* 调整透明度 */
-    z-index: -1; /* 确保背景图片在内容后面 */
+    opacity: 0.6; 
+    z-index: -1; 
 }
 
 
