@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    font-family: "Kaiti", 楷体, serif;
+    font-family: "KaiTi", 楷体, serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -9,8 +9,10 @@ body {
 }
 
 h1 {
-    font-family: "SimSun", 宋体, serif;
+    font-family: "Kaiti", 楷体, serif;
     color: #222;
+    margin-left: 10px;
+    font-size: 36px;
     /* border-bottom: 2px solid #ccc; */
     /* padding-bottom: 10px; */
     /* margin-bottom: 10px; */
@@ -54,5 +56,6 @@ h1 {
 }
 
 p {
-    text-indent: 2em; /* 设置首行缩进为两个字符的宽度 */
+    text-indent: 2em; 
+    font-size: 18px;
 }
