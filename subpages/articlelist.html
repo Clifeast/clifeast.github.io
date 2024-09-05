@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heyang Shang</title>
+    <title>我的文章 - Heyang Shang</title>
     <link rel="icon" type="image/png" href="image/profileblack.png">
     <style>
         body {
@@ -54,7 +54,6 @@
 
         .header-text {
             flex: 1;
-            font-family: "Simsun", serif;
         }
 
         nav {
@@ -109,6 +108,48 @@
         a:hover {
             color: #3b9140;
         }
+
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .article-item {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .article-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+        }
+
+        .article-date {
+            color: #999;
+            font-size: 14px;
+            /* margin-bottom: 10px; */
+        }
+
+        .article-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .article-item a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .article-item a:hover {
+            color: #3b9140;
+        }
     </style>
 </head>
 
@@ -116,32 +157,26 @@
     <div class="container">
         <header>
             <div class="header-img">
-                <img src="image/profilewhite.png" alt="Heyang Shang">
+                <img src="../image/profilewhite.png" alt="Heyang Shang">
             </div>
             <div class="header-text">
                 <h1>Heyang Shang</h1>
             </div>
             <nav>
-                <!-- <button class="nav-button"><a href="#about" style="color: white;">关于我</a></button>
-                <button class="nav-button"><a href="#contact" style="color: white;">联系我</a></button> -->
-                <button class="nav-button"><a href="subpages/articlelist.html" style="color: white;">我的文章</a></button>
+                <button class="nav-button"><a href="../index.html" style="color: white;">返回主页</a></button>
             </nav>
         </header>
 
         <div id="main">
-            <h2 id="about">关于我</h2>
-            <p>你好，我是Heyang Shang。</p>
-
-            <h2 id="articles">新闻</h2>
-            <p>[2024年3月1日] 我在公众号中发表了文章：<a href="articles/hotpot.html">我在北京的一户人家里吃了一顿晚饭</a></p>
-
-            <h2 id="contact">联系我</h2>
-            <p>你可以通过以下方式与我联系：</p>
-            <ul>
-                <li>Email: <a href="mailto:2537978512@qq.com">2537978512@qq.com</a></li>
+            <h2>我的文章</h2>
+            <ul class="article-list">
+                <li class="article-item">
+                    <a href="articles/hotpot.html" class="article-title">我在北京的一户人家里吃了一顿晚饭</a>
+                    <span class="article-date">2024年3月1日</span>
+                    <p class="article-description">这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。这是我在北京的一次晚餐体验，深入了解当地人的生活方式和饮食文化。</p>
+                </li>
             </ul>
         </div>
-
     </div>
 </body>
 
