@@ -1,0 +1,24 @@
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Simsun", 宋体, serif;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* 悬停时改变背景颜色 */
+    transform: scale(1.1); /* 悬停时放大按钮 */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 悬停时增强阴影 */
+}
+
+button:active {
+    transform: scale(1.05); /* 点击时轻微缩小按钮 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 点击时改变阴影 */
+}

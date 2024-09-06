@@ -1,4 +1,6 @@
 /* styles.css */
+@import url('general.css');
+
 body {
     font-family: "KaiTi", 楷体, serif;
     background-color: #f4f4f4;
@@ -42,17 +44,9 @@ h1 {
     bottom: 20px;
     right: 20px;
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
+    font-size: 18px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     font-weight: bold;
-}
-
-.back-to-top:hover {
-    background-color: #45a049;
 }
 
 p {
