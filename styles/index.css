@@ -85,6 +85,7 @@ nav {
 
 .nav-button {
     font-size: 18px;
+    box-shadow: none;
 }
 
 .nav-button:hover {
