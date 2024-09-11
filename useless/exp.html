@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/index.css"> -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <title>Dynamic Example</title>
+</head>
+<body>
+    <button id="changeTextButton">Change Text</button>
+    <p id="text">Hello, static world!</p>
+    <a href="../image/bg.jpg" download="bg.jpg">
+        <button>Download File</button>
+    </a>
+    <button onclick="downloadFile()">Download bg</button>
+
+    <script>
+        function downloadFile() {
+            const link = document.createElement('a');
+            link.href = '../image/bg.jpg';  // 文件路径
+            link.download = 'bg.jpg';  // 下载后的文件名
+            link.click();
+        }
+
+        document.getElementById('changeTextButton').addEventListener('click', function() {
+            document.getElementById('text').textContent = 'Hello, dynamic world!';
+        });
+    </script>
+</body>
+</html>
