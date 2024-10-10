@@ -10,18 +10,11 @@
 <body>
     <button id="changeTextButton">Change Text</button>
     <p id="text">Hello, static world!</p>
-    <a href="../image/bg.jpg" download="bg.jpg">
+    <a href="../test.txt" download="test.txt">
         <button>Download File</button>
     </a>
-    <button onclick="downloadFile()">Download bg</button>
 
     <script>
-        function downloadFile() {
-            const link = document.createElement('a');
-            link.href = '../image/bg.jpg';  // 文件路径
-            link.download = 'bg.jpg';  // 下载后的文件名
-            link.click();
-        }
 
         document.getElementById('changeTextButton').addEventListener('click', function() {
             document.getElementById('text').textContent = 'Hello, dynamic world!';

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻找青菜</title>
+    <link rel="stylesheet" href="../styles/articles.css">
+    <style>
+        .hover-image {
+            display: block;
+            position: absolute;
+            width: 1000px; /* 设置宽度 */
+            opacity: 0; /* 初始透明度 */
+            transition: opacity 0.5s ease-in-out; /* 渐变效果 */
+        }
+
+        /* 关联第一个悬停文字和图片 */
+        .hover-text-1:hover ~ .hover-image-1 {
+            opacity: 1;
+        }
+
+        /* 关联第二个悬停文字和图片 */
+        .hover-text-2:hover ~ .hover-image-2 {
+            opacity: 1;
+        }
+
+        .content {
+            position: relative; /* 确保图片相对于内容定位 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>寻找青菜</h1>
+        <p class="creation-date">2019年10月</p>
+
+        <p>
+            这是一个段落，<span class="hover-text-1">悬停这里</span>显示第一张图片，
+            <span class="hover-text-2">悬停这里2</span>显示第二张图片。
+        </p>
+
+        <!-- 确保图片位于文字后面 -->
+        <img class="hover-image hover-image-1" src="../image/bg.jpg" alt="悬停图片1">
+        <img class="hover-image hover-image-2" src="../image/profile.jpg" alt="悬停图片2">
+    </div>
+
+    <button class="back-to-top" onclick="location.href='../subpages/articlelist.html';">返回文章列表</button>
+</body>
+
+</html>

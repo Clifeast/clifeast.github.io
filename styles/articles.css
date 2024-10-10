@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    margin: 20px;
+    margin: 30px;
     padding: 0;
 }
 
@@ -20,9 +20,21 @@ h1 {
     /* margin-bottom: 10px; */
 }
 
+h2 {
+    text-align: center; /* 使标题居中 */
+    color: #444;
+    margin-left: 10px;
+    font-size: 28px;
+    margin-top: 20px; /* 标题上方的间距 */
+    margin-bottom: 20px; /* 标题下方的间距 */
+    /* border-bottom: 2px solid #ccc; */
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 10px; */
+}
+
 .content {
     background: #fff;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
     width: 100%;
@@ -50,4 +62,32 @@ h1 {
 p {
     text-indent: 2em; 
     font-size: 18px;
+}
+
+
+/* 设置图片容器的样式 */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 设置图片阴影效果 */
+.image-shadow {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* 阴影加深 */
+    border-radius: 0; /* 去掉圆角 */
+}
+
+/* 图片注释样式 */
+.image-caption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 设置多张图片并排布局 */
+.image-container.multi-image {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
 }
