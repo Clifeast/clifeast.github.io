@@ -75,11 +75,13 @@ p {
 .image-shadow {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* 阴影加深 */
     border-radius: 0; /* 去掉圆角 */
+    /* height: auto; */
+    object-fit: cover;
 }
 
 /* 图片注释样式 */
 .image-caption {
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
     margin-top: 10px;
     text-align: center;
