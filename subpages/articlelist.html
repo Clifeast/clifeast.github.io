@@ -12,6 +12,7 @@
         .article-list {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         .article-item {
@@ -34,7 +35,6 @@
         .article-date {
             color: #999;
             font-size: 14px;
-            /* margin-bottom: 10px; */
         }
 
         .article-description {
@@ -72,59 +72,35 @@
 
         <div id="main">
             <h2>我的文章</h2>
-            <ul class="article-list">
-                <li class="article-item">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <span class="article-title">东北行记</span>
-                            <span class="article-date">2024年10月8日</span>
-                            <p class="article-description">2024年十一假期游沈阳、长春、通化后作。</p>
-                        </div>
-                        <button class="article-button" onclick="location.href='../articles/dongbei.html';">查看</button>
-                    </div>
-                </li>
-                <li class="article-item">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <span class="article-title">我在北京的一户人家里吃了一顿晚饭</span>
-                            <span class="article-date">2024年3月1日</span>
-                        </div>
-                        <button class="article-button" onclick="location.href='../articles/hotpot.html';">查看</button>
-                    </div>
-                </li>
-                <li class="article-item">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <span class="article-title">又到高考</span>
-                            <span class="article-date">2023年6月7日</span>
-                            <!-- <p class="article-description"></p> -->
-                        </div>
-                        <button class="article-button" onclick="location.href='../articles/gaokao.html';">查看</button>
-                    </div>
-                </li>
-                <li class="article-item">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <span class="article-title">年轮</span>
-                            <span class="article-date">2023年2月22日</span>
-                            <p class="article-description">为曲靖一中110周年校庆作。</p>
-                        </div>
-                        <button class="article-button" onclick="location.href='../articles/nianlun.html';">查看</button>
-                    </div>
-                </li>
-                <li class="article-item">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <span class="article-title">寻找青菜</span>
-                            <span class="article-date">2019年10月</span>
-                            <p class="article-description">朝花夕拾</p>
-                        </div>
-                        <button class="article-button" onclick="location.href='../articles/qingcai.html';">查看</button>
-                    </div>
-                </li>
-            </ul>            
+            <ul class="article-list" id="article-list"></ul>
         </div>
     </div>
+
+    <script>
+        fetch('../articles.json') //文章列表的存储位置
+            .then(response => response.json())
+            .then(data => {
+                const articleList = document.getElementById('article-list');
+                data.forEach(article => {
+                    const li = document.createElement('li');
+                    li.classList.add('article-item');
+
+                    li.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <span class="article-title">${article.title}</span>
+                                <span class="article-date">${article.date}</span>
+                                ${article.description ? `<p class="article-description">${article.description}</p>` : ''}
+                            </div>
+                            <button class="article-button" onclick="location.href='${article.link}'">查看</button>
+                        </div>
+                    `;
+
+                    articleList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error loading articles:', error));
+    </script>
 </body>
 
 </html>
