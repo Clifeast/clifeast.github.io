@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的文章 - Heyang Shang</title>
-    <link rel="icon" type="image/png" href="image/profileblack.png">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/general.css">
-    <style>
-        .article-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .article-item {
-            display: flex;
-            flex-direction: column;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .article-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 0 5px 5px 0;
-        }
-
-        .article-date {
-            color: #999;
-            font-size: 14px;
-        }
-
-        .article-description {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .article-item a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .article-item a:hover {
-            color: #3b9140;
-        }
-
-        .article-button {
-            font-size: 16px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="header-img">
-                <img src="../image/profilename.png" alt="Heyang Shang">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>文章列表 · 赏鹤阳</title>
+    <meta name="description" content="赏鹤阳的文章索引，浏览全部博文。" />
+    <link rel="icon" type="image/png" href="../image/profileblack.png" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/article-list.css" />
+  </head>
+  <body>
+    <div class="list-page">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="../index.html">
+            <img
+              src="../image/profileblack.png"
+              alt="赏鹤阳头像"
+              class="brand-logo"
+            />
+            <div class="brand-meta">
+              <span class="brand-name">赏鹤阳</span>
+              <span class="brand-tagline">写作者 · 记录者</span>
             </div>
-            <nav>
-                <button class="nav-button" onclick="location.href='../index.html';">返回主页</button>
-            </nav>
-        </header>
-
-        <div id="main">
-            <h2>我的文章</h2>
-            <ul class="article-list" id="article-list"></ul>
+          </a>
+          <nav class="site-nav">
+            <a href="../index.html#about">关于</a>
+            <a href="../index.html#latest">最新</a>
+            <a href="../index.html#contact">联系</a>
+            <a class="btn btn-primary nav-cta" href="../index.html">返回首页</a>
+          </nav>
         </div>
+      </header>
+
+      <main class="list-content">
+        <h1 class="page-title">全部文章</h1>
+        <p class="page-description">
+          所有文章按照发布时间顺序排列。点击卡片即可跳转到对应的全文页面。
+        </p>
+
+        <div class="article-feed" id="article-feed">
+          <article class="card article-card">
+            <div class="article-card__header">
+              <h2 class="article-card__title">加载中…</h2>
+              <span class="article-card__meta">正在获取文章数据</span>
+            </div>
+            <p class="article-card__description">
+              如果长时间未加载，请刷新页面或稍后再试。
+            </p>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="current-year"></span> 赏鹤阳. 感谢阅读与陪伴。</p>
+      </footer>
     </div>
 
     <script>
-        fetch('../articles.json') //文章列表的存储位置
-            .then(response => response.json())
-            .then(data => {
-                const articleList = document.getElementById('article-list');
-                data.forEach(article => {
-                    const li = document.createElement('li');
-                    li.classList.add('article-item');
+      document.getElementById('current-year').textContent = new Date().getFullYear();
 
-                    li.innerHTML = `
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span class="article-title">${article.title}</span>
-                                <span class="article-date">${article.date}</span>
-                                ${article.description ? `<p class="article-description">${article.description}</p>` : ''}
-                            </div>
-                            <button class="article-button" onclick="location.href='${article.link}'">查看</button>
-                        </div>
-                    `;
+      const articleFeed = document.getElementById('article-feed');
 
-                    articleList.appendChild(li);
-                });
+      fetch('../articles.json')
+        .then((response) => response.json())
+        .then((articles) => {
+          if (!Array.isArray(articles) || articles.length === 0) {
+            articleFeed.innerHTML = `
+              <article class="card article-card">
+                <h2 class="article-card__title">暂时没有文章</h2>
+                <p class="article-card__description">可以稍后再来，或回到首页看看最近的动态。</p>
+              </article>
+            `;
+            return;
+          }
+
+          articleFeed.innerHTML = articles
+            .map((article) => {
+              const description = article.description
+                ? `<p class="article-card__description">${article.description}</p>`
+                : '';
+              return `
+                <article class="card article-card">
+                  <div class="article-card__header">
+                    <h2 class="article-card__title">${article.title}</h2>
+                    <span class="article-card__meta">${article.date}</span>
+                  </div>
+                  ${description}
+                  <div class="article-card__actions">
+                    <a class="btn btn-primary" href="${article.link}">阅读全文</a>
+                    <a class="btn btn-ghost" href="../index.html#latest">返回最新</a>
+                  </div>
+                </article>
+              `;
             })
-            .catch(error => console.error('Error loading articles:', error));
+            .join('');
+        })
+        .catch((error) => {
+          console.error('加载文章失败：', error);
+          articleFeed.innerHTML = `
+            <article class="card article-card">
+              <h2 class="article-card__title">无法获取文章</h2>
+              <p class="article-card__description">请检查网络连接或稍后重试。</p>
+            </article>
+          `;
+        });
     </script>
-</body>
-
+  </body>
 </html>
