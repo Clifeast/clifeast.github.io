@@ -1,26 +1,170 @@
-button {
-    background-color: #4CAF50;
-    /* background-color: white; */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 6px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Simsun", 宋体, serif;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+:root {
+  --page-max-width: 1100px;
+  --page-padding: clamp(1.5rem, 5vw, 4rem);
+  --surface: #ffffff;
+  --background: #f5f7fb;
+  --text-primary: #1f2933;
+  --text-secondary: #52606d;
+  --accent: #2f855a;
+  --accent-dark: #276749;
+  --border-soft: rgba(82, 96, 109, 0.15);
+  --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --transition-base: 180ms ease;
+  font-size: 16px;
 }
 
-button:hover {
-    background-color: #45a049; /* 悬停时改变背景颜色 */
-    transform: scale(1.1); /* 悬停时放大按钮 */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 悬停时增强阴影 */
+* {
+  box-sizing: border-box;
 }
 
-button:active {
-    transform: scale(1.05); /* 点击时轻微缩小按钮 */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 点击时改变阴影 */
+body {
+  margin: 0;
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "Songti", serif;
+  background: linear-gradient(rgba(250, 252, 255, 0.86), rgba(250, 252, 255, 0.86)),
+    url('../image/bg.jpg') center/cover fixed;
+  color: var(--text-primary);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-dark);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.35rem;
+  font: inherit;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), background var(--transition-base), color var(--transition-base);
+  text-decoration: none;
+}
+
+.btn-primary,
+button.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(47, 133, 90, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible,
+button.btn-primary:hover,
+button.btn-primary:focus-visible {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(39, 103, 73, 0.3);
+}
+
+.btn-ghost,
+button.btn-ghost {
+  background: rgba(47, 133, 90, 0.1);
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus-visible,
+button.btn-ghost:hover,
+button.btn-ghost:focus-visible {
+  background: rgba(47, 133, 90, 0.2);
+  transform: translateY(-1px);
+}
+
+.section {
+  margin-bottom: clamp(3rem, 7vw, 4.8rem);
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+.section-title {
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  margin: 0;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  padding: clamp(1.4rem, 4vw, 2rem);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(47, 133, 90, 0.12);
+  color: var(--accent-dark);
+}
+
+.site-footer {
+  padding: clamp(1.2rem, 3vw, 1.8rem) var(--page-padding) clamp(1.4rem, 4vw, 2rem);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(82, 96, 109, 0.12);
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+
+  button,
+  .btn {
+    width: 100%;
+  }
 }

@@ -1,85 +1,197 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heyang Shang</title>
-    <link rel="icon" type="image/png" href="image/profileblack.png">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/general.css">
-    <!-- <style>
-        .news-item {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            background-color: #fafafa;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            /* gap: 10px; */
-        }
-
-        .news-item .header {
-            display: flex;
-            /* justify-content: space-between; */
-            align-items: center;
-        }
-
-        .news-item h3 {
-            font-size: 1.4em;
-            margin-right: 18px;
-            color: #333;
-            margin-bottom: -5px;
-            margin-top: 0px;
-        }
-
-        .news-item .date {
-            font-size: 0.9em;
-            color: #777;
-            margin-bottom: -5px;
-        }
-
-        .news-item p {
-            margin-bottom: 5px;
-        }
-    </style> -->
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="header-img">
-                <img src="image/profilename.png" alt="Heyang Shang">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>赏鹤阳 · 写作与生活记录</title>
+    <meta
+      name="description"
+      content="赏鹤阳的个人博客，在这里记录文字、旅行与生活思考。"
+    />
+    <link rel="icon" type="image/png" href="image/profileblack.png" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="/">
+            <img
+              src="image/profileblack.png"
+              alt="赏鹤阳头像"
+              class="brand-logo"
+            />
+            <div class="brand-meta">
+              <span class="brand-name">赏鹤阳</span>
+              <span class="brand-tagline">写作者 · 记录者</span>
             </div>
-            <nav>
-                <button class="nav-button" onclick="location.href='subpages/articlelist.html';">我的文章</button>
-            </nav>
-        </header>
-
-        <div id="main">
-            <h2 id="about">关于我</h2>
-            <p>你好，我是赏鹤阳。</p>
-            <p>欢迎来到我的个人博客，点击右上角按钮可以查看我的文章。点击<a href="https://heyangshang.github.io/" target="_blank">这里</a>查看我的学术主页。</p>
-
-            <h2 id="contact">联系我</h2>
-            <p>你可以通过以下方式与我联系：</p>
-            <ul>
-                <p>Email: <a href="mailto:shanghy22@gmail.com">shanghy22@gmail.com</a></p>
-                <!-- <li>微信号：Younger0414</li> -->
-            </ul>
-
-            <h2 id="articles">新闻</h2>
-            <div class="news-item">
-                <h3>文章更新</h3>
-                <p class="date">2024年10月10日</p>
-                <p>更新了文章<a href="articles/dongbei.html">《东北行记》</a>。</p>
-            </div>
-
+          </a>
+          <nav class="site-nav">
+            <a href="#about">关于</a>
+            <a href="#latest">最新</a>
+            <a href="#contact">联系</a>
+            <a class="btn btn-primary nav-cta" href="subpages/articlelist.html"
+              >我的文章</a
+            >
+          </nav>
         </div>
+      </header>
 
+      <main class="content">
+        <section class="hero">
+          <div class="hero__inner">
+            <span class="tag">写作与生活观察</span>
+            <h1 class="hero-title">在文字里，慢慢记录世界的温度</h1>
+            <p class="hero-description">
+              我喜欢用文字记录路上的风景、日常的心绪与与人的相遇。
+              这里是我的线上书桌，收纳那些值得被反复阅读的故事与思考。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="subpages/articlelist.html"
+                >浏览全部文章</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://heyangshang.github.io/"
+                target="_blank"
+                rel="noreferrer"
+                >我的学术主页</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section">
+          <div class="section-header">
+            <h2 class="section-title">关于我</h2>
+            <p class="section-subtitle">
+              赏鹤阳，现居北京。写作关于旅行、教育、城市与真实的日常体验。
+            </p>
+          </div>
+          <div class="split-section">
+            <article class="card about-card">
+              <h3>写作主题</h3>
+              <p>
+                旅途中的所见所闻、教育现场的真实感受、对城市与乡村的观察，是我反复书写的题材。文字的重量来自亲历，所以我喜欢在路上记录，在对话中思考。
+              </p>
+              <p>
+                在这个博客里，你会看到散文、随笔与报道式的文字，它们都尽量保留最初的真实与温度。
+              </p>
+            </article>
+            <article class="card about-card">
+              <h3>近期关注</h3>
+              <ul>
+                <li>东北旅行系列与城市阅读</li>
+                <li>青年教育者的故事与声音</li>
+                <li>把生活体验整理成更长的叙事</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="latest" class="section">
+          <div class="section-header">
+            <h2 class="section-title">最新文章</h2>
+            <a class="post-card__link" href="subpages/articlelist.html"
+              >查看全部文章 →</a
+            >
+          </div>
+          <div class="latest-posts" id="latest-posts">
+            <article class="card post-card">
+              <span class="post-card__date">加载中…</span>
+              <h3 class="post-card__title">请稍候</h3>
+              <p class="post-card__description">
+                正在整理最新的文章，如果长时间没有加载，请刷新页面。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section">
+          <div class="section-header">
+            <h2 class="section-title">保持联系</h2>
+            <p class="section-subtitle">
+              如果你对我的文字有任何想法，或希望邀请我合作，欢迎随时写信。
+            </p>
+          </div>
+          <div class="split-section">
+            <div class="card newsletter">
+              <h3>写作近况</h3>
+              <p>
+                2024 年我正在完善“东北行记”系列，并计划将更多采访式文章整理上线。
+                你也可以通过邮件订阅的方式，偶尔收到我的文字摘要与幕后故事。
+              </p>
+              <p>
+                未来会开放更多互动形式，欢迎继续关注，也欢迎把站点分享给朋友。
+              </p>
+            </div>
+            <div class="card">
+              <div class="contact-list">
+                <div class="contact-item">
+                  <span>Email</span>
+                  <a href="mailto:shanghy22@gmail.com">shanghy22@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                  <span>社交</span>
+                  <a
+                    href="https://heyangshang.github.io/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >学术主页</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="current-year"></span> 赏鹤阳. 感谢阅读与陪伴。</p>
+      </footer>
     </div>
-</body>
 
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      const latestContainer = document.getElementById('latest-posts');
+
+      fetch('articles.json')
+        .then((response) => response.json())
+        .then((articles) => {
+          if (!Array.isArray(articles) || articles.length === 0) {
+            latestContainer.innerHTML = `<p class="post-card__description">暂时还没有文章，稍后再来看看吧。</p>`;
+            return;
+          }
+
+          const latestPosts = articles.slice(0, 3);
+          latestContainer.innerHTML = latestPosts
+            .map((post) => {
+              const description = post.description
+                ? `<p class="post-card__description">${post.description}</p>`
+                : '';
+              return `
+                <article class="card post-card">
+                  <span class="post-card__date">${post.date}</span>
+                  <h3 class="post-card__title">${post.title}</h3>
+                  ${description}
+                  <a class="post-card__link" href="${post.link}">阅读全文 →</a>
+                </article>
+              `;
+            })
+            .join('');
+        })
+        .catch((error) => {
+          console.error('加载文章失败：', error);
+          latestContainer.innerHTML = `
+            <article class="card post-card">
+              <span class="post-card__date">出错了</span>
+              <h3 class="post-card__title">无法获取文章</h3>
+              <p class="post-card__description">请检查网络连接或稍后重试。</p>
+            </article>
+          `;
+        });
+    </script>
+  </body>
 </html>
