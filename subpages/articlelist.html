@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>文章列表 · 赏鹤阳</title>
-    <meta name="description" content="赏鹤阳的文章索引，浏览全部博文。" />
-    <link rel="icon" type="image/png" href="../image/profileblack.png" />
-    <link rel="stylesheet" href="../styles/general.css" />
-    <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="stylesheet" href="../styles/article-list.css" />
-  </head>
-  <body>
-    <div class="list-page">
-      <header class="site-header">
-        <div class="site-header__inner">
-          <a class="brand" href="../index.html">
-            <img
-              src="../image/profileblack.png"
-              alt="赏鹤阳头像"
-              class="brand-logo"
-            />
-            <div class="brand-meta">
-              <span class="brand-name">赏鹤阳</span>
-              <span class="brand-tagline">写作者 · 记录者</span>
-            </div>
-          </a>
-          <nav class="site-nav">
-            <a href="../index.html#about">关于</a>
-            <a href="../index.html#latest">最新</a>
-            <a href="../index.html#contact">联系</a>
-            <a class="btn btn-primary nav-cta" href="../index.html">返回首页</a>
-          </nav>
-        </div>
-      </header>
 
-      <main class="list-content">
-        <h1 class="page-title">全部文章</h1>
-        <p class="page-description">
-          所有文章按照发布时间顺序排列。点击卡片即可跳转到对应的全文页面。
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>文章列表 · 赏鹤阳</title>
+  <meta name="description" content="赏鹤阳的文章索引，浏览全部博文。" />
+  <link rel="icon" type="image/png" href="../image/profileblack.png" />
+  <link rel="stylesheet" href="../styles/general.css" />
+  <link rel="stylesheet" href="../styles/index.css" />
+  <link rel="stylesheet" href="../styles/article-list.css" />
+</head>
 
-        <div class="article-feed" id="article-feed">
-          <article class="card article-card">
-            <div class="article-card__header">
-              <h2 class="article-card__title">加载中…</h2>
-              <span class="article-card__meta">正在获取文章数据</span>
-            </div>
-            <p class="article-card__description">
-              如果长时间未加载，请刷新页面或稍后再试。
-            </p>
-          </article>
-        </div>
-      </main>
+<body>
+  <div class="list-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <img src="../image/profileblack.png" alt="赏鹤阳头像" class="brand-logo" />
+          <div class="brand-meta">
+            <span class="brand-name">赏鹤阳 · 草树之后</span>
+            <!-- <span class="brand-tagline">写作者 · 记录者</span> -->
+          </div>
+        </a>
+        <nav class="site-nav">
+          <a href="../index.html#about">关于</a>
+          <a href="../index.html#latest">最新</a>
+          <a href="../index.html#contact">联系</a>
+          <a class="btn btn-primary nav-cta" href="../index.html">返回首页</a>
+        </nav>
+      </div>
+    </header>
 
-      <footer class="site-footer">
-        <p>© <span id="current-year"></span> 赏鹤阳. 感谢阅读与陪伴。</p>
-      </footer>
-    </div>
+    <main class="list-content">
+      <h1 class="page-title">全部文章</h1>
+      <p class="page-description">
+        所有文章按照发布时间顺序排列。点击卡片即可跳转到对应的全文页面。
+      </p>
 
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
+      <div class="article-feed" id="article-feed">
+        <article class="card article-card">
+          <div class="article-card__header">
+            <h2 class="article-card__title">加载中…</h2>
+            <span class="article-card__meta">正在获取文章数据</span>
+          </div>
+          <p class="article-card__description">
+            如果长时间未加载，请刷新页面或稍后再试。
+          </p>
+        </article>
+      </div>
+    </main>
 
-      const articleFeed = document.getElementById('article-feed');
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> 赏鹤阳. 感谢阅读与陪伴。</p>
+    </footer>
+  </div>
 
-      fetch('../articles.json')
-        .then((response) => response.json())
-        .then((articles) => {
-          if (!Array.isArray(articles) || articles.length === 0) {
-            articleFeed.innerHTML = `
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    const articleFeed = document.getElementById('article-feed');
+
+    fetch('../articles.json')
+      .then((response) => response.json())
+      .then((articles) => {
+        if (!Array.isArray(articles) || articles.length === 0) {
+          articleFeed.innerHTML = `
               <article class="card article-card">
                 <h2 class="article-card__title">暂时没有文章</h2>
                 <p class="article-card__description">可以稍后再来，或回到首页看看最近的动态。</p>
               </article>
             `;
-            return;
-          }
+          return;
+        }
 
-          articleFeed.innerHTML = articles
-            .map((article) => {
-              const description = article.description
-                ? `<p class="article-card__description">${article.description}</p>`
-                : '';
-              return `
+        articleFeed.innerHTML = articles
+          .map((article) => {
+            const description = article.description
+              ? `<p class="article-card__description">${article.description}</p>`
+              : '';
+            return `
                 <article class="card article-card">
                   <div class="article-card__header">
                     <h2 class="article-card__title">${article.title}</h2>
@@ -94,18 +92,19 @@
                   </div>
                 </article>
               `;
-            })
-            .join('');
-        })
-        .catch((error) => {
-          console.error('加载文章失败：', error);
-          articleFeed.innerHTML = `
+          })
+          .join('');
+      })
+      .catch((error) => {
+        console.error('加载文章失败：', error);
+        articleFeed.innerHTML = `
             <article class="card article-card">
               <h2 class="article-card__title">无法获取文章</h2>
               <p class="article-card__description">请检查网络连接或稍后重试。</p>
             </article>
           `;
-        });
-    </script>
-  </body>
+      });
+  </script>
+</body>
+
 </html>

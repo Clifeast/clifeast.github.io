@@ -23,7 +23,7 @@
 body {
   margin: 0;
   font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "Songti", serif;
-  background: linear-gradient(rgba(250, 252, 255, 0.86), rgba(250, 252, 255, 0.86)),
+  background: linear-gradient(rgba(250, 252, 255, 0.75), rgba(250, 252, 255, 0.75)),
     url('../image/bg.jpg') center/cover fixed;
   color: var(--text-primary);
   line-height: 1.8;
@@ -80,7 +80,7 @@ button.btn-primary {
 .btn-primary:focus-visible,
 button.btn-primary:hover,
 button.btn-primary:focus-visible {
-  background: var(--accent-dark);
+  background: var(--background);
   transform: translateY(-1px);
   box-shadow: 0 16px 30px rgba(39, 103, 73, 0.3);
 }
