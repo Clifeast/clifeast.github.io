@@ -6,80 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heyang Shang</title>
     <link rel="icon" type="image/png" href="image/profileblack.png">
-    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/general.css">
-    <style>
-        .news-item {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            background-color: #fafafa;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            /* gap: 10px; */
-        }
-
-        .news-item .header {
-            display: flex;
-            /* justify-content: space-between; */
-            align-items: center;
-        }
-
-        .news-item h3 {
-            font-size: 1.4em;
-            margin-right: 18px;
-            color: #333;
-            margin-bottom: -5px;
-            margin-top: 0px;
-        }
-
-        .news-item .date {
-            font-size: 0.9em;
-            color: #777;
-            margin-bottom: -5px;
-        }
-
-        .news-item p {
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="header-img">
-                <img src="image/profilename.png" alt="Heyang Shang">
-            </div>
-            <nav>
-                <button class="nav-button" onclick="location.href='subpages/articlelist.html';" >我的文章</button>
-            </nav>
-        </header>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="image/profilename.png" alt="Heyang Shang">
+        </a>
+        <nav class="site-nav">
+            <button class="nav-button" onclick="location.href='subpages/articlelist.html';">我的文章</button>
+        </nav>
+    </header>
 
-        <div id="main">
-            <h2 id="about">关于我</h2>
+    <main class="site-main">
+        <section class="content-section" id="about">
+            <h2>关于我</h2>
             <p>你好，我是赏鹤阳。</p>
             <p>欢迎来到我的个人博客，点击右上角按钮可以查看我的文章。点击<a href="https://heyangshang.github.io/" target="_blank">这里</a>查看我的学术主页。</p>
+        </section>
 
-            <h2 id="contact">联系我</h2>
+        <section class="content-section" id="contact">
+            <h2>联系我</h2>
             <p>你可以通过以下方式与我联系：</p>
-            <ul>
-                <p>Email: <a href="mailto:shanghy22@gmail.com">shanghy22@gmail.com</a></p>
-                <!-- <li>微信号：Younger0414</li> -->
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:shanghy22@gmail.com">shanghy22@gmail.com</a></li>
             </ul>
+        </section>
 
-            <h2 id="articles">新闻</h2>
-            <div class="news-item">
+        <section class="content-section" id="articles">
+            <h2>新闻</h2>
+            <article class="news-item">
                 <h3>文章更新</h3>
                 <p class="date">2024年10月10日</p>
                 <p>更新了文章<a href="articles/dongbei.html">《东北行记》</a>。</p>
-            </div>
+            </article>
+        </section>
+    </main>
 
-        </div>
-
-    </div>
+    <footer class="site-footer">
+        <p>© 2024 Heyang Shang. 保留所有权利。</p>
+    </footer>
 </body>
 
 </html>

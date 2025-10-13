@@ -9,7 +9,18 @@
 </head>
 
 <body>
-    <div class="content">
+    <header class="site-header">
+        <a class="brand" href="../index.html">
+            <img src="../image/profilename.png" alt="Heyang Shang">
+        </a>
+        <nav class="site-nav">
+            <button class="nav-button" onclick="location.href='../index.html';">返回主页</button>
+            <button class="nav-button" onclick="location.href='../subpages/articlelist.html';">文章列表</button>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <article class="article-content">
         <h1>我在北京的一户人家里吃了一顿晚饭</h1>
         <p class="creation-date">创作时间：2024年3月1日</p>
         <p>（节选自2024年3月1日日记。）</p>
@@ -46,8 +57,12 @@
         <p>
             ……
         </p>
-    </div>
-    <button class="back-to-top" onclick="location.href='../subpages/articlelist.html';">返回文章列表</button>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2024 Heyang Shang. 保留所有权利。</p>
+    </footer>
 </body>
 
 </html>

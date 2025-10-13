@@ -6,97 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的文章 - Heyang Shang</title>
     <link rel="icon" type="image/png" href="image/profileblack.png">
-    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <style>
-        .article-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .article-item {
-            display: flex;
-            flex-direction: column;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .article-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 0 5px 5px 0;
-        }
-
-        .article-date {
-            color: #999;
-            font-size: 14px;
-        }
-
-        .article-description {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .article-item a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .article-item a:hover {
-            color: #3b9140;
-        }
-
-        .article-button {
-            font-size: 16px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="header-img">
-                <img src="../image/profilename.png" alt="Heyang Shang">
-            </div>
-            <nav>
-                <button class="nav-button" onclick="location.href='../index.html';">返回主页</button>
-            </nav>
-        </header>
+    <header class="site-header">
+        <a class="brand" href="../index.html">
+            <img src="../image/profilename.png" alt="Heyang Shang">
+        </a>
+        <nav class="site-nav">
+            <button class="nav-button" onclick="location.href='../index.html';">返回主页</button>
+        </nav>
+    </header>
 
-        <div id="main">
+    <main class="site-main">
+        <section class="content-section">
             <h2>我的文章</h2>
+            <p>按时间排序的最新文章，点击进入查看全文。</p>
             <ul class="article-list" id="article-list"></ul>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2024 Heyang Shang. 保留所有权利。</p>
+    </footer>
 
     <script>
-        fetch('../articles.json') //文章列表的存储位置
+        fetch('../articles.json')
             .then(response => response.json())
             .then(data => {
                 const articleList = document.getElementById('article-list');
                 data.forEach(article => {
-                    const li = document.createElement('li');
-                    li.classList.add('article-item');
+                    const item = document.createElement('li');
+                    item.classList.add('article-card');
 
-                    li.innerHTML = `
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span class="article-title">${article.title}</span>
-                                <span class="article-date">${article.date}</span>
-                                ${article.description ? `<p class="article-description">${article.description}</p>` : ''}
-                            </div>
-                            <button class="article-button" onclick="location.href='${article.link}'">查看</button>
-                        </div>
-                    `;
+                    const info = document.createElement('div');
+                    info.classList.add('article-card__info');
 
-                    articleList.appendChild(li);
+                    const title = document.createElement('h3');
+                    title.classList.add('article-title');
+                    title.textContent = article.title;
+
+                    const meta = document.createElement('span');
+                    meta.classList.add('article-date');
+                    meta.textContent = article.date;
+
+                    info.append(title, meta);
+
+                    if (article.description) {
+                        const description = document.createElement('p');
+                        description.classList.add('article-description');
+                        description.textContent = article.description;
+                        info.appendChild(description);
+                    }
+
+                    const button = document.createElement('button');
+                    button.classList.add('nav-button');
+                    button.textContent = '查看全文';
+                    button.addEventListener('click', () => {
+                        location.href = article.link;
+                    });
+
+                    item.append(info, button);
+                    articleList.appendChild(item);
                 });
             })
             .catch(error => console.error('Error loading articles:', error));
