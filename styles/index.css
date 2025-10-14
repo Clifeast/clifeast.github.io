@@ -159,6 +159,7 @@
     font-size: clamp(2.4rem, 6vw, 3.3rem);
     line-height: 1.2;
     margin: 0;
+    color: #fff;
 }
 
 .hero-description {
