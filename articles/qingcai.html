@@ -7,32 +7,11 @@
     <link rel="stylesheet" href="../styles/general.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/articles.css" />
+    <script defer src="../scripts/layout.js"></script>
   </head>
   <body>
     <div class="page article-page">
-      <header class="site-header">
-        <div class="site-header__inner">
-          <a class="brand" href="../index.html">
-            <img
-              src="../image/profileblack.png"
-              alt="赏鹤阳头像"
-              class="brand-logo"
-            />
-            <div class="brand-meta">
-              <span class="brand-name">赏鹤阳</span>
-              <span class="brand-tagline">写作者 · 记录者</span>
-            </div>
-          </a>
-          <nav class="site-nav">
-            <a href="../index.html#about">关于</a>
-            <a href="../index.html#latest">最新</a>
-            <a href="../index.html#contact">联系</a>
-            <a class="btn btn-primary nav-cta" href="../subpages/articlelist.html"
-              >全部文章</a
-            >
-          </nav>
-        </div>
-      </header>
+      <header class="site-header" data-component="site-header"></header>
 
       <main class="content article-main">
         <div class="article-container">
@@ -42,7 +21,7 @@
           </header>
 
           <article class="article-body">
-            <p class="lead">我在寻找青菜。</p>
+            <p>我在寻找青菜。</p>
             <p>
               很难想象，青菜此类令人睹之“生厌”的事物竟有一天被绑上火箭筒，“咻”一声地升天，不在我身上落上一片幼叶，一须细根，哪怕一个细胞。我的世界里从此失去了青菜。手足并用，急切地掀开词典，“青”字下头也赫然，消失了“青菜”的义项。
             </p>
@@ -76,13 +55,7 @@
         </div>
       </main>
 
-      <footer class="site-footer">
-        <p>© <span id="current-year"></span> 赏鹤阳. 感谢阅读与陪伴。</p>
-      </footer>
+      <footer class="site-footer" data-component="site-footer"></footer>
     </div>
-
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>

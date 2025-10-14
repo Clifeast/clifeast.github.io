@@ -9,30 +9,15 @@
   <link rel="icon" type="image/png" href="image/profileblack.png" />
   <link rel="stylesheet" href="styles/general.css" />
   <link rel="stylesheet" href="styles/index.css" />
+  <script defer src="scripts/layout.js"></script>
 </head>
 
 <body>
   <div class="page">
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="brand" href="/">
-          <img src="image/profileblack.png" alt="赏鹤阳头像" class="brand-logo" />
-          <div class="brand-meta">
-            <span class="brand-name">赏鹤阳 · 草树之后</span>
-            <!-- <span class="brand-tagline">写作者</span> -->
-          </div>
-        </a>
-        <nav class="site-nav">
-          <a href="#about">关于</a>
-          <a href="#latest">最新</a>
-          <a href="#contact">联系</a>
-          <a class="btn btn-primary" href="subpages/articlelist.html">我的文章</a>
-        </nav>
-      </div>
-    </header>
+    <header class="site-header" data-component="site-header"></header>
 
     <main class="content">
-      <section class="hero">
+      <a class="hero hero--link" href="subpages/articlelist.html" aria-label="浏览全部文章">
         <div class="hero__inner">
           <!-- <span class="tag">写作与生活观察</span> -->
           <h1 class="hero-title">草树之后</h1>
@@ -45,7 +30,7 @@
             <a class="btn btn-primary" href="https://heyangshang.github.io/" target="_blank" rel="noreferrer">我的学术主页</a>
           </div> -->
         </div>
-      </section>
+      </a>
 
       <section id="about" class="section">
         <div class="section-header">
@@ -125,14 +110,10 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span id="current-year"></span> 赏鹤阳 · 草树之后</p>
-    </footer>
+    <footer class="site-footer" data-component="site-footer"></footer>
   </div>
 
   <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
     const latestContainer = document.getElementById('latest-posts');
 
     fetch('articles.json')
