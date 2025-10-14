@@ -26,7 +26,7 @@ function applySharedLayout() {
 
   if (currentPath.includes('/subpages/articlelist')) {
     ctaHref = '/';
-    ctaLabel = '返回首页';
+    ctaLabel = '返回主页';
   }
 
   const headerHTML = headerTemplate

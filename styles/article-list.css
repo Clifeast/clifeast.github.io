@@ -12,7 +12,7 @@
   padding: clamp(1.5rem, 6vw, 3.5rem) var(--page-padding) clamp(2rem, 6vw, 3.5rem);
   background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(6px);
-  border-radius: calc(var(--radius-lg) + 10px);
+  border-radius: 0 0 calc(var(--radius-lg) + 10px) calc(var(--radius-lg) + 10px);
   box-shadow: 0 25px 55px rgba(15, 23, 42, 0.16);
 }
 
