@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>赏鹤阳 · 草树之后</title>
   <meta name="description" content="赏鹤阳的个人博客，在这里记录文字、旅行与生活思考。" />
-  <link rel="icon" type="image/png" href="image/profileblack.png" />
-  <link rel="stylesheet" href="styles/general.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <script defer src="scripts/layout.js"></script>
+  <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
+  <link rel="stylesheet" href="/assets/styles/general.css" />
+  <link rel="stylesheet" href="/assets/styles/index.css" />
+  <script defer src="/assets/scripts/layout.js"></script>
+  <script defer src="/assets/scripts/articles.js" data-articles-path="/data/articles.json"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <header class="site-header" data-component="site-header"></header>
 
     <main class="content">
-      <a class="hero hero--link" href="subpages/articlelist.html" aria-label="浏览全部文章">
+      <a class="hero hero--link" href="/articles/" aria-label="浏览全部文章">
         <div class="hero__inner">
           <!-- <span class="tag">写作与生活观察</span> -->
           <h1 class="hero-title">草树之后</h1>
@@ -26,7 +27,7 @@
             本专栏得名于此。
           </p>
           <!-- <div class="hero-actions">
-            <a class="btn btn-primary" href="subpages/articlelist.html">浏览全部文章</a>
+            <a class="btn btn-primary" href="/articles/">浏览全部文章</a>
             <a class="btn btn-primary" href="https://heyangshang.github.io/" target="_blank" rel="noreferrer">我的学术主页</a>
           </div> -->
         </div>
@@ -59,9 +60,9 @@
       <section id="latest" class="section">
         <div class="section-header">
           <h2 class="section-title">最新文章</h2>
-          <a class="post-card__link" href="subpages/articlelist.html">查看全部文章 →</a>
+          <a class="post-card__link" href="/articles/">查看全部文章 →</a>
         </div>
-        <div class="latest-posts" id="latest-posts">
+        <div class="latest-posts" id="latest-posts" data-articles-view="latest">
           <article class="card post-card">
             <span class="post-card__date">加载中…</span>
             <h3 class="post-card__title">请稍候</h3>
@@ -104,46 +105,6 @@
 
     <footer class="site-footer" data-component="site-footer"></footer>
   </div>
-
-  <script>
-    const latestContainer = document.getElementById('latest-posts');
-
-    fetch('articles.json')
-      .then((response) => response.json())
-      .then((articles) => {
-        if (!Array.isArray(articles) || articles.length === 0) {
-          latestContainer.innerHTML = `<p class="post-card__description">暂时还没有文章，稍后再来看看吧。</p>`;
-          return;
-        }
-
-        const latestPosts = articles.slice(0, 3);
-        latestContainer.innerHTML = latestPosts
-          .map((post) => {
-            const description = post.description
-              ? `<p class="post-card__description">${post.description}</p>`
-              : '';
-            return `
-                <article class="card post-card">
-                  <span class="post-card__date">${post.date}</span>
-                  <h3 class="post-card__title">${post.title}</h3>
-                  ${description}
-                  <a class="post-card__link" href="${post.link}">阅读全文 →</a>
-                </article>
-              `;
-          })
-          .join('');
-      })
-      .catch((error) => {
-        console.error('加载文章失败：', error);
-        latestContainer.innerHTML = `
-            <article class="card post-card">
-              <span class="post-card__date">出错了</span>
-              <h3 class="post-card__title">无法获取文章</h3>
-              <p class="post-card__description">请检查网络连接或稍后重试。</p>
-            </article>
-          `;
-      });
-  </script>
 </body>
 
 </html>

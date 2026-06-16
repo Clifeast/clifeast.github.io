@@ -4,46 +4,88 @@
 
 ## 功能亮点
 
-- 现代化的单页式首页，包含个人介绍、最新文章与联系方式等模块。
-- 文章列表页基于 `articles.json` 数据动态渲染，方便扩展与维护。
+- 首页展示个人介绍、最新文章与联系方式。
+- 文章列表页位于 `/articles/`，基于 `data/articles.json` 动态渲染。
+- 文章正文由 `content/articles/` 中的源文件生成，避免手动重复维护标题、日期和摘要。
+- 公共头部、页脚与文章卡片渲染逻辑集中在 `assets/scripts/` 中。
 - 采用响应式设计，在桌面端与移动端均能获得良好浏览体验。
 
 ## 项目结构
 
 ```text
-├── index.html              # 首页
-├── subpages/
-│   └── articlelist.html    # 文章列表页
-├── articles/               # 文章正文
-├── styles/
-│   ├── general.css         # 全局基础样式
-│   ├── index.css           # 首页样式
-│   └── article-list.css    # 文章列表页样式
-├── articles.json           # 文章元数据（标题、日期、简介、链接）
-└── image/                  # 站点使用的图像资源
+├── index.html                  # 首页
+├── articles/
+│   ├── index.html              # 文章列表页
+│   └── *.html                  # 生成后的文章正文页
+├── content/
+│   └── articles/               # 文章源文件，包含 frontmatter 与正文 HTML 片段
+├── data/
+│   └── articles.json           # 生成后的文章元数据
+├── assets/
+│   ├── images/                 # 站点图像资源
+│   ├── scripts/                # 公共布局与文章列表渲染脚本
+│   ├── source/                 # 设计源文件
+│   └── styles/                 # 全局、首页、列表页与正文页样式
+├── tools/
+│   └── build-articles.js       # 文章生成脚本
+└── subpages/
+    └── articlelist.html        # 旧文章列表地址的兼容跳转页
 ```
 
 ## 本地预览
 
-直接使用任意静态服务器或浏览器打开 `index.html` 即可预览。若已安装 Python，可以通过以下命令在本地快速启动开发服务器：
+首次拉取项目后安装依赖：
 
 ```bash
-python -m http.server 8000
+npm install
+npx playwright install chromium
+```
+
+由于首页和文章列表页会通过 `fetch()` 读取 JSON，建议使用静态服务器预览：
+
+```bash
+python3 -m http.server 8000
 ```
 
 随后访问 <http://localhost:8000> 即可查看站点。
 
-## 测试
-
-项目当前未包含自动化测试脚本。若要确认页面是否正常工作，建议使用上方的本地预览命令在浏览器中进行手动检查。
-
 ## 更新文章
 
-1. 在 `articles/` 目录下添加新的文章 HTML 文件。
-2. 在 `articles.json` 中追加对应的文章信息，字段包括：
-   - `title`：文章标题；
-   - `date`：发表日期（字符串格式，可自定义）；
-   - `description`：可选字段，用于在列表中展示的简短摘要；
-   - `link`：文章链接，使用以 `/` 开头的站内绝对路径。
+1. 在 `content/articles/` 中新增或修改文章源文件。
+2. 在文件顶部填写 frontmatter：
 
-完成后提交修改并推送即可在页面上看到最新内容。
+```text
+---
+title: 文章标题
+date: 展示给读者的日期
+publishedAt: 2026-06-16
+slug: article-slug
+description: 可选摘要
+meta: 可选正文页日期说明
+---
+```
+
+3. 在 frontmatter 下方编写正文 HTML 片段。
+4. 运行生成命令：
+
+```bash
+node tools/build-articles.js
+```
+
+脚本会更新 `articles/*.html` 和 `data/articles.json`。提交这些生成结果后，GitHub Pages 即可直接发布。
+
+## 校验
+
+可以用以下命令确认文章生成结果没有过期：
+
+```bash
+npm run build:articles -- --check
+```
+
+启动本地静态服务器后，可以运行 Playwright 渲染检查：
+
+```bash
+npm run verify:site
+```
+
+该命令会打开首页、文章列表页和两篇正文页，检查文章卡片、图片加载、控制台错误和资源请求，并把截图保存到 `/private/tmp/clifeast-playwright`。

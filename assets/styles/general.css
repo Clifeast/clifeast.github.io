@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "Songti", serif;
   background: linear-gradient(rgba(250, 252, 255, 0.75), rgba(250, 252, 255, 0.75)),
-    url('../image/bg.jpg') center/cover fixed;
+    url('../images/bg.jpg') center/cover fixed;
   color: var(--text-primary);
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;

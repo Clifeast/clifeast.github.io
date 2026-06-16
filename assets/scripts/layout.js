@@ -1,7 +1,7 @@
 const headerTemplate = `
   <div class="site-header__inner">
     <a class="brand" href="/">
-      <img src="/image/profileblack.png" alt="赏鹤阳头像" class="brand-logo" />
+      <img src="/assets/images/profileblack.png" alt="赏鹤阳头像" class="brand-logo" />
       <div class="brand-meta">
         <span class="brand-name">赏鹤阳 · 草树之后</span>
       </div>
@@ -10,7 +10,7 @@ const headerTemplate = `
       <a href="/#about">关于</a>
       <a href="/#latest">最新</a>
       <a href="/#contact">联系</a>
-      <a class="btn btn-primary nav-cta" href="/subpages/articlelist.html">我的文章</a>
+      <a class="btn btn-primary nav-cta" href="/articles/">我的文章</a>
     </nav>
   </div>
 `;
@@ -21,16 +21,16 @@ const footerTemplate = `
 
 function applySharedLayout() {
   const currentPath = window.location.pathname;
-  let ctaHref = '/subpages/articlelist.html';
+  let ctaHref = '/articles/';
   let ctaLabel = '我的文章';
 
-  if (currentPath.includes('/subpages/articlelist')) {
+  if (currentPath === '/articles/' || currentPath.endsWith('/articles/index.html')) {
     ctaHref = '/';
     ctaLabel = '返回主页';
   }
 
   const headerHTML = headerTemplate
-    .replace('href="/subpages/articlelist.html"', `href="${ctaHref}"`)
+    .replace('href="/articles/"', `href="${ctaHref}"`)
     .replace('>我的文章<', `>${ctaLabel}<`);
 
   document.querySelectorAll('[data-component="site-header"]').forEach((element) => {

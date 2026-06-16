@@ -1,0 +1,35 @@
+[
+  {
+    "title": "东北行记",
+    "date": "2024年10月8日",
+    "publishedAt": "2024-10-08",
+    "link": "/articles/dongbei.html",
+    "description": "2024年十一假期游沈阳、长春、通化后作。"
+  },
+  {
+    "title": "我在北京的一户人家里吃了一顿晚饭",
+    "date": "2024年3月1日",
+    "publishedAt": "2024-03-01",
+    "link": "/articles/hotpot.html"
+  },
+  {
+    "title": "又到高考",
+    "date": "2023年6月7日",
+    "publishedAt": "2023-06-07",
+    "link": "/articles/gaokao.html"
+  },
+  {
+    "title": "年轮",
+    "date": "2023年2月22日",
+    "publishedAt": "2023-02-22",
+    "link": "/articles/nianlun.html",
+    "description": "为曲靖一中110周年校庆作。"
+  },
+  {
+    "title": "寻找青菜",
+    "date": "2019年10月",
+    "publishedAt": "2019-10-01",
+    "link": "/articles/qingcai.html",
+    "description": "朝花夕拾"
+  }
+]

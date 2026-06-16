@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:articles": "node tools/build-articles.js",
+    "verify:site": "node tools/verify-site.js"
+  },
+  "dependencies": {
+    "playwright": "^1.61.0"
+  }
+}

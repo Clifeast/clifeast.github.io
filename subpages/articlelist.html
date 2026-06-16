@@ -4,94 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>文章列表 · 赏鹤阳</title>
-  <meta name="description" content="赏鹤阳的文章索引，浏览全部博文。" />
-  <link rel="icon" type="image/png" href="../image/profileblack.png" />
-  <link rel="stylesheet" href="../styles/general.css" />
-  <link rel="stylesheet" href="../styles/index.css" />
-  <link rel="stylesheet" href="../styles/article-list.css" />
-  <script defer src="../scripts/layout.js"></script>
+  <meta http-equiv="refresh" content="0; url=/articles/" />
+  <link rel="canonical" href="/articles/" />
+  <title>正在跳转到文章列表 · 赏鹤阳</title>
+  <script>
+    window.location.replace("/articles/");
+  </script>
 </head>
 
 <body>
-  <div class="list-page">
-    <header class="site-header" data-component="site-header"></header>
-
-    <main class="list-content">
-      <h1 class="page-title">全部文章</h1>
-      <p class="page-description">
-        所有文章按照发布时间顺序排列。点击卡片即可跳转到对应的全文页面。
-      </p>
-
-      <div class="article-feed" id="article-feed">
-        <article class="card article-card">
-          <div class="article-card__header">
-            <h2 class="article-card__title">加载中…</h2>
-            <span class="article-card__meta">正在获取文章数据</span>
-          </div>
-          <p class="article-card__description">
-            如果长时间未加载，请刷新页面或稍后再试。
-          </p>
-          <div class="article-card__actions" aria-hidden="true">
-            <span class="article-card__meta">敬请期待</span>
-          </div>
-        </article>
-      </div>
-    </main>
-
-    <footer class="site-footer" data-component="site-footer"></footer>
-  </div>
-
-  <script>
-    const articleFeed = document.getElementById('article-feed');
-
-    fetch('../articles.json')
-      .then((response) => response.json())
-      .then((articles) => {
-        if (!Array.isArray(articles) || articles.length === 0) {
-          articleFeed.innerHTML = `
-              <article class="card article-card">
-                <div class="article-card__header">
-                  <h2 class="article-card__title">暂时没有文章</h2>
-                </div>
-                <p class="article-card__description">可以稍后再来，或回到首页看看最近的动态。</p>
-              </article>
-            `;
-          return;
-        }
-
-        articleFeed.innerHTML = articles
-          .map((article) => {
-            const description = article.description
-              ? `<p class="article-card__description">${article.description}</p>`
-              : '';
-            return `
-                <article class="card article-card">
-                  <div class="article-card__header">
-                    <h2 class="article-card__title">${article.title}</h2>
-                    <span class="article-card__meta">${article.date}</span>
-                  </div>
-                  ${description}
-                  <div class="article-card__actions">
-                    <a class="btn btn-primary" href="${article.link}">阅读全文</a>
-                  </div>
-                </article>
-              `;
-          })
-          .join('');
-      })
-      .catch((error) => {
-        console.error('加载文章失败：', error);
-        articleFeed.innerHTML = `
-            <article class="card article-card">
-              <div class="article-card__header">
-                <h2 class="article-card__title">无法获取文章</h2>
-              </div>
-              <p class="article-card__description">请检查网络连接或稍后重试。</p>
-            </article>
-          `;
-      });
-  </script>
+  <p>文章列表已经迁移到 <a href="/articles/">/articles/</a>。</p>
 </body>
 
 </html>
