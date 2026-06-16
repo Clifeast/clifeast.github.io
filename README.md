@@ -79,7 +79,13 @@ node tools/build-articles.js
 
 ## 更新论文日报
 
-日报的栏目配置位于 `content/digest/sections.json`，经典 AI 论文池位于 `content/digest/classic-ai.json`。生成当天日报：
+日报的栏目配置位于 `content/digest/sections.json`。生成脚本按一个很薄的状态化 pipeline 运行：
+
+- `recent-agt` / `recent-ai`：只抓 digest 日期前一天的 arXiv 新论文；每天确定性随机选一个 arXiv 类别，候选太多时确定性抽样，再批量交给 LLM 粗排，最终入选论文才临时下载 PDF 做中文精读介绍。
+- `classic-ai`：优先从 OpenAlex 高影响论文里选第一个未推送条目，失败时使用 curated list；推送过的 identity 记录在 `data/digest/state.json`。
+- `conference-agt`：每天按权重确定性随机选一个 venue，用 `state.json` 中的 cursor 顺次推进；EC/WINE 直接轮换，TCS/AI 会议先由 LLM 判断是否 AGT/EconCS，再按阈值采纳。
+
+脚本会写入 `data/digest/YYYY-MM-DD.json` 和 `data/digest/today.json`，并额外写入 `data/digest/debug/run-YYYY-MM-DD.json` 便于排查。业务状态只保留在 `data/digest/state.json`；没有长期 HTTP cache、PDF cache 或 LLM cache。生成当天日报：
 
 ```bash
 npm run build:digest
@@ -92,6 +98,25 @@ npm run build:digest -- --date 2026-06-16
 ```
 
 脚本会更新 `data/digest/today.json` 和对应日期的 `data/digest/YYYY-MM-DD.json`。
+
+如果某日期已经在 `state.json` 标记为 completed，默认会复用已有 JSON，不会再次推进 state；需要重跑并推进 cursor/seenIds 时加 `--force`。如需离线 smoke test，可加 `--no-network --dry-run`。
+
+真实 LLM 评分默认使用阿里云百炼 Qwen OpenAI-compatible Chat API。没有 API key 时会自动使用 Mock fallback。粗排默认 `qwen-plus`，只发送标题和摘要；精读默认 `qwen-long`，仅对最终入选 arXiv 论文下载 PDF、上传到 Qwen file interface 后读取：
+
+```bash
+export DASHSCOPE_API_KEY="..."
+export QWEN_SCORE_MODEL="qwen-plus"        # 可改为 qwen-flash
+export QWEN_ENRICH_MODEL="qwen-long"       # 可按需改为 qwen-doc-turbo
+export QWEN_API_BASE="https://dashscope.aliyuncs.com/compatible-mode/v1"
+```
+
+兼容入口：
+
+```bash
+python3 scripts/build_digest.py --date 2026-06-16
+python3 scripts/build_digest.py --date 2026-06-16 --force
+python3 scripts/build_digest.py --date 2026-06-16 --no-network --dry-run
+```
 
 ## 校验
 

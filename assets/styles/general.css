@@ -13,6 +13,7 @@
   --radius-md: 12px;
   --radius-sm: 8px;
   --transition-base: 180ms ease;
+  --font-body: Avenir, "Helvetica Neue", Arial, "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "Songti", serif;
   font-size: 16px;
 }
 
@@ -22,7 +23,7 @@
 
 body {
   margin: 0;
-  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "Songti", serif;
+  font-family: var(--font-body);
   background: linear-gradient(rgba(250, 252, 255, 0.75), rgba(250, 252, 255, 0.75)),
     url('../images/bg.jpg') center/cover fixed;
   color: var(--text-primary);

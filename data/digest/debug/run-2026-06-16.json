@@ -1,0 +1,93 @@
+{
+  "date": "2026-06-16",
+  "generatedAt": "2026-06-16T17:33:59.159834+00:00",
+  "events": [
+    {
+      "event": "recent_arxiv_category",
+      "sectionId": "recent-agt",
+      "category": "cs.MA"
+    },
+    {
+      "event": "recent_arxiv_candidates",
+      "sectionId": "recent-agt",
+      "category": "cs.MA",
+      "candidateCount": 5,
+      "fetchedCount": 5
+    },
+    {
+      "event": "recent_arxiv_sampled",
+      "sectionId": "recent-agt",
+      "sampledCount": 5
+    },
+    {
+      "event": "recent_arxiv_selected",
+      "sectionId": "recent-agt",
+      "selected": [
+        "Human-on-the-Bridge: Scalable Evaluation for AI Agents",
+        "Misinformation Propagation in Benign Multi-Agent Systems"
+      ]
+    },
+    {
+      "event": "recent_arxiv_category",
+      "sectionId": "recent-ai",
+      "category": "cs.RO"
+    },
+    {
+      "event": "recent_arxiv_candidates",
+      "sectionId": "recent-ai",
+      "category": "cs.RO",
+      "candidateCount": 56,
+      "fetchedCount": 56
+    },
+    {
+      "event": "recent_arxiv_sampled",
+      "sectionId": "recent-ai",
+      "sampledCount": 56
+    },
+    {
+      "event": "recent_arxiv_selected",
+      "sectionId": "recent-ai",
+      "selected": [
+        "T-Rex: Tactile-Reactive Dexterous Manipulation",
+        "Human Universal Grasping",
+        "Geometric Action Model for Robot Policy Learning",
+        "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes"
+      ]
+    },
+    {
+      "event": "classic_openalex_candidates",
+      "count": 369
+    },
+    {
+      "event": "classic_selected",
+      "title": "R: A Language and Environment for Statistical Computing",
+      "seenKeys": [
+        "openalex:https://openalex.org/W2582743722",
+        "doi:10.32614/r.manuals",
+        "url:https://doi.org/10.32614/r.manuals",
+        "title:r a language and environment for statistical computing"
+      ]
+    },
+    {
+      "event": "conference_candidates",
+      "venue": "EC",
+      "count": 290
+    },
+    {
+      "event": "conference_selected",
+      "venue": "EC",
+      "cursor": 1,
+      "explored": 1,
+      "selected": [
+        "Congested Waiting Lists and Organ Allocation"
+      ]
+    }
+  ],
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 2,
+    "recent-ai": 4,
+    "classic-ai": 1,
+    "conference-agt": 1
+  }
+}

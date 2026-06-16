@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build:articles": "node tools/build-articles.js",
-    "build:digest": "python3 tools/build-digest.py",
+    "build:digest": "python3 scripts/build_digest.py",
     "build": "npm run build:articles && npm run build:digest",
     "verify:site": "node tools/verify-site.js"
   },

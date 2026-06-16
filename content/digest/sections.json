@@ -1,77 +1,201 @@
 {
-  "tagKeywords": [
-    "mechanism design",
-    "auction",
-    "equilibrium",
-    "market",
-    "matching",
-    "LLM",
-    "large language model",
-    "agent",
-    "reasoning",
-    "reinforcement learning",
-    "alignment"
-  ],
   "sections": [
     {
-      "id": "arxiv-game-theory",
-      "title": "New arXiv Game Theory",
-      "source": "arxiv",
-      "query": "cat:cs.GT",
-      "maxResults": 20,
-      "limit": 2
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "domain": "agt",
+      "categoryPool": ["cs.GT", "cs.MA", "cs.AI"],
+      "sampleThreshold": 100,
+      "sampleSize": 75,
+      "maxItems": 4,
+      "minScore": 6.6,
+      "scoreWeights": {
+        "relevance": 0.22,
+        "novelty": 0.12,
+        "theoreticalDepth": 0.42,
+        "readability": 0.06,
+        "potentialImpact": 0.18
+      }
     },
     {
-      "id": "conference-agt",
-      "title": "Conference-flavored AGT",
-      "source": "arxiv",
-      "query": "(cat:cs.GT OR cat:cs.DS)",
-      "maxResults": 50,
-      "limit": 2,
-      "filters": {
-        "keywords": [
-          "STOC",
-          "FOCS",
-          "EC",
-          "WINE",
-          "SODA",
-          "ICALP",
-          "auction",
-          "mechanism",
-          "equilibrium",
-          "market"
-        ],
-        "phrases": [
-          "online matching",
-          "stable matching",
-          "matching market",
-          "matching markets",
-          "bipartite matching"
-        ]
+      "id": "recent-ai",
+      "title": "近期 AI 新论文",
+      "source": "arxiv-llm-ranked",
+      "domain": "ai",
+      "categoryPool": ["cs.AI", "cs.LG", "cs.CL", "cs.CV", "cs.RO", "cs.IR", "cs.NE", "cs.MA"],
+      "sampleThreshold": 100,
+      "sampleSize": 75,
+      "maxItems": 4,
+      "minScore": 6.8,
+      "scoreWeights": {
+        "relevance": 0.24,
+        "novelty": 0.16,
+        "theoreticalDepth": 0.34,
+        "readability": 0.08,
+        "potentialImpact": 0.18
       }
     },
     {
       "id": "classic-ai",
-      "title": "Classic AI Paper",
-      "source": "classic-ai"
+      "title": "经典 AI 阅读",
+      "source": "classic-ai",
+      "domain": "ai",
+      "maxItems": 1,
+      "queries": [
+        "artificial intelligence survey",
+        "machine learning",
+        "deep learning",
+        "transformer neural networks",
+        "reinforcement learning",
+        "large language models"
+      ],
+      "openalex": {
+        "minYear": 1950,
+        "maxYear": 2025,
+        "minCitations": 500,
+        "perPage": 80
+      },
+      "curatedPapers": [
+        {
+          "title": "Attention Is All You Need",
+          "authors": [
+            "Ashish Vaswani",
+            "Noam Shazeer",
+            "Niki Parmar",
+            "Jakob Uszkoreit",
+            "Llion Jones",
+            "Aidan N. Gomez",
+            "Lukasz Kaiser",
+            "Illia Polosukhin"
+          ],
+          "date": "2017-06-12",
+          "source": "Curated AI",
+          "url": "https://arxiv.org/abs/1706.03762",
+          "abstract": "The Transformer paper introduced a sequence transduction architecture based entirely on attention mechanisms, becoming a foundation for modern language models.",
+          "priority": 100,
+          "citedByCount": 180000,
+          "publicationYear": "2017"
+        },
+        {
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "authors": [
+            "Jacob Devlin",
+            "Ming-Wei Chang",
+            "Kenton Lee",
+            "Kristina Toutanova"
+          ],
+          "date": "2018-10-11",
+          "source": "Curated AI",
+          "url": "https://arxiv.org/abs/1810.04805",
+          "abstract": "BERT showed how bidirectional Transformer pre-training can produce strong language representations for a wide range of NLP tasks.",
+          "priority": 94,
+          "citedByCount": 120000,
+          "publicationYear": "2018"
+        },
+        {
+          "title": "Deep Residual Learning for Image Recognition",
+          "authors": [
+            "Kaiming He",
+            "Xiangyu Zhang",
+            "Shaoqing Ren",
+            "Jian Sun"
+          ],
+          "date": "2015-12-10",
+          "source": "Curated AI",
+          "url": "https://arxiv.org/abs/1512.03385",
+          "abstract": "ResNet introduced residual connections that made it practical to train very deep neural networks, reshaping modern computer vision.",
+          "priority": 90,
+          "citedByCount": 220000,
+          "publicationYear": "2016"
+        }
+      ]
     },
     {
-      "id": "ai-paper",
-      "title": "Recent AI Paper",
-      "source": "arxiv",
-      "query": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL)",
-      "maxResults": 50,
-      "limit": 1,
-      "filters": {
-        "keywords": [
-          "LLM",
-          "large language model",
-          "agent",
-          "reasoning",
-          "reinforcement learning",
-          "alignment"
-        ]
-      }
+      "id": "conference-agt",
+      "title": "会议 AGT 论文",
+      "source": "conference-list",
+      "domain": "agt",
+      "maxItems": 1,
+      "minScore": 5.8,
+      "maxExplorePerRun": 12,
+      "venues": [
+        {
+          "name": "EC",
+          "group": "market",
+          "year": "2026",
+          "url": "https://ec26.sigecom.org/program/accepted-papers/",
+          "parser": "numbered-author-lines",
+          "heading": "EC 2026 Accepted Papers",
+          "includeAll": true,
+          "enabled": true
+        },
+        {
+          "name": "WINE",
+          "group": "market",
+          "year": "2026",
+          "url": "",
+          "parser": "numbered-author-lines",
+          "includeAll": true,
+          "enabled": false
+        },
+        {
+          "name": "STOC",
+          "group": "tcs",
+          "year": "2026",
+          "url": "https://acm-stoc.org/stoc2026/accepted-papers.html",
+          "parser": "bullet-author-lines",
+          "heading": "STOC 2026 Accepted Papers",
+          "includeAll": false,
+          "enabled": true
+        },
+        {
+          "name": "FOCS",
+          "group": "tcs",
+          "year": "2025",
+          "url": "https://focs.computer.org/2025/accepted-papers/",
+          "parser": "pair-lines",
+          "heading": "FOCS 2025 Accepted Papers",
+          "includeAll": false,
+          "enabled": true
+        },
+        {
+          "name": "SODA",
+          "group": "tcs",
+          "year": "2026",
+          "url": "",
+          "parser": "pair-lines",
+          "includeAll": false,
+          "enabled": false
+        },
+        {
+          "name": "ICLR",
+          "group": "ai",
+          "year": "2026",
+          "url": "",
+          "parser": "pair-lines",
+          "includeAll": false,
+          "enabled": false
+        },
+        {
+          "name": "ICML",
+          "group": "ai",
+          "year": "2026",
+          "url": "",
+          "parser": "pair-lines",
+          "includeAll": false,
+          "enabled": false
+        },
+        {
+          "name": "NeurIPS",
+          "group": "ai",
+          "year": "2026",
+          "url": "",
+          "parser": "pair-lines",
+          "includeAll": false,
+          "enabled": false
+        }
+      ]
     }
   ]
 }

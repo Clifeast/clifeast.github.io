@@ -230,11 +230,27 @@
   line-height: 1.72;
 }
 
+.paper-card__tag-groups {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: auto;
+}
+
+.paper-card__tag-group {
+  display: grid;
+  gap: 0.38rem;
+}
+
+.paper-card__tag-label {
+  color: #64748b;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
 .paper-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-top: auto;
 }
 
 .paper-card__tags span {
@@ -247,6 +263,56 @@
   color: var(--text-secondary);
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.paper-card__tag-group--paradigm .paper-card__tags span {
+  background: rgba(47, 133, 90, 0.08);
+  color: #276749;
+}
+
+.paper-card__tag-group--content .paper-card__tags span {
+  background: rgba(37, 99, 235, 0.07);
+  color: #1d4ed8;
+}
+
+.paper-card__scores {
+  display: grid;
+  gap: 0.55rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(82, 96, 109, 0.12);
+}
+
+.paper-card__score-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  min-height: 2rem;
+  padding: 0.36rem 0.58rem;
+  border-radius: var(--radius-sm);
+  background: rgba(15, 23, 42, 0.05);
+  color: #1f2933;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.paper-card__score-total strong {
+  color: #0f766e;
+  font-size: 1rem;
+}
+
+.paper-card__score-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 0.32rem 0.55rem;
+  color: var(--text-secondary);
+  font-size: 0.77rem;
+  line-height: 1.45;
+}
+
+.paper-card__score-list strong {
+  color: #1f2933;
+  font-weight: 800;
 }
 
 .paper-card__link {

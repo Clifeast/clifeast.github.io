@@ -1,129 +1,559 @@
 {
   "date": "2026-06-16",
+  "generatedAt": "2026-06-16T17:40:04.228435+00:00",
+  "warnings": [],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long",
+    "cache": "disabled"
+  },
+  "scoreLabels": {
+    "relevance": "相关性",
+    "novelty": "新颖性",
+    "theoreticalDepth": "理论深度",
+    "readability": "可读性",
+    "potentialImpact": "重要性/潜在影响",
+    "total": "总分"
+  },
   "sections": [
     {
-      "id": "arxiv-game-theory",
-      "title": "New arXiv Game Theory",
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
       "papers": [
         {
-          "title": "The Complexity of Min-Max Optimization for Quadratic Polynomials",
+          "title": "Human-on-the-Bridge: Scalable Evaluation for AI Agents",
           "authors": [
-            "Martino Bernasconi",
-            "Matteo Castiglioni",
-            "Andrea Celli",
-            "Alexandros Hollender"
+            "Fouad Bousetouane"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.CC",
-          "url": "https://arxiv.org/abs/2606.17000v1",
-          "abstract": "We prove that computing approximate stationary points of min-max optimization over the hypercube is PPAD-hard for quadratic polynomials. This holds even when the polynomials are multilinear, each variable appears in at most three monomials, and the approximation factor is inverse polynomial. As a direct consequence, we obtain the first PPAD-hardness results for two-team zero-sum polymatrix games.",
+          "source": "arXiv cs.MA",
+          "url": "https://arxiv.org/abs/2606.16871",
+          "abstract": "AI agents must be evaluated as behavioral systems, not as isolated response generators. They reason across turns, call tools, preserve context, follow policies, and act under uncertainty. Existing methods provide useful but fragmented signals: benchmarks measure fixed capabilities, Human-in-the-Loop review preserves expert judgment but does not scale easily, LLM-as-judge methods depend on evaluator design, red teaming is often episodic, and trace auditing requires explicit evidence rules. This paper introduces Human-on-the-Bridge (HOB), a scalable evaluation paradigm for agentic AI. HOB places human expertise upstream, where experts curate reusable evaluation intelligence before testing begins, including domain context, Red-Team Traps, Juror Personas, scoring guidelines, audit rules, and fallback policies. ProofAgent Harness then executes this curated intelligence repeatedly through multi-turn adversarial evaluations, trace capture, multi-juror scoring, and evidence-linked reporting. We evaluate HOB through symmetric and cost-efficient asymmetric settings across frontier LLM-based agents and Harness LLM tiers. The study covers 23,500 agent turns and produces evidence-linked findings across finance, healthcare, and code generation. The results show that HOB can amplify evaluation quality without requiring equally large evaluator models, allowing smaller Harness LLMs to challenge agents built on frontier LLM backbones. The evaluation surfaces failures often missed by static benchmarks and single-evaluator scoring, including phantom tool-call claims, missing mandatory tool calls, policy drift, manipulation paths, and safe but non-resolving refusals. These findings support HOB as a paradigm for scaling human-curated evaluation intelligence, where expert judgment is encoded upfront and reused across repeated agent evaluations rather than applied manually inside every run.",
+          "summaryZh": "本文提出Human-on-the-Bridge（HOB）——一种面向AI代理的可扩展评估范式。传统方法如静态基准、人工评审或LLM-as-judge难以全面捕捉代理在多轮交互中的行为缺陷，如跳过必要工具调用、虚假声称执行、策略漂移等。HOB将人类专家知识前置，预先构建可复用的评估智能，包括领域上下文、对抗陷阱、评审角色、评分规则与回退策略，并由ProofAgent Harness系统自动化执行多轮对抗测试、轨迹记录、多评审打分与证据关联报告。研究在金融、医疗与代码生成领域进行了23,500轮实验，验证了HOB能有效发现被常规方法忽略的行为级风险，且支持小规模评估模型挑战前沿代理系统，实现成本高效的异构评估。",
+          "reasonZh": "该工作为AI代理的可靠性和安全性评估提供了结构化、可复用的新范式，对构建生产级代理系统具有重要实践指导意义。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "系统框架",
+            "实验验证",
+            "理论推导"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "AI代理",
+            "评估方法",
+            "安全性",
+            "可追溯性"
+          ],
           "tags": [
-            "cs.CC",
-            "cs.GT"
-          ]
+            "大语言模型",
+            "AI代理",
+            "评估方法",
+            "安全性",
+            "可追溯性",
+            "系统框架",
+            "实验验证",
+            "理论推导"
+          ],
+          "scores": {
+            "relevance": 9.0,
+            "novelty": 8.0,
+            "theoreticalDepth": 7.0,
+            "readability": 9.0,
+            "potentialImpact": 9.0,
+            "total": 8.4
+          },
+          "ids": {
+            "arxiv": "2606.16871"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-15",
+            "updated": "2026-06-15",
+            "pdfUrl": "https://arxiv.org/pdf/2606.16871v1",
+            "isAGTOrEconCS": true
+          }
         },
         {
-          "title": "Stable Menus of Public Goods: AI-Enabled Progress",
+          "title": "Misinformation Propagation in Benign Multi-Agent Systems",
           "authors": [
-            "Sara Fish"
+            "Jonas Becker",
+            "Jan Philip Wahle",
+            "Terry Ruas",
+            "Bela Gipp"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.GT",
-          "url": "https://arxiv.org/abs/2606.16989v1",
-          "abstract": "Using an open problem from the EC 2025 paper \"Stable Menus of Public Goods\" as a testbed, we conduct experiments to understand the effectiveness of different AI-for-EconCS research workflows. Specifically, we study three questions: Does providing human intuition in the prompt help? Does automated multi-turn interaction help? And, does an LLM outperform a first-year PhD student? Regarding the first two questions, we provide evidence for the following workflow suggestions: (1) prompting with human intuition can encourage the LLM to have better \"taste\", (2) multi-turn workflows help when the pipeline encourages \"ambitious\" steps. Regarding the third question, using an unpublished manuscript written by the paper's senior authors prior to collaborating with the first-year PhD student, we compare the effectiveness of the LLM with that of the first-year PhD student, and find that the LLM is slightly less effective.",
+          "source": "arXiv cs.MA",
+          "url": "https://arxiv.org/abs/2606.16710",
+          "abstract": "Multi-agent systems, in which multiple large language model agents solve problems through turn-based interaction, are increasingly deployed in high-stakes settings such as medical diagnosis, legal analysis, and forensic decision-making. Their reliability can be at risk when single agents reason from incorrect or misleading context, e.g., from tool calls, since errors may propagate through agent interactions. This work studies this risk by injecting intent-based misinformation into benign single-agent and multi-agent systems across reasoning, knowledge, and alignment tasks. We find that misinformation can degrade single-agent performance and persists across multi-agent debate, with agents often retaining answers introduced by misinformed peers. Nevertheless, multi-agent debate reduces the resulting performance degradation compared to single-agent prompting, especially when most agents are not exposed to misinformation. Robustness depends on group composition and decision protocol. Consensus can be more stable than voting under peer pressure, while majorities can often steer misinformed agents back toward correct answers. Our results show that misinformation robustness in multi-agent systems depends on the underlying model and also on how agents exchange information and aggregate decisions.",
+          "summaryZh": "该研究探讨了在良性多智能体系统（MAS）中，意图型错误信息对大型语言模型代理协作推理的影响。作者通过向单智能体与多智能体辩论（MAD）系统注入九类意图驱动的误导信息，评估其在推理、知识和伦理对齐任务中的传播效应。研究发现，尽管错误信息会降低单智能体性能并在多智能体交互中持续存在，但多智能体辩论仍能部分缓解性能退化，尤其当多数代理未受污染时。系统的鲁棒性依赖于底层模型、群体构成及决策协议——共识机制在面对误导压力时比投票更稳定，而多数正确意见可引导误判代理回归正解。作者还发布了MINT数据集与开源代码，便于复现与扩展研究。",
+          "reasonZh": "本文揭示了多智能体系统在无恶意前提下仍可能传播错误信息的关键风险，并提供了提升系统可靠性的设计原则，对高风险领域应用具有重要指导意义。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "实验验证",
+            "系统框架",
+            "算法设计"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "多智能体系统",
+            "信息设计",
+            "隐私/安全",
+            "鲁棒性"
+          ],
           "tags": [
-            "cs.GT",
-            "cs.AI",
-            "LLM"
-          ]
+            "大语言模型",
+            "多智能体系统",
+            "信息设计",
+            "隐私/安全",
+            "鲁棒性",
+            "实验验证",
+            "系统框架",
+            "算法设计"
+          ],
+          "scores": {
+            "relevance": 10.0,
+            "novelty": 8.0,
+            "theoreticalDepth": 7.0,
+            "readability": 8.0,
+            "potentialImpact": 8.0,
+            "total": 8.2
+          },
+          "ids": {
+            "arxiv": "2606.16710"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-15",
+            "updated": "2026-06-15",
+            "pdfUrl": "https://arxiv.org/pdf/2606.16710v1",
+            "isAGTOrEconCS": true
+          }
         }
       ]
     },
     {
-      "id": "conference-agt",
-      "title": "Conference-flavored AGT",
+      "id": "recent-ai",
+      "title": "近期 AI 新论文",
+      "source": "arxiv-llm-ranked",
       "papers": [
         {
-          "title": "Online Matching with KIID Edge Arrivals",
+          "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
           "authors": [
-            "Yilong Feng",
-            "Haolong Li",
-            "Xiaowei Wu"
+            "Dantong Niu",
+            "Zhuoyang Liu",
+            "Zekai Wang",
+            "Boning Shao",
+            "Zhao-Heng Yin",
+            "Anirudh Pai",
+            "Yuvan Sharma",
+            "Stefano Saravalle",
+            "Ruijie Zheng",
+            "Jing Wang",
+            "Ryan Punamiya",
+            "Mengda Xu",
+            "Yuqi Xie",
+            "Yunfan Jiang",
+            "Letian Fu",
+            "Konstantinos Kallidromitis",
+            "Matteo Gioia",
+            "Junyi Zhang",
+            "Jiaxin Ge",
+            "Haiwen Feng",
+            "Fabio Galasso",
+            "Wei Zhan",
+            "David M. Chan",
+            "Yutong Bai",
+            "Roei Herzig",
+            "Jiahui Lei",
+            "Fei-Fei Li",
+            "Ken Goldberg",
+            "Jitendra Malik",
+            "Pieter Abbeel",
+            "Yuke Zhu",
+            "Danfei Xu",
+            "Jim",
+            "Fan",
+            "Trevor Darrell"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.DS",
-          "url": "https://arxiv.org/abs/2606.16537v1",
-          "abstract": "In the classic online stochastic matching proposed by Feldman et al. (FOCS 2009), there is a known bipartite type-graph, where one side of the graph is given offline. Upon the arrival of each online vertex, its type is sampled independently and identically from the other side of the type-graph. This model has been extensively studied over the past decade, yielding a rich body of theoretical results. In this paper, we initiate the study of an edge arrival model for online stochastic matching. In our model, the online edges are sampled independently and identically (KIID) from a known type-graph, which need not be bipartite. We first show that the Greedy algorithm cannot achieve a competitive ratio strictly better than $0.5$ while the Suggested Matching algorithm has a competitive ratio of $1-1/e$ under the assumption of integral arrival rates, matching its performance in the one-sided vertex arrival model. We then propose a two-stage algorithm that combines Greedy and Suggested Matching, and show that its competitive ratio is strictly higher than $1-1/e$ for integral arrival rates. While our algorithm is simple, its analysis is intricate and builds upon the Natural LP, which has been proven very powerful in vertex arrival models. Our result reveals that even in the more challenging edge arrival setting for general graphs, competitive ratios better than $1-1/e$ are still possible, given the known distributions.",
+          "source": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2606.17055",
+          "abstract": "The ability to react dynamically to tactile signals has long been considered crucial to agile human-level dexterity. Yet contemporary learning-based Vision-Language-Action (VLA) models for robotic manipulation generally either overlook the tactile modality or are limited to encoders with static cues, due in part to the scarcity of diverse training data and standardized evaluation, architectural constraints in current VLA models, and limitations of static tactile encoders. In this paper, we push the frontier of tactile-reactive manipulation by addressing all of these limitations. We propose a large-scale, 100-hour tactile-rich dataset collected via a novel, data-efficient recipe that prioritizes elementary motor primitives. To effectively exploit naturally high-frequency touch signals without sacrificing the existing capabilities of existing VLAs, we introduce a variable-rate Mixture-of-Transformers (MoT) architecture equipped with a novel temporal tactile VQ-VAE encoder. We demonstrate the effectiveness of tactile-reactive policies on 12 manipulation tasks requiring delicate force control and deformable object manipulation, achieving over 30% higher average success rate than the strongest baseline.",
+          "summaryZh": "本文提出T-Rex，一个结合大规模人类第一视角预训练与触觉接地机器人中段训练的触觉响应式灵巧操作框架。针对当前视觉-语言-动作（VLA）模型普遍忽视触觉模态或仅使用静态编码的问题，作者构建了包含100小时真实机器人数据的T-Rex数据集，涵盖多样化的运动原语与物体交互，并同步记录触觉信号。为高效利用高频触觉反馈，T-Rex采用变频混合Transformer专家（MoT）架构，引入时空触觉VQ-VAE编码器，在低频视觉规划基础上实现高频触觉精细调整。在12项需精细力控与可变形物体操作的任务上，T-Rex平均成功率比最强基线高出30%以上。建议读者重点关注其系统设计思想、MoT架构细节及触觉编码方式。",
+          "reasonZh": "该工作系统性地解决了触觉响应操作中的数据、架构与训练范式瓶颈，为构建具身智能体提供了高实用价值的技术路径。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "系统框架",
+            "算法设计",
+            "实验验证"
+          ],
+          "contentTags": [
+            "触觉感知",
+            "灵巧操作",
+            "多模态融合",
+            "机器人学习",
+            "基础模型"
+          ],
           "tags": [
-            "cs.DS",
-            "matching"
-          ]
+            "触觉感知",
+            "灵巧操作",
+            "多模态融合",
+            "机器人学习",
+            "基础模型",
+            "系统框架",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "relevance": 9.0,
+            "novelty": 8.0,
+            "theoreticalDepth": 6.0,
+            "readability": 8.0,
+            "potentialImpact": 8.0,
+            "total": 10.0
+          },
+          "ids": {
+            "arxiv": "2606.17055"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-15",
+            "updated": "2026-06-15",
+            "pdfUrl": "https://arxiv.org/pdf/2606.17055v1",
+            "isAGTOrEconCS": false
+          }
         },
         {
-          "title": "An empirical study of Fictitious Play for estimating Nash equilibria in first-price auctions with correlated values",
+          "title": "Human Universal Grasping",
           "authors": [
-            "Benjamin Heymann",
-            "Panayotis Mertikopoulos"
+            "Kevin Yuanbo Wu",
+            "Tianxing Zhou",
+            "Isaac Tu",
+            "Billy Yan",
+            "Irmak Guzey",
+            "David Fouhey",
+            "Dandan Shan",
+            "Lerrel Pinto"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.GT",
-          "url": "https://arxiv.org/abs/2606.16389v1",
-          "abstract": "This study concerns the computation of the Nash equilibria of first-price auctions with correlated values. Although some equilibrium computation methods exist for auctions with independent values, the correlation of bidders' values introduces significant complications that render the existing methods unsatisfactory. Our empirical contribution is a step towards filling this gap. We report surprisingly good numerical convergence of Fictitious Play toward an $\\varepsilon$-equilibrium for an extensive set of instances. By doing so, we extend the insights of [39] to the correlated setting. These preliminary results call for further investigations into the properties of fictitious play algorithms on first-price auctions. 1. since the context is clear, we will use the term Nash equilibrium, or just equilibrium in this article",
+          "source": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2606.17054",
+          "abstract": "Humans can grasp objects effortlessly, whereas multi-fingered robots are far from this level of generality. We argue that the most natural source of robot grasping data is from humans, who pick up thousands of objects every day. We present HUG, a flow-matching model that generates diverse human grasps for any user-specified object in a single RGB-D image captured from a stereo camera. Using smart glasses, we first collect 1M-HUGs, an egocentric dataset of human grasps spanning 1M frames (27.8 hrs) and 6,707 object instances across 41 buildings. Next, to model the distribution of natural human grasps, our novel flow-matching model fuses RGB and depth observations to output a grasp parameterized by wrist translation, wrist rotation, and MANO hand pose. Predicted grasps can be retargeted to various robot hands, enabling zero-shot grasping in everyday scenes. To standardize evaluation, we build a new simulated benchmark, HUG-Bench, of 90 unseen objects from five geometric categories and various sizes, with metric-scale 3D meshes. We evaluate HUG in the real world on the 30-object test set of HUG-Bench across multiple stereo cameras, robot embodiments, and household environments. HUG outperforms the state-of-the-art grasping baselines by +23% and +34% on our challenging object set. Code, data, benchmark, checkpoints, and an interactive demo are released on our website: https://grasping.io/",
+          "summaryZh": "本文提出HUG（Human Universal Grasping），一种完全基于人类抓取数据的机器人灵巧抓取新范式。针对当前多指机器人泛化能力不足的问题，作者利用智能眼镜采集了百万级第一人称视角的人类抓取数据集1M-HUGs，并提出一个融合RGB与深度信息的流匹配模型，直接从单张RGB-D图像预测参数化的MANO手部姿态。该方法无需机器人自身数据训练，即可实现跨不同机器人手部形态的零样本迁移。为标准化评估，团队构建了包含90个未见物体的HUG-Bench基准，涵盖多种几何形状与尺寸。在真实场景中，HUG在30个测试物体上分别超越现有最优方法23%和34%，展现了卓越的泛化能力。建议结合其开源代码、数据与交互演示进行实践性阅读。",
+          "reasonZh": "该工作开创性地将大规模人类自然抓取行为转化为机器人灵巧操作能力，兼具系统完整性与实际性能突破，是具身智能领域的重要进展。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "系统框架",
+            "算法设计",
+            "实验验证"
+          ],
+          "contentTags": [
+            "机器人抓取",
+            "人类行为学习",
+            "多模态感知",
+            "零样本迁移",
+            "基准测试"
+          ],
           "tags": [
-            "cs.GT",
-            "auction",
-            "equilibrium"
-          ]
+            "机器人抓取",
+            "人类行为学习",
+            "多模态感知",
+            "零样本迁移",
+            "基准测试",
+            "系统框架",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "relevance": 9.0,
+            "novelty": 8.0,
+            "theoreticalDepth": 5.0,
+            "readability": 9.0,
+            "potentialImpact": 8.0,
+            "total": 10.0
+          },
+          "ids": {
+            "arxiv": "2606.17054"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-15",
+            "updated": "2026-06-15",
+            "pdfUrl": "https://arxiv.org/pdf/2606.17054v1",
+            "isAGTOrEconCS": false
+          }
+        },
+        {
+          "title": "Geometric Action Model for Robot Policy Learning",
+          "authors": [
+            "Jisang Han",
+            "Seonghu Jeon",
+            "Jaewoo Jung",
+            "René Zurbrügg",
+            "Honggyu An",
+            "Tifanny Portela",
+            "Marco Hutter",
+            "Marc Pollefeys",
+            "Seungryong Kim",
+            "Sunghwan Hong"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2606.17046",
+          "abstract": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and video world-action models (WAMs) inherit strong semantic or temporal priors from large-scale foundation models, but they still operate primarily on 2D image frames or 2D-derived latent spaces, leaving implicit the 3D geometry required for contact-rich manipulation. We propose the Geometric Action Model (GAM), a language-conditioned manipulation policy that directly repurposes a pretrained geometric foundation model (GFM) as a shared substrate for perception, temporal prediction, and action decoding. GAM splits the GFM at an intermediate layer: the shallow layers serve as an observation encoder, and a causal future predictor inserted at the split layer forecasts future latent tokens conditioned on language, proprioception, and action history. The predicted future tokens are then routed through the remaining GFM blocks for feature propagation and decoding, allowing a single backbone to produce both future geometry and actions. This design equips the GFM with language-conditioned temporal world modeling through minimal architectural modification while preserving its rich geometric priors. Across a broad suite of simulation and real-robot manipulation benchmarks, GAM is more accurate, more robust, faster, and lighter than current foundation-model-scale baselines.",
+          "summaryZh": "本文提出了一种名为几何动作模型（GAM）的新方法，旨在解决通用机器人策略在三维物理世界中对物体、相机与动作交互理解不足的问题。现有视觉-语言-动作模型（VLAs）和视频世界-动作模型（WAMs）多依赖2D图像或隐含的3D线索，难以应对接触密集的操作任务。GAM通过直接复用预训练的几何基础模型（GFM）作为共享主干，将其拆分为浅层观测编码器与深层解码器，并在中间插入因果未来预测器，联合预测未来的几何结构与动作序列。该设计以最小架构改动实现了感知、时序建模与动作解码的统一，在仿真与真实机器人任务中展现出更高的精度、鲁棒性、速度和轻量化优势。建议重点阅读其系统架构图与消融实验，以深入理解几何先验如何提升策略泛化能力。",
+          "reasonZh": "该工作创新性地将几何基础模型的显式3D先验融入机器人策略学习，突破了传统2D表征的局限，为构建真正具备空间推理能力的通用机器人提供了高效且可扩展的新范式。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "系统框架",
+            "算法设计",
+            "实验验证"
+          ],
+          "contentTags": [
+            "机器人策略学习",
+            "三维几何感知",
+            "视觉语言动作模型",
+            "基础模型迁移",
+            "时序预测"
+          ],
+          "tags": [
+            "机器人策略学习",
+            "三维几何感知",
+            "视觉语言动作模型",
+            "基础模型迁移",
+            "时序预测",
+            "系统框架",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "relevance": 10.0,
+            "novelty": 9.0,
+            "theoreticalDepth": 9.0,
+            "readability": 8.0,
+            "potentialImpact": 9.0,
+            "total": 10.0
+          },
+          "ids": {
+            "arxiv": "2606.17046"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.CV",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-15",
+            "updated": "2026-06-15",
+            "pdfUrl": "https://arxiv.org/pdf/2606.17046v1",
+            "isAGTOrEconCS": false
+          }
+        },
+        {
+          "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
+          "authors": [
+            "Tongyan Fang",
+            "Siyuan Huang",
+            "Naiyu Fang",
+            "Ganlong Zhao",
+            "Zhongjin Luo",
+            "Jianbo Liu",
+            "Xiaogang Wang",
+            "Ying Dong",
+            "Hongsheng Li"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2606.17043",
+          "abstract": "When pretrained VLA policies are fine-tuned through online RL, each rollout episode produces only a single binary outcome (success or failure), yet the actor update requires per-transition supervision. Existing approaches commonly reduce this sparse outcome to a single scalar reward or advantage signal, which conflates distinct forms of transition-level feedback and provides limited guidance once basic task success becomes achievable. First, a single scalar signal conflates the two objectives of viability and efficiency; once basic success is achieved, the binary label provides no gradient to distinguish efficient completions from slow ones. Second, real-world rollouts mix autonomous and intervention segments; naively assigning episode outcomes across these boundaries introduces incorrect credit assignment. To address these issues, we propose Hierarchical Advantage-Weighted Behavior Cloning (HABC), which trains separate critic heads for these two objectives on different data subsets and combines their outputs with a state-adaptive balance. A state-adaptive gate $g_t$ merges their one-step advantages, prioritizing viability when success is uncertain and shifting to efficiency only when viability is high, and converts the result into per-transition weights on the actor loss. Intervention-aware credit assignment further restricts outcome labels to segments executed by the current policy, preventing supervision from leaking across intervention boundaries. In real-robot experiments on three contact-rich bimanual tasks, HABC raises success from supervised fine-tuning (SFT) baselines of 36%, 44%, and 12% to 92%, 88%, and 38%.",
+          "summaryZh": "本文针对预训练的视觉-语言-动作（VLA）策略在在线强化学习微调中面临的挑战：每个执行仅产生成功或失败的稀疏结果，但策略更新需要每步反馈。现有方法将结果压缩为单一标量信号，混淆了状态可行性与执行效率，并在人机干预混合片段中导致信用分配错误。为此，作者提出分层优势加权行为克隆（HABC），通过双头批评网络分别建模可行性和效率，利用状态自适应门控融合二者优势，并生成每步损失权重。同时引入干预感知信用分配，仅将结果标签赋予策略自主执行段，避免监督泄露。在三个真实双臂操作任务上，HABC将成功率从SFT基线的36%/44%/12%提升至92%/88%/38%，效果显著。建议关注其方法设计与真实机器人实验部分。",
+          "reasonZh": "该工作有效解决了稀疏奖励下VLA模型在线微调的核心难题，结合真实机器人实验验证，对具身智能研究具有较强参考价值。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "算法设计",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "Vision-Language-Action模型",
+            "在线强化学习",
+            "机器人操作",
+            "稀疏奖励",
+            "行为克隆"
+          ],
+          "tags": [
+            "Vision-Language-Action模型",
+            "在线强化学习",
+            "机器人操作",
+            "稀疏奖励",
+            "行为克隆",
+            "算法设计",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "relevance": 9.0,
+            "novelty": 9.0,
+            "theoreticalDepth": 7.0,
+            "readability": 8.0,
+            "potentialImpact": 8.0,
+            "total": 10.0
+          },
+          "ids": {
+            "arxiv": "2606.17043"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-15",
+            "updated": "2026-06-15",
+            "pdfUrl": "https://arxiv.org/pdf/2606.17043v1",
+            "isAGTOrEconCS": false
+          }
         }
       ]
     },
     {
       "id": "classic-ai",
-      "title": "Classic AI Paper",
+      "title": "经典 AI 阅读",
+      "source": "classic-ai",
       "papers": [
         {
-          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "title": "R: A Language and Environment for Statistical Computing",
           "authors": [
-            "Jason Wei",
-            "Xuezhi Wang",
-            "Dale Schuurmans",
-            "Maarten Bosma",
-            "Fei Xia",
-            "Ed Chi",
-            "Quoc V. Le",
-            "Denny Zhou"
+            "R Core Team"
           ],
-          "date": "2022-01-28",
-          "source": "Classic AI",
-          "url": "https://arxiv.org/abs/2201.11903",
-          "abstract": "This paper popularized chain-of-thought prompting as a simple way to elicit multi-step reasoning behavior from sufficiently large language models.",
+          "date": "2000-02-29",
+          "source": "OpenAlex",
+          "url": "https://doi.org/10.32614/r.manuals",
+          "abstract": "Most R novices will start with Appendix A [A sample session], page 80.This should give some familiarity with the style of R sessions and more importantly some instant feedback on what actually happens.Many users will come to R mainly for its graphical facilities.",
+          "summaryZh": "本文是R语言的官方入门手册，系统介绍了R这一用于统计计算与数据分析的集成环境。全书从基础语法、数据结构讲起，涵盖向量化运算、函数式编程、统计建模及高级图形系统，强调通过对象化方式组织分析流程。其核心贡献在于提供了一套完整的、可重复的数据分析工作流范式，并通过丰富的示例引导读者逐步掌握交互式探索与批处理操作。建议结合附录A的实例会话进行动手实践，优先学习数据处理与绘图章节。",
+          "reasonZh": "作为影响深远的开源统计语言奠基性文档，它不仅定义了现代数据科学的工作模式，也体现了软件即理论载体的科学哲学。",
+          "recommendation": "strong_read",
+          "researchParadigmTags": [
+            "综述/教程",
+            "系统框架",
+            "算法设计"
+          ],
+          "contentTags": [
+            "统计计算",
+            "数据分析",
+            "编程语言",
+            "图形可视化",
+            "开源软件"
+          ],
           "tags": [
-            "LLM",
-            "reasoning",
-            "prompting"
-          ]
+            "统计计算",
+            "数据分析",
+            "编程语言",
+            "图形可视化",
+            "开源软件",
+            "综述/教程",
+            "系统框架",
+            "算法设计"
+          ],
+          "scores": {
+            "relevance": 9.0,
+            "novelty": 6.5,
+            "theoreticalDepth": 8.0,
+            "readability": 7.5,
+            "potentialImpact": 9.5,
+            "total": 8.4
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W2582743722",
+            "doi": "10.32614/r.manuals"
+          },
+          "metadata": {
+            "provider": "openalex",
+            "citedByCount": 352998,
+            "publicationYear": 2000,
+            "pdfUrl": "https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf"
+          }
         }
       ]
     },
     {
-      "id": "ai-paper",
-      "title": "Recent AI Paper",
+      "id": "conference-agt",
+      "title": "会议 AGT 论文",
+      "source": "conference-list",
       "papers": [
         {
-          "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
+          "title": "Congested Waiting Lists and Organ Allocation",
           "authors": [
-            "Nick Jiang",
-            "Isaac Kauvar",
-            "Jack Lindsey"
+            "Itai Ashlagi",
+            "Ravi Jagadeesan",
+            "Pengyu Qian"
           ],
-          "date": "2026-06-15",
-          "source": "arXiv cs.CL",
-          "url": "https://arxiv.org/abs/2606.17056v1",
-          "abstract": "We investigate whether language models internally track the value of their current trajectory, defined as the likelihood that their ongoing strategy will achieve their goals. Using synthetic, in-context reinforcement learning data, we construct a \"value\" axis for Qwen3-8B. We find that activations along this axis distinguish between high vs. low verbalized confidence, rollouts without and with backtracking, and correct vs. corrupted code. Steering towards high value causally suppresses self-correction and reduces explanatory verbosity, while steering towards low value induces backtracking and exploration. We demonstrate that direct preference optimization (DPO) can increase the internal value of rewarded behaviors (e.g. use a certain word), causing the model to act more confidently after exhibiting them. Finally, we apply the value axis to study in-the-wild settings. For example, we find that Qwen assigns low value to politically sensitive chat queries after post-training and that supervised fine-tuning increases internal confidence within the training domain. Our results suggest that language models linearly encode an estimate of expected goal success that modulates their confidence in pursuing a direction.",
+          "date": "2026",
+          "source": "EC 2026 accepted papers",
+          "url": "https://ec26.sigecom.org/program/accepted-papers/",
+          "abstract": "",
+          "summaryZh": "会议列表暂无摘要，根据题目《Congested Waiting Lists and Organ Allocation》和来源EC 2026初步判断，该论文可能研究在器官分配中等待队列拥堵情况下的资源配置问题，属于算法博弈论与市场设计的交叉领域。",
+          "reasonZh": "题目涉及公共资源分配中的关键现实挑战，且发表于顶级会议EC，具有较高的理论与实践潜在价值。",
+          "recommendation": "read",
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计"
+          ],
+          "contentTags": [
+            "市场/匹配",
+            "器官分配",
+            "排队系统",
+            "资源分配",
+            "博弈论"
+          ],
           "tags": [
-            "cs.CL",
-            "reinforcement learning"
-          ]
+            "市场/匹配",
+            "器官分配",
+            "排队系统",
+            "资源分配",
+            "博弈论",
+            "理论推导",
+            "机制设计"
+          ],
+          "scores": {
+            "relevance": 8.0,
+            "novelty": 6.0,
+            "theoreticalDepth": 7.0,
+            "readability": 5.0,
+            "potentialImpact": 8.0,
+            "total": 10.0
+          },
+          "ids": {},
+          "metadata": {
+            "provider": "conference-list",
+            "venue": "EC",
+            "year": "2026",
+            "listingUrl": "https://ec26.sigecom.org/program/accepted-papers/",
+            "isAGTOrEconCS": true
+          }
         }
       ]
     }
