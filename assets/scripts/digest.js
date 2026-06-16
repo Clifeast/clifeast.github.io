@@ -1,5 +1,6 @@
 (function () {
-  const DATA_URL = './data/today.json';
+  const scriptElement = document.currentScript;
+  const digestDataPath = scriptElement?.dataset.digestPath || '/data/digest/today.json';
   const PREVIEW_LIMIT = 280;
 
   const dateElement = document.getElementById('digest-date');
@@ -157,7 +158,7 @@
 
   async function init() {
     try {
-      const response = await fetch(DATA_URL, { cache: 'no-store' });
+      const response = await fetch(digestDataPath, { cache: 'no-store' });
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }

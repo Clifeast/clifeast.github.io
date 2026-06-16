@@ -7,6 +7,7 @@
 - 首页展示个人介绍、最新文章与联系方式。
 - 文章列表页位于 `/articles/`，基于 `data/articles.json` 动态渲染。
 - 文章正文由 `content/articles/` 中的源文件生成，避免手动重复维护标题、日期和摘要。
+- 论文日报位于 `/digest/`，基于 `data/digest/today.json` 动态渲染。
 - 公共头部、页脚与文章卡片渲染逻辑集中在 `assets/scripts/` 中。
 - 采用响应式设计，在桌面端与移动端均能获得良好浏览体验。
 
@@ -20,16 +21,18 @@
 ├── content/
 │   └── articles/               # 文章源文件，包含 frontmatter 与正文 HTML 片段
 ├── data/
-│   └── articles.json           # 生成后的文章元数据
+│   ├── articles.json           # 生成后的文章元数据
+│   └── digest/                 # 生成后的论文日报 JSON
+├── digest/
+│   └── index.html              # 论文日报页面入口
 ├── assets/
 │   ├── images/                 # 站点图像资源
-│   ├── scripts/                # 公共布局与文章列表渲染脚本
+│   ├── scripts/                # 公共布局、文章列表与论文日报渲染脚本
 │   ├── source/                 # 设计源文件
-│   └── styles/                 # 全局、首页、列表页与正文页样式
+│   └── styles/                 # 全局、首页、列表页、正文页与日报样式
 ├── tools/
-│   └── build-articles.js       # 文章生成脚本
-└── subpages/
-    └── articlelist.html        # 旧文章列表地址的兼容跳转页
+│   ├── build-articles.js       # 文章生成脚本
+│   └── build-digest.py         # 论文日报生成脚本
 ```
 
 ## 本地预览
@@ -73,6 +76,22 @@ node tools/build-articles.js
 ```
 
 脚本会更新 `articles/*.html` 和 `data/articles.json`。提交这些生成结果后，GitHub Pages 即可直接发布。
+
+## 更新论文日报
+
+日报的栏目配置位于 `content/digest/sections.json`，经典 AI 论文池位于 `content/digest/classic-ai.json`。生成当天日报：
+
+```bash
+npm run build:digest
+```
+
+也可以指定日期生成归档：
+
+```bash
+npm run build:digest -- --date 2026-06-16
+```
+
+脚本会更新 `data/digest/today.json` 和对应日期的 `data/digest/YYYY-MM-DD.json`。
 
 ## 校验
 

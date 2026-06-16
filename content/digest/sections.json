@@ -1,0 +1,77 @@
+{
+  "tagKeywords": [
+    "mechanism design",
+    "auction",
+    "equilibrium",
+    "market",
+    "matching",
+    "LLM",
+    "large language model",
+    "agent",
+    "reasoning",
+    "reinforcement learning",
+    "alignment"
+  ],
+  "sections": [
+    {
+      "id": "arxiv-game-theory",
+      "title": "New arXiv Game Theory",
+      "source": "arxiv",
+      "query": "cat:cs.GT",
+      "maxResults": 20,
+      "limit": 2
+    },
+    {
+      "id": "conference-agt",
+      "title": "Conference-flavored AGT",
+      "source": "arxiv",
+      "query": "(cat:cs.GT OR cat:cs.DS)",
+      "maxResults": 50,
+      "limit": 2,
+      "filters": {
+        "keywords": [
+          "STOC",
+          "FOCS",
+          "EC",
+          "WINE",
+          "SODA",
+          "ICALP",
+          "auction",
+          "mechanism",
+          "equilibrium",
+          "market"
+        ],
+        "phrases": [
+          "online matching",
+          "stable matching",
+          "matching market",
+          "matching markets",
+          "bipartite matching"
+        ]
+      }
+    },
+    {
+      "id": "classic-ai",
+      "title": "Classic AI Paper",
+      "source": "classic-ai"
+    },
+    {
+      "id": "ai-paper",
+      "title": "Recent AI Paper",
+      "source": "arxiv",
+      "query": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL)",
+      "maxResults": 50,
+      "limit": 1,
+      "filters": {
+        "keywords": [
+          "LLM",
+          "large language model",
+          "agent",
+          "reasoning",
+          "reinforcement learning",
+          "alignment"
+        ]
+      }
+    }
+  ]
+}

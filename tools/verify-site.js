@@ -95,6 +95,10 @@ async function main() {
   articleList.articleCards = await page.locator(".article-feed .article-card").count();
   articleList.navCTA = await page.locator(".nav-cta").innerText();
 
+  const digest = await visit(page, "digest", "/digest/", "digest.png");
+  digest.sectionCount = await page.locator(".digest-section").count();
+  digest.paperCards = await page.locator(".paper-card").count();
+
   const dongbei = await visit(page, "dongbei", "/articles/dongbei.html", "dongbei.png");
   dongbei.imageCount = await page.locator(".article-body img").count();
   dongbei.sectionCount = await page.locator(".article-body h2").count();
@@ -107,7 +111,7 @@ async function main() {
   const result = {
     baseURL: BASE_URL,
     screenshots: SCREENSHOT_DIR,
-    pages: [home, articleList, dongbei, qingcai],
+    pages: [home, articleList, digest, dongbei, qingcai],
     failedResponses,
     consoleIssues,
   };

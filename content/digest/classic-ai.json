@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Attention Is All You Need",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Lukasz Kaiser",
+      "Illia Polosukhin"
+    ],
+    "date": "2017-06-12",
+    "source": "Classic AI",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "abstract": "The Transformer paper introduced a sequence transduction architecture based entirely on attention mechanisms, becoming a foundation for modern large language models.",
+    "tags": [
+      "transformer",
+      "LLM",
+      "attention"
+    ]
+  },
+  {
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "authors": [
+      "Jacob Devlin",
+      "Ming-Wei Chang",
+      "Kenton Lee",
+      "Kristina Toutanova"
+    ],
+    "date": "2018-10-11",
+    "source": "Classic AI",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "abstract": "BERT showed how bidirectional Transformer pre-training can produce strong language representations for a wide range of NLP tasks.",
+    "tags": [
+      "transformer",
+      "pretraining",
+      "NLP"
+    ]
+  },
+  {
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": [
+      "Kaiming He",
+      "Xiangyu Zhang",
+      "Shaoqing Ren",
+      "Jian Sun"
+    ],
+    "date": "2015-12-10",
+    "source": "Classic AI",
+    "url": "https://arxiv.org/abs/1512.03385",
+    "abstract": "ResNet introduced residual connections that made it practical to train very deep neural networks, reshaping modern computer vision.",
+    "tags": [
+      "deep learning",
+      "computer vision",
+      "resnet"
+    ]
+  },
+  {
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "authors": [
+      "Jason Wei",
+      "Xuezhi Wang",
+      "Dale Schuurmans",
+      "Maarten Bosma",
+      "Fei Xia",
+      "Ed Chi",
+      "Quoc V. Le",
+      "Denny Zhou"
+    ],
+    "date": "2022-01-28",
+    "source": "Classic AI",
+    "url": "https://arxiv.org/abs/2201.11903",
+    "abstract": "This paper popularized chain-of-thought prompting as a simple way to elicit multi-step reasoning behavior from sufficiently large language models.",
+    "tags": [
+      "LLM",
+      "reasoning",
+      "prompting"
+    ]
+  }
+]
