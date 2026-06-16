@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-16",
+  "sections": [
+    {
+      "id": "arxiv-game-theory",
+      "title": "New arXiv Game Theory",
+      "papers": [
+        {
+          "title": "The Complexity of Min-Max Optimization for Quadratic Polynomials",
+          "authors": [
+            "Martino Bernasconi",
+            "Matteo Castiglioni",
+            "Andrea Celli",
+            "Alexandros Hollender"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.CC",
+          "url": "https://arxiv.org/abs/2606.17000v1",
+          "abstract": "We prove that computing approximate stationary points of min-max optimization over the hypercube is PPAD-hard for quadratic polynomials. This holds even when the polynomials are multilinear, each variable appears in at most three monomials, and the approximation factor is inverse polynomial. As a direct consequence, we obtain the first PPAD-hardness results for two-team zero-sum polymatrix games.",
+          "tags": [
+            "cs.CC",
+            "cs.GT"
+          ]
+        },
+        {
+          "title": "Stable Menus of Public Goods: AI-Enabled Progress",
+          "authors": [
+            "Sara Fish"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.GT",
+          "url": "https://arxiv.org/abs/2606.16989v1",
+          "abstract": "Using an open problem from the EC 2025 paper \"Stable Menus of Public Goods\" as a testbed, we conduct experiments to understand the effectiveness of different AI-for-EconCS research workflows. Specifically, we study three questions: Does providing human intuition in the prompt help? Does automated multi-turn interaction help? And, does an LLM outperform a first-year PhD student? Regarding the first two questions, we provide evidence for the following workflow suggestions: (1) prompting with human intuition can encourage the LLM to have better \"taste\", (2) multi-turn workflows help when the pipeline encourages \"ambitious\" steps. Regarding the third question, using an unpublished manuscript written by the paper's senior authors prior to collaborating with the first-year PhD student, we compare the effectiveness of the LLM with that of the first-year PhD student, and find that the LLM is slightly less effective.",
+          "tags": [
+            "cs.GT",
+            "cs.AI",
+            "LLM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conference-agt",
+      "title": "Conference-flavored AGT",
+      "papers": [
+        {
+          "title": "Online Matching with KIID Edge Arrivals",
+          "authors": [
+            "Yilong Feng",
+            "Haolong Li",
+            "Xiaowei Wu"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.DS",
+          "url": "https://arxiv.org/abs/2606.16537v1",
+          "abstract": "In the classic online stochastic matching proposed by Feldman et al. (FOCS 2009), there is a known bipartite type-graph, where one side of the graph is given offline. Upon the arrival of each online vertex, its type is sampled independently and identically from the other side of the type-graph. This model has been extensively studied over the past decade, yielding a rich body of theoretical results. In this paper, we initiate the study of an edge arrival model for online stochastic matching. In our model, the online edges are sampled independently and identically (KIID) from a known type-graph, which need not be bipartite. We first show that the Greedy algorithm cannot achieve a competitive ratio strictly better than $0.5$ while the Suggested Matching algorithm has a competitive ratio of $1-1/e$ under the assumption of integral arrival rates, matching its performance in the one-sided vertex arrival model. We then propose a two-stage algorithm that combines Greedy and Suggested Matching, and show that its competitive ratio is strictly higher than $1-1/e$ for integral arrival rates. While our algorithm is simple, its analysis is intricate and builds upon the Natural LP, which has been proven very powerful in vertex arrival models. Our result reveals that even in the more challenging edge arrival setting for general graphs, competitive ratios better than $1-1/e$ are still possible, given the known distributions.",
+          "tags": [
+            "cs.DS",
+            "matching"
+          ]
+        },
+        {
+          "title": "An empirical study of Fictitious Play for estimating Nash equilibria in first-price auctions with correlated values",
+          "authors": [
+            "Benjamin Heymann",
+            "Panayotis Mertikopoulos"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.GT",
+          "url": "https://arxiv.org/abs/2606.16389v1",
+          "abstract": "This study concerns the computation of the Nash equilibria of first-price auctions with correlated values. Although some equilibrium computation methods exist for auctions with independent values, the correlation of bidders' values introduces significant complications that render the existing methods unsatisfactory. Our empirical contribution is a step towards filling this gap. We report surprisingly good numerical convergence of Fictitious Play toward an $\\varepsilon$-equilibrium for an extensive set of instances. By doing so, we extend the insights of [39] to the correlated setting. These preliminary results call for further investigations into the properties of fictitious play algorithms on first-price auctions. 1. since the context is clear, we will use the term Nash equilibrium, or just equilibrium in this article",
+          "tags": [
+            "cs.GT",
+            "auction",
+            "equilibrium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classic-ai",
+      "title": "Classic AI Paper",
+      "papers": [
+        {
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "authors": [
+            "Jason Wei",
+            "Xuezhi Wang",
+            "Dale Schuurmans",
+            "Maarten Bosma",
+            "Fei Xia",
+            "Ed Chi",
+            "Quoc V. Le",
+            "Denny Zhou"
+          ],
+          "date": "2022-01-28",
+          "source": "Classic AI",
+          "url": "https://arxiv.org/abs/2201.11903",
+          "abstract": "This paper popularized chain-of-thought prompting as a simple way to elicit multi-step reasoning behavior from sufficiently large language models.",
+          "tags": [
+            "LLM",
+            "reasoning",
+            "prompting"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-paper",
+      "title": "Recent AI Paper",
+      "papers": [
+        {
+          "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
+          "authors": [
+            "Nick Jiang",
+            "Isaac Kauvar",
+            "Jack Lindsey"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv cs.CL",
+          "url": "https://arxiv.org/abs/2606.17056v1",
+          "abstract": "We investigate whether language models internally track the value of their current trajectory, defined as the likelihood that their ongoing strategy will achieve their goals. Using synthetic, in-context reinforcement learning data, we construct a \"value\" axis for Qwen3-8B. We find that activations along this axis distinguish between high vs. low verbalized confidence, rollouts without and with backtracking, and correct vs. corrupted code. Steering towards high value causally suppresses self-correction and reduces explanatory verbosity, while steering towards low value induces backtracking and exploration. We demonstrate that direct preference optimization (DPO) can increase the internal value of rewarded behaviors (e.g. use a certain word), causing the model to act more confidently after exhibiting them. Finally, we apply the value axis to study in-the-wild settings. For example, we find that Qwen assigns low value to politically sensitive chat queries after post-training and that supervised fine-tuning increases internal confidence within the training domain. Our results suggest that language models linearly encode an estimate of expected goal success that modulates their confidence in pursuing a direction.",
+          "tags": [
+            "cs.CL",
+            "reinforcement learning"
+          ]
+        }
+      ]
+    }
+  ]
+}

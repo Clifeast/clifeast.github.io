@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>论文日报 · 赏鹤阳</title>
+  <meta name="description" content="赏鹤阳的算法博弈论与 AI 论文日报。" />
+  <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
+  <link rel="stylesheet" href="/assets/styles/general.css" />
+  <link rel="stylesheet" href="/assets/styles/index.css" />
+  <link rel="stylesheet" href="/digest/styles.css" />
+  <script defer src="/assets/scripts/layout.js"></script>
+  <script defer src="/digest/app.js"></script>
+</head>
+
+<body>
+  <div class="page digest-page">
+    <header class="site-header" data-component="site-header"></header>
+
+    <main class="digest-content">
+      <section class="digest-hero" aria-labelledby="digest-title">
+        <div class="digest-hero__copy">
+          <a class="digest-back-link" href="/">返回主页</a>
+          <h1 id="digest-title">论文日报</h1>
+          <p class="digest-date" id="digest-date">今天日期</p>
+        </div>
+        <div class="digest-hero__panel" aria-label="今日日报概览">
+          <span class="digest-hero__eyebrow">Daily Research Brief</span>
+          <div class="digest-metrics" id="digest-metrics">
+            <span>读取中</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="digest-status" id="digest-status" role="status">正在读取今日论文数据...</div>
+      <section class="digest-sections" id="digest-sections" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer" data-component="site-footer"></footer>
+  </div>
+</body>
+
+</html>
