@@ -10,6 +10,7 @@ const headerTemplate = `
       <a href="/#about">关于</a>
       <a href="/#latest">最新</a>
       <a href="/#contact">联系</a>
+      <a class="nav-digest" href="/digest/" aria-label="进入 arXiv + AGT Daily Digest">论文日报</a>
       <a class="btn btn-primary nav-cta" href="/articles/">我的文章</a>
     </nav>
   </div>
