@@ -1,30 +1,20 @@
 {
-  "version": 1,
-  "classicAI": {
-    "seenIds": [
-      "openalex:https://openalex.org/W2582743722",
-      "doi:10.32614/r.manuals",
-      "url:https://doi.org/10.32614/r.manuals",
-      "title:r a language and environment for statistical computing"
-    ]
-  },
-  "conferenceAGT": {
-    "venues": {
-      "EC": {
-        "cursor": 1,
-        "updatedAt": "2026-06-16T17:40:04.227641+00:00"
-      }
-    }
-  },
+  "version": 2,
   "runs": {
+    "2026-06-17": {
+      "status": "completed",
+      "completedAt": "2026-06-17T12:09:30.581367+00:00",
+      "sectionCounts": {
+        "recent-agt": 5,
+        "recent-ai": 3
+      }
+    },
     "2026-06-16": {
       "status": "completed",
-      "completedAt": "2026-06-16T17:40:04.236194+00:00",
+      "completedAt": "2026-06-17T12:41:17.745219+00:00",
       "sectionCounts": {
-        "recent-agt": 2,
-        "recent-ai": 4,
-        "classic-ai": 1,
-        "conference-agt": 1
+        "recent-agt": 5,
+        "recent-ai": 5
       }
     }
   }

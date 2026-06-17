@@ -79,13 +79,13 @@ node tools/build-articles.js
 
 ## 更新论文日报
 
-日报的栏目配置位于 `content/digest/sections.json`。生成脚本按一个很薄的状态化 pipeline 运行：
+日报的栏目配置位于 `content/digest/sections.json`。生成脚本只生成两个 recent arXiv 栏目：
 
-- `recent-agt` / `recent-ai`：只抓 digest 日期前一天的 arXiv 新论文；每天确定性随机选一个 arXiv 类别，候选太多时确定性抽样，再批量交给 LLM 粗排，最终入选论文才临时下载 PDF 做中文精读介绍。
-- `classic-ai`：优先从 OpenAlex 高影响论文里选第一个未推送条目，失败时使用 curated list；推送过的 identity 记录在 `data/digest/state.json`。
-- `conference-agt`：每天按权重确定性随机选一个 venue，用 `state.json` 中的 cursor 顺次推进；EC/WINE 直接轮换，TCS/AI 会议先由 LLM 判断是否 AGT/EconCS，再按阈值采纳。
+- `recent-agt`：只抓 digest 日期前一天的 `cs.GT` 和 `econ.TH`，按分类分别全量拉取、去重后全部送入初筛评分。
+- `recent-ai`：每天确定性随机选一个 AI 子领域，能抓完则全抓，否则最多抓 50 条；页面 section 标题会显示当天子领域。
+- 所有候选先只用题目、摘要和元数据做栏目专属 30 分初筛，程序计算总分并选出 `total >= 16` 的前 5 篇。第二阶段会临时下载入选论文 PDF，上传给千问读取完整文章，只传论文标题作为额外上下文，然后生成五段式中文简介和标签。
 
-脚本会写入 `data/digest/YYYY-MM-DD.json` 和 `data/digest/today.json`，并额外写入 `data/digest/debug/run-YYYY-MM-DD.json` 便于排查。业务状态只保留在 `data/digest/state.json`；没有长期 HTTP cache、PDF cache 或 LLM cache。生成当天日报：
+脚本会写入 `data/digest/YYYY-MM-DD.json` 和 `data/digest/today.json`，并额外写入 `data/digest/debug/run-YYYY-MM-DD.json` 便于排查。debug 文件会记录抓到哪些论文、初筛 LLM 的详细输出和最终选中哪些论文。业务状态只保留 completed run 日期。生成当天日报：
 
 ```bash
 npm run build:digest
@@ -99,14 +99,14 @@ npm run build:digest -- --date 2026-06-16
 
 脚本会更新 `data/digest/today.json` 和对应日期的 `data/digest/YYYY-MM-DD.json`。
 
-如果某日期已经在 `state.json` 标记为 completed，默认会复用已有 JSON，不会再次推进 state；需要重跑并推进 cursor/seenIds 时加 `--force`。如需离线 smoke test，可加 `--no-network --dry-run`。
+如果某日期已经在 `state.json` 标记为 completed，默认会复用已有 JSON；需要重跑时加 `--force`。如需离线 smoke test，可加 `--no-network --dry-run`。
 
-真实 LLM 评分默认使用阿里云百炼 Qwen OpenAI-compatible Chat API。没有 API key 时会自动使用 Mock fallback。粗排默认 `qwen-plus`，只发送标题和摘要；精读默认 `qwen-long`，仅对最终入选 arXiv 论文下载 PDF、上传到 Qwen file interface 后读取：
+真实 LLM 评分默认使用阿里云百炼 Qwen OpenAI-compatible Chat API。没有 API key 时会自动使用 Mock fallback。粗排默认 `qwen-plus`，只发送标题、摘要和元数据；第二阶段默认 `qwen-long`，读取临时 PDF 后生成 `summarySections`、`researchParadigmTags` 和 `contentTags`：
 
 ```bash
 export DASHSCOPE_API_KEY="..."
 export QWEN_SCORE_MODEL="qwen-plus"        # 可改为 qwen-flash
-export QWEN_ENRICH_MODEL="qwen-long"       # 可按需改为 qwen-doc-turbo
+export QWEN_ENRICH_MODEL="qwen-long"
 export QWEN_API_BASE="https://dashscope.aliyuncs.com/compatible-mode/v1"
 ```
 

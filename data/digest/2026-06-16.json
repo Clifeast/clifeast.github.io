@@ -1,20 +1,29 @@
 {
   "date": "2026-06-16",
-  "generatedAt": "2026-06-16T17:40:04.228435+00:00",
+  "pipelineVersion": "recent-arxiv-v3-score30",
+  "generatedAt": "2026-06-17T12:41:17.729187+00:00",
   "warnings": [],
   "llm": {
     "enabled": true,
     "provider": "qwen",
     "scoreModel": "qwen-plus",
-    "enrichModel": "qwen-long",
-    "cache": "disabled"
+    "enrichModel": "qwen-long"
   },
   "scoreLabels": {
-    "relevance": "相关性",
-    "novelty": "新颖性",
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
     "theoreticalDepth": "理论深度",
-    "readability": "可读性",
-    "potentialImpact": "重要性/潜在影响",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
     "total": "总分"
   },
   "sections": [
@@ -24,272 +33,540 @@
       "source": "arxiv-llm-ranked",
       "papers": [
         {
-          "title": "Human-on-the-Bridge: Scalable Evaluation for AI Agents",
+          "title": "Gaming-Resistant Insurance Contracts for Autonomous AI Agents: Strategy-Proof Toll Mechanism Design",
           "authors": [
-            "Fouad Bousetouane"
+            "Hao-Hsuan Chen"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.MA",
-          "url": "https://arxiv.org/abs/2606.16871",
-          "abstract": "AI agents must be evaluated as behavioral systems, not as isolated response generators. They reason across turns, call tools, preserve context, follow policies, and act under uncertainty. Existing methods provide useful but fragmented signals: benchmarks measure fixed capabilities, Human-in-the-Loop review preserves expert judgment but does not scale easily, LLM-as-judge methods depend on evaluator design, red teaming is often episodic, and trace auditing requires explicit evidence rules. This paper introduces Human-on-the-Bridge (HOB), a scalable evaluation paradigm for agentic AI. HOB places human expertise upstream, where experts curate reusable evaluation intelligence before testing begins, including domain context, Red-Team Traps, Juror Personas, scoring guidelines, audit rules, and fallback policies. ProofAgent Harness then executes this curated intelligence repeatedly through multi-turn adversarial evaluations, trace capture, multi-juror scoring, and evidence-linked reporting. We evaluate HOB through symmetric and cost-efficient asymmetric settings across frontier LLM-based agents and Harness LLM tiers. The study covers 23,500 agent turns and produces evidence-linked findings across finance, healthcare, and code generation. The results show that HOB can amplify evaluation quality without requiring equally large evaluator models, allowing smaller Harness LLMs to challenge agents built on frontier LLM backbones. The evaluation surfaces failures often missed by static benchmarks and single-evaluator scoring, including phantom tool-call claims, missing mandatory tool calls, policy drift, manipulation paths, and safe but non-resolving refusals. These findings support HOB as a paradigm for scaling human-curated evaluation intelligence, where expert judgment is encoded upfront and reused across repeated agent evaluations rather than applied manually inside every run.",
-          "summaryZh": "本文提出Human-on-the-Bridge（HOB）——一种面向AI代理的可扩展评估范式。传统方法如静态基准、人工评审或LLM-as-judge难以全面捕捉代理在多轮交互中的行为缺陷，如跳过必要工具调用、虚假声称执行、策略漂移等。HOB将人类专家知识前置，预先构建可复用的评估智能，包括领域上下文、对抗陷阱、评审角色、评分规则与回退策略，并由ProofAgent Harness系统自动化执行多轮对抗测试、轨迹记录、多评审打分与证据关联报告。研究在金融、医疗与代码生成领域进行了23,500轮实验，验证了HOB能有效发现被常规方法忽略的行为级风险，且支持小规模评估模型挑战前沿代理系统，实现成本高效的异构评估。",
-          "reasonZh": "该工作为AI代理的可靠性和安全性评估提供了结构化、可复用的新范式，对构建生产级代理系统具有重要实践指导意义。",
-          "recommendation": "strong_read",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16326",
+          "abstract": "Paper A defines a time-consistent actuarial runtime that prices each side-effect-bearing action against a contractually fixed safe default and gates execution against a reserve budget. It treats the operator as passive. This paper makes the operator strategic. We characterise a five-attack space for autonomous AI-agent insurance contracts and prove when the actuarial runtime is gaming-resistant. Two attack surfaces -- post-toll safe-default selection and within-boundary action splitting -- are closed by Paper A's minimal-authority and no-splitting clauses. The remaining three require new contract clauses. First, common-control aggregation prevents cross-boundary re-routing from reducing toll below the boundary potential applied to total exposure. Second, interface failures such as invalid JSON are contract-relevant events, not safety wins: treating them as zero-toll safe defaults can reward unreliable models, while escalation fees reverse the incentive. We validate this interface-compliance theorem on committed cross-model traces from the companion empirical paper. Third, a model-identity menu with a componentwise-minimum penalty schedule makes truthful reporting of the deployed model weakly dominant. We then compose these clauses with Paper A's runtime guarantees to obtain joint incentive compatibility over the five-attack space. Finally, a two-parameter premium family discharges operator individual rationality and weak budget balance at the truthful equilibrium. The result is an incentive-compatibility layer for actuarial control of autonomous-agent side effects.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于机制设计与算法博弈论交叉领域，聚焦于自主AI智能体运行中因操作者策略性行为引发的合约博弈问题。传统精算控制假设操作者被动执行，但现实中操作者会为降低保费而操纵模型部署、接口行为或身份申报。这种激励错配导致合约可能被跨边界拆分、接口失效伪装或模型替换等方式规避，形成新型‘策略性逃费’风险。该问题重要且困难，因其涉及动态执行、隐藏行动与类型识别的复合信息不对称。",
+            "modelAndSetup": "论文建立了一个包含操作者、承保方与运行网关的三边模型，操作者选择部署模型、报告身份并决定行为路径，其效用为业务收益减去通行费、保费及惩罚。合约通过固定安全默认动作、预算上限与通行费机制定价副作用，并引入五类攻击面刻画策略空间。关键设定包括组件式最小罚则、聚合结算规则与升级费用机制，均衡概念为弱占优策略下的激励相容，确保真实报告与合规执行构成最优响应。",
+            "contributionsAndResults": "论文提出了一套完整的抗博弈保险合约框架，闭合了五类攻击面中的三个未解漏洞：跨边界路由通过共同控制聚合实现无套利结算；接口合规通过升级费用逆转失效激励；模型身份通过组件最小罚则菜单实现真言报告弱占优。最终构造出联合激励相容机制，在满足个体理性与弱预算平衡的同时，实现了对自主智能体副作用的策略稳健控制，显著强于仅处理部分攻击的前期工作。",
+            "methodsAndTechniques": "核心技术路线是将多重攻击面分解为独立机制模块分别处理再组合。利用超可加性边界势能与聚合映射封堵路由套利；通过效用斜率分析揭示接口失败的激励反转条件；采用Myerson式虚拟成本思想构造基于检测概率与收益比的最小罚则。各模块证明均依赖精细的不等式控制与期望效用比较，最终通过引理叠加完成整体机制的激励兼容性合成。",
+            "limitationsAndReadingValue": "论文假设静态部署与完美检测能力，现实中的动态切换与低检出率会削弱机制效果。结果依赖精心设计的合约条款与可观测信号，普适性受限。尽管如此，其对AI代理经济系统的激励建模极具前瞻性，清晰区分安全与博弈抵抗性。最值得精读的是其机制设计思路、攻击面分类框架与开放问题清单，为AI治理提供了严谨的契约理论基础。"
+          },
           "researchParadigmTags": [
-            "系统框架",
-            "实验验证",
-            "理论推导"
+            "机制设计",
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "形式化验证"
           ],
           "contentTags": [
-            "大语言模型",
-            "AI代理",
-            "评估方法",
-            "安全性",
-            "可追溯性"
+            "自主智能体",
+            "激励相容",
+            "保险合约",
+            "对抗性规避",
+            "大语言模型"
           ],
           "tags": [
+            "自主智能体",
+            "激励相容",
+            "保险合约",
+            "对抗性规避",
             "大语言模型",
-            "AI代理",
-            "评估方法",
-            "安全性",
-            "可追溯性",
-            "系统框架",
-            "实验验证",
-            "理论推导"
+            "机制设计",
+            "理论推导",
+            "模型构建"
           ],
           "scores": {
-            "relevance": 9.0,
-            "novelty": 8.0,
-            "theoreticalDepth": 7.0,
-            "readability": 9.0,
-            "potentialImpact": 9.0,
-            "total": 8.4
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 9.7,
+            "total": 38.7
           },
           "ids": {
-            "arxiv": "2606.16871"
+            "arxiv": "2606.16326"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.MA"
+              "cs.GT",
+              "cs.AI",
+              "q-fin.RM"
             ],
-            "primaryCategory": "cs.MA",
+            "primaryCategory": "cs.GT",
             "published": "2026-06-15",
-            "updated": "2026-06-15",
-            "pdfUrl": "https://arxiv.org/pdf/2606.16871v1",
-            "isAGTOrEconCS": true
+            "updated": "2026-06-15"
           }
         },
         {
-          "title": "Misinformation Propagation in Benign Multi-Agent Systems",
+          "title": "The Computational Complexity of Team Zero-Sum Games",
           "authors": [
-            "Jonas Becker",
-            "Jan Philip Wahle",
-            "Terry Ruas",
-            "Bela Gipp"
+            "Ioannis Anagnostides",
+            "Ioannis Panageas",
+            "Tuomas Sandholm",
+            "Jingming Yan"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.MA",
-          "url": "https://arxiv.org/abs/2606.16710",
-          "abstract": "Multi-agent systems, in which multiple large language model agents solve problems through turn-based interaction, are increasingly deployed in high-stakes settings such as medical diagnosis, legal analysis, and forensic decision-making. Their reliability can be at risk when single agents reason from incorrect or misleading context, e.g., from tool calls, since errors may propagate through agent interactions. This work studies this risk by injecting intent-based misinformation into benign single-agent and multi-agent systems across reasoning, knowledge, and alignment tasks. We find that misinformation can degrade single-agent performance and persists across multi-agent debate, with agents often retaining answers introduced by misinformed peers. Nevertheless, multi-agent debate reduces the resulting performance degradation compared to single-agent prompting, especially when most agents are not exposed to misinformation. Robustness depends on group composition and decision protocol. Consensus can be more stable than voting under peer pressure, while majorities can often steer misinformed agents back toward correct answers. Our results show that misinformation robustness in multi-agent systems depends on the underlying model and also on how agents exchange information and aggregate decisions.",
-          "summaryZh": "该研究探讨了在良性多智能体系统（MAS）中，意图型错误信息对大型语言模型代理协作推理的影响。作者通过向单智能体与多智能体辩论（MAD）系统注入九类意图驱动的误导信息，评估其在推理、知识和伦理对齐任务中的传播效应。研究发现，尽管错误信息会降低单智能体性能并在多智能体交互中持续存在，但多智能体辩论仍能部分缓解性能退化，尤其当多数代理未受污染时。系统的鲁棒性依赖于底层模型、群体构成及决策协议——共识机制在面对误导压力时比投票更稳定，而多数正确意见可引导误判代理回归正解。作者还发布了MINT数据集与开源代码，便于复现与扩展研究。",
-          "reasonZh": "本文揭示了多智能体系统在无恶意前提下仍可能传播错误信息的关键风险，并提供了提升系统可靠性的设计原则，对高风险领域应用具有重要指导意义。",
-          "recommendation": "strong_read",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16139",
+          "abstract": "A celebrated consequence of the minimax theorem is that two-player zero-sum games admit a tractable equilibrium characterization. In many central applications, however, each side comprises multiple independent agents who share a common objective but cannot perfectly coordinate their actions. Such settings can be modeled as \\emph{team zero-sum games}, a natural generalization of both two-player zero-sum games and potential games -- the two most well-studied classes of games in algorithmic game theory. In this paper, we settle the complexity of team zero-sum games by establishing that computing Nash equilibria is \\PPAD-complete. As a result, despite the global adversarial structure, team zero-sum games are as hard as general-sum games. Our hardness result holds even when i) the precision is inverse polynomial, thereby ruling out a fully polynomial-time approximation scheme (unless $¶= \\PPAD$); ii) each team consists of only two players; and iii) the underlying class of games is polymatrix. As a byproduct, we resolve the complexity of group-wise zero-sum polymatrix games, a class introduced and examined in the seminal work of Cai and Daskalakis (SODA '11), and more recently highlighted by Hollender, Maystre, and Nagarajan (ICLR '25). Moreover, we show that computing a first-order stationary point in min-max optimization is \\PPAD-complete even for quadratic (multilinear) objectives. From a technical standpoint, we develop a series of team zero-sum game gadgets that allow us to simulate the breakthrough reduction of Bernasconi and Castiglioni (STOC '26). Moreover, to obtain hardness results for quadratic objectives, we make use of a general technique based on linear local approximation, which is of independent interest.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于算法博弈论的研究脉络，聚焦于团队零和博弈中纳什均衡的计算复杂性问题。传统二人零和博弈因最小最大定理具有高效解法，但在多方协作对抗场景下，团队内部无法完美协调导致问题结构剧变。尽管存在全局对抗性，这类游戏是否仍能高效求解尚不明确，这一缺口既关乎理论边界，也对应现实中企业竞争、多分类器对抗等分布式决策难题。",
+            "modelAndSetup": "模型设定为n对m人的团队零和博弈，每队成员共享同一效用函数且与对方相反，策略空间为各玩家单纯形的乘积。均衡采用ε-近似纳什均衡定义，允许有限精度误差。关键假设是团队内无通信或相关策略，仅通过独立策略实现协作，这比允许事前协调的团队最大最小均衡更贴近现实约束，形式上归约为极小极大优化问题，目标函数为多项式形式。",
+            "contributionsAndResults": "论文证明了即使在2对2的简单结构下，计算团队零和博弈的近似纳什均衡也是PPAD完全的，彻底否定了其存在多项式时间算法的可能性。结果表明，即便保持全局对抗结构，多团队设置已足以使问题复杂度升至与一般和博弈同等水平。该结论sharp地划清了可计算性边界，并解决了Cai与Daskalakis等人遗留的群组零和博弈复杂性问题。",
+            "methodsAndTechniques": "作者通过构造一系列团队零和博弈‘元件’，模拟Bernasconi与Castiglioni的突破性规约，将PURECIRCUIT和LINVI两个PPAD难问题嵌入游戏中。核心技术包括COPY、NOR与PURIFY门的博弈实现，以及利用线性局部逼近将三次项规约为二次多线性函数，最终转化为2对2多项式团队博弈。整个规约链条严密，巧妙结合了博弈设计与数值逼近思想。",
+            "limitationsAndReadingValue": "论文假设精度为输入规模的反多项式，未解决常数精度下的复杂性，且证明高度依赖特定规约结构，难以直接推广至其他均衡概念。尽管如此，其价值在于首次确立了团队零和博弈的完整复杂性图谱，技术路线极具启发性。最值得精读的是其精巧的博弈元件设计、对PPAD完全性的深刻运用及开放问题的清晰提出，对后续研究有标杆意义。"
+          },
           "researchParadigmTags": [
-            "实验验证",
-            "系统框架",
+            "复杂度分析",
+            "均衡分析",
+            "理论推导",
+            "模型构建",
             "算法设计"
           ],
           "contentTags": [
-            "大语言模型",
-            "多智能体系统",
-            "信息设计",
-            "隐私/安全",
-            "鲁棒性"
+            "团队零和博弈",
+            "纳什均衡",
+            "PPAD完全性",
+            "极小极大优化",
+            "多智能体系统"
           ],
           "tags": [
-            "大语言模型",
+            "团队零和博弈",
+            "纳什均衡",
+            "PPAD完全性",
+            "极小极大优化",
             "多智能体系统",
-            "信息设计",
-            "隐私/安全",
-            "鲁棒性",
-            "实验验证",
-            "系统框架",
+            "复杂度分析",
+            "均衡分析",
+            "理论推导"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 4.0,
+            "total": 34.0
+          },
+          "ids": {
+            "arxiv": "2606.16139"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-15",
+            "updated": "2026-06-15"
+          }
+        },
+        {
+          "title": "Fair Division by Contribution: A Shapley Value Perspective",
+          "authors": [
+            "Xiaohui Bei",
+            "Pinyan Lu",
+            "Xiaowei Wu",
+            "Shengwei Zhou"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16743",
+          "abstract": "In many resource allocation problems, agents' valuations are best interpreted not as subjective preferences, but as the value they generate from receiving resources. Such valuations capture productivity, effectiveness, or technology, and may differ significantly across agents. In these settings, classical fairness notions such as proportionality or envy-freeness fail to reflect agents' heterogeneous contributions to the collective outcome. Motivated by this perspective, we introduce \\emph{Shapley Value Fairness (SVF)} for the allocation of divisible goods without monetary transfers. SVF interprets an agent's entitlement as her expected marginal contribution to optimal social welfare, and uses the Shapley value of the associated welfare maximization game as a normative fairness benchmark. We position SVF relative to existing fairness notions and show that it provides a natural bridge between fairness and efficiency in contribution-based environments. Since exact implementation of the Shapley value is generally infeasible without transfers, SVF naturally leads to the problem of finding allocations that approximate this benchmark as well as possible. We provide a systematic worst-case analysis of the achievable Shapley approximation ratio. For general concave valuations, we establish a tight $Θ(\\ln n)$ bound. For capped concave valuations with bounded demands, this bound improves to $Θ(\\ln D)$, where $D$ is the maximum aggregate demand for any item. For linear valuations, we further refine the bound to $Θ(\\min\\{k, \\ln γ, \\ln n\\})$ in terms of the number of agent types $k$ and the value fluctuation ratio $γ$, and show that all bounds are asymptotically tight. Regarding per-instance guarantees, we show that a near-optimal approximation allocation can be computed efficiently (with high probability) via sampling for general concave valuations.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于算法博弈论与公平资源分配的研究脉络，聚焦于当代理人贡献能力异质时如何定义公平。传统公平概念如比例性或无嫉妒性基于主观偏好，无法反映个体对社会总价值的客观贡献差异。在科研资助、公共投资等场景中，忽略贡献差异会导致效率低下或实质不公平。现有模型缺乏将公平与效率通过贡献内生整合的规范基准，本文填补了这一理论空白。",
+            "modelAndSetup": "模型考虑将可分资源分配给具有异质估值函数的代理人，其估值代表将资源转化为社会价值的能力，无需货币转移。合作博弈的特征函数定义为任意子群体所能达到的最大社会福利。每个代理人的公平 entitlement 由其在该博弈中的 Shapley 值决定，即其对最优社会福利的期望边际贡献。分配需满足资源可行性，目标是逼近每个代理人获得其 Shapley 值的效用。",
+            "contributionsAndResults": "本文提出 Shapley 值公平（SVF）作为无货币转移下贡献型公平的新范式，并系统分析其可逼近性。主要结果为：对于一般凹估值，最优逼近比为紧的 O(ln n)；对于有容量限制的情形，改进为 O(ln D)；线性估值下可在多项式时间内精确计算 Shapley 值并实现 O(min{k, ln y, ln n}) 的逼近比，且所有界限渐近紧致。",
+            "methodsAndTechniques": "核心方法是构造性证明与紧下界分析。上界通过分析随机加入顺序下的期望临时分配，利用凹性与调和级数性质构造可行分配。下界通过设计指数递减估值的极端实例，精确计算 Shapley 值并利用调和数发散性证明对数因子不可避免。对线性情形，则通过闭式表达 Shapley 值并分析其求和结构来获得更优参数化界限。",
+            "limitationsAndReadingValue": "模型假设估值函数已知且可高效优化，可能不适用于信息不完全或复杂非凸场景。结果虽具普适性，但对数逼近比在大规模系统中仍显著。尽管如此，本文价值极高：SVF 框架深刻统一了公平与效率，技术分析精巧且 tight，提出的参数化界限对实际应用有指导意义，是理解贡献型公平的必读文献。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "公平性",
+            "机制设计",
+            "Shapley值",
+            "资源分配",
+            "合作博弈"
+          ],
+          "tags": [
+            "公平性",
+            "机制设计",
+            "Shapley值",
+            "资源分配",
+            "合作博弈",
+            "理论推导",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          },
+          "ids": {
+            "arxiv": "2606.16743"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-15",
+            "updated": "2026-06-15"
+          }
+        },
+        {
+          "title": "The Complexity of Min-Max Optimization for Quadratic Polynomials",
+          "authors": [
+            "Martino Bernasconi",
+            "Matteo Castiglioni",
+            "Andrea Celli",
+            "Alexandros Hollender"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.17000",
+          "abstract": "We prove that computing approximate stationary points of min-max optimization over the hypercube is PPAD-hard for quadratic polynomials. This holds even when the polynomials are multilinear, each variable appears in at most three monomials, and the approximation factor is inverse polynomial. As a direct consequence, we obtain the first PPAD-hardness results for two-team zero-sum polymatrix games.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于博弈学习与多智能体系统的理论研究脉络，聚焦于非凸极小极大优化中计算稳定点的复杂性问题。尽管线性或凸-凹情形可高效求解，但非凸-非凹二次多项式的计算难度尚不明确。这一缺口对应着真实场景中多智能体策略交互的收敛困难，因缺乏良好结构导致梯度法可能无法找到合理解。",
+            "modelAndSetup": "研究形式化为在超立方体上寻找二次多项式的近似平稳点，变量分为最小化方与最大化方，目标函数为光滑但非凸-非凹的多项式。均衡定义为满足近似KKT条件的策略对，反映双方在局部最优上的博弈平衡。模型通过代数结构限制（如双线性、低出现频次）逼近现实中的稀疏交互。",
+            "contributionsAndResults": "论文证明了即使对于二次多项式，计算近似平稳点仍是PPAD-hard的，且该结论适用于双线性形式及每个变量仅出现在三个单项式的情形。这首次确立了团队零和多项式博弈的PPAD完全性，填补了从高阶到低阶函数间复杂性边界的空白，揭示了非凸极小极大问题的本质难度。",
+            "methodsAndTechniques": "作者采用多步归约技术，从End-of-the-Line出发，结合PureCircuit与LinVI两个中间问题构造硬实例。关键技术包括用指数权重多项式替代sigmoid门、三次项降阶的‘立方 gadget’，以及复制变量保持梯度传播的多线性化方法，确保信号传递与误差控制在多项式精度内。",
+            "limitationsAndReadingValue": "证明依赖精心构造的 gadget 和特定参数设置，实际算法意义有限，且未涉及随机或近似更弱的解概念。然而其归约框架极具启发性，值得精读。最宝贵的是其证明技巧与开放问题——如何将此类下界推广至连续时间动态或学习算法，是未来方向的关键线索。"
+          },
+          "researchParadigmTags": [
+            "复杂度分析",
+            "理论推导",
+            "均衡分析",
+            "模型构建",
+            "约简技术"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "多智能体系统",
+            "非凸优化",
+            "团队博弈",
+            "PPAD完全性"
+          ],
+          "tags": [
+            "博弈学习",
+            "多智能体系统",
+            "非凸优化",
+            "团队博弈",
+            "PPAD完全性",
+            "复杂度分析",
+            "理论推导",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 29.7
+          },
+          "ids": {
+            "arxiv": "2606.17000"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CC",
+              "cs.GT",
+              "cs.LG",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.CC",
+            "published": "2026-06-15",
+            "updated": "2026-06-15"
+          }
+        },
+        {
+          "title": "Intermittent Strategic Cooperation of Two Selfish Agents on Graphs",
+          "authors": [
+            "Itay Shedlezki",
+            "Noa Agmon"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.17216",
+          "abstract": "We study strategic space- and time-constrained cooperation between two self-interested agents through the Intermittent Strategic Cooperation-Based Two-Agent Path Planning (IC2PP) problem, a shortest-path game on graphs in which agents navigate toward individual targets while optionally cooperating at specific nodes to reduce their own travel times. Although such cooperation can strictly benefit both agents, it is strategically fragile: agents may deviate at any point along their paths. Modeled as a 2-player game, we characterize the structure of Pure Nash Equilibrium (PNE) joint strategies in IC2PP, and show that stable cooperation must follow a highly constrained form. We further prove that at least one PNE exists in every instance of IC2PP, and present a polynomial-time algorithm for enumerating all relevant PNEs. When multiple equilibria arise, we study coordination mechanisms based on bargaining-theoretic selection concepts and empirically compare equilibrium outcomes in terms of individual travel times and social welfare.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于多智能体博弈与算法博弈论的研究脉络，聚焦自利智能体在时空受限下的间歇性合作难题。核心问题是：当两个自私代理为最小化自身路径时间而在图上移动时，如何在存在局部合作收益的情况下形成稳定的合作均衡。传统路径规划假设完全合作或完全竞争，忽略了现实中既竞争又合作的动态，导致模型无法捕捉合作的脆弱性与时机敏感性，这构成了理论与应用上的空白。",
+            "modelAndSetup": "论文提出IC2PP模型，两个代理在带权图上从起点走向各自终点，某些节点允许合作以减少通行延迟。每个代理选择完整路径（含等待决策），目标是最小化自身到达时间。合作需双方同时到达节点才能生效，且任一方可单方面偏离。均衡采用纯策略纳什均衡（PNE），强调策略的稳定性。模型的关键假设是代理提前承诺全路径，符合预规划场景，突出了战略同步的重要性。",
+            "contributionsAndResults": "主要贡献在于首次刻画了此类合作博弈中PNE的刚性结构：稳定合作必须是单一连续段，前后为独立路径，且起止点均需联合抗偏离。作者证明至少存在一个PNE，并设计多项式时间算法枚举所有非支配性PNE。这一结果比一般博弈更清晰，揭示了即使在自私前提下，稳定合作也遵循高度结构化的模式，为多智能体协调提供了理论基础。",
+            "methodsAndTechniques": "技术核心是通过一系列引理分解均衡结构。利用‘早合作优先’和‘合作连续性’引理，将无限策略空间缩减到有限候选。通过定义‘互鲁棒非合作路径’和‘稳定合作路径’，将PNE的存在性归约为最短路径计算。最终算法结合Dijkstra变种与贪心枚举，高效找出所有最优合作终点对应的均衡，其有效性源于对均衡结构性质的深刻洞察。",
+            "limitationsAndReadingValue": "模型局限于两代理和预知全局信息，扩展至多代理或不完全信息更具挑战。结果虽sharp但依赖于特定合作收益形式。尽管如此，该论文极具精读价值，其建立的IC2PP框架、对PNE的精细刻画及构造性证明方法，为研究自私代理间的临时合作提供了范式级工具，尤其适合关注机制稳定性与算法博弈的读者深入研习。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "博弈学习",
+            "路径规划",
+            "合作博弈",
+            "纳什均衡"
+          ],
+          "tags": [
+            "多智能体系统",
+            "博弈学习",
+            "路径规划",
+            "合作博弈",
+            "纳什均衡",
+            "理论推导",
+            "模型构建",
             "算法设计"
           ],
           "scores": {
-            "relevance": 10.0,
-            "novelty": 8.0,
-            "theoreticalDepth": 7.0,
-            "readability": 8.0,
-            "potentialImpact": 8.0,
-            "total": 8.2
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 4.7,
+            "total": 29.4
           },
           "ids": {
-            "arxiv": "2606.16710"
+            "arxiv": "2606.17216"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
               "cs.MA",
-              "cs.CL"
+              "cs.GT",
+              "cs.RO"
             ],
             "primaryCategory": "cs.MA",
             "published": "2026-06-15",
-            "updated": "2026-06-15",
-            "pdfUrl": "https://arxiv.org/pdf/2606.16710v1",
-            "isAGTOrEconCS": true
+            "updated": "2026-06-15"
           }
         }
       ]
     },
     {
       "id": "recent-ai",
-      "title": "近期 AI 新论文",
+      "title": "近期 AI 新论文（cs.RO）",
       "source": "arxiv-llm-ranked",
       "papers": [
         {
-          "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+          "title": "Elastic ODYN: Differentiable Optimization for Infeasible Control and Learning in Robotics",
           "authors": [
-            "Dantong Niu",
-            "Zhuoyang Liu",
-            "Zekai Wang",
-            "Boning Shao",
-            "Zhao-Heng Yin",
-            "Anirudh Pai",
-            "Yuvan Sharma",
-            "Stefano Saravalle",
-            "Ruijie Zheng",
-            "Jing Wang",
-            "Ryan Punamiya",
-            "Mengda Xu",
-            "Yuqi Xie",
-            "Yunfan Jiang",
-            "Letian Fu",
-            "Konstantinos Kallidromitis",
-            "Matteo Gioia",
-            "Junyi Zhang",
-            "Jiaxin Ge",
-            "Haiwen Feng",
-            "Fabio Galasso",
-            "Wei Zhan",
-            "David M. Chan",
-            "Yutong Bai",
-            "Roei Herzig",
-            "Jiahui Lei",
-            "Fei-Fei Li",
-            "Ken Goldberg",
-            "Jitendra Malik",
-            "Pieter Abbeel",
-            "Yuke Zhu",
-            "Danfei Xu",
-            "Jim",
-            "Fan",
-            "Trevor Darrell"
+            "Aristotelis Papatheodorou",
+            "Jose Rojas",
+            "Ioannis Havoutis",
+            "Carlos Mastalli"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.RO",
-          "url": "https://arxiv.org/abs/2606.17055",
-          "abstract": "The ability to react dynamically to tactile signals has long been considered crucial to agile human-level dexterity. Yet contemporary learning-based Vision-Language-Action (VLA) models for robotic manipulation generally either overlook the tactile modality or are limited to encoders with static cues, due in part to the scarcity of diverse training data and standardized evaluation, architectural constraints in current VLA models, and limitations of static tactile encoders. In this paper, we push the frontier of tactile-reactive manipulation by addressing all of these limitations. We propose a large-scale, 100-hour tactile-rich dataset collected via a novel, data-efficient recipe that prioritizes elementary motor primitives. To effectively exploit naturally high-frequency touch signals without sacrificing the existing capabilities of existing VLAs, we introduce a variable-rate Mixture-of-Transformers (MoT) architecture equipped with a novel temporal tactile VQ-VAE encoder. We demonstrate the effectiveness of tactile-reactive policies on 12 manipulation tasks requiring delicate force control and deformable object manipulation, achieving over 30% higher average success rate than the strongest baseline.",
-          "summaryZh": "本文提出T-Rex，一个结合大规模人类第一视角预训练与触觉接地机器人中段训练的触觉响应式灵巧操作框架。针对当前视觉-语言-动作（VLA）模型普遍忽视触觉模态或仅使用静态编码的问题，作者构建了包含100小时真实机器人数据的T-Rex数据集，涵盖多样化的运动原语与物体交互，并同步记录触觉信号。为高效利用高频触觉反馈，T-Rex采用变频混合Transformer专家（MoT）架构，引入时空触觉VQ-VAE编码器，在低频视觉规划基础上实现高频触觉精细调整。在12项需精细力控与可变形物体操作的任务上，T-Rex平均成功率比最强基线高出30%以上。建议读者重点关注其系统设计思想、MoT架构细节及触觉编码方式。",
-          "reasonZh": "该工作系统性地解决了触觉响应操作中的数据、架构与训练范式瓶颈，为构建具身智能体提供了高实用价值的技术路径。",
-          "recommendation": "strong_read",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16564",
+          "abstract": "Robotic systems routinely encounter conflicting objectives, modeling errors, and degenerate contact conditions that render quadratic programs (QPs) infeasible. Yet most optimization solvers and differentiable QP layers assume feasibility, leading to numerical failures, unstable gradients, or solver breakdown when constraints cannot be simultaneously satisfied. We present Elastic ODYN, a primal--dual non-interior-point QP solver that handles infeasibility through smooth squared-$\\ell_2$ elastic relaxations. The resulting formulation remains well posed under ill-conditioning and degeneracy, supports warm starting, and converges to closest-to-feasible solutions when no feasible point exists. A lightweight refinement stage recovers physically meaningful dual variables from the elastic solution. Building on this framework, we develop Elastic OdynLayer, a differentiable QP layer with stable gradients under infeasibility, and Elastic OdynSQP, an infeasibility-aware SQP method that resolves inconsistent subproblems and intrinsically infeasible optimal control tasks through selective constraint relaxation. We evaluate the framework on benchmark QPs, singular contact mechanics, differentiable parameter identification, and quadrupedal and humanoid trajectory optimization. Across all settings, Elastic ODYN consistently outperforms state-of-the-art elastic QP solvers in robustness, warm-start performance, and convergence reliability, enabling optimization, simulation, control, and learning beyond the feasibility assumptions of existing methods.",
+          "summarySections": {
+            "backgroundAndQuestion": "该论文属于机器人控制与可微优化交叉的研究脉络，旨在解决传统二次规划（QP）求解器在约束冲突、建模误差或退化接触下因不可行而导致的数值崩溃与梯度不稳定问题。现有方法大多假设可行性，在实际机器人任务中容易失效，尤其在基于学习的控制中，中间迭代常处于不可行状态，导致训练中断或性能下降。",
+            "modelAndSetup": "论文研究的任务是求解带弹性松弛的凸二次规划，并将其嵌入轨迹优化与参数学习流程。输入为标准QP参数，输出为原变量与弹性松弛量。模型基于非内点法框架，通过光滑l2惩罚处理不可行性，支持warm-start与反向传播。关键设定是在无可行解时收敛到最近似可行问题，并恢复物理可解释的对偶变量。",
+            "contributionsAndResults": "核心贡献包括ELASTIC ODYN求解器、可微分层与SQP框架，在Maros-Meszaros基准、接触力学与四足/人形机器人轨迹优化中均优于现有弹性QP方法。实验表明其在鲁棒性、warm-start效率与收敛可靠性上显著领先，尤其在高维、退化与不可行场景下仍能提供稳定解与梯度。",
+            "methodsAndTechniques": "方法采用平滑的平方l2弹性松弛将不可行QP转化为始终良定义的优化问题，结合非内点法与原始-对偶正则化保证数值稳定性。通过路径跟踪与自适应参数更新实现高效求解，并引入轻量级精修阶段恢复物理意义明确的对偶变量。其与传统内点法或增广拉格朗日法的本质区别在于全程保持光滑性与可行性无关的收敛性。",
+            "limitationsAndReadingValue": "论文未与更多工业级QP求解器对比，且在极高精度需求下可能受限于缺乏迭代精化。尽管如此，其对不可行性这一长期被忽视的问题提供了系统性解决方案，特别值得精读。最值得学习的是其问题设定的洞察力、方法设计的完整性，以及在机器人真实场景中的端到端验证。"
+          },
           "researchParadigmTags": [
-            "系统框架",
             "算法设计",
-            "实验验证"
+            "系统框架",
+            "实验验证",
+            "模型构建",
+            "基准评测"
           ],
           "contentTags": [
-            "触觉感知",
-            "灵巧操作",
-            "多模态融合",
-            "机器人学习",
-            "基础模型"
+            "机器人控制",
+            "可微优化",
+            "二次规划",
+            "接触动力学",
+            "序列凸优化"
           ],
           "tags": [
-            "触觉感知",
-            "灵巧操作",
-            "多模态融合",
-            "机器人学习",
-            "基础模型",
-            "系统框架",
+            "机器人控制",
+            "可微优化",
+            "二次规划",
+            "接触动力学",
+            "序列凸优化",
             "算法设计",
+            "系统框架",
             "实验验证"
           ],
           "scores": {
-            "relevance": 9.0,
-            "novelty": 8.0,
-            "theoreticalDepth": 6.0,
-            "readability": 8.0,
-            "potentialImpact": 8.0,
-            "total": 10.0
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
           },
           "ids": {
-            "arxiv": "2606.17055"
+            "arxiv": "2606.16564"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.RO"
+              "cs.RO",
+              "cs.LG"
             ],
             "primaryCategory": "cs.RO",
             "published": "2026-06-15",
-            "updated": "2026-06-15",
-            "pdfUrl": "https://arxiv.org/pdf/2606.17055v1",
-            "isAGTOrEconCS": false
+            "updated": "2026-06-15"
           }
         },
         {
-          "title": "Human Universal Grasping",
+          "title": "Direction-Conditioned Policies via Compositional Subgoal Scoring for Online Goal-Conditioned Reinforcement Learning",
           "authors": [
-            "Kevin Yuanbo Wu",
-            "Tianxing Zhou",
-            "Isaac Tu",
-            "Billy Yan",
-            "Irmak Guzey",
-            "David Fouhey",
-            "Dandan Shan",
-            "Lerrel Pinto"
+            "Swaminathan S K",
+            "Damiya Gondha",
+            "Theyanesh Eswaramoorthy Rajahkrishnan",
+            "Aritra Hazra"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.RO",
-          "url": "https://arxiv.org/abs/2606.17054",
-          "abstract": "Humans can grasp objects effortlessly, whereas multi-fingered robots are far from this level of generality. We argue that the most natural source of robot grasping data is from humans, who pick up thousands of objects every day. We present HUG, a flow-matching model that generates diverse human grasps for any user-specified object in a single RGB-D image captured from a stereo camera. Using smart glasses, we first collect 1M-HUGs, an egocentric dataset of human grasps spanning 1M frames (27.8 hrs) and 6,707 object instances across 41 buildings. Next, to model the distribution of natural human grasps, our novel flow-matching model fuses RGB and depth observations to output a grasp parameterized by wrist translation, wrist rotation, and MANO hand pose. Predicted grasps can be retargeted to various robot hands, enabling zero-shot grasping in everyday scenes. To standardize evaluation, we build a new simulated benchmark, HUG-Bench, of 90 unseen objects from five geometric categories and various sizes, with metric-scale 3D meshes. We evaluate HUG in the real world on the 30-object test set of HUG-Bench across multiple stereo cameras, robot embodiments, and household environments. HUG outperforms the state-of-the-art grasping baselines by +23% and +34% on our challenging object set. Code, data, benchmark, checkpoints, and an interactive demo are released on our website: https://grasping.io/",
-          "summaryZh": "本文提出HUG（Human Universal Grasping），一种完全基于人类抓取数据的机器人灵巧抓取新范式。针对当前多指机器人泛化能力不足的问题，作者利用智能眼镜采集了百万级第一人称视角的人类抓取数据集1M-HUGs，并提出一个融合RGB与深度信息的流匹配模型，直接从单张RGB-D图像预测参数化的MANO手部姿态。该方法无需机器人自身数据训练，即可实现跨不同机器人手部形态的零样本迁移。为标准化评估，团队构建了包含90个未见物体的HUG-Bench基准，涵盖多种几何形状与尺寸。在真实场景中，HUG在30个测试物体上分别超越现有最优方法23%和34%，展现了卓越的泛化能力。建议结合其开源代码、数据与交互演示进行实践性阅读。",
-          "reasonZh": "该工作开创性地将大规模人类自然抓取行为转化为机器人灵巧操作能力，兼具系统完整性与实际性能突破，是具身智能领域的重要进展。",
-          "recommendation": "strong_read",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16515",
+          "abstract": "Hamilton-Jacobi-Bellman theory implies that the optimal goal-conditioned action depends on the goal only through the gradient of the goal-reaching distance at the current state, yet standard online GCRL still conditions the actor on the raw goal -- a signal that is geometrically uninformative when the goal is far from the data distribution. We propose Direction-Conditioned Policies (DCP), a fully online method that decomposes goal-reaching into two components sharing one InfoNCE representation $ψ$: a subgoal-scoring step that selects a visited state $z_t$ aligned with the final goal $g$ in $ψ_g$, and a direction-conditioned actor that consumes the unit direction $d_t$ and magnitude $r_t$ from $ψ(s_t)$ to $ψ(z_t)$. The two components train jointly, factor cleanly at deployment (subgoal scoring is removed, while direction conditioning remains with $g$ in place of $z_t$), and admit independent modification at the same $(d_t,r_t)$ interface. We prove three results. First, direction sufficiency under HJB: the optimal action under control-affine dynamics depends on the goal only through the value gradient. Second, a quantitative bound showing that, under mild conditions on the learned representation and assuming the scoring rule returns an on-path $z_t$, the actor's conditioning input at training and at deployment coincide up to representation error and geodesic slack. Third, a controllable-subspace characterization of when directional conditioning fails. Across nine environments, DCP improves over Contrastive RL on most final metrics, with the largest gains on manipulation and obstacle-interaction tasks; a qualitative analysis of the learned $ψ$-distance landscape shows the contrastive representation behaves as an online quasimetric encoding environment topology, and the single failure case (AntSoccer) localizes to a learned-gradient pathology that the theory anticipates.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于在线目标条件强化学习（GCRL）的研究脉络，旨在解决传统方法在远距离目标下因依赖原始目标坐标而导致策略信号几何失真的问题。现有对比强化学习（CRL）虽能学习状态间可达性表示，但其策略网络仍直接接收未经处理的目标坐标，在目标远离数据分布时方向不稳定。该问题源于训练与推理阶段的条件输入不一致，导致长程稀疏奖励任务难以有效推进。",
+            "modelAndSetup": "研究任务为完全在线的GCRL，输入是当前状态与目标，输出为动作，无需离线数据或演示。模型基于InfoNCE学习的状态编码器，提出方向条件策略（DCP），通过访问已访问状态池并选取与目标对齐的子目标来构建方向向量。训练时策略以该方向及距离为条件，部署时直接使用目标编码计算方向。关键假设是编码空间形成准度量结构，且子目标在路径上。",
+            "contributionsAndResults": "主要贡献包括提出方向条件策略、子目标评分机制，并从HJB方程出发证明方向充分性、规划不变性和失败模式。在九个Brax环境中，DCP在多数任务上优于CRL，尤其在操作与障碍交互任务中提升显著。实验结果由五种子平均值支持，证据充分，失败案例AntSoccer也符合理论预期，表明结论稳健。",
+            "methodsAndTechniques": "方法核心是将目标条件分解为方向与模长两个组件：先从历史状态池中选出与目标编码最对齐的子目标，再计算当前状态到该子目标在编码空间的方向单位向量和距离作为策略输入。训练与部署共享同一接口，仅在测试时省略子目标选择。关键技术在于利用对比学习形成的准度量结构提取稳定梯度方向，与直接使用原始坐标的CRL和SSGC形成本质区别。",
+            "limitationsAndReadingValue": "局限在于其性能依赖于访问状态池覆盖目标相关动态方向，如AntSoccer中球位移未被充分探索即导致失效。此外，未验证更优评分函数的影响，消融集中在接口形式。尽管如此，该文值得精读，尤其在问题设定的理论洞察、方向抽象的设计思想以及将最优控制理论与现代表示学习结合的方式上具有高度启发性。"
+          },
           "researchParadigmTags": [
-            "系统框架",
-            "算法设计",
+            "理论推导",
+            "模型构建",
             "实验验证"
           ],
           "contentTags": [
-            "机器人抓取",
-            "人类行为学习",
-            "多模态感知",
-            "零样本迁移",
-            "基准测试"
+            "强化学习",
+            "表示学习",
+            "在线学习",
+            "子目标规划"
           ],
           "tags": [
-            "机器人抓取",
-            "人类行为学习",
-            "多模态感知",
-            "零样本迁移",
-            "基准测试",
-            "系统框架",
-            "算法设计",
+            "强化学习",
+            "表示学习",
+            "在线学习",
+            "子目标规划",
+            "理论推导",
+            "模型构建",
             "实验验证"
           ],
           "scores": {
-            "relevance": 9.0,
-            "novelty": 8.0,
-            "theoreticalDepth": 5.0,
-            "readability": 9.0,
-            "potentialImpact": 8.0,
-            "total": 10.0
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
           },
           "ids": {
-            "arxiv": "2606.17054"
+            "arxiv": "2606.16515"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.AI",
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-06-15",
+            "updated": "2026-06-15"
+          }
+        },
+        {
+          "title": "SoK: Security and Privacy of Foundation-Model-Powered Robots",
+          "authors": [
+            "Xueluan Gong",
+            "Chen Chen",
+            "Jinxin Liu",
+            "Qian Wang",
+            "Kwok-Yan Lam"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16788",
+          "abstract": "Foundation models are reshaping robotics by enabling robots to interpret open-ended instructions, reason over multimodal contexts, and operate in complex, open-world environments. However, their integration also introduces security and privacy (S&P) risks that extend beyond the FMs themselves to embodied execution pipelines, supporting ecosystems, and broader governance impacts. Existing literature reviews provide valuable insights but often focus on specific FM types, risk categories, mitigation strategies, or trust boundaries. Consequently, the field lacks a unified structure for analyzing where risks originate, how they propagate across robotic systems, and where mitigations should intervene. To address this gap, we propose a progressive F-E-S-G structural boundary framework for analyzing the S&P of FM-powered robots. The framework comprises four layers: the Foundation model layer (F), Embodied system layer (E), Supporting ecosystem layer (S), and Governance impact layer (G). Building on this structure, we develop a multi-level taxonomy that organizes prior studies along three levels: F-E-S-G trust boundary, security-privacy concerns, and risk-mitigation perspectives. We further annotate each study using fine-grained coding attributes, including target, lifecycle stage, mechanism, system access, and effect. Guided by this framework and taxonomy, we systematize 96 papers. Our analysis uncovers multiple threat patterns, defense mismatches, and evaluation gaps that are difficult to identify from a single-boundary perspective. Based on these findings, we identify open challenges and future directions to provide a research agenda for developing secure, privacy-preserving, and responsibly governed FM-powered robotic systems.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于生成式AI与智能体系统交叉的安全与隐私研究脉络，聚焦于基础模型驱动的机器人所面临的新一代安全隐私风险。传统机器人安全主要关注物理与通信层面威胁，而FM-powered机器人因引入大模型，面临语义劫持、感知欺骗、行为越狱等新型攻击。现有研究分散于不同层次，缺乏统一框架来系统化分析风险传播路径与防御缺口，导致防护措施碎片化。本文旨在建立跨层结构化视角，揭示从模型到实体再到生态的全栈风险演化机制。",
+            "modelAndSetup": "论文并未提出具体模型，而是构建了一个名为F-E-S-G的四层结构化分析框架：基础模型层（F）、具身系统层（E）、支持生态系统层（S）和治理影响层（G）。基于此框架，作者系统梳理了96篇相关文献，定义了涵盖信任边界、安全隐私维度与风险缓解视角的多级分类体系，并对每项研究标注目标、生命周期阶段、机制、系统访问权限与效果等细粒度属性，用于识别威胁模式与防御错配。",
+            "contributionsAndResults": "核心贡献在于提出了首个覆盖FM-powered机器人全生命周期的结构性安全隐私分析框架F-E-S-G，并据此系统化整理了96项研究。通过该框架，作者揭示了多项跨层威胁模式，如模型投毒经具身执行放大为物理危害，以及现有防御多局限于单一层级而导致的缓解失配问题。研究还指出了评估协议中普遍存在的基准缺失、指标不一与真实世界验证不足等共性缺陷，为后续研究提供了清晰路线图。",
+            "methodsAndTechniques": "作者采用系统化知识整理（SoK）方法，结合渐进式编码策略，将文献按F-E-S-G四层进行归类。每一项研究被分解至具体组件、生命周期阶段与技术机制，并评估其有效性、隐蔽性与效用代价。该方法强调风险的跨层传播路径，而非孤立看待各层漏洞。关键技术在于建立了非重叠的信任边界划分原则，确保每个研究依其风险起源层归类，从而支持纵向比较与系统性差距发现。",
+            "limitationsAndReadingValue": "尽管框架全面，但部分治理层研究证据仍较薄弱，且当前多数实证集中于仿真环境，真实机器人验证有限。此外，对新兴的世界基础模型（WFM）等方向尚未深入覆盖。然而，该论文极具精读价值，尤其适合希望把握FM-powered机器人安全全景的研究者。其最值得借鉴的是问题设定的系统性与框架设计的结构性，为未来研究提供了统一语言与分析工具。"
+          },
+          "researchParadigmTags": [
+            "综述/教程",
+            "系统框架",
+            "基准评测",
+            "实验验证",
+            "机制设计"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "智能体",
+            "安全性",
+            "隐私/安全",
+            "机器人系统"
+          ],
+          "tags": [
+            "大语言模型",
+            "智能体",
+            "安全性",
+            "隐私/安全",
+            "机器人系统",
+            "综述/教程",
+            "系统框架",
+            "基准评测"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2606.16788"
           },
           "metadata": {
             "provider": "arxiv",
@@ -298,9 +575,75 @@
             ],
             "primaryCategory": "cs.RO",
             "published": "2026-06-15",
-            "updated": "2026-06-15",
-            "pdfUrl": "https://arxiv.org/pdf/2606.17054v1",
-            "isAGTOrEconCS": false
+            "updated": "2026-06-15"
+          }
+        },
+        {
+          "title": "Pride and Prejudice: Toward an Information-Theoretic Framework for Mutually Communicative Driver Behavior Modeling",
+          "authors": [
+            "Tingjun Li",
+            "Nan Xu",
+            "Shuo Feng",
+            "Hassan Askari",
+            "Bruno Henrique Groenner Barbosa",
+            "Konghui Guo"
+          ],
+          "date": "2026-06-15",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.16735",
+          "abstract": "Mixed autonomy driving becomes unsafe and inefficient when autonomous vehicles (AVs) and human-driven vehicles (HVs) misread each other's intentions. We study this problem as implicit mutual communication in lane changes. The proposed framework models how the ego vehicle both expresses its intent and probes the other driver's preference under epistemic uncertainty. It combines a level-k Bayesian persuasion game with virtual features for proactive signaling, information-theoretic rewards for mutual communication, and adaptive weights of communication affordances. We further introduce the Pride-Inquiry (P-I) and Pride-Prejudice (P-P) planes to analyze communication intensity and tendency. The model is calibrated with a Communication-Based Multi-Agent Inverse Reinforcement Learning algorithm (C-MIRL) on the naturalistic NGSIM dataset. Compared with the non-communicative baseline, the proposed model reduces the prediction error of mandatory lane changes by up to 20% while maintaining strong generalization. Driver-In-the-Loop questionnaire scores are positively correlated with the calibrated communication variables, supporting the subjective validity of the model. The learned rewards further show that inquiry and listening affordances contribute more than pride and expression alone, and that inquiry preference varies more strongly across drivers. These results support explicit modeling of mutual communication and epistemic uncertainty in interactive driving.",
+          "summarySections": {
+            "backgroundAndQuestion": "论文聚焦于混合自动驾驶中人车误读意图导致的安全与效率问题，属于多智能体交互决策的研究脉络。现有模型多为反应式或单向通信，难以刻画驾驶员间的双向认知不确定性（Epistemic Uncertainty）。核心难点在于如何建模隐式沟通中的信念更新与主动探知行为，传统方法因忽略沟通的互惠性而在预测与泛化上受限。",
+            "modelAndSetup": "研究任务是车道变换场景下的交互行为建模，输入为NGSIM自然驾驶数据与Driver-in-the-Loop实验数据，输出为车辆轨迹预测。模型基于层级贝叶斯劝说博弈框架，引入虚拟特征与信息论奖励，通过C-MIRL算法联合优化功能与沟通偏好权重。关键假设是双向沟通假设，即双方既表达也倾听，实验依赖高质量交互片段提取。",
+            "contributionsAndResults": "提出首个融合信息论与贝叶斯劝说的互惠沟通框架，定义了骄傲-探究（P-I）与骄傲-偏见（P-P）平面用于分析沟通倾向与强度。在NGSIM上相较基线降低20%强制变道预测误差，且主观问卷评分与模型变量显著相关，验证了其心理效度。结果支持显式建模互惠沟通与认知不确定性的重要性。",
+            "methodsAndTechniques": "方法结合层级推理与信息增益量化沟通行为：ego作为发送方通过轨迹选择影响对方信念（表达骄傲），同时最大化对方动作对其偏好的信息增益（主动探究）。通信效用包括骄傲、偏见、探究与利他，通过自适应权重整合。关键技术是将KL散度与互信息嵌入奖励函数，并设计动态沟通机会模型调节表达与倾听倾向。",
+            "limitationsAndReadingValue": "局限在于依赖仿真生成轨迹与固定层级假设，真实世界复杂沟通模式可能更丰富。虽有DIL验证，但样本量较小。不过其问题设定新颖，将社会心理学概念形式化为可计算模型，系统框架完整且实证充分，值得精读。尤其推荐关注其方法设计与沟通平面的可解释性分析部分。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "机制设计",
+            "算法设计",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "强化学习",
+            "信息设计",
+            "驾驶行为建模",
+            "贝叶斯推理"
+          ],
+          "tags": [
+            "多智能体系统",
+            "强化学习",
+            "信息设计",
+            "驾驶行为建模",
+            "贝叶斯推理",
+            "模型构建",
+            "机制设计",
+            "算法设计"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2606.16735"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-15",
+            "updated": "2026-06-15"
           }
         },
         {
@@ -318,41 +661,48 @@
             "Sunghwan Hong"
           ],
           "date": "2026-06-15",
-          "source": "arXiv cs.RO",
+          "source": "arXiv",
           "url": "https://arxiv.org/abs/2606.17046",
           "abstract": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and video world-action models (WAMs) inherit strong semantic or temporal priors from large-scale foundation models, but they still operate primarily on 2D image frames or 2D-derived latent spaces, leaving implicit the 3D geometry required for contact-rich manipulation. We propose the Geometric Action Model (GAM), a language-conditioned manipulation policy that directly repurposes a pretrained geometric foundation model (GFM) as a shared substrate for perception, temporal prediction, and action decoding. GAM splits the GFM at an intermediate layer: the shallow layers serve as an observation encoder, and a causal future predictor inserted at the split layer forecasts future latent tokens conditioned on language, proprioception, and action history. The predicted future tokens are then routed through the remaining GFM blocks for feature propagation and decoding, allowing a single backbone to produce both future geometry and actions. This design equips the GFM with language-conditioned temporal world modeling through minimal architectural modification while preserving its rich geometric priors. Across a broad suite of simulation and real-robot manipulation benchmarks, GAM is more accurate, more robust, faster, and lighter than current foundation-model-scale baselines.",
-          "summaryZh": "本文提出了一种名为几何动作模型（GAM）的新方法，旨在解决通用机器人策略在三维物理世界中对物体、相机与动作交互理解不足的问题。现有视觉-语言-动作模型（VLAs）和视频世界-动作模型（WAMs）多依赖2D图像或隐含的3D线索，难以应对接触密集的操作任务。GAM通过直接复用预训练的几何基础模型（GFM）作为共享主干，将其拆分为浅层观测编码器与深层解码器，并在中间插入因果未来预测器，联合预测未来的几何结构与动作序列。该设计以最小架构改动实现了感知、时序建模与动作解码的统一，在仿真与真实机器人任务中展现出更高的精度、鲁棒性、速度和轻量化优势。建议重点阅读其系统架构图与消融实验，以深入理解几何先验如何提升策略泛化能力。",
-          "reasonZh": "该工作创新性地将几何基础模型的显式3D先验融入机器人策略学习，突破了传统2D表征的局限，为构建真正具备空间推理能力的通用机器人提供了高效且可扩展的新范式。",
-          "recommendation": "strong_read",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于机器人策略学习的研究脉络，旨在解决现有视觉语言动作模型（VLA）和视频世界动作模型（WAM）依赖2D图像空间、缺乏显式3D几何理解的问题。这类方法在相机视角变化或物体遮挡下泛化能力弱，难以支持接触丰富的操作任务。引入3D几何先验是关键挑战，难点在于如何有效融合几何感知与动作生成，而非仅将几何模型作为静态特征提取器。",
+            "modelAndSetup": "论文提出Geometric Action Model（GAM），以多视角RGB图像、本体感觉状态和语言指令为输入，输出未来动作片段。模型基于预训练的几何基础模型（GFM），通过中间层拆分实现观察编码与未来预测的统一。训练采用多任务目标，包括动作回归、未来特征对齐和深度重建，在LIBERO系列仿真与真实机器人任务上评估成功率，并特别测试在相机扰动下的鲁棒性。",
+            "contributionsAndResults": "GAM的主要贡献是首次将几何基础模型整体重用于感知、未来状态预测与动作解码的共享主干。实验表明，其在保持高精度的同时，推理速度比扩散基线快55倍，参数量更小。在LIBERO-Plus等扰动环境下显著优于现有方法，尤其在相机位姿变化场景中提升达19.7个百分点，证明了显式几何建模对现实部署的重要性。",
+            "methodsAndTechniques": "GAM将GFM在中间层拆分为编码器与解码器，在分裂层插入因果未来预测器，联合预测未来几何隐变量与动作标记。语言指令、本体感觉和动作历史被嵌入为额外token参与自回归预测。预测后的token经GFM深层块传播，同步解码出未来深度图与动作序列。这种设计使动作生成直接受益于几何世界模型的时空推理能力，实现了真正的几何感知策略学习。",
+            "limitationsAndReadingValue": "论文局限在于文本理解受限于冻结的语言编码器，未探索更大规模语言模型的集成。尽管在多个基准上表现优异，但真实世界实验样本较少。其核心价值在于提出了一个简洁高效的几何-动作联合建模范式，值得精读其问题设定与系统设计，尤其是如何利用GFM的层次结构实现端到端的几何感知策略学习，这对具身智能发展具有启发意义。"
+          },
           "researchParadigmTags": [
+            "模型构建",
+            "实验验证",
             "系统框架",
-            "算法设计",
-            "实验验证"
+            "基准评测"
           ],
           "contentTags": [
-            "机器人策略学习",
-            "三维几何感知",
+            "机器人学习",
+            "几何表示",
             "视觉语言动作模型",
-            "基础模型迁移",
-            "时序预测"
+            "鲁棒性",
+            "未来预测"
           ],
           "tags": [
-            "机器人策略学习",
-            "三维几何感知",
+            "机器人学习",
+            "几何表示",
             "视觉语言动作模型",
-            "基础模型迁移",
-            "时序预测",
-            "系统框架",
-            "算法设计",
-            "实验验证"
+            "鲁棒性",
+            "未来预测",
+            "模型构建",
+            "实验验证",
+            "系统框架"
           ],
           "scores": {
-            "relevance": 10.0,
-            "novelty": 9.0,
-            "theoreticalDepth": 9.0,
-            "readability": 8.0,
-            "potentialImpact": 9.0,
-            "total": 10.0
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
           },
           "ids": {
             "arxiv": "2606.17046"
@@ -366,193 +716,7 @@
             ],
             "primaryCategory": "cs.RO",
             "published": "2026-06-15",
-            "updated": "2026-06-15",
-            "pdfUrl": "https://arxiv.org/pdf/2606.17046v1",
-            "isAGTOrEconCS": false
-          }
-        },
-        {
-          "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
-          "authors": [
-            "Tongyan Fang",
-            "Siyuan Huang",
-            "Naiyu Fang",
-            "Ganlong Zhao",
-            "Zhongjin Luo",
-            "Jianbo Liu",
-            "Xiaogang Wang",
-            "Ying Dong",
-            "Hongsheng Li"
-          ],
-          "date": "2026-06-15",
-          "source": "arXiv cs.RO",
-          "url": "https://arxiv.org/abs/2606.17043",
-          "abstract": "When pretrained VLA policies are fine-tuned through online RL, each rollout episode produces only a single binary outcome (success or failure), yet the actor update requires per-transition supervision. Existing approaches commonly reduce this sparse outcome to a single scalar reward or advantage signal, which conflates distinct forms of transition-level feedback and provides limited guidance once basic task success becomes achievable. First, a single scalar signal conflates the two objectives of viability and efficiency; once basic success is achieved, the binary label provides no gradient to distinguish efficient completions from slow ones. Second, real-world rollouts mix autonomous and intervention segments; naively assigning episode outcomes across these boundaries introduces incorrect credit assignment. To address these issues, we propose Hierarchical Advantage-Weighted Behavior Cloning (HABC), which trains separate critic heads for these two objectives on different data subsets and combines their outputs with a state-adaptive balance. A state-adaptive gate $g_t$ merges their one-step advantages, prioritizing viability when success is uncertain and shifting to efficiency only when viability is high, and converts the result into per-transition weights on the actor loss. Intervention-aware credit assignment further restricts outcome labels to segments executed by the current policy, preventing supervision from leaking across intervention boundaries. In real-robot experiments on three contact-rich bimanual tasks, HABC raises success from supervised fine-tuning (SFT) baselines of 36%, 44%, and 12% to 92%, 88%, and 38%.",
-          "summaryZh": "本文针对预训练的视觉-语言-动作（VLA）策略在在线强化学习微调中面临的挑战：每个执行仅产生成功或失败的稀疏结果，但策略更新需要每步反馈。现有方法将结果压缩为单一标量信号，混淆了状态可行性与执行效率，并在人机干预混合片段中导致信用分配错误。为此，作者提出分层优势加权行为克隆（HABC），通过双头批评网络分别建模可行性和效率，利用状态自适应门控融合二者优势，并生成每步损失权重。同时引入干预感知信用分配，仅将结果标签赋予策略自主执行段，避免监督泄露。在三个真实双臂操作任务上，HABC将成功率从SFT基线的36%/44%/12%提升至92%/88%/38%，效果显著。建议关注其方法设计与真实机器人实验部分。",
-          "reasonZh": "该工作有效解决了稀疏奖励下VLA模型在线微调的核心难题，结合真实机器人实验验证，对具身智能研究具有较强参考价值。",
-          "recommendation": "strong_read",
-          "researchParadigmTags": [
-            "算法设计",
-            "实验验证",
-            "系统框架"
-          ],
-          "contentTags": [
-            "Vision-Language-Action模型",
-            "在线强化学习",
-            "机器人操作",
-            "稀疏奖励",
-            "行为克隆"
-          ],
-          "tags": [
-            "Vision-Language-Action模型",
-            "在线强化学习",
-            "机器人操作",
-            "稀疏奖励",
-            "行为克隆",
-            "算法设计",
-            "实验验证",
-            "系统框架"
-          ],
-          "scores": {
-            "relevance": 9.0,
-            "novelty": 9.0,
-            "theoreticalDepth": 7.0,
-            "readability": 8.0,
-            "potentialImpact": 8.0,
-            "total": 10.0
-          },
-          "ids": {
-            "arxiv": "2606.17043"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.RO",
-              "cs.LG"
-            ],
-            "primaryCategory": "cs.RO",
-            "published": "2026-06-15",
-            "updated": "2026-06-15",
-            "pdfUrl": "https://arxiv.org/pdf/2606.17043v1",
-            "isAGTOrEconCS": false
-          }
-        }
-      ]
-    },
-    {
-      "id": "classic-ai",
-      "title": "经典 AI 阅读",
-      "source": "classic-ai",
-      "papers": [
-        {
-          "title": "R: A Language and Environment for Statistical Computing",
-          "authors": [
-            "R Core Team"
-          ],
-          "date": "2000-02-29",
-          "source": "OpenAlex",
-          "url": "https://doi.org/10.32614/r.manuals",
-          "abstract": "Most R novices will start with Appendix A [A sample session], page 80.This should give some familiarity with the style of R sessions and more importantly some instant feedback on what actually happens.Many users will come to R mainly for its graphical facilities.",
-          "summaryZh": "本文是R语言的官方入门手册，系统介绍了R这一用于统计计算与数据分析的集成环境。全书从基础语法、数据结构讲起，涵盖向量化运算、函数式编程、统计建模及高级图形系统，强调通过对象化方式组织分析流程。其核心贡献在于提供了一套完整的、可重复的数据分析工作流范式，并通过丰富的示例引导读者逐步掌握交互式探索与批处理操作。建议结合附录A的实例会话进行动手实践，优先学习数据处理与绘图章节。",
-          "reasonZh": "作为影响深远的开源统计语言奠基性文档，它不仅定义了现代数据科学的工作模式，也体现了软件即理论载体的科学哲学。",
-          "recommendation": "strong_read",
-          "researchParadigmTags": [
-            "综述/教程",
-            "系统框架",
-            "算法设计"
-          ],
-          "contentTags": [
-            "统计计算",
-            "数据分析",
-            "编程语言",
-            "图形可视化",
-            "开源软件"
-          ],
-          "tags": [
-            "统计计算",
-            "数据分析",
-            "编程语言",
-            "图形可视化",
-            "开源软件",
-            "综述/教程",
-            "系统框架",
-            "算法设计"
-          ],
-          "scores": {
-            "relevance": 9.0,
-            "novelty": 6.5,
-            "theoreticalDepth": 8.0,
-            "readability": 7.5,
-            "potentialImpact": 9.5,
-            "total": 8.4
-          },
-          "ids": {
-            "openalex": "https://openalex.org/W2582743722",
-            "doi": "10.32614/r.manuals"
-          },
-          "metadata": {
-            "provider": "openalex",
-            "citedByCount": 352998,
-            "publicationYear": 2000,
-            "pdfUrl": "https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf"
-          }
-        }
-      ]
-    },
-    {
-      "id": "conference-agt",
-      "title": "会议 AGT 论文",
-      "source": "conference-list",
-      "papers": [
-        {
-          "title": "Congested Waiting Lists and Organ Allocation",
-          "authors": [
-            "Itai Ashlagi",
-            "Ravi Jagadeesan",
-            "Pengyu Qian"
-          ],
-          "date": "2026",
-          "source": "EC 2026 accepted papers",
-          "url": "https://ec26.sigecom.org/program/accepted-papers/",
-          "abstract": "",
-          "summaryZh": "会议列表暂无摘要，根据题目《Congested Waiting Lists and Organ Allocation》和来源EC 2026初步判断，该论文可能研究在器官分配中等待队列拥堵情况下的资源配置问题，属于算法博弈论与市场设计的交叉领域。",
-          "reasonZh": "题目涉及公共资源分配中的关键现实挑战，且发表于顶级会议EC，具有较高的理论与实践潜在价值。",
-          "recommendation": "read",
-          "researchParadigmTags": [
-            "理论推导",
-            "机制设计"
-          ],
-          "contentTags": [
-            "市场/匹配",
-            "器官分配",
-            "排队系统",
-            "资源分配",
-            "博弈论"
-          ],
-          "tags": [
-            "市场/匹配",
-            "器官分配",
-            "排队系统",
-            "资源分配",
-            "博弈论",
-            "理论推导",
-            "机制设计"
-          ],
-          "scores": {
-            "relevance": 8.0,
-            "novelty": 6.0,
-            "theoreticalDepth": 7.0,
-            "readability": 5.0,
-            "potentialImpact": 8.0,
-            "total": 10.0
-          },
-          "ids": {},
-          "metadata": {
-            "provider": "conference-list",
-            "venue": "EC",
-            "year": "2026",
-            "listingUrl": "https://ec26.sigecom.org/program/accepted-papers/",
-            "isAGTOrEconCS": true
+            "updated": "2026-06-15"
           }
         }
       ]

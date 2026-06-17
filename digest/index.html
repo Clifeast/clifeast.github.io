@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="/assets/styles/index.css" />
   <link rel="stylesheet" href="/assets/styles/digest.css" />
   <script defer src="/assets/scripts/layout.js"></script>
-  <script defer src="/assets/scripts/digest.js" data-digest-path="/data/digest/today.json"></script>
+  <script defer src="/assets/scripts/digest.js" data-digest-path="/data/digest/today.json"
+    data-digest-index-path="/data/digest/index.json"></script>
 </head>
 
 <body>
@@ -25,11 +26,11 @@
           <h1 id="digest-title">论文日报</h1>
           <p class="digest-date" id="digest-date">今天日期</p>
         </div>
-        <div class="digest-hero__panel" aria-label="今日日报概览">
-          <span class="digest-hero__eyebrow">Daily Research Brief</span>
-          <div class="digest-metrics" id="digest-metrics">
-            <span>读取中</span>
-          </div>
+        <div class="digest-picker" aria-label="选择日报日期">
+          <label class="digest-picker__label" for="digest-picker-select">选择简报</label>
+          <select class="digest-picker__select" id="digest-picker-select">
+            <option value="today">今日简报</option>
+          </select>
         </div>
       </section>
 

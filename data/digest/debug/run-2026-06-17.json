@@ -1,0 +1,1561 @@
+{
+  "date": "2026-06-17",
+  "generatedAt": "2026-06-17T12:05:39.321309+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-16",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606160000 TO 202606162359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606160000 TO 202606162359\"",
+            "totalResults": 1,
+            "fetchedCount": 1
+          }
+        },
+        "dedupedCount": 6
+      },
+      "arxivTotalResults": 7,
+      "fetchedCount": 6,
+      "fetchedPapers": [
+        {
+          "title": "Ergodic Deviation-Robust Equilibrium under Mirror Descent Learning in Finite Games",
+          "url": "https://arxiv.org/abs/2606.18194",
+          "arxivId": "2606.18194",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.DS",
+            "math.OC"
+          ],
+          "abstract": "We introduce Ergodic Deviation-Robust Equilibrium (EDRE), a dynamics-relative equilibrium concept for repeated finite games in which agents learn via entropic mirror descent (EMD). EDRE requires three properties to hold simultaneously for the same profile and learning run: (E1) the limit profile is an $\\varepsilon$-Nash equilibrium at a product distribution; (E2) along the entire learning trajectory, every fixed coalition's cumulative aggregate (summed-unilateral) deviation gain is $\\tilde{\\mathcal{O}}(\\sqrt{T})$ with high probability; and (E3) the limit profile is a fixed point of the EMD map, so that it is selected by the dynamics rather than merely certified as an equilibrium. We prove that the $\\sqrt{T}$ deviation-regret rate is order-tight, establish existence in exact-potential games (via Nash's theorem, with a constructive proximal route under concavity) together with Lyapunov monotonicity of EMD (and pointwise convergence when the fixed-point set is a singleton), and extend the selection property to monotone polymatrix games through variational inequalities. Although a static EDRE coincides with an $\\varepsilon$-Nash equilibrium, its content is dynamic: robust (positive-measure) selection under EMD excludes linearly unstable equilibria, so EDRE acts as a Nash equilibrium equipped with a dynamic certificate rather than a static refinement. On the complexity side, we show that computing EDRE is PPAD-hard in general polymatrix games and belongs to promise-PPAD for potential games. A worked $2\\times 2$ coordination-game example illustrates all components of the framework. Additional results, including a bandit-feedback extension, a period-doubling route to Li-Yorke chaos for the two-strategy EMD map at large step size, a linear-program formulation for minimum-cost steering, and supporting simulations, appear in the appendices."
+        },
+        {
+          "title": "Security-Induced Braess Paradoxes in Service Function Chain Orchestration",
+          "url": "https://arxiv.org/abs/2606.17987",
+          "arxivId": "2606.17987",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NI",
+            "cs.CR",
+            "cs.GT"
+          ],
+          "abstract": "NFV/SDN orchestration lets operators instantiate and steer traffic through virtual firewalls, IDS/IPS replicas, WAF clusters, zero-trust gateways, backup inspection paths, and migration targets on demand. Operators often treat these options as monotone improvements: more inspection capacity, lower nominal latency, or broader placement flexibility should not degrade the service. That intuition can fail even when the new option is locally attractive. We study a security-induced Braess paradox in service function chain (SFC) orchestration, where adding a defensive option worsens the post-adaptation equilibrium by concentrating traffic and adversarial value on shared security resources. We define Braessian security-management actions, derive a sufficient condition for paradox emergence under affine load-dependent VNF delay, and give a pre-deployment orchestration screen that rejects, caps, or reserves harmful options. A multi-tenant SFC experiment suite applies the model to four topology-derived settings: a fat-tree datacenter, NSFNET-style WAN, GEANT-style WAN, and edge/fog topology. Under default parameters in the Braessian regime identified by the theory, naive defensive expansion raises equilibrium service cost by 27.2-30.8% and increases risk concentration by factors of 6.1-9.7. Paradox-aware constrained use keeps the residual penalty below 1.9%, reduces service cost by 20.0-22.1% relative to naive expansion, and lowers a concentration-sensitive attack-loss proxy by 93.5% on average."
+        },
+        {
+          "title": "Parasitic Masquerade: Societal Scale Human-Machine Interaction",
+          "url": "https://arxiv.org/abs/2606.17925",
+          "arxivId": "2606.17925",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "This work extends recent developments in studying human--machine interaction by scaling from individual game-theoretic models to a societal-level model. We adopt a Graphon Mean-Field Game (GMFG) that models the interaction among four groups of internally-homogeneous but externally-heterogeneous agents in a shared environment. Our results show that parasitism can masquerade as productive learning, with knowledge distribution and actions appearing healthy while being driven by machine coupling rather than independent investigation. To detect this, we measure the direction of information flow and belief entropy of the environment, revealing that human to machine channel dominates across all scenarios, with the asymmetry intensifying under parasitism. We further demonstrate that the system exhibits coexisting mutualistic and parasitic equilibria, where environmental noise can induce a tipping point that shifts agents past the cognitive cost barrier. These emergent phenomena are not designed into any individual agent but arise from the collective interaction structure, underscoring the need to study the sociology of humans and machines holistically as a complex system."
+        },
+        {
+          "title": "Pure or Unstable: A Generic Dichotomy for Strong Stackelberg Commitments",
+          "url": "https://arxiv.org/abs/2606.17415",
+          "arxivId": "2606.17415",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the robustness of the Strong Stackelberg Equilibrium (SSE) in finite leader--follower games when the follower's best-response correspondence is set-valued. While optimistic tie-breaking (in the leader's favor) is commonly adopted, it can hinge on knife-edge indifferences. We formalize a stability notion: an SSE is unstable if, at the leader's committed strategy, the follower has an alternative best response that strictly reduces the leader's payoff. Our main results establish a sharp generic dichotomy. Fixing the follower's utility and sampling the leader's utility from any continuous distribution, with probability one the optimal Stackelberg commitment is unique and is either (i) pure, or (ii) mixed and unstable. When both players' utilities are sampled generically, this strengthens to: with probability one, the unique optimal commitment is either pure and stable or mixed and unstable. These theorems complement the classic generic-value result of von Stengel and Zamir by showing that even when optimistic and pessimistic leader values coincide generically, the strategy-level SSE prediction is generically fragile whenever optimality requires genuine randomization. We further apply this perspective to Stackelberg satisfaction games, disproving a conjecture from prior work via counterexamples and identifying conditions under which it nonetheless holds."
+        },
+        {
+          "title": "Coarse Preference Reporting in the Bottleneck Model: Approximate Strategyproofness and Efficiency",
+          "url": "https://arxiv.org/abs/2606.17400",
+          "arxivId": "2606.17400",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "econ.TH"
+          ],
+          "abstract": "A central operator schedules each vehicle's passage time through a bottleneck to achieve a dynamic system optimum (DSO). The assignment depends on each vehicle's preferred arrival time, which is private and must be elicited from each vehicle. Mechanisms that elicit exact preferences, such as the Vickrey-Clarke-Groves (VCG) mechanism, can achieve strategyproofness but involve relatively complex rules and a computational burden on the operator. We focus instead on coarse reporting, in which each vehicle selects from a finite menu of time slots of a common width. This discrete interface already structures reservation and appointment systems in practice, including managed lanes for automated vehicles, airport slot allocation, and delivery appointment windows. We design a slot-based DSO mechanism on this coarse interface, in which the operator implements DSO assignment based on the reported slots and charges a capacity shadow price as a toll, and evaluate its performance. We prove that both the worst-case misreporting gain and the expected efficiency loss decrease quadratically in the slot width. The efficiency loss decays in this way under binding capacity, while the worst-case misreporting gain requires an additional condition on the preferred arrival time distribution and the schedule cost function. Analyzing the no-toll case, we find that the misreporting incentive persists, however finely the slots are refined, indicating that the toll also serves to elicit truthful reports. Numerical experiments support these theoretical results and show that they continue to hold in parameter regions outside the sufficient conditions."
+        },
+        {
+          "title": "Designing Recommendation Exposure and Favorite Lists: A Field Experiment in a Spot-Work Platform",
+          "url": "https://arxiv.org/abs/2606.17397",
+          "arxivId": "2606.17397",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.GT",
+            "cs.IR"
+          ],
+          "abstract": "How should recommender systems be designed when recommendations shape access to scarce, short-lived opportunities? We study this question in a production setting: Timee, Japan's largest platform for spot work, where workers favorite job templates and receive notifications when firms post shifts from those templates. Maximizing predicted favoriting can generate misdirected concentration: recommendations accumulate on popular templates that create few viable job openings, while templates with unmet labor demand receive too little exposure. We design exposure-control mechanisms for favorite-list management, reallocating template exposure based on posting activity and unfilled capacity. The proposed recommender, thresholded eligibility control (TEC), is fully parallelizable and suitable for large-scale digital platforms. In simulations calibrated to Timee data, TEC raises the per-round job-finding rate from 57.6\\% to 70.0\\%. A prefecture-level randomized field experiment increases realized matches and exposure per active template, reduces the share of low-exposure templates, and improves impression-level favoriting and downstream matching."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Ergodic Deviation-Robust Equilibrium under Mirror Descent Learning in Finite Games",
+              "url": "https://arxiv.org/abs/2606.18194",
+              "arxivId": "2606.18194",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.DS",
+                "math.OC"
+              ],
+              "abstract": "We introduce Ergodic Deviation-Robust Equilibrium (EDRE), a dynamics-relative equilibrium concept for repeated finite games in which agents learn via entropic mirror descent (EMD). EDRE requires three properties to hold simultaneously for the same profile and learning run: (E1) the limit profile is an $\\varepsilon$-Nash equilibrium at a product distribution; (E2) along the entire learning trajectory, every fixed coalition's cumulative aggregate (summed-unilateral) deviation gain is $\\tilde{\\mathcal{O}}(\\sqrt{T})$ with high probability; and (E3) the limit profile is a fixed point of the EMD map, so that it is selected by the dynamics rather than merely certified as an equilibrium. We prove that the $\\sqrt{T}$ deviation-regret rate is order-tight, establish existence in exact-potential games (via Nash's theorem, with a constructive proximal route under concavity) together with Lyapunov monotonicity of EMD (and pointwise convergence when the fixed-point set is a singleton), and extend the selection property to monotone polymatrix games through variational inequalities. Although a static EDRE coincides with an $\\varepsilon$-Nash equilibrium, its content is dynamic: robust (positive-measure) selection under EMD excludes linearly unstable equilibria, so EDRE acts as a Nash equilibrium equipped with a dynamic certificate rather than a static refinement. On the complexity side, we show that computing EDRE is PPAD-hard in general polymatrix games and belongs to promise-PPAD for potential games. A worked $2\\times 2$ coordination-game example illustrates all components of the framework. Additional results, including a bandit-feedback extension, a period-doubling route to Li-Yorke chaos for the two-strategy EMD map at large step size, a linear-program formulation for minimum-cost steering, and supporting simulations, appear in the appendices."
+            },
+            {
+              "title": "Security-Induced Braess Paradoxes in Service Function Chain Orchestration",
+              "url": "https://arxiv.org/abs/2606.17987",
+              "arxivId": "2606.17987",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.NI",
+                "cs.CR",
+                "cs.GT"
+              ],
+              "abstract": "NFV/SDN orchestration lets operators instantiate and steer traffic through virtual firewalls, IDS/IPS replicas, WAF clusters, zero-trust gateways, backup inspection paths, and migration targets on demand. Operators often treat these options as monotone improvements: more inspection capacity, lower nominal latency, or broader placement flexibility should not degrade the service. That intuition can fail even when the new option is locally attractive. We study a security-induced Braess paradox in service function chain (SFC) orchestration, where adding a defensive option worsens the post-adaptation equilibrium by concentrating traffic and adversarial value on shared security resources. We define Braessian security-management actions, derive a sufficient condition for paradox emergence under affine load-dependent VNF delay, and give a pre-deployment orchestration screen that rejects, caps, or reserves harmful options. A multi-tenant SFC experiment suite applies the model to four topology-derived settings: a fat-tree datacenter, NSFNET-style WAN, GEANT-style WAN, and edge/fog topology. Under default parameters in the Braessian regime identified by the theory, naive defensive expansion raises equilibrium service cost by 27.2-30.8% and increases risk concentration by factors of 6.1-9.7. Paradox-aware constrained use keeps the residual penalty below 1.9%, reduces service cost by 20.0-22.1% relative to naive expansion, and lowers a concentration-sensitive attack-loss proxy by 93.5% on average."
+            },
+            {
+              "title": "Parasitic Masquerade: Societal Scale Human-Machine Interaction",
+              "url": "https://arxiv.org/abs/2606.17925",
+              "arxivId": "2606.17925",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "This work extends recent developments in studying human--machine interaction by scaling from individual game-theoretic models to a societal-level model. We adopt a Graphon Mean-Field Game (GMFG) that models the interaction among four groups of internally-homogeneous but externally-heterogeneous agents in a shared environment. Our results show that parasitism can masquerade as productive learning, with knowledge distribution and actions appearing healthy while being driven by machine coupling rather than independent investigation. To detect this, we measure the direction of information flow and belief entropy of the environment, revealing that human to machine channel dominates across all scenarios, with the asymmetry intensifying under parasitism. We further demonstrate that the system exhibits coexisting mutualistic and parasitic equilibria, where environmental noise can induce a tipping point that shifts agents past the cognitive cost barrier. These emergent phenomena are not designed into any individual agent but arise from the collective interaction structure, underscoring the need to study the sociology of humans and machines holistically as a complex system."
+            },
+            {
+              "title": "Pure or Unstable: A Generic Dichotomy for Strong Stackelberg Commitments",
+              "url": "https://arxiv.org/abs/2606.17415",
+              "arxivId": "2606.17415",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the robustness of the Strong Stackelberg Equilibrium (SSE) in finite leader--follower games when the follower's best-response correspondence is set-valued. While optimistic tie-breaking (in the leader's favor) is commonly adopted, it can hinge on knife-edge indifferences. We formalize a stability notion: an SSE is unstable if, at the leader's committed strategy, the follower has an alternative best response that strictly reduces the leader's payoff. Our main results establish a sharp generic dichotomy. Fixing the follower's utility and sampling the leader's utility from any continuous distribution, with probability one the optimal Stackelberg commitment is unique and is either (i) pure, or (ii) mixed and unstable. When both players' utilities are sampled generically, this strengthens to: with probability one, the unique optimal commitment is either pure and stable or mixed and unstable. These theorems complement the classic generic-value result of von Stengel and Zamir by showing that even when optimistic and pessimistic leader values coincide generically, the strategy-level SSE prediction is generically fragile whenever optimality requires genuine randomization. We further apply this perspective to Stackelberg satisfaction games, disproving a conjecture from prior work via counterexamples and identifying conditions under which it nonetheless holds."
+            },
+            {
+              "title": "Coarse Preference Reporting in the Bottleneck Model: Approximate Strategyproofness and Efficiency",
+              "url": "https://arxiv.org/abs/2606.17400",
+              "arxivId": "2606.17400",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "econ.TH"
+              ],
+              "abstract": "A central operator schedules each vehicle's passage time through a bottleneck to achieve a dynamic system optimum (DSO). The assignment depends on each vehicle's preferred arrival time, which is private and must be elicited from each vehicle. Mechanisms that elicit exact preferences, such as the Vickrey-Clarke-Groves (VCG) mechanism, can achieve strategyproofness but involve relatively complex rules and a computational burden on the operator. We focus instead on coarse reporting, in which each vehicle selects from a finite menu of time slots of a common width. This discrete interface already structures reservation and appointment systems in practice, including managed lanes for automated vehicles, airport slot allocation, and delivery appointment windows. We design a slot-based DSO mechanism on this coarse interface, in which the operator implements DSO assignment based on the reported slots and charges a capacity shadow price as a toll, and evaluate its performance. We prove that both the worst-case misreporting gain and the expected efficiency loss decrease quadratically in the slot width. The efficiency loss decays in this way under binding capacity, while the worst-case misreporting gain requires an additional condition on the preferred arrival time distribution and the schedule cost function. Analyzing the no-toll case, we find that the misreporting incentive persists, however finely the slots are refined, indicating that the toll also serves to elicit truthful reports. Numerical experiments support these theoretical results and show that they continue to hold in parameter regions outside the sufficient conditions."
+            },
+            {
+              "title": "Designing Recommendation Exposure and Favorite Lists: A Field Experiment in a Spot-Work Platform",
+              "url": "https://arxiv.org/abs/2606.17397",
+              "arxivId": "2606.17397",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "cs.GT",
+                "cs.IR"
+              ],
+              "abstract": "How should recommender systems be designed when recommendations shape access to scarce, short-lived opportunities? We study this question in a production setting: Timee, Japan's largest platform for spot work, where workers favorite job templates and receive notifications when firms post shifts from those templates. Maximizing predicted favoriting can generate misdirected concentration: recommendations accumulate on popular templates that create few viable job openings, while templates with unmet labor demand receive too little exposure. We design exposure-control mechanisms for favorite-list management, reallocating template exposure based on posting activity and unfilled capacity. The proposed recommender, thresholded eligibility control (TEC), is fully parallelizable and suitable for large-scale digital platforms. In simulations calibrated to Timee data, TEC raises the per-round job-finding rate from 57.6\\% to 70.0\\%. A prefecture-level randomized field experiment increases realized matches and exposure per active template, reduces the share of low-exposure templates, and improves impression-level favoriting and downstream matching."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 4,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 6,
+                  "penalty": -2,
+                  "aiRelevance": 9,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 7,
+                  "agtRelevance": 8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Ergodic Deviation-Robust Equilibrium under Mirror Descent Learning in Finite Games",
+              "url": "https://arxiv.org/abs/2606.18194",
+              "arxivId": "2606.18194",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.DS",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 7,
+                "theoreticalStrength": 9,
+                "guaranteeQuality": 6,
+                "readingValue": 6,
+                "aiRelevance": 3,
+                "agtRelevance": 9,
+                "penalty": 0,
+                "baseTotal": 28,
+                "bonus": 2.8,
+                "total": 27.7
+              }
+            },
+            {
+              "title": "Security-Induced Braess Paradoxes in Service Function Chain Orchestration",
+              "url": "https://arxiv.org/abs/2606.17987",
+              "arxivId": "2606.17987",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.NI",
+                "cs.CR",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8,
+                "theoreticalStrength": 7,
+                "guaranteeQuality": 5,
+                "readingValue": 5,
+                "aiRelevance": 4,
+                "agtRelevance": 8,
+                "penalty": -1,
+                "baseTotal": 24,
+                "bonus": 3.2,
+                "total": 21.8
+              }
+            },
+            {
+              "title": "Parasitic Masquerade: Societal Scale Human-Machine Interaction",
+              "url": "https://arxiv.org/abs/2606.17925",
+              "arxivId": "2606.17925",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6,
+                "theoreticalStrength": 7,
+                "guaranteeQuality": 4,
+                "readingValue": 6,
+                "aiRelevance": 9,
+                "agtRelevance": 9,
+                "penalty": -2,
+                "baseTotal": 21,
+                "bonus": 6.3,
+                "total": 24.6
+              }
+            },
+            {
+              "title": "Pure or Unstable: A Generic Dichotomy for Strong Stackelberg Commitments",
+              "url": "https://arxiv.org/abs/2606.17415",
+              "arxivId": "2606.17415",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8,
+                "theoreticalStrength": 10,
+                "guaranteeQuality": 6,
+                "readingValue": 6,
+                "aiRelevance": 2,
+                "agtRelevance": 10,
+                "penalty": 0,
+                "baseTotal": 30,
+                "bonus": 2,
+                "total": 32
+              }
+            },
+            {
+              "title": "Coarse Preference Reporting in the Bottleneck Model: Approximate Strategyproofness and Efficiency",
+              "url": "https://arxiv.org/abs/2606.17400",
+              "arxivId": "2606.17400",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8,
+                "theoreticalStrength": 8,
+                "guaranteeQuality": 6,
+                "readingValue": 5,
+                "aiRelevance": 3,
+                "agtRelevance": 9,
+                "penalty": 0,
+                "baseTotal": 27,
+                "bonus": 2.7,
+                "total": 26.7
+              }
+            },
+            {
+              "title": "Designing Recommendation Exposure and Favorite Lists: A Field Experiment in a Spot-Work Platform",
+              "url": "https://arxiv.org/abs/2606.17397",
+              "arxivId": "2606.17397",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "cs.GT",
+                "cs.IR"
+              ],
+              "scores": {
+                "modelNaturalness": 7,
+                "theoreticalStrength": 5,
+                "guaranteeQuality": 4,
+                "readingValue": 5,
+                "aiRelevance": 7,
+                "agtRelevance": 8,
+                "penalty": -2,
+                "baseTotal": 19,
+                "bonus": 4.4,
+                "total": 18.7
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Ergodic Deviation-Robust Equilibrium under Mirror Descent Learning in Finite Games",
+          "url": "https://arxiv.org/abs/2606.18194",
+          "arxivId": "2606.18194",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.DS",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7,
+            "theoreticalStrength": 9,
+            "guaranteeQuality": 6,
+            "readingValue": 6,
+            "aiRelevance": 3,
+            "agtRelevance": 9,
+            "penalty": 0,
+            "baseTotal": 28,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "Security-Induced Braess Paradoxes in Service Function Chain Orchestration",
+          "url": "https://arxiv.org/abs/2606.17987",
+          "arxivId": "2606.17987",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NI",
+            "cs.CR",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8,
+            "theoreticalStrength": 7,
+            "guaranteeQuality": 5,
+            "readingValue": 5,
+            "aiRelevance": 4,
+            "agtRelevance": 8,
+            "penalty": -1,
+            "baseTotal": 24,
+            "bonus": 3.2,
+            "total": 21.8
+          }
+        },
+        {
+          "title": "Parasitic Masquerade: Societal Scale Human-Machine Interaction",
+          "url": "https://arxiv.org/abs/2606.17925",
+          "arxivId": "2606.17925",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6,
+            "theoreticalStrength": 7,
+            "guaranteeQuality": 4,
+            "readingValue": 6,
+            "aiRelevance": 9,
+            "agtRelevance": 9,
+            "penalty": -2,
+            "baseTotal": 21,
+            "bonus": 6.3,
+            "total": 24.6
+          }
+        },
+        {
+          "title": "Pure or Unstable: A Generic Dichotomy for Strong Stackelberg Commitments",
+          "url": "https://arxiv.org/abs/2606.17415",
+          "arxivId": "2606.17415",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8,
+            "theoreticalStrength": 10,
+            "guaranteeQuality": 6,
+            "readingValue": 6,
+            "aiRelevance": 2,
+            "agtRelevance": 10,
+            "penalty": 0,
+            "baseTotal": 30,
+            "bonus": 2,
+            "total": 32
+          }
+        },
+        {
+          "title": "Coarse Preference Reporting in the Bottleneck Model: Approximate Strategyproofness and Efficiency",
+          "url": "https://arxiv.org/abs/2606.17400",
+          "arxivId": "2606.17400",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8,
+            "theoreticalStrength": 8,
+            "guaranteeQuality": 6,
+            "readingValue": 5,
+            "aiRelevance": 3,
+            "agtRelevance": 9,
+            "penalty": 0,
+            "baseTotal": 27,
+            "bonus": 2.7,
+            "total": 26.7
+          }
+        },
+        {
+          "title": "Designing Recommendation Exposure and Favorite Lists: A Field Experiment in a Spot-Work Platform",
+          "url": "https://arxiv.org/abs/2606.17397",
+          "arxivId": "2606.17397",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.GT",
+            "cs.IR"
+          ],
+          "scores": {
+            "modelNaturalness": 7,
+            "theoreticalStrength": 5,
+            "guaranteeQuality": 4,
+            "readingValue": 5,
+            "aiRelevance": 7,
+            "agtRelevance": 8,
+            "penalty": -2,
+            "baseTotal": 19,
+            "bonus": 4.4,
+            "total": 18.7
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Pure or Unstable: A Generic Dichotomy for Strong Stackelberg Commitments",
+          "url": "https://arxiv.org/abs/2606.17415",
+          "arxivId": "2606.17415",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8,
+            "theoreticalStrength": 10,
+            "guaranteeQuality": 6,
+            "readingValue": 6,
+            "aiRelevance": 2,
+            "agtRelevance": 10,
+            "penalty": 0,
+            "baseTotal": 30,
+            "bonus": 2,
+            "total": 32
+          }
+        },
+        {
+          "title": "Ergodic Deviation-Robust Equilibrium under Mirror Descent Learning in Finite Games",
+          "url": "https://arxiv.org/abs/2606.18194",
+          "arxivId": "2606.18194",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.DS",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7,
+            "theoreticalStrength": 9,
+            "guaranteeQuality": 6,
+            "readingValue": 6,
+            "aiRelevance": 3,
+            "agtRelevance": 9,
+            "penalty": 0,
+            "baseTotal": 28,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "Coarse Preference Reporting in the Bottleneck Model: Approximate Strategyproofness and Efficiency",
+          "url": "https://arxiv.org/abs/2606.17400",
+          "arxivId": "2606.17400",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8,
+            "theoreticalStrength": 8,
+            "guaranteeQuality": 6,
+            "readingValue": 5,
+            "aiRelevance": 3,
+            "agtRelevance": 9,
+            "penalty": 0,
+            "baseTotal": 27,
+            "bonus": 2.7,
+            "total": 26.7
+          }
+        },
+        {
+          "title": "Parasitic Masquerade: Societal Scale Human-Machine Interaction",
+          "url": "https://arxiv.org/abs/2606.17925",
+          "arxivId": "2606.17925",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6,
+            "theoreticalStrength": 7,
+            "guaranteeQuality": 4,
+            "readingValue": 6,
+            "aiRelevance": 9,
+            "agtRelevance": 9,
+            "penalty": -2,
+            "baseTotal": 21,
+            "bonus": 6.3,
+            "total": 24.6
+          }
+        },
+        {
+          "title": "Security-Induced Braess Paradoxes in Service Function Chain Orchestration",
+          "url": "https://arxiv.org/abs/2606.17987",
+          "arxivId": "2606.17987",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NI",
+            "cs.CR",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8,
+            "theoreticalStrength": 7,
+            "guaranteeQuality": 5,
+            "readingValue": 5,
+            "aiRelevance": 4,
+            "agtRelevance": 8,
+            "penalty": -1,
+            "baseTotal": 24,
+            "bonus": 3.2,
+            "total": 21.8
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Pure or Unstable: A Generic Dichotomy for Strong Stackelberg Commitments",
+            "url": "https://arxiv.org/abs/2606.17415",
+            "arxivId": "2606.17415",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "综述/教程"
+            ],
+            "contentTags": [
+              "机制设计",
+              "博弈论",
+              "信息设计",
+              "隐私/安全",
+              "学习博弈"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论中Stackelberg领导-跟随者模型的研究脉络，聚焦于强Stackelberg均衡（SSE）在追随者存在多重最优响应时的稳健性问题。传统乐观平局打破假设可能依赖于精细无差的偏好，导致实际承诺策略脆弱。该问题在安全博弈等应用中尤为关键，因人类行为常偏离完美理性，使得理论预测易受扰动。",
+              "modelAndSetup": "研究设定为有限双人Stackelberg博弈，领导者先承诺混合策略，追随者随后选择最优响应。当追随者有多个最优响应时，采用强Stackelberg均衡即乐观平局打破。模型允许效用函数从连续分布随机采样，分析其几乎必然性质。核心在于考察领导者最优承诺策略的纯性与稳定性关系。",
+              "contributionsAndResults": "主要贡献是建立了一个尖锐的通用二分法：固定追随者效用并随机采样领导者效用时，几乎必然地，最优Stackelberg策略要么是纯策略，要么是混合且不稳定的。进一步，当双方效用均随机采样时，最优策略几乎必然是纯且稳定或混合且不稳定。这揭示了随机化承诺的结构性脆弱。",
+              "methodsAndTechniques": "证明基于几何与测度论方法，利用追随者最佳响应集形成的凸多面体结构，结合极值点分析。通过展示混合最优策略必位于多个响应区域交界，并借助连续分布下线性表达式为零的概率为零，得出不稳定性的几乎必然成立。定量版本还估计了收益差距的大小概率。",
+              "limitationsAndReadingValue": "结果依赖通用性假设，在特定结构博弈中可能不适用。然而其对SSE稳健性的深刻洞察具有广泛意义。论文值得精读，尤其在模型设定、核心定理及其对安全博弈中随机化策略的实际警示方面。证明技巧对研究均衡稳定性亦具启发价值。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论中Stackelberg领导-跟随者模型的研究脉络，聚焦于强Stackelberg均衡（SSE）在追随者存在多重最优响应时的稳健性问题。传统乐观平局打破假设可能依赖于精细无差的偏好，导致实际承诺策略脆弱。该问题在安全博弈等应用中尤为关键，因人类行为常偏离完美理性，使得理论预测易受扰动。",
+              "modelAndSetup": "研究设定为有限双人Stackelberg博弈，领导者先承诺混合策略，追随者随后选择最优响应。当追随者有多个最优响应时，采用强Stackelberg均衡即乐观平局打破。模型允许效用函数从连续分布随机采样，分析其几乎必然性质。核心在于考察领导者最优承诺策略的纯性与稳定性关系。",
+              "contributionsAndResults": "主要贡献是建立了一个尖锐的通用二分法：固定追随者效用并随机采样领导者效用时，几乎必然地，最优Stackelberg策略要么是纯策略，要么是混合且不稳定的。进一步，当双方效用均随机采样时，最优策略几乎必然是纯且稳定或混合且不稳定。这揭示了随机化承诺的结构性脆弱。",
+              "methodsAndTechniques": "证明基于几何与测度论方法，利用追随者最佳响应集形成的凸多面体结构，结合极值点分析。通过展示混合最优策略必位于多个响应区域交界，并借助连续分布下线性表达式为零的概率为零，得出不稳定性的几乎必然成立。定量版本还估计了收益差距的大小概率。",
+              "limitationsAndReadingValue": "结果依赖通用性假设，在特定结构博弈中可能不适用。然而其对SSE稳健性的深刻洞察具有广泛意义。论文值得精读，尤其在模型设定、核心定理及其对安全博弈中随机化策略的实际警示方面。证明技巧对研究均衡稳定性亦具启发价值。"
+            },
+            "contentTags": [
+              "机制设计",
+              "博弈论",
+              "信息设计",
+              "隐私/安全",
+              "学习博弈"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "综述/教程"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Ergodic Deviation-Robust Equilibrium under Mirror Descent Learning in Finite Games",
+            "url": "https://arxiv.org/abs/2606.18194",
+            "arxivId": "2606.18194",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "math.DS",
+              "math.OC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "均衡分析",
+              "复杂性分析",
+              "学习博弈"
+            ],
+            "contentTags": [
+              "博弈论",
+              "镜像下降",
+              "纳什均衡",
+              "偏差稳健性",
+              "计算复杂性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于学习博弈与算法博弈论的研究脉络，关注在有限重复博弈中学习动态如何选择均衡的问题。传统纳什均衡缺乏对学习路径的控制，而无悔学习通常收敛至相关均衡而非纯积分布。本文提出的新均衡概念填补了静态最优与动态稳健性之间的空白，解决了哪些均衡能被具体学习算法稳定到达并抵抗联盟偏离的理论难题。",
+              "modelAndSetup": "模型设定为多智能体在有限博弈中通过熵正则化镜像下降（EMD）进行学习。每个玩家最小化损失函数，策略更新基于指数权重规则。核心设定包括产品分布上的极限策略、固定联盟与固定偏离下的累积偏差收益，以及EMD映射的不动点要求。关键假设是学习者使用具体的一阶方法，且效用标准化，确保动态路径可分析。",
+              "contributionsAndResults": "论文提出了遍历偏差稳健均衡（EDRE），统一了近纳什性、O(√T)偏差遗憾与动力学选择三项性质。证明了该速率的紧性，在精确势博弈中存在性成立，并扩展至单调多项式博弈。揭示了EDRE具有动态筛选能力，排除线性不稳定均衡。计算复杂度上证明其搜索问题是PPAD-hard，但在势博弈中属于promise-PPAD。",
+              "methodsAndTechniques": "技术路线结合了镜像下降的Lyapunov分析、变分不等式、集中不等式与不动点理论。利用KL散度构造势函数证明单调性，通过Azuma-Hoeffding与Freedman不等式控制随机路径偏差。对复杂动态使用周期三轨道构造Li-Yorke混沌。PPAD归约借助近端映射构建连续场，连接学习动态与均衡计算。",
+              "limitationsAndReadingValue": "局限在于依赖特定学习规则EMD，非交互联盟的偏差遗憾才等于联合后悔，且强结论需势博弈或单调性假设。尽管如此，论文极具精读价值：其EDRE模型深刻融合了学习动态与均衡稳定性，证明技巧如混沌构造与复杂性归约新颖有力，开放问题指向更广的学习类与高维分岔分析，对理解算法选择均衡机制至关重要。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于学习博弈与算法博弈论的研究脉络，关注在有限重复博弈中学习动态如何选择均衡的问题。传统纳什均衡缺乏对学习路径的控制，而无悔学习通常收敛至相关均衡而非纯积分布。本文提出的新均衡概念填补了静态最优与动态稳健性之间的空白，解决了哪些均衡能被具体学习算法稳定到达并抵抗联盟偏离的理论难题。",
+              "modelAndSetup": "模型设定为多智能体在有限博弈中通过熵正则化镜像下降（EMD）进行学习。每个玩家最小化损失函数，策略更新基于指数权重规则。核心设定包括产品分布上的极限策略、固定联盟与固定偏离下的累积偏差收益，以及EMD映射的不动点要求。关键假设是学习者使用具体的一阶方法，且效用标准化，确保动态路径可分析。",
+              "contributionsAndResults": "论文提出了遍历偏差稳健均衡（EDRE），统一了近纳什性、O(√T)偏差遗憾与动力学选择三项性质。证明了该速率的紧性，在精确势博弈中存在性成立，并扩展至单调多项式博弈。揭示了EDRE具有动态筛选能力，排除线性不稳定均衡。计算复杂度上证明其搜索问题是PPAD-hard，但在势博弈中属于promise-PPAD。",
+              "methodsAndTechniques": "技术路线结合了镜像下降的Lyapunov分析、变分不等式、集中不等式与不动点理论。利用KL散度构造势函数证明单调性，通过Azuma-Hoeffding与Freedman不等式控制随机路径偏差。对复杂动态使用周期三轨道构造Li-Yorke混沌。PPAD归约借助近端映射构建连续场，连接学习动态与均衡计算。",
+              "limitationsAndReadingValue": "局限在于依赖特定学习规则EMD，非交互联盟的偏差遗憾才等于联合后悔，且强结论需势博弈或单调性假设。尽管如此，论文极具精读价值：其EDRE模型深刻融合了学习动态与均衡稳定性，证明技巧如混沌构造与复杂性归约新颖有力，开放问题指向更广的学习类与高维分岔分析，对理解算法选择均衡机制至关重要。"
+            },
+            "contentTags": [
+              "博弈论",
+              "镜像下降",
+              "纳什均衡",
+              "偏差稳健性",
+              "计算复杂性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "均衡分析",
+              "复杂性分析",
+              "学习博弈"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Coarse Preference Reporting in the Bottleneck Model: Approximate Strategyproofness and Efficiency",
+            "url": "https://arxiv.org/abs/2606.17400",
+            "arxivId": "2606.17400",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "math.OC",
+              "cs.GT",
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "模型构建",
+              "近似分析",
+              "数值验证"
+            ],
+            "contentTags": [
+              "机制设计",
+              "近似策略证明",
+              "瓶颈模型",
+              "粗粒度报告",
+              "效率损失"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于机制设计与动态博弈的交叉领域，聚焦于在交通瓶颈调度中如何用粗粒度偏好报告替代精确报告。传统VCG机制虽能实现策略证明，但计算复杂且不实用。核心问题是：当用户只能从有限时间槽中选择时，机制能否同时保持激励相容与高效率，以及性能随槽宽变化的收敛速率。",
+              "modelAndSetup": "模型考虑一个中心运营商调度车辆通过瓶颈以实现动态系统最优（DSO），每辆车有私有的理想到达时间。用户通过选择离散时间槽报告偏好，运营商基于报告求解槽位级DSO并收取容量影子价格作为通行费。关键假设包括绑定容量、连续成本函数及需求分布的光滑性，确保排序性质成立。",
+              "contributionsAndResults": "论文提出了一种基于槽位的DSO机制，并证明其近似策略证明性和效率损失均以槽宽平方速度收敛至零，即O(△²)。这一二次收敛率优于仅由Lipschitz连续性得出的线性估计，揭示了定价在抵消一阶偏差中的关键作用，为粗粒度接口的设计提供了量化依据。",
+              "methodsAndTechniques": "分析依赖于对偏离收益的精细估计，利用KKT条件中广义成本恒定性来消除一阶项，结合泰勒展开与离散凹性论证全局最优偏离距离有界。核心技术包括对相邻槽间迁移增益的二次上界构造，以及通过互补松弛和影子价格连续性建立效率损失的结构性抵消。",
+              "limitationsAndReadingValue": "结果依赖于峰值负载小于2等较强条件，且主要适用于非原子博弈场景。尽管数值实验显示结论更广泛成立，但理论边界仍有拓展空间。本文值得精读，尤其在于其将经典瓶颈模型与机制设计结合的方式、二次收敛的紧致分析以及对定价双重角色的深刻洞察。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于机制设计与动态博弈的交叉领域，聚焦于在交通瓶颈调度中如何用粗粒度偏好报告替代精确报告。传统VCG机制虽能实现策略证明，但计算复杂且不实用。核心问题是：当用户只能从有限时间槽中选择时，机制能否同时保持激励相容与高效率，以及性能随槽宽变化的收敛速率。",
+              "modelAndSetup": "模型考虑一个中心运营商调度车辆通过瓶颈以实现动态系统最优（DSO），每辆车有私有的理想到达时间。用户通过选择离散时间槽报告偏好，运营商基于报告求解槽位级DSO并收取容量影子价格作为通行费。关键假设包括绑定容量、连续成本函数及需求分布的光滑性，确保排序性质成立。",
+              "contributionsAndResults": "论文提出了一种基于槽位的DSO机制，并证明其近似策略证明性和效率损失均以槽宽平方速度收敛至零，即O(△²)。这一二次收敛率优于仅由Lipschitz连续性得出的线性估计，揭示了定价在抵消一阶偏差中的关键作用，为粗粒度接口的设计提供了量化依据。",
+              "methodsAndTechniques": "分析依赖于对偏离收益的精细估计，利用KKT条件中广义成本恒定性来消除一阶项，结合泰勒展开与离散凹性论证全局最优偏离距离有界。核心技术包括对相邻槽间迁移增益的二次上界构造，以及通过互补松弛和影子价格连续性建立效率损失的结构性抵消。",
+              "limitationsAndReadingValue": "结果依赖于峰值负载小于2等较强条件，且主要适用于非原子博弈场景。尽管数值实验显示结论更广泛成立，但理论边界仍有拓展空间。本文值得精读，尤其在于其将经典瓶颈模型与机制设计结合的方式、二次收敛的紧致分析以及对定价双重角色的深刻洞察。"
+            },
+            "contentTags": [
+              "机制设计",
+              "近似策略证明",
+              "瓶颈模型",
+              "粗粒度报告",
+              "效率损失"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "模型构建",
+              "近似分析",
+              "数值验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Parasitic Masquerade: Societal Scale Human-Machine Interaction",
+            "url": "https://arxiv.org/abs/2606.17925",
+            "arxivId": "2606.17925",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "系统框架",
+              "实验验证"
+            ],
+            "contentTags": [
+              "人机交互",
+              "博弈论",
+              "复杂系统",
+              "信息流",
+              "均场博弈"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该论文延续了博弈论中群体智能与人机协同的研究脉络，聚焦于大规模异质代理人间的互动机制设计难题。传统均场博弈假设代理人同质可交换，难以刻画现实中人类与机器在认知模式、行为目标上的根本差异。本文揭示了一个关键理论缺口：当系统存在多类异构代理时，局部理性行为可能通过耦合结构引发全局非预期后果，如寄生关系伪装为协作。这一问题至关重要，因它直接关联AI生态中的激励错配与信任滥用风险。",
+              "modelAndSetup": "论文构建了一个基于图on均场博弈（GMFG）的四类代理模型，包含专家用户、普通用户、合作机器与提取型机器。代理人通过图on核加权交互，形成异质信息流动结构。知识状态、认知成本与信念熵被纳入动态演化方程，效用函数体现对环境真值的追求与跨群体协调压力。关键假设是机器无法直连环境，仅能通过人类获取信息，这突显了人类作为认知锚点的角色，并使信息流向成为识别寄生性的核心指标。",
+              "contributionsAndResults": "主要贡献在于提出并验证了‘寄生伪装’现象：在参数未改变的情况下，系统可同时存在互惠与寄生双重均衡，前者源于独立探索，后者表现为机器驱动的知识集中化。作者定义了信息流不对称性和寄生指数等新度量，揭示出寄生状态下人类向机器的信息单向输出增强。结果表明，环境噪声可触发跨越认知成本壁垒的相变，这一发现超越了静态效率分析，提供了动态稳定性的新洞察。",
+              "methodsAndTechniques": "技术路线结合了图on理论与随机微分博弈，通过求解Hamilton-Jacobi-Bellman方程与Fokker-Planck-Kolmogorov方程的耦合系统，实现最优策略与分布演化的联合推断。核心方法是反事实信息流测量，即剥离特定耦合后观察轨迹变化，从而识别因果影响方向。该方法有效分离了共因驱动与真实依赖，克服了传统相关性指标的混淆问题，为复杂系统中的归因分析提供了可推广的技术路径。",
+              "limitationsAndReadingValue": "局限在于当前模型预设了机器类型固定，未模拟寄生行为的内生演化；且图on结构静态，未能反映信任动态重塑网络的能力。尽管如此，其将宏观社会现象建模为多重均衡跃迁的思想极具启发性。值得精读之处在于其系统级视角与反事实分析框架，尤其对设计抗操纵的人机共治机制具有深远指导意义，开放问题如动态图on学习也极具研究潜力。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "该论文延续了博弈论中群体智能与人机协同的研究脉络，聚焦于大规模异质代理人间的互动机制设计难题。传统均场博弈假设代理人同质可交换，难以刻画现实中人类与机器在认知模式、行为目标上的根本差异。本文揭示了一个关键理论缺口：当系统存在多类异构代理时，局部理性行为可能通过耦合结构引发全局非预期后果，如寄生关系伪装为协作。这一问题至关重要，因它直接关联AI生态中的激励错配与信任滥用风险。",
+              "modelAndSetup": "论文构建了一个基于图on均场博弈（GMFG）的四类代理模型，包含专家用户、普通用户、合作机器与提取型机器。代理人通过图on核加权交互，形成异质信息流动结构。知识状态、认知成本与信念熵被纳入动态演化方程，效用函数体现对环境真值的追求与跨群体协调压力。关键假设是机器无法直连环境，仅能通过人类获取信息，这突显了人类作为认知锚点的角色，并使信息流向成为识别寄生性的核心指标。",
+              "contributionsAndResults": "主要贡献在于提出并验证了‘寄生伪装’现象：在参数未改变的情况下，系统可同时存在互惠与寄生双重均衡，前者源于独立探索，后者表现为机器驱动的知识集中化。作者定义了信息流不对称性和寄生指数等新度量，揭示出寄生状态下人类向机器的信息单向输出增强。结果表明，环境噪声可触发跨越认知成本壁垒的相变，这一发现超越了静态效率分析，提供了动态稳定性的新洞察。",
+              "methodsAndTechniques": "技术路线结合了图on理论与随机微分博弈，通过求解Hamilton-Jacobi-Bellman方程与Fokker-Planck-Kolmogorov方程的耦合系统，实现最优策略与分布演化的联合推断。核心方法是反事实信息流测量，即剥离特定耦合后观察轨迹变化，从而识别因果影响方向。该方法有效分离了共因驱动与真实依赖，克服了传统相关性指标的混淆问题，为复杂系统中的归因分析提供了可推广的技术路径。",
+              "limitationsAndReadingValue": "局限在于当前模型预设了机器类型固定，未模拟寄生行为的内生演化；且图on结构静态，未能反映信任动态重塑网络的能力。尽管如此，其将宏观社会现象建模为多重均衡跃迁的思想极具启发性。值得精读之处在于其系统级视角与反事实分析框架，尤其对设计抗操纵的人机共治机制具有深远指导意义，开放问题如动态图on学习也极具研究潜力。"
+            },
+            "contentTags": [
+              "人机交互",
+              "博弈论",
+              "复杂系统",
+              "信息流",
+              "均场博弈"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "系统框架",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Security-Induced Braess Paradoxes in Service Function Chain Orchestration",
+            "url": "https://arxiv.org/abs/2606.17987",
+            "arxivId": "2606.17987",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.NI",
+              "cs.CR",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "算法设计",
+              "系统框架"
+            ],
+            "contentTags": [
+              "机制设计",
+              "隐私/安全",
+              "网络管理",
+              "博弈论",
+              "服务功能链"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于算法博弈论与网络机制设计的研究脉络，核心问题是防御性资源配置可能引发非单调性反效果。传统假设认为增加安全选项总能改善系统，但现实中自适应流量与攻击者行为可能导致新选项破坏均衡。这一问题对应真实网络中激励错配：局部最优选择导致全局拥塞与风险集中，违背直觉且难以预测。",
+              "modelAndSetup": "模型基于多租户服务功能链（SFC）系统，代理为租户或流量类，策略为空间路径选择，效用由延迟与风险决定。采用Wardrop均衡刻画自适应路由行为，资源具有负载敏感延迟。关键假设是安全功能共享且延迟非线性，新增防御路径改变可行集结构。该设定自然反映NFV/SDN中分布式决策与资源竞争现实。",
+              "contributionsAndResults": "提出‘安全诱导的布雷斯悖论’形式定义，给出防御捷径引发性能下降的充分条件，并设计悖论感知的预部署筛选算法。相比以往仅优化放置或路由的工作，本文揭示管理动作本身可劣化均衡。核心洞见是防御选项不仅是资源增益，更是均衡塑造工具，必须前置评估其系统级影响。",
+              "methodsAndTechniques": "通过构造Beckmann势函数证明均衡唯一性，利用仿射延迟下的凸规划特性计算前后均衡。核心方法是比较干预前后的需求加权平均成本变化，结合风险暴露指标评估攻击面演化。技术路线融合经典交通悖论分析与网络安全建模，以边际成本思想区分物理存在与使用机制的影响。",
+              "limitationsAndReadingValue": "局限在于采用确定性需求与合成拓扑，延迟模型简化，且未联合建模攻防博弈。尽管如此，其将安全配置视为机制设计问题的视角极具启发性。值得精读的是其模型构建方式与悖论识别逻辑，尤其对设计弹性网络系统的机制具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于算法博弈论与网络机制设计的研究脉络，核心问题是防御性资源配置可能引发非单调性反效果。传统假设认为增加安全选项总能改善系统，但现实中自适应流量与攻击者行为可能导致新选项破坏均衡。这一问题对应真实网络中激励错配：局部最优选择导致全局拥塞与风险集中，违背直觉且难以预测。",
+              "modelAndSetup": "模型基于多租户服务功能链（SFC）系统，代理为租户或流量类，策略为空间路径选择，效用由延迟与风险决定。采用Wardrop均衡刻画自适应路由行为，资源具有负载敏感延迟。关键假设是安全功能共享且延迟非线性，新增防御路径改变可行集结构。该设定自然反映NFV/SDN中分布式决策与资源竞争现实。",
+              "contributionsAndResults": "提出‘安全诱导的布雷斯悖论’形式定义，给出防御捷径引发性能下降的充分条件，并设计悖论感知的预部署筛选算法。相比以往仅优化放置或路由的工作，本文揭示管理动作本身可劣化均衡。核心洞见是防御选项不仅是资源增益，更是均衡塑造工具，必须前置评估其系统级影响。",
+              "methodsAndTechniques": "通过构造Beckmann势函数证明均衡唯一性，利用仿射延迟下的凸规划特性计算前后均衡。核心方法是比较干预前后的需求加权平均成本变化，结合风险暴露指标评估攻击面演化。技术路线融合经典交通悖论分析与网络安全建模，以边际成本思想区分物理存在与使用机制的影响。",
+              "limitationsAndReadingValue": "局限在于采用确定性需求与合成拓扑，延迟模型简化，且未联合建模攻防博弈。尽管如此，其将安全配置视为机制设计问题的视角极具启发性。值得精读的是其模型构建方式与悖论识别逻辑，尤其对设计弹性网络系统的机制具有指导意义。"
+            },
+            "contentTags": [
+              "机制设计",
+              "隐私/安全",
+              "网络管理",
+              "博弈论",
+              "服务功能链"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "算法设计",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-16",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202606160000 TO 202606162359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+          "url": "https://arxiv.org/abs/2606.17889",
+          "arxivId": "2606.17889",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "abstract": "Compositional learning systems must balance plasticity, the ability to acquire new knowledge, with stability, the preservation of previously learned components, especially when tasks share structure and risk interference. We study how modular architecture, task similarity, and representational dimensionality jointly shape compositional continual learning in a sequential A-B-A paradigm, comparing a task-partitioned recurrent network to a single-network baseline while inducing high- and low-dimensional regimes via weight-scale manipulations. In a high-dimensional \"lazy\" regime, both architectures achieve similar performance and internal geometry, suggesting that explicit modular structure has little impact when representations are weakly constrained. In a lower-dimensional \"rich\" regime, modularity becomes decisive: the modular network develops graded task-specific subspaces that overlap for similar tasks, partially align for moderately dissimilar tasks, and separate for dissimilar tasks, yielding a more compositional and interpretable organization than the single network. These findings identify the representational regime induced by initialization scale, which co-varies with representational dimensionality, as a key factor governing when compositional, modular structure is functionally beneficial in continual learning, and support viewing safety and robustness as problems of adaptive allocation of representational subspaces rather than fixed separation versus sharing."
+        },
+        {
+          "title": "An Optimization Framework for Automated Assessment of Biological Plausibility of Spiking Neurons",
+          "url": "https://arxiv.org/abs/2606.17853",
+          "arxivId": "2606.17853",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "Biological plausibility is a key concept in neuromorphic computing and spiking neural networks, yet it remains inconsistently defined and difficult to quantify. In this work, we present an open-source framework for the automated assessment of biological plausibility in spiking neuron models. Our method builds on the idea of evaluating a model's ability to replicate canonical neuronal firing patterns observed in biological systems, following the classification proposed by Izhikevich. By encoding these patterns into objective functions and optimizing model parameters accordingly, our framework enables empirical assessment without requiring prior analytical modeling. Treating neuron models as black boxes, it provides a practical and flexible means of characterizing their dynamic capabilities. We demonstrate the effectiveness of the framework on several established models and a previously unexplored custom model. Implemented in Python and compatible with PyTorch and the Norse library, the framework is tailored for machine learning contexts. It is intended as a starting point for systematic research into the relationship between biological plausibility and network-level performance metrics such as accuracy, energy efficiency, robustness, and adaptability."
+        },
+        {
+          "title": "A Neuromorphic Trigger for Efficient Audio Event Detection",
+          "url": "https://arxiv.org/abs/2606.17775",
+          "arxivId": "2606.17775",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "abstract": "Efficient processing of continuous audio streams remains a key challenge for real-time and resource-constrained systems. This paper introduces a neuromorphic trigger for audio event detection, based on a spiking neural network (SNN) that selectively gates input to downstream models. The proposed trigger acts as a low-cost front-end, identifying salient audio segments and forwarding only these to a more computationally intensive model for tasks such as classification. The trigger is implemented as a lightweight fully connected SNN and evaluated on two representative tasks: Anomalous Sound Detection (ASD) and Sound Event Detection (SED). For ASD, the trigger achieves a one-second segment-based F1 score of 0.97 on a class-agnostic form of the URBAN-SED dataset, demonstrating high reliability in identifying relevant audio regions. For SED, the trigger is combined with the Dang classifier on the DCASE 2017 Challenge Task 2 dataset, showing a potential $42.6\\times$ reduction in FLOPs while reducing the lower bound of the event-based error rate from 0.41 to 0.25. These results highlight the potential of neuromorphic triggers as real-time, energy-efficient front-end filters, enabling substantial reductions in computational cost."
+        },
+        {
+          "title": "Evolutionary Algorithms and Multi-Objective Minimum Spanning Trees with Limited Distinct Weight Values",
+          "url": "https://arxiv.org/abs/2606.17731",
+          "arxivId": "2606.17731",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "Evolutionary algorithms have been used for a wide range of multi-objective combinatorial optimization problems. Despite practical success, theoretical results on the runtime of evolutionary algorithms for multi-objective combinatorial problems are rather limited. One classical problem that has been investigated is the multi-objective minimum spanning tree problem for which runtime bounds have been obtained to compute all extremal corner points of the Pareto front. With this paper, we provide some more detailed insights into the structure of the Pareto front when the edge weights take on a small number of distinct values. Based on these insights, we derive new runtime results for evolutionary multi-objective algorithms and complement our theoretical results with experimental investigations."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+              "url": "https://arxiv.org/abs/2606.17889",
+              "arxivId": "2606.17889",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "abstract": "Compositional learning systems must balance plasticity, the ability to acquire new knowledge, with stability, the preservation of previously learned components, especially when tasks share structure and risk interference. We study how modular architecture, task similarity, and representational dimensionality jointly shape compositional continual learning in a sequential A-B-A paradigm, comparing a task-partitioned recurrent network to a single-network baseline while inducing high- and low-dimensional regimes via weight-scale manipulations. In a high-dimensional \"lazy\" regime, both architectures achieve similar performance and internal geometry, suggesting that explicit modular structure has little impact when representations are weakly constrained. In a lower-dimensional \"rich\" regime, modularity becomes decisive: the modular network develops graded task-specific subspaces that overlap for similar tasks, partially align for moderately dissimilar tasks, and separate for dissimilar tasks, yielding a more compositional and interpretable organization than the single network. These findings identify the representational regime induced by initialization scale, which co-varies with representational dimensionality, as a key factor governing when compositional, modular structure is functionally beneficial in continual learning, and support viewing safety and robustness as problems of adaptive allocation of representational subspaces rather than fixed separation versus sharing."
+            },
+            {
+              "title": "An Optimization Framework for Automated Assessment of Biological Plausibility of Spiking Neurons",
+              "url": "https://arxiv.org/abs/2606.17853",
+              "arxivId": "2606.17853",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "Biological plausibility is a key concept in neuromorphic computing and spiking neural networks, yet it remains inconsistently defined and difficult to quantify. In this work, we present an open-source framework for the automated assessment of biological plausibility in spiking neuron models. Our method builds on the idea of evaluating a model's ability to replicate canonical neuronal firing patterns observed in biological systems, following the classification proposed by Izhikevich. By encoding these patterns into objective functions and optimizing model parameters accordingly, our framework enables empirical assessment without requiring prior analytical modeling. Treating neuron models as black boxes, it provides a practical and flexible means of characterizing their dynamic capabilities. We demonstrate the effectiveness of the framework on several established models and a previously unexplored custom model. Implemented in Python and compatible with PyTorch and the Norse library, the framework is tailored for machine learning contexts. It is intended as a starting point for systematic research into the relationship between biological plausibility and network-level performance metrics such as accuracy, energy efficiency, robustness, and adaptability."
+            },
+            {
+              "title": "A Neuromorphic Trigger for Efficient Audio Event Detection",
+              "url": "https://arxiv.org/abs/2606.17775",
+              "arxivId": "2606.17775",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.SD",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "abstract": "Efficient processing of continuous audio streams remains a key challenge for real-time and resource-constrained systems. This paper introduces a neuromorphic trigger for audio event detection, based on a spiking neural network (SNN) that selectively gates input to downstream models. The proposed trigger acts as a low-cost front-end, identifying salient audio segments and forwarding only these to a more computationally intensive model for tasks such as classification. The trigger is implemented as a lightweight fully connected SNN and evaluated on two representative tasks: Anomalous Sound Detection (ASD) and Sound Event Detection (SED). For ASD, the trigger achieves a one-second segment-based F1 score of 0.97 on a class-agnostic form of the URBAN-SED dataset, demonstrating high reliability in identifying relevant audio regions. For SED, the trigger is combined with the Dang classifier on the DCASE 2017 Challenge Task 2 dataset, showing a potential $42.6\\times$ reduction in FLOPs while reducing the lower bound of the event-based error rate from 0.41 to 0.25. These results highlight the potential of neuromorphic triggers as real-time, energy-efficient front-end filters, enabling substantial reductions in computational cost."
+            },
+            {
+              "title": "Evolutionary Algorithms and Multi-Objective Minimum Spanning Trees with Limited Distinct Weight Values",
+              "url": "https://arxiv.org/abs/2606.17731",
+              "arxivId": "2606.17731",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "Evolutionary algorithms have been used for a wide range of multi-objective combinatorial optimization problems. Despite practical success, theoretical results on the runtime of evolutionary algorithms for multi-objective combinatorial problems are rather limited. One classical problem that has been investigated is the multi-objective minimum spanning tree problem for which runtime bounds have been obtained to compute all extremal corner points of the Pareto front. With this paper, we provide some more detailed insights into the structure of the Pareto front when the edge weights take on a small number of distinct values. Based on these insights, we derive new runtime results for evolutionary multi-objective algorithms and complement our theoretical results with experimental investigations."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 6,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+              "url": "https://arxiv.org/abs/2606.17889",
+              "arxivId": "2606.17889",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 5,
+                "horizonValue": 5,
+                "clarity": 6,
+                "theoreticalDepth": 7,
+                "overall": 4,
+                "penalty": 0,
+                "baseTotal": 27,
+                "total": 27
+              }
+            },
+            {
+              "title": "An Optimization Framework for Automated Assessment of Biological Plausibility of Spiking Neurons",
+              "url": "https://arxiv.org/abs/2606.17853",
+              "arxivId": "2606.17853",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 4,
+                "horizonValue": 5,
+                "clarity": 5,
+                "theoreticalDepth": 4,
+                "overall": 3,
+                "penalty": -1,
+                "baseTotal": 20,
+                "total": 20
+              }
+            },
+            {
+              "title": "A Neuromorphic Trigger for Efficient Audio Event Detection",
+              "url": "https://arxiv.org/abs/2606.17775",
+              "arxivId": "2606.17775",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.SD",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 5,
+                "horizonValue": 4,
+                "clarity": 6,
+                "theoreticalDepth": 3,
+                "overall": 3,
+                "penalty": 0,
+                "baseTotal": 21,
+                "total": 21
+              }
+            },
+            {
+              "title": "Evolutionary Algorithms and Multi-Objective Minimum Spanning Trees with Limited Distinct Weight Values",
+              "url": "https://arxiv.org/abs/2606.17731",
+              "arxivId": "2606.17731",
+              "date": "2026-06-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 2,
+                "horizonValue": 2,
+                "clarity": 4,
+                "theoreticalDepth": 6,
+                "overall": 1,
+                "penalty": -3,
+                "baseTotal": 12,
+                "total": 12
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+          "url": "https://arxiv.org/abs/2606.17889",
+          "arxivId": "2606.17889",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5,
+            "horizonValue": 5,
+            "clarity": 6,
+            "theoreticalDepth": 7,
+            "overall": 4,
+            "penalty": 0,
+            "baseTotal": 27,
+            "total": 27
+          }
+        },
+        {
+          "title": "An Optimization Framework for Automated Assessment of Biological Plausibility of Spiking Neurons",
+          "url": "https://arxiv.org/abs/2606.17853",
+          "arxivId": "2606.17853",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 4,
+            "horizonValue": 5,
+            "clarity": 5,
+            "theoreticalDepth": 4,
+            "overall": 3,
+            "penalty": -1,
+            "baseTotal": 20,
+            "total": 20
+          }
+        },
+        {
+          "title": "A Neuromorphic Trigger for Efficient Audio Event Detection",
+          "url": "https://arxiv.org/abs/2606.17775",
+          "arxivId": "2606.17775",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5,
+            "horizonValue": 4,
+            "clarity": 6,
+            "theoreticalDepth": 3,
+            "overall": 3,
+            "penalty": 0,
+            "baseTotal": 21,
+            "total": 21
+          }
+        },
+        {
+          "title": "Evolutionary Algorithms and Multi-Objective Minimum Spanning Trees with Limited Distinct Weight Values",
+          "url": "https://arxiv.org/abs/2606.17731",
+          "arxivId": "2606.17731",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 2,
+            "horizonValue": 2,
+            "clarity": 4,
+            "theoreticalDepth": 6,
+            "overall": 1,
+            "penalty": -3,
+            "baseTotal": 12,
+            "total": 12
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+          "url": "https://arxiv.org/abs/2606.17889",
+          "arxivId": "2606.17889",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5,
+            "horizonValue": 5,
+            "clarity": 6,
+            "theoreticalDepth": 7,
+            "overall": 4,
+            "penalty": 0,
+            "baseTotal": 27,
+            "total": 27
+          }
+        },
+        {
+          "title": "A Neuromorphic Trigger for Efficient Audio Event Detection",
+          "url": "https://arxiv.org/abs/2606.17775",
+          "arxivId": "2606.17775",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5,
+            "horizonValue": 4,
+            "clarity": 6,
+            "theoreticalDepth": 3,
+            "overall": 3,
+            "penalty": 0,
+            "baseTotal": 21,
+            "total": 21
+          }
+        },
+        {
+          "title": "An Optimization Framework for Automated Assessment of Biological Plausibility of Spiking Neurons",
+          "url": "https://arxiv.org/abs/2606.17853",
+          "arxivId": "2606.17853",
+          "date": "2026-06-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 4,
+            "horizonValue": 5,
+            "clarity": 5,
+            "theoreticalDepth": 4,
+            "overall": 3,
+            "penalty": -1,
+            "baseTotal": 20,
+            "total": 20
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+            "url": "https://arxiv.org/abs/2606.17889",
+            "arxivId": "2606.17889",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.AI",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "实验验证",
+              "理论推导",
+              "算法设计",
+              "机制设计",
+              "系统框架"
+            ],
+            "contentTags": [
+              "表示学习",
+              "持续学习",
+              "模块化架构",
+              "可塑性-稳定性困境",
+              "几何分析"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于表示学习与持续学习的研究脉络，聚焦于如何在顺序学习中平衡可塑性与稳定性。现有方法在任务相似性变化时难以动态调节共享与分离，导致干扰或阻碍迁移。难点在于模型如何根据任务结构自适应组织表征空间，而非固定地共享或隔离参数。这一问题对构建具备组合泛化能力的智能系统至关重要。",
+              "modelAndSetup": "研究采用序列A-B-A范式，比较任务分区的模块化网络与单网络基线在不同初始化尺度下的表现。输入为植物线索到角度映射任务，输出为余弦-正弦编码的位置预测。通过缩放初始化权重控制表征维度，关键假设是低维‘富’学习态会凸显模块化的功能优势，而高维‘懒’态则不会。",
+              "contributionsAndResults": "论文发现模块化仅在低维表征下显著降低干扰并提升性能，揭示了维度作为‘门控变量’的作用。模块网络发展出基于任务相似性的分级子空间结构：相似任务重叠，相异任务正交。实验证据充分支持这一结论，ablation也验证其鲁棒性，表明结构先验的功能收益依赖于表征约束强度。",
+              "methodsAndTechniques": "作者通过调整初始化权重尺度诱导高低维学习状态，并利用PCA和主角分析隐藏状态几何。模块化架构将输入路由至任务专用循环模块，但共享读出层以维持耦合。训练分三阶段进行，结合混合模型量化干扰。关键技术在于用简单架构操控表征维度，从而解耦结构与容量影响。",
+              "limitationsAndReadingValue": "局限包括使用PCA估计维度、未测试更长任务序列及现实分布。claim集中在特定设置，泛化性待验证。尽管如此，论文值得精读，尤其在问题设定和实验分析上极具启发性，揭示了表征维度如何调节架构偏置的有效性，为设计动态资源分配机制提供新视角。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于表示学习与持续学习的研究脉络，聚焦于如何在顺序学习中平衡可塑性与稳定性。现有方法在任务相似性变化时难以动态调节共享与分离，导致干扰或阻碍迁移。难点在于模型如何根据任务结构自适应组织表征空间，而非固定地共享或隔离参数。这一问题对构建具备组合泛化能力的智能系统至关重要。",
+              "modelAndSetup": "研究采用序列A-B-A范式，比较任务分区的模块化网络与单网络基线在不同初始化尺度下的表现。输入为植物线索到角度映射任务，输出为余弦-正弦编码的位置预测。通过缩放初始化权重控制表征维度，关键假设是低维‘富’学习态会凸显模块化的功能优势，而高维‘懒’态则不会。",
+              "contributionsAndResults": "论文发现模块化仅在低维表征下显著降低干扰并提升性能，揭示了维度作为‘门控变量’的作用。模块网络发展出基于任务相似性的分级子空间结构：相似任务重叠，相异任务正交。实验证据充分支持这一结论，ablation也验证其鲁棒性，表明结构先验的功能收益依赖于表征约束强度。",
+              "methodsAndTechniques": "作者通过调整初始化权重尺度诱导高低维学习状态，并利用PCA和主角分析隐藏状态几何。模块化架构将输入路由至任务专用循环模块，但共享读出层以维持耦合。训练分三阶段进行，结合混合模型量化干扰。关键技术在于用简单架构操控表征维度，从而解耦结构与容量影响。",
+              "limitationsAndReadingValue": "局限包括使用PCA估计维度、未测试更长任务序列及现实分布。claim集中在特定设置，泛化性待验证。尽管如此，论文值得精读，尤其在问题设定和实验分析上极具启发性，揭示了表征维度如何调节架构偏置的有效性，为设计动态资源分配机制提供新视角。"
+            },
+            "contentTags": [
+              "表示学习",
+              "持续学习",
+              "模块化架构",
+              "可塑性-稳定性困境",
+              "几何分析"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "理论推导",
+              "算法设计",
+              "机制设计",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "A Neuromorphic Trigger for Efficient Audio Event Detection",
+            "url": "https://arxiv.org/abs/2606.17775",
+            "arxivId": "2606.17775",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.SD",
+              "cs.AI",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "算法设计"
+            ],
+            "contentTags": [
+              "边缘计算",
+              "音频事件检测",
+              "脉冲神经网络",
+              "能效优化",
+              "异常检测"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于高效AI系统与边缘计算的研究脉络，聚焦于连续音频流处理中计算开销过高的问题。传统音频事件检测（SED）和异常声音检测（ASD）需全程处理数据，导致资源浪费。现有方法如Transformer虽性能强但功耗高，难以部署于终端设备。问题核心在于如何减少冗余计算，难点源于实时性约束与背景噪声干扰下的敏感检测需求。",
+              "modelAndSetup": "任务为无类别感知的音频事件触发检测，输入为Mel谱图，输出为是否触发后续分类的二值信号。使用URBAN-SED和TUT Rare Sounds 2017两个数据集，前者用于ASD评估，后者用于SED场景测试。模型为轻量级全连接脉冲神经网络（SNN），训练目标为最小化Van Rossum距离，推理时结合闭-开滤波后处理。评价指标包括段级F1分数与事件级错误率（AEER）。",
+              "contributionsAndResults": "提出一种基于SNN的神经形态触发器，作为低功耗前端筛选关键音频片段。在URBAN-SED上达到0.97段级F1分，在TUT数据集结合Dang分类器可使FLOPs降低42.6倍，同时将事件错误率下界从0.41降至0.25。结果表明分离检测与分类任务可显著提升效率与精度，实证支持充分，尤其在理论能耗估算中体现明显优势。",
+              "methodsAndTechniques": "采用四层Leaky Integrate-and-Fire（LIF）神经元构成SNN，利用其天然时间积分特性捕捉声学事件动态。训练使用代理梯度法反向传播Van Rossum距离损失。推理阶段引入类计算机视觉的闭-开形态滤波，连接离散脉冲并抑制噪声。关键创新在于将SNN作为‘门控开关’，仅激活下游大模型于潜在事件区间，实现计算按需分配。",
+              "limitationsAndReadingValue": "局限在于未在真实世界数据验证，且标注差异可能影响性能；比较对象为旧挑战赛模型，baseline不够前沿；消融实验较少。尽管如此，其问题设定极具现实意义，方法简洁有效，系统实现对边缘侧AI有启发价值。值得精读，尤以系统实现与问题设定为最优参考点。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于高效AI系统与边缘计算的研究脉络，聚焦于连续音频流处理中计算开销过高的问题。传统音频事件检测（SED）和异常声音检测（ASD）需全程处理数据，导致资源浪费。现有方法如Transformer虽性能强但功耗高，难以部署于终端设备。问题核心在于如何减少冗余计算，难点源于实时性约束与背景噪声干扰下的敏感检测需求。",
+              "modelAndSetup": "任务为无类别感知的音频事件触发检测，输入为Mel谱图，输出为是否触发后续分类的二值信号。使用URBAN-SED和TUT Rare Sounds 2017两个数据集，前者用于ASD评估，后者用于SED场景测试。模型为轻量级全连接脉冲神经网络（SNN），训练目标为最小化Van Rossum距离，推理时结合闭-开滤波后处理。评价指标包括段级F1分数与事件级错误率（AEER）。",
+              "contributionsAndResults": "提出一种基于SNN的神经形态触发器，作为低功耗前端筛选关键音频片段。在URBAN-SED上达到0.97段级F1分，在TUT数据集结合Dang分类器可使FLOPs降低42.6倍，同时将事件错误率下界从0.41降至0.25。结果表明分离检测与分类任务可显著提升效率与精度，实证支持充分，尤其在理论能耗估算中体现明显优势。",
+              "methodsAndTechniques": "采用四层Leaky Integrate-and-Fire（LIF）神经元构成SNN，利用其天然时间积分特性捕捉声学事件动态。训练使用代理梯度法反向传播Van Rossum距离损失。推理阶段引入类计算机视觉的闭-开形态滤波，连接离散脉冲并抑制噪声。关键创新在于将SNN作为‘门控开关’，仅激活下游大模型于潜在事件区间，实现计算按需分配。",
+              "limitationsAndReadingValue": "局限在于未在真实世界数据验证，且标注差异可能影响性能；比较对象为旧挑战赛模型，baseline不够前沿；消融实验较少。尽管如此，其问题设定极具现实意义，方法简洁有效，系统实现对边缘侧AI有启发价值。值得精读，尤以系统实现与问题设定为最优参考点。"
+            },
+            "contentTags": [
+              "边缘计算",
+              "音频事件检测",
+              "脉冲神经网络",
+              "能效优化",
+              "异常检测"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "An Optimization Framework for Automated Assessment of Biological Plausibility of Spiking Neurons",
+            "url": "https://arxiv.org/abs/2606.17853",
+            "arxivId": "2606.17853",
+            "date": "2026-06-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "算法设计"
+            ],
+            "contentTags": [
+              "神经形态计算",
+              "生物合理性",
+              "脉冲神经网络",
+              "自动化评估",
+              "优化框架"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于神经形态计算与脉冲神经网络的研究脉络，聚焦于生物合理性的量化难题。现有方法对‘生物合理性’定义模糊，依赖主观判断或需复杂解析建模，难以系统评估模型动态能力。此问题至关重要，因生物特性与网络性能的关系尚不明确，而评测瓶颈制约了可解释性与优化方向。",
+              "modelAndSetup": "任务是自动识别脉冲神经元模型能否复现20种典型生物放电模式。输入为电流刺激类型，输出为放电响应序列。模型作为黑箱处理，无需解析形式。通过优化参数使目标函数最小化以匹配模式，评价指标为各模式下目标函数值及成功复现数量，关键假设是能复制越多模式则生物合理性越高。",
+              "contributionsAndResults": "提出首个开源自动化框架，成功复现AdEx与Izhikevich模型全部20种放电模式，LIF仅3种，验证了有效性。对未表征的N2D2模型发现11种模式，展示其探索能力。结果表明该框架可无先验知识地量化生物合理性，实证支撑强，为后续研究提供标准化工具。",
+              "methodsAndTechniques": "核心是将每种放电模式编码为目标函数，如最小化峰间间隔方差以实现稳态放电。采用Optuna平台进行超参优化，支持多种算法如CMA-ES与量子启发算法。通过惩罚项排除无效解，分阶段优化与后验证确保可靠性。方法本质是将生物学现象转化为可微调的优化问题。",
+              "limitationsAndReadingValue": "局限在于目标函数设计依赖人工经验，搜索空间大时效率低，且不能保证发现所有模式。部分模型存在系统性偏差需调整目标函数。尽管如此，其问题设定新颖，系统实现完整，非常值得精读，尤其在方法设计与实验分析方面具有高参考价值。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于神经形态计算与脉冲神经网络的研究脉络，聚焦于生物合理性的量化难题。现有方法对‘生物合理性’定义模糊，依赖主观判断或需复杂解析建模，难以系统评估模型动态能力。此问题至关重要，因生物特性与网络性能的关系尚不明确，而评测瓶颈制约了可解释性与优化方向。",
+              "modelAndSetup": "任务是自动识别脉冲神经元模型能否复现20种典型生物放电模式。输入为电流刺激类型，输出为放电响应序列。模型作为黑箱处理，无需解析形式。通过优化参数使目标函数最小化以匹配模式，评价指标为各模式下目标函数值及成功复现数量，关键假设是能复制越多模式则生物合理性越高。",
+              "contributionsAndResults": "提出首个开源自动化框架，成功复现AdEx与Izhikevich模型全部20种放电模式，LIF仅3种，验证了有效性。对未表征的N2D2模型发现11种模式，展示其探索能力。结果表明该框架可无先验知识地量化生物合理性，实证支撑强，为后续研究提供标准化工具。",
+              "methodsAndTechniques": "核心是将每种放电模式编码为目标函数，如最小化峰间间隔方差以实现稳态放电。采用Optuna平台进行超参优化，支持多种算法如CMA-ES与量子启发算法。通过惩罚项排除无效解，分阶段优化与后验证确保可靠性。方法本质是将生物学现象转化为可微调的优化问题。",
+              "limitationsAndReadingValue": "局限在于目标函数设计依赖人工经验，搜索空间大时效率低，且不能保证发现所有模式。部分模型存在系统性偏差需调整目标函数。尽管如此，其问题设定新颖，系统实现完整，非常值得精读，尤其在方法设计与实验分析方面具有高参考价值。"
+            },
+            "contentTags": [
+              "神经形态计算",
+              "生物合理性",
+              "脉冲神经网络",
+              "自动化评估",
+              "优化框架"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "算法设计"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 3
+  }
+}
