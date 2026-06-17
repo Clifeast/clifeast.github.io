@@ -6,6 +6,16 @@ on:
     # Beijing-time weekday mornings, so weekdays are enough here.
     - cron: "30 2 * * 1-5"
   workflow_dispatch:
+    inputs:
+      date:
+        description: "Digest date in YYYY-MM-DD. Leave empty to use today in Asia/Shanghai."
+        required: false
+        type: string
+      force:
+        description: "Rebuild even if this date was already completed."
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -38,7 +48,20 @@ jobs:
           QWEN_SCORE_MODEL: qwen-plus
           QWEN_ENRICH_MODEL: qwen-long
           QWEN_API_BASE: https://dashscope.aliyuncs.com/compatible-mode/v1
-        run: npm run build:digest -- --timezone Asia/Shanghai
+          DIGEST_DATE: ${{ github.event.inputs.date }}
+          FORCE_REBUILD: ${{ github.event.inputs.force }}
+        run: |
+          args=(--timezone Asia/Shanghai)
+
+          if [ -n "$DIGEST_DATE" ]; then
+            args+=(--date "$DIGEST_DATE")
+          fi
+
+          if [ "$FORCE_REBUILD" = "true" ]; then
+            args+=(--force)
+          fi
+
+          npm run build:digest -- "${args[@]}"
 
       - name: Commit digest update
         run: |
