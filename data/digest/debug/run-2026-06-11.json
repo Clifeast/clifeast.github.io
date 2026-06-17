@@ -1,0 +1,2948 @@
+{
+  "date": "2026-06-11",
+  "generatedAt": "2026-06-17T16:54:35.319924+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-10",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606100000 TO 202606102359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606100000 TO 202606102359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          }
+        },
+        "dedupedCount": 11
+      },
+      "arxivTotalResults": 12,
+      "fetchedCount": 11,
+      "fetchedPapers": [
+        {
+          "title": "Market Design for AI: Beyond the Copyright Binary",
+          "url": "https://arxiv.org/abs/2606.12260",
+          "arxivId": "2606.12260",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "abstract": "How can we design a market of human-generated content for use in training AI models that both enables technological progress and preserves individual incentives for high-quality content creation? Existing approaches take polar positions: a \"free-for-all\" model based on fair use and a \"strong intellectual property rights\" model. We show that both fail: Free-for-all does not compensate creators, and -- by modeling as a static Stackelberg game -- strong intellectual property rights also underpower creative incentives. We find this especially true for more innovative creators, a phenomenon we term the \"originality penalty.\" Extending this insight to a dynamic model, we find another market failure undermining AI model performance, even for an initially good model: Such a model induces greater reliance by humans on AI-assisted creation, resulting in homogenized content feeding back into training, which degrades the model performance -- a \"curse of precision.\" We further propose a market design with a data intermediary internalizing cross-creator externalities and subsidizing innovative contributions, thereby restoring efficiency."
+        },
+        {
+          "title": "Strategic Facility Location with $p$-Norm Social Costs",
+          "url": "https://arxiv.org/abs/2606.12187",
+          "arxivId": "2606.12187",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We consider the strategic facility location problem in $\\ell_q(\\mathbb R^d)$ spaces where the social cost is defined by an arbitrary $p$-norm of the individual costs. While the optimal approximation ratios for deterministic strategyproof mechanisms are well established in the $d = 1$ setting, the guarantees for multi-dimensional spaces under an arbitrary $p$-norm are less understood. In this work, we analyze the well-studied, strategyproof coordinate-wise median (CM) mechanism and provide approximation guarantees for these generalized social costs. For $d = 2$, we establish tight approximation ratios for all $p, q \\geq 1$. In particular, we show that the CM mechanism is a $2^{1 - 1/ \\max(p, q)}$-approximation, resolving a conjecture of Goel and Hann-Caruthers (Social Choice and Welfare, 2023). Furthermore, for $d\\geq 3$, we give upper bounds on the approximation ratio of the CM mechanism for arbitrary $p$-norm social costs, generalizing the recent result of Gravin and Jia (STOC, 2025) for the utilitarian social cost. Remarkably, we show that this approximation ratio never exceeds 3, regardless of the dimension."
+        },
+        {
+          "title": "Shared Infrastructure Investment and Pricing: Stackelberg Equilibria in Risk-Aware Take-or-Pay Contracts",
+          "url": "https://arxiv.org/abs/2606.12167",
+          "arxivId": "2606.12167",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study a shared infrastructure deployed by an Infrastructure Provider (InP) and used by multiple firms that generate revenues through resource usage. We focus on a challenging setting where: (i) infrastructure deployment requires substantial upfront investment, which the InP must recover via payments by firms that depend on their uncertain future revenues; (ii) firms' resource usage is jointly influenced by exogenous factors, infrastructure pricing, operational costs, and resource congestion; and (iii) firms exhibit heterogeneous risk aversion. This setting is typical in emerging technologies, e.g., Mobile Edge Computing (MEC). We formalize this setting as a novel Stackelberg game with risk-aware take-or-pay contracting and firm-side operational and congestion costs, in which the InP acts as the leader and jointly optimizes capacity dimensioning and access pricing, while firms act as followers that share the infrastructure and commit upfront to future resource usage under uncertain revenues. Followers' heterogeneous risk aversion is modeled through Conditional Value-at-Risk (CVaR). We prove the existence of a Stackelberg equilibrium (SE), in which the followers' decisions constitute a generalized Nash equilibrium, and develop a polynomial-time algorithm that computes an approximate SE with a bounded optimality gap. We also derive a lower bound on the followers' Probability of Profit (PoP). Monte Carlo simulations for a MEC case study show that higher followers' risk aversion reduces infrastructure capacity, pricing, and leader profit, while increasing followers' PoP."
+        },
+        {
+          "title": "Do Not Discretize, Optimize: Almost Greedy Fictitious Play",
+          "url": "https://arxiv.org/abs/2606.12149",
+          "arxivId": "2606.12149",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Our work revolves around Fictitious Play, one of the first iterative methods that is known to converge to a Nash equilibrium in zero-sum games. In recent years, there has been a revived interest, due to applications in various machine learning problems, which has motivated a line of work on its convergence properties and on proposing new variants of the initial algorithm. Our paper is along this direction and introduces one new variant, which we refer to as Almost Greedy Fictitious Play. The proposed algorithm greedily attempts to find the optimal stepsize at each iteration but its search space is constrained and includes almost all the line between the cumulative mixed strategy and the current best response. Our main result is that the method achieves an instance dependent convergence rate of $\\mathcal{O}(1/T)$ with respect to the duality gap. This matches the rate of Continuous Fictitious Play, and offers an alternative to discretization. We complement our theoretical findings with experiments that demonstrate the effectiveness of the method."
+        },
+        {
+          "title": "Axiomatic Tools for Separating Electoral Control Types, with Applications to Concrete Systems",
+          "url": "https://arxiv.org/abs/2606.12039",
+          "arxivId": "2606.12039",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Electoral control is the study of whether an attacker, by structural changes on an election such as adding/deleting/partitioning voters or candidates, can affect the winner in some desired way. Forty-four such attack types are often considered standard, and recently there has been work showing that sometimes the attack types -- though seemingly distinct -- in fact \"collapse,\" that is, for every input, either the attacker can achieve their goal under both of the control types or under neither of the control types. The papers doing this, however, while often exploiting axiomatic results that ensured collapses, found all the separations by human or computer-generated counterexamples. This left open the issue of whether even the separation direction can be driven by axiomatic results that allow large groups of separations to be almost automatically obtained. Our paper provides many such results, and we apply them to seven important voting systems, finding sixty-four new collapses and 1901 new separations. We not only give axiomatic sufficient conditions and one complete characterization result, but also identify some control-problem pairs that universally separate -- in other words, they separate under every voting rule."
+        },
+        {
+          "title": "Game-Theoretic Latent Space Alignment for Multi-user Semantic MIMO Communications",
+          "url": "https://arxiv.org/abs/2606.12005",
+          "arxivId": "2606.12005",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.IT"
+          ],
+          "abstract": "Semantic communications enable AI-native wireless systems by mapping raw data into compressed task-oriented latent representations. However, independently trained agents often rely on heterogeneous latent spaces and background knowledge, leading to semantic mismatch that degrades mutual understanding and downstream task execution, especially in interferencelimited multi-user wireless networks. This paper investigates distributed latent-space alignment in multi-user semantic MIMO interference networks with cognitive radio constraints. We consider primary users and semantic-aware secondary users sharing the same wireless resources, where secondary agents must simultaneously mitigate interference and align heterogeneous semantic representations. To address this problem, we formulate semantic alignment as a non-cooperative game and derive a closed-form solution for the joint optimization of linear semantic MIMO transceivers under power and interference constraints. Exploiting the structure of the problem, we recast the original matrix valued optimization into a lower-dimensional power-allocation game, leading to an iterative semantic water-filling algorithm. We establish sufficient conditions for existence, uniqueness, and global convergence to a Nash equilibrium, explicitly relating semantic alignment properties and physical-channel interactions. Numerical results assess the performance of the proposed framework, revealing key trade-offs among semantic compression, task performance, and hierarchical spectrum access."
+        },
+        {
+          "title": "Cross-Validation Equilibrium",
+          "url": "https://arxiv.org/abs/2606.12571",
+          "arxivId": "2606.12571",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study strategic interaction when players delegate belief formation to predictive machine learning (ML). In a static Bayesian game, each player's ML agent predicts a payoff-relevant outcome variable as a function of the player's type. The ML agent's training sample is endogenous: it is drawn from the outcome distribution generated by players' ML-guided behavior. In Cross-Validation Equilibrium (CVE), each player's ML agent selects a predictive model to minimize expected out-of-sample squared error, given its realized training sample, and each player best-replies to the belief generated by the model her ML agent selected. We analyze CVE and relate it to other equilibrium concepts. We apply CVE to jury voting, speculative betting, and games with linear-quadratic payoffs. E.g., in a team-effort game, endogenous model selection can give rise to multiple equilibria."
+        },
+        {
+          "title": "Schedules and Prioritization: A Behavioral Foundation for Multi-Armed Bandits and Stopping Problems",
+          "url": "https://arxiv.org/abs/2606.12044",
+          "arxivId": "2606.12044",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Bandit models typically begin with arms, states, rewards, and transition rules. This paper instead begins with preferences over stopped local contingent schedules: possible unfoldings of a responsibility, project, experiment, or opportunity in its own local time. Behavioral axioms on single schedules characterize a generalized stopping representation with current utility, local discounting, and a broad continuation aggregator. A common-tail compensation axiom then allows calendar time to be priced across schedules. Imposing a tight elapsed-calendar constraint generates a rested generalized bandit and yields index optimality: the index is the shadow price of advancing a local clock. Expected-utility, learning, robust, rank-dependent, Choquet, and Pandora models arise as special cases."
+        },
+        {
+          "title": "Continuity of equilibria in spaces of Bochner and Gel'fand economies",
+          "url": "https://arxiv.org/abs/2606.12492",
+          "arxivId": "2606.12492",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We examine the continuity of equilibrium correspondences in infinite-dimensional settings where the commodity spaces are Banach lattices. Economies are modeled as Borel probability measures on a space of characteristics, with aggregate endowments defined via Bochner or Gel'fand integrals. Within this framework, we prove that the equilibrium correspondence is continuous on a dense subset of the domain of economies admitting equilibria, endowed with a suitable Polish topology. These results extend both classical and recent continuity theorems by providing a unified analytical treatment applicable to a substantially broader class of locally convex spaces and encompass models with infinite planning horizons, monopolistic competition, neoclassical economies, financial equilibria, and asymmetric information. Importantly, this study demonstrates that there is no necessity to impose differentiability assumptions that are typically required in regular economies to study equilibrium continuity."
+        },
+        {
+          "title": "Delta-Epsilon-Common Knowledge and Quantitative Agreement Theorems",
+          "url": "https://arxiv.org/abs/2606.11902",
+          "arxivId": "2606.11902",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "abstract": "Aumann defined common knowledge mathematically and established his now famous Agreement Theorem. We present a novel approach to quantifying how close individuals are to commonly knowing events, $(δ,ε)$-common knowledge, which is defined for any (and not just countable) probability spaces, and provide quantitative versions of the key results in this field. Specifically, we do this for Aumann's Agreement Theorem and Nielsen's extension thereof to random variables, as well as for the setting in which posteriors are communicated back and forth between individuals. Our results apply in particular to noisy communication settings."
+        },
+        {
+          "title": "Belief Aggregation under Costly Information",
+          "url": "https://arxiv.org/abs/2606.11600",
+          "arxivId": "2606.11600",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "This paper proposes an epistemic foundation for aggregating sets of probabilistic beliefs by retaining only shared beliefs. It develops a model of belief formation under information-acquisition costs and capacity constraints. In this model, different information technologies rationalize different belief-aggregation rules, such as the familiar linear, geometric, power, and multiplicative pooling. Since the ranking of uncertain policies depends on these aggregation rules, failing to base collective beliefs on the underlying technologies can cause welfare losses. An application to financial markets demonstrates how these technologies translate conflicting beliefs into equilibrium prices."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Market Design for AI: Beyond the Copyright Binary",
+              "url": "https://arxiv.org/abs/2606.12260",
+              "arxivId": "2606.12260",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.GT",
+                "cs.LG",
+                "stat.ML"
+              ],
+              "abstract": "How can we design a market of human-generated content for use in training AI models that both enables technological progress and preserves individual incentives for high-quality content creation? Existing approaches take polar positions: a \"free-for-all\" model based on fair use and a \"strong intellectual property rights\" model. We show that both fail: Free-for-all does not compensate creators, and -- by modeling as a static Stackelberg game -- strong intellectual property rights also underpower creative incentives. We find this especially true for more innovative creators, a phenomenon we term the \"originality penalty.\" Extending this insight to a dynamic model, we find another market failure undermining AI model performance, even for an initially good model: Such a model induces greater reliance by humans on AI-assisted creation, resulting in homogenized content feeding back into training, which degrades the model performance -- a \"curse of precision.\" We further propose a market design with a data intermediary internalizing cross-creator externalities and subsidizing innovative contributions, thereby restoring efficiency."
+            },
+            {
+              "title": "Strategic Facility Location with $p$-Norm Social Costs",
+              "url": "https://arxiv.org/abs/2606.12187",
+              "arxivId": "2606.12187",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We consider the strategic facility location problem in $\\ell_q(\\mathbb R^d)$ spaces where the social cost is defined by an arbitrary $p$-norm of the individual costs. While the optimal approximation ratios for deterministic strategyproof mechanisms are well established in the $d = 1$ setting, the guarantees for multi-dimensional spaces under an arbitrary $p$-norm are less understood. In this work, we analyze the well-studied, strategyproof coordinate-wise median (CM) mechanism and provide approximation guarantees for these generalized social costs. For $d = 2$, we establish tight approximation ratios for all $p, q \\geq 1$. In particular, we show that the CM mechanism is a $2^{1 - 1/ \\max(p, q)}$-approximation, resolving a conjecture of Goel and Hann-Caruthers (Social Choice and Welfare, 2023). Furthermore, for $d\\geq 3$, we give upper bounds on the approximation ratio of the CM mechanism for arbitrary $p$-norm social costs, generalizing the recent result of Gravin and Jia (STOC, 2025) for the utilitarian social cost. Remarkably, we show that this approximation ratio never exceeds 3, regardless of the dimension."
+            },
+            {
+              "title": "Shared Infrastructure Investment and Pricing: Stackelberg Equilibria in Risk-Aware Take-or-Pay Contracts",
+              "url": "https://arxiv.org/abs/2606.12167",
+              "arxivId": "2606.12167",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study a shared infrastructure deployed by an Infrastructure Provider (InP) and used by multiple firms that generate revenues through resource usage. We focus on a challenging setting where: (i) infrastructure deployment requires substantial upfront investment, which the InP must recover via payments by firms that depend on their uncertain future revenues; (ii) firms' resource usage is jointly influenced by exogenous factors, infrastructure pricing, operational costs, and resource congestion; and (iii) firms exhibit heterogeneous risk aversion. This setting is typical in emerging technologies, e.g., Mobile Edge Computing (MEC). We formalize this setting as a novel Stackelberg game with risk-aware take-or-pay contracting and firm-side operational and congestion costs, in which the InP acts as the leader and jointly optimizes capacity dimensioning and access pricing, while firms act as followers that share the infrastructure and commit upfront to future resource usage under uncertain revenues. Followers' heterogeneous risk aversion is modeled through Conditional Value-at-Risk (CVaR). We prove the existence of a Stackelberg equilibrium (SE), in which the followers' decisions constitute a generalized Nash equilibrium, and develop a polynomial-time algorithm that computes an approximate SE with a bounded optimality gap. We also derive a lower bound on the followers' Probability of Profit (PoP). Monte Carlo simulations for a MEC case study show that higher followers' risk aversion reduces infrastructure capacity, pricing, and leader profit, while increasing followers' PoP."
+            },
+            {
+              "title": "Do Not Discretize, Optimize: Almost Greedy Fictitious Play",
+              "url": "https://arxiv.org/abs/2606.12149",
+              "arxivId": "2606.12149",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Our work revolves around Fictitious Play, one of the first iterative methods that is known to converge to a Nash equilibrium in zero-sum games. In recent years, there has been a revived interest, due to applications in various machine learning problems, which has motivated a line of work on its convergence properties and on proposing new variants of the initial algorithm. Our paper is along this direction and introduces one new variant, which we refer to as Almost Greedy Fictitious Play. The proposed algorithm greedily attempts to find the optimal stepsize at each iteration but its search space is constrained and includes almost all the line between the cumulative mixed strategy and the current best response. Our main result is that the method achieves an instance dependent convergence rate of $\\mathcal{O}(1/T)$ with respect to the duality gap. This matches the rate of Continuous Fictitious Play, and offers an alternative to discretization. We complement our theoretical findings with experiments that demonstrate the effectiveness of the method."
+            },
+            {
+              "title": "Axiomatic Tools for Separating Electoral Control Types, with Applications to Concrete Systems",
+              "url": "https://arxiv.org/abs/2606.12039",
+              "arxivId": "2606.12039",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Electoral control is the study of whether an attacker, by structural changes on an election such as adding/deleting/partitioning voters or candidates, can affect the winner in some desired way. Forty-four such attack types are often considered standard, and recently there has been work showing that sometimes the attack types -- though seemingly distinct -- in fact \"collapse,\" that is, for every input, either the attacker can achieve their goal under both of the control types or under neither of the control types. The papers doing this, however, while often exploiting axiomatic results that ensured collapses, found all the separations by human or computer-generated counterexamples. This left open the issue of whether even the separation direction can be driven by axiomatic results that allow large groups of separations to be almost automatically obtained. Our paper provides many such results, and we apply them to seven important voting systems, finding sixty-four new collapses and 1901 new separations. We not only give axiomatic sufficient conditions and one complete characterization result, but also identify some control-problem pairs that universally separate -- in other words, they separate under every voting rule."
+            },
+            {
+              "title": "Game-Theoretic Latent Space Alignment for Multi-user Semantic MIMO Communications",
+              "url": "https://arxiv.org/abs/2606.12005",
+              "arxivId": "2606.12005",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.IT"
+              ],
+              "abstract": "Semantic communications enable AI-native wireless systems by mapping raw data into compressed task-oriented latent representations. However, independently trained agents often rely on heterogeneous latent spaces and background knowledge, leading to semantic mismatch that degrades mutual understanding and downstream task execution, especially in interferencelimited multi-user wireless networks. This paper investigates distributed latent-space alignment in multi-user semantic MIMO interference networks with cognitive radio constraints. We consider primary users and semantic-aware secondary users sharing the same wireless resources, where secondary agents must simultaneously mitigate interference and align heterogeneous semantic representations. To address this problem, we formulate semantic alignment as a non-cooperative game and derive a closed-form solution for the joint optimization of linear semantic MIMO transceivers under power and interference constraints. Exploiting the structure of the problem, we recast the original matrix valued optimization into a lower-dimensional power-allocation game, leading to an iterative semantic water-filling algorithm. We establish sufficient conditions for existence, uniqueness, and global convergence to a Nash equilibrium, explicitly relating semantic alignment properties and physical-channel interactions. Numerical results assess the performance of the proposed framework, revealing key trade-offs among semantic compression, task performance, and hierarchical spectrum access."
+            },
+            {
+              "title": "Cross-Validation Equilibrium",
+              "url": "https://arxiv.org/abs/2606.12571",
+              "arxivId": "2606.12571",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study strategic interaction when players delegate belief formation to predictive machine learning (ML). In a static Bayesian game, each player's ML agent predicts a payoff-relevant outcome variable as a function of the player's type. The ML agent's training sample is endogenous: it is drawn from the outcome distribution generated by players' ML-guided behavior. In Cross-Validation Equilibrium (CVE), each player's ML agent selects a predictive model to minimize expected out-of-sample squared error, given its realized training sample, and each player best-replies to the belief generated by the model her ML agent selected. We analyze CVE and relate it to other equilibrium concepts. We apply CVE to jury voting, speculative betting, and games with linear-quadratic payoffs. E.g., in a team-effort game, endogenous model selection can give rise to multiple equilibria."
+            },
+            {
+              "title": "Schedules and Prioritization: A Behavioral Foundation for Multi-Armed Bandits and Stopping Problems",
+              "url": "https://arxiv.org/abs/2606.12044",
+              "arxivId": "2606.12044",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Bandit models typically begin with arms, states, rewards, and transition rules. This paper instead begins with preferences over stopped local contingent schedules: possible unfoldings of a responsibility, project, experiment, or opportunity in its own local time. Behavioral axioms on single schedules characterize a generalized stopping representation with current utility, local discounting, and a broad continuation aggregator. A common-tail compensation axiom then allows calendar time to be priced across schedules. Imposing a tight elapsed-calendar constraint generates a rested generalized bandit and yields index optimality: the index is the shadow price of advancing a local clock. Expected-utility, learning, robust, rank-dependent, Choquet, and Pandora models arise as special cases."
+            },
+            {
+              "title": "Continuity of equilibria in spaces of Bochner and Gel'fand economies",
+              "url": "https://arxiv.org/abs/2606.12492",
+              "arxivId": "2606.12492",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We examine the continuity of equilibrium correspondences in infinite-dimensional settings where the commodity spaces are Banach lattices. Economies are modeled as Borel probability measures on a space of characteristics, with aggregate endowments defined via Bochner or Gel'fand integrals. Within this framework, we prove that the equilibrium correspondence is continuous on a dense subset of the domain of economies admitting equilibria, endowed with a suitable Polish topology. These results extend both classical and recent continuity theorems by providing a unified analytical treatment applicable to a substantially broader class of locally convex spaces and encompass models with infinite planning horizons, monopolistic competition, neoclassical economies, financial equilibria, and asymmetric information. Importantly, this study demonstrates that there is no necessity to impose differentiability assumptions that are typically required in regular economies to study equilibrium continuity."
+            },
+            {
+              "title": "Delta-Epsilon-Common Knowledge and Quantitative Agreement Theorems",
+              "url": "https://arxiv.org/abs/2606.11902",
+              "arxivId": "2606.11902",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.PR"
+              ],
+              "abstract": "Aumann defined common knowledge mathematically and established his now famous Agreement Theorem. We present a novel approach to quantifying how close individuals are to commonly knowing events, $(δ,ε)$-common knowledge, which is defined for any (and not just countable) probability spaces, and provide quantitative versions of the key results in this field. Specifically, we do this for Aumann's Agreement Theorem and Nielsen's extension thereof to random variables, as well as for the setting in which posteriors are communicated back and forth between individuals. Our results apply in particular to noisy communication settings."
+            },
+            {
+              "title": "Belief Aggregation under Costly Information",
+              "url": "https://arxiv.org/abs/2606.11600",
+              "arxivId": "2606.11600",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "This paper proposes an epistemic foundation for aggregating sets of probabilistic beliefs by retaining only shared beliefs. It develops a model of belief formation under information-acquisition costs and capacity constraints. In this model, different information technologies rationalize different belief-aggregation rules, such as the familiar linear, geometric, power, and multiplicative pooling. Since the ranking of uncertain policies depends on these aggregation rules, failing to base collective beliefs on the underlying technologies can cause welfare losses. An application to financial markets demonstrates how these technologies translate conflicting beliefs into equilibrium prices."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": -2,
+                  "aiRelevance": 9,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 4,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -1,
+                  "aiRelevance": 1,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Market Design for AI: Beyond the Copyright Binary",
+              "url": "https://arxiv.org/abs/2606.12260",
+              "arxivId": "2606.12260",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.GT",
+                "cs.LG",
+                "stat.ML"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 10.0,
+                "penalty": -2.0,
+                "baseTotal": 27.0,
+                "bonus": 8.1,
+                "total": 35.1
+              }
+            },
+            {
+              "title": "Strategic Facility Location with $p$-Norm Social Costs",
+              "url": "https://arxiv.org/abs/2606.12187",
+              "arxivId": "2606.12187",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 1.9,
+                "total": 26.9
+              }
+            },
+            {
+              "title": "Shared Infrastructure Investment and Pricing: Stackelberg Equilibria in Risk-Aware Take-or-Pay Contracts",
+              "url": "https://arxiv.org/abs/2606.12167",
+              "arxivId": "2606.12167",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 3.7,
+                "total": 28.5
+              }
+            },
+            {
+              "title": "Do Not Discretize, Optimize: Almost Greedy Fictitious Play",
+              "url": "https://arxiv.org/abs/2606.12149",
+              "arxivId": "2606.12149",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "bonus": 2.4,
+                "total": 21.1
+              }
+            },
+            {
+              "title": "Axiomatic Tools for Separating Electoral Control Types, with Applications to Concrete Systems",
+              "url": "https://arxiv.org/abs/2606.12039",
+              "arxivId": "2606.12039",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.9,
+                "total": 27.8
+              }
+            },
+            {
+              "title": "Game-Theoretic Latent Space Alignment for Multi-user Semantic MIMO Communications",
+              "url": "https://arxiv.org/abs/2606.12005",
+              "arxivId": "2606.12005",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.IT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 26.0,
+                "bonus": 6.9,
+                "total": 29.6
+              }
+            },
+            {
+              "title": "Cross-Validation Equilibrium",
+              "url": "https://arxiv.org/abs/2606.12571",
+              "arxivId": "2606.12571",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 7.5,
+                "total": 31.9
+              }
+            },
+            {
+              "title": "Schedules and Prioritization: A Behavioral Foundation for Multi-Armed Bandits and Stopping Problems",
+              "url": "https://arxiv.org/abs/2606.12044",
+              "arxivId": "2606.12044",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 1.8,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Continuity of equilibria in spaces of Bochner and Gel'fand economies",
+              "url": "https://arxiv.org/abs/2606.12492",
+              "arxivId": "2606.12492",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 0.7,
+                "total": 15.2
+              }
+            },
+            {
+              "title": "Delta-Epsilon-Common Knowledge and Quantitative Agreement Theorems",
+              "url": "https://arxiv.org/abs/2606.11902",
+              "arxivId": "2606.11902",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.PR"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 2.9,
+                "total": 28.7
+              }
+            },
+            {
+              "title": "Belief Aggregation under Costly Information",
+              "url": "https://arxiv.org/abs/2606.11600",
+              "arxivId": "2606.11600",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 2.6,
+                "total": 22.9
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Market Design for AI: Beyond the Copyright Binary",
+          "url": "https://arxiv.org/abs/2606.12260",
+          "arxivId": "2606.12260",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": -2.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 35.1
+          }
+        },
+        {
+          "title": "Strategic Facility Location with $p$-Norm Social Costs",
+          "url": "https://arxiv.org/abs/2606.12187",
+          "arxivId": "2606.12187",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 26.9
+          }
+        },
+        {
+          "title": "Shared Infrastructure Investment and Pricing: Stackelberg Equilibria in Risk-Aware Take-or-Pay Contracts",
+          "url": "https://arxiv.org/abs/2606.12167",
+          "arxivId": "2606.12167",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 3.7,
+            "total": 28.5
+          }
+        },
+        {
+          "title": "Do Not Discretize, Optimize: Almost Greedy Fictitious Play",
+          "url": "https://arxiv.org/abs/2606.12149",
+          "arxivId": "2606.12149",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "bonus": 2.4,
+            "total": 21.1
+          }
+        },
+        {
+          "title": "Axiomatic Tools for Separating Electoral Control Types, with Applications to Concrete Systems",
+          "url": "https://arxiv.org/abs/2606.12039",
+          "arxivId": "2606.12039",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 27.8
+          }
+        },
+        {
+          "title": "Game-Theoretic Latent Space Alignment for Multi-user Semantic MIMO Communications",
+          "url": "https://arxiv.org/abs/2606.12005",
+          "arxivId": "2606.12005",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.IT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 6.9,
+            "total": 29.6
+          }
+        },
+        {
+          "title": "Cross-Validation Equilibrium",
+          "url": "https://arxiv.org/abs/2606.12571",
+          "arxivId": "2606.12571",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Schedules and Prioritization: A Behavioral Foundation for Multi-Armed Bandits and Stopping Problems",
+          "url": "https://arxiv.org/abs/2606.12044",
+          "arxivId": "2606.12044",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 1.8,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Continuity of equilibria in spaces of Bochner and Gel'fand economies",
+          "url": "https://arxiv.org/abs/2606.12492",
+          "arxivId": "2606.12492",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 0.7,
+            "total": 15.2
+          }
+        },
+        {
+          "title": "Delta-Epsilon-Common Knowledge and Quantitative Agreement Theorems",
+          "url": "https://arxiv.org/abs/2606.11902",
+          "arxivId": "2606.11902",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 28.7
+          }
+        },
+        {
+          "title": "Belief Aggregation under Costly Information",
+          "url": "https://arxiv.org/abs/2606.11600",
+          "arxivId": "2606.11600",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 2.6,
+            "total": 22.9
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Market Design for AI: Beyond the Copyright Binary",
+          "url": "https://arxiv.org/abs/2606.12260",
+          "arxivId": "2606.12260",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": -2.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 35.1
+          }
+        },
+        {
+          "title": "Cross-Validation Equilibrium",
+          "url": "https://arxiv.org/abs/2606.12571",
+          "arxivId": "2606.12571",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Game-Theoretic Latent Space Alignment for Multi-user Semantic MIMO Communications",
+          "url": "https://arxiv.org/abs/2606.12005",
+          "arxivId": "2606.12005",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.IT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 6.9,
+            "total": 29.6
+          }
+        },
+        {
+          "title": "Delta-Epsilon-Common Knowledge and Quantitative Agreement Theorems",
+          "url": "https://arxiv.org/abs/2606.11902",
+          "arxivId": "2606.11902",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 28.7
+          }
+        },
+        {
+          "title": "Shared Infrastructure Investment and Pricing: Stackelberg Equilibria in Risk-Aware Take-or-Pay Contracts",
+          "url": "https://arxiv.org/abs/2606.12167",
+          "arxivId": "2606.12167",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 3.7,
+            "total": 28.5
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Market Design for AI: Beyond the Copyright Binary",
+            "url": "https://arxiv.org/abs/2606.12260",
+            "arxivId": "2606.12260",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.AI",
+              "cs.GT",
+              "cs.LG",
+              "stat.ML"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "生成式AI",
+              "市场/匹配",
+              "信息外部性",
+              "数据产权"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于算法博弈论与市场设计的研究脉络，核心问题是：如何为训练AI的人类创作内容设计市场机制，以兼顾技术创新与创作者激励？现有方案陷入‘完全自由使用’与‘强版权保护’的二元对立，前者无法激励高质量创作，后者因AI企业的买方垄断和内容相关性导致创新者反受惩罚。这一问题至关重要，因为它揭示了数据市场中统计替代性引发的独特市场失灵。",
+              "modelAndSetup": "论文建立了一个动态Stackelberg博弈模型，包含多个内容创作者与一个AI企业。创作者通过投入努力生产带有个体噪声与公共偏差的信号，其成本随努力递增。AI企业作为买方设定价格，最大化自身利润，同时聚合信号以估计真实状态。社会规划者则追求社会总福利最大化。模型的关键在于引入内容间的统计相关性与公共偏差的递归放大机制，刻画了AI辅助创作如何加剧同质化。",
+              "contributionsAndResults": "论文发现，在强版权下仍存在‘原创性惩罚’：越是独特、低相关性的创作者，其投资激励被削弱得越严重。进一步提出‘精度诅咒’：高性能AI诱导人类依赖其输出，导致内容同质化，反而限制模型长期性能。最终设计了一种由数据中介主导的两部定价机制，能内化跨创作者外部性，恢复社会最优，并通过Aumann-Shapley权重补贴高原创性贡献。",
+              "methodsAndTechniques": "作者采用静态与动态结合的理论分析路径。静态部分通过求解Stackelberg均衡与社会最优的一阶条件，比较二者差异，揭示原创性惩罚。动态部分构建连续时间资本积累模型，利用隐函数定理分析精度上限。机制设计上，借助Nash议价框架与两部定价，将边际成本定价与固定转移支付分离，从而同时满足激励相容、预算平衡与参与约束。",
+              "limitationsAndReadingValue": "模型假设中介拥有完全信息且无代理成本，现实中难以实现。动态部分对偏差递归放大的建模较为抽象，实证支撑有限。尽管如此，论文深刻揭示了数据市场特有的统计外部性与动态反馈机制，其提出的‘原创性惩罚’与‘精度诅咒’极具洞察力。最值得精读的是其模型构建与核心机制设计思想，为AI时代的产权制度提供了全新理论视角。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于算法博弈论与市场设计的研究脉络，核心问题是：如何为训练AI的人类创作内容设计市场机制，以兼顾技术创新与创作者激励？现有方案陷入‘完全自由使用’与‘强版权保护’的二元对立，前者无法激励高质量创作，后者因AI企业的买方垄断和内容相关性导致创新者反受惩罚。这一问题至关重要，因为它揭示了数据市场中统计替代性引发的独特市场失灵。",
+              "modelAndSetup": "论文建立了一个动态Stackelberg博弈模型，包含多个内容创作者与一个AI企业。创作者通过投入努力生产带有个体噪声与公共偏差的信号，其成本随努力递增。AI企业作为买方设定价格，最大化自身利润，同时聚合信号以估计真实状态。社会规划者则追求社会总福利最大化。模型的关键在于引入内容间的统计相关性与公共偏差的递归放大机制，刻画了AI辅助创作如何加剧同质化。",
+              "contributionsAndResults": "论文发现，在强版权下仍存在‘原创性惩罚’：越是独特、低相关性的创作者，其投资激励被削弱得越严重。进一步提出‘精度诅咒’：高性能AI诱导人类依赖其输出，导致内容同质化，反而限制模型长期性能。最终设计了一种由数据中介主导的两部定价机制，能内化跨创作者外部性，恢复社会最优，并通过Aumann-Shapley权重补贴高原创性贡献。",
+              "methodsAndTechniques": "作者采用静态与动态结合的理论分析路径。静态部分通过求解Stackelberg均衡与社会最优的一阶条件，比较二者差异，揭示原创性惩罚。动态部分构建连续时间资本积累模型，利用隐函数定理分析精度上限。机制设计上，借助Nash议价框架与两部定价，将边际成本定价与固定转移支付分离，从而同时满足激励相容、预算平衡与参与约束。",
+              "limitationsAndReadingValue": "模型假设中介拥有完全信息且无代理成本，现实中难以实现。动态部分对偏差递归放大的建模较为抽象，实证支撑有限。尽管如此，论文深刻揭示了数据市场特有的统计外部性与动态反馈机制，其提出的‘原创性惩罚’与‘精度诅咒’极具洞察力。最值得精读的是其模型构建与核心机制设计思想，为AI时代的产权制度提供了全新理论视角。"
+            },
+            "contentTags": [
+              "机制设计",
+              "生成式AI",
+              "市场/匹配",
+              "信息外部性",
+              "数据产权"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Cross-Validation Equilibrium",
+            "url": "https://arxiv.org/abs/2606.12571",
+            "arxivId": "2606.12571",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "机器学习与博弈",
+              "均衡概念",
+              "信息设计",
+              "战略互动"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论与算法经济学交叉领域，聚焦于当玩家借助机器学习形成信念时的战略互动。传统博弈模型假设玩家拥有理性预期，但在现实中，决策者常依赖数据驱动的预测模型。核心问题是：当这些模型的训练数据来自玩家自身行为所生成的分布时，信念与行为之间存在内生循环，这会如何影响均衡？这一问题揭示了现代AI辅助决策下的新型激励困境。",
+              "modelAndSetup": "作者提出“交叉验证均衡”（CVE），其中每个玩家由一个ML代理为其构建预测模型，该模型基于从真实行为分布中抽取的含噪训练样本，并通过最小化预期留出误差来选择最优划分。玩家据此信念进行最优反应。模型的关键在于训练样本的内生性与噪声，以及模型选择的标准——模拟了实际中常用的交叉验证机制，从而更贴近现实中的学习过程。",
+              "contributionsAndResults": "论文定义了CVE并证明其在有限环境下的存在性，且当训练噪声趋于零时收敛至类比期望均衡（ABEE）。主要贡献在于将机器学习中的模型选择机制正式纳入博弈框架，揭示了内生模型选择可能导致多重均衡、行为波动加剧甚至效率损失。结果表明，即使基础游戏具有唯一纳什均衡，学习过程本身可能引入新的不确定性与非效率。",
+              "methodsAndTechniques": "作者采用标准不动点论证证明存在性，利用对称噪声与二次损失函数的性质建立无偏性引理，并通过比较不同划分下的预测误差分析模型选择行为。关键技术在于处理因交叉验证准则导致的非线性反馈，以及在噪声消失极限下连接CVE与ABEE。分析巧妙结合了统计学习中的偏差-方差权衡与博弈论的均衡推理。",
+              "limitationsAndReadingValue": "模型假设预测变量为标量且效用线性，限制了其在复杂非线性环境的应用。此外，划分作为模型类虽具普适性，但仍是一种简化。尽管如此，该框架为理解学习型代理人之间的战略互动提供了坚实起点。最值得精读的是其模型构建方式与均衡概念的设计，深刻体现了机器学习实践对经典博弈论假设的挑战。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论与算法经济学交叉领域，聚焦于当玩家借助机器学习形成信念时的战略互动。传统博弈模型假设玩家拥有理性预期，但在现实中，决策者常依赖数据驱动的预测模型。核心问题是：当这些模型的训练数据来自玩家自身行为所生成的分布时，信念与行为之间存在内生循环，这会如何影响均衡？这一问题揭示了现代AI辅助决策下的新型激励困境。",
+              "modelAndSetup": "作者提出“交叉验证均衡”（CVE），其中每个玩家由一个ML代理为其构建预测模型，该模型基于从真实行为分布中抽取的含噪训练样本，并通过最小化预期留出误差来选择最优划分。玩家据此信念进行最优反应。模型的关键在于训练样本的内生性与噪声，以及模型选择的标准——模拟了实际中常用的交叉验证机制，从而更贴近现实中的学习过程。",
+              "contributionsAndResults": "论文定义了CVE并证明其在有限环境下的存在性，且当训练噪声趋于零时收敛至类比期望均衡（ABEE）。主要贡献在于将机器学习中的模型选择机制正式纳入博弈框架，揭示了内生模型选择可能导致多重均衡、行为波动加剧甚至效率损失。结果表明，即使基础游戏具有唯一纳什均衡，学习过程本身可能引入新的不确定性与非效率。",
+              "methodsAndTechniques": "作者采用标准不动点论证证明存在性，利用对称噪声与二次损失函数的性质建立无偏性引理，并通过比较不同划分下的预测误差分析模型选择行为。关键技术在于处理因交叉验证准则导致的非线性反馈，以及在噪声消失极限下连接CVE与ABEE。分析巧妙结合了统计学习中的偏差-方差权衡与博弈论的均衡推理。",
+              "limitationsAndReadingValue": "模型假设预测变量为标量且效用线性，限制了其在复杂非线性环境的应用。此外，划分作为模型类虽具普适性，但仍是一种简化。尽管如此，该框架为理解学习型代理人之间的战略互动提供了坚实起点。最值得精读的是其模型构建方式与均衡概念的设计，深刻体现了机器学习实践对经典博弈论假设的挑战。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "机器学习与博弈",
+              "均衡概念",
+              "信息设计",
+              "战略互动"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Game-Theoretic Latent Space Alignment for Multi-user Semantic MIMO Communications",
+            "url": "https://arxiv.org/abs/2606.12005",
+            "arxivId": "2606.12005",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.IT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "均衡分析",
+              "理论推导",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "语义通信",
+              "博弈论",
+              "潜空间对齐",
+              "认知无线电"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论与多智能体系统交叉的研究脉络，聚焦于分布式语义通信中因异构表征引发的潜空间错配问题。传统通信忽略语义一致性，而现有语义对齐方法多限于点对点场景，难以应对多用户干扰环境下的协同与竞争并存局面。如何在无中心协调下实现语义对齐与资源分配的联合优化，是一个兼具理论挑战与实际部署意义的问题。",
+              "modelAndSetup": "论文建立了一个认知型多用户MIMO语义通信模型，其中次级用户作为理性智能体，在功率与空间干扰约束下自主优化线性收发器。每个用户的效用函数为加权语义失真最小化，策略为空间预均衡矩阵，信息结构包含本地信道状态与干扰协方差估计。均衡采用纳什均衡，强调分布式决策下个体最优与系统兼容性的平衡。",
+              "contributionsAndResults": "主要贡献是将语义信道均衡建模为非合作博弈，并导出闭式最优响应策略，进而提出迭代语义注水算法。证明了在适当条件下存在唯一纯策略纳什均衡且算法全局收敛。结果首次显式关联了语义对齐几何与物理信道耦合强度，揭示了语义压缩、任务性能与干扰管理间的根本权衡。",
+              "methodsAndTechniques": "核心技术是通过奇异值分解与子空间投影，将原矩阵优化问题转化为低维功率分配博弈。利用伪梯度雅可比矩阵的对角占优分析，结合变分不等式框架，建立统一P函数条件以保证均衡唯一性与收敛性。语义注水结构的发现使复杂语义操作可解耦为基于模式质量的功率调度。",
+              "limitationsAndReadingValue": "模型依赖线性变换与完美信道估计，可能限制在高度非线性语义系统中的适用性。结果对强干扰场景收敛性敏感，需进一步验证鲁棒性。尽管如此，其系统级视角、博弈形式化能力及语义-物理联合优化思想极具启发性，最值得精读的是其模型构建逻辑与变分不等式分析路径。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论与多智能体系统交叉的研究脉络，聚焦于分布式语义通信中因异构表征引发的潜空间错配问题。传统通信忽略语义一致性，而现有语义对齐方法多限于点对点场景，难以应对多用户干扰环境下的协同与竞争并存局面。如何在无中心协调下实现语义对齐与资源分配的联合优化，是一个兼具理论挑战与实际部署意义的问题。",
+              "modelAndSetup": "论文建立了一个认知型多用户MIMO语义通信模型，其中次级用户作为理性智能体，在功率与空间干扰约束下自主优化线性收发器。每个用户的效用函数为加权语义失真最小化，策略为空间预均衡矩阵，信息结构包含本地信道状态与干扰协方差估计。均衡采用纳什均衡，强调分布式决策下个体最优与系统兼容性的平衡。",
+              "contributionsAndResults": "主要贡献是将语义信道均衡建模为非合作博弈，并导出闭式最优响应策略，进而提出迭代语义注水算法。证明了在适当条件下存在唯一纯策略纳什均衡且算法全局收敛。结果首次显式关联了语义对齐几何与物理信道耦合强度，揭示了语义压缩、任务性能与干扰管理间的根本权衡。",
+              "methodsAndTechniques": "核心技术是通过奇异值分解与子空间投影，将原矩阵优化问题转化为低维功率分配博弈。利用伪梯度雅可比矩阵的对角占优分析，结合变分不等式框架，建立统一P函数条件以保证均衡唯一性与收敛性。语义注水结构的发现使复杂语义操作可解耦为基于模式质量的功率调度。",
+              "limitationsAndReadingValue": "模型依赖线性变换与完美信道估计，可能限制在高度非线性语义系统中的适用性。结果对强干扰场景收敛性敏感，需进一步验证鲁棒性。尽管如此，其系统级视角、博弈形式化能力及语义-物理联合优化思想极具启发性，最值得精读的是其模型构建逻辑与变分不等式分析路径。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "语义通信",
+              "博弈论",
+              "潜空间对齐",
+              "认知无线电"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "均衡分析",
+              "理论推导",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Delta-Epsilon-Common Knowledge and Quantitative Agreement Theorems",
+            "url": "https://arxiv.org/abs/2606.11902",
+            "arxivId": "2606.11902",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "math.PR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "共同知识",
+              "信息设计",
+              "博弈学习",
+              "定量同意定理"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论中关于共同知识与意见一致性的经典研究脉络，核心问题是：当个体间无法达到完全的共同知识时，他们的信念能在多大程度上接近一致？传统Aumann定理要求精确的共同知识，但在现实沟通中常存在噪声与信息不完整，导致该条件难以满足。因此，如何量化‘近似’共同知识并建立相应的定量同意结果，成为一个关键理论缺口，这对理解分布式认知与协商过程具有重要意义。",
+              "modelAndSetup": "论文采用基于σ-代数的概率模型来刻画个体的知识结构，将状态空间上的事件与随机变量作为认知对象。不同于传统在单点定义知识的方式，作者创新地在事件上定义知识，从而支持对‘局部’近似共同知识的建模。关键设定引入了(δ,ε)-近似包含关系，分别衡量事件近乎属于某个信息域以及近乎被另一事件包含的程度，这一双重松弛使得模型能自然处理测量误差与信息模糊性。",
+              "contributionsAndResults": "本文提出了(δ,ε)-共同知识的新概念，并建立了其与分层及交替分层定义的等价性，推广了Aumann的经典结论。主要成果包括针对事件与随机变量的定量同意定理，表明当后验概率仅为近似共同知识时，其差异受δ和ε控制。此外，还拓展了动态对话场景下的收敛结果，证明即使通过含噪信道交流，个体信念仍可在极限下达成近似一致，为稳健共识提供了理论保障。",
+              "methodsAndTechniques": "作者通过构造性的测度逼近与条件方差分析实现主要证明。核心技术包括利用对称差与条件期望刻画知识的近似性，结合Rogge提出的σ-代数距离度量来控制条件期望的变化连续性。在动态情形中，借助Doob鞅收敛定理与条件方差的极限行为，将渐进近似知识转化为最终信念的接近性。整个方法体系融合了测度论、概率收敛与信息结构分析，展现出强大的泛化能力。",
+              "limitationsAndReadingValue": "尽管模型适用于一般概率空间，但结果依赖于L²有界性假设，对重尾分布或无界信号的扩展尚不明确。此外，(δ,ε)参数虽具解释力，但实际估计可能困难。然而，其理论框架极具启发性，尤其在形式化‘几乎共同知识’方面提供了严谨工具。值得精读的是其模型构建方式与核心定理的证明思路，对于研究信息扩散、共识形成与机制鲁棒性均有深远影响。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于博弈论中关于共同知识与意见一致性的经典研究脉络，核心问题是：当个体间无法达到完全的共同知识时，他们的信念能在多大程度上接近一致？传统Aumann定理要求精确的共同知识，但在现实沟通中常存在噪声与信息不完整，导致该条件难以满足。因此，如何量化‘近似’共同知识并建立相应的定量同意结果，成为一个关键理论缺口，这对理解分布式认知与协商过程具有重要意义。",
+              "modelAndSetup": "论文采用基于σ-代数的概率模型来刻画个体的知识结构，将状态空间上的事件与随机变量作为认知对象。不同于传统在单点定义知识的方式，作者创新地在事件上定义知识，从而支持对‘局部’近似共同知识的建模。关键设定引入了(δ,ε)-近似包含关系，分别衡量事件近乎属于某个信息域以及近乎被另一事件包含的程度，这一双重松弛使得模型能自然处理测量误差与信息模糊性。",
+              "contributionsAndResults": "本文提出了(δ,ε)-共同知识的新概念，并建立了其与分层及交替分层定义的等价性，推广了Aumann的经典结论。主要成果包括针对事件与随机变量的定量同意定理，表明当后验概率仅为近似共同知识时，其差异受δ和ε控制。此外，还拓展了动态对话场景下的收敛结果，证明即使通过含噪信道交流，个体信念仍可在极限下达成近似一致，为稳健共识提供了理论保障。",
+              "methodsAndTechniques": "作者通过构造性的测度逼近与条件方差分析实现主要证明。核心技术包括利用对称差与条件期望刻画知识的近似性，结合Rogge提出的σ-代数距离度量来控制条件期望的变化连续性。在动态情形中，借助Doob鞅收敛定理与条件方差的极限行为，将渐进近似知识转化为最终信念的接近性。整个方法体系融合了测度论、概率收敛与信息结构分析，展现出强大的泛化能力。",
+              "limitationsAndReadingValue": "尽管模型适用于一般概率空间，但结果依赖于L²有界性假设，对重尾分布或无界信号的扩展尚不明确。此外，(δ,ε)参数虽具解释力，但实际估计可能困难。然而，其理论框架极具启发性，尤其在形式化‘几乎共同知识’方面提供了严谨工具。值得精读的是其模型构建方式与核心定理的证明思路，对于研究信息扩散、共识形成与机制鲁棒性均有深远影响。"
+            },
+            "contentTags": [
+              "共同知识",
+              "信息设计",
+              "博弈学习",
+              "定量同意定理"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Shared Infrastructure Investment and Pricing: Stackelberg Equilibria in Risk-Aware Take-or-Pay Contracts",
+            "url": "https://arxiv.org/abs/2606.12167",
+            "arxivId": "2606.12167",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "模型构建",
+              "均衡分析",
+              "算法设计",
+              "理论推导"
+            ],
+            "contentTags": [
+              "共享基础设施",
+              "风险感知合约",
+              "斯塔克尔伯格博弈",
+              "条件风险价值",
+              "概率盈利保证"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于机制设计与算法博弈论交叉领域，聚焦于共享基础设施投资中的激励难题。核心问题是：在需求不确定且企业风险偏好异质的情况下，基础设施提供商如何联合优化容量与定价以回收成本？现有模型常忽略风险意识或缺乏拥堵效应建模，导致无法刻画真实投资困境，即风险由提供方转移至使用者的契约设计挑战。",
+              "modelAndSetup": "文章构建了一个领导者-跟随者博弈模型，其中基础设施提供商为领导者决定容量与单价，多家风险规避企业作为跟随者通过take-or-pay合约承诺资源使用量。企业效用基于期望利润减去CVaR风险惩罚，受运营与拥塞成本影响，形成带共享约束的广义纳什均衡。模型合理刻画了收益不确定性、风险异质性与资源竞争。",
+              "contributionsAndResults": "主要贡献在于提出首个融合容量规划、接入定价与风险感知契约的斯塔克尔伯格框架，证明了均衡存在性并给出变分均衡唯一性的充分条件。创新性地推导出企业盈利概率的下界，揭示风险规避行为可提升盈利保障。相比前人工作，本模型更贴近现实且具备更强预测能力。",
+              "methodsAndTechniques": "作者采用变分不等式方法分析跟随者均衡的存在与唯一性，利用伪梯度强单调性建立唯一性条件。对领导者问题则借助反应映射连续性结合极值定理证解存在。关键技术包括CVaR正则性分析、强单调性论证及分段优化算法设计，最终实现多项式时间近似求解，确保理论结果可计算。",
+              "limitationsAndReadingValue": "模型虽具开创性，但依赖特定成本函数形式与CVaR风险度量，可能限制普适性。证明部分对强单调性条件要求较严。尽管如此，其将风险感知引入投资博弈的建模范式极具启发性，尤其在均衡刻画、盈利概率分析与算法构造方面值得精读，为后续研究提供了坚实基础与方向指引。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于机制设计与算法博弈论交叉领域，聚焦于共享基础设施投资中的激励难题。核心问题是：在需求不确定且企业风险偏好异质的情况下，基础设施提供商如何联合优化容量与定价以回收成本？现有模型常忽略风险意识或缺乏拥堵效应建模，导致无法刻画真实投资困境，即风险由提供方转移至使用者的契约设计挑战。",
+              "modelAndSetup": "文章构建了一个领导者-跟随者博弈模型，其中基础设施提供商为领导者决定容量与单价，多家风险规避企业作为跟随者通过take-or-pay合约承诺资源使用量。企业效用基于期望利润减去CVaR风险惩罚，受运营与拥塞成本影响，形成带共享约束的广义纳什均衡。模型合理刻画了收益不确定性、风险异质性与资源竞争。",
+              "contributionsAndResults": "主要贡献在于提出首个融合容量规划、接入定价与风险感知契约的斯塔克尔伯格框架，证明了均衡存在性并给出变分均衡唯一性的充分条件。创新性地推导出企业盈利概率的下界，揭示风险规避行为可提升盈利保障。相比前人工作，本模型更贴近现实且具备更强预测能力。",
+              "methodsAndTechniques": "作者采用变分不等式方法分析跟随者均衡的存在与唯一性，利用伪梯度强单调性建立唯一性条件。对领导者问题则借助反应映射连续性结合极值定理证解存在。关键技术包括CVaR正则性分析、强单调性论证及分段优化算法设计，最终实现多项式时间近似求解，确保理论结果可计算。",
+              "limitationsAndReadingValue": "模型虽具开创性，但依赖特定成本函数形式与CVaR风险度量，可能限制普适性。证明部分对强单调性条件要求较严。尽管如此，其将风险感知引入投资博弈的建模范式极具启发性，尤其在均衡刻画、盈利概率分析与算法构造方面值得精读，为后续研究提供了坚实基础与方向指引。"
+            },
+            "contentTags": [
+              "共享基础设施",
+              "风险感知合约",
+              "斯塔克尔伯格博弈",
+              "条件风险价值",
+              "概率盈利保证"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "均衡分析",
+              "算法设计",
+              "理论推导"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-10",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202606100000 TO 202606102359\"",
+            "totalResults": 15,
+            "fetchedCount": 15
+          }
+        },
+        "dedupedCount": 15
+      },
+      "arxivTotalResults": 15,
+      "fetchedCount": 15,
+      "fetchedPapers": [
+        {
+          "title": "Doc-to-Atom: Learning to Compile and Compose Memory Atoms",
+          "url": "https://arxiv.org/abs/2606.12400",
+          "arxivId": "2606.12400",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Long input sequences are central to document understanding and multi-step reasoning in Large Language Models, yet the quadratic cost of attention makes inference both memory-intensive and slow. Context distillation mitigates this by compressing contextual information into model parameters, and recent work such as Doc-to-LoRA amortizes context distillation into a single forward pass that generates one LoRA adapter per document. However, producing a single monolithic adapter for all queries leads to irrelevant-query interference, limited compositional recall, and poor scalability to long-document reasoning. To address these challenges, we propose Doc-to-Atom (Doc2Atom), a compositional parametric memory framework that decomposes each document into semantically typed knowledge atoms. Each atom is compiled into an independent micro-LoRA adapter and a provenance retrieval key. At inference time, a lightweight query router selects and assembles only the relevant atoms into a query-specific adapter, which is then injected into a frozen base model. The entire system is trained end-to-end through a multi-objective distillation framework. Experiments on six diverse QA benchmarks demonstrate that Doc2Atom outperforms Doc-to-LoRA baselines while reducing the memory cost of document internalization."
+        },
+        {
+          "title": "Findings of the MAGMaR 2026 Shared Task",
+          "url": "https://arxiv.org/abs/2606.12295",
+          "arxivId": "2606.12295",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "This overview paper presents the results of the shared task for the second workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR). In this shared task participants submitted systems focused on either (i) video retrieval or (ii) grounded generation of articles given retrieved videos. Teams could submit to either task. For the retrieval task, we had 2 participating teams that submitted a total of 17 systems -- all of which beat a baseline derived from the winner of last year's shared task. On the generation side, we had 4 teams submit 16 systems. All teams had at least one generated report that was labeled the best by a human annotator."
+        },
+        {
+          "title": "Efficient and Robust Online Learning to Rank in Decentralized Systems",
+          "url": "https://arxiv.org/abs/2606.12246",
+          "arxivId": "2606.12246",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.DC",
+            "cs.IR"
+          ],
+          "abstract": "In Online Learning to Rank (OLTR), ranking models are trained directly from live user interactions, but existing systems rely on a trusted central server to collect and process these interactions. This leaves operators free to introduce biases that conflict with user interests. Decentralized learning offers an attractive alternative, allowing users to collaboratively train a shared ranking model by exchanging model updates directly with one another, without any central authority. In such settings, however, malicious nodes can send poisoned model updates that degrade the ranking quality of honest nodes. We introduce RankGuard, a decentralized OLTR framework in which users collaboratively train ranking models and exchange model updates directly with other nodes. RankGuard defends against poisoning attacks by carefully evaluating incoming models against the user's own private click history, corrected for position bias. An incoming model is only aggregated if it better explains the user's past interactions than the current local model, making it fundamentally hard for malicious nodes to craft updates that pass this test without also genuinely helping the user. We derive a theoretical convergence guarantee of RankGuard. To the best of our knowledge, this is the first formal convergence analysis of a decentralized OLTR algorithm. We evaluate RankGuard against four poisoning attacks, including a powerful adaptive attack, using four standard benchmarks and three click models. RankGuard outperforms all baselines in most settings while being up to 62x more efficient than its closest competitors."
+        },
+        {
+          "title": "DiffCold: A Diffusion-based Generative Model for Cold-Start Item Recommendation",
+          "url": "https://arxiv.org/abs/2606.12245",
+          "arxivId": "2606.12245",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "abstract": "Cold-start item recommendation remains a persistent challenge in real-world systems due to the absence of interaction histories. While prior models attempt to bridge this gap using item content features, they universally suffer from the \\textbf{seesaw dilemma}: enhancing performance for cold items inevitably degrades performance for warm items, and vice versa. We identify that this dilemma stems from a fundamental \\textbf{distributional disparity}: warm item embeddings occupy a complex ``behavioral manifold\" shaped by rich interaction signals, whereas cold item embeddings are constrained to a ``semantic manifold\" derived solely from auxiliary content. Existing methods often force a rigid mapping between these inconsistent spaces, causing the model to sacrifice the precision of warm representations to accommodate cold ones. To address this, we propose \\textbf{DiffCold}, a diffusion-based generative model that unifies warm and cold representations. Unlike GANs or VAEs, DiffCold leverages conditional diffusion to reconstruct warm item embeddings from content, preserving the underlying manifold structure without degradation. We further tailor this paradigm with two specific designs: a \\textbf{Retrieval-enhanced Aggregator} that initializes generation using semantically similar warm items to bypass inefficient noise, and a \\textbf{Simulation-based Representation Alignment} module that enforces distribution consistency between generated and real embeddings via contrastive learning. Experiments on three benchmarks confirm that DiffCold resolves the seesaw dilemma, consistently outperforming state-of-the-art methods across all metrics."
+        },
+        {
+          "title": "MLT-Dedup: Efficient Large-Scale Online Video Deduplication via Multi-Level Representations and Spatial-Temporal Matching",
+          "url": "https://arxiv.org/abs/2606.12215",
+          "arxivId": "2606.12215",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "The explosive growth of user-generated video content on online platforms is accompanied by the emergence of numerous near-duplicate videos--videos that are identical or highly similar but differ by partial edits. These duplicates degrade user experience and increase storage and bandwidth costs, making large-scale video deduplication a critical task. Existing video deduplication frameworks face a fundamental challenge in retrieving sufficient high-quality candidates under a limited index budget, as well as trade-offs between efficiency and precision. To address these issues, we propose MLT-Dedup, an efficient large-scale online video deduplication framework with Multi-Level representations and spatial-Temporal matching. Our approach employs a Multi-Level Video Encoder (ML-VE) to extract both fine-grained frame-level and sparse clip-level embeddings: sparse embeddings support efficient candidate retrieval, while fine-grained embeddings are loaded for precise pairwise matching. During matching, we introduce DiF-SiM, a Differential Feature-enhanced Similarity Module capable of locating duplicated temporal segments and providing reliable similarity evidence to support policy-driven deduplication decisions. Extensive experiments on a real-world large-scale platform demonstrate that MLT-Dedup reduces online repetition rates by 91% at 90% precision. Furthermore, our sparse retrieval design achieves a 5x increase in indexing capacity, enabling broader candidate coverage in real-world deployment."
+        },
+        {
+          "title": "LLM-Based User Personas for Recommendations at Scale",
+          "url": "https://arxiv.org/abs/2606.12198",
+          "arxivId": "2606.12198",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large Language Models (LLMs) offer unprecedented potential for enhancing recommendation systems through their world knowledge and reasoning capabilities. However, existing approaches often rely on structured IDs or offline processing, limiting semantic richness, real-time adaptability, and user-facing interpretability. In this paper, we introduce a novel framework that enables real-time generation of LLM-based user interest personas for a large-scale commercial video recommendation platform. Our method generates natural-language user interest personas that address the exploitation-exploration trade-off by combining the summarization of existing interests with novel topics, directly during serving. To overcome the computational challenges of online LLM inference at a billion-user scale, we design a cost-efficient architecture leveraging knowledge distillation, asynchronous inference, and input optimization via semantically clustered video representations. Extensive offline evaluations, user studies, and live A/B tests demonstrate significant improvements in viewer value. This work bridges the gap between high-level semantic understanding and industrial-scale recommendation, paving the way for more dynamic, explainable, and satisfying personalized experiences."
+        },
+        {
+          "title": "uva-irlab-conv at SemEval-2026 Task 8: Multi-Turn RAG with Learned Sparse Retrieval and Listwise Reranking",
+          "url": "https://arxiv.org/abs/2606.11945",
+          "arxivId": "2606.11945",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "This report describes our participation in SemEval-2026 Task 8 on multi-turn retrieval and question answering. The task evaluates conversational systems across four domains (finance, cloud documentation, government, Wikipedia), and includes unanswerable queries where the available collection does not contain sufficient evidence to produce a complete response. We propose a multi-turn retrieval-augmented generation pipeline that combines learned sparse retrieval with LLM-based reranking and generation. Using sparse retrieval as the primary retrieval method, we leverage its strong generalization across domains. In addition, we make use of the long-context capabilities of LLMs for conversational query rewriting, pointwise and listwise reranking, and generating the final response, each conditioned on the full conversational history. This multi-step design enables effective integration of conversational context throughout retrieval and generation, improving robustness across domains."
+        },
+        {
+          "title": "Tail-Aware Adaptive-k: Query-Adaptive Context Selection for Retrieval-Augmented Generation",
+          "url": "https://arxiv.org/abs/2606.11907",
+          "arxivId": "2606.11907",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Adaptive context selection is critical for retrieval-augmented generation (RAG) systems, as fixed Top-K retrieval fails under query-dependent and heavy-tailed similarity distributions. While Extreme Value Theory (EVT) offers a principled framework for adaptive truncation, existing approaches apply EVT globally across the entire ranked list, incurring prohibitive computational costs and statistical instability. We propose Tail-Aware Adaptive-k(TAA-k), a training-free framework that operationalizes EVT through a localized validation strategy. The key insight is that ranked similarity curves exhibit a characteristic steep--flat--steep pattern reflecting a transition from relevance-dominated to noise-dominated regimes. TAA-k exploits this geometric structure via knee detection to identify a compact candidate region, then applies EVT-based goodness-of-fit testing within this window to validate the onset of tail behavior. This coarse-to-fine design reduces computational complexity from O(N^2M) to O(sqrt{N\\log N}*M) while maintaining statistical rigor. Under mild monotone likelihood ratio assumptions, TAA-k yields a stable, query-adaptive cutoff corresponding to the earliest noise-dominated position. Experiments on WebQuestions, 2WikiMultiHopQA, and MuSiQue demonstrate that TAA-k achieves near-oracle retrieval quality (F1 within 2-3% of oracle) with orders-of-magnitude efficiency gains over global EVT methods, while maintaining robustness across embedding models and compression dimensions."
+        },
+        {
+          "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+          "url": "https://arxiv.org/abs/2606.11864",
+          "arxivId": "2606.11864",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Code retrieval is becoming central to coding agents, but agentic coding requires more than matching a natural-language query to an isolated snippet. Given a user request, a coding agent needs to navigate a concrete repository state, locate relevant files and functions, gather supporting context, and filter similar in-repository distractors. Existing code retrieval benchmarks mainly evaluate docstring-to-function or snippet-level matching, thereby missing this requirement-driven repository search problem. To address this gap, we introduce CORE-Bench, a comprehensive benchmark for code retrieval in the era of agentic coding. CORE-Bench evaluates code retrieval ability at three levels: code understanding, issue-to-edit localization, and broader context retrieval. Built from curated code-search tasks and SWE-bench-series instances, CORE-Bench contains over 180K queries and 106K broader-context relevance labels. Experiments with representative embedding models show a sharp drop from traditional code search to code retrieval in agentic coding settings. Simple supervised fine-tuning of existing embedding models significantly improves performance in this setting, suggesting substantial room for further progress."
+        },
+        {
+          "title": "What Limits Does Quantization Place on Dense Top-$k$ Retrieval? A Theoretical Study",
+          "url": "https://arxiv.org/abs/2606.11780",
+          "arxivId": "2606.11780",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.IT"
+          ],
+          "abstract": "We establish conditions for embedding a corpus of $N$ documents as $d$-dimensional vectors such that every $k$-subset $S \\subseteq [N]$ is realizable as a result of top-$k$ retrieval by some query vector. Recent work shows that $d = O(k)$ suffices for such embeddings to exist in $\\mathbb{R}^d$, independently of $N$. We theoretically prove that this corpus-independent bound is specific to infinite precision. With $B$ bits per coordinate, perfect top-$k$ retrieval requires $Bd = Ω(k \\ln N)$; thus, at any fixed precision, the dimension must grow at least logarithmically with $N$. Specializing to a $\\ell_2$-normalized $B$-bit uniform scalar quantization model, we also identify a threshold on the precision $B^{*} = O(\\ln \\ln N)$ below which no dimension suffices, together with two further regimes that bound the feasible $(B, d)$ pairs. Our result implies that in practical vector databases and dense retrieval systems where quantization is standard, the embedding dimension and possibly the precision must grow with the corpus size."
+        },
+        {
+          "title": "FAST-MEL: A Fast, Accurate, and Storage Efficient Solution for Multimodal Entity Linking",
+          "url": "https://arxiv.org/abs/2606.11749",
+          "arxivId": "2606.11749",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Multimodal entity linking (MEL) is the task that consists of matching textual and visual mentions of entities in unstructured data to their corresponding entities in a knowledge base (KB). To be effective in large-scale practical settings, MEL systems must meet three objectives: high linking accuracy, computational efficiency, and storage efficiency, i.e., a compact yet efficient index of the KB. In this paper, we highlight that state-of-the-art systems fail to simultaneously satisfy these 3 requirements. To meet this three-fold objective, we propose FAST-MEL, a lightweight encoder-based MEL solution that relies on a novel and compact fixed-size vectorized representation of both the textual and visual information of each entity or mention. It matches the accuracy of the best systems but performs three orders of magnitude faster. It also consumes one order of magnitude less storage than the fastest systems."
+        },
+        {
+          "title": "CompRank: Efficient LLM Reranking via Token-Level Compression and Decoding-Free Scoring",
+          "url": "https://arxiv.org/abs/2606.11700",
+          "arxivId": "2606.11700",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large language model (LLM) rerankers have become an important component of modern retrieval and retrieval-augmented generation pipelines, but their high computational cost limits their applicability to long candidate lists. In this paper, we propose \\textbf{CompRank}, a token-efficient reranking framework that reduces redundant computation by aligning reranker design with the sparsity of ranking signals. CompRank decouples document representations from candidate order and query context, enabling reusable document-side states; applies segment-wise token compression to reduce query--document interaction cost; and introduces a CopyNet-style objective that directly aligns attention-based document scoring with training supervision. Experiments on seven BEIR datasets show that CompRank achieves strong reranking performance while retaining only 10.2\\% of document tokens, reaching an average NDCG@10 of 39.2 compared with 39.7 under full-token attention. Further scaling experiments on TREC-COVID show that CompRank remains stable when evaluated on candidate lists of up to 500 documents after training on 30-document lists, while achieving $4.9\\times$--$9.5\\times$ end-to-end speedup over generation-based listwise reranking and approximately $1.3\\times$ speedup over the full-token CompRank variant. These results suggest that token-level compression and decoding-free attention scoring provide an effective path toward scalable LLM-based reranking."
+        },
+        {
+          "title": "The Long Tail, Not the Front Page: Cold-Start Prediction of Crowd Highlight Salience",
+          "url": "https://arxiv.org/abs/2606.11654",
+          "arxivId": "2606.11654",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.HC",
+            "cs.SI"
+          ],
+          "abstract": "A social highlighter's most useful signal -- which passages a crowd of readers marks -- exists only for documents people have already read. Can the aggregate crowd salience of a document be predicted from its text before its marks accumulate? Prior work on this data found that zero-shot language models recover highlight locations worse than a trivial lead (position) baseline, so we ask whether a model trained on the highlight corpus can beat that baseline. Using a pre-registered ladder of models and a by-document cluster bootstrap, we find a small but robust edge: a logistic ranker over sentence embeddings and positional/contextual features beats the lead baseline by +0.044 average precision (95% CI [+0.029, +0.058]; clears a pre-registered margin delta=0.03 in 97% of resamples, and stable across pipeline re-runs). Two unsupervised extractive baselines (centroid, LexRank-style centrality) lose to lead, and the trained model beats them by +0.108, so the edge is not recovered by generic unsupervised proxies -- it reflects learning from real reader marks. In product terms, precision@3 rises from 0.25 to 0.39 (+55% relative) and the model beats lead on 69% of documents. An ablation attributes the edge to the raw embedding (+0.014) and training augmentation (+0.010), each with a positive CI. The edge is not a temporal-generalization failure, and we find no evidence that content drift or near-duplicate leakage explains it. A standardized regression shows the advantage is governed mainly by document popularity (lower popularity, larger edge) and by label reliability. It nearly vanishes only on the most popular content; there it is the lead baseline that strengthens, not the model that weakens. Because our evaluation conditions on documents that eventually accumulated readers, these results are a retrospective cold-start simulation."
+        },
+        {
+          "title": "DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors",
+          "url": "https://arxiv.org/abs/2606.11616",
+          "arxivId": "2606.11616",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.IR"
+          ],
+          "abstract": "High-quality training data is essential for the success of machine learning models. However, real-world datasets often contain mixed types of errors arising from systematic flaws in data preparation pipelines, including label errors, feature errors, and spurious correlations. Effective debugging of training data requires both detecting erroneous samples and identifying their specific error types to enable targeted repair, yet existing data cleaning and attribution methods fail to adequately address this dual requirement. In this paper, we propose DeMix, a novel framework that simultaneously diagnoses erroneous samples and their error types. Our key insight is that different error types produce distinct patterns on model behavior. DeMix captures such error-specific patterns by influence vectors that characterize how each training sample affects model predictions across all validation samples. We formulate training data debugging as a multi-label classification problem where a classifier is developed to predict error types directly from influence vectors. We further introduce an intervention-based learning strategy that guides the classifier to capture invariant rationales specific to each error type, ensuring the learned classifier generalizes effectively. Empirical evaluations on 11 tasks across tabular data prediction, recommendation systems, and LLM alignment demonstrate that DeMix significantly outperforms state-of-the-art approaches, achieving a 22.61% improvement in data debugging F1-score and a 9.32% gain in task model performance after data repair. Code is available at: https://github.com/SJTU-DMTai/DeMix."
+        },
+        {
+          "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+          "url": "https://arxiv.org/abs/2606.11613",
+          "arxivId": "2606.11613",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.HC",
+            "cs.SI"
+          ],
+          "abstract": "When many people highlight the same document, is the crowd a single consensus, or is it internally structured into reader sub-groups that mark different things -- and is that structure a stable property of a reader or of the document? Building on prior work showing an individual's within-document highlighting signal is a whisper while individuality lives in selection, we ask the group-level question on a co-readership platform using a margin-preserving curveball null. Experiment 1: within a document, readers form strong sub-groups -- pairs agree far beyond what shared salience, mark density, and sentence popularity predict (nearest-neighbour agreement z=+6.3, significant in 88% of documents). Under an eight-block region-preserving null, shared engagement with the same coarse regions of the document accounts for about 40% of this excess; the majority survives as finer reader-specific agreement (z=+3.6, 77% significant). So the within-document crowd is, in a descriptive sense, factional. Experiment 2: is that grouping a stable reader trait? Here we are honest about power. The cross-document split-half reproducibility of a pair's agreement is near zero pooled (+0.078 and 0.000 in two separately drawn samples), and a power calibration shows the test is informative only for pairs that co-read many documents. In the only informative high-overlap subset (k>=4), point estimates are positive but small-sample, imprecise across the separately drawn samples, never significant, and attenuate under the region-preserving null. We therefore leave cross-document stability unresolved: the data is consistent with anything from situational grouping to a weak-to-moderate stable reader trait. The crowd is factional within a document; whether its factions follow the reader across documents is, honestly, beyond our reach."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Doc-to-Atom: Learning to Compile and Compose Memory Atoms",
+              "url": "https://arxiv.org/abs/2606.12400",
+              "arxivId": "2606.12400",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Long input sequences are central to document understanding and multi-step reasoning in Large Language Models, yet the quadratic cost of attention makes inference both memory-intensive and slow. Context distillation mitigates this by compressing contextual information into model parameters, and recent work such as Doc-to-LoRA amortizes context distillation into a single forward pass that generates one LoRA adapter per document. However, producing a single monolithic adapter for all queries leads to irrelevant-query interference, limited compositional recall, and poor scalability to long-document reasoning. To address these challenges, we propose Doc-to-Atom (Doc2Atom), a compositional parametric memory framework that decomposes each document into semantically typed knowledge atoms. Each atom is compiled into an independent micro-LoRA adapter and a provenance retrieval key. At inference time, a lightweight query router selects and assembles only the relevant atoms into a query-specific adapter, which is then injected into a frozen base model. The entire system is trained end-to-end through a multi-objective distillation framework. Experiments on six diverse QA benchmarks demonstrate that Doc2Atom outperforms Doc-to-LoRA baselines while reducing the memory cost of document internalization."
+            },
+            {
+              "title": "Findings of the MAGMaR 2026 Shared Task",
+              "url": "https://arxiv.org/abs/2606.12295",
+              "arxivId": "2606.12295",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "This overview paper presents the results of the shared task for the second workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR). In this shared task participants submitted systems focused on either (i) video retrieval or (ii) grounded generation of articles given retrieved videos. Teams could submit to either task. For the retrieval task, we had 2 participating teams that submitted a total of 17 systems -- all of which beat a baseline derived from the winner of last year's shared task. On the generation side, we had 4 teams submit 16 systems. All teams had at least one generated report that was labeled the best by a human annotator."
+            },
+            {
+              "title": "Efficient and Robust Online Learning to Rank in Decentralized Systems",
+              "url": "https://arxiv.org/abs/2606.12246",
+              "arxivId": "2606.12246",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.DC",
+                "cs.IR"
+              ],
+              "abstract": "In Online Learning to Rank (OLTR), ranking models are trained directly from live user interactions, but existing systems rely on a trusted central server to collect and process these interactions. This leaves operators free to introduce biases that conflict with user interests. Decentralized learning offers an attractive alternative, allowing users to collaboratively train a shared ranking model by exchanging model updates directly with one another, without any central authority. In such settings, however, malicious nodes can send poisoned model updates that degrade the ranking quality of honest nodes. We introduce RankGuard, a decentralized OLTR framework in which users collaboratively train ranking models and exchange model updates directly with other nodes. RankGuard defends against poisoning attacks by carefully evaluating incoming models against the user's own private click history, corrected for position bias. An incoming model is only aggregated if it better explains the user's past interactions than the current local model, making it fundamentally hard for malicious nodes to craft updates that pass this test without also genuinely helping the user. We derive a theoretical convergence guarantee of RankGuard. To the best of our knowledge, this is the first formal convergence analysis of a decentralized OLTR algorithm. We evaluate RankGuard against four poisoning attacks, including a powerful adaptive attack, using four standard benchmarks and three click models. RankGuard outperforms all baselines in most settings while being up to 62x more efficient than its closest competitors."
+            },
+            {
+              "title": "DiffCold: A Diffusion-based Generative Model for Cold-Start Item Recommendation",
+              "url": "https://arxiv.org/abs/2606.12245",
+              "arxivId": "2606.12245",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "abstract": "Cold-start item recommendation remains a persistent challenge in real-world systems due to the absence of interaction histories. While prior models attempt to bridge this gap using item content features, they universally suffer from the \\textbf{seesaw dilemma}: enhancing performance for cold items inevitably degrades performance for warm items, and vice versa. We identify that this dilemma stems from a fundamental \\textbf{distributional disparity}: warm item embeddings occupy a complex ``behavioral manifold\" shaped by rich interaction signals, whereas cold item embeddings are constrained to a ``semantic manifold\" derived solely from auxiliary content. Existing methods often force a rigid mapping between these inconsistent spaces, causing the model to sacrifice the precision of warm representations to accommodate cold ones. To address this, we propose \\textbf{DiffCold}, a diffusion-based generative model that unifies warm and cold representations. Unlike GANs or VAEs, DiffCold leverages conditional diffusion to reconstruct warm item embeddings from content, preserving the underlying manifold structure without degradation. We further tailor this paradigm with two specific designs: a \\textbf{Retrieval-enhanced Aggregator} that initializes generation using semantically similar warm items to bypass inefficient noise, and a \\textbf{Simulation-based Representation Alignment} module that enforces distribution consistency between generated and real embeddings via contrastive learning. Experiments on three benchmarks confirm that DiffCold resolves the seesaw dilemma, consistently outperforming state-of-the-art methods across all metrics."
+            },
+            {
+              "title": "MLT-Dedup: Efficient Large-Scale Online Video Deduplication via Multi-Level Representations and Spatial-Temporal Matching",
+              "url": "https://arxiv.org/abs/2606.12215",
+              "arxivId": "2606.12215",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "The explosive growth of user-generated video content on online platforms is accompanied by the emergence of numerous near-duplicate videos--videos that are identical or highly similar but differ by partial edits. These duplicates degrade user experience and increase storage and bandwidth costs, making large-scale video deduplication a critical task. Existing video deduplication frameworks face a fundamental challenge in retrieving sufficient high-quality candidates under a limited index budget, as well as trade-offs between efficiency and precision. To address these issues, we propose MLT-Dedup, an efficient large-scale online video deduplication framework with Multi-Level representations and spatial-Temporal matching. Our approach employs a Multi-Level Video Encoder (ML-VE) to extract both fine-grained frame-level and sparse clip-level embeddings: sparse embeddings support efficient candidate retrieval, while fine-grained embeddings are loaded for precise pairwise matching. During matching, we introduce DiF-SiM, a Differential Feature-enhanced Similarity Module capable of locating duplicated temporal segments and providing reliable similarity evidence to support policy-driven deduplication decisions. Extensive experiments on a real-world large-scale platform demonstrate that MLT-Dedup reduces online repetition rates by 91% at 90% precision. Furthermore, our sparse retrieval design achieves a 5x increase in indexing capacity, enabling broader candidate coverage in real-world deployment."
+            },
+            {
+              "title": "LLM-Based User Personas for Recommendations at Scale",
+              "url": "https://arxiv.org/abs/2606.12198",
+              "arxivId": "2606.12198",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large Language Models (LLMs) offer unprecedented potential for enhancing recommendation systems through their world knowledge and reasoning capabilities. However, existing approaches often rely on structured IDs or offline processing, limiting semantic richness, real-time adaptability, and user-facing interpretability. In this paper, we introduce a novel framework that enables real-time generation of LLM-based user interest personas for a large-scale commercial video recommendation platform. Our method generates natural-language user interest personas that address the exploitation-exploration trade-off by combining the summarization of existing interests with novel topics, directly during serving. To overcome the computational challenges of online LLM inference at a billion-user scale, we design a cost-efficient architecture leveraging knowledge distillation, asynchronous inference, and input optimization via semantically clustered video representations. Extensive offline evaluations, user studies, and live A/B tests demonstrate significant improvements in viewer value. This work bridges the gap between high-level semantic understanding and industrial-scale recommendation, paving the way for more dynamic, explainable, and satisfying personalized experiences."
+            },
+            {
+              "title": "uva-irlab-conv at SemEval-2026 Task 8: Multi-Turn RAG with Learned Sparse Retrieval and Listwise Reranking",
+              "url": "https://arxiv.org/abs/2606.11945",
+              "arxivId": "2606.11945",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "This report describes our participation in SemEval-2026 Task 8 on multi-turn retrieval and question answering. The task evaluates conversational systems across four domains (finance, cloud documentation, government, Wikipedia), and includes unanswerable queries where the available collection does not contain sufficient evidence to produce a complete response. We propose a multi-turn retrieval-augmented generation pipeline that combines learned sparse retrieval with LLM-based reranking and generation. Using sparse retrieval as the primary retrieval method, we leverage its strong generalization across domains. In addition, we make use of the long-context capabilities of LLMs for conversational query rewriting, pointwise and listwise reranking, and generating the final response, each conditioned on the full conversational history. This multi-step design enables effective integration of conversational context throughout retrieval and generation, improving robustness across domains."
+            },
+            {
+              "title": "Tail-Aware Adaptive-k: Query-Adaptive Context Selection for Retrieval-Augmented Generation",
+              "url": "https://arxiv.org/abs/2606.11907",
+              "arxivId": "2606.11907",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Adaptive context selection is critical for retrieval-augmented generation (RAG) systems, as fixed Top-K retrieval fails under query-dependent and heavy-tailed similarity distributions. While Extreme Value Theory (EVT) offers a principled framework for adaptive truncation, existing approaches apply EVT globally across the entire ranked list, incurring prohibitive computational costs and statistical instability. We propose Tail-Aware Adaptive-k(TAA-k), a training-free framework that operationalizes EVT through a localized validation strategy. The key insight is that ranked similarity curves exhibit a characteristic steep--flat--steep pattern reflecting a transition from relevance-dominated to noise-dominated regimes. TAA-k exploits this geometric structure via knee detection to identify a compact candidate region, then applies EVT-based goodness-of-fit testing within this window to validate the onset of tail behavior. This coarse-to-fine design reduces computational complexity from O(N^2M) to O(sqrt{N\\log N}*M) while maintaining statistical rigor. Under mild monotone likelihood ratio assumptions, TAA-k yields a stable, query-adaptive cutoff corresponding to the earliest noise-dominated position. Experiments on WebQuestions, 2WikiMultiHopQA, and MuSiQue demonstrate that TAA-k achieves near-oracle retrieval quality (F1 within 2-3% of oracle) with orders-of-magnitude efficiency gains over global EVT methods, while maintaining robustness across embedding models and compression dimensions."
+            },
+            {
+              "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+              "url": "https://arxiv.org/abs/2606.11864",
+              "arxivId": "2606.11864",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Code retrieval is becoming central to coding agents, but agentic coding requires more than matching a natural-language query to an isolated snippet. Given a user request, a coding agent needs to navigate a concrete repository state, locate relevant files and functions, gather supporting context, and filter similar in-repository distractors. Existing code retrieval benchmarks mainly evaluate docstring-to-function or snippet-level matching, thereby missing this requirement-driven repository search problem. To address this gap, we introduce CORE-Bench, a comprehensive benchmark for code retrieval in the era of agentic coding. CORE-Bench evaluates code retrieval ability at three levels: code understanding, issue-to-edit localization, and broader context retrieval. Built from curated code-search tasks and SWE-bench-series instances, CORE-Bench contains over 180K queries and 106K broader-context relevance labels. Experiments with representative embedding models show a sharp drop from traditional code search to code retrieval in agentic coding settings. Simple supervised fine-tuning of existing embedding models significantly improves performance in this setting, suggesting substantial room for further progress."
+            },
+            {
+              "title": "What Limits Does Quantization Place on Dense Top-$k$ Retrieval? A Theoretical Study",
+              "url": "https://arxiv.org/abs/2606.11780",
+              "arxivId": "2606.11780",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.IT"
+              ],
+              "abstract": "We establish conditions for embedding a corpus of $N$ documents as $d$-dimensional vectors such that every $k$-subset $S \\subseteq [N]$ is realizable as a result of top-$k$ retrieval by some query vector. Recent work shows that $d = O(k)$ suffices for such embeddings to exist in $\\mathbb{R}^d$, independently of $N$. We theoretically prove that this corpus-independent bound is specific to infinite precision. With $B$ bits per coordinate, perfect top-$k$ retrieval requires $Bd = Ω(k \\ln N)$; thus, at any fixed precision, the dimension must grow at least logarithmically with $N$. Specializing to a $\\ell_2$-normalized $B$-bit uniform scalar quantization model, we also identify a threshold on the precision $B^{*} = O(\\ln \\ln N)$ below which no dimension suffices, together with two further regimes that bound the feasible $(B, d)$ pairs. Our result implies that in practical vector databases and dense retrieval systems where quantization is standard, the embedding dimension and possibly the precision must grow with the corpus size."
+            },
+            {
+              "title": "FAST-MEL: A Fast, Accurate, and Storage Efficient Solution for Multimodal Entity Linking",
+              "url": "https://arxiv.org/abs/2606.11749",
+              "arxivId": "2606.11749",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Multimodal entity linking (MEL) is the task that consists of matching textual and visual mentions of entities in unstructured data to their corresponding entities in a knowledge base (KB). To be effective in large-scale practical settings, MEL systems must meet three objectives: high linking accuracy, computational efficiency, and storage efficiency, i.e., a compact yet efficient index of the KB. In this paper, we highlight that state-of-the-art systems fail to simultaneously satisfy these 3 requirements. To meet this three-fold objective, we propose FAST-MEL, a lightweight encoder-based MEL solution that relies on a novel and compact fixed-size vectorized representation of both the textual and visual information of each entity or mention. It matches the accuracy of the best systems but performs three orders of magnitude faster. It also consumes one order of magnitude less storage than the fastest systems."
+            },
+            {
+              "title": "CompRank: Efficient LLM Reranking via Token-Level Compression and Decoding-Free Scoring",
+              "url": "https://arxiv.org/abs/2606.11700",
+              "arxivId": "2606.11700",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large language model (LLM) rerankers have become an important component of modern retrieval and retrieval-augmented generation pipelines, but their high computational cost limits their applicability to long candidate lists. In this paper, we propose \\textbf{CompRank}, a token-efficient reranking framework that reduces redundant computation by aligning reranker design with the sparsity of ranking signals. CompRank decouples document representations from candidate order and query context, enabling reusable document-side states; applies segment-wise token compression to reduce query--document interaction cost; and introduces a CopyNet-style objective that directly aligns attention-based document scoring with training supervision. Experiments on seven BEIR datasets show that CompRank achieves strong reranking performance while retaining only 10.2\\% of document tokens, reaching an average NDCG@10 of 39.2 compared with 39.7 under full-token attention. Further scaling experiments on TREC-COVID show that CompRank remains stable when evaluated on candidate lists of up to 500 documents after training on 30-document lists, while achieving $4.9\\times$--$9.5\\times$ end-to-end speedup over generation-based listwise reranking and approximately $1.3\\times$ speedup over the full-token CompRank variant. These results suggest that token-level compression and decoding-free attention scoring provide an effective path toward scalable LLM-based reranking."
+            },
+            {
+              "title": "The Long Tail, Not the Front Page: Cold-Start Prediction of Crowd Highlight Salience",
+              "url": "https://arxiv.org/abs/2606.11654",
+              "arxivId": "2606.11654",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.HC",
+                "cs.SI"
+              ],
+              "abstract": "A social highlighter's most useful signal -- which passages a crowd of readers marks -- exists only for documents people have already read. Can the aggregate crowd salience of a document be predicted from its text before its marks accumulate? Prior work on this data found that zero-shot language models recover highlight locations worse than a trivial lead (position) baseline, so we ask whether a model trained on the highlight corpus can beat that baseline. Using a pre-registered ladder of models and a by-document cluster bootstrap, we find a small but robust edge: a logistic ranker over sentence embeddings and positional/contextual features beats the lead baseline by +0.044 average precision (95% CI [+0.029, +0.058]; clears a pre-registered margin delta=0.03 in 97% of resamples, and stable across pipeline re-runs). Two unsupervised extractive baselines (centroid, LexRank-style centrality) lose to lead, and the trained model beats them by +0.108, so the edge is not recovered by generic unsupervised proxies -- it reflects learning from real reader marks. In product terms, precision@3 rises from 0.25 to 0.39 (+55% relative) and the model beats lead on 69% of documents. An ablation attributes the edge to the raw embedding (+0.014) and training augmentation (+0.010), each with a positive CI. The edge is not a temporal-generalization failure, and we find no evidence that content drift or near-duplicate leakage explains it. A standardized regression shows the advantage is governed mainly by document popularity (lower popularity, larger edge) and by label reliability. It nearly vanishes only on the most popular content; there it is the lead baseline that strengthens, not the model that weakens. Because our evaluation conditions on documents that eventually accumulated readers, these results are a retrospective cold-start simulation."
+            },
+            {
+              "title": "DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors",
+              "url": "https://arxiv.org/abs/2606.11616",
+              "arxivId": "2606.11616",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.IR"
+              ],
+              "abstract": "High-quality training data is essential for the success of machine learning models. However, real-world datasets often contain mixed types of errors arising from systematic flaws in data preparation pipelines, including label errors, feature errors, and spurious correlations. Effective debugging of training data requires both detecting erroneous samples and identifying their specific error types to enable targeted repair, yet existing data cleaning and attribution methods fail to adequately address this dual requirement. In this paper, we propose DeMix, a novel framework that simultaneously diagnoses erroneous samples and their error types. Our key insight is that different error types produce distinct patterns on model behavior. DeMix captures such error-specific patterns by influence vectors that characterize how each training sample affects model predictions across all validation samples. We formulate training data debugging as a multi-label classification problem where a classifier is developed to predict error types directly from influence vectors. We further introduce an intervention-based learning strategy that guides the classifier to capture invariant rationales specific to each error type, ensuring the learned classifier generalizes effectively. Empirical evaluations on 11 tasks across tabular data prediction, recommendation systems, and LLM alignment demonstrate that DeMix significantly outperforms state-of-the-art approaches, achieving a 22.61% improvement in data debugging F1-score and a 9.32% gain in task model performance after data repair. Code is available at: https://github.com/SJTU-DMTai/DeMix."
+            },
+            {
+              "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+              "url": "https://arxiv.org/abs/2606.11613",
+              "arxivId": "2606.11613",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.HC",
+                "cs.SI"
+              ],
+              "abstract": "When many people highlight the same document, is the crowd a single consensus, or is it internally structured into reader sub-groups that mark different things -- and is that structure a stable property of a reader or of the document? Building on prior work showing an individual's within-document highlighting signal is a whisper while individuality lives in selection, we ask the group-level question on a co-readership platform using a margin-preserving curveball null. Experiment 1: within a document, readers form strong sub-groups -- pairs agree far beyond what shared salience, mark density, and sentence popularity predict (nearest-neighbour agreement z=+6.3, significant in 88% of documents). Under an eight-block region-preserving null, shared engagement with the same coarse regions of the document accounts for about 40% of this excess; the majority survives as finer reader-specific agreement (z=+3.6, 77% significant). So the within-document crowd is, in a descriptive sense, factional. Experiment 2: is that grouping a stable reader trait? Here we are honest about power. The cross-document split-half reproducibility of a pair's agreement is near zero pooled (+0.078 and 0.000 in two separately drawn samples), and a power calibration shows the test is informative only for pairs that co-read many documents. In the only informative high-overlap subset (k>=4), point estimates are positive but small-sample, imprecise across the separately drawn samples, never significant, and attenuate under the region-preserving null. We therefore leave cross-document stability unresolved: the data is consistent with anything from situational grouping to a weak-to-moderate stable reader trait. The crowd is factional within a document; whether its factions follow the reader across documents is, honestly, beyond our reach."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 0,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 3,
+                  "clarity": 6,
+                  "theoreticalDepth": 1,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 5,
+                  "theoreticalDepth": 1,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 13,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 14,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Doc-to-Atom: Learning to Compile and Compose Memory Atoms",
+              "url": "https://arxiv.org/abs/2606.12400",
+              "arxivId": "2606.12400",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Findings of the MAGMaR 2026 Shared Task",
+              "url": "https://arxiv.org/abs/2606.12295",
+              "arxivId": "2606.12295",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 0.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 6.0,
+                "total": 6.0
+              }
+            },
+            {
+              "title": "Efficient and Robust Online Learning to Rank in Decentralized Systems",
+              "url": "https://arxiv.org/abs/2606.12246",
+              "arxivId": "2606.12246",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.DC",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "DiffCold: A Diffusion-based Generative Model for Cold-Start Item Recommendation",
+              "url": "https://arxiv.org/abs/2606.12245",
+              "arxivId": "2606.12245",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "MLT-Dedup: Efficient Large-Scale Online Video Deduplication via Multi-Level Representations and Spatial-Temporal Matching",
+              "url": "https://arxiv.org/abs/2606.12215",
+              "arxivId": "2606.12215",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "LLM-Based User Personas for Recommendations at Scale",
+              "url": "https://arxiv.org/abs/2606.12198",
+              "arxivId": "2606.12198",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 3.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 1.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "uva-irlab-conv at SemEval-2026 Task 8: Multi-Turn RAG with Learned Sparse Retrieval and Listwise Reranking",
+              "url": "https://arxiv.org/abs/2606.11945",
+              "arxivId": "2606.11945",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 1.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 11.0,
+                "total": 11.0
+              }
+            },
+            {
+              "title": "Tail-Aware Adaptive-k: Query-Adaptive Context Selection for Retrieval-Augmented Generation",
+              "url": "https://arxiv.org/abs/2606.11907",
+              "arxivId": "2606.11907",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+              "url": "https://arxiv.org/abs/2606.11864",
+              "arxivId": "2606.11864",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "What Limits Does Quantization Place on Dense Top-$k$ Retrieval? A Theoretical Study",
+              "url": "https://arxiv.org/abs/2606.11780",
+              "arxivId": "2606.11780",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.IT"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "FAST-MEL: A Fast, Accurate, and Storage Efficient Solution for Multimodal Entity Linking",
+              "url": "https://arxiv.org/abs/2606.11749",
+              "arxivId": "2606.11749",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "CompRank: Efficient LLM Reranking via Token-Level Compression and Decoding-Free Scoring",
+              "url": "https://arxiv.org/abs/2606.11700",
+              "arxivId": "2606.11700",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "The Long Tail, Not the Front Page: Cold-Start Prediction of Crowd Highlight Salience",
+              "url": "https://arxiv.org/abs/2606.11654",
+              "arxivId": "2606.11654",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.HC",
+                "cs.SI"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors",
+              "url": "https://arxiv.org/abs/2606.11616",
+              "arxivId": "2606.11616",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+              "url": "https://arxiv.org/abs/2606.11613",
+              "arxivId": "2606.11613",
+              "date": "2026-06-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.HC",
+                "cs.SI"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Doc-to-Atom: Learning to Compile and Compose Memory Atoms",
+          "url": "https://arxiv.org/abs/2606.12400",
+          "arxivId": "2606.12400",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Findings of the MAGMaR 2026 Shared Task",
+          "url": "https://arxiv.org/abs/2606.12295",
+          "arxivId": "2606.12295",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 0.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 6.0,
+            "total": 6.0
+          }
+        },
+        {
+          "title": "Efficient and Robust Online Learning to Rank in Decentralized Systems",
+          "url": "https://arxiv.org/abs/2606.12246",
+          "arxivId": "2606.12246",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.DC",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "DiffCold: A Diffusion-based Generative Model for Cold-Start Item Recommendation",
+          "url": "https://arxiv.org/abs/2606.12245",
+          "arxivId": "2606.12245",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "MLT-Dedup: Efficient Large-Scale Online Video Deduplication via Multi-Level Representations and Spatial-Temporal Matching",
+          "url": "https://arxiv.org/abs/2606.12215",
+          "arxivId": "2606.12215",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "LLM-Based User Personas for Recommendations at Scale",
+          "url": "https://arxiv.org/abs/2606.12198",
+          "arxivId": "2606.12198",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 3.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 1.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "uva-irlab-conv at SemEval-2026 Task 8: Multi-Turn RAG with Learned Sparse Retrieval and Listwise Reranking",
+          "url": "https://arxiv.org/abs/2606.11945",
+          "arxivId": "2606.11945",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 1.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 11.0,
+            "total": 11.0
+          }
+        },
+        {
+          "title": "Tail-Aware Adaptive-k: Query-Adaptive Context Selection for Retrieval-Augmented Generation",
+          "url": "https://arxiv.org/abs/2606.11907",
+          "arxivId": "2606.11907",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+          "url": "https://arxiv.org/abs/2606.11864",
+          "arxivId": "2606.11864",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "What Limits Does Quantization Place on Dense Top-$k$ Retrieval? A Theoretical Study",
+          "url": "https://arxiv.org/abs/2606.11780",
+          "arxivId": "2606.11780",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.IT"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "FAST-MEL: A Fast, Accurate, and Storage Efficient Solution for Multimodal Entity Linking",
+          "url": "https://arxiv.org/abs/2606.11749",
+          "arxivId": "2606.11749",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "CompRank: Efficient LLM Reranking via Token-Level Compression and Decoding-Free Scoring",
+          "url": "https://arxiv.org/abs/2606.11700",
+          "arxivId": "2606.11700",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "The Long Tail, Not the Front Page: Cold-Start Prediction of Crowd Highlight Salience",
+          "url": "https://arxiv.org/abs/2606.11654",
+          "arxivId": "2606.11654",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.HC",
+            "cs.SI"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors",
+          "url": "https://arxiv.org/abs/2606.11616",
+          "arxivId": "2606.11616",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Factions Within, Uncertain Across: Within-Document Reader Sub-Groups in Social Highlighting",
+          "url": "https://arxiv.org/abs/2606.11613",
+          "arxivId": "2606.11613",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.HC",
+            "cs.SI"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "What Limits Does Quantization Place on Dense Top-$k$ Retrieval? A Theoretical Study",
+          "url": "https://arxiv.org/abs/2606.11780",
+          "arxivId": "2606.11780",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.IT"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Efficient and Robust Online Learning to Rank in Decentralized Systems",
+          "url": "https://arxiv.org/abs/2606.12246",
+          "arxivId": "2606.12246",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.DC",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Tail-Aware Adaptive-k: Query-Adaptive Context Selection for Retrieval-Augmented Generation",
+          "url": "https://arxiv.org/abs/2606.11907",
+          "arxivId": "2606.11907",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors",
+          "url": "https://arxiv.org/abs/2606.11616",
+          "arxivId": "2606.11616",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+          "url": "https://arxiv.org/abs/2606.11864",
+          "arxivId": "2606.11864",
+          "date": "2026-06-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "What Limits Does Quantization Place on Dense Top-$k$ Retrieval? A Theoretical Study",
+            "url": "https://arxiv.org/abs/2606.11780",
+            "arxivId": "2606.11780",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.AI",
+              "cs.IT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "理论推导",
+              "复杂度分析",
+              "实验验证"
+            ],
+            "contentTags": [
+              "表示学习",
+              "稠密检索",
+              "量化",
+              "向量数据库",
+              "信息检索"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于表示学习与稠密检索的研究脉络，聚焦于向量嵌入系统在有限精度下的理论能力边界。现有工作已证明，在无限精度下仅需O(k)维度即可实现任意top-k检索任务，但实际系统普遍采用低比特量化以节省存储与计算开销。问题在于，这种离散化是否会破坏前述理论保证？难点源于量化带来的几何结构退化，使得连续空间中的存在性论证不再适用。",
+              "modelAndSetup": "论文研究的是在B位每坐标量化的d维向量空间中，能否为N个文档构造嵌入，使得每个k子集都能作为某个查询的精确top-k结果。设定基于内积相似度与l2归一化，并引入有限字母表上的配置计数模型。关键假设是均匀标量量化与单位球约束，分析依赖于组合计数与概率方法，而非具体训练过程，因此结论适用于任何有限精度系统。",
+              "contributionsAndResults": "论文首次从理论上揭示了量化对稠密检索容量的根本限制。主要结果包括：任意有限精度系统必须满足Bd=Ω(k ln N)，即维度或精度至少随语料规模对数增长；进一步在l2归一化均匀量化模型下，发现了精度阈值B*=O(ln ln N)，低于此则无解；同时存在过高维度反而不可行的上限。这些结论通过严格的数学证明和数值模拟支撑。",
+              "methodsAndTechniques": "作者采用一阶矩方法对可行配置进行计数，当期望数量小于1时断言不存在解。核心在于估计量化后单位球内可容纳的向量数目，并结合所有k子集的分离需求建立不等式。该方法将几何问题转化为离散存在性问题，与以往基于符号秩或VC维的连续分析形成对比，能精细刻画量化粒度与维度间的权衡关系。",
+              "limitationsAndReadingValue": "论文仅讨论完美检索的存在性，未涉及近似情况或实际学习难度，且模型局限于均匀标量量化，未覆盖乘积量化等更复杂方案。尽管如此，其理论洞见深刻揭示了工程实践中维度与精度需随数据量扩展的必然性。值得精读的是其问题设定与理论分析框架，为理解量化系统的根本极限提供了新视角。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于表示学习与稠密检索的研究脉络，聚焦于向量嵌入系统在有限精度下的理论能力边界。现有工作已证明，在无限精度下仅需O(k)维度即可实现任意top-k检索任务，但实际系统普遍采用低比特量化以节省存储与计算开销。问题在于，这种离散化是否会破坏前述理论保证？难点源于量化带来的几何结构退化，使得连续空间中的存在性论证不再适用。",
+              "modelAndSetup": "论文研究的是在B位每坐标量化的d维向量空间中，能否为N个文档构造嵌入，使得每个k子集都能作为某个查询的精确top-k结果。设定基于内积相似度与l2归一化，并引入有限字母表上的配置计数模型。关键假设是均匀标量量化与单位球约束，分析依赖于组合计数与概率方法，而非具体训练过程，因此结论适用于任何有限精度系统。",
+              "contributionsAndResults": "论文首次从理论上揭示了量化对稠密检索容量的根本限制。主要结果包括：任意有限精度系统必须满足Bd=Ω(k ln N)，即维度或精度至少随语料规模对数增长；进一步在l2归一化均匀量化模型下，发现了精度阈值B*=O(ln ln N)，低于此则无解；同时存在过高维度反而不可行的上限。这些结论通过严格的数学证明和数值模拟支撑。",
+              "methodsAndTechniques": "作者采用一阶矩方法对可行配置进行计数，当期望数量小于1时断言不存在解。核心在于估计量化后单位球内可容纳的向量数目，并结合所有k子集的分离需求建立不等式。该方法将几何问题转化为离散存在性问题，与以往基于符号秩或VC维的连续分析形成对比，能精细刻画量化粒度与维度间的权衡关系。",
+              "limitationsAndReadingValue": "论文仅讨论完美检索的存在性，未涉及近似情况或实际学习难度，且模型局限于均匀标量量化，未覆盖乘积量化等更复杂方案。尽管如此，其理论洞见深刻揭示了工程实践中维度与精度需随数据量扩展的必然性。值得精读的是其问题设定与理论分析框架，为理解量化系统的根本极限提供了新视角。"
+            },
+            "contentTags": [
+              "表示学习",
+              "稠密检索",
+              "量化",
+              "向量数据库",
+              "信息检索"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "复杂度分析",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Efficient and Robust Online Learning to Rank in Decentralized Systems",
+            "url": "https://arxiv.org/abs/2606.12246",
+            "arxivId": "2606.12246",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.DC",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "机制设计",
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "理论推导"
+            ],
+            "contentTags": [
+              "去中心化学习",
+              "在线学习排序",
+              "拜占庭鲁棒性",
+              "对抗攻击",
+              "点击模型"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于去中心化机器学习与在线学习排序的交叉研究，旨在解决现有系统依赖中心服务器导致的操控风险与信任问题。传统OLTR系统通过中心节点聚合用户反馈，易引入商业偏见且缺乏透明度，而去中心化场景下恶意节点可通过毒化模型更新破坏全局排序质量。核心难点在于如何在无可信第三方的情况下，让节点自主判别模型更新的可靠性，挑战源于用户行为的噪声、位置偏差及协作过程中的安全威胁。",
+              "modelAndSetup": "论文研究的是去中心化环境下基于用户点击反馈的在线学习排序任务，输入为查询与文档特征，输出为排序列表。各节点本地维护模型，通过gossip协议交换更新，并基于自身历史点击评估接收模型的质量。评价指标采用nDCG@10，实验在四个标准LTR数据集和三种点击模型上进行，设定强调异步、无固定拓扑和无需同步的现实分布式环境，关键假设是用户能积累足够反映其偏好的会话历史。",
+              "contributionsAndResults": "作者提出RANKGUARD，一种具备拜占庭鲁棒性的去中心化OLTR框架，首次实现了对此类系统的理论收敛分析。实验表明其在多种攻击下均优于现有防御方法，尤其在自适应攻击中表现稳健，且计算效率最高达竞品的62倍。结果覆盖多数据集、多攻击类型与不同恶意比例，证据充分支持其有效性与高效性，显著提升了去中心化排序系统的实用性。",
+              "methodsAndTechniques": "RANKGUARD的核心机制是利用节点自身的去偏点击历史作为可信参照，对接收模型进行性能评分。通过计算新旧模型在历史会话上的加权对数似然差，并结合t检验确定聚合权重，确保只有真正改善用户体验的更新才被采纳。该方法不依赖群体统计，避免了对恶意比例的先验需求，本质区别于基于异常检测的传统防御，实现了个体化、动态化的信任评估。",
+              "limitationsAndReadingValue": "尽管实验全面，但攻击模拟仍基于特定假设，真实场景中攻击者能力可能更复杂；此外未探讨隐私泄露风险，如模型逆向推断用户偏好。不过整体设计严谨，ablation合理，claim适度。该文极具精读价值，尤其值得借鉴其将用户私有交互历史转化为安全机制的设计思想，问题设定与系统实现尤为出色。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于去中心化机器学习与在线学习排序的交叉研究，旨在解决现有系统依赖中心服务器导致的操控风险与信任问题。传统OLTR系统通过中心节点聚合用户反馈，易引入商业偏见且缺乏透明度，而去中心化场景下恶意节点可通过毒化模型更新破坏全局排序质量。核心难点在于如何在无可信第三方的情况下，让节点自主判别模型更新的可靠性，挑战源于用户行为的噪声、位置偏差及协作过程中的安全威胁。",
+              "modelAndSetup": "论文研究的是去中心化环境下基于用户点击反馈的在线学习排序任务，输入为查询与文档特征，输出为排序列表。各节点本地维护模型，通过gossip协议交换更新，并基于自身历史点击评估接收模型的质量。评价指标采用nDCG@10，实验在四个标准LTR数据集和三种点击模型上进行，设定强调异步、无固定拓扑和无需同步的现实分布式环境，关键假设是用户能积累足够反映其偏好的会话历史。",
+              "contributionsAndResults": "作者提出RANKGUARD，一种具备拜占庭鲁棒性的去中心化OLTR框架，首次实现了对此类系统的理论收敛分析。实验表明其在多种攻击下均优于现有防御方法，尤其在自适应攻击中表现稳健，且计算效率最高达竞品的62倍。结果覆盖多数据集、多攻击类型与不同恶意比例，证据充分支持其有效性与高效性，显著提升了去中心化排序系统的实用性。",
+              "methodsAndTechniques": "RANKGUARD的核心机制是利用节点自身的去偏点击历史作为可信参照，对接收模型进行性能评分。通过计算新旧模型在历史会话上的加权对数似然差，并结合t检验确定聚合权重，确保只有真正改善用户体验的更新才被采纳。该方法不依赖群体统计，避免了对恶意比例的先验需求，本质区别于基于异常检测的传统防御，实现了个体化、动态化的信任评估。",
+              "limitationsAndReadingValue": "尽管实验全面，但攻击模拟仍基于特定假设，真实场景中攻击者能力可能更复杂；此外未探讨隐私泄露风险，如模型逆向推断用户偏好。不过整体设计严谨，ablation合理，claim适度。该文极具精读价值，尤其值得借鉴其将用户私有交互历史转化为安全机制的设计思想，问题设定与系统实现尤为出色。"
+            },
+            "contentTags": [
+              "去中心化学习",
+              "在线学习排序",
+              "拜占庭鲁棒性",
+              "对抗攻击",
+              "点击模型"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Tail-Aware Adaptive-k: Query-Adaptive Context Selection for Retrieval-Augmented Generation",
+            "url": "https://arxiv.org/abs/2606.11907",
+            "arxivId": "2606.11907",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "算法设计",
+              "系统框架",
+              "实验验证",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "检索增强生成",
+              "大语言模型",
+              "上下文选择",
+              "自适应检索"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于检索增强生成（RAG）系统中上下文选择的研究脉络，旨在解决固定Top-K截断在查询依赖和长尾相似度分布下表现不稳定的问题。现有方法或依赖人工启发式规则，或引入额外模型导致开销过大，难以兼顾效率与效果。该问题在实际应用中尤为关键，因不当截断会引入噪声或丢失证据，影响生成质量。",
+              "modelAndSetup": "论文研究的是无训练的查询自适应上下文截断任务，输入为按相似度排序的文档列表，输出为最优截断位置。基于密集检索得分曲线呈现的‘陡-平-陡’几何特征，结合极值理论进行尾部稳定性检验。实验在WebQuestions、2WikiMultiHopQA和MuSiQue上进行，使用F1、准确率等指标评估，核心假设是相关与噪声分布满足单调似然比。",
+              "contributionsAndResults": "提出Tail-Aware Adaptive-k（TAA-k），一种无需训练的两阶段截断框架，在多个RAG基准上达到接近Oracle的F1分数，同时比全局极值方法快数个数量级。相比Adaptive-k、Self-Route和Surprise等基线，TAA-k在召回率和综合性能上显著更优，且跨模型和嵌入维度表现出强鲁棒性，结果由充分实验支撑。",
+              "methodsAndTechniques": "TAA-k采用粗粒度到细粒度的设计：先通过肘点检测定位候选过渡区域，再在此窗口内应用基于广义帕累托分布的拟合优度测试，识别尾部分布首次稳定的索引作为截断点。该方法将计算复杂度从O(N²)降至O(√N log N)，本质区别在于将极值理论用于局部诊断而非全局建模，提升了效率与稳定性。",
+              "limitationsAndReadingValue": "方法依赖最小尾部样本量防止估计失效，极端小池或严重分数重叠可能影响效果。虽未集成至端到端训练，但其模块化设计便于部署。论文值得精读，尤其在问题洞察、方法设计与系统权衡方面提供了深刻见解，展示了如何融合统计理论与几何直觉解决实际推理瓶颈。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "本文属于检索增强生成（RAG）系统中上下文选择的研究脉络，旨在解决固定Top-K截断在查询依赖和长尾相似度分布下表现不稳定的问题。现有方法或依赖人工启发式规则，或引入额外模型导致开销过大，难以兼顾效率与效果。该问题在实际应用中尤为关键，因不当截断会引入噪声或丢失证据，影响生成质量。",
+              "modelAndSetup": "论文研究的是无训练的查询自适应上下文截断任务，输入为按相似度排序的文档列表，输出为最优截断位置。基于密集检索得分曲线呈现的‘陡-平-陡’几何特征，结合极值理论进行尾部稳定性检验。实验在WebQuestions、2WikiMultiHopQA和MuSiQue上进行，使用F1、准确率等指标评估，核心假设是相关与噪声分布满足单调似然比。",
+              "contributionsAndResults": "提出Tail-Aware Adaptive-k（TAA-k），一种无需训练的两阶段截断框架，在多个RAG基准上达到接近Oracle的F1分数，同时比全局极值方法快数个数量级。相比Adaptive-k、Self-Route和Surprise等基线，TAA-k在召回率和综合性能上显著更优，且跨模型和嵌入维度表现出强鲁棒性，结果由充分实验支撑。",
+              "methodsAndTechniques": "TAA-k采用粗粒度到细粒度的设计：先通过肘点检测定位候选过渡区域，再在此窗口内应用基于广义帕累托分布的拟合优度测试，识别尾部分布首次稳定的索引作为截断点。该方法将计算复杂度从O(N²)降至O(√N log N)，本质区别在于将极值理论用于局部诊断而非全局建模，提升了效率与稳定性。",
+              "limitationsAndReadingValue": "方法依赖最小尾部样本量防止估计失效，极端小池或严重分数重叠可能影响效果。虽未集成至端到端训练，但其模块化设计便于部署。论文值得精读，尤其在问题洞察、方法设计与系统权衡方面提供了深刻见解，展示了如何融合统计理论与几何直觉解决实际推理瓶颈。"
+            },
+            "contentTags": [
+              "检索增强生成",
+              "大语言模型",
+              "上下文选择",
+              "自适应检索"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "系统框架",
+              "实验验证",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors",
+            "url": "https://arxiv.org/abs/2606.11616",
+            "arxivId": "2606.11616",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "数据调试",
+              "影响函数",
+              "训练数据质量",
+              "错误类型识别",
+              "鲁棒性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于机器学习中的数据调试与模型鲁棒性研究脉络，聚焦于训练数据中混合多种错误类型（如标签错误、特征错误、虚假相关）的问题。现有方法要么仅检测异常样本，要么依赖干净验证集，难以同时识别错误样本及其具体类型。由于真实数据管道常含系统性缺陷，准确归因错误类型对修复数据至关重要，难点在于不同错误在模型行为上表现相似但机制不同，需从影响模式中解耦。",
+              "modelAndSetup": "论文将数据调试建模为基于影响向量的多标签分类任务，输入是每个训练样本的影响向量，输出为其所属的错误类型集合。影响向量通过计算该样本对所有验证样本预测损失的影响得到。实验覆盖表格数据、推荐系统和大语言模型对齐任务，在合成注入错误的数据上评估，关键假设是不同错误类型会在影响向量中留下可区分的模式，且验证集无需完全干净。",
+              "contributionsAndResults": "论文提出DeMix框架，首次实现对混合错误类型的联合诊断，显著优于现有数据清洗与归因方法，在11项任务上平均F1提升22.61%，修复后模型性能提升9.32%。其核心贡献是利用影响向量保留结构信息，并引入干预式训练增强泛化性。结果经多任务、多模型验证，证据充分，表明该方法能有效支持针对性数据修复。",
+              "methodsAndTechniques": "DeMix使用影响向量代替标量影响值，捕捉错误引发的模式差异，并采用Set Transformer编码器处理其无序性。训练时通过在不同验证子集和任务模型上计算影响向量，施加对比与一致性损失，迫使模型学习跨配置不变的错误特征。这种干预策略使分类器摆脱对特定计算设置的依赖，提升了在真实动态环境下的适用性，与传统聚合式影响分析形成本质区别。",
+              "limitationsAndReadingValue": "尽管实验全面，但依赖人工注入错误进行训练，自然错误标注仍稀缺；对LLM场景下特征错误检测较弱，反映影响估计在大规模模型中的局限。部署成本略高但可控。该论文值得精读，尤其适合关注数据质量、模型可解释性和系统鲁棒性的研究者，其问题设定与干预式训练设计最具启发价值。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "该论文属于机器学习中的数据调试与模型鲁棒性研究脉络，聚焦于训练数据中混合多种错误类型（如标签错误、特征错误、虚假相关）的问题。现有方法要么仅检测异常样本，要么依赖干净验证集，难以同时识别错误样本及其具体类型。由于真实数据管道常含系统性缺陷，准确归因错误类型对修复数据至关重要，难点在于不同错误在模型行为上表现相似但机制不同，需从影响模式中解耦。",
+              "modelAndSetup": "论文将数据调试建模为基于影响向量的多标签分类任务，输入是每个训练样本的影响向量，输出为其所属的错误类型集合。影响向量通过计算该样本对所有验证样本预测损失的影响得到。实验覆盖表格数据、推荐系统和大语言模型对齐任务，在合成注入错误的数据上评估，关键假设是不同错误类型会在影响向量中留下可区分的模式，且验证集无需完全干净。",
+              "contributionsAndResults": "论文提出DeMix框架，首次实现对混合错误类型的联合诊断，显著优于现有数据清洗与归因方法，在11项任务上平均F1提升22.61%，修复后模型性能提升9.32%。其核心贡献是利用影响向量保留结构信息，并引入干预式训练增强泛化性。结果经多任务、多模型验证，证据充分，表明该方法能有效支持针对性数据修复。",
+              "methodsAndTechniques": "DeMix使用影响向量代替标量影响值，捕捉错误引发的模式差异，并采用Set Transformer编码器处理其无序性。训练时通过在不同验证子集和任务模型上计算影响向量，施加对比与一致性损失，迫使模型学习跨配置不变的错误特征。这种干预策略使分类器摆脱对特定计算设置的依赖，提升了在真实动态环境下的适用性，与传统聚合式影响分析形成本质区别。",
+              "limitationsAndReadingValue": "尽管实验全面，但依赖人工注入错误进行训练，自然错误标注仍稀缺；对LLM场景下特征错误检测较弱，反映影响估计在大规模模型中的局限。部署成本略高但可控。该论文值得精读，尤其适合关注数据质量、模型可解释性和系统鲁棒性的研究者，其问题设定与干预式训练设计最具启发价值。"
+            },
+            "contentTags": [
+              "数据调试",
+              "影响函数",
+              "训练数据质量",
+              "错误类型识别",
+              "鲁棒性"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding",
+            "url": "https://arxiv.org/abs/2606.11864",
+            "arxivId": "2606.11864",
+            "date": "2026-06-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "代码检索",
+              "智能体",
+              "生成式AI",
+              "评测方法",
+              "大语言模型"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "论文聚焦于生成式AI时代下编码智能体所需的代码检索能力，指出传统代码检索评测仅关注自然语言与孤立代码片段的匹配，忽视了真实开发中基于具体仓库状态、需定位修改点并收集上下文的需求。现有方法在面对需求驱动的仓库级搜索时表现不佳，核心难点在于意图到实现的语义鸿沟、相关证据分散以及本地干扰项密集，评测体系未能反映这一现实挑战。",
+              "modelAndSetup": "CORE-Bench提出三级评测框架：代码理解、问题到编辑定位、广义上下文检索。数据源自SWE-bench系列和开源PR，覆盖超18万查询。输入为用户请求或工单描述，输出为相关代码块排序，采用NDCG@10和Recall@100评估。关键设定是基于真实仓库快照构建动态语料库，并标注多目标编辑位置与辅助上下文，更贴近智能体实际运行环境。",
+              "contributionsAndResults": "论文构建了CORE-Bench，首个面向智能体场景的综合性代码检索基准。实验表明主流嵌入模型在此设置下性能大幅下降，凸显现有方法局限。通过在GitHub拉取请求数据上进行领域内监督微调，显著提升了检索效果，证明了该方向潜力。结果由大规模实证支撑，揭示了从片段匹配到需求驱动搜索的范式转变必要性。",
+              "methodsAndTechniques": "作者整合SWE-bench实例与自动化标注流水线构建数据集，利用补丁对齐确定编辑位置，并通过LLM结合规则提取广义上下文。对Qwen等嵌入模型使用PR数据进行监督微调，优化其在复杂仓库中的定位能力。核心技术在于构建时间对齐的语料与多层次标签，使评测能区分精准定位与上下文覆盖的不同需求，超越传统单一匹配模式。",
+              "limitationsAndReadingValue": "局限包括数据集中于流行生态，长尾语言和新兴仓库覆盖不足，且未纳入时效性指标。尽管如此，其问题设定极具前瞻性，准确捕捉了编码智能体的真实检索需求。值得精读，尤其应关注其三级评测框架的设计逻辑与数据构造方法，这对未来智能体系统的评估具有重要指导意义。"
+            }
+          },
+          "finalPaper": {
+            "summarySections": {
+              "backgroundAndQuestion": "论文聚焦于生成式AI时代下编码智能体所需的代码检索能力，指出传统代码检索评测仅关注自然语言与孤立代码片段的匹配，忽视了真实开发中基于具体仓库状态、需定位修改点并收集上下文的需求。现有方法在面对需求驱动的仓库级搜索时表现不佳，核心难点在于意图到实现的语义鸿沟、相关证据分散以及本地干扰项密集，评测体系未能反映这一现实挑战。",
+              "modelAndSetup": "CORE-Bench提出三级评测框架：代码理解、问题到编辑定位、广义上下文检索。数据源自SWE-bench系列和开源PR，覆盖超18万查询。输入为用户请求或工单描述，输出为相关代码块排序，采用NDCG@10和Recall@100评估。关键设定是基于真实仓库快照构建动态语料库，并标注多目标编辑位置与辅助上下文，更贴近智能体实际运行环境。",
+              "contributionsAndResults": "论文构建了CORE-Bench，首个面向智能体场景的综合性代码检索基准。实验表明主流嵌入模型在此设置下性能大幅下降，凸显现有方法局限。通过在GitHub拉取请求数据上进行领域内监督微调，显著提升了检索效果，证明了该方向潜力。结果由大规模实证支撑，揭示了从片段匹配到需求驱动搜索的范式转变必要性。",
+              "methodsAndTechniques": "作者整合SWE-bench实例与自动化标注流水线构建数据集，利用补丁对齐确定编辑位置，并通过LLM结合规则提取广义上下文。对Qwen等嵌入模型使用PR数据进行监督微调，优化其在复杂仓库中的定位能力。核心技术在于构建时间对齐的语料与多层次标签，使评测能区分精准定位与上下文覆盖的不同需求，超越传统单一匹配模式。",
+              "limitationsAndReadingValue": "局限包括数据集中于流行生态，长尾语言和新兴仓库覆盖不足，且未纳入时效性指标。尽管如此，其问题设定极具前瞻性，准确捕捉了编码智能体的真实检索需求。值得精读，尤其应关注其三级评测框架的设计逻辑与数据构造方法，这对未来智能体系统的评估具有重要指导意义。"
+            },
+            "contentTags": [
+              "代码检索",
+              "智能体",
+              "生成式AI",
+              "评测方法",
+              "大语言模型"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
