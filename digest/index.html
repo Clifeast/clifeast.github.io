@@ -22,15 +22,16 @@
     <main class="digest-content">
       <section class="digest-hero" aria-labelledby="digest-title">
         <div class="digest-hero__copy">
-          <a class="digest-back-link" href="/">返回主页</a>
           <h1 id="digest-title">论文日报</h1>
           <p class="digest-date" id="digest-date">今天日期</p>
         </div>
         <div class="digest-picker" aria-label="选择日报日期">
-          <label class="digest-picker__label" for="digest-picker-select">选择简报</label>
-          <select class="digest-picker__select" id="digest-picker-select">
-            <option value="today">今日简报</option>
-          </select>
+          <button class="digest-picker__trigger" id="digest-picker-trigger" type="button" aria-expanded="false"
+            aria-controls="digest-picker-popover">选择简报</button>
+          <div class="digest-picker__popover" id="digest-picker-popover" hidden>
+            <button class="digest-picker__today" id="digest-today-button" type="button">今日简报</button>
+            <div class="digest-calendar" id="digest-calendar" aria-label="历史简报日历"></div>
+          </div>
         </div>
       </section>
 

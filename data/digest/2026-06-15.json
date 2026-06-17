@@ -1,0 +1,558 @@
+{
+  "date": "2026-06-15",
+  "pipelineVersion": "recent-arxiv-v3-score30",
+  "generatedAt": "2026-06-17T13:05:50.633735+00:00",
+  "warnings": [],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "papers": [
+        {
+          "title": "The Privacy Externality of Disclosing Correlated Data",
+          "authors": [
+            "Rui Sun"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15947",
+          "abstract": "A firm that discloses data about one customer moves a downstream seller's belief about every correlated customer, pricing third parties it never transacts with. This privacy externality equals the change in downstream deadweight loss, is signed by which side of the pricing threshold a customer is on, and falls hardest on those just carried across. Disclosure is privately optimal on an open set of imperfect correlations; incentive compatibility prices it through a distorted allocation and rations the discount at the top under a continuum of types. Selling tips disclosure past a liquidity threshold; consent dominates both data minimization and laissez-faire.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于信息设计与机制设计交叉的研究脉络，聚焦企业披露客户数据时引发的隐私外部性问题。传统双边模型忽略了数据相关性带来的跨消费者影响，无法解释为何披露可能伤害未参与交易的第三方。本文揭示了企业在追求自身收益时，会通过信号设计改变下游市场对其他消费者的定价，从而造成非内部化的福利外溢。这一问题源于现实数据市场的普遍关联性，具有重要的政策含义。",
+            "modelAndSetup": "模型包含两个序贯交易的卖家和一个买家，第一卖家可通过贝叶斯劝说影响第二卖家的定价信念。买家类型随时间逐步揭示，且不同买家的第一期类型通过共同状态条件独立。关键设定在于数据相关性导致单一披露行为会系统性移动整个群体的后验信念，进而影响下游价格阈值跨越。承诺机制与线性暴露假设使分析聚焦于信息披露的边际社会成本。",
+            "contributionsAndResults": "论文首次形式化了‘隐私外部性’的概念，证明其等于被披露个体下游无谓损失的变化，并呈现非对称分布：刚被推过定价阈值的消费者受损最重。最优披露在不完全相关下仍可行，且社会最优往往不是完全隐私而是截断披露。结果精确刻画了私人与社会激励的偏离边界，比经典文献更贴近现实数据使用场景。",
+            "methodsAndTechniques": "作者结合贝叶斯劝说的凹包法与动态机制设计的虚拟值分析，将多维筛选问题还原为关于‘供给-折扣捆绑指数’的一维单调性问题。利用拉格朗日松弛处理服从约束，在连续类型下得出配给边界解。核心技术是将外部性表示为信念变动引起的无谓损失差，从而实现社会福利的可计算比较。",
+            "limitationsAndReadingValue": "模型依赖较强的承诺与线性暴露假设，且集中于垄断下游市场。尽管如此，其对外部性的精准量化与政策建议（如同意权优于一刀切禁令）极具启发性。论文值得精读，尤其适合学习如何将现实隐私关切转化为严谨的经济模型，并掌握信息设计与机制设计的融合分析方法。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "信息设计",
+            "隐私/安全",
+            "数据市场",
+            "贝叶斯劝说",
+            "外部性"
+          ],
+          "tags": [
+            "信息设计",
+            "隐私/安全",
+            "数据市场",
+            "贝叶斯劝说",
+            "外部性",
+            "理论推导",
+            "模型构建",
+            "机制设计"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 2.6,
+            "total": 25.7
+          },
+          "ids": {
+            "arxiv": "2606.15947"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        },
+        {
+          "title": "Axioms and Anomalies with Finite Data",
+          "authors": [
+            "Cheaheon Lim",
+            "Tomasz Strzalecki"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15740",
+          "abstract": "The classical expected utility (EU) axioms are not sufficient for finite datasets. There are a number of anomalies (violations of EU) where axioms are satisfied. This paper studies axioms that are immune to this problem and definitively delineate between EU and non-EU. We discuss implications for experimental design and explore the automatic generation of anomalies.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于决策理论与行为经济学交叉的研究脉络，核心问题是经典期望效用（EU）公理在有限数据下无法充分识别非EU行为。传统公理如独立性在部分观测时可能被空满足，导致Allais悖论等异常现象无法被检测。这一问题至关重要，因为它关系到实验设计的有效性和理论检验的可靠性，尤其在数据有限时，如何区分真实偏好异质性与噪声成为根本挑战。",
+            "modelAndSetup": "论文考虑一个分析者观察有限组彩票间成对选择的情境，分为确定性与随机选择两类设定。在确定性情形下，数据为个体选择结果；在随机情形下，则为群体选择频率。效用函数为冯·诺依曼-摩根斯坦形式，但仅基于有限观测判断是否存在EU表示。关键假设是不允许多重无差异，以避免任意数据均可被拟合，从而聚焦于偏好强度与结构的可检验性。",
+            "contributionsAndResults": "论文提出‘强独立性’与‘三角化’等新公理，能在有限数据下完全刻画EU与随机EU（REU）一致性，解决了经典公理不完备的问题。结果表明，直接检验表示比验证公理更高效，且新公理能彻底消除由Logit噪声引起的伪异常。相比前人工作，这些条件既是必要又是充分的，并适用于小样本，显著提升了实证检验的严谨性。",
+            "methodsAndTechniques": "作者通过几何与线性规划方法，将EU一致性转化为高维空间中半空间交集非空的问题，进而利用凸包条件进行判定。核心技术是构造‘强独立性’公理以捕获向量间的平行关系，并结合Fishburn的分离定理建立等价性。对于随机选择，引入REU的凸组合表征，使检验归约为凸包成员测试，兼具理论清晰与计算可行性。",
+            "limitationsAndReadingValue": "论文假设彩票空间固定且选择严格，未扩展至连续或高维结果情形，其公理体系也较难推广至非线性理论如前景理论。尽管如此，它对EU检验的基础性重构极具价值。最值得精读的是其模型设定与公理构建方式，深刻揭示了有限数据下理论可检验性的边界，为行为实验设计提供了坚实的方法论基础。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "期望效用理论",
+            "决策理论",
+            "随机选择",
+            "行为经济学"
+          ],
+          "tags": [
+            "期望效用理论",
+            "决策理论",
+            "随机选择",
+            "行为经济学",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "bonus": 0.8,
+            "total": 21.4
+          },
+          "ids": {
+            "arxiv": "2606.15740"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        },
+        {
+          "title": "Chaining Tasks, Redefining Work: A Theory of AI Automation",
+          "authors": [
+            "Mert Demirer",
+            "John J. Horton",
+            "Nicole Immorlica",
+            "Brendan Lucier",
+            "Peyman Shahidi"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15960",
+          "abstract": "Production is a sequence of steps that can be executed (1) manually, (2) augmented with AI, or (3) fully automated within contiguous AI-executed steps called ''chains.'' Firms optimally bundle steps into tasks and then jobs, trading off specialization gains against coordination costs. We characterize the optimal assignment of humans and AI to steps and the firm's resulting job structure, showing that comparative advantage logic can fail with AI chaining. The model implies non-linear productivity gains from AI quality improvements and admits a CES representation at the macro level. Empirical evidence supports the model's key predictions that (1) AI-executed steps co-occur in chains, (2) dispersion of AI-exposed steps lowers AI execution at the job level, and (3) adjacency to AI-executed steps increases the likelihood that a step is AI-executed.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于人工智能与劳动经济学交叉的研究脉络，聚焦于AI如何重塑工作任务的划分与人力配置。传统任务模型将任务视为独立单元，忽视了生产流程中的顺序依赖关系。当AI能够执行连续步骤时，这种序列结构会引发非线性的组织重构效应，从而挑战基于静态比较优势的经典分工逻辑。理解这一动态对预测AI的真实经济影响至关重要。",
+            "modelAndSetup": "作者构建了一个序列化生产模型，其中任务由一系列有序步骤构成，企业可将步骤组合为任务并分配给人或AI执行。人工作业需支付技能与时间成本，而AI可实现部分步骤的自动化或增强辅助。关键创新在于引入‘AI链’概念：多个连续步骤由AI自动完成，仅最终输出需人工验证。该设定内生化了任务边界与工作设计，捕捉了协调成本与专业化之间的权衡。",
+            "contributionsAndResults": "论文提出了一种新的AI自动化理论框架，揭示了AI链的存在会打破传统的比较优势原则，导致非线性的生产力跃升。主要贡献包括刻画了最优任务分组与AI部署的联合决策机制，证明了改进AI质量可能在阈值前无显著效果，一旦突破则引发结构性重组。这一发现为‘生产力J曲线’提供了微观基础，解释了为何AI回报呈现突变而非渐进特征。",
+            "methodsAndTechniques": "作者采用动态规划方法求解短期与长期优化问题，在固定岗位结构下计算最优AI部署，并进一步扩展至岗位再设计的联合优化。通过离散化处理连续变量，实现了多项式时间内逼近最优解。核心技术在于递归地评估每一步是否应纳入AI链，结合验证成本不变而失败概率累积的特点，识别出成本最小化的任务聚合模式。",
+            "limitationsAndReadingValue": "模型假设AI链的成功概率为各步独立乘积，可能低估现实中的系统性风险；同时未考虑AI对工人技能演化的长期反馈。尽管如此，其对任务序列性和验证成本结构的建模极具启发性。该文值得精读，尤其适合关注AI经济影响的研究者，其核心价值在于提出了‘任务链’这一关键机制，并为后续实证研究提供了可操作的理论框架与预测。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "人工智能与劳动力市场",
+            "任务自动化",
+            "生产组织",
+            "AI经济影响",
+            "任务链"
+          ],
+          "tags": [
+            "人工智能与劳动力市场",
+            "任务自动化",
+            "生产组织",
+            "AI经济影响",
+            "任务链",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "bonus": 5.1,
+            "total": 17.7
+          },
+          "ids": {
+            "arxiv": "2606.15960"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.GN",
+              "cs.GT"
+            ],
+            "primaryCategory": "econ.GN",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.CL）",
+      "source": "arxiv-llm-ranked",
+      "papers": [
+        {
+          "title": "Free Energy Heuristics: Fast-And-Frugal Cognition as Active Inference Under Uncertain Precision",
+          "authors": [
+            "Alex Bogdan"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15877",
+          "abstract": "Chain-of-thought (CoT) improves large language models' performance in math and symbolic reasoning. But on planning, contested ethics, and tasks where the model cannot check itself, more reasoning makes things worse. Both effects are documented; what has been missing is a principled account of which property decides the outcome. We argue it is meta-uncertainty: how unsure the model is about the reliability of its own evidence. When that uncertainty is high, extra reasoning stops adding signal and starts manufacturing false confidence. We prove that the policy minimizing expected free energy under uncertain precision stops integrating cues after a finite number of high-validity ones when the precision prior is heavy-tailed (Theorem 2.6.1), and under a Descending Dominance condition, is sample-wise identical to take-the-best (Theorem 2.7.4). Fast-and-frugal heuristics and active inference are, then, two descriptions of the same computation. The prediction is that on high-meta-uncertainty items, longer CoT should degrade accuracy. We score the regime per item (simulate-and-recover rho > 0.96), build FEH-79, a benchmark of Knightian frames with matched controls, and run a pre-registered study across seven models (five open-weight 3B-32B, two frontier), five CoT lengths, and 7,875 responses. The gate, fixed before any data, required a negative interaction with posterior probability above 0.95 and an accuracy drop of more than 6 points. It held. The high-regime drop is 17.3 points (95% CI [7.7, 25.5]); matched items with definite answers show no cost. The effect is regime-dependent: decisive in capable mid-to-large models, directional in the two frontier systems, absent-to-reversed in the weakest. The framework answers when CoT helps and unifies the Bayesian and fast-and-frugal traditions: less-is-more effects are evidence about the meta-uncertainty regime, not against Bayesian cognition.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文处于大语言模型推理能力评测的研究脉络中，旨在解决链式思维提示（CoT）为何在数学类任务上有效而在伦理、战略等开放性问题上反而降低性能的问题。现有方法缺乏统一解释，通常将CoT视为普适增益手段，忽略了任务本身的不确定性本质。该问题重要在于，当前主流推理增强策略默认‘更多推理总是更好’，但在真实决策场景中，这种假设可能导致错误信心与劣化判断。",
+            "modelAndSetup": "论文研究任务为语言模型在不同不确定性等级下的推理表现，输入是标准化提示，输出为最终答案及推理链。数据来自自建FEH-79基准，包含四类高元不确定性任务（非重复预测、合成情境、开放困境、战略不确定性）与三类对照组。模型为七种主流LLM，推理通过控制提示指令调节步数，评价指标为答案准确性与专家连贯性评分，并引入预注册的因果检验框架。",
+            "contributionsAndResults": "论文核心贡献是提出并验证了‘元不确定性’作为决定CoT效用的关键变量。实验表明，在高元不确定性任务中，延长推理链导致准确率显著下降（后验中位数降17.3个百分点），而在低元不确定性任务中无此现象。该效应在中大型模型中显著，在弱小模型中消失或反转，完全符合理论预测。结果由预注册实验与多层次贝叶斯分析支撑，具有强统计效力。",
+            "methodsAndTechniques": "作者结合主动推理框架与元精度不确定性建模，证明在此条件下期望自由能最小化策略会截断线索整合，形式上等价于‘取最优’启发式。他们设计行为指标（跨提示/种子方差、校准误差）代理元不确定性水平，并构建FEH-79基准确保任务满足不可判定性、先验争议性与数据稀疏性。实验采用预注册设计，以随机分配的推理长度为处理变量，排除内生性干扰，确保因果推断严谨。",
+            "limitationsAndReadingValue": "局限包括未覆盖专门训练的推理模型（如o1/o3）、连续元不确定性得分未实际计算、部分分析依赖类别赋值而非动态测量。尽管如此，论文极具精读价值，其问题设定深刻揭示了当前推理增强范式的盲区，理论与实验紧密结合，为未来构建自适应推理系统提供了原则性指导，尤其在方法论上树立了可复现、可证伪的高标准。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "基准评测",
+            "实验验证",
+            "模型构建",
+            "系统框架"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "推理",
+            "评测方法",
+            "不确定性",
+            "认知启发式"
+          ],
+          "tags": [
+            "大语言模型",
+            "推理",
+            "评测方法",
+            "不确定性",
+            "认知启发式",
+            "理论推导",
+            "基准评测",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2606.15877"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        },
+        {
+          "title": "Entity Labels Are Not Entity Signals: A Framework for Observable Relevance in Document Re-Ranking",
+          "authors": [
+            "Utshab Kumar Ghosh",
+            "Shubham Chatterjee"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15998",
+          "abstract": "Entity-aware document retrieval uses query-associated entities as ranking signals, assuming that semantically relevant entities are also useful retrieval signals. We show this assumption is insufficient- and explain why. Unlike terms, which are ground-truth observations, entity links are hypotheses produced by an imperfect linker: an entity can be topically central yet provide no discriminative signal if the linker fires indiscriminately across relevant and non-relevant documents. We formalize this as a distinction between Conceptual Entity Relevance (CER)- whether an entity is topically related to a query- and Observable Entity Relevance (OER)- whether its observed presence in a collection discriminates relevant from non-relevant documents. Across four collections and annotation sources including human entity judgments, CER and OER exhibit near-chance agreement ($κ\\approx 0$), while OER operationalizations agree substantially ($κ\\approx 0.5$), confirming CER as the systematic outlier. CER-based supervision selects topically plausible but weakly discriminative entities, pruning fewer than 4% of non-relevant documents on some collections. Aligning supervision with OER improves non-relevant pruning by up to 10x and open-world MAP by 0.051 over BM25. Our findings motivate a shift from conceptual to observable notions of entity relevance in entity-aware retrieval.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文属于信息检索与实体感知排序系统的研究脉络，聚焦于实体作为排名信号的有效性问题。传统方法依赖人类或大模型标注的实体相关性（CER），假设语义相关的实体就是好的检索信号，但忽略了实体链接的噪声和分布特性。问题核心在于：一个实体即使与查询主题相关，也可能因在无关文档中频繁出现而缺乏判别力。这种‘概念相关性’与‘可观测判别性’之间的错配是结构性的，源于现有评测和监督信号未能反映真实检索场景下的信号效用。",
+            "modelAndSetup": "论文研究的是文档重排序任务，输入为查询和候选文档集，输出为重排后的文档列表，核心是选择哪些实体作为排序信号。实验基于四个标准检索集合（如Robust04、MS MARCO），使用WAT进行实体链接，通过BM25+RM3获取初始检索结果。关键设定是区分概念实体相关性（CER）与可观测实体相关性（OER），后者基于实体在相关与非相关文档中的实际分布计算。评价指标包括开放世界下的MAP、非相关文档剪枝率及信号质量诊断指标。",
+            "contributionsAndResults": "论文提出OER框架，揭示CER与OER之间几乎无相关性（K~0），而不同OER操作化方式间一致性较高（K~0.5），证明CER作为监督信号存在系统性偏差。实证表明，基于CER的实体选择仅能修剪不到4%的非相关文档，而OER对齐方法可提升剪枝效率达10倍，并在开放世界MAP上超越BM25达0.051。这些结果在多种架构和数据集上一致，说明问题本质在于监督目标而非模型设计。",
+            "methodsAndTechniques": "作者定义OER为实体在相关文档中出现的对数几率比，结合支持度加权，衡量其判别能力。通过对比CER标签与OER得分的一致性，诊断现有监督信号的失效。在实体选择器中引入候选集统计特征（如dfcand、局部IDF）并以OER为目标训练排序模型，验证其优于CER监督的效果。关键ablation显示，仅改变监督目标或仅加入分布特征均不足，必须二者结合才能显著提升非相关文档剪枝效果。",
+            "limitationsAndReadingValue": "论文未完全解决小样本下OER估计不稳定的问题（如CODEC上覆盖损失过大），且OER依赖人工标注的相关性判断，难以完全自动化。尽管如此，其对‘标签≠信号’的洞察深刻，实验设计严谨，跨数据集验证充分。值得精读的是其问题设定与实验分析，它挑战了实体检索领域的基本假设，为未来构建更真实的评测体系和监督信号提供了方法论指引，尤其对RAG、实体增强检索等应用具有警示意义。"
+          },
+          "researchParadigmTags": [
+            "基准评测",
+            "实验验证",
+            "系统框架",
+            "方法论设计"
+          ],
+          "contentTags": [
+            "实体感知检索",
+            "评测方法",
+            "信号判别性",
+            "文档重排序",
+            "可观测相关性"
+          ],
+          "tags": [
+            "实体感知检索",
+            "评测方法",
+            "信号判别性",
+            "文档重排序",
+            "可观测相关性",
+            "基准评测",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2606.15998"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.IR",
+              "cs.AI",
+              "cs.CL",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.IR",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        },
+        {
+          "title": "Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations",
+          "authors": [
+            "Dongxu Yang"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15903",
+          "abstract": "Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via supersede, release, purge (largely untested) -- shapes which forgetting failure modes the system recovers. Comparing thirteen system configurations on a 385-case adversarial surface, we observe three placement regimes with partly complementary coverage: deterministic primitives suffice for lexical/temporal categories but fail canonicalization (5% on identifier-obfuscation, 0% on cross-lingual); inscribe-time LLM recovers canonicalization (100%) but cannot help intent-aware deletion (0% on prefix-collision and compound-fact); a mutation-time hook recovers intent-aware deletion (78-85%) and brightens nearly all categories simultaneously (91.7-93.2% overall, $0.17 per 385-case run, 2.3s/case mutation latency vs. 64-191ms/case deterministic, recall path unchanged). We expose the trade-off via ForgetEval, a 1000-case templated suite plus a 385-case adversarial layer (132 hand-crafted + 253 LLM-drafted oracle-validated) scored by deterministic substring match, paired with a six-method Adapter Protocol with honest N/A scoring that lets heterogeneous memory stores enter in 130 lines. Admission is corroborated by 10-annotator IAA (Fleiss' kappa = 0.958) and a 77-case external-authored subset (four blind contributors) that replicates the canonicalization asymmetry and amplifies the joint-placement lift (+27.8 pt). Production failures are predominantly forgetting failures rather than recall failures, yet existing benchmarks measure only recall. ForgetEval and all adapters are released under MIT.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前AI智能体的记忆研究集中在提升事实召回能力，却忽视了‘被命令遗忘’这一关键控制能力。生产环境中频繁出现的隐私泄露、过期凭证推荐等问题本质上是记忆删除失败。现有评测仅衡量回忆准确率，无法暴露遗忘缺陷，导致系统设计与真实需求脱节。本文指出，遗忘失败模式取决于LLM在记忆流水线中的位置，而非是否使用LLM，核心难点在于缺乏细粒度、可量化的遗忘能力评测体系。",
+            "modelAndSetup": "论文提出FORGETEVAL，一个包含1385个英文案例的遗忘评测基准，涵盖5类结构性遗忘操作和10种对抗攻击类别。每个案例定义初始事实、变更指令与期望的召回/不召回内容，通过确定性子串匹配评分，无需LLM裁判。实验比较13种记忆系统配置，在385个对抗案例上测试，关键设定包括将控制平面操作（覆盖、释放、清除）与检索分离，并引入适配器协议支持异构系统公平对比。",
+            "contributionsAndResults": "主要贡献为三：一是揭示LLM在控制平面的位置决定其能恢复的遗忘失败模式，发现三种互补的放置范式；二是发布FORGETEVAL基准与适配器协议，实现跨系统细粒度遗忘评测；三是证明在变更时引入轻量LLM钩子（mutation-time hook）可显著提升整体表现。实验显示该方法在非原始存在类别上平均提升超22个百分点，且效果与底层架构无关，成本仅约0.17美元每轮。",
+            "methodsAndTechniques": "作者设计六种控制平面原语的行为契约（适配器协议），允许缺失功能标记为N/A，确保不同能力系统可比。FORGETEVAL分模板生成与手工构造对抗层，后者经独立LLM验证。核心方法是在变更操作前插入窄JSON格式的LLM规划钩子，决策如何执行覆盖或清除。消融实验表明，此模式优于在录入时使用LLM进行标准化的方案，二者具有互补性。",
+            "limitationsAndReadingValue": "局限包括评测以英文为主，子串评分在特定场景下保守，部分系统因抽象层级不同难以完全对齐。尽管如此，论文极具精读价值：其问题设定直击智能体落地痛点，实验设计严谨，通过外部作者复现实验增强了结论可信度。最值得学习的是其评测方法论与系统级洞察，为构建可控、合规的记忆系统提供了清晰路径。"
+          },
+          "researchParadigmTags": [
+            "基准评测",
+            "系统框架",
+            "实验验证",
+            "数据集构建",
+            "机制设计"
+          ],
+          "contentTags": [
+            "智能体",
+            "大语言模型",
+            "记忆系统",
+            "遗忘机制",
+            "评测方法"
+          ],
+          "tags": [
+            "智能体",
+            "大语言模型",
+            "记忆系统",
+            "遗忘机制",
+            "评测方法",
+            "基准评测",
+            "系统框架",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2606.15903"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-06-14",
+            "updated": "2026-06-16"
+          }
+        },
+        {
+          "title": "Extending Item Response Theory for Efficient and Meaningful Multilingual Evaluation",
+          "authors": [
+            "Gili Lior",
+            "Tzviel Frostig",
+            "Gabriel Stanovsky",
+            "Matan Eyal"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15643",
+          "abstract": "Multilingual benchmarks are central to evaluating large language models (LLMs) across languages, but they suffer from three issues: exhaustive evaluation scales linearly with the number of languages, automatic translation introduces errors that are easily missed at scale, and some items conflate general and culture-specific knowledge. We address all three with a unified statistical framework, Multilingual-IRT, which extends Item Response Theory with per-language difficulty deviations, split discriminability separating content from language effects, and per-language ability residuals. Fitting Multilingual-IRT on 25 LLMs across 29 languages of MMLU-Pro-X, we show that its fitted parameters support three practical applications: predicting unobserved (item, LLM, language) instances with 11-16% lower binary cross-entropy than the strongest accuracy-based baseline, surfacing candidate translation errors distributed across all 28 non-English languages, whereas accuracy-based baselines concentrate detections in a few languages, and recovering culture-specific items that accuracy-based baselines miss.",
+          "summarySections": {
+            "backgroundAndQuestion": "该论文聚焦于大语言模型的多语言评测问题，属于AI评测研究脉络。现有平行多语言基准面临三大瓶颈：全量评测成本随语言数线性增长、自动翻译引入难以察觉的错误、题目混淆通用与文化特有知识。这些问题使得跨语言能力比较失真，尤其影响低资源语言评估。难点在于如何在不依赖人工审查的前提下，从大规模自动翻译的评测数据中分离出语言效应、翻译误差和文化偏差。",
+            "modelAndSetup": "研究任务是建模（题目，模型，语言）三元组的正确率，输入为25个LLM在29种语言下对MMLU-Pro-X的预测结果。提出Multilingual-IRT模型，扩展传统项目反应理论，引入语言难度偏移、语言能力残差和内容-语言区分度分解。训练采用随机变分推断拟合参数，核心假设是同一题目的不同语言版本具有共享基底难度，并通过交叉语言相关性建模语言间关系。",
+            "contributionsAndResults": "主要贡献是提出了统一的Multilingual-IRT框架，能同时支持高效评测、翻译错误检测和文化特有题目识别。实验表明其预测未观测实例的二元交叉熵比最强准确率基线低11-16%，发现的翻译错误分布更均匀而非集中于少数语言，且能识别出准确率方法遗漏的文化特有题目，实证结果充分支撑了方法优势。",
+            "methodsAndTechniques": "方法核心是将IRT扩展为多语言场景：通过语言特定难度偏移捕捉翻译带来的题目难易变化，用语言能力残差建模模型在各语言的表现差异，并将区分度拆分为内容和语言两个部分。关键技术是不对称的潜在空间构造，解决了多维IRT的旋转不确定性问题，使参数具有可解释性，从而能用于诊断翻译质量和文化偏向。",
+            "limitationsAndReadingValue": "局限包括依赖对齐的翻译题目、对模型数量敏感（仅25个LLM时某些参数估计不够精确）。尽管如此，该论文非常值得精读，尤其适合关注评测方法的研究者。最值得学习的是其问题设定的洞察力、将经典心理测量学理论创新应用于现代LLM评测的方法设计，以及严谨的实证分析框架。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "评测方法",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "多语言评估",
+            "评测方法",
+            "项目反应理论"
+          ],
+          "tags": [
+            "大语言模型",
+            "多语言评估",
+            "评测方法",
+            "项目反应理论",
+            "模型构建",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2606.15643"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        },
+        {
+          "title": "Re-feeding Is Not Replaying: Measuring Replay Noise in Counterfactual Token-Credit Estimation",
+          "authors": [
+            "Nils Matteson"
+          ],
+          "date": "2026-06-14",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15621",
+          "abstract": "Per-token counterfactual credit estimation asks which token in a language-model rollout caused the final answer to be right or wrong: cut the transcript at a pivot, substitute an alternative token, replay continuations, and compare outcomes. Published methods re-feed the transcript prefix as a fresh prompt, assuming this reproduces the state the model passed through during generation. We measure what that assumption costs on a stock inference engine, with a three-pass design: continuations resumed from the verified decode-time KV state, an identical second exact pass (a replica noise floor), and a re-feed pass. Across six configurations and three models (including a GRPO-trained checkpoint), at low-margin decision tokens, re-feeding changes the credit estimate at rates 14-28 percentage points above the replica floor (7-21pp under a treatment-independent conditioning; problem-clustered t = 2.9-6.4). Most changes are zero-boundary crossings of the quantized estimator rather than polarity reversals, and the perturbation is consistent with mean-zero, so averaged quantities are largely safe; but selection is not: a critical-token set chosen by thresholding $|\\hat{A}_t|$ under re-feed overlaps the exact-resume selection at Jaccard 0.34-0.90, versus a 0.63-0.96 replica ceiling. A causal confirmation closes the loop: under vLLM's batch-invariant kernels all three passes are identical on every measured channel, with both disagreement rates exactly zero. Replica passes themselves disagree on 9-23% of eligible estimates: single-sample credit measurements at decision tokens are unreliable under any replay. Settings were fixed in advance; exact-pass cache hits in the second campaign are instrumented (100% hit rate, 3,434 pivots); total compute was under 10 USD. We recommend that counterfactual credit studies resume decoder state or use batch-invariant kernels, and report a replica floor.",
+          "summarySections": {
+            "backgroundAndQuestion": "该论文属于大语言模型推理过程中的信用分配研究脉络，聚焦于强化学习中细粒度的token级信用估计问题。现有方法依赖‘重喂’前缀文本重建中间状态，假设其能复现原始解码状态，但这一假设未被验证。问题核心在于推理阶段批处理和数值计算的非确定性可能导致状态重建偏差，影响信用估计可靠性，尤其在低置信决策点上，这对基于关键token的选择性微调等下游应用构成严重威胁。",
+            "modelAndSetup": "研究任务是量化重喂前缀对反事实token信用估计的影响，输入为GSM8K数学题的生成轨迹，模型包括Qwen2.5-7B、Phi-4-mini等。实验设定采用三通路设计：从KV缓存恢复状态的精确续跑、完全相同的复制通路作为噪声基线、以及重新输入前缀的重喂通路。关键条件是固定随机种子、温度、top-K采样及低边际token筛选规则，确保比较公平。",
+            "contributionsAndResults": "论文主要贡献是首次系统测量了重喂操作引入的额外噪声，发现其使信用估计改变率比复制基线高出14-28个百分点，尤其在Phi-4-mini上达27.8%。尽管多数变化为零边界穿越而非极性反转，平均量仍稳健，但阈值驱动的关键token选择集合重叠度仅0.34-0.90。使用batch-invariant内核后所有差异归零，证实问题根源为批处理数值非不变性。",
+            "methodsAndTechniques": "作者设计了三通路审计框架：第一通路从解码时KV缓存恢复状态作为黄金标准；第二通路重复请求形成复制噪声基线；第三通路重置缓存并重喂前缀模拟常规做法。通过对比三者信用估计符号差异，分离出重喂特有的扰动。关键技术在于利用vLLM的前缀缓存机制验证状态命中，并借助batch-invariant模式进行因果确认，从而闭环论证数值路径依赖是根本原因。",
+            "limitationsAndReadingValue": "局限包括仅测试GSM8K任务、单一引擎版本与硬件、未测量重喂自身的内部方差，且注册为自述无外部时间戳。尽管如此，论文揭示了当前信用估计方法普遍忽视的基础性风险，其实验设计严谨、数据公开透明，结论具有高度警示意义。最值得精读的是其评测逻辑与系统级洞察，对从事LLM推理、信用分配与对齐研究者尤为关键。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "评测方法",
+            "系统框架"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "强化学习",
+            "推理",
+            "评测方法",
+            "对齐"
+          ],
+          "tags": [
+            "大语言模型",
+            "强化学习",
+            "推理",
+            "评测方法",
+            "对齐",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2606.15621"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-06-14",
+            "updated": "2026-06-14"
+          }
+        }
+      ]
+    }
+  ]
+}

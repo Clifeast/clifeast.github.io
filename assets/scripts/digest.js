@@ -45,9 +45,15 @@
   ];
   let scoreLabels = DEFAULT_SCORE_LABELS;
   let archiveOptions = [];
+  let calendarMonth = '';
+  let selectedDigest = 'today';
 
   const dateElement = document.getElementById('digest-date');
-  const pickerElement = document.getElementById('digest-picker-select');
+  const pickerRoot = document.querySelector('.digest-picker');
+  const pickerTrigger = document.getElementById('digest-picker-trigger');
+  const pickerPopover = document.getElementById('digest-picker-popover');
+  const todayButton = document.getElementById('digest-today-button');
+  const calendarElement = document.getElementById('digest-calendar');
   const statusElement = document.getElementById('digest-status');
   const sectionsElement = document.getElementById('digest-sections');
 
@@ -71,6 +77,17 @@
       month: 'long',
       day: 'numeric',
       weekday: 'short',
+    }).format(date);
+  }
+
+  function formatMonth(value) {
+    const date = new Date(`${value}-01T00:00:00`);
+    if (Number.isNaN(date.getTime())) {
+      return value;
+    }
+    return new Intl.DateTimeFormat('zh-CN', {
+      year: 'numeric',
+      month: 'long',
     }).format(date);
   }
 
@@ -316,29 +333,108 @@
     return `/data/digest/${encodeURIComponent(value)}.json`;
   }
 
-  function renderArchivePicker(dates) {
-    if (!pickerElement) {
+  function setPickerOpen(open) {
+    if (!pickerPopover || !pickerTrigger) {
+      return;
+    }
+    pickerPopover.hidden = !open;
+    pickerTrigger.setAttribute('aria-expanded', String(open));
+    pickerRoot?.classList.toggle('digest-picker--open', open);
+  }
+
+  function updatePickerLabel() {
+    if (!pickerTrigger) {
+      return;
+    }
+    pickerTrigger.textContent = '选择简报';
+  }
+
+  function monthFromDate(value) {
+    return normalizeText(value).slice(0, 7);
+  }
+
+  function addMonths(month, offset) {
+    const date = new Date(`${month}-01T00:00:00`);
+    date.setMonth(date.getMonth() + offset);
+    const year = date.getFullYear();
+    const monthNumber = String(date.getMonth() + 1).padStart(2, '0');
+    return `${year}-${monthNumber}`;
+  }
+
+  function renderCalendar() {
+    if (!calendarElement) {
       return;
     }
 
-    const currentValue = pickerElement.value || 'today';
-    const fragment = document.createDocumentFragment();
-    const todayOption = document.createElement('option');
-    todayOption.value = 'today';
-    todayOption.textContent = '今日简报';
-    fragment.appendChild(todayOption);
+    const dates = new Set(archiveOptions);
+    const months = [...new Set(archiveOptions.map(monthFromDate).filter(Boolean))].sort();
+    if (!calendarMonth) {
+      calendarMonth = months[months.length - 1] || monthFromDate(new Date().toISOString().slice(0, 10));
+    }
+    const firstMonth = months[0] || calendarMonth;
+    const lastMonth = months[months.length - 1] || calendarMonth;
+    const canPrev = calendarMonth > firstMonth;
+    const canNext = calendarMonth < lastMonth;
 
-    dates.forEach((date) => {
-      const option = document.createElement('option');
-      option.value = date;
-      option.textContent = `${formatDate(date)} 简报`;
-      fragment.appendChild(option);
+    const header = document.createElement('div');
+    header.className = 'digest-calendar__header';
+    const prev = document.createElement('button');
+    prev.className = 'digest-calendar__nav';
+    prev.type = 'button';
+    prev.textContent = '‹';
+    prev.disabled = !canPrev;
+    prev.setAttribute('aria-label', '上个月');
+    prev.addEventListener('click', (event) => {
+      event.stopPropagation();
+      calendarMonth = addMonths(calendarMonth, -1);
+      renderCalendar();
+    });
+    const label = createTextElement('span', 'digest-calendar__month', formatMonth(calendarMonth));
+    const next = document.createElement('button');
+    next.className = 'digest-calendar__nav';
+    next.type = 'button';
+    next.textContent = '›';
+    next.disabled = !canNext;
+    next.setAttribute('aria-label', '下个月');
+    next.addEventListener('click', (event) => {
+      event.stopPropagation();
+      calendarMonth = addMonths(calendarMonth, 1);
+      renderCalendar();
+    });
+    header.append(prev, label, next);
+
+    const weekdays = document.createElement('div');
+    weekdays.className = 'digest-calendar__weekdays';
+    ['一', '二', '三', '四', '五', '六', '日'].forEach((day) => {
+      weekdays.appendChild(createTextElement('span', '', day));
     });
 
-    pickerElement.replaceChildren(fragment);
-    pickerElement.value = dates.includes(currentValue) || currentValue === 'today'
-      ? currentValue
-      : 'today';
+    const grid = document.createElement('div');
+    grid.className = 'digest-calendar__grid';
+    const firstDay = new Date(`${calendarMonth}-01T00:00:00`);
+    const daysInMonth = new Date(firstDay.getFullYear(), firstDay.getMonth() + 1, 0).getDate();
+    const leading = (firstDay.getDay() + 6) % 7;
+    for (let index = 0; index < leading; index += 1) {
+      grid.appendChild(createTextElement('span', 'digest-calendar__blank', ''));
+    }
+    for (let day = 1; day <= daysInMonth; day += 1) {
+      const date = `${calendarMonth}-${String(day).padStart(2, '0')}`;
+      const button = document.createElement('button');
+      button.className = 'digest-calendar__day';
+      button.type = 'button';
+      button.textContent = String(day);
+      button.disabled = !dates.has(date);
+      if (selectedDigest === date) {
+        button.classList.add('digest-calendar__day--selected');
+      }
+      button.setAttribute('aria-label', dates.has(date) ? `${formatDate(date)} 简报` : `${date} 无简报`);
+      button.addEventListener('click', () => {
+        loadSelectedDigest(date);
+      });
+      grid.appendChild(button);
+    }
+
+    calendarElement.replaceChildren(header, weekdays, grid);
   }
 
   async function loadArchiveOptions() {
@@ -350,10 +446,11 @@
       const data = await response.json();
       const dates = Array.isArray(data.dates) ? data.dates : [];
       archiveOptions = dates.map(normalizeText).filter(Boolean);
-      renderArchivePicker(archiveOptions);
+      calendarMonth = monthFromDate(archiveOptions[0] || new Date().toISOString().slice(0, 10));
+      renderCalendar();
     } catch (error) {
       archiveOptions = [];
-      renderArchivePicker(archiveOptions);
+      renderCalendar();
     }
   }
 
@@ -365,25 +462,64 @@
     return response.json();
   }
 
+  async function loadSelectedDigest(value) {
+    try {
+      const nextDigest = value || 'today';
+      statusElement.hidden = false;
+      statusElement.classList.remove('digest-status--error');
+      statusElement.textContent = '正在切换简报...';
+      const data = await loadDigest(digestPathForValue(nextDigest));
+      selectedDigest = nextDigest;
+      if (selectedDigest !== 'today') {
+        calendarMonth = monthFromDate(selectedDigest);
+      }
+      todayButton?.classList.toggle('digest-picker__today--active', selectedDigest === 'today');
+      updatePickerLabel();
+      renderCalendar();
+      renderDigest(data);
+      setPickerOpen(false);
+    } catch (error) {
+      showError(error);
+    }
+  }
+
   async function init() {
     try {
       await loadArchiveOptions();
-      const data = await loadDigest(digestPathForValue(pickerElement?.value || 'today'));
+      selectedDigest = 'today';
+      todayButton?.classList.add('digest-picker__today--active');
+      updatePickerLabel();
+      const data = await loadDigest(digestPathForValue(selectedDigest));
       renderDigest(data);
     } catch (error) {
       showError(error);
     }
   }
 
-  pickerElement?.addEventListener('change', async () => {
-    try {
-      statusElement.hidden = false;
-      statusElement.classList.remove('digest-status--error');
-      statusElement.textContent = '正在切换简报...';
-      const data = await loadDigest(digestPathForValue(pickerElement.value));
-      renderDigest(data);
-    } catch (error) {
-      showError(error);
+  todayButton?.addEventListener('click', () => {
+    loadSelectedDigest('today');
+  });
+
+  pickerTrigger?.addEventListener('click', () => {
+    setPickerOpen(pickerPopover?.hidden ?? true);
+  });
+
+  pickerPopover?.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!pickerRoot || pickerPopover?.hidden) {
+      return;
+    }
+    if (!pickerRoot.contains(event.target)) {
+      setPickerOpen(false);
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      setPickerOpen(false);
     }
   });
 
