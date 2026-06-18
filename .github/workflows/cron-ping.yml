@@ -1,0 +1,23 @@
+name: Cron ping
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print schedule diagnostics
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          GITHUB_REF_VALUE: ${{ github.ref }}
+          GITHUB_SHA_VALUE: ${{ github.sha }}
+        run: |
+          echo "github.event_name=$EVENT_NAME"
+          echo "utc_time=$(date -u '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "asia_shanghai_time=$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "github.ref=$GITHUB_REF_VALUE"
+          echo "github.sha=$GITHUB_SHA_VALUE"
