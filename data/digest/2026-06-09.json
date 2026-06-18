@@ -1,0 +1,570 @@
+{
+  "date": "2026-06-09",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-06-18T13:26:47.991825+00:00",
+  "warnings": [
+    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 401: Unauthorized",
+    "LLM 精读生成失败，使用 Mock fallback：Duality for Optimal Multi-Item, Multi-Bidder Auction Design: Revenue Certificates through Deep Learning (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：Benchmark-Tight Approximation Ratio of Simple Mechanism for a Unit-Demand Buyer (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：STON'R Converges to First-Order Nash~Equilibria of Multiplayer Games (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：Axiomatic Market Making (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 401: Unauthorized",
+    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 401: Unauthorized",
+    "LLM 精读生成失败，使用 Mock fallback：Self-Paced Curriculum Reinforcement Learning for Autonomous Superbike Racing in Simulation (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：Targeting World Models to Compromise Robot Learning Pipelines (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
+    "LLM 精读生成失败，使用 Mock fallback：Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)"
+  ],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 10,
+      "papers": [
+        {
+          "title": "Duality for Optimal Multi-Item, Multi-Bidder Auction Design: Revenue Certificates through Deep Learning",
+          "titleZh": "",
+          "authors": [
+            "Yanchen Jiang",
+            "David C. Parkes",
+            "Tonghan Wang"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10112",
+          "abstract": "Characterizing revenue-optimal auctions for multi-item, multi-bidder settings remains a fundamental open problem, with no known closed-form solution existing beyond restrictive binary-type instances. This has motivated interest in computational approaches to optimal auction design. In this paper, we introduce the first computational framework that directly tackles the dual problem for multi-item, multi-bidder auctions and dominant-strategy incentive compatibility (DSIC), generating certified revenue upper bounds. Our approach parametrizes Lagrange multipliers with a structurally guaranteed strict flow-conservation property using neural networks, enabling efficient optimization over feasible dual solutions via gradient descent. To bridge the gap between discrete computational methods and theoretical guarantees for continuous types, we develop a novel lifting technique that maps dual certificates from coarse discretizations to fine refinements. We prove that lifting gives valid revenue upper bounds for multi-item, multi-bidder auctions with continuous uniform valuations. Furthermore, we give a generalized lifting construction for arbitrary continuous distributions and demonstrate that these lifted duals converge to the revenue of the original continuous problem in the discrete limit. We validate this computational framework for the dual auction design problem by recovering known analytical mechanisms for canonical instances. For multi-item multi-bidder problems, our framework establishes a small gap between the optimal revenue and best-known DSIC mechanisms, providing computational certificates of near-optimality.",
+          "summarySections": {
+            "backgroundAndQuestion": "Characterizing revenue-optimal auctions for multi-item, multi-bidder settings remains a fundamental open problem, with no known closed-form solution existing beyond restrictive binary-type instances. This has motivated interest in computational approaches to o...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 6.5,
+            "theoreticalStrength": 8.3,
+            "guaranteeQuality": 5.3,
+            "readingValue": 5.4,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 24.5,
+            "bonus": 6.9,
+            "total": 26.7
+          },
+          "ids": {
+            "arxiv": "2606.10112"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI",
+              "cs.LG",
+              "econ.TH"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs",
+          "titleZh": "",
+          "authors": [
+            "Jugal Garg",
+            "Edwin Lock",
+            "Vijay V. Vazirani"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.09631",
+          "abstract": "We study the problem of computing competitive equilibria in the Arctic product-mix auction, originally developed for the Icelandic government for exchanging blocked financial accounts, and more recently proposed by IMF staff for sovereign debt restructuring. From the buyers' perspective, the Arctic auction is equivalent to the quasi-linear Fisher market. However, unlike the standard Fisher model, the seller can express rich supply preferences through explicit supply-side costs and constraints. Despite extensive algorithmic literature on Fisher markets, the seller side has not received much attention, and no polynomial-time algorithm was previously known for computing competitive equilibrium when sellers face nontrivial costs. We examine the natural and expressive regime of separable, stepwise-increasing marginal costs that underlie the above-stated applications. Using polyhedral theory techniques, we first show that rational inputs lead to rational-valued competitive equilibria. Motivated by this result, we develop the first polynomial-time algorithm for this setting based on a non-trivial extension of classic primal-dual balanced-flow techniques for linear Fisher markets. Our work provides a robust computational foundation for auctions with sophisticated preferences, paving the way for flexible and institutionally feasible market designs in global finance.",
+          "summarySections": {
+            "backgroundAndQuestion": "We study the problem of computing competitive equilibria in the Arctic product-mix auction, originally developed for the Icelandic government for exchanging blocked financial accounts, and more recently proposed by IMF staff for sovereign debt restructuring. F...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 6.6,
+            "theoreticalStrength": 8.4,
+            "guaranteeQuality": 4.2,
+            "readingValue": 5.5,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 23.7,
+            "bonus": 6.7,
+            "total": 25.8
+          },
+          "ids": {
+            "arxiv": "2606.09631"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "Benchmark-Tight Approximation Ratio of Simple Mechanism for a Unit-Demand Buyer",
+          "titleZh": "",
+          "authors": [
+            "Yaonan Jin",
+            "Pinyan Lu"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10169",
+          "abstract": "We study revenue maximization in the unit-demand single-buyer setting. Our main result is that \\textsf{Uniform-Ironed-Virtual-Value Item Pricing} guarantees a {\\em tight} $3$-approximation to the \\textsf{Duality Relaxation Benchmark} [Chawla-Malec-Sivan, EC'10/GEB'15; Cai-Devanur-Weinberg, STOC'16/ SICOMP'21], breaking the barrier of $4$ since [Chawla-Hartline-Malec-Sivan, STOC'10; Chawla-Malec-Sivan, EC'10/GEB'15]. To our knowledge, this is the first {\\em benchmark-tight} revenue guarantee of any simple multi-item mechanism. Technically, all previous works employ \\textsf{Myerson Auction} as an intermediary. The barrier of $4$ follows as \\textsf{Uniform-Ironed-Virtual-Value Item Pricing} achieves a {\\em tight} $2$-approximation to \\textsf{Myerson Auction}, which then achieves a {\\em tight} $2$-approximation to \\textsf{Duality Relaxation Benchmark}. Instead, our new approach avoids \\textsf{Myerson Auction}, thus enabling the improvement. Central to our work are a {\\em benchmark-based} $3$-competitive prophet inequality and its {\\em fully constructive} proof. Such variant prophet inequalities shall find future applications, e.g., to Multi-Item Mechanism Design where optimal revenues are relaxed to various more accessible benchmarks. We complement our benchmark-tight ratio with an impossibility result. All previous works and ours follow the {\\em single-dimensional representative} approach introduced by [Chawla-Hartline-Kleinberg, EC'07]. Against \\textsf{Duality Relaxation Benchmark}, it turns out that this approach cannot beat our bound of $3$ for a large class of \\textsf{Item Pricing}'s.",
+          "summarySections": {
+            "backgroundAndQuestion": "We study revenue maximization in the unit-demand single-buyer setting. Our main result is that \\textsf{Uniform-Ironed-Virtual-Value Item Pricing} guarantees a {\\em tight} $3$-approximation to the \\textsf{Duality Relaxation Benchmark} [Chawla-Malec-Sivan, EC'10...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.8,
+            "guaranteeQuality": 4.8,
+            "readingValue": 4.9,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 22.5,
+            "bonus": 6.4,
+            "total": 24.6
+          },
+          "ids": {
+            "arxiv": "2606.10169"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "STON'R Converges to First-Order Nash~Equilibria of Multiplayer Games",
+          "titleZh": "",
+          "authors": [
+            "Marika Kosohorská",
+            "Tomáš Kroupa",
+            "Tomáš Votroubek"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.09565",
+          "abstract": "Nonconcave games present a unique challenge, as neither pure Nash equilibria nor local Nash equilibria (LNE) are guaranteed to exist, even in zero-sum settings. Additionally, computing approximate LNE in smooth multiplayer games over bounded regions is PPAD-hard. These challenges, coupled with the inherent complexity, have driven recent research toward broader equilibrium concepts, such as min-max critical points, and first-order Nash equilibria (FONE), which correspond to solutions of specific non-monotone variational inequalities. This paper addresses general-sum multiplayer games with compact convex strategy sets and smooth, nonconcave utility functions. Daskalakis et al. introduced the STON'R algorithm for solving variational inequality problems and established convergence under smoothness assumptions. They further showed that the algorithm's limit points correspond to equilibria in specific classes of games, namely local minimax equilibria in two-player zero-sum games and Nash equilibria in smooth concave games. In this work, we extend the convergence result to multiplayer general-sum games and show that the variational inequality solutions targeted by STON'R correspond to first-order Nash equilibria (FONE), a general game-theoretic solution concept that unifies these previously studied cases. We demonstrate the effectiveness and robustness of the algorithm on various examples from recent literature.",
+          "summarySections": {
+            "backgroundAndQuestion": "Nonconcave games present a unique challenge, as neither pure Nash equilibria nor local Nash equilibria (LNE) are guaranteed to exist, even in zero-sum settings. Additionally, computing approximate LNE in smooth multiplayer games over bounded regions is PPAD-ha...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 6.1,
+            "theoreticalStrength": 7.9,
+            "guaranteeQuality": 4.9,
+            "readingValue": 5.0,
+            "aiRelevance": 6.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 22.9,
+            "bonus": 5.0,
+            "total": 23.7
+          },
+          "ids": {
+            "arxiv": "2606.09565"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "Axiomatic Market Making",
+          "titleZh": "",
+          "authors": [
+            "Frank M. V. Feys"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.09454",
+          "abstract": "This paper axiomatizes the bid-ask market maker's quoting rule. A quoting rule maps the maker's state, namely inventory, belief, variance, trade intensity, and informed-trader fraction, to a bid-ask pair. Eight natural axioms, together with six environmental assumptions on the maker's inventory cost, force a unique three-parameter family: the mid-quote is linear in inventory, and the spread decomposes additively into inventory and adverse-selection components. Each of the three parameters is identified from a distinct moment of the observable quoting rule, with the three identifications mutually decoupled. The eight axioms partition into a four-axiom indispensable core, one structural choice, and three modularity extensions. Two structural corollaries follow: the latent inventory cost function is recoverable from the limit order book, and a sharp phase transition separates a functioning regime from a frozen one. A closing meta-theorem identifies four features invariant across all admissible structural primitives within the axiom system. To our knowledge, this is the first forced-uniqueness axiomatization of the quoting rule.",
+          "summarySections": {
+            "backgroundAndQuestion": "This paper axiomatizes the bid-ask market maker's quoting rule. A quoting rule maps the maker's state, namely inventory, belief, variance, trade intensity, and informed-trader fraction, to a bid-ask pair. Eight natural axioms, together with six environmental a...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 6.2,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 3.8,
+            "readingValue": 3.8,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 20.8,
+            "bonus": 5.9,
+            "total": 22.7
+          },
+          "ids": {
+            "arxiv": "2606.09454"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "q-fin.MF",
+              "econ.TH",
+              "q-fin.TR"
+            ],
+            "primaryCategory": "q-fin.MF",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.RO）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Self-Paced Curriculum Reinforcement Learning for Autonomous Superbike Racing in Simulation",
+          "titleZh": "",
+          "authors": [
+            "Luca Ghisi",
+            "Jacopo Essenziale",
+            "Carlo D'Eramo",
+            "Matteo Luperto"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.09236",
+          "abstract": "Autonomous Racing has seen remarkable progress through deep Reinforcement Learning (RL), primarily for four-wheeled vehicles. However, motorbikes introduce substantially greater complexity due to the need to manage balance and lean angle, in addition to more reactive steering and throttle control, and a smaller weight. In this work, we present a framework for training an autonomous agent to race a superbike in VRider SBK, a physics-accurate Unity-based motorbike simulator. Our approach integrates Soft Actor-Critic (SAC) with Self-Paced curriculum Deep reinforcement Learning (SPDL), which dynamically generates progressively more challenging tasks based on the agent's performance, without requiring manual curriculum design. The agent's state space comprises proprioceptive features extended with lean-angle history, along with global track features via course points. The reward signal is shaped to encourage progress along the track while penalizing instability-inducing behaviors specific to two-wheeled dynamics. Preliminary experimental results demonstrate that SPDL outperforms SAC alone in training efficiency, lap time, and driving stability across multiple tracks and motorbike models, establishing a first baseline for RL-based autonomous motorbike racing.",
+          "summarySections": {
+            "backgroundAndQuestion": "Autonomous Racing has seen remarkable progress through deep Reinforcement Learning (RL), primarily for four-wheeled vehicles. However, motorbikes introduce substantially greater complexity due to the need to manage balance and lean angle, in addition to more r...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.5,
+            "horizonValue": 5.3,
+            "clarity": 5.2,
+            "theoreticalDepth": 6.4,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 25.6,
+            "total": 25.6
+          },
+          "ids": {
+            "arxiv": "2606.09236"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.AI"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+          "titleZh": "",
+          "authors": [
+            "Jia Zheng",
+            "Teli Ma",
+            "Yudong Fan",
+            "Zifan Wang",
+            "Shuo Yang",
+            "Junwei Liang"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.09215",
+          "abstract": "World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation. The problem is compounded by the dominant hierarchical paradigm, in which a high-level manipulation policy controls only the upper body while a low-level controller tracks coarse base commands -- placing upper and lower body in inconsistent action spaces and reducing the legs to balance-preserving locomotion. We present MotionWAM, a real-time WAM that drives autonomous humanoid loco-manipulation from a single egocentric camera by conditioning the policy on the intermediate denoising features of a video world model. MotionWAM replaces the upper-lower split with a unified motion latent and predicts whole-body motion tokens that jointly cover locomotion, torso motion, height regulation, foot interaction, and hand manipulation in a single action space. A three-stage learning framework progressively adapts the video world model to egocentric visual dynamics and to the target humanoid embodiment. On nine real-world Unitree G1 tasks, MotionWAM runs in real time, substantially outperforms Vision-Language-Action (VLA) baselines fine-tuned on the same demonstrations by over 30% in overall success rate, and executes task-driven foot interaction that decoupled upper-lower policies cannot reach. Our results suggest that video-pretrained WAMs can be lifted from tabletop manipulation to coordinated, human-like whole-body humanoid control.",
+          "summarySections": {
+            "backgroundAndQuestion": "World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.7,
+            "horizonValue": 5.5,
+            "clarity": 5.4,
+            "theoreticalDepth": 4.4,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 24.2,
+            "total": 24.2
+          },
+          "ids": {
+            "arxiv": "2606.09215"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
+          "titleZh": "",
+          "authors": [
+            "Lorenzo Ortolani",
+            "Gabriel Voss",
+            "Gabriele Beltrami",
+            "Francesco Dorati",
+            "Tommaso Felice Banfi"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.14763",
+          "abstract": "Real-time autonomous navigation in dynamic, unknown environments remains a fundamental challenge for mobile robotics. We propose a map-free framework that tightly integrates reactive rolling-horizon planning with nonlinear Model Predictive Control (MPC). At each control cycle, a LiDAR-based Gaussian occupancy representation is constructed and used to generate collision-free trajectories via A* search, which are then tracked by a CasADi/IPOPT MPC formulation incorporating a smooth sigmoid obstacle barrier. To improve robustness to parameter sensitivity, we adopt an offline Bayesian optimization scheme based on Tree-structured Parzen Estimators (TPE), which identifies near-optimal controller parameters with respect to a composite navigation objective. In addition, a Gaussian Process surrogate is used to analyze parameter sensitivity and provide insight into the optimization landscape. The proposed framework is robot-agnostic and is evaluated on the Unitree Go2 quadruped in simulation using Gazebo, followed by deployment on the physical robot. Experimental results show that parameters tuned in simulation transfer effectively to hardware, maintaining comparable performance without additional tuning. The full system achieves up to a 90.0\\% navigation success rate when deployed, along with a 38.9\\% average improvement in the evaluation metrics across simulated environments.",
+          "summarySections": {
+            "backgroundAndQuestion": "Real-time autonomous navigation in dynamic, unknown environments remains a fundamental challenge for mobile robotics. We propose a map-free framework that tightly integrates reactive rolling-horizon planning with nonlinear Model Predictive Control (MPC). At ea...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.3,
+            "horizonValue": 5.1,
+            "clarity": 5.0,
+            "theoreticalDepth": 6.2,
+            "overall": 2.4,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          },
+          "ids": {
+            "arxiv": "2606.14763"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.LG",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "Targeting World Models to Compromise Robot Learning Pipelines",
+          "titleZh": "",
+          "authors": [
+            "Ethan Rathbun",
+            "Ahmed Agha",
+            "Saaduddin Mahmud",
+            "Christopher Amato",
+            "Alina Oprea",
+            "Eugene Bagdasarian"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.09499",
+          "abstract": "World models have recently seen a rapid growth in both their popularity and capability as more data efficient tools for generating robot training data or simulating real world environments, with many works proposing their integration into the robot learning pipeline. While highly practical, in this work we demonstrate that world models introduce a uniquely stealthy and effective data poisoning entry point into the robot learning supply chain that can result in the deployment of unsafe or otherwise compromised robotic policies despite training on seemingly safe ground truth training data. In contrast to traditional data poisoning techniques which directly implant dangerous trajectories into sold or uploaded datasets, our novel attack methods inject malicious prompts or compromising transition dynamics into visibly safe teleoperated datasets which are only activated once fed through a world model as input. This can result in the generation of synthetic, dangerous robot training trajectories and subsequently unsafe or compromised robot policies. We demonstrate the effectiveness of our attacks against both state of the art action conditioned and text conditioned world models, showing a full end-to-end backdoor on a downstream DRL policy and a proof-of-concept for the VLA setting. Overall these findings necessitate research into more secure world models and reevaluating their position within the robot learning supply chain.",
+          "summarySections": {
+            "backgroundAndQuestion": "World models have recently seen a rapid growth in both their popularity and capability as more data efficient tools for generating robot training data or simulating real world environments, with many works proposing their integration into the robot learning pi...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.2,
+            "horizonValue": 5.0,
+            "clarity": 4.9,
+            "theoreticalDepth": 6.1,
+            "overall": 2.4,
+            "penalty": 0.0,
+            "baseTotal": 23.6,
+            "total": 23.6
+          },
+          "ids": {
+            "arxiv": "2606.09499"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.AI",
+              "cs.CR"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-08",
+            "updated": "2026-06-08"
+          }
+        },
+        {
+          "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
+          "titleZh": "",
+          "authors": [
+            "Jiajun Li",
+            "Tiecheng Guo",
+            "Yifan Ye",
+            "Rongyu Zhang",
+            "Xiaowei Chi",
+            "Qianpu Sun",
+            "Ying Li",
+            "Yunfan Lou",
+            "Yan Huang",
+            "Zhihe Lu",
+            "Meng Guo",
+            "Shanghang Zhang"
+          ],
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10040",
+          "abstract": "World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and makes real-time robot deployment difficult. This motivates a more efficient WAM design that preserves the control benefits of future visual prediction while reducing its inference cost. We introduce Efficient-WAM, a World-Action Model that reduces the cost of future imagination while preserving its control benefit. Efficient-WAM improves inference efficiency via a compact video expert transferred from WAN-2.2-5B, token-sparse video latents, and asymmetric video-action denoising that allocates fewer sampling steps to video than to actions. Instead of optimizing the future branch for visual fidelity, Efficient-WAM treats future video prediction as a compact guidance signal for action generation. Comprehensive experiments on RoboTwin 2.0 and real-world manipulation tasks show that Efficient-WAM maintains strong action performance despite visibly coarse future predictions. While maintaining competitive control capabilities, our 1B-parameter model can reduce per-chunk latency to around 100 ms during physical deployment, achieving a 30x speedup over existing WAMs.",
+          "summarySections": {
+            "backgroundAndQuestion": "World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and make...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.7,
+            "horizonValue": 5.5,
+            "clarity": 5.4,
+            "theoreticalDepth": 4.4,
+            "overall": 2.4,
+            "penalty": 0.0,
+            "baseTotal": 23.4,
+            "total": 23.4
+          },
+          "ids": {
+            "arxiv": "2606.10040"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-06-08",
+            "updated": "2026-06-10"
+          }
+        }
+      ]
+    }
+  ]
+}
