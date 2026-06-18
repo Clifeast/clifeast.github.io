@@ -4,8 +4,7 @@ on:
   schedule:
     # UTC 02:30 = Asia/Shanghai 10:30. arXiv announcements land on
     # Beijing-time weekday mornings, so weekdays are enough here.
-    - cron: "26 10 * * *"
-      timezone: "Asia/Shanghai"
+    - cron: "34 2 * * *"
   workflow_dispatch:
     inputs:
       date:
