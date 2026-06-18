@@ -1,6 +1,6 @@
 {
   "date": "2026-06-09",
-  "generatedAt": "2026-06-18T13:26:04.056619+00:00",
+  "generatedAt": "2026-06-18T13:30:27.375414+00:00",
   "sections": {
     "recent-agt": {
       "targetDate": "2026-06-08",
@@ -276,159 +276,127 @@
               "abstract": "We present a Lean 4/Mathlib formalization of the additive representation theory behind Classical Lottery in Action and the Wakker-Debreu-Koopmans (WDK) layer it relies on. Our central result is a machine-checked proof that the cross-pair Thomsen / double-cancellation (hexagon) condition is irreducible from the ordinal axioms of additive conjoint measurement (weak order, restricted solvability, Archimedean condition, and tradeoff consistency). We exhibit an explicit verified counter-model (additiveRealBoolPref) satisfying all ordinal axioms yet failing the cross-pair condition, with every strict standard sequence being an arithmetic progression and hence non-dense. Around this boundary we mechanize the full derivable construction: continuous Debreu/Eilenberg utility from separability, standard-sequence grids, bisection methods from connectedness, and global additive gluing. All public theorems are sorry-free conditional wrappers over this single irreducible structural input. The development is kernel-clean, depending only on standard Lean foundations (propext, Classical.choice, Quot.sound). The companion file ClassicalLotteryInAction.lean formalizes local classical-lottery constructions, average-utility results, matching-frequency lemmas, and ambiguity-attitude statements used by the Management Science paper. This draws a precise, machine-certified line between what additive conjoint measurement can prove and what it must assume."
             }
           ],
-          "provider": "mock-after-error",
-          "error": "HTTP Error 401: Unauthorized",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
             "items": [
               {
                 "index": 0,
                 "scores": {
-                  "modelNaturalness": 4.3,
-                  "theoreticalStrength": 7.5,
-                  "guaranteeQuality": 3.3,
-                  "readingValue": 3.3,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 17.4,
-                  "bonus": 4.9,
-                  "total": 19.0
+                  "modelNaturalness": 0,
+                  "theoreticalStrength": 0,
+                  "guaranteeQuality": 0,
+                  "readingValue": 0,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
                 }
               },
               {
                 "index": 1,
                 "scores": {
-                  "modelNaturalness": 6.0,
-                  "theoreticalStrength": 7.8,
-                  "guaranteeQuality": 4.8,
-                  "readingValue": 4.9,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 22.5,
-                  "bonus": 6.4,
-                  "total": 24.6
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
                 }
               },
               {
                 "index": 2,
                 "scores": {
-                  "modelNaturalness": 6.5,
-                  "theoreticalStrength": 8.3,
-                  "guaranteeQuality": 5.3,
-                  "readingValue": 5.4,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 24.5,
-                  "bonus": 6.9,
-                  "total": 26.7
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 7,
+                  "agtRelevance": 10
                 }
               },
               {
                 "index": 3,
                 "scores": {
-                  "modelNaturalness": 5.7,
-                  "theoreticalStrength": 7.5,
-                  "guaranteeQuality": 4.5,
-                  "readingValue": 3.3,
-                  "aiRelevance": 6.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 20.0,
-                  "bonus": 4.3,
-                  "total": 20.7
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 6,
+                  "agtRelevance": 9
                 }
               },
               {
                 "index": 4,
                 "scores": {
-                  "modelNaturalness": 6.6,
-                  "theoreticalStrength": 8.4,
-                  "guaranteeQuality": 4.2,
-                  "readingValue": 5.5,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 23.7,
-                  "bonus": 6.7,
-                  "total": 25.8
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 10
                 }
               },
               {
                 "index": 5,
                 "scores": {
-                  "modelNaturalness": 6.1,
-                  "theoreticalStrength": 7.9,
-                  "guaranteeQuality": 4.9,
-                  "readingValue": 5.0,
-                  "aiRelevance": 6.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 22.9,
-                  "bonus": 5.0,
-                  "total": 23.7
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 4,
+                  "agtRelevance": 10
                 }
               },
               {
                 "index": 6,
                 "scores": {
-                  "modelNaturalness": 4.8,
-                  "theoreticalStrength": 5.8,
-                  "guaranteeQuality": 3.8,
-                  "readingValue": 5.1,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 6.0,
-                  "penalty": -1.0,
-                  "baseTotal": 18.5,
-                  "bonus": 5.2,
-                  "total": 14.2
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 3,
+                  "guaranteeQuality": 2,
+                  "readingValue": 3,
+                  "penalty": -5,
+                  "aiRelevance": 9,
+                  "agtRelevance": 0
                 }
               },
               {
                 "index": 7,
                 "scores": {
-                  "modelNaturalness": 5.5,
-                  "theoreticalStrength": 6.5,
-                  "guaranteeQuality": 5.7,
-                  "readingValue": 4.5,
-                  "aiRelevance": 6.5,
-                  "agtRelevance": 6.0,
-                  "penalty": -1.0,
-                  "baseTotal": 21.2,
-                  "bonus": 4.6,
-                  "total": 15.5
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 2,
+                  "agtRelevance": 0
                 }
               },
               {
                 "index": 8,
                 "scores": {
-                  "modelNaturalness": 6.2,
-                  "theoreticalStrength": 8.0,
-                  "guaranteeQuality": 3.8,
-                  "readingValue": 3.8,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 8.5,
-                  "penalty": -1.0,
-                  "baseTotal": 20.8,
-                  "bonus": 5.9,
-                  "total": 22.7
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
                 }
               },
               {
                 "index": 9,
                 "scores": {
-                  "modelNaturalness": 5.3,
-                  "theoreticalStrength": 8.5,
-                  "guaranteeQuality": 4.3,
-                  "readingValue": 4.3,
-                  "aiRelevance": 8.5,
-                  "agtRelevance": 6.0,
-                  "penalty": -1.0,
-                  "baseTotal": 21.4,
-                  "bonus": 6.1,
-                  "total": 16.5
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -3,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
                 }
               }
             ]
@@ -444,16 +412,16 @@
                 "cs.GT"
               ],
               "scores": {
-                "modelNaturalness": 4.3,
-                "theoreticalStrength": 7.5,
-                "guaranteeQuality": 3.3,
-                "readingValue": 3.3,
-                "aiRelevance": 8.5,
-                "agtRelevance": 8.5,
-                "penalty": -1.0,
-                "baseTotal": 17.4,
-                "bonus": 4.9,
-                "total": 19.0
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
               }
             },
             {
@@ -466,16 +434,16 @@
                 "cs.GT"
               ],
               "scores": {
-                "modelNaturalness": 6.0,
-                "theoreticalStrength": 7.8,
-                "guaranteeQuality": 4.8,
-                "readingValue": 4.9,
-                "aiRelevance": 8.5,
-                "agtRelevance": 8.5,
-                "penalty": -1.0,
-                "baseTotal": 22.5,
-                "bonus": 6.4,
-                "total": 24.6
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 2.0,
+                "total": 32.0
               }
             },
             {
@@ -491,16 +459,16 @@
                 "econ.TH"
               ],
               "scores": {
-                "modelNaturalness": 6.5,
-                "theoreticalStrength": 8.3,
-                "guaranteeQuality": 5.3,
-                "readingValue": 5.4,
-                "aiRelevance": 8.5,
-                "agtRelevance": 8.5,
-                "penalty": -1.0,
-                "baseTotal": 24.5,
-                "bonus": 6.9,
-                "total": 26.7
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 6.8,
+                "total": 35.8
               }
             },
             {
@@ -514,16 +482,16 @@
                 "cs.IR"
               ],
               "scores": {
-                "modelNaturalness": 5.7,
-                "theoreticalStrength": 7.5,
-                "guaranteeQuality": 4.5,
-                "readingValue": 3.3,
-                "aiRelevance": 6.5,
-                "agtRelevance": 8.5,
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 6.0,
+                "agtRelevance": 9.0,
                 "penalty": -1.0,
-                "baseTotal": 20.0,
-                "bonus": 4.3,
-                "total": 20.7
+                "baseTotal": 24.0,
+                "bonus": 4.8,
+                "total": 25.9
               }
             },
             {
@@ -536,16 +504,16 @@
                 "cs.GT"
               ],
               "scores": {
-                "modelNaturalness": 6.6,
-                "theoreticalStrength": 8.4,
-                "guaranteeQuality": 4.2,
-                "readingValue": 5.5,
-                "aiRelevance": 8.5,
-                "agtRelevance": 8.5,
-                "penalty": -1.0,
-                "baseTotal": 23.7,
-                "bonus": 6.7,
-                "total": 25.8
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 2.9,
+                "total": 31.9
               }
             },
             {
@@ -558,16 +526,16 @@
                 "cs.GT"
               ],
               "scores": {
-                "modelNaturalness": 6.1,
-                "theoreticalStrength": 7.9,
-                "guaranteeQuality": 4.9,
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
                 "readingValue": 5.0,
-                "aiRelevance": 6.5,
-                "agtRelevance": 8.5,
-                "penalty": -1.0,
-                "baseTotal": 22.9,
-                "bonus": 5.0,
-                "total": 23.7
+                "aiRelevance": 4.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 3.5,
+                "total": 29.5
               }
             },
             {
@@ -584,16 +552,16 @@
                 "stat.ML"
               ],
               "scores": {
-                "modelNaturalness": 4.8,
-                "theoreticalStrength": 5.8,
-                "guaranteeQuality": 3.8,
-                "readingValue": 5.1,
-                "aiRelevance": 8.5,
-                "agtRelevance": 6.0,
-                "penalty": -1.0,
-                "baseTotal": 18.5,
-                "bonus": 5.2,
-                "total": 14.2
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
               }
             },
             {
@@ -606,16 +574,16 @@
                 "econ.TH"
               ],
               "scores": {
-                "modelNaturalness": 5.5,
-                "theoreticalStrength": 6.5,
-                "guaranteeQuality": 5.7,
-                "readingValue": 4.5,
-                "aiRelevance": 6.5,
-                "agtRelevance": 6.0,
-                "penalty": -1.0,
-                "baseTotal": 21.2,
-                "bonus": 4.6,
-                "total": 15.5
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
               }
             },
             {
@@ -630,16 +598,16 @@
                 "q-fin.TR"
               ],
               "scores": {
-                "modelNaturalness": 6.2,
+                "modelNaturalness": 7.0,
                 "theoreticalStrength": 8.0,
-                "guaranteeQuality": 3.8,
-                "readingValue": 3.8,
-                "aiRelevance": 8.5,
-                "agtRelevance": 8.5,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
                 "penalty": -1.0,
-                "baseTotal": 20.8,
-                "bonus": 5.9,
-                "total": 22.7
+                "baseTotal": 24.0,
+                "bonus": 1.6,
+                "total": 20.5
               }
             },
             {
@@ -653,16 +621,16 @@
                 "econ.TH"
               ],
               "scores": {
-                "modelNaturalness": 5.3,
-                "theoreticalStrength": 8.5,
-                "guaranteeQuality": 4.3,
-                "readingValue": 4.3,
-                "aiRelevance": 8.5,
-                "agtRelevance": 6.0,
-                "penalty": -1.0,
-                "baseTotal": 21.4,
-                "bonus": 6.1,
-                "total": 16.5
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
               }
             }
           ]
@@ -679,16 +647,16 @@
             "cs.GT"
           ],
           "scores": {
-            "modelNaturalness": 4.3,
-            "theoreticalStrength": 7.5,
-            "guaranteeQuality": 3.3,
-            "readingValue": 3.3,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 17.4,
-            "bonus": 4.9,
-            "total": 19.0
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
           }
         },
         {
@@ -701,16 +669,16 @@
             "cs.GT"
           ],
           "scores": {
-            "modelNaturalness": 6.0,
-            "theoreticalStrength": 7.8,
-            "guaranteeQuality": 4.8,
-            "readingValue": 4.9,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 22.5,
-            "bonus": 6.4,
-            "total": 24.6
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 32.0
           }
         },
         {
@@ -726,16 +694,16 @@
             "econ.TH"
           ],
           "scores": {
-            "modelNaturalness": 6.5,
-            "theoreticalStrength": 8.3,
-            "guaranteeQuality": 5.3,
-            "readingValue": 5.4,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 24.5,
-            "bonus": 6.9,
-            "total": 26.7
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 6.8,
+            "total": 35.8
           }
         },
         {
@@ -749,16 +717,16 @@
             "cs.IR"
           ],
           "scores": {
-            "modelNaturalness": 5.7,
-            "theoreticalStrength": 7.5,
-            "guaranteeQuality": 4.5,
-            "readingValue": 3.3,
-            "aiRelevance": 6.5,
-            "agtRelevance": 8.5,
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
             "penalty": -1.0,
-            "baseTotal": 20.0,
-            "bonus": 4.3,
-            "total": 20.7
+            "baseTotal": 24.0,
+            "bonus": 4.8,
+            "total": 25.9
           }
         },
         {
@@ -771,16 +739,16 @@
             "cs.GT"
           ],
           "scores": {
-            "modelNaturalness": 6.6,
-            "theoreticalStrength": 8.4,
-            "guaranteeQuality": 4.2,
-            "readingValue": 5.5,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 23.7,
-            "bonus": 6.7,
-            "total": 25.8
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
           }
         },
         {
@@ -793,16 +761,16 @@
             "cs.GT"
           ],
           "scores": {
-            "modelNaturalness": 6.1,
-            "theoreticalStrength": 7.9,
-            "guaranteeQuality": 4.9,
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
             "readingValue": 5.0,
-            "aiRelevance": 6.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 22.9,
-            "bonus": 5.0,
-            "total": 23.7
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 3.5,
+            "total": 29.5
           }
         },
         {
@@ -819,16 +787,16 @@
             "stat.ML"
           ],
           "scores": {
-            "modelNaturalness": 4.8,
-            "theoreticalStrength": 5.8,
-            "guaranteeQuality": 3.8,
-            "readingValue": 5.1,
-            "aiRelevance": 8.5,
-            "agtRelevance": 6.0,
-            "penalty": -1.0,
-            "baseTotal": 18.5,
-            "bonus": 5.2,
-            "total": 14.2
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
           }
         },
         {
@@ -841,16 +809,16 @@
             "econ.TH"
           ],
           "scores": {
-            "modelNaturalness": 5.5,
-            "theoreticalStrength": 6.5,
-            "guaranteeQuality": 5.7,
-            "readingValue": 4.5,
-            "aiRelevance": 6.5,
-            "agtRelevance": 6.0,
-            "penalty": -1.0,
-            "baseTotal": 21.2,
-            "bonus": 4.6,
-            "total": 15.5
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
           }
         },
         {
@@ -865,16 +833,16 @@
             "q-fin.TR"
           ],
           "scores": {
-            "modelNaturalness": 6.2,
+            "modelNaturalness": 7.0,
             "theoreticalStrength": 8.0,
-            "guaranteeQuality": 3.8,
-            "readingValue": 3.8,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
             "penalty": -1.0,
-            "baseTotal": 20.8,
-            "bonus": 5.9,
-            "total": 22.7
+            "baseTotal": 24.0,
+            "bonus": 1.6,
+            "total": 20.5
           }
         },
         {
@@ -888,16 +856,16 @@
             "econ.TH"
           ],
           "scores": {
-            "modelNaturalness": 5.3,
-            "theoreticalStrength": 8.5,
-            "guaranteeQuality": 4.3,
-            "readingValue": 4.3,
-            "aiRelevance": 8.5,
-            "agtRelevance": 6.0,
-            "penalty": -1.0,
-            "baseTotal": 21.4,
-            "bonus": 6.1,
-            "total": 16.5
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
           }
         }
       ],
@@ -915,38 +883,16 @@
             "econ.TH"
           ],
           "scores": {
-            "modelNaturalness": 6.5,
-            "theoreticalStrength": 8.3,
-            "guaranteeQuality": 5.3,
-            "readingValue": 5.4,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 24.5,
-            "bonus": 6.9,
-            "total": 26.7
-          }
-        },
-        {
-          "title": "Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs",
-          "url": "https://arxiv.org/abs/2606.09631",
-          "arxivId": "2606.09631",
-          "date": "2026-06-08",
-          "source": "arXiv",
-          "categories": [
-            "cs.GT"
-          ],
-          "scores": {
-            "modelNaturalness": 6.6,
-            "theoreticalStrength": 8.4,
-            "guaranteeQuality": 4.2,
-            "readingValue": 5.5,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 23.7,
-            "bonus": 6.7,
-            "total": 25.8
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 6.8,
+            "total": 35.8
           }
         },
         {
@@ -959,16 +905,38 @@
             "cs.GT"
           ],
           "scores": {
-            "modelNaturalness": 6.0,
-            "theoreticalStrength": 7.8,
-            "guaranteeQuality": 4.8,
-            "readingValue": 4.9,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 22.5,
-            "bonus": 6.4,
-            "total": 24.6
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 32.0
+          }
+        },
+        {
+          "title": "Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs",
+          "url": "https://arxiv.org/abs/2606.09631",
+          "arxivId": "2606.09631",
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
           }
         },
         {
@@ -981,40 +949,39 @@
             "cs.GT"
           ],
           "scores": {
-            "modelNaturalness": 6.1,
-            "theoreticalStrength": 7.9,
-            "guaranteeQuality": 4.9,
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
             "readingValue": 5.0,
-            "aiRelevance": 6.5,
-            "agtRelevance": 8.5,
-            "penalty": -1.0,
-            "baseTotal": 22.9,
-            "bonus": 5.0,
-            "total": 23.7
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 3.5,
+            "total": 29.5
           }
         },
         {
-          "title": "Axiomatic Market Making",
-          "url": "https://arxiv.org/abs/2606.09454",
-          "arxivId": "2606.09454",
+          "title": "Stability in Competitive Search with Results Diversification",
+          "url": "https://arxiv.org/abs/2606.10053",
+          "arxivId": "2606.10053",
           "date": "2026-06-08",
           "source": "arXiv",
           "categories": [
-            "q-fin.MF",
-            "econ.TH",
-            "q-fin.TR"
+            "cs.GT",
+            "cs.IR"
           ],
           "scores": {
-            "modelNaturalness": 6.2,
+            "modelNaturalness": 7.0,
             "theoreticalStrength": 8.0,
-            "guaranteeQuality": 3.8,
-            "readingValue": 3.8,
-            "aiRelevance": 8.5,
-            "agtRelevance": 8.5,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
             "penalty": -1.0,
-            "baseTotal": 20.8,
-            "bonus": 5.9,
-            "total": 22.7
+            "baseTotal": 24.0,
+            "bonus": 4.8,
+            "total": 25.9
           }
         }
       ],
@@ -1034,72 +1001,52 @@
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "最优多物品多竞拍者拍卖设计的对偶性：通过深度学习生成收益证书",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "机制设计",
+              "实验验证"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "多智能体系统",
+              "博弈学习",
+              "均衡分析"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "Characterizing revenue-optimal auctions for multi-item, multi-bidder settings remains a fundamental open problem, with no known closed-form solution existing beyond restrictive binary-type instances. This has motivated interest in computational approaches to o...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "为什么现有方法难以确认多物品拍卖的最优性？尽管深度学习已能设计出高收入的拍卖机制（如GemNet），但缺乏对最优性的严格证明。核心问题在于：如何为多竞拍者、多物品场景下的收益提供可计算的上界证书，从而衡量现有机制的接近程度。",
+              "modelAndSetup": "作者考虑n个竞拍者对m个物品的密封拍卖，每个竞拍者具有独立的连续估值分布。机制需满足主导策略激励相容（DSIC）和个体理性（IR）。目标是最大化期望收益。模型通过离散化连续类型空间，并引入拉格朗日乘子来对偶化DSIC约束，构建虚拟价值函数。",
+              "contributionsAndResults": "论文首次提出了一个可计算的对偶框架，为多物品多竞拍者的DSIC拍卖生成经认证的收益上界。结果显示，在2×2和3×2设置下，GemNet机制的收益分别在最优值的1.8%和3.7%以内，首次为其近优性提供了正式证明，并揭示RegretNet因激励不兼容而高估了可能收益。",
+              "methodsAndTechniques": "作者使用神经网络参数化满足流量守恒的拉格朗日乘子，将约束优化转化为无约束梯度下降。通过吸收马尔可夫链结构确保流量守恒自动成立。对于连续分布，提出‘提升’技术将粗粒度对偶解映射到细粒度网格或连续域，保持上界有效性。",
+              "limitationsAndReadingValue": "方法仍受限于网格离散化的维度灾难，虽通过神经网络缓解但仍难扩展至极高维。证明依赖均匀或可提升分布的特殊结构。最值得读的是其创新的对偶-深度学习融合框架，以及为长期开放的拍卖最优性问题提供计算性验证的新路径。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "最优多物品多竞拍者拍卖设计的对偶性：通过深度学习生成收益证书",
             "summarySections": {
-              "backgroundAndQuestion": "Characterizing revenue-optimal auctions for multi-item, multi-bidder settings remains a fundamental open problem, with no known closed-form solution existing beyond restrictive binary-type instances. This has motivated interest in computational approaches to o...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "为什么现有方法难以确认多物品拍卖的最优性？尽管深度学习已能设计出高收入的拍卖机制（如GemNet），但缺乏对最优性的严格证明。核心问题在于：如何为多竞拍者、多物品场景下的收益提供可计算的上界证书，从而衡量现有机制的接近程度。",
+              "modelAndSetup": "作者考虑n个竞拍者对m个物品的密封拍卖，每个竞拍者具有独立的连续估值分布。机制需满足主导策略激励相容（DSIC）和个体理性（IR）。目标是最大化期望收益。模型通过离散化连续类型空间，并引入拉格朗日乘子来对偶化DSIC约束，构建虚拟价值函数。",
+              "contributionsAndResults": "论文首次提出了一个可计算的对偶框架，为多物品多竞拍者的DSIC拍卖生成经认证的收益上界。结果显示，在2×2和3×2设置下，GemNet机制的收益分别在最优值的1.8%和3.7%以内，首次为其近优性提供了正式证明，并揭示RegretNet因激励不兼容而高估了可能收益。",
+              "methodsAndTechniques": "作者使用神经网络参数化满足流量守恒的拉格朗日乘子，将约束优化转化为无约束梯度下降。通过吸收马尔可夫链结构确保流量守恒自动成立。对于连续分布，提出‘提升’技术将粗粒度对偶解映射到细粒度网格或连续域，保持上界有效性。",
+              "limitationsAndReadingValue": "方法仍受限于网格离散化的维度灾难，虽通过神经网络缓解但仍难扩展至极高维。证明依赖均匀或可提升分布的特殊结构。最值得读的是其创新的对偶-深度学习融合框架，以及为长期开放的拍卖最优性问题提供计算性验证的新路径。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
-          }
-        },
-        {
-          "paper": {
-            "title": "Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs",
-            "url": "https://arxiv.org/abs/2606.09631",
-            "arxivId": "2606.09631",
-            "date": "2026-06-08",
-            "source": "arXiv",
-            "categories": [
-              "cs.GT"
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "多智能体系统",
+              "博弈学习",
+              "均衡分析"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "机制设计",
+              "实验验证"
             ]
-          },
-          "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
-          "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
-            "summarySections": {
-              "backgroundAndQuestion": "We study the problem of computing competitive equilibria in the Arctic product-mix auction, originally developed for the Icelandic government for exchanging blocked financial accounts, and more recently proposed by IMF staff for sovereign debt restructuring. F...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
-            }
-          },
-          "finalPaper": {
-            "titleZh": "",
-            "summarySections": {
-              "backgroundAndQuestion": "We study the problem of computing competitive equilibria in the Arctic product-mix auction, originally developed for the Icelandic government for exchanging blocked financial accounts, and more recently proposed by IMF staff for sovereign debt restructuring. F...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
-            },
-            "contentTags": [],
-            "researchParadigmTags": []
           }
         },
         {
@@ -1114,32 +1061,104 @@
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "单位需求买方下简单机制的基准紧逼近比",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "多物品机制",
+              "近似机制",
+              "收入最大化"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "We study revenue maximization in the unit-demand single-buyer setting. Our main result is that \\textsf{Uniform-Ironed-Virtual-Value Item Pricing} guarantees a {\\em tight} $3$-approximation to the \\textsf{Duality Relaxation Benchmark} [Chawla-Malec-Sivan, EC'10...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "为什么简单机制的收入保证长期停滞在4倍？在单位需求单买方场景中，最优机制因计算复杂而难以实施，学界转而研究简单机制如商品定价的近似性能。此前工作通过迈尔森拍卖间接分析，导致收入差距被放大，始终无法突破4倍逼近比的瓶颈。本文追问：能否绕开中间基准，直接分析简单机制与更优松弛基准之间的紧确界限？",
+              "modelAndSetup": "模型考虑一个卖方提供n个独立估值的物品，面对一个单位需求买方，其对每个物品有私有估值。卖方面临机制设计问题：通过设定价格菜单使期望收入最大化。研究聚焦于确定性商品定价机制，特别是基于统一铁化虚拟价值的价格策略，并将其与对偶松弛基准（DRB）进行比较，该基准是已知最紧的可计算上界。",
+              "contributionsAndResults": "论文证明均匀铁化虚拟价值商品定价机制对对偶松弛基准实现了紧确的3倍逼近，打破了长达十余年的4倍壁垒。同时闭合了该机制对最优商品定价的逼近比为2的猜想。此外，首次给出任意简单商品定价机制无法超越3倍逼近的不可能性结果，揭示了现有方法的极限。",
+              "methodsAndTechniques": "作者摒弃了以往依赖迈尔森拍卖作为中介的传统路径，转而直接构造针对对偶松弛基准的3竞争性先知不等式。核心技术是基于基准的先知不等式及其完全构造性证明，结合收入单调性、截断、延拓、缩放与扰动等一系列变换，逐步规约最坏情况实例结构，最终导出紧确界。",
+              "limitationsAndReadingValue": "结果局限于单位需求单买方设定下的铁化虚拟价值类定价机制，且证明严重依赖于对偶松弛基准的特定结构。尽管如此，其绕过传统中介基准的新分析范式、构造性规约最坏实例的方法论，以及对‘代表性单维化’方法局限性的揭示，为多物品机制设计提供了深刻洞见和可推广的技术工具，值得深入研读。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "单位需求买方下简单机制的基准紧逼近比",
             "summarySections": {
-              "backgroundAndQuestion": "We study revenue maximization in the unit-demand single-buyer setting. Our main result is that \\textsf{Uniform-Ironed-Virtual-Value Item Pricing} guarantees a {\\em tight} $3$-approximation to the \\textsf{Duality Relaxation Benchmark} [Chawla-Malec-Sivan, EC'10...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "为什么简单机制的收入保证长期停滞在4倍？在单位需求单买方场景中，最优机制因计算复杂而难以实施，学界转而研究简单机制如商品定价的近似性能。此前工作通过迈尔森拍卖间接分析，导致收入差距被放大，始终无法突破4倍逼近比的瓶颈。本文追问：能否绕开中间基准，直接分析简单机制与更优松弛基准之间的紧确界限？",
+              "modelAndSetup": "模型考虑一个卖方提供n个独立估值的物品，面对一个单位需求买方，其对每个物品有私有估值。卖方面临机制设计问题：通过设定价格菜单使期望收入最大化。研究聚焦于确定性商品定价机制，特别是基于统一铁化虚拟价值的价格策略，并将其与对偶松弛基准（DRB）进行比较，该基准是已知最紧的可计算上界。",
+              "contributionsAndResults": "论文证明均匀铁化虚拟价值商品定价机制对对偶松弛基准实现了紧确的3倍逼近，打破了长达十余年的4倍壁垒。同时闭合了该机制对最优商品定价的逼近比为2的猜想。此外，首次给出任意简单商品定价机制无法超越3倍逼近的不可能性结果，揭示了现有方法的极限。",
+              "methodsAndTechniques": "作者摒弃了以往依赖迈尔森拍卖作为中介的传统路径，转而直接构造针对对偶松弛基准的3竞争性先知不等式。核心技术是基于基准的先知不等式及其完全构造性证明，结合收入单调性、截断、延拓、缩放与扰动等一系列变换，逐步规约最坏情况实例结构，最终导出紧确界。",
+              "limitationsAndReadingValue": "结果局限于单位需求单买方设定下的铁化虚拟价值类定价机制，且证明严重依赖于对偶松弛基准的特定结构。尽管如此，其绕过传统中介基准的新分析范式、构造性规约最坏实例的方法论，以及对‘代表性单维化’方法局限性的揭示，为多物品机制设计提供了深刻洞见和可推广的技术工具，值得深入研读。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "多物品机制",
+              "近似机制",
+              "收入最大化"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs",
+            "url": "https://arxiv.org/abs/2606.09631",
+            "arxivId": "2606.09631",
+            "date": "2026-06-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过具有凸成本的北极拍卖高效重组主权债务",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么现有市场机制难以有效处理主权债务重组中的复杂供给偏好？传统Fisher市场模型仅关注买方需求，忽视卖方（如政府）的成本与供给约束。本文针对IMF提出的北极拍卖应用，解决当卖方具有分段递增边际成本时，如何计算竞争均衡这一长期未解的算法难题，填补了卖家侧建模与高效求解之间的空白。",
+              "modelAndSetup": "作者如何将主权债务置换抽象为一个带成本的拍卖模型？模型包含两类参与者：债权人作为买方，拥有拟线性效用和预算；主权政府作为卖方，对每种债务工具设定了分段递增的边际成本曲线和供应上限。均衡要求买方获得最大效用包，同时卖方在市场价格下利润最大化。该设定自然捕捉了财政限制与政策权衡。",
+              "contributionsAndResults": "论文最关键的突破是什么？首次证明当输入为有理数时，该模型存在有理数的竞争均衡，并据此设计出第一个多项式时间算法来精确计算此类均衡。这不仅解决了理论存在性与可计算性的匹配问题，还为现实中需要枚举多种供给方案以选择最优结果的应用提供了坚实可靠的计算基础。",
+              "methodsAndTechniques": "作者如何克服非固定供给带来的技术挑战？核心在于扩展经典对偶平衡流方法：通过维护一个混合最小割不变量，在内部迭代中分离实际供给与盈利性供给；利用成本函数的分段结构，在价格连续调整时不跳过均衡点；最终通过带下界的网络流实现买卖双方的联合最优。",
+              "limitationsAndReadingValue": "该工作的局限与核心价值何在？目前仅支持各商品间可分的凸成本，无法处理跨工具的耦合约束（如总风险限额）。最值得阅读的是其创新的混合不变量技术和对拟线性市场的算法拓展，为复杂供给条件下的市场设计提供了新的可计算性范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过具有凸成本的北极拍卖高效重组主权债务",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么现有市场机制难以有效处理主权债务重组中的复杂供给偏好？传统Fisher市场模型仅关注买方需求，忽视卖方（如政府）的成本与供给约束。本文针对IMF提出的北极拍卖应用，解决当卖方具有分段递增边际成本时，如何计算竞争均衡这一长期未解的算法难题，填补了卖家侧建模与高效求解之间的空白。",
+              "modelAndSetup": "作者如何将主权债务置换抽象为一个带成本的拍卖模型？模型包含两类参与者：债权人作为买方，拥有拟线性效用和预算；主权政府作为卖方，对每种债务工具设定了分段递增的边际成本曲线和供应上限。均衡要求买方获得最大效用包，同时卖方在市场价格下利润最大化。该设定自然捕捉了财政限制与政策权衡。",
+              "contributionsAndResults": "论文最关键的突破是什么？首次证明当输入为有理数时，该模型存在有理数的竞争均衡，并据此设计出第一个多项式时间算法来精确计算此类均衡。这不仅解决了理论存在性与可计算性的匹配问题，还为现实中需要枚举多种供给方案以选择最优结果的应用提供了坚实可靠的计算基础。",
+              "methodsAndTechniques": "作者如何克服非固定供给带来的技术挑战？核心在于扩展经典对偶平衡流方法：通过维护一个混合最小割不变量，在内部迭代中分离实际供给与盈利性供给；利用成本函数的分段结构，在价格连续调整时不跳过均衡点；最终通过带下界的网络流实现买卖双方的联合最优。",
+              "limitationsAndReadingValue": "该工作的局限与核心价值何在？目前仅支持各商品间可分的凸成本，无法处理跨工具的耦合约束（如总风险限额）。最值得阅读的是其创新的混合不变量技术和对拟线性市场的算法拓展，为复杂供给条件下的市场设计提供了新的可计算性范式。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析"
+            ]
           }
         },
         {
@@ -1154,74 +1173,111 @@
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "STON'R 收敛到多人博弈的一阶纳什均衡",
+            "researchParadigmTags": [
+              "算法设计",
+              "均衡分析",
+              "理论推导",
+              "实验验证"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "非凹博弈",
+              "一阶纳什均衡"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "Nonconcave games present a unique challenge, as neither pure Nash equilibria nor local Nash equilibria (LNE) are guaranteed to exist, even in zero-sum settings. Additionally, computing approximate LNE in smooth multiplayer games over bounded regions is PPAD-ha...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "为什么研究非凹连续博弈中的均衡计算？因为纯纳什均衡甚至局部纳什均衡（LNE）在非凹设置下可能不存在，且近似求解是PPAD难问题。这促使研究者转向更宽松的一阶解概念，如一阶纳什均衡（FONE），它基于变分不等式，存在性更有保障。本文关注的是如何将现有算法推广到更一般的多人非零和非凹博弈场景。",
+              "modelAndSetup": "作者考虑n人连续博弈，每位玩家有紧致凸策略集，效用函数光滑但不必凹。核心模型是将均衡求解转化为一个非单调变分不等式VI(v,X)，其中v是各玩家效用梯度拼接而成的向量场。FONE被定义为满足投影梯度不动点条件的策略组合，等价于该变分不等式的解。算法运行在单位超立方体上，通过仿射变换适配一般超矩形策略空间。",
+              "contributionsAndResults": "本文的主要贡献是将STON'R算法从二人零和博弈扩展到n人非零和博弈，并证明其收敛到FONE。这是首个在如此广泛设定下保证收敛到FONE的算法结果。特别地，FONE统一了此前的min-max临界点和凹博弈纳什均衡等概念，表明STON'R的目标解具有普适性，且在多个文献实例中恢复出局部或全局均衡。",
+              "methodsAndTechniques": "作者沿用STON'R的连续时间动态设计，通过逐坐标满足条件来引导轨迹：每个‘纪元’尝试满足一个新坐标，方向由梯度雅可比矩阵的行列式符号决定。关键在于证明原收敛分析不依赖零和或二人假设，仅需梯度Lipschitz和雅可比A-smooth等光滑性条件。离散版本则通过小步长逼近连续路径，最终收敛到近似FONE。",
+              "limitationsAndReadingValue": "局限在于策略空间限制为超矩形（虽可通过变换放宽），且FONE未必是LNE，算法也不保证找到二阶良好解。此外，三个拓扑假设虽称温和，但在复杂梯度场中是否成立仍需验证。最值得读的是其统一视角下的算法推广逻辑与连续动态设计，对博弈学习与多智能体优化有启发意义。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "STON'R 收敛到多人博弈的一阶纳什均衡",
             "summarySections": {
-              "backgroundAndQuestion": "Nonconcave games present a unique challenge, as neither pure Nash equilibria nor local Nash equilibria (LNE) are guaranteed to exist, even in zero-sum settings. Additionally, computing approximate LNE in smooth multiplayer games over bounded regions is PPAD-ha...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "为什么研究非凹连续博弈中的均衡计算？因为纯纳什均衡甚至局部纳什均衡（LNE）在非凹设置下可能不存在，且近似求解是PPAD难问题。这促使研究者转向更宽松的一阶解概念，如一阶纳什均衡（FONE），它基于变分不等式，存在性更有保障。本文关注的是如何将现有算法推广到更一般的多人非零和非凹博弈场景。",
+              "modelAndSetup": "作者考虑n人连续博弈，每位玩家有紧致凸策略集，效用函数光滑但不必凹。核心模型是将均衡求解转化为一个非单调变分不等式VI(v,X)，其中v是各玩家效用梯度拼接而成的向量场。FONE被定义为满足投影梯度不动点条件的策略组合，等价于该变分不等式的解。算法运行在单位超立方体上，通过仿射变换适配一般超矩形策略空间。",
+              "contributionsAndResults": "本文的主要贡献是将STON'R算法从二人零和博弈扩展到n人非零和博弈，并证明其收敛到FONE。这是首个在如此广泛设定下保证收敛到FONE的算法结果。特别地，FONE统一了此前的min-max临界点和凹博弈纳什均衡等概念，表明STON'R的目标解具有普适性，且在多个文献实例中恢复出局部或全局均衡。",
+              "methodsAndTechniques": "作者沿用STON'R的连续时间动态设计，通过逐坐标满足条件来引导轨迹：每个‘纪元’尝试满足一个新坐标，方向由梯度雅可比矩阵的行列式符号决定。关键在于证明原收敛分析不依赖零和或二人假设，仅需梯度Lipschitz和雅可比A-smooth等光滑性条件。离散版本则通过小步长逼近连续路径，最终收敛到近似FONE。",
+              "limitationsAndReadingValue": "局限在于策略空间限制为超矩形（虽可通过变换放宽），且FONE未必是LNE，算法也不保证找到二阶良好解。此外，三个拓扑假设虽称温和，但在复杂梯度场中是否成立仍需验证。最值得读的是其统一视角下的算法推广逻辑与连续动态设计，对博弈学习与多智能体优化有启发意义。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "非凹博弈",
+              "一阶纳什均衡"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "均衡分析",
+              "理论推导",
+              "实验验证"
+            ]
           }
         },
         {
           "paper": {
-            "title": "Axiomatic Market Making",
-            "url": "https://arxiv.org/abs/2606.09454",
-            "arxivId": "2606.09454",
+            "title": "Stability in Competitive Search with Results Diversification",
+            "url": "https://arxiv.org/abs/2606.10053",
+            "arxivId": "2606.10053",
             "date": "2026-06-08",
             "source": "arXiv",
             "categories": [
-              "q-fin.MF",
-              "econ.TH",
-              "q-fin.TR"
+              "cs.GT",
+              "cs.IR"
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "竞争性搜索中结果多样化的稳定性",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "机制设计"
+            ],
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "信息检索",
+              "多智能体系统",
+              "公平性"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "This paper axiomatizes the bid-ask market maker's quoting rule. A quoting rule maps the maker's state, namely inventory, belief, variance, trade intensity, and informed-trader fraction, to a bid-ask pair. Eight natural axioms, together with six environmental a...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "在竞争性搜索环境中，发布者会为了提升排名而主动修改内容，这种行为可能导致内容同质化，削弱搜索结果的多样性。尽管已有研究尝试通过多样化排序缓解该问题，但缺乏对长期稳定性的分析。本文提出核心问题：在发布者持续优化自身内容的博弈下，多样化排序能否既维持结果多样性又达到稳定均衡？",
+              "modelAndSetup": "文章构建了一个基于博弈论的竞争性搜索模型，其中发布者作为策略性玩家选择文档表示以最大化被点击概率。搜索引擎采用多样化排序机制（如xQuAD和xMMR），综合相关性和新颖性进行排序。用户效用取决于文档位置与内容差异，发布者据此调整策略，形成一个完全信息下的策略互动系统。",
+              "contributionsAndResults": "研究发现现有多样化方法面临稳定性与多样性的根本权衡：xQuAD在对称主题分布下导致所有发布者趋同于同一最优策略，牺牲多样性以换取稳定；而xMMR虽鼓励差异化，却可能无法形成纳什均衡，导致系统持续震荡。作者进一步提出一种效用诱导排序（UIR）机制，能保证均衡存在并兼顾多样性。",
+              "methodsAndTechniques": "作者通过纳什均衡分析揭示不同排序函数下的策略动态，利用递归最优响应和占优策略论证均衡存在性与唯一性。关键技术在于将用户效用函数直接转化为检索评分函数，从而构造出内在一致的排序机制。证明过程结合了期望最大化、对称性分析与数值反例验证。",
+              "limitationsAndReadingValue": "模型假设完全信息和确定性策略，现实中发布者难以精确估计排序机制。此外，UIR机制的实际部署需已知用户效用结构，具有一定理想化成分。最值得阅读的是其对‘稳定vs多样’悖论的清晰建模与理论刻画，以及通过效用诱导思想重构排序机制的设计洞察。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "竞争性搜索中结果多样化的稳定性",
             "summarySections": {
-              "backgroundAndQuestion": "This paper axiomatizes the bid-ask market maker's quoting rule. A quoting rule maps the maker's state, namely inventory, belief, variance, trade intensity, and informed-trader fraction, to a bid-ask pair. Eight natural axioms, together with six environmental a...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "在竞争性搜索环境中，发布者会为了提升排名而主动修改内容，这种行为可能导致内容同质化，削弱搜索结果的多样性。尽管已有研究尝试通过多样化排序缓解该问题，但缺乏对长期稳定性的分析。本文提出核心问题：在发布者持续优化自身内容的博弈下，多样化排序能否既维持结果多样性又达到稳定均衡？",
+              "modelAndSetup": "文章构建了一个基于博弈论的竞争性搜索模型，其中发布者作为策略性玩家选择文档表示以最大化被点击概率。搜索引擎采用多样化排序机制（如xQuAD和xMMR），综合相关性和新颖性进行排序。用户效用取决于文档位置与内容差异，发布者据此调整策略，形成一个完全信息下的策略互动系统。",
+              "contributionsAndResults": "研究发现现有多样化方法面临稳定性与多样性的根本权衡：xQuAD在对称主题分布下导致所有发布者趋同于同一最优策略，牺牲多样性以换取稳定；而xMMR虽鼓励差异化，却可能无法形成纳什均衡，导致系统持续震荡。作者进一步提出一种效用诱导排序（UIR）机制，能保证均衡存在并兼顾多样性。",
+              "methodsAndTechniques": "作者通过纳什均衡分析揭示不同排序函数下的策略动态，利用递归最优响应和占优策略论证均衡存在性与唯一性。关键技术在于将用户效用函数直接转化为检索评分函数，从而构造出内在一致的排序机制。证明过程结合了期望最大化、对称性分析与数值反例验证。",
+              "limitationsAndReadingValue": "模型假设完全信息和确定性策略，现实中发布者难以精确估计排序机制。此外，UIR机制的实际部署需已知用户效用结构，具有一定理想化成分。最值得阅读的是其对‘稳定vs多样’悖论的清晰建模与理论刻画，以及通过效用诱导思想重构排序机制的设计洞察。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "信息检索",
+              "多智能体系统",
+              "公平性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "机制设计"
+            ]
           }
         }
       ]
@@ -2151,334 +2207,282 @@
               "abstract": "Cooperative object transportation is essential in numerous domains, including industrial to domestic services. A popular transportation strategy is to carry objects on top of multi-robot systems. The corresponding task is typically solved by decomposing it into three interconnected subproblems: formation control, cooperative navigation, and collision avoidance. A particular challenge posed by real-world objects is their potentially arbitrary shape and non-uniform mass distribution, necessitating robot formations that securely support the object. In this work, we address the challenge of pattern formation control for transporting such real-world objects by proposing a novel multi-agent reinforcement learning approach. Our approach enables a multi-robot system to autonomously position itself underneath an object to support its weight while avoiding obstacles during the formation process. Our evaluations with diverse environments and varying numbers of robots show that our approach leads to policies that reliably produce balanced formations and generalize to cluttered scenes and objects with complex geometry and non-uniform mass distribution."
             }
           ],
-          "provider": "mock-after-error",
-          "error": "HTTP Error 401: Unauthorized",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
             "items": [
               {
                 "index": 0,
                 "scores": {
-                  "importance": 4.5,
-                  "horizonValue": 3.1,
-                  "clarity": 4.2,
-                  "theoreticalDepth": 3.2,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 17.4,
-                  "total": 17.4
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
                 }
               },
               {
                 "index": 1,
                 "scores": {
-                  "importance": 4.1,
-                  "horizonValue": 4.0,
-                  "clarity": 5.1,
-                  "theoreticalDepth": 4.1,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 18.7,
-                  "total": 18.7
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 2,
                 "scores": {
-                  "importance": 5.0,
-                  "horizonValue": 3.6,
-                  "clarity": 4.7,
-                  "theoreticalDepth": 5.9,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 22.4,
-                  "total": 22.4
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 3,
                 "scores": {
-                  "importance": 5.6,
-                  "horizonValue": 4.2,
-                  "clarity": 4.5,
-                  "theoreticalDepth": 4.3,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 21.0,
-                  "total": 21.0
+                  "importance": 5,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 1,
+                  "overall": 2,
+                  "penalty": -2
                 }
               },
               {
                 "index": 4,
                 "scores": {
-                  "importance": 4.5,
-                  "horizonValue": 3.1,
-                  "clarity": 4.2,
-                  "theoreticalDepth": 3.2,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 18.2,
-                  "total": 18.2
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 5,
                 "scores": {
-                  "importance": 5.7,
-                  "horizonValue": 5.5,
-                  "clarity": 5.4,
-                  "theoreticalDepth": 4.4,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 23.4,
-                  "total": 23.4
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 6,
                 "scores": {
-                  "importance": 5.6,
-                  "horizonValue": 4.2,
-                  "clarity": 5.3,
-                  "theoreticalDepth": 4.3,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 21.8,
-                  "total": 21.8
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -1
                 }
               },
               {
                 "index": 7,
                 "scores": {
-                  "importance": 5.5,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 4.2,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 22.6,
-                  "total": 22.6
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 8,
                 "scores": {
-                  "importance": 4.2,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 6.4,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 22.5,
-                  "total": 22.5
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 9,
                 "scores": {
-                  "importance": 5.4,
-                  "horizonValue": 5.2,
-                  "clarity": 5.1,
-                  "theoreticalDepth": 4.1,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 21.2,
-                  "total": 21.2
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 10,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 3.6,
-                  "overall": 3.2,
-                  "penalty": -1.0,
-                  "baseTotal": 20.0,
-                  "total": 20.0
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 11,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 3.6,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 21.0,
-                  "total": 21.0
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 12,
                 "scores": {
-                  "importance": 4.5,
-                  "horizonValue": 3.1,
-                  "clarity": 3.4,
-                  "theoreticalDepth": 5.4,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 18.8,
-                  "total": 18.8
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 13,
                 "scores": {
-                  "importance": 4.8,
-                  "horizonValue": 4.6,
-                  "clarity": 4.5,
-                  "theoreticalDepth": 3.5,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 19.8,
-                  "total": 19.8
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
                 }
               },
               {
                 "index": 14,
                 "scores": {
-                  "importance": 4.5,
-                  "horizonValue": 3.1,
-                  "clarity": 4.2,
-                  "theoreticalDepth": 3.2,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 17.4,
-                  "total": 17.4
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 15,
                 "scores": {
-                  "importance": 4.7,
-                  "horizonValue": 4.5,
-                  "clarity": 4.4,
-                  "theoreticalDepth": 3.4,
-                  "overall": 3.2,
-                  "penalty": -1.0,
-                  "baseTotal": 19.2,
-                  "total": 19.2
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 16,
                 "scores": {
-                  "importance": 5.5,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 4.2,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 21.6,
-                  "total": 21.6
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 17,
                 "scores": {
-                  "importance": 4.7,
-                  "horizonValue": 4.5,
-                  "clarity": 4.4,
-                  "theoreticalDepth": 5.6,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 22.4,
-                  "total": 22.4
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 18,
                 "scores": {
-                  "importance": 5.3,
-                  "horizonValue": 5.1,
-                  "clarity": 5.0,
-                  "theoreticalDepth": 6.2,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 24.0,
-                  "total": 24.0
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 19,
                 "scores": {
-                  "importance": 4.6,
-                  "horizonValue": 4.4,
-                  "clarity": 4.3,
-                  "theoreticalDepth": 3.3,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 19.0,
-                  "total": 19.0
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 5,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -2
                 }
               },
               {
                 "index": 20,
                 "scores": {
-                  "importance": 5.0,
-                  "horizonValue": 4.8,
-                  "clarity": 4.7,
-                  "theoreticalDepth": 3.7,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 20.6,
-                  "total": 20.6
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 21,
                 "scores": {
-                  "importance": 4.3,
-                  "horizonValue": 5.4,
-                  "clarity": 5.3,
-                  "theoreticalDepth": 4.3,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 22.5,
-                  "total": 22.5
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 22,
                 "scores": {
-                  "importance": 5.6,
-                  "horizonValue": 4.2,
-                  "clarity": 5.3,
-                  "theoreticalDepth": 4.3,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 21.8,
-                  "total": 21.8
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 23,
                 "scores": {
-                  "importance": 4.2,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 4.2,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 22.1,
-                  "total": 22.1
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 24,
                 "scores": {
-                  "importance": 5.1,
-                  "horizonValue": 4.9,
-                  "clarity": 4.8,
-                  "theoreticalDepth": 3.8,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 21.0,
-                  "total": 21.0
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               }
             ]
@@ -2495,14 +2499,14 @@
                 "cs.AI"
               ],
               "scores": {
-                "importance": 4.5,
-                "horizonValue": 3.1,
-                "clarity": 4.2,
-                "theoreticalDepth": 3.2,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 17.4,
-                "total": 17.4
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
               }
             },
             {
@@ -2516,14 +2520,14 @@
                 "cs.LG"
               ],
               "scores": {
-                "importance": 4.1,
-                "horizonValue": 4.0,
-                "clarity": 5.1,
-                "theoreticalDepth": 4.1,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 18.7,
-                "total": 18.7
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
               }
             },
             {
@@ -2539,13 +2543,13 @@
               ],
               "scores": {
                 "importance": 5.0,
-                "horizonValue": 3.6,
-                "clarity": 4.7,
-                "theoreticalDepth": 5.9,
-                "overall": 3.2,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 22.4,
-                "total": 22.4
+                "baseTotal": 25.0,
+                "total": 25.0
               }
             },
             {
@@ -2559,14 +2563,14 @@
                 "cs.AI"
               ],
               "scores": {
-                "importance": 5.6,
-                "horizonValue": 4.2,
-                "clarity": 4.5,
-                "theoreticalDepth": 4.3,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 21.0,
-                "total": 21.0
+                "importance": 5.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 1.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
               }
             },
             {
@@ -2581,14 +2585,14 @@
                 "cs.HC"
               ],
               "scores": {
-                "importance": 4.5,
-                "horizonValue": 3.1,
-                "clarity": 4.2,
-                "theoreticalDepth": 3.2,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 18.2,
-                "total": 18.2
+                "baseTotal": 23.0,
+                "total": 23.0
               }
             },
             {
@@ -2601,14 +2605,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.7,
-                "horizonValue": 5.5,
-                "clarity": 5.4,
-                "theoreticalDepth": 4.4,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 23.4,
-                "total": 23.4
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -2621,14 +2625,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.6,
-                "horizonValue": 4.2,
-                "clarity": 5.3,
-                "theoreticalDepth": 4.3,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 21.8,
-                "total": 21.8
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 14.0,
+                "total": 14.0
               }
             },
             {
@@ -2643,14 +2647,14 @@
                 "cs.LG"
               ],
               "scores": {
-                "importance": 5.5,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 4.2,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 22.6,
-                "total": 22.6
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -2665,14 +2669,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.2,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 6.4,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 22.5,
-                "total": 22.5
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
               }
             },
             {
@@ -2686,14 +2690,14 @@
                 "cs.CV"
               ],
               "scores": {
-                "importance": 5.4,
-                "horizonValue": 5.2,
-                "clarity": 5.1,
-                "theoreticalDepth": 4.1,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 21.2,
-                "total": 21.2
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
               }
             },
             {
@@ -2707,14 +2711,14 @@
                 "cs.CV"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 3.6,
-                "overall": 3.2,
-                "penalty": -1.0,
-                "baseTotal": 20.0,
-                "total": 20.0
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -2729,14 +2733,14 @@
                 "cs.CV"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 3.6,
-                "overall": 3.2,
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 21.0,
-                "total": 21.0
+                "baseTotal": 27.0,
+                "total": 27.0
               }
             },
             {
@@ -2749,14 +2753,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.5,
-                "horizonValue": 3.1,
-                "clarity": 3.4,
-                "theoreticalDepth": 5.4,
-                "overall": 2.4,
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 18.8,
-                "total": 18.8
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             },
             {
@@ -2769,14 +2773,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.8,
-                "horizonValue": 4.6,
-                "clarity": 4.5,
-                "theoreticalDepth": 3.5,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 19.8,
-                "total": 19.8
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
               }
             },
             {
@@ -2791,14 +2795,14 @@
                 "cs.LG"
               ],
               "scores": {
-                "importance": 4.5,
-                "horizonValue": 3.1,
-                "clarity": 4.2,
-                "theoreticalDepth": 3.2,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 17.4,
-                "total": 17.4
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -2812,14 +2816,14 @@
                 "cs.LG"
               ],
               "scores": {
-                "importance": 4.7,
-                "horizonValue": 4.5,
-                "clarity": 4.4,
-                "theoreticalDepth": 3.4,
-                "overall": 3.2,
-                "penalty": -1.0,
-                "baseTotal": 19.2,
-                "total": 19.2
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
               }
             },
             {
@@ -2832,14 +2836,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.5,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 4.2,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 21.6,
-                "total": 21.6
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
               }
             },
             {
@@ -2852,14 +2856,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.7,
-                "horizonValue": 4.5,
-                "clarity": 4.4,
-                "theoreticalDepth": 5.6,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 22.4,
-                "total": 22.4
+                "baseTotal": 25.0,
+                "total": 25.0
               }
             },
             {
@@ -2874,14 +2878,14 @@
                 "math.OC"
               ],
               "scores": {
-                "importance": 5.3,
-                "horizonValue": 5.1,
-                "clarity": 5.0,
-                "theoreticalDepth": 6.2,
-                "overall": 2.4,
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 24.0,
-                "total": 24.0
+                "baseTotal": 22.0,
+                "total": 22.0
               }
             },
             {
@@ -2896,14 +2900,14 @@
                 "cs.SE"
               ],
               "scores": {
-                "importance": 4.6,
-                "horizonValue": 4.4,
-                "clarity": 4.3,
-                "theoreticalDepth": 3.3,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 19.0,
-                "total": 19.0
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -2.0,
+                "baseTotal": 9.0,
+                "total": 9.0
               }
             },
             {
@@ -2917,13 +2921,13 @@
               ],
               "scores": {
                 "importance": 5.0,
-                "horizonValue": 4.8,
-                "clarity": 4.7,
-                "theoreticalDepth": 3.7,
-                "overall": 2.4,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 20.6,
-                "total": 20.6
+                "baseTotal": 26.0,
+                "total": 26.0
               }
             },
             {
@@ -2938,14 +2942,14 @@
                 "cs.LG"
               ],
               "scores": {
-                "importance": 4.3,
-                "horizonValue": 5.4,
-                "clarity": 5.3,
-                "theoreticalDepth": 4.3,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 22.5,
-                "total": 22.5
+                "baseTotal": 23.0,
+                "total": 23.0
               }
             },
             {
@@ -2959,14 +2963,14 @@
                 "eess.SY"
               ],
               "scores": {
-                "importance": 5.6,
-                "horizonValue": 4.2,
-                "clarity": 5.3,
-                "theoreticalDepth": 4.3,
-                "overall": 2.4,
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 21.8,
-                "total": 21.8
+                "baseTotal": 21.0,
+                "total": 21.0
               }
             },
             {
@@ -2980,14 +2984,14 @@
                 "cs.CV"
               ],
               "scores": {
-                "importance": 4.2,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 4.2,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 22.1,
-                "total": 22.1
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -3001,14 +3005,14 @@
                 "cs.AI"
               ],
               "scores": {
-                "importance": 5.1,
-                "horizonValue": 4.9,
-                "clarity": 4.8,
-                "theoreticalDepth": 3.8,
-                "overall": 2.4,
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 21.0,
-                "total": 21.0
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             }
           ]
@@ -3312,334 +3316,282 @@
               "abstract": "The Robot Operating System 2 (ROS 2) is a widely used middleware for robotic systems, characterized by a publish-subscribe (pub-sub) communication mechanism in which computation is structured as callbacks dispatched by ROS 2 executors. Despite its popularity, the pub-sub pattern in ROS 2 is inherently nondeterministic: the order in which these callbacks run is nondeterministic even within a single executor, and distributed deployments add further nondeterminism from the interleaving of messages across nodes and from network latency. Such nondeterminism often leads to concurrency issues and makes it virtually impossible to analyze for safeness and provide guarantees. We present a framework that is able to convert an unmodified ROS 2 application and run it under Lingua Franca (LF), a coordination language for deterministic execution using logical time, so that the same input always produces the same deterministic execution order. We first describe which ROS 2 features can be executed deterministically under logical time. Such features enable the possibility to establish an automatic conversion framework to extract information from a ROS 2 application and directly convert it into an LF program. The rich features of LF, such as logical-time delays, federated execution across processes, and fault handling, can then be applied to make the ROS 2 application be executed in a deterministic and timing-predictable manner without changing the ROS 2 code. We evaluate the framework on a synthetic example and on the Autoware reference system. We show that the order in which callbacks are executed differs in default ROS 2, while also having end-to-end latencies that vary across executions. In contrast, our LF-controlled ROS 2 system produces a deterministic execution order and consistent end-to-end latencies."
             }
           ],
-          "provider": "mock-after-error",
-          "error": "HTTP Error 401: Unauthorized",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
             "items": [
               {
                 "index": 0,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 3.6,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 20.2,
-                  "total": 20.2
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
                 }
               },
               {
                 "index": 1,
                 "scores": {
-                  "importance": 5.2,
-                  "horizonValue": 5.0,
-                  "clarity": 4.9,
-                  "theoreticalDepth": 6.1,
-                  "overall": 3.2,
-                  "penalty": -1.0,
-                  "baseTotal": 23.4,
-                  "total": 23.4
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 5,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 2,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 3.6,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 19.2,
-                  "total": 19.2
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 3,
                 "scores": {
-                  "importance": 5.2,
-                  "horizonValue": 5.0,
-                  "clarity": 4.9,
-                  "theoreticalDepth": 6.1,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 23.6,
-                  "total": 23.6
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 4,
                 "scores": {
-                  "importance": 5.5,
-                  "horizonValue": 4.1,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 4.2,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 21.4,
-                  "total": 21.4
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 5,
                 "scores": {
-                  "importance": 5.6,
-                  "horizonValue": 5.4,
-                  "clarity": 5.3,
-                  "theoreticalDepth": 4.3,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 23.0,
-                  "total": 23.0
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 6,
                 "scores": {
-                  "importance": 4.8,
-                  "horizonValue": 4.6,
-                  "clarity": 4.5,
-                  "theoreticalDepth": 3.5,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 19.8,
-                  "total": 19.8
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 7,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 5.8,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 22.4,
-                  "total": 22.4
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 8,
                 "scores": {
-                  "importance": 4.5,
-                  "horizonValue": 4.3,
-                  "clarity": 4.2,
-                  "theoreticalDepth": 3.2,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 17.6,
-                  "total": 17.6
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
                 }
               },
               {
                 "index": 9,
                 "scores": {
-                  "importance": 5.2,
-                  "horizonValue": 3.8,
-                  "clarity": 4.9,
-                  "theoreticalDepth": 6.1,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 21.4,
-                  "total": 21.4
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 10,
                 "scores": {
-                  "importance": 4.8,
-                  "horizonValue": 4.6,
-                  "clarity": 4.5,
-                  "theoreticalDepth": 3.5,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 20.6,
-                  "total": 20.6
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 11,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 3.6,
-                  "overall": 3.2,
-                  "penalty": -1.0,
-                  "baseTotal": 20.0,
-                  "total": 20.0
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 12,
                 "scores": {
-                  "importance": 4.0,
-                  "horizonValue": 5.1,
-                  "clarity": 5.0,
-                  "theoreticalDepth": 4.0,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 21.3,
-                  "total": 21.3
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 13,
                 "scores": {
-                  "importance": 3.8,
-                  "horizonValue": 3.7,
-                  "clarity": 4.8,
-                  "theoreticalDepth": 6.0,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 20.7,
-                  "total": 20.7
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 14,
                 "scores": {
-                  "importance": 4.8,
-                  "horizonValue": 4.6,
-                  "clarity": 4.5,
-                  "theoreticalDepth": 5.7,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 22.0,
-                  "total": 22.0
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 15,
                 "scores": {
-                  "importance": 3.2,
-                  "horizonValue": 4.3,
-                  "clarity": 4.2,
-                  "theoreticalDepth": 3.2,
-                  "overall": 3.2,
-                  "penalty": -1.0,
-                  "baseTotal": 17.1,
-                  "total": 17.1
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 16,
                 "scores": {
-                  "importance": 4.9,
-                  "horizonValue": 4.7,
-                  "clarity": 4.6,
-                  "theoreticalDepth": 3.6,
-                  "overall": 3.2,
-                  "penalty": -1.0,
-                  "baseTotal": 20.0,
-                  "total": 20.0
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 5,
+                  "theoreticalDepth": 5,
+                  "overall": 2,
+                  "penalty": 0
                 }
               },
               {
                 "index": 17,
                 "scores": {
-                  "importance": 5.5,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 4.2,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 23.4,
-                  "total": 23.4
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 18,
                 "scores": {
-                  "importance": 5.5,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 4.2,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 22.6,
-                  "total": 22.6
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 19,
                 "scores": {
-                  "importance": 4.1,
-                  "horizonValue": 5.2,
-                  "clarity": 5.1,
-                  "theoreticalDepth": 4.1,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 20.9,
-                  "total": 20.9
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
                 }
               },
               {
                 "index": 20,
                 "scores": {
-                  "importance": 5.0,
-                  "horizonValue": 3.6,
-                  "clarity": 3.9,
-                  "theoreticalDepth": 5.9,
-                  "overall": 2.4,
-                  "penalty": 0.0,
-                  "baseTotal": 20.8,
-                  "total": 20.8
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
                 }
               },
               {
                 "index": 21,
                 "scores": {
-                  "importance": 5.1,
-                  "horizonValue": 3.7,
-                  "clarity": 4.8,
-                  "theoreticalDepth": 3.8,
-                  "overall": 2.4,
-                  "penalty": -1.0,
-                  "baseTotal": 18.8,
-                  "total": 18.8
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": 0
                 }
               },
               {
                 "index": 22,
                 "scores": {
-                  "importance": 5.5,
-                  "horizonValue": 5.3,
-                  "clarity": 5.2,
-                  "theoreticalDepth": 6.4,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 25.6,
-                  "total": 25.6
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": 0
                 }
               },
               {
                 "index": 23,
                 "scores": {
-                  "importance": 5.7,
-                  "horizonValue": 5.5,
-                  "clarity": 5.4,
-                  "theoreticalDepth": 4.4,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 24.2,
-                  "total": 24.2
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
                 }
               },
               {
                 "index": 24,
                 "scores": {
-                  "importance": 4.6,
-                  "horizonValue": 4.4,
-                  "clarity": 4.3,
-                  "theoreticalDepth": 3.3,
-                  "overall": 3.2,
-                  "penalty": 0.0,
-                  "baseTotal": 19.8,
-                  "total": 19.8
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
                 }
               }
             ]
@@ -3656,14 +3608,14 @@
                 "cs.AI"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 3.6,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 20.2,
-                "total": 20.2
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
               }
             },
             {
@@ -3677,14 +3629,14 @@
                 "cs.CV"
               ],
               "scores": {
-                "importance": 5.2,
-                "horizonValue": 5.0,
-                "clarity": 4.9,
-                "theoreticalDepth": 6.1,
-                "overall": 3.2,
-                "penalty": -1.0,
-                "baseTotal": 23.4,
-                "total": 23.4
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 5.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             },
             {
@@ -3700,14 +3652,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 3.6,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 19.2,
-                "total": 19.2
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -3722,14 +3674,14 @@
                 "cs.CR"
               ],
               "scores": {
-                "importance": 5.2,
-                "horizonValue": 5.0,
-                "clarity": 4.9,
-                "theoreticalDepth": 6.1,
-                "overall": 2.4,
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 23.6,
-                "total": 23.6
+                "baseTotal": 26.0,
+                "total": 26.0
               }
             },
             {
@@ -3742,14 +3694,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.5,
-                "horizonValue": 4.1,
-                "clarity": 5.2,
-                "theoreticalDepth": 4.2,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 21.4,
-                "total": 21.4
+                "baseTotal": 24.0,
+                "total": 24.0
               }
             },
             {
@@ -3762,11 +3714,11 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.6,
-                "horizonValue": 5.4,
-                "clarity": 5.3,
-                "theoreticalDepth": 4.3,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
                 "baseTotal": 23.0,
                 "total": 23.0
@@ -3784,14 +3736,14 @@
                 "cs.LG"
               ],
               "scores": {
-                "importance": 4.8,
-                "horizonValue": 4.6,
-                "clarity": 4.5,
-                "theoreticalDepth": 3.5,
-                "overall": 2.4,
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 19.8,
-                "total": 19.8
+                "baseTotal": 18.0,
+                "total": 18.0
               }
             },
             {
@@ -3806,14 +3758,14 @@
                 "cs.SE"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 5.8,
-                "overall": 2.4,
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 22.4,
-                "total": 22.4
+                "baseTotal": 27.0,
+                "total": 27.0
               }
             },
             {
@@ -3828,14 +3780,14 @@
                 "cs.MA"
               ],
               "scores": {
-                "importance": 4.5,
-                "horizonValue": 4.3,
-                "clarity": 4.2,
-                "theoreticalDepth": 3.2,
-                "overall": 2.4,
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
                 "penalty": -1.0,
-                "baseTotal": 17.6,
-                "total": 17.6
+                "baseTotal": 19.0,
+                "total": 19.0
               }
             },
             {
@@ -3850,14 +3802,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.2,
-                "horizonValue": 3.8,
-                "clarity": 4.9,
-                "theoreticalDepth": 6.1,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 21.4,
-                "total": 21.4
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 19.0,
+                "total": 19.0
               }
             },
             {
@@ -3871,14 +3823,14 @@
                 "cs.AI"
               ],
               "scores": {
-                "importance": 4.8,
-                "horizonValue": 4.6,
-                "clarity": 4.5,
-                "theoreticalDepth": 3.5,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 20.6,
-                "total": 20.6
+                "baseTotal": 21.0,
+                "total": 21.0
               }
             },
             {
@@ -3891,12 +3843,12 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 3.6,
-                "overall": 3.2,
-                "penalty": -1.0,
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
                 "baseTotal": 20.0,
                 "total": 20.0
               }
@@ -3912,13 +3864,13 @@
               ],
               "scores": {
                 "importance": 4.0,
-                "horizonValue": 5.1,
+                "horizonValue": 4.0,
                 "clarity": 5.0,
                 "theoreticalDepth": 4.0,
-                "overall": 3.2,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 21.3,
-                "total": 21.3
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             },
             {
@@ -3932,14 +3884,14 @@
                 "cs.CV"
               ],
               "scores": {
-                "importance": 3.8,
-                "horizonValue": 3.7,
-                "clarity": 4.8,
-                "theoreticalDepth": 6.0,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 20.7,
-                "total": 20.7
+                "baseTotal": 22.0,
+                "total": 22.0
               }
             },
             {
@@ -3952,14 +3904,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.8,
-                "horizonValue": 4.6,
-                "clarity": 4.5,
-                "theoreticalDepth": 5.7,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 22.0,
-                "total": 22.0
+                "baseTotal": 21.0,
+                "total": 21.0
               }
             },
             {
@@ -3972,14 +3924,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 3.2,
-                "horizonValue": 4.3,
-                "clarity": 4.2,
-                "theoreticalDepth": 3.2,
-                "overall": 3.2,
-                "penalty": -1.0,
-                "baseTotal": 17.1,
-                "total": 17.1
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             },
             {
@@ -3993,14 +3945,14 @@
                 "eess.SY"
               ],
               "scores": {
-                "importance": 4.9,
-                "horizonValue": 4.7,
-                "clarity": 4.6,
-                "theoreticalDepth": 3.6,
-                "overall": 3.2,
-                "penalty": -1.0,
-                "baseTotal": 20.0,
-                "total": 20.0
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 5.0,
+                "overall": 2.0,
+                "penalty": 0.0,
+                "baseTotal": 17.0,
+                "total": 17.0
               }
             },
             {
@@ -4013,14 +3965,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.5,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 4.2,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 23.4,
-                "total": 23.4
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             },
             {
@@ -4033,14 +3985,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.5,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 4.2,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 22.6,
-                "total": 22.6
+                "baseTotal": 20.0,
+                "total": 20.0
               }
             },
             {
@@ -4053,14 +4005,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.1,
-                "horizonValue": 5.2,
-                "clarity": 5.1,
-                "theoreticalDepth": 4.1,
-                "overall": 2.4,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
                 "penalty": 0.0,
-                "baseTotal": 20.9,
-                "total": 20.9
+                "baseTotal": 21.0,
+                "total": 21.0
               }
             },
             {
@@ -4073,14 +4025,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.0,
-                "horizonValue": 3.6,
-                "clarity": 3.9,
-                "theoreticalDepth": 5.9,
-                "overall": 2.4,
-                "penalty": 0.0,
-                "baseTotal": 20.8,
-                "total": 20.8
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 7.0,
+                "total": 7.0
               }
             },
             {
@@ -4094,14 +4046,14 @@
                 "eess.SY"
               ],
               "scores": {
-                "importance": 5.1,
-                "horizonValue": 3.7,
-                "clarity": 4.8,
-                "theoreticalDepth": 3.8,
-                "overall": 2.4,
-                "penalty": -1.0,
-                "baseTotal": 18.8,
-                "total": 18.8
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": 0.0,
+                "baseTotal": 16.0,
+                "total": 16.0
               }
             },
             {
@@ -4115,14 +4067,14 @@
                 "cs.AI"
               ],
               "scores": {
-                "importance": 5.5,
-                "horizonValue": 5.3,
-                "clarity": 5.2,
-                "theoreticalDepth": 6.4,
-                "overall": 3.2,
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
                 "penalty": 0.0,
-                "baseTotal": 25.6,
-                "total": 25.6
+                "baseTotal": 15.0,
+                "total": 15.0
               }
             },
             {
@@ -4135,14 +4087,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 5.7,
-                "horizonValue": 5.5,
-                "clarity": 5.4,
-                "theoreticalDepth": 4.4,
-                "overall": 3.2,
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 24.2,
-                "total": 24.2
+                "baseTotal": 26.0,
+                "total": 26.0
               }
             },
             {
@@ -4155,14 +4107,14 @@
                 "cs.RO"
               ],
               "scores": {
-                "importance": 4.6,
-                "horizonValue": 4.4,
-                "clarity": 4.3,
-                "theoreticalDepth": 3.3,
-                "overall": 3.2,
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
                 "penalty": 0.0,
-                "baseTotal": 19.8,
-                "total": 19.8
+                "baseTotal": 25.0,
+                "total": 25.0
               }
             }
           ]
@@ -4180,14 +4132,14 @@
             "cs.AI"
           ],
           "scores": {
-            "importance": 4.5,
-            "horizonValue": 3.1,
-            "clarity": 4.2,
-            "theoreticalDepth": 3.2,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 17.4,
-            "total": 17.4
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
           }
         },
         {
@@ -4201,14 +4153,14 @@
             "cs.LG"
           ],
           "scores": {
-            "importance": 4.1,
-            "horizonValue": 4.0,
-            "clarity": 5.1,
-            "theoreticalDepth": 4.1,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 18.7,
-            "total": 18.7
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
           }
         },
         {
@@ -4224,13 +4176,13 @@
           ],
           "scores": {
             "importance": 5.0,
-            "horizonValue": 3.6,
-            "clarity": 4.7,
-            "theoreticalDepth": 5.9,
-            "overall": 3.2,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 22.4,
-            "total": 22.4
+            "baseTotal": 25.0,
+            "total": 25.0
           }
         },
         {
@@ -4244,14 +4196,14 @@
             "cs.AI"
           ],
           "scores": {
-            "importance": 5.6,
-            "horizonValue": 4.2,
-            "clarity": 4.5,
-            "theoreticalDepth": 4.3,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 21.0,
-            "total": 21.0
+            "importance": 5.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 1.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
           }
         },
         {
@@ -4266,14 +4218,14 @@
             "cs.HC"
           ],
           "scores": {
-            "importance": 4.5,
-            "horizonValue": 3.1,
-            "clarity": 4.2,
-            "theoreticalDepth": 3.2,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 18.2,
-            "total": 18.2
+            "baseTotal": 23.0,
+            "total": 23.0
           }
         },
         {
@@ -4286,14 +4238,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.7,
-            "horizonValue": 5.5,
-            "clarity": 5.4,
-            "theoreticalDepth": 4.4,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 23.4,
-            "total": 23.4
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4306,14 +4258,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.6,
-            "horizonValue": 4.2,
-            "clarity": 5.3,
-            "theoreticalDepth": 4.3,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 21.8,
-            "total": 21.8
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 14.0,
+            "total": 14.0
           }
         },
         {
@@ -4328,14 +4280,14 @@
             "cs.LG"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 4.2,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 22.6,
-            "total": 22.6
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4350,14 +4302,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.2,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 6.4,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 22.5,
-            "total": 22.5
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
           }
         },
         {
@@ -4371,14 +4323,14 @@
             "cs.CV"
           ],
           "scores": {
-            "importance": 5.4,
-            "horizonValue": 5.2,
-            "clarity": 5.1,
-            "theoreticalDepth": 4.1,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 21.2,
-            "total": 21.2
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
           }
         },
         {
@@ -4392,14 +4344,14 @@
             "cs.CV"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 3.6,
-            "overall": 3.2,
-            "penalty": -1.0,
-            "baseTotal": 20.0,
-            "total": 20.0
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4414,14 +4366,14 @@
             "cs.CV"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 3.6,
-            "overall": 3.2,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 21.0,
-            "total": 21.0
+            "baseTotal": 27.0,
+            "total": 27.0
           }
         },
         {
@@ -4434,14 +4386,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.5,
-            "horizonValue": 3.1,
-            "clarity": 3.4,
-            "theoreticalDepth": 5.4,
-            "overall": 2.4,
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 18.8,
-            "total": 18.8
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -4454,14 +4406,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.8,
-            "horizonValue": 4.6,
-            "clarity": 4.5,
-            "theoreticalDepth": 3.5,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 19.8,
-            "total": 19.8
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
           }
         },
         {
@@ -4476,14 +4428,14 @@
             "cs.LG"
           ],
           "scores": {
-            "importance": 4.5,
-            "horizonValue": 3.1,
-            "clarity": 4.2,
-            "theoreticalDepth": 3.2,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 17.4,
-            "total": 17.4
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4497,14 +4449,14 @@
             "cs.LG"
           ],
           "scores": {
-            "importance": 4.7,
-            "horizonValue": 4.5,
-            "clarity": 4.4,
-            "theoreticalDepth": 3.4,
-            "overall": 3.2,
-            "penalty": -1.0,
-            "baseTotal": 19.2,
-            "total": 19.2
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
           }
         },
         {
@@ -4517,14 +4469,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 4.2,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 21.6,
-            "total": 21.6
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
           }
         },
         {
@@ -4537,14 +4489,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.7,
-            "horizonValue": 4.5,
-            "clarity": 4.4,
-            "theoreticalDepth": 5.6,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 22.4,
-            "total": 22.4
+            "baseTotal": 25.0,
+            "total": 25.0
           }
         },
         {
@@ -4559,14 +4511,14 @@
             "math.OC"
           ],
           "scores": {
-            "importance": 5.3,
-            "horizonValue": 5.1,
-            "clarity": 5.0,
-            "theoreticalDepth": 6.2,
-            "overall": 2.4,
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 24.0,
-            "total": 24.0
+            "baseTotal": 22.0,
+            "total": 22.0
           }
         },
         {
@@ -4581,14 +4533,14 @@
             "cs.SE"
           ],
           "scores": {
-            "importance": 4.6,
-            "horizonValue": 4.4,
-            "clarity": 4.3,
-            "theoreticalDepth": 3.3,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 19.0,
-            "total": 19.0
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -2.0,
+            "baseTotal": 9.0,
+            "total": 9.0
           }
         },
         {
@@ -4602,13 +4554,13 @@
           ],
           "scores": {
             "importance": 5.0,
-            "horizonValue": 4.8,
-            "clarity": 4.7,
-            "theoreticalDepth": 3.7,
-            "overall": 2.4,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 20.6,
-            "total": 20.6
+            "baseTotal": 26.0,
+            "total": 26.0
           }
         },
         {
@@ -4623,14 +4575,14 @@
             "cs.LG"
           ],
           "scores": {
-            "importance": 4.3,
-            "horizonValue": 5.4,
-            "clarity": 5.3,
-            "theoreticalDepth": 4.3,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 22.5,
-            "total": 22.5
+            "baseTotal": 23.0,
+            "total": 23.0
           }
         },
         {
@@ -4644,14 +4596,14 @@
             "eess.SY"
           ],
           "scores": {
-            "importance": 5.6,
-            "horizonValue": 4.2,
-            "clarity": 5.3,
-            "theoreticalDepth": 4.3,
-            "overall": 2.4,
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 21.8,
-            "total": 21.8
+            "baseTotal": 21.0,
+            "total": 21.0
           }
         },
         {
@@ -4665,14 +4617,14 @@
             "cs.CV"
           ],
           "scores": {
-            "importance": 4.2,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 4.2,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 22.1,
-            "total": 22.1
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4686,14 +4638,14 @@
             "cs.AI"
           ],
           "scores": {
-            "importance": 5.1,
-            "horizonValue": 4.9,
-            "clarity": 4.8,
-            "theoreticalDepth": 3.8,
-            "overall": 2.4,
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 21.0,
-            "total": 21.0
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -4707,14 +4659,14 @@
             "cs.AI"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 3.6,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 20.2,
-            "total": 20.2
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
           }
         },
         {
@@ -4728,14 +4680,14 @@
             "cs.CV"
           ],
           "scores": {
-            "importance": 5.2,
-            "horizonValue": 5.0,
-            "clarity": 4.9,
-            "theoreticalDepth": 6.1,
-            "overall": 3.2,
-            "penalty": -1.0,
-            "baseTotal": 23.4,
-            "total": 23.4
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -4751,14 +4703,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 3.6,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 19.2,
-            "total": 19.2
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4773,14 +4725,14 @@
             "cs.CR"
           ],
           "scores": {
-            "importance": 5.2,
-            "horizonValue": 5.0,
-            "clarity": 4.9,
-            "theoreticalDepth": 6.1,
-            "overall": 2.4,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 23.6,
-            "total": 23.6
+            "baseTotal": 26.0,
+            "total": 26.0
           }
         },
         {
@@ -4793,14 +4745,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 4.1,
-            "clarity": 5.2,
-            "theoreticalDepth": 4.2,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 21.4,
-            "total": 21.4
+            "baseTotal": 24.0,
+            "total": 24.0
           }
         },
         {
@@ -4813,11 +4765,11 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.6,
-            "horizonValue": 5.4,
-            "clarity": 5.3,
-            "theoreticalDepth": 4.3,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
             "baseTotal": 23.0,
             "total": 23.0
@@ -4835,14 +4787,14 @@
             "cs.LG"
           ],
           "scores": {
-            "importance": 4.8,
-            "horizonValue": 4.6,
-            "clarity": 4.5,
-            "theoreticalDepth": 3.5,
-            "overall": 2.4,
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 19.8,
-            "total": 19.8
+            "baseTotal": 18.0,
+            "total": 18.0
           }
         },
         {
@@ -4857,14 +4809,14 @@
             "cs.SE"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 5.8,
-            "overall": 2.4,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 22.4,
-            "total": 22.4
+            "baseTotal": 27.0,
+            "total": 27.0
           }
         },
         {
@@ -4879,14 +4831,14 @@
             "cs.MA"
           ],
           "scores": {
-            "importance": 4.5,
-            "horizonValue": 4.3,
-            "clarity": 4.2,
-            "theoreticalDepth": 3.2,
-            "overall": 2.4,
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
             "penalty": -1.0,
-            "baseTotal": 17.6,
-            "total": 17.6
+            "baseTotal": 19.0,
+            "total": 19.0
           }
         },
         {
@@ -4901,14 +4853,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.2,
-            "horizonValue": 3.8,
-            "clarity": 4.9,
-            "theoreticalDepth": 6.1,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 21.4,
-            "total": 21.4
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 19.0,
+            "total": 19.0
           }
         },
         {
@@ -4922,14 +4874,14 @@
             "cs.AI"
           ],
           "scores": {
-            "importance": 4.8,
-            "horizonValue": 4.6,
-            "clarity": 4.5,
-            "theoreticalDepth": 3.5,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 20.6,
-            "total": 20.6
+            "baseTotal": 21.0,
+            "total": 21.0
           }
         },
         {
@@ -4942,12 +4894,12 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 3.6,
-            "overall": 3.2,
-            "penalty": -1.0,
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
             "baseTotal": 20.0,
             "total": 20.0
           }
@@ -4963,13 +4915,13 @@
           ],
           "scores": {
             "importance": 4.0,
-            "horizonValue": 5.1,
+            "horizonValue": 4.0,
             "clarity": 5.0,
             "theoreticalDepth": 4.0,
-            "overall": 3.2,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 21.3,
-            "total": 21.3
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -4983,14 +4935,14 @@
             "cs.CV"
           ],
           "scores": {
-            "importance": 3.8,
-            "horizonValue": 3.7,
-            "clarity": 4.8,
-            "theoreticalDepth": 6.0,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 20.7,
-            "total": 20.7
+            "baseTotal": 22.0,
+            "total": 22.0
           }
         },
         {
@@ -5003,14 +4955,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.8,
-            "horizonValue": 4.6,
-            "clarity": 4.5,
-            "theoreticalDepth": 5.7,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 22.0,
-            "total": 22.0
+            "baseTotal": 21.0,
+            "total": 21.0
           }
         },
         {
@@ -5023,14 +4975,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 3.2,
-            "horizonValue": 4.3,
-            "clarity": 4.2,
-            "theoreticalDepth": 3.2,
-            "overall": 3.2,
-            "penalty": -1.0,
-            "baseTotal": 17.1,
-            "total": 17.1
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -5044,14 +4996,14 @@
             "eess.SY"
           ],
           "scores": {
-            "importance": 4.9,
-            "horizonValue": 4.7,
-            "clarity": 4.6,
-            "theoreticalDepth": 3.6,
-            "overall": 3.2,
-            "penalty": -1.0,
-            "baseTotal": 20.0,
-            "total": 20.0
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 5.0,
+            "overall": 2.0,
+            "penalty": 0.0,
+            "baseTotal": 17.0,
+            "total": 17.0
           }
         },
         {
@@ -5064,14 +5016,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 4.2,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 23.4,
-            "total": 23.4
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -5084,14 +5036,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 4.2,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 22.6,
-            "total": 22.6
+            "baseTotal": 20.0,
+            "total": 20.0
           }
         },
         {
@@ -5104,14 +5056,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.1,
-            "horizonValue": 5.2,
-            "clarity": 5.1,
-            "theoreticalDepth": 4.1,
-            "overall": 2.4,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
             "penalty": 0.0,
-            "baseTotal": 20.9,
-            "total": 20.9
+            "baseTotal": 21.0,
+            "total": 21.0
           }
         },
         {
@@ -5124,14 +5076,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.0,
-            "horizonValue": 3.6,
-            "clarity": 3.9,
-            "theoreticalDepth": 5.9,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 20.8,
-            "total": 20.8
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 7.0,
+            "total": 7.0
           }
         },
         {
@@ -5145,14 +5097,14 @@
             "eess.SY"
           ],
           "scores": {
-            "importance": 5.1,
-            "horizonValue": 3.7,
-            "clarity": 4.8,
-            "theoreticalDepth": 3.8,
-            "overall": 2.4,
-            "penalty": -1.0,
-            "baseTotal": 18.8,
-            "total": 18.8
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": 0.0,
+            "baseTotal": 16.0,
+            "total": 16.0
           }
         },
         {
@@ -5166,14 +5118,14 @@
             "cs.AI"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 6.4,
-            "overall": 3.2,
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
             "penalty": 0.0,
-            "baseTotal": 25.6,
-            "total": 25.6
+            "baseTotal": 15.0,
+            "total": 15.0
           }
         },
         {
@@ -5186,14 +5138,14 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 5.7,
-            "horizonValue": 5.5,
-            "clarity": 5.4,
-            "theoreticalDepth": 4.4,
-            "overall": 3.2,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 24.2,
-            "total": 24.2
+            "baseTotal": 26.0,
+            "total": 26.0
           }
         },
         {
@@ -5206,348 +5158,436 @@
             "cs.RO"
           ],
           "scores": {
-            "importance": 4.6,
-            "horizonValue": 4.4,
-            "clarity": 4.3,
-            "theoreticalDepth": 3.3,
-            "overall": 3.2,
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 19.8,
-            "total": 19.8
+            "baseTotal": 25.0,
+            "total": 25.0
           }
         }
       ],
       "selectedForOutput": [
         {
-          "title": "Self-Paced Curriculum Reinforcement Learning for Autonomous Superbike Racing in Simulation",
-          "url": "https://arxiv.org/abs/2606.09236",
-          "arxivId": "2606.09236",
+          "title": "What Demonstration Curation Metrics Do to Your Policy",
+          "url": "https://arxiv.org/abs/2606.10229",
+          "arxivId": "2606.10229",
           "date": "2026-06-08",
           "source": "arXiv",
           "categories": [
             "cs.RO",
-            "cs.AI"
+            "cs.LG"
           ],
           "scores": {
-            "importance": 5.5,
-            "horizonValue": 5.3,
-            "clarity": 5.2,
-            "theoreticalDepth": 6.4,
-            "overall": 3.2,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 25.6,
-            "total": 25.6
+            "baseTotal": 27.0,
+            "total": 27.0
           }
         },
         {
-          "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
-          "url": "https://arxiv.org/abs/2606.09215",
-          "arxivId": "2606.09215",
-          "date": "2026-06-08",
-          "source": "arXiv",
-          "categories": [
-            "cs.RO"
-          ],
-          "scores": {
-            "importance": 5.7,
-            "horizonValue": 5.5,
-            "clarity": 5.4,
-            "theoreticalDepth": 4.4,
-            "overall": 3.2,
-            "penalty": 0.0,
-            "baseTotal": 24.2,
-            "total": 24.2
-          }
-        },
-        {
-          "title": "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
-          "url": "https://arxiv.org/abs/2606.14763",
-          "arxivId": "2606.14763",
-          "date": "2026-06-08",
-          "source": "arXiv",
-          "categories": [
-            "cs.RO",
-            "cs.LG",
-            "math.OC"
-          ],
-          "scores": {
-            "importance": 5.3,
-            "horizonValue": 5.1,
-            "clarity": 5.0,
-            "theoreticalDepth": 6.2,
-            "overall": 2.4,
-            "penalty": 0.0,
-            "baseTotal": 24.0,
-            "total": 24.0
-          }
-        },
-        {
-          "title": "Targeting World Models to Compromise Robot Learning Pipelines",
-          "url": "https://arxiv.org/abs/2606.09499",
-          "arxivId": "2606.09499",
+          "title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
+          "url": "https://arxiv.org/abs/2606.09811",
+          "arxivId": "2606.09811",
           "date": "2026-06-08",
           "source": "arXiv",
           "categories": [
             "cs.RO",
             "cs.AI",
-            "cs.CR"
+            "cs.CV"
           ],
           "scores": {
-            "importance": 5.2,
-            "horizonValue": 5.0,
-            "clarity": 4.9,
-            "theoreticalDepth": 6.1,
-            "overall": 2.4,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 23.6,
-            "total": 23.6
+            "baseTotal": 27.0,
+            "total": 27.0
           }
         },
         {
-          "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
-          "url": "https://arxiv.org/abs/2606.10040",
-          "arxivId": "2606.10040",
+          "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
+          "url": "https://arxiv.org/abs/2606.09749",
+          "arxivId": "2606.09749",
           "date": "2026-06-08",
           "source": "arXiv",
           "categories": [
-            "cs.RO"
+            "cs.RO",
+            "cs.LG"
           ],
           "scores": {
-            "importance": 5.7,
-            "horizonValue": 5.5,
-            "clarity": 5.4,
-            "theoreticalDepth": 4.4,
-            "overall": 2.4,
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
             "penalty": 0.0,
-            "baseTotal": 23.4,
-            "total": 23.4
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer",
+          "url": "https://arxiv.org/abs/2606.09416",
+          "arxivId": "2606.09416",
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
+          "url": "https://arxiv.org/abs/2606.09827",
+          "arxivId": "2606.09827",
+          "date": "2026-06-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
           }
         }
       ],
       "enrichOutputs": [
         {
           "paper": {
-            "title": "Self-Paced Curriculum Reinforcement Learning for Autonomous Superbike Racing in Simulation",
-            "url": "https://arxiv.org/abs/2606.09236",
-            "arxivId": "2606.09236",
+            "title": "What Demonstration Curation Metrics Do to Your Policy",
+            "url": "https://arxiv.org/abs/2606.10229",
+            "arxivId": "2606.10229",
             "date": "2026-06-08",
             "source": "arXiv",
             "categories": [
               "cs.RO",
-              "cs.AI"
+              "cs.LG"
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "演示筛选指标如何影响你的策略",
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "评测方法"
+            ],
+            "contentTags": [
+              "强化学习",
+              "行为克隆",
+              "演示质量",
+              "策略学习",
+              "鲁棒性"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "Autonomous Racing has seen remarkable progress through deep Reinforcement Learning (RL), primarily for four-wheeled vehicles. However, motorbikes introduce substantially greater complexity due to the need to manage balance and lean angle, in addition to more r...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "在模仿学习中，策略性能高度依赖演示数据的质量。现实中收集的演示常混入缺陷样本，因此常用质量指标进行筛选。然而，现有研究多关注指标检测缺陷的能力，却忽视其筛选后的数据是否真能训练出更优策略。本文指出，高检测准确率不等于好策略产出，揭示了评测指标与实际效用之间的根本脱节。",
+              "modelAndSetup": "研究基于LIBERO环境中的抓取放置任务，注入一种结构性缺陷（搬运阶段提前松开夹爪），构建含80%缺陷样本的数据集。作者评估七种常见演示质量指标，在统一设定下比较其缺陷检测能力（AUROC）与下游行为克隆策略的成功率。关键设计是控制片段长度，排除因成功与失败演示时长差异带来的虚假相关性，确保指标反映真实内容判别能力。",
+              "contributionsAndResults": "核心发现是检测性能与策略表现几乎无关：最高AUROC的指标产出最差策略（13.3%成功率），而AUROC仅0.638的轨迹对齐指标却接近理想上限（90.0%）。此外，多数指标通过利用片段长度差异虚增AUROC，一旦控制该变量即大幅下降。这说明当前评测严重误导，真正有效的筛选应以最终策略表现为标准。",
+              "methodsAndTechniques": "作者通过截断所有演示至最短成功长度（324步），消除片段长度作为代理特征的影响，从而分离出指标对内容本身的判别能力。各指标基于动作或状态序列计算单一质量分，如平滑性、异常检测、最近邻距离等。筛选后保留前75%样本训练策略，并在多随机种子下测试成功率，建立从指标到策略性能的完整因果链。",
+              "limitationsAndReadingValue": "实验局限于单一任务与特定缺陷类型，高污染率（80%）也高于现实场景，结论外推需谨慎。尽管如此，其问题设定极具警示意义——依赖AUROC可能选错最佳指标。最值得读的是其实验设计与结果分析，它颠覆了对演示筛选的常规认知，强调必须以最终策略性能而非检测指标来评估筛选方法的有效性。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "演示筛选指标如何影响你的策略",
             "summarySections": {
-              "backgroundAndQuestion": "Autonomous Racing has seen remarkable progress through deep Reinforcement Learning (RL), primarily for four-wheeled vehicles. However, motorbikes introduce substantially greater complexity due to the need to manage balance and lean angle, in addition to more r...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "在模仿学习中，策略性能高度依赖演示数据的质量。现实中收集的演示常混入缺陷样本，因此常用质量指标进行筛选。然而，现有研究多关注指标检测缺陷的能力，却忽视其筛选后的数据是否真能训练出更优策略。本文指出，高检测准确率不等于好策略产出，揭示了评测指标与实际效用之间的根本脱节。",
+              "modelAndSetup": "研究基于LIBERO环境中的抓取放置任务，注入一种结构性缺陷（搬运阶段提前松开夹爪），构建含80%缺陷样本的数据集。作者评估七种常见演示质量指标，在统一设定下比较其缺陷检测能力（AUROC）与下游行为克隆策略的成功率。关键设计是控制片段长度，排除因成功与失败演示时长差异带来的虚假相关性，确保指标反映真实内容判别能力。",
+              "contributionsAndResults": "核心发现是检测性能与策略表现几乎无关：最高AUROC的指标产出最差策略（13.3%成功率），而AUROC仅0.638的轨迹对齐指标却接近理想上限（90.0%）。此外，多数指标通过利用片段长度差异虚增AUROC，一旦控制该变量即大幅下降。这说明当前评测严重误导，真正有效的筛选应以最终策略表现为标准。",
+              "methodsAndTechniques": "作者通过截断所有演示至最短成功长度（324步），消除片段长度作为代理特征的影响，从而分离出指标对内容本身的判别能力。各指标基于动作或状态序列计算单一质量分，如平滑性、异常检测、最近邻距离等。筛选后保留前75%样本训练策略，并在多随机种子下测试成功率，建立从指标到策略性能的完整因果链。",
+              "limitationsAndReadingValue": "实验局限于单一任务与特定缺陷类型，高污染率（80%）也高于现实场景，结论外推需谨慎。尽管如此，其问题设定极具警示意义——依赖AUROC可能选错最佳指标。最值得读的是其实验设计与结果分析，它颠覆了对演示筛选的常规认知，强调必须以最终策略性能而非检测指标来评估筛选方法的有效性。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
+            "contentTags": [
+              "强化学习",
+              "行为克隆",
+              "演示质量",
+              "策略学习",
+              "鲁棒性"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "评测方法"
+            ]
           }
         },
         {
           "paper": {
-            "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
-            "url": "https://arxiv.org/abs/2606.09215",
-            "arxivId": "2606.09215",
-            "date": "2026-06-08",
-            "source": "arXiv",
-            "categories": [
-              "cs.RO"
-            ]
-          },
-          "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
-          "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
-            "summarySections": {
-              "backgroundAndQuestion": "World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
-            }
-          },
-          "finalPaper": {
-            "titleZh": "",
-            "summarySections": {
-              "backgroundAndQuestion": "World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
-            },
-            "contentTags": [],
-            "researchParadigmTags": []
-          }
-        },
-        {
-          "paper": {
-            "title": "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
-            "url": "https://arxiv.org/abs/2606.14763",
-            "arxivId": "2606.14763",
-            "date": "2026-06-08",
-            "source": "arXiv",
-            "categories": [
-              "cs.RO",
-              "cs.LG",
-              "math.OC"
-            ]
-          },
-          "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
-          "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
-            "summarySections": {
-              "backgroundAndQuestion": "Real-time autonomous navigation in dynamic, unknown environments remains a fundamental challenge for mobile robotics. We propose a map-free framework that tightly integrates reactive rolling-horizon planning with nonlinear Model Predictive Control (MPC). At ea...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
-            }
-          },
-          "finalPaper": {
-            "titleZh": "",
-            "summarySections": {
-              "backgroundAndQuestion": "Real-time autonomous navigation in dynamic, unknown environments remains a fundamental challenge for mobile robotics. We propose a map-free framework that tightly integrates reactive rolling-horizon planning with nonlinear Model Predictive Control (MPC). At ea...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
-            },
-            "contentTags": [],
-            "researchParadigmTags": []
-          }
-        },
-        {
-          "paper": {
-            "title": "Targeting World Models to Compromise Robot Learning Pipelines",
-            "url": "https://arxiv.org/abs/2606.09499",
-            "arxivId": "2606.09499",
+            "title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
+            "url": "https://arxiv.org/abs/2606.09811",
+            "arxivId": "2606.09811",
             "date": "2026-06-08",
             "source": "arXiv",
             "categories": [
               "cs.RO",
               "cs.AI",
-              "cs.CR"
+              "cs.CV"
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "AHA-WAM：基于异步视界自适应的世界-动作建模与观测引导的上下文路由",
+            "researchParadigmTags": [
+              "模型构建",
+              "机制设计",
+              "实验验证",
+              "系统框架",
+              "基准评测"
+            ],
+            "contentTags": [
+              "世界-动作模型",
+              "机器人学习",
+              "视觉-动作联合建模",
+              "异步推理",
+              "闭环控制"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "World models have recently seen a rapid growth in both their popularity and capability as more data efficient tools for generating robot training data or simulating real world environments, with many works proposing their integration into the robot learning pi...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "现有世界-动作模型将视觉预测与动作执行绑定在同一时间节奏上，导致视频分支被迫处理高相关但低信息量的帧间变化，难以充分发挥其对长期物理动态建模的优势。这造成了时间抽象上的结构性错配：视觉世界模型适合做长周期规划，而动作控制需响应实时状态。论文由此提出，解耦两者的时间尺度是提升具身控制效率与性能的关键瓶颈。",
+              "modelAndSetup": "论文研究在语言指令驱动下的双臂操作任务，输入为视觉观测序列、本体感知状态和文本指令，输出为短期动作片段。模型采用双扩散Transformer架构，在RoboTwin 2.0仿真环境和真实机器人平台上进行多任务训练与测试，评估指标为主任务成功率及闭环比率。推理时视频分支低频更新，动作分支高频执行，形成异步流式部署。",
+              "contributionsAndResults": "论文提出AHA-WAM，通过异步视界自适应架构实现了世界规划与动作执行的解耦，在无需机器人数据预训练的情况下达到92.80%的仿真任务成功率，并在真实世界四类复杂操作任务中取得78.3%的成功率，同时将闭环控制频率提升至24.17Hz，显著优于Fast-WAM等基线，验证了慢速视觉规划与快速动作反馈协同的有效性。",
+              "methodsAndTechniques": "核心在于构建一个低频运行的视频DiT作为世界规划器，维护可重用的键值记忆并生成长周期潜变量计划；高速动作DiT则通过层级联合注意力查询该计划，在每次动作更新前利用观测引导的上下文路由（OVCR）动态调整规划上下文，使其适配最新观测。配合视界自适应偏移训练，使动作分支能在不同相位下稳健消费规划信息。",
+              "limitationsAndReadingValue": "模型依赖固定的时间超参数配置（如规划视界、动作块大小），其最优分配可能随任务动态变化，且长周期规划能力尚未在专门设计的极长程任务上充分验证。最值得阅读的是其异步系统设计思想、OVCR机制与流式推理优化方案，为高效具身智能体提供了新的架构范式参考。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "AHA-WAM：基于异步视界自适应的世界-动作建模与观测引导的上下文路由",
             "summarySections": {
-              "backgroundAndQuestion": "World models have recently seen a rapid growth in both their popularity and capability as more data efficient tools for generating robot training data or simulating real world environments, with many works proposing their integration into the robot learning pi...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "现有世界-动作模型将视觉预测与动作执行绑定在同一时间节奏上，导致视频分支被迫处理高相关但低信息量的帧间变化，难以充分发挥其对长期物理动态建模的优势。这造成了时间抽象上的结构性错配：视觉世界模型适合做长周期规划，而动作控制需响应实时状态。论文由此提出，解耦两者的时间尺度是提升具身控制效率与性能的关键瓶颈。",
+              "modelAndSetup": "论文研究在语言指令驱动下的双臂操作任务，输入为视觉观测序列、本体感知状态和文本指令，输出为短期动作片段。模型采用双扩散Transformer架构，在RoboTwin 2.0仿真环境和真实机器人平台上进行多任务训练与测试，评估指标为主任务成功率及闭环比率。推理时视频分支低频更新，动作分支高频执行，形成异步流式部署。",
+              "contributionsAndResults": "论文提出AHA-WAM，通过异步视界自适应架构实现了世界规划与动作执行的解耦，在无需机器人数据预训练的情况下达到92.80%的仿真任务成功率，并在真实世界四类复杂操作任务中取得78.3%的成功率，同时将闭环控制频率提升至24.17Hz，显著优于Fast-WAM等基线，验证了慢速视觉规划与快速动作反馈协同的有效性。",
+              "methodsAndTechniques": "核心在于构建一个低频运行的视频DiT作为世界规划器，维护可重用的键值记忆并生成长周期潜变量计划；高速动作DiT则通过层级联合注意力查询该计划，在每次动作更新前利用观测引导的上下文路由（OVCR）动态调整规划上下文，使其适配最新观测。配合视界自适应偏移训练，使动作分支能在不同相位下稳健消费规划信息。",
+              "limitationsAndReadingValue": "模型依赖固定的时间超参数配置（如规划视界、动作块大小），其最优分配可能随任务动态变化，且长周期规划能力尚未在专门设计的极长程任务上充分验证。最值得阅读的是其异步系统设计思想、OVCR机制与流式推理优化方案，为高效具身智能体提供了新的架构范式参考。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
+            "contentTags": [
+              "世界-动作模型",
+              "机器人学习",
+              "视觉-动作联合建模",
+              "异步推理",
+              "闭环控制"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "机制设计",
+              "实验验证",
+              "系统框架",
+              "基准评测"
+            ]
           }
         },
         {
           "paper": {
-            "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
-            "url": "https://arxiv.org/abs/2606.10040",
-            "arxivId": "2606.10040",
+            "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
+            "url": "https://arxiv.org/abs/2606.09749",
+            "arxivId": "2606.09749",
             "date": "2026-06-08",
             "source": "arXiv",
             "categories": [
-              "cs.RO"
+              "cs.RO",
+              "cs.LG"
             ]
           },
           "usedPdf": true,
-          "provider": "mock-after-error",
-          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "qwen",
           "rawOutput": {
-            "provider": "mock",
-            "titleZh": "",
-            "researchParadigmTags": [],
-            "contentTags": [],
+            "titleZh": "你的模型已经知道：用于视觉-语言-动作模型的注意力引导安全过滤器",
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "安全性",
+              "视觉-语言-动作模型",
+              "注意力机制",
+              "碰撞避免",
+              "实时控制"
+            ],
             "summarySections": {
-              "backgroundAndQuestion": "World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and make...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "当前视觉-语言-动作（VLA）模型虽能完成复杂操作任务，但缺乏对非目标物体的碰撞规避能力。现有安全过滤方法依赖外部视觉语言模型识别障碍物，计算开销大，只能在任务开始时运行一次，无法应对动态环境中移动的物体。这导致安全策略迅速失效，难以部署于真实场景。",
+              "modelAndSetup": "研究基于冻结的VLA策略，在控制循环中每一步提取其内部注意力信号，并结合轻量级物体追踪器实时更新目标与障碍物划分。通过控制屏障函数（CBF）将该信息转化为安全动作约束。实验在SAFELIBERO及其新增动态障碍变体上进行，评估任务成功率、碰撞率与安全成功率。",
+              "contributionsAndResults": "论文发现VLA模型中少数注意力头可稳定定位当前操作目标，无需额外训练即可用于实时安全过滤。所提方法KNOWS在静态场景下表现媲美仅初始化一次的oracle方法，在动态场景中平均超越后者43%，显著提升动态避障能力，验证了模型内部感知信号可用于高效安全保障。",
+              "methodsAndTechniques": "方法利用冻结VLA前向传播中的特定注意力头，聚合滑动窗口内的视觉标记注意力，识别累积密度最高的物体作为当前目标，其余视为障碍。结合实时椭球拟合与追踪，将目标-障碍分解输入CBF-QP滤波器，实现毫秒级安全投影。注意力提取复用原有计算，几乎无额外延迟。",
+              "limitationsAndReadingValue": "局限在于仅保护末端执行器，忽略机械臂其他连杆；依赖感知精度，遮挡或分割错误会影响性能；且假设下游控制器能精确跟踪指令。最值得阅读的是其对VLA内部注意力信号的有效挖掘与低开销实时安全集成的设计思路，为安全智能体部署提供了新方向。"
             }
           },
           "finalPaper": {
-            "titleZh": "",
+            "titleZh": "你的模型已经知道：用于视觉-语言-动作模型的注意力引导安全过滤器",
             "summarySections": {
-              "backgroundAndQuestion": "World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and make...",
-              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
-              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
-              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
-              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+              "backgroundAndQuestion": "当前视觉-语言-动作（VLA）模型虽能完成复杂操作任务，但缺乏对非目标物体的碰撞规避能力。现有安全过滤方法依赖外部视觉语言模型识别障碍物，计算开销大，只能在任务开始时运行一次，无法应对动态环境中移动的物体。这导致安全策略迅速失效，难以部署于真实场景。",
+              "modelAndSetup": "研究基于冻结的VLA策略，在控制循环中每一步提取其内部注意力信号，并结合轻量级物体追踪器实时更新目标与障碍物划分。通过控制屏障函数（CBF）将该信息转化为安全动作约束。实验在SAFELIBERO及其新增动态障碍变体上进行，评估任务成功率、碰撞率与安全成功率。",
+              "contributionsAndResults": "论文发现VLA模型中少数注意力头可稳定定位当前操作目标，无需额外训练即可用于实时安全过滤。所提方法KNOWS在静态场景下表现媲美仅初始化一次的oracle方法，在动态场景中平均超越后者43%，显著提升动态避障能力，验证了模型内部感知信号可用于高效安全保障。",
+              "methodsAndTechniques": "方法利用冻结VLA前向传播中的特定注意力头，聚合滑动窗口内的视觉标记注意力，识别累积密度最高的物体作为当前目标，其余视为障碍。结合实时椭球拟合与追踪，将目标-障碍分解输入CBF-QP滤波器，实现毫秒级安全投影。注意力提取复用原有计算，几乎无额外延迟。",
+              "limitationsAndReadingValue": "局限在于仅保护末端执行器，忽略机械臂其他连杆；依赖感知精度，遮挡或分割错误会影响性能；且假设下游控制器能精确跟踪指令。最值得阅读的是其对VLA内部注意力信号的有效挖掘与低开销实时安全集成的设计思路，为安全智能体部署提供了新方向。"
             },
-            "contentTags": [],
-            "researchParadigmTags": []
+            "contentTags": [
+              "安全性",
+              "视觉-语言-动作模型",
+              "注意力机制",
+              "碰撞避免",
+              "实时控制"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer",
+            "url": "https://arxiv.org/abs/2606.09416",
+            "arxivId": "2606.09416",
+            "date": "2026-06-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.RO",
+              "cs.AI",
+              "cs.SE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "物理人工智能的线束工程：机器人中间件即线束层",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证"
+            ],
+            "contentTags": [
+              "机器人",
+              "物理人工智能",
+              "中间件",
+              "智能体",
+              "安全性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着学习型策略、规划器和视觉-语言-动作（VLA）模型直接参与机器人控制回路，传统软件代理中通过工具调用边界隔离非确定性的做法不再适用。这类模型同时扰动控制、计算和通信三个轴，导致稳定性、实时性和网络延迟难以保障。现有系统缺乏统一机制来约束模型输出范围、推理预算和运行条件，使得可靠性依赖于手工编写的应用层代码，成为物理AI部署的关键瓶颈。",
+              "modelAndSetup": "论文不针对特定模型或任务，而是提出一种新的系统级部署设定：将机器人中间件作为治理层，接收AI模型的声明式规范（如输出区间、最大推理时间、通信负载等），并在运行时强制执行。该设定下，输入是带有声明文件的AI节点，输出是受控的数据流，评估标准不再是任务成功率本身，而是系统能否在跨轴扰动下维持可预测行为，并实现故障时向安全基线的自动切换。",
+              "contributionsAndResults": "核心贡献是提出‘中间件即线束’（middleware as harness）的观点，并定义三大强制机制——投影（Projection）、隔离（Isolation）和转移（Transfer）。结果显示，当前ROS 2等平台已具备大部分结构支持，但缺少将声明转化为运行时约束的能力。通过引入Harness Profile配置文件，可在不改变现有架构的前提下逐步增强治理能力，使任意搭载声明的机器人组件都能继承统一的安全保障。",
+              "methodsAndTechniques": "方法围绕PIT三机制展开：Projection在发布时检查每个样本是否满足轨迹稳定、调度可行和传输及时；Isolation通过回调组与通信分区联合预留资源槽，确保模型不超支；Transfer则基于分布偏移信号触发生命周期切换，激活预置的安全控制器。这些机制并非独立运行，而是由中间件协同调度，形成闭环控制，从而解决单轴治理无法应对的耦合风险。",
+              "limitationsAndReadingValue": "论文尚未实现完整的中间件集成原型，其有效性依赖于未来对Hook点性能开销、准入判定频率及恢复策略时长的实证测量。此外，模型声明本身的正确性仍需上游保证，中间件仅负责执行。尽管如此，该文极具阅读价值，尤其适合关注AI落地安全性的系统研究者——它重新划定了责任边界，指出真正的治理层应在中间件而非应用，为构建可信物理AI提供了清晰的设计蓝图。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "物理人工智能的线束工程：机器人中间件即线束层",
+            "summarySections": {
+              "backgroundAndQuestion": "随着学习型策略、规划器和视觉-语言-动作（VLA）模型直接参与机器人控制回路，传统软件代理中通过工具调用边界隔离非确定性的做法不再适用。这类模型同时扰动控制、计算和通信三个轴，导致稳定性、实时性和网络延迟难以保障。现有系统缺乏统一机制来约束模型输出范围、推理预算和运行条件，使得可靠性依赖于手工编写的应用层代码，成为物理AI部署的关键瓶颈。",
+              "modelAndSetup": "论文不针对特定模型或任务，而是提出一种新的系统级部署设定：将机器人中间件作为治理层，接收AI模型的声明式规范（如输出区间、最大推理时间、通信负载等），并在运行时强制执行。该设定下，输入是带有声明文件的AI节点，输出是受控的数据流，评估标准不再是任务成功率本身，而是系统能否在跨轴扰动下维持可预测行为，并实现故障时向安全基线的自动切换。",
+              "contributionsAndResults": "核心贡献是提出‘中间件即线束’（middleware as harness）的观点，并定义三大强制机制——投影（Projection）、隔离（Isolation）和转移（Transfer）。结果显示，当前ROS 2等平台已具备大部分结构支持，但缺少将声明转化为运行时约束的能力。通过引入Harness Profile配置文件，可在不改变现有架构的前提下逐步增强治理能力，使任意搭载声明的机器人组件都能继承统一的安全保障。",
+              "methodsAndTechniques": "方法围绕PIT三机制展开：Projection在发布时检查每个样本是否满足轨迹稳定、调度可行和传输及时；Isolation通过回调组与通信分区联合预留资源槽，确保模型不超支；Transfer则基于分布偏移信号触发生命周期切换，激活预置的安全控制器。这些机制并非独立运行，而是由中间件协同调度，形成闭环控制，从而解决单轴治理无法应对的耦合风险。",
+              "limitationsAndReadingValue": "论文尚未实现完整的中间件集成原型，其有效性依赖于未来对Hook点性能开销、准入判定频率及恢复策略时长的实证测量。此外，模型声明本身的正确性仍需上游保证，中间件仅负责执行。尽管如此，该文极具阅读价值，尤其适合关注AI落地安全性的系统研究者——它重新划定了责任边界，指出真正的治理层应在中间件而非应用，为构建可信物理AI提供了清晰的设计蓝图。"
+            },
+            "contentTags": [
+              "机器人",
+              "物理人工智能",
+              "中间件",
+              "智能体",
+              "安全性"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
+            "url": "https://arxiv.org/abs/2606.09827",
+            "arxivId": "2606.09827",
+            "date": "2026-06-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.RO",
+              "cs.CV"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MemoryVLA++: 通过记忆与想象进行视觉-语言-动作模型的时间建模",
+            "researchParadigmTags": [
+              "模型构建",
+              "系统框架",
+              "实验验证",
+              "基准评测"
+            ],
+            "contentTags": [
+              "视觉-语言-动作模型",
+              "记忆建模",
+              "世界模型",
+              "机器人操作",
+              "时间建模"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有视觉-语言-动作（VLA）模型大多依赖当前观测，难以处理长视野、时间依赖的任务。例如按钮按压前后视觉差异小，需记忆历史状态；传送带抓取需预判物体运动，依赖未来想象。这暴露了传统VLA缺乏对过去经验的记忆和对未来状态的模拟能力，限制其在真实场景中的持续决策表现。",
+              "modelAndSetup": "论文在仿真和真实机器人平台上评估模型，输入为RGB图像与语言指令，输出为机械臂动作序列。训练基于大规模跨形态机器人数据集，采用扩散策略预测连续动作。实验涵盖通用操作、长视野记忆/想象任务及鲁棒性测试，在Libero、Calvin等多个基准上验证性能。",
+              "contributionsAndResults": "提出MemoryVLA++，首次将记忆与想象统一于VLA框架中，实现完整的时序建模。在5个仿真基准和3类真实机器人任务上显著超越基线，尤其在长视野任务中提升达+26%至+28%，验证了记忆与想象对复杂操作的关键作用，推动通用机器人策略向更类人认知机制发展。",
+              "methodsAndTechniques": "模型利用预训练VLM编码当前感知与认知token作为工作记忆，并通过感知-认知记忆库检索并融合历史上下文。同时，世界模型在潜在空间中生成去噪未来状态，由记忆引导整合以抑制无关噪声。最终token驱动扩散动作专家产生时空一致的动作序列，形成闭环时序感知。",
+              "limitationsAndReadingValue": "方法依赖额外的世界模型训练，推理延迟有所增加，且在极端遮挡或动态干扰下的泛化仍受限。最值得阅读的是其系统设计思想与消融分析，清晰展示了记忆长度、融合机制与想象集成策略的有效性，为构建具长期时序意识的智能体提供了可复用框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MemoryVLA++: 通过记忆与想象进行视觉-语言-动作模型的时间建模",
+            "summarySections": {
+              "backgroundAndQuestion": "现有视觉-语言-动作（VLA）模型大多依赖当前观测，难以处理长视野、时间依赖的任务。例如按钮按压前后视觉差异小，需记忆历史状态；传送带抓取需预判物体运动，依赖未来想象。这暴露了传统VLA缺乏对过去经验的记忆和对未来状态的模拟能力，限制其在真实场景中的持续决策表现。",
+              "modelAndSetup": "论文在仿真和真实机器人平台上评估模型，输入为RGB图像与语言指令，输出为机械臂动作序列。训练基于大规模跨形态机器人数据集，采用扩散策略预测连续动作。实验涵盖通用操作、长视野记忆/想象任务及鲁棒性测试，在Libero、Calvin等多个基准上验证性能。",
+              "contributionsAndResults": "提出MemoryVLA++，首次将记忆与想象统一于VLA框架中，实现完整的时序建模。在5个仿真基准和3类真实机器人任务上显著超越基线，尤其在长视野任务中提升达+26%至+28%，验证了记忆与想象对复杂操作的关键作用，推动通用机器人策略向更类人认知机制发展。",
+              "methodsAndTechniques": "模型利用预训练VLM编码当前感知与认知token作为工作记忆，并通过感知-认知记忆库检索并融合历史上下文。同时，世界模型在潜在空间中生成去噪未来状态，由记忆引导整合以抑制无关噪声。最终token驱动扩散动作专家产生时空一致的动作序列，形成闭环时序感知。",
+              "limitationsAndReadingValue": "方法依赖额外的世界模型训练，推理延迟有所增加，且在极端遮挡或动态干扰下的泛化仍受限。最值得阅读的是其系统设计思想与消融分析，清晰展示了记忆长度、融合机制与想象集成策略的有效性，为构建具长期时序意识的智能体提供了可复用框架。"
+            },
+            "contentTags": [
+              "视觉-语言-动作模型",
+              "记忆建模",
+              "世界模型",
+              "机器人操作",
+              "时间建模"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "系统框架",
+              "实验验证",
+              "基准评测"
+            ]
           }
         }
       ]
     }
   },
-  "warnings": [
-    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 401: Unauthorized",
-    "LLM 精读生成失败，使用 Mock fallback：Duality for Optimal Multi-Item, Multi-Bidder Auction Design: Revenue Certificates through Deep Learning (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：Benchmark-Tight Approximation Ratio of Simple Mechanism for a Unit-Demand Buyer (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：STON'R Converges to First-Order Nash~Equilibria of Multiplayer Games (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：Axiomatic Market Making (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 401: Unauthorized",
-    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 401: Unauthorized",
-    "LLM 精读生成失败，使用 Mock fallback：Self-Paced Curriculum Reinforcement Learning for Autonomous Superbike Racing in Simulation (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：Targeting World Models to Compromise Robot Learning Pipelines (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)",
-    "LLM 精读生成失败，使用 Mock fallback：Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)"
-  ],
+  "warnings": [],
   "sectionCounts": {
     "recent-agt": 5,
     "recent-ai": 5
