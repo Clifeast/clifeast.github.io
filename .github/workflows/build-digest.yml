@@ -6,7 +6,6 @@ on:
     # Beijing-time weekday mornings, so weekdays are enough here.
     - cron: "34 2 * * *"
     - cron: "19 3 * * *"
-    - cron: "47 3 * * *"
   workflow_dispatch:
     inputs:
       date:
