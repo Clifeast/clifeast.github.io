@@ -94,6 +94,7 @@ function renderArticlePage(article) {
   <title>${escapeHTML(meta.title)} · 草树之后</title>
   <meta name="description" content="${escapeHTML(description)}" />
   <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/styles/general.css" />
   <link rel="stylesheet" href="/assets/styles/index.css" />
   <link rel="stylesheet" href="/assets/styles/articles.css" />

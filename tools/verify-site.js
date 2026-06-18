@@ -130,6 +130,7 @@ async function main() {
     title: await mobilePage.title(),
     brokenImages: await getBrokenImages(mobilePage),
     compactBrand: await mobilePage.locator(".brand-name--compact").innerText(),
+    appleTouchIcon: await mobilePage.locator('link[rel="apple-touch-icon"]').getAttribute("href"),
     desktopNavVisible: await mobilePage.locator(".site-nav").isVisible(),
     menuButtonVisible: await mobilePage.locator(".site-menu-toggle").isVisible(),
     pickerLabel: await mobilePage.locator("#digest-picker-trigger").innerText(),

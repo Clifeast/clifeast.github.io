@@ -4,7 +4,7 @@ const headerTemplate = `
       <img src="/assets/images/profileblack.png" alt="赏鹤阳头像" class="brand-logo" />
       <div class="brand-meta">
         <span class="brand-name brand-name--full">赏鹤阳 · 草树之后</span>
-        <span class="brand-name brand-name--compact">草树之后</span>
+        <span class="brand-name brand-name--compact">赏鹤阳 · 草树之后</span>
       </div>
     </a>
     <nav class="site-nav">
