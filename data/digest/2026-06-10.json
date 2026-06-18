@@ -1,0 +1,748 @@
+{
+  "date": "2026-06-10",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-06-18T13:21:53.177039+00:00",
+  "warnings": [],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 20,
+      "papers": [
+        {
+          "title": "LLM-Mediated Demand Response Coordination in Smart Microgrids",
+          "titleZh": "LLM-Mediated Demand Response Coordination in Smart Microgrids",
+          "authors": [
+            "J. de Curtò",
+            "I. de Zarzà"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.11050",
+          "abstract": "Effective demand response in smart microgrids requires prosumers to cooperate voluntarily under strategic self-interest, a coordination problem structurally equivalent to a repeated Prisoner's Dilemma on a social network. This paper presents a multi-agent simulation in which a Large Language Model (LLM) Influence Compiler issues structured demand-response directives to a population of heterogeneous prosumer agents, each governed by a hybrid decision architecture combining game-theoretic base probability (derived from payoff history, neighbour imitation, and exploitation memory) with LLM narrative evaluation of incoming coordination signals. The hybrid architecture resolves a key methodological challenge: LLMs aligned via Reinforcement Learning from Human Feedback (RLHF) exhibit strong cooperation bias when used as direct decision-makers, producing flat dynamics regardless of grid conditions. By separating strategic reasoning from grounded narrative evaluation, the model generates realistic prosumer behaviour across six personality archetypes, with baseline cooperation near 50% and clear differentiation under influence. Compiled structured directives achieve 33.3% demand-curtailment cooperation versus 27.0% for unstructured messaging and 28.0% for a no-intervention baseline ($Δ_\\mathrm{comp} = +0.063$), with the advantage preserved across both grounded and idealized agent substrates ($Δ= +0.083$) and across all resistance levels ($R = 0.1$ to $0.7$). Hub-targeted dissemination via high-centrality network nodes outperforms peripheral or random targeting, confirming that grid topology provides mechanistic amplification independent of message content. These results suggest that structured LLM compilation, grounded agent reasoning, and network-aware targeting are complementary design principles for scalable, interpretable demand-response coordination in smart-city energy systems.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在智能微电网中实现有效的自愿需求响应如此困难？本文指出，这本质上是一个由自利个体组成的社交网络上的重复囚徒困境：每个产消者（prosumer）都面临是否在高峰时段削减用电的决策，合作有利于集体稳定，但个体有动机搭便车。传统价格信号机制难以适应异质人群，而直接使用大语言模型（LLM）作为决策代理会因RLHF带来的过度合作偏差导致行为失真，无法反映真实策略互动。",
+            "modelAndSetup": "作者构建了一个混合决策架构的多智能体模拟系统。30个产消者分布在无标度网络上，每个智能体基于博弈论历史（收益记忆、邻居模仿）计算基础合作概率，并通过LLM对协调指令进行叙事评估来调整意愿。指令由一个‘影响编译器’生成，包含目标、强度、时机和主题的结构化政策，并通过不同网络节点策略传播，从而分离战略推理与语言理解功能。",
+            "contributionsAndResults": "研究发现，结构化LLM指令比非结构化消息提升需求削减合作率6.3个百分点（33.3% vs 27.0%），且优势在不同智能体类型和抵抗水平下均稳健。高中心性节点的目标投放显著优于随机或边缘投放，证实网络拓扑本身具有放大效应。最关键的是，该模型成功再现了约50%的基础合作率和六种人格类型的差异化响应，避免了LLM固有的合作偏见导致的动态塌缩。",
+            "methodsAndTechniques": "作者采用分层设计解决LLM作为决策者的内生偏差问题：底层用Fermi函数驱动的社会学习模型生成具有战略张力的基础行为，上层用LLM仅评估自然语言指令的情感倾向并输出有限范围的合作偏移量。通过引入个性原型、抵抗系数和噪声观测，使仿真更贴近现实。整个框架结合了演化博弈理论与生成式AI的能力，在可控实验中解耦变量影响。",
+            "limitationsAndReadingValue": "局限在于规模较小（N=30）、单次网络实例及以LLM代理代替真人。尽管如此，其核心价值在于提出了‘结构化影响编译’这一可推广的设计原则，并验证了LLM不应直接做决策，而应在多智能体协调中扮演叙事调节角色。最值得读的是其混合架构设计、网络靶向策略比较以及对LLM合作偏见的方法论回应。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "实验验证",
+            "多智能体系统"
+          ],
+          "contentTags": [
+            "需求响应协调",
+            "大语言模型",
+            "博弈学习",
+            "智能微电网",
+            "网络效应"
+          ],
+          "tags": [
+            "需求响应协调",
+            "大语言模型",
+            "博弈学习",
+            "智能微电网",
+            "网络效应",
+            "模型构建",
+            "实验验证",
+            "多智能体系统"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 8.7,
+            "total": 34.7
+          },
+          "ids": {
+            "arxiv": "2606.11050"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.GT",
+              "eess.SY"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "Phi-Actor-Critic: Steering General-Sum Games to Pareto-Efficient Correlated Equilibria",
+          "titleZh": "Phi-Actor-Critic: 将一般和博弈导向帕累托高效的关联均衡",
+          "authors": [
+            "Wongyu Lee",
+            "Francesco Lelli",
+            "Omran Ayoub",
+            "Massimo Tornatore"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.11284",
+          "abstract": "Real-world multi-agent systems, from traffic coordination to resource allocation, are often modeled as general-sum games where individual incentives conflict with collective welfare. In these settings, the central challenge is not merely finding an equilibrium, but selecting socially desirable outcomes among many suboptimal Nash equilibria. Standard deep multi-agent reinforcement learning (MARL) methods struggle with this problem, as value-decomposition approaches are constrained by monotonicity assumptions and policy-gradient methods often converge to stable but socially inefficient equilibria. To address this limitation, we propose $Φ$-Actor-Critic ($Φ$-AC), a framework that leverages swap regret minimization to steer learning toward high-welfare correlated equilibria (CE). To make counterfactual regret estimation tractable in deep MARL, $Φ$-AC employs a centralized attention critic that predicts vector-valued regrets in a single forward pass, avoiding computationally expensive counterfactual simulations. We further introduce a Lagrangian-based equilibrium selection mechanism that optimizes social welfare while enforcing stability through regret constraints. Experiments on matrix games, Multi-Agent Particle Environments (MPE), and the Melting Pot Harvest scenario demonstrate that $Φ$-AC learns efficient and stable coordination strategies across diverse mixed-motive settings while maintaining high collective return and competitive fairness.",
+          "summarySections": {
+            "backgroundAndQuestion": "现实中的多智能体系统常面临个体理性与集体福利的冲突，传统多智能体强化学习方法容易收敛到低社会福利的纳什均衡。本文关注如何在一般和博弈中引导学习过程避开次优均衡，选择高福利且稳定的协调结果。核心问题是：在缺乏全局协调机制的情况下，如何通过局部学习动态实现高效且公平的关联均衡。",
+            "modelAndSetup": "文章将环境建模为一般和马尔可夫博弈，智能体基于局部观测采取行动，目标是最大化长期回报。不同于仅优化个体收益的传统设定，该框架引入关联设备的思想，通过预测交换后悔（swap regret）来衡量偏离当前策略的潜在收益，并以向量形式估计每个动作替换带来的反事实增益，从而支持更丰富的协调行为。",
+            "contributionsAndResults": "论文提出Phi-Actor-Critic（Phi-AC），能有效引导学习趋向帕累托高效的关联均衡。实验表明，Phi-AC在矩阵博弈、粒子环境和资源采集任务中均能实现更高集体回报与更强稳定性，同时显著降低个体间的后悔差距，展现出优越的公平性和可持续协调能力，优于主流MARL基线方法。",
+            "methodsAndTechniques": "作者采用集中训练分散执行架构，设计双头中心化注意力评论家，在单次前向传播中联合预测动作价值与向量形式的交换后悔。通过拉格朗日优化框架结合后悔约束与社会福利目标，实现均衡选择。利用累积后悔调制特征，增强非平稳环境下的学习稳定性。",
+            "limitationsAndReadingValue": "方法目前依赖离散动作空间，限制了在连续控制场景的应用。尽管实验充分，但理论保证基于近似后悔估计。最值得阅读的是其将算法博弈论中的后悔最小化思想融入深度强化学习的系统设计，以及通过拉格朗日机制平衡效率与稳定性的创新思路，为社会困境中的协调问题提供了新范式。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "均衡分析",
+            "后悔分析",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "博弈学习",
+            "强化学习",
+            "公平性",
+            "社会选择"
+          ],
+          "tags": [
+            "多智能体系统",
+            "博弈学习",
+            "强化学习",
+            "公平性",
+            "社会选择",
+            "算法设计",
+            "均衡分析",
+            "后悔分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 31.6
+          },
+          "ids": {
+            "arxiv": "2606.11284"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.GT",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "Agentomics: Economic Foundations for the Valuation, Attribution, and Pricing of AI Agents in Human-AI Workflows",
+          "titleZh": "Agentomics：人类-AI 工作流中智能体的估值、归因与定价的经济学基础",
+          "authors": [
+            "Quanyan Zhu"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.14769",
+          "abstract": "Agentic AI systems are increasingly being deployed as productive resources in organizational workflows, yet existing evaluation methods primarily measure isolated technical performance rather than economic contribution. This paper introduces \\emph{Agentomics}, a workflow-based framework for valuing, attributing, and pricing human and artificial agents. The framework models a workflow as a configuration of heterogeneous agents whose collective performance determines gross value, deployment cost, reliability, and expected failure loss. Workflow value is treated as a team-level quantity that may include complementarities, substitution effects, bottlenecks, and nonlinear production; additive stage-level value is only a special case. Building on this workflow model, the paper formulates AI deployment as a coalition-formation problem and defines coalition value as the incremental net surplus generated relative to a benchmark human workflow. The Shapley value is then used to attribute economic surplus among participating AI agents, yielding a principled connection among valuation, accountability, and market pricing. The resulting Shapley pricing equilibrium provides a normative benchmark for assessing whether agent prices reflect expected marginal contribution. A security-operations case study illustrates how the framework accounts for productivity gains, deployment costs, reliability losses, and coalition-level complementarities in hybrid human--AI workflows.",
+          "summarySections": {
+            "backgroundAndQuestion": "随着AI智能体越来越多参与组织工作流，仅靠技术指标（如准确率）无法衡量其真实经济贡献。现有方法难以回答：一个AI在混合人机流程中创造了多少价值？谁该为成功或失败负责？价格是否合理？这些问题涉及价值分配、责任归属与激励机制，构成了一个新型资源配置难题。",
+            "modelAndSetup": "作者将工作流建模为由人类和AI智能体组成的序列化任务链，每个阶段由特定智能体执行。智能体具备能力画像、部署成本与可靠性参数。整个流程的价值取决于团队协作效果，而非各阶段简单加总。通过引入‘联盟’概念，比较不同AI组合加入后相对于纯人工流程的净收益变化。",
+            "contributionsAndResults": "论文提出‘Agentomics’框架，定义了基于增量剩余的联盟价值函数，并采用夏普利值进行价值归因，使每个AI的经济贡献与其边际生产力挂钩。进一步提出‘夏普利定价均衡’，即市场价格等于其期望边际贡献，为AI服务定价提供了规范性基准。",
+            "methodsAndTechniques": "核心方法是合作博弈论中的夏普利值，用于公平分配联盟产生的总剩余。通过枚举所有可能的AI加入顺序，计算其平均边际贡献，从而系统性捕捉互补性、替代效应与瓶颈影响。该方法将流程级经济表现分解到个体智能体，连接了绩效归因、问责机制与市场价格。",
+            "limitationsAndReadingValue": "模型假设任务为线性序列且结果独立，未考虑动态适应或错误传播机制。尽管如此，其价值在于提供了一个统一框架，将孤立的技术评估转向系统性经济分析。最值得读的是其对‘智能体即经济主体’的抽象方式、夏普利归因的应用逻辑及对市场定价的启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
+            "均衡分析",
+            "系统框架"
+          ],
+          "contentTags": [
+            "智能体",
+            "生成式AI",
+            "多智能体系统",
+            "评测方法",
+            "市场/匹配"
+          ],
+          "tags": [
+            "智能体",
+            "生成式AI",
+            "多智能体系统",
+            "评测方法",
+            "市场/匹配",
+            "理论推导",
+            "模型构建",
+            "机制设计"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 8.7,
+            "total": 31.2
+          },
+          "ids": {
+            "arxiv": "2606.14769"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.EM",
+              "cs.AI",
+              "cs.GT"
+            ],
+            "primaryCategory": "econ.EM",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "Leveraging Machine-Learned Advice in Strategic Interactions with No-Regret Learners",
+          "titleZh": "在与无悔学习者的战略交互中利用机器学习建议",
+          "authors": [
+            "Tinashe Handina",
+            "Tongxin Li",
+            "Kishan Panaganti",
+            "Eric Mazumdar",
+            "Adam Wierman"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10261",
+          "abstract": "We study how an agent in a two-player repeated game can effectively utilize potentially imperfect advice when interacting with a no-regret learner. We characterize the advice landscape by introducing a pseudo-metric to quantify the usefulness of an advice instance. We demonstrate the pseudo-metric's applicability through two forms of advice: simulators and payoff matrix predictions. We then show how an optimizing player, equipped with correctness guarantees on the advice, could leverage simulators to compute approximate Stackelberg strategies more efficiently, reducing the interaction complexity traditionally required and illustrating the power of good advice. Finally, we extend our analysis to settings where the advice does not have any guarantee of correctness. We find that, in general, a player cannot simultaneously guarantee near Stackelberg performance when the advice is approximately accurate and a no-regret condition when the advice is inaccurate. We do show, however, that it is possible for an advice-aided player to weakly dominate their utility in some (coarse)-correlated equilibria.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在重复博弈中不能简单信任机器学习建议？本文研究一个优化者如何在面对无悔学习对手时，有效利用可能不准确的外部建议（如模拟器或收益预测）。传统方法需大量交互才能逼近最优策略，而AI时代建议虽能加速决策，却缺乏可靠性保障，由此引出核心问题：如何在建议可信时获益，在不可信时仍保持稳健。",
+            "modelAndSetup": "作者构建了一个两玩家重复博弈模型，其中优化者拥有建议源（如模拟器或预测的收益矩阵），而学习者遵循无外部或无交换遗憾的学习规则。优化者的目标是逼近Stackelberg策略，同时评估建议质量。模型通过伪度量量化建议与真实行为的偏差，并区分不同强度的后悔学习者，从而刻画建议有效性边界。",
+            "contributionsAndResults": "论文证明，高质量建议可将寻找近似Stackelberg策略所需的交互次数从指数级降至多项式级，显著提升效率。然而，一般情况下无法同时实现‘建议准确时接近最优、不准确时保持无悔’的双重保障——这是一个不可能性结果。但作者构造了一种增强算法，能在粗相关均衡下弱支配效用，并在某些情形下实现严格超越。",
+            "methodsAndTechniques": "作者引入基于Stackelberg响应差异的伪度量来量化建议质量，这是连接建议与策略性能的关键工具。证明中采用‘尝试-验证’框架：优化者交替测试建议与默认无悔策略，通过累积效用比较决定最终行为。技术难点在于平衡探索成本与收敛保证，尤其在对抗自适应后悔学习者时需精细控制阶段长度与容忍误差。",
+            "limitationsAndReadingValue": "论文假设唯一Stackelberg解且依赖特定后悔类，限制了结果普适性。其价值在于清晰揭示了‘利用建议’的根本权衡：无法完全兼顾一致性与鲁棒性。最值得读的是伪度量设计、不可能性证明及增强算法的构造逻辑，这对设计可信AI辅助决策系统具有深刻启示，相关工作也系统梳理了学习与博弈交叉前沿。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "算法设计",
+            "均衡分析",
+            "后悔分析"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "机制设计",
+            "多智能体系统",
+            "在线算法",
+            "鲁棒性"
+          ],
+          "tags": [
+            "博弈学习",
+            "机制设计",
+            "多智能体系统",
+            "在线算法",
+            "鲁棒性",
+            "理论推导",
+            "模型构建",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 5.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2606.10261"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "Fractional Pareto-Optimality in Multiwinner Voting",
+          "titleZh": "多胜者投票中的分数帕累托最优性",
+          "authors": [
+            "Patrick Becker",
+            "Niclas Boehmer",
+            "Fabian Frank",
+            "Lara Glessen"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.11160",
+          "abstract": "Efficiency in multiwinner voting is most naturally captured by Pareto-optimality (PO), yet this notion is computationally and structurally difficult to handle. We therefore study fractional Pareto-optimality (fPO), under which a committee may not be dominated even by a fractional committee, i.e., any convex combination of committees. fPO turns out to be a natural refinement of PO as it retains exactly those Pareto-optimal committees whose efficiency is robust under uniform cloning of candidates. Furthermore, fPO committees are guaranteed to exist and have strong structural properties. We present a characterization of fPO in terms of weighted utilitarian welfare maximization, which yields a polynomial-time algorithm for verifying fPO and shows that the set of fPO committees satisfies committee monotonicity and is connected under single-candidate swaps. Analyzing welfarist rules through the lens of fPO, we further uncover an incompatibility between fPO and equality-oriented objectives. Most notably, we show that proportional approval voting (PAV) violates fPO in the approval setting. We close by pinpointing preference domains, including various one-dimensional ones, on which PO and fPO collapse into one notion.",
+          "summarySections": {
+            "backgroundAndQuestion": "多胜者投票中，帕累托最优（PO）是衡量委员会效率的基本标准，但它难以验证且结构复杂。现有规则常违反PO，导致效率损失却无法有效识别。本文提出分数帕累托最优（fPO），通过引入分数委员会作为比较基准，解决PO在计算和结构性上的缺陷，并探究哪些真实世界条件下fPO与PO一致。",
+            "modelAndSetup": "模型考虑一组候选人和选民，每位选民对候选人有加性效用，委员会是固定大小的候选人子集。fPO要求不存在一个分数委员会（即候选人的凸组合）能在不使任何人变差的前提下让至少一人更优。该设定将整数委员会嵌入到分数松弛空间中，利用线性规划和权重向量刻画效率边界。",
+            "contributionsAndResults": "论文证明fPO是PO的稳健细化：它恰好对应于在任意候选人克隆后仍保持帕累托最优的委员会。fPO可通过正权重下的效用总和最大化来刻画，从而可在多项式时间内验证。此外，fPO委员会集合具有连通性和单调性，而PO不具备。值得注意的是，比例认可投票（PAV）等追求公平的规则会违反fPO。",
+            "methodsAndTechniques": "核心方法是将fPO刻画为带正权重的加权功利主义最大化问题，借助Motzkin转置定理和分离超平面论证建立等价性。验证算法基于线性规划检测是否存在支配性分数委员会。结构性质则通过沿权重路径插值并分析得分线交叉点得以证明，结合离散几何中的k级复杂度界进行估计。",
+            "limitationsAndReadingValue": "fPO的标准强于实际实施需求，因分数委员会不可行，可能排除某些合理整数结果。结果在一般偏好下成立，但在参与式预算等扩展场景中fPO可能无解。最值得读的是其对效率的几何与权重刻画，以及关于公平与效率紧张关系的新洞见。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "社会选择",
+            "公平性",
+            "效率",
+            "多智能体系统",
+            "机制设计"
+          ],
+          "tags": [
+            "社会选择",
+            "公平性",
+            "效率",
+            "多智能体系统",
+            "机制设计",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2606.11160"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.MA）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 8,
+      "papers": [
+        {
+          "title": "What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory",
+          "titleZh": "空间记忆必须存储什么：以遮挡作为语言智能体记忆的测试",
+          "authors": [
+            "Doeon Kwon",
+            "Junho Bang"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10299",
+          "abstract": "Language-agent \"memory palace\" systems anchor each memory to a world coordinate, on the intuition that geometry adds something text cannot. We make that intuition testable and report three results. First, the memory-palace default of folding spatial proximity into a linear blend beside recency and importance does not help and can hurt: in a pre-registered recall experiment the shipped blend fails its own frozen test (mean Delta-Hit@5 -0.0375, Wilcoxon p=0.306), sitting at a position-blind baseline, while a geometry-led weighting wins decisively (+0.3208, p<10^-15): geometry must lead recall when the query regime is spatial. Second, memory recall and visibility must be separated: recall is occlusion-blind by design (you correctly remember the next room behind a wall), while visibility is a perception predicate over stored geometry that the live system never computed. A one-line ray-versus-voxel digital differential analyzer (DDA), re-pointed from the gaze ray the agent already casts, supplies it: text and the live FoV cone both score 0.000 on 849 behind-wall targets while cone-plus-DDA reaches 0.982 (exact McNemar p<10^-6); coordinate recall separately resolves near-duplicate locations a cosine null cannot (1.000 vs 0.533, n=150). Third, the visibility predicate is confirmed live under a git-committed pre-registration (SPMEM-OCC-LIVE-v1: eight scripted worlds, automated oracle scoring, 96 behind-wall targets, false-visible 1.000->0.000, pooled exact McNemar p=2.5x10^-29), a run that surfaced and fixed a real relay anchor defect. We concede that occlusion-needs-geometry is near-tautological; the contribution is the measurement and isolation, separating what spatial memory must store from how it is read. These pilots power a frozen confirmatory study (SPMEM-ZERO-REAL-PREREG-v1); the full human-authored multi-world study with blind raters remains future work.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前语言智能体的记忆系统常将记忆锚定于空间坐标，直觉上认为几何信息能增强文本无法提供的能力，但缺乏明确验证。本文追问：空间记忆真正必须存储的是什么？现有方法常将空间距离与其他因素线性混合排序，可能导致信号稀释。核心问题是，几何信息是否真的提供了文本无法计算的功能，尤其是像‘遮挡’这类依赖坐标的感知判断。",
+            "modelAndSetup": "研究在一个共享体素3D世界中进行，智能体通过观察和移动形成带位置锚点的记忆。实验对比多种记忆检索方式：纯文本向量检索、基于坐标的距离排序、视锥过滤及加入视线追踪的遮挡判断。输入是查询和观察流，输出是召回结果或可见性判断。关键设定是分离‘记忆召回’（可穿透墙壁）与‘可见性判断’（需视线无阻），并通过预注册实验确保评估严谨。",
+            "contributionsAndResults": "论文证实，单纯将空间作为混合排序项会削弱甚至损害性能，而以几何为主导的加权则显著提升召回率。更重要的是，仅存储坐标和障碍物信息即可恢复遮挡判断——无论是通过简单的光线步进还是交给大模型推理，都能远超纯文本基线。预注册实验证明，当前默认的线性融合策略在空间任务下表现不佳，几何必须主导才能发挥价值。",
+            "methodsAndTechniques": "方法的关键在于区分‘索引/验证’与‘排序’角色：坐标用于选择候选集并验证视线可达性，而非简单打分。通过数字微分分析器（DDA）重用已有视线检测原语，实现低成本遮挡判断。实验设计强调隔离变量，如使用独立几何核生成真值，并设置多个对照组（如仅文本、视锥、加DDA）来验证几何存储的必要性，而非渲染或其他复杂机制。",
+            "limitationsAndReadingValue": "研究仍为小规模试点，依赖自动化评分而非人工评判行为质量，且假设静态环境未考虑动态几何版本控制。结论主要适用于需空间推理的任务，不直接推广至通用检索。最值得读的是其问题重构——将‘空间记忆’定义为必须存储几何事实的能力，以及通过预注册和消融揭示出的‘几何主导’原则，对构建具身智能体记忆系统具有指导意义。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "系统框架",
+            "评测方法",
+            "机制设计",
+            "消融研究"
+          ],
+          "contentTags": [
+            "智能体",
+            "大语言模型",
+            "空间记忆",
+            "遮挡感知",
+            "记忆检索"
+          ],
+          "tags": [
+            "智能体",
+            "大语言模型",
+            "空间记忆",
+            "遮挡感知",
+            "记忆检索",
+            "实验验证",
+            "系统框架",
+            "评测方法"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2606.10299"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.AI",
+              "cs.CV",
+              "cs.MA"
+            ],
+            "primaryCategory": "cs.AI",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "Game-Theoretic Multi-Agent Control for Robust Contextual Reasoning in LLMs",
+          "titleZh": "用于大语言模型鲁棒上下文推理的博弈论多智能体控制",
+          "authors": [
+            "Saeid Jamshidi",
+            "Amin Nikanjam",
+            "Arghavan Moradi Dakhel",
+            "Kawser Wazed Nafi",
+            "Foutse Khomh"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10322",
+          "abstract": "Large Language Models (LLMs) in multi-turn interactions maintain evolving context rather than generating isolated responses, making them vulnerable to prompt-injection and context-poisoning attacks in which locally plausible adversarial fragments gradually distort reasoning trajectories. Existing defenses mainly filter individual outputs and often ignore context evolution across turns, leaving long-horizon reasoning exposed. Although the Model Context Protocol (MCP) standardizes context exchange and tool invocation, it functions as a passive routing layer and does not enforce contextual stability. To address these limitations, we introduce the Game-Theoretic Secure Model Context Protocol (GT-MCP), a controller-driven multi-agent method that treats context management as a closed-loop dynamical process. GT-MCP coordinates three heterogeneous LLM agents and selects outputs through a trust function that jointly evaluates causal consistency against a validated context graph, semantic agreement among agents, and distributional drift over time. When instability is detected, a rollback-based self-healing mechanism restores the validated context and prevents unsupported fragments from propagating. Empirical evaluation over 500 interaction turns under an adaptive adversarial threat model shows that contextual drift remains bounded in 99.6% of turns, with recovery required in only 0.4%. Per-turn utility remains tightly concentrated, with median = -0.19, P05 = -0.72, and P95 = 0.30; severe degradation below -1 occurs in only 0.4% of cases, and no injection attempt succeeds at the controller level. Selected outputs maintain stable win rates above 98%, and computational overhead remains predictable, with latency per token = 1.63e-3 s.",
+          "summarySections": {
+            "backgroundAndQuestion": "大语言模型在多轮交互中维护动态上下文，这使其易受提示注入和上下文污染攻击。现有防御多聚焦于单步过滤，忽视上下文长期演化带来的轨迹偏移风险。本文指出，传统方法无法控制已接受响应对后续推理状态的影响，尤其在多模型协同场景下，局部合理但结构不稳的内容可能逐步扭曲整体推理路径，因此需从轨迹级动态控制角度重构防御机制。",
+            "modelAndSetup": "研究设定为三异构大模型代理在共享上下文中生成候选响应，控制器基于信任函数选择最终输出并更新可信上下文。输入包括用户查询与混合了可信记忆和潜在恶意片段的观察上下文，输出为经验证的安全响应。通过因果一致性、跨代理共识与分布漂移监控评估质量，并在检测到异常时触发回滚恢复，实验在500轮对抗交互中评估稳定性与安全性。",
+            "contributionsAndResults": "论文提出GT-MCP，首次将上下文管理建模为受控动态过程，结合因果图验证、漂移监测与自愈机制实现轨迹级防护。实验证明其在99.6%的回合中保持上下文稳定，仅0.4%需恢复干预，无一次控制器层级注入成功，且选中输出胜率持续高于98%，表明该方法能有效遏制渐进式污染并维持长期推理一致性。",
+            "methodsAndTechniques": "核心在于构建一个闭环控制机制：利用因果上下文图记录主张间的支撑关系，计算候选响应的因果一致性；结合语义共识得分与候选特定漂移评分形成综合信任值；当漂移超阈值时启动基于检查点的回滚，清除低支持片段。此设计使攻击者难以同时规避结构、语义与时序多重约束，从而提升偏离成本。",
+            "limitationsAndReadingValue": "局限包括假设最多一个代理被攻破、固定代理配置及有限实验周期，未验证更复杂共谋或长期缓慢漂移场景。尽管如此，其将安全推理转化为博弈控制问题的视角极具启发性，最值得阅读的是其机制设计逻辑与闭环控制系统架构，而非具体实现细节或消融结果。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "系统框架",
+            "实验验证",
+            "均衡分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "大语言模型",
+            "安全性",
+            "鲁棒性",
+            "上下文推理"
+          ],
+          "tags": [
+            "多智能体系统",
+            "大语言模型",
+            "安全性",
+            "鲁棒性",
+            "上下文推理",
+            "机制设计",
+            "系统框架",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          },
+          "ids": {
+            "arxiv": "2606.10322"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CR",
+              "cs.MA"
+            ],
+            "primaryCategory": "cs.CR",
+            "published": "2026-06-09",
+            "updated": "2026-06-12"
+          }
+        },
+        {
+          "title": "Decentralized Multi-Agent Systems with Shared Context",
+          "titleZh": "基于共享上下文的去中心化多智能体系统",
+          "authors": [
+            "Yuzhen Mao",
+            "Azalia Mirhoseini"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10662",
+          "abstract": "Multi-agent systems (MAS) can scale large language model reasoning at test time by decomposing complex problems into parallel subtasks. However, most existing MAS rely on centralized orchestration, where a main agent assigns work, collects outputs, and merges results. As the number of subtasks grows, this controller becomes a communication and integration bottleneck. We propose Decentralized Language Models (DeLM), a MAS framework that decentralizes coordination through parallel agents, a shared verified context, and a task queue. Agents asynchronously claim subtasks, read accumulated progress, perform local reasoning, and write back compact verified updates. The shared context acts as a common communication substrate, enabling agents to build on one another's verified progress without routing every update through a central controller. Empirically, DeLM improves both software-engineering test-time scaling and long-context reasoning. On SWE-bench Verified, DeLM achieves the best performance across Avg.@1, Pass@2, and Pass@4, with gains of up to 10.5 percentage points over the strongest baseline, while reducing cost per task by roughly 50%. On LongBench-v2 Multi-Doc QA, DeLM achieves the highest average accuracy across four frontier model families, improving over the strongest baseline by up to 5.7 percentage points. The code is available on our project website at https://yuzhenmao.github.io/DeLM/.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有基于大语言模型的多智能体系统通常依赖中央控制器协调子任务，导致通信和集成成为瓶颈。随着并行任务增多，所有进展需经主代理汇总广播，效率下降且关键信息易丢失。本文关注测试时扩展与长上下文推理中的协调难题，指出集中式架构限制了并行计算转化为实际进展的能力，亟需更高效、可扩展的协作机制。",
+            "modelAndSetup": "论文在软件工程任务SWE-bench Verified和多文档问答LongBench-v2上评估方法，输入为复杂问题及源文档，输出为解决方案或答案。系统由并行智能体、共享上下文和任务队列构成，智能体异步领取任务，读取共享状态，执行推理后提交经压缩与验证的更新。评价指标包括通过率、平均准确率和单位成本，对比多种基线以验证有效性。",
+            "contributionsAndResults": "提出DELM框架，首次实现去中心化的多智能体协同，通过共享验证上下文使各智能体直接复用进展而非依赖中心聚合。在SWE-bench上达到最高Pass@4（77.4%），成本降低约50%；在LongBench-v2多文档问答中平均准确率领先最强基线达5.7个百分点，显著提升效率与性能，证明去中心化协调能更有效地利用并行资源。",
+            "methodsAndTechniques": "核心在于三个组件：共享上下文存储经压缩与验证的‘要点’（gist），任务队列支持异步领取，智能体独立完成子任务并将成果提交至共享层。采用分层摘要与选择性展开机制，在保持全局视图的同时按需加载细节；所有更新须经证据验证才能进入共享状态，防止错误传播。这使得系统既能避免中心瓶颈，又能保障信息可靠性。",
+            "limitationsAndReadingValue": "验证步骤带来额外开销，且分解质量依赖智能体自身能力，未探索动态调整分解策略。实验集中在特定两类任务，结论外推需谨慎。尽管如此，其去中心化协调范式为多智能体系统提供了新思路。最值得阅读的是方法设计与在SWE-bench上的轨迹分析，展示了共享失败与约束如何提升整体效率。"
+          },
+          "researchParadigmTags": [
+            "系统框架",
+            "机制设计",
+            "实验验证",
+            "基准评测"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "大语言模型",
+            "长上下文推理",
+            "智能体"
+          ],
+          "tags": [
+            "多智能体系统",
+            "大语言模型",
+            "长上下文推理",
+            "智能体",
+            "系统框架",
+            "机制设计",
+            "实验验证",
+            "基准评测"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          },
+          "ids": {
+            "arxiv": "2606.10662"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "LLM-Mediated Demand Response Coordination in Smart Microgrids",
+          "titleZh": "大型语言模型介导的智能微电网需求响应协调",
+          "authors": [
+            "J. de Curtò",
+            "I. de Zarzà"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.11050",
+          "abstract": "Effective demand response in smart microgrids requires prosumers to cooperate voluntarily under strategic self-interest, a coordination problem structurally equivalent to a repeated Prisoner's Dilemma on a social network. This paper presents a multi-agent simulation in which a Large Language Model (LLM) Influence Compiler issues structured demand-response directives to a population of heterogeneous prosumer agents, each governed by a hybrid decision architecture combining game-theoretic base probability (derived from payoff history, neighbour imitation, and exploitation memory) with LLM narrative evaluation of incoming coordination signals. The hybrid architecture resolves a key methodological challenge: LLMs aligned via Reinforcement Learning from Human Feedback (RLHF) exhibit strong cooperation bias when used as direct decision-makers, producing flat dynamics regardless of grid conditions. By separating strategic reasoning from grounded narrative evaluation, the model generates realistic prosumer behaviour across six personality archetypes, with baseline cooperation near 50% and clear differentiation under influence. Compiled structured directives achieve 33.3% demand-curtailment cooperation versus 27.0% for unstructured messaging and 28.0% for a no-intervention baseline ($Δ_\\mathrm{comp} = +0.063$), with the advantage preserved across both grounded and idealized agent substrates ($Δ= +0.083$) and across all resistance levels ($R = 0.1$ to $0.7$). Hub-targeted dissemination via high-centrality network nodes outperforms peripheral or random targeting, confirming that grid topology provides mechanistic amplification independent of message content. These results suggest that structured LLM compilation, grounded agent reasoning, and network-aware targeting are complementary design principles for scalable, interpretable demand-response coordination in smart-city energy systems.",
+          "summarySections": {
+            "backgroundAndQuestion": "智能微电网中，产消者需在高峰时段自愿削减用电以维持电网稳定，但个体理性倾向于搭便车，导致集体失衡，这本质上是一个网络化的重复囚徒困境。传统价格信号或合同约束难以适应异构群体的实时协调，而直接使用大语言模型（LLM）作为决策者会因RLHF带来的合作偏好产生严重偏差，使实验失去区分度。本文旨在解决如何在保持战略张力的同时利用LLM提升协调效率的问题。",
+            "modelAndSetup": "研究构建了一个多智能体模拟系统，其中每个产消者代理基于演化博弈规则计算基础合作概率，并通过LLM对收到的协调指令进行叙事评估，生成合作意愿偏移量。系统在规模自由网络上运行，六种人格类型代理混合分布，中央‘影响编译器’定期发布结构化或非结构化指令，比较不同干预策略下群体合作率的变化。主指标为最终阶段的平均合作率。",
+            "contributionsAndResults": "论文提出‘影响编译器’框架与混合决策架构，实验证明结构化指令比无结构生成和无干预基线显著提升合作率（33.3% vs 27.0%），且优势在不同代理类型、抵抗水平和传播策略下均稳健。关键发现是分离战略推理与叙事评估可避免LLM合作偏见，同时揭示网络枢纽节点的目标传播具有独立于内容的放大效应，为可扩展的需求响应系统提供了设计原则。",
+            "methodsAndTechniques": "核心方法是将代理决策解耦为两阶段：第一阶段由收益历史、邻居模仿和剥削记忆驱动的博弈论基础概率，确保约50%的基础合作率以维持战略紧张；第二阶段由LLM评估指令并输出[-0.3, +0.3]的合作偏移，再经个体抵抗衰减后融合。结构化指令遵循目标、强度、时机、主题的策略模板，通过求解-批评双阶段生成，确保内容可控且可解释。",
+            "limitationsAndReadingValue": "研究受限于小规模模拟（N=30）、单一网络实例及使用LLM代理替代真实人类行为，结论外推需谨慎。尽管如此，其混合架构有效破解了LLM合作偏见对实验效度的破坏，为多智能体协调研究提供了可靠方法论路径。最值得阅读的是其问题抽象方式、机制设计逻辑与实验消融分析，尤其对关注LLM作为社会影响工具的研究者具有高参考价值。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "模型构建",
+            "实验验证",
+            "系统框架",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "大语言模型",
+            "需求响应协调",
+            "演化博弈论",
+            "智能体决策"
+          ],
+          "tags": [
+            "多智能体系统",
+            "大语言模型",
+            "需求响应协调",
+            "演化博弈论",
+            "智能体决策",
+            "机制设计",
+            "模型构建",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          },
+          "ids": {
+            "arxiv": "2606.11050"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.GT",
+              "eess.SY"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-09",
+            "updated": "2026-06-09"
+          }
+        },
+        {
+          "title": "SkillAxe: Sharpening LLM-Authored Agent Skills Through Evaluation-Guided Self-Refinement",
+          "titleZh": "SKILLAXE: 通过评估引导的自我优化提升大模型代理技能",
+          "authors": [
+            "Srishti Gautam",
+            "Arjun Radhakrishna",
+            "Sumit Gulwani"
+          ],
+          "date": "2026-06-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10546",
+          "abstract": "Skill documents, structured natural-language instructions that guide Large Language Model (LLM) agents, are critical to modern agent frameworks, yet LLMs struggle to write skills that actually work. On SkillsBench, human-authored skills improve pass rates by 16.2 percentage points, while LLM-authored skills provide no measurable gain. We introduce SkillAxe, a fully unsupervised framework that enables LLMs to iteratively diagnose and refine their own skills. SkillAxe decomposes skill quality into four interpretable dimensions (quality impact, trigger precision, instruction compliance with fault attribution, and solution-path coverage), producing structured improvement briefs that require no ground-truth labels, test suites, or environment rewards. On SkillsBench, SkillAxe improves pass rates by 28\\% relative over unimproved LLM skills and closes 47--67\\% of the gap to human-authored skills. We validate the approach as a continuous improvement engine in the wild on SpreadsheetBench, where a SkillAxe-built skill library learns from past agent trajectories and raises pass rate from 16.0\\% to 52.0\\% using only 22 skills.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前大模型代理依赖人工编写的技能文档来指导复杂任务执行，但由大模型自动生成的技能往往无效。问题根源在于缺乏细粒度的诊断反馈：现有评测仅提供任务级的通过/失败信号，无法区分是技能本身错误、触发不当，还是代理未遵循指令。这导致技能优化变成盲目的试错过程，尤其阻碍了自动化、持续演进的技能库建设。",
+            "modelAndSetup": "论文研究如何在无监督条件下评估并改进大模型生成的技能文档。输入是任务指令和代理在有无技能情况下的执行轨迹，输出是经过诊断反馈重写的技能。通过对比行为差异，系统自动计算四项指标，并利用大模型作为通用评判者生成改进建议。实验基于SkillsBench和SpreadsheetBench两个真实任务集，在标准与持续学习设定下验证效果。",
+            "contributionsAndResults": "提出SKILLAXE框架，首次实现无需人工标注或奖励函数的技能自我优化。在SkillsBench上，优化后技能相对原始大模型技能提升28%，弥补了47%-67%与人类编写技能之间的差距。更重要的是，增益主要来自执行可靠性（覆盖率+26个百分点），而非答案质量本身，揭示技能的核心价值在于规避崩溃与流程错误。",
+            "methodsAndTechniques": "方法核心是将技能质量分解为四个可诊断维度：质量影响、触发精度、指令遵从性和解路径覆盖。通过对比启用技能前后的代理行为，利用大模型提取规则并评估其有效性与执行情况，进而生成结构化改进指令。关键创新在于利用技能自身隐含的约束作为评判标准，实现闭环自优化，无需外部测试套件或专家干预。",
+            "limitationsAndReadingValue": "局限包括无法检测结构性错误策略、依赖大模型评判可能存在偏见、未建模多技能交互冲突，且单轮优化尚未完全追平人类水平。尽管如此，论文的价值在于提出了一个可落地的诊断-优化循环范式。最值得阅读的是其问题抽象方式、四维诊断机制的设计逻辑，以及在真实场景中验证持续学习能力的实验设计。"
+          },
+          "researchParadigmTags": [
+            "系统框架",
+            "评测方法",
+            "实验验证",
+            "机制设计"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "智能体",
+            "技能优化",
+            "诊断反馈",
+            "自我改进"
+          ],
+          "tags": [
+            "大语言模型",
+            "智能体",
+            "技能优化",
+            "诊断反馈",
+            "自我改进",
+            "系统框架",
+            "评测方法",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          },
+          "ids": {
+            "arxiv": "2606.10546"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-06-09",
+            "updated": "2026-06-10"
+          }
+        }
+      ]
+    }
+  ]
+}
