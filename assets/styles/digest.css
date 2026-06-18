@@ -283,6 +283,29 @@
   font-weight: 700;
 }
 
+.score-fraction {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.score-fraction__value {
+  color: #1f2933;
+  font-size: 1em;
+  font-weight: 850;
+}
+
+.score-fraction__maximum {
+  color: #64748b;
+  font-size: 0.78em;
+  font-weight: 700;
+}
+
+.score-fraction--count .score-fraction__value {
+  color: #0f766e;
+  font-size: 1.18em;
+}
+
 .paper-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -336,6 +359,14 @@
   color: #1f2933;
   font-size: clamp(1.08rem, 3vw, 1.24rem);
   line-height: 1.42;
+}
+
+.paper-card__title-zh {
+  margin: -0.45rem 0 0;
+  color: #52606d;
+  font-size: clamp(0.98rem, 2.6vw, 1.08rem);
+  font-weight: 650;
+  line-height: 1.5;
 }
 
 .paper-card__authors {
@@ -448,9 +479,9 @@
   grid-template-columns: auto max-content max-content;
 }
 
-.paper-card__score-total strong {
+.paper-card__score-total .score-fraction__value {
   color: #0f766e;
-  font-size: 1rem;
+  font-size: 1.08rem;
 }
 
 .paper-card__score-bonus {
@@ -466,9 +497,9 @@
   font-weight: 800;
 }
 
-.paper-card__score-bonus strong {
+.paper-card__score-bonus .score-fraction__value {
   color: #92400e;
-  font-size: 0.8rem;
+  font-size: 1em;
 }
 
 .paper-card__score-list {
@@ -507,7 +538,7 @@
   overflow-wrap: anywhere;
 }
 
-.paper-card__score-list strong {
+.paper-card__score-list .score-fraction__value {
   color: #1f2933;
   font-weight: 800;
 }

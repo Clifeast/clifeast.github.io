@@ -106,12 +106,51 @@ async function main() {
   const qingcai = await visit(page, "qingcai", "/articles/qingcai.html", "qingcai.png");
   qingcai.paragraphCount = await page.locator(".article-body p").count();
 
+  const mobilePage = await browser.newPage({
+    viewport: {
+      width: 390,
+      height: 844,
+    },
+    isMobile: true,
+  });
+  mobilePage.on("console", (message) => {
+    if (["error", "warning"].includes(message.type())) {
+      consoleIssues.push(`mobile ${message.type()}: ${message.text()}`);
+    }
+  });
+  mobilePage.on("response", (response) => {
+    if (response.status() >= 400) {
+      failedResponses.push(`${response.status()} ${response.url()}`);
+    }
+  });
+  await mobilePage.goto(pageURL("/digest/"), { waitUntil: "networkidle" });
+  const mobileDigest = {
+    name: "digest mobile navigation",
+    url: mobilePage.url(),
+    title: await mobilePage.title(),
+    brokenImages: await getBrokenImages(mobilePage),
+    compactBrand: await mobilePage.locator(".brand-name--compact").innerText(),
+    desktopNavVisible: await mobilePage.locator(".site-nav").isVisible(),
+    menuButtonVisible: await mobilePage.locator(".site-menu-toggle").isVisible(),
+    pickerLabel: await mobilePage.locator("#digest-picker-trigger").innerText(),
+  };
+  await mobilePage.locator(".site-menu-toggle").click();
+  await mobilePage.waitForTimeout(300);
+  mobileDigest.drawerOpen = await mobilePage.locator(".site-menu-drawer").getAttribute("aria-hidden") === "false";
+  mobileDigest.drawerLinks = await mobilePage.locator(".site-menu-drawer__links a").allInnerTexts();
+  await mobilePage.screenshot({
+    path: path.join(SCREENSHOT_DIR, "digest-mobile-menu.png"),
+    fullPage: false,
+  });
+  await mobilePage.locator(".site-menu-close").click();
+  mobileDigest.drawerClosed = await mobilePage.locator(".site-menu-drawer").getAttribute("aria-hidden") === "true";
+
   await browser.close();
 
   const result = {
     baseURL: BASE_URL,
     screenshots: SCREENSHOT_DIR,
-    pages: [home, articleList, digest, dongbei, qingcai],
+    pages: [home, articleList, digest, dongbei, qingcai, mobileDigest],
     failedResponses,
     consoleIssues,
   };

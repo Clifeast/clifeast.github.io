@@ -17,6 +17,11 @@ on:
         required: false
         default: false
         type: boolean
+      update_today:
+        description: "Also overwrite data/digest/today.json."
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -51,6 +56,8 @@ jobs:
           QWEN_API_BASE: https://dashscope.aliyuncs.com/compatible-mode/v1
           DIGEST_DATE: ${{ github.event.inputs.date }}
           FORCE_REBUILD: ${{ github.event.inputs.force }}
+          EVENT_NAME: ${{ github.event_name }}
+          UPDATE_TODAY: ${{ github.event.inputs.update_today }}
         run: |
           args=(--timezone Asia/Shanghai)
 
@@ -60,6 +67,10 @@ jobs:
 
           if [ "$FORCE_REBUILD" = "true" ]; then
             args+=(--force)
+          fi
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$UPDATE_TODAY" = "false" ]; then
+            args+=(--no-update-today)
           fi
 
           npm run build:digest -- "${args[@]}"

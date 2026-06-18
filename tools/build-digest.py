@@ -38,7 +38,7 @@ DEFAULT_QWEN_SCORE_MODEL = "qwen-plus"
 DEFAULT_QWEN_ENRICH_MODEL = "qwen-long"
 DEFAULT_TIMEZONE = "America/Los_Angeles"
 USER_AGENT = "clifeast-digest/0.4 (+https://clifeast.github.io/digest/)"
-PIPELINE_VERSION = "recent-arxiv-v3-score30"
+PIPELINE_VERSION = "recent-arxiv-v4-title-zh-counts"
 
 ARXIV_NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -92,6 +92,21 @@ AGT_SCORE_MAXIMA = {
     "readingValue": 6.0,
     "aiRelevance": 10.0,
     "agtRelevance": 10.0,
+}
+SCORE_MAXIMA_BY_SECTION = {
+    "recent-ai": {
+        **AI_SCORE_MAXIMA,
+        "penalty": 5.0,
+        "baseTotal": 30.0,
+        "total": 30.0,
+    },
+    "recent-agt": {
+        **AGT_SCORE_MAXIMA,
+        "penalty": 5.0,
+        "baseTotal": 30.0,
+        "bonus": 10.0,
+        "total": 40.0,
+    },
 }
 SELECTION_MIN_SCORE = 16.0
 SELECTION_MAX_ITEMS = 5
@@ -283,6 +298,7 @@ def make_paper(
     abstract = normalize_text(abstract)
     return {
         "title": title,
+        "titleZh": "",
         "authors": [normalize_text(author) for author in (authors or []) if normalize_text(author)],
         "date": normalize_text(date),
         "source": normalize_text(source),
@@ -355,6 +371,7 @@ def normalize_enrichment_result(result: dict[str, Any]) -> dict[str, Any]:
         for key in SUMMARY_SECTION_KEYS
     }
     return {
+        "titleZh": normalize_text(str(result.get("titleZh", ""))),
         "researchParadigmTags": result.get("researchParadigmTags", []),
         "contentTags": result.get("contentTags", result.get("tags", [])),
         "summarySections": summary_sections,
@@ -363,6 +380,9 @@ def normalize_enrichment_result(result: dict[str, Any]) -> dict[str, Any]:
 
 def apply_enrichment_result(paper: dict[str, Any], result: dict[str, Any]) -> dict[str, Any]:
     updated = dict(paper)
+    title_zh = normalize_text(str(result.get("titleZh", "")))
+    if title_zh:
+        updated["titleZh"] = title_zh
     content_tags = result.get("contentTags")
     paradigm_tags = result.get("researchParadigmTags")
     if isinstance(content_tags, list) and content_tags:
@@ -398,6 +418,7 @@ class MockRanker:
     def enrich_paper(self, paper: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
         summary_sections = self._summary_sections(paper)
         result = {
+            "titleZh": "",
             "researchParadigmTags": [],
             "contentTags": [],
             "summarySections": summary_sections,
@@ -555,6 +576,7 @@ class LLMClient:
             enrich_debug["error"] = str(error)
             enrich_debug["rawOutput"] = raw
         enrich_debug["finalPaper"] = {
+            "titleZh": enriched.get("titleZh", ""),
             "summarySections": enriched.get("summarySections", {}),
             "contentTags": enriched.get("contentTags", []),
             "researchParadigmTags": enriched.get("researchParadigmTags", []),
@@ -746,6 +768,7 @@ def enrichment_prompt(paper: dict[str, Any], section: dict[str, Any]) -> str:
 {rubric}
 
 输出要求：
+- titleZh：将论文原标题准确、自然地翻译为简体中文。保留必要的专有名词、缩写和数学符号，不要添加书名号、解释、评价或原标题。
 - summarySections 是对象，包含且只包含 backgroundAndQuestion、modelAndSetup、contributionsAndResults、methodsAndTechniques、limitationsAndReadingValue 五个字段。
 - 每个总结字段都用中文自然段输出，长度控制在 100-150 字左右，不要使用 Markdown、编号、列表或项目符号。
 - 写作对象是“有基础但没读过这篇论文的读者”。每段都要先用通俗但准确的话讲清楚这一部分在回答什么问题，再引入必要的模型、术语和结果。不要把摘要写成论文摘要翻译、术语清单或评审表。
@@ -759,6 +782,7 @@ def enrichment_prompt(paper: dict[str, Any], section: dict[str, Any]) -> str:
 
 输出格式：
 {{
+  "titleZh": "论文标题的中文翻译",
   "researchParadigmTags": ["..."],
   "contentTags": ["..."],
   "summarySections": {{
@@ -976,7 +1000,7 @@ def build_recent_arxiv_section(
     warnings: list[str],
     *,
     no_network: bool,
-) -> list[dict[str, Any]]:
+) -> tuple[list[dict[str, Any]], int]:
     section_id = str(section.get("id", "recent-arxiv"))
     section_debug = debug_section(debug, section_id)
     categories, category_note = categories_for_section(section, digest_date)
@@ -996,14 +1020,14 @@ def build_recent_arxiv_section(
     if no_network:
         warnings.append(
             f"{section.get('title', section_id)} 跳过：--no-network 下不抓取 arXiv")
-        return []
+        return [], 0
     try:
         total, candidates, fetch_debug = fetch_arxiv_candidates(
             categories, digest_date, limit=limit)
     except Exception as error:
         warnings.append(
             f"{section.get('title', section_id)} arXiv 抓取失败：{error}")
-        return []
+        return [], 0
     section_debug["arxivFetch"] = fetch_debug
     section_debug["arxivTotalResults"] = total
     section_debug["fetchedCount"] = len(candidates)
@@ -1011,7 +1035,7 @@ def build_recent_arxiv_section(
         paper) | {"abstract": paper.get("abstract", "")} for paper in candidates]
     if not candidates:
         print(f"[digest] {section_id}: no arXiv papers")
-        return []
+        return [], 0
 
     scored = llm.score_papers(candidates, section, section_debug, warnings)
     section_debug["allScoredPapers"] = [
@@ -1048,7 +1072,7 @@ def build_recent_arxiv_section(
                         f"缺少 arXiv PDF URL，第二阶段改用标题生成：{paper.get('title', 'untitled')}")
             enriched.append(llm.enrich_paper(
                 paper, section, section_debug, warnings, pdf_path=pdf_path))
-    return enriched
+    return enriched, len(candidates)
 
 
 def validate_sections(payload: Any, warnings: list[str]) -> list[dict[str, Any]]:
@@ -1089,18 +1113,20 @@ def build_payload(
     for section in sections:
         section_id = str(section.get("id", ""))
         try:
-            papers = build_recent_arxiv_section(
+            papers, fetched_count = build_recent_arxiv_section(
                 section, digest_date, llm, debug, warnings, no_network=no_network)
         except Exception as error:
             title = str(section.get("title", section_id or "Untitled section"))
             warnings.append(f"{title} 生成失败：{error}")
             papers = []
+            fetched_count = 0
         title = str(section.get("_renderTitle") or section.get(
             "title", section_id or "Untitled section"))
         rendered_sections.append({
             "id": section_id,
             "title": title,
             "source": "arxiv-llm-ranked",
+            "fetchedCount": fetched_count,
             "papers": papers,
         })
 
@@ -1116,6 +1142,7 @@ def build_payload(
             "enrichModel": llm.enrich_model if llm.enabled else "mock",
         },
         "scoreLabels": SCORE_LABELS,
+        "scoreMaxima": SCORE_MAXIMA_BY_SECTION,
         "sections": rendered_sections,
     }
     debug["warnings"] = warnings
@@ -1143,15 +1170,18 @@ def output_matches_current_config(payload: Any) -> bool:
     return {str(section.get("id", "")) for section in sections if isinstance(section, dict)} == current
 
 
-def write_digest(payload: dict[str, Any]) -> None:
+def write_digest(payload: dict[str, Any], *, update_today: bool = True) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     dated_path = DATA_DIR / f"{payload['date']}.json"
-    today_path = DATA_DIR / "today.json"
     rendered = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     dated_path.write_text(rendered, encoding="utf-8")
-    today_path.write_text(rendered, encoding="utf-8")
     print(f"[digest] wrote {dated_path.relative_to(ROOT)}")
-    print(f"[digest] wrote {today_path.relative_to(ROOT)}")
+    if update_today:
+        today_path = DATA_DIR / "today.json"
+        today_path.write_text(rendered, encoding="utf-8")
+        print(f"[digest] wrote {today_path.relative_to(ROOT)}")
+    else:
+        print("[digest] kept data/digest/today.json unchanged")
     for warning in payload.get("warnings", []):
         print(f"[digest] warning: {warning}")
 
@@ -1177,6 +1207,7 @@ def build_digest(
     force: bool = False,
     no_network: bool = False,
     dry_run: bool = False,
+    update_today: bool = True,
 ) -> dict[str, Any]:
     state = load_state()
     date_key = digest_date.isoformat()
@@ -1187,7 +1218,7 @@ def build_digest(
     if not force and isinstance(run_state, dict) and run_state.get("status") == "completed" and dated_path.exists():
         payload = load_json(dated_path, {})
         if output_matches_current_config(payload):
-            if not dry_run:
+            if not dry_run and update_today:
                 (DATA_DIR / "today.json").write_text(
                     json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
                     encoding="utf-8",
@@ -1205,7 +1236,7 @@ def build_digest(
               ", ".join(f"{section['id']}={len(section['papers'])}" for section in payload.get("sections", [])))
         return payload
 
-    write_digest(payload)
+    write_digest(payload, update_today=update_today)
     write_digest_index()
     try:
         write_debug(debug, digest_date)
@@ -1235,6 +1266,12 @@ def parse_args() -> argparse.Namespace:
                         help="Do not perform HTTP requests; useful for smoke tests.")
     parser.add_argument("--dry-run", action="store_true",
                         help="Build in memory without writing JSON, debug, or state files.")
+    parser.add_argument(
+        "--update-today",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Also overwrite data/digest/today.json. Defaults to true; use --no-update-today to keep it unchanged.",
+    )
     return parser.parse_args()
 
 
@@ -1255,6 +1292,7 @@ def main() -> None:
         force=args.force,
         no_network=args.no_network,
         dry_run=args.dry_run,
+        update_today=args.update_today,
     )
 
 

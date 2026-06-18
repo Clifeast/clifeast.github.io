@@ -36,6 +36,30 @@
     'bonus',
     'agtRelevance',
   ];
+  const DEFAULT_SCORE_MAXIMA = {
+    'recent-ai': {
+      importance: 6,
+      horizonValue: 6,
+      clarity: 6,
+      theoreticalDepth: 8,
+      overall: 4,
+      penalty: 5,
+      baseTotal: 30,
+      total: 30,
+    },
+    'recent-agt': {
+      modelNaturalness: 8,
+      theoreticalStrength: 10,
+      guaranteeQuality: 6,
+      readingValue: 6,
+      penalty: 5,
+      baseTotal: 30,
+      aiRelevance: 10,
+      bonus: 10,
+      agtRelevance: 10,
+      total: 40,
+    },
+  };
   const SUMMARY_SECTION_ORDER = [
     ['backgroundAndQuestion', '背景与问题'],
     ['modelAndSetup', '模型与设定'],
@@ -44,6 +68,7 @@
     ['limitationsAndReadingValue', '局限与阅读价值'],
   ];
   let scoreLabels = DEFAULT_SCORE_LABELS;
+  let scoreMaxima = DEFAULT_SCORE_MAXIMA;
   let archiveOptions = [];
   let calendarMonth = '';
   let selectedDigest = 'today';
@@ -126,6 +151,16 @@
     return key === 'total' || key === 'bonus' ? number.toFixed(1) : String(Math.round(number));
   }
 
+  function renderFraction(value, maximum, modifier = '') {
+    const fraction = document.createElement('span');
+    fraction.className = `score-fraction${modifier ? ` ${modifier}` : ''}`;
+    fraction.append(
+      createTextElement('strong', 'score-fraction__value', value),
+      createTextElement('span', 'score-fraction__maximum', `/${maximum}`),
+    );
+    return fraction;
+  }
+
   function renderScores(scores, sectionId) {
     if (!scores || typeof scores !== 'object' || !hasScoreValue(scores.total)) {
       return null;
@@ -138,7 +173,11 @@
     total.className = 'paper-card__score-total';
     total.append(
       createTextElement('span', '', scoreLabels.total || '总分'),
-      createTextElement('strong', '', formatScoreValue('total', scores.total)),
+      renderFraction(
+        formatScoreValue('total', scores.total),
+        formatScoreValue('total', scoreMaxima[sectionId]?.total),
+        'score-fraction--total',
+      ),
     );
     if (hasScoreValue(scores.bonus)) {
       total.classList.add('paper-card__score-total--with-bonus');
@@ -146,7 +185,11 @@
       bonus.className = 'paper-card__score-bonus';
       bonus.append(
         document.createTextNode(`${scoreLabels.bonus || 'AI 奖励'} `),
-        createTextElement('strong', '', formatScoreValue('bonus', scores.bonus)),
+        renderFraction(
+          formatScoreValue('bonus', scores.bonus),
+          formatScoreValue('bonus', scoreMaxima[sectionId]?.bonus),
+          'score-fraction--bonus',
+        ),
       );
       total.appendChild(bonus);
     }
@@ -162,7 +205,10 @@
       item.className = 'paper-card__score-item';
       item.append(
         createTextElement('span', 'paper-card__score-label', scoreLabels[key] || key),
-        createTextElement('strong', '', formatScoreValue(key, scores[key])),
+        renderFraction(
+          formatScoreValue(key, scores[key]),
+          formatScoreValue(key, scoreMaxima[sectionId]?.[key]),
+        ),
       );
       details.appendChild(item);
     });
@@ -229,6 +275,10 @@
     );
 
     const title = createTextElement('h3', 'paper-card__title', paper.title || 'Untitled paper');
+    const titleZhText = normalizeText(paper.titleZh);
+    const titleZh = titleZhText
+      ? createTextElement('p', 'paper-card__title-zh', titleZhText)
+      : null;
     const authors = createTextElement(
       'p',
       'paper-card__authors',
@@ -256,7 +306,11 @@
     link.rel = 'noreferrer';
     link.textContent = '查看论文';
 
-    article.append(meta, title, authors, summary);
+    article.append(meta, title);
+    if (titleZh) {
+      article.appendChild(titleZh);
+    }
+    article.append(authors, summary);
     if (tagGroups.childElementCount) {
       article.appendChild(tagGroups);
     }
@@ -273,11 +327,23 @@
     wrapper.id = section.id || '';
 
     const papers = Array.isArray(section.papers) ? section.papers : [];
+    const fetchedCount = Number.isFinite(Number(section.fetchedCount))
+      ? Math.max(papers.length, Number(section.fetchedCount))
+      : papers.length;
     const header = document.createElement('div');
     header.className = 'digest-section__header';
     header.append(
       createTextElement('h2', 'digest-section__title', section.title || 'Untitled section'),
-      createTextElement('span', 'digest-section__count', `${papers.length} 篇`),
+      (() => {
+        const count = document.createElement('span');
+        count.className = 'digest-section__count';
+        count.append(
+          renderFraction(String(papers.length), String(fetchedCount), 'score-fraction--count'),
+          document.createTextNode(' 篇'),
+        );
+        count.setAttribute('aria-label', `展示 ${papers.length} 篇，共抓取 ${fetchedCount} 篇`);
+        return count;
+      })(),
     );
 
     wrapper.appendChild(header);
@@ -302,6 +368,12 @@
     scoreLabels = data.scoreLabels && typeof data.scoreLabels === 'object'
       ? { ...DEFAULT_SCORE_LABELS, ...data.scoreLabels }
       : DEFAULT_SCORE_LABELS;
+    scoreMaxima = data.scoreMaxima && typeof data.scoreMaxima === 'object'
+      ? {
+        'recent-ai': { ...DEFAULT_SCORE_MAXIMA['recent-ai'], ...data.scoreMaxima['recent-ai'] },
+        'recent-agt': { ...DEFAULT_SCORE_MAXIMA['recent-agt'], ...data.scoreMaxima['recent-agt'] },
+      }
+      : DEFAULT_SCORE_MAXIMA;
     dateElement.textContent = formatDate(data.date);
 
     const fragment = document.createDocumentFragment();
@@ -346,7 +418,7 @@
     if (!pickerTrigger) {
       return;
     }
-    pickerTrigger.textContent = '选择简报';
+    pickerTrigger.textContent = '选择日期';
   }
 
   function monthFromDate(value) {
