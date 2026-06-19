@@ -1,0 +1,1081 @@
+{
+  "date": "2026-06-19",
+  "generatedAt": "2026-06-19T07:41:12.141404+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-18",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606180000 TO 202606182359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606180000 TO 202606182359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          }
+        },
+        "dedupedCount": 3
+      },
+      "arxivTotalResults": 3,
+      "fetchedCount": 3,
+      "fetchedPapers": [
+        {
+          "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
+          "url": "https://arxiv.org/abs/2606.20232",
+          "arxivId": "2606.20232",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.GT"
+          ],
+          "abstract": "This paper investigates mobile target search under imperfect perceptions caused by sensor limitations, malicious jamming, or communication noise. Searchers and targets operate in a grid-shaped area with bounded mobility, leading to a dynamic interplay between search and evasion. To capture this adversarial interaction under imperfect perceptions, we adopt the partially observable stochastic game (POSG) approach, which generalizes partially observable Markov decision processes (POMDPs) by incorporating target intelligence. To handle false alarms and missed detections caused by perceptual uncertainties, we propose a novel detectability concept to determine whether a search strategy guarantees eventual detection, and provide sufficient detectability criteria based on stochastic recurrence analysis. We further develop a server-assisted distributed algorithm that utilizes the aggregative potential game structure for searchers and a KL-divergence-based reduction for target prediction. Numerical simulations validate the effectiveness of the proposed algorithm and support the detectability analysis."
+        },
+        {
+          "title": "Beyond Lower Quota: Avoiding Overrepresentation in Multi-Winner Voting",
+          "url": "https://arxiv.org/abs/2606.19968",
+          "arxivId": "2606.19968",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Recently, in the social choice literature, much attention has been given to the question of avoiding underrepresentation in approval-based multi-winner voting. In this paper, we explore the largely overlooked complementary question of avoiding overrepresentation. This has not been explored systematically, despite being a desirable property with concrete applications. Intuitively, overrepresentation happens when a group determines a disproportionately large part of the committee, thereby exceeding the group's quota. We formulate a strong and appealing axiom for avoiding overrepresentation, called justifiable upper quota (JUQ). We introduce a generalization of Thiele rules, composite Thiele rules, and characterize the unique rule in this class satisfying our axiom. This rule, Adams-AV, which naturally extends Adams' apportionment method, has not been studied before. Additionally, we introduce a polynomial-time rule that satisfies JUQ. Furthermore, we introduce justified near quota, an axiom that balances avoiding under- and overrepresentation. It characterizes the unique Thiele rule extending the Sainte-Laguë apportionment method. Finally, we analyze the compatibility of our axioms with established proportionality notions such as EJR+."
+        },
+        {
+          "title": "A Unified Framework for Joint Sensor Placement and Scheduling for Intrusion Detection",
+          "url": "https://arxiv.org/abs/2606.19695",
+          "arxivId": "2606.19695",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.GT",
+            "math.OC"
+          ],
+          "abstract": "We consider an intrusion detection task in which a defender must jointly optimize sensor placement locations and orientations to minimize the probability of missed detection of an intruder traversing a protected environment. We decompose this problem into a meta problem, termed SensorPlacement, and an embedded subproblem, termed OrientationScheduling. The OrientationScheduling subproblem, for a fixed sensor placement, is modeled as a 2-player zero-sum game between the defender and the intruder, where the defender seeks an orientation strategy for the deployed sensors to minimize the probability of missed detection, while the intruder seeks a path selection strategy to maximize it. Since the defender's strategy space grows combinatorially with the number of sensors and orientations, solving the game via standard linear programming becomes prohibitive. To this end, we develop an iterative and efficient equilibrium-seeking algorithm that exploits the structure of the game's payoff function and establishes theoretical guarantees for convergence to the Nash equilibrium (NE) of the game. This NE value is then used as a utility measure in the SensorPlacement meta problem. We show that this game-value-based utility function is weakly submodular over the set of sensor placements and propose a greedy placement algorithm with near-optimality guarantees. To our knowledge, this is the first unified framework to integrate game-theoretic utility design with (weak) submodular optimization, enabling principled joint optimization of sensor placement and orientation scheduling. Through extensive simulations, we demonstrate that the proposed approach achieves near-optimal detection performance while significantly reducing computation time compared to baselines."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
+              "url": "https://arxiv.org/abs/2606.20232",
+              "arxivId": "2606.20232",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.GT"
+              ],
+              "abstract": "This paper investigates mobile target search under imperfect perceptions caused by sensor limitations, malicious jamming, or communication noise. Searchers and targets operate in a grid-shaped area with bounded mobility, leading to a dynamic interplay between search and evasion. To capture this adversarial interaction under imperfect perceptions, we adopt the partially observable stochastic game (POSG) approach, which generalizes partially observable Markov decision processes (POMDPs) by incorporating target intelligence. To handle false alarms and missed detections caused by perceptual uncertainties, we propose a novel detectability concept to determine whether a search strategy guarantees eventual detection, and provide sufficient detectability criteria based on stochastic recurrence analysis. We further develop a server-assisted distributed algorithm that utilizes the aggregative potential game structure for searchers and a KL-divergence-based reduction for target prediction. Numerical simulations validate the effectiveness of the proposed algorithm and support the detectability analysis."
+            },
+            {
+              "title": "Beyond Lower Quota: Avoiding Overrepresentation in Multi-Winner Voting",
+              "url": "https://arxiv.org/abs/2606.19968",
+              "arxivId": "2606.19968",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Recently, in the social choice literature, much attention has been given to the question of avoiding underrepresentation in approval-based multi-winner voting. In this paper, we explore the largely overlooked complementary question of avoiding overrepresentation. This has not been explored systematically, despite being a desirable property with concrete applications. Intuitively, overrepresentation happens when a group determines a disproportionately large part of the committee, thereby exceeding the group's quota. We formulate a strong and appealing axiom for avoiding overrepresentation, called justifiable upper quota (JUQ). We introduce a generalization of Thiele rules, composite Thiele rules, and characterize the unique rule in this class satisfying our axiom. This rule, Adams-AV, which naturally extends Adams' apportionment method, has not been studied before. Additionally, we introduce a polynomial-time rule that satisfies JUQ. Furthermore, we introduce justified near quota, an axiom that balances avoiding under- and overrepresentation. It characterizes the unique Thiele rule extending the Sainte-Laguë apportionment method. Finally, we analyze the compatibility of our axioms with established proportionality notions such as EJR+."
+            },
+            {
+              "title": "A Unified Framework for Joint Sensor Placement and Scheduling for Intrusion Detection",
+              "url": "https://arxiv.org/abs/2606.19695",
+              "arxivId": "2606.19695",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "eess.SY",
+                "cs.GT",
+                "math.OC"
+              ],
+              "abstract": "We consider an intrusion detection task in which a defender must jointly optimize sensor placement locations and orientations to minimize the probability of missed detection of an intruder traversing a protected environment. We decompose this problem into a meta problem, termed SensorPlacement, and an embedded subproblem, termed OrientationScheduling. The OrientationScheduling subproblem, for a fixed sensor placement, is modeled as a 2-player zero-sum game between the defender and the intruder, where the defender seeks an orientation strategy for the deployed sensors to minimize the probability of missed detection, while the intruder seeks a path selection strategy to maximize it. Since the defender's strategy space grows combinatorially with the number of sensors and orientations, solving the game via standard linear programming becomes prohibitive. To this end, we develop an iterative and efficient equilibrium-seeking algorithm that exploits the structure of the game's payoff function and establishes theoretical guarantees for convergence to the Nash equilibrium (NE) of the game. This NE value is then used as a utility measure in the SensorPlacement meta problem. We show that this game-value-based utility function is weakly submodular over the set of sensor placements and propose a greedy placement algorithm with near-optimality guarantees. To our knowledge, this is the first unified framework to integrate game-theoretic utility design with (weak) submodular optimization, enabling principled joint optimization of sensor placement and orientation scheduling. Through extensive simulations, we demonstrate that the proposed approach achieves near-optimal detection performance while significantly reducing computation time compared to baselines."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 3,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
+              "url": "https://arxiv.org/abs/2606.20232",
+              "arxivId": "2606.20232",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 19.0,
+                "bonus": 1.9,
+                "total": 16.7
+              }
+            },
+            {
+              "title": "Beyond Lower Quota: Avoiding Overrepresentation in Multi-Winner Voting",
+              "url": "https://arxiv.org/abs/2606.19968",
+              "arxivId": "2606.19968",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "A Unified Framework for Joint Sensor Placement and Scheduling for Intrusion Detection",
+              "url": "https://arxiv.org/abs/2606.19695",
+              "arxivId": "2606.19695",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "eess.SY",
+                "cs.GT",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 25.0,
+                "bonus": 1.7,
+                "total": 24.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
+          "url": "https://arxiv.org/abs/2606.20232",
+          "arxivId": "2606.20232",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 19.0,
+            "bonus": 1.9,
+            "total": 16.7
+          }
+        },
+        {
+          "title": "Beyond Lower Quota: Avoiding Overrepresentation in Multi-Winner Voting",
+          "url": "https://arxiv.org/abs/2606.19968",
+          "arxivId": "2606.19968",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "A Unified Framework for Joint Sensor Placement and Scheduling for Intrusion Detection",
+          "url": "https://arxiv.org/abs/2606.19695",
+          "arxivId": "2606.19695",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.GT",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 1.7,
+            "total": 24.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Beyond Lower Quota: Avoiding Overrepresentation in Multi-Winner Voting",
+          "url": "https://arxiv.org/abs/2606.19968",
+          "arxivId": "2606.19968",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "A Unified Framework for Joint Sensor Placement and Scheduling for Intrusion Detection",
+          "url": "https://arxiv.org/abs/2606.19695",
+          "arxivId": "2606.19695",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.GT",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 1.7,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
+          "url": "https://arxiv.org/abs/2606.20232",
+          "arxivId": "2606.20232",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 19.0,
+            "bonus": 1.9,
+            "total": 16.7
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Beyond Lower Quota: Avoiding Overrepresentation in Multi-Winner Voting",
+            "url": "https://arxiv.org/abs/2606.19968",
+            "arxivId": "2606.19968",
+            "date": "2026-06-18",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超越下配额：避免多胜者投票中的过度代表",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "模型构建"
+            ],
+            "contentTags": [
+              "社会选择",
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有研究多关注如何避免少数群体被忽视（欠代表），但同样重要的问题是防止某些群体占据过多席位（过度代表）。本文指出，在批准式多胜者投票中，过度代表可能导致权力失衡与安全风险，尤其在议会分配和区块链治理中至关重要。尽管比例性常被等同于避免欠代表，但缺乏对过度代表的系统性公理化研究，这构成了本文的核心动因。",
+              "modelAndSetup": "模型设定包含一组选民与候选人，每位选民提交一个批准集。目标是从中选出固定大小的委员会。每个选民群体有其‘配额’，即按人数比例应得的席位数。论文聚焦于如何形式化‘过度代表’：当某群体支持的候选人进入委员会后，该群体成员的实际代表数超过其配额上限时，即构成过度代表，而规则应在可能的情况下避免此类情况。",
+              "contributionsAndResults": "论文提出了‘正当化上配额’（JUQ）这一新公理，用于捕捉避免过度代表的要求，并证明在复合Thiele规则类中，只有Adams-AV规则及其细化满足JUQ，且该规则自然扩展了阿当斯议席分配法。此外，作者设计了一个多项式时间算法UQER，可在不牺牲效率的前提下构造满足JUQ的委员会，解决了计算难题。",
+              "methodsAndTechniques": "作者通过构造复合Thiele规则——即分阶段应用不同Thiele规则进行排序与平票打破——来建模更精细的决策过程。证明JUQ满足性时，采用交换论证与字典序得分提升分析；对于算法设计，则利用贪心删除机制，逐步移除导致上配额违规的候选人，并借助势函数思想确保过程终止于合法解。",
+              "limitationsAndReadingValue": "主要局限在于JUQ与经典比例性公理EJR+及完备性难以同时满足，且Adams-AV计算困难。然而，论文的价值在于首次系统引入并形式化‘避免过度代表’的问题，提供了全新的公理视角与机制设计路径。最值得阅读的是其对比例性双重维度的平衡思考、JUQ公理的设计直觉以及UQER算法的构造逻辑。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超越下配额：避免多胜者投票中的过度代表",
+            "summarySections": {
+              "backgroundAndQuestion": "现有研究多关注如何避免少数群体被忽视（欠代表），但同样重要的问题是防止某些群体占据过多席位（过度代表）。本文指出，在批准式多胜者投票中，过度代表可能导致权力失衡与安全风险，尤其在议会分配和区块链治理中至关重要。尽管比例性常被等同于避免欠代表，但缺乏对过度代表的系统性公理化研究，这构成了本文的核心动因。",
+              "modelAndSetup": "模型设定包含一组选民与候选人，每位选民提交一个批准集。目标是从中选出固定大小的委员会。每个选民群体有其‘配额’，即按人数比例应得的席位数。论文聚焦于如何形式化‘过度代表’：当某群体支持的候选人进入委员会后，该群体成员的实际代表数超过其配额上限时，即构成过度代表，而规则应在可能的情况下避免此类情况。",
+              "contributionsAndResults": "论文提出了‘正当化上配额’（JUQ）这一新公理，用于捕捉避免过度代表的要求，并证明在复合Thiele规则类中，只有Adams-AV规则及其细化满足JUQ，且该规则自然扩展了阿当斯议席分配法。此外，作者设计了一个多项式时间算法UQER，可在不牺牲效率的前提下构造满足JUQ的委员会，解决了计算难题。",
+              "methodsAndTechniques": "作者通过构造复合Thiele规则——即分阶段应用不同Thiele规则进行排序与平票打破——来建模更精细的决策过程。证明JUQ满足性时，采用交换论证与字典序得分提升分析；对于算法设计，则利用贪心删除机制，逐步移除导致上配额违规的候选人，并借助势函数思想确保过程终止于合法解。",
+              "limitationsAndReadingValue": "主要局限在于JUQ与经典比例性公理EJR+及完备性难以同时满足，且Adams-AV计算困难。然而，论文的价值在于首次系统引入并形式化‘避免过度代表’的问题，提供了全新的公理视角与机制设计路径。最值得阅读的是其对比例性双重维度的平衡思考、JUQ公理的设计直觉以及UQER算法的构造逻辑。"
+            },
+            "contentTags": [
+              "社会选择",
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "A Unified Framework for Joint Sensor Placement and Scheduling for Intrusion Detection",
+            "url": "https://arxiv.org/abs/2606.19695",
+            "arxivId": "2606.19695",
+            "date": "2026-06-18",
+            "source": "arXiv",
+            "categories": [
+              "eess.SY",
+              "cs.GT",
+              "math.OC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "用于入侵检测的联合传感器放置与调度统一框架",
+            "researchParadigmTags": [
+              "算法设计",
+              "均衡分析",
+              "理论推导",
+              "系统框架",
+              "实验验证"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "博弈学习",
+              "弱次模优化",
+              "传感器调度"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在安防监控中，传感器的位置和朝向调度共同影响检测性能，但二者常被分开研究。若仅优化位置而不考虑动态朝向调度，可能出现时间盲区；反之，再优调度也无法弥补布局缺陷。尤其在对抗环境下，入侵者会利用感知模式的可预测性规避监测。因此，需联合优化空间部署与时间调度，并建模双方策略互动，这是现有方法尚未系统解决的问题。",
+              "modelAndSetup": "环境被建模为图，节点为区域，边为可行路径。防御方部署有限传感器于候选位置，每个传感器可选择多个朝向之一进行周期性扫描。入侵者选择一条路径穿越环境。双方作为零和博弈中的玩家：防御方随机化传感器朝向组合以最小化漏检概率，入侵者则随机化路径选择以最大化该值。纳什均衡值反映最优对抗下的检测性能。",
+              "contributionsAndResults": "论文提出首个融合博弈论效用与弱次模优化的联合框架。首先，针对固定布署，设计分布式均衡搜索算法（DES），实现比线性规划更优的收敛速度与可扩展性。其次，证明该博弈值作为布署效用函数满足弱次模性，从而可用贪心算法求解布署问题并获得近似最优保证。实验表明该方法接近最优性能且计算效率显著提升。",
+              "methodsAndTechniques": "核心在于分解问题：内层调度建模为零和博弈，利用乘积权重更新设计高效均衡算法，通过子博弈矩阵分解避免指数级策略空间的直接求解。外层布署问题则借助博弈值的结构性质——单调性和弱次模性，将组合优化转化为贪心选择过程。关键技术是投影游戏表示法，使新增传感器对应矩阵加法，从而分析边际增益并导出弱次模常数。",
+              "limitationsAndReadingValue": "框架依赖于预定义的有限路径集合与静态图模型，对大规模或动态环境的适应性受限。算法性能受子博弈独立性假设影响，实际中传感器间遮挡或协作可能削弱该假设。尽管如此，其价值在于清晰展示了如何将博弈均衡嵌入组合优化框架，为安全资源分配提供了兼具理论保证与实用性的设计范式，特别适合学习其问题分解与效用函数构造思想。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "用于入侵检测的联合传感器放置与调度统一框架",
+            "summarySections": {
+              "backgroundAndQuestion": "在安防监控中，传感器的位置和朝向调度共同影响检测性能，但二者常被分开研究。若仅优化位置而不考虑动态朝向调度，可能出现时间盲区；反之，再优调度也无法弥补布局缺陷。尤其在对抗环境下，入侵者会利用感知模式的可预测性规避监测。因此，需联合优化空间部署与时间调度，并建模双方策略互动，这是现有方法尚未系统解决的问题。",
+              "modelAndSetup": "环境被建模为图，节点为区域，边为可行路径。防御方部署有限传感器于候选位置，每个传感器可选择多个朝向之一进行周期性扫描。入侵者选择一条路径穿越环境。双方作为零和博弈中的玩家：防御方随机化传感器朝向组合以最小化漏检概率，入侵者则随机化路径选择以最大化该值。纳什均衡值反映最优对抗下的检测性能。",
+              "contributionsAndResults": "论文提出首个融合博弈论效用与弱次模优化的联合框架。首先，针对固定布署，设计分布式均衡搜索算法（DES），实现比线性规划更优的收敛速度与可扩展性。其次，证明该博弈值作为布署效用函数满足弱次模性，从而可用贪心算法求解布署问题并获得近似最优保证。实验表明该方法接近最优性能且计算效率显著提升。",
+              "methodsAndTechniques": "核心在于分解问题：内层调度建模为零和博弈，利用乘积权重更新设计高效均衡算法，通过子博弈矩阵分解避免指数级策略空间的直接求解。外层布署问题则借助博弈值的结构性质——单调性和弱次模性，将组合优化转化为贪心选择过程。关键技术是投影游戏表示法，使新增传感器对应矩阵加法，从而分析边际增益并导出弱次模常数。",
+              "limitationsAndReadingValue": "框架依赖于预定义的有限路径集合与静态图模型，对大规模或动态环境的适应性受限。算法性能受子博弈独立性假设影响，实际中传感器间遮挡或协作可能削弱该假设。尽管如此，其价值在于清晰展示了如何将博弈均衡嵌入组合优化框架，为安全资源分配提供了兼具理论保证与实用性的设计范式，特别适合学习其问题分解与效用函数构造思想。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "博弈学习",
+              "弱次模优化",
+              "传感器调度"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "均衡分析",
+              "理论推导",
+              "系统框架",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
+            "url": "https://arxiv.org/abs/2606.20232",
+            "arxivId": "2606.20232",
+            "date": "2026-06-18",
+            "source": "arXiv",
+            "categories": [
+              "cs.RO",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "移动目标搜索中的不完美感知：一种部分可观测随机博弈理论方法",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "均衡分析",
+              "实验验证"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "博弈学习",
+              "信息设计",
+              "鲁棒性",
+              "智能体"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在传感器受限、存在误报漏检的情况下仍能保证最终发现移动目标？现有研究多假设感知可靠或忽略虚假警报，难以应对真实环境中由干扰、噪声导致的低信噪比问题。本文关注在对抗性目标主动逃避与感知不可靠并存时，搜索策略是否仍能几乎必然达成检测这一根本挑战。",
+              "modelAndSetup": "作者将搜索者与目标建模为部分可观测随机博弈（POSG）中的两方：搜索者通过不完美观测更新各区域的目标存在置信度，并基于全局信念协同决策；目标则采取规避策略增加不确定性。关键设定包括独立伯努利信念更新机制、允许误报与漏检的感知模型，以及以信息熵为效用指标的零和博弈结构。",
+              "contributionsAndResults": "论文提出了α-可检测性概念，用于判断搜索策略能否在概率1下最终完成检测。通过随机递推分析和Borel-Cantelli引理，建立了可检测性的充分条件，揭示了持续正覆盖概率对克服噪声的关键作用。此外，在齐次设定下给出了显式的阈值判据，填补了传统最优性分析与实际检测保障之间的空白。",
+              "methodsAndTechniques": "作者利用自然滤流刻画信念演化过程，将可检测性转化为后验信念进入检测集合的首达时间问题。借助Borel-Cantelli引理分析条件概率发散性，证明无限次尝试机会足以确保有限时间内命中。算法层面则采用聚合势博弈分解与KL散度降维预测，有效缓解高维状态与动作空间带来的计算难题。",
+              "limitationsAndReadingValue": "模型依赖齐次性假设与中心服务器架构，分布式实现时信念同步可能成为瓶颈。虽然算法逼近均衡且保留可检测性潜力，但缺乏严格的收敛保证。最值得阅读的是其对‘检测可能性’的理论界定方式，以及在感知极不可靠环境下维持搜索鲁棒性的新分析框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "移动目标搜索中的不完美感知：一种部分可观测随机博弈理论方法",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在传感器受限、存在误报漏检的情况下仍能保证最终发现移动目标？现有研究多假设感知可靠或忽略虚假警报，难以应对真实环境中由干扰、噪声导致的低信噪比问题。本文关注在对抗性目标主动逃避与感知不可靠并存时，搜索策略是否仍能几乎必然达成检测这一根本挑战。",
+              "modelAndSetup": "作者将搜索者与目标建模为部分可观测随机博弈（POSG）中的两方：搜索者通过不完美观测更新各区域的目标存在置信度，并基于全局信念协同决策；目标则采取规避策略增加不确定性。关键设定包括独立伯努利信念更新机制、允许误报与漏检的感知模型，以及以信息熵为效用指标的零和博弈结构。",
+              "contributionsAndResults": "论文提出了α-可检测性概念，用于判断搜索策略能否在概率1下最终完成检测。通过随机递推分析和Borel-Cantelli引理，建立了可检测性的充分条件，揭示了持续正覆盖概率对克服噪声的关键作用。此外，在齐次设定下给出了显式的阈值判据，填补了传统最优性分析与实际检测保障之间的空白。",
+              "methodsAndTechniques": "作者利用自然滤流刻画信念演化过程，将可检测性转化为后验信念进入检测集合的首达时间问题。借助Borel-Cantelli引理分析条件概率发散性，证明无限次尝试机会足以确保有限时间内命中。算法层面则采用聚合势博弈分解与KL散度降维预测，有效缓解高维状态与动作空间带来的计算难题。",
+              "limitationsAndReadingValue": "模型依赖齐次性假设与中心服务器架构，分布式实现时信念同步可能成为瓶颈。虽然算法逼近均衡且保留可检测性潜力，但缺乏严格的收敛保证。最值得阅读的是其对‘检测可能性’的理论界定方式，以及在感知极不可靠环境下维持搜索鲁棒性的新分析框架。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "博弈学习",
+              "信息设计",
+              "鲁棒性",
+              "智能体"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "均衡分析",
+              "实验验证"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-18",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202606180000 TO 202606182359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks",
+          "url": "https://arxiv.org/abs/2606.20442",
+          "arxivId": "2606.20442",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE",
+            "math.NA"
+          ],
+          "abstract": "Physics-Informed Neural Networks (PINNs) solve Partial Differential Equations (PDEs) by embedding physical laws into neural network training. However, their performance suffers from unstable convergence, training plateaus, and strong sensitivity to architectural and optimization hyperparameters due to the highly non-convex and multi-term structure of the physics-informed loss. In this setting, the outer-loop hyperparameter search is a noisy and black-box optimization problem over heterogeneous parameters, where classical local or gradient-based strategies are easily trapped in suboptimal regions. Evolutionary algorithms, with their population-based exploration and ability to handle mixed, non-differentiable search spaces, provide a more robust mechanism for discovering promising configurations. We propose and investigate a two-stage approach based on evolutionary algorithms that combines exploration and exploitation parts of PINNs training to improve solution accuracy and robustness under fixed computational budgets. In the first stage, we perform low-fidelity training runs with truncated epochs to rapidly screen candidate configurations, treating hyperparameter selection as a black-box outer-loop problem. In the second stage, only the most promising candidates are fully trained with standard gradient-based optimizers to refine the solution. Evaluated on three popular problems, namely Advection, Klein-Gordon and Helmholtz equations, our method consistently outperforms standard training and achieves significantly lower mean error within constrained computational resources."
+        },
+        {
+          "title": "Beyond Accuracy: Measuring Logical Compliance of Predictive Models",
+          "url": "https://arxiv.org/abs/2606.20208",
+          "arxivId": "2606.20208",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.DB",
+            "cs.NE"
+          ],
+          "abstract": "Machine learning models are predominantly evaluated through predictive performance metrics such as ranking quality, prediction error, or classification accuracy. While these metrics effectively quantify how closely predictions match the ground truth, they do not assess whether model outputs respect predefined logical or domain-specific constraints. In high-stakes applications, including healthcare, finance, and autonomous systems, logical consistency can be as critical as predictive accuracy, yet no standard metric captures this dimension. We introduce the Rule Violation Score (RVS), a complementary evaluation metric that quantifies the extent to which a predictive model respects a given set of logical rules, independently of predictive accuracy. RVS treats hard rules (strict constraints) and soft rules (statistical regularities) differently, can be evaluated on any dataset and on any predictive model expressed over a relational vocabulary, and can be computed using SQL queries that are automatically generated for Horn rules. Beyond evaluating models, RVS can also evaluate the logical consistency of training datasets and help identify poorly defined rules. We evaluate RVS on three benchmarks covering knowledge graph link prediction and relational regression, including rule-based, embedding-based, and neuro-symbolic predictive models. Our results demonstrate that two models achieving comparable predictive accuracy can exhibit substantially different levels of logical compliance, revealing differences in model behavior that standard metrics fail to capture."
+        },
+        {
+          "title": "Hybrid ANN-SNN Pipeline with Local Plasticity",
+          "url": "https://arxiv.org/abs/2606.20151",
+          "arxivId": "2606.20151",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI"
+          ],
+          "abstract": "This work proposes a hybrid ANN-SNN pipeline that effectively leverages the rich embeddings of pretrained artificial neural networks (ANNs) to enable high-performance spiking neural networks (SNNs). The architecture couples a pretrained EfficientNet encoder with a CoLaNET spiking classifier. We convert the encoder's activations into spike trains via rate-coding and train the subsequent SNN classifier using local, biologically inspired learning rules, bypassing end-to-end gradient propagation. This approach achieves 99.09% accuracy on a 64-class ImageNet benchmark, demonstrating performance on par with conventional deep networks. The work presents a biologically plausible and efficient framework for adapting powerful pretrained encoders to downstream spiking neural network tasks."
+        },
+        {
+          "title": "Weight Adaptation for Improving Parallel Performance of Adaptive Stochastic Natural Gradient",
+          "url": "https://arxiv.org/abs/2606.19861",
+          "arxivId": "2606.19861",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "Probabilistic model-based evolutionary algorithms are promising for black-box optimization. Specifically, the adaptive stochastic natural gradient (ASNG) adaptively updates its learning rate, a typical hyperparameter in probabilistic model-based evolutionary algorithms, thereby realizing efficient and robust optimization. Although weight parameters are common hyperparameters, with the increasing demand for parallel evaluation of time-consuming tasks, it remains unclear how to set suitable weights for larger population sizes. In this paper, we propose Weight Adaptation ASNG (WA-ASNG), which incorporates a weight adaptation mechanism into ASNG. We calculated the estimated signal of the update direction from the accumulations of the natural gradient. Then, to maximize the signal, WA-ASNG adaptively updates its weight parameters by a gradient ascent over the optimization. While the learning rate adaptation plays a role in satisfying a sufficient condition for monotonic improvement of the expected objective value, the mechanism of weight adaptation is intended to maximize this improvement. The experimental results demonstrate that WA-ASNG outperforms PBIL and ASNG across various settings with population sizes ranging from 25 to 100 for binary optimization problems. Furthermore, WA-ASNG can perform efficiently in the presence of strong noise. Our code is available at https://github.com/shiralab/WA-ASNG ."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks",
+              "url": "https://arxiv.org/abs/2606.20442",
+              "arxivId": "2606.20442",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE",
+                "math.NA"
+              ],
+              "abstract": "Physics-Informed Neural Networks (PINNs) solve Partial Differential Equations (PDEs) by embedding physical laws into neural network training. However, their performance suffers from unstable convergence, training plateaus, and strong sensitivity to architectural and optimization hyperparameters due to the highly non-convex and multi-term structure of the physics-informed loss. In this setting, the outer-loop hyperparameter search is a noisy and black-box optimization problem over heterogeneous parameters, where classical local or gradient-based strategies are easily trapped in suboptimal regions. Evolutionary algorithms, with their population-based exploration and ability to handle mixed, non-differentiable search spaces, provide a more robust mechanism for discovering promising configurations. We propose and investigate a two-stage approach based on evolutionary algorithms that combines exploration and exploitation parts of PINNs training to improve solution accuracy and robustness under fixed computational budgets. In the first stage, we perform low-fidelity training runs with truncated epochs to rapidly screen candidate configurations, treating hyperparameter selection as a black-box outer-loop problem. In the second stage, only the most promising candidates are fully trained with standard gradient-based optimizers to refine the solution. Evaluated on three popular problems, namely Advection, Klein-Gordon and Helmholtz equations, our method consistently outperforms standard training and achieves significantly lower mean error within constrained computational resources."
+            },
+            {
+              "title": "Beyond Accuracy: Measuring Logical Compliance of Predictive Models",
+              "url": "https://arxiv.org/abs/2606.20208",
+              "arxivId": "2606.20208",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.DB",
+                "cs.NE"
+              ],
+              "abstract": "Machine learning models are predominantly evaluated through predictive performance metrics such as ranking quality, prediction error, or classification accuracy. While these metrics effectively quantify how closely predictions match the ground truth, they do not assess whether model outputs respect predefined logical or domain-specific constraints. In high-stakes applications, including healthcare, finance, and autonomous systems, logical consistency can be as critical as predictive accuracy, yet no standard metric captures this dimension. We introduce the Rule Violation Score (RVS), a complementary evaluation metric that quantifies the extent to which a predictive model respects a given set of logical rules, independently of predictive accuracy. RVS treats hard rules (strict constraints) and soft rules (statistical regularities) differently, can be evaluated on any dataset and on any predictive model expressed over a relational vocabulary, and can be computed using SQL queries that are automatically generated for Horn rules. Beyond evaluating models, RVS can also evaluate the logical consistency of training datasets and help identify poorly defined rules. We evaluate RVS on three benchmarks covering knowledge graph link prediction and relational regression, including rule-based, embedding-based, and neuro-symbolic predictive models. Our results demonstrate that two models achieving comparable predictive accuracy can exhibit substantially different levels of logical compliance, revealing differences in model behavior that standard metrics fail to capture."
+            },
+            {
+              "title": "Hybrid ANN-SNN Pipeline with Local Plasticity",
+              "url": "https://arxiv.org/abs/2606.20151",
+              "arxivId": "2606.20151",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI"
+              ],
+              "abstract": "This work proposes a hybrid ANN-SNN pipeline that effectively leverages the rich embeddings of pretrained artificial neural networks (ANNs) to enable high-performance spiking neural networks (SNNs). The architecture couples a pretrained EfficientNet encoder with a CoLaNET spiking classifier. We convert the encoder's activations into spike trains via rate-coding and train the subsequent SNN classifier using local, biologically inspired learning rules, bypassing end-to-end gradient propagation. This approach achieves 99.09% accuracy on a 64-class ImageNet benchmark, demonstrating performance on par with conventional deep networks. The work presents a biologically plausible and efficient framework for adapting powerful pretrained encoders to downstream spiking neural network tasks."
+            },
+            {
+              "title": "Weight Adaptation for Improving Parallel Performance of Adaptive Stochastic Natural Gradient",
+              "url": "https://arxiv.org/abs/2606.19861",
+              "arxivId": "2606.19861",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "Probabilistic model-based evolutionary algorithms are promising for black-box optimization. Specifically, the adaptive stochastic natural gradient (ASNG) adaptively updates its learning rate, a typical hyperparameter in probabilistic model-based evolutionary algorithms, thereby realizing efficient and robust optimization. Although weight parameters are common hyperparameters, with the increasing demand for parallel evaluation of time-consuming tasks, it remains unclear how to set suitable weights for larger population sizes. In this paper, we propose Weight Adaptation ASNG (WA-ASNG), which incorporates a weight adaptation mechanism into ASNG. We calculated the estimated signal of the update direction from the accumulations of the natural gradient. Then, to maximize the signal, WA-ASNG adaptively updates its weight parameters by a gradient ascent over the optimization. While the learning rate adaptation plays a role in satisfying a sufficient condition for monotonic improvement of the expected objective value, the mechanism of weight adaptation is intended to maximize this improvement. The experimental results demonstrate that WA-ASNG outperforms PBIL and ASNG across various settings with population sizes ranging from 25 to 100 for binary optimization problems. Furthermore, WA-ASNG can perform efficiently in the presence of strong noise. Our code is available at https://github.com/shiralab/WA-ASNG ."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 4,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks",
+              "url": "https://arxiv.org/abs/2606.20442",
+              "arxivId": "2606.20442",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE",
+                "math.NA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 16.0,
+                "total": 16.0
+              }
+            },
+            {
+              "title": "Beyond Accuracy: Measuring Logical Compliance of Predictive Models",
+              "url": "https://arxiv.org/abs/2606.20208",
+              "arxivId": "2606.20208",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.DB",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Hybrid ANN-SNN Pipeline with Local Plasticity",
+              "url": "https://arxiv.org/abs/2606.20151",
+              "arxivId": "2606.20151",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            },
+            {
+              "title": "Weight Adaptation for Improving Parallel Performance of Adaptive Stochastic Natural Gradient",
+              "url": "https://arxiv.org/abs/2606.19861",
+              "arxivId": "2606.19861",
+              "date": "2026-06-18",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 4.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 13.0,
+                "total": 13.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks",
+          "url": "https://arxiv.org/abs/2606.20442",
+          "arxivId": "2606.20442",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE",
+            "math.NA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 16.0,
+            "total": 16.0
+          }
+        },
+        {
+          "title": "Beyond Accuracy: Measuring Logical Compliance of Predictive Models",
+          "url": "https://arxiv.org/abs/2606.20208",
+          "arxivId": "2606.20208",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.DB",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Hybrid ANN-SNN Pipeline with Local Plasticity",
+          "url": "https://arxiv.org/abs/2606.20151",
+          "arxivId": "2606.20151",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        },
+        {
+          "title": "Weight Adaptation for Improving Parallel Performance of Adaptive Stochastic Natural Gradient",
+          "url": "https://arxiv.org/abs/2606.19861",
+          "arxivId": "2606.19861",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 4.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 13.0,
+            "total": 13.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Beyond Accuracy: Measuring Logical Compliance of Predictive Models",
+          "url": "https://arxiv.org/abs/2606.20208",
+          "arxivId": "2606.20208",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.DB",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks",
+          "url": "https://arxiv.org/abs/2606.20442",
+          "arxivId": "2606.20442",
+          "date": "2026-06-18",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE",
+            "math.NA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 16.0,
+            "total": 16.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Beyond Accuracy: Measuring Logical Compliance of Predictive Models",
+            "url": "https://arxiv.org/abs/2606.20208",
+            "arxivId": "2606.20208",
+            "date": "2026-06-18",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.DB",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超越准确率：预测模型的逻辑一致性度量",
+            "researchParadigmTags": [
+              "评测方法",
+              "实验验证",
+              "基准评测",
+              "模型构建",
+              "机制设计"
+            ],
+            "contentTags": [
+              "评测方法",
+              "逻辑一致性",
+              "预测模型",
+              "规则约束",
+              "神经符号系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统机器学习评估主要依赖准确率、误差等指标来衡量预测与真实标签的匹配程度，但忽略了模型输出是否符合领域内的逻辑或语义规则。在医疗、金融等高风险场景中，违反硬性逻辑（如亲属关系冲突）可能导致严重后果。现有指标无法捕捉这类问题，因此需要一种独立于预测准确性的新度量，用于评估模型对预定义规则的遵守程度。",
+              "modelAndSetup": "论文在三个不同类型的基准上评估了多种预测模型，包括知识图谱链接预测和房地产价格回归任务。输入为观测事实和模型预测结果，输出为每个规则下的合规得分。通过构建包含真实事实和预测的数据库，利用SQL自动计算规则违反情况，并引入硬规则与软规则区分机制，在无需真实标签的情况下量化逻辑一致性。",
+              "contributionsAndResults": "论文提出了规则违反分数（RVS），能够揭示准确率相近的模型在逻辑合规上的显著差异。实验表明，某些高精度模型反而产生更多硬规则违反，而一些低准确率模型更符合领域知识。RVS不仅能比较模型，还可诊断数据集中本身不一致的规则，提供了传统指标之外的重要补充信息。",
+              "methodsAndTechniques": "RVS的核心是分别计算数据集自身和模型预测中规则被违反的比例。对于硬规则，直接统计预测引发的新矛盾；对于软规则，则相对于数据基线进行归一化处理，确保不会因数据噪声误判模型表现。整个计算过程基于关系代数实现，可通过SQL自动化执行，适用于任何可表达为关系形式的规则和模型。",
+              "limitationsAndReadingValue": "RVS依赖于人工定义的规则集和外部提供的反例机制，其有效性受限于规则质量和领域覆盖。此外，当前实现主要针对Horn规则，复杂逻辑的支持仍需扩展。尽管如此，该论文的价值在于提出了一个可集成到现有流程中的实用评测维度，最值得阅读的是其问题洞察、RVS设计原理及跨任务的实证分析。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超越准确率：预测模型的逻辑一致性度量",
+            "summarySections": {
+              "backgroundAndQuestion": "传统机器学习评估主要依赖准确率、误差等指标来衡量预测与真实标签的匹配程度，但忽略了模型输出是否符合领域内的逻辑或语义规则。在医疗、金融等高风险场景中，违反硬性逻辑（如亲属关系冲突）可能导致严重后果。现有指标无法捕捉这类问题，因此需要一种独立于预测准确性的新度量，用于评估模型对预定义规则的遵守程度。",
+              "modelAndSetup": "论文在三个不同类型的基准上评估了多种预测模型，包括知识图谱链接预测和房地产价格回归任务。输入为观测事实和模型预测结果，输出为每个规则下的合规得分。通过构建包含真实事实和预测的数据库，利用SQL自动计算规则违反情况，并引入硬规则与软规则区分机制，在无需真实标签的情况下量化逻辑一致性。",
+              "contributionsAndResults": "论文提出了规则违反分数（RVS），能够揭示准确率相近的模型在逻辑合规上的显著差异。实验表明，某些高精度模型反而产生更多硬规则违反，而一些低准确率模型更符合领域知识。RVS不仅能比较模型，还可诊断数据集中本身不一致的规则，提供了传统指标之外的重要补充信息。",
+              "methodsAndTechniques": "RVS的核心是分别计算数据集自身和模型预测中规则被违反的比例。对于硬规则，直接统计预测引发的新矛盾；对于软规则，则相对于数据基线进行归一化处理，确保不会因数据噪声误判模型表现。整个计算过程基于关系代数实现，可通过SQL自动化执行，适用于任何可表达为关系形式的规则和模型。",
+              "limitationsAndReadingValue": "RVS依赖于人工定义的规则集和外部提供的反例机制，其有效性受限于规则质量和领域覆盖。此外，当前实现主要针对Horn规则，复杂逻辑的支持仍需扩展。尽管如此，该论文的价值在于提出了一个可集成到现有流程中的实用评测维度，最值得阅读的是其问题洞察、RVS设计原理及跨任务的实证分析。"
+            },
+            "contentTags": [
+              "评测方法",
+              "逻辑一致性",
+              "预测模型",
+              "规则约束",
+              "神经符号系统"
+            ],
+            "researchParadigmTags": [
+              "评测方法",
+              "实验验证",
+              "基准评测",
+              "模型构建",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks",
+            "url": "https://arxiv.org/abs/2606.20442",
+            "arxivId": "2606.20442",
+            "date": "2026-06-18",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.NE",
+              "math.NA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "基于进化算法的两阶段超参数优化策略用于物理信息神经网络",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "基准评测"
+            ],
+            "contentTags": [
+              "物理信息神经网络",
+              "超参数优化",
+              "进化算法",
+              "损失函数优化",
+              "计算效率"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "物理信息神经网络（PINNs）在求解偏微分方程时面临训练不稳定、收敛困难和对超参数高度敏感的问题。其损失函数具有多模态、非凸特性，导致传统基于梯度或局部搜索的超参数调优方法容易陷入次优解。现有方法如贝叶斯优化或网格搜索在高维异构参数空间中效率低下，难以在有限计算预算下找到鲁棒配置，亟需更高效的全局探索机制。",
+              "modelAndSetup": "研究在三个经典偏微分方程（平流、克莱因-戈登、亥姆霍兹）上评估不同超参数优化策略。输入为PDE及其边界条件，输出为神经网络预测的解场。通过比较多种进化算法与传统方法，在固定总计算资源下考察最终解的精度（RMSE）和稳定性。训练使用截断轮次进行快速筛选，再对优选配置进行全量训练。",
+              "contributionsAndResults": "论文提出一种两阶段进化优化框架，显著提升了PINNs在受限算力下的求解精度与鲁棒性。实验表明，该方法相比单阶段全训练或贝叶斯优化，平均误差降低达40%，最高减少77%。关键发现是仅用10%的训练轮次即可有效识别高性能配置，为系统化超参数搜索提供了实用路径。",
+              "methodsAndTechniques": "方法第一阶段采用种群型进化算法（如JADE、LSHADE）进行低保真训练，快速筛选潜力配置；第二阶段对少数候选者执行完整训练以精细收敛。利用进化算法处理混合参数空间的能力，避免依赖损失函数可微性，并通过阶段性资源分配平衡探索与开发，有效应对PINN训练中的早停滞与局部极小问题。",
+              "limitationsAndReadingValue": "研究局限于特定几类PDE和固定网络结构范围，未验证方法在更广物理系统或动态架构下的普适性。尽管进化算法表现优于贝叶斯优化，但缺乏对种群多样性演化过程的深入分析。最值得阅读的是其两阶段设计思路与资源分配实证，为资源敏感场景下的科学机器学习提供了可复用的经验准则。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "基于进化算法的两阶段超参数优化策略用于物理信息神经网络",
+            "summarySections": {
+              "backgroundAndQuestion": "物理信息神经网络（PINNs）在求解偏微分方程时面临训练不稳定、收敛困难和对超参数高度敏感的问题。其损失函数具有多模态、非凸特性，导致传统基于梯度或局部搜索的超参数调优方法容易陷入次优解。现有方法如贝叶斯优化或网格搜索在高维异构参数空间中效率低下，难以在有限计算预算下找到鲁棒配置，亟需更高效的全局探索机制。",
+              "modelAndSetup": "研究在三个经典偏微分方程（平流、克莱因-戈登、亥姆霍兹）上评估不同超参数优化策略。输入为PDE及其边界条件，输出为神经网络预测的解场。通过比较多种进化算法与传统方法，在固定总计算资源下考察最终解的精度（RMSE）和稳定性。训练使用截断轮次进行快速筛选，再对优选配置进行全量训练。",
+              "contributionsAndResults": "论文提出一种两阶段进化优化框架，显著提升了PINNs在受限算力下的求解精度与鲁棒性。实验表明，该方法相比单阶段全训练或贝叶斯优化，平均误差降低达40%，最高减少77%。关键发现是仅用10%的训练轮次即可有效识别高性能配置，为系统化超参数搜索提供了实用路径。",
+              "methodsAndTechniques": "方法第一阶段采用种群型进化算法（如JADE、LSHADE）进行低保真训练，快速筛选潜力配置；第二阶段对少数候选者执行完整训练以精细收敛。利用进化算法处理混合参数空间的能力，避免依赖损失函数可微性，并通过阶段性资源分配平衡探索与开发，有效应对PINN训练中的早停滞与局部极小问题。",
+              "limitationsAndReadingValue": "研究局限于特定几类PDE和固定网络结构范围，未验证方法在更广物理系统或动态架构下的普适性。尽管进化算法表现优于贝叶斯优化，但缺乏对种群多样性演化过程的深入分析。最值得阅读的是其两阶段设计思路与资源分配实证，为资源敏感场景下的科学机器学习提供了可复用的经验准则。"
+            },
+            "contentTags": [
+              "物理信息神经网络",
+              "超参数优化",
+              "进化算法",
+              "损失函数优化",
+              "计算效率"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "基准评测"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 3,
+    "recent-ai": 2
+  }
+}
