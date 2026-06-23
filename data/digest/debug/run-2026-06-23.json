@@ -1,0 +1,2007 @@
+{
+  "date": "2026-06-23",
+  "generatedAt": "2026-06-23T06:32:41.776069+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-22",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606220000 TO 202606222359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606220000 TO 202606222359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 7
+      },
+      "arxivTotalResults": 8,
+      "fetchedCount": 7,
+      "fetchedPapers": [
+        {
+          "title": "Mixed Voting Rules for Participatory Budgeting",
+          "url": "https://arxiv.org/abs/2606.23320",
+          "arxivId": "2606.23320",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Designing and analyzing voting rules for Participatory Budgeting (PB) elections is an active research area in computational social choice. Many PB voting rules aim to optimize a specific objective. For instance, the ubiquitous Greedy rule attempts to maximize utilitarian welfare, while the Method of Equal Shares (MES) aims to achieve proportional representation. However, it is often desirable to achieve good outcomes on multiple objectives rather than a close-to-perfect outcome for one. Inspired by mixed-member systems for parliamentary elections, we introduce mixed voting rules for PB. These are composed of a sequence of two or more rules that can each spend some fraction of the overall budget in order to add projects to the set selected by earlier rules. We develop a theoretical framework for formulating and analyzing mixed PB voting rules, and explore how existing rules can be adapted to this framework. We particularly focus on MES and its potential to address imbalances in representation created by earlier rules. We propose different ways to adjust MES voter budgets based on how satisfied voters are with previously chosen projects, and examine how well the resulting rules approximate well-known proportionality axioms such as EJR+. In particular, we show that one of these methods improves upon a natural proportionality baseline. We also extend our main positive result to general additive satisfaction functions. We complement our theoretical results with an extensive empirical analysis of real-world PB elections. Our experiments show that mixed rules can achieve favorable trade-offs between utilitarian welfare and proportionality. We identify several refinements that further improve their performance, and apply our framework to PB rules beyond Greedy and MES."
+        },
+        {
+          "title": "Flow Games with Public Arcs: the Least Core and the Nucleolus",
+          "url": "https://arxiv.org/abs/2606.23288",
+          "arxivId": "2606.23288",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "abstract": "We study flow games with public arcs, an extension of classical cooperative flow games that allows players to use public resources. In these games, a coalition corresponds to a set of arcs, while certain arcs, called public arcs, can be used freely by any coalition. The value of a coalition is the maximum flow value achievable using the arcs controlled by the coalition along with the public arcs. These games have significant applications in financial, communication, and supply-chain networks. We investigate two solution concepts, the least core and the nucleolus. Both solution concepts provide principled ways to allocate the value of the grand coalition among individual players. We provide characterizations of the least core of these games. We also give a polynomial-time algorithm to compute the nucleolus when the core is non-empty."
+        },
+        {
+          "title": "Neural Parameter Calibration for Finite-State Mean Field Games",
+          "url": "https://arxiv.org/abs/2606.23155",
+          "arxivId": "2606.23155",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "Mean field games efficiently approximate a very large population of strategic agents. While these games can aid the understanding of complex systems, their deployment in real-world settings is challenged by the specification of their parameters: mean field games (MFGs) often involve hidden preferences, constraints, and interactions that can rarely be theoretically derived or directly observed. To address this gap, we present a neural network-based framework for learning parametric, finite-state MFGs from observed population dynamics. To do so, we formulate the parameter calibration as an inverse problem and use implicit differentiation to backpropagate through the games' equilibrium. The resulting approach is fully differentiable and enables us to estimate flexible trajectory-wise parameter paths, including state- and time-dependent specifications without requiring observations of the individual agents' actions or rewards. We provide a proof for the exactness of the gradient computation in a discrete-time formulation. We validate our framework through numerical experiments across four systems of increasing complexity, ranging from synthetic linear-quadratic benchmarks to real-world urban mobility datasets."
+        },
+        {
+          "title": "Each Judge Its Own Yardstick: Discovering Per-VLM Taxonomies for Physical Video Evaluation",
+          "url": "https://arxiv.org/abs/2606.22918",
+          "arxivId": "2606.22918",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.GT"
+          ],
+          "abstract": "Maintaining physical consistency in video generators and world models increasingly relies on vision-language models (VLMs) as automated judges that provide reward signals, ranking decisions, and data-filtering criteria. Yet VLMs differ substantially in training data and architecture, encoding physical phenomena through distinct internal representations. A single global evaluation schema therefore gives every VLM the same axes of competence, regardless of what each can actually perceive. We propose JudgeFit, an iterative refinement procedure that discovers a per-VLM evaluation taxonomy. An initial taxonomy is constructed by prompting the target VLM to enumerate physics errors on a small set of videos and clustering the resulting descriptions. The taxonomy is then refined through a diagnostic step: we calibrate the VLM's per-dimension scores to human physical-commonsense ratings, diagnose which dimensions it scores unreliably or redundantly, and prompt an LLM to repair them, iterating until convergence. We further instantiate this procedure as a benchmark and apply it to 16 VLMs spanning eight model families. The refined taxonomy outperforms the global-schema baseline on held-out videos for every VLM tested, with a mean relative improvement of approximately 32%. Beyond aggregate accuracy, the per-VLM profiles expose model-specific blind spots that overall rankings cannot anticipate, with reliability patterns differing markedly across model families."
+        },
+        {
+          "title": "Measuring Behavior Portability in Large Language Models",
+          "url": "https://arxiv.org/abs/2606.22797",
+          "arxivId": "2606.22797",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CY",
+            "cs.GT",
+            "econ.GN"
+          ],
+          "abstract": "Large language models are increasingly deployed as autonomous decision makers, yet the behavioral mapping they exhibit can vary substantially across decision environments that are payoff-equivalent by construction-environments that share identical payoff-relevant structure but differ in surface presentation. This sensitivity renders suite-based evaluation fragile and raises a fundamental question of behavioral portability: how well does a behavioral mapping learned in one decision environment informative on another that preserves the same underlying incentive structure? We introduce a formal framework to measure this property. Our protocol fits an interpretable behavioral model on data pooled from a set of source environments and evaluates its out-of-sample predictive performance in a held-out target environment, benchmarking against an oracle trained directly on target data. Portability is quantified via a loss-agnostic measure that delivers worst-case bounds on the performance of the induced prediction-action mapping in the target environment. In controlled experiments spanning seven canonical economic decision problems, we document substantial and systematic portability losses, suggesting that behavioral characterizations of LLMs obtained in one decision environment cannot be assumed to transfer reliably to structurally equivalent alternatives."
+        },
+        {
+          "title": "The Expected Number of Pairwise Stable Networks",
+          "url": "https://arxiv.org/abs/2606.23440",
+          "arxivId": "2606.23440",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "abstract": "This paper studies probabilistic properties of pairwise stability for a network model where individual utilities are random variables. We study the probability that a given network is pairwise stable and the expected number of pairwise stable networks. We provide a closed-form solution for the latter number. As the evaluation of the exact expression is computationally challenging for large populations, we provide tractable lower and upper bounds for this expression which allow us to pin down the asymptotic behavior of the expected number of pairwise stable networks up to a multiplicative constant. This asymptotic behavior is described by the number of networks $ 2^{n(n-1)/2} $ times $ (2/n+1)^{n} $, a sequence that tends to infinity fast. We normalize the number of pairwise stable networks by this sequence and show that the variance of the normalized number of pairwise stable networks converges to zero as $ n $ tends to infinity. We conclude that almost surely the number of pairwise stable networks tends to infinity, while the fraction of pairwise stable networks tends to $ 0 $ as $ n $ goes to infinity."
+        },
+        {
+          "title": "On the construction and representation of social welfare orders satisfying consequentialist equity axioms",
+          "url": "https://arxiv.org/abs/2606.23428",
+          "arxivId": "2606.23428",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "In this paper we examine the constructive nature of social welfare orders on infinite utility streams $X=Y^{\\mathbb{N}}$ satisfying Strong Equity, Hammond Equity, or the Pigou--Dalton transfer principle. The constructive social welfare orders are described using lexicographic preference relations. Social welfare orders satisfying Strong Equity, Hammond Equity, or the Pigou--Dalton transfer principle admit explicit descriptions when $Y(<)$ is well-ordered. We describe restrictions on the domain $Y$ under which the existence of social welfare orders satisfying the aforementioned equity axioms entails the existence of a non-Ramsey collection. For this, we rely on the existence of a non-Ramsey collection, which is treated here as a nonconstructive object."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Mixed Voting Rules for Participatory Budgeting",
+              "url": "https://arxiv.org/abs/2606.23320",
+              "arxivId": "2606.23320",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Designing and analyzing voting rules for Participatory Budgeting (PB) elections is an active research area in computational social choice. Many PB voting rules aim to optimize a specific objective. For instance, the ubiquitous Greedy rule attempts to maximize utilitarian welfare, while the Method of Equal Shares (MES) aims to achieve proportional representation. However, it is often desirable to achieve good outcomes on multiple objectives rather than a close-to-perfect outcome for one. Inspired by mixed-member systems for parliamentary elections, we introduce mixed voting rules for PB. These are composed of a sequence of two or more rules that can each spend some fraction of the overall budget in order to add projects to the set selected by earlier rules. We develop a theoretical framework for formulating and analyzing mixed PB voting rules, and explore how existing rules can be adapted to this framework. We particularly focus on MES and its potential to address imbalances in representation created by earlier rules. We propose different ways to adjust MES voter budgets based on how satisfied voters are with previously chosen projects, and examine how well the resulting rules approximate well-known proportionality axioms such as EJR+. In particular, we show that one of these methods improves upon a natural proportionality baseline. We also extend our main positive result to general additive satisfaction functions. We complement our theoretical results with an extensive empirical analysis of real-world PB elections. Our experiments show that mixed rules can achieve favorable trade-offs between utilitarian welfare and proportionality. We identify several refinements that further improve their performance, and apply our framework to PB rules beyond Greedy and MES."
+            },
+            {
+              "title": "Flow Games with Public Arcs: the Least Core and the Nucleolus",
+              "url": "https://arxiv.org/abs/2606.23288",
+              "arxivId": "2606.23288",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "abstract": "We study flow games with public arcs, an extension of classical cooperative flow games that allows players to use public resources. In these games, a coalition corresponds to a set of arcs, while certain arcs, called public arcs, can be used freely by any coalition. The value of a coalition is the maximum flow value achievable using the arcs controlled by the coalition along with the public arcs. These games have significant applications in financial, communication, and supply-chain networks. We investigate two solution concepts, the least core and the nucleolus. Both solution concepts provide principled ways to allocate the value of the grand coalition among individual players. We provide characterizations of the least core of these games. We also give a polynomial-time algorithm to compute the nucleolus when the core is non-empty."
+            },
+            {
+              "title": "Neural Parameter Calibration for Finite-State Mean Field Games",
+              "url": "https://arxiv.org/abs/2606.23155",
+              "arxivId": "2606.23155",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "Mean field games efficiently approximate a very large population of strategic agents. While these games can aid the understanding of complex systems, their deployment in real-world settings is challenged by the specification of their parameters: mean field games (MFGs) often involve hidden preferences, constraints, and interactions that can rarely be theoretically derived or directly observed. To address this gap, we present a neural network-based framework for learning parametric, finite-state MFGs from observed population dynamics. To do so, we formulate the parameter calibration as an inverse problem and use implicit differentiation to backpropagate through the games' equilibrium. The resulting approach is fully differentiable and enables us to estimate flexible trajectory-wise parameter paths, including state- and time-dependent specifications without requiring observations of the individual agents' actions or rewards. We provide a proof for the exactness of the gradient computation in a discrete-time formulation. We validate our framework through numerical experiments across four systems of increasing complexity, ranging from synthetic linear-quadratic benchmarks to real-world urban mobility datasets."
+            },
+            {
+              "title": "Each Judge Its Own Yardstick: Discovering Per-VLM Taxonomies for Physical Video Evaluation",
+              "url": "https://arxiv.org/abs/2606.22918",
+              "arxivId": "2606.22918",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.GT"
+              ],
+              "abstract": "Maintaining physical consistency in video generators and world models increasingly relies on vision-language models (VLMs) as automated judges that provide reward signals, ranking decisions, and data-filtering criteria. Yet VLMs differ substantially in training data and architecture, encoding physical phenomena through distinct internal representations. A single global evaluation schema therefore gives every VLM the same axes of competence, regardless of what each can actually perceive. We propose JudgeFit, an iterative refinement procedure that discovers a per-VLM evaluation taxonomy. An initial taxonomy is constructed by prompting the target VLM to enumerate physics errors on a small set of videos and clustering the resulting descriptions. The taxonomy is then refined through a diagnostic step: we calibrate the VLM's per-dimension scores to human physical-commonsense ratings, diagnose which dimensions it scores unreliably or redundantly, and prompt an LLM to repair them, iterating until convergence. We further instantiate this procedure as a benchmark and apply it to 16 VLMs spanning eight model families. The refined taxonomy outperforms the global-schema baseline on held-out videos for every VLM tested, with a mean relative improvement of approximately 32%. Beyond aggregate accuracy, the per-VLM profiles expose model-specific blind spots that overall rankings cannot anticipate, with reliability patterns differing markedly across model families."
+            },
+            {
+              "title": "Measuring Behavior Portability in Large Language Models",
+              "url": "https://arxiv.org/abs/2606.22797",
+              "arxivId": "2606.22797",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CY",
+                "cs.GT",
+                "econ.GN"
+              ],
+              "abstract": "Large language models are increasingly deployed as autonomous decision makers, yet the behavioral mapping they exhibit can vary substantially across decision environments that are payoff-equivalent by construction-environments that share identical payoff-relevant structure but differ in surface presentation. This sensitivity renders suite-based evaluation fragile and raises a fundamental question of behavioral portability: how well does a behavioral mapping learned in one decision environment informative on another that preserves the same underlying incentive structure? We introduce a formal framework to measure this property. Our protocol fits an interpretable behavioral model on data pooled from a set of source environments and evaluates its out-of-sample predictive performance in a held-out target environment, benchmarking against an oracle trained directly on target data. Portability is quantified via a loss-agnostic measure that delivers worst-case bounds on the performance of the induced prediction-action mapping in the target environment. In controlled experiments spanning seven canonical economic decision problems, we document substantial and systematic portability losses, suggesting that behavioral characterizations of LLMs obtained in one decision environment cannot be assumed to transfer reliably to structurally equivalent alternatives."
+            },
+            {
+              "title": "The Expected Number of Pairwise Stable Networks",
+              "url": "https://arxiv.org/abs/2606.23440",
+              "arxivId": "2606.23440",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.PR"
+              ],
+              "abstract": "This paper studies probabilistic properties of pairwise stability for a network model where individual utilities are random variables. We study the probability that a given network is pairwise stable and the expected number of pairwise stable networks. We provide a closed-form solution for the latter number. As the evaluation of the exact expression is computationally challenging for large populations, we provide tractable lower and upper bounds for this expression which allow us to pin down the asymptotic behavior of the expected number of pairwise stable networks up to a multiplicative constant. This asymptotic behavior is described by the number of networks $ 2^{n(n-1)/2} $ times $ (2/n+1)^{n} $, a sequence that tends to infinity fast. We normalize the number of pairwise stable networks by this sequence and show that the variance of the normalized number of pairwise stable networks converges to zero as $ n $ tends to infinity. We conclude that almost surely the number of pairwise stable networks tends to infinity, while the fraction of pairwise stable networks tends to $ 0 $ as $ n $ goes to infinity."
+            },
+            {
+              "title": "On the construction and representation of social welfare orders satisfying consequentialist equity axioms",
+              "url": "https://arxiv.org/abs/2606.23428",
+              "arxivId": "2606.23428",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "In this paper we examine the constructive nature of social welfare orders on infinite utility streams $X=Y^{\\mathbb{N}}$ satisfying Strong Equity, Hammond Equity, or the Pigou--Dalton transfer principle. The constructive social welfare orders are described using lexicographic preference relations. Social welfare orders satisfying Strong Equity, Hammond Equity, or the Pigou--Dalton transfer principle admit explicit descriptions when $Y(<)$ is well-ordered. We describe restrictions on the domain $Y$ under which the existence of social welfare orders satisfying the aforementioned equity axioms entails the existence of a non-Ramsey collection. For this, we rely on the existence of a non-Ramsey collection, which is treated here as a nonconstructive object."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 3,
+                  "guaranteeQuality": 2,
+                  "readingValue": 3,
+                  "penalty": -3,
+                  "aiRelevance": 7,
+                  "agtRelevance": 4
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 10,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 3,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 6
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Mixed Voting Rules for Participatory Budgeting",
+              "url": "https://arxiv.org/abs/2606.23320",
+              "arxivId": "2606.23320",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 1.7,
+                "total": 24.9
+              }
+            },
+            {
+              "title": "Flow Games with Public Arcs: the Least Core and the Nucleolus",
+              "url": "https://arxiv.org/abs/2606.23288",
+              "arxivId": "2606.23288",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Neural Parameter Calibration for Finite-State Mean Field Games",
+              "url": "https://arxiv.org/abs/2606.23155",
+              "arxivId": "2606.23155",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 25.0,
+                "bonus": 6.7,
+                "total": 28.5
+              }
+            },
+            {
+              "title": "Each Judge Its Own Yardstick: Discovering Per-VLM Taxonomies for Physical Video Evaluation",
+              "url": "https://arxiv.org/abs/2606.22918",
+              "arxivId": "2606.22918",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Measuring Behavior Portability in Large Language Models",
+              "url": "https://arxiv.org/abs/2606.22797",
+              "arxivId": "2606.22797",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CY",
+                "cs.GT",
+                "econ.GN"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 10.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 9.3,
+                "total": 37.3
+              }
+            },
+            {
+              "title": "The Expected Number of Pairwise Stable Networks",
+              "url": "https://arxiv.org/abs/2606.23440",
+              "arxivId": "2606.23440",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.PR"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "On the construction and representation of social welfare orders satisfying consequentialist equity axioms",
+              "url": "https://arxiv.org/abs/2606.23428",
+              "arxivId": "2606.23428",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 3.0,
+                "theoreticalStrength": 5.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 3.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 6.0,
+                "penalty": -2.0,
+                "baseTotal": 12.0,
+                "bonus": 0.0,
+                "total": 7.2
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Mixed Voting Rules for Participatory Budgeting",
+          "url": "https://arxiv.org/abs/2606.23320",
+          "arxivId": "2606.23320",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 24.9
+          }
+        },
+        {
+          "title": "Flow Games with Public Arcs: the Least Core and the Nucleolus",
+          "url": "https://arxiv.org/abs/2606.23288",
+          "arxivId": "2606.23288",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Neural Parameter Calibration for Finite-State Mean Field Games",
+          "url": "https://arxiv.org/abs/2606.23155",
+          "arxivId": "2606.23155",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 6.7,
+            "total": 28.5
+          }
+        },
+        {
+          "title": "Each Judge Its Own Yardstick: Discovering Per-VLM Taxonomies for Physical Video Evaluation",
+          "url": "https://arxiv.org/abs/2606.22918",
+          "arxivId": "2606.22918",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Measuring Behavior Portability in Large Language Models",
+          "url": "https://arxiv.org/abs/2606.22797",
+          "arxivId": "2606.22797",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CY",
+            "cs.GT",
+            "econ.GN"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 9.3,
+            "total": 37.3
+          }
+        },
+        {
+          "title": "The Expected Number of Pairwise Stable Networks",
+          "url": "https://arxiv.org/abs/2606.23440",
+          "arxivId": "2606.23440",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "On the construction and representation of social welfare orders satisfying consequentialist equity axioms",
+          "url": "https://arxiv.org/abs/2606.23428",
+          "arxivId": "2606.23428",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 3.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 3.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 6.0,
+            "penalty": -2.0,
+            "baseTotal": 12.0,
+            "bonus": 0.0,
+            "total": 7.2
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Measuring Behavior Portability in Large Language Models",
+          "url": "https://arxiv.org/abs/2606.22797",
+          "arxivId": "2606.22797",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CY",
+            "cs.GT",
+            "econ.GN"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 9.3,
+            "total": 37.3
+          }
+        },
+        {
+          "title": "Flow Games with Public Arcs: the Least Core and the Nucleolus",
+          "url": "https://arxiv.org/abs/2606.23288",
+          "arxivId": "2606.23288",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Neural Parameter Calibration for Finite-State Mean Field Games",
+          "url": "https://arxiv.org/abs/2606.23155",
+          "arxivId": "2606.23155",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 6.7,
+            "total": 28.5
+          }
+        },
+        {
+          "title": "Mixed Voting Rules for Participatory Budgeting",
+          "url": "https://arxiv.org/abs/2606.23320",
+          "arxivId": "2606.23320",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 24.9
+          }
+        },
+        {
+          "title": "The Expected Number of Pairwise Stable Networks",
+          "url": "https://arxiv.org/abs/2606.23440",
+          "arxivId": "2606.23440",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Measuring Behavior Portability in Large Language Models",
+            "url": "https://arxiv.org/abs/2606.22797",
+            "arxivId": "2606.22797",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.CY",
+              "cs.GT",
+              "econ.GN"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "测量大语言模型中的行为可移植性",
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "模型构建",
+              "理论推导",
+              "基准评测"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "行为可移植性",
+              "鲁棒性",
+              "对齐",
+              "决策环境"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型被广泛用作自主决策代理，人们关注其行为在不同但收益结构相同的决策环境中是否一致。论文指出，现有基于提示套件的评估方式隐含假设了行为可移植性，即模型仅依赖收益相关特征做决策。然而，表面描述的变化可能显著影响模型行为，导致评估不可靠。因此，核心问题是：一个在源环境中学到的行为映射能否在保持相同激励结构的目标环境中有效预测行为？",
+              "modelAndSetup": "作者构建了一个形式化框架来衡量行为可移植性。决策环境被分解为收益相关特征x和无关特征z。若模型行为仅由x决定，则应在所有x相同的环境中表现一致。研究通过拟合一个可解释的行为模型（如线性回归）于多个源环境的数据，并在未见的目标环境中测试其预测性能，同时以直接在目标环境训练的模型作为基准，从而量化可移植性损失。",
+              "contributionsAndResults": "研究发现，当前主流大语言模型普遍存在显著且系统性的可移植性损失。即使在收益结构完全相同的环境下，行为映射也无法稳定迁移。平均总变差距离达0.349，表明预测性能存在严重下降。社会性任务如独裁者博弈和信任博弈的可移植性最差，而更量化的彩票选择任务则相对稳定。",
+              "methodsAndTechniques": "作者采用‘在环境中训练，在另一环境中测试’的协议，利用总变差距离作为与损失无关的度量标准，提供对任意有界评估准则下性能差异的最坏情况上界。该方法不依赖特定评分规则，能全面捕捉预测-行动联合分布的差异。此外，还辅以R²增益、链式思维分析等诊断手段探究行为变化机制。",
+              "limitationsAndReadingValue": "研究局限于七种经典经济决策任务，虽控制良好但场景有限，且依赖提取器解析文本输出可能引入误差。尽管如此，论文的价值在于提出了行为可移植性这一关键评估维度，挑战了提示套件外推的有效性。最值得读的是其严谨的实验设计、可移植性度量框架及其对模型对齐与鲁棒性的深刻启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "测量大语言模型中的行为可移植性",
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型被广泛用作自主决策代理，人们关注其行为在不同但收益结构相同的决策环境中是否一致。论文指出，现有基于提示套件的评估方式隐含假设了行为可移植性，即模型仅依赖收益相关特征做决策。然而，表面描述的变化可能显著影响模型行为，导致评估不可靠。因此，核心问题是：一个在源环境中学到的行为映射能否在保持相同激励结构的目标环境中有效预测行为？",
+              "modelAndSetup": "作者构建了一个形式化框架来衡量行为可移植性。决策环境被分解为收益相关特征x和无关特征z。若模型行为仅由x决定，则应在所有x相同的环境中表现一致。研究通过拟合一个可解释的行为模型（如线性回归）于多个源环境的数据，并在未见的目标环境中测试其预测性能，同时以直接在目标环境训练的模型作为基准，从而量化可移植性损失。",
+              "contributionsAndResults": "研究发现，当前主流大语言模型普遍存在显著且系统性的可移植性损失。即使在收益结构完全相同的环境下，行为映射也无法稳定迁移。平均总变差距离达0.349，表明预测性能存在严重下降。社会性任务如独裁者博弈和信任博弈的可移植性最差，而更量化的彩票选择任务则相对稳定。",
+              "methodsAndTechniques": "作者采用‘在环境中训练，在另一环境中测试’的协议，利用总变差距离作为与损失无关的度量标准，提供对任意有界评估准则下性能差异的最坏情况上界。该方法不依赖特定评分规则，能全面捕捉预测-行动联合分布的差异。此外，还辅以R²增益、链式思维分析等诊断手段探究行为变化机制。",
+              "limitationsAndReadingValue": "研究局限于七种经典经济决策任务，虽控制良好但场景有限，且依赖提取器解析文本输出可能引入误差。尽管如此，论文的价值在于提出了行为可移植性这一关键评估维度，挑战了提示套件外推的有效性。最值得读的是其严谨的实验设计、可移植性度量框架及其对模型对齐与鲁棒性的深刻启示。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "行为可移植性",
+              "鲁棒性",
+              "对齐",
+              "决策环境"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "模型构建",
+              "理论推导",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Flow Games with Public Arcs: the Least Core and the Nucleolus",
+            "url": "https://arxiv.org/abs/2606.23288",
+            "arxivId": "2606.23288",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "具有公共弧的流博弈：最小核与核仁",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "合作博弈",
+              "流博弈",
+              "核与核仁",
+              "机制设计",
+              "网络资源分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统合作流博弈假设玩家独占所有网络弧，难以刻画现实中共享基础设施（如公共道路、通信骨干网）的情形。本文研究当部分弧为公共品时，联盟如何利用私有与公共资源传输流量并分配收益的问题。核心挑战在于：原有解概念如‘核’可能为空，需寻找更稳健的分配方案。",
+              "modelAndSetup": "模型基于有向图，源点到汇点间存在私有弧（属特定玩家）和公共弧（任意联盟可用）。联盟价值为其能实现的最大流值。玩家集合为弧的子集，特征函数由最大流决定。假设全联盟割断网络，确保价值合理。关注解概念包括最小核与核仁，用于在核空时提供稳定分配。",
+              "contributionsAndResults": "论文给出了流博弈中最小核的线性刻画，表明其可用多项式个约束描述。进一步，在核非空时，提出了计算核仁的多项式时间算法。关键结果揭示了‘通用流’在刻画最小核中的核心作用，并建立了核非空与无公共弧最小割之间的等价关系。",
+              "methodsAndTechniques": "作者通过线性规划与对偶理论，将指数级的联盟约束转化为流约束，利用最小费用流进行分离。引入‘通用流’概念，结合势函数和互补松弛条件，刻画最小核结构。算法基于P-Q分解与跳跃路径分析，递归求解核仁对应的线性规划序列。",
+              "limitationsAndReadingValue": "当前算法仅适用于核非空情形，核空时核仁计算复杂度未知。模型限于单位容量简单流，推广至一般容量仍开放。最值得读的是其将组合结构嵌入合作博弈解概念的技巧，以及用网络流工具解决核仁计算的完整框架，对机制设计与资源分配研究具启发性。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "具有公共弧的流博弈：最小核与核仁",
+            "summarySections": {
+              "backgroundAndQuestion": "传统合作流博弈假设玩家独占所有网络弧，难以刻画现实中共享基础设施（如公共道路、通信骨干网）的情形。本文研究当部分弧为公共品时，联盟如何利用私有与公共资源传输流量并分配收益的问题。核心挑战在于：原有解概念如‘核’可能为空，需寻找更稳健的分配方案。",
+              "modelAndSetup": "模型基于有向图，源点到汇点间存在私有弧（属特定玩家）和公共弧（任意联盟可用）。联盟价值为其能实现的最大流值。玩家集合为弧的子集，特征函数由最大流决定。假设全联盟割断网络，确保价值合理。关注解概念包括最小核与核仁，用于在核空时提供稳定分配。",
+              "contributionsAndResults": "论文给出了流博弈中最小核的线性刻画，表明其可用多项式个约束描述。进一步，在核非空时，提出了计算核仁的多项式时间算法。关键结果揭示了‘通用流’在刻画最小核中的核心作用，并建立了核非空与无公共弧最小割之间的等价关系。",
+              "methodsAndTechniques": "作者通过线性规划与对偶理论，将指数级的联盟约束转化为流约束，利用最小费用流进行分离。引入‘通用流’概念，结合势函数和互补松弛条件，刻画最小核结构。算法基于P-Q分解与跳跃路径分析，递归求解核仁对应的线性规划序列。",
+              "limitationsAndReadingValue": "当前算法仅适用于核非空情形，核空时核仁计算复杂度未知。模型限于单位容量简单流，推广至一般容量仍开放。最值得读的是其将组合结构嵌入合作博弈解概念的技巧，以及用网络流工具解决核仁计算的完整框架，对机制设计与资源分配研究具启发性。"
+            },
+            "contentTags": [
+              "合作博弈",
+              "流博弈",
+              "核与核仁",
+              "机制设计",
+              "网络资源分配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Neural Parameter Calibration for Finite-State Mean Field Games",
+            "url": "https://arxiv.org/abs/2606.23155",
+            "arxivId": "2606.23155",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "有限状态平均场博弈的神经参数校准",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "理论推导"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "博弈学习",
+              "强化学习",
+              "城市交通建模"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么难以将平均场博弈应用于真实场景？因为这类模型依赖复杂的隐藏参数，如个体偏好、交互强度等，这些参数通常无法直接观测，也难以通过先验假设确定。现有纯描述性模型虽可拟合数据，却缺乏博弈的前瞻性与策略性。本文旨在从宏观群体动态中自动校准这些结构性参数，填补理论模型与实证应用之间的鸿沟。",
+              "modelAndSetup": "作者如何建模这一逆向学习问题？考虑一个有限状态的连续时间平均场博弈，其中代表性智能体根据当前群体分布和自身控制策略进行状态转移，目标是最小化包含运行成本与终端成本的期望代价。博弈的未知参数被建模为时间与群体分布的函数，并由一个神经网络表示。均衡由耦合的哈密顿-雅可比-贝尔曼（HJB）方程和福克-普朗克-柯尔莫哥洛夫（FPK）方程刻画。",
+              "contributionsAndResults": "论文的核心发现是什么？作者提出了一种全可微分的神经网络框架，能够从群体密度轨迹中估计出灵活的、随时间和均值场变化的参数路径。该方法无需观测个体行为或奖励信号，即可准确恢复合成与真实数据下的博弈参数。实验表明，相比忽略博弈结构的基线模型，该方法预测更优，且在噪声下保持稳健，能捕捉疫情峰值等关键特征。",
+              "methodsAndTechniques": "作者如何实现参数校准？将参数校准视为一个逆问题，利用隐式微分技术反向传播通过博弈均衡求解器。具体而言，先将神经网络在观测轨迹上预评估得到参数路径，输入到基于Picard迭代的MFG求解器中计算均衡轨迹。通过将固定点求解视为隐式层，利用伴随法精确计算损失关于网络参数的梯度，从而高效训练。",
+              "limitationsAndReadingValue": "论文有何局限与阅读价值？其局限在于依赖已知的博弈结构形式，且在用户效用根本改变的分布外场景（如工作日转周末骑行模式）中泛化能力受限。最值得读的是其系统框架设计与隐式微分的应用，展示了如何将深度学习无缝嵌入复杂博弈求解流程，为基于真实数据的策略性系统建模提供了新范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "有限状态平均场博弈的神经参数校准",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么难以将平均场博弈应用于真实场景？因为这类模型依赖复杂的隐藏参数，如个体偏好、交互强度等，这些参数通常无法直接观测，也难以通过先验假设确定。现有纯描述性模型虽可拟合数据，却缺乏博弈的前瞻性与策略性。本文旨在从宏观群体动态中自动校准这些结构性参数，填补理论模型与实证应用之间的鸿沟。",
+              "modelAndSetup": "作者如何建模这一逆向学习问题？考虑一个有限状态的连续时间平均场博弈，其中代表性智能体根据当前群体分布和自身控制策略进行状态转移，目标是最小化包含运行成本与终端成本的期望代价。博弈的未知参数被建模为时间与群体分布的函数，并由一个神经网络表示。均衡由耦合的哈密顿-雅可比-贝尔曼（HJB）方程和福克-普朗克-柯尔莫哥洛夫（FPK）方程刻画。",
+              "contributionsAndResults": "论文的核心发现是什么？作者提出了一种全可微分的神经网络框架，能够从群体密度轨迹中估计出灵活的、随时间和均值场变化的参数路径。该方法无需观测个体行为或奖励信号，即可准确恢复合成与真实数据下的博弈参数。实验表明，相比忽略博弈结构的基线模型，该方法预测更优，且在噪声下保持稳健，能捕捉疫情峰值等关键特征。",
+              "methodsAndTechniques": "作者如何实现参数校准？将参数校准视为一个逆问题，利用隐式微分技术反向传播通过博弈均衡求解器。具体而言，先将神经网络在观测轨迹上预评估得到参数路径，输入到基于Picard迭代的MFG求解器中计算均衡轨迹。通过将固定点求解视为隐式层，利用伴随法精确计算损失关于网络参数的梯度，从而高效训练。",
+              "limitationsAndReadingValue": "论文有何局限与阅读价值？其局限在于依赖已知的博弈结构形式，且在用户效用根本改变的分布外场景（如工作日转周末骑行模式）中泛化能力受限。最值得读的是其系统框架设计与隐式微分的应用，展示了如何将深度学习无缝嵌入复杂博弈求解流程，为基于真实数据的策略性系统建模提供了新范式。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "博弈学习",
+              "强化学习",
+              "城市交通建模"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Mixed Voting Rules for Participatory Budgeting",
+            "url": "https://arxiv.org/abs/2606.23320",
+            "arxivId": "2606.23320",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "混合投票规则用于参与式预算",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "实验验证",
+              "模型构建",
+              "算法设计"
+            ],
+            "contentTags": [
+              "参与式预算",
+              "社会选择",
+              "比例性",
+              "公平性",
+              "投票规则"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "参与式预算是居民投票决定公共资金使用的民主创新，现有投票规则如贪心法追求效用最大化却可能忽视少数群体，而等额份额法（MES）虽具比例性但计算复杂。如何兼顾效率与代表性成为关键问题。本文受混合议员选举制度启发，提出混合投票规则框架，旨在通过组合多种规则，在不同目标间取得平衡。",
+              "modelAndSetup": "模型设定中，选民对项目有批准偏好，每个项目有成本，总预算固定。混合投票规则由一系列子规则按顺序执行，每个规则分得部分预算，并在前序规则选定项目的基础上追加新项目。核心机制允许后续规则调整选民初始预算以反映其已获满足程度，从而增强整体比例性，特别关注MES如何适应已有选择。",
+              "contributionsAndResults": "论文提出了混合投票规则的一般框架，并设计了多种MES的预分配方法来响应先前选择。其中基于价值的预分配方法在理论上优于基线，能提供更强的比例性保障，满足参数化的EJR+公理。实验证明，混合规则可在效用与比例性之间实现良好权衡，尤其当贪心规则使用60%以上预算时表现最佳。",
+              "methodsAndTechniques": "作者通过定义最小选民预算份额作为比例性保证的关键参数，建立了参数化比例性公理体系。证明依赖于对选民支付与满意度关系的精细分析，利用反证法展示违反比例性将导致矛盾。对于基于价值的方法，关键是限制单位满意度的最高支付额，从而确保后续MES阶段仍具代表性。",
+              "limitationsAndReadingValue": "尽管VALUE-BASED方法在理论上最优，但其优势依赖特定假设，且实际性能与其他方法接近。框架假设规则顺序不可逆，未考虑策略性投票。最值得阅读的是其机制设计理念——借鉴混合选举制度实现目标互补，以及将比例性量化为可比较指标的分析框架，这对设计更灵活的集体决策系统具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "混合投票规则用于参与式预算",
+            "summarySections": {
+              "backgroundAndQuestion": "参与式预算是居民投票决定公共资金使用的民主创新，现有投票规则如贪心法追求效用最大化却可能忽视少数群体，而等额份额法（MES）虽具比例性但计算复杂。如何兼顾效率与代表性成为关键问题。本文受混合议员选举制度启发，提出混合投票规则框架，旨在通过组合多种规则，在不同目标间取得平衡。",
+              "modelAndSetup": "模型设定中，选民对项目有批准偏好，每个项目有成本，总预算固定。混合投票规则由一系列子规则按顺序执行，每个规则分得部分预算，并在前序规则选定项目的基础上追加新项目。核心机制允许后续规则调整选民初始预算以反映其已获满足程度，从而增强整体比例性，特别关注MES如何适应已有选择。",
+              "contributionsAndResults": "论文提出了混合投票规则的一般框架，并设计了多种MES的预分配方法来响应先前选择。其中基于价值的预分配方法在理论上优于基线，能提供更强的比例性保障，满足参数化的EJR+公理。实验证明，混合规则可在效用与比例性之间实现良好权衡，尤其当贪心规则使用60%以上预算时表现最佳。",
+              "methodsAndTechniques": "作者通过定义最小选民预算份额作为比例性保证的关键参数，建立了参数化比例性公理体系。证明依赖于对选民支付与满意度关系的精细分析，利用反证法展示违反比例性将导致矛盾。对于基于价值的方法，关键是限制单位满意度的最高支付额，从而确保后续MES阶段仍具代表性。",
+              "limitationsAndReadingValue": "尽管VALUE-BASED方法在理论上最优，但其优势依赖特定假设，且实际性能与其他方法接近。框架假设规则顺序不可逆，未考虑策略性投票。最值得阅读的是其机制设计理念——借鉴混合选举制度实现目标互补，以及将比例性量化为可比较指标的分析框架，这对设计更灵活的集体决策系统具有启发意义。"
+            },
+            "contentTags": [
+              "参与式预算",
+              "社会选择",
+              "比例性",
+              "公平性",
+              "投票规则"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "实验验证",
+              "模型构建",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Expected Number of Pairwise Stable Networks",
+            "url": "https://arxiv.org/abs/2606.23440",
+            "arxivId": "2606.23440",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "math.PR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "成对稳定网络的期望数量",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "网络形成",
+              "随机博弈",
+              "成对稳定性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么有些网络结构更可能稳定？传统观点认为成对稳定性太弱，常导致多个解甚至无解。本文从概率角度切入，探讨在个体偏好随机生成时，一个网络成为成对稳定的概率有多大，以及稳定网络的期望数量随规模增长的趋势。这有助于重新评估该概念的预测力。",
+              "modelAndSetup": "模型考虑n个个体形成的无向网络，每个个体对任意网络的效用独立同分布于[0,1]。成对稳定性要求无人愿单方面断链，且任何两人不愿共同建链。通过赋予所有效用组合均匀分布，研究者将稳定性转化为概率事件，进而分析不同网络结构的稳定可能性。",
+              "contributionsAndResults": "论文给出了成对稳定网络期望数量的闭式表达，基于‘资历度’（seniority degree）求和其倒数。发现空网络最可能稳定，完全网络最不可能。尽管小规模下期望值较小，但随着n增大，期望数量快速增长至无穷，而稳定网络占比趋零，支持了成对稳定性作为宽松解概念的观点。",
+              "methodsAndTechniques": "作者利用效用独立性和积分变换，将期望数量表示为多重积分，并转化为对所有图的资历度倒数求和。为处理计算复杂性，引入上下界分析：下界使用Jensen不等式处理对数期望，上界则通过不等式放缩并类比Knuth关于稳定匹配的工作构造积分界。",
+              "limitationsAndReadingValue": "结果依赖效用完全随机且独立的强假设，现实中个体偏好可能存在相关性或结构性。此外，闭式表达虽精确但难计算，依赖渐近分析。最值得读的是其将经典博弈概念与概率方法结合的视角，以及对‘解集大小’而非‘是否存在’的新衡量方式，启发后续随机网络研究。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "成对稳定网络的期望数量",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么有些网络结构更可能稳定？传统观点认为成对稳定性太弱，常导致多个解甚至无解。本文从概率角度切入，探讨在个体偏好随机生成时，一个网络成为成对稳定的概率有多大，以及稳定网络的期望数量随规模增长的趋势。这有助于重新评估该概念的预测力。",
+              "modelAndSetup": "模型考虑n个个体形成的无向网络，每个个体对任意网络的效用独立同分布于[0,1]。成对稳定性要求无人愿单方面断链，且任何两人不愿共同建链。通过赋予所有效用组合均匀分布，研究者将稳定性转化为概率事件，进而分析不同网络结构的稳定可能性。",
+              "contributionsAndResults": "论文给出了成对稳定网络期望数量的闭式表达，基于‘资历度’（seniority degree）求和其倒数。发现空网络最可能稳定，完全网络最不可能。尽管小规模下期望值较小，但随着n增大，期望数量快速增长至无穷，而稳定网络占比趋零，支持了成对稳定性作为宽松解概念的观点。",
+              "methodsAndTechniques": "作者利用效用独立性和积分变换，将期望数量表示为多重积分，并转化为对所有图的资历度倒数求和。为处理计算复杂性，引入上下界分析：下界使用Jensen不等式处理对数期望，上界则通过不等式放缩并类比Knuth关于稳定匹配的工作构造积分界。",
+              "limitationsAndReadingValue": "结果依赖效用完全随机且独立的强假设，现实中个体偏好可能存在相关性或结构性。此外，闭式表达虽精确但难计算，依赖渐近分析。最值得读的是其将经典博弈概念与概率方法结合的视角，以及对‘解集大小’而非‘是否存在’的新衡量方式，启发后续随机网络研究。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "网络形成",
+              "随机博弈",
+              "成对稳定性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-22",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202606220000 TO 202606222359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          }
+        },
+        "dedupedCount": 6
+      },
+      "arxivTotalResults": 6,
+      "fetchedCount": 6,
+      "fetchedPapers": [
+        {
+          "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+          "url": "https://arxiv.org/abs/2606.23664",
+          "arxivId": "2606.23664",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "Multi-agent systems (MAS) offer a scalable path forward for agentic AI, comprising multiple LLM-based agents, each assigned a system prompt and a position within a workflow that governs inter-agent coordination and output aggregation. System prompts thus form a critical and accessible optimization surface: they specify agents' roles and behaviors, enabling system-level improvements without model finetuning. Although prompt optimization has shown substantial potential for single LLMs, extending it to MAS poses distinct challenges, notably an exponentially growing search space. It remains unclear whether, when, and by how much prompt optimization improves MAS performance, and how sensitive such gains are to system configuration. In this work, we systematically study system-prompt optimization across a broad range of MAS setups varying in task, workflow, communication protocol, and team size, benchmarking two prompt optimizers that naturally extend state-of-the-art single-agent methods. The results reveal its potential to unlock significant gains while exposing open challenges, characterizing when and how much prompt optimization helps across diverse MAS settings."
+        },
+        {
+          "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+          "url": "https://arxiv.org/abs/2606.23585",
+          "arxivId": "2606.23585",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.ET",
+            "cs.RO",
+            "eess.SY"
+          ],
+          "abstract": "As autonomous aircraft are introduced at scale and traffic density increases, centralized management becomes insufficient to coordinate the large numbers of crewed and uncrewed aircraft. Dedicated Advanced Air Mobility (AAM) corridors have therefore been proposed for organizing high-density autonomous traffic flows. The desire to scalably provide autonomous aircraft flexibility in trajectory planning motivates the development of decentralized approaches to traffic management in AAM corridors. In this work, we extend a multi-agent reinforcement learning (MARL) approach to address the challenge of decentralized traffic flow management in air corridor networks. We test policies trained in a single-corridor setting on increasingly complex multi-corridor networks with combinations of merges and splits in a zero-shot manner. Experimental results demonstrate that learned behaviors transfer well to scenarios with varying traffic density, network geometry, and heterogeneous vehicle performance, without needing centralized coordination or model retraining. We evaluate system-level performance in terms of conformance to corridor boundaries, completion rates, average speeds, distance traveled, and maintenance of inter-aircraft separation. We find that although our policies require only locally coordinated entry, traversal, and exit behaviors, they collectively produce desirable traffic flows through the corridor network."
+        },
+        {
+          "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+          "url": "https://arxiv.org/abs/2606.23158",
+          "arxivId": "2606.23158",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.NE"
+          ],
+          "abstract": "Evolutionary agent-based markets (ABMs) couple several mechanisms -- who reproduces, how price forms, how biased the agents are, how consensus propagates -- yet these are usually fixed by convention, so it is unclear which mechanism controls which emergent property. In a coevolving, endogenous-price simulator with 120 heterogeneous behavioral agents, we make four mechanisms pluggable and run matched 3x20-seed interventions. We find the levers are largely separable. (1) Selection -> diversity: a Quality-Diversity (QD/MAP-Elites) operator robustly raises strategy-mix entropy over truncation top-k (paired Delta entropy +0.27 to +1.12 bits; sign-test p<0.001; CIs exclude 0) and sustains more strategy cycling (strongest in crisis: Delta=+0.070, p=0.0004). (2) Selection does not improve realism: even a per-agent realism reward that provably steers selection does not raise 5-fact realism (Delta_5=-0.11,-0.08,+0.03; not significant). (3) Microstructure -> realism: enabling reflexive price feedback does raise realism (Delta_5=+0.13,+0.20,+0.20; crisis/bull p<0.05, all CIs positive). (4) Behavior -> fragility: amplifying behavioral bias raises a genomic fragility proxy (Delta=+10.5,+11.1,+14.4; bull p<0.001, all CIs positive) while leaving realism flat. The remaining mechanism -- consensus network topology -- shows no robust effect (honest null). The contribution is a decomposition: in these single-mechanism sweeps the mechanisms behave as approximately distinct control knobs over diversity, realism, and fragility."
+        },
+        {
+          "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+          "url": "https://arxiv.org/abs/2606.22844",
+          "arxivId": "2606.22844",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Long-term memory has become increasingly important for LLM agents that operate across extended interactions and evolving task contexts. Recent memory systems have made past experiences more persistent, compact, and retrievable, but retrieval alone does not ensure that a memory provides valid evidence for the current query. When experiences are compressed into reusable fragments, memories from different situations may appear equally relevant if they involve recurring entities or user states. We refer to this failure as context collapse: memories lose the surrounding context needed to judge whether they provide valid evidence for the current query. To address this problem, we propose Contextual Reinstatement for Agentic Memory (RaMem), a framework that turns retrieved memory fragments into contextually verifiable evidence. RaMem operates through four coordinated stages: (i) evidence anchoring grounds each memory in its original episodic conditions, especially event time, mention time, session span, and participants; (ii) recall condition induction derives the evidence conditions implied by the query; (iii) validity-aware retrieval uses these conditions to prioritize context-compatible memories while retaining content-relevant candidates as fallback evidence; and (iv) context-preserved synthesis keeps the selected memories' structured context available to the generator. Experiments on long-term memory benchmarks show that RaMem consistently improves performance over strong memory baselines, with average F1 gains of more than 10% across several backbones."
+        },
+        {
+          "title": "HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration",
+          "url": "https://arxiv.org/abs/2606.22756",
+          "arxivId": "2606.22756",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "abstract": "We present HERCULES, an open-source simulator and data-collection pipeline for heterogeneous multi-robot autonomy. Built upon the Unreal Engine 5 (UE5)-based simulators AirSim and Cosys-AirSim, HERCULES resolves key architectural limitations of prior frameworks to enable concurrent unmanned aerial and ground vehicle (UAV-UGV) operation in large-scale, photorealistic, dynamic environments. It introduces a new waypoint-tracking UGV controller that mirrors existing UAV control interfaces, and provides a shared navigation stack for mapping, traversability analysis, planning, and control across heterogeneous platforms. Expanding inherited sensor suites, it adds physics-based long-wave infrared (LWIR) cameras and configurable night-vision modes for degraded visual environments. HERCULES provides lightweight APIs, ROS 2 wrappers, and rigorous time synchronization across sensors and platforms, and brings state-of-the-art game-engine capabilities into robotics simulation, integrating intelligent agents such as pedestrians, traffic, and wildlife with high-fidelity dynamic phenomena, including fire, flooding, and crop disease spread. HERCULES runs in two modes: passively, replaying offline-designed trajectories to generate reproducible multi-modal datasets, and actively, running an online planner in closed loop from live observations. Our experiments in heterogeneous multi-robot SLAM, collaborative perception, and exploration, using both HERCULES-generated data and active closed-loop execution, demonstrate its utility for advancing heterogeneous multi-robot autonomy. We publicly release our source code, experiment code, documentation, and datasets, including a heterogeneous multi-robot SLAM benchmark collected with two UAVs and two UGVs across kilometer-scale desert, forest, and city environments, at https://lunarlab-gatech.github.io/HERCULES-website."
+        },
+        {
+          "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+          "url": "https://arxiv.org/abs/2606.22731",
+          "arxivId": "2606.22731",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Closed-loop Auto Research extends automated machine learning from fixed-dataset fitting to changing the research workflow, with language-model agents editing representations and model code and acquiring external evidence. Molecular property prediction spans many small endpoints. We ask whether this action space yields improvements generalizing beyond the validation signal selecting them. We isolate three Auto Research axes, features, models, and external evidence, under a file-level ablation lock attributing each gain to one axis over a strong baseline. Across 36 endpoints in three benchmark suites we score each selected configuration once on a held-out test whose labels the search never read. A routed pipeline taking each endpoint's best validation axis reaches positive held-out gains of 0.013, 0.011, and 0.042, the transferable axis differing by suite, data on TDC, model on Polaris, feature and model on MoleculeNet. The largest model-search gain falls from 0.041 on validation to 0.003 on test, while curated data reaches 0.022 but negative 0.019 on test, two non-transfer signatures. Curated external data raises held-out CYP2C9-substrate performance by 0.17 and half-life by 0.08, admitted through a contamination filter rejecting same-source files overlapping 64 to 89 percent of test structures, necessary but not sufficient for transfer. A matched-trial automated machine learning control did not reproduce the agent's code-level model intervention, reaching 0.006 against 0.042, and the pipeline stays competitive with an 84M-parameter pretrained 3D model on the shared training split. The experiments stay within molecular property prediction, but separating discovery from held-out certification is a domain-agnostic lesson for any closed-loop system optimising a proxy for a held-out quantity."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+              "url": "https://arxiv.org/abs/2606.23664",
+              "arxivId": "2606.23664",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "Multi-agent systems (MAS) offer a scalable path forward for agentic AI, comprising multiple LLM-based agents, each assigned a system prompt and a position within a workflow that governs inter-agent coordination and output aggregation. System prompts thus form a critical and accessible optimization surface: they specify agents' roles and behaviors, enabling system-level improvements without model finetuning. Although prompt optimization has shown substantial potential for single LLMs, extending it to MAS poses distinct challenges, notably an exponentially growing search space. It remains unclear whether, when, and by how much prompt optimization improves MAS performance, and how sensitive such gains are to system configuration. In this work, we systematically study system-prompt optimization across a broad range of MAS setups varying in task, workflow, communication protocol, and team size, benchmarking two prompt optimizers that naturally extend state-of-the-art single-agent methods. The results reveal its potential to unlock significant gains while exposing open challenges, characterizing when and how much prompt optimization helps across diverse MAS settings."
+            },
+            {
+              "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+              "url": "https://arxiv.org/abs/2606.23585",
+              "arxivId": "2606.23585",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.ET",
+                "cs.RO",
+                "eess.SY"
+              ],
+              "abstract": "As autonomous aircraft are introduced at scale and traffic density increases, centralized management becomes insufficient to coordinate the large numbers of crewed and uncrewed aircraft. Dedicated Advanced Air Mobility (AAM) corridors have therefore been proposed for organizing high-density autonomous traffic flows. The desire to scalably provide autonomous aircraft flexibility in trajectory planning motivates the development of decentralized approaches to traffic management in AAM corridors. In this work, we extend a multi-agent reinforcement learning (MARL) approach to address the challenge of decentralized traffic flow management in air corridor networks. We test policies trained in a single-corridor setting on increasingly complex multi-corridor networks with combinations of merges and splits in a zero-shot manner. Experimental results demonstrate that learned behaviors transfer well to scenarios with varying traffic density, network geometry, and heterogeneous vehicle performance, without needing centralized coordination or model retraining. We evaluate system-level performance in terms of conformance to corridor boundaries, completion rates, average speeds, distance traveled, and maintenance of inter-aircraft separation. We find that although our policies require only locally coordinated entry, traversal, and exit behaviors, they collectively produce desirable traffic flows through the corridor network."
+            },
+            {
+              "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+              "url": "https://arxiv.org/abs/2606.23158",
+              "arxivId": "2606.23158",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA",
+                "cs.NE"
+              ],
+              "abstract": "Evolutionary agent-based markets (ABMs) couple several mechanisms -- who reproduces, how price forms, how biased the agents are, how consensus propagates -- yet these are usually fixed by convention, so it is unclear which mechanism controls which emergent property. In a coevolving, endogenous-price simulator with 120 heterogeneous behavioral agents, we make four mechanisms pluggable and run matched 3x20-seed interventions. We find the levers are largely separable. (1) Selection -> diversity: a Quality-Diversity (QD/MAP-Elites) operator robustly raises strategy-mix entropy over truncation top-k (paired Delta entropy +0.27 to +1.12 bits; sign-test p<0.001; CIs exclude 0) and sustains more strategy cycling (strongest in crisis: Delta=+0.070, p=0.0004). (2) Selection does not improve realism: even a per-agent realism reward that provably steers selection does not raise 5-fact realism (Delta_5=-0.11,-0.08,+0.03; not significant). (3) Microstructure -> realism: enabling reflexive price feedback does raise realism (Delta_5=+0.13,+0.20,+0.20; crisis/bull p<0.05, all CIs positive). (4) Behavior -> fragility: amplifying behavioral bias raises a genomic fragility proxy (Delta=+10.5,+11.1,+14.4; bull p<0.001, all CIs positive) while leaving realism flat. The remaining mechanism -- consensus network topology -- shows no robust effect (honest null). The contribution is a decomposition: in these single-mechanism sweeps the mechanisms behave as approximately distinct control knobs over diversity, realism, and fragility."
+            },
+            {
+              "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+              "url": "https://arxiv.org/abs/2606.22844",
+              "arxivId": "2606.22844",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Long-term memory has become increasingly important for LLM agents that operate across extended interactions and evolving task contexts. Recent memory systems have made past experiences more persistent, compact, and retrievable, but retrieval alone does not ensure that a memory provides valid evidence for the current query. When experiences are compressed into reusable fragments, memories from different situations may appear equally relevant if they involve recurring entities or user states. We refer to this failure as context collapse: memories lose the surrounding context needed to judge whether they provide valid evidence for the current query. To address this problem, we propose Contextual Reinstatement for Agentic Memory (RaMem), a framework that turns retrieved memory fragments into contextually verifiable evidence. RaMem operates through four coordinated stages: (i) evidence anchoring grounds each memory in its original episodic conditions, especially event time, mention time, session span, and participants; (ii) recall condition induction derives the evidence conditions implied by the query; (iii) validity-aware retrieval uses these conditions to prioritize context-compatible memories while retaining content-relevant candidates as fallback evidence; and (iv) context-preserved synthesis keeps the selected memories' structured context available to the generator. Experiments on long-term memory benchmarks show that RaMem consistently improves performance over strong memory baselines, with average F1 gains of more than 10% across several backbones."
+            },
+            {
+              "title": "HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration",
+              "url": "https://arxiv.org/abs/2606.22756",
+              "arxivId": "2606.22756",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.CV",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "abstract": "We present HERCULES, an open-source simulator and data-collection pipeline for heterogeneous multi-robot autonomy. Built upon the Unreal Engine 5 (UE5)-based simulators AirSim and Cosys-AirSim, HERCULES resolves key architectural limitations of prior frameworks to enable concurrent unmanned aerial and ground vehicle (UAV-UGV) operation in large-scale, photorealistic, dynamic environments. It introduces a new waypoint-tracking UGV controller that mirrors existing UAV control interfaces, and provides a shared navigation stack for mapping, traversability analysis, planning, and control across heterogeneous platforms. Expanding inherited sensor suites, it adds physics-based long-wave infrared (LWIR) cameras and configurable night-vision modes for degraded visual environments. HERCULES provides lightweight APIs, ROS 2 wrappers, and rigorous time synchronization across sensors and platforms, and brings state-of-the-art game-engine capabilities into robotics simulation, integrating intelligent agents such as pedestrians, traffic, and wildlife with high-fidelity dynamic phenomena, including fire, flooding, and crop disease spread. HERCULES runs in two modes: passively, replaying offline-designed trajectories to generate reproducible multi-modal datasets, and actively, running an online planner in closed loop from live observations. Our experiments in heterogeneous multi-robot SLAM, collaborative perception, and exploration, using both HERCULES-generated data and active closed-loop execution, demonstrate its utility for advancing heterogeneous multi-robot autonomy. We publicly release our source code, experiment code, documentation, and datasets, including a heterogeneous multi-robot SLAM benchmark collected with two UAVs and two UGVs across kilometer-scale desert, forest, and city environments, at https://lunarlab-gatech.github.io/HERCULES-website."
+            },
+            {
+              "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+              "url": "https://arxiv.org/abs/2606.22731",
+              "arxivId": "2606.22731",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Closed-loop Auto Research extends automated machine learning from fixed-dataset fitting to changing the research workflow, with language-model agents editing representations and model code and acquiring external evidence. Molecular property prediction spans many small endpoints. We ask whether this action space yields improvements generalizing beyond the validation signal selecting them. We isolate three Auto Research axes, features, models, and external evidence, under a file-level ablation lock attributing each gain to one axis over a strong baseline. Across 36 endpoints in three benchmark suites we score each selected configuration once on a held-out test whose labels the search never read. A routed pipeline taking each endpoint's best validation axis reaches positive held-out gains of 0.013, 0.011, and 0.042, the transferable axis differing by suite, data on TDC, model on Polaris, feature and model on MoleculeNet. The largest model-search gain falls from 0.041 on validation to 0.003 on test, while curated data reaches 0.022 but negative 0.019 on test, two non-transfer signatures. Curated external data raises held-out CYP2C9-substrate performance by 0.17 and half-life by 0.08, admitted through a contamination filter rejecting same-source files overlapping 64 to 89 percent of test structures, necessary but not sufficient for transfer. A matched-trial automated machine learning control did not reproduce the agent's code-level model intervention, reaching 0.006 against 0.042, and the pipeline stays competitive with an 84M-parameter pretrained 3D model on the shared training split. The experiments stay within molecular property prediction, but separating discovery from held-out certification is a domain-agnostic lesson for any closed-loop system optimising a proxy for a held-out quantity."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+              "url": "https://arxiv.org/abs/2606.23664",
+              "arxivId": "2606.23664",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+              "url": "https://arxiv.org/abs/2606.23585",
+              "arxivId": "2606.23585",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.ET",
+                "cs.RO",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+              "url": "https://arxiv.org/abs/2606.23158",
+              "arxivId": "2606.23158",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+              "url": "https://arxiv.org/abs/2606.22844",
+              "arxivId": "2606.22844",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration",
+              "url": "https://arxiv.org/abs/2606.22756",
+              "arxivId": "2606.22756",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.CV",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+              "url": "https://arxiv.org/abs/2606.22731",
+              "arxivId": "2606.22731",
+              "date": "2026-06-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+          "url": "https://arxiv.org/abs/2606.23664",
+          "arxivId": "2606.23664",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+          "url": "https://arxiv.org/abs/2606.23585",
+          "arxivId": "2606.23585",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.ET",
+            "cs.RO",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+          "url": "https://arxiv.org/abs/2606.23158",
+          "arxivId": "2606.23158",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+          "url": "https://arxiv.org/abs/2606.22844",
+          "arxivId": "2606.22844",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration",
+          "url": "https://arxiv.org/abs/2606.22756",
+          "arxivId": "2606.22756",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+          "url": "https://arxiv.org/abs/2606.22731",
+          "arxivId": "2606.22731",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+          "url": "https://arxiv.org/abs/2606.23158",
+          "arxivId": "2606.23158",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+          "url": "https://arxiv.org/abs/2606.22731",
+          "arxivId": "2606.22731",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+          "url": "https://arxiv.org/abs/2606.22844",
+          "arxivId": "2606.22844",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration",
+          "url": "https://arxiv.org/abs/2606.22756",
+          "arxivId": "2606.22756",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+          "url": "https://arxiv.org/abs/2606.23585",
+          "arxivId": "2606.23585",
+          "date": "2026-06-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.ET",
+            "cs.RO",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+            "url": "https://arxiv.org/abs/2606.23158",
+            "arxivId": "2606.23158",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过进化多智能体模拟中的机制分析分解金融市场动态",
+            "researchParadigmTags": [
+              "机制设计",
+              "实验验证",
+              "模型构建",
+              "多智能体系统",
+              "评测方法"
+            ],
+            "contentTags": [
+              "金融市场建模",
+              "行为偏差",
+              "价格形成",
+              "选择机制",
+              "系统脆弱性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统基于智能体的金融模型将多种机制（如选择、价格形成、行为偏差）耦合在一起，难以判断哪个机制影响市场的哪种涌现特性。这导致研究者无法精准调控多样性、现实性和系统脆弱性等关键属性。本文旨在解耦这些机制，明确每个‘控制旋钮’实际影响的是市场动态的哪一部分，从而建立更可解释、可干预的仿真框架。",
+              "modelAndSetup": "研究在一个端生价格、协同进化的多智能体市场中，设置120个具有异质行为基因的交易者，每日根据市场信号下单并更新资产。模型允许插拔四种机制：选择算子（谁繁殖）、价格反馈（是否反射性）、行为偏差强度（认知偏误放大倍数）和共识网络拓扑。通过固定其他变量，单独切换某一机制，观察其对策略多样性、风格循环、现实性匹配和基因组脆弱性的影响。",
+              "contributionsAndResults": "论文发现不同机制确实像独立旋钮一样作用于不同市场属性：质量-多样性选择提升策略多样性和动态轮转，但不改善现实性；引入价格反射性显著提高现实性匹配度；增强行为偏差会推高脆弱性代理指标而不影响现实性；而改变共识网络结构则无稳健效应。这表明，追求真实市场模拟应聚焦微结构设计而非选择机制。",
+              "methodsAndTechniques": "作者采用配对种子实验设计，在三种市场情景下运行多轮仿真，使用符号检验和自助法置信区间评估差异显著性。关键在于将选择、反馈、偏差和传播机制模块化，并定义可量化的代理指标（如策略混合熵、5项事实通过率、基因组脆弱性指数），使单一机制干预的结果具有可比性和统计可靠性，从而支撑分离性结论。",
+              "limitationsAndReadingValue": "结论受限于单一模拟器设定，现实性评测排除了泡沫-崩盘事件，且‘脆弱性’与‘循环’均为代理指标，未直接测量系统风险或演化稳定性。尽管如此，该研究提供了清晰的机制分离范式，最值得阅读的是其问题抽象方式、实验控制逻辑与对选择机制非必要性的反直觉发现，对构建可信市场仿真具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过进化多智能体模拟中的机制分析分解金融市场动态",
+            "summarySections": {
+              "backgroundAndQuestion": "传统基于智能体的金融模型将多种机制（如选择、价格形成、行为偏差）耦合在一起，难以判断哪个机制影响市场的哪种涌现特性。这导致研究者无法精准调控多样性、现实性和系统脆弱性等关键属性。本文旨在解耦这些机制，明确每个‘控制旋钮’实际影响的是市场动态的哪一部分，从而建立更可解释、可干预的仿真框架。",
+              "modelAndSetup": "研究在一个端生价格、协同进化的多智能体市场中，设置120个具有异质行为基因的交易者，每日根据市场信号下单并更新资产。模型允许插拔四种机制：选择算子（谁繁殖）、价格反馈（是否反射性）、行为偏差强度（认知偏误放大倍数）和共识网络拓扑。通过固定其他变量，单独切换某一机制，观察其对策略多样性、风格循环、现实性匹配和基因组脆弱性的影响。",
+              "contributionsAndResults": "论文发现不同机制确实像独立旋钮一样作用于不同市场属性：质量-多样性选择提升策略多样性和动态轮转，但不改善现实性；引入价格反射性显著提高现实性匹配度；增强行为偏差会推高脆弱性代理指标而不影响现实性；而改变共识网络结构则无稳健效应。这表明，追求真实市场模拟应聚焦微结构设计而非选择机制。",
+              "methodsAndTechniques": "作者采用配对种子实验设计，在三种市场情景下运行多轮仿真，使用符号检验和自助法置信区间评估差异显著性。关键在于将选择、反馈、偏差和传播机制模块化，并定义可量化的代理指标（如策略混合熵、5项事实通过率、基因组脆弱性指数），使单一机制干预的结果具有可比性和统计可靠性，从而支撑分离性结论。",
+              "limitationsAndReadingValue": "结论受限于单一模拟器设定，现实性评测排除了泡沫-崩盘事件，且‘脆弱性’与‘循环’均为代理指标，未直接测量系统风险或演化稳定性。尽管如此，该研究提供了清晰的机制分离范式，最值得阅读的是其问题抽象方式、实验控制逻辑与对选择机制非必要性的反直觉发现，对构建可信市场仿真具有指导意义。"
+            },
+            "contentTags": [
+              "金融市场建模",
+              "行为偏差",
+              "价格形成",
+              "选择机制",
+              "系统脆弱性"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "实验验证",
+              "模型构建",
+              "多智能体系统",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+            "url": "https://arxiv.org/abs/2606.22731",
+            "arxivId": "2606.22731",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "闭环自动研究用于分子性质预测：发现并验证可泛化的改进",
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "评测方法",
+              "机制设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "智能体",
+              "分子性质预测",
+              "泛化性",
+              "数据泄露",
+              "闭合回路研究"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前自动化机器学习多局限于固定数据集上的超参数调优，难以适应科研中动态调整表示、模型和外部数据的需求。本文关注分子性质预测这一典型高摩擦场景，其终点多样且数据量小，传统方法易因反复优化验证信号而导致过拟合或分布偏移。核心问题是：由语言模型驱动的自动研究能否产生超越验证信号本身的可泛化改进？这触及了任何依赖代理指标进行自适应搜索的系统的可靠性边界。",
+              "modelAndSetup": "研究构建了一个闭环自动研究系统，允许智能体在特征、模型代码和外部证据三个轴上分别编辑机器学习流水线，并通过一个隔离的评估器获取反馈。每个干预都基于强基线（紧凑指纹+CatBoost）进行，且采用文件级消融锁确保每次仅激活一个轴。关键设定是在搜索过程中完全屏蔽测试标签，最终通过冻结选定配置并在独立保留测试集上单次评分来认证泛化能力，从而分离真实发现与验证假象。",
+              "contributionsAndResults": "论文展示了闭环自动研究能在多个基准上发现可泛化的改进，且有效轴随任务环境变化：TDC上以外部数据为主，Polaris上以模型修改为主，MoleculeNet上特征与模型均有效。更重要的是，它揭示了两种非泛化信号——选择方差与分布偏移，并证明仅靠污染过滤不足以保证迁移成功。这些结果挑战了仅报告验证性能的做法，强调了事后认证的必要性。",
+              "methodsAndTechniques": "方法的核心在于‘轴隔离’与‘保留测试认证’的结合。前者通过文件级锁定机制将增益归因于特定研究方向，后者则通过冻结-重训-单次评分协议切断对测试集的自适应访问。此外，对外部数据引入三层泄漏安全过滤（标准去重、同源拒绝、近似物剔除），使数据决策可追溯。整个流程形成了从假设提出到可信赖验证的完整证据链，而非单纯追求更高的验证分数。",
+              "limitationsAndReadingValue": "尽管系统表现出竞争力，但其有效性高度依赖于污染检测规则的设计，而这些规则无法防止分布不匹配带来的负迁移（如Polaris数据轴）。同时，实验集中于分子属性预测，结论外推需谨慎。最值得阅读的是其方法论设计——如何通过机制创新区分真实科学发现与优化幻觉，这对构建可信的自主科研系统具有普适启示，尤其适合关注评测可靠性与AI for Science落地的研究者精读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "闭环自动研究用于分子性质预测：发现并验证可泛化的改进",
+            "summarySections": {
+              "backgroundAndQuestion": "当前自动化机器学习多局限于固定数据集上的超参数调优，难以适应科研中动态调整表示、模型和外部数据的需求。本文关注分子性质预测这一典型高摩擦场景，其终点多样且数据量小，传统方法易因反复优化验证信号而导致过拟合或分布偏移。核心问题是：由语言模型驱动的自动研究能否产生超越验证信号本身的可泛化改进？这触及了任何依赖代理指标进行自适应搜索的系统的可靠性边界。",
+              "modelAndSetup": "研究构建了一个闭环自动研究系统，允许智能体在特征、模型代码和外部证据三个轴上分别编辑机器学习流水线，并通过一个隔离的评估器获取反馈。每个干预都基于强基线（紧凑指纹+CatBoost）进行，且采用文件级消融锁确保每次仅激活一个轴。关键设定是在搜索过程中完全屏蔽测试标签，最终通过冻结选定配置并在独立保留测试集上单次评分来认证泛化能力，从而分离真实发现与验证假象。",
+              "contributionsAndResults": "论文展示了闭环自动研究能在多个基准上发现可泛化的改进，且有效轴随任务环境变化：TDC上以外部数据为主，Polaris上以模型修改为主，MoleculeNet上特征与模型均有效。更重要的是，它揭示了两种非泛化信号——选择方差与分布偏移，并证明仅靠污染过滤不足以保证迁移成功。这些结果挑战了仅报告验证性能的做法，强调了事后认证的必要性。",
+              "methodsAndTechniques": "方法的核心在于‘轴隔离’与‘保留测试认证’的结合。前者通过文件级锁定机制将增益归因于特定研究方向，后者则通过冻结-重训-单次评分协议切断对测试集的自适应访问。此外，对外部数据引入三层泄漏安全过滤（标准去重、同源拒绝、近似物剔除），使数据决策可追溯。整个流程形成了从假设提出到可信赖验证的完整证据链，而非单纯追求更高的验证分数。",
+              "limitationsAndReadingValue": "尽管系统表现出竞争力，但其有效性高度依赖于污染检测规则的设计，而这些规则无法防止分布不匹配带来的负迁移（如Polaris数据轴）。同时，实验集中于分子属性预测，结论外推需谨慎。最值得阅读的是其方法论设计——如何通过机制创新区分真实科学发现与优化幻觉，这对构建可信的自主科研系统具有普适启示，尤其适合关注评测可靠性与AI for Science落地的研究者精读。"
+            },
+            "contentTags": [
+              "智能体",
+              "分子性质预测",
+              "泛化性",
+              "数据泄露",
+              "闭合回路研究"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "评测方法",
+              "机制设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+            "url": "https://arxiv.org/abs/2606.22844",
+            "arxivId": "2606.22844",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "RaMem: 长期智能体记忆的情境恢复",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "长期记忆",
+              "上下文恢复",
+              "检索增强生成"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有长时记忆系统虽能存储和检索信息，但常因上下文丢失导致错误引用——看似相关却来自错误情境的记忆被当作有效证据。这种‘情境坍塌’问题源于记忆压缩后缺乏对其原始事件时间、参与者和会话周期的锚定，使得仅靠语义相似性无法区分真假证据。",
+              "modelAndSetup": "论文在多轮对话记忆问答任务上评估方法，输入为跨会话的历史记录与查询，输出为基于检索记忆的回答。使用LoCoMo和LongMemEval两个基准，通过F1和BLEU等指标衡量答案质量，并引入记忆召回诊断来分析检索有效性，实验覆盖多种主流大模型作为生成器。",
+              "contributionsAndResults": "提出RaMem框架，显著提升记忆问答性能，在多个骨干模型上平均F1提高超10%。核心贡献在于识别并缓解‘情境坍塌’问题，结果显示其不仅能更准召回正确记忆，还能减少无关干扰项排序，证明保持记忆上下文完整性对证据有效性至关重要。",
+              "methodsAndTechniques": "RaMem通过四阶段流程实现：先将记忆锚定于原始情境（如时间、参与者）；再从查询中提取证据条件；接着优先检索符合情境的候选记忆，同时保留语义相关项作为后备；最后在生成时保留结构化上下文，使模型可据此判断证据适用性。",
+              "limitationsAndReadingValue": "方法依赖高质量的记忆提取与上下文标注，若初始记忆缺失关键信息则难以补救。此外，当前实现侧重会话级时间线索，对因果、情感等深层上下文建模有限。最值得阅读的是其问题定义与四阶段机制设计，为可靠智能体记忆提供了新思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "RaMem: 长期智能体记忆的情境恢复",
+            "summarySections": {
+              "backgroundAndQuestion": "现有长时记忆系统虽能存储和检索信息，但常因上下文丢失导致错误引用——看似相关却来自错误情境的记忆被当作有效证据。这种‘情境坍塌’问题源于记忆压缩后缺乏对其原始事件时间、参与者和会话周期的锚定，使得仅靠语义相似性无法区分真假证据。",
+              "modelAndSetup": "论文在多轮对话记忆问答任务上评估方法，输入为跨会话的历史记录与查询，输出为基于检索记忆的回答。使用LoCoMo和LongMemEval两个基准，通过F1和BLEU等指标衡量答案质量，并引入记忆召回诊断来分析检索有效性，实验覆盖多种主流大模型作为生成器。",
+              "contributionsAndResults": "提出RaMem框架，显著提升记忆问答性能，在多个骨干模型上平均F1提高超10%。核心贡献在于识别并缓解‘情境坍塌’问题，结果显示其不仅能更准召回正确记忆，还能减少无关干扰项排序，证明保持记忆上下文完整性对证据有效性至关重要。",
+              "methodsAndTechniques": "RaMem通过四阶段流程实现：先将记忆锚定于原始情境（如时间、参与者）；再从查询中提取证据条件；接着优先检索符合情境的候选记忆，同时保留语义相关项作为后备；最后在生成时保留结构化上下文，使模型可据此判断证据适用性。",
+              "limitationsAndReadingValue": "方法依赖高质量的记忆提取与上下文标注，若初始记忆缺失关键信息则难以补救。此外，当前实现侧重会话级时间线索，对因果、情感等深层上下文建模有限。最值得阅读的是其问题定义与四阶段机制设计，为可靠智能体记忆提供了新思路。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "长期记忆",
+              "上下文恢复",
+              "检索增强生成"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration",
+            "url": "https://arxiv.org/abs/2606.22756",
+            "arxivId": "2606.22756",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.RO",
+              "cs.CV",
+              "cs.MA",
+              "eess.SY"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "HERCULES：一个开源的异构多机器人SLAM、协同感知与探索仿真框架",
+            "researchParadigmTags": [
+              "系统框架",
+              "数据集构建",
+              "基准评测",
+              "实验验证"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "协同感知",
+              "SLAM",
+              "机器人仿真",
+              "异构机器人"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有仿真平台难以支持大规模异构多机器人系统的闭环协同研究，尤其在同时运行无人机（UAV）和地面车（UGV）方面存在架构限制。虽然AirSim等工具提供高保真渲染，但缺乏统一的导航栈和时间同步的数据采集能力，导致无法真实模拟动态环境下的协作挑战，如遮挡、通信受限和跨模态感知融合。",
+              "modelAndSetup": "HERCULES基于Unreal Engine 5构建，支持UAV与UGV在千米级真实感环境中并发运行，并提供两种模式：被动回放轨迹生成可复现多模态数据集，或主动闭环规划实现实时决策。系统输出包括同步的RGB、LiDAR、IMU及热红外数据，输入为路径指令或在线感知结果，评估通过SLAM精度、3D检测性能和探索覆盖率进行。",
+              "contributionsAndResults": "论文提出了首个开箱即用支持异构多机器人SLAM、协同感知与闭环探索的仿真框架，发布了包含沙漠、森林和城市场景的大规模基准数据集。实验表明，现有SLAM方法在跨平台视角差异大、纹理重复环境下性能显著下降，而利用其合成数据预训练可提升真实世界3D检测性能，验证了其作为研发测试床的有效性。",
+              "methodsAndTechniques": "核心创新在于重构AirSim的SimMode层以解除物理引擎对单一载具类型的绑定，实现UAV与UGV共存。通过共享世界状态与全局时钟确保传感器间精确同步；引入基于OctoMap的地形感知规划与纯追踪UGV控制器，形成统一导航栈；并集成MetaHuman、动物AI等动态元素增强环境真实性，使协作算法可在复杂条件下被系统验证。",
+              "limitationsAndReadingValue": "尽管功能全面，但系统依赖UE5生态，硬件要求较高，且当前动态现象模块未参与定量实验，仅作功能演示。结果主要基于特定SLAM与检测模型，通用性需更多验证。最值得阅读的是其系统设计思路与公开发布的数据集，对推动异构多机器人sim-to-real研究具有实际工程价值。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "HERCULES：一个开源的异构多机器人SLAM、协同感知与探索仿真框架",
+            "summarySections": {
+              "backgroundAndQuestion": "现有仿真平台难以支持大规模异构多机器人系统的闭环协同研究，尤其在同时运行无人机（UAV）和地面车（UGV）方面存在架构限制。虽然AirSim等工具提供高保真渲染，但缺乏统一的导航栈和时间同步的数据采集能力，导致无法真实模拟动态环境下的协作挑战，如遮挡、通信受限和跨模态感知融合。",
+              "modelAndSetup": "HERCULES基于Unreal Engine 5构建，支持UAV与UGV在千米级真实感环境中并发运行，并提供两种模式：被动回放轨迹生成可复现多模态数据集，或主动闭环规划实现实时决策。系统输出包括同步的RGB、LiDAR、IMU及热红外数据，输入为路径指令或在线感知结果，评估通过SLAM精度、3D检测性能和探索覆盖率进行。",
+              "contributionsAndResults": "论文提出了首个开箱即用支持异构多机器人SLAM、协同感知与闭环探索的仿真框架，发布了包含沙漠、森林和城市场景的大规模基准数据集。实验表明，现有SLAM方法在跨平台视角差异大、纹理重复环境下性能显著下降，而利用其合成数据预训练可提升真实世界3D检测性能，验证了其作为研发测试床的有效性。",
+              "methodsAndTechniques": "核心创新在于重构AirSim的SimMode层以解除物理引擎对单一载具类型的绑定，实现UAV与UGV共存。通过共享世界状态与全局时钟确保传感器间精确同步；引入基于OctoMap的地形感知规划与纯追踪UGV控制器，形成统一导航栈；并集成MetaHuman、动物AI等动态元素增强环境真实性，使协作算法可在复杂条件下被系统验证。",
+              "limitationsAndReadingValue": "尽管功能全面，但系统依赖UE5生态，硬件要求较高，且当前动态现象模块未参与定量实验，仅作功能演示。结果主要基于特定SLAM与检测模型，通用性需更多验证。最值得阅读的是其系统设计思路与公开发布的数据集，对推动异构多机器人sim-to-real研究具有实际工程价值。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "协同感知",
+              "SLAM",
+              "机器人仿真",
+              "异构机器人"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "数据集构建",
+              "基准评测",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+            "url": "https://arxiv.org/abs/2606.23585",
+            "arxivId": "2606.23585",
+            "date": "2026-06-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI",
+              "cs.ET",
+              "cs.RO",
+              "eess.SY"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过走廊网络实现去中心化的自主交通管理",
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "去中心化控制",
+              "空中交通管理",
+              "智能体协调"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着先进空中交通（AAM）中自动驾驶飞行器数量增加，集中式交通管理难以应对高密度混合飞行带来的通信瓶颈和响应延迟。现有方法依赖全局调度或规则式分离保障，缺乏在复杂走廊网络中实现可扩展、自适应协调的能力。本文聚焦于如何在无中央控制器的情况下，让飞行器群体在合并、分叉的走廊网络中自主维持秩序。",
+              "modelAndSetup": "研究设定为多架飞行器在由多个入口、出口和连接段构成的空中走廊网络中自主导航。每个飞行器仅基于局部观测（如邻近飞行器状态和当前走廊几何）做出决策，不依赖全局路径规划或通信协商。任务目标是高效穿越网络的同时保持安全间距和走廊边界约束，评估指标包括完成率、速度、边界合规性和冲突干预频率。",
+              "contributionsAndResults": "论文提出一种基于多智能体强化学习（MARL）的去中心化策略，能在单走廊训练后零样本迁移到更复杂的多走廊网络。实验证明该策略在高达40架飞行器的异构车队中仍保持96%以上的走廊合规性和接近理论上限的吞吐量，且战术干预需求低于6%，表明其具备强泛化能力和实际部署潜力。",
+              "methodsAndTechniques": "方法核心是旋转不变的局部观测表示与课程学习奖励设计。飞行器以自身航向为参考系感知环境，使策略不受走廊朝向影响；奖励函数逐步引入分离惩罚和阶段过渡激励，引导策略从基础导航过渡到复杂协调。这种设计避免了对全局信息的依赖，并支持在未知拓扑中持续运行。",
+              "limitationsAndReadingValue": "局限在于未建模通信中断、传感器噪声和突发故障等非理想条件，也未集成形式化安全过滤层。此外，固定走廊结构限制了动态重路由能力。最值得阅读的是其系统级设计思路：如何通过局部交互促成全局有序流，这对构建可扩展的自主交通系统具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过走廊网络实现去中心化的自主交通管理",
+            "summarySections": {
+              "backgroundAndQuestion": "随着先进空中交通（AAM）中自动驾驶飞行器数量增加，集中式交通管理难以应对高密度混合飞行带来的通信瓶颈和响应延迟。现有方法依赖全局调度或规则式分离保障，缺乏在复杂走廊网络中实现可扩展、自适应协调的能力。本文聚焦于如何在无中央控制器的情况下，让飞行器群体在合并、分叉的走廊网络中自主维持秩序。",
+              "modelAndSetup": "研究设定为多架飞行器在由多个入口、出口和连接段构成的空中走廊网络中自主导航。每个飞行器仅基于局部观测（如邻近飞行器状态和当前走廊几何）做出决策，不依赖全局路径规划或通信协商。任务目标是高效穿越网络的同时保持安全间距和走廊边界约束，评估指标包括完成率、速度、边界合规性和冲突干预频率。",
+              "contributionsAndResults": "论文提出一种基于多智能体强化学习（MARL）的去中心化策略，能在单走廊训练后零样本迁移到更复杂的多走廊网络。实验证明该策略在高达40架飞行器的异构车队中仍保持96%以上的走廊合规性和接近理论上限的吞吐量，且战术干预需求低于6%，表明其具备强泛化能力和实际部署潜力。",
+              "methodsAndTechniques": "方法核心是旋转不变的局部观测表示与课程学习奖励设计。飞行器以自身航向为参考系感知环境，使策略不受走廊朝向影响；奖励函数逐步引入分离惩罚和阶段过渡激励，引导策略从基础导航过渡到复杂协调。这种设计避免了对全局信息的依赖，并支持在未知拓扑中持续运行。",
+              "limitationsAndReadingValue": "局限在于未建模通信中断、传感器噪声和突发故障等非理想条件，也未集成形式化安全过滤层。此外，固定走廊结构限制了动态重路由能力。最值得阅读的是其系统级设计思路：如何通过局部交互促成全局有序流，这对构建可扩展的自主交通系统具有启发意义。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "去中心化控制",
+              "空中交通管理",
+              "智能体协调"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
