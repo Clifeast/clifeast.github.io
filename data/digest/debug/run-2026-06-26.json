@@ -1,0 +1,2152 @@
+{
+  "date": "2026-06-26",
+  "generatedAt": "2026-06-26T06:36:24.472109+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-25",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606250000 TO 202606252359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606250000 TO 202606252359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "Parametric Open Source Games",
+          "url": "https://arxiv.org/abs/2606.27068",
+          "arxivId": "2606.27068",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "Open-source game theory studies agents whose behavior may depend on one another's decision procedures, but most existing models use discrete or symbolic programs. We introduce parametric open-source games, a continuous analogue of program equilibria in which players choose parameter vectors and semantics maps convert the full parameter profile into mixed actions in an underlying finite game. We establish equilibrium existence results, derive an exact coupling threshold at which selfish gradient ascent in symmetric $2\\times2$ games switches from defection toward cooperation, and give a one-dimensional boundary test for parametric program Nash equilibria. We further extend the framework to a neural semantics class whose first-order cooperation condition is governed by the ratio of cross-player to self-player sensitivity. Across canonical games, the framework shows how access to internal parameterizations can qualitatively reshape learning dynamics and equilibrium structure, and how sufficiently strong open-source coupling can steer selfish optimization toward cooperative outcomes."
+        },
+        {
+          "title": "Almost EFX in Hypergraphs",
+          "url": "https://arxiv.org/abs/2606.26948",
+          "arxivId": "2606.26948",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the existence of envy-free-up-to-any-good (EFX) allocations of indivisible goods among agents with heterogeneous monotone valuations. Christodoulou et al. (2023) introduced the (multi-hyper)graph setting, where agents and goods are represented by vertices and edges of a graph respectively, and only the endpoints of an edge may have non-zero marginal value for it. Our work simplifies and extends previous results of Kaviani et al. (Alireza Kaviani, Masoud Seddighin, Amir Mohammad Shahrezaei. Almost Envy-Free Allocation of Indivisible Goods: A Tale of Two Valuations. WINE 2024) in this domain. First, we provide a simpler construction of EF2X allocation for general monotone valuations in hypergraphs with girth at least 3. We extend our ideas when the multiplicity of each edge is 2 and show that an EF3X allocation always exists for additive valuations. Both results can be constructed in polynomial time. Regarding EFX approximations, we provide a simpler construction for $\\frac{\\sqrt{2}}{2}$-EFX allocations in hypergraphs of girth at least 3 under subadditive valuations. We push the state-of-the-art by establishing the existence of $\\frac{2}{3}$-EFX allocations for additive valuations when the edge multiplicity is 2. Both of the latter results can be constructed in pseudo-polynomial time. By addressing these multi-hypergraph settings, our work contributes to the ongoing effort to resolve the existence of EFX in increasingly general and applicable domains."
+        },
+        {
+          "title": "Learning Anonymous Pricing for Online Resource Allocation",
+          "url": "https://arxiv.org/abs/2606.26651",
+          "arxivId": "2606.26651",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the online resource allocation problem, where a seller sequentially receives independent requests for $m$ types of resources with limited supplies from $n$ heterogeneous agents arriving in an unknown order. Each request from an agent can be fulfilled in different ways, with resource consumption in $[0,1]^m$, and generates different values for the agent. The objective of the seller is to maximize the social welfare, which is the sum of the values obtained from each agent. Recently, Ghuge, Singla, and Wang [GSW STOC'25] studied the learnability of the online resource allocation problem with heterogeneous agents and proposed a learnable pricing algorithm using only a single sample. However, their core algorithm is a dynamic pricing algorithm, which may introduce fairness concerns, as different agents face different prices. Furthermore, the algorithm crucially needs to know the arrival order of the agents in advance. To address these issues, in this paper, we study the learnability of anonymous pricing algorithms for online resource allocation using samples and queries to agents' value distributions. First, we show that a polynomial number of samples suffices to learn the classic dual pricing algorithm. Second, we show that a polynomial number of pricing queries suffices to learn a near-optimal anonymous pricing algorithm, in which the item pricing vector faced by each agent is drawn from the same predetermined distribution."
+        },
+        {
+          "title": "Characterizing Pure Strategy Nash Equilibria in Finite Noncooperative Games",
+          "url": "https://arxiv.org/abs/2606.26564",
+          "arxivId": "2606.26564",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.CO"
+          ],
+          "abstract": "The classical existence result of Nash guarantees that every finite noncooperative game admits an equilibrium in mixed strategies, but it leaves open the question of when pure strategy equilibria exist. This paper develops a structural approach to that question by exploiting properties of the best-response correspondence on finite strategy sets. Building on recent work, we derive new sufficient conditions for the existence of pure strategy Nash equilibria in finite games. We introduce several broad classes of finite games for which pure equilibria are guaranteed, including a class that generalizes unilaterally competitive games and a class characterized by the existence of an aggregate-payoff maximizer over an ordered set. Our results clarify the role of acyclicity, and aggregation in producing pure equilibria and connect disparate sufficient-condition results in the literature into a unified framework."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Parametric Open Source Games",
+              "url": "https://arxiv.org/abs/2606.27068",
+              "arxivId": "2606.27068",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.LG"
+              ],
+              "abstract": "Open-source game theory studies agents whose behavior may depend on one another's decision procedures, but most existing models use discrete or symbolic programs. We introduce parametric open-source games, a continuous analogue of program equilibria in which players choose parameter vectors and semantics maps convert the full parameter profile into mixed actions in an underlying finite game. We establish equilibrium existence results, derive an exact coupling threshold at which selfish gradient ascent in symmetric $2\\times2$ games switches from defection toward cooperation, and give a one-dimensional boundary test for parametric program Nash equilibria. We further extend the framework to a neural semantics class whose first-order cooperation condition is governed by the ratio of cross-player to self-player sensitivity. Across canonical games, the framework shows how access to internal parameterizations can qualitatively reshape learning dynamics and equilibrium structure, and how sufficiently strong open-source coupling can steer selfish optimization toward cooperative outcomes."
+            },
+            {
+              "title": "Almost EFX in Hypergraphs",
+              "url": "https://arxiv.org/abs/2606.26948",
+              "arxivId": "2606.26948",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the existence of envy-free-up-to-any-good (EFX) allocations of indivisible goods among agents with heterogeneous monotone valuations. Christodoulou et al. (2023) introduced the (multi-hyper)graph setting, where agents and goods are represented by vertices and edges of a graph respectively, and only the endpoints of an edge may have non-zero marginal value for it. Our work simplifies and extends previous results of Kaviani et al. (Alireza Kaviani, Masoud Seddighin, Amir Mohammad Shahrezaei. Almost Envy-Free Allocation of Indivisible Goods: A Tale of Two Valuations. WINE 2024) in this domain. First, we provide a simpler construction of EF2X allocation for general monotone valuations in hypergraphs with girth at least 3. We extend our ideas when the multiplicity of each edge is 2 and show that an EF3X allocation always exists for additive valuations. Both results can be constructed in polynomial time. Regarding EFX approximations, we provide a simpler construction for $\\frac{\\sqrt{2}}{2}$-EFX allocations in hypergraphs of girth at least 3 under subadditive valuations. We push the state-of-the-art by establishing the existence of $\\frac{2}{3}$-EFX allocations for additive valuations when the edge multiplicity is 2. Both of the latter results can be constructed in pseudo-polynomial time. By addressing these multi-hypergraph settings, our work contributes to the ongoing effort to resolve the existence of EFX in increasingly general and applicable domains."
+            },
+            {
+              "title": "Learning Anonymous Pricing for Online Resource Allocation",
+              "url": "https://arxiv.org/abs/2606.26651",
+              "arxivId": "2606.26651",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the online resource allocation problem, where a seller sequentially receives independent requests for $m$ types of resources with limited supplies from $n$ heterogeneous agents arriving in an unknown order. Each request from an agent can be fulfilled in different ways, with resource consumption in $[0,1]^m$, and generates different values for the agent. The objective of the seller is to maximize the social welfare, which is the sum of the values obtained from each agent. Recently, Ghuge, Singla, and Wang [GSW STOC'25] studied the learnability of the online resource allocation problem with heterogeneous agents and proposed a learnable pricing algorithm using only a single sample. However, their core algorithm is a dynamic pricing algorithm, which may introduce fairness concerns, as different agents face different prices. Furthermore, the algorithm crucially needs to know the arrival order of the agents in advance. To address these issues, in this paper, we study the learnability of anonymous pricing algorithms for online resource allocation using samples and queries to agents' value distributions. First, we show that a polynomial number of samples suffices to learn the classic dual pricing algorithm. Second, we show that a polynomial number of pricing queries suffices to learn a near-optimal anonymous pricing algorithm, in which the item pricing vector faced by each agent is drawn from the same predetermined distribution."
+            },
+            {
+              "title": "Characterizing Pure Strategy Nash Equilibria in Finite Noncooperative Games",
+              "url": "https://arxiv.org/abs/2606.26564",
+              "arxivId": "2606.26564",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.CO"
+              ],
+              "abstract": "The classical existence result of Nash guarantees that every finite noncooperative game admits an equilibrium in mixed strategies, but it leaves open the question of when pure strategy equilibria exist. This paper develops a structural approach to that question by exploiting properties of the best-response correspondence on finite strategy sets. Building on recent work, we derive new sufficient conditions for the existence of pure strategy Nash equilibria in finite games. We introduce several broad classes of finite games for which pure equilibria are guaranteed, including a class that generalizes unilaterally competitive games and a class characterized by the existence of an aggregate-payoff maximizer over an ordered set. Our results clarify the role of acyclicity, and aggregation in producing pure equilibria and connect disparate sufficient-condition results in the literature into a unified framework."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 8,
+                  "readingValue": 7,
+                  "penalty": -1,
+                  "aiRelevance": 9,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 8,
+                  "readingValue": 7,
+                  "penalty": -1,
+                  "aiRelevance": 7,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 1,
+                  "agtRelevance": 10
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Parametric Open Source Games",
+              "url": "https://arxiv.org/abs/2606.27068",
+              "arxivId": "2606.27068",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 27.0,
+                "bonus": 8.1,
+                "total": 31.6
+              }
+            },
+            {
+              "title": "Almost EFX in Hypergraphs",
+              "url": "https://arxiv.org/abs/2606.26948",
+              "arxivId": "2606.26948",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 1.7,
+                "total": 24.9
+              }
+            },
+            {
+              "title": "Learning Anonymous Pricing for Online Resource Allocation",
+              "url": "https://arxiv.org/abs/2606.26651",
+              "arxivId": "2606.26651",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 28.0,
+                "bonus": 6.5,
+                "total": 31.1
+              }
+            },
+            {
+              "title": "Characterizing Pure Strategy Nash Equilibria in Finite Noncooperative Games",
+              "url": "https://arxiv.org/abs/2606.26564",
+              "arxivId": "2606.26564",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.CO"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.9,
+                "total": 26.9
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Parametric Open Source Games",
+          "url": "https://arxiv.org/abs/2606.27068",
+          "arxivId": "2606.27068",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 31.6
+          }
+        },
+        {
+          "title": "Almost EFX in Hypergraphs",
+          "url": "https://arxiv.org/abs/2606.26948",
+          "arxivId": "2606.26948",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 24.9
+          }
+        },
+        {
+          "title": "Learning Anonymous Pricing for Online Resource Allocation",
+          "url": "https://arxiv.org/abs/2606.26651",
+          "arxivId": "2606.26651",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 28.0,
+            "bonus": 6.5,
+            "total": 31.1
+          }
+        },
+        {
+          "title": "Characterizing Pure Strategy Nash Equilibria in Finite Noncooperative Games",
+          "url": "https://arxiv.org/abs/2606.26564",
+          "arxivId": "2606.26564",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.CO"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.9,
+            "total": 26.9
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Parametric Open Source Games",
+          "url": "https://arxiv.org/abs/2606.27068",
+          "arxivId": "2606.27068",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 31.6
+          }
+        },
+        {
+          "title": "Learning Anonymous Pricing for Online Resource Allocation",
+          "url": "https://arxiv.org/abs/2606.26651",
+          "arxivId": "2606.26651",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 28.0,
+            "bonus": 6.5,
+            "total": 31.1
+          }
+        },
+        {
+          "title": "Characterizing Pure Strategy Nash Equilibria in Finite Noncooperative Games",
+          "url": "https://arxiv.org/abs/2606.26564",
+          "arxivId": "2606.26564",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.CO"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.9,
+            "total": 26.9
+          }
+        },
+        {
+          "title": "Almost EFX in Hypergraphs",
+          "url": "https://arxiv.org/abs/2606.26948",
+          "arxivId": "2606.26948",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 24.9
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Parametric Open Source Games",
+            "url": "https://arxiv.org/abs/2606.27068",
+            "arxivId": "2606.27068",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "参数化开源游戏",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "实验验证"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "开放源代码博弈",
+              "合作行为",
+              "梯度优化"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统开源博弈理论假设智能体能查看彼此的决策程序，从而改变合作与背叛的激励结构，但现有模型多基于符号化程序，难以应用于现代连续、可微的学习系统。本文旨在弥合这一鸿沟：当智能体通过高维参数向量表达策略，并能感知对方参数时，内部参数的透明性如何影响学习动态与均衡结果？这触及了多智能体学习中透明性与合作性的根本关系。",
+              "modelAndSetup": "作者提出‘参数化开源游戏’框架：每个玩家选择一个参数向量，一个连续的语义映射将双方参数联合转换为在基础有限博弈中的混合策略。若该映射依赖对手参数，则为开源；否则为闭源。玩家通过梯度上升优化自身参数，其行为因此可能受对手内部状态直接影响。模型聚焦对称2×2博弈，语义函数可为S形函数或神经网络，参数空间紧致有界。",
+              "contributionsAndResults": "论文证明了此类游戏中纯策略参数化程序纳什均衡（PPNE）的存在条件，并发现一个精确的耦合阈值：在对称2×2博弈中，当跨玩家敏感度与自敏感度之比超过该阈值时，自私的梯度上升会从趋向背叛转为趋向合作。此外，提出一种一维边界测试来验证PPNE，表明强开源耦合可引导自私学习走向高效合作均衡。",
+              "methodsAndTechniques": "作者通过构造连续语义映射，将开源博弈嵌入标准优化框架，利用Glicksberg和Kakutani不动点定理证明均衡存在性。对S形语义，通过链式法则分析梯度符号变化，导出相变阈值。对神经语义，利用一阶泰勒展开分离线性敏感度与非线性残差，证明局部动力学由敏感度比决定。边界PPNE通过单边最优响应扫描验证。",
+              "limitationsAndReadingValue": "模型假设完全参数可见性和一次性博弈，忽略了噪声、部分观察和序贯交互，且多为对称二人场景。尽管理想化，但它清晰揭示了参数级透明性如何通过改变梯度方向重塑学习路径。最值得读的是其核心洞见——合作可由跨参数敏感度触发，以及将程序博弈连续化的建模范式，为设计促进合作的可微机制提供了新视角。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "参数化开源游戏",
+            "summarySections": {
+              "backgroundAndQuestion": "传统开源博弈理论假设智能体能查看彼此的决策程序，从而改变合作与背叛的激励结构，但现有模型多基于符号化程序，难以应用于现代连续、可微的学习系统。本文旨在弥合这一鸿沟：当智能体通过高维参数向量表达策略，并能感知对方参数时，内部参数的透明性如何影响学习动态与均衡结果？这触及了多智能体学习中透明性与合作性的根本关系。",
+              "modelAndSetup": "作者提出‘参数化开源游戏’框架：每个玩家选择一个参数向量，一个连续的语义映射将双方参数联合转换为在基础有限博弈中的混合策略。若该映射依赖对手参数，则为开源；否则为闭源。玩家通过梯度上升优化自身参数，其行为因此可能受对手内部状态直接影响。模型聚焦对称2×2博弈，语义函数可为S形函数或神经网络，参数空间紧致有界。",
+              "contributionsAndResults": "论文证明了此类游戏中纯策略参数化程序纳什均衡（PPNE）的存在条件，并发现一个精确的耦合阈值：在对称2×2博弈中，当跨玩家敏感度与自敏感度之比超过该阈值时，自私的梯度上升会从趋向背叛转为趋向合作。此外，提出一种一维边界测试来验证PPNE，表明强开源耦合可引导自私学习走向高效合作均衡。",
+              "methodsAndTechniques": "作者通过构造连续语义映射，将开源博弈嵌入标准优化框架，利用Glicksberg和Kakutani不动点定理证明均衡存在性。对S形语义，通过链式法则分析梯度符号变化，导出相变阈值。对神经语义，利用一阶泰勒展开分离线性敏感度与非线性残差，证明局部动力学由敏感度比决定。边界PPNE通过单边最优响应扫描验证。",
+              "limitationsAndReadingValue": "模型假设完全参数可见性和一次性博弈，忽略了噪声、部分观察和序贯交互，且多为对称二人场景。尽管理想化，但它清晰揭示了参数级透明性如何通过改变梯度方向重塑学习路径。最值得读的是其核心洞见——合作可由跨参数敏感度触发，以及将程序博弈连续化的建模范式，为设计促进合作的可微机制提供了新视角。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "开放源代码博弈",
+              "合作行为",
+              "梯度优化"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Learning Anonymous Pricing for Online Resource Allocation",
+            "url": "https://arxiv.org/abs/2606.26651",
+            "arxivId": "2606.26651",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "学习匿名定价以进行在线资源分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "在线算法",
+              "拍卖理论",
+              "公平性",
+              "学习与机制设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究在线资源分配中的公平性与学习效率问题。现有动态定价虽能逼近最优社会福利，但因价格随到达顺序变化而引发歧视担忧，且依赖已知到达序列。作者追问：能否通过样本或查询学习一种匿名定价机制，在未知到达顺序下仍能实现近优福利？这触及机制公平性、鲁棒性与学习成本之间的权衡。",
+              "modelAndSetup": "模型考虑一个卖家向n个异质买家分配m种有限资源，每个买家请求独立抽取自未知分布，带来不同资源消耗与价值。目标是最大化社会福利。机制采用一次性报价，买家选择效用最大化的决策。作者对比自适应定价、静态定价与匿名随机定价，关注在仅能访问样本或定价查询的情况下，如何设计不依赖身份与历史的定价策略。",
+              "contributionsAndResults": "论文证明两类学习路径均可实现近优匿名定价。其一，对于一般性估值分布，多项式数量的样本足以学习接近对偶价格的静态定价。其二，即使分布非一般性，通过n轮定价查询即可学会一组价格向量，随机选用其中之一可实现（1-ε）近似比。后者无需解大规模配置线性规划，更具计算优势。",
+              "methodsAndTechniques": "技术核心在于避免直接逼近对偶变量，转而确保期望消耗接近预算。利用伪维数分析样本场景下的均匀收敛，并引入截断消耗改进样本复杂度。对于查询场景，将学习过程建模为大型资源分配问题，应用指数更新规则调整价格，并通过鞅分析证明所学价格在重放中仍有效，克服了相关性挑战。",
+              "limitationsAndReadingValue": "静态定价结果依赖‘一般性分布’假设以规避平局问题，而查询方法虽更通用却需粗略估计最优值规模。机制虽匿名但非个性化，且价格集合大小影响实现精度。最值得读的是其将学习与匿名机制结合的新框架，以及绕过LP求解的技术路径，为实际部署提供了更公平、稳健的替代方案。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "学习匿名定价以进行在线资源分配",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究在线资源分配中的公平性与学习效率问题。现有动态定价虽能逼近最优社会福利，但因价格随到达顺序变化而引发歧视担忧，且依赖已知到达序列。作者追问：能否通过样本或查询学习一种匿名定价机制，在未知到达顺序下仍能实现近优福利？这触及机制公平性、鲁棒性与学习成本之间的权衡。",
+              "modelAndSetup": "模型考虑一个卖家向n个异质买家分配m种有限资源，每个买家请求独立抽取自未知分布，带来不同资源消耗与价值。目标是最大化社会福利。机制采用一次性报价，买家选择效用最大化的决策。作者对比自适应定价、静态定价与匿名随机定价，关注在仅能访问样本或定价查询的情况下，如何设计不依赖身份与历史的定价策略。",
+              "contributionsAndResults": "论文证明两类学习路径均可实现近优匿名定价。其一，对于一般性估值分布，多项式数量的样本足以学习接近对偶价格的静态定价。其二，即使分布非一般性，通过n轮定价查询即可学会一组价格向量，随机选用其中之一可实现（1-ε）近似比。后者无需解大规模配置线性规划，更具计算优势。",
+              "methodsAndTechniques": "技术核心在于避免直接逼近对偶变量，转而确保期望消耗接近预算。利用伪维数分析样本场景下的均匀收敛，并引入截断消耗改进样本复杂度。对于查询场景，将学习过程建模为大型资源分配问题，应用指数更新规则调整价格，并通过鞅分析证明所学价格在重放中仍有效，克服了相关性挑战。",
+              "limitationsAndReadingValue": "静态定价结果依赖‘一般性分布’假设以规避平局问题，而查询方法虽更通用却需粗略估计最优值规模。机制虽匿名但非个性化，且价格集合大小影响实现精度。最值得读的是其将学习与匿名机制结合的新框架，以及绕过LP求解的技术路径，为实际部署提供了更公平、稳健的替代方案。"
+            },
+            "contentTags": [
+              "机制设计",
+              "在线算法",
+              "拍卖理论",
+              "公平性",
+              "学习与机制设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Characterizing Pure Strategy Nash Equilibria in Finite Noncooperative Games",
+            "url": "https://arxiv.org/abs/2606.26564",
+            "arxivId": "2606.26564",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "math.CO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "有限非合作博弈中纯策略纳什均衡的刻画",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "机制设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么有些有限博弈存在纯策略纳什均衡而另一些不存在？尽管纳什已证明混合策略均衡总存在，但纯策略均衡更具可解释性和应用价值。现有研究通过势博弈、超模博弈等特例给出充分条件，却缺乏统一框架。本文旨在填补这一空白，从最佳响应对应的基本结构出发，探究纯策略均衡存在的本质组合与序贯特征。",
+              "modelAndSetup": "模型考虑任意有限非合作博弈，玩家集合固定，每人拥有有限动作集，效用函数定义在纯策略组合上。核心对象是单边最佳响应对应（UNBR），它记录每个策略组合下哪些单个玩家可通过改变行动提升自身收益。作者不依赖连续性或凸性，而是将策略空间视为离散有序集，研究UNBR映射的不动点与路径性质，以此刻画纯策略纳什均衡的存在性。",
+              "contributionsAndResults": "论文建立了纯策略纳什均衡存在的若干充要条件，统一了势博弈、超模博弈、单边竞争博弈等经典结果。关键发现是：当博弈满足聚合单调性（AMP）且总收益可分时，必存在纯策略均衡；此外，若存在某种广义势函数或最佳响应图无环，则均衡也存在。这些条件不仅涵盖已有类别，还识别出新的保证均衡存在的游戏类。",
+              "methodsAndTechniques": "作者采用组合与序理论方法，将均衡存在性转化为最佳响应路径的有限性问题。核心技术包括构造精确势函数的路径无关性检验、利用Tarski不动点定理处理超模结构、设计字典序势函数证明单边竞争博弈的收敛性，并通过微扰法构造总收益可分的等价博弈。这些工具共同支撑了对离散策略空间中均衡结构的系统分析。",
+              "limitationsAndReadingValue": "结果高度依赖于特定结构假设，如AMP或势函数存在性，未必适用于一般非结构化博弈。证明常需全局条件，难以转化为高效算法。但论文价值在于提供了清晰的理论透镜，将分散的充分条件整合为统一框架。最值得读的是其对最佳响应对应的整体分析视角，以及如何用序与聚合思想揭示均衡存在的深层机制。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "有限非合作博弈中纯策略纳什均衡的刻画",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么有些有限博弈存在纯策略纳什均衡而另一些不存在？尽管纳什已证明混合策略均衡总存在，但纯策略均衡更具可解释性和应用价值。现有研究通过势博弈、超模博弈等特例给出充分条件，却缺乏统一框架。本文旨在填补这一空白，从最佳响应对应的基本结构出发，探究纯策略均衡存在的本质组合与序贯特征。",
+              "modelAndSetup": "模型考虑任意有限非合作博弈，玩家集合固定，每人拥有有限动作集，效用函数定义在纯策略组合上。核心对象是单边最佳响应对应（UNBR），它记录每个策略组合下哪些单个玩家可通过改变行动提升自身收益。作者不依赖连续性或凸性，而是将策略空间视为离散有序集，研究UNBR映射的不动点与路径性质，以此刻画纯策略纳什均衡的存在性。",
+              "contributionsAndResults": "论文建立了纯策略纳什均衡存在的若干充要条件，统一了势博弈、超模博弈、单边竞争博弈等经典结果。关键发现是：当博弈满足聚合单调性（AMP）且总收益可分时，必存在纯策略均衡；此外，若存在某种广义势函数或最佳响应图无环，则均衡也存在。这些条件不仅涵盖已有类别，还识别出新的保证均衡存在的游戏类。",
+              "methodsAndTechniques": "作者采用组合与序理论方法，将均衡存在性转化为最佳响应路径的有限性问题。核心技术包括构造精确势函数的路径无关性检验、利用Tarski不动点定理处理超模结构、设计字典序势函数证明单边竞争博弈的收敛性，并通过微扰法构造总收益可分的等价博弈。这些工具共同支撑了对离散策略空间中均衡结构的系统分析。",
+              "limitationsAndReadingValue": "结果高度依赖于特定结构假设，如AMP或势函数存在性，未必适用于一般非结构化博弈。证明常需全局条件，难以转化为高效算法。但论文价值在于提供了清晰的理论透镜，将分散的充分条件整合为统一框架。最值得读的是其对最佳响应对应的整体分析视角，以及如何用序与聚合思想揭示均衡存在的深层机制。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "机制设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Almost EFX in Hypergraphs",
+            "url": "https://arxiv.org/abs/2606.26948",
+            "arxivId": "2606.26948",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超图中的几乎 EFX 分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "离散公平分配",
+              "EFX分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为何在不可分物品分配中难以实现完全无妒忌？因为物品不可分割，常导致某人必然嫉妒他人。为此学界提出放宽标准，如 EFX（无妒忌至任意物品）成为焦点。本文关注超图结构下是否存在满足 EFX 或其近似形式的分配方案，填补了在更复杂关联结构中公平分配的研究空白。",
+              "modelAndSetup": "模型将代理和物品表示为超图的顶点与边，仅边的端点可能对该边有估值。允许多重边存在，且限制图的围长至少为3，即任意两代理共享至多一个物品。代理具有一般单调估值函数，目标是在此结构下构造满足特定公平性的分配机制。",
+              "contributionsAndResults": "论文证明在围长至少为3的超图中，总存在 EF2X 分配，并可在多项式时间内构造；对于重数为2的多超图，在加性估值下存在 EF3X 分配。此外还改进了近似 EFX 结果，首次在伪多项式时间内构造出 2-EFX 分配，推进了该领域的最优保证。",
+              "methodsAndTechniques": "作者采用分阶段构造法：先通过优先级分配建立部分 EFX 分配，再逐步减少妒忌并最终完成分配。关键技术包括虚拟估值函数、潜在函数分析及对妒忌图的循环消解，利用围长限制控制代理间共享物品数量，从而控制妒忌传播路径。",
+              "limitationsAndReadingValue": "结果依赖于围长和重数限制，推广到一般图仍困难。虽构造高效，但 EFkX 放宽了原始 EFX 要求。值得阅读的是其简洁构造思路与对超图结构的巧妙利用，尤其适合关注公平分配算法设计与存在性证明的研究者深入研读核心定理与证明技巧。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超图中的几乎 EFX 分配",
+            "summarySections": {
+              "backgroundAndQuestion": "为何在不可分物品分配中难以实现完全无妒忌？因为物品不可分割，常导致某人必然嫉妒他人。为此学界提出放宽标准，如 EFX（无妒忌至任意物品）成为焦点。本文关注超图结构下是否存在满足 EFX 或其近似形式的分配方案，填补了在更复杂关联结构中公平分配的研究空白。",
+              "modelAndSetup": "模型将代理和物品表示为超图的顶点与边，仅边的端点可能对该边有估值。允许多重边存在，且限制图的围长至少为3，即任意两代理共享至多一个物品。代理具有一般单调估值函数，目标是在此结构下构造满足特定公平性的分配机制。",
+              "contributionsAndResults": "论文证明在围长至少为3的超图中，总存在 EF2X 分配，并可在多项式时间内构造；对于重数为2的多超图，在加性估值下存在 EF3X 分配。此外还改进了近似 EFX 结果，首次在伪多项式时间内构造出 2-EFX 分配，推进了该领域的最优保证。",
+              "methodsAndTechniques": "作者采用分阶段构造法：先通过优先级分配建立部分 EFX 分配，再逐步减少妒忌并最终完成分配。关键技术包括虚拟估值函数、潜在函数分析及对妒忌图的循环消解，利用围长限制控制代理间共享物品数量，从而控制妒忌传播路径。",
+              "limitationsAndReadingValue": "结果依赖于围长和重数限制，推广到一般图仍困难。虽构造高效，但 EFkX 放宽了原始 EFX 要求。值得阅读的是其简洁构造思路与对超图结构的巧妙利用，尤其适合关注公平分配算法设计与存在性证明的研究者深入研读核心定理与证明技巧。"
+            },
+            "contentTags": [
+              "公平性",
+              "离散公平分配",
+              "EFX分配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-25",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202606250000 TO 202606252359\"",
+            "totalResults": 13,
+            "fetchedCount": 13
+          }
+        },
+        "dedupedCount": 13
+      },
+      "arxivTotalResults": 13,
+      "fetchedCount": 13,
+      "fetchedPapers": [
+        {
+          "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+          "url": "https://arxiv.org/abs/2606.27243",
+          "arxivId": "2606.27243",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.SE"
+          ],
+          "abstract": "Industrial advertising recommender models are continuously improved through architecture evolution. Upgrades such as RankMixer, TokenMixer-Large, and MixFormer show that better structures remain a key source of quality and business gains. Yet developing such upgrades in production is expert-intensive and difficult to scale. Existing automation is insufficient: AutoML mainly tunes hyper-parameters, while effective gains often require cross-module changes under strict constraints; generic LLM coding agents optimize for runnable code, but runnable code does not imply a valid recommender architecture. Candidates may pass local tests while causing silent failures that degrade performance. We present NOVA, a level-aware agent harness for verification-aware architecture evolution. NOVA uses an architecture gradient, an SGD-inspired, non-differentiable update signal that aggregates prior modifications, verification diagnostics, metric feedback, and trajectory memory to guide the next modification. A verification cascade checks structure semantics, local executability, offline effectiveness, and online impact; invalid candidates are blocked early, with failure patterns recorded as forbidden directions. L1--L4 task-level control matches automation to task complexity and risk, routing high-risk tasks to Copilot for human oversight. Deployed in an industrial advertising system, NOVA achieves the highest effective pass rate on L2 ScaleUp and L3 Literature-to-Production tasks (54.5% and 60.0%), reduces silent failures compared with coding-agent baselines, and shortens one literature-to-production cycle by over 13x in human-attended time. In online A/B testing, the selected L3 candidate improves GMV on three pCVR objectives by +1.25%, +1.70%, and +2.02%, while reducing pCVR bias by 58.8%, 66.7%, and 37.3%."
+        },
+        {
+          "title": "TRUST: Item-Calibrated Interval Evidence for Temporal Session-Based Recommendation",
+          "url": "https://arxiv.org/abs/2606.27214",
+          "arxivId": "2606.27214",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Temporal signals have been widely used in session-based recommendation to infer user interest. Existing temporal session-based recommenders primarily rely on absolute interval values, implicitly assuming that the same interval carries similar interest signals across items. However, we empirically find that this assumption does not hold: each item has its own interval distribution, so an interval should be interpreted relative to the item it belongs to. Based on this observation, we propose TRUST, a framework that evaluates each observed interval relative to the empirical interval distribution of the corresponding item. Specifically, we propose a score function to guide global neighbor sampling, session graph encoding, and final interest aggregation. Experiments on public datasets show that TRUST consistently improves over representative temporal and non-temporal baselines, and plug-in experiments further show that the proposed scoring function can improve existing temporal session recommenders as a model-agnostic method. Component-wise ablations further show that calibrating the temporal signals within each module, rather than removing the module itself, consistently improves neighbor sampling, session graph encoding, and interest aggregation."
+        },
+        {
+          "title": "UniFormer: Efficient and Unified Model-Centric Scaling for Industrial Recommendation",
+          "url": "https://arxiv.org/abs/2606.27058",
+          "arxivId": "2606.27058",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Recently, substantial progress has been made in industrial recommendation through component-centric model scaling, where individual components such as behavior modeling, feature interaction, or task modeling are independently scaled to improve model capacity. Although recent methods such as HyFormer and OneTrans further explore cross-module co-scaling by jointly modeling behavior and interaction, their designs are still confined to the feature space and lack a unified model-centric scaling framework over the overall modeling space. In this paper, we propose UniFormer, an efficient and unified model-centric scaling framework for industrial recommender systems. To improve efficiency, UniFormer decomposes the overall modeling space into feature and task spaces, which are modeled by stacked Feature-space Interaction Modules and Task-space Interaction Modules, respectively. Moreover, UniFormer introduces semantic-based tokenization scheme to enable user-item decoupling, thereby achieving request-level inference acceleration. To prevent preference collapse, UniFormer employs multi-sequence cross-attention to separately capture heterogeneous behavior patterns, followed by the self-attention to enhance interaction modeling. Besides, dedicated multi-view FFNs are introduced to support flexible and scalable parameter scaling across different modeling components. Extensive online A/B testing in two production scenarios, Kuaishou and Kuaishou Lite, shows that UniFormer consistently improves user engagement and interaction metrics, achieving gains of +0.101%/+0.260% in App Stay Time and +0.729%/+1.113% in Watch Time, respectively."
+        },
+        {
+          "title": "TriPAH: Imbalance-Aware Tri-Prompt Affinity Hashing for Cross-Modal Medical Retrieval",
+          "url": "https://arxiv.org/abs/2606.27010",
+          "arxivId": "2606.27010",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.MM"
+          ],
+          "abstract": "In the era of big medical data, efficient cross-modal retrieval is pivotal for evidence-based diagnosis and large-scale case management. Cross-modal medical hashing retrieval aims to enable efficient image-text search and support downstream tasks such as case-based reasoning and decision support by learning compact, semantically aligned binary codes. However, current methods suffer from semantic fragmentation due to noisy clinical language, long-tailed labels, and brittle quantization that weakens alignment. We propose TriPAH, a Tri-Prompt Affinity Hashing framework. TriPAH synthesizes ontology-grounded, patient-level prompts conditioned on normalized clinical cues to yield low-noise textual representations for initial alignment. A lightweight prompt-token mixer performs hierarchical, multi-granularity alignment and produces quantization-ready features under an asymmetric multi-task objective coupling multi-positive contrastive alignment, imbalance-aware classification, and progressive quantization regularization. A patient-level consistency module further stabilizes codes across complementary views. Extensive experiments on three public datasets demonstrate that TriPAH significantly outperforms state-of-the-art methods."
+        },
+        {
+          "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+          "url": "https://arxiv.org/abs/2606.26859",
+          "arxivId": "2606.26859",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Recommendation algorithm iteration is moving from an artisanal, engineer-bound process toward an industrialized research loop, but this transition remains blocked by a structural execution bottleneck: the idea-to-launch cycle still depends on human engineers to generate hypotheses, modify production code, launch A/B experiments, and attribute online results. Innovation therefore scales linearly with headcount rather than compounding with evidence, compute, and accumulated experimental knowledge. We present AgentX, a production-deployed multi-agent system that fundamentally restructures this production function. AgentX operates as a self-evolving development engine: it autonomously generates, implements, evaluates, and learns from recommendation experiments at a scale and pace that no manual workflow can sustain. The system orchestrates four tightly coupled stages in a closed loop. A Brainstorm Agent synthesizes evidence from historical experiments, system architecture, data analysis, and external research into ranked, executable proposals. A Developing Agent translates each proposal into production-ready code through repository-grounded generation and multi-dimensional reliability verification. An Evaluation Agent conducts safe online rollout with guardrail-vetoed A/B judgment, converting both successes and failures into structured knowledge assets. A Harness Evolution layer (SGPO) then distills execution trajectories into semantic-gradient updates that continuously sharpen the agents themselves -- making the system not merely automated, but self-improving."
+        },
+        {
+          "title": "A Shared IPTC Topic Space for Cross-Source Topic Modelling",
+          "url": "https://arxiv.org/abs/2606.26845",
+          "arxivId": "2606.26845",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Comparing topic attention across different media is hindered by a fundamental modelling problem: topic models fitted separately to each corpus produce corpus-specific topic spaces that cannot be aligned directly. This paper presents a reproducible framework that places corpora in a single shared topic space defined by a taxonomy. Discovered topics are obtained with guided BERTopic, scored against the ninety-four IPTC Media Topics' taxonomy topics (level-1) through weighted keyword and target centroids, and then collapsed upward to seventeen IPTC parent topics by a maximum-similarity rule. The framework was developed and selected on a controlled New York Times 2011 corpus through a narrowing sequence: a broad model screen, a focused mapping refinement, a strict finalist comparison, a target-construction ablation, and a threshold calibration. In this corpus, the guided family retained substantially stronger mapped coverage than a zero-shot benchmark under stricter assignment thresholds, a parent-enriched target construction improved both coverage and parent consistency, and coverage declined gradually rather than collapsing as the assignment threshold was tightened. The contribution is an externally anchored method for constructing a shared topic space that enables reproducible cross-source topic comparison."
+        },
+        {
+          "title": "From Vajrayana Tara to Bengali Baul: A Computational Study of Lexical Transmission Across Buddhist, Shakta, and Vaishnava Traditions in Bengal",
+          "url": "https://arxiv.org/abs/2606.26803",
+          "arxivId": "2606.26803",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "We present a computational corpus study of vocabulary relationships across eight tradition layers of Bengali and Sanskrit devotional literature spanning the 8th to 19th centuries, encompassing Buddhist Vajrayana, Shakta Tantra, Vaishnava, and Baul traditions. Using a corpus of 75 texts and TF-IDF character n-gram vectorization with cosine similarity analysis, we address the historically argued but previously unquantified claim that Buddhist Vajrayana vocabulary survived the collapse of the Pala monasteries and was absorbed into the Shakta Tantra tradition of Bengal. The central finding is a specificity result: the Gitagovinda (Vaishnava Sanskrit, 12th century) has zero cosine similarity to Shakta Kali texts, while Bridge Tara texts (Buddhist-Shakta transitional, same century, same language) have cosine similarity 0.54 to Shakta Kali. This 8.5-fold contrast between two Sanskrit traditions from the same century demonstrates that the Buddhist-Shakta vocabulary overlap is not a generic property of Sanskrit devotional literature but is specific to the Buddhist-Shakta transmission chain. Three Brihannilatantra Tara texts show Shakta-to-Buddhist vocabulary ratios of 2.0 to 4.0, constituting measurable evidence of lexical transition within that chain. Ramprasad Sen's 18th-century Bengali Kali songs preserve Buddhist vocabulary residue including 56 occurrences of Tara alongside 103 occurrences of Kali. The Vaishnava Bengali tradition contributes a parallel chain to modern Baul vocabulary (similarity 0.29), slightly weaker than the Buddhist Sahajiya chain via Charyapada (0.31). These results provide the first quantitative multi-tradition corroboration of historically argued Buddhist-Shakta syncretism in Bengal."
+        },
+        {
+          "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+          "url": "https://arxiv.org/abs/2606.26753",
+          "arxivId": "2606.26753",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it. ConvMemory v3 adds a validity context layer that detects and surfaces this update evidence through target-conditioned relation verification, sitting after the v1/v2 retrieval path. The core mechanism is a dual-evidence gate that conditions a relation judgment on the specific target proposition, scoring a (target, source) pair through the product of a MiniLM slot head and a DeBERTa-v3 slot head and gating it by conservative event/operation evidence. On a synthetic multi-hop validity benchmark the gate reaches 90.12% +/- 1.73 accuracy; through a real-data feedback loop that mines failure patterns but trains on synthetic pairs only, the verifier transfers to Memora role binding with zero target-side labels, reaching 98.8% +/- 0.9 group-all-correct. The deployed layer preserves retrieval by default: a context mode attaches structured validity metadata while keeping the candidate set and rank order fixed, and a query-conditioned demote mode is an explicit opt-in for dense current-state workloads, where it raises current-active H@1 from a never-demote baseline of 45.1% to 95.7% +/- 1.2 while protecting non-superseded memories at 99.4% recall. Six machine-verifiable safety contracts pin the layer's behavior. Multi-hop graph propagation is validated as a mechanism; fully automatic construction of strict prerequisite edges is characterized as a boundary, since strict necessity requires counterfactual world knowledge. This report extends ConvMemory v1 (arXiv:2605.28062) and v2 (arXiv:2606.10842)."
+        },
+        {
+          "title": "Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising",
+          "url": "https://arxiv.org/abs/2606.26690",
+          "arxivId": "2606.26690",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "In large-scale paid acquisition and growth advertising systems, production attribution outputs are widely used for daily budget allocation and channel diagnosis. However, paid-attributed conversions such as daily new users (DNU) may systematically overstate true incremental growth when paid channels overlap with organic demand, brand-driven traffic, or other acquisition channels. This attribution-cannibalization mismatch can distort incremental ROI measurement and budget decisions at scale. We propose an experiment-calibrated attribution correction framework that uses incrementality experiments as causal anchors to convert sparse lift measurements into daily correction estimates. To make the corrected signal actionable at production granularity, we further allocate calibrated cannibalization volume across business hierarchies under structural consistency constraints. Offline forward-in-time validation against channel-level incrementality experiment readouts shows that the proposed framework substantially reduces calibration error relative to raw attribution and fine-grained ML baselines. Deployed across multiple global TikTok markets, the system supported budget and traffic strategy adjustments that were followed by an approximately 15-percentage-point reduction in the measured cannibalization rate."
+        },
+        {
+          "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+          "url": "https://arxiv.org/abs/2606.26654",
+          "arxivId": "2606.26654",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Personalized language-model assistants are often evaluated through a memory lens: can a model recall preferences users have explicitly stated in dialogue? More comprehensive personalization demands a harder capability -- inferring what users care about from the multimodal traces they naturally leave behind. We introduce SocialPersona, a benchmark for evaluating whether multimodal large language models (MLLMs) can recover revealed preferences from longitudinal social-media timelines and use them in dialogue. Built from longitudinal timelines of 171 everyday, non-promotional social-media users, SocialPersona contains text, images, timestamps, and 2,597 human-verified preference tags across seven interest domains, separating stable interests from recent interests. It supports two tasks: constructing structured user profiles from multimodal context and generating responses aligned with inferred profiles. Experiments with proprietary and open-weight MLLMs show that models can identify broad interest domains, yet their performance drops on fine-grained and recent interests and degrades further when inferred profiles must be used to personalize dialogue. Together with evidence that text and images provide complementary preference signals, these results indicate that robust cross-modal, long-horizon user modeling remains a key challenge, and that SocialPersona can help measure and advance progress toward assistants that infer and act on revealed preferences."
+        },
+        {
+          "title": "Utilizing Cognitive Signals Generated during Human Reading to Enhance Keyphrase Extraction from Microblogs",
+          "url": "https://arxiv.org/abs/2606.26485",
+          "arxivId": "2606.26485",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.DL",
+            "cs.HC",
+            "cs.IR"
+          ],
+          "abstract": "Microblogging platforms generate massive amounts of short, noisy, and dispersed user content, making automatic keyphrase extraction (AKE) an important but challenging task. Prior studies have used eye-tracking signals to improve microblog-based AKE because such signals reflect readers' attention to salient words. However, eye tracking alone is limited by physiological, acquisition, and feature-decoding constraints. To address this issue, we investigate whether electroencephalogram (EEG) signals can complement eye-tracking signals for AKE. Using the ZuCo cognitive language processing corpus, we select 8 EEG features and 17 eye-tracking features and incorporate them into microblog-based AKE models. To reduce possible distortion of cognitive signals by model structures, we inject these features into the input of the soft-attention layer and the query vectors of the self-attention layer. We then evaluate different combinations of cognitive signals across AKE models. The results show that cognitive signals produced during reading consistently improve AKE performance, regardless of feature combinations and model architectures. EEG features bring the largest gains, while combining EEG and eye-tracking features yields performance between the two individual signal types, suggesting partial complementarity but also possible redundancy or noise. These findings indicate that EEG signals provide useful cognitive evidence for microblog-based AKE and that multimodal cognitive signals deserve further investigation."
+        },
+        {
+          "title": "Extracting Problem and Method Sentence from Scientific Papers: A Context-enhanced Transformer Using Formulaic Expression Desensitization",
+          "url": "https://arxiv.org/abs/2606.26481",
+          "arxivId": "2606.26481",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.DL",
+            "cs.IR"
+          ],
+          "abstract": "Billions of scientific papers lead to the need to identify essential parts from the massive text. Scientific research is an activity from putting forward problems to using methods. To learn the main idea from scientific papers, we focus on extracting problem and method sentences. Annotating sentences within scientific papers is labor-intensive, resulting in small-scale datasets that limit the amount of information models can learn. This limited information leads models to rely heavily on specific forms, which in turn reduces their generalization capabilities. This paper addresses the problems caused by small-scale datasets from three perspectives: increasing dataset scale, reducing dependence on specific forms, and enriching the information within sentences. To implement the first two ideas, we introduce the concept of formulaic expression (FE) desensitization and propose FE desensitization-based data augmenters to generate synthetic data and reduce models' reliance on FEs. For the third idea, we propose a context-enhanced transformer that utilizes context to measure the importance of words in target sentences and to reduce noise in the context. Furthermore, this paper conducts experiments using large language model (LLM) based in-context learning (ICL) methods. Quantitative and qualitative experiments demonstrate that our proposed models achieve a higher macro F1 score compared to the baseline models on two scientific paper datasets, with improvements of 3.71% and 2.67%, respectively. The LLM based ICL methods are found to be not suitable for the task of problem and method extraction."
+        },
+        {
+          "title": "3D Spatial Pattern Matching",
+          "url": "https://arxiv.org/abs/2606.26465",
+          "arxivId": "2606.26465",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Spatial pattern matching is the process of matching query entities and constraints with database entities and relations. It has many applications, including similar region search, housing market search, landmark search, and road network matching. To our knowledge, all existing spatial pattern matching approaches frame the problem in a 2 dimensional space, where entities lie in a cartesian plane and relationships defined between them are contained in 2 dimensions. However, this problem framing has significant limitations when searching for real world entities that have height in addition to position. To address this limitation, we extend spatial pattern matching to 3 dimensions and provide a generalized definition of the problem. We describe a subgraph matching algorithm capable of resolving 3D spatial patterns over distance relations and release two 3D spatial pattern matching datasets, one synthetic and one containing real 3D building data from the city of Hamburg, Germany. We test our subgraph matching algorithm on both datasets and present results as a baseline for future methods to build upon."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+              "url": "https://arxiv.org/abs/2606.27243",
+              "arxivId": "2606.27243",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.SE"
+              ],
+              "abstract": "Industrial advertising recommender models are continuously improved through architecture evolution. Upgrades such as RankMixer, TokenMixer-Large, and MixFormer show that better structures remain a key source of quality and business gains. Yet developing such upgrades in production is expert-intensive and difficult to scale. Existing automation is insufficient: AutoML mainly tunes hyper-parameters, while effective gains often require cross-module changes under strict constraints; generic LLM coding agents optimize for runnable code, but runnable code does not imply a valid recommender architecture. Candidates may pass local tests while causing silent failures that degrade performance. We present NOVA, a level-aware agent harness for verification-aware architecture evolution. NOVA uses an architecture gradient, an SGD-inspired, non-differentiable update signal that aggregates prior modifications, verification diagnostics, metric feedback, and trajectory memory to guide the next modification. A verification cascade checks structure semantics, local executability, offline effectiveness, and online impact; invalid candidates are blocked early, with failure patterns recorded as forbidden directions. L1--L4 task-level control matches automation to task complexity and risk, routing high-risk tasks to Copilot for human oversight. Deployed in an industrial advertising system, NOVA achieves the highest effective pass rate on L2 ScaleUp and L3 Literature-to-Production tasks (54.5% and 60.0%), reduces silent failures compared with coding-agent baselines, and shortens one literature-to-production cycle by over 13x in human-attended time. In online A/B testing, the selected L3 candidate improves GMV on three pCVR objectives by +1.25%, +1.70%, and +2.02%, while reducing pCVR bias by 58.8%, 66.7%, and 37.3%."
+            },
+            {
+              "title": "TRUST: Item-Calibrated Interval Evidence for Temporal Session-Based Recommendation",
+              "url": "https://arxiv.org/abs/2606.27214",
+              "arxivId": "2606.27214",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Temporal signals have been widely used in session-based recommendation to infer user interest. Existing temporal session-based recommenders primarily rely on absolute interval values, implicitly assuming that the same interval carries similar interest signals across items. However, we empirically find that this assumption does not hold: each item has its own interval distribution, so an interval should be interpreted relative to the item it belongs to. Based on this observation, we propose TRUST, a framework that evaluates each observed interval relative to the empirical interval distribution of the corresponding item. Specifically, we propose a score function to guide global neighbor sampling, session graph encoding, and final interest aggregation. Experiments on public datasets show that TRUST consistently improves over representative temporal and non-temporal baselines, and plug-in experiments further show that the proposed scoring function can improve existing temporal session recommenders as a model-agnostic method. Component-wise ablations further show that calibrating the temporal signals within each module, rather than removing the module itself, consistently improves neighbor sampling, session graph encoding, and interest aggregation."
+            },
+            {
+              "title": "UniFormer: Efficient and Unified Model-Centric Scaling for Industrial Recommendation",
+              "url": "https://arxiv.org/abs/2606.27058",
+              "arxivId": "2606.27058",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Recently, substantial progress has been made in industrial recommendation through component-centric model scaling, where individual components such as behavior modeling, feature interaction, or task modeling are independently scaled to improve model capacity. Although recent methods such as HyFormer and OneTrans further explore cross-module co-scaling by jointly modeling behavior and interaction, their designs are still confined to the feature space and lack a unified model-centric scaling framework over the overall modeling space. In this paper, we propose UniFormer, an efficient and unified model-centric scaling framework for industrial recommender systems. To improve efficiency, UniFormer decomposes the overall modeling space into feature and task spaces, which are modeled by stacked Feature-space Interaction Modules and Task-space Interaction Modules, respectively. Moreover, UniFormer introduces semantic-based tokenization scheme to enable user-item decoupling, thereby achieving request-level inference acceleration. To prevent preference collapse, UniFormer employs multi-sequence cross-attention to separately capture heterogeneous behavior patterns, followed by the self-attention to enhance interaction modeling. Besides, dedicated multi-view FFNs are introduced to support flexible and scalable parameter scaling across different modeling components. Extensive online A/B testing in two production scenarios, Kuaishou and Kuaishou Lite, shows that UniFormer consistently improves user engagement and interaction metrics, achieving gains of +0.101%/+0.260% in App Stay Time and +0.729%/+1.113% in Watch Time, respectively."
+            },
+            {
+              "title": "TriPAH: Imbalance-Aware Tri-Prompt Affinity Hashing for Cross-Modal Medical Retrieval",
+              "url": "https://arxiv.org/abs/2606.27010",
+              "arxivId": "2606.27010",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.MM"
+              ],
+              "abstract": "In the era of big medical data, efficient cross-modal retrieval is pivotal for evidence-based diagnosis and large-scale case management. Cross-modal medical hashing retrieval aims to enable efficient image-text search and support downstream tasks such as case-based reasoning and decision support by learning compact, semantically aligned binary codes. However, current methods suffer from semantic fragmentation due to noisy clinical language, long-tailed labels, and brittle quantization that weakens alignment. We propose TriPAH, a Tri-Prompt Affinity Hashing framework. TriPAH synthesizes ontology-grounded, patient-level prompts conditioned on normalized clinical cues to yield low-noise textual representations for initial alignment. A lightweight prompt-token mixer performs hierarchical, multi-granularity alignment and produces quantization-ready features under an asymmetric multi-task objective coupling multi-positive contrastive alignment, imbalance-aware classification, and progressive quantization regularization. A patient-level consistency module further stabilizes codes across complementary views. Extensive experiments on three public datasets demonstrate that TriPAH significantly outperforms state-of-the-art methods."
+            },
+            {
+              "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+              "url": "https://arxiv.org/abs/2606.26859",
+              "arxivId": "2606.26859",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Recommendation algorithm iteration is moving from an artisanal, engineer-bound process toward an industrialized research loop, but this transition remains blocked by a structural execution bottleneck: the idea-to-launch cycle still depends on human engineers to generate hypotheses, modify production code, launch A/B experiments, and attribute online results. Innovation therefore scales linearly with headcount rather than compounding with evidence, compute, and accumulated experimental knowledge. We present AgentX, a production-deployed multi-agent system that fundamentally restructures this production function. AgentX operates as a self-evolving development engine: it autonomously generates, implements, evaluates, and learns from recommendation experiments at a scale and pace that no manual workflow can sustain. The system orchestrates four tightly coupled stages in a closed loop. A Brainstorm Agent synthesizes evidence from historical experiments, system architecture, data analysis, and external research into ranked, executable proposals. A Developing Agent translates each proposal into production-ready code through repository-grounded generation and multi-dimensional reliability verification. An Evaluation Agent conducts safe online rollout with guardrail-vetoed A/B judgment, converting both successes and failures into structured knowledge assets. A Harness Evolution layer (SGPO) then distills execution trajectories into semantic-gradient updates that continuously sharpen the agents themselves -- making the system not merely automated, but self-improving."
+            },
+            {
+              "title": "A Shared IPTC Topic Space for Cross-Source Topic Modelling",
+              "url": "https://arxiv.org/abs/2606.26845",
+              "arxivId": "2606.26845",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Comparing topic attention across different media is hindered by a fundamental modelling problem: topic models fitted separately to each corpus produce corpus-specific topic spaces that cannot be aligned directly. This paper presents a reproducible framework that places corpora in a single shared topic space defined by a taxonomy. Discovered topics are obtained with guided BERTopic, scored against the ninety-four IPTC Media Topics' taxonomy topics (level-1) through weighted keyword and target centroids, and then collapsed upward to seventeen IPTC parent topics by a maximum-similarity rule. The framework was developed and selected on a controlled New York Times 2011 corpus through a narrowing sequence: a broad model screen, a focused mapping refinement, a strict finalist comparison, a target-construction ablation, and a threshold calibration. In this corpus, the guided family retained substantially stronger mapped coverage than a zero-shot benchmark under stricter assignment thresholds, a parent-enriched target construction improved both coverage and parent consistency, and coverage declined gradually rather than collapsing as the assignment threshold was tightened. The contribution is an externally anchored method for constructing a shared topic space that enables reproducible cross-source topic comparison."
+            },
+            {
+              "title": "From Vajrayana Tara to Bengali Baul: A Computational Study of Lexical Transmission Across Buddhist, Shakta, and Vaishnava Traditions in Bengal",
+              "url": "https://arxiv.org/abs/2606.26803",
+              "arxivId": "2606.26803",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "We present a computational corpus study of vocabulary relationships across eight tradition layers of Bengali and Sanskrit devotional literature spanning the 8th to 19th centuries, encompassing Buddhist Vajrayana, Shakta Tantra, Vaishnava, and Baul traditions. Using a corpus of 75 texts and TF-IDF character n-gram vectorization with cosine similarity analysis, we address the historically argued but previously unquantified claim that Buddhist Vajrayana vocabulary survived the collapse of the Pala monasteries and was absorbed into the Shakta Tantra tradition of Bengal. The central finding is a specificity result: the Gitagovinda (Vaishnava Sanskrit, 12th century) has zero cosine similarity to Shakta Kali texts, while Bridge Tara texts (Buddhist-Shakta transitional, same century, same language) have cosine similarity 0.54 to Shakta Kali. This 8.5-fold contrast between two Sanskrit traditions from the same century demonstrates that the Buddhist-Shakta vocabulary overlap is not a generic property of Sanskrit devotional literature but is specific to the Buddhist-Shakta transmission chain. Three Brihannilatantra Tara texts show Shakta-to-Buddhist vocabulary ratios of 2.0 to 4.0, constituting measurable evidence of lexical transition within that chain. Ramprasad Sen's 18th-century Bengali Kali songs preserve Buddhist vocabulary residue including 56 occurrences of Tara alongside 103 occurrences of Kali. The Vaishnava Bengali tradition contributes a parallel chain to modern Baul vocabulary (similarity 0.29), slightly weaker than the Buddhist Sahajiya chain via Charyapada (0.31). These results provide the first quantitative multi-tradition corroboration of historically argued Buddhist-Shakta syncretism in Bengal."
+            },
+            {
+              "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+              "url": "https://arxiv.org/abs/2606.26753",
+              "arxivId": "2606.26753",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it. ConvMemory v3 adds a validity context layer that detects and surfaces this update evidence through target-conditioned relation verification, sitting after the v1/v2 retrieval path. The core mechanism is a dual-evidence gate that conditions a relation judgment on the specific target proposition, scoring a (target, source) pair through the product of a MiniLM slot head and a DeBERTa-v3 slot head and gating it by conservative event/operation evidence. On a synthetic multi-hop validity benchmark the gate reaches 90.12% +/- 1.73 accuracy; through a real-data feedback loop that mines failure patterns but trains on synthetic pairs only, the verifier transfers to Memora role binding with zero target-side labels, reaching 98.8% +/- 0.9 group-all-correct. The deployed layer preserves retrieval by default: a context mode attaches structured validity metadata while keeping the candidate set and rank order fixed, and a query-conditioned demote mode is an explicit opt-in for dense current-state workloads, where it raises current-active H@1 from a never-demote baseline of 45.1% to 95.7% +/- 1.2 while protecting non-superseded memories at 99.4% recall. Six machine-verifiable safety contracts pin the layer's behavior. Multi-hop graph propagation is validated as a mechanism; fully automatic construction of strict prerequisite edges is characterized as a boundary, since strict necessity requires counterfactual world knowledge. This report extends ConvMemory v1 (arXiv:2605.28062) and v2 (arXiv:2606.10842)."
+            },
+            {
+              "title": "Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising",
+              "url": "https://arxiv.org/abs/2606.26690",
+              "arxivId": "2606.26690",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "In large-scale paid acquisition and growth advertising systems, production attribution outputs are widely used for daily budget allocation and channel diagnosis. However, paid-attributed conversions such as daily new users (DNU) may systematically overstate true incremental growth when paid channels overlap with organic demand, brand-driven traffic, or other acquisition channels. This attribution-cannibalization mismatch can distort incremental ROI measurement and budget decisions at scale. We propose an experiment-calibrated attribution correction framework that uses incrementality experiments as causal anchors to convert sparse lift measurements into daily correction estimates. To make the corrected signal actionable at production granularity, we further allocate calibrated cannibalization volume across business hierarchies under structural consistency constraints. Offline forward-in-time validation against channel-level incrementality experiment readouts shows that the proposed framework substantially reduces calibration error relative to raw attribution and fine-grained ML baselines. Deployed across multiple global TikTok markets, the system supported budget and traffic strategy adjustments that were followed by an approximately 15-percentage-point reduction in the measured cannibalization rate."
+            },
+            {
+              "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+              "url": "https://arxiv.org/abs/2606.26654",
+              "arxivId": "2606.26654",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Personalized language-model assistants are often evaluated through a memory lens: can a model recall preferences users have explicitly stated in dialogue? More comprehensive personalization demands a harder capability -- inferring what users care about from the multimodal traces they naturally leave behind. We introduce SocialPersona, a benchmark for evaluating whether multimodal large language models (MLLMs) can recover revealed preferences from longitudinal social-media timelines and use them in dialogue. Built from longitudinal timelines of 171 everyday, non-promotional social-media users, SocialPersona contains text, images, timestamps, and 2,597 human-verified preference tags across seven interest domains, separating stable interests from recent interests. It supports two tasks: constructing structured user profiles from multimodal context and generating responses aligned with inferred profiles. Experiments with proprietary and open-weight MLLMs show that models can identify broad interest domains, yet their performance drops on fine-grained and recent interests and degrades further when inferred profiles must be used to personalize dialogue. Together with evidence that text and images provide complementary preference signals, these results indicate that robust cross-modal, long-horizon user modeling remains a key challenge, and that SocialPersona can help measure and advance progress toward assistants that infer and act on revealed preferences."
+            },
+            {
+              "title": "Utilizing Cognitive Signals Generated during Human Reading to Enhance Keyphrase Extraction from Microblogs",
+              "url": "https://arxiv.org/abs/2606.26485",
+              "arxivId": "2606.26485",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.DL",
+                "cs.HC",
+                "cs.IR"
+              ],
+              "abstract": "Microblogging platforms generate massive amounts of short, noisy, and dispersed user content, making automatic keyphrase extraction (AKE) an important but challenging task. Prior studies have used eye-tracking signals to improve microblog-based AKE because such signals reflect readers' attention to salient words. However, eye tracking alone is limited by physiological, acquisition, and feature-decoding constraints. To address this issue, we investigate whether electroencephalogram (EEG) signals can complement eye-tracking signals for AKE. Using the ZuCo cognitive language processing corpus, we select 8 EEG features and 17 eye-tracking features and incorporate them into microblog-based AKE models. To reduce possible distortion of cognitive signals by model structures, we inject these features into the input of the soft-attention layer and the query vectors of the self-attention layer. We then evaluate different combinations of cognitive signals across AKE models. The results show that cognitive signals produced during reading consistently improve AKE performance, regardless of feature combinations and model architectures. EEG features bring the largest gains, while combining EEG and eye-tracking features yields performance between the two individual signal types, suggesting partial complementarity but also possible redundancy or noise. These findings indicate that EEG signals provide useful cognitive evidence for microblog-based AKE and that multimodal cognitive signals deserve further investigation."
+            },
+            {
+              "title": "Extracting Problem and Method Sentence from Scientific Papers: A Context-enhanced Transformer Using Formulaic Expression Desensitization",
+              "url": "https://arxiv.org/abs/2606.26481",
+              "arxivId": "2606.26481",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.DL",
+                "cs.IR"
+              ],
+              "abstract": "Billions of scientific papers lead to the need to identify essential parts from the massive text. Scientific research is an activity from putting forward problems to using methods. To learn the main idea from scientific papers, we focus on extracting problem and method sentences. Annotating sentences within scientific papers is labor-intensive, resulting in small-scale datasets that limit the amount of information models can learn. This limited information leads models to rely heavily on specific forms, which in turn reduces their generalization capabilities. This paper addresses the problems caused by small-scale datasets from three perspectives: increasing dataset scale, reducing dependence on specific forms, and enriching the information within sentences. To implement the first two ideas, we introduce the concept of formulaic expression (FE) desensitization and propose FE desensitization-based data augmenters to generate synthetic data and reduce models' reliance on FEs. For the third idea, we propose a context-enhanced transformer that utilizes context to measure the importance of words in target sentences and to reduce noise in the context. Furthermore, this paper conducts experiments using large language model (LLM) based in-context learning (ICL) methods. Quantitative and qualitative experiments demonstrate that our proposed models achieve a higher macro F1 score compared to the baseline models on two scientific paper datasets, with improvements of 3.71% and 2.67%, respectively. The LLM based ICL methods are found to be not suitable for the task of problem and method extraction."
+            },
+            {
+              "title": "3D Spatial Pattern Matching",
+              "url": "https://arxiv.org/abs/2606.26465",
+              "arxivId": "2606.26465",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Spatial pattern matching is the process of matching query entities and constraints with database entities and relations. It has many applications, including similar region search, housing market search, landmark search, and road network matching. To our knowledge, all existing spatial pattern matching approaches frame the problem in a 2 dimensional space, where entities lie in a cartesian plane and relationships defined between them are contained in 2 dimensions. However, this problem framing has significant limitations when searching for real world entities that have height in addition to position. To address this limitation, we extend spatial pattern matching to 3 dimensions and provide a generalized definition of the problem. We describe a subgraph matching algorithm capable of resolving 3D spatial patterns over distance relations and release two 3D spatial pattern matching datasets, one synthetic and one containing real 3D building data from the city of Hamburg, Germany. We test our subgraph matching algorithm on both datasets and present results as a baseline for future methods to build upon."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 2,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+              "url": "https://arxiv.org/abs/2606.27243",
+              "arxivId": "2606.27243",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.SE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "TRUST: Item-Calibrated Interval Evidence for Temporal Session-Based Recommendation",
+              "url": "https://arxiv.org/abs/2606.27214",
+              "arxivId": "2606.27214",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "UniFormer: Efficient and Unified Model-Centric Scaling for Industrial Recommendation",
+              "url": "https://arxiv.org/abs/2606.27058",
+              "arxivId": "2606.27058",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            },
+            {
+              "title": "TriPAH: Imbalance-Aware Tri-Prompt Affinity Hashing for Cross-Modal Medical Retrieval",
+              "url": "https://arxiv.org/abs/2606.27010",
+              "arxivId": "2606.27010",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.MM"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+              "url": "https://arxiv.org/abs/2606.26859",
+              "arxivId": "2606.26859",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "A Shared IPTC Topic Space for Cross-Source Topic Modelling",
+              "url": "https://arxiv.org/abs/2606.26845",
+              "arxivId": "2606.26845",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "From Vajrayana Tara to Bengali Baul: A Computational Study of Lexical Transmission Across Buddhist, Shakta, and Vaishnava Traditions in Bengal",
+              "url": "https://arxiv.org/abs/2606.26803",
+              "arxivId": "2606.26803",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 2.0,
+                "penalty": 0.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+              "url": "https://arxiv.org/abs/2606.26753",
+              "arxivId": "2606.26753",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising",
+              "url": "https://arxiv.org/abs/2606.26690",
+              "arxivId": "2606.26690",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+              "url": "https://arxiv.org/abs/2606.26654",
+              "arxivId": "2606.26654",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "Utilizing Cognitive Signals Generated during Human Reading to Enhance Keyphrase Extraction from Microblogs",
+              "url": "https://arxiv.org/abs/2606.26485",
+              "arxivId": "2606.26485",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.DL",
+                "cs.HC",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 16.0,
+                "total": 16.0
+              }
+            },
+            {
+              "title": "Extracting Problem and Method Sentence from Scientific Papers: A Context-enhanced Transformer Using Formulaic Expression Desensitization",
+              "url": "https://arxiv.org/abs/2606.26481",
+              "arxivId": "2606.26481",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.DL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 16.0,
+                "total": 16.0
+              }
+            },
+            {
+              "title": "3D Spatial Pattern Matching",
+              "url": "https://arxiv.org/abs/2606.26465",
+              "arxivId": "2606.26465",
+              "date": "2026-06-25",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+          "url": "https://arxiv.org/abs/2606.27243",
+          "arxivId": "2606.27243",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "TRUST: Item-Calibrated Interval Evidence for Temporal Session-Based Recommendation",
+          "url": "https://arxiv.org/abs/2606.27214",
+          "arxivId": "2606.27214",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "UniFormer: Efficient and Unified Model-Centric Scaling for Industrial Recommendation",
+          "url": "https://arxiv.org/abs/2606.27058",
+          "arxivId": "2606.27058",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        },
+        {
+          "title": "TriPAH: Imbalance-Aware Tri-Prompt Affinity Hashing for Cross-Modal Medical Retrieval",
+          "url": "https://arxiv.org/abs/2606.27010",
+          "arxivId": "2606.27010",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.MM"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+          "url": "https://arxiv.org/abs/2606.26859",
+          "arxivId": "2606.26859",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "A Shared IPTC Topic Space for Cross-Source Topic Modelling",
+          "url": "https://arxiv.org/abs/2606.26845",
+          "arxivId": "2606.26845",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "From Vajrayana Tara to Bengali Baul: A Computational Study of Lexical Transmission Across Buddhist, Shakta, and Vaishnava Traditions in Bengal",
+          "url": "https://arxiv.org/abs/2606.26803",
+          "arxivId": "2606.26803",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 2.0,
+            "penalty": 0.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+          "url": "https://arxiv.org/abs/2606.26753",
+          "arxivId": "2606.26753",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising",
+          "url": "https://arxiv.org/abs/2606.26690",
+          "arxivId": "2606.26690",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+          "url": "https://arxiv.org/abs/2606.26654",
+          "arxivId": "2606.26654",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Utilizing Cognitive Signals Generated during Human Reading to Enhance Keyphrase Extraction from Microblogs",
+          "url": "https://arxiv.org/abs/2606.26485",
+          "arxivId": "2606.26485",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.DL",
+            "cs.HC",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 16.0,
+            "total": 16.0
+          }
+        },
+        {
+          "title": "Extracting Problem and Method Sentence from Scientific Papers: A Context-enhanced Transformer Using Formulaic Expression Desensitization",
+          "url": "https://arxiv.org/abs/2606.26481",
+          "arxivId": "2606.26481",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.DL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 16.0,
+            "total": 16.0
+          }
+        },
+        {
+          "title": "3D Spatial Pattern Matching",
+          "url": "https://arxiv.org/abs/2606.26465",
+          "arxivId": "2606.26465",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+          "url": "https://arxiv.org/abs/2606.26859",
+          "arxivId": "2606.26859",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+          "url": "https://arxiv.org/abs/2606.26753",
+          "arxivId": "2606.26753",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+          "url": "https://arxiv.org/abs/2606.26654",
+          "arxivId": "2606.26654",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising",
+          "url": "https://arxiv.org/abs/2606.26690",
+          "arxivId": "2606.26690",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+          "url": "https://arxiv.org/abs/2606.27243",
+          "arxivId": "2606.27243",
+          "date": "2026-06-25",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+            "url": "https://arxiv.org/abs/2606.26859",
+            "arxivId": "2606.26859",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "AgentX：迈向工业推荐系统的智能体驱动自迭代",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "自动化流程"
+            ],
+            "contentTags": [
+              "智能体",
+              "推荐系统",
+              "大语言模型",
+              "自迭代",
+              "A/B测试"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "工业推荐系统的算法迭代长期依赖工程师手动完成，从假设生成到代码部署、A/B测试和归因分析，整个流程耗时数周且受限于人力规模。尽管已有自动化尝试，但多数仍停留在离线指标优化或固定流程执行，缺乏真实线上反馈闭环，无法持续积累经验。本文要解决的核心问题是：如何打破人工瓶颈，构建一个能基于真实业务反馈自主运行并不断自我进化的推荐系统迭代引擎。",
+              "modelAndSetup": "论文构建了一个名为AgentX的多智能体系统，在快手App主feed和生活服务两个真实推荐场景中运行三周，自动完成从想法生成、代码实现、上线测试到结果分析的全周期迭代。输入是模糊的优化意图，输出是经过验证可上线的策略变更。系统通过四个协同阶段构成闭环：脑暴、开发、评估与进化，关键设定在于完全依赖线上A/B测试结果作为奖励信号，并将每次执行轨迹用于反哺系统自身优化。",
+              "contributionsAndResults": "AgentX首次实现了工业级推荐系统中智能体驱动的批量自迭代闭环，其核心贡献不仅是自动化，更是具备自我进化能力的开发引擎。实验显示，每位AgentX工作者每周产出1.1个可上线结果，是人工的13.8倍，年化收入超亿元，用户使用时长提升0.561%。更重要的是，系统通过轨迹回放机制持续优化自身提示与流程，实现了随时间增长的复利效应，而非一次性效率提升。",
+              "methodsAndTechniques": "系统采用角色分工的多智能体架构：脑暴智能体结合历史实验、系统知识、数据分析与外部研究生成可执行提案；开发智能体基于代码库上下文生成并通过多维校验确保可靠性；评估智能体实施带护栏否决的安全A/B测试；进化层则利用语义梯度提示优化（SGPO）将执行轨迹转化为对各智能体自身的改进。关键技术在于将模糊意图结构化、代码生成可靠化、反馈资产化与系统演化机制化。",
+              "limitationsAndReadingValue": "论文局限在于高度依赖企业级基础设施，如稳定的代码库、A/B平台与监控体系，难以直接迁移到资源有限环境。此外，智能体决策透明性与极端异常处理能力未深入探讨。但其最大阅读价值在于展示了‘智能体即研发’的新范式，最值得细读的是闭环设计、SGPO演化机制与真实工业落地细节，为构建自演进AI系统提供了可复用的工程蓝图。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "AgentX：迈向工业推荐系统的智能体驱动自迭代",
+            "summarySections": {
+              "backgroundAndQuestion": "工业推荐系统的算法迭代长期依赖工程师手动完成，从假设生成到代码部署、A/B测试和归因分析，整个流程耗时数周且受限于人力规模。尽管已有自动化尝试，但多数仍停留在离线指标优化或固定流程执行，缺乏真实线上反馈闭环，无法持续积累经验。本文要解决的核心问题是：如何打破人工瓶颈，构建一个能基于真实业务反馈自主运行并不断自我进化的推荐系统迭代引擎。",
+              "modelAndSetup": "论文构建了一个名为AgentX的多智能体系统，在快手App主feed和生活服务两个真实推荐场景中运行三周，自动完成从想法生成、代码实现、上线测试到结果分析的全周期迭代。输入是模糊的优化意图，输出是经过验证可上线的策略变更。系统通过四个协同阶段构成闭环：脑暴、开发、评估与进化，关键设定在于完全依赖线上A/B测试结果作为奖励信号，并将每次执行轨迹用于反哺系统自身优化。",
+              "contributionsAndResults": "AgentX首次实现了工业级推荐系统中智能体驱动的批量自迭代闭环，其核心贡献不仅是自动化，更是具备自我进化能力的开发引擎。实验显示，每位AgentX工作者每周产出1.1个可上线结果，是人工的13.8倍，年化收入超亿元，用户使用时长提升0.561%。更重要的是，系统通过轨迹回放机制持续优化自身提示与流程，实现了随时间增长的复利效应，而非一次性效率提升。",
+              "methodsAndTechniques": "系统采用角色分工的多智能体架构：脑暴智能体结合历史实验、系统知识、数据分析与外部研究生成可执行提案；开发智能体基于代码库上下文生成并通过多维校验确保可靠性；评估智能体实施带护栏否决的安全A/B测试；进化层则利用语义梯度提示优化（SGPO）将执行轨迹转化为对各智能体自身的改进。关键技术在于将模糊意图结构化、代码生成可靠化、反馈资产化与系统演化机制化。",
+              "limitationsAndReadingValue": "论文局限在于高度依赖企业级基础设施，如稳定的代码库、A/B平台与监控体系，难以直接迁移到资源有限环境。此外，智能体决策透明性与极端异常处理能力未深入探讨。但其最大阅读价值在于展示了‘智能体即研发’的新范式，最值得细读的是闭环设计、SGPO演化机制与真实工业落地细节，为构建自演进AI系统提供了可复用的工程蓝图。"
+            },
+            "contentTags": [
+              "智能体",
+              "推荐系统",
+              "大语言模型",
+              "自迭代",
+              "A/B测试"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "自动化流程"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+            "url": "https://arxiv.org/abs/2606.26753",
+            "arxivId": "2606.26753",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "ConvMemory v3: 基于目标条件关系验证的对话记忆有效性上下文层",
+            "researchParadigmTags": [
+              "机制设计",
+              "实验验证",
+              "系统框架",
+              "评测方法"
+            ],
+            "contentTags": [
+              "对话记忆",
+              "有效性验证",
+              "目标条件推理",
+              "智能体",
+              "生成式AI"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统对话记忆系统仅基于相关性检索，但用户状态会随时间更新，导致高相关性的记忆可能是过时的。已有方法如ConvMemory v1/v2优化召回和排序，却无法判断一条记忆是否已被后续陈述推翻。本文指出，关键瓶颈在于‘有效性’不同于‘相关性’，且两个记忆间的关系必须针对查询所涉的具体命题来判断，否则会误判属性更新。",
+              "modelAndSetup": "系统在原有检索路径后增加一个有效性上下文层，输入是候选记忆及其上下文文本，输出是对每条记忆是否被后续信息推翻的判断，并附带结构化元数据。训练使用合成的多跳有效性数据和真实角色绑定任务，通过目标条件关系验证进行监督。评估涵盖合成基准、Memora角色绑定迁移和密集检索下的当前状态恢复，指标包括准确率、保护/降级召回率及H@1。",
+              "contributionsAndResults": "核心贡献是目标条件双证据门机制，在合成多跳任务上达90.12%准确率，并通过零目标标签反馈环迁移到真实角色绑定任务，达到98.8%组全正确率。部署层默认保留原排序并附加有效性注释，显式启用‘降级’模式可在密集当前状态检索中将H@1从45.1%提升至95.7%，同时保持非过时记忆99.4%的保护召回，证明其实际价值。",
+              "methodsAndTechniques": "方法核心是目标条件关系验证：通过MiniLM与DeBERTa双槽头乘积得分衡量源是否针对特定目标命题进行推翻，并由事件/操作保守门控。该机制强调‘命题绑定’而非全局语义矛盾。训练采用分层监督，聚焦难例如范围错配。推理时通过噪声或聚合多源证据，确保即使单一判断错误也不致误删。",
+              "limitationsAndReadingValue": "主要局限在于多跳传播依赖人工提供的依赖结构，全自动构建严格前提边需反事实世界知识，当前模型难以可靠完成。此外，降级功能仅在高密度状态变更场景验证有效。最值得读的是其问题抽象——将记忆有效性建模为目标条件关系验证，以及安全可控的部署设计，这对构建长期运行的生成式智能体系统具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "ConvMemory v3: 基于目标条件关系验证的对话记忆有效性上下文层",
+            "summarySections": {
+              "backgroundAndQuestion": "传统对话记忆系统仅基于相关性检索，但用户状态会随时间更新，导致高相关性的记忆可能是过时的。已有方法如ConvMemory v1/v2优化召回和排序，却无法判断一条记忆是否已被后续陈述推翻。本文指出，关键瓶颈在于‘有效性’不同于‘相关性’，且两个记忆间的关系必须针对查询所涉的具体命题来判断，否则会误判属性更新。",
+              "modelAndSetup": "系统在原有检索路径后增加一个有效性上下文层，输入是候选记忆及其上下文文本，输出是对每条记忆是否被后续信息推翻的判断，并附带结构化元数据。训练使用合成的多跳有效性数据和真实角色绑定任务，通过目标条件关系验证进行监督。评估涵盖合成基准、Memora角色绑定迁移和密集检索下的当前状态恢复，指标包括准确率、保护/降级召回率及H@1。",
+              "contributionsAndResults": "核心贡献是目标条件双证据门机制，在合成多跳任务上达90.12%准确率，并通过零目标标签反馈环迁移到真实角色绑定任务，达到98.8%组全正确率。部署层默认保留原排序并附加有效性注释，显式启用‘降级’模式可在密集当前状态检索中将H@1从45.1%提升至95.7%，同时保持非过时记忆99.4%的保护召回，证明其实际价值。",
+              "methodsAndTechniques": "方法核心是目标条件关系验证：通过MiniLM与DeBERTa双槽头乘积得分衡量源是否针对特定目标命题进行推翻，并由事件/操作保守门控。该机制强调‘命题绑定’而非全局语义矛盾。训练采用分层监督，聚焦难例如范围错配。推理时通过噪声或聚合多源证据，确保即使单一判断错误也不致误删。",
+              "limitationsAndReadingValue": "主要局限在于多跳传播依赖人工提供的依赖结构，全自动构建严格前提边需反事实世界知识，当前模型难以可靠完成。此外，降级功能仅在高密度状态变更场景验证有效。最值得读的是其问题抽象——将记忆有效性建模为目标条件关系验证，以及安全可控的部署设计，这对构建长期运行的生成式智能体系统具有指导意义。"
+            },
+            "contentTags": [
+              "对话记忆",
+              "有效性验证",
+              "目标条件推理",
+              "智能体",
+              "生成式AI"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "实验验证",
+              "系统框架",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+            "url": "https://arxiv.org/abs/2606.26654",
+            "arxivId": "2606.26654",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "SocialPersona：基于多模态社交媒体上下文的个性化画像与响应评测",
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "个性化",
+              "多模态",
+              "用户建模",
+              "评测方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有个性化助手评测多依赖对话中明确表达的偏好记忆，难以反映真实场景下从用户日常行为中推断隐含兴趣的能力。本文指出，社交媒体上的文本、图像和时间痕迹蕴含丰富的长期与近期偏好信号，但跨模态、长周期的用户建模仍是挑战，亟需更贴近现实的评测基准来推动模型真正理解用户。",
+              "modelAndSetup": "论文构建了SOCIALPERSONA基准，基于171名普通用户的社交媒体时间线，包含文本、图像、时间戳及人工验证的兴趣标签，涵盖七个领域并区分稳定与近期兴趣。任务包括从多模态上下文中构建结构化用户画像，以及生成符合推断偏好的个性化回复，通过域激活与细粒度标签匹配评估画像质量，结合对话响应的相关性进行综合评判。",
+              "contributionsAndResults": "贡献在于提出了首个融合真实多模态社交轨迹、揭示性偏好、画像与对话双重评估的基准。实验显示当前多模态大模型虽能识别粗略兴趣领域，但在细粒度和近期兴趣上表现下降，且难以将推断结果一致用于对话生成，暴露出跨模态聚合与时间推理能力的不足。",
+              "methodsAndTechniques": "作者采用半自动化流程提取帖子级兴趣候选，经去重、语义归一与时间分箱处理后，结合LLM校准与人工验证构建黄金画像。在模型测试中对比了直接输入、分层摘要与抽取-生成两阶段策略，发现后者在利用关键证据方面更具潜力，尤其在宠物等领域表现更优，揭示了信息筛选机制的重要性。",
+              "limitationsAndReadingValue": "局限在于使用图像描述而非原始像素输入，可能丢失视觉细节；同时人类验证集中于非敏感领域，限制了对复杂偏好推断能力的全面评估。最值得阅读的是其问题设定与数据构建逻辑，为个性化AI提供了贴近现实的测试平台，尤其适合关注用户建模、多模态推理与系统评测的研究者参考。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "SocialPersona：基于多模态社交媒体上下文的个性化画像与响应评测",
+            "summarySections": {
+              "backgroundAndQuestion": "现有个性化助手评测多依赖对话中明确表达的偏好记忆，难以反映真实场景下从用户日常行为中推断隐含兴趣的能力。本文指出，社交媒体上的文本、图像和时间痕迹蕴含丰富的长期与近期偏好信号，但跨模态、长周期的用户建模仍是挑战，亟需更贴近现实的评测基准来推动模型真正理解用户。",
+              "modelAndSetup": "论文构建了SOCIALPERSONA基准，基于171名普通用户的社交媒体时间线，包含文本、图像、时间戳及人工验证的兴趣标签，涵盖七个领域并区分稳定与近期兴趣。任务包括从多模态上下文中构建结构化用户画像，以及生成符合推断偏好的个性化回复，通过域激活与细粒度标签匹配评估画像质量，结合对话响应的相关性进行综合评判。",
+              "contributionsAndResults": "贡献在于提出了首个融合真实多模态社交轨迹、揭示性偏好、画像与对话双重评估的基准。实验显示当前多模态大模型虽能识别粗略兴趣领域，但在细粒度和近期兴趣上表现下降，且难以将推断结果一致用于对话生成，暴露出跨模态聚合与时间推理能力的不足。",
+              "methodsAndTechniques": "作者采用半自动化流程提取帖子级兴趣候选，经去重、语义归一与时间分箱处理后，结合LLM校准与人工验证构建黄金画像。在模型测试中对比了直接输入、分层摘要与抽取-生成两阶段策略，发现后者在利用关键证据方面更具潜力，尤其在宠物等领域表现更优，揭示了信息筛选机制的重要性。",
+              "limitationsAndReadingValue": "局限在于使用图像描述而非原始像素输入，可能丢失视觉细节；同时人类验证集中于非敏感领域，限制了对复杂偏好推断能力的全面评估。最值得阅读的是其问题设定与数据构建逻辑，为个性化AI提供了贴近现实的测试平台，尤其适合关注用户建模、多模态推理与系统评测的研究者参考。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "个性化",
+              "多模态",
+              "用户建模",
+              "评测方法"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising",
+            "url": "https://arxiv.org/abs/2606.26690",
+            "arxivId": "2606.26690",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "In large-scale paid acquisition and growth advertising systems, production attribution outputs are widely used for daily budget allocation and channel diagnosis. However, paid-attributed conversions such as daily new users (DNU) may systematically overstate tr...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "In large-scale paid acquisition and growth advertising systems, production attribution outputs are widely used for daily budget allocation and channel diagnosis. However, paid-attributed conversions such as daily new users (DNU) may systematically overstate tr...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+            "url": "https://arxiv.org/abs/2606.27243",
+            "arxivId": "2606.27243",
+            "date": "2026-06-25",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.SE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "NOVA: 面向工业推荐系统的验证感知型智能体架构演化框架",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证",
+              "算法设计",
+              "智能体"
+            ],
+            "contentTags": [
+              "推荐系统",
+              "架构演化",
+              "多智能体系统",
+              "模型验证",
+              "工业广告"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "工业级推荐模型的性能提升越来越依赖于架构创新而非特征工程，但人工进行架构迭代高度依赖专家经验，难以规模化。现有自动化方法如AutoML局限于超参调优，而通用代码智能体虽能生成可运行代码，却无法保证架构语义正确性，常导致‘可运行但无效’的静默失败。本文旨在解决在复杂生产约束下如何高效、可靠地探索有效架构变体的问题。",
+              "modelAndSetup": "论文研究的是从现有生产模型出发，通过智能体自动提议、验证并评估架构修改的任务。输入包括原始模型代码、论文方案与业务目标，输出为改进后的候选架构。系统采用离线AUC作为主要筛选指标，在预算内搜索最优结构后进行线上AB测试，评估GMV与预测偏差等业务指标。整个流程在真实亿级用户广告系统中闭环运行。",
+              "contributionsAndResults": "核心贡献是NOVA框架，它首次将架构演化的搜索过程建模为受反馈驱动的非可微更新，并引入验证前置机制来拦截静默失败。在L3文献落地任务上，其有效通过率（EPR）达60%，远超人类专家与基线智能体。所选模型在线上显著提升GMV并降低预测偏差，证明了方法的实际价值。",
+              "methodsAndTechniques": "NOVA的关键在于‘架构梯度’机制，它综合历史修改、验证诊断、指标反馈与轨迹记忆，指导下一步搜索方向。同时，多阶段验证级联在训练前检查结构语义与局部可执行性，失败模式被记录为‘禁止方向’反哺后续搜索。这种将验证转化为搜索信号的设计，使系统能主动规避重复错误，提升进化效率。",
+              "limitationsAndReadingValue": "尽管效果显著，但NOVA仍受限于技能规范覆盖范围，高风险或未覆盖任务需人工介入。其优势建立在丰富的历史知识与精细的规则体系之上，迁移至新场景可能存在冷启动问题。最值得阅读的是其系统级设计思想——如何将智能体、验证与反馈整合为可持续进化的研发引擎。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "NOVA: 面向工业推荐系统的验证感知型智能体架构演化框架",
+            "summarySections": {
+              "backgroundAndQuestion": "工业级推荐模型的性能提升越来越依赖于架构创新而非特征工程，但人工进行架构迭代高度依赖专家经验，难以规模化。现有自动化方法如AutoML局限于超参调优，而通用代码智能体虽能生成可运行代码，却无法保证架构语义正确性，常导致‘可运行但无效’的静默失败。本文旨在解决在复杂生产约束下如何高效、可靠地探索有效架构变体的问题。",
+              "modelAndSetup": "论文研究的是从现有生产模型出发，通过智能体自动提议、验证并评估架构修改的任务。输入包括原始模型代码、论文方案与业务目标，输出为改进后的候选架构。系统采用离线AUC作为主要筛选指标，在预算内搜索最优结构后进行线上AB测试，评估GMV与预测偏差等业务指标。整个流程在真实亿级用户广告系统中闭环运行。",
+              "contributionsAndResults": "核心贡献是NOVA框架，它首次将架构演化的搜索过程建模为受反馈驱动的非可微更新，并引入验证前置机制来拦截静默失败。在L3文献落地任务上，其有效通过率（EPR）达60%，远超人类专家与基线智能体。所选模型在线上显著提升GMV并降低预测偏差，证明了方法的实际价值。",
+              "methodsAndTechniques": "NOVA的关键在于‘架构梯度’机制，它综合历史修改、验证诊断、指标反馈与轨迹记忆，指导下一步搜索方向。同时，多阶段验证级联在训练前检查结构语义与局部可执行性，失败模式被记录为‘禁止方向’反哺后续搜索。这种将验证转化为搜索信号的设计，使系统能主动规避重复错误，提升进化效率。",
+              "limitationsAndReadingValue": "尽管效果显著，但NOVA仍受限于技能规范覆盖范围，高风险或未覆盖任务需人工介入。其优势建立在丰富的历史知识与精细的规则体系之上，迁移至新场景可能存在冷启动问题。最值得阅读的是其系统级设计思想——如何将智能体、验证与反馈整合为可持续进化的研发引擎。"
+            },
+            "contentTags": [
+              "推荐系统",
+              "架构演化",
+              "多智能体系统",
+              "模型验证",
+              "工业广告"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证",
+              "算法设计",
+              "智能体"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Attributed, But Not Incremental: Cannibalization-Corrected Attribution for Large-Scale Advertising (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 4,
+    "recent-ai": 5
+  }
+}
