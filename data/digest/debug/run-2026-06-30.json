@@ -1,0 +1,2530 @@
+{
+  "date": "2026-06-30",
+  "generatedAt": "2026-06-30T06:39:19.013888+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-29",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606290000 TO 202606292359\"",
+            "totalResults": 7,
+            "fetchedCount": 7
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606290000 TO 202606292359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 9
+      },
+      "arxivTotalResults": 10,
+      "fetchedCount": 9,
+      "fetchedPapers": [
+        {
+          "title": "Submission Responsibility Matters: Role-Aware Submission Quotas under Coauthorship",
+          "url": "https://arxiv.org/abs/2606.30285",
+          "arxivId": "2606.30285",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.DL",
+            "cs.CY",
+            "cs.GT"
+          ],
+          "abstract": "Author-level submission quotas are increasingly used to control growing peer-review load. Recent coauthorship-sensitive quota rules improve over fixed per-author limits by reducing the quota cost of multi-author submissions, often using harmonic authorship-credit models to prevent simple author-list padding. However, these rules conflate three distinct quantities: review burden, authorship credit, and submission responsibility. As a result, they can penalize genuine solo-authored work, treat all coauthors as equally responsible for a submission, and create bottlenecks for student-led papers when a faculty advisor appears on multiple unrelated submissions. We argue that submission quotas should be designed around the responsibility structure of a paper rather than only its number of coauthors. We formalize desiderata for quota rules, including venue-load control, padding resistance, role sensitivity, solo neutrality, and student non-blocking. We then propose a role-aware quota framework that assigns author-specific quota costs based on constrained roles such as lead author, regular coauthor, and designated advisor. The framework includes fixed, per-capita, and harmonic-style rules as special or limiting cases, while allowing venues to distinguish lead authors, corresponding authors, advisors, and peripheral contributors. We show how simple role constraints can preserve resistance to manipulation while avoiding several structural disadvantages of coauthor-symmetric quota rules. Our analysis suggests that role-aware quota mechanisms provide a more faithful and flexible foundation for managing peer-review load under modern collaborative authorship."
+        },
+        {
+          "title": "Revenue Guarantee of Anonymous Pricing for Mixed Bidders:Bridging Value and Utility Maximizers",
+          "url": "https://arxiv.org/abs/2606.30162",
+          "arxivId": "2606.30162",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Mechanism design increasingly faces heterogeneous environments containing both traditional utility maximizers and value maximizers, the latter of whom seek to maximize acquired value subject to Return-on-Spend constraints. Designing revenue-optimal mechanisms for such multi-dimensional settings is both computationally and theoretically challenging. To address this complexity, we investigate the revenue guarantees of \\textit{Anonymous Pricing} (AP), a simple and practical mechanism, in heterogeneous markets composed of both value and utility maximizers. By establishing a structural behavioral equivalence between value and utility maximizers, we show that AP, with an appropriately chosen price, achieves a \\(1/e\\) fraction of the optimal revenue. Our result improves upon the recent \\( \\frac{1}{2}(1 - 1/e) \\) guarantee established by Deng et al.~(2022) for pure value maximizers, while extending it to mixed bidder types (both value and utility maximizers). We additionally establish an upper bound of \\(1/2.62\\) for AP. Finally, we demonstrate a counterintuitive phenomenon: competition can reduce revenue with the presence of value maximizers. In particular, running a First-Price Auction with the exact same reserve price as AP can, in the presence of value maximizers, generate lower revenue than AP itself."
+        },
+        {
+          "title": "Robust Strategic Classification under Decision-Dependent Cost Uncertainty",
+          "url": "https://arxiv.org/abs/2606.30136",
+          "arxivId": "2606.30136",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "abstract": "Humans facing algorithmic decision systems have been found to ``game'' them by altering their input data (at a cost to them) in order to favorably change the algorithmic outcomes they receive (at a cost to the algorithm). The growing literature on strategic classification seeks to develop robust machine learning algorithms that account for, and reduce, unwanted strategic behavior. A limitation of these existing works is that they assume the cost of strategic behavior to be fixed and independent of the classifier's decision. In practice, however, manipulation costs evolve and depend on past algorithmic decisions: today's decisions influence tomorrow's costs. This paper proposes and analyzes a two-stage robust optimization framework with a decision-dependent uncertainty set to capture such dependencies. We highlight that awareness of policy-dependent costs not only reduces uncertainty, but also better curtails gaming of the algorithmic system over time."
+        },
+        {
+          "title": "I.i.d. Prophet Inequalities with Discounted Rewards: As Hard as the Non-i.i.d. Case",
+          "url": "https://arxiv.org/abs/2606.30118",
+          "arxivId": "2606.30118",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS",
+            "econ.TH",
+            "math.OC"
+          ],
+          "abstract": "We study prophet inequalities with discounted rewards, where i.i.d. base rewards are multiplicatively discounted over time. Our main message is that even this structured and arbitrarily weak form of nonstationarity can erase the classical advantage of the stationary i.i.d. setting. Focusing on single-quantile threshold policies, we show that the competitive ratio transitions from the classical $1-1/e$ guarantee to a fundamental $1/2$ barrier as discounting accumulates over many phases in a canonical regime with a common-decay factor and equal-length phases. We further show that, in the same regime, the $1/2$ barrier persists even for arbitrary stopping rules. Consequently, i.i.d. base rewards under discounting can be as hard as the fully non-i.i.d. case. On the algorithmic side, we design single-quantile threshold rules that attain the tight bounds by calibrating acceptance decisions to an effective horizon induced by discounting, and we extend this calibration to heterogeneous decay factors and unequal phase lengths. We further show that a similar discontinuous breakdown persists in an infinite-horizon continuous-decay benchmark, where arbitrarily weak decay collapses the stationary benchmark from $1$ to $1/2$."
+        },
+        {
+          "title": "A Decision-Making Framework for New Member Integration in Renewable Energy Communities under Prospect Theory",
+          "url": "https://arxiv.org/abs/2606.30083",
+          "arxivId": "2606.30083",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "This paper introduces an original approach to an underexplored issue: the integration of a new member into an existing renewable energy community. The problem involves actions with both long-term consequences, such as investment and local pricing, and short-term operational ones, such as daily energy and financial flow management. Long-term decision-making is modeled using finite extensive-form game theory, while short-term day-ahead scheduling decisions are formulated as a generalized Nash equilibrium problem. This framework explicitly accounts for heterogeneous stakeholder preferences and bounded rationality, modeled through prospect theory. The proposed approach is flexible and general, making it applicable to various objectives and decision-making contexts in the evolving landscape of renewable energy communities. It is applied to two communities with five members, eleven candidate users, multiple preference configurations and a comparison with heuristic metrics from the literature is also addressed. The model also exhibits that equilibrium outcomes and stakeholder behavior are influenced by the order of decisions, their preference criteria, and prospect theory parameters particularly the reference point selection."
+        },
+        {
+          "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+          "url": "https://arxiv.org/abs/2606.29841",
+          "arxivId": "2606.29841",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "abstract": "Continual learning (CL), where a model is trained on a sequence of data tasks, is increasingly being adopted across key fields such as large language models and image recognition, yet it remains highly vulnerable to data poisoning that triggers learning divergence or severe excess risk. Despite these threats, a principled theoretical foundation in CL for understanding attack and defense remains lacking. In this paper, we develop a theoretical framework to analyze strategic attacks and defenses in regularization-based CL, a cornerstone of recent CL theory. By framing the adversary-defender interaction as an online zero-sum game, we first establish a fundamental performance limit: no defense succeeds when an adversary poisons a linear proportion of tasks by injecting unbounded noise or pattern shifts in regularization-based CL. We then analyze two possibly defensible scenarios: infrequent attacks and bounded noise per attack. For the former regime, we propose a task-to-task verification mechanism to detect data poisoning and reduce cumulative bias for learning convergence. For the latter regime, we derive a robust defense that minimizes the model's sensitivity to poisoned features, provably accelerating the convergence rate. Extensive experiments on realistic tasks further validate our theoretical results."
+        },
+        {
+          "title": "Rethinking Collaborative Trust for Verifiably Decentralized Blockchain Systems",
+          "url": "https://arxiv.org/abs/2606.29826",
+          "arxivId": "2606.29826",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.CE",
+            "cs.DC",
+            "cs.GT",
+            "cs.SI"
+          ],
+          "abstract": "Despite the promise of decentralization, measurement studies have identified a conspicuous lack of decentralization in blockchains. Centralization has been observed in almost all layers of the blockchain, in decentralized applications, and in decentralized autonomous organizations. In many cases, it is practically impossible to definitively determine the extent of centralization in the system. While multiple works have proposed methods to decrease centralization, by and large blockchains continue to be significantly centralized. In this paper, we develop a general framework for building verifiably decentralized blockchain systems. Our framework is motivated by the core observation that the richness and diversity of collaborative interactions between users -- rather than resource uniformity -- captures the essence and extent of decentralization in a blockchain system. Existing blockchains do not have any incentive mechanisms to encourage inter-coalition collaboration, which directly contributes to centralization. We propose a novel reward design that incentivizes users to collaborate with other users without forming isolated coalitions. Technically, our method uses a Sybil-resistant asymmetric Shapley value for reward attribution within a collaboration group, and the theory of expander graphs for measuring and enforcing decentralization. Our framework is general and can be adapted to alleviate centralization in any layer, application, or decentralized organization. It also has important implications beyond the topic of centralization. For example, we show that our solution can naturally address the blockchain scalability problem. We also identify a new class of decentralized collaborative applications that have hitherto been unexplored in blockchains."
+        },
+        {
+          "title": "Spectral Aggregation of Quantile Preferences",
+          "url": "https://arxiv.org/abs/2606.30074",
+          "arxivId": "2606.30074",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Many collective decisions under risk are made by people who care about different parts of the outcome distribution: downside losses, typical performance, or upside gains. This paper models this disagreement with quantile preferences and studies how the represented quantile levels can be aggregated. Our main result is a spectral support theorem: a spectral social aggregation satisfies the Pareto principle if and only if its social spectrum puts mass only on quantile levels represented in society. Hence, Pareto consistency makes representative-quantile aggregation a dictatorial case. In addition, we derive spectral aggregation from rank-based axioms, develop finite and threshold-Pareto consequences, and show when local benchmark-affine and elliptical common-shape domains admit a representative-quantile reduction."
+        },
+        {
+          "title": "Discounted Expected Utility: A Revealed Preference Analysis",
+          "url": "https://arxiv.org/abs/2606.29779",
+          "arxivId": "2606.29779",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We present a revealed preference characterization of the discounted expected utility model with a concave utility function. The characterization offers a nonparametric test of the model. We apply the test to an experimental data set in the literature and find that the model is almost always rejected even when all payments involved are subject to risk."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Submission Responsibility Matters: Role-Aware Submission Quotas under Coauthorship",
+              "url": "https://arxiv.org/abs/2606.30285",
+              "arxivId": "2606.30285",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.DL",
+                "cs.CY",
+                "cs.GT"
+              ],
+              "abstract": "Author-level submission quotas are increasingly used to control growing peer-review load. Recent coauthorship-sensitive quota rules improve over fixed per-author limits by reducing the quota cost of multi-author submissions, often using harmonic authorship-credit models to prevent simple author-list padding. However, these rules conflate three distinct quantities: review burden, authorship credit, and submission responsibility. As a result, they can penalize genuine solo-authored work, treat all coauthors as equally responsible for a submission, and create bottlenecks for student-led papers when a faculty advisor appears on multiple unrelated submissions. We argue that submission quotas should be designed around the responsibility structure of a paper rather than only its number of coauthors. We formalize desiderata for quota rules, including venue-load control, padding resistance, role sensitivity, solo neutrality, and student non-blocking. We then propose a role-aware quota framework that assigns author-specific quota costs based on constrained roles such as lead author, regular coauthor, and designated advisor. The framework includes fixed, per-capita, and harmonic-style rules as special or limiting cases, while allowing venues to distinguish lead authors, corresponding authors, advisors, and peripheral contributors. We show how simple role constraints can preserve resistance to manipulation while avoiding several structural disadvantages of coauthor-symmetric quota rules. Our analysis suggests that role-aware quota mechanisms provide a more faithful and flexible foundation for managing peer-review load under modern collaborative authorship."
+            },
+            {
+              "title": "Revenue Guarantee of Anonymous Pricing for Mixed Bidders:Bridging Value and Utility Maximizers",
+              "url": "https://arxiv.org/abs/2606.30162",
+              "arxivId": "2606.30162",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Mechanism design increasingly faces heterogeneous environments containing both traditional utility maximizers and value maximizers, the latter of whom seek to maximize acquired value subject to Return-on-Spend constraints. Designing revenue-optimal mechanisms for such multi-dimensional settings is both computationally and theoretically challenging. To address this complexity, we investigate the revenue guarantees of \\textit{Anonymous Pricing} (AP), a simple and practical mechanism, in heterogeneous markets composed of both value and utility maximizers. By establishing a structural behavioral equivalence between value and utility maximizers, we show that AP, with an appropriately chosen price, achieves a \\(1/e\\) fraction of the optimal revenue. Our result improves upon the recent \\( \\frac{1}{2}(1 - 1/e) \\) guarantee established by Deng et al.~(2022) for pure value maximizers, while extending it to mixed bidder types (both value and utility maximizers). We additionally establish an upper bound of \\(1/2.62\\) for AP. Finally, we demonstrate a counterintuitive phenomenon: competition can reduce revenue with the presence of value maximizers. In particular, running a First-Price Auction with the exact same reserve price as AP can, in the presence of value maximizers, generate lower revenue than AP itself."
+            },
+            {
+              "title": "Robust Strategic Classification under Decision-Dependent Cost Uncertainty",
+              "url": "https://arxiv.org/abs/2606.30136",
+              "arxivId": "2606.30136",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "abstract": "Humans facing algorithmic decision systems have been found to ``game'' them by altering their input data (at a cost to them) in order to favorably change the algorithmic outcomes they receive (at a cost to the algorithm). The growing literature on strategic classification seeks to develop robust machine learning algorithms that account for, and reduce, unwanted strategic behavior. A limitation of these existing works is that they assume the cost of strategic behavior to be fixed and independent of the classifier's decision. In practice, however, manipulation costs evolve and depend on past algorithmic decisions: today's decisions influence tomorrow's costs. This paper proposes and analyzes a two-stage robust optimization framework with a decision-dependent uncertainty set to capture such dependencies. We highlight that awareness of policy-dependent costs not only reduces uncertainty, but also better curtails gaming of the algorithmic system over time."
+            },
+            {
+              "title": "I.i.d. Prophet Inequalities with Discounted Rewards: As Hard as the Non-i.i.d. Case",
+              "url": "https://arxiv.org/abs/2606.30118",
+              "arxivId": "2606.30118",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM",
+                "cs.DS",
+                "econ.TH",
+                "math.OC"
+              ],
+              "abstract": "We study prophet inequalities with discounted rewards, where i.i.d. base rewards are multiplicatively discounted over time. Our main message is that even this structured and arbitrarily weak form of nonstationarity can erase the classical advantage of the stationary i.i.d. setting. Focusing on single-quantile threshold policies, we show that the competitive ratio transitions from the classical $1-1/e$ guarantee to a fundamental $1/2$ barrier as discounting accumulates over many phases in a canonical regime with a common-decay factor and equal-length phases. We further show that, in the same regime, the $1/2$ barrier persists even for arbitrary stopping rules. Consequently, i.i.d. base rewards under discounting can be as hard as the fully non-i.i.d. case. On the algorithmic side, we design single-quantile threshold rules that attain the tight bounds by calibrating acceptance decisions to an effective horizon induced by discounting, and we extend this calibration to heterogeneous decay factors and unequal phase lengths. We further show that a similar discontinuous breakdown persists in an infinite-horizon continuous-decay benchmark, where arbitrarily weak decay collapses the stationary benchmark from $1$ to $1/2$."
+            },
+            {
+              "title": "A Decision-Making Framework for New Member Integration in Renewable Energy Communities under Prospect Theory",
+              "url": "https://arxiv.org/abs/2606.30083",
+              "arxivId": "2606.30083",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "This paper introduces an original approach to an underexplored issue: the integration of a new member into an existing renewable energy community. The problem involves actions with both long-term consequences, such as investment and local pricing, and short-term operational ones, such as daily energy and financial flow management. Long-term decision-making is modeled using finite extensive-form game theory, while short-term day-ahead scheduling decisions are formulated as a generalized Nash equilibrium problem. This framework explicitly accounts for heterogeneous stakeholder preferences and bounded rationality, modeled through prospect theory. The proposed approach is flexible and general, making it applicable to various objectives and decision-making contexts in the evolving landscape of renewable energy communities. It is applied to two communities with five members, eleven candidate users, multiple preference configurations and a comparison with heuristic metrics from the literature is also addressed. The model also exhibits that equilibrium outcomes and stakeholder behavior are influenced by the order of decisions, their preference criteria, and prospect theory parameters particularly the reference point selection."
+            },
+            {
+              "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+              "url": "https://arxiv.org/abs/2606.29841",
+              "arxivId": "2606.29841",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "abstract": "Continual learning (CL), where a model is trained on a sequence of data tasks, is increasingly being adopted across key fields such as large language models and image recognition, yet it remains highly vulnerable to data poisoning that triggers learning divergence or severe excess risk. Despite these threats, a principled theoretical foundation in CL for understanding attack and defense remains lacking. In this paper, we develop a theoretical framework to analyze strategic attacks and defenses in regularization-based CL, a cornerstone of recent CL theory. By framing the adversary-defender interaction as an online zero-sum game, we first establish a fundamental performance limit: no defense succeeds when an adversary poisons a linear proportion of tasks by injecting unbounded noise or pattern shifts in regularization-based CL. We then analyze two possibly defensible scenarios: infrequent attacks and bounded noise per attack. For the former regime, we propose a task-to-task verification mechanism to detect data poisoning and reduce cumulative bias for learning convergence. For the latter regime, we derive a robust defense that minimizes the model's sensitivity to poisoned features, provably accelerating the convergence rate. Extensive experiments on realistic tasks further validate our theoretical results."
+            },
+            {
+              "title": "Rethinking Collaborative Trust for Verifiably Decentralized Blockchain Systems",
+              "url": "https://arxiv.org/abs/2606.29826",
+              "arxivId": "2606.29826",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.CE",
+                "cs.DC",
+                "cs.GT",
+                "cs.SI"
+              ],
+              "abstract": "Despite the promise of decentralization, measurement studies have identified a conspicuous lack of decentralization in blockchains. Centralization has been observed in almost all layers of the blockchain, in decentralized applications, and in decentralized autonomous organizations. In many cases, it is practically impossible to definitively determine the extent of centralization in the system. While multiple works have proposed methods to decrease centralization, by and large blockchains continue to be significantly centralized. In this paper, we develop a general framework for building verifiably decentralized blockchain systems. Our framework is motivated by the core observation that the richness and diversity of collaborative interactions between users -- rather than resource uniformity -- captures the essence and extent of decentralization in a blockchain system. Existing blockchains do not have any incentive mechanisms to encourage inter-coalition collaboration, which directly contributes to centralization. We propose a novel reward design that incentivizes users to collaborate with other users without forming isolated coalitions. Technically, our method uses a Sybil-resistant asymmetric Shapley value for reward attribution within a collaboration group, and the theory of expander graphs for measuring and enforcing decentralization. Our framework is general and can be adapted to alleviate centralization in any layer, application, or decentralized organization. It also has important implications beyond the topic of centralization. For example, we show that our solution can naturally address the blockchain scalability problem. We also identify a new class of decentralized collaborative applications that have hitherto been unexplored in blockchains."
+            },
+            {
+              "title": "Spectral Aggregation of Quantile Preferences",
+              "url": "https://arxiv.org/abs/2606.30074",
+              "arxivId": "2606.30074",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Many collective decisions under risk are made by people who care about different parts of the outcome distribution: downside losses, typical performance, or upside gains. This paper models this disagreement with quantile preferences and studies how the represented quantile levels can be aggregated. Our main result is a spectral support theorem: a spectral social aggregation satisfies the Pareto principle if and only if its social spectrum puts mass only on quantile levels represented in society. Hence, Pareto consistency makes representative-quantile aggregation a dictatorial case. In addition, we derive spectral aggregation from rank-based axioms, develop finite and threshold-Pareto consequences, and show when local benchmark-affine and elliptical common-shape domains admit a representative-quantile reduction."
+            },
+            {
+              "title": "Discounted Expected Utility: A Revealed Preference Analysis",
+              "url": "https://arxiv.org/abs/2606.29779",
+              "arxivId": "2606.29779",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We present a revealed preference characterization of the discounted expected utility model with a concave utility function. The characterization offers a nonparametric test of the model. We apply the test to an experimental data set in the literature and find that the model is almost always rejected even when all payments involved are subject to risk."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -3,
+                  "aiRelevance": 2,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 4,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 6,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 3,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 7,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Submission Responsibility Matters: Role-Aware Submission Quotas under Coauthorship",
+              "url": "https://arxiv.org/abs/2606.30285",
+              "arxivId": "2606.30285",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.DL",
+                "cs.CY",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 3.0,
+                "theoreticalStrength": 5.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 7.0,
+                "penalty": -3.0,
+                "baseTotal": 13.0,
+                "bonus": 0.9,
+                "total": 9.7
+              }
+            },
+            {
+              "title": "Revenue Guarantee of Anonymous Pricing for Mixed Bidders:Bridging Value and Utility Maximizers",
+              "url": "https://arxiv.org/abs/2606.30162",
+              "arxivId": "2606.30162",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 3.9,
+                "total": 32.9
+              }
+            },
+            {
+              "title": "Robust Strategic Classification under Decision-Dependent Cost Uncertainty",
+              "url": "https://arxiv.org/abs/2606.30136",
+              "arxivId": "2606.30136",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 6.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 24.0,
+                "bonus": 4.8,
+                "total": 25.9
+              }
+            },
+            {
+              "title": "I.i.d. Prophet Inequalities with Discounted Rewards: As Hard as the Non-i.i.d. Case",
+              "url": "https://arxiv.org/abs/2606.30118",
+              "arxivId": "2606.30118",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM",
+                "cs.DS",
+                "econ.TH",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "A Decision-Making Framework for New Member Integration in Renewable Energy Communities under Prospect Theory",
+              "url": "https://arxiv.org/abs/2606.30083",
+              "arxivId": "2606.30083",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 19.0,
+                "bonus": 1.9,
+                "total": 16.7
+              }
+            },
+            {
+              "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+              "url": "https://arxiv.org/abs/2606.29841",
+              "arxivId": "2606.29841",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "bonus": 5.9,
+                "total": 22.3
+              }
+            },
+            {
+              "title": "Rethinking Collaborative Trust for Verifiably Decentralized Blockchain Systems",
+              "url": "https://arxiv.org/abs/2606.29826",
+              "arxivId": "2606.29826",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.CE",
+                "cs.DC",
+                "cs.GT",
+                "cs.SI"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 20.0,
+                "bonus": 4.7,
+                "total": 19.8
+              }
+            },
+            {
+              "title": "Spectral Aggregation of Quantile Preferences",
+              "url": "https://arxiv.org/abs/2606.30074",
+              "arxivId": "2606.30074",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Discounted Expected Utility: A Revealed Preference Analysis",
+              "url": "https://arxiv.org/abs/2606.29779",
+              "arxivId": "2606.29779",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "bonus": 0.0,
+                "total": 20.7
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Submission Responsibility Matters: Role-Aware Submission Quotas under Coauthorship",
+          "url": "https://arxiv.org/abs/2606.30285",
+          "arxivId": "2606.30285",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.DL",
+            "cs.CY",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 3.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 7.0,
+            "penalty": -3.0,
+            "baseTotal": 13.0,
+            "bonus": 0.9,
+            "total": 9.7
+          }
+        },
+        {
+          "title": "Revenue Guarantee of Anonymous Pricing for Mixed Bidders:Bridging Value and Utility Maximizers",
+          "url": "https://arxiv.org/abs/2606.30162",
+          "arxivId": "2606.30162",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 3.9,
+            "total": 32.9
+          }
+        },
+        {
+          "title": "Robust Strategic Classification under Decision-Dependent Cost Uncertainty",
+          "url": "https://arxiv.org/abs/2606.30136",
+          "arxivId": "2606.30136",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "bonus": 4.8,
+            "total": 25.9
+          }
+        },
+        {
+          "title": "I.i.d. Prophet Inequalities with Discounted Rewards: As Hard as the Non-i.i.d. Case",
+          "url": "https://arxiv.org/abs/2606.30118",
+          "arxivId": "2606.30118",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS",
+            "econ.TH",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "A Decision-Making Framework for New Member Integration in Renewable Energy Communities under Prospect Theory",
+          "url": "https://arxiv.org/abs/2606.30083",
+          "arxivId": "2606.30083",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 19.0,
+            "bonus": 1.9,
+            "total": 16.7
+          }
+        },
+        {
+          "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+          "url": "https://arxiv.org/abs/2606.29841",
+          "arxivId": "2606.29841",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 5.9,
+            "total": 22.3
+          }
+        },
+        {
+          "title": "Rethinking Collaborative Trust for Verifiably Decentralized Blockchain Systems",
+          "url": "https://arxiv.org/abs/2606.29826",
+          "arxivId": "2606.29826",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.CE",
+            "cs.DC",
+            "cs.GT",
+            "cs.SI"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 4.7,
+            "total": 19.8
+          }
+        },
+        {
+          "title": "Spectral Aggregation of Quantile Preferences",
+          "url": "https://arxiv.org/abs/2606.30074",
+          "arxivId": "2606.30074",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Discounted Expected Utility: A Revealed Preference Analysis",
+          "url": "https://arxiv.org/abs/2606.29779",
+          "arxivId": "2606.29779",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "bonus": 0.0,
+            "total": 20.7
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Revenue Guarantee of Anonymous Pricing for Mixed Bidders:Bridging Value and Utility Maximizers",
+          "url": "https://arxiv.org/abs/2606.30162",
+          "arxivId": "2606.30162",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 3.9,
+            "total": 32.9
+          }
+        },
+        {
+          "title": "I.i.d. Prophet Inequalities with Discounted Rewards: As Hard as the Non-i.i.d. Case",
+          "url": "https://arxiv.org/abs/2606.30118",
+          "arxivId": "2606.30118",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS",
+            "econ.TH",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Robust Strategic Classification under Decision-Dependent Cost Uncertainty",
+          "url": "https://arxiv.org/abs/2606.30136",
+          "arxivId": "2606.30136",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "bonus": 4.8,
+            "total": 25.9
+          }
+        },
+        {
+          "title": "Spectral Aggregation of Quantile Preferences",
+          "url": "https://arxiv.org/abs/2606.30074",
+          "arxivId": "2606.30074",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+          "url": "https://arxiv.org/abs/2606.29841",
+          "arxivId": "2606.29841",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 5.9,
+            "total": 22.3
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Revenue Guarantee of Anonymous Pricing for Mixed Bidders:Bridging Value and Utility Maximizers",
+            "url": "https://arxiv.org/abs/2606.30162",
+            "arxivId": "2606.30162",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "混合竞拍者下匿名定价的收入保证：连接价值最大化与效用最大化者",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着在线广告中自动出价代理的普及，竞拍者不再只是传统效用最大化者，还包含受投入回报率（ROS）约束的价值最大化者。现实中这两类行为模式常共存，导致机制设计面临多维私人信息难题。本文关注在此异质环境中，简单机制能否保持良好收入表现，特别是匿名定价的表现如何。",
+              "modelAndSetup": "模型考虑一个卖家向多种类型的买家出售单一物品，买家可能是效用最大化者、价值最大化者或两者之间的混合类型，各自拥有私有估值和行为参数。价值最大化者需满足期望获得价值不低于支出倍数的ROS约束。机制采用匿名定价，即设定统一价格，买家按阈值策略决定是否接受。",
+              "contributionsAndResults": "论文证明，在混合竞拍者环境下，最优匿名定价可保证达到最优机制收入的1/e以上，优于此前针对纯价值最大化者的(1−1/e)界限，并建立了最坏情况下不超过1/2.62的紧上界。更发现竞争可能降低收入：在某些情形下，首价拍卖即使使用相同保留价，收入仍低于匿名定价。",
+              "methodsAndTechniques": "核心方法是建立价值最大化者与效用最大化者之间的行为等价性：通过构造等价的正则分布，将任意价值或混合类型买家在定价下的购买概率映射为某效用最大化者的响应。由此可将原异质环境规约到经典效用最大化设定，借助外生松弛框架和已知边界进行分析。",
+              "limitationsAndReadingValue": "结果依赖于连续分布和正则性假设，且最优机制结构未知，限制了下界是否紧致的判断。尽管如此，该文提供了理解异质行为竞拍者的新视角，其等价性构造技巧和对竞争反效果的揭示具有启发性，值得对机制设计与自动出价感兴趣的读者细读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "混合竞拍者下匿名定价的收入保证：连接价值最大化与效用最大化者",
+            "summarySections": {
+              "backgroundAndQuestion": "随着在线广告中自动出价代理的普及，竞拍者不再只是传统效用最大化者，还包含受投入回报率（ROS）约束的价值最大化者。现实中这两类行为模式常共存，导致机制设计面临多维私人信息难题。本文关注在此异质环境中，简单机制能否保持良好收入表现，特别是匿名定价的表现如何。",
+              "modelAndSetup": "模型考虑一个卖家向多种类型的买家出售单一物品，买家可能是效用最大化者、价值最大化者或两者之间的混合类型，各自拥有私有估值和行为参数。价值最大化者需满足期望获得价值不低于支出倍数的ROS约束。机制采用匿名定价，即设定统一价格，买家按阈值策略决定是否接受。",
+              "contributionsAndResults": "论文证明，在混合竞拍者环境下，最优匿名定价可保证达到最优机制收入的1/e以上，优于此前针对纯价值最大化者的(1−1/e)界限，并建立了最坏情况下不超过1/2.62的紧上界。更发现竞争可能降低收入：在某些情形下，首价拍卖即使使用相同保留价，收入仍低于匿名定价。",
+              "methodsAndTechniques": "核心方法是建立价值最大化者与效用最大化者之间的行为等价性：通过构造等价的正则分布，将任意价值或混合类型买家在定价下的购买概率映射为某效用最大化者的响应。由此可将原异质环境规约到经典效用最大化设定，借助外生松弛框架和已知边界进行分析。",
+              "limitationsAndReadingValue": "结果依赖于连续分布和正则性假设，且最优机制结构未知，限制了下界是否紧致的判断。尽管如此，该文提供了理解异质行为竞拍者的新视角，其等价性构造技巧和对竞争反效果的揭示具有启发性，值得对机制设计与自动出价感兴趣的读者细读。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "I.i.d. Prophet Inequalities with Discounted Rewards: As Hard as the Non-i.i.d. Case",
+            "url": "https://arxiv.org/abs/2606.30118",
+            "arxivId": "2606.30118",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.DM",
+              "cs.DS",
+              "econ.TH",
+              "math.OC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "带折扣奖励的独立同分布预言不等式：与非独立同分布情形一样困难",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "在线算法",
+              "机制设计",
+              "博弈学习",
+              "信息设计",
+              "公平性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么即使轻微的时间衰减也会彻底削弱经典独立同分布（i.i.d.）预言不等式的优势？传统研究区分了i.i.d.序列（最优竞争比1-1/e）和完全非i.i.d.序列（最优1/2），但现实中奖励常因时间偏好或市场饱和而缓慢衰减。本文追问：这种看似微弱的非平稳性是否会从根本上破坏i.i.d.模型的性能优势，使其难度逼近最坏情况？",
+              "modelAndSetup": "作者构建了一个分阶段的在线决策模型，其中每个阶段的奖励来自同一基分布，但观测值会乘以累积的折扣因子。决策者逐个观察奖励并决定是否接受，目标是最大化期望收益，相对于全知‘先知’（能预知全部奖励并取最大值）。关键设定是单一定量阈值策略——预先选定一个分位数，接受首个超过当前阶段该分位数阈值的奖励。",
+              "contributionsAndResults": "论文发现，随着阶段增多，即使折扣极弱，单一定量阈值策略的竞争比上限也会从经典的1-1/e急剧下降到1/2，并且这个1/2壁垒是紧的，无法被任何策略突破。这表明，在长期积累的折扣下，i.i.d.基分布的预言不等式在最坏情况下与完全非i.i.d.情形一样难，经典优势完全消失。",
+              "methodsAndTechniques": "核心方法是‘有效视界’原理：将衰减序列的期望最大值，上界估计为一个更短视界的i.i.d.序列的期望最大值。通过精心构造对抗性实例（两值分布）来证明上界，并设计基于有效视界的阈值算法达到下界。动态规划分析进一步证实，即使是全局最优策略也无法超越1/2的极限。",
+              "limitationsAndReadingValue": "模型聚焦于乘法折扣和分阶段设定，可能难以直接推广到任意非平稳模式。然而，其价值在于深刻揭示了时间衰减对在线决策的根本性影响。最值得阅读的是其清晰的‘有效视界’思想、对抗性实例的构造技巧，以及关于非平稳性如何彻底改变问题难度的核心洞见。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "带折扣奖励的独立同分布预言不等式：与非独立同分布情形一样困难",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么即使轻微的时间衰减也会彻底削弱经典独立同分布（i.i.d.）预言不等式的优势？传统研究区分了i.i.d.序列（最优竞争比1-1/e）和完全非i.i.d.序列（最优1/2），但现实中奖励常因时间偏好或市场饱和而缓慢衰减。本文追问：这种看似微弱的非平稳性是否会从根本上破坏i.i.d.模型的性能优势，使其难度逼近最坏情况？",
+              "modelAndSetup": "作者构建了一个分阶段的在线决策模型，其中每个阶段的奖励来自同一基分布，但观测值会乘以累积的折扣因子。决策者逐个观察奖励并决定是否接受，目标是最大化期望收益，相对于全知‘先知’（能预知全部奖励并取最大值）。关键设定是单一定量阈值策略——预先选定一个分位数，接受首个超过当前阶段该分位数阈值的奖励。",
+              "contributionsAndResults": "论文发现，随着阶段增多，即使折扣极弱，单一定量阈值策略的竞争比上限也会从经典的1-1/e急剧下降到1/2，并且这个1/2壁垒是紧的，无法被任何策略突破。这表明，在长期积累的折扣下，i.i.d.基分布的预言不等式在最坏情况下与完全非i.i.d.情形一样难，经典优势完全消失。",
+              "methodsAndTechniques": "核心方法是‘有效视界’原理：将衰减序列的期望最大值，上界估计为一个更短视界的i.i.d.序列的期望最大值。通过精心构造对抗性实例（两值分布）来证明上界，并设计基于有效视界的阈值算法达到下界。动态规划分析进一步证实，即使是全局最优策略也无法超越1/2的极限。",
+              "limitationsAndReadingValue": "模型聚焦于乘法折扣和分阶段设定，可能难以直接推广到任意非平稳模式。然而，其价值在于深刻揭示了时间衰减对在线决策的根本性影响。最值得阅读的是其清晰的‘有效视界’思想、对抗性实例的构造技巧，以及关于非平稳性如何彻底改变问题难度的核心洞见。"
+            },
+            "contentTags": [
+              "在线算法",
+              "机制设计",
+              "博弈学习",
+              "信息设计",
+              "公平性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Robust Strategic Classification under Decision-Dependent Cost Uncertainty",
+            "url": "https://arxiv.org/abs/2606.30136",
+            "arxivId": "2606.30136",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "决策相关成本不确定性下的鲁棒战略性分类",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "实验验证"
+            ],
+            "contentTags": [
+              "战略性分类",
+              "机制设计",
+              "鲁棒性",
+              "不确定性建模",
+              "人机交互"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有战略性分类研究通常假设操纵成本固定不变，忽略了算法决策会动态影响未来行为成本这一现实。本文指出，高校招生政策变化会影响学生备考投入，贷款审批标准会引导申请人调整财务行为，这种决策对成本的内生塑造作用导致不确定性随时间演化。传统模型无法捕捉此类反馈，从而低估长期风险，因此需要一个能建模决策依赖型不确定性的新框架。",
+              "modelAndSetup": "文章构建了一个两阶段鲁棒优化模型，其中企业选择线性分类器，代理人为获得正向判定可付出代价修改特征。关键创新在于第二阶段的成本矩阵由第一阶段决策通过一个依赖于随机变量的映射决定，该变量来自一个由第一阶段分类器参数化的不确定性集合。这使得当前决策不仅影响即时损失，还通过改变未来操纵成本间接影响后续性能。",
+              "contributionsAndResults": "本文首次形式化了决策依赖型成本不确定性下的战略性分类问题，并提出一种基于双阶段鲁棒优化的解决方案。结果显示，考虑时间演化的依赖关系虽可能牺牲初期准确率，但能显著降低总体误判和操纵次数，尤其抑制不合格个体的有害博弈，从而提升系统长期稳健性，揭示了一种通过塑造成本来治理策略行为的新杠杆。",
+              "methodsAndTechniques": "为求解非线性且目标含依赖不确定性的双层优化问题，作者采用对偶范数进行上界逼近，将最大算子线性化，并利用McCormick包络处理双线性项，最终转化为适用于列与约束生成（C&CG）算法的标准线性形式。该方法在保持计算可行的同时，提供了对原始问题的良好近似，数值实验验证了其有效性与较小的次优性差距。",
+              "limitationsAndReadingValue": "模型依赖于特定形式的成本变换与不确定性集结构，实际中需近似拟合历史数据，限制了直接应用广度。此外，仅考虑两阶段简化了长期动态。尽管如此，其核心思想——将决策对未来的不确定性影响显式建模——极具启发性，最值得阅读的是其新颖的问题抽象方式与应对复杂依赖的算法重构技巧。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "决策相关成本不确定性下的鲁棒战略性分类",
+            "summarySections": {
+              "backgroundAndQuestion": "现有战略性分类研究通常假设操纵成本固定不变，忽略了算法决策会动态影响未来行为成本这一现实。本文指出，高校招生政策变化会影响学生备考投入，贷款审批标准会引导申请人调整财务行为，这种决策对成本的内生塑造作用导致不确定性随时间演化。传统模型无法捕捉此类反馈，从而低估长期风险，因此需要一个能建模决策依赖型不确定性的新框架。",
+              "modelAndSetup": "文章构建了一个两阶段鲁棒优化模型，其中企业选择线性分类器，代理人为获得正向判定可付出代价修改特征。关键创新在于第二阶段的成本矩阵由第一阶段决策通过一个依赖于随机变量的映射决定，该变量来自一个由第一阶段分类器参数化的不确定性集合。这使得当前决策不仅影响即时损失，还通过改变未来操纵成本间接影响后续性能。",
+              "contributionsAndResults": "本文首次形式化了决策依赖型成本不确定性下的战略性分类问题，并提出一种基于双阶段鲁棒优化的解决方案。结果显示，考虑时间演化的依赖关系虽可能牺牲初期准确率，但能显著降低总体误判和操纵次数，尤其抑制不合格个体的有害博弈，从而提升系统长期稳健性，揭示了一种通过塑造成本来治理策略行为的新杠杆。",
+              "methodsAndTechniques": "为求解非线性且目标含依赖不确定性的双层优化问题，作者采用对偶范数进行上界逼近，将最大算子线性化，并利用McCormick包络处理双线性项，最终转化为适用于列与约束生成（C&CG）算法的标准线性形式。该方法在保持计算可行的同时，提供了对原始问题的良好近似，数值实验验证了其有效性与较小的次优性差距。",
+              "limitationsAndReadingValue": "模型依赖于特定形式的成本变换与不确定性集结构，实际中需近似拟合历史数据，限制了直接应用广度。此外，仅考虑两阶段简化了长期动态。尽管如此，其核心思想——将决策对未来的不确定性影响显式建模——极具启发性，最值得阅读的是其新颖的问题抽象方式与应对复杂依赖的算法重构技巧。"
+            },
+            "contentTags": [
+              "战略性分类",
+              "机制设计",
+              "鲁棒性",
+              "不确定性建模",
+              "人机交互"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Spectral Aggregation of Quantile Preferences",
+            "url": "https://arxiv.org/abs/2606.30074",
+            "arxivId": "2606.30074",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "分位数偏好的谱聚合",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "社会选择",
+              "风险下的决策",
+              "分位数偏好",
+              "谱聚合"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "许多集体决策面临个体对风险的不同关注点：有人重视下行保护，有人关注典型表现或上行收益。传统期望效用难以捕捉这种基于分布位置的分歧。本文聚焦一个核心问题：当每个成员依据不同分位数评估随机结果时，如何构建符合帕累托原则的社会偏好？现有代表性分位数方法可能引入无人使用的‘幻影’水平，导致违背个体一致改进的情形。",
+              "modelAndSetup": "模型设定中，n个个体各自拥有一个分位数偏好参数τ_i，仅依据该分位点上的结果值进行排序。社会聚合通过谱函数W_μ实现，即对整个分位数函数按社会谱μ加权积分。μ是一个概率测度，表示社会注意力在各分位水平的分配。关键问题是哪些μ能在所有个体偏好一致时保持社会排序的一致性，即满足弱或强帕累托原则。",
+              "contributionsAndResults": "核心结果是一个精确的支持定理：弱帕累托成立当且仅当社会谱μ的支撑集完全落在个体代表的分位数集合内，排除任何‘幻影’水平；强帕累托还需每个被代表的分位数获得正权重。这表明代表性分位数聚合本质上是独裁性的。此外，在局部仿射域或椭球分布假设下，有限谱可简化为单一代表分位数。",
+              "methodsAndTechniques": "证明采用直接的里斯表示论证结合阶梯函数逼近。首先由公理体系导出谱表示的存在唯一性，再通过构造扰动量化的分位函数来检验帕累托条件。关键技术在于利用分位函数的单调性与支撑集外的质量关系，量化偏离代表集所导致的帕累托违反程度，并借助凸组合与相对内部刻画局部域下的妥协机制。",
+              "limitationsAndReadingValue": "局限在于结论高度依赖全局比较假设，在一般域上帕累托兼容的聚合极为受限；虽在椭球等特殊结构下可简化，但该假设在现实中未必成立。最值得读的是其清晰的抽象框架与支持定理，它揭示了分位数聚合中‘无幻影’的本质要求，为委员会决策、监管标准制定等提供了深刻的理论边界与设计启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "分位数偏好的谱聚合",
+            "summarySections": {
+              "backgroundAndQuestion": "许多集体决策面临个体对风险的不同关注点：有人重视下行保护，有人关注典型表现或上行收益。传统期望效用难以捕捉这种基于分布位置的分歧。本文聚焦一个核心问题：当每个成员依据不同分位数评估随机结果时，如何构建符合帕累托原则的社会偏好？现有代表性分位数方法可能引入无人使用的‘幻影’水平，导致违背个体一致改进的情形。",
+              "modelAndSetup": "模型设定中，n个个体各自拥有一个分位数偏好参数τ_i，仅依据该分位点上的结果值进行排序。社会聚合通过谱函数W_μ实现，即对整个分位数函数按社会谱μ加权积分。μ是一个概率测度，表示社会注意力在各分位水平的分配。关键问题是哪些μ能在所有个体偏好一致时保持社会排序的一致性，即满足弱或强帕累托原则。",
+              "contributionsAndResults": "核心结果是一个精确的支持定理：弱帕累托成立当且仅当社会谱μ的支撑集完全落在个体代表的分位数集合内，排除任何‘幻影’水平；强帕累托还需每个被代表的分位数获得正权重。这表明代表性分位数聚合本质上是独裁性的。此外，在局部仿射域或椭球分布假设下，有限谱可简化为单一代表分位数。",
+              "methodsAndTechniques": "证明采用直接的里斯表示论证结合阶梯函数逼近。首先由公理体系导出谱表示的存在唯一性，再通过构造扰动量化的分位函数来检验帕累托条件。关键技术在于利用分位函数的单调性与支撑集外的质量关系，量化偏离代表集所导致的帕累托违反程度，并借助凸组合与相对内部刻画局部域下的妥协机制。",
+              "limitationsAndReadingValue": "局限在于结论高度依赖全局比较假设，在一般域上帕累托兼容的聚合极为受限；虽在椭球等特殊结构下可简化，但该假设在现实中未必成立。最值得读的是其清晰的抽象框架与支持定理，它揭示了分位数聚合中‘无幻影’的本质要求，为委员会决策、监管标准制定等提供了深刻的理论边界与设计启示。"
+            },
+            "contentTags": [
+              "社会选择",
+              "风险下的决策",
+              "分位数偏好",
+              "谱聚合"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+            "url": "https://arxiv.org/abs/2606.29841",
+            "arxivId": "2606.29841",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "针对数据投毒攻击的持续学习理论",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "持续学习",
+              "数据投毒",
+              "鲁棒性",
+              "安全性",
+              "正则化方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "持续学习因需顺序处理任务而面临灾难性遗忘问题，现有方法多关注性能提升却忽视安全威胁。本文指出，在序列化训练中，攻击者可通过投毒多个任务逐步操纵模型，导致学习偏差累积甚至发散。尤其当攻击频繁或噪声无界时，传统防御失效，亟需建立对抗投毒的理论边界与有效机制。",
+              "modelAndSetup": "作者将攻防双方建模为在线零和博弈：攻击者在频率、幅度和模式三个维度上操控数据，目标是最大化累积过量风险；防御者通过正则化更新模型参数以最小化损失。模型考虑两种典型攻击场景：稀疏但强破坏性的有偏移攻击，以及广泛存在的有界非偏移噪声攻击，据此设计相应防御策略。",
+              "contributionsAndResults": "论文证明了一个根本极限：若攻击频率线性增长且注入无界噪声或分布偏移，则任何基于正则化的防御都无法保证收敛。在此基础上，提出了两种可防御情形下的解决方案：一是任务间验证机制用于检测并回滚受污染更新，二是鲁棒特征防御通过优化正则项抑制敏感方向扰动，显著加速收敛速率。",
+              "methodsAndTechniques": "核心方法在于将攻击影响近似为损失函数二阶展开下的协方差扰动，并利用Hessian矩阵刻画特征敏感性。对于稀疏攻击，设计动态检测分数消除历史干扰以精准识别异常更新；对于频繁小扰动，则求解极小极大优化问题，导出最优正则参数配置，实现对最坏情况的稳健应对。",
+              "limitationsAndReadingValue": "理论分析集中于线性回归与NTK近似设定，实际深度网络可能存在偏差。此外，防御机制依赖Hessian估计，计算开销较高。尽管如此，该文首次建立了持续学习抗投毒的理论框架，其攻击分类体系、收敛性界限及防御构造对后续研究具有指导意义，值得深入阅读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "针对数据投毒攻击的持续学习理论",
+            "summarySections": {
+              "backgroundAndQuestion": "持续学习因需顺序处理任务而面临灾难性遗忘问题，现有方法多关注性能提升却忽视安全威胁。本文指出，在序列化训练中，攻击者可通过投毒多个任务逐步操纵模型，导致学习偏差累积甚至发散。尤其当攻击频繁或噪声无界时，传统防御失效，亟需建立对抗投毒的理论边界与有效机制。",
+              "modelAndSetup": "作者将攻防双方建模为在线零和博弈：攻击者在频率、幅度和模式三个维度上操控数据，目标是最大化累积过量风险；防御者通过正则化更新模型参数以最小化损失。模型考虑两种典型攻击场景：稀疏但强破坏性的有偏移攻击，以及广泛存在的有界非偏移噪声攻击，据此设计相应防御策略。",
+              "contributionsAndResults": "论文证明了一个根本极限：若攻击频率线性增长且注入无界噪声或分布偏移，则任何基于正则化的防御都无法保证收敛。在此基础上，提出了两种可防御情形下的解决方案：一是任务间验证机制用于检测并回滚受污染更新，二是鲁棒特征防御通过优化正则项抑制敏感方向扰动，显著加速收敛速率。",
+              "methodsAndTechniques": "核心方法在于将攻击影响近似为损失函数二阶展开下的协方差扰动，并利用Hessian矩阵刻画特征敏感性。对于稀疏攻击，设计动态检测分数消除历史干扰以精准识别异常更新；对于频繁小扰动，则求解极小极大优化问题，导出最优正则参数配置，实现对最坏情况的稳健应对。",
+              "limitationsAndReadingValue": "理论分析集中于线性回归与NTK近似设定，实际深度网络可能存在偏差。此外，防御机制依赖Hessian估计，计算开销较高。尽管如此，该文首次建立了持续学习抗投毒的理论框架，其攻击分类体系、收敛性界限及防御构造对后续研究具有指导意义，值得深入阅读。"
+            },
+            "contentTags": [
+              "持续学习",
+              "数据投毒",
+              "鲁棒性",
+              "安全性",
+              "正则化方法"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-29",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202606290000 TO 202606292359\"",
+            "totalResults": 11,
+            "fetchedCount": 11
+          }
+        },
+        "dedupedCount": 11
+      },
+      "arxivTotalResults": 11,
+      "fetchedCount": 11,
+      "fetchedPapers": [
+        {
+          "title": "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing",
+          "url": "https://arxiv.org/abs/2606.30555",
+          "arxivId": "2606.30555",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "The rapid integration of Large Language Models (LLMs) has driven the evolution of Multi-Agent Systems (MAS), where specialized agents collaborate to execute complex workflows. Effective orchestration in these environments requires robust routing mechanisms to efficiently allocate tasks to the most suitable agent. However, existing routers fundamentally rely on unverified proxies, ranging from textual self-descriptions to static surrogate representations, to gauge an agent's competence. This reliance on non-empirical data creates a critical gap between an agent's projected profile and its actual operational capabilities, introducing severe security vulnerabilities. Malicious agents can easily misrepresent their proficiencies or harbor covert backdoors that evade both standard external analysis and static representation-learning techniques. In this work, we introduce ANTAP (Automatic Non-Textual Agent Picker), an evaluation-driven routing architecture that discards indirect proxies in favor of active capability testing. By dynamically querying agents to ascertain their true competencies empirically, ANTAP distills performance into fixed behavioral operators within a shared semantic space. At inference time, routing is performed via a purely non-textual algebraic projection, establishing a \"linguistic firewall\" that renders metadata-based attacks inexpressible. In our experiments, ANTAP achieves near-zero ASR against description-based injection attacks, compared to 67.3\\% and above for the description-based router baseline. Against adaptive embedding attacks, ANTAP achieves substantially lower ASR than the embedding-based baseline, with a 20\\% reduction, while remaining resilient to description manipulation by design."
+        },
+        {
+          "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2606.30546",
+          "arxivId": "2606.30546",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "The rapid emergence of LLM-based agentic frameworks has significantly reduced the cost of assembling multi-agent systems (MAS), enabling fast prototyping and exploration of agentic behaviors. However, systems built with current tooling remain ill-suited for reliable, evolvable, and production-grade deployment. In practice, MAS are often developed in an ad-hoc and imperative manner, with agent logic, orchestration, observability, and control tightly interwoven, little to no explicit system-level validation, and development workflows optimized for demonstrations rather than long-lived, governed operation. As a result, behavior observed during experimentation rarely constitutes reliable evidence of behavior in production. In this paper, we introduce MAS-Lab, a specification-driven framework for principled development and experimental validation of multi-agent systems properties. MAS-Lab is designed to transform MAS from collections of scripts into engineered distributed systems by separating semantic intent from operational concerns, making behavior and control explicit, supporting reproducible experimentation, and preserving continuity across lifecycle stages. MAS-Lab consists of three layers: a declarative, framework-agnostic agentic specification layer (Spec); a stateful MAS Operating System that provides execution and control primitives plugged-in by design (MAS-OS); and a set of lab overlays with integrated observability and evaluation tools (Labs). Together, these components enable intent-based validation, principled system evolution, and a seamless transition to production-grade MAS."
+        },
+        {
+          "title": "COHORT: Collaborative Orchestration for Hardening via Offensive Replay on Emulated Topologies",
+          "url": "https://arxiv.org/abs/2606.30479",
+          "arxivId": "2606.30479",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.NI",
+            "cs.AI",
+            "cs.CR",
+            "cs.MA"
+          ],
+          "abstract": "Mitigating an observed adversary in an enterprise network typically takes weeks of expert work: an analyst derives a mitigation tailored to that adversary, validates it without breaking production, and verifies it disrupts the specific attack. The procedure relies on expert judgment and cannot safely be exercised against the production network. COHORT is the first end-to-end framework to automate this procedure for deployable mitigations. A role-decomposed multi-agent LLM workflow proposes candidates, implements them as real device commands, and refines them through a critique loop, all on a high-fidelity GNS3 emulator running real vendor firmware (firewall, switch, router). Each candidate is evaluated by offensive replay: re-executing the original adversary on the mitigated network for a paired comparison against the unmitigated baseline, rather than the reward-signal or expert-judgment proxies used in prior simulation, hybrid, and configuration-generation work. Two further checks complement replay: a connectivity-regression check (LAN ping and internet HTTP probe) rejects mitigations that disrupt legitimate LAN or internet connectivity, and a cumulative evaluation stacks approved mitigations onto a persistent state to surface compound effects. Across three topologies and four attack scenarios (ransomware, lateral movement, DNS exfiltration, data theft), 46.7% of generated mitigations both disrupt the attack and preserve connectivity under replay, 4.4 times the rate of a single-agent baseline using the same model and tool access. A demo video walking through the framework is available with our released artifacts."
+        },
+        {
+          "title": "Minimal MMAO: A Resource-Closed-Loop Framework for Adaptive Metaheuristic Search",
+          "url": "https://arxiv.org/abs/2606.30450",
+          "arxivId": "2606.30450",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.MA"
+          ],
+          "abstract": "This paper presents the Metabolic Multi-Agent Optimizer (MMAO) as an adaptive metaheuristic built around endogenous resource circulation. The central premise is that search intensity, exploration--exploitation balance, and lifecycle turnover should be induced by a shared metabolic controller rather than by separately attached schedules. We formulate MMAO through bounded private energy, a communal budget, normalized reward, continuous role adaptation, and resource-financed branching and pruning. The method is then instantiated in both continuous and discrete domains and evaluated on a matched small-scale suite including Sphere, Rastrigin, a synthetic Euclidean TSP, and two TSPLIB instances. The results show a consistent pattern: the same metabolic loop remains workable across domains, the discrete realization remains relatively stable under a compact design, and continuous refinement quality is the main cost of keeping the method lean. Taken together, these findings position MMAO as a coherent framework for adaptive heuristic design rather than a loose collection of operators."
+        },
+        {
+          "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+          "url": "https://arxiv.org/abs/2606.30441",
+          "arxivId": "2606.30441",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "abstract": "A rigorous formalization of system requirements is a fundamental prerequisite for the verification of Multi-Agent Systems (MAS). However, writing correct formal specifications is well known as an error-prone, time-consuming, and expertise-intensive task. This difficulty is further accentuated in MAS, where requirements must capture strategic abilities and temporal objectives. At present, there is no established methodology for deriving MAS specifications from natural language. We present a framework for translating Natural Language descriptions of strategic requirements into well-formed ATL/ATL* formulas using Large Language Models (LLMs). Since no available dataset supports supervised learning for the NL-to-ATL/ATL* translation task, we create and curate a novel expert-validated dataset, employed for training and evaluating fine-tuned models. On a held-out test set, evaluated under the LLM judge that best agrees with expert annotations, in-domain fine-tuning of small open-weight models (3 - 7B parameters) matches strong few-shot proprietary API baselines. Our best fine-tuned system reaches 0.84 semantic accuracy, statistically on par with 0.86 for the strongest few-shot proprietary baseline, while keeping requirements on-premises. We further find that judge reliability is inverse to generator strength. The open-weight Llama-3.3-70B tracks human verdicts most closely, whereas the strongest proprietary models are the least reliable judges, over-rejecting faithful paraphrases of the reference. To assess the practical applicability of the generated specifications, we embed our tool to an existing strategic logics model checker, enabling non-expert users to specify strategic properties in natural language."
+        },
+        {
+          "title": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents",
+          "url": "https://arxiv.org/abs/2606.30306",
+          "arxivId": "2606.30306",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "abstract": "Always-on agents are systems whose future behavior depends on durable state accumulated across earlier interactions. We treat them as persistent-state systems: the operative system includes retrievable memories, but also task ledgers, permissions, credentials, commitments, provenance and audit records, shared state, trigger conditions, and externally committed effects linked to those records. The survey reads the literature through six diagnostic axes for each state item, authority, scope, mutability, provenance, recoverability, and actionability, and through a lifecycle in which state is written, validated, organized, retrieved, acted upon, updated, forgotten, audited, and sometimes rolled back. Across a 435-work coded corpus, treated as a scoped map rather than an exhaustive census, the literature concentrates more heavily on accumulating and retrieving state than on governing, recovering, or relinquishing it. We therefore introduce the Always-On Evaluation Protocol (AOEP-v0), a pilot evaluation contract that makes these governance requirements concrete by scoring state mutation and recovery obligations rather than answer quality alone. The resulting agenda connects always-on agents to databases, distributed systems, formal methods, capability security, and machine unlearning."
+        },
+        {
+          "title": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+          "url": "https://arxiv.org/abs/2606.30251",
+          "arxivId": "2606.30251",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Agentic multimodal models perform diverse operations on an image via code and reason over the returned view, an effective paradigm for fine-grained visual question answering. However, code operations can be useful, redundant, or misleading. Outcome-only rewards cannot precisely distinguish these cases, and existing process rewards either fail to attribute final correctness to individual tool calls, or require an external judge model. To address this, we introduce Tool-Augmented Credit Optimization (TACO), a GRPO variant for code-tool agents built on two coupled advantage channels. The first, Differential Answer-Probe Reward (DAPR), is a self-supervised, judge-free tool-contribution advantage that credits each tool call by its own effect on answering correctly. Probe tokens inserted into the model's reasoning elicit its predictions with and without the tool, and the difference in outcome reward is taken as the call's value: positive for a useful call, negative for a misleading one, and zero for one that changes nothing. This reuses the existing answer checker with no auxiliary judge, and, being a difference rather than an absolute probe score, is naturally robust to probe-hacking. The second is the outcome advantage from the final answer, distributed by Outcome-Gated Advantage Routing (OGAR): a parameter-free rule that, conditioned on the call's outcome, delivers this credit only to the responsible segments, suppressing wasted tool calls without any cost term. We train TACO through a two-stage SFT+RL pipeline. Extensive experiments across perception, reasoning, and general multimodal benchmarks show that it yields consistent accuracy gains and learns to invoke its tools only when they help."
+        },
+        {
+          "title": "Clarus: Coordinating Autonomous Research Agents toward Web-Scale Scientific Collaboration",
+          "url": "https://arxiv.org/abs/2606.30246",
+          "arxivId": "2606.30246",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CY",
+            "cs.MA"
+          ],
+          "abstract": "Existing autonomous research agents can support parts of the research process, but most systems still treat research as either an isolated assistant task or a closed workflow. Therefore, autonomous science needs a collaboration infrastructure that coordinates projects, agents, and digital and physical resources. We identify this as a shift from code-centered execution loops to research-oriented collaboration processes, where questions, evidence, participants, and resources must be coordinated under uncertainty. In this framing, an agent may be an AI system, a human researcher, a team, a laboratory, or an organization-backed participant. To this end, we present Clarus, a collaboration infrastructure for coordinating autonomous research agents toward web-scale scientific collaboration. Clarus reformulates research as an open, auditable, attributable, and resource-aware multi-phase collaboration process. It defines a minimal project-agent-resource object model and organizes scientific collaboration through four layers including Research Application, Digital Collaboration, Physical Substrate, and Physical World. Core modules are implemented as pluggable mechanisms, allowing Clarus to adapt to task risk, collaboration structure, and resource constraints. Through a controlled paper-generation case study, we show that Clarus can organize a research goal into a traceable, reviewable, attributable, and accumulative collaboration network across phases, tasks, and participants. Together, the object model, collaboration protocol, trust mechanisms, and prototype validation provide an initial foundation for open research networks. Clarus is now available at clarus.holosai.io."
+        },
+        {
+          "title": "Sparse Sensor Placement in Multi-Agent Reinforcement Learning Control of Rayleigh-Bénard Convection",
+          "url": "https://arxiv.org/abs/2606.30238",
+          "arxivId": "2606.30238",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "This paper studies sparse sensor placement for control of Rayleigh-Bénard convection with multi-agent reinforcement learning. We train dense expert policies with windowed observations and distill sparse apprentice policies by supervised learning with grouped regularization on encoder input weights. The framework combines ordered non-convex grouped regularization and iterative reweighted grouped regularization, and uses a grouping construction that enforces consistent pruning across overlapping observation windows. Experiments with fixed and varying initial conditions show that Multi-Agent Transformer policies train more stably than proximal policy optimization baselines, while sparse apprentices retain control behavior comparable to dense experts. Sparsity results are strong for the proposed grouped methods across settings, including maximal sparsity in all fixed-initial-condition setting variants and maximal or near-maximal sparsity in varying-initial-condition setting variants. As an additional proof of concept, training from learned minimal sensor sets reduces per-agent observation size from 360 to 12 and preserves the overall training trend in simulation while reducing data throughput. The results provide both an interpretable basis for identifying control-relevant spatial regions and state components, and a practical pathway toward sensor-efficient control under realistic hardware constraints."
+        },
+        {
+          "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+          "url": "https://arxiv.org/abs/2606.29823",
+          "arxivId": "2606.29823",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "The database community has repeatedly advanced the state of the art by recognizing that new workloads demand new system architectures. We argue that long-horizon agentic tasks -- code generation, scientific discovery, hardware design -- are such a workload. These agents explore: they generate artifacts, execute tools, observe failures, branch, and repair over hundreds of steps. This search produces a structured object we call an experience graph: executable artifacts, tool outputs, rewards, sibling comparisons, and causal lineage. Yet existing agent frameworks treat this experience as disposable state -- JSON checkpoints and session logs that cannot be recovered after a crash, queried across users, or materialized into training data. We propose Trellis: a data foundation that treats the experience graph as first-class, governed, queryable database state. The core insight is that search over experience graphs is a database access pattern. Frontier selection is a query, cross-session reuse is vector-seeded graph retrieval, training-data extraction is a materialized view, and reconstructing what an agent knew at any past step is a time-travel query. When the database owns the experience graph, agents become stateless compute, and crash recovery, horizontal scaling, and a closed-loop training flywheel emerge as architectural byproducts. We ground the design in KernelEvolve, a production accelerator-kernel optimizer at Meta, where cross-session reuse reaches a target speedup roughly 10x faster at 52% lower token cost. More broadly, Trellis turns inference-time search from disposable computation into a durable institutional asset: logs made databases reliable; experience graphs may make agents cumulative."
+        },
+        {
+          "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+          "url": "https://arxiv.org/abs/2606.29745",
+          "arxivId": "2606.29745",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "What does it mean for a language agent to be adaptive? Effective multi-turn agents must decide what information to seek, how to use new evidence, and when they are certain enough to act. We introduce Epistemic Decision Processes (EDPs), a belief-state formulation of multi-turn information seeking in which actions produce external observations that update the agent's posterior over a latent task variable. EDPs make epistemic adaptivity explicit: good policies choose actions that are useful under the current belief, not merely those that correlate with eventual success. We prove that belief-agnostic policies can suffer errors that compound exponentially over the horizon, and that aggregate trajectory returns can fail to identify the per-turn Bayesian advantage needed for epistemic credit. We then introduce ECHO (Epistemic Credit for History-Conditioned Optimization), a practical clipped policy-gradient objective that assigns turn-level credit using posterior-sensitive rewards. In the Clue Selector Game, a novel controlled evidence-seeking benchmark, we show that ECHO substantially improves resolution, information gain, and efficiency over trajectory-level GRPO, and matches or exceeds frontier baselines on epistemic metrics such as grounding, recovery, and calibration while producing almost no visible reasoning text."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing",
+              "url": "https://arxiv.org/abs/2606.30555",
+              "arxivId": "2606.30555",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "The rapid integration of Large Language Models (LLMs) has driven the evolution of Multi-Agent Systems (MAS), where specialized agents collaborate to execute complex workflows. Effective orchestration in these environments requires robust routing mechanisms to efficiently allocate tasks to the most suitable agent. However, existing routers fundamentally rely on unverified proxies, ranging from textual self-descriptions to static surrogate representations, to gauge an agent's competence. This reliance on non-empirical data creates a critical gap between an agent's projected profile and its actual operational capabilities, introducing severe security vulnerabilities. Malicious agents can easily misrepresent their proficiencies or harbor covert backdoors that evade both standard external analysis and static representation-learning techniques. In this work, we introduce ANTAP (Automatic Non-Textual Agent Picker), an evaluation-driven routing architecture that discards indirect proxies in favor of active capability testing. By dynamically querying agents to ascertain their true competencies empirically, ANTAP distills performance into fixed behavioral operators within a shared semantic space. At inference time, routing is performed via a purely non-textual algebraic projection, establishing a \"linguistic firewall\" that renders metadata-based attacks inexpressible. In our experiments, ANTAP achieves near-zero ASR against description-based injection attacks, compared to 67.3\\% and above for the description-based router baseline. Against adaptive embedding attacks, ANTAP achieves substantially lower ASR than the embedding-based baseline, with a 20\\% reduction, while remaining resilient to description manipulation by design."
+            },
+            {
+              "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2606.30546",
+              "arxivId": "2606.30546",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "The rapid emergence of LLM-based agentic frameworks has significantly reduced the cost of assembling multi-agent systems (MAS), enabling fast prototyping and exploration of agentic behaviors. However, systems built with current tooling remain ill-suited for reliable, evolvable, and production-grade deployment. In practice, MAS are often developed in an ad-hoc and imperative manner, with agent logic, orchestration, observability, and control tightly interwoven, little to no explicit system-level validation, and development workflows optimized for demonstrations rather than long-lived, governed operation. As a result, behavior observed during experimentation rarely constitutes reliable evidence of behavior in production. In this paper, we introduce MAS-Lab, a specification-driven framework for principled development and experimental validation of multi-agent systems properties. MAS-Lab is designed to transform MAS from collections of scripts into engineered distributed systems by separating semantic intent from operational concerns, making behavior and control explicit, supporting reproducible experimentation, and preserving continuity across lifecycle stages. MAS-Lab consists of three layers: a declarative, framework-agnostic agentic specification layer (Spec); a stateful MAS Operating System that provides execution and control primitives plugged-in by design (MAS-OS); and a set of lab overlays with integrated observability and evaluation tools (Labs). Together, these components enable intent-based validation, principled system evolution, and a seamless transition to production-grade MAS."
+            },
+            {
+              "title": "COHORT: Collaborative Orchestration for Hardening via Offensive Replay on Emulated Topologies",
+              "url": "https://arxiv.org/abs/2606.30479",
+              "arxivId": "2606.30479",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.NI",
+                "cs.AI",
+                "cs.CR",
+                "cs.MA"
+              ],
+              "abstract": "Mitigating an observed adversary in an enterprise network typically takes weeks of expert work: an analyst derives a mitigation tailored to that adversary, validates it without breaking production, and verifies it disrupts the specific attack. The procedure relies on expert judgment and cannot safely be exercised against the production network. COHORT is the first end-to-end framework to automate this procedure for deployable mitigations. A role-decomposed multi-agent LLM workflow proposes candidates, implements them as real device commands, and refines them through a critique loop, all on a high-fidelity GNS3 emulator running real vendor firmware (firewall, switch, router). Each candidate is evaluated by offensive replay: re-executing the original adversary on the mitigated network for a paired comparison against the unmitigated baseline, rather than the reward-signal or expert-judgment proxies used in prior simulation, hybrid, and configuration-generation work. Two further checks complement replay: a connectivity-regression check (LAN ping and internet HTTP probe) rejects mitigations that disrupt legitimate LAN or internet connectivity, and a cumulative evaluation stacks approved mitigations onto a persistent state to surface compound effects. Across three topologies and four attack scenarios (ransomware, lateral movement, DNS exfiltration, data theft), 46.7% of generated mitigations both disrupt the attack and preserve connectivity under replay, 4.4 times the rate of a single-agent baseline using the same model and tool access. A demo video walking through the framework is available with our released artifacts."
+            },
+            {
+              "title": "Minimal MMAO: A Resource-Closed-Loop Framework for Adaptive Metaheuristic Search",
+              "url": "https://arxiv.org/abs/2606.30450",
+              "arxivId": "2606.30450",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.MA"
+              ],
+              "abstract": "This paper presents the Metabolic Multi-Agent Optimizer (MMAO) as an adaptive metaheuristic built around endogenous resource circulation. The central premise is that search intensity, exploration--exploitation balance, and lifecycle turnover should be induced by a shared metabolic controller rather than by separately attached schedules. We formulate MMAO through bounded private energy, a communal budget, normalized reward, continuous role adaptation, and resource-financed branching and pruning. The method is then instantiated in both continuous and discrete domains and evaluated on a matched small-scale suite including Sphere, Rastrigin, a synthetic Euclidean TSP, and two TSPLIB instances. The results show a consistent pattern: the same metabolic loop remains workable across domains, the discrete realization remains relatively stable under a compact design, and continuous refinement quality is the main cost of keeping the method lean. Taken together, these findings position MMAO as a coherent framework for adaptive heuristic design rather than a loose collection of operators."
+            },
+            {
+              "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+              "url": "https://arxiv.org/abs/2606.30441",
+              "arxivId": "2606.30441",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "abstract": "A rigorous formalization of system requirements is a fundamental prerequisite for the verification of Multi-Agent Systems (MAS). However, writing correct formal specifications is well known as an error-prone, time-consuming, and expertise-intensive task. This difficulty is further accentuated in MAS, where requirements must capture strategic abilities and temporal objectives. At present, there is no established methodology for deriving MAS specifications from natural language. We present a framework for translating Natural Language descriptions of strategic requirements into well-formed ATL/ATL* formulas using Large Language Models (LLMs). Since no available dataset supports supervised learning for the NL-to-ATL/ATL* translation task, we create and curate a novel expert-validated dataset, employed for training and evaluating fine-tuned models. On a held-out test set, evaluated under the LLM judge that best agrees with expert annotations, in-domain fine-tuning of small open-weight models (3 - 7B parameters) matches strong few-shot proprietary API baselines. Our best fine-tuned system reaches 0.84 semantic accuracy, statistically on par with 0.86 for the strongest few-shot proprietary baseline, while keeping requirements on-premises. We further find that judge reliability is inverse to generator strength. The open-weight Llama-3.3-70B tracks human verdicts most closely, whereas the strongest proprietary models are the least reliable judges, over-rejecting faithful paraphrases of the reference. To assess the practical applicability of the generated specifications, we embed our tool to an existing strategic logics model checker, enabling non-expert users to specify strategic properties in natural language."
+            },
+            {
+              "title": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents",
+              "url": "https://arxiv.org/abs/2606.30306",
+              "arxivId": "2606.30306",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "abstract": "Always-on agents are systems whose future behavior depends on durable state accumulated across earlier interactions. We treat them as persistent-state systems: the operative system includes retrievable memories, but also task ledgers, permissions, credentials, commitments, provenance and audit records, shared state, trigger conditions, and externally committed effects linked to those records. The survey reads the literature through six diagnostic axes for each state item, authority, scope, mutability, provenance, recoverability, and actionability, and through a lifecycle in which state is written, validated, organized, retrieved, acted upon, updated, forgotten, audited, and sometimes rolled back. Across a 435-work coded corpus, treated as a scoped map rather than an exhaustive census, the literature concentrates more heavily on accumulating and retrieving state than on governing, recovering, or relinquishing it. We therefore introduce the Always-On Evaluation Protocol (AOEP-v0), a pilot evaluation contract that makes these governance requirements concrete by scoring state mutation and recovery obligations rather than answer quality alone. The resulting agenda connects always-on agents to databases, distributed systems, formal methods, capability security, and machine unlearning."
+            },
+            {
+              "title": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+              "url": "https://arxiv.org/abs/2606.30251",
+              "arxivId": "2606.30251",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Agentic multimodal models perform diverse operations on an image via code and reason over the returned view, an effective paradigm for fine-grained visual question answering. However, code operations can be useful, redundant, or misleading. Outcome-only rewards cannot precisely distinguish these cases, and existing process rewards either fail to attribute final correctness to individual tool calls, or require an external judge model. To address this, we introduce Tool-Augmented Credit Optimization (TACO), a GRPO variant for code-tool agents built on two coupled advantage channels. The first, Differential Answer-Probe Reward (DAPR), is a self-supervised, judge-free tool-contribution advantage that credits each tool call by its own effect on answering correctly. Probe tokens inserted into the model's reasoning elicit its predictions with and without the tool, and the difference in outcome reward is taken as the call's value: positive for a useful call, negative for a misleading one, and zero for one that changes nothing. This reuses the existing answer checker with no auxiliary judge, and, being a difference rather than an absolute probe score, is naturally robust to probe-hacking. The second is the outcome advantage from the final answer, distributed by Outcome-Gated Advantage Routing (OGAR): a parameter-free rule that, conditioned on the call's outcome, delivers this credit only to the responsible segments, suppressing wasted tool calls without any cost term. We train TACO through a two-stage SFT+RL pipeline. Extensive experiments across perception, reasoning, and general multimodal benchmarks show that it yields consistent accuracy gains and learns to invoke its tools only when they help."
+            },
+            {
+              "title": "Clarus: Coordinating Autonomous Research Agents toward Web-Scale Scientific Collaboration",
+              "url": "https://arxiv.org/abs/2606.30246",
+              "arxivId": "2606.30246",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CY",
+                "cs.MA"
+              ],
+              "abstract": "Existing autonomous research agents can support parts of the research process, but most systems still treat research as either an isolated assistant task or a closed workflow. Therefore, autonomous science needs a collaboration infrastructure that coordinates projects, agents, and digital and physical resources. We identify this as a shift from code-centered execution loops to research-oriented collaboration processes, where questions, evidence, participants, and resources must be coordinated under uncertainty. In this framing, an agent may be an AI system, a human researcher, a team, a laboratory, or an organization-backed participant. To this end, we present Clarus, a collaboration infrastructure for coordinating autonomous research agents toward web-scale scientific collaboration. Clarus reformulates research as an open, auditable, attributable, and resource-aware multi-phase collaboration process. It defines a minimal project-agent-resource object model and organizes scientific collaboration through four layers including Research Application, Digital Collaboration, Physical Substrate, and Physical World. Core modules are implemented as pluggable mechanisms, allowing Clarus to adapt to task risk, collaboration structure, and resource constraints. Through a controlled paper-generation case study, we show that Clarus can organize a research goal into a traceable, reviewable, attributable, and accumulative collaboration network across phases, tasks, and participants. Together, the object model, collaboration protocol, trust mechanisms, and prototype validation provide an initial foundation for open research networks. Clarus is now available at clarus.holosai.io."
+            },
+            {
+              "title": "Sparse Sensor Placement in Multi-Agent Reinforcement Learning Control of Rayleigh-Bénard Convection",
+              "url": "https://arxiv.org/abs/2606.30238",
+              "arxivId": "2606.30238",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "This paper studies sparse sensor placement for control of Rayleigh-Bénard convection with multi-agent reinforcement learning. We train dense expert policies with windowed observations and distill sparse apprentice policies by supervised learning with grouped regularization on encoder input weights. The framework combines ordered non-convex grouped regularization and iterative reweighted grouped regularization, and uses a grouping construction that enforces consistent pruning across overlapping observation windows. Experiments with fixed and varying initial conditions show that Multi-Agent Transformer policies train more stably than proximal policy optimization baselines, while sparse apprentices retain control behavior comparable to dense experts. Sparsity results are strong for the proposed grouped methods across settings, including maximal sparsity in all fixed-initial-condition setting variants and maximal or near-maximal sparsity in varying-initial-condition setting variants. As an additional proof of concept, training from learned minimal sensor sets reduces per-agent observation size from 360 to 12 and preserves the overall training trend in simulation while reducing data throughput. The results provide both an interpretable basis for identifying control-relevant spatial regions and state components, and a practical pathway toward sensor-efficient control under realistic hardware constraints."
+            },
+            {
+              "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+              "url": "https://arxiv.org/abs/2606.29823",
+              "arxivId": "2606.29823",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "The database community has repeatedly advanced the state of the art by recognizing that new workloads demand new system architectures. We argue that long-horizon agentic tasks -- code generation, scientific discovery, hardware design -- are such a workload. These agents explore: they generate artifacts, execute tools, observe failures, branch, and repair over hundreds of steps. This search produces a structured object we call an experience graph: executable artifacts, tool outputs, rewards, sibling comparisons, and causal lineage. Yet existing agent frameworks treat this experience as disposable state -- JSON checkpoints and session logs that cannot be recovered after a crash, queried across users, or materialized into training data. We propose Trellis: a data foundation that treats the experience graph as first-class, governed, queryable database state. The core insight is that search over experience graphs is a database access pattern. Frontier selection is a query, cross-session reuse is vector-seeded graph retrieval, training-data extraction is a materialized view, and reconstructing what an agent knew at any past step is a time-travel query. When the database owns the experience graph, agents become stateless compute, and crash recovery, horizontal scaling, and a closed-loop training flywheel emerge as architectural byproducts. We ground the design in KernelEvolve, a production accelerator-kernel optimizer at Meta, where cross-session reuse reaches a target speedup roughly 10x faster at 52% lower token cost. More broadly, Trellis turns inference-time search from disposable computation into a durable institutional asset: logs made databases reliable; experience graphs may make agents cumulative."
+            },
+            {
+              "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+              "url": "https://arxiv.org/abs/2606.29745",
+              "arxivId": "2606.29745",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "What does it mean for a language agent to be adaptive? Effective multi-turn agents must decide what information to seek, how to use new evidence, and when they are certain enough to act. We introduce Epistemic Decision Processes (EDPs), a belief-state formulation of multi-turn information seeking in which actions produce external observations that update the agent's posterior over a latent task variable. EDPs make epistemic adaptivity explicit: good policies choose actions that are useful under the current belief, not merely those that correlate with eventual success. We prove that belief-agnostic policies can suffer errors that compound exponentially over the horizon, and that aggregate trajectory returns can fail to identify the per-turn Bayesian advantage needed for epistemic credit. We then introduce ECHO (Epistemic Credit for History-Conditioned Optimization), a practical clipped policy-gradient objective that assigns turn-level credit using posterior-sensitive rewards. In the Clue Selector Game, a novel controlled evidence-seeking benchmark, we show that ECHO substantially improves resolution, information gain, and efficiency over trajectory-level GRPO, and matches or exceeds frontier baselines on epistemic metrics such as grounding, recovery, and calibration while producing almost no visible reasoning text."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 3,
+                  "clarity": 4,
+                  "theoreticalDepth": 3,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 5,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing",
+              "url": "https://arxiv.org/abs/2606.30555",
+              "arxivId": "2606.30555",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2606.30546",
+              "arxivId": "2606.30546",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "COHORT: Collaborative Orchestration for Hardening via Offensive Replay on Emulated Topologies",
+              "url": "https://arxiv.org/abs/2606.30479",
+              "arxivId": "2606.30479",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.NI",
+                "cs.AI",
+                "cs.CR",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Minimal MMAO: A Resource-Closed-Loop Framework for Adaptive Metaheuristic Search",
+              "url": "https://arxiv.org/abs/2606.30450",
+              "arxivId": "2606.30450",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 3.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 3.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 10.0,
+                "total": 10.0
+              }
+            },
+            {
+              "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+              "url": "https://arxiv.org/abs/2606.30441",
+              "arxivId": "2606.30441",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents",
+              "url": "https://arxiv.org/abs/2606.30306",
+              "arxivId": "2606.30306",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+              "url": "https://arxiv.org/abs/2606.30251",
+              "arxivId": "2606.30251",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "Clarus: Coordinating Autonomous Research Agents toward Web-Scale Scientific Collaboration",
+              "url": "https://arxiv.org/abs/2606.30246",
+              "arxivId": "2606.30246",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CY",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Sparse Sensor Placement in Multi-Agent Reinforcement Learning Control of Rayleigh-Bénard Convection",
+              "url": "https://arxiv.org/abs/2606.30238",
+              "arxivId": "2606.30238",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 5.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+              "url": "https://arxiv.org/abs/2606.29823",
+              "arxivId": "2606.29823",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+              "url": "https://arxiv.org/abs/2606.29745",
+              "arxivId": "2606.29745",
+              "date": "2026-06-29",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing",
+          "url": "https://arxiv.org/abs/2606.30555",
+          "arxivId": "2606.30555",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2606.30546",
+          "arxivId": "2606.30546",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "COHORT: Collaborative Orchestration for Hardening via Offensive Replay on Emulated Topologies",
+          "url": "https://arxiv.org/abs/2606.30479",
+          "arxivId": "2606.30479",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.NI",
+            "cs.AI",
+            "cs.CR",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Minimal MMAO: A Resource-Closed-Loop Framework for Adaptive Metaheuristic Search",
+          "url": "https://arxiv.org/abs/2606.30450",
+          "arxivId": "2606.30450",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 3.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 3.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 10.0,
+            "total": 10.0
+          }
+        },
+        {
+          "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+          "url": "https://arxiv.org/abs/2606.30441",
+          "arxivId": "2606.30441",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents",
+          "url": "https://arxiv.org/abs/2606.30306",
+          "arxivId": "2606.30306",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+          "url": "https://arxiv.org/abs/2606.30251",
+          "arxivId": "2606.30251",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Clarus: Coordinating Autonomous Research Agents toward Web-Scale Scientific Collaboration",
+          "url": "https://arxiv.org/abs/2606.30246",
+          "arxivId": "2606.30246",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CY",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Sparse Sensor Placement in Multi-Agent Reinforcement Learning Control of Rayleigh-Bénard Convection",
+          "url": "https://arxiv.org/abs/2606.30238",
+          "arxivId": "2606.30238",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+          "url": "https://arxiv.org/abs/2606.29823",
+          "arxivId": "2606.29823",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+          "url": "https://arxiv.org/abs/2606.29745",
+          "arxivId": "2606.29745",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+          "url": "https://arxiv.org/abs/2606.29745",
+          "arxivId": "2606.29745",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+          "url": "https://arxiv.org/abs/2606.29823",
+          "arxivId": "2606.29823",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+          "url": "https://arxiv.org/abs/2606.30441",
+          "arxivId": "2606.30441",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents",
+          "url": "https://arxiv.org/abs/2606.30306",
+          "arxivId": "2606.30306",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2606.30546",
+          "arxivId": "2606.30546",
+          "date": "2026-06-29",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+            "url": "https://arxiv.org/abs/2606.29745",
+            "arxivId": "2606.29745",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "ECHO: 使用回合级信用学习认知适应性语言智能体",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "实验验证",
+              "基准评测",
+              "机制设计"
+            ],
+            "contentTags": [
+              "强化学习",
+              "大语言模型",
+              "智能体",
+              "信息寻求",
+              "评测方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有语言智能体在多轮信息寻求任务中常因无法区分真正减少不确定性的动作而陷入低效循环。传统基于轨迹总回报的信用分配方法难以识别哪些提问真正更新了信念状态，导致模型学会重复看似合理但实际无益的问题。这揭示了一个核心瓶颈：如何让智能体在长期交互中根据当前认知状态动态调整策略。",
+              "modelAndSetup": "论文在‘线索选择游戏’中研究智能体如何通过多轮提问缩小候选假设空间。输入是当前剩余候选数和历史问答，输出是指定信息源并生成属性问题。评估不仅看最终猜中率，更关注过程质量，如每次提问是否有效缩减候选集、能否从无效提问后恢复，从而全面衡量其认知适应能力。",
+              "contributionsAndResults": "论文提出ECHO算法，首次将认知适应性形式化为信念状态敏感的决策过程，并证明忽略信念会导致指数级性能下降。实验显示ECHO显著优于轨迹级强化学习和提示工程基线，在解决率、信息增益和样本效率上达到前沿水平，同时展现出更强的恢复能力和更低的无效提问率。",
+              "methodsAndTechniques": "ECHO采用剪裁策略梯度目标，利用后验敏感奖励进行回合级信用分配。每个动作的奖励取决于其对当前信念状态的收缩效果，而非仅依赖最终成败。这种方法使策略能直接学习到在何种认知状态下采取何种行动最有用，从而避免传统方法中因延迟奖励而导致的学习信号模糊问题。",
+              "limitationsAndReadingValue": "该方法依赖于可显式建模的假设空间和精确信念计算，在现实复杂任务中可能难以直接应用。此外，实验集中在小型智能体上，尚不清楚在更大规模模型中是否仍需此类精细信用分配。最值得阅读的是其对认知适应性的形式化定义、ECHO机制的设计逻辑及对‘沉默探索’现象的实证分析。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "ECHO: 使用回合级信用学习认知适应性语言智能体",
+            "summarySections": {
+              "backgroundAndQuestion": "现有语言智能体在多轮信息寻求任务中常因无法区分真正减少不确定性的动作而陷入低效循环。传统基于轨迹总回报的信用分配方法难以识别哪些提问真正更新了信念状态，导致模型学会重复看似合理但实际无益的问题。这揭示了一个核心瓶颈：如何让智能体在长期交互中根据当前认知状态动态调整策略。",
+              "modelAndSetup": "论文在‘线索选择游戏’中研究智能体如何通过多轮提问缩小候选假设空间。输入是当前剩余候选数和历史问答，输出是指定信息源并生成属性问题。评估不仅看最终猜中率，更关注过程质量，如每次提问是否有效缩减候选集、能否从无效提问后恢复，从而全面衡量其认知适应能力。",
+              "contributionsAndResults": "论文提出ECHO算法，首次将认知适应性形式化为信念状态敏感的决策过程，并证明忽略信念会导致指数级性能下降。实验显示ECHO显著优于轨迹级强化学习和提示工程基线，在解决率、信息增益和样本效率上达到前沿水平，同时展现出更强的恢复能力和更低的无效提问率。",
+              "methodsAndTechniques": "ECHO采用剪裁策略梯度目标，利用后验敏感奖励进行回合级信用分配。每个动作的奖励取决于其对当前信念状态的收缩效果，而非仅依赖最终成败。这种方法使策略能直接学习到在何种认知状态下采取何种行动最有用，从而避免传统方法中因延迟奖励而导致的学习信号模糊问题。",
+              "limitationsAndReadingValue": "该方法依赖于可显式建模的假设空间和精确信念计算，在现实复杂任务中可能难以直接应用。此外，实验集中在小型智能体上，尚不清楚在更大规模模型中是否仍需此类精细信用分配。最值得阅读的是其对认知适应性的形式化定义、ECHO机制的设计逻辑及对‘沉默探索’现象的实证分析。"
+            },
+            "contentTags": [
+              "强化学习",
+              "大语言模型",
+              "智能体",
+              "信息寻求",
+              "评测方法"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "实验验证",
+              "基准评测",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+            "url": "https://arxiv.org/abs/2606.29823",
+            "arxivId": "2606.29823",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.DB",
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Experience Graphs: Self-Improving Agents 的数据基础",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "算法设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "强化学习",
+              "多智能体系统",
+              "数据库系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前长周期智能体任务（如代码生成、硬件设计）依赖反复试错与迭代搜索，产生大量中间产物和反馈信号。现有框架将这些过程视为临时状态，存储于JSON日志或检查点中，导致崩溃后难以恢复、跨会话无法复用、训练数据提取困难。根本问题是缺乏统一、可查询、持久化的数据基础设施来管理探索过程本身。",
+              "modelAndSetup": "论文研究的是如何将智能体的搜索过程建模为‘体验图’——一个包含节点（尝试的方案）、边（因果关系）、奖励（性能反馈）和元数据的结构化图谱。系统通过内层循环执行单步生成与评估，外层循环基于图状态选择下一步探索方向。实验在Meta的KernelEvolve生产环境中进行，衡量恢复能力、跨会话复用效率及训练数据生成质量。",
+              "contributionsAndResults": "论文提出TRELLIS，一种将体验图作为头等公民的数据库架构，使智能体变为无状态计算单元。实验证明其支持故障自动恢复、水平扩展，并实现跨会话复用：达到目标加速比快10倍，有效解的token成本降低52%。更重要的是，它将推理时的搜索转化为可积累的机构资产，推动形成自我改进的闭环。",
+              "methodsAndTechniques": "核心思想是将搜索视为数据库访问模式：前沿选择是查询，历史复用是向量引导的图遍历，训练数据提取是物化视图，回放是时间旅行查询。TRELLIS采用分层架构，统一管理任务、会话、节点和提示历史，支持图遍历、向量检索与结构化过滤融合查询，并通过变更日志实现多版本控制，确保决策上下文的历史保真。",
+              "limitationsAndReadingValue": "尽管结果显著，但注入过多历史记忆会抑制探索多样性，最优解可能仍来自冷启动。此外，一致性模型对并发搜索的影响尚未完全形式化。最值得阅读的是其系统设计理念——将数据库作为智能体进化的基础设施，而非辅助组件，这对构建可持续进化的AI系统具有深远启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Experience Graphs: Self-Improving Agents 的数据基础",
+            "summarySections": {
+              "backgroundAndQuestion": "当前长周期智能体任务（如代码生成、硬件设计）依赖反复试错与迭代搜索，产生大量中间产物和反馈信号。现有框架将这些过程视为临时状态，存储于JSON日志或检查点中，导致崩溃后难以恢复、跨会话无法复用、训练数据提取困难。根本问题是缺乏统一、可查询、持久化的数据基础设施来管理探索过程本身。",
+              "modelAndSetup": "论文研究的是如何将智能体的搜索过程建模为‘体验图’——一个包含节点（尝试的方案）、边（因果关系）、奖励（性能反馈）和元数据的结构化图谱。系统通过内层循环执行单步生成与评估，外层循环基于图状态选择下一步探索方向。实验在Meta的KernelEvolve生产环境中进行，衡量恢复能力、跨会话复用效率及训练数据生成质量。",
+              "contributionsAndResults": "论文提出TRELLIS，一种将体验图作为头等公民的数据库架构，使智能体变为无状态计算单元。实验证明其支持故障自动恢复、水平扩展，并实现跨会话复用：达到目标加速比快10倍，有效解的token成本降低52%。更重要的是，它将推理时的搜索转化为可积累的机构资产，推动形成自我改进的闭环。",
+              "methodsAndTechniques": "核心思想是将搜索视为数据库访问模式：前沿选择是查询，历史复用是向量引导的图遍历，训练数据提取是物化视图，回放是时间旅行查询。TRELLIS采用分层架构，统一管理任务、会话、节点和提示历史，支持图遍历、向量检索与结构化过滤融合查询，并通过变更日志实现多版本控制，确保决策上下文的历史保真。",
+              "limitationsAndReadingValue": "尽管结果显著，但注入过多历史记忆会抑制探索多样性，最优解可能仍来自冷启动。此外，一致性模型对并发搜索的影响尚未完全形式化。最值得阅读的是其系统设计理念——将数据库作为智能体进化的基础设施，而非辅助组件，这对构建可持续进化的AI系统具有深远启发。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "强化学习",
+              "多智能体系统",
+              "数据库系统"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "算法设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+            "url": "https://arxiv.org/abs/2606.30441",
+            "arxivId": "2606.30441",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过大语言模型将自然语言翻译为战略性时序规范",
+            "researchParadigmTags": [
+              "数据集构建",
+              "系统框架",
+              "基准评测",
+              "实验验证",
+              "模型构建"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "形式化验证",
+              "战略逻辑",
+              "自然语言处理"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "形式化验证多智能体系统需精确表达战略能力与时序目标，但人工编写ATL/ATL*公式门槛高且易错。现有方法集中于单智能体或纯时序逻辑，缺乏对战略意图（如联盟行为、对抗关系）的支持。本文旨在解决从模糊自然语言到严谨战略逻辑的鸿沟，尤其应对语法歧义和语义多解性带来的挑战，使非专家也能参与系统验证。",
+              "modelAndSetup": "任务是将含战略意图的自然语言句子转为正确ATL/ATL*公式。输入为英文需求描述，输出为带《A》X/F/G/U等算子的逻辑表达式。作者构建了1100例专家标注的数据集，涵盖五类语言歧义，并采用本地开源小模型与云端闭源API对比实验。评估结合精确匹配与经人类校准的大语言模型作为裁判，衡量语义等价性。",
+              "contributionsAndResults": "论文首次发布面向战略逻辑的形式化翻译数据集与开源框架。结果显示，经领域微调的小型开源模型（3-7B参数）性能媲美强闭源API的少样本表现，在最佳裁判下达到0.84语义准确率。更重要的是，发现最强生成模型反而是最不可靠的评估者，揭示了评测本身需被验证的关键洞见。",
+              "methodsAndTechniques": "方法采用LoRA微调本地大模型，并设计双层评估体系：先进行标准化语法比对，再由独立LLM判断战略-时序意图一致性。系统集成至VITAMIN模型检测工具，实现自然语言输入直接驱动验证流程。关键设计在于明确处理歧义的规则（如省略恢复、量词范围分离），并通过多裁判机制降低主观偏差。",
+              "limitationsAndReadingValue": "数据集基于人工撰写而非真实工业场景，且仅限英语。语义准确率依赖LLM裁判，即便最优裁判与人类一致率也仅为81.8%，绝对精度存在不确定性。结论对部署环境敏感，API延迟测量受网络影响。最值得读的是其问题设定、评估协议设计及‘强生成器≠强判别器’的经验发现，对可信AI评测具广泛启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过大语言模型将自然语言翻译为战略性时序规范",
+            "summarySections": {
+              "backgroundAndQuestion": "形式化验证多智能体系统需精确表达战略能力与时序目标，但人工编写ATL/ATL*公式门槛高且易错。现有方法集中于单智能体或纯时序逻辑，缺乏对战略意图（如联盟行为、对抗关系）的支持。本文旨在解决从模糊自然语言到严谨战略逻辑的鸿沟，尤其应对语法歧义和语义多解性带来的挑战，使非专家也能参与系统验证。",
+              "modelAndSetup": "任务是将含战略意图的自然语言句子转为正确ATL/ATL*公式。输入为英文需求描述，输出为带《A》X/F/G/U等算子的逻辑表达式。作者构建了1100例专家标注的数据集，涵盖五类语言歧义，并采用本地开源小模型与云端闭源API对比实验。评估结合精确匹配与经人类校准的大语言模型作为裁判，衡量语义等价性。",
+              "contributionsAndResults": "论文首次发布面向战略逻辑的形式化翻译数据集与开源框架。结果显示，经领域微调的小型开源模型（3-7B参数）性能媲美强闭源API的少样本表现，在最佳裁判下达到0.84语义准确率。更重要的是，发现最强生成模型反而是最不可靠的评估者，揭示了评测本身需被验证的关键洞见。",
+              "methodsAndTechniques": "方法采用LoRA微调本地大模型，并设计双层评估体系：先进行标准化语法比对，再由独立LLM判断战略-时序意图一致性。系统集成至VITAMIN模型检测工具，实现自然语言输入直接驱动验证流程。关键设计在于明确处理歧义的规则（如省略恢复、量词范围分离），并通过多裁判机制降低主观偏差。",
+              "limitationsAndReadingValue": "数据集基于人工撰写而非真实工业场景，且仅限英语。语义准确率依赖LLM裁判，即便最优裁判与人类一致率也仅为81.8%，绝对精度存在不确定性。结论对部署环境敏感，API延迟测量受网络影响。最值得读的是其问题设定、评估协议设计及‘强生成器≠强判别器’的经验发现，对可信AI评测具广泛启示。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "形式化验证",
+              "战略逻辑",
+              "自然语言处理"
+            ],
+            "researchParadigmTags": [
+              "数据集构建",
+              "系统框架",
+              "基准评测",
+              "实验验证",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents",
+            "url": "https://arxiv.org/abs/2606.30306",
+            "arxivId": "2606.30306",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Always-On Agents: A Survey of Persistent Memory, State, and Governance in LLM Agents",
+            "researchParadigmTags": [
+              "综述/教程",
+              "系统框架",
+              "评测方法",
+              "机制设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "持久状态",
+              "安全性",
+              "治理与审计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前大多数大语言模型（LLM）智能体被设计为会话式的、一次性的系统，在每次任务后重置状态。然而，现实应用需要智能体具备持续记忆和状态积累能力，形成长期行为依赖。这种‘常驻’特性带来了新的挑战：状态如何被授权、修改、追溯和撤销？现有研究集中在状态的存储与检索，却忽视了其治理、恢复与遗忘机制，导致潜在的安全与失控风险。",
+              "modelAndSetup": "论文将常驻智能体定义为依赖持久状态影响未来行为的系统，并提出一个涵盖六项诊断维度的状态分析框架：权限、范围、可变性、溯源、可恢复性和可执行性。同时定义了一个完整的状态生命周期，包括写入、验证、组织、检索、行动、更新、遗忘、审计和回滚。研究基于435篇文献构成的编码语料库，系统梳理各阶段的技术实现与缺失环节。",
+              "contributionsAndResults": "论文的主要贡献在于揭示了当前研究严重偏向状态积累与检索，而在治理、恢复与放弃方面存在显著空白。为此提出了‘常驻评估协议’（AOEP-v0），首次将状态变更与恢复义务作为评分核心，而非仅关注答案质量。这一框架连接了数据库、分布式系统、形式化方法与机器遗忘等领域，推动智能体从‘有用’走向‘可控’。",
+              "methodsAndTechniques": "作者通过构建分类体系，将状态细分为对象状态（如记忆、偏好、技能）与治理信封（如权限、溯源、删除机制），并分析每个类别在生命周期中的典型失效模式。方法强调状态治理需贯穿全过程，尤其指出‘遗忘’不仅是衰减，更需确保派生状态同步清除；‘审计’则依赖于完整的溯源链，否则无法追踪决策依据。",
+              "limitationsAndReadingValue": "尽管文献覆盖广泛，但多数工作未实现真正的状态回滚或跨层级删除传播，评估也多停留在静态测试。论文本身为综述，不提供新模型或实验验证，其价值在于提出系统性视角与评估标准。最值得阅读的是其对状态治理五大不变量的提炼，以及AOEP协议的设计思路，对构建安全、可信的长期运行智能体具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Always-On Agents: A Survey of Persistent Memory, State, and Governance in LLM Agents",
+            "summarySections": {
+              "backgroundAndQuestion": "当前大多数大语言模型（LLM）智能体被设计为会话式的、一次性的系统，在每次任务后重置状态。然而，现实应用需要智能体具备持续记忆和状态积累能力，形成长期行为依赖。这种‘常驻’特性带来了新的挑战：状态如何被授权、修改、追溯和撤销？现有研究集中在状态的存储与检索，却忽视了其治理、恢复与遗忘机制，导致潜在的安全与失控风险。",
+              "modelAndSetup": "论文将常驻智能体定义为依赖持久状态影响未来行为的系统，并提出一个涵盖六项诊断维度的状态分析框架：权限、范围、可变性、溯源、可恢复性和可执行性。同时定义了一个完整的状态生命周期，包括写入、验证、组织、检索、行动、更新、遗忘、审计和回滚。研究基于435篇文献构成的编码语料库，系统梳理各阶段的技术实现与缺失环节。",
+              "contributionsAndResults": "论文的主要贡献在于揭示了当前研究严重偏向状态积累与检索，而在治理、恢复与放弃方面存在显著空白。为此提出了‘常驻评估协议’（AOEP-v0），首次将状态变更与恢复义务作为评分核心，而非仅关注答案质量。这一框架连接了数据库、分布式系统、形式化方法与机器遗忘等领域，推动智能体从‘有用’走向‘可控’。",
+              "methodsAndTechniques": "作者通过构建分类体系，将状态细分为对象状态（如记忆、偏好、技能）与治理信封（如权限、溯源、删除机制），并分析每个类别在生命周期中的典型失效模式。方法强调状态治理需贯穿全过程，尤其指出‘遗忘’不仅是衰减，更需确保派生状态同步清除；‘审计’则依赖于完整的溯源链，否则无法追踪决策依据。",
+              "limitationsAndReadingValue": "尽管文献覆盖广泛，但多数工作未实现真正的状态回滚或跨层级删除传播，评估也多停留在静态测试。论文本身为综述，不提供新模型或实验验证，其价值在于提出系统性视角与评估标准。最值得阅读的是其对状态治理五大不变量的提炼，以及AOEP协议的设计思路，对构建安全、可信的长期运行智能体具有指导意义。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "持久状态",
+              "安全性",
+              "治理与审计"
+            ],
+            "researchParadigmTags": [
+              "综述/教程",
+              "系统框架",
+              "评测方法",
+              "机制设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+            "url": "https://arxiv.org/abs/2606.30546",
+            "arxivId": "2606.30546",
+            "date": "2026-06-29",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MAS-Lab：一种面向可靠多智能体系统的规范驱动验证框架",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "评测方法"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "安全性",
+              "评测方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型的多智能体系统（MAS）开发多为脚本式、指令式实践，系统逻辑、协调机制、可观测性与控制紧密耦合，缺乏显式的系统级验证手段，导致实验行为难以反映生产可靠性。MAS-Lab针对这一工程化瓶颈，旨在将MAS从临时组合转变为可验证、可演进的分布式系统，解决生命周期中语义意图与运行行为脱节的问题。",
+              "modelAndSetup": "MAS-Lab围绕一个声明式、框架无关的多智能体规范层展开，定义系统意图、角色、工具、状态及治理约束。系统通过MAS-OS运行时执行规范，并在实验室环境中进行受控实验。输入为YAML格式的版本化规范，输出为带因果链的执行轨迹与评估指标，实验通过替换设计模式、拓扑或治理策略来验证其独立影响。",
+              "contributionsAndResults": "论文提出了三层架构（Spec、MAS-OS、Labs），实现了意图与执行的分离，支持基于规范的验证与可复现实验。实验证明，仅通过修改声明式配置即可比较不同推理模式与协作拓扑的效果，并验证治理策略在不改变核心逻辑的前提下安全生效，为MAS的设计、测试与部署提供了统一基础设施。",
+              "methodsAndTechniques": "MAS-Lab的核心是将每个智能体建模为有限Mealy机，通过明确的合同接口（工具、通信、控制等）管理外部交互，在执行前进行策略检查并记录全过程事件流。这种机制确保所有行为变更均可追溯至规范差异，使验证成为系统架构的自然产物，而非依赖后验日志的事后分析。",
+              "limitationsAndReadingValue": "论文聚焦小规模可控实验，尚未验证在大规模异构生产环境中的扩展性与协议兼容性。尽管方法强调可复现性，但其实现仍依赖特定插件生态。最值得阅读的是其系统设计理念与分层解耦架构，为构建可信、可治理的多智能体系统提供了清晰路径与可复用的工程范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MAS-Lab：一种面向可靠多智能体系统的规范驱动验证框架",
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型的多智能体系统（MAS）开发多为脚本式、指令式实践，系统逻辑、协调机制、可观测性与控制紧密耦合，缺乏显式的系统级验证手段，导致实验行为难以反映生产可靠性。MAS-Lab针对这一工程化瓶颈，旨在将MAS从临时组合转变为可验证、可演进的分布式系统，解决生命周期中语义意图与运行行为脱节的问题。",
+              "modelAndSetup": "MAS-Lab围绕一个声明式、框架无关的多智能体规范层展开，定义系统意图、角色、工具、状态及治理约束。系统通过MAS-OS运行时执行规范，并在实验室环境中进行受控实验。输入为YAML格式的版本化规范，输出为带因果链的执行轨迹与评估指标，实验通过替换设计模式、拓扑或治理策略来验证其独立影响。",
+              "contributionsAndResults": "论文提出了三层架构（Spec、MAS-OS、Labs），实现了意图与执行的分离，支持基于规范的验证与可复现实验。实验证明，仅通过修改声明式配置即可比较不同推理模式与协作拓扑的效果，并验证治理策略在不改变核心逻辑的前提下安全生效，为MAS的设计、测试与部署提供了统一基础设施。",
+              "methodsAndTechniques": "MAS-Lab的核心是将每个智能体建模为有限Mealy机，通过明确的合同接口（工具、通信、控制等）管理外部交互，在执行前进行策略检查并记录全过程事件流。这种机制确保所有行为变更均可追溯至规范差异，使验证成为系统架构的自然产物，而非依赖后验日志的事后分析。",
+              "limitationsAndReadingValue": "论文聚焦小规模可控实验，尚未验证在大规模异构生产环境中的扩展性与协议兼容性。尽管方法强调可复现性，但其实现仍依赖特定插件生态。最值得阅读的是其系统设计理念与分层解耦架构，为构建可信、可治理的多智能体系统提供了清晰路径与可复用的工程范式。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "安全性",
+              "评测方法"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "评测方法"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}

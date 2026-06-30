@@ -168,6 +168,14 @@
         "recent-agt": 0,
         "recent-ai": 0
       }
+    },
+    "2026-06-30": {
+      "status": "completed",
+      "completedAt": "2026-06-30T06:45:24.333451+00:00",
+      "sectionCounts": {
+        "recent-agt": 5,
+        "recent-ai": 5
+      }
     }
   }
 }
