@@ -1,0 +1,2750 @@
+{
+  "date": "2026-07-01",
+  "generatedAt": "2026-07-01T06:52:38.656808+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-06-30",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202606300000 TO 202606302359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202606300000 TO 202606302359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          }
+        },
+        "dedupedCount": 10
+      },
+      "arxivTotalResults": 11,
+      "fetchedCount": 10,
+      "fetchedPapers": [
+        {
+          "title": "The Cooperation Ceiling: Extrinsic Population Dynamics and the Intrinsic Escape",
+          "url": "https://arxiv.org/abs/2606.31740",
+          "arxivId": "2606.31740",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "q-bio.PE"
+          ],
+          "abstract": "Evolutionary game theory provides a framework by which to study the emergence of cooperation in a population of self-interested actors. In such a framework, players' decisions on whether or not to cooperate evolve according to decision rules called population dynamics. However, often games are studied under the assumption that all individuals play under the same conditions, and many common choices of update rule are not well suited for a heterogeneous population. In this paper, we categorise and compare four different population dynamics in such a population as ``extrinsic'', where players learn by looking outward at the payoffs of other players, and ``intrinsic'', where players look inwardly at their own attributes or potential payoffs. We show that extrinsic population dynamics admit a ceiling on the rate of cooperation which can be exceeded by intrinsic population dynamics, and demonstrate this using the public goods game with heterogeneous contributions."
+        },
+        {
+          "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+          "url": "https://arxiv.org/abs/2606.31639",
+          "arxivId": "2606.31639",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.GT",
+            "cs.LO"
+          ],
+          "abstract": "Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read private data, call tools, write files, execute code, and act across organizational boundaries. This shift changes the security problem: risks do not arise from the model weights alone, but from the full lifecycle and application stack through which data, prompts, model outputs, tools, memories, and user authority interact. This paper systematizes the literature on vulnerabilities in large language model systems through a lifecycle and application-stack lens. We organize attacks across eight stages: data collection, pretraining, post-training alignment, model packaging and supply chain, retrieval and memory, prompting and inference, tool/agent execution, and deployment/maintenance. For each stage, we analyze attacker capabilities, affected security objectives, representative attacks, practical risks, evaluation practices, and defenses. We further map LLM-specific vulnerabilities to confidentiality, integrity, availability, safety, privacy, fairness, accountability, and agency-control objectives. Unlike taxonomies that list isolated attack names, the proposed systematization emphasizes where trust boundaries fail, how untrusted data becomes executable instruction, how delegated authority amplifies model errors, and why point defenses rarely compose. We close with a research agenda for secure LLM systems, including compositional security, provenance-aware retrieval, tool-call containment, long-horizon agent evaluation, privacy-preserving adaptation, realistic red teaming, and deployment-grade incident response."
+        },
+        {
+          "title": "Learning Fair Allocation of Indivisible Items from Limited Feedback",
+          "url": "https://arxiv.org/abs/2606.31457",
+          "arxivId": "2606.31457",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study a setting in which an algorithm must output a fair allocation of indivisible items while \"learning on the job\". More specifically, the algorithm is to output an allocation satisfying EF1, PROP1, or similar fairness notions; however, the algorithm initially has no information about the agents' valuations, and can only learn about them by (repeatedly) proposing an allocation, and obtaining feedback about a fairness violation in the allocation. Importantly, the observed fairness violation may be adversarially chosen. The algorithm's goal is to converge to a fair allocation in rounds polynomial in the number of agents and items, ideally with only polynomial computation. We prove two main results: first, when the valuations are additive, then even for mixed items (goods and chores), an allocation satisfying EF1 or PROP1 can be found in polynomial time using the corresponding feedback. These results are instantiations of a more general framework which maintains a polytope of candidate valuations consistent with all past feedback. The algorithm repeatedly constructs putative valuations and uses them to propose allocations; the observed violations then define separating hyperplanes, allowing the algorithm to emulate the ellipsoid method. When the valuations are monotone, we present an algorithm which is guaranteed to find an EF1 allocation in polynomially many iterations; however, its internal calculations are not guaranteed to be polynomial. The algorithm again maintains putative valuations, and only considers allocations in which each agent obtains an interval plus one additional item with respect to an arbitrary ordering of the items. We (non-constructively) prove that there always exist EF1 allocations of this form, allowing us to use a further generalization of the preceding ellipsoid-based ideas."
+        },
+        {
+          "title": "Incentivizing Data Trading via Profit Reallocation",
+          "url": "https://arxiv.org/abs/2606.31202",
+          "arxivId": "2606.31202",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Data trading is a central approach to data circulation, yet data markets remain far less active than expected. A primary bottleneck is the lack of effective economic incentives. Existing approaches often treat data as traditional goods, overlooking its inherent replicability and resale potential: buyers can replicate and resell data products, thereby forming transaction chains. Upstream sellers do not benefit from downstream resales and thus have limited incentives to sell. However, the impact of data resale on market performance remains insufficiently understood. To address this gap, we propose a sequential, chain-based data trading model that explicitly captures data resale. The model reflects data flows in settings such as LLM training and strategic decision-making. We integrate this model with a profit reallocation mechanism. By reallocating profits along the transaction chain, this mechanism ensures upstream sellers benefit from downstream resales. We next develop efficient algorithms, including a polynomial-time exact algorithm for the discrete model and an FPTAS for the continuous model, to compute its sequential equilibria. We theoretically show that profit reallocation expands trade and improves social welfare under certain conditions, and empirical results demonstrate that our mechanism increases transaction volume by 120.0\\% and social welfare by 50.4\\% in synthetic environments, compared with the baseline mechanism that does not reallocate profits."
+        },
+        {
+          "title": "Robust Aggregation of Calibrated Forecasts",
+          "url": "https://arxiv.org/abs/2606.31020",
+          "arxivId": "2606.31020",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "abstract": "Decision-makers often rely on multiple probabilistic forecasts that are individually calibrated but need not be fully informative. We develop a framework for aggregating such forecasts when the decision-maker knows only that experts satisfy calibration. We show that the joint distribution of calibrated forecasts can contain decision-relevant information that is unavailable from any single expert, so the standard optimal-in-hindsight (OIH) benchmark may substantially understate attainable performance. To formalize this idea, we introduce a robust max-min benchmark: the best payoff a decision-maker can guarantee against all profile-wise conditional-mean mappings compatible with calibration. This benchmark is tractable, admits a linear-programming formulation, and dominates the OIH benchmark up to calibration error. It can nevertheless be strictly below the Bayesian benchmark, clarifying the value of knowing experts' information structures. Finally, we provide online algorithms that attain the robust benchmark under forecast-only feedback and stronger contextual benchmarks under state feedback."
+        },
+        {
+          "title": "Comparison games and ranking of players",
+          "url": "https://arxiv.org/abs/2606.31955",
+          "arxivId": "2606.31955",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "This work addresses the problem of assessing player importance in coalitional settings where the available information concerns the relative strength between pairs of coalitions, rather than the absolute worth of each coalition. We introduce a novel framework that is flexible enough to represent all coalitional pseudo-games and, through the use of coalitional networks, naturally accommodates scenarios with limited or heterogeneous coalition comparisons. Importantly, this framework still enables the computation of semivalues of pseudo-games, such as the Banzhaf and Shapley values, that can be expressed as weighted sums of differences in specific coalition comparisons, thus offering interpretations beyond traditional approaches. Furthermore, for ranking players rather than computing exact numerical attributions, we introduce the concept of a player's score, which simplifies the process of determining rankings based on semivalues, and shifts the perspective from average marginal contribution to average coalitional worth. This turns out to be particularly enlightening for the Banzhaf value."
+        },
+        {
+          "title": "Attention and Social Learning",
+          "url": "https://arxiv.org/abs/2606.31850",
+          "arxivId": "2606.31850",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "In an incentivized laboratory experiment, we study how people account for and respond to others' incentives for paying attention. Participants learn a binary state from an attention task under high or low accuracy incentives. We ask subjects to predict their peers' accuracy based on the peers' incentives and to aggregate answers from multiple peers with different incentives. Most subjects fail to consistently understand that peers with stronger incentives are more accurate, and these subjects also perform worse in individual attention tasks. Subjects also participate in a social-learning task where they first learn the binary state from an attention task, then observe a peer's guess about the state in the same task, and finally make a guess themselves. We find behavior in these tasks is inconsistent with leading models of flexible costly information acquisition. In particular, subjects fail to pay more attention when paired with lower incentive peers. Overall, we find that many decision-makers do not respond to others' incentives for accuracy even when those incentives are transparent."
+        },
+        {
+          "title": "Feedback dynamics in matching networks drive behavioral differentiation despite overlapping objectives",
+          "url": "https://arxiv.org/abs/2606.31802",
+          "arxivId": "2606.31802",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "econ.TH",
+            "math.DS"
+          ],
+          "abstract": "Many bipartite social networks exhibit pronounced asymmetries in selectivity and matching opportunities: members of one side can afford to be highly selective, while members of the opposite side are forced to accept less desirable matches. While it is natural to try to explain this asymmetry in terms of the intrinsic characteristics of the two sides or other exogenous factors, here we show that such asymmetries can also emerge endogenously through a feedback process generated by the matching process itself: as one side becomes more selective, the other side is pushed to be less selective due to reduced matching opportunities, and vice versa. We develop a model in which individuals repeatedly form one-to-one matches across two groups and adapt their selectivity to achieve a target matching rate. Using both analytic and numerical methods, we show that when encounters are sufficiently frequent, the unique equilibrium is for one group to be highly selective and the other non-selective. This qualitative outcome holds even for heterogeneous groups with overlapping, almost indistinguishable distributions of target matching rates. The model makes several testable predictions, and it provides a mechanism for behavioral differentiation in repeated matching environments, with applications ranging from online dating to hiring and housing markets."
+        },
+        {
+          "title": "A Cost-and-Place-Utility Model of the Move-versus-Commute Decision",
+          "url": "https://arxiv.org/abs/2606.31780",
+          "arxivId": "2606.31780",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Deciding where to live involves a complex balance between commuting and moving, as households must weigh housing affordability, transportation expenses, access to workplaces, and social ties. Traditional urban economic theories focus on the balance between housing expenses and commuting costs, while modern studies also consider housing affordability, transportation access, and utility maximization. However, few studies have combined these elements into a clear mathematical model that can be used for both policy analysis and household decision-making. This paper introduces an algebraic model for deciding whether to commute or move, expanding on traditional residential location theories by including direct housing and commuting expenses, income-related affordability limits, indirect social and service access costs, and location-based utility within a single utility-maximization framework. The model uses the common 30% housing affordability rule as a constraint, acknowledging that residential choices are also shaped by social networks, access to institutions, neighborhood ties, and quality-of-life factors. The decision rule derived from the model integrates direct financial costs with weighted social benefits and indirect access costs to assess when moving offers more overall utility than staying put and commuting. Unlike complex discrete-choice, nested-logit, or agent-based models, this framework offers a mathematically clear, understandable, and flexible decision model that can easily be expanded to include more household characteristics, transportation options, or policy factors. The model advances urban economics, migration studies, and housing affordability research by providing a practical analytical tool for assessing residential mobility decisions within financial and behavioral limits."
+        },
+        {
+          "title": "Note on an Axiomatization of the Baldwin Rule",
+          "url": "https://arxiv.org/abs/2606.31271",
+          "arxivId": "2606.31271",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Goto and Nakada (2026) showed that the Baldwin rule can be characterized using Neutrality}, Bottom Consistency, Faithfulness, Cancellation and Bottom Independence. While their proof relies on the technique of linear algebra and graph theory, in this note, we provide a simpler proof using purely combinatorial arguments based on permutations and amplified preference profiles, thereby providing a more transparent proof of the characterization."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "The Cooperation Ceiling: Extrinsic Population Dynamics and the Intrinsic Escape",
+              "url": "https://arxiv.org/abs/2606.31740",
+              "arxivId": "2606.31740",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "q-bio.PE"
+              ],
+              "abstract": "Evolutionary game theory provides a framework by which to study the emergence of cooperation in a population of self-interested actors. In such a framework, players' decisions on whether or not to cooperate evolve according to decision rules called population dynamics. However, often games are studied under the assumption that all individuals play under the same conditions, and many common choices of update rule are not well suited for a heterogeneous population. In this paper, we categorise and compare four different population dynamics in such a population as ``extrinsic'', where players learn by looking outward at the payoffs of other players, and ``intrinsic'', where players look inwardly at their own attributes or potential payoffs. We show that extrinsic population dynamics admit a ceiling on the rate of cooperation which can be exceeded by intrinsic population dynamics, and demonstrate this using the public goods game with heterogeneous contributions."
+            },
+            {
+              "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+              "url": "https://arxiv.org/abs/2606.31639",
+              "arxivId": "2606.31639",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.GT",
+                "cs.LO"
+              ],
+              "abstract": "Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read private data, call tools, write files, execute code, and act across organizational boundaries. This shift changes the security problem: risks do not arise from the model weights alone, but from the full lifecycle and application stack through which data, prompts, model outputs, tools, memories, and user authority interact. This paper systematizes the literature on vulnerabilities in large language model systems through a lifecycle and application-stack lens. We organize attacks across eight stages: data collection, pretraining, post-training alignment, model packaging and supply chain, retrieval and memory, prompting and inference, tool/agent execution, and deployment/maintenance. For each stage, we analyze attacker capabilities, affected security objectives, representative attacks, practical risks, evaluation practices, and defenses. We further map LLM-specific vulnerabilities to confidentiality, integrity, availability, safety, privacy, fairness, accountability, and agency-control objectives. Unlike taxonomies that list isolated attack names, the proposed systematization emphasizes where trust boundaries fail, how untrusted data becomes executable instruction, how delegated authority amplifies model errors, and why point defenses rarely compose. We close with a research agenda for secure LLM systems, including compositional security, provenance-aware retrieval, tool-call containment, long-horizon agent evaluation, privacy-preserving adaptation, realistic red teaming, and deployment-grade incident response."
+            },
+            {
+              "title": "Learning Fair Allocation of Indivisible Items from Limited Feedback",
+              "url": "https://arxiv.org/abs/2606.31457",
+              "arxivId": "2606.31457",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study a setting in which an algorithm must output a fair allocation of indivisible items while \"learning on the job\". More specifically, the algorithm is to output an allocation satisfying EF1, PROP1, or similar fairness notions; however, the algorithm initially has no information about the agents' valuations, and can only learn about them by (repeatedly) proposing an allocation, and obtaining feedback about a fairness violation in the allocation. Importantly, the observed fairness violation may be adversarially chosen. The algorithm's goal is to converge to a fair allocation in rounds polynomial in the number of agents and items, ideally with only polynomial computation. We prove two main results: first, when the valuations are additive, then even for mixed items (goods and chores), an allocation satisfying EF1 or PROP1 can be found in polynomial time using the corresponding feedback. These results are instantiations of a more general framework which maintains a polytope of candidate valuations consistent with all past feedback. The algorithm repeatedly constructs putative valuations and uses them to propose allocations; the observed violations then define separating hyperplanes, allowing the algorithm to emulate the ellipsoid method. When the valuations are monotone, we present an algorithm which is guaranteed to find an EF1 allocation in polynomially many iterations; however, its internal calculations are not guaranteed to be polynomial. The algorithm again maintains putative valuations, and only considers allocations in which each agent obtains an interval plus one additional item with respect to an arbitrary ordering of the items. We (non-constructively) prove that there always exist EF1 allocations of this form, allowing us to use a further generalization of the preceding ellipsoid-based ideas."
+            },
+            {
+              "title": "Incentivizing Data Trading via Profit Reallocation",
+              "url": "https://arxiv.org/abs/2606.31202",
+              "arxivId": "2606.31202",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Data trading is a central approach to data circulation, yet data markets remain far less active than expected. A primary bottleneck is the lack of effective economic incentives. Existing approaches often treat data as traditional goods, overlooking its inherent replicability and resale potential: buyers can replicate and resell data products, thereby forming transaction chains. Upstream sellers do not benefit from downstream resales and thus have limited incentives to sell. However, the impact of data resale on market performance remains insufficiently understood. To address this gap, we propose a sequential, chain-based data trading model that explicitly captures data resale. The model reflects data flows in settings such as LLM training and strategic decision-making. We integrate this model with a profit reallocation mechanism. By reallocating profits along the transaction chain, this mechanism ensures upstream sellers benefit from downstream resales. We next develop efficient algorithms, including a polynomial-time exact algorithm for the discrete model and an FPTAS for the continuous model, to compute its sequential equilibria. We theoretically show that profit reallocation expands trade and improves social welfare under certain conditions, and empirical results demonstrate that our mechanism increases transaction volume by 120.0\\% and social welfare by 50.4\\% in synthetic environments, compared with the baseline mechanism that does not reallocate profits."
+            },
+            {
+              "title": "Robust Aggregation of Calibrated Forecasts",
+              "url": "https://arxiv.org/abs/2606.31020",
+              "arxivId": "2606.31020",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "abstract": "Decision-makers often rely on multiple probabilistic forecasts that are individually calibrated but need not be fully informative. We develop a framework for aggregating such forecasts when the decision-maker knows only that experts satisfy calibration. We show that the joint distribution of calibrated forecasts can contain decision-relevant information that is unavailable from any single expert, so the standard optimal-in-hindsight (OIH) benchmark may substantially understate attainable performance. To formalize this idea, we introduce a robust max-min benchmark: the best payoff a decision-maker can guarantee against all profile-wise conditional-mean mappings compatible with calibration. This benchmark is tractable, admits a linear-programming formulation, and dominates the OIH benchmark up to calibration error. It can nevertheless be strictly below the Bayesian benchmark, clarifying the value of knowing experts' information structures. Finally, we provide online algorithms that attain the robust benchmark under forecast-only feedback and stronger contextual benchmarks under state feedback."
+            },
+            {
+              "title": "Comparison games and ranking of players",
+              "url": "https://arxiv.org/abs/2606.31955",
+              "arxivId": "2606.31955",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "This work addresses the problem of assessing player importance in coalitional settings where the available information concerns the relative strength between pairs of coalitions, rather than the absolute worth of each coalition. We introduce a novel framework that is flexible enough to represent all coalitional pseudo-games and, through the use of coalitional networks, naturally accommodates scenarios with limited or heterogeneous coalition comparisons. Importantly, this framework still enables the computation of semivalues of pseudo-games, such as the Banzhaf and Shapley values, that can be expressed as weighted sums of differences in specific coalition comparisons, thus offering interpretations beyond traditional approaches. Furthermore, for ranking players rather than computing exact numerical attributions, we introduce the concept of a player's score, which simplifies the process of determining rankings based on semivalues, and shifts the perspective from average marginal contribution to average coalitional worth. This turns out to be particularly enlightening for the Banzhaf value."
+            },
+            {
+              "title": "Attention and Social Learning",
+              "url": "https://arxiv.org/abs/2606.31850",
+              "arxivId": "2606.31850",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "In an incentivized laboratory experiment, we study how people account for and respond to others' incentives for paying attention. Participants learn a binary state from an attention task under high or low accuracy incentives. We ask subjects to predict their peers' accuracy based on the peers' incentives and to aggregate answers from multiple peers with different incentives. Most subjects fail to consistently understand that peers with stronger incentives are more accurate, and these subjects also perform worse in individual attention tasks. Subjects also participate in a social-learning task where they first learn the binary state from an attention task, then observe a peer's guess about the state in the same task, and finally make a guess themselves. We find behavior in these tasks is inconsistent with leading models of flexible costly information acquisition. In particular, subjects fail to pay more attention when paired with lower incentive peers. Overall, we find that many decision-makers do not respond to others' incentives for accuracy even when those incentives are transparent."
+            },
+            {
+              "title": "Feedback dynamics in matching networks drive behavioral differentiation despite overlapping objectives",
+              "url": "https://arxiv.org/abs/2606.31802",
+              "arxivId": "2606.31802",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "econ.TH",
+                "math.DS"
+              ],
+              "abstract": "Many bipartite social networks exhibit pronounced asymmetries in selectivity and matching opportunities: members of one side can afford to be highly selective, while members of the opposite side are forced to accept less desirable matches. While it is natural to try to explain this asymmetry in terms of the intrinsic characteristics of the two sides or other exogenous factors, here we show that such asymmetries can also emerge endogenously through a feedback process generated by the matching process itself: as one side becomes more selective, the other side is pushed to be less selective due to reduced matching opportunities, and vice versa. We develop a model in which individuals repeatedly form one-to-one matches across two groups and adapt their selectivity to achieve a target matching rate. Using both analytic and numerical methods, we show that when encounters are sufficiently frequent, the unique equilibrium is for one group to be highly selective and the other non-selective. This qualitative outcome holds even for heterogeneous groups with overlapping, almost indistinguishable distributions of target matching rates. The model makes several testable predictions, and it provides a mechanism for behavioral differentiation in repeated matching environments, with applications ranging from online dating to hiring and housing markets."
+            },
+            {
+              "title": "A Cost-and-Place-Utility Model of the Move-versus-Commute Decision",
+              "url": "https://arxiv.org/abs/2606.31780",
+              "arxivId": "2606.31780",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Deciding where to live involves a complex balance between commuting and moving, as households must weigh housing affordability, transportation expenses, access to workplaces, and social ties. Traditional urban economic theories focus on the balance between housing expenses and commuting costs, while modern studies also consider housing affordability, transportation access, and utility maximization. However, few studies have combined these elements into a clear mathematical model that can be used for both policy analysis and household decision-making. This paper introduces an algebraic model for deciding whether to commute or move, expanding on traditional residential location theories by including direct housing and commuting expenses, income-related affordability limits, indirect social and service access costs, and location-based utility within a single utility-maximization framework. The model uses the common 30% housing affordability rule as a constraint, acknowledging that residential choices are also shaped by social networks, access to institutions, neighborhood ties, and quality-of-life factors. The decision rule derived from the model integrates direct financial costs with weighted social benefits and indirect access costs to assess when moving offers more overall utility than staying put and commuting. Unlike complex discrete-choice, nested-logit, or agent-based models, this framework offers a mathematically clear, understandable, and flexible decision model that can easily be expanded to include more household characteristics, transportation options, or policy factors. The model advances urban economics, migration studies, and housing affordability research by providing a practical analytical tool for assessing residential mobility decisions within financial and behavioral limits."
+            },
+            {
+              "title": "Note on an Axiomatization of the Baldwin Rule",
+              "url": "https://arxiv.org/abs/2606.31271",
+              "arxivId": "2606.31271",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Goto and Nakada (2026) showed that the Baldwin rule can be characterized using Neutrality}, Bottom Consistency, Faithfulness, Cancellation and Bottom Independence. While their proof relies on the technique of linear algebra and graph theory, in this note, we provide a simpler proof using purely combinatorial arguments based on permutations and amplified preference profiles, thereby providing a more transparent proof of the characterization."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 4,
+                  "guaranteeQuality": 3,
+                  "readingValue": 5,
+                  "penalty": -4,
+                  "aiRelevance": 9,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 8,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 4,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 1,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 3,
+                  "guaranteeQuality": 2,
+                  "readingValue": 3,
+                  "penalty": -3,
+                  "aiRelevance": 1,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 3,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 1,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "The Cooperation Ceiling: Extrinsic Population Dynamics and the Intrinsic Escape",
+              "url": "https://arxiv.org/abs/2606.31740",
+              "arxivId": "2606.31740",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "q-bio.PE"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 1.7,
+                "total": 22.2
+              }
+            },
+            {
+              "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+              "url": "https://arxiv.org/abs/2606.31639",
+              "arxivId": "2606.31639",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.GT",
+                "cs.LO"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Learning Fair Allocation of Indivisible Items from Limited Feedback",
+              "url": "https://arxiv.org/abs/2606.31457",
+              "arxivId": "2606.31457",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 2.9,
+                "total": 31.9
+              }
+            },
+            {
+              "title": "Incentivizing Data Trading via Profit Reallocation",
+              "url": "https://arxiv.org/abs/2606.31202",
+              "arxivId": "2606.31202",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 7.5,
+                "total": 35.5
+              }
+            },
+            {
+              "title": "Robust Aggregation of Calibrated Forecasts",
+              "url": "https://arxiv.org/abs/2606.31020",
+              "arxivId": "2606.31020",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 3.5,
+                "total": 26.6
+              }
+            },
+            {
+              "title": "Comparison games and ranking of players",
+              "url": "https://arxiv.org/abs/2606.31955",
+              "arxivId": "2606.31955",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 0.7,
+                "total": 17.4
+              }
+            },
+            {
+              "title": "Attention and Social Learning",
+              "url": "https://arxiv.org/abs/2606.31850",
+              "arxivId": "2606.31850",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 1.4,
+                "total": 17.9
+              }
+            },
+            {
+              "title": "Feedback dynamics in matching networks drive behavioral differentiation despite overlapping objectives",
+              "url": "https://arxiv.org/abs/2606.31802",
+              "arxivId": "2606.31802",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "econ.TH",
+                "math.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 20.0,
+                "bonus": 1.3,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "A Cost-and-Place-Utility Model of the Move-versus-Commute Decision",
+              "url": "https://arxiv.org/abs/2606.31780",
+              "arxivId": "2606.31780",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Note on an Axiomatization of the Baldwin Rule",
+              "url": "https://arxiv.org/abs/2606.31271",
+              "arxivId": "2606.31271",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 5.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 3.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 7.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "bonus": 0.5,
+                "total": 10.2
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "The Cooperation Ceiling: Extrinsic Population Dynamics and the Intrinsic Escape",
+          "url": "https://arxiv.org/abs/2606.31740",
+          "arxivId": "2606.31740",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "q-bio.PE"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 22.2
+          }
+        },
+        {
+          "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+          "url": "https://arxiv.org/abs/2606.31639",
+          "arxivId": "2606.31639",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.GT",
+            "cs.LO"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Learning Fair Allocation of Indivisible Items from Limited Feedback",
+          "url": "https://arxiv.org/abs/2606.31457",
+          "arxivId": "2606.31457",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Incentivizing Data Trading via Profit Reallocation",
+          "url": "https://arxiv.org/abs/2606.31202",
+          "arxivId": "2606.31202",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 35.5
+          }
+        },
+        {
+          "title": "Robust Aggregation of Calibrated Forecasts",
+          "url": "https://arxiv.org/abs/2606.31020",
+          "arxivId": "2606.31020",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 3.5,
+            "total": 26.6
+          }
+        },
+        {
+          "title": "Comparison games and ranking of players",
+          "url": "https://arxiv.org/abs/2606.31955",
+          "arxivId": "2606.31955",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 0.7,
+            "total": 17.4
+          }
+        },
+        {
+          "title": "Attention and Social Learning",
+          "url": "https://arxiv.org/abs/2606.31850",
+          "arxivId": "2606.31850",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 1.4,
+            "total": 17.9
+          }
+        },
+        {
+          "title": "Feedback dynamics in matching networks drive behavioral differentiation despite overlapping objectives",
+          "url": "https://arxiv.org/abs/2606.31802",
+          "arxivId": "2606.31802",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "econ.TH",
+            "math.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 1.3,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "A Cost-and-Place-Utility Model of the Move-versus-Commute Decision",
+          "url": "https://arxiv.org/abs/2606.31780",
+          "arxivId": "2606.31780",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Note on an Axiomatization of the Baldwin Rule",
+          "url": "https://arxiv.org/abs/2606.31271",
+          "arxivId": "2606.31271",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 3.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "bonus": 0.5,
+            "total": 10.2
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Incentivizing Data Trading via Profit Reallocation",
+          "url": "https://arxiv.org/abs/2606.31202",
+          "arxivId": "2606.31202",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 35.5
+          }
+        },
+        {
+          "title": "Learning Fair Allocation of Indivisible Items from Limited Feedback",
+          "url": "https://arxiv.org/abs/2606.31457",
+          "arxivId": "2606.31457",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Robust Aggregation of Calibrated Forecasts",
+          "url": "https://arxiv.org/abs/2606.31020",
+          "arxivId": "2606.31020",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 3.5,
+            "total": 26.6
+          }
+        },
+        {
+          "title": "The Cooperation Ceiling: Extrinsic Population Dynamics and the Intrinsic Escape",
+          "url": "https://arxiv.org/abs/2606.31740",
+          "arxivId": "2606.31740",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "q-bio.PE"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 22.2
+          }
+        },
+        {
+          "title": "Attention and Social Learning",
+          "url": "https://arxiv.org/abs/2606.31850",
+          "arxivId": "2606.31850",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 1.4,
+            "total": 17.9
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Incentivizing Data Trading via Profit Reallocation",
+            "url": "https://arxiv.org/abs/2606.31202",
+            "arxivId": "2606.31202",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过利润重分配激励数据交易",
+            "researchParadigmTags": [
+              "机制设计",
+              "均衡分析",
+              "算法设计",
+              "理论推导",
+              "实验验证"
+            ],
+            "contentTags": [
+              "数据市场",
+              "机制设计",
+              "链式交易",
+              "利润分配",
+              "社会福利"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "数据市场活跃度不足，核心瓶颈在于缺乏有效激励。传统机制忽视数据可复制和转售的特性，导致上游卖家无法从下游交易中获益，从而削弱出售意愿。本文聚焦于数据转售行为普遍存在的场景，提出一个关键问题：如何设计激励机制，使上游参与者也能分享后续交易的收益，从而促进整个交易链的形成。",
+              "modelAndSetup": "作者构建了一个链式顺序交易博弈模型，n+1个参与者沿链条依次买卖数据产品。每个买家可加工并转售，其估值为私有信息且具马尔可夫性。卖方采用报盘机制定价，买方决定是否购买。关键创新是引入利润重分配机制，由非负矩阵t定义，允许将每笔交易利润按比例分给此前的所有上游参与者，而非全部归直接卖家。",
+              "contributionsAndResults": "论文提出了广义的利润重分配机制，涵盖固定比例分配等特例，并证明在预算可行和仅向前分配条件下，该机制能弱扩张均衡交易事件并提升社会福利。实验显示，相比不重分配的基线机制，交易量提升120.0%，社会福利提高50.4%。这表明重分配能显著改善市场绩效。",
+              "methodsAndTechniques": "作者利用马尔可夫假设简化均衡结构，发现存在仅依赖当前估值和前手价格的简化策略均衡。基于此，设计了两层动态规划算法：离散情形下用后向归纳与前向概率计算实现多项式时间精确求解；连续情形下通过网格离散化构造FPTAS。理论比较则通过局部机制变化的递进分析完成。",
+              "limitationsAndReadingValue": "模型假设估值满足齐次性和正性以得出普适结论，虽实验显示结果在违背时仍稳健，但理论分析依赖较强假设。机制需平台集中执行利润重分配，对去中心化场景适用性有限。最值得读的是其对数据转售外部性的建模方式、简化均衡的发现及高效算法设计，为链式资源交易提供了新范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过利润重分配激励数据交易",
+            "summarySections": {
+              "backgroundAndQuestion": "数据市场活跃度不足，核心瓶颈在于缺乏有效激励。传统机制忽视数据可复制和转售的特性，导致上游卖家无法从下游交易中获益，从而削弱出售意愿。本文聚焦于数据转售行为普遍存在的场景，提出一个关键问题：如何设计激励机制，使上游参与者也能分享后续交易的收益，从而促进整个交易链的形成。",
+              "modelAndSetup": "作者构建了一个链式顺序交易博弈模型，n+1个参与者沿链条依次买卖数据产品。每个买家可加工并转售，其估值为私有信息且具马尔可夫性。卖方采用报盘机制定价，买方决定是否购买。关键创新是引入利润重分配机制，由非负矩阵t定义，允许将每笔交易利润按比例分给此前的所有上游参与者，而非全部归直接卖家。",
+              "contributionsAndResults": "论文提出了广义的利润重分配机制，涵盖固定比例分配等特例，并证明在预算可行和仅向前分配条件下，该机制能弱扩张均衡交易事件并提升社会福利。实验显示，相比不重分配的基线机制，交易量提升120.0%，社会福利提高50.4%。这表明重分配能显著改善市场绩效。",
+              "methodsAndTechniques": "作者利用马尔可夫假设简化均衡结构，发现存在仅依赖当前估值和前手价格的简化策略均衡。基于此，设计了两层动态规划算法：离散情形下用后向归纳与前向概率计算实现多项式时间精确求解；连续情形下通过网格离散化构造FPTAS。理论比较则通过局部机制变化的递进分析完成。",
+              "limitationsAndReadingValue": "模型假设估值满足齐次性和正性以得出普适结论，虽实验显示结果在违背时仍稳健，但理论分析依赖较强假设。机制需平台集中执行利润重分配，对去中心化场景适用性有限。最值得读的是其对数据转售外部性的建模方式、简化均衡的发现及高效算法设计，为链式资源交易提供了新范式。"
+            },
+            "contentTags": [
+              "数据市场",
+              "机制设计",
+              "链式交易",
+              "利润分配",
+              "社会福利"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "均衡分析",
+              "算法设计",
+              "理论推导",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Learning Fair Allocation of Indivisible Items from Limited Feedback",
+            "url": "https://arxiv.org/abs/2606.31457",
+            "arxivId": "2606.31457",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "从有限反馈中学习不可分物品的公平分配",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "复杂度分析",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "在线算法",
+              "博弈学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统公平分配算法通常假定完全知晓参与者的偏好，但在现实中，获取完整偏好信息成本高昂甚至不可行。本文研究如何在不预先知道估值函数的情况下，通过反复提议分配方案并接收公平性违规反馈来‘边做边学’，最终收敛到满足EF1或PROP1等公平性质的分配。这模拟了实际场景中基于用户投诉调整资源分配的学习过程。",
+              "modelAndSetup": "模型中有n个代理和m个不可分物品，每个代理拥有未知的单调或加性估值函数。算法每轮提出一个完整分配，若该分配不满足目标公平性（如EF1），则收到一个对抗性选择的违反见证（如一对嫉妒的代理）。算法需利用这些逐步积累的反馈，在多项式轮次内找到公平分配。不同反馈模型被考虑：仅单个违反、全部违反或仅是/否信号。",
+              "contributionsAndResults": "论文证明：对于加性估值，可在多项式时间内通过单个违反反馈找到EF1或PROP1分配；对于一般单调估值，虽能在多项式轮次内找到几乎连续的EF1分配，但内部计算尚未知是否高效。此外，若反馈仅提供是否公平的一位信息，则最坏情况下需指数轮次；而若反馈所有违反，则可通过模拟嫉妒环消除算法在多项式时间内解决。",
+              "methodsAndTechniques": "核心方法是将估值空间建模为多面体，并用椭球法迭代缩小可行区域。每次违反反馈转化为分离超平面，指导更新估值估计。对于非加性情况，结合Sperner引理证明几乎连续EF1分配的存在性，并限制搜索空间以控制交互复杂度。算法通过维护候选估值和结构化分配形式，实现从反例中学习。",
+              "limitationsAndReadingValue": "主要局限在于对一般单调估值的情形，虽然交互次数多项式，但子程序缺乏构造性，导致整体计算复杂度未知。此外，几乎连续性的存在性证明是非构造性的，可能涉及PPAD类难题。最值得读的是其将学习与公平分配结合的新框架、椭球法的应用技巧，以及关于反馈强度与效率权衡的深刻洞察。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "从有限反馈中学习不可分物品的公平分配",
+            "summarySections": {
+              "backgroundAndQuestion": "传统公平分配算法通常假定完全知晓参与者的偏好，但在现实中，获取完整偏好信息成本高昂甚至不可行。本文研究如何在不预先知道估值函数的情况下，通过反复提议分配方案并接收公平性违规反馈来‘边做边学’，最终收敛到满足EF1或PROP1等公平性质的分配。这模拟了实际场景中基于用户投诉调整资源分配的学习过程。",
+              "modelAndSetup": "模型中有n个代理和m个不可分物品，每个代理拥有未知的单调或加性估值函数。算法每轮提出一个完整分配，若该分配不满足目标公平性（如EF1），则收到一个对抗性选择的违反见证（如一对嫉妒的代理）。算法需利用这些逐步积累的反馈，在多项式轮次内找到公平分配。不同反馈模型被考虑：仅单个违反、全部违反或仅是/否信号。",
+              "contributionsAndResults": "论文证明：对于加性估值，可在多项式时间内通过单个违反反馈找到EF1或PROP1分配；对于一般单调估值，虽能在多项式轮次内找到几乎连续的EF1分配，但内部计算尚未知是否高效。此外，若反馈仅提供是否公平的一位信息，则最坏情况下需指数轮次；而若反馈所有违反，则可通过模拟嫉妒环消除算法在多项式时间内解决。",
+              "methodsAndTechniques": "核心方法是将估值空间建模为多面体，并用椭球法迭代缩小可行区域。每次违反反馈转化为分离超平面，指导更新估值估计。对于非加性情况，结合Sperner引理证明几乎连续EF1分配的存在性，并限制搜索空间以控制交互复杂度。算法通过维护候选估值和结构化分配形式，实现从反例中学习。",
+              "limitationsAndReadingValue": "主要局限在于对一般单调估值的情形，虽然交互次数多项式，但子程序缺乏构造性，导致整体计算复杂度未知。此外，几乎连续性的存在性证明是非构造性的，可能涉及PPAD类难题。最值得读的是其将学习与公平分配结合的新框架、椭球法的应用技巧，以及关于反馈强度与效率权衡的深刻洞察。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "在线算法",
+              "博弈学习"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "复杂度分析",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Robust Aggregation of Calibrated Forecasts",
+            "url": "https://arxiv.org/abs/2606.31020",
+            "arxivId": "2606.31020",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Robust Aggregation of Calibrated Forecasts",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "后悔分析"
+            ],
+            "contentTags": [
+              "信息聚合",
+              "在线决策",
+              "校准性",
+              "鲁棒性",
+              "情境学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当决策者面对多个仅满足校准性的概率预测时，如何有效聚合这些信息成为一个关键问题。传统最优事后基准仅比较单个专家表现，忽略了联合预测模式中蕴含的决策相关信号。本文指出，即使每个专家单独看信息量有限，它们的联合分布仍可能通过校准约束揭示更精确的状态后验，因此需要一个既能利用这种联合信息、又不依赖专家内部信息结构的聚合框架。",
+              "modelAndSetup": "模型考虑一个动态决策环境，其中n个专家每天提供关于二元状态的概率预测，所有专家报告均满足（近似）校准性。决策者观察完整的预测轮廓（forecast profile），据此选择行动但无法观测真实状态或收益。研究区分两种反馈结构：仅预测反馈下无法获得支付信息，而状态反馈下可观察真实状态。核心设定是决策者仅知校准性成立，不知先验、信号结构或条件独立性。",
+              "contributionsAndResults": "本文提出‘鲁棒最大最小基准’（RMM），即在所有符合校准约束的后验映射中，能被保证的最高期望收益。该基准可通过线性规划高效计算，弱优于最优事后基准（OIH），并严格低于贝叶斯基准，清晰刻画了仅凭校准性能获取的价值上限。在线环境下，设计了基于插值估计的鲁棒聚合算法，在预测仅反馈下实现次线性鲁棒遗憾。",
+              "methodsAndTechniques": "核心方法是将校准约束转化为对联合预测轮廓后验频率的线性限制，并通过对偶化内层最小化问题将原max-min问题转化为可解线性规划。在线算法采用‘插值+惩罚’策略：用经验分布估计预测轮廓分布，并在目标中加入对违反校准约束的惩罚项。技术关键在于利用Hoffman引理控制有限样本下的偏差，结合迭代期望展开完成遗憾分解。",
+              "limitationsAndReadingValue": "主要局限在于在线结果依赖预测轮廓独立同分布假设，难以推广至完全对抗性序列。此外，RMM虽优于OIH，但仍低于贝叶斯基准，表明校准性本身不足以恢复全部信息价值。最值得读的是其对信息聚合基准的重构思路、RMM的可计算性证明及在无支付反馈下的学习算法设计，为鲁棒预测聚合提供了新范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Robust Aggregation of Calibrated Forecasts",
+            "summarySections": {
+              "backgroundAndQuestion": "当决策者面对多个仅满足校准性的概率预测时，如何有效聚合这些信息成为一个关键问题。传统最优事后基准仅比较单个专家表现，忽略了联合预测模式中蕴含的决策相关信号。本文指出，即使每个专家单独看信息量有限，它们的联合分布仍可能通过校准约束揭示更精确的状态后验，因此需要一个既能利用这种联合信息、又不依赖专家内部信息结构的聚合框架。",
+              "modelAndSetup": "模型考虑一个动态决策环境，其中n个专家每天提供关于二元状态的概率预测，所有专家报告均满足（近似）校准性。决策者观察完整的预测轮廓（forecast profile），据此选择行动但无法观测真实状态或收益。研究区分两种反馈结构：仅预测反馈下无法获得支付信息，而状态反馈下可观察真实状态。核心设定是决策者仅知校准性成立，不知先验、信号结构或条件独立性。",
+              "contributionsAndResults": "本文提出‘鲁棒最大最小基准’（RMM），即在所有符合校准约束的后验映射中，能被保证的最高期望收益。该基准可通过线性规划高效计算，弱优于最优事后基准（OIH），并严格低于贝叶斯基准，清晰刻画了仅凭校准性能获取的价值上限。在线环境下，设计了基于插值估计的鲁棒聚合算法，在预测仅反馈下实现次线性鲁棒遗憾。",
+              "methodsAndTechniques": "核心方法是将校准约束转化为对联合预测轮廓后验频率的线性限制，并通过对偶化内层最小化问题将原max-min问题转化为可解线性规划。在线算法采用‘插值+惩罚’策略：用经验分布估计预测轮廓分布，并在目标中加入对违反校准约束的惩罚项。技术关键在于利用Hoffman引理控制有限样本下的偏差，结合迭代期望展开完成遗憾分解。",
+              "limitationsAndReadingValue": "主要局限在于在线结果依赖预测轮廓独立同分布假设，难以推广至完全对抗性序列。此外，RMM虽优于OIH，但仍低于贝叶斯基准，表明校准性本身不足以恢复全部信息价值。最值得读的是其对信息聚合基准的重构思路、RMM的可计算性证明及在无支付反馈下的学习算法设计，为鲁棒预测聚合提供了新范式。"
+            },
+            "contentTags": [
+              "信息聚合",
+              "在线决策",
+              "校准性",
+              "鲁棒性",
+              "情境学习"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "后悔分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Cooperation Ceiling: Extrinsic Population Dynamics and the Intrinsic Escape",
+            "url": "https://arxiv.org/abs/2606.31740",
+            "arxivId": "2606.31740",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "q-bio.PE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "合作天花板：外生种群动力学与内生逃逸",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "社会困境",
+              "演化博弈",
+              "公共品博弈"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在群体中合作难以持续？本文关注自利个体间合作演化的根本障碍。标准演化模型常假设同质环境，但在现实中个体差异显著，导致传统更新规则失效。作者追问：不同学习方式如何影响合作水平，是否存在某种动力学能突破合作上限。",
+              "modelAndSetup": "作者构建了一个异质人群的通用演化框架，每个个体有独立贡献能力和收益函数。状态空间为所有策略组合构成的超立方体图，个体依特定规则更新策略。重点对比四类动态：外生型（如Moran过程、Fermi模仿）依赖他人表现，内生型（如愿望水平、反思动态）基于自身反事实评估。",
+              "contributionsAndResults": "论文发现外生动态存在合作概率的硬性上限1/2，在任何参数下都无法超越中性漂移基准；而内生动态可通过比较自身潜在收益突破该天花板。这一结果揭示了学习机制的本质差异：向外看无法摆脱搭便车优势，向内看才能实现高效合作。",
+              "methodsAndTechniques": "作者通过形式化定义‘纯外生’动态并证明其单调性约束来建立上限。利用随机占优和耦合技术比较中性链与实际链的稳态分布。对内生动态则借助反事实收益差和愿望阈值进行直接分析，并通过大规模参数扫描与模拟验证理论边界。",
+              "limitationsAndReadingValue": "模型聚焦两行动博弈，结论是否推广至多行动尚不明确。内生动态虽性能更优，但其实现需更强认知能力假设。最值得读的是其清晰的分类框架与反直觉结论：看似理性的模仿反而抑制合作。开放问题关于混合更新规则的设计极具启发性。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "合作天花板：外生种群动力学与内生逃逸",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在群体中合作难以持续？本文关注自利个体间合作演化的根本障碍。标准演化模型常假设同质环境，但在现实中个体差异显著，导致传统更新规则失效。作者追问：不同学习方式如何影响合作水平，是否存在某种动力学能突破合作上限。",
+              "modelAndSetup": "作者构建了一个异质人群的通用演化框架，每个个体有独立贡献能力和收益函数。状态空间为所有策略组合构成的超立方体图，个体依特定规则更新策略。重点对比四类动态：外生型（如Moran过程、Fermi模仿）依赖他人表现，内生型（如愿望水平、反思动态）基于自身反事实评估。",
+              "contributionsAndResults": "论文发现外生动态存在合作概率的硬性上限1/2，在任何参数下都无法超越中性漂移基准；而内生动态可通过比较自身潜在收益突破该天花板。这一结果揭示了学习机制的本质差异：向外看无法摆脱搭便车优势，向内看才能实现高效合作。",
+              "methodsAndTechniques": "作者通过形式化定义‘纯外生’动态并证明其单调性约束来建立上限。利用随机占优和耦合技术比较中性链与实际链的稳态分布。对内生动态则借助反事实收益差和愿望阈值进行直接分析，并通过大规模参数扫描与模拟验证理论边界。",
+              "limitationsAndReadingValue": "模型聚焦两行动博弈，结论是否推广至多行动尚不明确。内生动态虽性能更优，但其实现需更强认知能力假设。最值得读的是其清晰的分类框架与反直觉结论：看似理性的模仿反而抑制合作。开放问题关于混合更新规则的设计极具启发性。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "社会困境",
+              "演化博弈",
+              "公共品博弈"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Attention and Social Learning",
+            "url": "https://arxiv.org/abs/2606.31850",
+            "arxivId": "2606.31850",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "注意力与社会学习",
+            "researchParadigmTags": [
+              "实验验证",
+              "行为建模",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "社会学习",
+              "信息设计",
+              "激励机制",
+              "注意力经济"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "人们常通过他人获取信息，但这些信息提供者是否认真关注事实取决于他们的激励。本文研究一个核心问题：个体能否理解并利用他人的激励差异来判断其信息可靠性？现实中，从新闻报道到医疗建议，我们都依赖中间人付出注意力努力，但现有研究表明人们可能忽视激励对信息质量的影响。该问题关乎社会学习效率与信息误判风险。",
+              "modelAndSetup": "实验分为两波参与者：第一波在高或低激励下完成基于视觉网格的颜色多数判断任务，其表现反映注意力投入水平；第二波则需预测前者的准确率、整合不同激励来源的猜测，并在自身注意与社会信息间权衡。模型设定模拟了信息中介的激励结构及其对下游决策者信念更新的影响，关键变量为激励水平与观察到的猜测。",
+              "contributionsAndResults": "研究发现多数人未能正确识别高激励带来更高准确性，仅55%受试者认为高激励同伴更可靠，且在整合矛盾猜测时仅42%会更重视高激励者的判断。更重要的是，在预期接收低质量社会信息时，人们并未增加自身注意力投入，违背了理性信息采集模型的‘注意力替代’预测，表明实际行为偏离标准理论。",
+              "methodsAndTechniques": "作者结合实验室实验与理论模型检验，利用Prolific平台进行激励相容设计，测量真实行为反应。通过比较受试者信念、聚合行为与最终决策，反推其信息处理模式。技术上采用回归分析评估激励效应，并以理性疏忽模型和漂移扩散模型作为基准，检验注意力成本的后验可分性假设是否成立。",
+              "limitationsAndReadingValue": "实验环境简化了现实信息结构，且无法直接观测认知过程。尽管如此，结果稳健揭示了一类系统性偏差：人们难以前瞻性调整注意力策略以应对社会信息质量变化。本文价值在于挑战主流信息采集模型，揭示能力较强的个体更能理解激励作用，提示社会学习中的不平等可能源于认知与激励双重错配。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "注意力与社会学习",
+            "summarySections": {
+              "backgroundAndQuestion": "人们常通过他人获取信息，但这些信息提供者是否认真关注事实取决于他们的激励。本文研究一个核心问题：个体能否理解并利用他人的激励差异来判断其信息可靠性？现实中，从新闻报道到医疗建议，我们都依赖中间人付出注意力努力，但现有研究表明人们可能忽视激励对信息质量的影响。该问题关乎社会学习效率与信息误判风险。",
+              "modelAndSetup": "实验分为两波参与者：第一波在高或低激励下完成基于视觉网格的颜色多数判断任务，其表现反映注意力投入水平；第二波则需预测前者的准确率、整合不同激励来源的猜测，并在自身注意与社会信息间权衡。模型设定模拟了信息中介的激励结构及其对下游决策者信念更新的影响，关键变量为激励水平与观察到的猜测。",
+              "contributionsAndResults": "研究发现多数人未能正确识别高激励带来更高准确性，仅55%受试者认为高激励同伴更可靠，且在整合矛盾猜测时仅42%会更重视高激励者的判断。更重要的是，在预期接收低质量社会信息时，人们并未增加自身注意力投入，违背了理性信息采集模型的‘注意力替代’预测，表明实际行为偏离标准理论。",
+              "methodsAndTechniques": "作者结合实验室实验与理论模型检验，利用Prolific平台进行激励相容设计，测量真实行为反应。通过比较受试者信念、聚合行为与最终决策，反推其信息处理模式。技术上采用回归分析评估激励效应，并以理性疏忽模型和漂移扩散模型作为基准，检验注意力成本的后验可分性假设是否成立。",
+              "limitationsAndReadingValue": "实验环境简化了现实信息结构，且无法直接观测认知过程。尽管如此，结果稳健揭示了一类系统性偏差：人们难以前瞻性调整注意力策略以应对社会信息质量变化。本文价值在于挑战主流信息采集模型，揭示能力较强的个体更能理解激励作用，提示社会学习中的不平等可能源于认知与激励双重错配。"
+            },
+            "contentTags": [
+              "社会学习",
+              "信息设计",
+              "激励机制",
+              "注意力经济"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "行为建模",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-06-30",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202606300000 TO 202606302359\"",
+            "totalResults": 13,
+            "fetchedCount": 13
+          }
+        },
+        "dedupedCount": 13
+      },
+      "arxivTotalResults": 13,
+      "fetchedCount": 13,
+      "fetchedPapers": [
+        {
+          "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+          "url": "https://arxiv.org/abs/2606.31976",
+          "arxivId": "2606.31976",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localized semantic perception at individual nodes, with multi-agent voting to mitigate VLM stochasticity. We formalize a Decoupled Declarative Decision (D3) Framework that enables zero-modification generalization across diverse expert-defined decision structures. On a tree bias classification testbed, our framework outperforms supervised ML baselines and reduces the amount of expert labeling effort required. These results suggest that agentic orchestration of VLMs with expert priors can reproduce expert-defined labeling procedures at substantially lower annotation cost while maintaining interpretability."
+        },
+        {
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "https://arxiv.org/abs/2606.31966",
+          "arxivId": "2606.31966",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "Recent multimodal large language models (MLLMs) have strong potential as embodied agents, but their ability to collaborate in visually grounded environments remains underexplored. To address this gap, we introduce MECoBench, a multimodal embodied cooperation benchmark with an evaluation platform spanning diverse real-world tasks, two cooperation structures, and three collaboration modes. Through extensive experiments across various MLLMs, we summarize three key findings: (i) Collaboration generally improves embodied task completion, but its benefits depend on balancing collaborative gains against coordination complexity. (ii) Communication is essential to collaboration gains, while the best collaboration mode depends on team size and model capability. (iii) Moreover, collaboration improves robustness under noisy priors and exploration conditions. Generally, MECoBench provides a systematic testbed for understanding the mechanisms and limits of multimodal embodied collaboration. Code and dataset are available at https://github.com/q-i-n-g/MECoBench."
+        },
+        {
+          "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge",
+          "url": "https://arxiv.org/abs/2606.31886",
+          "arxivId": "2606.31886",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LO"
+          ],
+          "abstract": "Distributed knowledge is a notion of group knowledge studied in multi-agent epistemic logic. Semantically, the distributed knowledge of a group is interpreted via an accessibility relation given by the intersection of the epistemic accessibility relations of the agents in that group. This paper investigates sequent calculi for epistemic logics of distributed knowledge based on K45, KD45, and S5. While cut elimination holds in existing sequent calculi for modal logics K45 and KD45, it fails in all the systems mentioned above. Instead, we establish the analytic cut property for all three systems by adapting Takano' s (2018) strategy, which restricts the cut formulas to the set of subformulas of the conclusion of the cut rule. As a corollary, the Craig interpolation theorem holds for all logics considered. We also show that all proof-theoretic results remain valid when the empty group is allowed for the distributed-knowledge operator, in which case the distributed knowledge for the empty group is interpreted as the global modality."
+        },
+        {
+          "title": "Inquisitive Action Logic",
+          "url": "https://arxiv.org/abs/2606.31866",
+          "arxivId": "2606.31866",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "abstract": "We introduce inquisitive action logic, InqAL, a multi-agent modal logic for reasoning about action. While traditional approaches focus on what properties of the outcome an agent can force, InqAL also captures what aspects of the outcome an agent determines through their actions. As we argue, such claims of agentive determination are naturally analyzed as modal claims involving questions. Technically, InqAL is a multi-agent extension of inquisitive neighborhood logic based on concurrent game structures. With respect to statements, it is expressively equivalent to the individual-agent fragment of the socially friendly coalition logic recently proposed by Goranko and Enqvist. We present an axiomatization of InqAL and prove completeness and decidability via the finite model property. Along the way, we establish a representation theorem for actual effectivity functions, associating to an agent the sets of outcomes corresponding to their possible actions; we give exact conditions under which a multi-agent neighborhood frame arises from a concurrent game structure."
+        },
+        {
+          "title": "The Logic of Data Access and Data Exchanges",
+          "url": "https://arxiv.org/abs/2606.31858",
+          "arxivId": "2606.31858",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "abstract": "We investigate a new logic that extends Dynamic Epistemic Logic (DEL), by combining standard epistemic modalities for (individual and distributed) propositional knowledge with operators for (conditional) non-propositional knowledge of a number (in which an agent or a group have knowledge of the value of some variable x, conditional on some additional information). We also generalize these operators, by considering formulas that express the fact that an agent or group can (conditionally) narrow down the possible values of the variable x to at most N possibilities (for some natural number N). In order to name and compare such hypothetical values, we extend the logic further with definite descriptions based on minimization operators, denoting the least of the N possible values of x (according to some fixed order) that are considered possible by the agent or group. On this static base, we consider DEL-style extensions with dynamic modalities for general 'data-exchange events' (covering private and public propositional announcements, but also secret hacking of a private database, or public sharing of one's data via open-source repositories, etc.). In such scenarios, whole 'chunks' of information may be exchanged or modified: once access to a given source is gained, all the 'data' stored at that specific location becomes available. We give complete axiomatizations for the resulting logics, and prove their decidability and co-expressivity."
+        },
+        {
+          "title": "Resolving Asynchronous Distributed Knowledge",
+          "url": "https://arxiv.org/abs/2606.31855",
+          "arxivId": "2606.31855",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "abstract": "There are by now various epistemic modal logics with intersection modalities for distributed knowledge and intersection update modalities for dynamic phenomena like agents sharing (all their) information, agents receiving information from other agents, and full information protocols. One of those is the logic of Resolving Distributed Knowledge, by Agotnes and Wang. It has distributed knowledge modalities for arbitrary subsets of the set of all agents and it also has so-called resolution modalities for arbitrary subsets of agents sharing their knowledge. In that logic, the agents not involved in the knowledge sharing are aware of the agents sharing knowledge, agents are memory-less, and the kind of dynamics represents synchronous updates, where there is common awareness of the global clock. In contrast, in this contribution we present a logic for Resolving Asynchronous Distributed Knowledge. It is an asynchronous generalization of the synchronous logic of resolving distributed knowledge. The logical semantics is history-based: truth is not only with respect to a given world in a model, but also with respect to a given history of prior resolutions, of which each individual agent can only observe a part. In particular, an agent is unaware of resolutions for groups of agents not including her. As is to be expected, this comes with many technical complications, for example concerning the axiomatization. The synchronous axioms relating resolution to distributed knowledge are now invalid. The modelling advantages of such an asynchronous novel logic, for distributed computing and similar areas, are however substantial and a major asset."
+        },
+        {
+          "title": "ForecastAgentSearch: Towards a Multi-Expert Agent Search System for Geopolitical Event Forecasting",
+          "url": "https://arxiv.org/abs/2606.31665",
+          "arxivId": "2606.31665",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Geopolitical event forecasting is a challenging task, as it requires understanding complex regional contexts, dynamic event signals, and uncertain future outcomes. Recent advances in large language model agents provide new opportunities for building forecasting systems that can reason with diverse sources and expert perspectives. In this paper, we present \\textit{ForecastAgentSearch}, a preliminary framework that formulates geopolitical event forecasting as a multi-expert agent search problem. Given a forecasting query, the system first analyzes the task context, then searches and ranks relevant expert agents based on their regional knowledge, domain expertise, reliability, and complementarity. The selected agents provide specialized analyses, which are further coordinated to generate a final forecast with explanations and uncertainty awareness. We discuss the key design challenges of agent profiling, expert retrieval, ranking, and multi-agent coordination, and outline possible evaluation protocols for future development. This work aims to provide an initial step toward searchable and reliable agent-based forecasting systems."
+        },
+        {
+          "title": "A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Agents",
+          "url": "https://arxiv.org/abs/2606.31635",
+          "arxivId": "2606.31635",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Fault recovery in process plants still relies heavily on plant operators, especially when faults fall outside predefined supervisory logic. Operators interpret alarms, procedures, P\\&IDs, interlocks, and process trends, then decide how to move the plant to a safe operating mode without triggering a shutdown. This paper examines how Large Language Model (LLM) agents can support such recovery decisions. The proposed framework treats the LLM as a constrained supervisory planner. It uses plant-specific knowledge to propose recovery actions, and every proposal is checked by an external validator (symbolic or simulation-based) before actuation. The paper develops three design dimensions for applying the framework: the recovery patterns for which LLM agents are useful, the validation strategies that separate admissible from inadmissible proposals, and the deployment constraints imposed by latency, knowledge engineering, safety integration, and model lifecycle management. To make the framework directly usable, two openly available executable Python environments are provided. Both re-implement established case studies, a modular mixing module and a continuous stirred-tank reactor, extended with configurable faults and defined interfaces for custom recovery and validation methods."
+        },
+        {
+          "title": "A Large-Scale Empirical Evaluation of MMAO Under Fair-Budget Continuous and Discrete Benchmarks",
+          "url": "https://arxiv.org/abs/2606.31584",
+          "arxivId": "2606.31584",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.MA"
+          ],
+          "abstract": "This paper evaluates the Metabolic Multi-Agent Optimizer (MMAO) under a stricter empirical protocol rather than reintroducing the framework itself. The study asks whether MMAO's closed-loop resource-allocation principle remains credible under broader, more standard, and more explicitly budget-controlled continuous and discrete benchmarks. The main completed matrix covers eight CEC2017 functions at 10D and 30D with 20 seeds each, and five TSPLIB instances with 20 seeds each, together with stronger reproducible baselines including PSO-lite, ES-lite, and an iterated-greedy 2-opt route baseline. We further add trajectory-level diagnostics for communal budget, success rate, role evolution, and population turnover, plus an auxiliary OR-Library multiple-knapsack slice to extend the discrete evidence beyond routing. Under this protocol, MMAO clearly outperforms the external baseline set on the continuous side and on the TSPLIB side, while the ablation variants remain much closer to the full method than the external baselines are. We therefore position MMAO as a benchmark-backed cross-domain adaptive framework whose most clearly validated value is endogenous resource redistribution under evidence pressure, while also noting that the strongest remaining gap is not basic workability but sharper mechanism isolation and broader competition-grade comparison."
+        },
+        {
+          "title": "Holonic Active Distillation for Scalable Multi-Agent Learning in Multi-Sensor Systems",
+          "url": "https://arxiv.org/abs/2606.31578",
+          "arxivId": "2606.31578",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "The rapid expansion of sensor-based networks introduces major challenges in scalability, adaptability, and knowledge transfer, especially in open environments where new subsystems can dynamically join or leave. In this work, we propose a Holonic Active Distillation architecture within a Holonic Multi-Agent System (HMAS) to address these issues. Our approach integrates Clustered Stream-Based Active Distillation (CSBAD), a framework in which specialized student models collect local data, query pseudo-labels from teacher models, and cluster into groups of similar sensors. Results show that the holonic organization balances local specialization with global generalization, while efficiently adapting to sensor departures and re-integrations. We also analyzed trade-offs among incremental model updates, system reorganization, and scalability limits. Our findings highlight the advantages of holonic learning for multi-sensor systems while identifying key challenges related to model drift and long-term adaptation."
+        },
+        {
+          "title": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation",
+          "url": "https://arxiv.org/abs/2606.31537",
+          "arxivId": "2606.31537",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.MA"
+          ],
+          "abstract": "Text-rich image generation is one of the most challenging settings in image generation, since models must simultaneously produce visually realistic images and render legible, semantically aligned, and layout-consistent text. Existing data pipelines usually follow a static crawl-filter-freeze paradigm. They collect candidate samples, filter them once, and freeze the accepted data for training. However, rejected samples are usually discarded, although they often contain useful failure signals such as OCR errors and semantic mismatches. As a result, later construction rounds may repeat the same failure modes. To address these limitations, we propose DataEvolver, a self-evolving multi-agent framework for text-rich image data construction. DataEvolver treats data construction as feedback-driven construction policy evolution. A Retriever collects candidate samples, a Verifier assigns quality scores and rejection causes, a Critic summarizes round-level feedback into semantic feedback, and a Generator completes under-covered regions through targeted synthesis. The updated feedback memory then guides the next construction round. Experiments on text-rich image generation benchmarks show that DataEvolver produces more useful training data than fixed-dataset baselines under matched data budgets. At the 0.75M scale on PixArt-alpha, DataEvolver improves OCR-F1 over the strongest baseline by 85.3 percent on TextScenesHQ and 35.3 percent on LongTextBench. The improvements are consistent across both evaluated benchmarks and also transfer to Show-o2, indicating that the benefit of DataEvolver is not tied to a single downstream generator. These results suggest that rejected samples can provide actionable feedback for improving text-rich image data construction."
+        },
+        {
+          "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+          "url": "https://arxiv.org/abs/2606.31498",
+          "arxivId": "2606.31498",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.SE"
+          ],
+          "abstract": "Agent interoperability protocols (MCP, A2A, ACP, ANP, and ERC-8004) have rapidly matured to enable identity, capability discovery, tool access, and message exchange between autonomous agents. However, as enterprises deploy heterogeneous agent fleets that must make collective decisions under governance constraints, a question arises: can these protocols support governed agent communities, or only task-oriented coordination? We present a systematic gap analysis applying a six-dimension governance requirements taxonomy (membership, deliberation, voting, dissent preservation, human escalation, and audit/replay) derived from organizational theory, multi-agent systems literature, and enterprise governance standards. We analyze each protocol's specification against this taxonomy, classifying capabilities as Supported, Partial, or Absent. The resulting gap matrix reveals that voting and dissent preservation are universally absent across all five protocols, deliberation is absent or at most partial, and no protocol encodes the full set of primitives required for governed agent communities. We distinguish extensible gaps (addressable through protocol extension mechanisms) from structural gaps (requiring a new architectural layer) and assess time-sensitivity based on observed protocol evolution velocity. The analysis establishes that agent community governance constitutes a missing architectural layer above current interoperability standards, not a missing feature within them."
+        },
+        {
+          "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+          "url": "https://arxiv.org/abs/2606.31073",
+          "arxivId": "2606.31073",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.RO"
+          ],
+          "abstract": "Large language models (LLMs) provide a promising interface for high-level robotic task planning, but their use in multi-UAV collaboration remains difficult to evaluate systematically. Existing UAV simulators mainly emphasize dynamics, perception, or low-level control, while existing LLM-agent benchmarks rarely capture aerial-robotics constraints such as partial observability, spatial coverage, UAV assignment, and multi-vehicle coordination. To bridge this gap, we present MultiUAV-Plat, a lightweight, easy-to-use, LLM-agent-oriented simulation platform for multi-UAV collaborative task planning. The platform exposes concise RESTful APIs, agent-facing observations, role-based information access, hidden validation logic, and optional 2D/3D visualization, allowing agents to solve missions through realistic tool interaction rather than privileged simulator access. Built on this platform, the MultiUAV-Plat Benchmark contains 75 mission sessions, 1500 natural-language tasks, and 9396 validation checks across target assignment, area search, and area assignment and patrol scenarios. We further propose Agent4Drone, a task-specific LLM agent framework that structures multi-UAV behavior into memory, observation, task understanding, planning, execution, and verification. In a full paired benchmark comparison, Agent4Drone achieves a 57.9% task pass rate, a 74.6% average task check pass rate, and a 72.0% global check pass rate, substantially outperforming a ReAct baseline at 30.6%, 47.9%, and 43.1%, respectively. Agent4Drone also reduces the total failed task rate from 32.4% to 12.9%. These results demonstrate that MultiUAV-Plat and MultiUAV-Plat Benchmark provide a reproducible foundation for studying LLM-driven multi-UAV autonomy under realistic information and execution constraints."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+              "url": "https://arxiv.org/abs/2606.31976",
+              "arxivId": "2606.31976",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Human-labeled data are widely used as reference annotations in ML, despite known variability across annotators in many expert-driven domains. In addition, expert annotation is slow, inconsistent, and remains a major bottleneck for scaling tasks like tree height bias classification in forestry remote sensing. We propose a multi-agent system (MAS) that orchestrates expert decision trees with Vision-Language Models (VLMs), treating the decision tree as a structural prior while VLMs perform localized semantic perception at individual nodes, with multi-agent voting to mitigate VLM stochasticity. We formalize a Decoupled Declarative Decision (D3) Framework that enables zero-modification generalization across diverse expert-defined decision structures. On a tree bias classification testbed, our framework outperforms supervised ML baselines and reduces the amount of expert labeling effort required. These results suggest that agentic orchestration of VLMs with expert priors can reproduce expert-defined labeling procedures at substantially lower annotation cost while maintaining interpretability."
+            },
+            {
+              "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+              "url": "https://arxiv.org/abs/2606.31966",
+              "arxivId": "2606.31966",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.CL",
+                "cs.CV"
+              ],
+              "abstract": "Recent multimodal large language models (MLLMs) have strong potential as embodied agents, but their ability to collaborate in visually grounded environments remains underexplored. To address this gap, we introduce MECoBench, a multimodal embodied cooperation benchmark with an evaluation platform spanning diverse real-world tasks, two cooperation structures, and three collaboration modes. Through extensive experiments across various MLLMs, we summarize three key findings: (i) Collaboration generally improves embodied task completion, but its benefits depend on balancing collaborative gains against coordination complexity. (ii) Communication is essential to collaboration gains, while the best collaboration mode depends on team size and model capability. (iii) Moreover, collaboration improves robustness under noisy priors and exploration conditions. Generally, MECoBench provides a systematic testbed for understanding the mechanisms and limits of multimodal embodied collaboration. Code and dataset are available at https://github.com/q-i-n-g/MECoBench."
+            },
+            {
+              "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge",
+              "url": "https://arxiv.org/abs/2606.31886",
+              "arxivId": "2606.31886",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LO"
+              ],
+              "abstract": "Distributed knowledge is a notion of group knowledge studied in multi-agent epistemic logic. Semantically, the distributed knowledge of a group is interpreted via an accessibility relation given by the intersection of the epistemic accessibility relations of the agents in that group. This paper investigates sequent calculi for epistemic logics of distributed knowledge based on K45, KD45, and S5. While cut elimination holds in existing sequent calculi for modal logics K45 and KD45, it fails in all the systems mentioned above. Instead, we establish the analytic cut property for all three systems by adapting Takano' s (2018) strategy, which restricts the cut formulas to the set of subformulas of the conclusion of the cut rule. As a corollary, the Craig interpolation theorem holds for all logics considered. We also show that all proof-theoretic results remain valid when the empty group is allowed for the distributed-knowledge operator, in which case the distributed knowledge for the empty group is interpreted as the global modality."
+            },
+            {
+              "title": "Inquisitive Action Logic",
+              "url": "https://arxiv.org/abs/2606.31866",
+              "arxivId": "2606.31866",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.LO",
+                "cs.MA"
+              ],
+              "abstract": "We introduce inquisitive action logic, InqAL, a multi-agent modal logic for reasoning about action. While traditional approaches focus on what properties of the outcome an agent can force, InqAL also captures what aspects of the outcome an agent determines through their actions. As we argue, such claims of agentive determination are naturally analyzed as modal claims involving questions. Technically, InqAL is a multi-agent extension of inquisitive neighborhood logic based on concurrent game structures. With respect to statements, it is expressively equivalent to the individual-agent fragment of the socially friendly coalition logic recently proposed by Goranko and Enqvist. We present an axiomatization of InqAL and prove completeness and decidability via the finite model property. Along the way, we establish a representation theorem for actual effectivity functions, associating to an agent the sets of outcomes corresponding to their possible actions; we give exact conditions under which a multi-agent neighborhood frame arises from a concurrent game structure."
+            },
+            {
+              "title": "The Logic of Data Access and Data Exchanges",
+              "url": "https://arxiv.org/abs/2606.31858",
+              "arxivId": "2606.31858",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.LO",
+                "cs.MA"
+              ],
+              "abstract": "We investigate a new logic that extends Dynamic Epistemic Logic (DEL), by combining standard epistemic modalities for (individual and distributed) propositional knowledge with operators for (conditional) non-propositional knowledge of a number (in which an agent or a group have knowledge of the value of some variable x, conditional on some additional information). We also generalize these operators, by considering formulas that express the fact that an agent or group can (conditionally) narrow down the possible values of the variable x to at most N possibilities (for some natural number N). In order to name and compare such hypothetical values, we extend the logic further with definite descriptions based on minimization operators, denoting the least of the N possible values of x (according to some fixed order) that are considered possible by the agent or group. On this static base, we consider DEL-style extensions with dynamic modalities for general 'data-exchange events' (covering private and public propositional announcements, but also secret hacking of a private database, or public sharing of one's data via open-source repositories, etc.). In such scenarios, whole 'chunks' of information may be exchanged or modified: once access to a given source is gained, all the 'data' stored at that specific location becomes available. We give complete axiomatizations for the resulting logics, and prove their decidability and co-expressivity."
+            },
+            {
+              "title": "Resolving Asynchronous Distributed Knowledge",
+              "url": "https://arxiv.org/abs/2606.31855",
+              "arxivId": "2606.31855",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.LO",
+                "cs.MA"
+              ],
+              "abstract": "There are by now various epistemic modal logics with intersection modalities for distributed knowledge and intersection update modalities for dynamic phenomena like agents sharing (all their) information, agents receiving information from other agents, and full information protocols. One of those is the logic of Resolving Distributed Knowledge, by Agotnes and Wang. It has distributed knowledge modalities for arbitrary subsets of the set of all agents and it also has so-called resolution modalities for arbitrary subsets of agents sharing their knowledge. In that logic, the agents not involved in the knowledge sharing are aware of the agents sharing knowledge, agents are memory-less, and the kind of dynamics represents synchronous updates, where there is common awareness of the global clock. In contrast, in this contribution we present a logic for Resolving Asynchronous Distributed Knowledge. It is an asynchronous generalization of the synchronous logic of resolving distributed knowledge. The logical semantics is history-based: truth is not only with respect to a given world in a model, but also with respect to a given history of prior resolutions, of which each individual agent can only observe a part. In particular, an agent is unaware of resolutions for groups of agents not including her. As is to be expected, this comes with many technical complications, for example concerning the axiomatization. The synchronous axioms relating resolution to distributed knowledge are now invalid. The modelling advantages of such an asynchronous novel logic, for distributed computing and similar areas, are however substantial and a major asset."
+            },
+            {
+              "title": "ForecastAgentSearch: Towards a Multi-Expert Agent Search System for Geopolitical Event Forecasting",
+              "url": "https://arxiv.org/abs/2606.31665",
+              "arxivId": "2606.31665",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Geopolitical event forecasting is a challenging task, as it requires understanding complex regional contexts, dynamic event signals, and uncertain future outcomes. Recent advances in large language model agents provide new opportunities for building forecasting systems that can reason with diverse sources and expert perspectives. In this paper, we present \\textit{ForecastAgentSearch}, a preliminary framework that formulates geopolitical event forecasting as a multi-expert agent search problem. Given a forecasting query, the system first analyzes the task context, then searches and ranks relevant expert agents based on their regional knowledge, domain expertise, reliability, and complementarity. The selected agents provide specialized analyses, which are further coordinated to generate a final forecast with explanations and uncertainty awareness. We discuss the key design challenges of agent profiling, expert retrieval, ranking, and multi-agent coordination, and outline possible evaluation protocols for future development. This work aims to provide an initial step toward searchable and reliable agent-based forecasting systems."
+            },
+            {
+              "title": "A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Agents",
+              "url": "https://arxiv.org/abs/2606.31635",
+              "arxivId": "2606.31635",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "eess.SY",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Fault recovery in process plants still relies heavily on plant operators, especially when faults fall outside predefined supervisory logic. Operators interpret alarms, procedures, P\\&IDs, interlocks, and process trends, then decide how to move the plant to a safe operating mode without triggering a shutdown. This paper examines how Large Language Model (LLM) agents can support such recovery decisions. The proposed framework treats the LLM as a constrained supervisory planner. It uses plant-specific knowledge to propose recovery actions, and every proposal is checked by an external validator (symbolic or simulation-based) before actuation. The paper develops three design dimensions for applying the framework: the recovery patterns for which LLM agents are useful, the validation strategies that separate admissible from inadmissible proposals, and the deployment constraints imposed by latency, knowledge engineering, safety integration, and model lifecycle management. To make the framework directly usable, two openly available executable Python environments are provided. Both re-implement established case studies, a modular mixing module and a continuous stirred-tank reactor, extended with configurable faults and defined interfaces for custom recovery and validation methods."
+            },
+            {
+              "title": "A Large-Scale Empirical Evaluation of MMAO Under Fair-Budget Continuous and Discrete Benchmarks",
+              "url": "https://arxiv.org/abs/2606.31584",
+              "arxivId": "2606.31584",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.MA"
+              ],
+              "abstract": "This paper evaluates the Metabolic Multi-Agent Optimizer (MMAO) under a stricter empirical protocol rather than reintroducing the framework itself. The study asks whether MMAO's closed-loop resource-allocation principle remains credible under broader, more standard, and more explicitly budget-controlled continuous and discrete benchmarks. The main completed matrix covers eight CEC2017 functions at 10D and 30D with 20 seeds each, and five TSPLIB instances with 20 seeds each, together with stronger reproducible baselines including PSO-lite, ES-lite, and an iterated-greedy 2-opt route baseline. We further add trajectory-level diagnostics for communal budget, success rate, role evolution, and population turnover, plus an auxiliary OR-Library multiple-knapsack slice to extend the discrete evidence beyond routing. Under this protocol, MMAO clearly outperforms the external baseline set on the continuous side and on the TSPLIB side, while the ablation variants remain much closer to the full method than the external baselines are. We therefore position MMAO as a benchmark-backed cross-domain adaptive framework whose most clearly validated value is endogenous resource redistribution under evidence pressure, while also noting that the strongest remaining gap is not basic workability but sharper mechanism isolation and broader competition-grade comparison."
+            },
+            {
+              "title": "Holonic Active Distillation for Scalable Multi-Agent Learning in Multi-Sensor Systems",
+              "url": "https://arxiv.org/abs/2606.31578",
+              "arxivId": "2606.31578",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "The rapid expansion of sensor-based networks introduces major challenges in scalability, adaptability, and knowledge transfer, especially in open environments where new subsystems can dynamically join or leave. In this work, we propose a Holonic Active Distillation architecture within a Holonic Multi-Agent System (HMAS) to address these issues. Our approach integrates Clustered Stream-Based Active Distillation (CSBAD), a framework in which specialized student models collect local data, query pseudo-labels from teacher models, and cluster into groups of similar sensors. Results show that the holonic organization balances local specialization with global generalization, while efficiently adapting to sensor departures and re-integrations. We also analyzed trade-offs among incremental model updates, system reorganization, and scalability limits. Our findings highlight the advantages of holonic learning for multi-sensor systems while identifying key challenges related to model drift and long-term adaptation."
+            },
+            {
+              "title": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation",
+              "url": "https://arxiv.org/abs/2606.31537",
+              "arxivId": "2606.31537",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.MA"
+              ],
+              "abstract": "Text-rich image generation is one of the most challenging settings in image generation, since models must simultaneously produce visually realistic images and render legible, semantically aligned, and layout-consistent text. Existing data pipelines usually follow a static crawl-filter-freeze paradigm. They collect candidate samples, filter them once, and freeze the accepted data for training. However, rejected samples are usually discarded, although they often contain useful failure signals such as OCR errors and semantic mismatches. As a result, later construction rounds may repeat the same failure modes. To address these limitations, we propose DataEvolver, a self-evolving multi-agent framework for text-rich image data construction. DataEvolver treats data construction as feedback-driven construction policy evolution. A Retriever collects candidate samples, a Verifier assigns quality scores and rejection causes, a Critic summarizes round-level feedback into semantic feedback, and a Generator completes under-covered regions through targeted synthesis. The updated feedback memory then guides the next construction round. Experiments on text-rich image generation benchmarks show that DataEvolver produces more useful training data than fixed-dataset baselines under matched data budgets. At the 0.75M scale on PixArt-alpha, DataEvolver improves OCR-F1 over the strongest baseline by 85.3 percent on TextScenesHQ and 35.3 percent on LongTextBench. The improvements are consistent across both evaluated benchmarks and also transfer to Show-o2, indicating that the benefit of DataEvolver is not tied to a single downstream generator. These results suggest that rejected samples can provide actionable feedback for improving text-rich image data construction."
+            },
+            {
+              "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+              "url": "https://arxiv.org/abs/2606.31498",
+              "arxivId": "2606.31498",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.SE"
+              ],
+              "abstract": "Agent interoperability protocols (MCP, A2A, ACP, ANP, and ERC-8004) have rapidly matured to enable identity, capability discovery, tool access, and message exchange between autonomous agents. However, as enterprises deploy heterogeneous agent fleets that must make collective decisions under governance constraints, a question arises: can these protocols support governed agent communities, or only task-oriented coordination? We present a systematic gap analysis applying a six-dimension governance requirements taxonomy (membership, deliberation, voting, dissent preservation, human escalation, and audit/replay) derived from organizational theory, multi-agent systems literature, and enterprise governance standards. We analyze each protocol's specification against this taxonomy, classifying capabilities as Supported, Partial, or Absent. The resulting gap matrix reveals that voting and dissent preservation are universally absent across all five protocols, deliberation is absent or at most partial, and no protocol encodes the full set of primitives required for governed agent communities. We distinguish extensible gaps (addressable through protocol extension mechanisms) from structural gaps (requiring a new architectural layer) and assess time-sensitivity based on observed protocol evolution velocity. The analysis establishes that agent community governance constitutes a missing architectural layer above current interoperability standards, not a missing feature within them."
+            },
+            {
+              "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+              "url": "https://arxiv.org/abs/2606.31073",
+              "arxivId": "2606.31073",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA",
+                "cs.RO"
+              ],
+              "abstract": "Large language models (LLMs) provide a promising interface for high-level robotic task planning, but their use in multi-UAV collaboration remains difficult to evaluate systematically. Existing UAV simulators mainly emphasize dynamics, perception, or low-level control, while existing LLM-agent benchmarks rarely capture aerial-robotics constraints such as partial observability, spatial coverage, UAV assignment, and multi-vehicle coordination. To bridge this gap, we present MultiUAV-Plat, a lightweight, easy-to-use, LLM-agent-oriented simulation platform for multi-UAV collaborative task planning. The platform exposes concise RESTful APIs, agent-facing observations, role-based information access, hidden validation logic, and optional 2D/3D visualization, allowing agents to solve missions through realistic tool interaction rather than privileged simulator access. Built on this platform, the MultiUAV-Plat Benchmark contains 75 mission sessions, 1500 natural-language tasks, and 9396 validation checks across target assignment, area search, and area assignment and patrol scenarios. We further propose Agent4Drone, a task-specific LLM agent framework that structures multi-UAV behavior into memory, observation, task understanding, planning, execution, and verification. In a full paired benchmark comparison, Agent4Drone achieves a 57.9% task pass rate, a 74.6% average task check pass rate, and a 72.0% global check pass rate, substantially outperforming a ReAct baseline at 30.6%, 47.9%, and 43.1%, respectively. Agent4Drone also reduces the total failed task rate from 32.4% to 12.9%. These results demonstrate that MultiUAV-Plat and MultiUAV-Plat Benchmark provide a reproducible foundation for studying LLM-driven multi-UAV autonomy under realistic information and execution constraints."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 6,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 6,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 4,
+                  "theoreticalDepth": 1,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+              "url": "https://arxiv.org/abs/2606.31976",
+              "arxivId": "2606.31976",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+              "url": "https://arxiv.org/abs/2606.31966",
+              "arxivId": "2606.31966",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.CL",
+                "cs.CV"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge",
+              "url": "https://arxiv.org/abs/2606.31886",
+              "arxivId": "2606.31886",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LO"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "Inquisitive Action Logic",
+              "url": "https://arxiv.org/abs/2606.31866",
+              "arxivId": "2606.31866",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.LO",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "The Logic of Data Access and Data Exchanges",
+              "url": "https://arxiv.org/abs/2606.31858",
+              "arxivId": "2606.31858",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.LO",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 6.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Resolving Asynchronous Distributed Knowledge",
+              "url": "https://arxiv.org/abs/2606.31855",
+              "arxivId": "2606.31855",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.LO",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 6.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "ForecastAgentSearch: Towards a Multi-Expert Agent Search System for Geopolitical Event Forecasting",
+              "url": "https://arxiv.org/abs/2606.31665",
+              "arxivId": "2606.31665",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 1.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 16.0,
+                "total": 16.0
+              }
+            },
+            {
+              "title": "A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Agents",
+              "url": "https://arxiv.org/abs/2606.31635",
+              "arxivId": "2606.31635",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "eess.SY",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "A Large-Scale Empirical Evaluation of MMAO Under Fair-Budget Continuous and Discrete Benchmarks",
+              "url": "https://arxiv.org/abs/2606.31584",
+              "arxivId": "2606.31584",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -3.0,
+                "baseTotal": 10.0,
+                "total": 10.0
+              }
+            },
+            {
+              "title": "Holonic Active Distillation for Scalable Multi-Agent Learning in Multi-Sensor Systems",
+              "url": "https://arxiv.org/abs/2606.31578",
+              "arxivId": "2606.31578",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation",
+              "url": "https://arxiv.org/abs/2606.31537",
+              "arxivId": "2606.31537",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+              "url": "https://arxiv.org/abs/2606.31498",
+              "arxivId": "2606.31498",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.SE"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+              "url": "https://arxiv.org/abs/2606.31073",
+              "arxivId": "2606.31073",
+              "date": "2026-06-30",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA",
+                "cs.RO"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+          "url": "https://arxiv.org/abs/2606.31976",
+          "arxivId": "2606.31976",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "https://arxiv.org/abs/2606.31966",
+          "arxivId": "2606.31966",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Analytic Cut in Epistemic Logics with Distributed Knowledge",
+          "url": "https://arxiv.org/abs/2606.31886",
+          "arxivId": "2606.31886",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LO"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Inquisitive Action Logic",
+          "url": "https://arxiv.org/abs/2606.31866",
+          "arxivId": "2606.31866",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "The Logic of Data Access and Data Exchanges",
+          "url": "https://arxiv.org/abs/2606.31858",
+          "arxivId": "2606.31858",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 6.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Resolving Asynchronous Distributed Knowledge",
+          "url": "https://arxiv.org/abs/2606.31855",
+          "arxivId": "2606.31855",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 6.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "ForecastAgentSearch: Towards a Multi-Expert Agent Search System for Geopolitical Event Forecasting",
+          "url": "https://arxiv.org/abs/2606.31665",
+          "arxivId": "2606.31665",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 1.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 16.0,
+            "total": 16.0
+          }
+        },
+        {
+          "title": "A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Agents",
+          "url": "https://arxiv.org/abs/2606.31635",
+          "arxivId": "2606.31635",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "A Large-Scale Empirical Evaluation of MMAO Under Fair-Budget Continuous and Discrete Benchmarks",
+          "url": "https://arxiv.org/abs/2606.31584",
+          "arxivId": "2606.31584",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -3.0,
+            "baseTotal": 10.0,
+            "total": 10.0
+          }
+        },
+        {
+          "title": "Holonic Active Distillation for Scalable Multi-Agent Learning in Multi-Sensor Systems",
+          "url": "https://arxiv.org/abs/2606.31578",
+          "arxivId": "2606.31578",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation",
+          "url": "https://arxiv.org/abs/2606.31537",
+          "arxivId": "2606.31537",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+          "url": "https://arxiv.org/abs/2606.31498",
+          "arxivId": "2606.31498",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+          "url": "https://arxiv.org/abs/2606.31073",
+          "arxivId": "2606.31073",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "https://arxiv.org/abs/2606.31966",
+          "arxivId": "2606.31966",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+          "url": "https://arxiv.org/abs/2606.31498",
+          "arxivId": "2606.31498",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation",
+          "url": "https://arxiv.org/abs/2606.31537",
+          "arxivId": "2606.31537",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+          "url": "https://arxiv.org/abs/2606.31073",
+          "arxivId": "2606.31073",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Inquisitive Action Logic",
+          "url": "https://arxiv.org/abs/2606.31866",
+          "arxivId": "2606.31866",
+          "date": "2026-06-30",
+          "source": "arXiv",
+          "categories": [
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+            "url": "https://arxiv.org/abs/2606.31966",
+            "arxivId": "2606.31966",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI",
+              "cs.CL",
+              "cs.CV"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MECoBench：具身环境中多模态智能体协作的系统性研究",
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "具身智能",
+              "评测方法",
+              "协作机制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前多模态大语言模型虽具备成为具身智能体的潜力，但在视觉接地环境中如何协作仍不清楚。现有评测多依赖文本描述或符号状态，忽略了真实感知、探索与空间协调带来的挑战。本文旨在系统研究多智能体在动态视觉环境中的协作能力，填补具身协作评测的空白。",
+              "modelAndSetup": "研究构建了MECoBench平台，涵盖192个测试案例，涉及八类现实任务，在3D家庭模拟环境中评估多智能体协作。设定平行与顺序两种协作结构，支持不同团队规模、协作模式及通信机制。通过控制变量实验，评估模型在任务完成率、鲁棒性等方面的表现。",
+              "contributionsAndResults": "提出了首个系统性的多模态具身协作评测基准MECoBench，并揭示三大发现：协作通常提升性能但存在最优团队规模；通信是关键增益来源，最佳模式取决于团队大小与模型能力；协作显著增强在噪声与探索条件下的鲁棒性。",
+              "methodsAndTechniques": "采用虚拟家庭仿真环境构建多样化任务场景，引入并行与序列协作结构以反映真实空间约束。设计三种协作模式（隔离、集中、去中心化）和多种通信协议，通过消融实验分析各因素影响。方法强调视觉输入、实时交互与分布式探索的耦合效应。",
+              "limitationsAndReadingValue": "局限在于任务局限于室内场景，数据规模相对较小，且团队规模最大仅测试至五人。结论在开放世界或更大群体中尚需验证。最值得阅读的是其问题设定、协作机制设计与系统的实证分析，为未来多智能体具身协作提供重要参考。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MECoBench：具身环境中多模态智能体协作的系统性研究",
+            "summarySections": {
+              "backgroundAndQuestion": "当前多模态大语言模型虽具备成为具身智能体的潜力，但在视觉接地环境中如何协作仍不清楚。现有评测多依赖文本描述或符号状态，忽略了真实感知、探索与空间协调带来的挑战。本文旨在系统研究多智能体在动态视觉环境中的协作能力，填补具身协作评测的空白。",
+              "modelAndSetup": "研究构建了MECoBench平台，涵盖192个测试案例，涉及八类现实任务，在3D家庭模拟环境中评估多智能体协作。设定平行与顺序两种协作结构，支持不同团队规模、协作模式及通信机制。通过控制变量实验，评估模型在任务完成率、鲁棒性等方面的表现。",
+              "contributionsAndResults": "提出了首个系统性的多模态具身协作评测基准MECoBench，并揭示三大发现：协作通常提升性能但存在最优团队规模；通信是关键增益来源，最佳模式取决于团队大小与模型能力；协作显著增强在噪声与探索条件下的鲁棒性。",
+              "methodsAndTechniques": "采用虚拟家庭仿真环境构建多样化任务场景，引入并行与序列协作结构以反映真实空间约束。设计三种协作模式（隔离、集中、去中心化）和多种通信协议，通过消融实验分析各因素影响。方法强调视觉输入、实时交互与分布式探索的耦合效应。",
+              "limitationsAndReadingValue": "局限在于任务局限于室内场景，数据规模相对较小，且团队规模最大仅测试至五人。结论在开放世界或更大群体中尚需验证。最值得阅读的是其问题设定、协作机制设计与系统的实证分析，为未来多智能体具身协作提供重要参考。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "具身智能",
+              "评测方法",
+              "协作机制"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+            "url": "https://arxiv.org/abs/2606.31498",
+            "arxivId": "2606.31498",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.SE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "代理互操作性协议中的治理差距：MCP、A2A 和 ACP 无法表达的内容",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "基准评测",
+              "协议分析",
+              "综述/教程"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "智能体",
+              "治理",
+              "协议互操作性",
+              "决策机制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前代理互操作性协议如MCP、A2A和ACP已支持工具调用、发现与通信，但企业部署异构代理群时面临集体决策的治理难题。这些协议虽能协调任务执行，却缺乏对成员资格、审议、投票、异议保留、人工升级和审计等治理维度的支持。论文追问：现有协议能否支撑受控的代理社区，还是仅限于任务级协作？",
+              "modelAndSetup": "研究基于组织理论、多智能体系统文献与企业治理标准，构建六维治理需求分类法（G1-G6），并据此对五种主流协议进行规范级分析。评估不依赖上层应用实现，而是考察协议原生是否编码相应语义。通过逐项比对MCP、A2A、ACP、ANP与ERC-8004的官方规范，判断各协议在每维度上的能力为‘支持’‘部分’或‘缺失’。",
+              "contributionsAndResults": "论文揭示所有协议均缺失投票与异议保留功能，审议能力普遍薄弱或缺失，无一提供完整治理原语。尽管部分协议在成员身份或审计方面有初步支持，但皆非面向治理设计。结果表明，治理并非某协议的个别缺陷，而是整个互操作性栈中缺失的一层架构，需独立于现有协调协议之外构建。",
+              "methodsAndTechniques": "作者采用系统性差距矩阵方法，将治理需求映射至协议规范细节，区分‘可扩展’与‘结构性’缺口。例如A2A虽具扩展机制，但尚无治理相关扩展出现；而MCP的客户端-服务器架构难以承载社区状态。分析强调协议原生语义的重要性，而非将其作为通用消息传输载体。",
+              "limitationsAndReadingValue": "分析基于2026年6月前的协议版本，且‘部分’判定含主观判断。未考虑非西方治理模式，也未评估在协议之上构建治理系统的可行性。但论文价值在于清晰指出治理不应由应用层重复实现。最值得阅读的是其治理分类法、差距矩阵及对架构分层的论证，为未来协议设计提供关键方向。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "代理互操作性协议中的治理差距：MCP、A2A 和 ACP 无法表达的内容",
+            "summarySections": {
+              "backgroundAndQuestion": "当前代理互操作性协议如MCP、A2A和ACP已支持工具调用、发现与通信，但企业部署异构代理群时面临集体决策的治理难题。这些协议虽能协调任务执行，却缺乏对成员资格、审议、投票、异议保留、人工升级和审计等治理维度的支持。论文追问：现有协议能否支撑受控的代理社区，还是仅限于任务级协作？",
+              "modelAndSetup": "研究基于组织理论、多智能体系统文献与企业治理标准，构建六维治理需求分类法（G1-G6），并据此对五种主流协议进行规范级分析。评估不依赖上层应用实现，而是考察协议原生是否编码相应语义。通过逐项比对MCP、A2A、ACP、ANP与ERC-8004的官方规范，判断各协议在每维度上的能力为‘支持’‘部分’或‘缺失’。",
+              "contributionsAndResults": "论文揭示所有协议均缺失投票与异议保留功能，审议能力普遍薄弱或缺失，无一提供完整治理原语。尽管部分协议在成员身份或审计方面有初步支持，但皆非面向治理设计。结果表明，治理并非某协议的个别缺陷，而是整个互操作性栈中缺失的一层架构，需独立于现有协调协议之外构建。",
+              "methodsAndTechniques": "作者采用系统性差距矩阵方法，将治理需求映射至协议规范细节，区分‘可扩展’与‘结构性’缺口。例如A2A虽具扩展机制，但尚无治理相关扩展出现；而MCP的客户端-服务器架构难以承载社区状态。分析强调协议原生语义的重要性，而非将其作为通用消息传输载体。",
+              "limitationsAndReadingValue": "分析基于2026年6月前的协议版本，且‘部分’判定含主观判断。未考虑非西方治理模式，也未评估在协议之上构建治理系统的可行性。但论文价值在于清晰指出治理不应由应用层重复实现。最值得阅读的是其治理分类法、差距矩阵及对架构分层的论证，为未来协议设计提供关键方向。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "智能体",
+              "治理",
+              "协议互操作性",
+              "决策机制"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "基准评测",
+              "协议分析",
+              "综述/教程"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Generation",
+            "url": "https://arxiv.org/abs/2606.31537",
+            "arxivId": "2606.31537",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.CV",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "DataEvolver: 面向文本丰富图像生成的自演化多智能体数据构建",
+            "researchParadigmTags": [
+              "系统框架",
+              "数据集构建",
+              "实验验证",
+              "机制设计",
+              "评测方法"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "多智能体系统",
+              "智能体",
+              "数据构建",
+              "文本丰富图像生成"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有文本丰富图像生成的数据构建多采用静态爬取-过滤-冻结流程，失败样本被直接丢弃，无法反馈改进过程。这导致重复出现OCR错误、语义不一致等问题，尤其在长文本、复杂布局场景下难以覆盖。论文指出，应将拒绝样本视为可复用的诊断信号，而非无用副产品，从而推动数据构建从一次性流程转向持续演化的闭环系统。",
+              "modelAndSetup": "论文研究如何自动构建高质量文本丰富图像训练数据。输入是主题需求，输出是通过检索与合成得到的图文对。系统采用固定验证器评估图像质量、文本可读性与语义一致性，并将失败原因汇总为反馈信号。实验在TextScenesHQ和LongTextBench上进行，使用PixArt-α和Show-o2作为下游模型，比较不同数据源在相同预算下的OCR-F1等指标表现。",
+              "contributionsAndResults": "论文提出DataEvolver，首次将数据构建视为基于反馈的策略演化过程。其核心贡献在于闭环多智能体框架，能利用失败样本指导后续迭代。实验显示，在0.75M数据量下，相比最强基线，OCR-F1在TextScenesHQ上提升85.3%，LongTextBench上提升35.3%，且效果跨模型一致，证明该方法产出更有效的训练数据。",
+              "methodsAndTechniques": "方法由四个智能体组成闭环：检索器获取候选样本，验证器生成通过集与失败统计，批评者将数值反馈转化为自然语言建议（如查询多样化），生成器针对覆盖不足区域合成新样本。关键机制是将拒绝模式提炼为语义反馈，用于更新检索策略与生成提示，使系统能主动规避历史失败并填补长尾分布，实现数据构建政策的自我进化。",
+              "limitationsAndReadingValue": "局限包括依赖验证器可靠性，OCR噪声可能影响反馈质量；Scaling趋势非严格定律；且聚焦文本图像，泛化至其他模态尚需验证。最值得读的是其问题抽象——将数据工程变为可迭代优化过程。读者应关注方法设计与消融分析，理解反馈如何转化为策略更新，这对构建高精度视觉-语言数据具有普适启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "DataEvolver: 面向文本丰富图像生成的自演化多智能体数据构建",
+            "summarySections": {
+              "backgroundAndQuestion": "现有文本丰富图像生成的数据构建多采用静态爬取-过滤-冻结流程，失败样本被直接丢弃，无法反馈改进过程。这导致重复出现OCR错误、语义不一致等问题，尤其在长文本、复杂布局场景下难以覆盖。论文指出，应将拒绝样本视为可复用的诊断信号，而非无用副产品，从而推动数据构建从一次性流程转向持续演化的闭环系统。",
+              "modelAndSetup": "论文研究如何自动构建高质量文本丰富图像训练数据。输入是主题需求，输出是通过检索与合成得到的图文对。系统采用固定验证器评估图像质量、文本可读性与语义一致性，并将失败原因汇总为反馈信号。实验在TextScenesHQ和LongTextBench上进行，使用PixArt-α和Show-o2作为下游模型，比较不同数据源在相同预算下的OCR-F1等指标表现。",
+              "contributionsAndResults": "论文提出DataEvolver，首次将数据构建视为基于反馈的策略演化过程。其核心贡献在于闭环多智能体框架，能利用失败样本指导后续迭代。实验显示，在0.75M数据量下，相比最强基线，OCR-F1在TextScenesHQ上提升85.3%，LongTextBench上提升35.3%，且效果跨模型一致，证明该方法产出更有效的训练数据。",
+              "methodsAndTechniques": "方法由四个智能体组成闭环：检索器获取候选样本，验证器生成通过集与失败统计，批评者将数值反馈转化为自然语言建议（如查询多样化），生成器针对覆盖不足区域合成新样本。关键机制是将拒绝模式提炼为语义反馈，用于更新检索策略与生成提示，使系统能主动规避历史失败并填补长尾分布，实现数据构建政策的自我进化。",
+              "limitationsAndReadingValue": "局限包括依赖验证器可靠性，OCR噪声可能影响反馈质量；Scaling趋势非严格定律；且聚焦文本图像，泛化至其他模态尚需验证。最值得读的是其问题抽象——将数据工程变为可迭代优化过程。读者应关注方法设计与消融分析，理解反馈如何转化为策略更新，这对构建高精度视觉-语言数据具有普适启发。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "多智能体系统",
+              "智能体",
+              "数据构建",
+              "文本丰富图像生成"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "数据集构建",
+              "实验验证",
+              "机制设计",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+            "url": "https://arxiv.org/abs/2606.31073",
+            "arxivId": "2606.31073",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA",
+              "cs.RO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MultiUAV-Plat: 面向大语言模型的多无人机协同任务规划平台、基准与框架",
+            "researchParadigmTags": [
+              "基准评测",
+              "系统框架",
+              "数据集构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "无人机任务规划",
+              "评测方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有大语言模型虽能处理机器人高层指令，但在多无人机协同任务中缺乏系统性评估手段。传统模拟器侧重物理控制，而语言智能体评测常忽略空中机器人特有的局部观测、空间覆盖和多机协调约束。这导致难以衡量语言驱动的无人机能否在受限接口下完成真实闭环任务。",
+              "modelAndSetup": "论文构建了一个轻量级仿真平台MultiUAV-Plat，提供RESTful API供智能体调用，并通过局部感知、角色权限和隐藏验证机制模拟真实操作条件。在此基础上设计了含75个会话、1500项自然语言任务的基准测试，任务涵盖目标分配、区域搜索与巡逻，评估基于不可见的自动校验规则而非全局状态访问。",
+              "contributionsAndResults": "论文提出了首个面向大语言模型的多无人机可执行任务评测体系，揭示了通用语言智能体在闭环保证下的表现瓶颈。提出的Agent4Drone框架相较ReAct基线将任务通过率从30.6%提升至57.9%，显著降低完全失败率，证明结构化记忆、规划与验证机制对复杂空中协作的有效性。",
+              "methodsAndTechniques": "Agent4Drone将任务分解为观察、理解、记忆、规划、执行与验证六步闭环流程，显式建模无人机选择、局部感知更新与状态反馈机制。其核心在于短视规划与持续验证结合，避免长序列误操作累积，并通过共享黑板维护可见上下文，确保决策符合平台的信息边界限制。",
+              "limitationsAndReadingValue": "结果依赖于特定平台设定，且强后端模型下部分最终状态验证仍存挑战，说明目标定位与完成判定仍是难点。读者应重点关注其评测设计理念——如何用隐藏检查点实现可复现的闭环保证，以及Agent4Drone如何平衡通用性与任务特异性，这对构建现实世界语言驱动机器人系统具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MultiUAV-Plat: 面向大语言模型的多无人机协同任务规划平台、基准与框架",
+            "summarySections": {
+              "backgroundAndQuestion": "现有大语言模型虽能处理机器人高层指令，但在多无人机协同任务中缺乏系统性评估手段。传统模拟器侧重物理控制，而语言智能体评测常忽略空中机器人特有的局部观测、空间覆盖和多机协调约束。这导致难以衡量语言驱动的无人机能否在受限接口下完成真实闭环任务。",
+              "modelAndSetup": "论文构建了一个轻量级仿真平台MultiUAV-Plat，提供RESTful API供智能体调用，并通过局部感知、角色权限和隐藏验证机制模拟真实操作条件。在此基础上设计了含75个会话、1500项自然语言任务的基准测试，任务涵盖目标分配、区域搜索与巡逻，评估基于不可见的自动校验规则而非全局状态访问。",
+              "contributionsAndResults": "论文提出了首个面向大语言模型的多无人机可执行任务评测体系，揭示了通用语言智能体在闭环保证下的表现瓶颈。提出的Agent4Drone框架相较ReAct基线将任务通过率从30.6%提升至57.9%，显著降低完全失败率，证明结构化记忆、规划与验证机制对复杂空中协作的有效性。",
+              "methodsAndTechniques": "Agent4Drone将任务分解为观察、理解、记忆、规划、执行与验证六步闭环流程，显式建模无人机选择、局部感知更新与状态反馈机制。其核心在于短视规划与持续验证结合，避免长序列误操作累积，并通过共享黑板维护可见上下文，确保决策符合平台的信息边界限制。",
+              "limitationsAndReadingValue": "结果依赖于特定平台设定，且强后端模型下部分最终状态验证仍存挑战，说明目标定位与完成判定仍是难点。读者应重点关注其评测设计理念——如何用隐藏检查点实现可复现的闭环保证，以及Agent4Drone如何平衡通用性与任务特异性，这对构建现实世界语言驱动机器人系统具有指导意义。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "无人机任务规划",
+              "评测方法"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "系统框架",
+              "数据集构建",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Inquisitive Action Logic",
+            "url": "https://arxiv.org/abs/2606.31866",
+            "arxivId": "2606.31866",
+            "date": "2026-06-30",
+            "source": "arXiv",
+            "categories": [
+              "cs.LO",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Inquisitive Action Logic",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "公理化",
+              "表示定理"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "行动逻辑",
+              "问题语义",
+              "能力与责任",
+              "邻域语义"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统行动逻辑关注智能体能否强制产生特定结果，但难以表达‘决定’或‘影响’这类更精细的责任归属问题。例如，在合作制陶场景中，一人塑形、一人上色，需区分谁决定了形状、谁决定了颜色。本文指出，这类‘决定’本质上是关于问题的答案是否由某智能体的动作所确定，因此需要一种能处理问题（而非仅命题）的逻辑框架。",
+              "modelAndSetup": "论文提出InqAL，一种基于并发博弈结构的多智能体逻辑，其语义建立在邻域模型之上，邻域代表各智能体动作可能产生的结果集合。公式可表达命题性陈述，也可表达关于问题的支持关系。核心是通过模态算子组合来刻画‘某问题的答案未被预先决定，但一经固定某智能体动作即被决定’这一‘决定’关系。",
+              "contributionsAndResults": "主要贡献是建立了InqAL逻辑及其公理化体系，并证明其可靠性和完备性，同时确立了有限模型性质与可判定性。关键成果是给出了实际效应函数的完全特征刻画——即哪些邻域函数族可还原为某个并发博弈结构，这为逻辑提供了坚实的语义基础，并连接了邻域语义与博弈论模型。",
+              "methodsAndTechniques": "方法结合了疑问逻辑与邻域模态逻辑，用支持语义处理问题，通过二元条件模态定义智能体专属的一元模态。核心技巧是利用群结构与良序构造典范模型，并证明其可由并发博弈实现。决定性断言通过¬□q ∧ ◻ₐq形式化，分别捕捉‘答案非先验确定’与‘随智能体动作而确定’两个条件。",
+              "limitationsAndReadingValue": "局限在于目前仅处理单个智能体而非联盟，向联盟扩展存在技术障碍。结论依赖理想化模型假设，如完全信息与同步行动。最值得阅读的是其对‘决定’的逻辑建模思路、实际效应函数的表示定理，以及将问题纳入行动逻辑的技术路径，这对责任归因与多智能体交互的形式化分析具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Inquisitive Action Logic",
+            "summarySections": {
+              "backgroundAndQuestion": "传统行动逻辑关注智能体能否强制产生特定结果，但难以表达‘决定’或‘影响’这类更精细的责任归属问题。例如，在合作制陶场景中，一人塑形、一人上色，需区分谁决定了形状、谁决定了颜色。本文指出，这类‘决定’本质上是关于问题的答案是否由某智能体的动作所确定，因此需要一种能处理问题（而非仅命题）的逻辑框架。",
+              "modelAndSetup": "论文提出InqAL，一种基于并发博弈结构的多智能体逻辑，其语义建立在邻域模型之上，邻域代表各智能体动作可能产生的结果集合。公式可表达命题性陈述，也可表达关于问题的支持关系。核心是通过模态算子组合来刻画‘某问题的答案未被预先决定，但一经固定某智能体动作即被决定’这一‘决定’关系。",
+              "contributionsAndResults": "主要贡献是建立了InqAL逻辑及其公理化体系，并证明其可靠性和完备性，同时确立了有限模型性质与可判定性。关键成果是给出了实际效应函数的完全特征刻画——即哪些邻域函数族可还原为某个并发博弈结构，这为逻辑提供了坚实的语义基础，并连接了邻域语义与博弈论模型。",
+              "methodsAndTechniques": "方法结合了疑问逻辑与邻域模态逻辑，用支持语义处理问题，通过二元条件模态定义智能体专属的一元模态。核心技巧是利用群结构与良序构造典范模型，并证明其可由并发博弈实现。决定性断言通过¬□q ∧ ◻ₐq形式化，分别捕捉‘答案非先验确定’与‘随智能体动作而确定’两个条件。",
+              "limitationsAndReadingValue": "局限在于目前仅处理单个智能体而非联盟，向联盟扩展存在技术障碍。结论依赖理想化模型假设，如完全信息与同步行动。最值得阅读的是其对‘决定’的逻辑建模思路、实际效应函数的表示定理，以及将问题纳入行动逻辑的技术路径，这对责任归因与多智能体交互的形式化分析具有启发意义。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "行动逻辑",
+              "问题语义",
+              "能力与责任",
+              "邻域语义"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "公理化",
+              "表示定理"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
