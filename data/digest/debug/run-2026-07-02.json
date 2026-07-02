@@ -1,0 +1,2491 @@
+{
+  "date": "2026-07-02",
+  "generatedAt": "2026-07-02T06:23:33.879159+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-01",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607010000 TO 202607012359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607010000 TO 202607012359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          }
+        },
+        "dedupedCount": 8
+      },
+      "arxivTotalResults": 8,
+      "fetchedCount": 8,
+      "fetchedPapers": [
+        {
+          "title": "Online Fair Division Meets Reordering Buffers",
+          "url": "https://arxiv.org/abs/2607.01159",
+          "arxivId": "2607.01159",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS"
+          ],
+          "abstract": "We study the online fair division of indivisible mixed manna among agents with additive valuation functions. Under the standard online model, at each time step an indivisible item arrives; each agent may assign it a positive, negative, or zero value, and it must be irrevocably allocated, before the arrival of the next item. At the same time, we also wish to maintain some fairness guarantee, and in this work we focus on envy-freeness (EF) and one of its most prominent relaxations, envy-freeness up to one item (EF1). Given the strong negative and the scarce positive results for this problem without additional assumptions, we augment our algorithms with buffers that can store and rearrange a limited number of items. This setting interpolates naturally between the fully online case (no buffer) and the fully offline case (a buffer large enough to hold all items). We show that algorithms equipped with reasonably sized buffers can achieve strong guarantees for personalized $k$-value instances, i.e., instances in which each agent assigns at most $k$ distinct values to items. In particular, we construct allocations that are EF1 at every time step and EF at most time steps, using a buffer of size linear in $k$ and in the number of agents. Our approach relies on novel combinatorial arguments and on constructing a sequence of envy-free matchings that allocates most items. Finally, we extend our results to general additive valuation functions, with a dependence on the largest per-agent ratio between two values of the same sign, and we also identify limitations of our approach via impossibility results on the use of buffers with smaller size."
+        },
+        {
+          "title": "Fair Allocation under Conflict Constraints via Strong Colorability",
+          "url": "https://arxiv.org/abs/2607.01059",
+          "arxivId": "2607.01059",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS",
+            "math.CO"
+          ],
+          "abstract": "In the fair allocation problem under conflict constraints, the goal is to partition the vertices of a graph among agents in a fair manner, such that no two adjacent vertices are assigned to the same agent. We study this problem for agents with common preferences through the lens of three fairness criteria: stochastic-dominance envy-freeness up to one item for preference orders (SD-EF1), envy-freeness up to one item for monotone additive valuations (EF1), and envy-freeness up to one item from each side for general additive valuations (EF[1,1]). To do so, we introduce a hierarchy of variants of the strong chromatic number, a graph quantity introduced independently by Alon and Fellows in the early nineties. Our results reveal a close connection between fair allocation under conflict constraints and the first two levels of this hierarchy, providing a unified route to both existential and algorithmic results. For SD-EF1, we fully characterize the number of agents needed to guarantee a fair allocation of a given graph for every common preference order. For EF1 and EF[1,1], we provide analogous sufficient conditions, extending a result on path graphs due to Equbal, Gurjar, Igarashi, Kumar, Manurangsi, Nath, Saxena, Vaish, and Yoneda. We also show that, unlike in the SD-EF1 setting, the sufficient conditions for EF1 and EF[1,1] are not necessary in general. Our framework yields existential and algorithmic consequences in terms of the maximum degree. We obtain that every graph with maximum degree $Δ$ admits SD-EF1, EF1, and EF[1,1] allocations for common preferences whenever the number of agents is at least $3Δ-1$. We further provide, for any $\\varepsilon>0$, deterministic polynomial-time algorithms that find such allocations whenever the number of agents is at least $(3+\\varepsilon)Δ$. These guarantees strengthen earlier work by Barman and Viswanathan on equitable colorings."
+        },
+        {
+          "title": "Multiwinner Voting with Spatial Preferences under Incomplete Information",
+          "url": "https://arxiv.org/abs/2607.01036",
+          "arxivId": "2607.01036",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "In multiwinner elections with many candidates, as in participatory budgeting or large-scale recommendation, voters cannot plausibly evaluate every candidate, yet standard proportional-fairness guarantees such as EJR+ are stated for fully specified approval ballots. We ask whether strong proportional representation can still be guaranteed while eliciting only a little from each voter. We study this in a spatial model, the Axis-aligned Random Rectangle Voter (ARRV) model, in which candidates occupy a $d$-dimensional issue space and each voter approves an axis-aligned hyper-rectangle: a tolerance interval on every issue. Preferences are revealed only through Planar queries, each comparing a voter's tolerance to a candidate on a single issue. We give an algorithm returning an EJR+ committee for any distribution over rectangular preferences, using only $\\mathcal{O}(d\\log dk)$ Planar queries per voter in expectation given a sufficiently large electorate, independent of the number of candidates $m$, where $d$ is the number of issues and $k$ the committee size. The algorithm rests on a dimension-agnostic verify-or-fallback framework whose query cost is governed by two properties supplied by interchangeable modules. We describe such modules, yielding end-to-end guarantees for known, unknown, and smooth distributions."
+        },
+        {
+          "title": "Which Voting Rules Are More Resilient to Coalitional Manipulation?",
+          "url": "https://arxiv.org/abs/2607.00758",
+          "arxivId": "2607.00758",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Which voting rules are more resilient to coalitional manipulation? We find that a deliberately minimal model, capturing only the degree of advantage of one preference ranking over the others, can predict their relative vulnerability remarkably well. Extending prior work on three rules, we systematically analyze all standard ordinal voting rules under the Perturbed Culture model, a variant of Impartial Culture parameterized by the extra weight assigned to one ranking. Each rule exhibits a sharp phase transition: manipulation succeeds with high probability below a critical concentration threshold, and fails above it. This structure reveals natural families of rules: seemingly distinct methods such as Maximin, Ranked Pairs, Schulze, and Young share identical thresholds, while Baldwin, Nanson, Kemeny, and Dodgson form another. These groupings are driven by new, strengthened notions of Condorcet winners. In addition, we identify a third family based on a previously introduced Condorcet notion: Black, Slater, and Copeland. Empirically, the model displays strong predictive power. Tested on real-world datasets (Netflix and FairVote), it accurately ranks rules by vulnerability, predicts how this ranking evolves with the number of candidates, and explains why empirically similar clusters persist despite large absolute differences in manipulation rates, with a more nuanced picture for Bucklin and veto-based rules. Thus, an extremely parsimonious model with no tuning captures the comparative vulnerability of voting rules: which rules to prefer depends largely on the number of candidates alone."
+        },
+        {
+          "title": "Positive and Negative Determinant Strategies in Repeated Games with Behavior-Value Inconsistency",
+          "url": "https://arxiv.org/abs/2607.00625",
+          "arxivId": "2607.00625",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Direct reciprocity, based on the repeated interactions, is a fundamental mechanism to promote cooperation. Zero-determinant (ZD) strategies have opened an avenue for unilateral payoff control. However, previous studies neglect internal costs provided what agents do differ from what agents think, which is crucial for decision making of intelligent agents. Motivated by this, we establish a game theoretical framework by assuming that an individual pays the internal cost if the behavior is inconsistent with the internal thought. We prove that ZD strategy does not exist if the cost via behavior-value inconsistency is present. Instead, we find a new class of repeated strategies that enforce a unilateral payoff control, which is termed as positive/negative determinant strategy. The found strategy allows an individual to enforce an affine combination of two individuals' average payoffs above/below zero. Consequently, a focal individual is able to unilaterally control the opponent's payoff below a given value via negative determinant strategy, and a focal individual is able to get more payoff than the opponent via positive determinant strategy. We also find that the control ability of positive/negative determinant strategies is better off than that of ZD strategies. Our work highlights the importance of inconsistency between the behavior and value on payoff control, which is typically absent in classic ZD strategies."
+        },
+        {
+          "title": "Fully Distributed Tâtonnement for Chores Markets",
+          "url": "https://arxiv.org/abs/2607.00300",
+          "arxivId": "2607.00300",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study price-adjustment dynamics for computing competitive equilibria (CE) in Fisher markets with chores. Unlike in classical goods markets, prices in chores markets are payments for taking on undesirable tasks, and natural excess-demand dynamics can fail; even the naïve analogue of Walrasian tâtonnement may diverge. Recent work of Chaudhury et al. [2025] overcomes this obstacle via relative tâtonnement, which subtracts the average excess-demand signal from the excess demand vector. This recovers convergence, but at the cost of coupling the price updates across all chores. This leaves open whether such global coupling is inherent, or whether convergent tâtonnement can be recovered through a genuinely local update in which each chore reacts only to its own excess demand. We answer this question affirmatively through multiplicative tâtonnement, a fully distributed dynamics in which each chore price is updated using only its current price and its own excess-demand signal. Although the update contains no explicit normalization term, Walras' law and the multiplicative form of the update implicitly preserve the relevant aggregate price geometry. We prove that multiplicative tâtonnement converges to a CE in any chores Fisher market with continuous, convex, and $1$-homogeneous (CCH) disutilities. For convex CES disutilities, we further prove an approximate-CE convergence rate with the same $O(1/\\varepsilon^2)$ dependence as relative tâtonnement, but with improved dependence on problem constants. Experiments on real-world and simulated instances show that multiplicative tâtonnement is substantially faster in practice, often by an order of magnitude."
+        },
+        {
+          "title": "Multidimensional Risk Made Easy",
+          "url": "https://arxiv.org/abs/2607.01229",
+          "arxivId": "2607.01229",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "abstract": "Suppose we want to assign a certainty equivalent--one number--to a multivariate risk. Which such assignments are law-invariant, monotone with respect to vector stochastic dominance, and invariant to independent background risk? I show that every such certainty equivalent is a positive mixture of scalar entropic certainty equivalents applied to positive projections of the vector risk. The same representation yields a robust-order characterization: unanimity across such certainty equivalents is equivalent, up to closure, to dominance after adding independent multidimensional background risk. In a social-welfare specialization, the corresponding shadow valuations are welfare weights."
+        },
+        {
+          "title": "A characterization of the von Neumann and Morgenstern stable set in matching markets",
+          "url": "https://arxiv.org/abs/2607.00869",
+          "arxivId": "2607.00869",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "This paper studies the structure and computation of von Neumann-Morgenstern (vNM) stable sets in one-to-one matching markets. While pairwise stability and corewise stability coincide under strict preferences and provide a well-understood benchmark, vNM stability is defined through dominance relations among sets of matchings and remains considerably more difficult to characterize. A key contribution of the paper is a generalization of the classical Decomposition Lemma. We show that the structural decomposition traditionally used to compare stable matchings extends to any pair of matchings belonging to the same internally stable set. This result reveals a previously unexplored connection between internal stability and the cycle structure underlying matching markets. Building on this characterization, we identify the relationships that are relevant for dominance-based stability and derive a reduced environment that concentrates all undominated outcomes. Our main result shows that the vNM stable set is unique and admits a simple characterization in terms of the core of this reduced environment. The characterization provides both structural insight and a constructive procedure for computing the vNM stable set using standard matching theoretic tools."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Online Fair Division Meets Reordering Buffers",
+              "url": "https://arxiv.org/abs/2607.01159",
+              "arxivId": "2607.01159",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM",
+                "cs.DS"
+              ],
+              "abstract": "We study the online fair division of indivisible mixed manna among agents with additive valuation functions. Under the standard online model, at each time step an indivisible item arrives; each agent may assign it a positive, negative, or zero value, and it must be irrevocably allocated, before the arrival of the next item. At the same time, we also wish to maintain some fairness guarantee, and in this work we focus on envy-freeness (EF) and one of its most prominent relaxations, envy-freeness up to one item (EF1). Given the strong negative and the scarce positive results for this problem without additional assumptions, we augment our algorithms with buffers that can store and rearrange a limited number of items. This setting interpolates naturally between the fully online case (no buffer) and the fully offline case (a buffer large enough to hold all items). We show that algorithms equipped with reasonably sized buffers can achieve strong guarantees for personalized $k$-value instances, i.e., instances in which each agent assigns at most $k$ distinct values to items. In particular, we construct allocations that are EF1 at every time step and EF at most time steps, using a buffer of size linear in $k$ and in the number of agents. Our approach relies on novel combinatorial arguments and on constructing a sequence of envy-free matchings that allocates most items. Finally, we extend our results to general additive valuation functions, with a dependence on the largest per-agent ratio between two values of the same sign, and we also identify limitations of our approach via impossibility results on the use of buffers with smaller size."
+            },
+            {
+              "title": "Fair Allocation under Conflict Constraints via Strong Colorability",
+              "url": "https://arxiv.org/abs/2607.01059",
+              "arxivId": "2607.01059",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS",
+                "math.CO"
+              ],
+              "abstract": "In the fair allocation problem under conflict constraints, the goal is to partition the vertices of a graph among agents in a fair manner, such that no two adjacent vertices are assigned to the same agent. We study this problem for agents with common preferences through the lens of three fairness criteria: stochastic-dominance envy-freeness up to one item for preference orders (SD-EF1), envy-freeness up to one item for monotone additive valuations (EF1), and envy-freeness up to one item from each side for general additive valuations (EF[1,1]). To do so, we introduce a hierarchy of variants of the strong chromatic number, a graph quantity introduced independently by Alon and Fellows in the early nineties. Our results reveal a close connection between fair allocation under conflict constraints and the first two levels of this hierarchy, providing a unified route to both existential and algorithmic results. For SD-EF1, we fully characterize the number of agents needed to guarantee a fair allocation of a given graph for every common preference order. For EF1 and EF[1,1], we provide analogous sufficient conditions, extending a result on path graphs due to Equbal, Gurjar, Igarashi, Kumar, Manurangsi, Nath, Saxena, Vaish, and Yoneda. We also show that, unlike in the SD-EF1 setting, the sufficient conditions for EF1 and EF[1,1] are not necessary in general. Our framework yields existential and algorithmic consequences in terms of the maximum degree. We obtain that every graph with maximum degree $Δ$ admits SD-EF1, EF1, and EF[1,1] allocations for common preferences whenever the number of agents is at least $3Δ-1$. We further provide, for any $\\varepsilon>0$, deterministic polynomial-time algorithms that find such allocations whenever the number of agents is at least $(3+\\varepsilon)Δ$. These guarantees strengthen earlier work by Barman and Viswanathan on equitable colorings."
+            },
+            {
+              "title": "Multiwinner Voting with Spatial Preferences under Incomplete Information",
+              "url": "https://arxiv.org/abs/2607.01036",
+              "arxivId": "2607.01036",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "In multiwinner elections with many candidates, as in participatory budgeting or large-scale recommendation, voters cannot plausibly evaluate every candidate, yet standard proportional-fairness guarantees such as EJR+ are stated for fully specified approval ballots. We ask whether strong proportional representation can still be guaranteed while eliciting only a little from each voter. We study this in a spatial model, the Axis-aligned Random Rectangle Voter (ARRV) model, in which candidates occupy a $d$-dimensional issue space and each voter approves an axis-aligned hyper-rectangle: a tolerance interval on every issue. Preferences are revealed only through Planar queries, each comparing a voter's tolerance to a candidate on a single issue. We give an algorithm returning an EJR+ committee for any distribution over rectangular preferences, using only $\\mathcal{O}(d\\log dk)$ Planar queries per voter in expectation given a sufficiently large electorate, independent of the number of candidates $m$, where $d$ is the number of issues and $k$ the committee size. The algorithm rests on a dimension-agnostic verify-or-fallback framework whose query cost is governed by two properties supplied by interchangeable modules. We describe such modules, yielding end-to-end guarantees for known, unknown, and smooth distributions."
+            },
+            {
+              "title": "Which Voting Rules Are More Resilient to Coalitional Manipulation?",
+              "url": "https://arxiv.org/abs/2607.00758",
+              "arxivId": "2607.00758",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Which voting rules are more resilient to coalitional manipulation? We find that a deliberately minimal model, capturing only the degree of advantage of one preference ranking over the others, can predict their relative vulnerability remarkably well. Extending prior work on three rules, we systematically analyze all standard ordinal voting rules under the Perturbed Culture model, a variant of Impartial Culture parameterized by the extra weight assigned to one ranking. Each rule exhibits a sharp phase transition: manipulation succeeds with high probability below a critical concentration threshold, and fails above it. This structure reveals natural families of rules: seemingly distinct methods such as Maximin, Ranked Pairs, Schulze, and Young share identical thresholds, while Baldwin, Nanson, Kemeny, and Dodgson form another. These groupings are driven by new, strengthened notions of Condorcet winners. In addition, we identify a third family based on a previously introduced Condorcet notion: Black, Slater, and Copeland. Empirically, the model displays strong predictive power. Tested on real-world datasets (Netflix and FairVote), it accurately ranks rules by vulnerability, predicts how this ranking evolves with the number of candidates, and explains why empirically similar clusters persist despite large absolute differences in manipulation rates, with a more nuanced picture for Bucklin and veto-based rules. Thus, an extremely parsimonious model with no tuning captures the comparative vulnerability of voting rules: which rules to prefer depends largely on the number of candidates alone."
+            },
+            {
+              "title": "Positive and Negative Determinant Strategies in Repeated Games with Behavior-Value Inconsistency",
+              "url": "https://arxiv.org/abs/2607.00625",
+              "arxivId": "2607.00625",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Direct reciprocity, based on the repeated interactions, is a fundamental mechanism to promote cooperation. Zero-determinant (ZD) strategies have opened an avenue for unilateral payoff control. However, previous studies neglect internal costs provided what agents do differ from what agents think, which is crucial for decision making of intelligent agents. Motivated by this, we establish a game theoretical framework by assuming that an individual pays the internal cost if the behavior is inconsistent with the internal thought. We prove that ZD strategy does not exist if the cost via behavior-value inconsistency is present. Instead, we find a new class of repeated strategies that enforce a unilateral payoff control, which is termed as positive/negative determinant strategy. The found strategy allows an individual to enforce an affine combination of two individuals' average payoffs above/below zero. Consequently, a focal individual is able to unilaterally control the opponent's payoff below a given value via negative determinant strategy, and a focal individual is able to get more payoff than the opponent via positive determinant strategy. We also find that the control ability of positive/negative determinant strategies is better off than that of ZD strategies. Our work highlights the importance of inconsistency between the behavior and value on payoff control, which is typically absent in classic ZD strategies."
+            },
+            {
+              "title": "Fully Distributed Tâtonnement for Chores Markets",
+              "url": "https://arxiv.org/abs/2607.00300",
+              "arxivId": "2607.00300",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study price-adjustment dynamics for computing competitive equilibria (CE) in Fisher markets with chores. Unlike in classical goods markets, prices in chores markets are payments for taking on undesirable tasks, and natural excess-demand dynamics can fail; even the naïve analogue of Walrasian tâtonnement may diverge. Recent work of Chaudhury et al. [2025] overcomes this obstacle via relative tâtonnement, which subtracts the average excess-demand signal from the excess demand vector. This recovers convergence, but at the cost of coupling the price updates across all chores. This leaves open whether such global coupling is inherent, or whether convergent tâtonnement can be recovered through a genuinely local update in which each chore reacts only to its own excess demand. We answer this question affirmatively through multiplicative tâtonnement, a fully distributed dynamics in which each chore price is updated using only its current price and its own excess-demand signal. Although the update contains no explicit normalization term, Walras' law and the multiplicative form of the update implicitly preserve the relevant aggregate price geometry. We prove that multiplicative tâtonnement converges to a CE in any chores Fisher market with continuous, convex, and $1$-homogeneous (CCH) disutilities. For convex CES disutilities, we further prove an approximate-CE convergence rate with the same $O(1/\\varepsilon^2)$ dependence as relative tâtonnement, but with improved dependence on problem constants. Experiments on real-world and simulated instances show that multiplicative tâtonnement is substantially faster in practice, often by an order of magnitude."
+            },
+            {
+              "title": "Multidimensional Risk Made Easy",
+              "url": "https://arxiv.org/abs/2607.01229",
+              "arxivId": "2607.01229",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.PR"
+              ],
+              "abstract": "Suppose we want to assign a certainty equivalent--one number--to a multivariate risk. Which such assignments are law-invariant, monotone with respect to vector stochastic dominance, and invariant to independent background risk? I show that every such certainty equivalent is a positive mixture of scalar entropic certainty equivalents applied to positive projections of the vector risk. The same representation yields a robust-order characterization: unanimity across such certainty equivalents is equivalent, up to closure, to dominance after adding independent multidimensional background risk. In a social-welfare specialization, the corresponding shadow valuations are welfare weights."
+            },
+            {
+              "title": "A characterization of the von Neumann and Morgenstern stable set in matching markets",
+              "url": "https://arxiv.org/abs/2607.00869",
+              "arxivId": "2607.00869",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "This paper studies the structure and computation of von Neumann-Morgenstern (vNM) stable sets in one-to-one matching markets. While pairwise stability and corewise stability coincide under strict preferences and provide a well-understood benchmark, vNM stability is defined through dominance relations among sets of matchings and remains considerably more difficult to characterize. A key contribution of the paper is a generalization of the classical Decomposition Lemma. We show that the structural decomposition traditionally used to compare stable matchings extends to any pair of matchings belonging to the same internally stable set. This result reveals a previously unexplored connection between internal stability and the cycle structure underlying matching markets. Building on this characterization, we identify the relationships that are relevant for dominance-based stability and derive a reduced environment that concentrates all undominated outcomes. Our main result shows that the vNM stable set is unique and admits a simple characterization in terms of the core of this reduced environment. The characterization provides both structural insight and a constructive procedure for computing the vNM stable set using standard matching theoretic tools."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 1,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 6,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Online Fair Division Meets Reordering Buffers",
+              "url": "https://arxiv.org/abs/2607.01159",
+              "arxivId": "2607.01159",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM",
+                "cs.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 1.9,
+                "total": 26.9
+              }
+            },
+            {
+              "title": "Fair Allocation under Conflict Constraints via Strong Colorability",
+              "url": "https://arxiv.org/abs/2607.01059",
+              "arxivId": "2607.01059",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS",
+                "math.CO"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 1.0,
+                "total": 27.9
+              }
+            },
+            {
+              "title": "Multiwinner Voting with Spatial Preferences under Incomplete Information",
+              "url": "https://arxiv.org/abs/2607.01036",
+              "arxivId": "2607.01036",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 2.8,
+                "total": 27.7
+              }
+            },
+            {
+              "title": "Which Voting Rules Are More Resilient to Coalitional Manipulation?",
+              "url": "https://arxiv.org/abs/2607.00758",
+              "arxivId": "2607.00758",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 2.0,
+                "total": 32.0
+              }
+            },
+            {
+              "title": "Positive and Negative Determinant Strategies in Repeated Games with Behavior-Value Inconsistency",
+              "url": "https://arxiv.org/abs/2607.00625",
+              "arxivId": "2607.00625",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 6.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 24.0,
+                "bonus": 4.8,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Fully Distributed Tâtonnement for Chores Markets",
+              "url": "https://arxiv.org/abs/2607.00300",
+              "arxivId": "2607.00300",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 3.0,
+                "total": 33.0
+              }
+            },
+            {
+              "title": "Multidimensional Risk Made Easy",
+              "url": "https://arxiv.org/abs/2607.01229",
+              "arxivId": "2607.01229",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.PR"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "A characterization of the von Neumann and Morgenstern stable set in matching markets",
+              "url": "https://arxiv.org/abs/2607.00869",
+              "arxivId": "2607.00869",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Online Fair Division Meets Reordering Buffers",
+          "url": "https://arxiv.org/abs/2607.01159",
+          "arxivId": "2607.01159",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 26.9
+          }
+        },
+        {
+          "title": "Fair Allocation under Conflict Constraints via Strong Colorability",
+          "url": "https://arxiv.org/abs/2607.01059",
+          "arxivId": "2607.01059",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS",
+            "math.CO"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 1.0,
+            "total": 27.9
+          }
+        },
+        {
+          "title": "Multiwinner Voting with Spatial Preferences under Incomplete Information",
+          "url": "https://arxiv.org/abs/2607.01036",
+          "arxivId": "2607.01036",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "Which Voting Rules Are More Resilient to Coalitional Manipulation?",
+          "url": "https://arxiv.org/abs/2607.00758",
+          "arxivId": "2607.00758",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 32.0
+          }
+        },
+        {
+          "title": "Positive and Negative Determinant Strategies in Repeated Games with Behavior-Value Inconsistency",
+          "url": "https://arxiv.org/abs/2607.00625",
+          "arxivId": "2607.00625",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "bonus": 4.8,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Fully Distributed Tâtonnement for Chores Markets",
+          "url": "https://arxiv.org/abs/2607.00300",
+          "arxivId": "2607.00300",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          }
+        },
+        {
+          "title": "Multidimensional Risk Made Easy",
+          "url": "https://arxiv.org/abs/2607.01229",
+          "arxivId": "2607.01229",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.PR"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "A characterization of the von Neumann and Morgenstern stable set in matching markets",
+          "url": "https://arxiv.org/abs/2607.00869",
+          "arxivId": "2607.00869",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Fully Distributed Tâtonnement for Chores Markets",
+          "url": "https://arxiv.org/abs/2607.00300",
+          "arxivId": "2607.00300",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          }
+        },
+        {
+          "title": "Which Voting Rules Are More Resilient to Coalitional Manipulation?",
+          "url": "https://arxiv.org/abs/2607.00758",
+          "arxivId": "2607.00758",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 32.0
+          }
+        },
+        {
+          "title": "Fair Allocation under Conflict Constraints via Strong Colorability",
+          "url": "https://arxiv.org/abs/2607.01059",
+          "arxivId": "2607.01059",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS",
+            "math.CO"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 1.0,
+            "total": 27.9
+          }
+        },
+        {
+          "title": "Multiwinner Voting with Spatial Preferences under Incomplete Information",
+          "url": "https://arxiv.org/abs/2607.01036",
+          "arxivId": "2607.01036",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "Online Fair Division Meets Reordering Buffers",
+          "url": "https://arxiv.org/abs/2607.01159",
+          "arxivId": "2607.01159",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 26.9
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Fully Distributed Tâtonnement for Chores Markets",
+            "url": "https://arxiv.org/abs/2607.00300",
+            "arxivId": "2607.00300",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "家务市场的完全分布式Tâtonnement",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析",
+              "实验验证"
+            ],
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "博弈学习",
+              "公平性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统瓦尔拉斯调整机制在商品市场中通过价格响应超额需求来收敛至竞争均衡，但在家务（chores）市场中失效——因为家务是负效用任务，价格代表报酬而非成本，导致超额需求动态反转甚至发散。近期提出的相对Tâtonnement虽能恢复收敛，却需全局归一化信号，破坏了去中心化本质。本文追问：是否存在真正局部、无需跨任务协调的分布式价格调整机制？",
+              "modelAndSetup": "模型考虑一个由n个代理和m个可分家务组成的Fisher市场，每个代理有固定收入预算并最小化其凸、连续、1-齐次的负效用函数。价格向量决定各任务单位报酬，代理选择满足收入约束的最低负效用任务组合。市场均衡要求所有任务被恰好完成。作者聚焦于仅基于本地超额供给信号的价格更新规则，不依赖其他任务的价格或需求信息。",
+              "contributionsAndResults": "作者提出乘法Tâtonnement机制，每个任务价格独立按p⁺¹ = p ⊙ (1 + ηy)更新，其中y为本地超额供给。该机制完全分布式，却仍能渐进收敛到任意连续凸齐次负效用下的竞争均衡。对于凸CES负效用，还证明了O(1/s)的近似均衡收敛速率，且常数项优于相对Tâtonnement。实验显示其实现速度通常快一个数量级。",
+              "methodsAndTechniques": "证明核心在于将乘法更新与相对熵镜像下降联系起来：尽管使用简单的乘法形式而非指数步长，但由于瓦尔拉斯定律，价格自动保持在预算单纯形内，隐含维持了正确的聚合几何结构。通过控制扰动误差并与相对光滑性结合，在单纯形上建立收敛性。关键洞察是归一化效应由乘法更新与市场不变量共同隐式实现。",
+              "limitationsAndReadingValue": "局限在于仍假设代理能精确求解其最优任务包，且收敛分析依赖特定步长选择。然而，该工作突破了家务市场必须全局协调的认知，展示了局部动态也能实现全局均衡。最值得读的是其机制设计思想——如何利用市场内在结构（如Walras律）替代显式全局修正，这对去中心化市场设计有深远启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "家务市场的完全分布式Tâtonnement",
+            "summarySections": {
+              "backgroundAndQuestion": "传统瓦尔拉斯调整机制在商品市场中通过价格响应超额需求来收敛至竞争均衡，但在家务（chores）市场中失效——因为家务是负效用任务，价格代表报酬而非成本，导致超额需求动态反转甚至发散。近期提出的相对Tâtonnement虽能恢复收敛，却需全局归一化信号，破坏了去中心化本质。本文追问：是否存在真正局部、无需跨任务协调的分布式价格调整机制？",
+              "modelAndSetup": "模型考虑一个由n个代理和m个可分家务组成的Fisher市场，每个代理有固定收入预算并最小化其凸、连续、1-齐次的负效用函数。价格向量决定各任务单位报酬，代理选择满足收入约束的最低负效用任务组合。市场均衡要求所有任务被恰好完成。作者聚焦于仅基于本地超额供给信号的价格更新规则，不依赖其他任务的价格或需求信息。",
+              "contributionsAndResults": "作者提出乘法Tâtonnement机制，每个任务价格独立按p⁺¹ = p ⊙ (1 + ηy)更新，其中y为本地超额供给。该机制完全分布式，却仍能渐进收敛到任意连续凸齐次负效用下的竞争均衡。对于凸CES负效用，还证明了O(1/s)的近似均衡收敛速率，且常数项优于相对Tâtonnement。实验显示其实现速度通常快一个数量级。",
+              "methodsAndTechniques": "证明核心在于将乘法更新与相对熵镜像下降联系起来：尽管使用简单的乘法形式而非指数步长，但由于瓦尔拉斯定律，价格自动保持在预算单纯形内，隐含维持了正确的聚合几何结构。通过控制扰动误差并与相对光滑性结合，在单纯形上建立收敛性。关键洞察是归一化效应由乘法更新与市场不变量共同隐式实现。",
+              "limitationsAndReadingValue": "局限在于仍假设代理能精确求解其最优任务包，且收敛分析依赖特定步长选择。然而，该工作突破了家务市场必须全局协调的认知，展示了局部动态也能实现全局均衡。最值得读的是其机制设计思想——如何利用市场内在结构（如Walras律）替代显式全局修正，这对去中心化市场设计有深远启示。"
+            },
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "博弈学习",
+              "公平性"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Which Voting Rules Are More Resilient to Coalitional Manipulation?",
+            "url": "https://arxiv.org/abs/2607.00758",
+            "arxivId": "2607.00758",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "哪些投票规则对联盟操纵更具韧性？",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "鲁棒性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么有些投票规则更难被选民联盟合谋操控？尽管吉巴德-萨特思韦特定理表明所有非平凡规则都可能被操纵，但现实中不同规则的脆弱性差异显著。本文旨在建立一个统一框架来比较标准序数投票规则的抗操纵能力，尤其关注当偏好集中于某一候选人时，规则何时从易受攻击转为免疫。",
+              "modelAndSetup": "作者采用‘扰动文化’（Perturbed Culture）模型，其中所有选民以概率θ采用同一参考排序，其余情况随机排列。该模型通过浓度参数θ刻画偏好集中程度，并定义‘联盟可操纵率’为规则在随机配置下可被成功合谋改变结果的比例。分析聚焦于大型选举中该比率随θ变化的相变行为。",
+              "contributionsAndResults": "论文发现每种投票规则均存在临界浓度阈值θc(f,m)，当θ低于此值时操纵几乎总能成功，高于则几乎总失败。基于此，规则被划分为三个家族：Maximin族（如Ranked Pairs、Schulze）、Baldwin族（如Kemeny、Dodgson）和Black族（如Copeland、Slater），各自共享相同的阈值，揭示了深层结构性联系。",
+              "methodsAndTechniques": "作者引入三种加强版孔多塞胜者概念——对偶安全、集合安全与抵抗性孔多塞胜者，分别对应不同规则家族的免疫条件。通过分析期望配置邻域内的稳定性，并结合弱大数定律，证明了相变的存在性及临界值。经验上则利用Netflix与FairVote数据集验证了理论预测的排序一致性。",
+              "limitationsAndReadingValue": "模型未涵盖非序数规则（如评分制），且对Bucklin与否决类规则的预测稍弱。尽管如此，仅凭候选人数即可准确预测规则相对脆弱性的能力，展示了极简模型的强大解释力。最值得阅读的是其将复杂行为归结为相变与Condorcet扩展概念的理论洞察力。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "哪些投票规则对联盟操纵更具韧性？",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么有些投票规则更难被选民联盟合谋操控？尽管吉巴德-萨特思韦特定理表明所有非平凡规则都可能被操纵，但现实中不同规则的脆弱性差异显著。本文旨在建立一个统一框架来比较标准序数投票规则的抗操纵能力，尤其关注当偏好集中于某一候选人时，规则何时从易受攻击转为免疫。",
+              "modelAndSetup": "作者采用‘扰动文化’（Perturbed Culture）模型，其中所有选民以概率θ采用同一参考排序，其余情况随机排列。该模型通过浓度参数θ刻画偏好集中程度，并定义‘联盟可操纵率’为规则在随机配置下可被成功合谋改变结果的比例。分析聚焦于大型选举中该比率随θ变化的相变行为。",
+              "contributionsAndResults": "论文发现每种投票规则均存在临界浓度阈值θc(f,m)，当θ低于此值时操纵几乎总能成功，高于则几乎总失败。基于此，规则被划分为三个家族：Maximin族（如Ranked Pairs、Schulze）、Baldwin族（如Kemeny、Dodgson）和Black族（如Copeland、Slater），各自共享相同的阈值，揭示了深层结构性联系。",
+              "methodsAndTechniques": "作者引入三种加强版孔多塞胜者概念——对偶安全、集合安全与抵抗性孔多塞胜者，分别对应不同规则家族的免疫条件。通过分析期望配置邻域内的稳定性，并结合弱大数定律，证明了相变的存在性及临界值。经验上则利用Netflix与FairVote数据集验证了理论预测的排序一致性。",
+              "limitationsAndReadingValue": "模型未涵盖非序数规则（如评分制），且对Bucklin与否决类规则的预测稍弱。尽管如此，仅凭候选人数即可准确预测规则相对脆弱性的能力，展示了极简模型的强大解释力。最值得阅读的是其将复杂行为归结为相变与Condorcet扩展概念的理论洞察力。"
+            },
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "鲁棒性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Fair Allocation under Conflict Constraints via Strong Colorability",
+            "url": "https://arxiv.org/abs/2607.01059",
+            "arxivId": "2607.01059",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS",
+              "math.CO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过强可着色性实现冲突约束下的公平分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "图着色",
+              "资源分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在物品间存在冲突时仍能实现公平分配？现实中某些物品不能共存于同一代理（如艺术品不能同室展出），这引出了冲突图约束下的公平分配问题。已有工作指出，当代理偏好不同时，即使增加代理数也无法保证公平解的存在。本文聚焦于共同偏好情形，探究在何种条件下存在满足公平性的可行分配。",
+              "modelAndSetup": "作者将物品建模为图的顶点，相邻顶点不能分给同一代理，分配需构成图的正常着色。代理共享一个弱序偏好或加性估值函数。目标是寻找满足SD-EF1、EF1或EF[1,1]的分配，即在移除至多一个物品后无人嫉妒。模型通过划分顶点序列并寻求与划分兼容的强着色来构造解。",
+              "contributionsAndResults": "论文建立了公平分配与强可着色数之间的精确联系。对于SD-EF1，强可着色数的类型1给出了充要条件；而对于EF1和EF[1,1]，该数分别提供了非必要但充分的保障。结果表明，在最大度为△的图中，当代理数达到3△−1时总存在公平分配，并给出了接近此界的多项式时间算法。",
+              "methodsAndTechniques": "核心方法是引入强可着色数的层级结构，并将其与不同公平概念关联。通过将偏好排序转化为顶点划分，再求解受限的图着色问题，实现了从公平分配到强着色的存在性归约。算法部分借助Harris关于局部引理的确定性算法，构造出高效求解路径。",
+              "limitationsAndReadingValue": "主要局限在于，EF1与EF[1,1]的充分条件并非必要，且某些强着色构造仍是开放难题。然而，本文的价值在于统一了公平分配与图论中的强可着色理论，提出了新的层次化模型，揭示了共同偏好下资源冲突与公平性的深层关系，适合关注理论深度与跨领域联系的读者精读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过强可着色性实现冲突约束下的公平分配",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在物品间存在冲突时仍能实现公平分配？现实中某些物品不能共存于同一代理（如艺术品不能同室展出），这引出了冲突图约束下的公平分配问题。已有工作指出，当代理偏好不同时，即使增加代理数也无法保证公平解的存在。本文聚焦于共同偏好情形，探究在何种条件下存在满足公平性的可行分配。",
+              "modelAndSetup": "作者将物品建模为图的顶点，相邻顶点不能分给同一代理，分配需构成图的正常着色。代理共享一个弱序偏好或加性估值函数。目标是寻找满足SD-EF1、EF1或EF[1,1]的分配，即在移除至多一个物品后无人嫉妒。模型通过划分顶点序列并寻求与划分兼容的强着色来构造解。",
+              "contributionsAndResults": "论文建立了公平分配与强可着色数之间的精确联系。对于SD-EF1，强可着色数的类型1给出了充要条件；而对于EF1和EF[1,1]，该数分别提供了非必要但充分的保障。结果表明，在最大度为△的图中，当代理数达到3△−1时总存在公平分配，并给出了接近此界的多项式时间算法。",
+              "methodsAndTechniques": "核心方法是引入强可着色数的层级结构，并将其与不同公平概念关联。通过将偏好排序转化为顶点划分，再求解受限的图着色问题，实现了从公平分配到强着色的存在性归约。算法部分借助Harris关于局部引理的确定性算法，构造出高效求解路径。",
+              "limitationsAndReadingValue": "主要局限在于，EF1与EF[1,1]的充分条件并非必要，且某些强着色构造仍是开放难题。然而，本文的价值在于统一了公平分配与图论中的强可着色理论，提出了新的层次化模型，揭示了共同偏好下资源冲突与公平性的深层关系，适合关注理论深度与跨领域联系的读者精读。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "图着色",
+              "资源分配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Multiwinner Voting with Spatial Preferences under Incomplete Information",
+            "url": "https://arxiv.org/abs/2607.01036",
+            "arxivId": "2607.01036",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "不完全信息下的空间偏好多胜者投票",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "模型构建",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "社会选择",
+              "公平性",
+              "机制设计",
+              "空间偏好",
+              "信息设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在大规模多胜者选举（如参与式预算）中，候选人数量庞大，选民无法评估所有选项，但传统比例公平准则（如EJR+）要求完整的批准投票。这导致一个核心矛盾：如何在仅收集少量选民信息的前提下，仍能保证强比例代表性？本文正是针对这一信息效率与公平性之间的张力提出问题。",
+              "modelAndSetup": "论文采用轴对齐随机矩形选民（ARRV）模型：候选人在d维议题空间中，每位选民批准一个轴对齐的超矩形区域内的候选人。通过PLANAR查询（每次询问某议题上选民容忍区间是否位于某候选人一侧）逐步揭示偏好。模型关注在何种分布假设下，能以最少查询数达成EJR+公平。",
+              "contributionsAndResults": "作者提出了一个通用的‘验证或回退’框架，结合可插拔模块，在任意矩形偏好分布下都能返回满足EJR+的委员会。核心结果是：在足够大的选民群体中，平均每位选民仅需O(d log dk)次PLANAR查询即可实现该目标，查询复杂度独立于候选人总数m。",
+              "methodsAndTechniques": "关键技术是一个维度无关的verify-or-fallback框架，其效率取决于两个可替换模块提供的性质：一是能生成可能满足EJR+的委员会（PW），二是能准确估计各维度上的分布（PF）。通过量化估计误差与EJR+边界的关系，并利用集中不等式控制失败概率，实现了低查询成本的高概率成功。",
+              "limitationsAndReadingValue": "尽管框架通用，但在未知分布下，为保证每位选民的查询负载较低，所需选民规模可能高达m log m；仅在Lipschitz平滑假设下，依赖关系才降至log log m。最值得阅读的是其模块化设计思想、对EJR+的概率性验证技术，以及在信息稀缺下维持公平性的新路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "不完全信息下的空间偏好多胜者投票",
+            "summarySections": {
+              "backgroundAndQuestion": "在大规模多胜者选举（如参与式预算）中，候选人数量庞大，选民无法评估所有选项，但传统比例公平准则（如EJR+）要求完整的批准投票。这导致一个核心矛盾：如何在仅收集少量选民信息的前提下，仍能保证强比例代表性？本文正是针对这一信息效率与公平性之间的张力提出问题。",
+              "modelAndSetup": "论文采用轴对齐随机矩形选民（ARRV）模型：候选人在d维议题空间中，每位选民批准一个轴对齐的超矩形区域内的候选人。通过PLANAR查询（每次询问某议题上选民容忍区间是否位于某候选人一侧）逐步揭示偏好。模型关注在何种分布假设下，能以最少查询数达成EJR+公平。",
+              "contributionsAndResults": "作者提出了一个通用的‘验证或回退’框架，结合可插拔模块，在任意矩形偏好分布下都能返回满足EJR+的委员会。核心结果是：在足够大的选民群体中，平均每位选民仅需O(d log dk)次PLANAR查询即可实现该目标，查询复杂度独立于候选人总数m。",
+              "methodsAndTechniques": "关键技术是一个维度无关的verify-or-fallback框架，其效率取决于两个可替换模块提供的性质：一是能生成可能满足EJR+的委员会（PW），二是能准确估计各维度上的分布（PF）。通过量化估计误差与EJR+边界的关系，并利用集中不等式控制失败概率，实现了低查询成本的高概率成功。",
+              "limitationsAndReadingValue": "尽管框架通用，但在未知分布下，为保证每位选民的查询负载较低，所需选民规模可能高达m log m；仅在Lipschitz平滑假设下，依赖关系才降至log log m。最值得阅读的是其模块化设计思想、对EJR+的概率性验证技术，以及在信息稀缺下维持公平性的新路径。"
+            },
+            "contentTags": [
+              "社会选择",
+              "公平性",
+              "机制设计",
+              "空间偏好",
+              "信息设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "模型构建",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Online Fair Division Meets Reordering Buffers",
+            "url": "https://arxiv.org/abs/2607.01159",
+            "arxivId": "2607.01159",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.DM",
+              "cs.DS"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "在线公平分配遇见重排序缓冲区",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "复杂度分析",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "在线算法",
+              "多智能体系统",
+              "机制设计",
+              "混合物品分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么传统在线公平分配难以实现公平？因为物品逐个到达且必须立即分配，导致无法回溯调整。这种设定下，即使是最基本的公平性（如无嫉妒）也几乎不可能保证。本文关注的是混合物品环境——物品对不同代理可能是好物、坏物或无价值——这使得问题更复杂。作者想探索：能否通过赋予算法临时存储和重新排序少量物品的能力来突破这一困境。",
+              "modelAndSetup": "模型设定为n个代理在线接收不可分物品，每个物品到来时各代理赋予其正、负或零值。标准在线模式要求即时分配，而本文引入‘重排序缓冲区’，允许暂存最多b个物品后再分配。考虑两种分配模式：单件持续分配（SAS）和批量延迟分配（DAB）。目标是在每一步都维持某种时间公平性，如每步都满足EF1，或周期性达到完全无嫉妒。",
+              "contributionsAndResults": "论文证明，在个性化k值实例中（每个代理至多有k种估值水平），仅需大小为(n-1)k的缓冲区即可实现强公平保证。在SAS模式下可保持每步EF1且每n步达到EF；在DAB模式下甚至能实现除最后一步外始终EF。同时给出了缓冲区大小的紧下界，表明该线性依赖无法显著改进，揭示了缓冲能力与公平性之间的本质权衡。",
+              "methodsAndTechniques": "核心技术是基于序数偏好的‘最优选择图’与霍尔婚配定理的组合应用。每当缓冲区满时，算法构建一个代理与可用物品间的二分图，边连接代理与其当前最偏好物品。通过迭代移除违反霍尔条件的争议物品集，最终找到能扩展为无嫉妒分配的匹配。这一构造性论证结合精细计数，确保在合理步数内完成匹配，是实现动态公平的关键。",
+              "limitationsAndReadingValue": "结果依赖于k值假设，在一般加法估值下会退化为与最大价值比相关的近似因子。此外，虽证明了缓冲区大小的必要性，但机制对预测或学习未来信息的结合尚未探讨。最值得读的是其新颖的缓冲区模型与匹配框架的融合，不仅解决了长期存在的在线公平难题，也为后续结合预测与缓存的研究提供了清晰路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "在线公平分配遇见重排序缓冲区",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么传统在线公平分配难以实现公平？因为物品逐个到达且必须立即分配，导致无法回溯调整。这种设定下，即使是最基本的公平性（如无嫉妒）也几乎不可能保证。本文关注的是混合物品环境——物品对不同代理可能是好物、坏物或无价值——这使得问题更复杂。作者想探索：能否通过赋予算法临时存储和重新排序少量物品的能力来突破这一困境。",
+              "modelAndSetup": "模型设定为n个代理在线接收不可分物品，每个物品到来时各代理赋予其正、负或零值。标准在线模式要求即时分配，而本文引入‘重排序缓冲区’，允许暂存最多b个物品后再分配。考虑两种分配模式：单件持续分配（SAS）和批量延迟分配（DAB）。目标是在每一步都维持某种时间公平性，如每步都满足EF1，或周期性达到完全无嫉妒。",
+              "contributionsAndResults": "论文证明，在个性化k值实例中（每个代理至多有k种估值水平），仅需大小为(n-1)k的缓冲区即可实现强公平保证。在SAS模式下可保持每步EF1且每n步达到EF；在DAB模式下甚至能实现除最后一步外始终EF。同时给出了缓冲区大小的紧下界，表明该线性依赖无法显著改进，揭示了缓冲能力与公平性之间的本质权衡。",
+              "methodsAndTechniques": "核心技术是基于序数偏好的‘最优选择图’与霍尔婚配定理的组合应用。每当缓冲区满时，算法构建一个代理与可用物品间的二分图，边连接代理与其当前最偏好物品。通过迭代移除违反霍尔条件的争议物品集，最终找到能扩展为无嫉妒分配的匹配。这一构造性论证结合精细计数，确保在合理步数内完成匹配，是实现动态公平的关键。",
+              "limitationsAndReadingValue": "结果依赖于k值假设，在一般加法估值下会退化为与最大价值比相关的近似因子。此外，虽证明了缓冲区大小的必要性，但机制对预测或学习未来信息的结合尚未探讨。最值得读的是其新颖的缓冲区模型与匹配框架的融合，不仅解决了长期存在的在线公平难题，也为后续结合预测与缓存的研究提供了清晰路径。"
+            },
+            "contentTags": [
+              "公平性",
+              "在线算法",
+              "多智能体系统",
+              "机制设计",
+              "混合物品分配"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "复杂度分析",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-01",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202607010000 TO 202607012359\"",
+            "totalResults": 12,
+            "fetchedCount": 12
+          }
+        },
+        "dedupedCount": 12
+      },
+      "arxivTotalResults": 12,
+      "fetchedCount": 12,
+      "fetchedPapers": [
+        {
+          "title": "Diffusion-GR2: Diffusion Generative Reasoning Re-ranker",
+          "url": "https://arxiv.org/abs/2607.01170",
+          "arxivId": "2607.01170",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "abstract": "Generative reasoning re-rankers achieve strong recommendation accuracy by emitting a chain-of-thought before re-ordering a candidate list, but they are slow at inference: an autoregressive (AR) decoder spends one sequential forward pass per reasoning token, and the reasoning trace far exceeds the ranking it produces. To reduce this cost, block-diffusion language models decode many positions in parallel over a few denoising steps and are substantially faster, yet naively converting an AR re-ranker into one opens two accuracy gaps: (1) a structural gap: answer positions are denoised in parallel and scored independently, so the decoder emits invalid rankings (duplicated, dropped, or out-of-set identifiers) that AR avoids through left-to-right masking; and (2) a distributional gap: fine-tuning the converted model on fixed teacher trajectories is off-policy relative to its own decoding at inference, leaving a residual accuracy gap. To close both gaps while keeping the speedup, we propose \\textbf{Diffusion-GR2}, a recipe that converts our AR reasoning re-ranker (GR2) into a block-diffusion re-ranker. First, conversion fine-tuning (CFT) adapts the AR-initialized diffusion model to denoise the answer into a valid permutation on its own, without an external constrained decoder. Next, on-policy distillation (OPD) then supervises the model on its own decoded trajectories with dense per-token targets from the AR teacher. Finally, we apply a reinforcement-learning (RL) stage against a re-ranking reward on top of OPD's on-policy policy. Experiments on Amazon Beauty demonstrate that Diffusion-GR2 recovers to near-parity with the AR re-ranker, while block-parallel decoding raises decode throughput by $2.4$--$3.5\\times$ at the model's reasoning output length. Ablations show that CFT recovers most of the conversion gap, and that on-policy distillation further closes it to the AR reference."
+        },
+        {
+          "title": "Trie-based Experiment Plans for Efficient IR Pipeline Experiments",
+          "url": "https://arxiv.org/abs/2607.01162",
+          "arxivId": "2607.01162",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Search engines are often formulated as cascading pipelines, where successive stages combine the results of different retrievers, and iteratively refine the ranking of candidate documents to obtain a final ranking, which can be presented to a user, or provided as context to an LLM. Such pipelines can be complex to evaluate in an end-to-end manner, necessitating measurement of Recall of early stages, and Precision of later stages, which are often interchangeable. PyTerrier is ideal for building and evaluating cascading retrieval pipelines, due to its declarative nature for pipeline construction and wide ecosystem of retrievers and rerankers. However, comparative evaluation of pipelines can be expensive due to repeated components. In this work, we describe the use of a trie data structure to formulate an experiment plan for comparative pipeline experiments that enhances experiment efficiency compared to a sequential \"linear\" plan. Empirically, on a demonstration experiment involving BM25, MonoT5 and DuoT5 on MSMARCO v2, we observe a 26% reduction in experiment duration. Finally, we report on a user study of undergraduate and postgraduate research students' use of the experiment plans."
+        },
+        {
+          "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+          "url": "https://arxiv.org/abs/2607.01071",
+          "arxivId": "2607.01071",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "abstract": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench."
+        },
+        {
+          "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+          "url": "https://arxiv.org/abs/2607.01040",
+          "arxivId": "2607.01040",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large-scale search systems evolve faster than human quality assurance can scale, especially for long-tail intents and multilingual queries. LLM-as-a-judge approaches provide a scalable alternative for evaluating the relevance of search engine result pages (SERPs), but judgments based solely on semantic similarity or world knowledge can drift from actual user preferences, particularly for ambiguous queries. We introduce a behavior-grounded LLM judge that augments each SERP item with a lightweight and auditable behavioral prior in the form of a Query-Relevance-Impressions (QRI) card. Each card summarizes how users have historically interacted with similar queries and results, providing compact empirical evidence that the judge can cite to resolve ambiguity and make more consistent relevance judgments while still relying on semantic reasoning. In a large-scale music search evaluation at Spotify, using relevance estimates derived from historical user interactions across 6,000 recomposed SERPs, the behavior-grounded judge achieves stronger alignment with user preferences, improving Spearman rank correlation by approximately 5% overall and yielding a 91% relative improvement on disagreement cases. On a multilingual human-judged dataset spanning five languages, grounding further increases correlation with human relevance judgments by 15%. Importantly, when evaluated against outcomes from a live A/B test, the grounded judge shows consistently higher alignment with the observed winning model. While absolute alignment remains moderate, these findings demonstrate that lightweight behavioral grounding can improve the reliability and practical usefulness of LLM-based evaluation in real-world search systems."
+        },
+        {
+          "title": "RACORN-1: Adaptive Recall-Preserving Speedup for Low-Selectivity Filtered Vector Search",
+          "url": "https://arxiv.org/abs/2607.00768",
+          "arxivId": "2607.00768",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.IR"
+          ],
+          "abstract": "Filtered Vector Search (FVS), which combines vector embedding similarity with structured metadata predicates, has emerged as a core requirement in RAG and production retrieval systems. ACORN-1, the representative In-filtering algorithm that reuses an existing HNSW index, substantially reduces latency at low selectivity but suffers connectivity instability below 5% selectivity and recall collapse below 1%. We propose RACORN-1, an in-place extension of ACORN-1 that resolves this collapse via (i) Adaptive Search Fallback (ASF) -- repurposing filter-failing nodes as transient bridges to detour around severed paths; bridge and two-hop candidate selection uses stride sampling for spatial diversity. While filter-first ACORN-family methods have a structural recall trade-off relative to distance-first HNSW, RACORN-1 improves the trade-off curve via ASF, minimizing recall loss while substantially reducing latency. Across three 1M-scale and one 40M-scale dataset, RACORN-1 delivers approximately 9-26x latency reduction over HNSW in the sweet spot (1%-0.3%), and recovers ACORN-1's recall collapse from 0.45-0.72 (1%) and 0.03-0.10 (0.3%) to 0.70-0.96 and 0.77-0.98 respectively. For the extreme-low-selectivity regime where linear scan can outperform graph search, we combine RACORN-1 with (ii) Adaptive Exact Fallback (AEF) in a variant RACORN-1+, achieving recall 1.00 with 20-75x speedup at 1M <=0.1% and 13x speedup at 40M 0.01%. Under a Negative Correlation evaluation (K-means clusters), where ACORN-1 collapses (recall 0.08-0.41), RACORN-1 maintains recall 0.80-0.98 with a 5-9x latency advantage over HNSW. Together, RACORN-1 and RACORN-1+ form an ACORN-1-compatible mechanism robust to both extreme-low-selectivity and adversarial query-filter correlation."
+        },
+        {
+          "title": "When to Repair a Graph ANN Index: Navigability-Signal-Triggered Local Repair Protects Tail Recall Under Bursty Churn",
+          "url": "https://arxiv.org/abs/2607.00728",
+          "arxivId": "2607.00728",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.IR"
+          ],
+          "abstract": "Graph approximate-nearest-neighbor (ANN) indexes (HNSW, DiskANN/Vamana) lose recall under insert/delete churn, because deletions orphan the greedy-search paths that route through removed nodes. Production systems restore navigability by repairing the graph on a fixed schedule (consolidate every X operations). We ask whether triggering local edge repair on a measured navigability-degradation signal, rather than a blind clock, spends a fixed repair budget better. On two real ANN datasets (SIFT-128 and Fashion-MNIST-784) under a controlled bursty churn stream, and comparing repair policies at matched amortized repair budget (equal consolidation count), signal-triggered repair Pareto-dominates fixed-cadence repair. The gain is concentrated on worst-case (tail) recall at scarce budget: at roughly one consolidation it improves the minimum recall@10 by +0.014 (SIFT) to +0.050 (Fashion-MNIST) across four stream seeds, with 95% confidence intervals excluding zero, while the mean-recall gain is small (<0.005). The advantage follows a clean drift-severity gradient -- larger for sparser, more fragile graphs -- and fades to parity when the index is robust or budget is ample. A cheap probe-recall signal is a valid, leading indicator of true recall (Spearman rho ~= 0.95). We contribute the mechanism, a budget-matched evaluation protocol that separates repair scheduling from repair spend, and an open, reproducible churn-repair harness. We deliberately do not claim a mean-recall improvement or a new index; a recall-versus-repair-cost bound and data-distribution-drift coupling are left as future work."
+        },
+        {
+          "title": "What Survives Into Context: A Diagnostic for Budget-Constrained Multi-Hop RAG and When Submodular Evidence Packing Improves It",
+          "url": "https://arxiv.org/abs/2607.00725",
+          "arxivId": "2607.00725",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Retrieval-augmented generation (RAG) under a fixed reader-context budget forces a selection problem: of the evidence retrieved, only a fraction can be shown to the reader. We argue that document recall -- the standard retrieval metric -- is the wrong quantity to optimize in this regime, and we make two contributions. First, as a general contribution, we introduce answer-in-context, a diagnostic that measures whether a gold answer survives as a contiguous span in the packed reader context (not the retrieved set). It predicts answer F1 better than recall (r=0.39-0.55 vs. about 0.31), separates answer quality roughly five-fold (0.60 vs. 0.12 on HotpotQA), and carries information beyond retrieval: it adds Delta R squared=0.17 over recall and shows a 4.6x EM gap even among questions where all gold was retrieved. We also confirm it interventionally: on 2WikiMultiHopQA a packing change that raises coverage but not answer-in-context yields no accuracy gain. Second, as a conditional contribution, we cast reader-context construction as budgeted monotone submodular maximization and build a packer that jointly optimizes relevance, query coverage, representativeness, and diversity. On HotpotQA with a 160-token budget and a 3B reader it beats a strong focused heuristic, MMR, and naive packing -- by up to +5.1 F1 at equal-or-lower token cost, across three seeds. Crucially, we map the scope of this win honestly: it requires the conjunction of (i) multi-hop complementary structure, (ii) retrieval that surfaces the evidence, (iii) a binding but not extreme budget, and (iv) a reader weak enough that evidence density, not reading capacity, is the bottleneck. A quantization-controlled reader-scale ladder (3B to 7B to 14B) shows the edge over the heuristic is absorbed by 7B and significantly reverses by 14B, while the diagnostic explains every boundary with a single variable."
+        },
+        {
+          "title": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+          "url": "https://arxiv.org/abs/2607.00597",
+          "arxivId": "2607.00597",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Scientific literature search often requires more than retrieving papers from a single query: users' intents are underspecified, preference-dependent, and evolve through interaction. Existing search agents typically rely on fixed pipelines or implicit language-only reasoning, making their search strategies difficult to control, inspect, and refine. We introduce PaperPilot, a multi-turn literature search agent that frames scientific search as workflow induction. Given an anchor paper and a user query, PaperPilot constructs an executable DAG of paper-search operators, including keyword search, citation expansion, filtering, scoring, reranking, and evidence extraction. User feedback is then used to refine both the query and the workflow itself. We train PaperPilot with supervised workflow imitation and preference optimization over controlled workflow corruptions. Experiments show that PaperPilot-9B improves over the base Qwen3.5-9B toolset agent under multi-turn interaction, increasing Hit@5 from 58.0 to 77.0, MRR from 47.5 to 59.4, and nDCG@10 from 26.8 to 32.5, while reducing workflow execution errors from 9.5% to 0%. These results show that explicit, editable search workflows provide an effective and controllable interface for aligning literature search agents with complex scientific intent."
+        },
+        {
+          "title": "When RAG Meets Query Planning: Logical Query Trees for Resolving Exploratory Reasoning Problems",
+          "url": "https://arxiv.org/abs/2607.00508",
+          "arxivId": "2607.00508",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Retrieval-Augmented Generation (RAG) effectively grounds large language models (LLMs) in external knowledge but struggles with \\textbf{exploratory reasoning problems (ERPs)} that are the complex queries involving high uncertainty and ambiguity. Resolving ERPs requires complex reasoning with unclear paths, tending to result in retrieval noise and error accumulation. Furthermore, the absence of an end-to-end planning mechanism makes it difficult to generate effective trajectories for ERPs. Motivated by database query planning, we introduce \\emph{PlanRAG}, an RAG framework that models ERPs of natural language as \\textbf{logical query trees (LQTs)}. However, translating ERPs into LQTs is non-trivial due to representation and optimization gaps between structured SQL and unstructured natural language, making it highly challenging to construct high-quality LQTs. To address these problems, we first decompose ERPs into atomic queries and then organize them into LQTs using dynamic programming guided by a cost model involving multiple complementary dimensions. Finally, we execute iterative aggregation, rewriting, retrieval, and generation over LQTs, processing nodes concurrently and propagating intermediate results upward, with further parallelization across multiple threads for efficiency. Our experimental results show that PlanRAG outperforms state-of-the-art iteration-based and graph-based RAG systems on our newly constructed dataset, \\textbf{WikiWeb-ERP}, thereby providing a new formulation for optimizing natural language queries. Our source code and dataset are available at https://anonymous.4open.science/r/PlanRAG-main-B2C8/."
+        },
+        {
+          "title": "Real-Time Hard Negative Sampling via LLM-based Clustering for Large-Scale Two-Tower Retrieval",
+          "url": "https://arxiv.org/abs/2607.00448",
+          "arxivId": "2607.00448",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "abstract": "The two-tower model has been widely used for large-scale recommendation systems, particularly in the retrieval stage. Industry standards for training two-tower models typically involve in-batch and/or out-of-batch negative sampling. However, these methods often produce easy negatives that models can quickly learn, failing to sufficiently challenge the model. To address this issue, a novel self-supervised hard negative sampling technique is proposed that leverages a large language model (LLM) to generate hard negatives from the same cluster during model training. By utilizing the LLM to learn media representations, the proposed approach ensures that the generated negatives are more challenging and informative. This real-time sampling framework is designed for seamless integration into production models, capable of handling billions of training data points with minimal computational complexity. Experiments on public datasets, along with deployment to a large-scale online system, demonstrate that the proposed negative sampling technique outperforms widely used industry methods. Furthermore, analysis in industrial applications reveals that this sampling method can help break inherent feedback loops in recommendations and significantly reduce popularity bias."
+        },
+        {
+          "title": "Attribute-Prompted Kernel Hashing for Unsupervised Data-Efficient Cross-Modal Retrieval",
+          "url": "https://arxiv.org/abs/2607.00379",
+          "arxivId": "2607.00379",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CV"
+          ],
+          "abstract": "Unsupervised cross-modal hashing enables efficient retrieval of semantically related instances across different modalities without requiring manual semantic annotation. However, existing unsupervised methods rely heavily on large-scale image-text pairs. Collecting such data can be costly, particularly in scenarios where well-aligned pairs are scarce due to privacy and specialized constraints. More critically, existing methods tend to overfit to seen training data, restricting their generalization performance on unseen categories that the constrained training data cannot cover. To address these limitations, we propose Attribute-Prompted Kernel Hashing (APKH), a novel data-efficient approach that constructs a compact, modality-aligned Hamming space driven by the generalized attribute priors of vision-language foundation models. Specifically, APKH introduces two core modules: Context-optimized Attribute Kernel Mapping (CAKM) and Kernel-Smoothed Contrastive Alignment (KSCA). CAKM formulates cross-modal alignment through hyperspherical Radial Basis Function kernel mapping, optimizing dynamic attribute kernels via prompt learning to capture modality-invariant semantics. Furthermore, KSCA extends conventional point-to-point contrastive learning by modeling limited paired data as continuous kernel distributions. This explicit smoothing of the modality gap alleviates overfitting to sparse pairwise correlations. Extensive experiments demonstrate that APKH outperforms state-of-the-art hashing methods in the challenging cross-modal retrieval tasks from seen to unseen categories under data-constrained scenarios."
+        },
+        {
+          "title": "Learning to Compose: Revisiting Proxy Task Design for Zero-Shot Composed Image Retrieval",
+          "url": "https://arxiv.org/abs/2607.00374",
+          "arxivId": "2607.00374",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL",
+            "cs.IR",
+            "cs.MM"
+          ],
+          "abstract": "Composed Image Retrieval (CIR) retrieves a target image from a reference image and a textual modification. While supervised CIR relies on costly triplets, Zero-Shot CIR (ZS-CIR) alleviates this reliance through proxy tasks trained on image-text pairs. However, existing proxy tasks primarily enhance visual and textual representations to accommodate a predefined composition mechanism such as pseudo-word injection into a frozen text encoder or linear feature arithmetic. As a result, the composition function itself remains unlearned, limiting the model's ability to express diverse and fine-grained semantic modifications. To address this, we propose FoCo, which models composition as two coordinated stages: focusing on modification-relevant visual content, and then completing the target semantics. We realize these through two proxy tasks: text-anchored visual aggregation to selectively gather visual content guided by localized textual semantics, and context-conditioned semantic completion to transform these aggregated visuals with the remaining scene context into a coherent composed representation. The tasks are trained jointly with a cross-instance contrastive objective, encouraging semantic diversity and discouraging shortcut composition strategies. Extensive experiments on four ZS-CIR benchmarks show FoCo's state-of-the-art performance and improved generalization."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Diffusion-GR2: Diffusion Generative Reasoning Re-ranker",
+              "url": "https://arxiv.org/abs/2607.01170",
+              "arxivId": "2607.01170",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "abstract": "Generative reasoning re-rankers achieve strong recommendation accuracy by emitting a chain-of-thought before re-ordering a candidate list, but they are slow at inference: an autoregressive (AR) decoder spends one sequential forward pass per reasoning token, and the reasoning trace far exceeds the ranking it produces. To reduce this cost, block-diffusion language models decode many positions in parallel over a few denoising steps and are substantially faster, yet naively converting an AR re-ranker into one opens two accuracy gaps: (1) a structural gap: answer positions are denoised in parallel and scored independently, so the decoder emits invalid rankings (duplicated, dropped, or out-of-set identifiers) that AR avoids through left-to-right masking; and (2) a distributional gap: fine-tuning the converted model on fixed teacher trajectories is off-policy relative to its own decoding at inference, leaving a residual accuracy gap. To close both gaps while keeping the speedup, we propose \\textbf{Diffusion-GR2}, a recipe that converts our AR reasoning re-ranker (GR2) into a block-diffusion re-ranker. First, conversion fine-tuning (CFT) adapts the AR-initialized diffusion model to denoise the answer into a valid permutation on its own, without an external constrained decoder. Next, on-policy distillation (OPD) then supervises the model on its own decoded trajectories with dense per-token targets from the AR teacher. Finally, we apply a reinforcement-learning (RL) stage against a re-ranking reward on top of OPD's on-policy policy. Experiments on Amazon Beauty demonstrate that Diffusion-GR2 recovers to near-parity with the AR re-ranker, while block-parallel decoding raises decode throughput by $2.4$--$3.5\\times$ at the model's reasoning output length. Ablations show that CFT recovers most of the conversion gap, and that on-policy distillation further closes it to the AR reference."
+            },
+            {
+              "title": "Trie-based Experiment Plans for Efficient IR Pipeline Experiments",
+              "url": "https://arxiv.org/abs/2607.01162",
+              "arxivId": "2607.01162",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Search engines are often formulated as cascading pipelines, where successive stages combine the results of different retrievers, and iteratively refine the ranking of candidate documents to obtain a final ranking, which can be presented to a user, or provided as context to an LLM. Such pipelines can be complex to evaluate in an end-to-end manner, necessitating measurement of Recall of early stages, and Precision of later stages, which are often interchangeable. PyTerrier is ideal for building and evaluating cascading retrieval pipelines, due to its declarative nature for pipeline construction and wide ecosystem of retrievers and rerankers. However, comparative evaluation of pipelines can be expensive due to repeated components. In this work, we describe the use of a trie data structure to formulate an experiment plan for comparative pipeline experiments that enhances experiment efficiency compared to a sequential \"linear\" plan. Empirically, on a demonstration experiment involving BM25, MonoT5 and DuoT5 on MSMARCO v2, we observe a 26% reduction in experiment duration. Finally, we report on a user study of undergraduate and postgraduate research students' use of the experiment plans."
+            },
+            {
+              "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+              "url": "https://arxiv.org/abs/2607.01071",
+              "arxivId": "2607.01071",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "abstract": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench."
+            },
+            {
+              "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+              "url": "https://arxiv.org/abs/2607.01040",
+              "arxivId": "2607.01040",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large-scale search systems evolve faster than human quality assurance can scale, especially for long-tail intents and multilingual queries. LLM-as-a-judge approaches provide a scalable alternative for evaluating the relevance of search engine result pages (SERPs), but judgments based solely on semantic similarity or world knowledge can drift from actual user preferences, particularly for ambiguous queries. We introduce a behavior-grounded LLM judge that augments each SERP item with a lightweight and auditable behavioral prior in the form of a Query-Relevance-Impressions (QRI) card. Each card summarizes how users have historically interacted with similar queries and results, providing compact empirical evidence that the judge can cite to resolve ambiguity and make more consistent relevance judgments while still relying on semantic reasoning. In a large-scale music search evaluation at Spotify, using relevance estimates derived from historical user interactions across 6,000 recomposed SERPs, the behavior-grounded judge achieves stronger alignment with user preferences, improving Spearman rank correlation by approximately 5% overall and yielding a 91% relative improvement on disagreement cases. On a multilingual human-judged dataset spanning five languages, grounding further increases correlation with human relevance judgments by 15%. Importantly, when evaluated against outcomes from a live A/B test, the grounded judge shows consistently higher alignment with the observed winning model. While absolute alignment remains moderate, these findings demonstrate that lightweight behavioral grounding can improve the reliability and practical usefulness of LLM-based evaluation in real-world search systems."
+            },
+            {
+              "title": "RACORN-1: Adaptive Recall-Preserving Speedup for Low-Selectivity Filtered Vector Search",
+              "url": "https://arxiv.org/abs/2607.00768",
+              "arxivId": "2607.00768",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.IR"
+              ],
+              "abstract": "Filtered Vector Search (FVS), which combines vector embedding similarity with structured metadata predicates, has emerged as a core requirement in RAG and production retrieval systems. ACORN-1, the representative In-filtering algorithm that reuses an existing HNSW index, substantially reduces latency at low selectivity but suffers connectivity instability below 5% selectivity and recall collapse below 1%. We propose RACORN-1, an in-place extension of ACORN-1 that resolves this collapse via (i) Adaptive Search Fallback (ASF) -- repurposing filter-failing nodes as transient bridges to detour around severed paths; bridge and two-hop candidate selection uses stride sampling for spatial diversity. While filter-first ACORN-family methods have a structural recall trade-off relative to distance-first HNSW, RACORN-1 improves the trade-off curve via ASF, minimizing recall loss while substantially reducing latency. Across three 1M-scale and one 40M-scale dataset, RACORN-1 delivers approximately 9-26x latency reduction over HNSW in the sweet spot (1%-0.3%), and recovers ACORN-1's recall collapse from 0.45-0.72 (1%) and 0.03-0.10 (0.3%) to 0.70-0.96 and 0.77-0.98 respectively. For the extreme-low-selectivity regime where linear scan can outperform graph search, we combine RACORN-1 with (ii) Adaptive Exact Fallback (AEF) in a variant RACORN-1+, achieving recall 1.00 with 20-75x speedup at 1M <=0.1% and 13x speedup at 40M 0.01%. Under a Negative Correlation evaluation (K-means clusters), where ACORN-1 collapses (recall 0.08-0.41), RACORN-1 maintains recall 0.80-0.98 with a 5-9x latency advantage over HNSW. Together, RACORN-1 and RACORN-1+ form an ACORN-1-compatible mechanism robust to both extreme-low-selectivity and adversarial query-filter correlation."
+            },
+            {
+              "title": "When to Repair a Graph ANN Index: Navigability-Signal-Triggered Local Repair Protects Tail Recall Under Bursty Churn",
+              "url": "https://arxiv.org/abs/2607.00728",
+              "arxivId": "2607.00728",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.IR"
+              ],
+              "abstract": "Graph approximate-nearest-neighbor (ANN) indexes (HNSW, DiskANN/Vamana) lose recall under insert/delete churn, because deletions orphan the greedy-search paths that route through removed nodes. Production systems restore navigability by repairing the graph on a fixed schedule (consolidate every X operations). We ask whether triggering local edge repair on a measured navigability-degradation signal, rather than a blind clock, spends a fixed repair budget better. On two real ANN datasets (SIFT-128 and Fashion-MNIST-784) under a controlled bursty churn stream, and comparing repair policies at matched amortized repair budget (equal consolidation count), signal-triggered repair Pareto-dominates fixed-cadence repair. The gain is concentrated on worst-case (tail) recall at scarce budget: at roughly one consolidation it improves the minimum recall@10 by +0.014 (SIFT) to +0.050 (Fashion-MNIST) across four stream seeds, with 95% confidence intervals excluding zero, while the mean-recall gain is small (<0.005). The advantage follows a clean drift-severity gradient -- larger for sparser, more fragile graphs -- and fades to parity when the index is robust or budget is ample. A cheap probe-recall signal is a valid, leading indicator of true recall (Spearman rho ~= 0.95). We contribute the mechanism, a budget-matched evaluation protocol that separates repair scheduling from repair spend, and an open, reproducible churn-repair harness. We deliberately do not claim a mean-recall improvement or a new index; a recall-versus-repair-cost bound and data-distribution-drift coupling are left as future work."
+            },
+            {
+              "title": "What Survives Into Context: A Diagnostic for Budget-Constrained Multi-Hop RAG and When Submodular Evidence Packing Improves It",
+              "url": "https://arxiv.org/abs/2607.00725",
+              "arxivId": "2607.00725",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Retrieval-augmented generation (RAG) under a fixed reader-context budget forces a selection problem: of the evidence retrieved, only a fraction can be shown to the reader. We argue that document recall -- the standard retrieval metric -- is the wrong quantity to optimize in this regime, and we make two contributions. First, as a general contribution, we introduce answer-in-context, a diagnostic that measures whether a gold answer survives as a contiguous span in the packed reader context (not the retrieved set). It predicts answer F1 better than recall (r=0.39-0.55 vs. about 0.31), separates answer quality roughly five-fold (0.60 vs. 0.12 on HotpotQA), and carries information beyond retrieval: it adds Delta R squared=0.17 over recall and shows a 4.6x EM gap even among questions where all gold was retrieved. We also confirm it interventionally: on 2WikiMultiHopQA a packing change that raises coverage but not answer-in-context yields no accuracy gain. Second, as a conditional contribution, we cast reader-context construction as budgeted monotone submodular maximization and build a packer that jointly optimizes relevance, query coverage, representativeness, and diversity. On HotpotQA with a 160-token budget and a 3B reader it beats a strong focused heuristic, MMR, and naive packing -- by up to +5.1 F1 at equal-or-lower token cost, across three seeds. Crucially, we map the scope of this win honestly: it requires the conjunction of (i) multi-hop complementary structure, (ii) retrieval that surfaces the evidence, (iii) a binding but not extreme budget, and (iv) a reader weak enough that evidence density, not reading capacity, is the bottleneck. A quantization-controlled reader-scale ladder (3B to 7B to 14B) shows the edge over the heuristic is absorbed by 7B and significantly reverses by 14B, while the diagnostic explains every boundary with a single variable."
+            },
+            {
+              "title": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+              "url": "https://arxiv.org/abs/2607.00597",
+              "arxivId": "2607.00597",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Scientific literature search often requires more than retrieving papers from a single query: users' intents are underspecified, preference-dependent, and evolve through interaction. Existing search agents typically rely on fixed pipelines or implicit language-only reasoning, making their search strategies difficult to control, inspect, and refine. We introduce PaperPilot, a multi-turn literature search agent that frames scientific search as workflow induction. Given an anchor paper and a user query, PaperPilot constructs an executable DAG of paper-search operators, including keyword search, citation expansion, filtering, scoring, reranking, and evidence extraction. User feedback is then used to refine both the query and the workflow itself. We train PaperPilot with supervised workflow imitation and preference optimization over controlled workflow corruptions. Experiments show that PaperPilot-9B improves over the base Qwen3.5-9B toolset agent under multi-turn interaction, increasing Hit@5 from 58.0 to 77.0, MRR from 47.5 to 59.4, and nDCG@10 from 26.8 to 32.5, while reducing workflow execution errors from 9.5% to 0%. These results show that explicit, editable search workflows provide an effective and controllable interface for aligning literature search agents with complex scientific intent."
+            },
+            {
+              "title": "When RAG Meets Query Planning: Logical Query Trees for Resolving Exploratory Reasoning Problems",
+              "url": "https://arxiv.org/abs/2607.00508",
+              "arxivId": "2607.00508",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Retrieval-Augmented Generation (RAG) effectively grounds large language models (LLMs) in external knowledge but struggles with \\textbf{exploratory reasoning problems (ERPs)} that are the complex queries involving high uncertainty and ambiguity. Resolving ERPs requires complex reasoning with unclear paths, tending to result in retrieval noise and error accumulation. Furthermore, the absence of an end-to-end planning mechanism makes it difficult to generate effective trajectories for ERPs. Motivated by database query planning, we introduce \\emph{PlanRAG}, an RAG framework that models ERPs of natural language as \\textbf{logical query trees (LQTs)}. However, translating ERPs into LQTs is non-trivial due to representation and optimization gaps between structured SQL and unstructured natural language, making it highly challenging to construct high-quality LQTs. To address these problems, we first decompose ERPs into atomic queries and then organize them into LQTs using dynamic programming guided by a cost model involving multiple complementary dimensions. Finally, we execute iterative aggregation, rewriting, retrieval, and generation over LQTs, processing nodes concurrently and propagating intermediate results upward, with further parallelization across multiple threads for efficiency. Our experimental results show that PlanRAG outperforms state-of-the-art iteration-based and graph-based RAG systems on our newly constructed dataset, \\textbf{WikiWeb-ERP}, thereby providing a new formulation for optimizing natural language queries. Our source code and dataset are available at https://anonymous.4open.science/r/PlanRAG-main-B2C8/."
+            },
+            {
+              "title": "Real-Time Hard Negative Sampling via LLM-based Clustering for Large-Scale Two-Tower Retrieval",
+              "url": "https://arxiv.org/abs/2607.00448",
+              "arxivId": "2607.00448",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "abstract": "The two-tower model has been widely used for large-scale recommendation systems, particularly in the retrieval stage. Industry standards for training two-tower models typically involve in-batch and/or out-of-batch negative sampling. However, these methods often produce easy negatives that models can quickly learn, failing to sufficiently challenge the model. To address this issue, a novel self-supervised hard negative sampling technique is proposed that leverages a large language model (LLM) to generate hard negatives from the same cluster during model training. By utilizing the LLM to learn media representations, the proposed approach ensures that the generated negatives are more challenging and informative. This real-time sampling framework is designed for seamless integration into production models, capable of handling billions of training data points with minimal computational complexity. Experiments on public datasets, along with deployment to a large-scale online system, demonstrate that the proposed negative sampling technique outperforms widely used industry methods. Furthermore, analysis in industrial applications reveals that this sampling method can help break inherent feedback loops in recommendations and significantly reduce popularity bias."
+            },
+            {
+              "title": "Attribute-Prompted Kernel Hashing for Unsupervised Data-Efficient Cross-Modal Retrieval",
+              "url": "https://arxiv.org/abs/2607.00379",
+              "arxivId": "2607.00379",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CV"
+              ],
+              "abstract": "Unsupervised cross-modal hashing enables efficient retrieval of semantically related instances across different modalities without requiring manual semantic annotation. However, existing unsupervised methods rely heavily on large-scale image-text pairs. Collecting such data can be costly, particularly in scenarios where well-aligned pairs are scarce due to privacy and specialized constraints. More critically, existing methods tend to overfit to seen training data, restricting their generalization performance on unseen categories that the constrained training data cannot cover. To address these limitations, we propose Attribute-Prompted Kernel Hashing (APKH), a novel data-efficient approach that constructs a compact, modality-aligned Hamming space driven by the generalized attribute priors of vision-language foundation models. Specifically, APKH introduces two core modules: Context-optimized Attribute Kernel Mapping (CAKM) and Kernel-Smoothed Contrastive Alignment (KSCA). CAKM formulates cross-modal alignment through hyperspherical Radial Basis Function kernel mapping, optimizing dynamic attribute kernels via prompt learning to capture modality-invariant semantics. Furthermore, KSCA extends conventional point-to-point contrastive learning by modeling limited paired data as continuous kernel distributions. This explicit smoothing of the modality gap alleviates overfitting to sparse pairwise correlations. Extensive experiments demonstrate that APKH outperforms state-of-the-art hashing methods in the challenging cross-modal retrieval tasks from seen to unseen categories under data-constrained scenarios."
+            },
+            {
+              "title": "Learning to Compose: Revisiting Proxy Task Design for Zero-Shot Composed Image Retrieval",
+              "url": "https://arxiv.org/abs/2607.00374",
+              "arxivId": "2607.00374",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.AI",
+                "cs.CL",
+                "cs.IR",
+                "cs.MM"
+              ],
+              "abstract": "Composed Image Retrieval (CIR) retrieves a target image from a reference image and a textual modification. While supervised CIR relies on costly triplets, Zero-Shot CIR (ZS-CIR) alleviates this reliance through proxy tasks trained on image-text pairs. However, existing proxy tasks primarily enhance visual and textual representations to accommodate a predefined composition mechanism such as pseudo-word injection into a frozen text encoder or linear feature arithmetic. As a result, the composition function itself remains unlearned, limiting the model's ability to express diverse and fine-grained semantic modifications. To address this, we propose FoCo, which models composition as two coordinated stages: focusing on modification-relevant visual content, and then completing the target semantics. We realize these through two proxy tasks: text-anchored visual aggregation to selectively gather visual content guided by localized textual semantics, and context-conditioned semantic completion to transform these aggregated visuals with the remaining scene context into a coherent composed representation. The tasks are trained jointly with a cross-instance contrastive objective, encouraging semantic diversity and discouraging shortcut composition strategies. Extensive experiments on four ZS-CIR benchmarks show FoCo's state-of-the-art performance and improved generalization."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Diffusion-GR2: Diffusion Generative Reasoning Re-ranker",
+              "url": "https://arxiv.org/abs/2607.01170",
+              "arxivId": "2607.01170",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "Trie-based Experiment Plans for Efficient IR Pipeline Experiments",
+              "url": "https://arxiv.org/abs/2607.01162",
+              "arxivId": "2607.01162",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 12.0,
+                "total": 12.0
+              }
+            },
+            {
+              "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+              "url": "https://arxiv.org/abs/2607.01071",
+              "arxivId": "2607.01071",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+              "url": "https://arxiv.org/abs/2607.01040",
+              "arxivId": "2607.01040",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "RACORN-1: Adaptive Recall-Preserving Speedup for Low-Selectivity Filtered Vector Search",
+              "url": "https://arxiv.org/abs/2607.00768",
+              "arxivId": "2607.00768",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "When to Repair a Graph ANN Index: Navigability-Signal-Triggered Local Repair Protects Tail Recall Under Bursty Churn",
+              "url": "https://arxiv.org/abs/2607.00728",
+              "arxivId": "2607.00728",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "What Survives Into Context: A Diagnostic for Budget-Constrained Multi-Hop RAG and When Submodular Evidence Packing Improves It",
+              "url": "https://arxiv.org/abs/2607.00725",
+              "arxivId": "2607.00725",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+              "url": "https://arxiv.org/abs/2607.00597",
+              "arxivId": "2607.00597",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "When RAG Meets Query Planning: Logical Query Trees for Resolving Exploratory Reasoning Problems",
+              "url": "https://arxiv.org/abs/2607.00508",
+              "arxivId": "2607.00508",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "Real-Time Hard Negative Sampling via LLM-based Clustering for Large-Scale Two-Tower Retrieval",
+              "url": "https://arxiv.org/abs/2607.00448",
+              "arxivId": "2607.00448",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "Attribute-Prompted Kernel Hashing for Unsupervised Data-Efficient Cross-Modal Retrieval",
+              "url": "https://arxiv.org/abs/2607.00379",
+              "arxivId": "2607.00379",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CV"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "Learning to Compose: Revisiting Proxy Task Design for Zero-Shot Composed Image Retrieval",
+              "url": "https://arxiv.org/abs/2607.00374",
+              "arxivId": "2607.00374",
+              "date": "2026-07-01",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.AI",
+                "cs.CL",
+                "cs.IR",
+                "cs.MM"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Diffusion-GR2: Diffusion Generative Reasoning Re-ranker",
+          "url": "https://arxiv.org/abs/2607.01170",
+          "arxivId": "2607.01170",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Trie-based Experiment Plans for Efficient IR Pipeline Experiments",
+          "url": "https://arxiv.org/abs/2607.01162",
+          "arxivId": "2607.01162",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 12.0,
+            "total": 12.0
+          }
+        },
+        {
+          "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+          "url": "https://arxiv.org/abs/2607.01071",
+          "arxivId": "2607.01071",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+          "url": "https://arxiv.org/abs/2607.01040",
+          "arxivId": "2607.01040",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "RACORN-1: Adaptive Recall-Preserving Speedup for Low-Selectivity Filtered Vector Search",
+          "url": "https://arxiv.org/abs/2607.00768",
+          "arxivId": "2607.00768",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "When to Repair a Graph ANN Index: Navigability-Signal-Triggered Local Repair Protects Tail Recall Under Bursty Churn",
+          "url": "https://arxiv.org/abs/2607.00728",
+          "arxivId": "2607.00728",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "What Survives Into Context: A Diagnostic for Budget-Constrained Multi-Hop RAG and When Submodular Evidence Packing Improves It",
+          "url": "https://arxiv.org/abs/2607.00725",
+          "arxivId": "2607.00725",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+          "url": "https://arxiv.org/abs/2607.00597",
+          "arxivId": "2607.00597",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "When RAG Meets Query Planning: Logical Query Trees for Resolving Exploratory Reasoning Problems",
+          "url": "https://arxiv.org/abs/2607.00508",
+          "arxivId": "2607.00508",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Real-Time Hard Negative Sampling via LLM-based Clustering for Large-Scale Two-Tower Retrieval",
+          "url": "https://arxiv.org/abs/2607.00448",
+          "arxivId": "2607.00448",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "Attribute-Prompted Kernel Hashing for Unsupervised Data-Efficient Cross-Modal Retrieval",
+          "url": "https://arxiv.org/abs/2607.00379",
+          "arxivId": "2607.00379",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "Learning to Compose: Revisiting Proxy Task Design for Zero-Shot Composed Image Retrieval",
+          "url": "https://arxiv.org/abs/2607.00374",
+          "arxivId": "2607.00374",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL",
+            "cs.IR",
+            "cs.MM"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "What Survives Into Context: A Diagnostic for Budget-Constrained Multi-Hop RAG and When Submodular Evidence Packing Improves It",
+          "url": "https://arxiv.org/abs/2607.00725",
+          "arxivId": "2607.00725",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "When to Repair a Graph ANN Index: Navigability-Signal-Triggered Local Repair Protects Tail Recall Under Bursty Churn",
+          "url": "https://arxiv.org/abs/2607.00728",
+          "arxivId": "2607.00728",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+          "url": "https://arxiv.org/abs/2607.01071",
+          "arxivId": "2607.01071",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+          "url": "https://arxiv.org/abs/2607.01040",
+          "arxivId": "2607.01040",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Diffusion-GR2: Diffusion Generative Reasoning Re-ranker",
+          "url": "https://arxiv.org/abs/2607.01170",
+          "arxivId": "2607.01170",
+          "date": "2026-07-01",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "What Survives Into Context: A Diagnostic for Budget-Constrained Multi-Hop RAG and When Submodular Evidence Packing Improves It",
+            "url": "https://arxiv.org/abs/2607.00725",
+            "arxivId": "2607.00725",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "什么存留于上下文中：面向预算受限的多跳RAG的诊断及子模证据打包何时能改善它",
+            "researchParadigmTags": [
+              "评测方法",
+              "算法设计",
+              "实验验证",
+              "机制设计",
+              "系统框架"
+            ],
+            "contentTags": [
+              "检索增强生成",
+              "多跳问答",
+              "上下文压缩",
+              "证据选择",
+              "诊断指标"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在检索增强生成（RAG）中，当上下文窗口受限时，即使检索到了正确答案所在的文档，也可能因打包策略不当而未能将答案片段送入模型视野。传统指标如召回率衡量的是检索阶段的表现，却无法反映最终进入上下文的答案存活性。本文指出，在多跳问答任务中，真正决定生成质量的关键是‘答案是否存活于上下文中’，而非单纯检索到多少相关文档，这揭示了现有评估体系与实际性能之间的脱节。",
+              "modelAndSetup": "研究聚焦于固定上下文预算下的多跳问答任务，输入为问题和检索出的候选段落，输出是由打包策略筛选后填入模型上下文的文本序列，并由一个指令调优的语言模型生成答案。作者在HotpotQA等多跳数据集上测试不同打包方法，使用F1和EM作为最终答案评价指标，同时引入‘答案在上下文中’这一新诊断变量，评估其与最终性能的相关性。",
+              "contributionsAndResults": "论文提出了‘答案在上下文中’这一诊断指标，证明其比传统召回率更能预测最终答案质量，且具有增量有效性。基于此，作者设计了一种子模函数驱动的证据打包算法，在互补性强、检索已覆盖关键证据、预算适中且模型能力较弱的条件下，显著优于启发式方法。实验表明该方法在3B模型上提升达+5.1F1，但在更大模型上优势消失甚至反转，揭示了系统瓶颈的转移。",
+              "methodsAndTechniques": "打包过程被建模为带预算的单调子模最大化问题，目标函数联合优化相关性、查询覆盖、代表性与多样性，确保互补证据被优先纳入。算法采用代价敏感的贪心策略逐个添加边际收益最高的片段。通过与MMR、朴素拼接等基线对比，并结合跨数据集、跨预算、跨模型规模的消融实验，验证了该方法的有效边界及其作用机制——即通过组装多跳证据使答案得以存续于上下文中。",
+              "limitationsAndReadingValue": "核心结论依赖于HotpotQA上的实证，其他数据集主要用于界定失效边界；方法在更强模型或图结构化证据上表现不佳，且对长自由形式答案不适用。尽管如此，其诊断视角深刻揭示了RAG中‘答案存活’的核心中介作用。最值得阅读的是其问题重构思路、诊断设计逻辑与诚实的范围刻画，尤其适合关注上下文效率与真实瓶颈定位的研究者。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "什么存留于上下文中：面向预算受限的多跳RAG的诊断及子模证据打包何时能改善它",
+            "summarySections": {
+              "backgroundAndQuestion": "在检索增强生成（RAG）中，当上下文窗口受限时，即使检索到了正确答案所在的文档，也可能因打包策略不当而未能将答案片段送入模型视野。传统指标如召回率衡量的是检索阶段的表现，却无法反映最终进入上下文的答案存活性。本文指出，在多跳问答任务中，真正决定生成质量的关键是‘答案是否存活于上下文中’，而非单纯检索到多少相关文档，这揭示了现有评估体系与实际性能之间的脱节。",
+              "modelAndSetup": "研究聚焦于固定上下文预算下的多跳问答任务，输入为问题和检索出的候选段落，输出是由打包策略筛选后填入模型上下文的文本序列，并由一个指令调优的语言模型生成答案。作者在HotpotQA等多跳数据集上测试不同打包方法，使用F1和EM作为最终答案评价指标，同时引入‘答案在上下文中’这一新诊断变量，评估其与最终性能的相关性。",
+              "contributionsAndResults": "论文提出了‘答案在上下文中’这一诊断指标，证明其比传统召回率更能预测最终答案质量，且具有增量有效性。基于此，作者设计了一种子模函数驱动的证据打包算法，在互补性强、检索已覆盖关键证据、预算适中且模型能力较弱的条件下，显著优于启发式方法。实验表明该方法在3B模型上提升达+5.1F1，但在更大模型上优势消失甚至反转，揭示了系统瓶颈的转移。",
+              "methodsAndTechniques": "打包过程被建模为带预算的单调子模最大化问题，目标函数联合优化相关性、查询覆盖、代表性与多样性，确保互补证据被优先纳入。算法采用代价敏感的贪心策略逐个添加边际收益最高的片段。通过与MMR、朴素拼接等基线对比，并结合跨数据集、跨预算、跨模型规模的消融实验，验证了该方法的有效边界及其作用机制——即通过组装多跳证据使答案得以存续于上下文中。",
+              "limitationsAndReadingValue": "核心结论依赖于HotpotQA上的实证，其他数据集主要用于界定失效边界；方法在更强模型或图结构化证据上表现不佳，且对长自由形式答案不适用。尽管如此，其诊断视角深刻揭示了RAG中‘答案存活’的核心中介作用。最值得阅读的是其问题重构思路、诊断设计逻辑与诚实的范围刻画，尤其适合关注上下文效率与真实瓶颈定位的研究者。"
+            },
+            "contentTags": [
+              "检索增强生成",
+              "多跳问答",
+              "上下文压缩",
+              "证据选择",
+              "诊断指标"
+            ],
+            "researchParadigmTags": [
+              "评测方法",
+              "算法设计",
+              "实验验证",
+              "机制设计",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "When to Repair a Graph ANN Index: Navigability-Signal-Triggered Local Repair Protects Tail Recall Under Bursty Churn",
+            "url": "https://arxiv.org/abs/2607.00728",
+            "arxivId": "2607.00728",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.DB",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "何时修复图ANN索引：基于导航性信号触发的局部修复在突发性变更下保护尾部召回率",
+            "researchParadigmTags": [
+              "实验验证",
+              "机制设计",
+              "系统框架",
+              "评测方法"
+            ],
+            "contentTags": [
+              "图近似最近邻搜索",
+              "向量检索",
+              "索引维护",
+              "尾部性能",
+              "流式更新"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "图近似最近邻（ANN）索引在频繁插入和删除向量的动态环境中会因节点删除导致搜索路径断裂，从而降低召回率。现有系统通常按固定频率批量修复索引，但这种方式无法感知实际退化情况，可能浪费资源或错过关键修复时机。本文关注的问题是：能否通过监测图的导航能力下降信号来更智能地决定修复时机，从而在相同修复成本下提升效果。",
+              "modelAndSetup": "研究在真实数据集SIFT-128和Fashion-MNIST-784上模拟突发性增删流，对比三种修复策略：不修复、定期间隔修复和信号触发修复。输入为持续变化的向量集合，输出为查询的召回率表现。核心设定是使用一个小规模探针查询集实时测量导航性信号，并以此触发局部边修复操作。评估采用精确的实时存活集作为真值基准，确保公平比较。",
+              "contributionsAndResults": "论文提出一种基于导航性信号的局部修复控制器（S3），并设计了一种匹配修复预算的评估协议，确保比较仅反映调度策略差异而非总开销。实验证明，在稀疏且脆弱的图结构中，信号触发策略显著优于定期间隔修复，尤其在稀缺预算下的尾部召回率上提升明显（最小recall@10提高0.014至0.050），且结果具有统计显著性。",
+              "methodsAndTechniques": "方法的核心是利用一个独立的小型探针查询集定期计算近似召回率，作为图导航能力的代理信号。当该信号低于预设阈值时触发一次局部修复操作。关键技术在于将修复决策从时间驱动转为状态驱动，并通过预算对齐的实验设计分离调度策略与总成本的影响。信号与真实召回率高度相关（Spearman ρ≈0.95），验证了其有效性。",
+              "limitationsAndReadingValue": "论文未声称提升平均召回率，实际增益极小（<0.005），优势集中在尾部性能且随索引鲁棒性增强或预算充足而消失。实验局限于单机内存图索引和特定数据分布。最值得阅读的是其问题设定、修复调度机制设计及严谨的预算匹配评估协议，为动态索引系统的运维提供了新的思路和可复现工具。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "何时修复图ANN索引：基于导航性信号触发的局部修复在突发性变更下保护尾部召回率",
+            "summarySections": {
+              "backgroundAndQuestion": "图近似最近邻（ANN）索引在频繁插入和删除向量的动态环境中会因节点删除导致搜索路径断裂，从而降低召回率。现有系统通常按固定频率批量修复索引，但这种方式无法感知实际退化情况，可能浪费资源或错过关键修复时机。本文关注的问题是：能否通过监测图的导航能力下降信号来更智能地决定修复时机，从而在相同修复成本下提升效果。",
+              "modelAndSetup": "研究在真实数据集SIFT-128和Fashion-MNIST-784上模拟突发性增删流，对比三种修复策略：不修复、定期间隔修复和信号触发修复。输入为持续变化的向量集合，输出为查询的召回率表现。核心设定是使用一个小规模探针查询集实时测量导航性信号，并以此触发局部边修复操作。评估采用精确的实时存活集作为真值基准，确保公平比较。",
+              "contributionsAndResults": "论文提出一种基于导航性信号的局部修复控制器（S3），并设计了一种匹配修复预算的评估协议，确保比较仅反映调度策略差异而非总开销。实验证明，在稀疏且脆弱的图结构中，信号触发策略显著优于定期间隔修复，尤其在稀缺预算下的尾部召回率上提升明显（最小recall@10提高0.014至0.050），且结果具有统计显著性。",
+              "methodsAndTechniques": "方法的核心是利用一个独立的小型探针查询集定期计算近似召回率，作为图导航能力的代理信号。当该信号低于预设阈值时触发一次局部修复操作。关键技术在于将修复决策从时间驱动转为状态驱动，并通过预算对齐的实验设计分离调度策略与总成本的影响。信号与真实召回率高度相关（Spearman ρ≈0.95），验证了其有效性。",
+              "limitationsAndReadingValue": "论文未声称提升平均召回率，实际增益极小（<0.005），优势集中在尾部性能且随索引鲁棒性增强或预算充足而消失。实验局限于单机内存图索引和特定数据分布。最值得阅读的是其问题设定、修复调度机制设计及严谨的预算匹配评估协议，为动态索引系统的运维提供了新的思路和可复现工具。"
+            },
+            "contentTags": [
+              "图近似最近邻搜索",
+              "向量检索",
+              "索引维护",
+              "尾部性能",
+              "流式更新"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "机制设计",
+              "系统框架",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+            "url": "https://arxiv.org/abs/2607.01071",
+            "arxivId": "2607.01071",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.AI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MemSyco-Bench: 评测智能体记忆中的谄媚行为",
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "记忆系统",
+              "对齐",
+              "评测方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型的智能体依赖长期记忆实现个性化服务，但记忆可能引发‘谄媚’问题：代理过度遵从用户历史观点，损害事实准确性。当前评测多关注记忆能否被正确存储与检索，却忽视其是否被合理使用。本文指出，关键挑战在于判断何时应采纳、约束或忽略记忆，而非简单追求检索成功。",
+              "modelAndSetup": "论文构建了一个名为 MemSyco-Bench 的评测基准，包含五类任务，测试智能体在客观事实判断、上下文范围控制、证据冲突、记忆更新与个性化使用中的表现。通过模拟多轮对话引入自然记忆线索，评估模型在不同情境下是否能正确决定记忆的影响方式，并采用准确率与特定记忆相关指标综合衡量性能。",
+              "contributionsAndResults": "MemSyco-Bench 揭示了主流记忆系统普遍存在记忆诱导的谄媚问题：多数系统在引入记忆后反而降低准确率并增加对错误记忆的依赖。实验显示，即使相关记忆被成功检索，模型仍常误用。该基准推动评测从‘是否检出’转向‘如何使用’，揭示了记忆系统在决策校准上的根本缺陷。",
+              "methodsAndTechniques": "方法核心是构建受控的记忆-决策模式，确保每个实例中记忆与问题语义相关但角色明确。通过定义决策模式、生成记忆片段、模拟多轮对话及多阶段验证，保证测试点聚焦于记忆使用的合理性。评测细粒度区分了抑制、约束、更新与利用等行为，使错误可归因于具体决策失误而非单纯检索失败。",
+              "limitationsAndReadingValue": "局限在于当前评测侧重人工构造的典型场景，真实交互中的复杂记忆动态可能更难捕捉。此外，轻量干预如提醒指令效果有限，甚至可能加剧问题。最值得阅读的是其问题设定与实验分析，深刻揭示了记忆系统不应仅优化检索效率，更需具备上下文感知的决策能力。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MemSyco-Bench: 评测智能体记忆中的谄媚行为",
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型的智能体依赖长期记忆实现个性化服务，但记忆可能引发‘谄媚’问题：代理过度遵从用户历史观点，损害事实准确性。当前评测多关注记忆能否被正确存储与检索，却忽视其是否被合理使用。本文指出，关键挑战在于判断何时应采纳、约束或忽略记忆，而非简单追求检索成功。",
+              "modelAndSetup": "论文构建了一个名为 MemSyco-Bench 的评测基准，包含五类任务，测试智能体在客观事实判断、上下文范围控制、证据冲突、记忆更新与个性化使用中的表现。通过模拟多轮对话引入自然记忆线索，评估模型在不同情境下是否能正确决定记忆的影响方式，并采用准确率与特定记忆相关指标综合衡量性能。",
+              "contributionsAndResults": "MemSyco-Bench 揭示了主流记忆系统普遍存在记忆诱导的谄媚问题：多数系统在引入记忆后反而降低准确率并增加对错误记忆的依赖。实验显示，即使相关记忆被成功检索，模型仍常误用。该基准推动评测从‘是否检出’转向‘如何使用’，揭示了记忆系统在决策校准上的根本缺陷。",
+              "methodsAndTechniques": "方法核心是构建受控的记忆-决策模式，确保每个实例中记忆与问题语义相关但角色明确。通过定义决策模式、生成记忆片段、模拟多轮对话及多阶段验证，保证测试点聚焦于记忆使用的合理性。评测细粒度区分了抑制、约束、更新与利用等行为，使错误可归因于具体决策失误而非单纯检索失败。",
+              "limitationsAndReadingValue": "局限在于当前评测侧重人工构造的典型场景，真实交互中的复杂记忆动态可能更难捕捉。此外，轻量干预如提醒指令效果有限，甚至可能加剧问题。最值得阅读的是其问题设定与实验分析，深刻揭示了记忆系统不应仅优化检索效率，更需具备上下文感知的决策能力。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "记忆系统",
+              "对齐",
+              "评测方法"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+            "url": "https://arxiv.org/abs/2607.01040",
+            "arxivId": "2607.01040",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "As It Was: 将大语言模型搜索评估与历史用户偏好对齐",
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "评测方法",
+              "机制设计"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "搜索评估",
+              "行为信号",
+              "用户偏好",
+              "评测对齐"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前大语言模型作为评判者的搜索评估方法依赖语义相似性和世界知识，容易偏离真实用户偏好，尤其在模糊查询或多语言长尾场景下表现不稳定。本文关注的问题是：如何让LLM评判更贴近实际用户行为，而非仅基于静态语义判断，从而提升评估系统的可靠性和实用性。",
+              "modelAndSetup": "研究在音乐搜索场景下比较两种LLM评判方式：一种仅基于查询和结果元数据进行语义判断，另一种则额外引入历史用户交互摘要（QRI卡）作为行为依据。输入为查询和SERP结果，输出为相关性评分，通过与日志衍生偏好、人工标注及线上A/B测试结果的相关性来衡量对齐程度。",
+              "contributionsAndResults": "论文提出的行为锚定方法显著提升了LLM评判与用户偏好的一致性，在大规模日志评估中Spearman相关系数提升约5%，在争议案例上相对改进达91%，并在多语言人工标注集上提升15%。更重要的是，该方法在线上A/B测试中也表现出更强的预测能力，说明其具备实际部署价值。",
+              "methodsAndTechniques": "核心创新在于为每个搜索结果附加Query-Relevance-Impressions（QRI）卡，汇总历史上类似查询下的用户曝光与点击行为，并采用逆倾向评分去偏。LLM在判断时参考这些统计证据，在语义模糊时作为决策依据，既保留语义推理又增强实证基础，使评判更具可审计性和现实合理性。",
+              "limitationsAndReadingValue": "尽管效果提升显著，绝对对齐水平仍有限，且依赖历史数据质量，冷启动或新兴查询支持较弱。此外，行为信号可能隐含残留偏差。最值得阅读的是其问题设定与系统设计，展示了如何将用户行为证据有机融入LLM评判流程，为工业级搜索评估提供了可复用的实践范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "As It Was: 将大语言模型搜索评估与历史用户偏好对齐",
+            "summarySections": {
+              "backgroundAndQuestion": "当前大语言模型作为评判者的搜索评估方法依赖语义相似性和世界知识，容易偏离真实用户偏好，尤其在模糊查询或多语言长尾场景下表现不稳定。本文关注的问题是：如何让LLM评判更贴近实际用户行为，而非仅基于静态语义判断，从而提升评估系统的可靠性和实用性。",
+              "modelAndSetup": "研究在音乐搜索场景下比较两种LLM评判方式：一种仅基于查询和结果元数据进行语义判断，另一种则额外引入历史用户交互摘要（QRI卡）作为行为依据。输入为查询和SERP结果，输出为相关性评分，通过与日志衍生偏好、人工标注及线上A/B测试结果的相关性来衡量对齐程度。",
+              "contributionsAndResults": "论文提出的行为锚定方法显著提升了LLM评判与用户偏好的一致性，在大规模日志评估中Spearman相关系数提升约5%，在争议案例上相对改进达91%，并在多语言人工标注集上提升15%。更重要的是，该方法在线上A/B测试中也表现出更强的预测能力，说明其具备实际部署价值。",
+              "methodsAndTechniques": "核心创新在于为每个搜索结果附加Query-Relevance-Impressions（QRI）卡，汇总历史上类似查询下的用户曝光与点击行为，并采用逆倾向评分去偏。LLM在判断时参考这些统计证据，在语义模糊时作为决策依据，既保留语义推理又增强实证基础，使评判更具可审计性和现实合理性。",
+              "limitationsAndReadingValue": "尽管效果提升显著，绝对对齐水平仍有限，且依赖历史数据质量，冷启动或新兴查询支持较弱。此外，行为信号可能隐含残留偏差。最值得阅读的是其问题设定与系统设计，展示了如何将用户行为证据有机融入LLM评判流程，为工业级搜索评估提供了可复用的实践范式。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "搜索评估",
+              "行为信号",
+              "用户偏好",
+              "评测对齐"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "评测方法",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Diffusion-GR2: Diffusion Generative Reasoning Re-ranker",
+            "url": "https://arxiv.org/abs/2607.01170",
+            "arxivId": "2607.01170",
+            "date": "2026-07-01",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.AI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Diffusion-GR2: 扩散生成式推理重排序器",
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "推理",
+              "推荐系统",
+              "强化学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么不能直接用扩散模型替代自回归模型来做推理型重排序？因为虽然扩散模型能并行解码提升速度，但在候选列表排序任务中会破坏排列结构，导致重复、遗漏或非法标识符。传统自回归模型通过逐项生成和掩码天然保证合法性，而扩散模型并行预测各位置，缺乏耦合约束，造成严重结构错误，使得加速以牺牲准确性为代价。",
+              "modelAndSetup": "论文研究的是基于语义ID的生成式推理重排序任务：输入用户历史和候选商品列表，模型需先生成理由链，再输出合法的商品排列。使用Qwen3-8B作为主干，在Amazon Beauty数据集上评估Recall@K和NDCG@3，并对比解码吞吐量。推理阶段采用块状扩散解码，训练则分三阶段进行微调与蒸馏，确保输出既高效又符合排列约束。",
+              "contributionsAndResults": "论文提出了Diffusion-GR2，一套将自回归推理重排序器转换为块扩散模型的方法，在几乎不损失精度的前提下实现2.4-3.5倍解码加速。关键贡献在于通过转换微调使扩散模型自主生成合法排列，并结合策略内蒸馏与强化学习缩小性能差距。实验证明其在Recall@1上达到0.2951，逼近自回归模型的0.2960，验证了高吞吐下保持高质量排序的可行性。",
+              "methodsAndTechniques": "方法核心是三阶段训练：首先进行转换微调（CFT），利用自回归初始化赋予扩散模型生成合法排列的能力；然后执行策略内蒸馏（OPD），让模型在自身采样轨迹上接受教师模型的逐token监督，消除训练与推理分布差异；最后用强化学习优化排名奖励，进一步拉近与教师的距离。整个过程无需外部约束解码器，完全由模型内部机制保障有效性。",
+              "limitationsAndReadingValue": "论文未充分探讨不同任务长度下的收益变化，且依赖特定块大小与置信阈值调优，实际部署可能存在敏感性。此外，所有改进均建立在已有高性能自回归模型之上，独立训练扩散模型是否可行尚不清楚。最值得读的是其系统级设计思路——如何在保持接口不变的情况下重构推理引擎，这对工业级低延迟生成系统具有重要参考价值。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Diffusion-GR2: 扩散生成式推理重排序器",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么不能直接用扩散模型替代自回归模型来做推理型重排序？因为虽然扩散模型能并行解码提升速度，但在候选列表排序任务中会破坏排列结构，导致重复、遗漏或非法标识符。传统自回归模型通过逐项生成和掩码天然保证合法性，而扩散模型并行预测各位置，缺乏耦合约束，造成严重结构错误，使得加速以牺牲准确性为代价。",
+              "modelAndSetup": "论文研究的是基于语义ID的生成式推理重排序任务：输入用户历史和候选商品列表，模型需先生成理由链，再输出合法的商品排列。使用Qwen3-8B作为主干，在Amazon Beauty数据集上评估Recall@K和NDCG@3，并对比解码吞吐量。推理阶段采用块状扩散解码，训练则分三阶段进行微调与蒸馏，确保输出既高效又符合排列约束。",
+              "contributionsAndResults": "论文提出了Diffusion-GR2，一套将自回归推理重排序器转换为块扩散模型的方法，在几乎不损失精度的前提下实现2.4-3.5倍解码加速。关键贡献在于通过转换微调使扩散模型自主生成合法排列，并结合策略内蒸馏与强化学习缩小性能差距。实验证明其在Recall@1上达到0.2951，逼近自回归模型的0.2960，验证了高吞吐下保持高质量排序的可行性。",
+              "methodsAndTechniques": "方法核心是三阶段训练：首先进行转换微调（CFT），利用自回归初始化赋予扩散模型生成合法排列的能力；然后执行策略内蒸馏（OPD），让模型在自身采样轨迹上接受教师模型的逐token监督，消除训练与推理分布差异；最后用强化学习优化排名奖励，进一步拉近与教师的距离。整个过程无需外部约束解码器，完全由模型内部机制保障有效性。",
+              "limitationsAndReadingValue": "论文未充分探讨不同任务长度下的收益变化，且依赖特定块大小与置信阈值调优，实际部署可能存在敏感性。此外，所有改进均建立在已有高性能自回归模型之上，独立训练扩散模型是否可行尚不清楚。最值得读的是其系统级设计思路——如何在保持接口不变的情况下重构推理引擎，这对工业级低延迟生成系统具有重要参考价值。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "推理",
+              "推荐系统",
+              "强化学习"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
