@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-05",
+  "generatedAt": "2026-07-05T06:24:52.446090+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-04",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-04",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50
+    }
+  },
+  "warnings": [
+    "近期 AGT 新论文 arXiv 抓取失败：HTTP Error 503: Service Unavailable",
+    "近期 AI 新论文 arXiv 抓取失败：HTTP Error 429: Unknown Error"
+  ],
+  "sectionCounts": {
+    "recent-agt": 0,
+    "recent-ai": 0
+  }
+}
