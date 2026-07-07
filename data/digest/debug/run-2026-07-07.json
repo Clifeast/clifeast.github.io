@@ -1,0 +1,1089 @@
+{
+  "date": "2026-07-07",
+  "generatedAt": "2026-07-07T06:30:03.283635+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-06",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607060000 TO 202607062359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607060000 TO 202607062359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 5,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "Multi Choice Min Prophet",
+          "url": "https://arxiv.org/abs/2607.05085",
+          "arxivId": "2607.05085",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the minimization counterpart of the classic prophet inequality, often termed the min prophet or cost prophet inequality. Unlike the maximization setting, where simple threshold algorithms achieve half of the prophet's value, the minimization setting is significantly harder, with an exponential lower bound even for i.i.d.\\ variables. We study a multi-choice relaxation in which the algorithm may select multiple variables and gets to choose the best amongst them (the minimum amongst those selected). Our goal is to minimize the expected number of selections while achieving a constant competitive ratio. For adversarial order, we show that a constant competitive ratio requires a nearly linear number of choices in expectation, ergo, $Ω(n/\\ln n)$. In contrast, we show that for the prophet secretary model (random order) one can attain constant competitiveness while requiring only an exponentially smaller expected number of choices i.e. $O(\\ln n)$. We give a refined analysis and define $M$ to be the ratio of the minimum expected value of any single variable to the expected minimum value of all variables (the prophet's value) and present an algorithm that achieves a constant competitive ratio with $O(\\min\\{\\ln \\ln M, \\ln n\\})$ choices in expectation for the prophet secretary. We show that this is tight up to low order log factors even for the special case of the i.i.d. model. We also show that if we insist on a deterministic bound on the number of choices then every constant competitive algorithm requires $n$ choices. This holds even in the i.i.d.\\ setting Finally, we consider a variant where both the algorithm and the adversary choose $r$ values and pay their sum, this is the minimization multi unit version. We extend our techniques to the multi-unit variant for i.i.d.\\ variables, achieving a constant competitive ratio with a small expected number of choices."
+        },
+        {
+          "title": "Strategic Buying Agents",
+          "url": "https://arxiv.org/abs/2607.04708",
+          "arxivId": "2607.04708",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.CY",
+            "cs.GT",
+            "cs.HC"
+          ],
+          "abstract": "Agentic AI is shifting online shopping from search toward delegated purchasing, where autonomous buying agents monitor markets and decide when to buy on a consumer's behalf. We study the design of such strategic buying agents, which must decide when to purchase within a finite shopping window, translating price observations, the remaining time horizon, and beliefs about future price changes into a purchase policy. We formulate this problem across three information regimes: stationary, Bayesian, and robust, and treat the resulting optimal policies as a policy menu for implementation. In the stationary regime, price adjustments follow a Poisson arrival process with a known post-adjustment price distribution; the optimal policy is a dynamic purchase-threshold rule, with the threshold governed by an ordinary differential equation. In the Bayesian regime, the adjustment intensity is known, but the price-adjustment distribution is uncertain; the optimal rule remains threshold-based, now depending on posterior beliefs, and we bound the value of knowing the true distribution. In the robust regime, the agent has only price bounds and seeks worst-case protection; randomized threshold policies achieve optimal competitive-ratio and minimax-regret guarantees. We evaluate the proposed policies on Amazon price histories from Keepa (367 items, 48,933 timestamped observations) and examine their integration into language-model buying agents. The stationary and Bayesian policies perform competitively on mean normalized consumer surplus despite their stylized assumptions, while the robust policy performs best at the distribution's 10th percentile. Results suggest language models are better suited to selecting among regimes and calibration samples than to making buy-or-wait decisions directly."
+        },
+        {
+          "title": "Square-Root Price Impact Is Necessary for Endogenous Manipulation Cycles in Learning-Agent Markets",
+          "url": "https://arxiv.org/abs/2607.05141",
+          "arxivId": "2607.05141",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "q-fin.CP",
+            "econ.TH",
+            "nlin.AO",
+            "q-fin.TR"
+          ],
+          "abstract": "We study a minimal agent-based market in which a single evolutionary-optimized institutional agent interacts with 20{,}000 herding retail traders. The agent spontaneously discovers a multi-cycle predatory strategy, producing 8--11 complete cycles over 2000 trading days with total portfolio return of $+51\\%$ (best of 20 seeds; mean $+37.7\\%$). Mean-field reduction maps the system onto a nonlinear oscillator that undergoes two distinct bifurcations: a continuous Hopf transition as institutional capital exceeds a critical threshold $C_c$, with oscillation amplitude $A \\propto (C-C_c)^α$ where $α$ is consistent with the standard prediction of $1/2$; and a discontinuous fold transition in the herding-scale parameter space. The limit cycle persists even at $β= 0$: position-tracking feedback coupled with square-root price impact creates a self-sustained nonlinear oscillator requiring no retail herding. Square-root impact is shown to be necessary: linear impact eliminates the Hopf bifurcation entirely and renders the retail market unconditionally stable. Manipulation cycles thus emerge as the optimal-control solution of a nonlinear dynamical system, and a structural analogy to Maxwell's demon frames the agent as an information-processing controller that reduces the entropy rate of the price process."
+        },
+        {
+          "title": "Rockafellian relaxation and minimum-norm slack for the Walrasian equilibrium problem",
+          "url": "https://arxiv.org/abs/2607.04717",
+          "arxivId": "2607.04717",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "econ.TH"
+          ],
+          "abstract": "We propose a Rockafellian relaxation of the Walrasian equilibrium problem for an exchange economy that may not admit one. Market clearing is slackened by a non-negative variable $v$ whose norm is penalized; the relaxation is well posed throughout. As the penalty grows, the residual converges to a vector $v^*_\\infty$ of minimum norm in the feasible range of excess demand, measuring the distance to the nearest equilibrium-admitting economy. A stressed Shapley--Shubik example recovers the analytical infeasibility floor to machine"
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Multi Choice Min Prophet",
+              "url": "https://arxiv.org/abs/2607.05085",
+              "arxivId": "2607.05085",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the minimization counterpart of the classic prophet inequality, often termed the min prophet or cost prophet inequality. Unlike the maximization setting, where simple threshold algorithms achieve half of the prophet's value, the minimization setting is significantly harder, with an exponential lower bound even for i.i.d.\\ variables. We study a multi-choice relaxation in which the algorithm may select multiple variables and gets to choose the best amongst them (the minimum amongst those selected). Our goal is to minimize the expected number of selections while achieving a constant competitive ratio. For adversarial order, we show that a constant competitive ratio requires a nearly linear number of choices in expectation, ergo, $Ω(n/\\ln n)$. In contrast, we show that for the prophet secretary model (random order) one can attain constant competitiveness while requiring only an exponentially smaller expected number of choices i.e. $O(\\ln n)$. We give a refined analysis and define $M$ to be the ratio of the minimum expected value of any single variable to the expected minimum value of all variables (the prophet's value) and present an algorithm that achieves a constant competitive ratio with $O(\\min\\{\\ln \\ln M, \\ln n\\})$ choices in expectation for the prophet secretary. We show that this is tight up to low order log factors even for the special case of the i.i.d. model. We also show that if we insist on a deterministic bound on the number of choices then every constant competitive algorithm requires $n$ choices. This holds even in the i.i.d.\\ setting Finally, we consider a variant where both the algorithm and the adversary choose $r$ values and pay their sum, this is the minimization multi unit version. We extend our techniques to the multi-unit variant for i.i.d.\\ variables, achieving a constant competitive ratio with a small expected number of choices."
+            },
+            {
+              "title": "Strategic Buying Agents",
+              "url": "https://arxiv.org/abs/2607.04708",
+              "arxivId": "2607.04708",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.CY",
+                "cs.GT",
+                "cs.HC"
+              ],
+              "abstract": "Agentic AI is shifting online shopping from search toward delegated purchasing, where autonomous buying agents monitor markets and decide when to buy on a consumer's behalf. We study the design of such strategic buying agents, which must decide when to purchase within a finite shopping window, translating price observations, the remaining time horizon, and beliefs about future price changes into a purchase policy. We formulate this problem across three information regimes: stationary, Bayesian, and robust, and treat the resulting optimal policies as a policy menu for implementation. In the stationary regime, price adjustments follow a Poisson arrival process with a known post-adjustment price distribution; the optimal policy is a dynamic purchase-threshold rule, with the threshold governed by an ordinary differential equation. In the Bayesian regime, the adjustment intensity is known, but the price-adjustment distribution is uncertain; the optimal rule remains threshold-based, now depending on posterior beliefs, and we bound the value of knowing the true distribution. In the robust regime, the agent has only price bounds and seeks worst-case protection; randomized threshold policies achieve optimal competitive-ratio and minimax-regret guarantees. We evaluate the proposed policies on Amazon price histories from Keepa (367 items, 48,933 timestamped observations) and examine their integration into language-model buying agents. The stationary and Bayesian policies perform competitively on mean normalized consumer surplus despite their stylized assumptions, while the robust policy performs best at the distribution's 10th percentile. Results suggest language models are better suited to selecting among regimes and calibration samples than to making buy-or-wait decisions directly."
+            },
+            {
+              "title": "Square-Root Price Impact Is Necessary for Endogenous Manipulation Cycles in Learning-Agent Markets",
+              "url": "https://arxiv.org/abs/2607.05141",
+              "arxivId": "2607.05141",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "q-fin.CP",
+                "econ.TH",
+                "nlin.AO",
+                "q-fin.TR"
+              ],
+              "abstract": "We study a minimal agent-based market in which a single evolutionary-optimized institutional agent interacts with 20{,}000 herding retail traders. The agent spontaneously discovers a multi-cycle predatory strategy, producing 8--11 complete cycles over 2000 trading days with total portfolio return of $+51\\%$ (best of 20 seeds; mean $+37.7\\%$). Mean-field reduction maps the system onto a nonlinear oscillator that undergoes two distinct bifurcations: a continuous Hopf transition as institutional capital exceeds a critical threshold $C_c$, with oscillation amplitude $A \\propto (C-C_c)^α$ where $α$ is consistent with the standard prediction of $1/2$; and a discontinuous fold transition in the herding-scale parameter space. The limit cycle persists even at $β= 0$: position-tracking feedback coupled with square-root price impact creates a self-sustained nonlinear oscillator requiring no retail herding. Square-root impact is shown to be necessary: linear impact eliminates the Hopf bifurcation entirely and renders the retail market unconditionally stable. Manipulation cycles thus emerge as the optimal-control solution of a nonlinear dynamical system, and a structural analogy to Maxwell's demon frames the agent as an information-processing controller that reduces the entropy rate of the price process."
+            },
+            {
+              "title": "Rockafellian relaxation and minimum-norm slack for the Walrasian equilibrium problem",
+              "url": "https://arxiv.org/abs/2607.04717",
+              "arxivId": "2607.04717",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "econ.TH"
+              ],
+              "abstract": "We propose a Rockafellian relaxation of the Walrasian equilibrium problem for an exchange economy that may not admit one. Market clearing is slackened by a non-negative variable $v$ whose norm is penalized; the relaxation is well posed throughout. As the penalty grows, the residual converges to a vector $v^*_\\infty$ of minimum norm in the feasible range of excess demand, measuring the distance to the nearest equilibrium-admitting economy. A stressed Shapley--Shubik example recovers the analytical infeasibility floor to machine"
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 4,
+                  "guaranteeQuality": 2,
+                  "readingValue": 3,
+                  "penalty": -4,
+                  "aiRelevance": 7,
+                  "agtRelevance": 5
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Multi Choice Min Prophet",
+              "url": "https://arxiv.org/abs/2607.05085",
+              "arxivId": "2607.05085",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "bonus": 0.0,
+                "total": 21.6
+              }
+            },
+            {
+              "title": "Strategic Buying Agents",
+              "url": "https://arxiv.org/abs/2607.04708",
+              "arxivId": "2607.04708",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.CY",
+                "cs.GT",
+                "cs.HC"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 8.1,
+                "total": 31.6
+              }
+            },
+            {
+              "title": "Square-Root Price Impact Is Necessary for Endogenous Manipulation Cycles in Learning-Agent Markets",
+              "url": "https://arxiv.org/abs/2607.05141",
+              "arxivId": "2607.05141",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "q-fin.CP",
+                "econ.TH",
+                "nlin.AO",
+                "q-fin.TR"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Rockafellian relaxation and minimum-norm slack for the Walrasian equilibrium problem",
+              "url": "https://arxiv.org/abs/2607.04717",
+              "arxivId": "2607.04717",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "bonus": 0.0,
+                "total": 17.6
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Multi Choice Min Prophet",
+          "url": "https://arxiv.org/abs/2607.05085",
+          "arxivId": "2607.05085",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "bonus": 0.0,
+            "total": 21.6
+          }
+        },
+        {
+          "title": "Strategic Buying Agents",
+          "url": "https://arxiv.org/abs/2607.04708",
+          "arxivId": "2607.04708",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.CY",
+            "cs.GT",
+            "cs.HC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 31.6
+          }
+        },
+        {
+          "title": "Square-Root Price Impact Is Necessary for Endogenous Manipulation Cycles in Learning-Agent Markets",
+          "url": "https://arxiv.org/abs/2607.05141",
+          "arxivId": "2607.05141",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "q-fin.CP",
+            "econ.TH",
+            "nlin.AO",
+            "q-fin.TR"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Rockafellian relaxation and minimum-norm slack for the Walrasian equilibrium problem",
+          "url": "https://arxiv.org/abs/2607.04717",
+          "arxivId": "2607.04717",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 0.0,
+            "total": 17.6
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Strategic Buying Agents",
+          "url": "https://arxiv.org/abs/2607.04708",
+          "arxivId": "2607.04708",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.CY",
+            "cs.GT",
+            "cs.HC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 31.6
+          }
+        },
+        {
+          "title": "Multi Choice Min Prophet",
+          "url": "https://arxiv.org/abs/2607.05085",
+          "arxivId": "2607.05085",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "bonus": 0.0,
+            "total": 21.6
+          }
+        },
+        {
+          "title": "Rockafellian relaxation and minimum-norm slack for the Walrasian equilibrium problem",
+          "url": "https://arxiv.org/abs/2607.04717",
+          "arxivId": "2607.04717",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 0.0,
+            "total": 17.6
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Strategic Buying Agents",
+            "url": "https://arxiv.org/abs/2607.04708",
+            "arxivId": "2607.04708",
+            "date": "2026-07-06",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.AI",
+              "cs.CY",
+              "cs.GT",
+              "cs.HC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "战略性购买代理",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "在线算法",
+              "鲁棒性",
+              "贝叶斯学习",
+              "智能体"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI代理在电商中逐渐接管购物决策，消费者面临何时由代理下单的问题。代理需在价格波动和时间限制下做出购买时机决策，但未来价格路径未知。本文研究这一委托购买中的序贯决策问题，核心挑战在于如何在不同信息条件下设计最优购买策略，平衡等待低价的机会与错过交易的风险。",
+              "modelAndSetup": "模型设定一个买家代理在有限时间窗口内决定何时购买单一商品。价格在随机时刻跳跃，调整后价格服从某分布。代理根据信息分为三种情形：已知价格调整分布（平稳）、仅知调整频率但分布未知（贝叶斯学习）、仅知价格边界（鲁棒）。状态包括当前价格、剩余时间和信念，目标是最大化消费者剩余。",
+              "contributionsAndResults": "论文提出了三种信息制度下的最优购买策略。平稳环境下为动态阈值策略，阈值随时间递减并由微分方程刻画；贝叶斯环境下阈值依赖于后验信念；鲁棒环境下则采用随机阈值策略，在竞争比和极小极大遗憾上达到最优保证。实证表明这些策略在真实价格序列上表现优异，尤其稳健策略在尾部表现最佳。",
+              "methodsAndTechniques": "作者通过最优停止理论建模购买决策，分别使用动态规划求解平稳与贝叶斯环境下的阈值策略，并利用常微分方程分析其性质。对于鲁棒环境，采用对抗性分析和Yao原理构造下界，并设计随机阈值策略达成上界。数值评估结合历史价格数据进行回测，比较多种策略的归一化消费者剩余表现。",
+              "limitationsAndReadingValue": "模型假设价格独立调整且不考虑库存风险或多商品替代，简化了实际复杂性。鲁棒策略虽在尾部表现好但平均性能较低。然而，论文的价值在于系统构建了从精确建模到学习再到鲁棒保护的购买代理设计框架，并展示了语言模型可用于策略选择而非直接决策，为AI代理的实际部署提供了清晰路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "战略性购买代理",
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI代理在电商中逐渐接管购物决策，消费者面临何时由代理下单的问题。代理需在价格波动和时间限制下做出购买时机决策，但未来价格路径未知。本文研究这一委托购买中的序贯决策问题，核心挑战在于如何在不同信息条件下设计最优购买策略，平衡等待低价的机会与错过交易的风险。",
+              "modelAndSetup": "模型设定一个买家代理在有限时间窗口内决定何时购买单一商品。价格在随机时刻跳跃，调整后价格服从某分布。代理根据信息分为三种情形：已知价格调整分布（平稳）、仅知调整频率但分布未知（贝叶斯学习）、仅知价格边界（鲁棒）。状态包括当前价格、剩余时间和信念，目标是最大化消费者剩余。",
+              "contributionsAndResults": "论文提出了三种信息制度下的最优购买策略。平稳环境下为动态阈值策略，阈值随时间递减并由微分方程刻画；贝叶斯环境下阈值依赖于后验信念；鲁棒环境下则采用随机阈值策略，在竞争比和极小极大遗憾上达到最优保证。实证表明这些策略在真实价格序列上表现优异，尤其稳健策略在尾部表现最佳。",
+              "methodsAndTechniques": "作者通过最优停止理论建模购买决策，分别使用动态规划求解平稳与贝叶斯环境下的阈值策略，并利用常微分方程分析其性质。对于鲁棒环境，采用对抗性分析和Yao原理构造下界，并设计随机阈值策略达成上界。数值评估结合历史价格数据进行回测，比较多种策略的归一化消费者剩余表现。",
+              "limitationsAndReadingValue": "模型假设价格独立调整且不考虑库存风险或多商品替代，简化了实际复杂性。鲁棒策略虽在尾部表现好但平均性能较低。然而，论文的价值在于系统构建了从精确建模到学习再到鲁棒保护的购买代理设计框架，并展示了语言模型可用于策略选择而非直接决策，为AI代理的实际部署提供了清晰路径。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "在线算法",
+              "鲁棒性",
+              "贝叶斯学习",
+              "智能体"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Multi Choice Min Prophet",
+            "url": "https://arxiv.org/abs/2607.05085",
+            "arxivId": "2607.05085",
+            "date": "2026-07-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "多选择最小预言者不等式",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "在线算法",
+              "机制设计",
+              "最优停止理论"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统预言者不等式研究如何在线选择一个最大值，但在成本最小化场景下，经典方法失效，甚至需指数级竞争比。本文探究为何最小化比最大化更难，并试图通过允许多次选择来恢复常数竞争比，核心问题是：在不同到达顺序下，达到常数竞争比所需的期望选择次数是多少。",
+              "modelAndSetup": "模型考虑n个独立随机变量依次到来，算法可多次选择并最终支付所选中的最小值，目标是最小化该值与全局最小值的期望比。设定涵盖对抗顺序、随机顺序（预言者秘书模型）和i.i.d.情形，并引入参数M衡量单个期望与最小期望之比，用于刻画问题难度。",
+              "contributionsAndResults": "论文证明对抗顺序下任何常数竞争算法需Ω(n/log n)期望选择次数，而随机顺序下仅需O(min{log log M, log n})即可达成常数竞争比，且此界限几乎紧。此外，若要求确定性选择上限，则即使i.i.d.也需n次选择，揭示了期望与确定性之间的指数差距。",
+              "methodsAndTechniques": "上界采用基于阈值的算法，通过二分搜索设定合适阈值使低于它的样本期望数量为对数级，结合记录统计分析选择次数。下界构造重尾分布实例，利用区间划分与极值概率论证，证明跳过某些阶段会导致成本激增，从而迫使算法频繁决策。",
+              "limitationsAndReadingValue": "结果依赖于M这一全局参数，在M极大时仍可能退化。确定性限制下的负结果表明机制难以实际部署。最值得读的是其对最小化与最大化预言者的本质差异的揭示，以及在随机顺序下指数级改进的技术洞察，开放问题关于M依赖的紧性也具启发性。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "多选择最小预言者不等式",
+            "summarySections": {
+              "backgroundAndQuestion": "传统预言者不等式研究如何在线选择一个最大值，但在成本最小化场景下，经典方法失效，甚至需指数级竞争比。本文探究为何最小化比最大化更难，并试图通过允许多次选择来恢复常数竞争比，核心问题是：在不同到达顺序下，达到常数竞争比所需的期望选择次数是多少。",
+              "modelAndSetup": "模型考虑n个独立随机变量依次到来，算法可多次选择并最终支付所选中的最小值，目标是最小化该值与全局最小值的期望比。设定涵盖对抗顺序、随机顺序（预言者秘书模型）和i.i.d.情形，并引入参数M衡量单个期望与最小期望之比，用于刻画问题难度。",
+              "contributionsAndResults": "论文证明对抗顺序下任何常数竞争算法需Ω(n/log n)期望选择次数，而随机顺序下仅需O(min{log log M, log n})即可达成常数竞争比，且此界限几乎紧。此外，若要求确定性选择上限，则即使i.i.d.也需n次选择，揭示了期望与确定性之间的指数差距。",
+              "methodsAndTechniques": "上界采用基于阈值的算法，通过二分搜索设定合适阈值使低于它的样本期望数量为对数级，结合记录统计分析选择次数。下界构造重尾分布实例，利用区间划分与极值概率论证，证明跳过某些阶段会导致成本激增，从而迫使算法频繁决策。",
+              "limitationsAndReadingValue": "结果依赖于M这一全局参数，在M极大时仍可能退化。确定性限制下的负结果表明机制难以实际部署。最值得读的是其对最小化与最大化预言者的本质差异的揭示，以及在随机顺序下指数级改进的技术洞察，开放问题关于M依赖的紧性也具启发性。"
+            },
+            "contentTags": [
+              "在线算法",
+              "机制设计",
+              "最优停止理论"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Rockafellian relaxation and minimum-norm slack for the Walrasian equilibrium problem",
+            "url": "https://arxiv.org/abs/2607.04717",
+            "arxivId": "2607.04717",
+            "date": "2026-07-06",
+            "source": "arXiv",
+            "categories": [
+              "math.OC",
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Rockafellian松弛与瓦尔拉斯均衡问题的最小范数松弛",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "博弈学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当交换经济中不存在瓦尔拉斯均衡时，传统数值算法往往发散或停滞于无经济意义的点，难以解释非存在性的程度。本文旨在解决这一诊断缺失问题，研究如何量化一个经济体距离最近的均衡经济有多远，并提供有经济解释的残差输出。这属于均衡存在性理论与计算经济学交叉的研究脉络。",
+              "modelAndSetup": "模型考虑L种商品和I个代理人的交换经济，每个代理人有生存集、禀赋和拟线性效用函数。市场出清通过引入非负松弛变量v来放松，松弛的范数被纳入目标函数作为惩罚项。规划者最大化总效用的同时最小化超额需求的正向部分，形成一个带参数的正则化资源配置问题。",
+              "contributionsAndResults": "论文证明当惩罚参数趋于无穷时，松弛变量的残差收敛到可行超额需求范围中具有最小范数的向量。该结果提供了对‘最近可实现均衡经济’的距离测度，且不同范数选择对应不同的政策解读：如ℓ²为欧氏投影，ℓ¹强调稀疏干预，ℓ∞反映最大单品短缺。这是首个为非存在性提供可解释残差的框架。",
+              "methodsAndTechniques": "作者采用Rockafellian松弛框架，将市场出清约束嵌入一个扰动函数，并通过对偶视角下的罚函数方法构造正则化问题。关键技术在于内层关于松弛变量的最小化可解析求解，从而将原问题简化为单一变量优化。利用紧性与连续性论证子序列收敛，并结合变分分析工具证明极限性质。",
+              "limitationsAndReadingValue": "方法依赖于效用函数连续性和策略集紧致性假设，在更一般偏好下可能需显式求解联合变量。闭式消元技巧仅适用于分离型罚函数。尽管如此，该框架为处理均衡不存在情形提供了稳健数值路径与清晰经济解释，最值得阅读的是其核心定理与对Shapley-Shubik例子的实证再现。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Rockafellian松弛与瓦尔拉斯均衡问题的最小范数松弛",
+            "summarySections": {
+              "backgroundAndQuestion": "当交换经济中不存在瓦尔拉斯均衡时，传统数值算法往往发散或停滞于无经济意义的点，难以解释非存在性的程度。本文旨在解决这一诊断缺失问题，研究如何量化一个经济体距离最近的均衡经济有多远，并提供有经济解释的残差输出。这属于均衡存在性理论与计算经济学交叉的研究脉络。",
+              "modelAndSetup": "模型考虑L种商品和I个代理人的交换经济，每个代理人有生存集、禀赋和拟线性效用函数。市场出清通过引入非负松弛变量v来放松，松弛的范数被纳入目标函数作为惩罚项。规划者最大化总效用的同时最小化超额需求的正向部分，形成一个带参数的正则化资源配置问题。",
+              "contributionsAndResults": "论文证明当惩罚参数趋于无穷时，松弛变量的残差收敛到可行超额需求范围中具有最小范数的向量。该结果提供了对‘最近可实现均衡经济’的距离测度，且不同范数选择对应不同的政策解读：如ℓ²为欧氏投影，ℓ¹强调稀疏干预，ℓ∞反映最大单品短缺。这是首个为非存在性提供可解释残差的框架。",
+              "methodsAndTechniques": "作者采用Rockafellian松弛框架，将市场出清约束嵌入一个扰动函数，并通过对偶视角下的罚函数方法构造正则化问题。关键技术在于内层关于松弛变量的最小化可解析求解，从而将原问题简化为单一变量优化。利用紧性与连续性论证子序列收敛，并结合变分分析工具证明极限性质。",
+              "limitationsAndReadingValue": "方法依赖于效用函数连续性和策略集紧致性假设，在更一般偏好下可能需显式求解联合变量。闭式消元技巧仅适用于分离型罚函数。尽管如此，该框架为处理均衡不存在情形提供了稳健数值路径与清晰经济解释，最值得阅读的是其核心定理与对Shapley-Shubik例子的实证再现。"
+            },
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "博弈学习"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-06",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202607060000 TO 202607062359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "An event-driven framework for fly-inspired visual motion detection",
+          "url": "https://arxiv.org/abs/2607.05205",
+          "arxivId": "2607.05205",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.NE"
+          ],
+          "abstract": "Fast and reliable motion detection is essential for machine vision and autonomous systems operating in dynamic environments. This work integrates emerging event-based sensing with biologically structured neural computation to establish an efficient computational paradigm for visual motion detection. The proposed framework is built upon a recently developed fly-inspired neural network that emulates motion-processing circuits in the optic lobe. Owing to its feed-forward and training-free architecture, the neural model requires only a small number of interpretable parameters and is well suited for real-time embedded implementation. Event cameras provide low-latency, low-power, and high-dynamic-range visual sensing by asynchronously transmitting brightness-change events. However, their performance can be degraded by event noise, including temporal noise and junction-leakage-induced activity, particularly under low-light conditions. Moreover, effective integration between event-based visual representations and biologically inspired neural processing remains under-explored. To address these challenges, we propose an event-driven computational framework that combines time-surface encoding for front-end event representation with a fly optic-lobe-inspired neural network for foreground motion-direction estimation. A bottom-up attention mechanism is further incorporated to suppress background motion and enhance the saliency of foreground targets. The proposed method is evaluated on real-world ground-vehicle datasets and compared with a baseline frame-based model and an optimization-based approach. Experimental results demonstrate that the framework effectively combines the temporal advantages of event-driven vision with the efficiency and interpretability of bio-inspired neural processing."
+        },
+        {
+          "title": "LLM for the development of FCM",
+          "url": "https://arxiv.org/abs/2607.04983",
+          "arxivId": "2607.04983",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI",
+            "cs.ET",
+            "cs.GL",
+            "cs.LG"
+          ],
+          "abstract": "This article is about the development of a fuzzy cognitive map using a local large language model. In the light of recent advances it is evident that large language models, and even local large language models are capable of extracting quantities from textual data. In other words, a local LLM like Qwen2.5-32B, or probably larger, can accept entities as prompt input and determine relevant quantitative data as the model output. In turn, this output can be utilized for the construction of a data driven fuzzy cognitive map. Hence, this implementation is achieved and then the model is thoroughly tested; Qwen2.5-32B is used and the data is extracted from hotel reviews from TripAdvisor. Furthermore, the extracted documents pass through the model unfiltered and then a fuzzy cognitive map is trained and evaluated. A case is made about Greek reviews where a star topology FCM is formed that indicates the preferences of the reviewers. Finally, external validation is performed to establish whether the fuzzy cognitive map can correlate the star rating of the review -an outcome outside the model's inference scope -with its predicted satisfaction."
+        },
+        {
+          "title": "A Large-Scale Sparse Multiobjective Optimization Algorithm Based on Optimal Performance Scores",
+          "url": "https://arxiv.org/abs/2607.04765",
+          "arxivId": "2607.04765",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "Large-scale sparse multiobjective optimization problems (LSSMOPs) involve a large number of decision variables and Pareto optimal solutions with only a few nonzero variables. However, as the number of decision variables grows, it becomes increasingly challenging to accurately identify the nonzero variables, and optimization performance is adversely affected. To address these issues, this paper proposes an evolutionary algorithm for LSSMOPs. Specifically, we propose a new initialization method capable of generating scores that accurately reflect the importance of variables, and an initial mask vector template that can locate nonzero variables. This leads to the generation of a high-quality initial population. Additionally, this paper introduces a new strategy to calculate the mutation probability for each variable and a novel optimization for real variables based on the Pareto-guided normal distribution, enabling the population to avoid being trapped in local optima and quickly converge to the global optimum. Experimental results from eight benchmark problems and three real-world applications demonstrate that the proposed algorithm achieves superior performance compared with state-of-the-art algorithms."
+        },
+        {
+          "title": "Heaviside Continuity of Rolling Coefficients for Eliminating Epistemic Entropy in Large Language Models",
+          "url": "https://arxiv.org/abs/2607.04562",
+          "arxivId": "2607.04562",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.NE"
+          ],
+          "abstract": "Large language models (LLMs) generate fluent outputs that can be wrong. Unlike humans, who often exhibit cues when providing false information, LLMs produce errors that are difficult to detect because autoregressive decoding provides no mechanism for verifying intermediate reasoning before state progression. We introduce Heaviside Continuity of Rolling Coefficients (HCRC), a verification-first execution framework that reformulates inference as predicate-gated state transitions governed by a Heaviside Gate. HCRC combines model confidence with independent verification signals from a parallel worker architecture, allowing execution to advance only when predefined correctness predicates are satisfied. This prevents invalid intermediate states from propagating, reducing epistemic entropy without modifying the underlying model. We evaluate HCRC on software-engineering and reasoning tasks across thirteen proposers from four providers. On capable proposers, the gate reduces the false-completion rate (FCR) from 4--7% to 0% while remaining latency-competitive and, in some settings, faster than the unwrapped model. On weaker proposers, it converts false completions into honest halts instead of corrupting downstream state. Beyond benchmarking, HCRC has operated for months as the production control plane of an agentic coding environment, authorizing file mutations, verification-driven progress reporting, and memory compaction. These results establish HCRC as a general framework for verification-driven LLM execution, showing that reliable reasoning can be achieved through principled execution control rather than model scale alone."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "An event-driven framework for fly-inspired visual motion detection",
+              "url": "https://arxiv.org/abs/2607.05205",
+              "arxivId": "2607.05205",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.NE"
+              ],
+              "abstract": "Fast and reliable motion detection is essential for machine vision and autonomous systems operating in dynamic environments. This work integrates emerging event-based sensing with biologically structured neural computation to establish an efficient computational paradigm for visual motion detection. The proposed framework is built upon a recently developed fly-inspired neural network that emulates motion-processing circuits in the optic lobe. Owing to its feed-forward and training-free architecture, the neural model requires only a small number of interpretable parameters and is well suited for real-time embedded implementation. Event cameras provide low-latency, low-power, and high-dynamic-range visual sensing by asynchronously transmitting brightness-change events. However, their performance can be degraded by event noise, including temporal noise and junction-leakage-induced activity, particularly under low-light conditions. Moreover, effective integration between event-based visual representations and biologically inspired neural processing remains under-explored. To address these challenges, we propose an event-driven computational framework that combines time-surface encoding for front-end event representation with a fly optic-lobe-inspired neural network for foreground motion-direction estimation. A bottom-up attention mechanism is further incorporated to suppress background motion and enhance the saliency of foreground targets. The proposed method is evaluated on real-world ground-vehicle datasets and compared with a baseline frame-based model and an optimization-based approach. Experimental results demonstrate that the framework effectively combines the temporal advantages of event-driven vision with the efficiency and interpretability of bio-inspired neural processing."
+            },
+            {
+              "title": "LLM for the development of FCM",
+              "url": "https://arxiv.org/abs/2607.04983",
+              "arxivId": "2607.04983",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI",
+                "cs.ET",
+                "cs.GL",
+                "cs.LG"
+              ],
+              "abstract": "This article is about the development of a fuzzy cognitive map using a local large language model. In the light of recent advances it is evident that large language models, and even local large language models are capable of extracting quantities from textual data. In other words, a local LLM like Qwen2.5-32B, or probably larger, can accept entities as prompt input and determine relevant quantitative data as the model output. In turn, this output can be utilized for the construction of a data driven fuzzy cognitive map. Hence, this implementation is achieved and then the model is thoroughly tested; Qwen2.5-32B is used and the data is extracted from hotel reviews from TripAdvisor. Furthermore, the extracted documents pass through the model unfiltered and then a fuzzy cognitive map is trained and evaluated. A case is made about Greek reviews where a star topology FCM is formed that indicates the preferences of the reviewers. Finally, external validation is performed to establish whether the fuzzy cognitive map can correlate the star rating of the review -an outcome outside the model's inference scope -with its predicted satisfaction."
+            },
+            {
+              "title": "A Large-Scale Sparse Multiobjective Optimization Algorithm Based on Optimal Performance Scores",
+              "url": "https://arxiv.org/abs/2607.04765",
+              "arxivId": "2607.04765",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "Large-scale sparse multiobjective optimization problems (LSSMOPs) involve a large number of decision variables and Pareto optimal solutions with only a few nonzero variables. However, as the number of decision variables grows, it becomes increasingly challenging to accurately identify the nonzero variables, and optimization performance is adversely affected. To address these issues, this paper proposes an evolutionary algorithm for LSSMOPs. Specifically, we propose a new initialization method capable of generating scores that accurately reflect the importance of variables, and an initial mask vector template that can locate nonzero variables. This leads to the generation of a high-quality initial population. Additionally, this paper introduces a new strategy to calculate the mutation probability for each variable and a novel optimization for real variables based on the Pareto-guided normal distribution, enabling the population to avoid being trapped in local optima and quickly converge to the global optimum. Experimental results from eight benchmark problems and three real-world applications demonstrate that the proposed algorithm achieves superior performance compared with state-of-the-art algorithms."
+            },
+            {
+              "title": "Heaviside Continuity of Rolling Coefficients for Eliminating Epistemic Entropy in Large Language Models",
+              "url": "https://arxiv.org/abs/2607.04562",
+              "arxivId": "2607.04562",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.NE"
+              ],
+              "abstract": "Large language models (LLMs) generate fluent outputs that can be wrong. Unlike humans, who often exhibit cues when providing false information, LLMs produce errors that are difficult to detect because autoregressive decoding provides no mechanism for verifying intermediate reasoning before state progression. We introduce Heaviside Continuity of Rolling Coefficients (HCRC), a verification-first execution framework that reformulates inference as predicate-gated state transitions governed by a Heaviside Gate. HCRC combines model confidence with independent verification signals from a parallel worker architecture, allowing execution to advance only when predefined correctness predicates are satisfied. This prevents invalid intermediate states from propagating, reducing epistemic entropy without modifying the underlying model. We evaluate HCRC on software-engineering and reasoning tasks across thirteen proposers from four providers. On capable proposers, the gate reduces the false-completion rate (FCR) from 4--7% to 0% while remaining latency-competitive and, in some settings, faster than the unwrapped model. On weaker proposers, it converts false completions into honest halts instead of corrupting downstream state. Beyond benchmarking, HCRC has operated for months as the production control plane of an agentic coding environment, authorizing file mutations, verification-driven progress reporting, and memory compaction. These results establish HCRC as a general framework for verification-driven LLM execution, showing that reliable reasoning can be achieved through principled execution control rather than model scale alone."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "An event-driven framework for fly-inspired visual motion detection",
+              "url": "https://arxiv.org/abs/2607.05205",
+              "arxivId": "2607.05205",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "LLM for the development of FCM",
+              "url": "https://arxiv.org/abs/2607.04983",
+              "arxivId": "2607.04983",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI",
+                "cs.ET",
+                "cs.GL",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 6.0,
+                "total": 6.0
+              }
+            },
+            {
+              "title": "A Large-Scale Sparse Multiobjective Optimization Algorithm Based on Optimal Performance Scores",
+              "url": "https://arxiv.org/abs/2607.04765",
+              "arxivId": "2607.04765",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "Heaviside Continuity of Rolling Coefficients for Eliminating Epistemic Entropy in Large Language Models",
+              "url": "https://arxiv.org/abs/2607.04562",
+              "arxivId": "2607.04562",
+              "date": "2026-07-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "An event-driven framework for fly-inspired visual motion detection",
+          "url": "https://arxiv.org/abs/2607.05205",
+          "arxivId": "2607.05205",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "LLM for the development of FCM",
+          "url": "https://arxiv.org/abs/2607.04983",
+          "arxivId": "2607.04983",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI",
+            "cs.ET",
+            "cs.GL",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 6.0,
+            "total": 6.0
+          }
+        },
+        {
+          "title": "A Large-Scale Sparse Multiobjective Optimization Algorithm Based on Optimal Performance Scores",
+          "url": "https://arxiv.org/abs/2607.04765",
+          "arxivId": "2607.04765",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "Heaviside Continuity of Rolling Coefficients for Eliminating Epistemic Entropy in Large Language Models",
+          "url": "https://arxiv.org/abs/2607.04562",
+          "arxivId": "2607.04562",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Heaviside Continuity of Rolling Coefficients for Eliminating Epistemic Entropy in Large Language Models",
+          "url": "https://arxiv.org/abs/2607.04562",
+          "arxivId": "2607.04562",
+          "date": "2026-07-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Heaviside Continuity of Rolling Coefficients for Eliminating Epistemic Entropy in Large Language Models",
+            "url": "https://arxiv.org/abs/2607.04562",
+            "arxivId": "2607.04562",
+            "date": "2026-07-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过滚动系数的赫维赛德连续性消除大语言模型中的认知熵",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "理论推导",
+              "评测方法"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "安全性",
+              "鲁棒性",
+              "生成式AI"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型（LLM）虽然输出流畅，但常产生与现实不符的‘幻觉’，尤其在控制外部系统时，错误中间状态会持续传播。现有方法依赖模型自身校准或后处理，难以阻止错误提交。本文关注的是如何在不修改模型的前提下，在执行层防止错误推理状态推进，确保每一步进展都真实可靠。",
+              "modelAndSetup": "论文研究在软件工程与推理任务中，LLM作为提议者生成操作建议，系统通过独立于模型的验证器检查其输出是否符合外部真实状态。输入是任务指令与上下文，输出是经验证的操作提交或重试反馈。评估基于十三个主流LLM在合成任务上的错误完成率，并追踪认知熵变化。",
+              "contributionsAndResults": "提出HCRC框架，首次将执行过程建模为由赫维赛德门控驱动的状态转移，结合置信度与外部验证信号决定是否推进。实验显示，在强模型上错误完成率从4-7%降至0%，弱模型则转为显式暂停而非静默错误。生产环境中长期运行验证了其可靠性，证明无需扩大模型即可实现可信推理。",
+              "methodsAndTechniques": "核心是赫维赛德门控机制：仅当置信度与验证得分乘积超过阈值（T=1）时才允许提交。验证信号来自并行的非LLM工作者池（ARIAL），分别检测文件、语法、测试等独立维度。该设计强制分离主张与验证通道，理论上保证任何通过步骤均满足全部谓词，从而阻断错误传播。",
+              "limitationsAndReadingValue": "局限在于依赖预定义谓词集合，无法捕捉语义、安全等不可判定属性，且存在被模型规避的风险。尽管如此，论文的价值在于提出了一个可审计、可扩展的执行控制范式。最值得细读的是其机制设计与生产部署实践，为构建可信LLM智能体系统提供了实用蓝图。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过滚动系数的赫维赛德连续性消除大语言模型中的认知熵",
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型（LLM）虽然输出流畅，但常产生与现实不符的‘幻觉’，尤其在控制外部系统时，错误中间状态会持续传播。现有方法依赖模型自身校准或后处理，难以阻止错误提交。本文关注的是如何在不修改模型的前提下，在执行层防止错误推理状态推进，确保每一步进展都真实可靠。",
+              "modelAndSetup": "论文研究在软件工程与推理任务中，LLM作为提议者生成操作建议，系统通过独立于模型的验证器检查其输出是否符合外部真实状态。输入是任务指令与上下文，输出是经验证的操作提交或重试反馈。评估基于十三个主流LLM在合成任务上的错误完成率，并追踪认知熵变化。",
+              "contributionsAndResults": "提出HCRC框架，首次将执行过程建模为由赫维赛德门控驱动的状态转移，结合置信度与外部验证信号决定是否推进。实验显示，在强模型上错误完成率从4-7%降至0%，弱模型则转为显式暂停而非静默错误。生产环境中长期运行验证了其可靠性，证明无需扩大模型即可实现可信推理。",
+              "methodsAndTechniques": "核心是赫维赛德门控机制：仅当置信度与验证得分乘积超过阈值（T=1）时才允许提交。验证信号来自并行的非LLM工作者池（ARIAL），分别检测文件、语法、测试等独立维度。该设计强制分离主张与验证通道，理论上保证任何通过步骤均满足全部谓词，从而阻断错误传播。",
+              "limitationsAndReadingValue": "局限在于依赖预定义谓词集合，无法捕捉语义、安全等不可判定属性，且存在被模型规避的风险。尽管如此，论文的价值在于提出了一个可审计、可扩展的执行控制范式。最值得细读的是其机制设计与生产部署实践，为构建可信LLM智能体系统提供了实用蓝图。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "安全性",
+              "鲁棒性",
+              "生成式AI"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "理论推导",
+              "评测方法"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 3,
+    "recent-ai": 1
+  }
+}
