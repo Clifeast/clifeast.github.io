@@ -1,0 +1,1757 @@
+{
+  "date": "2026-07-09",
+  "generatedAt": "2026-07-09T06:32:32.117521+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-08",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607080000 TO 202607082359\"",
+            "totalResults": 7,
+            "fetchedCount": 7
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607080000 TO 202607082359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          }
+        },
+        "dedupedCount": 9
+      },
+      "arxivTotalResults": 9,
+      "fetchedCount": 9,
+      "fetchedPapers": [
+        {
+          "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+          "url": "https://arxiv.org/abs/2607.07695",
+          "arxivId": "2607.07695",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts, five canonical rules, and seven model populations (33,924 games), with a normative cooperative reference and auto-labelled reasoning traces. Three findings emerge. (1) Deployment rules causally alter collective safety: changing only the consequence rule moves mean fatality by 22 to 58 percentage points within every population. (2) There is no safe default, but the targeting hazard is universal: the safest rule, the least-safe rule, and even the direction of the incidence effect vary across populations, yet regressive identity-targeting is never decisively safest in any context for any population, eliminates the least-resourced agent in 30-87% of games everywhere, and is selection-unsafe relative to the cooperative reference for all seven populations. (3) Identity salience is the mechanism: a one-shot anonymization ablation on the most exploitation-prone population (gpt-5.1) shows that merely naming the loss bearer in the rule text drives targeted elimination from 22% to 81% at identical payoffs; under repeated play, anonymization only delays the targeting, as agents re-infer the hidden rule from observed eliminations. We package the methodology as a safety-case workflow that certifies a provisional rule region $Φ(c,P)$ per deployment context and population, with explicit residual risks and monitoring obligations."
+        },
+        {
+          "title": "Pure Nash Equilibria in Graphical Games of Bounded Width Revisited",
+          "url": "https://arxiv.org/abs/2607.07627",
+          "arxivId": "2607.07627",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.CC",
+            "cs.GT"
+          ],
+          "abstract": "We revisit the complexity of deciding whether a graphical game admits a pure Nash equilibrium (PNE) parameterized by standard measures of the input graph, such as treewidth. The natural dynamic programming algorithm for this problem has parameter dependence $α^{(Δ+1)\\text{tw}}$ where $α$ is the maximum number of strategies available to each player, each player's utility depends on at most $Δ$ other players, and the input graph has width $\\text{tw}$. Our first contribution is to point out that an algorithm by Thomas and van Leeuwen [Algorithmica 2015] claiming to improve this dependence to $α^{O(\\text{tw})}$ is flawed and, more strongly, such an algorithm would imply that FPT=W[1]. We then set out to pinpoint the fine-grained complexity of this problem with respect to standard parameters and show that the natural DP algorithm is not optimal, as the problem can be solved with dependence $α^{\\lfloor \\frac{2Δ}{3} + 1 \\rfloor \\text{tw}}$, $α^{\\lfloor \\fracΔ{2} + 1 \\rfloor \\text{pw}}$, and $α^{\\text{ctw}}$, where $\\text{pw}, \\text{ctw}$ are the pathwidth and cutwidth of the input respectively. Our main algorithmic tool is a tightening of the relationship between the width of a graph $G$, its maximum degree, and the width of $G^2$, which may be of independent interest. Complementing these results, we show that our algorithms for pathwidth and cutwidth are likely to be optimal, as improving them is equivalent to falsifying the pw-SETH."
+        },
+        {
+          "title": "FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation",
+          "url": "https://arxiv.org/abs/2607.07529",
+          "arxivId": "2607.07529",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Federated foundation-model adaptation increasingly relies on heterogeneous private artifacts (retrieval corpora, prompts and demonstrations, LoRA adapters, preference and safety data, and update sketches), yet existing federated-learning incentive mechanisms price clients as homogeneous data or update providers. This assumption poorly matches foundation-model pipelines, where contribution value is heterogeneous, non-IID, pipeline-dependent, privacy-constrained, and vulnerable to strategic behavior. We propose FedMark-FM, an auditable, risk-adjusted data-market framework that models clients as sellers of typed artifacts, estimates marginal contribution with S3Val, a stratified, uncertainty-aware Shapley estimator supporting pipeline-ordered valuation, and converts lower-confidence-bound values into budget-feasible payments penalizing duplication, sybil splitting, poisoned adapters, privacy-budget gaming, and cost inflation. We evaluate FedMark-FM-Bench across FEVER retrieval, held-out generator-backed RAG, and trained PEFT/LoRA tracks. Under a held-out prompt-injection poisoner, FedMark-FM improves downstream accuracy by 7.5-8.1 points over volume, leave-one-out, and FL-Shapley while selecting zero strategic clients. Split-conformal calibration reaches full lower-bound coverage at mean width 0.0141, versus 0.33 for naive intervals. We prove pipeline-ordered valuation is the unique credit rule respecting serving causality, and show it materially changes credit assignment (Spearman 0.76, selected-set overlap 0.67) while leaving held-out task quality unchanged; the market preserves rare specialists with audit-ready ledgers at 200-1000-client scale. FedMark-FM shows incentives for federated foundation models can be engineered as auditable data infrastructure coupling valuation, mechanism design, privacy interfaces, and pipeline-order semantics."
+        },
+        {
+          "title": "Positional Determinacy with Colored Vertices: a 1-to-2-Player Lift",
+          "url": "https://arxiv.org/abs/2607.07415",
+          "arxivId": "2607.07415",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Positional determinacy of vertex-colored parity games was proved in the 1990s, which directly implies positional determinacy of edge-colored parity games. In 2006, it was shown that if a prefix-independent color-based objective ensures that every edge-colored two-player turn-based game is positionally determined, this objective is equivalent to a parity objective. We prove a similar result for vertex-colored games, namely that the following are equivalent for any prefix-independent objective $W$ over a finite set of colors: - $W$ is positionally determined on all vertex-colored one-player games. - $W$ is positionally determined on all vertex-colored two-player games. - $W$ is equivalent to a parity objective on ordrerd pairs of colors. We prove that finiteness of the color set is required for our equivalence to hold. Beyond this $1$-to-$2$-player lift, the technique that we develop to handle the pairs of colors establishes a promising 2-way correspondence between edge-colored games and vertex-colored games."
+        },
+        {
+          "title": "Stable Matchings with Minimum Utility Gap",
+          "url": "https://arxiv.org/abs/2607.07160",
+          "arxivId": "2607.07160",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We introduce the Stable Matching Problem with Minimum Utility Gap, which seeks a stable matching in which the utilities received by individual agents are as balanced as possible. Our framework can handle many-to-many matchings and general utility functions on partner sets that are consistent with the agents' preferences. We consider two measures for comparing agents' utilities: the difference between the maximum and minimum utilities, and their ratio. We provide a polynomial-time algorithm for both versions. The algorithm exploits the rotation-poset representation of the set of stable matchings and, in particular, the fact that the rotations affecting each agent form a chain in this poset. To position our result, we also clarify its relation to existing frameworks: we show that our objectives are not captured by the recent minimum-cut representability framework, while identifying a special case that admits a submodular function minimization interpretation."
+        },
+        {
+          "title": "Simple Nash Equilibria for Qualitative Multiplayer Games",
+          "url": "https://arxiv.org/abs/2607.07151",
+          "arxivId": "2607.07151",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We investigate memory requirements for Nash and subgame-perfect equilibria in turn-based deterministic games with $ω$-regular objectives. We prove that memoryless randomised (i.e., stationary) subgame-perfect equilibria always exist in games with reachability, safety, and 0-2 Muller objectives (i.e., Muller objectives for which accepting sets are either up- or downward closed), and any combination of these objectives. We provide an algorithm to construct such an equilibrium. We also show that randomisation may be required to construct memoryless equilibria in games with reachability or Büchi as well as safety or CoBüchi objectives, and that memoryless equilibria need not exist for any other class of Muller objectives (with respect to the Mostowski hierarchy)."
+        },
+        {
+          "title": "What Semivalues Cannot See: The Information Content of Anonymous Marginal Values",
+          "url": "https://arxiv.org/abs/2607.07013",
+          "arxivId": "2607.07013",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "The semivalue family shares a common kernel: games invisible to every anonymous marginal value at once, nonzero from four players (Kleinberg and Weiss, 1985; Amer, Derks and Giménez, 2003). Crisman and Orrison (2015) ask what useful structure this kernel carries; this paper gives a concrete answer. In Harsanyi-dividend coordinates the joint information of all semivalues is exactly each player's total synergy at each coalition size, so the kernel is synergy arranged in closed circuits. We prove: order-$\\le d$ mixed-difference audits recover exactly the degree-$\\le d$ dividend-slice harmonics, with closed-form dimension at every rung; nonzero blind games fail superadditivity, monotonicity, and core existence, yet distinct convex games with identical values under every semivalue exist from four players, with exact perturbation thresholds; the positive weighted Shapley family attains full information $2^n-1$, so anonymity is the binding axiom within the marginal framework; and a coalition of size $c$ defeats every audit of order $\\le d$ precisely when $c\\ge2d+2$, within the convex class for small perturbations. An exhaustive census at $n=5$ exhibits non-isomorphic voting rules with identical values under every semivalue power index; no weighted game participates in any collision, prompting a swing-rigidity conjecture. Measured against the theory, classical cooperative games sit at $0.90$ to $1.00$ visibility to the family versus $0.089$ for a random game."
+        },
+        {
+          "title": "The Joneses Visit an Economics Lab",
+          "url": "https://arxiv.org/abs/2607.07353",
+          "arxivId": "2607.07353",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "econ.TH"
+          ],
+          "abstract": "Existing literature offers persuasive evidence that individuals care about how their consumption compares to that of peers, and proposes a large variety of explanatory models. The present paper proposes a common framework for many of those models, and compares their ability to predict behavior in a laboratory experiment. We find evidence of Keeping up with the Joneses motivations but also find that conspicuous consumption is enhanced by Veblen motivations arising from peers' ability to observe one's own choice. Among the seven quasi-linear preference models we compare, our data are best explained by a model that contrasts envy and pride (upward vs downward comparisons) using a value function borrowed from Prospect Theory."
+        },
+        {
+          "title": "Evaluation and Assignment with Networked Competition and Spillovers",
+          "url": "https://arxiv.org/abs/2607.07280",
+          "arxivId": "2607.07280",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "This paper studies how organizations should jointly design evaluation rules and assign workers when performance depends on both effort and non-discretionary advantage. Agents choose effort in positions linked by a competition network, while their effective advantage depends on own type and spillovers through a second network. The planner chooses both the assignment and the effort weight in evaluation. Equilibrium effort rises with a position's Katz-Bonacich centrality and falls with effective advantage. The optimal evaluation rule generally differs from true output. When effort is more important in production, the planner lowers the effort weight and uses negative assortative assignment to strengthen incentives. When advantage is more important, the planner raises the effort weight and uses positive assortative assignment to exploit spillovers. We also study a constraint requiring assignments to be pairwise stable, which creates an output loss depending on the intensity of competition."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+              "url": "https://arxiv.org/abs/2607.07695",
+              "arxivId": "2607.07695",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA"
+              ],
+              "abstract": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts, five canonical rules, and seven model populations (33,924 games), with a normative cooperative reference and auto-labelled reasoning traces. Three findings emerge. (1) Deployment rules causally alter collective safety: changing only the consequence rule moves mean fatality by 22 to 58 percentage points within every population. (2) There is no safe default, but the targeting hazard is universal: the safest rule, the least-safe rule, and even the direction of the incidence effect vary across populations, yet regressive identity-targeting is never decisively safest in any context for any population, eliminates the least-resourced agent in 30-87% of games everywhere, and is selection-unsafe relative to the cooperative reference for all seven populations. (3) Identity salience is the mechanism: a one-shot anonymization ablation on the most exploitation-prone population (gpt-5.1) shows that merely naming the loss bearer in the rule text drives targeted elimination from 22% to 81% at identical payoffs; under repeated play, anonymization only delays the targeting, as agents re-infer the hidden rule from observed eliminations. We package the methodology as a safety-case workflow that certifies a provisional rule region $Φ(c,P)$ per deployment context and population, with explicit residual risks and monitoring obligations."
+            },
+            {
+              "title": "Pure Nash Equilibria in Graphical Games of Bounded Width Revisited",
+              "url": "https://arxiv.org/abs/2607.07627",
+              "arxivId": "2607.07627",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.CC",
+                "cs.GT"
+              ],
+              "abstract": "We revisit the complexity of deciding whether a graphical game admits a pure Nash equilibrium (PNE) parameterized by standard measures of the input graph, such as treewidth. The natural dynamic programming algorithm for this problem has parameter dependence $α^{(Δ+1)\\text{tw}}$ where $α$ is the maximum number of strategies available to each player, each player's utility depends on at most $Δ$ other players, and the input graph has width $\\text{tw}$. Our first contribution is to point out that an algorithm by Thomas and van Leeuwen [Algorithmica 2015] claiming to improve this dependence to $α^{O(\\text{tw})}$ is flawed and, more strongly, such an algorithm would imply that FPT=W[1]. We then set out to pinpoint the fine-grained complexity of this problem with respect to standard parameters and show that the natural DP algorithm is not optimal, as the problem can be solved with dependence $α^{\\lfloor \\frac{2Δ}{3} + 1 \\rfloor \\text{tw}}$, $α^{\\lfloor \\fracΔ{2} + 1 \\rfloor \\text{pw}}$, and $α^{\\text{ctw}}$, where $\\text{pw}, \\text{ctw}$ are the pathwidth and cutwidth of the input respectively. Our main algorithmic tool is a tightening of the relationship between the width of a graph $G$, its maximum degree, and the width of $G^2$, which may be of independent interest. Complementing these results, we show that our algorithms for pathwidth and cutwidth are likely to be optimal, as improving them is equivalent to falsifying the pw-SETH."
+            },
+            {
+              "title": "FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation",
+              "url": "https://arxiv.org/abs/2607.07529",
+              "arxivId": "2607.07529",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Federated foundation-model adaptation increasingly relies on heterogeneous private artifacts (retrieval corpora, prompts and demonstrations, LoRA adapters, preference and safety data, and update sketches), yet existing federated-learning incentive mechanisms price clients as homogeneous data or update providers. This assumption poorly matches foundation-model pipelines, where contribution value is heterogeneous, non-IID, pipeline-dependent, privacy-constrained, and vulnerable to strategic behavior. We propose FedMark-FM, an auditable, risk-adjusted data-market framework that models clients as sellers of typed artifacts, estimates marginal contribution with S3Val, a stratified, uncertainty-aware Shapley estimator supporting pipeline-ordered valuation, and converts lower-confidence-bound values into budget-feasible payments penalizing duplication, sybil splitting, poisoned adapters, privacy-budget gaming, and cost inflation. We evaluate FedMark-FM-Bench across FEVER retrieval, held-out generator-backed RAG, and trained PEFT/LoRA tracks. Under a held-out prompt-injection poisoner, FedMark-FM improves downstream accuracy by 7.5-8.1 points over volume, leave-one-out, and FL-Shapley while selecting zero strategic clients. Split-conformal calibration reaches full lower-bound coverage at mean width 0.0141, versus 0.33 for naive intervals. We prove pipeline-ordered valuation is the unique credit rule respecting serving causality, and show it materially changes credit assignment (Spearman 0.76, selected-set overlap 0.67) while leaving held-out task quality unchanged; the market preserves rare specialists with audit-ready ledgers at 200-1000-client scale. FedMark-FM shows incentives for federated foundation models can be engineered as auditable data infrastructure coupling valuation, mechanism design, privacy interfaces, and pipeline-order semantics."
+            },
+            {
+              "title": "Positional Determinacy with Colored Vertices: a 1-to-2-Player Lift",
+              "url": "https://arxiv.org/abs/2607.07415",
+              "arxivId": "2607.07415",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Positional determinacy of vertex-colored parity games was proved in the 1990s, which directly implies positional determinacy of edge-colored parity games. In 2006, it was shown that if a prefix-independent color-based objective ensures that every edge-colored two-player turn-based game is positionally determined, this objective is equivalent to a parity objective. We prove a similar result for vertex-colored games, namely that the following are equivalent for any prefix-independent objective $W$ over a finite set of colors: - $W$ is positionally determined on all vertex-colored one-player games. - $W$ is positionally determined on all vertex-colored two-player games. - $W$ is equivalent to a parity objective on ordrerd pairs of colors. We prove that finiteness of the color set is required for our equivalence to hold. Beyond this $1$-to-$2$-player lift, the technique that we develop to handle the pairs of colors establishes a promising 2-way correspondence between edge-colored games and vertex-colored games."
+            },
+            {
+              "title": "Stable Matchings with Minimum Utility Gap",
+              "url": "https://arxiv.org/abs/2607.07160",
+              "arxivId": "2607.07160",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We introduce the Stable Matching Problem with Minimum Utility Gap, which seeks a stable matching in which the utilities received by individual agents are as balanced as possible. Our framework can handle many-to-many matchings and general utility functions on partner sets that are consistent with the agents' preferences. We consider two measures for comparing agents' utilities: the difference between the maximum and minimum utilities, and their ratio. We provide a polynomial-time algorithm for both versions. The algorithm exploits the rotation-poset representation of the set of stable matchings and, in particular, the fact that the rotations affecting each agent form a chain in this poset. To position our result, we also clarify its relation to existing frameworks: we show that our objectives are not captured by the recent minimum-cut representability framework, while identifying a special case that admits a submodular function minimization interpretation."
+            },
+            {
+              "title": "Simple Nash Equilibria for Qualitative Multiplayer Games",
+              "url": "https://arxiv.org/abs/2607.07151",
+              "arxivId": "2607.07151",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We investigate memory requirements for Nash and subgame-perfect equilibria in turn-based deterministic games with $ω$-regular objectives. We prove that memoryless randomised (i.e., stationary) subgame-perfect equilibria always exist in games with reachability, safety, and 0-2 Muller objectives (i.e., Muller objectives for which accepting sets are either up- or downward closed), and any combination of these objectives. We provide an algorithm to construct such an equilibrium. We also show that randomisation may be required to construct memoryless equilibria in games with reachability or Büchi as well as safety or CoBüchi objectives, and that memoryless equilibria need not exist for any other class of Muller objectives (with respect to the Mostowski hierarchy)."
+            },
+            {
+              "title": "What Semivalues Cannot See: The Information Content of Anonymous Marginal Values",
+              "url": "https://arxiv.org/abs/2607.07013",
+              "arxivId": "2607.07013",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "The semivalue family shares a common kernel: games invisible to every anonymous marginal value at once, nonzero from four players (Kleinberg and Weiss, 1985; Amer, Derks and Giménez, 2003). Crisman and Orrison (2015) ask what useful structure this kernel carries; this paper gives a concrete answer. In Harsanyi-dividend coordinates the joint information of all semivalues is exactly each player's total synergy at each coalition size, so the kernel is synergy arranged in closed circuits. We prove: order-$\\le d$ mixed-difference audits recover exactly the degree-$\\le d$ dividend-slice harmonics, with closed-form dimension at every rung; nonzero blind games fail superadditivity, monotonicity, and core existence, yet distinct convex games with identical values under every semivalue exist from four players, with exact perturbation thresholds; the positive weighted Shapley family attains full information $2^n-1$, so anonymity is the binding axiom within the marginal framework; and a coalition of size $c$ defeats every audit of order $\\le d$ precisely when $c\\ge2d+2$, within the convex class for small perturbations. An exhaustive census at $n=5$ exhibits non-isomorphic voting rules with identical values under every semivalue power index; no weighted game participates in any collision, prompting a swing-rigidity conjecture. Measured against the theory, classical cooperative games sit at $0.90$ to $1.00$ visibility to the family versus $0.089$ for a random game."
+            },
+            {
+              "title": "The Joneses Visit an Economics Lab",
+              "url": "https://arxiv.org/abs/2607.07353",
+              "arxivId": "2607.07353",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "econ.TH"
+              ],
+              "abstract": "Existing literature offers persuasive evidence that individuals care about how their consumption compares to that of peers, and proposes a large variety of explanatory models. The present paper proposes a common framework for many of those models, and compares their ability to predict behavior in a laboratory experiment. We find evidence of Keeping up with the Joneses motivations but also find that conspicuous consumption is enhanced by Veblen motivations arising from peers' ability to observe one's own choice. Among the seven quasi-linear preference models we compare, our data are best explained by a model that contrasts envy and pride (upward vs downward comparisons) using a value function borrowed from Prospect Theory."
+            },
+            {
+              "title": "Evaluation and Assignment with Networked Competition and Spillovers",
+              "url": "https://arxiv.org/abs/2607.07280",
+              "arxivId": "2607.07280",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "This paper studies how organizations should jointly design evaluation rules and assign workers when performance depends on both effort and non-discretionary advantage. Agents choose effort in positions linked by a competition network, while their effective advantage depends on own type and spillovers through a second network. The planner chooses both the assignment and the effort weight in evaluation. Equilibrium effort rises with a position's Katz-Bonacich centrality and falls with effective advantage. The optimal evaluation rule generally differs from true output. When effort is more important in production, the planner lowers the effort weight and uses negative assortative assignment to strengthen incentives. When advantage is more important, the planner raises the effort weight and uses positive assortative assignment to exploit spillovers. We also study a constraint requiring assignments to be pairwise stable, which creates an output loss depending on the intensity of competition."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": -2,
+                  "aiRelevance": 9,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+              "url": "https://arxiv.org/abs/2607.07695",
+              "arxivId": "2607.07695",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 9.0,
+                "penalty": -2.0,
+                "baseTotal": 25.0,
+                "bonus": 7.5,
+                "total": 29.2
+              }
+            },
+            {
+              "title": "Pure Nash Equilibria in Graphical Games of Bounded Width Revisited",
+              "url": "https://arxiv.org/abs/2607.07627",
+              "arxivId": "2607.07627",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.CC",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 2.9,
+                "total": 31.9
+              }
+            },
+            {
+              "title": "FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation",
+              "url": "https://arxiv.org/abs/2607.07529",
+              "arxivId": "2607.07529",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 8.7,
+                "total": 37.7
+              }
+            },
+            {
+              "title": "Positional Determinacy with Colored Vertices: a 1-to-2-Player Lift",
+              "url": "https://arxiv.org/abs/2607.07415",
+              "arxivId": "2607.07415",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 1.8,
+                "total": 28.8
+              }
+            },
+            {
+              "title": "Stable Matchings with Minimum Utility Gap",
+              "url": "https://arxiv.org/abs/2607.07160",
+              "arxivId": "2607.07160",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 1.9,
+                "total": 29.9
+              }
+            },
+            {
+              "title": "Simple Nash Equilibria for Qualitative Multiplayer Games",
+              "url": "https://arxiv.org/abs/2607.07151",
+              "arxivId": "2607.07151",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 1.7,
+                "total": 27.7
+              }
+            },
+            {
+              "title": "What Semivalues Cannot See: The Information Content of Anonymous Marginal Values",
+              "url": "https://arxiv.org/abs/2607.07013",
+              "arxivId": "2607.07013",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 1.9,
+                "total": 29.9
+              }
+            },
+            {
+              "title": "The Joneses Visit an Economics Lab",
+              "url": "https://arxiv.org/abs/2607.07353",
+              "arxivId": "2607.07353",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "bonus": 0.0,
+                "total": 15.4
+              }
+            },
+            {
+              "title": "Evaluation and Assignment with Networked Competition and Spillovers",
+              "url": "https://arxiv.org/abs/2607.07280",
+              "arxivId": "2607.07280",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 22.4
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+          "url": "https://arxiv.org/abs/2607.07695",
+          "arxivId": "2607.07695",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -2.0,
+            "baseTotal": 25.0,
+            "bonus": 7.5,
+            "total": 29.2
+          }
+        },
+        {
+          "title": "Pure Nash Equilibria in Graphical Games of Bounded Width Revisited",
+          "url": "https://arxiv.org/abs/2607.07627",
+          "arxivId": "2607.07627",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.CC",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation",
+          "url": "https://arxiv.org/abs/2607.07529",
+          "arxivId": "2607.07529",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          }
+        },
+        {
+          "title": "Positional Determinacy with Colored Vertices: a 1-to-2-Player Lift",
+          "url": "https://arxiv.org/abs/2607.07415",
+          "arxivId": "2607.07415",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 1.8,
+            "total": 28.8
+          }
+        },
+        {
+          "title": "Stable Matchings with Minimum Utility Gap",
+          "url": "https://arxiv.org/abs/2607.07160",
+          "arxivId": "2607.07160",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 29.9
+          }
+        },
+        {
+          "title": "Simple Nash Equilibria for Qualitative Multiplayer Games",
+          "url": "https://arxiv.org/abs/2607.07151",
+          "arxivId": "2607.07151",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "What Semivalues Cannot See: The Information Content of Anonymous Marginal Values",
+          "url": "https://arxiv.org/abs/2607.07013",
+          "arxivId": "2607.07013",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 29.9
+          }
+        },
+        {
+          "title": "The Joneses Visit an Economics Lab",
+          "url": "https://arxiv.org/abs/2607.07353",
+          "arxivId": "2607.07353",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 0.0,
+            "total": 15.4
+          }
+        },
+        {
+          "title": "Evaluation and Assignment with Networked Competition and Spillovers",
+          "url": "https://arxiv.org/abs/2607.07280",
+          "arxivId": "2607.07280",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 22.4
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation",
+          "url": "https://arxiv.org/abs/2607.07529",
+          "arxivId": "2607.07529",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          }
+        },
+        {
+          "title": "Pure Nash Equilibria in Graphical Games of Bounded Width Revisited",
+          "url": "https://arxiv.org/abs/2607.07627",
+          "arxivId": "2607.07627",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.CC",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Stable Matchings with Minimum Utility Gap",
+          "url": "https://arxiv.org/abs/2607.07160",
+          "arxivId": "2607.07160",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 29.9
+          }
+        },
+        {
+          "title": "What Semivalues Cannot See: The Information Content of Anonymous Marginal Values",
+          "url": "https://arxiv.org/abs/2607.07013",
+          "arxivId": "2607.07013",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 29.9
+          }
+        },
+        {
+          "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+          "url": "https://arxiv.org/abs/2607.07695",
+          "arxivId": "2607.07695",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -2.0,
+            "baseTotal": 25.0,
+            "bonus": 7.5,
+            "total": 29.2
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation",
+            "url": "https://arxiv.org/abs/2607.07529",
+            "arxivId": "2607.07529",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "FedMark-FM: 可审计、风险调整的数据市场用于联邦基础模型适配",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "算法设计",
+              "基准评测",
+              "理论推导"
+            ],
+            "contentTags": [
+              "数据市场",
+              "联邦学习",
+              "大语言模型",
+              "数据估值",
+              "隐私/安全"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着基础模型越来越多地通过检索、提示、适配器等私有组件协同运行，如何公平衡量并奖励各参与方的贡献成为关键难题。现有激励机制将客户端视为同质数据提供者，忽略了异构构件的价值差异、服务顺序依赖及策略操纵风险。本文指出，在无法集中原始数据的跨机构场景下，缺乏可审计的估值体系会导致贡献评估不公，抑制高质量参与者加入。",
+              "modelAndSetup": "模型设定中，多个客户端向共享的基础模型管道提交异构构件（如检索语料、LoRA适配器、提示模板），市场操作方基于合同效用函数评估联盟性能。该效用综合任务质量、安全性、延迟、隐私消耗与成本。每个客户端被视为特定类型构件的卖家，其价值由满足服务因果性的有序夏普利值决定，确保上游（如检索）仅为其对下游（如适配器）的上下文增益获益。",
+              "contributionsAndResults": "论文提出了FedMark-FM框架，首次实现了面向联邦基础模型的可审计数据市场。核心成果包括：定义了尊重服务因果的有序估值规则，并证明其为唯一满足标准公理与因果实现性质的解；设计了S3Val算法，结合分层抽样与代理模型高效估计高维异构贡献；在真实任务中，相比传统方法提升下游准确率7.5–8.1点，同时完全排除战略性客户端入选。",
+              "methodsAndTechniques": "作者采用分层夏普利估计框架，结合贡献草图、冗余聚类与代理效用模型来逼近难以直接计算的边际贡献。关键技术在于引入不确定性感知的置信下界支付机制，结合复制检测、隐藏审计与风险惩罚项，使操纵行为无利可图。证明路线依赖合作博弈中的前置约束游戏理论，并通过分裂保序校准保障区间覆盖率，从而在隐私受限条件下实现稳健估值。",
+              "limitationsAndReadingValue": "该框架依赖较强的合约承诺与外部审计假设，且有序估值虽具理论唯一性，但实际收益需权衡部署复杂性。当前实现侧重原型验证，大规模动态注册与硬件级可信执行环境集成仍待完善。最值得阅读的是其将机制设计嵌入机器学习系统的整体架构思想，以及有序信用分配与可争议账本的设计，为联邦AI生态提供了可复现的经济基础设施蓝图。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "FedMark-FM: 可审计、风险调整的数据市场用于联邦基础模型适配",
+            "summarySections": {
+              "backgroundAndQuestion": "随着基础模型越来越多地通过检索、提示、适配器等私有组件协同运行，如何公平衡量并奖励各参与方的贡献成为关键难题。现有激励机制将客户端视为同质数据提供者，忽略了异构构件的价值差异、服务顺序依赖及策略操纵风险。本文指出，在无法集中原始数据的跨机构场景下，缺乏可审计的估值体系会导致贡献评估不公，抑制高质量参与者加入。",
+              "modelAndSetup": "模型设定中，多个客户端向共享的基础模型管道提交异构构件（如检索语料、LoRA适配器、提示模板），市场操作方基于合同效用函数评估联盟性能。该效用综合任务质量、安全性、延迟、隐私消耗与成本。每个客户端被视为特定类型构件的卖家，其价值由满足服务因果性的有序夏普利值决定，确保上游（如检索）仅为其对下游（如适配器）的上下文增益获益。",
+              "contributionsAndResults": "论文提出了FedMark-FM框架，首次实现了面向联邦基础模型的可审计数据市场。核心成果包括：定义了尊重服务因果的有序估值规则，并证明其为唯一满足标准公理与因果实现性质的解；设计了S3Val算法，结合分层抽样与代理模型高效估计高维异构贡献；在真实任务中，相比传统方法提升下游准确率7.5–8.1点，同时完全排除战略性客户端入选。",
+              "methodsAndTechniques": "作者采用分层夏普利估计框架，结合贡献草图、冗余聚类与代理效用模型来逼近难以直接计算的边际贡献。关键技术在于引入不确定性感知的置信下界支付机制，结合复制检测、隐藏审计与风险惩罚项，使操纵行为无利可图。证明路线依赖合作博弈中的前置约束游戏理论，并通过分裂保序校准保障区间覆盖率，从而在隐私受限条件下实现稳健估值。",
+              "limitationsAndReadingValue": "该框架依赖较强的合约承诺与外部审计假设，且有序估值虽具理论唯一性，但实际收益需权衡部署复杂性。当前实现侧重原型验证，大规模动态注册与硬件级可信执行环境集成仍待完善。最值得阅读的是其将机制设计嵌入机器学习系统的整体架构思想，以及有序信用分配与可争议账本的设计，为联邦AI生态提供了可复现的经济基础设施蓝图。"
+            },
+            "contentTags": [
+              "数据市场",
+              "联邦学习",
+              "大语言模型",
+              "数据估值",
+              "隐私/安全"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "算法设计",
+              "基准评测",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Pure Nash Equilibria in Graphical Games of Bounded Width Revisited",
+            "url": "https://arxiv.org/abs/2607.07627",
+            "arxivId": "2607.07627",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.DS",
+              "cs.CC",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "有界宽度图博弈中的纯纳什均衡再探",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "图博弈",
+              "纯纳什均衡",
+              "参数复杂性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究图博弈中是否存在纯纳什均衡（PNE）的计算复杂性。该问题是算法博弈论中的经典难题，已知为NP完全。过去的研究通过树宽等图参数进行参数化分析，声称存在与依赖度无关的高效算法。然而，作者发现其中一个重要结论存在缺陷，并重新审视该问题的精细复杂性边界。",
+              "modelAndSetup": "模型考虑一个由有向图表示的博弈，每个节点是一个玩家，边表示效用依赖关系。每位玩家有至多α种策略，其收益取决于自身及至多△个邻居的策略。目标是判断整个博弈是否存在一个联合策略，使得没有任何玩家能单方面改变策略来提升自己的收益，即纯纳什均衡。",
+              "contributionsAndResults": "作者指出并纠正了先前关于树宽参数下存在a^O(tw)时间算法的错误结论，证明该问题在树宽甚至顶点覆盖参数下是W[1]-难的。更进一步，他们改进了动态规划算法的参数依赖，将指数项从a^(△+1)tw分别优化到a^[(△/2)+1]tw、a^[(△/3)+1]pw和a^ctw，且证明后两者在路径宽和割宽下的结果很可能是最优的。",
+              "methodsAndTechniques": "核心技术是紧化图与其平方图之间宽度参数的关系。作者通过构造性方法证明，原图的平方图（co-neighbor graph）的树宽、路径宽可被原图宽度与最大度的组合更精确地界定。随后将PNE判定问题规约为CSP实例，并结合基于pw-SETH的归约，建立了算法性能提升与否定复杂性猜想之间的等价性。",
+              "limitationsAndReadingValue": "尽管算法在路径宽和割宽下达到近乎最优，但在树宽下仍存在间隙，尚不清楚能否进一步改进。此外，下界依赖于较新的pw-SETH假设。本论文最值得阅读的是其对经典问题的澄清、组合关系的精细化分析以及将算法界限与复杂性猜想紧密关联的技术路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "有界宽度图博弈中的纯纳什均衡再探",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究图博弈中是否存在纯纳什均衡（PNE）的计算复杂性。该问题是算法博弈论中的经典难题，已知为NP完全。过去的研究通过树宽等图参数进行参数化分析，声称存在与依赖度无关的高效算法。然而，作者发现其中一个重要结论存在缺陷，并重新审视该问题的精细复杂性边界。",
+              "modelAndSetup": "模型考虑一个由有向图表示的博弈，每个节点是一个玩家，边表示效用依赖关系。每位玩家有至多α种策略，其收益取决于自身及至多△个邻居的策略。目标是判断整个博弈是否存在一个联合策略，使得没有任何玩家能单方面改变策略来提升自己的收益，即纯纳什均衡。",
+              "contributionsAndResults": "作者指出并纠正了先前关于树宽参数下存在a^O(tw)时间算法的错误结论，证明该问题在树宽甚至顶点覆盖参数下是W[1]-难的。更进一步，他们改进了动态规划算法的参数依赖，将指数项从a^(△+1)tw分别优化到a^[(△/2)+1]tw、a^[(△/3)+1]pw和a^ctw，且证明后两者在路径宽和割宽下的结果很可能是最优的。",
+              "methodsAndTechniques": "核心技术是紧化图与其平方图之间宽度参数的关系。作者通过构造性方法证明，原图的平方图（co-neighbor graph）的树宽、路径宽可被原图宽度与最大度的组合更精确地界定。随后将PNE判定问题规约为CSP实例，并结合基于pw-SETH的归约，建立了算法性能提升与否定复杂性猜想之间的等价性。",
+              "limitationsAndReadingValue": "尽管算法在路径宽和割宽下达到近乎最优，但在树宽下仍存在间隙，尚不清楚能否进一步改进。此外，下界依赖于较新的pw-SETH假设。本论文最值得阅读的是其对经典问题的澄清、组合关系的精细化分析以及将算法界限与复杂性猜想紧密关联的技术路径。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "图博弈",
+              "纯纳什均衡",
+              "参数复杂性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Stable Matchings with Minimum Utility Gap",
+            "url": "https://arxiv.org/abs/2607.07160",
+            "arxivId": "2607.07160",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "最小效用差距的稳定匹配",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "模型构建"
+            ],
+            "contentTags": [
+              "市场/匹配",
+              "公平性",
+              "机制设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统稳定匹配常偏向一方，导致个体间效用不均。本文关注如何在稳定匹配中平衡个体效用，而非仅优化总权重或两方公平。作者提出最小化个体间最大效用差距的新目标，填补了现有框架在个体层面公平性优化上的空白，尤其适用于需兼顾参与人感受的实际匹配场景。",
+              "modelAndSetup": "模型考虑多对多匹配市场，学生与实验室各有容量和偏好，允许一般效用函数。指定一个代理子集A，目标是找到稳定匹配，使A中成员的效用值尽可能接近。效用函数需与偏好一致，衡量标准为效用差值或比值的最小化，涵盖经典排名负值等特例。",
+              "contributionsAndResults": "论文证明两种版本（差值与比值）均可在多项式时间内求解，这是首个针对个体效用差距最小化的高效算法。结果表明该问题虽不被最小割表示框架涵盖，也不具普遍次模性，但仍可高效处理，揭示了旋转偏序结构下新型公平目标的可解边界。",
+              "methodsAndTechniques": "算法基于旋转偏序集结构，利用每个代理相关的旋转构成链的性质。通过滑动窗口枚举可能的效用区间，并转化为强制与禁止旋转的闭包可行性问题，在旋转图中进行向下闭包搜索，最终结合O(n²)次可行性检验完成优化。",
+              "limitationsAndReadingValue": "当偏好含无差异关系时问题变为NP难，且次模性仅在单侧代理集合时成立，限制了通用性。最值得读的是其对旋转链结构的巧妙运用和滑动窗口设计，为基于偏序结构的公平匹配提供了新方法论视角，适合关注算法机制与结构性质的研究者深入研读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "最小效用差距的稳定匹配",
+            "summarySections": {
+              "backgroundAndQuestion": "传统稳定匹配常偏向一方，导致个体间效用不均。本文关注如何在稳定匹配中平衡个体效用，而非仅优化总权重或两方公平。作者提出最小化个体间最大效用差距的新目标，填补了现有框架在个体层面公平性优化上的空白，尤其适用于需兼顾参与人感受的实际匹配场景。",
+              "modelAndSetup": "模型考虑多对多匹配市场，学生与实验室各有容量和偏好，允许一般效用函数。指定一个代理子集A，目标是找到稳定匹配，使A中成员的效用值尽可能接近。效用函数需与偏好一致，衡量标准为效用差值或比值的最小化，涵盖经典排名负值等特例。",
+              "contributionsAndResults": "论文证明两种版本（差值与比值）均可在多项式时间内求解，这是首个针对个体效用差距最小化的高效算法。结果表明该问题虽不被最小割表示框架涵盖，也不具普遍次模性，但仍可高效处理，揭示了旋转偏序结构下新型公平目标的可解边界。",
+              "methodsAndTechniques": "算法基于旋转偏序集结构，利用每个代理相关的旋转构成链的性质。通过滑动窗口枚举可能的效用区间，并转化为强制与禁止旋转的闭包可行性问题，在旋转图中进行向下闭包搜索，最终结合O(n²)次可行性检验完成优化。",
+              "limitationsAndReadingValue": "当偏好含无差异关系时问题变为NP难，且次模性仅在单侧代理集合时成立，限制了通用性。最值得读的是其对旋转链结构的巧妙运用和滑动窗口设计，为基于偏序结构的公平匹配提供了新方法论视角，适合关注算法机制与结构性质的研究者深入研读。"
+            },
+            "contentTags": [
+              "市场/匹配",
+              "公平性",
+              "机制设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "What Semivalues Cannot See: The Information Content of Anonymous Marginal Values",
+            "url": "https://arxiv.org/abs/2607.07013",
+            "arxivId": "2607.07013",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "半值看不到什么：匿名边际值的信息内容",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "合作博弈",
+              "Shapley值",
+              "信息结构",
+              "权力指数"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么某些合作博弈中的结构无法被主流解概念识别？论文指出，尽管Shapley值等半值在经典应用中表现良好，但在存在互补性的场景（如团队形成、数据市场）中常感乏力。已有研究发现所有半值共享一个非零盲区，但该盲区是否有经济意义尚不清楚。本文旨在精确刻画这一盲区的内容及其对价值分配的影响。",
+              "modelAndSetup": "作者将合作博弈表示为特征函数，并采用Harsanyi红利坐标系进行分析。模型关注对称线性解（即半值）所能提取的信息子空间，通过玩家在各规模联盟中的总协同负载（dividend loadings）来刻画可见信息。游戏空间被视为向量空间，半值构成其对偶子空间，盲区即为该子空间的核。",
+              "contributionsAndResults": "论文证明，所有半值联合观测的信息恰好是每个玩家在各联盟规模下的总协同效应，盲区由闭合协同回路构成。从四人起存在非零盲区，且即使在凸博弈中，不同游戏也可能产生完全相同的半值支付。这表明仅凭半值数据无法唯一识别生产函数，即使在强正则性假设下亦然。",
+              "methodsAndTechniques": "作者利用Harsanyi红利分解和莫比乌斯反演将博弈转换到红利坐标系，在此体系下将半值表达为红利负载的线性组合。通过构造单位三角权重映射，证明了信息等价性。进一步结合代数组合学中的包含矩阵秩定理（Gottlieb），逐层计算各阶交互功能的恢复能力，建立了完整的‘审计层级’理论。",
+              "limitationsAndReadingValue": "论文聚焦于线性对称解的结构性限制，未涉及非线性或非对称机制的设计可行性。其结论依赖于精确的线性代数结构，可能难以直接推广至近似或随机设置。然而，该文对信息维度的精确量化、盲区的经济性质分析及可视性测量极具阅读价值，尤其适合希望理解Shapley类方法根本局限的研究者。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "半值看不到什么：匿名边际值的信息内容",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么某些合作博弈中的结构无法被主流解概念识别？论文指出，尽管Shapley值等半值在经典应用中表现良好，但在存在互补性的场景（如团队形成、数据市场）中常感乏力。已有研究发现所有半值共享一个非零盲区，但该盲区是否有经济意义尚不清楚。本文旨在精确刻画这一盲区的内容及其对价值分配的影响。",
+              "modelAndSetup": "作者将合作博弈表示为特征函数，并采用Harsanyi红利坐标系进行分析。模型关注对称线性解（即半值）所能提取的信息子空间，通过玩家在各规模联盟中的总协同负载（dividend loadings）来刻画可见信息。游戏空间被视为向量空间，半值构成其对偶子空间，盲区即为该子空间的核。",
+              "contributionsAndResults": "论文证明，所有半值联合观测的信息恰好是每个玩家在各联盟规模下的总协同效应，盲区由闭合协同回路构成。从四人起存在非零盲区，且即使在凸博弈中，不同游戏也可能产生完全相同的半值支付。这表明仅凭半值数据无法唯一识别生产函数，即使在强正则性假设下亦然。",
+              "methodsAndTechniques": "作者利用Harsanyi红利分解和莫比乌斯反演将博弈转换到红利坐标系，在此体系下将半值表达为红利负载的线性组合。通过构造单位三角权重映射，证明了信息等价性。进一步结合代数组合学中的包含矩阵秩定理（Gottlieb），逐层计算各阶交互功能的恢复能力，建立了完整的‘审计层级’理论。",
+              "limitationsAndReadingValue": "论文聚焦于线性对称解的结构性限制，未涉及非线性或非对称机制的设计可行性。其结论依赖于精确的线性代数结构，可能难以直接推广至近似或随机设置。然而，该文对信息维度的精确量化、盲区的经济性质分析及可视性测量极具阅读价值，尤其适合希望理解Shapley类方法根本局限的研究者。"
+            },
+            "contentTags": [
+              "合作博弈",
+              "Shapley值",
+              "信息结构",
+              "权力指数"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+            "url": "https://arxiv.org/abs/2607.07695",
+            "arxivId": "2607.07695",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.GT",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-08",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202607080000 TO 202607082359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+          "url": "https://arxiv.org/abs/2607.07422",
+          "arxivId": "2607.07422",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Logical Multi-Hop Query Answering over Knowledge Graphs (KGs) can be formulated as querying, with an implicit completeness assumption. Current works mainly focus on Existential First Order Logic (EFO) queries. These EFO queries contain conjunction, disjunction, and negation operators. Most existing works employ transductive reasoning, meaning they are not capable of reasoning over entities unseen during training. In the real world, there is a resource scarcity, and we cannot train a model with all the nodes of a large KG. Hence, we propose InductWave, a wavelet-based inductive embedding method for logical query answering on large KGs. Here, the training graph consists of fewer nodes than the test graph. Our model performs on par with the baseline models while having half the number of message-passing layers. It outperforms all of them in most cases, with 75% of the layers. These fewer resource requirements enable us to evaluate InductWave on massive graphs, such as Wiki-KG. We test our model using extensive experiments across varying train-test graph proportions of the FB15k-(237) dataset, comparing it with the state-of-the-art models. The code and datasets for the model are available at https://github.com/kracr/inductwave/."
+        },
+        {
+          "title": "Interpretable Uncertainty for Adaptive Retrieval and Reasoning in Question Answering",
+          "url": "https://arxiv.org/abs/2607.07380",
+          "arxivId": "2607.07380",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large language models (LLMs) achieve a strong performance in question answering (QA), but remain prone to hallucinations and suffer from limited transparency. Retrieval-augmented generation (RAG) can improve factuality, yet decisions about when and how to retrieve from external resources are typically based on opaque policies or computationally inefficient multi-step prompting procedures. We propose an uncertainty-aware framework for adaptive QA based on explicit signals derived from LLM internal representations. We distinguish between knowledge insufficiency and knowledge ambiguity or conflict, and efficiently estimate these from hidden states in a single forward pass. These signals guide system behaviour: RAG is triggered when knowledge is insufficient, while additional reasoning is applied when ambiguity or conflict is high. By grounding adaptive decisions in decomposed and efficiently estimable uncertainty signals, this approach provides a transparent and practical alternative to existing retrieval and reasoning strategies supporting the design of interpretable user-facing tools."
+        },
+        {
+          "title": "Granularity in Actoin: Graphing sources for social history",
+          "url": "https://arxiv.org/abs/2607.07183",
+          "arxivId": "2607.07183",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "This working paper describes a pipeline for turning historical sources into structured data organised around the principle of foregrounding action as the basic and constitutive unit of analysis. It is rooted in a desire for pipelines that suit a granular approach to social history. The pipeline rests on the principles developed in the GRAM-framework (Graph of Roles and Actions Model), but leverages a range of machine learning tools to allow for an automated, skeletal graphing of actions. Ideally, such auto-GRAMS would integrate with close readings, including extensive manual graphing. Finally, we provide an example of how this approach might work in practice by graphing actions of pretending across four separate archival collections, relating to runaways and itinerants in eighteenth and nineteenth-century Denmark."
+        },
+        {
+          "title": "Seeing and Reflecting: Multimodal Memory-Enhanced Agent Collaboration for Recommendation",
+          "url": "https://arxiv.org/abs/2607.07108",
+          "arxivId": "2607.07108",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large language model (LLM)-based agentic recommender systems show promise in modeling user preferences through natural-language reasoning, yet they remain limited by text-centric inputs and coarse-grained memory updates, making agents prone to missing visual evidence, semantic noise, and preference drift. To address these limitations, we propose MMEACR, a Multimodal Memory-Enhanced Agent Collaboration framework for recommendation. MMEACR introduces a dual-track memory architecture that separates interpretable agent reasoning from fine-grained multimodal matching. In the reasoning track, collaborative User and Item Memory Agents maintain persistent multimodal memories and update them through an attribute-guided reinforcement-and-reflection mechanism. In the matching track, a decoupled multi-modal embedding memory is built from raw interaction narratives and item images to preserve detailed cross-modal signals beyond structured memory updates. The two tracks are integrated through weighted Reciprocal Rank Fusion to produce robust and interpretable rankings. Experiments on three real-world domains show that MMEACR achieves strong overall performance against competitive LLM-based and agent-based baselines, with notable gains in visually grounded recommendation scenarios."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+              "url": "https://arxiv.org/abs/2607.07422",
+              "arxivId": "2607.07422",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Logical Multi-Hop Query Answering over Knowledge Graphs (KGs) can be formulated as querying, with an implicit completeness assumption. Current works mainly focus on Existential First Order Logic (EFO) queries. These EFO queries contain conjunction, disjunction, and negation operators. Most existing works employ transductive reasoning, meaning they are not capable of reasoning over entities unseen during training. In the real world, there is a resource scarcity, and we cannot train a model with all the nodes of a large KG. Hence, we propose InductWave, a wavelet-based inductive embedding method for logical query answering on large KGs. Here, the training graph consists of fewer nodes than the test graph. Our model performs on par with the baseline models while having half the number of message-passing layers. It outperforms all of them in most cases, with 75% of the layers. These fewer resource requirements enable us to evaluate InductWave on massive graphs, such as Wiki-KG. We test our model using extensive experiments across varying train-test graph proportions of the FB15k-(237) dataset, comparing it with the state-of-the-art models. The code and datasets for the model are available at https://github.com/kracr/inductwave/."
+            },
+            {
+              "title": "Interpretable Uncertainty for Adaptive Retrieval and Reasoning in Question Answering",
+              "url": "https://arxiv.org/abs/2607.07380",
+              "arxivId": "2607.07380",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large language models (LLMs) achieve a strong performance in question answering (QA), but remain prone to hallucinations and suffer from limited transparency. Retrieval-augmented generation (RAG) can improve factuality, yet decisions about when and how to retrieve from external resources are typically based on opaque policies or computationally inefficient multi-step prompting procedures. We propose an uncertainty-aware framework for adaptive QA based on explicit signals derived from LLM internal representations. We distinguish between knowledge insufficiency and knowledge ambiguity or conflict, and efficiently estimate these from hidden states in a single forward pass. These signals guide system behaviour: RAG is triggered when knowledge is insufficient, while additional reasoning is applied when ambiguity or conflict is high. By grounding adaptive decisions in decomposed and efficiently estimable uncertainty signals, this approach provides a transparent and practical alternative to existing retrieval and reasoning strategies supporting the design of interpretable user-facing tools."
+            },
+            {
+              "title": "Granularity in Actoin: Graphing sources for social history",
+              "url": "https://arxiv.org/abs/2607.07183",
+              "arxivId": "2607.07183",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "This working paper describes a pipeline for turning historical sources into structured data organised around the principle of foregrounding action as the basic and constitutive unit of analysis. It is rooted in a desire for pipelines that suit a granular approach to social history. The pipeline rests on the principles developed in the GRAM-framework (Graph of Roles and Actions Model), but leverages a range of machine learning tools to allow for an automated, skeletal graphing of actions. Ideally, such auto-GRAMS would integrate with close readings, including extensive manual graphing. Finally, we provide an example of how this approach might work in practice by graphing actions of pretending across four separate archival collections, relating to runaways and itinerants in eighteenth and nineteenth-century Denmark."
+            },
+            {
+              "title": "Seeing and Reflecting: Multimodal Memory-Enhanced Agent Collaboration for Recommendation",
+              "url": "https://arxiv.org/abs/2607.07108",
+              "arxivId": "2607.07108",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large language model (LLM)-based agentic recommender systems show promise in modeling user preferences through natural-language reasoning, yet they remain limited by text-centric inputs and coarse-grained memory updates, making agents prone to missing visual evidence, semantic noise, and preference drift. To address these limitations, we propose MMEACR, a Multimodal Memory-Enhanced Agent Collaboration framework for recommendation. MMEACR introduces a dual-track memory architecture that separates interpretable agent reasoning from fine-grained multimodal matching. In the reasoning track, collaborative User and Item Memory Agents maintain persistent multimodal memories and update them through an attribute-guided reinforcement-and-reflection mechanism. In the matching track, a decoupled multi-modal embedding memory is built from raw interaction narratives and item images to preserve detailed cross-modal signals beyond structured memory updates. The two tracks are integrated through weighted Reciprocal Rank Fusion to produce robust and interpretable rankings. Experiments on three real-world domains show that MMEACR achieves strong overall performance against competitive LLM-based and agent-based baselines, with notable gains in visually grounded recommendation scenarios."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 3,
+                  "clarity": 4,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+              "url": "https://arxiv.org/abs/2607.07422",
+              "arxivId": "2607.07422",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Interpretable Uncertainty for Adaptive Retrieval and Reasoning in Question Answering",
+              "url": "https://arxiv.org/abs/2607.07380",
+              "arxivId": "2607.07380",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Granularity in Actoin: Graphing sources for social history",
+              "url": "https://arxiv.org/abs/2607.07183",
+              "arxivId": "2607.07183",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 3.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 8.0,
+                "total": 8.0
+              }
+            },
+            {
+              "title": "Seeing and Reflecting: Multimodal Memory-Enhanced Agent Collaboration for Recommendation",
+              "url": "https://arxiv.org/abs/2607.07108",
+              "arxivId": "2607.07108",
+              "date": "2026-07-08",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+          "url": "https://arxiv.org/abs/2607.07422",
+          "arxivId": "2607.07422",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Interpretable Uncertainty for Adaptive Retrieval and Reasoning in Question Answering",
+          "url": "https://arxiv.org/abs/2607.07380",
+          "arxivId": "2607.07380",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Granularity in Actoin: Graphing sources for social history",
+          "url": "https://arxiv.org/abs/2607.07183",
+          "arxivId": "2607.07183",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 3.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 8.0,
+            "total": 8.0
+          }
+        },
+        {
+          "title": "Seeing and Reflecting: Multimodal Memory-Enhanced Agent Collaboration for Recommendation",
+          "url": "https://arxiv.org/abs/2607.07108",
+          "arxivId": "2607.07108",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Interpretable Uncertainty for Adaptive Retrieval and Reasoning in Question Answering",
+          "url": "https://arxiv.org/abs/2607.07380",
+          "arxivId": "2607.07380",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+          "url": "https://arxiv.org/abs/2607.07422",
+          "arxivId": "2607.07422",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Seeing and Reflecting: Multimodal Memory-Enhanced Agent Collaboration for Recommendation",
+          "url": "https://arxiv.org/abs/2607.07108",
+          "arxivId": "2607.07108",
+          "date": "2026-07-08",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Interpretable Uncertainty for Adaptive Retrieval and Reasoning in Question Answering",
+            "url": "https://arxiv.org/abs/2607.07380",
+            "arxivId": "2607.07380",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "用于问答中自适应检索与推理的可解释不确定性",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "问答系统",
+              "不确定性估计",
+              "检索增强生成"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型在问答中表现强劲，但常因内部知识不全或过时而产生幻觉，且决策过程缺乏透明度。现有检索增强生成方法虽能提升事实性，但何时检索通常依赖黑箱策略或多步提示，效率低且不可解释。本文针对这一瓶颈，提出需区分知识缺失与知识冲突两类不确定性，并据此设计更透明高效的自适应机制。",
+              "modelAndSetup": "研究聚焦于开放域问答任务，输入为自然语言问题，输出为答案及是否触发外部检索或额外推理的决策。系统基于LLM隐藏状态，在单次前向传播中估计知识不足与歧义程度，通过阈值决定后续动作。实验在NO数据集上使用Llama-2-7b-chat模型，结合语义熵等指标评估选择性检索的有效性。",
+              "contributionsAndResults": "论文核心贡献在于提出一种可解释的自适应问答框架，将不确定性分解为知识不足和知识冲突两种信号，并用轻量回归探针从隐藏状态中高效估计。实验证明该方法显著优于仅用LLM或始终启用检索的基线，验证了基于显式不确定性指导检索与推理的可行性与有效性，推动了透明化AI决策的发展。",
+              "methodsAndTechniques": "方法利用LLM隐藏层状态训练两个回归探针，分别预测预训练语料中事实出现频次（反映知识不足）和不同版本共现的熵值（反映知识冲突）。这两个信号在单次推理中同步获取，无需多次采样或辅助模型。高知识不足触发检索，高冲突则启动链式思维等推理机制，从而实现低成本、可解释的动态响应。",
+              "limitationsAndReadingValue": "当前方法依赖探针训练，其泛化性受限于训练数据覆盖范围，且未全面比较更强的动态检索基线。不确定性信号的因果性也尚未完全验证。尽管如此，论文的价值在于提出了清晰的问题分解与系统设计理念。最值得阅读的是其问题设定与机制设计，为构建可诊断、可解释的智能问答系统提供了实用路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "用于问答中自适应检索与推理的可解释不确定性",
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型在问答中表现强劲，但常因内部知识不全或过时而产生幻觉，且决策过程缺乏透明度。现有检索增强生成方法虽能提升事实性，但何时检索通常依赖黑箱策略或多步提示，效率低且不可解释。本文针对这一瓶颈，提出需区分知识缺失与知识冲突两类不确定性，并据此设计更透明高效的自适应机制。",
+              "modelAndSetup": "研究聚焦于开放域问答任务，输入为自然语言问题，输出为答案及是否触发外部检索或额外推理的决策。系统基于LLM隐藏状态，在单次前向传播中估计知识不足与歧义程度，通过阈值决定后续动作。实验在NO数据集上使用Llama-2-7b-chat模型，结合语义熵等指标评估选择性检索的有效性。",
+              "contributionsAndResults": "论文核心贡献在于提出一种可解释的自适应问答框架，将不确定性分解为知识不足和知识冲突两种信号，并用轻量回归探针从隐藏状态中高效估计。实验证明该方法显著优于仅用LLM或始终启用检索的基线，验证了基于显式不确定性指导检索与推理的可行性与有效性，推动了透明化AI决策的发展。",
+              "methodsAndTechniques": "方法利用LLM隐藏层状态训练两个回归探针，分别预测预训练语料中事实出现频次（反映知识不足）和不同版本共现的熵值（反映知识冲突）。这两个信号在单次推理中同步获取，无需多次采样或辅助模型。高知识不足触发检索，高冲突则启动链式思维等推理机制，从而实现低成本、可解释的动态响应。",
+              "limitationsAndReadingValue": "当前方法依赖探针训练，其泛化性受限于训练数据覆盖范围，且未全面比较更强的动态检索基线。不确定性信号的因果性也尚未完全验证。尽管如此，论文的价值在于提出了清晰的问题分解与系统设计理念。最值得阅读的是其问题设定与机制设计，为构建可诊断、可解释的智能问答系统提供了实用路径。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "问答系统",
+              "不确定性估计",
+              "检索增强生成"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+            "url": "https://arxiv.org/abs/2607.07422",
+            "arxivId": "2607.07422",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "InductWave: 知识图谱上的归纳式多跳逻辑查询回答",
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "复杂度分析",
+              "系统框架"
+            ],
+            "contentTags": [
+              "知识图谱",
+              "逻辑查询回答",
+              "图神经网络",
+              "归纳学习",
+              "图小波"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有知识图谱上的逻辑查询方法大多依赖全图训练，难以应对新实体的出现，且在大规模图上资源消耗高。尽管已有归纳式方法尝试解决泛化问题，但要么依赖复杂的路径搜索，要么无法处理否定操作。本文针对这一现实瓶颈，探索如何在训练图远小于测试图的情况下，高效且准确地执行多跳逻辑查询。",
+              "modelAndSetup": "模型需在仅见部分节点的子图上训练，并在包含新节点的完整图上推理。输入是基于一阶逻辑的模糊查询，输出是答案实体的概率分布。作者在FB15k-237和超大规模Wiki-KG上测试，采用HITS@K作为指标，通过不同训练-测试比例设定评估模型的归纳能力和扩展性。",
+              "contributionsAndResults": "论文提出InductWave，一种结合图小波与消息传递的新方法，在多数情况下性能优于基线，且仅需更少的消息传递层。其在Wiki-KG上的成功验证了方法的可扩展性，证明了利用结构嵌入可在小训练图下实现强泛化，改变了对归纳查询中层数与性能关系的传统认知。",
+              "methodsAndTechniques": "核心是WAVBFNet，将图小波提供的节点结构上下文融入NBF-Net的消息传递过程。通过改进GE-SpMM实现高效的GPU计算，降低了内存复杂度。结构信息的早期注入使模型更快收敛，减少了对深层传播的依赖，从而在资源受限时仍保持高性能。",
+              "limitationsAndReadingValue": "模型在训练图极小时可能因信息不足而受限，且未与所有零样本方法对比。消融实验较简单，对小波参数的影响分析不足。最值得读的是其问题设定与方法设计，展示了如何通过融合经典信号处理思想提升归纳推理效率，为大规模图上的轻量级推理提供了新思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "InductWave: 知识图谱上的归纳式多跳逻辑查询回答",
+            "summarySections": {
+              "backgroundAndQuestion": "现有知识图谱上的逻辑查询方法大多依赖全图训练，难以应对新实体的出现，且在大规模图上资源消耗高。尽管已有归纳式方法尝试解决泛化问题，但要么依赖复杂的路径搜索，要么无法处理否定操作。本文针对这一现实瓶颈，探索如何在训练图远小于测试图的情况下，高效且准确地执行多跳逻辑查询。",
+              "modelAndSetup": "模型需在仅见部分节点的子图上训练，并在包含新节点的完整图上推理。输入是基于一阶逻辑的模糊查询，输出是答案实体的概率分布。作者在FB15k-237和超大规模Wiki-KG上测试，采用HITS@K作为指标，通过不同训练-测试比例设定评估模型的归纳能力和扩展性。",
+              "contributionsAndResults": "论文提出InductWave，一种结合图小波与消息传递的新方法，在多数情况下性能优于基线，且仅需更少的消息传递层。其在Wiki-KG上的成功验证了方法的可扩展性，证明了利用结构嵌入可在小训练图下实现强泛化，改变了对归纳查询中层数与性能关系的传统认知。",
+              "methodsAndTechniques": "核心是WAVBFNet，将图小波提供的节点结构上下文融入NBF-Net的消息传递过程。通过改进GE-SpMM实现高效的GPU计算，降低了内存复杂度。结构信息的早期注入使模型更快收敛，减少了对深层传播的依赖，从而在资源受限时仍保持高性能。",
+              "limitationsAndReadingValue": "模型在训练图极小时可能因信息不足而受限，且未与所有零样本方法对比。消融实验较简单，对小波参数的影响分析不足。最值得读的是其问题设定与方法设计，展示了如何通过融合经典信号处理思想提升归纳推理效率，为大规模图上的轻量级推理提供了新思路。"
+            },
+            "contentTags": [
+              "知识图谱",
+              "逻辑查询回答",
+              "图神经网络",
+              "归纳学习",
+              "图小波"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "复杂度分析",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Seeing and Reflecting: Multimodal Memory-Enhanced Agent Collaboration for Recommendation",
+            "url": "https://arxiv.org/abs/2607.07108",
+            "arxivId": "2607.07108",
+            "date": "2026-07-08",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "看见与反思：用于推荐的多模态记忆增强型智能体协作",
+            "researchParadigmTags": [
+              "模型构建",
+              "系统框架",
+              "实验验证",
+              "机制设计"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "多智能体系统",
+              "推荐系统",
+              "智能体",
+              "多模态学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型（LLM）的推荐智能体主要依赖文本输入和粗粒度记忆更新，难以充分利用视觉信息，且易因自由形式的反思引入语义噪声和偏好漂移。尤其在时尚、电子产品等视觉敏感领域，仅靠文本描述会丢失关键外观特征。同时，传统记忆机制缺乏对关键属性的定向强化，导致长期交互中用户画像失真。这限制了推荐系统的准确性与可解释性。",
+              "modelAndSetup": "论文研究在真实交互场景下如何融合视觉与文本信号进行个性化排序。输入为用户历史行为、候选商品及其图文信息，输出为排序列表。系统通过两个协同智能体维护用户与商品的记忆，并结合嵌入匹配进行最终融合排序。实验在三个真实世界数据集上进行，采用NDCG、MRR等指标评估，对比多种LLM与非LLM基线，验证方法在不同模态强度下的表现差异。",
+              "contributionsAndResults": "提出MMEACR框架，首次将细粒度多模态匹配与结构化智能体协作结合，显著提升视觉相关领域的推荐性能，在时尚数据集上N@1提升达45%以上。其核心贡献在于双轨架构设计：既保留语言推理的可解释性，又通过独立嵌入通道捕捉被过滤的细节。实验表明，属性引导的记忆演化有效抑制噪声，且整体推理效率高于同类智能体系统，证明了该路径的实用性与优越性。",
+              "methodsAndTechniques": "方法包含两条通路：一是推理通路，用户与商品智能体基于LLM进行对比决策并生成理由，通过预定义属性空间提取偏好信号，指导记忆的强化或修正；二是匹配通路，直接编码原始图文交互记录为多模态嵌入，保留细粒度跨模态信号。两者通过加权倒数排名融合集成，使系统兼具语义理解深度与匹配精度，解决了单一路径的信息损失问题。",
+              "limitationsAndReadingValue": "局限在于长期运行下原始嵌入记忆可能带来存储与检索开销，虽当前实验未显现出瓶颈，但大规模部署仍需优化。此外，属性空间依赖人工预设，灵活性受限。最值得阅读的是其系统设计思想与双轨融合机制，为构建高保真、可解释的多模态推荐智能体提供了清晰范式，尤其适合重视视觉因素的应用场景。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "看见与反思：用于推荐的多模态记忆增强型智能体协作",
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型（LLM）的推荐智能体主要依赖文本输入和粗粒度记忆更新，难以充分利用视觉信息，且易因自由形式的反思引入语义噪声和偏好漂移。尤其在时尚、电子产品等视觉敏感领域，仅靠文本描述会丢失关键外观特征。同时，传统记忆机制缺乏对关键属性的定向强化，导致长期交互中用户画像失真。这限制了推荐系统的准确性与可解释性。",
+              "modelAndSetup": "论文研究在真实交互场景下如何融合视觉与文本信号进行个性化排序。输入为用户历史行为、候选商品及其图文信息，输出为排序列表。系统通过两个协同智能体维护用户与商品的记忆，并结合嵌入匹配进行最终融合排序。实验在三个真实世界数据集上进行，采用NDCG、MRR等指标评估，对比多种LLM与非LLM基线，验证方法在不同模态强度下的表现差异。",
+              "contributionsAndResults": "提出MMEACR框架，首次将细粒度多模态匹配与结构化智能体协作结合，显著提升视觉相关领域的推荐性能，在时尚数据集上N@1提升达45%以上。其核心贡献在于双轨架构设计：既保留语言推理的可解释性，又通过独立嵌入通道捕捉被过滤的细节。实验表明，属性引导的记忆演化有效抑制噪声，且整体推理效率高于同类智能体系统，证明了该路径的实用性与优越性。",
+              "methodsAndTechniques": "方法包含两条通路：一是推理通路，用户与商品智能体基于LLM进行对比决策并生成理由，通过预定义属性空间提取偏好信号，指导记忆的强化或修正；二是匹配通路，直接编码原始图文交互记录为多模态嵌入，保留细粒度跨模态信号。两者通过加权倒数排名融合集成，使系统兼具语义理解深度与匹配精度，解决了单一路径的信息损失问题。",
+              "limitationsAndReadingValue": "局限在于长期运行下原始嵌入记忆可能带来存储与检索开销，虽当前实验未显现出瓶颈，但大规模部署仍需优化。此外，属性空间依赖人工预设，灵活性受限。最值得阅读的是其系统设计思想与双轨融合机制，为构建高保真、可解释的多模态推荐智能体提供了清晰范式，尤其适合重视视觉因素的应用场景。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "多智能体系统",
+              "推荐系统",
+              "智能体",
+              "多模态学习"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "系统框架",
+              "实验验证",
+              "机制设计"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 3
+  }
+}
