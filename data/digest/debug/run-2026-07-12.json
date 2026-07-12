@@ -1,0 +1,59 @@
+{
+  "date": "2026-07-12",
+  "generatedAt": "2026-07-12T05:42:40.819916+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-11",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607110000 TO 202607112359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607110000 TO 202607112359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          }
+        },
+        "dedupedCount": 0
+      },
+      "arxivTotalResults": 0,
+      "fetchedCount": 0,
+      "fetchedPapers": []
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-11",
+      "categories": [
+        "cs.CV"
+      ],
+      "categorySelection": "cs.CV",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.CV": {
+            "query": "cat:cs.CV AND submittedDate:\"202607110000 TO 202607112359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          }
+        },
+        "dedupedCount": 0
+      },
+      "arxivTotalResults": 0,
+      "fetchedCount": 0,
+      "fetchedPapers": []
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 0,
+    "recent-ai": 0
+  }
+}
