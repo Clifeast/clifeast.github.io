@@ -1,0 +1,1211 @@
+{
+  "date": "2026-07-15",
+  "generatedAt": "2026-07-15T05:15:31.678744+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-14",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607140000 TO 202607142359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607140000 TO 202607142359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 6
+      },
+      "arxivTotalResults": 7,
+      "fetchedCount": 6,
+      "fetchedPapers": [
+        {
+          "title": "Quiz Show Games: Searching with Bimodal Hiding",
+          "url": "https://arxiv.org/abs/2607.12867",
+          "arxivId": "2607.12867",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.OC"
+          ],
+          "abstract": "We consider a quiz show game in which a contestant is presented with a sequence of questions. Each time the contestant answers a question correctly, she receives a prize and proceeds to the next question; the probability of answering each question correctly is given. If the contestant answers a question incorrectly, she receives a consolation prize and the game ends. The contestant's problem of determining the optimal order in which to answer questions, for known fixed parameters, is a classic one studied in Kadane (1969), and admits a simple index-based solution. We consider game-theoretic versions of this problem in which a game show host can choose how to allocate a fixed prize budget. Our models are motivated by operational search problems in national security involving reconnaissance missions and inspecting for evidence of nuclear enrichment, as well as certain scheduling problems. We study three variants of the game, corresponding to different ways in which the host can distribute the prize money. For the first variant, we provide complete closed-form solutions, including equilibrium strategies and the value of the game. We reduce the second variant to a game solved in the literature. For the third variant, we obtain partial results by analyzing a more general game with a geometric structure."
+        },
+        {
+          "title": "Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control",
+          "url": "https://arxiv.org/abs/2607.12742",
+          "arxivId": "2607.12742",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.GT",
+            "eess.SY"
+          ],
+          "abstract": "Encrypted control lets a cloud coordinate a fleet of agents on fully homomorphically encrypted state, keeping their positions and commands private. The approximate scheme for real-valued control, CKKS, returns decryptions that carry the encryption noise, a key-recovery leak; the loop must decrypt to actuate, so the leak is unavoidable. Yet the security of approximate FHE is studied statically, encrypted control assumes an honest-but-curious cloud, and persistent-threat games never reach inside the cryptosystem. We model the loop's security under an advanced persistent threat as a two-phase game, passive reconnaissance then active manipulation, separated by a measured residual detector that sees only the manipulation. The passive phase reduces to the known flooding tradeoff; the active defense is re-keying, not bootstrapping, since only re-keying resets accumulated leakage. The active phase is a detection-evasion timing game: overt manipulation is caught, so the rational adversary stays stealthy, and at its Stackelberg equilibrium the defender re-keys on the laziest cadence that denies it, set by the control-theoretic fragility of the graph topology. The marginally-stable graph must re-key far more often than the well-connected one. A three-way tension among FHE precision, control accuracy, and re-key cadence sets where this game lives, between a securability floor and a static-suffices ceiling. The efficient secure point is that window, where re-keying is the price of precision efficiency. More broadly, security for an approximate cryptosystem in a feedback loop is a dynamic game whose defender's move is the scheme's own refresh, applying beyond control to any system that must repeatedly decrypt to act."
+        },
+        {
+          "title": "The Limits of Price Discrimination with a Bayesian Seller",
+          "url": "https://arxiv.org/abs/2607.12615",
+          "arxivId": "2607.12615",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "abstract": "We study the limits of third-degree price discrimination when the production cost is Bayesian and private to the seller, generalizing the seminal work of Bergemann, Brooks and Morris (2015). The rough setup is the following: A monopoly seller sets different prices for buyers in different \"segments\" of the market so as to maximize seller surplus. Different ways in which the aggregate market is decomposed into segments lead to different welfare outcomes, i.e., (seller surplus, buyer surplus) pairs. When the production cost is Bayesian, the region of achievable welfare outcomes can exhibit complex shapes beyond the clean characterization by Bergemann, Brooks and Morris for the case with a fixed cost. We show that with a Bayesian cost, this region coincides with a proper projection of a polytope defined by a polynomial number of linear constraints, the essential ones of which correspond to flow conservation in a \"discounted\" flow network. As a result, we give a polynomial-time algorithm that computes optimal market segmentations in terms of any linear combination of the seller surplus and the buyer surplus. En route, we establish the following structural property: Any market can be written as a convex combination of \"extremal markets\" in a way preserving the seller surplus and the buyer surplus. These extremal markets are piecewise equal-surplus with respect to different possible costs, generalizing a similar notion introduced by Bergemann, Brooks and Morris when the cost is fixed."
+        },
+        {
+          "title": "Cycles in Liquid Democracy: A Game-Theoretic Justification",
+          "url": "https://arxiv.org/abs/2607.12610",
+          "arxivId": "2607.12610",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "A common criticism of liquid democracy within the relevant academic literature is that delegation cycles can occur, seemingly resulting in unused voting power. Yet, practitioners argue that delegation cycles are not only unproblematic but are even formed intentionally by participants. To bring theory closer to reality, we introduce a model that captures this strategic behavior under uncertainty. We study the existence, structure and quality of Nash equilibria, revealing that delegation cycles naturally emerge. To complement these findings, we perform computational experiments using best-response dynamics."
+        },
+        {
+          "title": "Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand",
+          "url": "https://arxiv.org/abs/2607.12412",
+          "arxivId": "2607.12412",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Standard economics assumes the consumer as a flawless calculator who always buys the best basket it can afford. This paper models the shopper instead as a limited information channel: it compresses its world to the detail its attention affords, so its choice is a probability distribution, not a single basket. The textbook consumer returns exactly as the unlimited-attention limit, while at the zero-attention end the shopper falls back on pure habit. The central result is about how this shopper's demand responds to price changes. That pattern of responses is just a rescaling of how the shopper's own choices vary and move together, so it comes out symmetric. And provided the budget really binds, because the shopper wants more than it can afford, raising a good's own price lowers demand for it once buying power is held fixed. So the downward pull comes from the budget and from compression, not from rationality. The framework also covers an artificial agent running a limited-capacity policy. A worked two-good quadratic consumer carries every quantity in closed form."
+        },
+        {
+          "title": "First They Came for the Others: A Theory of Divide-and-Conquer",
+          "url": "https://arxiv.org/abs/2607.12371",
+          "arxivId": "2607.12371",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Divide-and-conquer tactics often succeed not through mechanical coordination failures, but through epistemic friction regarding an aggressor's underlying intent. When an attacker strikes a first target, bystanders must infer whether the assault represents a localized grievance or a systemic campaign. If the attack is rationally interpreted as particularized, bystanders abstain, prompting the isolated victim to surrender. We demonstrate how higher attack costs and lower correlation between victims' fates facilitate this division. We then study how behavioral responses, rhetoric, treaty commitments, and downstream defense networks modify this inference."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Quiz Show Games: Searching with Bimodal Hiding",
+              "url": "https://arxiv.org/abs/2607.12867",
+              "arxivId": "2607.12867",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.OC"
+              ],
+              "abstract": "We consider a quiz show game in which a contestant is presented with a sequence of questions. Each time the contestant answers a question correctly, she receives a prize and proceeds to the next question; the probability of answering each question correctly is given. If the contestant answers a question incorrectly, she receives a consolation prize and the game ends. The contestant's problem of determining the optimal order in which to answer questions, for known fixed parameters, is a classic one studied in Kadane (1969), and admits a simple index-based solution. We consider game-theoretic versions of this problem in which a game show host can choose how to allocate a fixed prize budget. Our models are motivated by operational search problems in national security involving reconnaissance missions and inspecting for evidence of nuclear enrichment, as well as certain scheduling problems. We study three variants of the game, corresponding to different ways in which the host can distribute the prize money. For the first variant, we provide complete closed-form solutions, including equilibrium strategies and the value of the game. We reduce the second variant to a game solved in the literature. For the third variant, we obtain partial results by analyzing a more general game with a geometric structure."
+            },
+            {
+              "title": "Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control",
+              "url": "https://arxiv.org/abs/2607.12742",
+              "arxivId": "2607.12742",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.GT",
+                "eess.SY"
+              ],
+              "abstract": "Encrypted control lets a cloud coordinate a fleet of agents on fully homomorphically encrypted state, keeping their positions and commands private. The approximate scheme for real-valued control, CKKS, returns decryptions that carry the encryption noise, a key-recovery leak; the loop must decrypt to actuate, so the leak is unavoidable. Yet the security of approximate FHE is studied statically, encrypted control assumes an honest-but-curious cloud, and persistent-threat games never reach inside the cryptosystem. We model the loop's security under an advanced persistent threat as a two-phase game, passive reconnaissance then active manipulation, separated by a measured residual detector that sees only the manipulation. The passive phase reduces to the known flooding tradeoff; the active defense is re-keying, not bootstrapping, since only re-keying resets accumulated leakage. The active phase is a detection-evasion timing game: overt manipulation is caught, so the rational adversary stays stealthy, and at its Stackelberg equilibrium the defender re-keys on the laziest cadence that denies it, set by the control-theoretic fragility of the graph topology. The marginally-stable graph must re-key far more often than the well-connected one. A three-way tension among FHE precision, control accuracy, and re-key cadence sets where this game lives, between a securability floor and a static-suffices ceiling. The efficient secure point is that window, where re-keying is the price of precision efficiency. More broadly, security for an approximate cryptosystem in a feedback loop is a dynamic game whose defender's move is the scheme's own refresh, applying beyond control to any system that must repeatedly decrypt to act."
+            },
+            {
+              "title": "The Limits of Price Discrimination with a Bayesian Seller",
+              "url": "https://arxiv.org/abs/2607.12615",
+              "arxivId": "2607.12615",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "abstract": "We study the limits of third-degree price discrimination when the production cost is Bayesian and private to the seller, generalizing the seminal work of Bergemann, Brooks and Morris (2015). The rough setup is the following: A monopoly seller sets different prices for buyers in different \"segments\" of the market so as to maximize seller surplus. Different ways in which the aggregate market is decomposed into segments lead to different welfare outcomes, i.e., (seller surplus, buyer surplus) pairs. When the production cost is Bayesian, the region of achievable welfare outcomes can exhibit complex shapes beyond the clean characterization by Bergemann, Brooks and Morris for the case with a fixed cost. We show that with a Bayesian cost, this region coincides with a proper projection of a polytope defined by a polynomial number of linear constraints, the essential ones of which correspond to flow conservation in a \"discounted\" flow network. As a result, we give a polynomial-time algorithm that computes optimal market segmentations in terms of any linear combination of the seller surplus and the buyer surplus. En route, we establish the following structural property: Any market can be written as a convex combination of \"extremal markets\" in a way preserving the seller surplus and the buyer surplus. These extremal markets are piecewise equal-surplus with respect to different possible costs, generalizing a similar notion introduced by Bergemann, Brooks and Morris when the cost is fixed."
+            },
+            {
+              "title": "Cycles in Liquid Democracy: A Game-Theoretic Justification",
+              "url": "https://arxiv.org/abs/2607.12610",
+              "arxivId": "2607.12610",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "A common criticism of liquid democracy within the relevant academic literature is that delegation cycles can occur, seemingly resulting in unused voting power. Yet, practitioners argue that delegation cycles are not only unproblematic but are even formed intentionally by participants. To bring theory closer to reality, we introduce a model that captures this strategic behavior under uncertainty. We study the existence, structure and quality of Nash equilibria, revealing that delegation cycles naturally emerge. To complement these findings, we perform computational experiments using best-response dynamics."
+            },
+            {
+              "title": "Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand",
+              "url": "https://arxiv.org/abs/2607.12412",
+              "arxivId": "2607.12412",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Standard economics assumes the consumer as a flawless calculator who always buys the best basket it can afford. This paper models the shopper instead as a limited information channel: it compresses its world to the detail its attention affords, so its choice is a probability distribution, not a single basket. The textbook consumer returns exactly as the unlimited-attention limit, while at the zero-attention end the shopper falls back on pure habit. The central result is about how this shopper's demand responds to price changes. That pattern of responses is just a rescaling of how the shopper's own choices vary and move together, so it comes out symmetric. And provided the budget really binds, because the shopper wants more than it can afford, raising a good's own price lowers demand for it once buying power is held fixed. So the downward pull comes from the budget and from compression, not from rationality. The framework also covers an artificial agent running a limited-capacity policy. A worked two-good quadratic consumer carries every quantity in closed form."
+            },
+            {
+              "title": "First They Came for the Others: A Theory of Divide-and-Conquer",
+              "url": "https://arxiv.org/abs/2607.12371",
+              "arxivId": "2607.12371",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Divide-and-conquer tactics often succeed not through mechanical coordination failures, but through epistemic friction regarding an aggressor's underlying intent. When an attacker strikes a first target, bystanders must infer whether the assault represents a localized grievance or a systemic campaign. If the attack is rationally interpreted as particularized, bystanders abstain, prompting the isolated victim to surrender. We demonstrate how higher attack costs and lower correlation between victims' fates facilitate this division. We then study how behavioral responses, rhetoric, treaty commitments, and downstream defense networks modify this inference."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 8,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 1,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Quiz Show Games: Searching with Bimodal Hiding",
+              "url": "https://arxiv.org/abs/2607.12867",
+              "arxivId": "2607.12867",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control",
+              "url": "https://arxiv.org/abs/2607.12742",
+              "arxivId": "2607.12742",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.GT",
+                "eess.SY"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 20.0,
+                "bonus": 5.3,
+                "total": 20.2
+              }
+            },
+            {
+              "title": "The Limits of Price Discrimination with a Bayesian Seller",
+              "url": "https://arxiv.org/abs/2607.12615",
+              "arxivId": "2607.12615",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.9,
+                "total": 30.9
+              }
+            },
+            {
+              "title": "Cycles in Liquid Democracy: A Game-Theoretic Justification",
+              "url": "https://arxiv.org/abs/2607.12610",
+              "arxivId": "2607.12610",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.9,
+                "total": 24.2
+              }
+            },
+            {
+              "title": "Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand",
+              "url": "https://arxiv.org/abs/2607.12412",
+              "arxivId": "2607.12412",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "bonus": 2.4,
+                "total": 21.1
+              }
+            },
+            {
+              "title": "First They Came for the Others: A Theory of Divide-and-Conquer",
+              "url": "https://arxiv.org/abs/2607.12371",
+              "arxivId": "2607.12371",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "bonus": 0.0,
+                "total": 14.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Quiz Show Games: Searching with Bimodal Hiding",
+          "url": "https://arxiv.org/abs/2607.12867",
+          "arxivId": "2607.12867",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control",
+          "url": "https://arxiv.org/abs/2607.12742",
+          "arxivId": "2607.12742",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.GT",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 5.3,
+            "total": 20.2
+          }
+        },
+        {
+          "title": "The Limits of Price Discrimination with a Bayesian Seller",
+          "url": "https://arxiv.org/abs/2607.12615",
+          "arxivId": "2607.12615",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          }
+        },
+        {
+          "title": "Cycles in Liquid Democracy: A Game-Theoretic Justification",
+          "url": "https://arxiv.org/abs/2607.12610",
+          "arxivId": "2607.12610",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.9,
+            "total": 24.2
+          }
+        },
+        {
+          "title": "Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand",
+          "url": "https://arxiv.org/abs/2607.12412",
+          "arxivId": "2607.12412",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "bonus": 2.4,
+            "total": 21.1
+          }
+        },
+        {
+          "title": "First They Came for the Others: A Theory of Divide-and-Conquer",
+          "url": "https://arxiv.org/abs/2607.12371",
+          "arxivId": "2607.12371",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "bonus": 0.0,
+            "total": 14.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "The Limits of Price Discrimination with a Bayesian Seller",
+          "url": "https://arxiv.org/abs/2607.12615",
+          "arxivId": "2607.12615",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          }
+        },
+        {
+          "title": "Cycles in Liquid Democracy: A Game-Theoretic Justification",
+          "url": "https://arxiv.org/abs/2607.12610",
+          "arxivId": "2607.12610",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.9,
+            "total": 24.2
+          }
+        },
+        {
+          "title": "Quiz Show Games: Searching with Bimodal Hiding",
+          "url": "https://arxiv.org/abs/2607.12867",
+          "arxivId": "2607.12867",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand",
+          "url": "https://arxiv.org/abs/2607.12412",
+          "arxivId": "2607.12412",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "bonus": 2.4,
+            "total": 21.1
+          }
+        },
+        {
+          "title": "Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control",
+          "url": "https://arxiv.org/abs/2607.12742",
+          "arxivId": "2607.12742",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.GT",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 5.3,
+            "total": 20.2
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "The Limits of Price Discrimination with a Bayesian Seller",
+            "url": "https://arxiv.org/abs/2607.12615",
+            "arxivId": "2607.12615",
+            "date": "2026-07-14",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": false,
+          "provider": "mock-after-error",
+          "error": "missing PDF for second-stage reading",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We study the limits of third-degree price discrimination when the production cost is Bayesian and private to the seller, generalizing the seminal work of Bergemann, Brooks and Morris (2015). The rough setup is the following: A monopoly seller sets different pr...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We study the limits of third-degree price discrimination when the production cost is Bayesian and private to the seller, generalizing the seminal work of Bergemann, Brooks and Morris (2015). The rough setup is the following: A monopoly seller sets different pr...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Cycles in Liquid Democracy: A Game-Theoretic Justification",
+            "url": "https://arxiv.org/abs/2607.12610",
+            "arxivId": "2607.12610",
+            "date": "2026-07-14",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": false,
+          "provider": "mock-after-error",
+          "error": "missing PDF for second-stage reading",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "A common criticism of liquid democracy within the relevant academic literature is that delegation cycles can occur, seemingly resulting in unused voting power. Yet, practitioners argue that delegation cycles are not only unproblematic but are even formed inten...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "A common criticism of liquid democracy within the relevant academic literature is that delegation cycles can occur, seemingly resulting in unused voting power. Yet, practitioners argue that delegation cycles are not only unproblematic but are even formed inten...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Quiz Show Games: Searching with Bimodal Hiding",
+            "url": "https://arxiv.org/abs/2607.12867",
+            "arxivId": "2607.12867",
+            "date": "2026-07-14",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "math.OC"
+            ]
+          },
+          "usedPdf": false,
+          "provider": "mock-after-error",
+          "error": "missing PDF for second-stage reading",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We consider a quiz show game in which a contestant is presented with a sequence of questions. Each time the contestant answers a question correctly, she receives a prize and proceeds to the next question; the probability of answering each question correctly is...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We consider a quiz show game in which a contestant is presented with a sequence of questions. Each time the contestant answers a question correctly, she receives a prize and proceeds to the next question; the probability of answering each question correctly is...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand",
+            "url": "https://arxiv.org/abs/2607.12412",
+            "arxivId": "2607.12412",
+            "date": "2026-07-14",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": false,
+          "provider": "mock-after-error",
+          "error": "missing PDF for second-stage reading",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Standard economics assumes the consumer as a flawless calculator who always buys the best basket it can afford. This paper models the shopper instead as a limited information channel: it compresses its world to the detail its attention affords, so its choice i...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Standard economics assumes the consumer as a flawless calculator who always buys the best basket it can afford. This paper models the shopper instead as a limited information channel: it compresses its world to the detail its attention affords, so its choice i...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control",
+            "url": "https://arxiv.org/abs/2607.12742",
+            "arxivId": "2607.12742",
+            "date": "2026-07-14",
+            "source": "arXiv",
+            "categories": [
+              "cs.CR",
+              "cs.GT",
+              "eess.SY"
+            ]
+          },
+          "usedPdf": false,
+          "provider": "mock-after-error",
+          "error": "missing PDF for second-stage reading",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Encrypted control lets a cloud coordinate a fleet of agents on fully homomorphically encrypted state, keeping their positions and commands private. The approximate scheme for real-valued control, CKKS, returns decryptions that carry the encryption noise, a key...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Encrypted control lets a cloud coordinate a fleet of agents on fully homomorphically encrypted state, keeping their positions and commands private. The approximate scheme for real-valued control, CKKS, returns decryptions that carry the encryption noise, a key...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-14",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202607140000 TO 202607142359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 3
+      },
+      "arxivTotalResults": 3,
+      "fetchedCount": 3,
+      "fetchedPapers": [
+        {
+          "title": "A 32-channel event-based bio-signal analog front-end with adaptive delta and pulse frequency encoding",
+          "url": "https://arxiv.org/abs/2607.12901",
+          "arxivId": "2607.12901",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.AR",
+            "cs.NE"
+          ],
+          "abstract": "Low-power event-based Analog Front-Ends (AFEs) are essential for building efficient, end-to-end neuromorphic signal processing systems. In this paper, we present an event-based AFE Application-Specific Integrated Circuit (ASIC) optimized for biomedical signal acquisition and encoding. The chip features 32 independently programmable input channels with dual-mode encoding mechanism outputs, comprising Pulse Frequency Modulation (PFM) and adaptive Asynchronous Delta Modulator (aADM) circuits. The aADM encoder provides an auto-scaling mechanism that adapts the encoding data-rate based on the input signal envelope in real-time, enabling very high data compression for low-power information transmission. This approach paves the way toward adaptive wireless communication of neural signals for on-line processing in brain-computer interfaces. Fabricated in a 180 nm CMOS process, the proposed ASIC offers a highly configurable interface compatible with state-of-the-art Spiking Neural Network (SNN) neuromorphic processors."
+        },
+        {
+          "title": "Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata",
+          "url": "https://arxiv.org/abs/2607.12403",
+          "arxivId": "2607.12403",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "nlin.AO",
+            "nlin.CG"
+          ],
+          "abstract": "Growing Neural Cellular Automata (GNCA) are capable of robust self-maintenance and self-repair, yet the internal dynamical mechanisms that support these capabilities remain poorly understood. Here, we investigate the role of internal fluctuations--temporal micro-variability of hidden channel states--in a trained GNCA model, challenging the assumption that such variability is merely residual stochastic noise. Through systematic analysis spanning update-rate sweeps, spatial correlation measurements, dimensionality reduction of collective state trajectories, localized damage experiments, transfer entropy vector field estimation, and partial information decomposition, we show that internal fluctuations are spatially structured, dynamically coupled to an attracting collective state, and associated with distributed small-magnitude updates that contribute to damage recovery. Damage induces a global deviation in latent state space followed by gradual re-convergence, and suppressing distributed small-magnitude updates associated with baseline fluctuation dynamics outside a permissive radius that encompasses the majority of the cells significantly impairs recovery. Transfer entropy analysis characterizes a spatially differentiated repair response: corrective inward flow near the damage site coexists with outward perturbation propagation at greater distances. Partial information decomposition further suggests a regime shift from synergy-dominant resting computation to redundancy-increased coordination during recovery. These findings indicate that GNCA self-repair emerges from high-dimensional nonlinear collective dynamics in which internal fluctuations serve as a functional component supporting information flow, coordination, and return toward an attracting recurrent state."
+        },
+        {
+          "title": "A new dual-population constrained multi-objective evolutionary optimization algorithm with repair constraint handling for structural optimization",
+          "url": "https://arxiv.org/abs/2607.12240",
+          "arxivId": "2607.12240",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "Structural optimization problems often involve a large number of decision variables and highly non-convex feasible regions, making convergence to the true Pareto front extremely challenging. Even when convergence is achievable, it typically requires thousands of function evaluations, resulting in significant computational cost. This highlights the need for efficient and robust optimization algorithms for real-world engineering applications. In this study, we introduce a novel constrained multi-objective evolutionary algorithm, termed DPCME. The algorithm employs two interacting populations that exchange information, enabling effective global exploration and reducing the risk of convergence to local optima. To further enhance performance, a recent repair-based constraint-handling technique is incorporated, and alternative repair approaches are proposed and systematically evaluated. The proposed algorithm is tested on three engineering problems: the 72-bar truss, the 120-bar truss, and a chemical tanker structure, each involving hundreds of nonlinear failure constraints. Its performance is evaluated against state-of-the-art constrained multi-objective optimization algorithms from the latest PlatEMO package. A total of 43 algorithms are initially tested, from which the 12 best-performing methods are selected for detailed comparison. The results demonstrate that DPCME achieves superior or competitive convergence and diversity across all test cases, and that the inclusion of repair-based constraint handling further improves its performance."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "A 32-channel event-based bio-signal analog front-end with adaptive delta and pulse frequency encoding",
+              "url": "https://arxiv.org/abs/2607.12901",
+              "arxivId": "2607.12901",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.AR",
+                "cs.NE"
+              ],
+              "abstract": "Low-power event-based Analog Front-Ends (AFEs) are essential for building efficient, end-to-end neuromorphic signal processing systems. In this paper, we present an event-based AFE Application-Specific Integrated Circuit (ASIC) optimized for biomedical signal acquisition and encoding. The chip features 32 independently programmable input channels with dual-mode encoding mechanism outputs, comprising Pulse Frequency Modulation (PFM) and adaptive Asynchronous Delta Modulator (aADM) circuits. The aADM encoder provides an auto-scaling mechanism that adapts the encoding data-rate based on the input signal envelope in real-time, enabling very high data compression for low-power information transmission. This approach paves the way toward adaptive wireless communication of neural signals for on-line processing in brain-computer interfaces. Fabricated in a 180 nm CMOS process, the proposed ASIC offers a highly configurable interface compatible with state-of-the-art Spiking Neural Network (SNN) neuromorphic processors."
+            },
+            {
+              "title": "Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata",
+              "url": "https://arxiv.org/abs/2607.12403",
+              "arxivId": "2607.12403",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "nlin.AO",
+                "nlin.CG"
+              ],
+              "abstract": "Growing Neural Cellular Automata (GNCA) are capable of robust self-maintenance and self-repair, yet the internal dynamical mechanisms that support these capabilities remain poorly understood. Here, we investigate the role of internal fluctuations--temporal micro-variability of hidden channel states--in a trained GNCA model, challenging the assumption that such variability is merely residual stochastic noise. Through systematic analysis spanning update-rate sweeps, spatial correlation measurements, dimensionality reduction of collective state trajectories, localized damage experiments, transfer entropy vector field estimation, and partial information decomposition, we show that internal fluctuations are spatially structured, dynamically coupled to an attracting collective state, and associated with distributed small-magnitude updates that contribute to damage recovery. Damage induces a global deviation in latent state space followed by gradual re-convergence, and suppressing distributed small-magnitude updates associated with baseline fluctuation dynamics outside a permissive radius that encompasses the majority of the cells significantly impairs recovery. Transfer entropy analysis characterizes a spatially differentiated repair response: corrective inward flow near the damage site coexists with outward perturbation propagation at greater distances. Partial information decomposition further suggests a regime shift from synergy-dominant resting computation to redundancy-increased coordination during recovery. These findings indicate that GNCA self-repair emerges from high-dimensional nonlinear collective dynamics in which internal fluctuations serve as a functional component supporting information flow, coordination, and return toward an attracting recurrent state."
+            },
+            {
+              "title": "A new dual-population constrained multi-objective evolutionary optimization algorithm with repair constraint handling for structural optimization",
+              "url": "https://arxiv.org/abs/2607.12240",
+              "arxivId": "2607.12240",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "Structural optimization problems often involve a large number of decision variables and highly non-convex feasible regions, making convergence to the true Pareto front extremely challenging. Even when convergence is achievable, it typically requires thousands of function evaluations, resulting in significant computational cost. This highlights the need for efficient and robust optimization algorithms for real-world engineering applications. In this study, we introduce a novel constrained multi-objective evolutionary algorithm, termed DPCME. The algorithm employs two interacting populations that exchange information, enabling effective global exploration and reducing the risk of convergence to local optima. To further enhance performance, a recent repair-based constraint-handling technique is incorporated, and alternative repair approaches are proposed and systematically evaluated. The proposed algorithm is tested on three engineering problems: the 72-bar truss, the 120-bar truss, and a chemical tanker structure, each involving hundreds of nonlinear failure constraints. Its performance is evaluated against state-of-the-art constrained multi-objective optimization algorithms from the latest PlatEMO package. A total of 43 algorithms are initially tested, from which the 12 best-performing methods are selected for detailed comparison. The results demonstrate that DPCME achieves superior or competitive convergence and diversity across all test cases, and that the inclusion of repair-based constraint handling further improves its performance."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 1,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 1,
+                  "horizonValue": 0,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 0,
+                  "penalty": -4
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "A 32-channel event-based bio-signal analog front-end with adaptive delta and pulse frequency encoding",
+              "url": "https://arxiv.org/abs/2607.12901",
+              "arxivId": "2607.12901",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.AR",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 1.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 7.0,
+                "total": 7.0
+              }
+            },
+            {
+              "title": "Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata",
+              "url": "https://arxiv.org/abs/2607.12403",
+              "arxivId": "2607.12403",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "nlin.AO",
+                "nlin.CG"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "A new dual-population constrained multi-objective evolutionary optimization algorithm with repair constraint handling for structural optimization",
+              "url": "https://arxiv.org/abs/2607.12240",
+              "arxivId": "2607.12240",
+              "date": "2026-07-14",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 1.0,
+                "horizonValue": 0.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 0.0,
+                "penalty": -4.0,
+                "baseTotal": 1.0,
+                "total": 1.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "A 32-channel event-based bio-signal analog front-end with adaptive delta and pulse frequency encoding",
+          "url": "https://arxiv.org/abs/2607.12901",
+          "arxivId": "2607.12901",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.AR",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 1.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 7.0,
+            "total": 7.0
+          }
+        },
+        {
+          "title": "Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata",
+          "url": "https://arxiv.org/abs/2607.12403",
+          "arxivId": "2607.12403",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "nlin.AO",
+            "nlin.CG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "A new dual-population constrained multi-objective evolutionary optimization algorithm with repair constraint handling for structural optimization",
+          "url": "https://arxiv.org/abs/2607.12240",
+          "arxivId": "2607.12240",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 1.0,
+            "horizonValue": 0.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 0.0,
+            "penalty": -4.0,
+            "baseTotal": 1.0,
+            "total": 1.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata",
+          "url": "https://arxiv.org/abs/2607.12403",
+          "arxivId": "2607.12403",
+          "date": "2026-07-14",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "nlin.AO",
+            "nlin.CG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata",
+            "url": "https://arxiv.org/abs/2607.12403",
+            "arxivId": "2607.12403",
+            "date": "2026-07-14",
+            "source": "arXiv",
+            "categories": [
+              "cs.NE",
+              "nlin.AO",
+              "nlin.CG"
+            ]
+          },
+          "usedPdf": false,
+          "provider": "mock-after-error",
+          "error": "missing PDF for second-stage reading",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Growing Neural Cellular Automata (GNCA) are capable of robust self-maintenance and self-repair, yet the internal dynamical mechanisms that support these capabilities remain poorly understood. Here, we investigate the role of internal fluctuations--temporal mic...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Growing Neural Cellular Automata (GNCA) are capable of robust self-maintenance and self-repair, yet the internal dynamical mechanisms that support these capabilities remain poorly understood. Here, we investigate the role of internal fluctuations--temporal mic...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "PDF 下载失败，第二阶段改用标题生成：The Limits of Price Discrimination with a Bayesian Seller (HTTP Error 404: Not Found)",
+    "LLM 精读生成失败，使用 Mock fallback：The Limits of Price Discrimination with a Bayesian Seller (missing PDF for second-stage reading)",
+    "PDF 下载失败，第二阶段改用标题生成：Cycles in Liquid Democracy: A Game-Theoretic Justification (HTTP Error 404: Not Found)",
+    "LLM 精读生成失败，使用 Mock fallback：Cycles in Liquid Democracy: A Game-Theoretic Justification (missing PDF for second-stage reading)",
+    "PDF 下载失败，第二阶段改用标题生成：Quiz Show Games: Searching with Bimodal Hiding (HTTP Error 404: Not Found)",
+    "LLM 精读生成失败，使用 Mock fallback：Quiz Show Games: Searching with Bimodal Hiding (missing PDF for second-stage reading)",
+    "PDF 下载失败，第二阶段改用标题生成：Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand (HTTP Error 404: Not Found)",
+    "LLM 精读生成失败，使用 Mock fallback：Choice at Finite Capacity: The Bounded Agent as an Information Channel and the Recovery of Walrasian Demand (missing PDF for second-stage reading)",
+    "PDF 下载失败，第二阶段改用标题生成：Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control (HTTP Error 404: Not Found)",
+    "LLM 精读生成失败，使用 Mock fallback：Stability Buys Time: A Re-Keying Game for Encrypted Multi-Agent Control (missing PDF for second-stage reading)",
+    "PDF 下载失败，第二阶段改用标题生成：Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata (HTTP Error 404: Not Found)",
+    "LLM 精读生成失败，使用 Mock fallback：Structured Fluctuations and the Information Dynamics of Self-Maintenance in Growing Neural Cellular Automata (missing PDF for second-stage reading)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 1
+  }
+}
