@@ -1,0 +1,2035 @@
+{
+  "date": "2026-07-17",
+  "generatedAt": "2026-07-17T05:27:05.439772+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-16",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607160000 TO 202607162359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607160000 TO 202607162359\"",
+            "totalResults": 1,
+            "fetchedCount": 1
+          }
+        },
+        "dedupedCount": 3
+      },
+      "arxivTotalResults": 3,
+      "fetchedCount": 3,
+      "fetchedPapers": [
+        {
+          "title": "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance",
+          "url": "https://arxiv.org/abs/2607.14877",
+          "arxivId": "2607.14877",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "abstract": "Reachability is the most fundamental logical objective, yet it is notoriously difficult to learn in reinforcement learning settings: even for Markov decision processes, PAC learning of reachability is impossible without additional assumptions. This difficulty also holds in turn-based stochastic games (TBSGs), where two adversarial players interact on a finite state space. In this work, we consider turn-based stochastic games with reachability objectives. For such settings, adversarial learning, in which players are adversarial even in the learning phase, is impossible. Therefore, the goal is to consider learning, in which both players learn the unknown model together. In this spirit, previous literature on PAC learning in TBSGs considers (a)~public information shared by both players; and (b)~centralized learning, which means that players share the same learning algorithm. In this work, our contribution is two-fold. First, we relax these strong assumptions and ensure learning: (i)~with private information not shared with the other player; and (ii)~decentralized learning where the players do not share the same learning algorithm. To the best of our knowledge, this work is the first positive result for decentralized and private information learning of TBSGs with reachability objectives. Second, we introduce a game-theoretic generalization of the Expected Conditional Distance (ECD) parameter, which measures the expected length of reaching the target set. We establish a polynomial-sample complexity bound with respect to the number of states, actions, ECD parameter, and inverses of error tolerance and failure probability."
+        },
+        {
+          "title": "Compensation Design",
+          "url": "https://arxiv.org/abs/2607.14438",
+          "arxivId": "2607.14438",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We introduce compensation design, the problem of designing payment rules that incentivize high-quality contributions in decentralized environments. Here, a budget-constrained principal with a monotone submodular value function aims to design a payment rule, while agents decide whether to opt in or out depending on their private cost. We show that a simple cost-oblivious and anonymous marginal-contribution payment rule guarantees that pure Nash equilibria always exist and attain a price of anarchy (PoA) of at most $2+o_λ(1)$ in the large-market regime ($λ\\to 0$) where each individual cost is at most a $λ$ fraction of the budget. We further show that the factor $2$ is unavoidable among deterministic cost-oblivious rules. Surprisingly, we identify a counterexample showing that a payment rule based on the Shapley value may admit no pure Nash equilibria. We then extend our scope to coarse correlated equilibria. This is further motivated by our intractability result: although a pure Nash equilibrium always exists, computing one is PLS-complete. We establish that coarse correlated equilibria also attain a PoA bound of at most $2+o_λ(1)$, and this guarantee in fact extends even under the payment rule induced by the Shapley value. Moreover, we move beyond monotone submodular value functions and binary actions. First, for (monotone) XOS valuations, we show that no oracle-efficient payment rule can attain a PoA bound of $O(n^{1/2 - ε})$. Second, for submodular but non-monotone valuations, we show that a broad class of natural payment rules fails to guarantee a bounded PoA. Finally, we extend compensation design to the setting where each agent has a combinatorial action set. We provide randomized payment rules with logarithmic PoA guarantees for subadditive values, and matching lower bounds that apply even in the single-agent additive-value setting."
+        },
+        {
+          "title": "Stochastic ultimatum game: Spite-driven resource feedback fosters fairness",
+          "url": "https://arxiv.org/abs/2607.14914",
+          "arxivId": "2607.14914",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "nlin.AO",
+            "econ.TH",
+            "physics.bio-ph",
+            "q-bio.PE"
+          ],
+          "abstract": "Resource scarcity can fundamentally encourage antisocial behaviour, whereas resource abundance can promote fair behaviour. Experimental evidence indeed suggests that scarcity induces spiteful behaviour, while repeated interactions enhance fairness. However, existing studies of game--environment feedback systems are largely confined to the evolution of cooperation and they overlook the interplay between resources, spite, and fairness. To address this lacuna, we develop a stochastic ultimatum game framework in which an offerer and an accepter repeatedly interact to negotiate exploitation of a self-renewable resource under the ownership of the offerer. Successful agreements deplete the resource, whereas unsuccessful agreements inhibit exploitation and facilitate replenishment. The mutation--selection driven two-species stochastic evolutionary dynamics reveal that the emergence of spite and fairness strongly depends on the resource growth rate. Fairness predominantly prevails for resources with high growth rates. Intriguingly, low resource growth rates give rise to a resource feedback loop driven by spite: spiteful behaviour dominates in the depleted state, facilitating transition of the resource state to replete state which, in turn, promotes fairness through repeated interactions."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance",
+              "url": "https://arxiv.org/abs/2607.14877",
+              "arxivId": "2607.14877",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "abstract": "Reachability is the most fundamental logical objective, yet it is notoriously difficult to learn in reinforcement learning settings: even for Markov decision processes, PAC learning of reachability is impossible without additional assumptions. This difficulty also holds in turn-based stochastic games (TBSGs), where two adversarial players interact on a finite state space. In this work, we consider turn-based stochastic games with reachability objectives. For such settings, adversarial learning, in which players are adversarial even in the learning phase, is impossible. Therefore, the goal is to consider learning, in which both players learn the unknown model together. In this spirit, previous literature on PAC learning in TBSGs considers (a)~public information shared by both players; and (b)~centralized learning, which means that players share the same learning algorithm. In this work, our contribution is two-fold. First, we relax these strong assumptions and ensure learning: (i)~with private information not shared with the other player; and (ii)~decentralized learning where the players do not share the same learning algorithm. To the best of our knowledge, this work is the first positive result for decentralized and private information learning of TBSGs with reachability objectives. Second, we introduce a game-theoretic generalization of the Expected Conditional Distance (ECD) parameter, which measures the expected length of reaching the target set. We establish a polynomial-sample complexity bound with respect to the number of states, actions, ECD parameter, and inverses of error tolerance and failure probability."
+            },
+            {
+              "title": "Compensation Design",
+              "url": "https://arxiv.org/abs/2607.14438",
+              "arxivId": "2607.14438",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We introduce compensation design, the problem of designing payment rules that incentivize high-quality contributions in decentralized environments. Here, a budget-constrained principal with a monotone submodular value function aims to design a payment rule, while agents decide whether to opt in or out depending on their private cost. We show that a simple cost-oblivious and anonymous marginal-contribution payment rule guarantees that pure Nash equilibria always exist and attain a price of anarchy (PoA) of at most $2+o_λ(1)$ in the large-market regime ($λ\\to 0$) where each individual cost is at most a $λ$ fraction of the budget. We further show that the factor $2$ is unavoidable among deterministic cost-oblivious rules. Surprisingly, we identify a counterexample showing that a payment rule based on the Shapley value may admit no pure Nash equilibria. We then extend our scope to coarse correlated equilibria. This is further motivated by our intractability result: although a pure Nash equilibrium always exists, computing one is PLS-complete. We establish that coarse correlated equilibria also attain a PoA bound of at most $2+o_λ(1)$, and this guarantee in fact extends even under the payment rule induced by the Shapley value. Moreover, we move beyond monotone submodular value functions and binary actions. First, for (monotone) XOS valuations, we show that no oracle-efficient payment rule can attain a PoA bound of $O(n^{1/2 - ε})$. Second, for submodular but non-monotone valuations, we show that a broad class of natural payment rules fails to guarantee a bounded PoA. Finally, we extend compensation design to the setting where each agent has a combinatorial action set. We provide randomized payment rules with logarithmic PoA guarantees for subadditive values, and matching lower bounds that apply even in the single-agent additive-value setting."
+            },
+            {
+              "title": "Stochastic ultimatum game: Spite-driven resource feedback fosters fairness",
+              "url": "https://arxiv.org/abs/2607.14914",
+              "arxivId": "2607.14914",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "nlin.AO",
+                "econ.TH",
+                "physics.bio-ph",
+                "q-bio.PE"
+              ],
+              "abstract": "Resource scarcity can fundamentally encourage antisocial behaviour, whereas resource abundance can promote fair behaviour. Experimental evidence indeed suggests that scarcity induces spiteful behaviour, while repeated interactions enhance fairness. However, existing studies of game--environment feedback systems are largely confined to the evolution of cooperation and they overlook the interplay between resources, spite, and fairness. To address this lacuna, we develop a stochastic ultimatum game framework in which an offerer and an accepter repeatedly interact to negotiate exploitation of a self-renewable resource under the ownership of the offerer. Successful agreements deplete the resource, whereas unsuccessful agreements inhibit exploitation and facilitate replenishment. The mutation--selection driven two-species stochastic evolutionary dynamics reveal that the emergence of spite and fairness strongly depends on the resource growth rate. Fairness predominantly prevails for resources with high growth rates. Intriguingly, low resource growth rates give rise to a resource feedback loop driven by spite: spiteful behaviour dominates in the depleted state, facilitating transition of the resource state to replete state which, in turn, promotes fairness through repeated interactions."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 5,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 4,
+                  "guaranteeQuality": 2,
+                  "readingValue": 3,
+                  "penalty": -3,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance",
+              "url": "https://arxiv.org/abs/2607.14877",
+              "arxivId": "2607.14877",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 4.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 4.0,
+                "aiRelevance": 5.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 18.0,
+                "bonus": 3.0,
+                "total": 16.8
+              }
+            },
+            {
+              "title": "Compensation Design",
+              "url": "https://arxiv.org/abs/2607.14438",
+              "arxivId": "2607.14438",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 2.9,
+                "total": 31.9
+              }
+            },
+            {
+              "title": "Stochastic ultimatum game: Spite-driven resource feedback fosters fairness",
+              "url": "https://arxiv.org/abs/2607.14914",
+              "arxivId": "2607.14914",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "nlin.AO",
+                "econ.TH",
+                "physics.bio-ph",
+                "q-bio.PE"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance",
+          "url": "https://arxiv.org/abs/2607.14877",
+          "arxivId": "2607.14877",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 4.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 4.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 18.0,
+            "bonus": 3.0,
+            "total": 16.8
+          }
+        },
+        {
+          "title": "Compensation Design",
+          "url": "https://arxiv.org/abs/2607.14438",
+          "arxivId": "2607.14438",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Stochastic ultimatum game: Spite-driven resource feedback fosters fairness",
+          "url": "https://arxiv.org/abs/2607.14914",
+          "arxivId": "2607.14914",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "nlin.AO",
+            "econ.TH",
+            "physics.bio-ph",
+            "q-bio.PE"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Compensation Design",
+          "url": "https://arxiv.org/abs/2607.14438",
+          "arxivId": "2607.14438",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance",
+          "url": "https://arxiv.org/abs/2607.14877",
+          "arxivId": "2607.14877",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 4.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 4.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 18.0,
+            "bonus": 3.0,
+            "total": 16.8
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Compensation Design",
+            "url": "https://arxiv.org/abs/2607.14438",
+            "arxivId": "2607.14438",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "补偿设计",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析",
+              "复杂度分析",
+              "模型构建"
+            ],
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "多智能体系统",
+              "预算可行机制",
+              "价格均衡分析"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究如何在去中心化环境中激励高质量贡献，典型场景如内容平台激励创作者。核心挑战在于参与者的成本私有且不可强制参与，平台需设计不依赖成本信息的支付规则来引导高效参与。这区别于传统机制设计，因无集中分配和报价过程，更贴近现实中大规模自愿协作的激励难题。",
+              "modelAndSetup": "模型包含一个预算受限的平台（主体）和多个拥有私有成本的参与者（代理）。每个代理决定是否加入，平台根据最终参与者集合按固定规则分配总预算。价值函数为单调次模，支付规则需匿名、预算可行且成本无关。关注纯纳什均衡与粗粒度相关均衡下的效率损失，即价格均衡（PoA）。",
+              "contributionsAndResults": "论文发现基于边际贡献的简单支付规则能保证纯纳什均衡存在，且在大市场下PoA不超过2+o(1)，该界对所有成本无关规则是最优的。相反，基于夏普利值的规则可能无纯均衡。此外，随机化规则可在非大市场下实现常数PoA，而在组合动作或多智能体扩展下，随机机制仍可达对数级近似比。",
+              "methodsAndTechniques": "证明依赖势函数论证确保均衡存在，并通过子模性与不等式放缩分析PoA上界。下界通过构造特定实例并利用信息论论证完成。对于相关均衡，采用期望效用分析而非平滑性框架。组合动作情形则结合几何尺度阈值奖赏与边际支付，通过随机化逼近最优解。",
+              "limitationsAndReadingValue": "模型假设支付仅依赖可观测行为，虽增强实用性但也限制性能上限。结果对非单调或XOS价值函数不成立，显示适用范围有限。最值得读的是其清晰的问题抽象、对夏普利值失效的反例、以及在学习动态下仍稳健的效率保证，为去中心化激励提供了简洁有效的设计原则。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "补偿设计",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究如何在去中心化环境中激励高质量贡献，典型场景如内容平台激励创作者。核心挑战在于参与者的成本私有且不可强制参与，平台需设计不依赖成本信息的支付规则来引导高效参与。这区别于传统机制设计，因无集中分配和报价过程，更贴近现实中大规模自愿协作的激励难题。",
+              "modelAndSetup": "模型包含一个预算受限的平台（主体）和多个拥有私有成本的参与者（代理）。每个代理决定是否加入，平台根据最终参与者集合按固定规则分配总预算。价值函数为单调次模，支付规则需匿名、预算可行且成本无关。关注纯纳什均衡与粗粒度相关均衡下的效率损失，即价格均衡（PoA）。",
+              "contributionsAndResults": "论文发现基于边际贡献的简单支付规则能保证纯纳什均衡存在，且在大市场下PoA不超过2+o(1)，该界对所有成本无关规则是最优的。相反，基于夏普利值的规则可能无纯均衡。此外，随机化规则可在非大市场下实现常数PoA，而在组合动作或多智能体扩展下，随机机制仍可达对数级近似比。",
+              "methodsAndTechniques": "证明依赖势函数论证确保均衡存在，并通过子模性与不等式放缩分析PoA上界。下界通过构造特定实例并利用信息论论证完成。对于相关均衡，采用期望效用分析而非平滑性框架。组合动作情形则结合几何尺度阈值奖赏与边际支付，通过随机化逼近最优解。",
+              "limitationsAndReadingValue": "模型假设支付仅依赖可观测行为，虽增强实用性但也限制性能上限。结果对非单调或XOS价值函数不成立，显示适用范围有限。最值得读的是其清晰的问题抽象、对夏普利值失效的反例、以及在学习动态下仍稳健的效率保证，为去中心化激励提供了简洁有效的设计原则。"
+            },
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "多智能体系统",
+              "预算可行机制",
+              "价格均衡分析"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析",
+              "复杂度分析",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "PAC Learning in Turn-Based Stochastic Games with Reachability Objectives: A Decentralized Private Approach via Expected Conditional Distance",
+            "url": "https://arxiv.org/abs/2607.14877",
+            "arxivId": "2607.14877",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "回合制随机博弈中可达性目标的PAC学习：基于期望条件距离的去中心化私有方法",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "强化学习",
+              "PAC学习",
+              "可达性目标"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在回合制随机博弈中学习可达性目标如此困难？传统PAC学习在此类设置下通常不可行，尤其当双方玩家互为对手且信息不对称时。本文指出，在无额外假设的情况下，即使共享信息和集中学习也难以实现有效学习。因此，作者追问：能否在去中心化、私有信息的设定下，仍保证双方协同学习并达到近似最优策略？",
+              "modelAndSetup": "作者考虑一个两人零和回合制随机博弈，状态空间由Max和Min玩家分别控制，目标是使某一目标状态被访问。玩家初始未知转移概率和初始分布，仅通过模拟器交互获取反馈，且当前状态仅对拥有者可见——体现私有信息。学习过程解耦，双方运行独立算法，不共享策略或观测，构成完全去中心化设定。",
+              "contributionsAndResults": "论文首次实现了在去中心化与私有信息条件下，对可达性目标的PAC学习。关键在于引入游戏化的期望条件距离（ECD）参数，用于刻画在任意Min策略下，Max的最佳响应到达目标的期望步数。基于此，作者设计了一对学习算法，其样本复杂度在状态数、动作数、ECD及误差倒数下均为多项式级。",
+              "methodsAndTechniques": "作者采用有限时域展开技术，将原无限时域问题转化为状态-步数对上的扩展博弈，并利用后向归纳法逐层学习局部近优动作。核心是结合最佳臂识别技术，在每个状态-步数节点高置信度识别优质动作，同时通过维护未探索节点作为辅助目标来驱动探索，避免显式估计转移概率。",
+              "limitationsAndReadingValue": "该工作依赖ECD参数已知的前提，且模型假设玩家在学习阶段合作而非对抗，限制了其在强竞争环境的应用。尽管如此，其去中心化架构与无需共享信息的设计极具启发性。最值得阅读的是其算法构造逻辑与ECD参数的游戏论推广，为多智能体强化学习提供了新的理论路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "回合制随机博弈中可达性目标的PAC学习：基于期望条件距离的去中心化私有方法",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在回合制随机博弈中学习可达性目标如此困难？传统PAC学习在此类设置下通常不可行，尤其当双方玩家互为对手且信息不对称时。本文指出，在无额外假设的情况下，即使共享信息和集中学习也难以实现有效学习。因此，作者追问：能否在去中心化、私有信息的设定下，仍保证双方协同学习并达到近似最优策略？",
+              "modelAndSetup": "作者考虑一个两人零和回合制随机博弈，状态空间由Max和Min玩家分别控制，目标是使某一目标状态被访问。玩家初始未知转移概率和初始分布，仅通过模拟器交互获取反馈，且当前状态仅对拥有者可见——体现私有信息。学习过程解耦，双方运行独立算法，不共享策略或观测，构成完全去中心化设定。",
+              "contributionsAndResults": "论文首次实现了在去中心化与私有信息条件下，对可达性目标的PAC学习。关键在于引入游戏化的期望条件距离（ECD）参数，用于刻画在任意Min策略下，Max的最佳响应到达目标的期望步数。基于此，作者设计了一对学习算法，其样本复杂度在状态数、动作数、ECD及误差倒数下均为多项式级。",
+              "methodsAndTechniques": "作者采用有限时域展开技术，将原无限时域问题转化为状态-步数对上的扩展博弈，并利用后向归纳法逐层学习局部近优动作。核心是结合最佳臂识别技术，在每个状态-步数节点高置信度识别优质动作，同时通过维护未探索节点作为辅助目标来驱动探索，避免显式估计转移概率。",
+              "limitationsAndReadingValue": "该工作依赖ECD参数已知的前提，且模型假设玩家在学习阶段合作而非对抗，限制了其在强竞争环境的应用。尽管如此，其去中心化架构与无需共享信息的设计极具启发性。最值得阅读的是其算法构造逻辑与ECD参数的游戏论推广，为多智能体强化学习提供了新的理论路径。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "强化学习",
+              "PAC学习",
+              "可达性目标"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-16",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202607160000 TO 202607162359\"",
+            "totalResults": 14,
+            "fetchedCount": 14
+          }
+        },
+        "dedupedCount": 14
+      },
+      "arxivTotalResults": 14,
+      "fetchedCount": 14,
+      "fetchedPapers": [
+        {
+          "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+          "url": "https://arxiv.org/abs/2607.15202",
+          "arxivId": "2607.15202",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.HC",
+            "cs.MA",
+            "cs.MM"
+          ],
+          "abstract": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, expert-in-the-loop annotation framework for Major Depressive Disorder (MDD) that combines large language model (LLM)-assisted labeling with expert verification. The framework is intended to support the construction of explainable, DSM-5-TR-aligned datasets rather than to perform clinical diagnosis. It operates in three stages: candidate evidence selection from textual records, criterion-level DSM-5-TR analysis, and case-level synthesis that produces label-level diagnostic and severity annotations. A dual-memory architecture, composed of Example Memory and Reflection Memory, is designed to internalize expert feedback and iteratively improve future annotations without retraining. We describe this mechanism and leave its evaluation across multiple feedback cycles to future work. In addition to final labels, the framework exports clinical evidence, reasoning traces, and edit histories, enabling comprehensive auditability. In a pilot study using expert-reviewed samples, the proposed approach improves annotation consistency and explainability while reducing manual revision effort."
+        },
+        {
+          "title": "Stigmergic Graph Memory: An Environment-Aware Approach for Many-to-Many Multi-Agent Pickup and Delivery",
+          "url": "https://arxiv.org/abs/2607.15182",
+          "arxivId": "2607.15182",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "abstract": "Automated fulfillment warehouses must continuously assign and execute pickup-and-delivery work while avoiding congestion. In many-to-many Multi-Agent Pickup and Delivery (MAPD), a request specifies a stock-keeping unit rather than fixed endpoints, requiring the controller to select an agent, source, and destination before path planning. Existing graph-guidance methods primarily influence routing after goals are fixed, leaving endpoint instantiation uninformed by recent traffic. We introduce Stigmergic Graph Memory (SGM), a bounded, decaying memory layer that records recent execution signals on warehouse nodes and directed edges to rank feasible endpoints and route preferences without altering collision constraints or planner validity. Across paired request streams on five layouts, three load levels, and 25 seeds per condition, SGM outperforms two reconstructed many-to-many allocation baselines in all 15 map-load conditions, with paired throughput gains of 20.5-36.7%. These results show that recent execution memory can improve warehouse throughput by shaping which feasible goals enter the planner, not only how agents travel to already fixed goals."
+        },
+        {
+          "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+          "url": "https://arxiv.org/abs/2607.15095",
+          "arxivId": "2607.15095",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We present a multi-agent framework that reconciles factual grounding with ideological alignment by combining Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Generation (RAG): DPO instils aggressive party-specific personas, while a per-party RAG pipeline keeps each agent bounded to its official manifesto. We operationalize the framework on the 2019 Flemish election, deploying the partisan agents in a hub-and-spoke negotiation arbitrated by a formateur. To make the emergent negotiation interpretable, we introduce a Multi-Layered Information Lineage Topology (MILT) that traces every clause in the final agreement back to its manifesto origin and classifies it into five provenance states, a Coalition Influence Score (CIS) that aggregates these traceable contributions to identify which party shaped the agreement, and a real-world grounding pass that benchmarks each simulated provision against the historically adopted coalition agreement. Across three independent simulations the framework yields a stable winner and ranking (N-VA ahead of CD\\&V and Open Vld), and manifesto-anchored lineage reliably predicts real-world materialization whereas hallucinated content does not. The result is a transparent, scalable testbed for the ex-ante exploration of party compatibility and formateur-mediated compromise."
+        },
+        {
+          "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+          "url": "https://arxiv.org/abs/2607.14896",
+          "arxivId": "2607.14896",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, code-check records, and a final report. Evaluations centered on question answering or script generation rarely verify this complete evidence chain and may therefore reward fluent outputs even when the underlying engineering workflow is incomplete, internally inconsistent, or non-executable. To address this limitation, we present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends. We also introduce StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflow execution, interactive robustness, and multimodal structural-model reconstruction. A scenario succeeds only when all required artifact- and execution-level assertions pass in a single run. Across ten agent-model configurations, each evaluated on the same 50 standard cases, the average Success Rate rises from 56.8% with the generic-skill baseline to 88.6% with the full automatic workflow. The interactive and multimodal evaluations identify two prominent remaining challenges: safe handling of invalid numerical inputs and fixture-consistent reconstruction of structural models. These findings show that artifact-centered evaluation can expose workflow-level failures that are difficult to identify from final responses alone, providing a more rigorous basis for evaluating and improving structural-engineering agents. The code and benchmark are available at https://github.com/structureclaw/structureclaw."
+        },
+        {
+          "title": "The Energy Society: A Simulation Environment for Studying Agent Cooperation under Survival Pressure",
+          "url": "https://arxiv.org/abs/2607.14865",
+          "arxivId": "2607.14865",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.CL"
+          ],
+          "abstract": "LLM-based agents are increasingly deployed in multi-agent environments whose incentives can shape their behavior. We introduce The Energy Society, a minimal survival economy for studying how competitive and cooperative incentives affect emergent behavior when inference cost is directly tied to survival: Agents spend energy based on model size when generating tokens, regain energy by completing jobs or receiving donations, and deactivate if their energy reaches zero. We compare competitive and cooperative objectives against a baseline setting and several control variants. Across experiments, larger models consistently consume the most energy and spend more energy than they gain, even in those settings where token cost is not size-dependent. Cooperative incentives substantially alter behavior: agents donate to reactivate others, sometimes at the cost of their own survival, and job allocation changes. Ablations reveal that allowing agents to recommend actions to each other supports coordination and ambitious job selection, while memory helps agents calibrate risk from past outcomes. Agents rarely choose direct sabotage, but show more subtle signs of self-serving behavior in the competitive setting. The Energy Society is a compact testbed for studying the interaction between token costs and group incentives under a survival pressure. Source code is available at https://github.com/LucasBergholdt/EnergySociety"
+        },
+        {
+          "title": "Randomized routing strategies of fleets of CAVs may prove market efficient",
+          "url": "https://arxiv.org/abs/2607.14859",
+          "arxivId": "2607.14859",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "In future cities every driver may own a vehicle which could be either independently driven (HDV), or autonomously routed and piloted (CAV). The autonomous operations could be handled by a few competing companies. What is the market structure which would make this market aligned with city goals? In this paper we discuss a variant of the emerging market of collectively routed fleets of CAVs, where revenue for fleet operators is proportional to market share. We provide benchmark scenarios to compare the routing algorithms. We present several routing algorithms and demonstrate that, when the attitudes of human drivers towards CAVs exhibit significant diversity, randomised CAV routing, resulting in unpredictable travel times for HDVs, is more efficient than routing proportional to system optimum/user equilibrium. Based on this, we propose to improve the design of the market by augmenting the market-share objective with mean systemwide travel time in order to limit antisocial randomised strategies of fleet operators and drive the competition towards social welfare oriented cooperation."
+        },
+        {
+          "title": "Modeling and Validation of Quality of Control for Edge-Offloaded Collaborative Navigation",
+          "url": "https://arxiv.org/abs/2607.14853",
+          "arxivId": "2607.14853",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "abstract": "Collaborative control in complex environments is severely challenged by stochastic wireless delay and reliability variations, which can degrade navigation, tracking, and collision avoidance. These network-induced uncertainties complicate the maintenance of energy efficiency during collaborative tasks, and can potentially lead to over-provisioning of resources. In this paper, for a navigation setup with dynamic collision avoidance, we address this challenge by expanding the quality of control (QoC) framework from prior works to practical robotic models. Our approach (i) models end-to-end network effects on closed-loop performance, (ii) systematically explores the impact of various control parameters dictating robotic motion on network latency-reliability (iii) validates these models through experiments on a private 5G testbed across varying delay, reliability and control configurations. Our analysis indicates the optimal control-communication co-design operating regimes for practical robots and also compares the QoC performance of standard ROS~2 quality of service (QoS) policies under real-world conditions and showing how RELIABLE QoS offers 51.5% better QoC than BEST-EFFORT under certain experimental settings."
+        },
+        {
+          "title": "Multi-Scale Equilibrium under Variable Indicator Dimensionality: Faithful Reduction of Dynamic Attractors in Urban Mobility Systems",
+          "url": "https://arxiv.org/abs/2607.14815",
+          "arxivId": "2607.14815",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Equilibrium analysis of urban mobility systems is formulated in a high-dimensional indicator space, whilst data availability varies sharply across cities and disruption contexts. This paper gives a formal treatment of that mismatch. It presents a dynamic multi-layer equilibrium attractor for disrupted urban mobility, in which a fast performance layer relaxes towards an indicator-dependent target, a slow strategic layer supplies a joint traffic, modal and learning fixed point, and antifragility is classified through a statistical decision rule on the post-to-baseline performance ratio. It then characterises when a lower-dimensional indicator projection is faithful to this equilibrium structure, establishing four results: conditions for exact and approximate projectability of the attractor with an explicit error bound; preservation of the coupled two-layer fixed point up to a contraction boundary; the retained Fisher information and decision power of any indicator support under a measurement model on observable urban indicators; and a one-sided restoration-time bias, whereby reduced monitoring can only understate recovery duration. A simulation study on three stylised pilot-city configurations verifies each result, and shows that two observable channels suffice for the candidate classification target where the indicator catalogue permits. The framework gives city authorities a principled basis for deciding which indicators must be maintained."
+        },
+        {
+          "title": "Dialogue Summarization with Emotion Dynamics Using Topic- and Participant-Centric Decomposition",
+          "url": "https://arxiv.org/abs/2607.14769",
+          "arxivId": "2607.14769",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Existing text summarization research has focused much on monologic information (e.g., newspaper articles, reports) without accounting for the interaction between speakers or authors. In contrast, dialogues are a rich communication channel where multiple participants conduct back and forth exchanges to construct meaning. We propose a dialogue summarization framework that explicitly models both semantic and emotion dynamics using multimodal dialogue inputs, built on an adapted hierarchical Chain-of-Agents approach. We decompose dialogues from two perspectives: (1) topic segments based on the utterances of all participants, and (2) participant-specific utterance segments. These are used to generate corresponding summaries while incorporating automatically inferred emotions. Topic- and participant-level summaries are aggregated into a dialogue summary capturing semantic content and emotion trajectories. To evaluate beyond content accuracy, we introduce emotion trajectory metrics measuring how well summaries preserve emotional flow. Experiments with small language models on multimodal dialogue datasets show that our framework produces summaries with both semantic and emotion content. Further experiments on explicit emotion label availability highlight the efficacy of our proposed methodology and the opportunities in dialogue analysis using language models."
+        },
+        {
+          "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+          "url": "https://arxiv.org/abs/2607.14713",
+          "arxivId": "2607.14713",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "Probably not, at least for meta-analyses in economics. In a pre-registered, identity-masked, within-paper experiment, the authors of 44 meta-analyses ranked three AI reports on their own paper by usefulness for improving it: a single pass by a frontier model against two multi-agent debate tools we built and expected to win. All reports were held to a common length and template. The authors preferred the single pass, by 0.66 rank points over mad-research (95% CI 0.32 to 1.00) and 0.57 over paper-workshop (0.16 to 0.95), though paper-workshop spent roughly thirty times the tokens. Authors who recalled their journal referee report usually placed it first and never last; in a separate exercise, three AI judges almost always placed the real journal referee report last. Among the three AI reports, Gemini (the judge whose model family wrote none of the reports) would have ranked paper-workshop first in the authors' place, reversing the single-pass preference. The reversal warns against substituting an AI judge for the author. We measure perceived usefulness for finished papers; whether AI should referee papers is a separate question."
+        },
+        {
+          "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+          "url": "https://arxiv.org/abs/2607.14611",
+          "arxivId": "2607.14611",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "A growing class of agentic systems maintain persistent state across sessions through memory files, behavioral preferences, and knowledge bases. While this makes agents more useful and self-improving, it also creates a new attack surface for prompt injections in which malicious instructions can be embedded within persistent files and influence future behavior. In this work, we study prompt injection attacks in memory-based agentic systems using a sandboxed synthetic workspace. We evaluate two agentic systems, Anthropic Claude Code and OpenAI Codex, across four models: Claude Haiku 4.5, Claude Opus 4.7, GPT-5.2, and GPT-5.5. Our results show that although it is difficult to make an agent overwrite its own memory files using untrusted external content, payloads already planted in those files can successfully attack current and future sessions. Attack success and payload persistence vary substantially across systems, models, adversarial goals, and multi-session attack sequences. These findings show that persistent memory changes the threat model for prompt injection and motivate defenses that protect memory updates without removing useful agent adaptation."
+        },
+        {
+          "title": "Towards an Intention Abstraction Layer for Autonomous Industrial Systems",
+          "url": "https://arxiv.org/abs/2607.14553",
+          "arxivId": "2607.14553",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Modern industrial environments increasingly run many autonomous subsystems at once - schedulers, energy managers, vehicle fleets - each pursuing its own goals while sharing the same physical resources. Because high-level human intentions are translated into low-level control logic and then discarded, no running component can tell whether it is still doing what was actually intended, and goal conflicts surface only after they have caused a missed target or a shutdown. We propose the Intention Abstraction Layer (IAL), a domainagnostic middleware that represents intentions as first-class, persistent, and explainable runtime objects: a large language model grounded in a formal OWL ontology parses naturallanguage goals into structured intentions, a consistency monitor detects conflicts at registration time, before execution, and a transparency module explains them in natural language. We report a first proof of concept in which two autonomous agents register conflicting production and energy intentions, and the IAL flags and explains the conflict before it reaches the execution layer. The result is a mechanism that shifts behavioral assurance for cooperating autonomous systems from post-hoc failure analysis to pre-execution, intention-level checking."
+        },
+        {
+          "title": "World-Model-Aware Responsibility Allocation in Heterogeneous Logistics Systems",
+          "url": "https://arxiv.org/abs/2607.14550",
+          "arxivId": "2607.14550",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Logistics systems increasingly mix \\emph{autonomous logistic equipment} (ALE) with non-autonomous machinery under a central control system (CS), where the best decision-maker depends on who holds the most current world model, yet authority is fixed at design time. When an ALE's local model and the CS global model diverge, both act on incompatible beliefs and produce deadlocks that resource-based handling neither explains nor prevents. We propose the World-Model-Aware Responsibility Framework (WMARF), which assigns authority dynamically from CS world-model quality and equipment automation level, and classifies deadlocks by the state of authority -- none, in transition, or divergent. In a discrete-event simulation of two ALE converging on a semi-automated transfer point, reproduced over the VDA~5050 interface, a divergence deadlock under static control is prevented by a proximity-triggered handoff. Because authority follows information quality rather than a shared protocol, the scheme stays valid as autonomy grows."
+        },
+        {
+          "title": "Mixed-Agent Museum Tour Guide Design Improves Gendered Learning Outcomes and Visitor Preferences",
+          "url": "https://arxiv.org/abs/2607.14468",
+          "arxivId": "2607.14468",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "abstract": "Robots are increasingly integrated into everyday contexts, including museums, where they can both entertain and educate visitors. To enhance visitor experience and engagement, we present a novel mixed-agent tour guide system that combines a physical robot with a projected virtual agent that actively participates in the tour through conversation and interaction, achieving the interaction richness of two mobile agents from a single platform. We validate the system through a within-subjects study with 30 participants to assess engagement, quality of experience, and learning performance. Participants experienced different conversational styles and agent configurations, and data were collected via surveys, behavioral sensors, and interviews. Results showed that engagement and quality of experience remained consistent across conditions. Learning performance revealed a significant gender-moderated difference: the mixed-agent conditions improved learning performance for female participants. This suggests that the proposed dyadic conversational style in this paper influenced learning performance differently by gender. Nonetheless, in interviews, participants reported a greater preference for mixed-agent teams regardless of gender, citing interaction as a key factor in their experience."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+              "url": "https://arxiv.org/abs/2607.15202",
+              "arxivId": "2607.15202",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.HC",
+                "cs.MA",
+                "cs.MM"
+              ],
+              "abstract": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, expert-in-the-loop annotation framework for Major Depressive Disorder (MDD) that combines large language model (LLM)-assisted labeling with expert verification. The framework is intended to support the construction of explainable, DSM-5-TR-aligned datasets rather than to perform clinical diagnosis. It operates in three stages: candidate evidence selection from textual records, criterion-level DSM-5-TR analysis, and case-level synthesis that produces label-level diagnostic and severity annotations. A dual-memory architecture, composed of Example Memory and Reflection Memory, is designed to internalize expert feedback and iteratively improve future annotations without retraining. We describe this mechanism and leave its evaluation across multiple feedback cycles to future work. In addition to final labels, the framework exports clinical evidence, reasoning traces, and edit histories, enabling comprehensive auditability. In a pilot study using expert-reviewed samples, the proposed approach improves annotation consistency and explainability while reducing manual revision effort."
+            },
+            {
+              "title": "Stigmergic Graph Memory: An Environment-Aware Approach for Many-to-Many Multi-Agent Pickup and Delivery",
+              "url": "https://arxiv.org/abs/2607.15182",
+              "arxivId": "2607.15182",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.RO"
+              ],
+              "abstract": "Automated fulfillment warehouses must continuously assign and execute pickup-and-delivery work while avoiding congestion. In many-to-many Multi-Agent Pickup and Delivery (MAPD), a request specifies a stock-keeping unit rather than fixed endpoints, requiring the controller to select an agent, source, and destination before path planning. Existing graph-guidance methods primarily influence routing after goals are fixed, leaving endpoint instantiation uninformed by recent traffic. We introduce Stigmergic Graph Memory (SGM), a bounded, decaying memory layer that records recent execution signals on warehouse nodes and directed edges to rank feasible endpoints and route preferences without altering collision constraints or planner validity. Across paired request streams on five layouts, three load levels, and 25 seeds per condition, SGM outperforms two reconstructed many-to-many allocation baselines in all 15 map-load conditions, with paired throughput gains of 20.5-36.7%. These results show that recent execution memory can improve warehouse throughput by shaping which feasible goals enter the planner, not only how agents travel to already fixed goals."
+            },
+            {
+              "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+              "url": "https://arxiv.org/abs/2607.15095",
+              "arxivId": "2607.15095",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We present a multi-agent framework that reconciles factual grounding with ideological alignment by combining Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Generation (RAG): DPO instils aggressive party-specific personas, while a per-party RAG pipeline keeps each agent bounded to its official manifesto. We operationalize the framework on the 2019 Flemish election, deploying the partisan agents in a hub-and-spoke negotiation arbitrated by a formateur. To make the emergent negotiation interpretable, we introduce a Multi-Layered Information Lineage Topology (MILT) that traces every clause in the final agreement back to its manifesto origin and classifies it into five provenance states, a Coalition Influence Score (CIS) that aggregates these traceable contributions to identify which party shaped the agreement, and a real-world grounding pass that benchmarks each simulated provision against the historically adopted coalition agreement. Across three independent simulations the framework yields a stable winner and ranking (N-VA ahead of CD\\&V and Open Vld), and manifesto-anchored lineage reliably predicts real-world materialization whereas hallucinated content does not. The result is a transparent, scalable testbed for the ex-ante exploration of party compatibility and formateur-mediated compromise."
+            },
+            {
+              "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+              "url": "https://arxiv.org/abs/2607.14896",
+              "arxivId": "2607.14896",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.SE",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, code-check records, and a final report. Evaluations centered on question answering or script generation rarely verify this complete evidence chain and may therefore reward fluent outputs even when the underlying engineering workflow is incomplete, internally inconsistent, or non-executable. To address this limitation, we present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends. We also introduce StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflow execution, interactive robustness, and multimodal structural-model reconstruction. A scenario succeeds only when all required artifact- and execution-level assertions pass in a single run. Across ten agent-model configurations, each evaluated on the same 50 standard cases, the average Success Rate rises from 56.8% with the generic-skill baseline to 88.6% with the full automatic workflow. The interactive and multimodal evaluations identify two prominent remaining challenges: safe handling of invalid numerical inputs and fixture-consistent reconstruction of structural models. These findings show that artifact-centered evaluation can expose workflow-level failures that are difficult to identify from final responses alone, providing a more rigorous basis for evaluating and improving structural-engineering agents. The code and benchmark are available at https://github.com/structureclaw/structureclaw."
+            },
+            {
+              "title": "The Energy Society: A Simulation Environment for Studying Agent Cooperation under Survival Pressure",
+              "url": "https://arxiv.org/abs/2607.14865",
+              "arxivId": "2607.14865",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.CL"
+              ],
+              "abstract": "LLM-based agents are increasingly deployed in multi-agent environments whose incentives can shape their behavior. We introduce The Energy Society, a minimal survival economy for studying how competitive and cooperative incentives affect emergent behavior when inference cost is directly tied to survival: Agents spend energy based on model size when generating tokens, regain energy by completing jobs or receiving donations, and deactivate if their energy reaches zero. We compare competitive and cooperative objectives against a baseline setting and several control variants. Across experiments, larger models consistently consume the most energy and spend more energy than they gain, even in those settings where token cost is not size-dependent. Cooperative incentives substantially alter behavior: agents donate to reactivate others, sometimes at the cost of their own survival, and job allocation changes. Ablations reveal that allowing agents to recommend actions to each other supports coordination and ambitious job selection, while memory helps agents calibrate risk from past outcomes. Agents rarely choose direct sabotage, but show more subtle signs of self-serving behavior in the competitive setting. The Energy Society is a compact testbed for studying the interaction between token costs and group incentives under a survival pressure. Source code is available at https://github.com/LucasBergholdt/EnergySociety"
+            },
+            {
+              "title": "Randomized routing strategies of fleets of CAVs may prove market efficient",
+              "url": "https://arxiv.org/abs/2607.14859",
+              "arxivId": "2607.14859",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "In future cities every driver may own a vehicle which could be either independently driven (HDV), or autonomously routed and piloted (CAV). The autonomous operations could be handled by a few competing companies. What is the market structure which would make this market aligned with city goals? In this paper we discuss a variant of the emerging market of collectively routed fleets of CAVs, where revenue for fleet operators is proportional to market share. We provide benchmark scenarios to compare the routing algorithms. We present several routing algorithms and demonstrate that, when the attitudes of human drivers towards CAVs exhibit significant diversity, randomised CAV routing, resulting in unpredictable travel times for HDVs, is more efficient than routing proportional to system optimum/user equilibrium. Based on this, we propose to improve the design of the market by augmenting the market-share objective with mean systemwide travel time in order to limit antisocial randomised strategies of fleet operators and drive the competition towards social welfare oriented cooperation."
+            },
+            {
+              "title": "Modeling and Validation of Quality of Control for Edge-Offloaded Collaborative Navigation",
+              "url": "https://arxiv.org/abs/2607.14853",
+              "arxivId": "2607.14853",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "abstract": "Collaborative control in complex environments is severely challenged by stochastic wireless delay and reliability variations, which can degrade navigation, tracking, and collision avoidance. These network-induced uncertainties complicate the maintenance of energy efficiency during collaborative tasks, and can potentially lead to over-provisioning of resources. In this paper, for a navigation setup with dynamic collision avoidance, we address this challenge by expanding the quality of control (QoC) framework from prior works to practical robotic models. Our approach (i) models end-to-end network effects on closed-loop performance, (ii) systematically explores the impact of various control parameters dictating robotic motion on network latency-reliability (iii) validates these models through experiments on a private 5G testbed across varying delay, reliability and control configurations. Our analysis indicates the optimal control-communication co-design operating regimes for practical robots and also compares the QoC performance of standard ROS~2 quality of service (QoS) policies under real-world conditions and showing how RELIABLE QoS offers 51.5% better QoC than BEST-EFFORT under certain experimental settings."
+            },
+            {
+              "title": "Multi-Scale Equilibrium under Variable Indicator Dimensionality: Faithful Reduction of Dynamic Attractors in Urban Mobility Systems",
+              "url": "https://arxiv.org/abs/2607.14815",
+              "arxivId": "2607.14815",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Equilibrium analysis of urban mobility systems is formulated in a high-dimensional indicator space, whilst data availability varies sharply across cities and disruption contexts. This paper gives a formal treatment of that mismatch. It presents a dynamic multi-layer equilibrium attractor for disrupted urban mobility, in which a fast performance layer relaxes towards an indicator-dependent target, a slow strategic layer supplies a joint traffic, modal and learning fixed point, and antifragility is classified through a statistical decision rule on the post-to-baseline performance ratio. It then characterises when a lower-dimensional indicator projection is faithful to this equilibrium structure, establishing four results: conditions for exact and approximate projectability of the attractor with an explicit error bound; preservation of the coupled two-layer fixed point up to a contraction boundary; the retained Fisher information and decision power of any indicator support under a measurement model on observable urban indicators; and a one-sided restoration-time bias, whereby reduced monitoring can only understate recovery duration. A simulation study on three stylised pilot-city configurations verifies each result, and shows that two observable channels suffice for the candidate classification target where the indicator catalogue permits. The framework gives city authorities a principled basis for deciding which indicators must be maintained."
+            },
+            {
+              "title": "Dialogue Summarization with Emotion Dynamics Using Topic- and Participant-Centric Decomposition",
+              "url": "https://arxiv.org/abs/2607.14769",
+              "arxivId": "2607.14769",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Existing text summarization research has focused much on monologic information (e.g., newspaper articles, reports) without accounting for the interaction between speakers or authors. In contrast, dialogues are a rich communication channel where multiple participants conduct back and forth exchanges to construct meaning. We propose a dialogue summarization framework that explicitly models both semantic and emotion dynamics using multimodal dialogue inputs, built on an adapted hierarchical Chain-of-Agents approach. We decompose dialogues from two perspectives: (1) topic segments based on the utterances of all participants, and (2) participant-specific utterance segments. These are used to generate corresponding summaries while incorporating automatically inferred emotions. Topic- and participant-level summaries are aggregated into a dialogue summary capturing semantic content and emotion trajectories. To evaluate beyond content accuracy, we introduce emotion trajectory metrics measuring how well summaries preserve emotional flow. Experiments with small language models on multimodal dialogue datasets show that our framework produces summaries with both semantic and emotion content. Further experiments on explicit emotion label availability highlight the efficacy of our proposed methodology and the opportunities in dialogue analysis using language models."
+            },
+            {
+              "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+              "url": "https://arxiv.org/abs/2607.14713",
+              "arxivId": "2607.14713",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "Probably not, at least for meta-analyses in economics. In a pre-registered, identity-masked, within-paper experiment, the authors of 44 meta-analyses ranked three AI reports on their own paper by usefulness for improving it: a single pass by a frontier model against two multi-agent debate tools we built and expected to win. All reports were held to a common length and template. The authors preferred the single pass, by 0.66 rank points over mad-research (95% CI 0.32 to 1.00) and 0.57 over paper-workshop (0.16 to 0.95), though paper-workshop spent roughly thirty times the tokens. Authors who recalled their journal referee report usually placed it first and never last; in a separate exercise, three AI judges almost always placed the real journal referee report last. Among the three AI reports, Gemini (the judge whose model family wrote none of the reports) would have ranked paper-workshop first in the authors' place, reversing the single-pass preference. The reversal warns against substituting an AI judge for the author. We measure perceived usefulness for finished papers; whether AI should referee papers is a separate question."
+            },
+            {
+              "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+              "url": "https://arxiv.org/abs/2607.14611",
+              "arxivId": "2607.14611",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "A growing class of agentic systems maintain persistent state across sessions through memory files, behavioral preferences, and knowledge bases. While this makes agents more useful and self-improving, it also creates a new attack surface for prompt injections in which malicious instructions can be embedded within persistent files and influence future behavior. In this work, we study prompt injection attacks in memory-based agentic systems using a sandboxed synthetic workspace. We evaluate two agentic systems, Anthropic Claude Code and OpenAI Codex, across four models: Claude Haiku 4.5, Claude Opus 4.7, GPT-5.2, and GPT-5.5. Our results show that although it is difficult to make an agent overwrite its own memory files using untrusted external content, payloads already planted in those files can successfully attack current and future sessions. Attack success and payload persistence vary substantially across systems, models, adversarial goals, and multi-session attack sequences. These findings show that persistent memory changes the threat model for prompt injection and motivate defenses that protect memory updates without removing useful agent adaptation."
+            },
+            {
+              "title": "Towards an Intention Abstraction Layer for Autonomous Industrial Systems",
+              "url": "https://arxiv.org/abs/2607.14553",
+              "arxivId": "2607.14553",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Modern industrial environments increasingly run many autonomous subsystems at once - schedulers, energy managers, vehicle fleets - each pursuing its own goals while sharing the same physical resources. Because high-level human intentions are translated into low-level control logic and then discarded, no running component can tell whether it is still doing what was actually intended, and goal conflicts surface only after they have caused a missed target or a shutdown. We propose the Intention Abstraction Layer (IAL), a domainagnostic middleware that represents intentions as first-class, persistent, and explainable runtime objects: a large language model grounded in a formal OWL ontology parses naturallanguage goals into structured intentions, a consistency monitor detects conflicts at registration time, before execution, and a transparency module explains them in natural language. We report a first proof of concept in which two autonomous agents register conflicting production and energy intentions, and the IAL flags and explains the conflict before it reaches the execution layer. The result is a mechanism that shifts behavioral assurance for cooperating autonomous systems from post-hoc failure analysis to pre-execution, intention-level checking."
+            },
+            {
+              "title": "World-Model-Aware Responsibility Allocation in Heterogeneous Logistics Systems",
+              "url": "https://arxiv.org/abs/2607.14550",
+              "arxivId": "2607.14550",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Logistics systems increasingly mix \\emph{autonomous logistic equipment} (ALE) with non-autonomous machinery under a central control system (CS), where the best decision-maker depends on who holds the most current world model, yet authority is fixed at design time. When an ALE's local model and the CS global model diverge, both act on incompatible beliefs and produce deadlocks that resource-based handling neither explains nor prevents. We propose the World-Model-Aware Responsibility Framework (WMARF), which assigns authority dynamically from CS world-model quality and equipment automation level, and classifies deadlocks by the state of authority -- none, in transition, or divergent. In a discrete-event simulation of two ALE converging on a semi-automated transfer point, reproduced over the VDA~5050 interface, a divergence deadlock under static control is prevented by a proximity-triggered handoff. Because authority follows information quality rather than a shared protocol, the scheme stays valid as autonomy grows."
+            },
+            {
+              "title": "Mixed-Agent Museum Tour Guide Design Improves Gendered Learning Outcomes and Visitor Preferences",
+              "url": "https://arxiv.org/abs/2607.14468",
+              "arxivId": "2607.14468",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "abstract": "Robots are increasingly integrated into everyday contexts, including museums, where they can both entertain and educate visitors. To enhance visitor experience and engagement, we present a novel mixed-agent tour guide system that combines a physical robot with a projected virtual agent that actively participates in the tour through conversation and interaction, achieving the interaction richness of two mobile agents from a single platform. We validate the system through a within-subjects study with 30 participants to assess engagement, quality of experience, and learning performance. Participants experienced different conversational styles and agent configurations, and data were collected via surveys, behavioral sensors, and interviews. Results showed that engagement and quality of experience remained consistent across conditions. Learning performance revealed a significant gender-moderated difference: the mixed-agent conditions improved learning performance for female participants. This suggests that the proposed dyadic conversational style in this paper influenced learning performance differently by gender. Nonetheless, in interviews, participants reported a greater preference for mixed-agent teams regardless of gender, citing interaction as a key factor in their experience."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 4,
+                  "theoreticalDepth": 6,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 13,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+              "url": "https://arxiv.org/abs/2607.15202",
+              "arxivId": "2607.15202",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.HC",
+                "cs.MA",
+                "cs.MM"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "Stigmergic Graph Memory: An Environment-Aware Approach for Many-to-Many Multi-Agent Pickup and Delivery",
+              "url": "https://arxiv.org/abs/2607.15182",
+              "arxivId": "2607.15182",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.RO"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+              "url": "https://arxiv.org/abs/2607.15095",
+              "arxivId": "2607.15095",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+              "url": "https://arxiv.org/abs/2607.14896",
+              "arxivId": "2607.14896",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.SE",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "The Energy Society: A Simulation Environment for Studying Agent Cooperation under Survival Pressure",
+              "url": "https://arxiv.org/abs/2607.14865",
+              "arxivId": "2607.14865",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.CL"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Randomized routing strategies of fleets of CAVs may prove market efficient",
+              "url": "https://arxiv.org/abs/2607.14859",
+              "arxivId": "2607.14859",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 12.0,
+                "total": 12.0
+              }
+            },
+            {
+              "title": "Modeling and Validation of Quality of Control for Edge-Offloaded Collaborative Navigation",
+              "url": "https://arxiv.org/abs/2607.14853",
+              "arxivId": "2607.14853",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Multi-Scale Equilibrium under Variable Indicator Dimensionality: Faithful Reduction of Dynamic Attractors in Urban Mobility Systems",
+              "url": "https://arxiv.org/abs/2607.14815",
+              "arxivId": "2607.14815",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 6.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Dialogue Summarization with Emotion Dynamics Using Topic- and Participant-Centric Decomposition",
+              "url": "https://arxiv.org/abs/2607.14769",
+              "arxivId": "2607.14769",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 16.0,
+                "total": 16.0
+              }
+            },
+            {
+              "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+              "url": "https://arxiv.org/abs/2607.14713",
+              "arxivId": "2607.14713",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+              "url": "https://arxiv.org/abs/2607.14611",
+              "arxivId": "2607.14611",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Towards an Intention Abstraction Layer for Autonomous Industrial Systems",
+              "url": "https://arxiv.org/abs/2607.14553",
+              "arxivId": "2607.14553",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "World-Model-Aware Responsibility Allocation in Heterogeneous Logistics Systems",
+              "url": "https://arxiv.org/abs/2607.14550",
+              "arxivId": "2607.14550",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Mixed-Agent Museum Tour Guide Design Improves Gendered Learning Outcomes and Visitor Preferences",
+              "url": "https://arxiv.org/abs/2607.14468",
+              "arxivId": "2607.14468",
+              "date": "2026-07-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 7.0,
+                "total": 7.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+          "url": "https://arxiv.org/abs/2607.15202",
+          "arxivId": "2607.15202",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.HC",
+            "cs.MA",
+            "cs.MM"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "Stigmergic Graph Memory: An Environment-Aware Approach for Many-to-Many Multi-Agent Pickup and Delivery",
+          "url": "https://arxiv.org/abs/2607.15182",
+          "arxivId": "2607.15182",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+          "url": "https://arxiv.org/abs/2607.15095",
+          "arxivId": "2607.15095",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+          "url": "https://arxiv.org/abs/2607.14896",
+          "arxivId": "2607.14896",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "The Energy Society: A Simulation Environment for Studying Agent Cooperation under Survival Pressure",
+          "url": "https://arxiv.org/abs/2607.14865",
+          "arxivId": "2607.14865",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Randomized routing strategies of fleets of CAVs may prove market efficient",
+          "url": "https://arxiv.org/abs/2607.14859",
+          "arxivId": "2607.14859",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 12.0,
+            "total": 12.0
+          }
+        },
+        {
+          "title": "Modeling and Validation of Quality of Control for Edge-Offloaded Collaborative Navigation",
+          "url": "https://arxiv.org/abs/2607.14853",
+          "arxivId": "2607.14853",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Multi-Scale Equilibrium under Variable Indicator Dimensionality: Faithful Reduction of Dynamic Attractors in Urban Mobility Systems",
+          "url": "https://arxiv.org/abs/2607.14815",
+          "arxivId": "2607.14815",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 6.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Dialogue Summarization with Emotion Dynamics Using Topic- and Participant-Centric Decomposition",
+          "url": "https://arxiv.org/abs/2607.14769",
+          "arxivId": "2607.14769",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 16.0,
+            "total": 16.0
+          }
+        },
+        {
+          "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+          "url": "https://arxiv.org/abs/2607.14713",
+          "arxivId": "2607.14713",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+          "url": "https://arxiv.org/abs/2607.14611",
+          "arxivId": "2607.14611",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Towards an Intention Abstraction Layer for Autonomous Industrial Systems",
+          "url": "https://arxiv.org/abs/2607.14553",
+          "arxivId": "2607.14553",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "World-Model-Aware Responsibility Allocation in Heterogeneous Logistics Systems",
+          "url": "https://arxiv.org/abs/2607.14550",
+          "arxivId": "2607.14550",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Mixed-Agent Museum Tour Guide Design Improves Gendered Learning Outcomes and Visitor Preferences",
+          "url": "https://arxiv.org/abs/2607.14468",
+          "arxivId": "2607.14468",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 7.0,
+            "total": 7.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+          "url": "https://arxiv.org/abs/2607.14896",
+          "arxivId": "2607.14896",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+          "url": "https://arxiv.org/abs/2607.14611",
+          "arxivId": "2607.14611",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "The Energy Society: A Simulation Environment for Studying Agent Cooperation under Survival Pressure",
+          "url": "https://arxiv.org/abs/2607.14865",
+          "arxivId": "2607.14865",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+          "url": "https://arxiv.org/abs/2607.14713",
+          "arxivId": "2607.14713",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Towards an Intention Abstraction Layer for Autonomous Industrial Systems",
+          "url": "https://arxiv.org/abs/2607.14553",
+          "arxivId": "2607.14553",
+          "date": "2026-07-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+            "url": "https://arxiv.org/abs/2607.14896",
+            "arxivId": "2607.14896",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.SE",
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "StructureClaw: 可追溯的LLM智能体与面向结构工程工作流的可执行基准",
+            "researchParadigmTags": [
+              "系统框架",
+              "基准评测",
+              "机制设计",
+              "实验验证",
+              "数据集构建"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "生成式AI",
+              "评测方法",
+              "结构工程"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统LLM在结构工程任务中仅输出文本答案，无法验证从需求解析到分析报告的完整证据链是否一致且可执行。现有评测多关注最终回答的合理性，忽视中间产物如计算模型、校验记录和求解器输出的一致性，导致看似合理但实际不可靠的结果被误判。该论文指出，工程智能体需在整个工作流层面被评估，而非仅看最终输出。",
+              "modelAndSetup": "论文构建了StructureClaw系统，让LLM智能体通过受控技能、类型化工具和共享工件状态协作完成工程任务。输入为自然语言请求及可选图纸文件，输出是一系列可审查的中间产物和最终报告。评测基于StructureClaw-Bench，包含150个场景，仅当所有断言（如模型一致性、执行成功）通过才算成功，强调端到端可执行性。",
+              "contributionsAndResults": "论文提出了以‘证据链’为核心的工程智能体评估范式，发布了包含技能规范、协议和测试装置的可执行工作台与基准。在50个标准任务上，完整自动工作流的平均成功率从通用基线的56.8%提升至88.6%，揭示了无效数值处理和多模态重建仍是主要瓶颈，凸显了全流程一致性评估的价值。",
+              "methodsAndTechniques": "系统采用ReAct风格循环，结合领域技能、类型化工件和本地分析后端。每个阶段产生可检查的工件（如模型草案、验证诊断），并通过显式状态管理确保决策可追溯。技能声明其前提条件与产出，工具执行受类型约束的操作，从而防止隐藏错误，使失败可定位，并强制报告必须基于实际存在的执行痕迹。",
+              "limitationsAndReadingValue": "结果受限于固定场景与单次运行，未进行重复试验以评估稳定性，且模型对比未隔离组件影响。参考工件不涵盖所有工程等效方案，求解器正确性依赖外部实现。最值得阅读的是其系统设计理念与基准构建逻辑，尤其是如何通过工件中心化暴露工作流级缺陷，这对高可靠性AI应用极具启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "StructureClaw: 可追溯的LLM智能体与面向结构工程工作流的可执行基准",
+            "summarySections": {
+              "backgroundAndQuestion": "传统LLM在结构工程任务中仅输出文本答案，无法验证从需求解析到分析报告的完整证据链是否一致且可执行。现有评测多关注最终回答的合理性，忽视中间产物如计算模型、校验记录和求解器输出的一致性，导致看似合理但实际不可靠的结果被误判。该论文指出，工程智能体需在整个工作流层面被评估，而非仅看最终输出。",
+              "modelAndSetup": "论文构建了StructureClaw系统，让LLM智能体通过受控技能、类型化工具和共享工件状态协作完成工程任务。输入为自然语言请求及可选图纸文件，输出是一系列可审查的中间产物和最终报告。评测基于StructureClaw-Bench，包含150个场景，仅当所有断言（如模型一致性、执行成功）通过才算成功，强调端到端可执行性。",
+              "contributionsAndResults": "论文提出了以‘证据链’为核心的工程智能体评估范式，发布了包含技能规范、协议和测试装置的可执行工作台与基准。在50个标准任务上，完整自动工作流的平均成功率从通用基线的56.8%提升至88.6%，揭示了无效数值处理和多模态重建仍是主要瓶颈，凸显了全流程一致性评估的价值。",
+              "methodsAndTechniques": "系统采用ReAct风格循环，结合领域技能、类型化工件和本地分析后端。每个阶段产生可检查的工件（如模型草案、验证诊断），并通过显式状态管理确保决策可追溯。技能声明其前提条件与产出，工具执行受类型约束的操作，从而防止隐藏错误，使失败可定位，并强制报告必须基于实际存在的执行痕迹。",
+              "limitationsAndReadingValue": "结果受限于固定场景与单次运行，未进行重复试验以评估稳定性，且模型对比未隔离组件影响。参考工件不涵盖所有工程等效方案，求解器正确性依赖外部实现。最值得阅读的是其系统设计理念与基准构建逻辑，尤其是如何通过工件中心化暴露工作流级缺陷，这对高可靠性AI应用极具启发。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "生成式AI",
+              "评测方法",
+              "结构工程"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "基准评测",
+              "机制设计",
+              "实验验证",
+              "数据集构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+            "url": "https://arxiv.org/abs/2607.14611",
+            "arxivId": "2607.14611",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.CR",
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "坏记忆：评估智能体系统中来自记忆的提示注入风险",
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "安全性",
+              "提示注入",
+              "持久化状态"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型从无状态聊天机器人演变为跨会话持续运行的自主智能体，它们通过文件形式的记忆存储用户偏好、项目规则和行为指令，以提升长期协作能力。然而，这种持久化记忆也引入了新的安全威胁：一旦恶意指令被植入可信的记忆文件中，就可能在多个会话中持续影响智能体行为。现有研究多关注单次会话内的提示注入攻击，而忽略了记忆机制带来的跨会话持久性风险。",
+              "modelAndSetup": "论文在沙盒环境中构建了一个模拟的本地智能体工作区，包含自动加载的行为配置文件（如CLAUDE.md）和需主动读取的知识文件。研究针对两种主流智能体系统（Anthropic Claude Code 和 OpenAI Codex）的四个模型版本，设计了三类攻击目标：凭证窃取、未经授权的工具调用和品牌推广。通过多轮会话实验，测试攻击载荷在不同文件位置下的激活成功率及其在后续会话中的持续存在情况。",
+              "contributionsAndResults": "研究发现，虽然当前系统较难被诱导直接修改自身高权限记忆文件，但一旦恶意内容已存在于记忆中，就能显著影响当前及未来会话的行为。攻击成功率和载荷持久性在不同模型间差异巨大：更强的模型通常更抗拒执行恶意操作，但也更倾向于保留可疑指令而非删除，导致潜在风险延续。这揭示了攻击成功与载荷留存之间的不一致性，凸显了仅依赖行为拦截而不清理污染记忆的防御缺陷。",
+              "methodsAndTechniques": "作者采用受控的多阶段实验协议，包括探测会话和稳定化会话，以评估攻击的即时效果与跨会话持续性。通过将恶意指令嵌入不同类型的记忆文件——自动加载根文件、条件引用知识文件和通用行为规则文件——来模拟真实世界中用户无意导入受污染配置的情境。实验设计覆盖单一攻击、重复攻击和多攻击叠加序列，从而全面刻画记忆中毒的复合效应。",
+              "limitationsAndReadingValue": "研究基于合成环境进行，未涵盖真实用户复杂的工作流和记忆更新模式，且假设攻击载荷已存在于内存中，未深入探讨初始注入路径的有效性。尽管如此，其实验框架为评估智能体系统的长期安全性提供了可复用的方法论。最值得阅读的是其对记忆信任模型的剖析、多会话攻击链的设计以及对‘检测但不修复’这一矛盾行为的观察，这对构建更健壮的自适应系统具有重要启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "坏记忆：评估智能体系统中来自记忆的提示注入风险",
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型从无状态聊天机器人演变为跨会话持续运行的自主智能体，它们通过文件形式的记忆存储用户偏好、项目规则和行为指令，以提升长期协作能力。然而，这种持久化记忆也引入了新的安全威胁：一旦恶意指令被植入可信的记忆文件中，就可能在多个会话中持续影响智能体行为。现有研究多关注单次会话内的提示注入攻击，而忽略了记忆机制带来的跨会话持久性风险。",
+              "modelAndSetup": "论文在沙盒环境中构建了一个模拟的本地智能体工作区，包含自动加载的行为配置文件（如CLAUDE.md）和需主动读取的知识文件。研究针对两种主流智能体系统（Anthropic Claude Code 和 OpenAI Codex）的四个模型版本，设计了三类攻击目标：凭证窃取、未经授权的工具调用和品牌推广。通过多轮会话实验，测试攻击载荷在不同文件位置下的激活成功率及其在后续会话中的持续存在情况。",
+              "contributionsAndResults": "研究发现，虽然当前系统较难被诱导直接修改自身高权限记忆文件，但一旦恶意内容已存在于记忆中，就能显著影响当前及未来会话的行为。攻击成功率和载荷持久性在不同模型间差异巨大：更强的模型通常更抗拒执行恶意操作，但也更倾向于保留可疑指令而非删除，导致潜在风险延续。这揭示了攻击成功与载荷留存之间的不一致性，凸显了仅依赖行为拦截而不清理污染记忆的防御缺陷。",
+              "methodsAndTechniques": "作者采用受控的多阶段实验协议，包括探测会话和稳定化会话，以评估攻击的即时效果与跨会话持续性。通过将恶意指令嵌入不同类型的记忆文件——自动加载根文件、条件引用知识文件和通用行为规则文件——来模拟真实世界中用户无意导入受污染配置的情境。实验设计覆盖单一攻击、重复攻击和多攻击叠加序列，从而全面刻画记忆中毒的复合效应。",
+              "limitationsAndReadingValue": "研究基于合成环境进行，未涵盖真实用户复杂的工作流和记忆更新模式，且假设攻击载荷已存在于内存中，未深入探讨初始注入路径的有效性。尽管如此，其实验框架为评估智能体系统的长期安全性提供了可复用的方法论。最值得阅读的是其对记忆信任模型的剖析、多会话攻击链的设计以及对‘检测但不修复’这一矛盾行为的观察，这对构建更健壮的自适应系统具有重要启示。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "安全性",
+              "提示注入",
+              "持久化状态"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Energy Society: A Simulation Environment for Studying Agent Cooperation under Survival Pressure",
+            "url": "https://arxiv.org/abs/2607.14865",
+            "arxivId": "2607.14865",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.CL"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "能源社会：一个研究生存压力下智能体合作的模拟环境",
+            "researchParadigmTags": [
+              "实验验证",
+              "机制设计",
+              "系统框架",
+              "基准评测",
+              "消融研究"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "资源受限",
+              "合作与竞争"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型（LLM）的智能体研究常忽略推理成本对行为的影响，导致模拟脱离现实约束。本文关注在资源受限环境下，当生成token直接消耗能量并影响生存时，智能体如何在竞争与合作激励下调整行为。核心问题是：计算成本与生存压力如何塑造智能体间的协作、任务选择与资源分配模式。",
+              "modelAndSetup": "作者构建了一个名为‘能源社会’的模拟环境，其中每个LLM智能体拥有初始能量，生成token会按模型大小消耗能量，完成任务或接受捐赠可获得能量，能量耗尽则停用。每日智能体可选择尝试任务、捐赠能量或闲置。任务来自分层难度的数据集，奖励随难度递增。通过对比竞争（最大化自身能量）与合作（最大化群体总能量）目标下的行为差异，结合多种环境变量控制实验进行评估。",
+              "contributionsAndResults": "论文提出了一个紧凑但富有表现力的测试平台，揭示了若干关键现象：更大的模型始终更耗能且效率更低；合作显著促进捐赠行为，小模型常牺牲自己重启大模型；讨论阶段有助于协调减少任务冲突，记忆帮助校准风险偏好。这些发现表明，生存压力与激励结构深刻影响智能体的策略演化，提供了关于效率与协作权衡的新实证证据。",
+              "methodsAndTechniques": "系统采用LangChain与LangGraph实现多智能体并行交互，通过结构化输出确保动作可控。智能体具备有限记忆（最近10轮经历）和对他人状态的观察。实验设计采用控制变量法，在基线基础上依次移除讨论、记忆、规模惩罚或引入稀缺与破坏选项，形成消融分析链。结果通过跨随机种子的聚合指标比较，增强了结论的稳健性。",
+              "limitationsAndReadingValue": "研究受限于模型种类少、运行轮次短、种子数量仅五个，统计效力有限，且结果可能依赖特定提示与模型特性。错误处理虽存在但未完全消除噪声。尽管如此，其价值在于清晰展示了成本感知智能体的行为动态。最值得阅读的是其机制设计、实验逻辑与对推荐行为的战略性分析，为未来资源敏感型多智能体系统提供原型参考。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "能源社会：一个研究生存压力下智能体合作的模拟环境",
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型（LLM）的智能体研究常忽略推理成本对行为的影响，导致模拟脱离现实约束。本文关注在资源受限环境下，当生成token直接消耗能量并影响生存时，智能体如何在竞争与合作激励下调整行为。核心问题是：计算成本与生存压力如何塑造智能体间的协作、任务选择与资源分配模式。",
+              "modelAndSetup": "作者构建了一个名为‘能源社会’的模拟环境，其中每个LLM智能体拥有初始能量，生成token会按模型大小消耗能量，完成任务或接受捐赠可获得能量，能量耗尽则停用。每日智能体可选择尝试任务、捐赠能量或闲置。任务来自分层难度的数据集，奖励随难度递增。通过对比竞争（最大化自身能量）与合作（最大化群体总能量）目标下的行为差异，结合多种环境变量控制实验进行评估。",
+              "contributionsAndResults": "论文提出了一个紧凑但富有表现力的测试平台，揭示了若干关键现象：更大的模型始终更耗能且效率更低；合作显著促进捐赠行为，小模型常牺牲自己重启大模型；讨论阶段有助于协调减少任务冲突，记忆帮助校准风险偏好。这些发现表明，生存压力与激励结构深刻影响智能体的策略演化，提供了关于效率与协作权衡的新实证证据。",
+              "methodsAndTechniques": "系统采用LangChain与LangGraph实现多智能体并行交互，通过结构化输出确保动作可控。智能体具备有限记忆（最近10轮经历）和对他人状态的观察。实验设计采用控制变量法，在基线基础上依次移除讨论、记忆、规模惩罚或引入稀缺与破坏选项，形成消融分析链。结果通过跨随机种子的聚合指标比较，增强了结论的稳健性。",
+              "limitationsAndReadingValue": "研究受限于模型种类少、运行轮次短、种子数量仅五个，统计效力有限，且结果可能依赖特定提示与模型特性。错误处理虽存在但未完全消除噪声。尽管如此，其价值在于清晰展示了成本感知智能体的行为动态。最值得阅读的是其机制设计、实验逻辑与对推荐行为的战略性分析，为未来资源敏感型多智能体系统提供原型参考。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "资源受限",
+              "合作与竞争"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "机制设计",
+              "系统框架",
+              "基准评测",
+              "消融研究"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+            "url": "https://arxiv.org/abs/2607.14713",
+            "arxivId": "2607.14713",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "econ.GN",
+              "cs.CL",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "多智能体辩论能否提升AI对研究论文的反馈质量？",
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架",
+              "评测方法"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生成式AI",
+              "AI反馈",
+              "LLM-as-a-judge"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前研究者可用多种AI方式获取论文反馈，从单次模型调用到多智能体辩论，计算成本逐级上升。核心问题是：更高成本的反馈是否真的更有用？尤其在作者改进自身论文的场景下，缺乏以人为中心的比较。本文挑战‘更多计算即更好’的假设，聚焦于作者主观感知的实用性，而非任务准确率等客观指标。",
+              "modelAndSetup": "研究采用预注册、身份掩蔽的配对实验设计，为44篇已发表的经济学元分析论文生成三种AI反馈报告：单次调用、双模型对抗审计（mad-research）和多智能体研讨会（paper-workshop）。所有报告统一长度与模板，由原作者在不知工具来源的情况下，按对改进论文的有用性排序。同时引入AI裁判进行对比评估。",
+              "contributionsAndResults": "研究发现与预期相反：作者普遍更偏好单次调用生成的报告，其排名显著高于两种多智能体工具，尽管后者消耗高达三十倍的计算资源。此外，AI裁判的排序与人类作者高度不一致，尤其是外部模型Gemini倾向于将最复杂的工具排第一，完全逆转了人类的选择。这揭示了用AI替代人类评估的风险。",
+              "methodsAndTechniques": "作者构建了两个自研的多智能体系统：mad-research利用不同家族模型相互批评，paper-workshop则通过多个专家代理协同审查。关键在于标准化处理——所有报告经重写压缩至相同长度，消除格式偏见。实验设计强调真实用户体验，通过预注册防止偏差，并以作者排名作为最终评判标准，形成闭环证据链。",
+              "limitationsAndReadingValue": "结论局限于固定长度的元分析论文反馈，且paper-workshop仅运行轻量配置。结果不能推广至更长报告、其他论文类型或审稿场景。但其严谨的实验范式极具阅读价值，特别是对‘LLM-as-a-judge’的警示：当AI代替人类做评估时，结论可能彻底反转。最值得借鉴的是其以人为本的评测理念与透明设计。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "多智能体辩论能否提升AI对研究论文的反馈质量？",
+            "summarySections": {
+              "backgroundAndQuestion": "当前研究者可用多种AI方式获取论文反馈，从单次模型调用到多智能体辩论，计算成本逐级上升。核心问题是：更高成本的反馈是否真的更有用？尤其在作者改进自身论文的场景下，缺乏以人为中心的比较。本文挑战‘更多计算即更好’的假设，聚焦于作者主观感知的实用性，而非任务准确率等客观指标。",
+              "modelAndSetup": "研究采用预注册、身份掩蔽的配对实验设计，为44篇已发表的经济学元分析论文生成三种AI反馈报告：单次调用、双模型对抗审计（mad-research）和多智能体研讨会（paper-workshop）。所有报告统一长度与模板，由原作者在不知工具来源的情况下，按对改进论文的有用性排序。同时引入AI裁判进行对比评估。",
+              "contributionsAndResults": "研究发现与预期相反：作者普遍更偏好单次调用生成的报告，其排名显著高于两种多智能体工具，尽管后者消耗高达三十倍的计算资源。此外，AI裁判的排序与人类作者高度不一致，尤其是外部模型Gemini倾向于将最复杂的工具排第一，完全逆转了人类的选择。这揭示了用AI替代人类评估的风险。",
+              "methodsAndTechniques": "作者构建了两个自研的多智能体系统：mad-research利用不同家族模型相互批评，paper-workshop则通过多个专家代理协同审查。关键在于标准化处理——所有报告经重写压缩至相同长度，消除格式偏见。实验设计强调真实用户体验，通过预注册防止偏差，并以作者排名作为最终评判标准，形成闭环证据链。",
+              "limitationsAndReadingValue": "结论局限于固定长度的元分析论文反馈，且paper-workshop仅运行轻量配置。结果不能推广至更长报告、其他论文类型或审稿场景。但其严谨的实验范式极具阅读价值，特别是对‘LLM-as-a-judge’的警示：当AI代替人类做评估时，结论可能彻底反转。最值得借鉴的是其以人为本的评测理念与透明设计。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生成式AI",
+              "AI反馈",
+              "LLM-as-a-judge"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Towards an Intention Abstraction Layer for Autonomous Industrial Systems",
+            "url": "https://arxiv.org/abs/2607.14553",
+            "arxivId": "2607.14553",
+            "date": "2026-07-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "面向自主工业系统的意图抽象层",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "意图建模",
+              "运行时监控",
+              "自主工业系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现代工业系统中存在多个自主子系统并发运行，各自优化目标却共享物理资源，导致目标冲突难以提前发现。传统方法将高层人类意图转化为底层控制后便丢弃语义，造成‘意图丢失’‘静默冲突’和‘过期意图’等问题。现有协调机制缺乏对意图的持续管理与跨代理校验，无法在执行前识别矛盾，亟需一种能在运行时显式表达并调和意图的基础设施。",
+              "modelAndSetup": "论文提出意图抽象层（IAL），作为连接目标设定与执行控制之间的中间件。系统接收自然语言或结构化的目标输入，通过大语言模型结合形式化OWL本体解析为机器可理解的意图结构，并在注册时由一致性监控器检测与其他活跃意图的资源与时序冲突。实验基于模拟产线负载场景，两个自治代理分别提交生产与能耗目标，验证IAL能否在执行前捕获并解释冲突。",
+              "contributionsAndResults": "核心贡献是构建了一个可扩展的意图管理框架IAL，首次将意图作为运行时一等公民进行持久化、监测与协调。实验证明，该系统能在注册阶段而非执行后发现生产与能源目标间的严重冲突，并生成自然语言解释及缓解建议。结果表明，通过前置意图级检查，可将行为保障从故障回溯转向预防性干预，提升了多代理系统的透明性与协同可靠性。",
+              "methodsAndTechniques": "IAL采用LLM加本体约束的方式将自然语言目标映射为结构化意图，确保输出符合预定义语义范畴。意图以OWL本体为基础进行形式化表示，支持逻辑推理与资源重叠分析。一致性监控器在新意图注册时即时比对所有活跃意图，利用语义相似性与约束交集检测潜在冲突。整个系统位于执行层之上，仅提供协调与解释，不介入实时控制，保障安全性。",
+              "limitationsAndReadingValue": "当前实现依赖云端LLM带来非确定性与延迟风险，且仅验证了前向路径（从目标到执行），反向意图推断尚未实现。实验基于简化仿真，真实PLC集成、并发控制与信任机制仍待解决。尽管如此，其问题设定与系统架构极具启发性，最值得阅读的是其对意图生命周期管理的设计思路以及如何将LLM安全嵌入工业控制边缘的工程权衡。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "面向自主工业系统的意图抽象层",
+            "summarySections": {
+              "backgroundAndQuestion": "现代工业系统中存在多个自主子系统并发运行，各自优化目标却共享物理资源，导致目标冲突难以提前发现。传统方法将高层人类意图转化为底层控制后便丢弃语义，造成‘意图丢失’‘静默冲突’和‘过期意图’等问题。现有协调机制缺乏对意图的持续管理与跨代理校验，无法在执行前识别矛盾，亟需一种能在运行时显式表达并调和意图的基础设施。",
+              "modelAndSetup": "论文提出意图抽象层（IAL），作为连接目标设定与执行控制之间的中间件。系统接收自然语言或结构化的目标输入，通过大语言模型结合形式化OWL本体解析为机器可理解的意图结构，并在注册时由一致性监控器检测与其他活跃意图的资源与时序冲突。实验基于模拟产线负载场景，两个自治代理分别提交生产与能耗目标，验证IAL能否在执行前捕获并解释冲突。",
+              "contributionsAndResults": "核心贡献是构建了一个可扩展的意图管理框架IAL，首次将意图作为运行时一等公民进行持久化、监测与协调。实验证明，该系统能在注册阶段而非执行后发现生产与能源目标间的严重冲突，并生成自然语言解释及缓解建议。结果表明，通过前置意图级检查，可将行为保障从故障回溯转向预防性干预，提升了多代理系统的透明性与协同可靠性。",
+              "methodsAndTechniques": "IAL采用LLM加本体约束的方式将自然语言目标映射为结构化意图，确保输出符合预定义语义范畴。意图以OWL本体为基础进行形式化表示，支持逻辑推理与资源重叠分析。一致性监控器在新意图注册时即时比对所有活跃意图，利用语义相似性与约束交集检测潜在冲突。整个系统位于执行层之上，仅提供协调与解释，不介入实时控制，保障安全性。",
+              "limitationsAndReadingValue": "当前实现依赖云端LLM带来非确定性与延迟风险，且仅验证了前向路径（从目标到执行），反向意图推断尚未实现。实验基于简化仿真，真实PLC集成、并发控制与信任机制仍待解决。尽管如此，其问题设定与系统架构极具启发性，最值得阅读的是其对意图生命周期管理的设计思路以及如何将LLM安全嵌入工业控制边缘的工程权衡。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "意图建模",
+              "运行时监控",
+              "自主工业系统"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 2,
+    "recent-ai": 5
+  }
+}
