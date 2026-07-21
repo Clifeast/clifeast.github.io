@@ -336,6 +336,14 @@
         "recent-agt": 0,
         "recent-ai": 0
       }
+    },
+    "2026-07-21": {
+      "status": "completed",
+      "completedAt": "2026-07-21T05:40:59.830370+00:00",
+      "sectionCounts": {
+        "recent-agt": 5,
+        "recent-ai": 5
+      }
     }
   }
 }

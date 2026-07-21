@@ -1,0 +1,3067 @@
+{
+  "date": "2026-07-21",
+  "generatedAt": "2026-07-21T05:36:07.213762+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-20",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607200000 TO 202607202359\"",
+            "totalResults": 8,
+            "fetchedCount": 8
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607200000 TO 202607202359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 10
+      },
+      "arxivTotalResults": 11,
+      "fetchedCount": 10,
+      "fetchedPapers": [
+        {
+          "title": "Nonexistence of Simultaneously EF1 and Pareto Optimal Allocations for Submodular Valuations",
+          "url": "https://arxiv.org/abs/2607.18220",
+          "arxivId": "2607.18220",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "abstract": "The existence of allocations of indivisible goods that are simultaneously fair (envy-free up to one item (EF1)) and efficient (Pareto optimal (PO)) when agents have monotone submodular valuations has been a longstanding open problem. We settle this question negatively by giving an example with two agents where no allocation is simultaneously EF1 and PO. We also show that determining the existence of such allocations is NP-hard for monotone submodular valuations. Our example uses (unweighted) coverage valuations, which is a strict subclass of monotone submodular valuations. Since EF1+PO allocations are known to always exist for additive valuations via the maximization of Nash Social Welfare (Caragiannis et al. (ACM TEAC 2019)), and for matroid-rank valuations (Benabbou et al. (ACM TEAC 2021)), nonexistence was known only for monotone subadditive valuations (Caragiannis et al. (ACM TEAC 2019)). Our work moves the nonexistence frontier to unweighted coverage valuations. We also show that the example we designed for goods also proves nonexistence of EF1+PO in general, for chores with unweighted coverage costs, by interpreting the valuations as disutilities."
+        },
+        {
+          "title": "1-out-of-5 Maximin-Share Allocations Always Exist for Four Agents",
+          "url": "https://arxiv.org/abs/2607.18139",
+          "arxivId": "2607.18139",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "abstract": "For four agents with nonnegative additive valuations, a complete 1-out-of-5 maximin-share allocation always exists, improving the previous 1-out-of-6 guarantee. Together with known exact-MMS counterexamples, this completely characterizes the four-agent case: the guarantee holds exactly for $d\\geq5$. The main technical contribution is a balanced-residual partition lemma: removing rejected bundles with one of the four highest-ranked goods apiece leaves a remainder that still admits the required number of unit-valued balanced bundles. In its central $2+2$ case, three unit bundles repair two pairs of colliding high-valued goods. The theorem is machine-checked in Lean 4."
+        },
+        {
+          "title": "Compositional Semantic Communication for Physical AI: Category Theory Meets Game Theory",
+          "url": "https://arxiv.org/abs/2607.18115",
+          "arxivId": "2607.18115",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.IT",
+            "cs.GT",
+            "eess.SP"
+          ],
+          "abstract": "Physical artificial intelligence (AI) systems involve distributed sensing agents with embedded AI models that must coordinate to perceive, reason, and act in networked environments. Transmitting raw sensor data incurs significant communication overhead, latency, and redundancy. While semantic communication (SC) mitigates these challenges by transmitting task-relevant information, existing deep learning-based joint source-channel coding approaches exhibit limited adaptability, poor out-of-distribution generalization, and scalability challenges. To address these limitations, this paper proposes a framework for compositional semantic communication (CSC), enabling heterogeneous physical AI sources to transmit semantic representations (SRs) that compose meaningfully at a base station (BS) or edge server for remote inference. First, a category-theoretic measure of compositional semantics is developed to quantify each device's contribution to inference tasks beyond mutual information. Second, Grothendieck topologies and presheaves formalize semantic composition across devices, ensuring consistency and task relevance. Building on these foundations, multi-device coordination is formulated as a Stackelberg game in which devices commit to encoding strategies and the BS optimally composes received SRs. An ADMM-based algorithm computes equilibrium signaling strategies. Equilibrium existence is established under mild conditions and is Pareto optimal when compositional information yields increasing collective benefit. Simulation results demonstrate that the proposed approach achieves up to 17% bandwidth reduction and 53% lower end-to-end latency than cooperative multi-agent, distributed gradient descent, and uniform-selection CSC baselines while maintaining 85% inference accuracy across diverse autonomous driving scenarios."
+        },
+        {
+          "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+          "url": "https://arxiv.org/abs/2607.18045",
+          "arxivId": "2607.18045",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "Organizations often pool dispersed information into one ranking and then allow many agents to act on that shared view. In a discovery problem, this can improve beliefs while reducing coverage. We develop an exactly solvable benchmark with sixteen boxes, one target, eight searchers, and noisy private clues. Pooling raises the accuracy of the best single recommendation from 0.20 to 0.3835, but repeating that recommendation lowers group discovery from 0.8322 under decentralized clue-following to 0.3835. A coordinated eight-action portfolio using the same pooled reports reaches 0.8594, and seven coordinated actions recover the decentralized benchmark. The paradox is a protocol failure, not an information failure: a one-answer rule compresses a portfolio of available actions into one repeated choice. We then replace the planner with self-interested searchers who split a prize. The equal-split game is a potential game. Its anonymous symmetric equilibrium obeys a water-filling rule. In the canonical instance it achieves 0.5991: strictly above consensus, but below both private search and the planner. The exact mixed price of anarchy is 2 - 1/N. A sole-rescue reward, which pays only an agent who covers the target alone, makes every pure Nash equilibrium first-best. Finally, a latent common-cue model shows how correlated reports collapse effective discovery channels. The centralized planner gain rises strictly with copying, and in the canonical environment the symmetric market overtakes decentralized report-following at copying probability c = 0.788462. In a proportional large-market limit the five-protocol ordering survives exactly: consensus discovery vanishes while blind, market, private, and portfolio search converge to 0.500, 0.547, 0.847, and 0.874. The contribution is a compact benchmark that separates information, allocation, incentives, and dependence into exact, reusable quantities."
+        },
+        {
+          "title": "Beyond Stability: Improved Efficiency Guarantees for $α$-Stable Matchings",
+          "url": "https://arxiv.org/abs/2607.17949",
+          "arxivId": "2607.17949",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Stable matching mechanisms are fundamental to market design but face an inherent tension between stability and social welfare optimality. We study a natural relaxation of stability, termed $α$-stability, which models agents as willing to deviate only when the potential improvement is sufficiently large. Under $α$-stability, no pair of agents can deviate and improve their valuations by more than a factor of $1/α$, with $α\\in (0,1]$. We provide a complete characterization of the stability-efficiency tradeoff under asymmetric valuations. This tradeoff depends on the degree of asymmetry $μ\\in (0,1]$, which bounds the ratio between agents' valuations for any pair. Our results show that relaxing stability can substantially improve achievable efficiency guarantees. We further present a polynomial-time algorithm that computes an $α$-stable matching attaining the best possible efficiency guarantee. For $α\\le μ/(μ+1)$, our algorithm achieves 1-efficiency; for larger $α$, it computes an $α$-stable matching achieving at least $(1/α)\\cdot μ/(μ+1)$ of the optimal social welfare. Remarkably, our algorithm inflates the values of an optimal matching and then applies the Gale-Shapley algorithm to the modified instance. Finally, we show that computing an optimal $α$-stable matching is NP-hard, even under slight relaxations of stability, i.e., for $α$ close to 1."
+        },
+        {
+          "title": "When One Good Is Not Enough: EF1 and Pareto Optimality Are Not Compatible for Submodular Valuations",
+          "url": "https://arxiv.org/abs/2607.17811",
+          "arxivId": "2607.17811",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "One of the central questions in discrete fair division is whether fairness and efficiency can be achieved simultaneously. For indivisible goods, a canonical relaxation of envy-freeness is envy-freeness up to one good (EF1), while the standard efficiency benchmark is Pareto optimality (PO). In their seminal work, Caragiannis et al. showed that, for additive valuations, EF1 and PO are always compatible, and asked whether this compatibility extends to submodular valuations. This question has since become an important open problem in the study of fair division. In this paper, we settle the question in the negative. We construct an instance with two agents and eight goods, where both agents have submodular valuations, such that no EF1 allocation is even weakly Pareto optimal. Thus, the celebrated compatibility between EF1 and PO for additive valuations breaks down already for two agents under submodular valuations. We then map the boundary of this impossibility. On the negative side, we show that even for weighted matroid rank valuations, EF1 and fractional Pareto optimality (fPO) are incompatible. This rules out, in general, broad classes of weighted-welfare and Fisher-market-based approaches. On the positive side, we identify a common-envelope condition that restores compatibility. Under this condition, EF1+PO allocations exist for any number of agents. This yields new positive results showing that common-weight matroid-rank valuations always admit EF1+PO allocations. Finally, we quantify the efficiency loss that is unavoidable when insisting on EF1. Our submodular counterexample implies that there is a constant $α<1$ such that no EF1 allocation is $α$-\\PO. For the broader class of subadditive valuations, we prove a tight two-agent bound: for any $\\varepsilon>0$, there exists an instance in which no EF1 allocation is $\\left(\\frac{1}{\\sqrt{2}}+\\varepsilon\\right)$-PO."
+        },
+        {
+          "title": "Monotonicity and Frank-Wolfe Dynamics in Atomic Splittable Congestion Games",
+          "url": "https://arxiv.org/abs/2607.17684",
+          "arxivId": "2607.17684",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "abstract": "We study universal monotonicity and Frank--Wolfe stability properties for atomic splittable congestion games. Specifically, we characterize the largest resource cost class for which the associated variational inequality operator is monotone for every game. This characterization is given by a curvature inequality involving the first two derivatives of the allowable cost functions and the number of players. Our framework yields exact characterizations for universal monotonicity, strict monotonicity, and strong monotonicity; the strict and strong variants require corresponding stricter curvature conditions. We then draw a perhaps surprising connection to learning dynamics in atomic splittable congestion games. We show that the very same curvature condition also characterizes universal \\emph{local and global stability} of the Euclidean-regularized Frank--Wolfe dynamics on arbitrary convex strategy spaces, provided the cost class is closed under positive affine transformations. Finally, we study games on simplices and show that an interior equilibrium of the regularized Frank--Wolfe dynamic is locally exponentially stable, even without the curvature condition."
+        },
+        {
+          "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+          "url": "https://arxiv.org/abs/2607.17543",
+          "arxivId": "2607.17543",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "In two-player zero-sum games whose Nash equilibria form a convex set, regularized solvers such as Regularized Nash Dynamics (R-NaD) empirically select the maximum-entropy member: the information projection (I-projection) of a uniform reference onto the Nash set. On a panel of small games this match is exact, with one apparent exception: in Kuhn poker R-NaD lands at bluff coordinate 0.180 while the maximum-entropy member sits at 0.201, a coordinate gap of about 0.021, even though R-NaD attains 99.7 percent of the maximum entropy. We ask whether this gap is a genuine selection bias or an artifact, and answer it quantitatively. We show that for selection on a one-dimensional Nash manifold the coordinate gap factorizes as $\\mathrm{gap} \\approx \\sqrt{2δ/κ}$, where $δ$ is the entropy shortfall of the solver and $κ$ is the curvature of the entropy landscape at its peak. Across five games this relation holds to within $2 \\times 10^{-4}$ (under 1 percent relative error). The four matrix games have $δ\\approx 0$ (R-NaD reaches the maximum-entropy member exactly) and therefore no gap regardless of curvature; only the sequential game (Kuhn) has $δ> 0$. A causal sweep of the magnet strength drives $δ\\to 0$ and the gap toward zero along the predicted curve (fitted scaling exponent 0.50, $R^2 > 0.999999$, against the exact prediction of 1/2), until the dynamics destabilize at a stability floor: behavior consistent with a removable shortfall and inconsistent with a fixed bias. We quantify the curvature half of the law from measured curvatures and flag a moving-target pitfall in the natural Tsallis-entropy experiment. The Kuhn gap is thus the curvature shadow of a small, removable entropy shortfall on an unusually flat peak; the I-projection account is upheld up to a flatness-limited residual."
+        },
+        {
+          "title": "Equilibrium Play Without Mutual Knowledge of Rationality",
+          "url": "https://arxiv.org/abs/2607.17968",
+          "arxivId": "2607.17968",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Equilibrium play in two-player zero-sum games is usually justified via epistemic assumptions, such as mutual knowledge of rationality and beliefs, that go far beyond the rationality of the players. We propose a justification that dispenses with these assumptions. To this end, we consider solution concepts that assign to every subgame of a given game a set of plausible actions for each player, and we impose two conditions. Rationality requires that the plausible sets are supports of undominated strategies or, equivalently, that all plausible actions are best responses to a common belief about the opponent. Inheritance requires that plausible actions remain plausible when implausible actions are discarded. In two-player games, the two conditions characterize the solution concepts that consistently select supports of Nash equilibria. Zero-sum payoffs ensure that Nash equilibria -- and hence the selection -- are generically unique. Equilibrium play thus emerges from individual rationality and the mutual understanding that plausibility judgments persist when implausible actions are discarded."
+        },
+        {
+          "title": "Observable Consequences of Mental Accounting",
+          "url": "https://arxiv.org/abs/2607.17741",
+          "arxivId": "2607.17741",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We derive necessary and sufficient nonparametric conditions for several models of mental accounting. The paper characterises pure mental accounting, separable accounts, and labelled income, and compares these boundedly rational models with two rational multi-stage budgeting benchmarks. The resulting Afriat-style conditions make the observable implications of mental accounting explicit and refutable. In this sense, mental accounting is treated not as a loose description of behaviour, but as a formally refutable hypothesis about the organisation of consumption."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Nonexistence of Simultaneously EF1 and Pareto Optimal Allocations for Submodular Valuations",
+              "url": "https://arxiv.org/abs/2607.18220",
+              "arxivId": "2607.18220",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS"
+              ],
+              "abstract": "The existence of allocations of indivisible goods that are simultaneously fair (envy-free up to one item (EF1)) and efficient (Pareto optimal (PO)) when agents have monotone submodular valuations has been a longstanding open problem. We settle this question negatively by giving an example with two agents where no allocation is simultaneously EF1 and PO. We also show that determining the existence of such allocations is NP-hard for monotone submodular valuations. Our example uses (unweighted) coverage valuations, which is a strict subclass of monotone submodular valuations. Since EF1+PO allocations are known to always exist for additive valuations via the maximization of Nash Social Welfare (Caragiannis et al. (ACM TEAC 2019)), and for matroid-rank valuations (Benabbou et al. (ACM TEAC 2021)), nonexistence was known only for monotone subadditive valuations (Caragiannis et al. (ACM TEAC 2019)). Our work moves the nonexistence frontier to unweighted coverage valuations. We also show that the example we designed for goods also proves nonexistence of EF1+PO in general, for chores with unweighted coverage costs, by interpreting the valuations as disutilities."
+            },
+            {
+              "title": "1-out-of-5 Maximin-Share Allocations Always Exist for Four Agents",
+              "url": "https://arxiv.org/abs/2607.18139",
+              "arxivId": "2607.18139",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "abstract": "For four agents with nonnegative additive valuations, a complete 1-out-of-5 maximin-share allocation always exists, improving the previous 1-out-of-6 guarantee. Together with known exact-MMS counterexamples, this completely characterizes the four-agent case: the guarantee holds exactly for $d\\geq5$. The main technical contribution is a balanced-residual partition lemma: removing rejected bundles with one of the four highest-ranked goods apiece leaves a remainder that still admits the required number of unit-valued balanced bundles. In its central $2+2$ case, three unit bundles repair two pairs of colliding high-valued goods. The theorem is machine-checked in Lean 4."
+            },
+            {
+              "title": "Compositional Semantic Communication for Physical AI: Category Theory Meets Game Theory",
+              "url": "https://arxiv.org/abs/2607.18115",
+              "arxivId": "2607.18115",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.IT",
+                "cs.GT",
+                "eess.SP"
+              ],
+              "abstract": "Physical artificial intelligence (AI) systems involve distributed sensing agents with embedded AI models that must coordinate to perceive, reason, and act in networked environments. Transmitting raw sensor data incurs significant communication overhead, latency, and redundancy. While semantic communication (SC) mitigates these challenges by transmitting task-relevant information, existing deep learning-based joint source-channel coding approaches exhibit limited adaptability, poor out-of-distribution generalization, and scalability challenges. To address these limitations, this paper proposes a framework for compositional semantic communication (CSC), enabling heterogeneous physical AI sources to transmit semantic representations (SRs) that compose meaningfully at a base station (BS) or edge server for remote inference. First, a category-theoretic measure of compositional semantics is developed to quantify each device's contribution to inference tasks beyond mutual information. Second, Grothendieck topologies and presheaves formalize semantic composition across devices, ensuring consistency and task relevance. Building on these foundations, multi-device coordination is formulated as a Stackelberg game in which devices commit to encoding strategies and the BS optimally composes received SRs. An ADMM-based algorithm computes equilibrium signaling strategies. Equilibrium existence is established under mild conditions and is Pareto optimal when compositional information yields increasing collective benefit. Simulation results demonstrate that the proposed approach achieves up to 17% bandwidth reduction and 53% lower end-to-end latency than cooperative multi-agent, distributed gradient descent, and uniform-selection CSC baselines while maintaining 85% inference accuracy across diverse autonomous driving scenarios."
+            },
+            {
+              "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+              "url": "https://arxiv.org/abs/2607.18045",
+              "arxivId": "2607.18045",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA"
+              ],
+              "abstract": "Organizations often pool dispersed information into one ranking and then allow many agents to act on that shared view. In a discovery problem, this can improve beliefs while reducing coverage. We develop an exactly solvable benchmark with sixteen boxes, one target, eight searchers, and noisy private clues. Pooling raises the accuracy of the best single recommendation from 0.20 to 0.3835, but repeating that recommendation lowers group discovery from 0.8322 under decentralized clue-following to 0.3835. A coordinated eight-action portfolio using the same pooled reports reaches 0.8594, and seven coordinated actions recover the decentralized benchmark. The paradox is a protocol failure, not an information failure: a one-answer rule compresses a portfolio of available actions into one repeated choice. We then replace the planner with self-interested searchers who split a prize. The equal-split game is a potential game. Its anonymous symmetric equilibrium obeys a water-filling rule. In the canonical instance it achieves 0.5991: strictly above consensus, but below both private search and the planner. The exact mixed price of anarchy is 2 - 1/N. A sole-rescue reward, which pays only an agent who covers the target alone, makes every pure Nash equilibrium first-best. Finally, a latent common-cue model shows how correlated reports collapse effective discovery channels. The centralized planner gain rises strictly with copying, and in the canonical environment the symmetric market overtakes decentralized report-following at copying probability c = 0.788462. In a proportional large-market limit the five-protocol ordering survives exactly: consensus discovery vanishes while blind, market, private, and portfolio search converge to 0.500, 0.547, 0.847, and 0.874. The contribution is a compact benchmark that separates information, allocation, incentives, and dependence into exact, reusable quantities."
+            },
+            {
+              "title": "Beyond Stability: Improved Efficiency Guarantees for $α$-Stable Matchings",
+              "url": "https://arxiv.org/abs/2607.17949",
+              "arxivId": "2607.17949",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Stable matching mechanisms are fundamental to market design but face an inherent tension between stability and social welfare optimality. We study a natural relaxation of stability, termed $α$-stability, which models agents as willing to deviate only when the potential improvement is sufficiently large. Under $α$-stability, no pair of agents can deviate and improve their valuations by more than a factor of $1/α$, with $α\\in (0,1]$. We provide a complete characterization of the stability-efficiency tradeoff under asymmetric valuations. This tradeoff depends on the degree of asymmetry $μ\\in (0,1]$, which bounds the ratio between agents' valuations for any pair. Our results show that relaxing stability can substantially improve achievable efficiency guarantees. We further present a polynomial-time algorithm that computes an $α$-stable matching attaining the best possible efficiency guarantee. For $α\\le μ/(μ+1)$, our algorithm achieves 1-efficiency; for larger $α$, it computes an $α$-stable matching achieving at least $(1/α)\\cdot μ/(μ+1)$ of the optimal social welfare. Remarkably, our algorithm inflates the values of an optimal matching and then applies the Gale-Shapley algorithm to the modified instance. Finally, we show that computing an optimal $α$-stable matching is NP-hard, even under slight relaxations of stability, i.e., for $α$ close to 1."
+            },
+            {
+              "title": "When One Good Is Not Enough: EF1 and Pareto Optimality Are Not Compatible for Submodular Valuations",
+              "url": "https://arxiv.org/abs/2607.17811",
+              "arxivId": "2607.17811",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "One of the central questions in discrete fair division is whether fairness and efficiency can be achieved simultaneously. For indivisible goods, a canonical relaxation of envy-freeness is envy-freeness up to one good (EF1), while the standard efficiency benchmark is Pareto optimality (PO). In their seminal work, Caragiannis et al. showed that, for additive valuations, EF1 and PO are always compatible, and asked whether this compatibility extends to submodular valuations. This question has since become an important open problem in the study of fair division. In this paper, we settle the question in the negative. We construct an instance with two agents and eight goods, where both agents have submodular valuations, such that no EF1 allocation is even weakly Pareto optimal. Thus, the celebrated compatibility between EF1 and PO for additive valuations breaks down already for two agents under submodular valuations. We then map the boundary of this impossibility. On the negative side, we show that even for weighted matroid rank valuations, EF1 and fractional Pareto optimality (fPO) are incompatible. This rules out, in general, broad classes of weighted-welfare and Fisher-market-based approaches. On the positive side, we identify a common-envelope condition that restores compatibility. Under this condition, EF1+PO allocations exist for any number of agents. This yields new positive results showing that common-weight matroid-rank valuations always admit EF1+PO allocations. Finally, we quantify the efficiency loss that is unavoidable when insisting on EF1. Our submodular counterexample implies that there is a constant $α<1$ such that no EF1 allocation is $α$-\\PO. For the broader class of subadditive valuations, we prove a tight two-agent bound: for any $\\varepsilon>0$, there exists an instance in which no EF1 allocation is $\\left(\\frac{1}{\\sqrt{2}}+\\varepsilon\\right)$-PO."
+            },
+            {
+              "title": "Monotonicity and Frank-Wolfe Dynamics in Atomic Splittable Congestion Games",
+              "url": "https://arxiv.org/abs/2607.17684",
+              "arxivId": "2607.17684",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT"
+              ],
+              "abstract": "We study universal monotonicity and Frank--Wolfe stability properties for atomic splittable congestion games. Specifically, we characterize the largest resource cost class for which the associated variational inequality operator is monotone for every game. This characterization is given by a curvature inequality involving the first two derivatives of the allowable cost functions and the number of players. Our framework yields exact characterizations for universal monotonicity, strict monotonicity, and strong monotonicity; the strict and strong variants require corresponding stricter curvature conditions. We then draw a perhaps surprising connection to learning dynamics in atomic splittable congestion games. We show that the very same curvature condition also characterizes universal \\emph{local and global stability} of the Euclidean-regularized Frank--Wolfe dynamics on arbitrary convex strategy spaces, provided the cost class is closed under positive affine transformations. Finally, we study games on simplices and show that an interior equilibrium of the regularized Frank--Wolfe dynamic is locally exponentially stable, even without the curvature condition."
+            },
+            {
+              "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+              "url": "https://arxiv.org/abs/2607.17543",
+              "arxivId": "2607.17543",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "In two-player zero-sum games whose Nash equilibria form a convex set, regularized solvers such as Regularized Nash Dynamics (R-NaD) empirically select the maximum-entropy member: the information projection (I-projection) of a uniform reference onto the Nash set. On a panel of small games this match is exact, with one apparent exception: in Kuhn poker R-NaD lands at bluff coordinate 0.180 while the maximum-entropy member sits at 0.201, a coordinate gap of about 0.021, even though R-NaD attains 99.7 percent of the maximum entropy. We ask whether this gap is a genuine selection bias or an artifact, and answer it quantitatively. We show that for selection on a one-dimensional Nash manifold the coordinate gap factorizes as $\\mathrm{gap} \\approx \\sqrt{2δ/κ}$, where $δ$ is the entropy shortfall of the solver and $κ$ is the curvature of the entropy landscape at its peak. Across five games this relation holds to within $2 \\times 10^{-4}$ (under 1 percent relative error). The four matrix games have $δ\\approx 0$ (R-NaD reaches the maximum-entropy member exactly) and therefore no gap regardless of curvature; only the sequential game (Kuhn) has $δ> 0$. A causal sweep of the magnet strength drives $δ\\to 0$ and the gap toward zero along the predicted curve (fitted scaling exponent 0.50, $R^2 > 0.999999$, against the exact prediction of 1/2), until the dynamics destabilize at a stability floor: behavior consistent with a removable shortfall and inconsistent with a fixed bias. We quantify the curvature half of the law from measured curvatures and flag a moving-target pitfall in the natural Tsallis-entropy experiment. The Kuhn gap is thus the curvature shadow of a small, removable entropy shortfall on an unusually flat peak; the I-projection account is upheld up to a flatness-limited residual."
+            },
+            {
+              "title": "Equilibrium Play Without Mutual Knowledge of Rationality",
+              "url": "https://arxiv.org/abs/2607.17968",
+              "arxivId": "2607.17968",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Equilibrium play in two-player zero-sum games is usually justified via epistemic assumptions, such as mutual knowledge of rationality and beliefs, that go far beyond the rationality of the players. We propose a justification that dispenses with these assumptions. To this end, we consider solution concepts that assign to every subgame of a given game a set of plausible actions for each player, and we impose two conditions. Rationality requires that the plausible sets are supports of undominated strategies or, equivalently, that all plausible actions are best responses to a common belief about the opponent. Inheritance requires that plausible actions remain plausible when implausible actions are discarded. In two-player games, the two conditions characterize the solution concepts that consistently select supports of Nash equilibria. Zero-sum payoffs ensure that Nash equilibria -- and hence the selection -- are generically unique. Equilibrium play thus emerges from individual rationality and the mutual understanding that plausibility judgments persist when implausible actions are discarded."
+            },
+            {
+              "title": "Observable Consequences of Mental Accounting",
+              "url": "https://arxiv.org/abs/2607.17741",
+              "arxivId": "2607.17741",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We derive necessary and sufficient nonparametric conditions for several models of mental accounting. The paper characterises pure mental accounting, separable accounts, and labelled income, and compares these boundedly rational models with two rational multi-stage budgeting benchmarks. The resulting Afriat-style conditions make the observable implications of mental accounting explicit and refutable. In this sense, mental accounting is treated not as a loose description of behaviour, but as a formally refutable hypothesis about the organisation of consumption."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 9,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 7,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 6
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Nonexistence of Simultaneously EF1 and Pareto Optimal Allocations for Submodular Valuations",
+              "url": "https://arxiv.org/abs/2607.18220",
+              "arxivId": "2607.18220",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "1-out-of-5 Maximin-Share Allocations Always Exist for Four Agents",
+              "url": "https://arxiv.org/abs/2607.18139",
+              "arxivId": "2607.18139",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Compositional Semantic Communication for Physical AI: Category Theory Meets Game Theory",
+              "url": "https://arxiv.org/abs/2607.18115",
+              "arxivId": "2607.18115",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.IT",
+                "cs.GT",
+                "eess.SP"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 20.0,
+                "bonus": 6.0,
+                "total": 20.8
+              }
+            },
+            {
+              "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+              "url": "https://arxiv.org/abs/2607.18045",
+              "arxivId": "2607.18045",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 7.0,
+                "total": 37.0
+              }
+            },
+            {
+              "title": "Beyond Stability: Improved Efficiency Guarantees for $α$-Stable Matchings",
+              "url": "https://arxiv.org/abs/2607.17949",
+              "arxivId": "2607.17949",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "When One Good Is Not Enough: EF1 and Pareto Optimality Are Not Compatible for Submodular Valuations",
+              "url": "https://arxiv.org/abs/2607.17811",
+              "arxivId": "2607.17811",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Monotonicity and Frank-Wolfe Dynamics in Atomic Splittable Congestion Games",
+              "url": "https://arxiv.org/abs/2607.17684",
+              "arxivId": "2607.17684",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 25.0,
+                "bonus": 0.0,
+                "total": 22.5
+              }
+            },
+            {
+              "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+              "url": "https://arxiv.org/abs/2607.17543",
+              "arxivId": "2607.17543",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 6.9,
+                "total": 29.6
+              }
+            },
+            {
+              "title": "Equilibrium Play Without Mutual Knowledge of Rationality",
+              "url": "https://arxiv.org/abs/2607.17968",
+              "arxivId": "2607.17968",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 25.2
+              }
+            },
+            {
+              "title": "Observable Consequences of Mental Accounting",
+              "url": "https://arxiv.org/abs/2607.17741",
+              "arxivId": "2607.17741",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 6.0,
+                "penalty": -2.0,
+                "baseTotal": 18.0,
+                "bonus": 0.0,
+                "total": 10.8
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Nonexistence of Simultaneously EF1 and Pareto Optimal Allocations for Submodular Valuations",
+          "url": "https://arxiv.org/abs/2607.18220",
+          "arxivId": "2607.18220",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "1-out-of-5 Maximin-Share Allocations Always Exist for Four Agents",
+          "url": "https://arxiv.org/abs/2607.18139",
+          "arxivId": "2607.18139",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Compositional Semantic Communication for Physical AI: Category Theory Meets Game Theory",
+          "url": "https://arxiv.org/abs/2607.18115",
+          "arxivId": "2607.18115",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.IT",
+            "cs.GT",
+            "eess.SP"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 6.0,
+            "total": 20.8
+          }
+        },
+        {
+          "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+          "url": "https://arxiv.org/abs/2607.18045",
+          "arxivId": "2607.18045",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 7.0,
+            "total": 37.0
+          }
+        },
+        {
+          "title": "Beyond Stability: Improved Efficiency Guarantees for $α$-Stable Matchings",
+          "url": "https://arxiv.org/abs/2607.17949",
+          "arxivId": "2607.17949",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "When One Good Is Not Enough: EF1 and Pareto Optimality Are Not Compatible for Submodular Valuations",
+          "url": "https://arxiv.org/abs/2607.17811",
+          "arxivId": "2607.17811",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Monotonicity and Frank-Wolfe Dynamics in Atomic Splittable Congestion Games",
+          "url": "https://arxiv.org/abs/2607.17684",
+          "arxivId": "2607.17684",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 22.5
+          }
+        },
+        {
+          "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+          "url": "https://arxiv.org/abs/2607.17543",
+          "arxivId": "2607.17543",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 6.9,
+            "total": 29.6
+          }
+        },
+        {
+          "title": "Equilibrium Play Without Mutual Knowledge of Rationality",
+          "url": "https://arxiv.org/abs/2607.17968",
+          "arxivId": "2607.17968",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Observable Consequences of Mental Accounting",
+          "url": "https://arxiv.org/abs/2607.17741",
+          "arxivId": "2607.17741",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 6.0,
+            "penalty": -2.0,
+            "baseTotal": 18.0,
+            "bonus": 0.0,
+            "total": 10.8
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+          "url": "https://arxiv.org/abs/2607.18045",
+          "arxivId": "2607.18045",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 7.0,
+            "total": 37.0
+          }
+        },
+        {
+          "title": "When One Good Is Not Enough: EF1 and Pareto Optimality Are Not Compatible for Submodular Valuations",
+          "url": "https://arxiv.org/abs/2607.17811",
+          "arxivId": "2607.17811",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+          "url": "https://arxiv.org/abs/2607.17543",
+          "arxivId": "2607.17543",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 6.9,
+            "total": 29.6
+          }
+        },
+        {
+          "title": "1-out-of-5 Maximin-Share Allocations Always Exist for Four Agents",
+          "url": "https://arxiv.org/abs/2607.18139",
+          "arxivId": "2607.18139",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Beyond Stability: Improved Efficiency Guarantees for $α$-Stable Matchings",
+          "url": "https://arxiv.org/abs/2607.17949",
+          "arxivId": "2607.17949",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+            "url": "https://arxiv.org/abs/2607.18045",
+            "arxivId": "2607.18045",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.GT",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "共享发现悖论：单一答案规则如何将更优信息转化为更差搜索",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "机制设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "集体发现",
+              "信息聚合",
+              "协调博弈",
+              "激励机制",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么组织在汇集更多信息后反而可能降低发现成功率？本文指出，当机构将分散信息整合为统一推荐并让所有人遵循同一建议时，尽管个体行动质量提升，但群体探索的多样性却大幅下降。这并非信息本身的问题，而是‘单一答案’协议导致所有努力集中在同一个目标上，从而浪费了本可用于多样化尝试的资源。",
+              "modelAndSetup": "模型设定为16个盒子中有一个奖品，8名搜索者各自获得带噪声的线索，正确概率为0.2。比较四种机制：个人独立跟随线索、所有人遵循共识推荐、中央计划者分配不同盒子、自利搜索者在共享后自行决策。通过精确可解的贝叶斯框架，量化信息聚合与行动分配之间的张力。",
+              "contributionsAndResults": "论文揭示了一个反直觉的‘共享发现悖论’：共识推荐虽将单次命中率从20%提至38.35%，但群体发现率却从83.22%骤降至38.35%。协调分配则可达85.94%。进一步证明，在自利行为下，对称均衡的发现率为59.91%，而‘唯一救援’奖励机制可实现最优配置。",
+              "methodsAndTechniques": "采用一个紧凑的基准模型，分离信息价值与协议效率。利用精确枚举计算所有报告组合下的发现概率，构建潜在函数分析对称均衡，并通过水填充规则刻画市场行为。关键在于将发现率分解为信息前沿与协议损失，从而清晰识别冗余行动的成本。",
+              "limitationsAndReadingValue": "模型假设线索对称、动作同时且无成本，限制了直接推广性。匿名对称均衡的选择也忽略了角色分配的可能性。但正因简洁，该基准提供了可复用的量化指标，如协议损失、恢复预算和有效通道数，极适合用于评估更复杂系统中的信息-行动错配问题，推荐阅读其机制对比与极限分析部分。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "共享发现悖论：单一答案规则如何将更优信息转化为更差搜索",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么组织在汇集更多信息后反而可能降低发现成功率？本文指出，当机构将分散信息整合为统一推荐并让所有人遵循同一建议时，尽管个体行动质量提升，但群体探索的多样性却大幅下降。这并非信息本身的问题，而是‘单一答案’协议导致所有努力集中在同一个目标上，从而浪费了本可用于多样化尝试的资源。",
+              "modelAndSetup": "模型设定为16个盒子中有一个奖品，8名搜索者各自获得带噪声的线索，正确概率为0.2。比较四种机制：个人独立跟随线索、所有人遵循共识推荐、中央计划者分配不同盒子、自利搜索者在共享后自行决策。通过精确可解的贝叶斯框架，量化信息聚合与行动分配之间的张力。",
+              "contributionsAndResults": "论文揭示了一个反直觉的‘共享发现悖论’：共识推荐虽将单次命中率从20%提至38.35%，但群体发现率却从83.22%骤降至38.35%。协调分配则可达85.94%。进一步证明，在自利行为下，对称均衡的发现率为59.91%，而‘唯一救援’奖励机制可实现最优配置。",
+              "methodsAndTechniques": "采用一个紧凑的基准模型，分离信息价值与协议效率。利用精确枚举计算所有报告组合下的发现概率，构建潜在函数分析对称均衡，并通过水填充规则刻画市场行为。关键在于将发现率分解为信息前沿与协议损失，从而清晰识别冗余行动的成本。",
+              "limitationsAndReadingValue": "模型假设线索对称、动作同时且无成本，限制了直接推广性。匿名对称均衡的选择也忽略了角色分配的可能性。但正因简洁，该基准提供了可复用的量化指标，如协议损失、恢复预算和有效通道数，极适合用于评估更复杂系统中的信息-行动错配问题，推荐阅读其机制对比与极限分析部分。"
+            },
+            "contentTags": [
+              "集体发现",
+              "信息聚合",
+              "协调博弈",
+              "激励机制",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "机制设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "When One Good Is Not Enough: EF1 and Pareto Optimality Are Not Compatible for Submodular Valuations",
+            "url": "https://arxiv.org/abs/2607.17811",
+            "arxivId": "2607.17811",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "当一个物品不够时：子模估值下EF1与帕累托最优不兼容",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "市场/匹配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "该研究探讨在不可分物品分配中，公平性与效率能否共存。以往研究表明加法估值下EF1（至多差一个物品的无嫉妒）与帕累托最优（PO）兼容，但子模估值情形长期悬而未决。本文聚焦这一理论缺口，追问：当边际收益递减时，是否仍能找到既公平又高效的分配方案？这触及资源分配的核心张力——个体公平感知与整体效率之间的平衡。",
+              "modelAndSetup": "模型考虑两个及以上代理人分配有限物品，每个代理人具有单调子模估值函数，反映边际收益递减。公平标准采用EF1，即任意代理人的嫉妒可通过移除对方一个物品消除；效率标准为帕累托最优（PO）或其近似形式α-PO。研究通过构造具体实例分析是否存在同时满足两类标准的分配，并考察不同估值结构（如公共权重拟阵秩）下的边界条件。",
+              "contributionsAndResults": "论文证明子模估值下EF1与PO本质上不兼容：存在两代理八物品的实例，任何EF1分配都不是弱帕累托最优。进一步，即使放宽到α-PO，也存在常数α<1使得两者无法共存。正面结果表明，在‘公共包络’条件下（如公共权重拟阵秩），EF1+PO分配仍然存在。这揭示了子模结构不足以保证公平与效率协调，需更强结构性假设。",
+              "methodsAndTechniques": "作者通过精细构造反例实现不可能性结果，利用计数型子模估值表展示EF1强制均衡分配，而效率则偏好非均衡配置，从而产生根本冲突。正向结果采用字典序最大化证书分配，并结合残余物品的无嫉妒分配策略。关键技术在于识别‘公共包络’结构，使不同代理人在共同价值尺度下进行比较与优化，确保公平与效率可调和。",
+              "limitationsAndReadingValue": "主要局限在于反例依赖特定构造，可能削弱普遍性判断；同时，正向结果的‘公共包络’条件虽涵盖重要子类，但仍排除一般加权拟阵秩。然而，论文价值在于彻底澄清了子模估值下的理论边界，提供了清晰的正负结果对照。最值得阅读的是其反例构造逻辑与公共包络条件的提出，这对理解公平分配的结构性需求具有深刻启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "当一个物品不够时：子模估值下EF1与帕累托最优不兼容",
+            "summarySections": {
+              "backgroundAndQuestion": "该研究探讨在不可分物品分配中，公平性与效率能否共存。以往研究表明加法估值下EF1（至多差一个物品的无嫉妒）与帕累托最优（PO）兼容，但子模估值情形长期悬而未决。本文聚焦这一理论缺口，追问：当边际收益递减时，是否仍能找到既公平又高效的分配方案？这触及资源分配的核心张力——个体公平感知与整体效率之间的平衡。",
+              "modelAndSetup": "模型考虑两个及以上代理人分配有限物品，每个代理人具有单调子模估值函数，反映边际收益递减。公平标准采用EF1，即任意代理人的嫉妒可通过移除对方一个物品消除；效率标准为帕累托最优（PO）或其近似形式α-PO。研究通过构造具体实例分析是否存在同时满足两类标准的分配，并考察不同估值结构（如公共权重拟阵秩）下的边界条件。",
+              "contributionsAndResults": "论文证明子模估值下EF1与PO本质上不兼容：存在两代理八物品的实例，任何EF1分配都不是弱帕累托最优。进一步，即使放宽到α-PO，也存在常数α<1使得两者无法共存。正面结果表明，在‘公共包络’条件下（如公共权重拟阵秩），EF1+PO分配仍然存在。这揭示了子模结构不足以保证公平与效率协调，需更强结构性假设。",
+              "methodsAndTechniques": "作者通过精细构造反例实现不可能性结果，利用计数型子模估值表展示EF1强制均衡分配，而效率则偏好非均衡配置，从而产生根本冲突。正向结果采用字典序最大化证书分配，并结合残余物品的无嫉妒分配策略。关键技术在于识别‘公共包络’结构，使不同代理人在共同价值尺度下进行比较与优化，确保公平与效率可调和。",
+              "limitationsAndReadingValue": "主要局限在于反例依赖特定构造，可能削弱普遍性判断；同时，正向结果的‘公共包络’条件虽涵盖重要子类，但仍排除一般加权拟阵秩。然而，论文价值在于彻底澄清了子模估值下的理论边界，提供了清晰的正负结果对照。最值得阅读的是其反例构造逻辑与公共包络条件的提出，这对理解公平分配的结构性需求具有深刻启示。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "市场/匹配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+            "url": "https://arxiv.org/abs/2607.17543",
+            "arxivId": "2607.17543",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.GT",
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "曲率阴影：最大熵均衡选择的表面失效是一种可消除的伪影",
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "算法设计",
+              "实验验证"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "均衡选择",
+              "熵正则化"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在两人零和博弈中，当纳什均衡构成一个凸集时，正则化求解器通常会收敛到最大熵均衡——即从均匀参考分布到均衡集的信息投影（I-投影）。然而在Kuhn扑克中，R-NaD算法收敛点与最大熵点存在约0.021的坐标差距，尽管熵已达最大值的99.7%。这引发核心问题：该差距是算法固有的选择偏差，还是由微小熵不足与熵景观平坦性共同导致的可消除伪影？",
+              "modelAndSetup": "研究聚焦于纳什集为一维流形的五款小规模博弈，包括序列式的Kuhn扑克和四款矩阵博弈。采用行为策略与精确反事实值计算，通过参数化坐标c描述均衡流形上的位置，并以均熵H(σ)作为优化目标。R-NaD算法结合移动参考策略与磁力强度n，在策略空间中迭代更新，旨在逼近最大熵纳什均衡。",
+              "contributionsAndResults": "论文发现坐标差距并非系统性偏差，而是熵不足δ与熵峰曲率κ共同作用的‘曲率阴影’：gap ≈ √(2δ/κ)。四款矩阵博弈中δ≈0，故无差距；仅Kuhn扑克因存在微小δ（~8.3×10⁻⁴）且κ较小（~4.0），导致可见差距。通过调节磁力强度n，可使δ→0，差距随之沿预测曲线趋零，支持‘可消除’假说。",
+              "methodsAndTechniques": "作者通过对熵函数在最大值附近进行二阶泰勒展开，推导出差距的局部分解公式。利用精确表格引擎计算所有博弈的NASHCONV、熵与曲率，验证公式在五款游戏中误差小于2×10⁻⁴。进一步通过因果扫掠实验（n-sweep）观察δ与gap的动态关系，并拟合log-log斜率接近0.5，强有力支持理论预测而非固定偏差假说。",
+              "limitationsAndReadingValue": "研究局限于一维纳什流形与表格化设置，未揭示序列博弈中熵不足的具体机制，也缺乏对曲率的主动调控实验。稳定性限制使得δ无法完全归零。但论文提供了清晰的几何解释框架，澄清了正则化动态中的选择机制，其‘曲率-短缺’分解对理解学习算法在平坦景观中的行为具有普遍启示，值得深入阅读其模型抽象与实证分析设计。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "曲率阴影：最大熵均衡选择的表面失效是一种可消除的伪影",
+            "summarySections": {
+              "backgroundAndQuestion": "在两人零和博弈中，当纳什均衡构成一个凸集时，正则化求解器通常会收敛到最大熵均衡——即从均匀参考分布到均衡集的信息投影（I-投影）。然而在Kuhn扑克中，R-NaD算法收敛点与最大熵点存在约0.021的坐标差距，尽管熵已达最大值的99.7%。这引发核心问题：该差距是算法固有的选择偏差，还是由微小熵不足与熵景观平坦性共同导致的可消除伪影？",
+              "modelAndSetup": "研究聚焦于纳什集为一维流形的五款小规模博弈，包括序列式的Kuhn扑克和四款矩阵博弈。采用行为策略与精确反事实值计算，通过参数化坐标c描述均衡流形上的位置，并以均熵H(σ)作为优化目标。R-NaD算法结合移动参考策略与磁力强度n，在策略空间中迭代更新，旨在逼近最大熵纳什均衡。",
+              "contributionsAndResults": "论文发现坐标差距并非系统性偏差，而是熵不足δ与熵峰曲率κ共同作用的‘曲率阴影’：gap ≈ √(2δ/κ)。四款矩阵博弈中δ≈0，故无差距；仅Kuhn扑克因存在微小δ（~8.3×10⁻⁴）且κ较小（~4.0），导致可见差距。通过调节磁力强度n，可使δ→0，差距随之沿预测曲线趋零，支持‘可消除’假说。",
+              "methodsAndTechniques": "作者通过对熵函数在最大值附近进行二阶泰勒展开，推导出差距的局部分解公式。利用精确表格引擎计算所有博弈的NASHCONV、熵与曲率，验证公式在五款游戏中误差小于2×10⁻⁴。进一步通过因果扫掠实验（n-sweep）观察δ与gap的动态关系，并拟合log-log斜率接近0.5，强有力支持理论预测而非固定偏差假说。",
+              "limitationsAndReadingValue": "研究局限于一维纳什流形与表格化设置，未揭示序列博弈中熵不足的具体机制，也缺乏对曲率的主动调控实验。稳定性限制使得δ无法完全归零。但论文提供了清晰的几何解释框架，澄清了正则化动态中的选择机制，其‘曲率-短缺’分解对理解学习算法在平坦景观中的行为具有普遍启示，值得深入阅读其模型抽象与实证分析设计。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "均衡选择",
+              "熵正则化"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "算法设计",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "1-out-of-5 Maximin-Share Allocations Always Exist for Four Agents",
+            "url": "https://arxiv.org/abs/2607.18139",
+            "arxivId": "2607.18139",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "四个智能体的1-out-of-5最大最小值分配总是存在",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法存在性证明"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在资源不可分割的情况下，如何公平地分配物品一直是公平分配领域的核心难题。最大化最小份额（MMS）是一种基于自我感知公平的基准，但已知并非总能实现完全满足。本文聚焦于四个智能体情形下，是否存在一种分配方式使得每个智能体都能获得其1-out-of-5 MMS，从而填补此前1-out-of-6才能保证存在的理论空白。",
+              "modelAndSetup": "模型考虑四个智能体和一组不可分割的物品，每个智能体具有非负加性估值函数。1-out-of-d MMS指该智能体将物品划分为d份后所能保证获得的最小价值的最大值。目标是构造一个完整的四人分配，使每位智能体所得不低于其1-out-of-5 MMS。关键设定包括归一化估值、商品排序以及‘锚点商品’的概念，用于控制后续划分结构。",
+              "contributionsAndResults": "论文证明了对于任意四个智能体的情形，始终存在一个完整的1-out-of-5最大最小值分配，这是目前已知最优结果，因为已知1-out-of-4可能不存在。这一结果完全刻画了四智能体情况下的精确MMS保证阈值：当且仅当d≥5时，1-out-of-d MMS分配必然存在，解决了该问题的紧界。",
+              "methodsAndTechniques": "作者采用受限的‘独裁者划分’架构，并引入‘平衡残差划分引理’作为核心技术工具：每次移除含最高排名商品之一的平衡分配束后，剩余物品仍可被重新划分为足够多的价值不低于1的平衡束。证明依赖于对碰撞锚点的精细处理，利用最近交叉切割和三单位元修复策略来补偿价值缺口，并通过Lean 4完成了机器验证。",
+              "limitationsAndReadingValue": "结果为存在性证明，未提供高效构造算法，且技术路径高度依赖n=4时的具体数值结构（如总数为5、锚点数为4），难以直接推广至更多智能体。值得阅读之处在于其严密的组合论证、对经典框架的改进以及机器可验证性的实现，为后续研究提供了坚实基础和新工具思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "四个智能体的1-out-of-5最大最小值分配总是存在",
+            "summarySections": {
+              "backgroundAndQuestion": "在资源不可分割的情况下，如何公平地分配物品一直是公平分配领域的核心难题。最大化最小份额（MMS）是一种基于自我感知公平的基准，但已知并非总能实现完全满足。本文聚焦于四个智能体情形下，是否存在一种分配方式使得每个智能体都能获得其1-out-of-5 MMS，从而填补此前1-out-of-6才能保证存在的理论空白。",
+              "modelAndSetup": "模型考虑四个智能体和一组不可分割的物品，每个智能体具有非负加性估值函数。1-out-of-d MMS指该智能体将物品划分为d份后所能保证获得的最小价值的最大值。目标是构造一个完整的四人分配，使每位智能体所得不低于其1-out-of-5 MMS。关键设定包括归一化估值、商品排序以及‘锚点商品’的概念，用于控制后续划分结构。",
+              "contributionsAndResults": "论文证明了对于任意四个智能体的情形，始终存在一个完整的1-out-of-5最大最小值分配，这是目前已知最优结果，因为已知1-out-of-4可能不存在。这一结果完全刻画了四智能体情况下的精确MMS保证阈值：当且仅当d≥5时，1-out-of-d MMS分配必然存在，解决了该问题的紧界。",
+              "methodsAndTechniques": "作者采用受限的‘独裁者划分’架构，并引入‘平衡残差划分引理’作为核心技术工具：每次移除含最高排名商品之一的平衡分配束后，剩余物品仍可被重新划分为足够多的价值不低于1的平衡束。证明依赖于对碰撞锚点的精细处理，利用最近交叉切割和三单位元修复策略来补偿价值缺口，并通过Lean 4完成了机器验证。",
+              "limitationsAndReadingValue": "结果为存在性证明，未提供高效构造算法，且技术路径高度依赖n=4时的具体数值结构（如总数为5、锚点数为4），难以直接推广至更多智能体。值得阅读之处在于其严密的组合论证、对经典框架的改进以及机器可验证性的实现，为后续研究提供了坚实基础和新工具思路。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法存在性证明"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Beyond Stability: Improved Efficiency Guarantees for $α$-Stable Matchings",
+            "url": "https://arxiv.org/abs/2607.17949",
+            "arxivId": "2607.17949",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超越稳定性：α-稳定匹配的改进效率保证",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "稳定性",
+              "社会福利",
+              "近似均衡"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统稳定匹配虽能防止个体偏离，却常导致社会总效用严重损失，尤其在双方估值不对称时效率可能极低。此外，经典稳定性假设个体愿为任意微小收益而改变匹配，这在存在转换成本的现实中不合理。本文研究如何通过放松稳定性要求来平衡稳定性和效率之间的权衡。",
+              "modelAndSetup": "模型考虑两组代理人基于基数偏好进行匹配，允许无差异和不完全偏好列表。引入α-稳定性概念：仅当双方收益提升超过原值的1/α倍时才会联合偏离。同时引入估值不对称参数μ，刻画双方互评的相对范围。目标是分析α与μ共同作用下，α-稳定匹配所能达到的社会福利效率下限。",
+              "contributionsAndResults": "论文完整刻画了α-稳定性下的效率-稳定性权衡：当α较小时，任何最优匹配都是α-稳定的，可达100%效率；当α增大时，仍能保证至少(1/α)·μ/(μ+1)的最优社会福利。该界是紧的，且存在多项式时间算法可达到此最优近似比，表明适度放松稳定性可显著提升效率。",
+              "methodsAndTechniques": "核心算法α-Boosting先求解最优匹配，将其边权重放大1/α倍后，在修改后的实例上运行Gale-Shapley算法。证明依赖于对最优匹配边的系统映射分析，并利用μ-有界性建立估值关系。通过构造线性规划刻画α-稳定匹配集合，进而证明最优α-稳定匹配的计算是NP难的。",
+              "limitationsAndReadingValue": "尽管算法实现了最优近似比，但最优α-稳定匹配本身是NP难求解的，即使α接近1。结果依赖于特定的乘法松弛模型，对更复杂的偏好结构推广有限。最值得读的是其对稳定性渐进松弛的建模方式、紧效率界的完整刻画及巧妙的算法设计思想。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超越稳定性：α-稳定匹配的改进效率保证",
+            "summarySections": {
+              "backgroundAndQuestion": "传统稳定匹配虽能防止个体偏离，却常导致社会总效用严重损失，尤其在双方估值不对称时效率可能极低。此外，经典稳定性假设个体愿为任意微小收益而改变匹配，这在存在转换成本的现实中不合理。本文研究如何通过放松稳定性要求来平衡稳定性和效率之间的权衡。",
+              "modelAndSetup": "模型考虑两组代理人基于基数偏好进行匹配，允许无差异和不完全偏好列表。引入α-稳定性概念：仅当双方收益提升超过原值的1/α倍时才会联合偏离。同时引入估值不对称参数μ，刻画双方互评的相对范围。目标是分析α与μ共同作用下，α-稳定匹配所能达到的社会福利效率下限。",
+              "contributionsAndResults": "论文完整刻画了α-稳定性下的效率-稳定性权衡：当α较小时，任何最优匹配都是α-稳定的，可达100%效率；当α增大时，仍能保证至少(1/α)·μ/(μ+1)的最优社会福利。该界是紧的，且存在多项式时间算法可达到此最优近似比，表明适度放松稳定性可显著提升效率。",
+              "methodsAndTechniques": "核心算法α-Boosting先求解最优匹配，将其边权重放大1/α倍后，在修改后的实例上运行Gale-Shapley算法。证明依赖于对最优匹配边的系统映射分析，并利用μ-有界性建立估值关系。通过构造线性规划刻画α-稳定匹配集合，进而证明最优α-稳定匹配的计算是NP难的。",
+              "limitationsAndReadingValue": "尽管算法实现了最优近似比，但最优α-稳定匹配本身是NP难求解的，即使α接近1。结果依赖于特定的乘法松弛模型，对更复杂的偏好结构推广有限。最值得读的是其对稳定性渐进松弛的建模方式、紧效率界的完整刻画及巧妙的算法设计思想。"
+            },
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "稳定性",
+              "社会福利",
+              "近似均衡"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-20",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202607200000 TO 202607202359\"",
+            "totalResults": 16,
+            "fetchedCount": 16
+          }
+        },
+        "dedupedCount": 16
+      },
+      "arxivTotalResults": 16,
+      "fetchedCount": 16,
+      "fetchedPapers": [
+        {
+          "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+          "url": "https://arxiv.org/abs/2607.18142",
+          "arxivId": "2607.18142",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an industrial process, which is crucial for modern manufacturing and quality control systems. Existing VLM-based anomaly reasoning methods are capable of detecting open-ended anomalies in general domains. However, their performance declines in industrial settings characterized by intricate object transformations, strict physics, and procedural constraints. To tackle the complexity of such interaction-intensive detection, we introduce a training-free agentic framework for anomaly detection free of domain-specific knowledge, emphasizing object state evolution like humans inspectors. It is designed to track spatial-temporal dynamics and underlying transformations of detected objects over time, and then reason over the object-wise temporal state trajectories to identify abnormal objects in grounded frames. Our method overcomes limitations of prior approaches that rely on retraining on normal clips or injecting domain knowledge as context for test-time inference. Extensive experiments on three IVAD datasets demonstrate that our method outperforms frontier VLMs, agentic frameworks, and traditional VAD methods fine-tuned on the respective datasets, while providing interpretable reports over anomaly processes and types."
+        },
+        {
+          "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
+          "url": "https://arxiv.org/abs/2607.18116",
+          "arxivId": "2607.18116",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.GR",
+            "cs.MA",
+            "cs.MM"
+          ],
+          "abstract": "Recent work leverages Large Language Models (LLMs) to generate executable code for pedagogical animations using libraries such as Manim. However, ensuring spatial correctness and visual legibility remains challenging, as existing frameworks emphasize pedagogical content while overlooking geometric occlusions. We propose the Symbolic Geometric Agent (SGA), a plug-and-play module for code-centric animation pipelines that intercepts LLM-generated code, performs partial execution to extract symbolic scene graphs, and applies targeted refinement when spatial conflicts are detected. We further introduce the Manim Visual Quality Score (MVQS), a deterministic rendering-free proxy for spatial integrity. Experiments on the MMMC-Code benchmark across four LLM backbones and two agentic pipelines show that SGA achieves a peak MVQS of 73.11 (Code2Video + GPT-5.1), corresponding to a 16.1% relative improvement over the raw baseline, and improves MVQS in 7 of 8 backbone x pipeline configurations."
+        },
+        {
+          "title": "FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering",
+          "url": "https://arxiv.org/abs/2607.18102",
+          "arxivId": "2607.18102",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "Financial question answering over U.S. Securities and Exchange Commission (SEC) filings requires retrieving and synthesizing heterogeneous evidence dispersed across long, standardized, and highly redundant disclosures. Existing retrieval-augmented and multi-agent systems typically derive retrieval queries directly from the user's question and rank candidates by semantic similarity. Together, these choices create prior-corpus misalignment: a mismatch between model priors and the target filings' structure, terminology, and evidence standards. As a result, query generation misses corpus-specific evidence, while semantic reranking favors topically similar but evidentially invalid false-positive chunks. We propose FinSAgent, an evidence-grounded multi-agent framework that reframes SEC filing QA as corpus-aligned retrieval planning and corrects both ends with a single principle: inject corpus-side conditioning wherever model priors would otherwise dominate. FinSAgent combines (1) role-specialized agents anchored to the mandated 10-K item structure, (2) database-aware query decomposition that conditions each agent's sub-queries on a lightweight, summary-level view of the local corpus, and (3) multi-path retrieval with a learned feature-gated reranker that separates evidential validity from semantic similarity. Across five offline financial QA benchmarks, FinSAgent improves retrieval coverage and answer correctness over strong single-agent and multi-agent baselines; in a three-arm randomized online experiment with 1,000 anonymous user ratings, it also receives higher scores than baselines."
+        },
+        {
+          "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+          "url": "https://arxiv.org/abs/2607.18045",
+          "arxivId": "2607.18045",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "Organizations often pool dispersed information into one ranking and then allow many agents to act on that shared view. In a discovery problem, this can improve beliefs while reducing coverage. We develop an exactly solvable benchmark with sixteen boxes, one target, eight searchers, and noisy private clues. Pooling raises the accuracy of the best single recommendation from 0.20 to 0.3835, but repeating that recommendation lowers group discovery from 0.8322 under decentralized clue-following to 0.3835. A coordinated eight-action portfolio using the same pooled reports reaches 0.8594, and seven coordinated actions recover the decentralized benchmark. The paradox is a protocol failure, not an information failure: a one-answer rule compresses a portfolio of available actions into one repeated choice. We then replace the planner with self-interested searchers who split a prize. The equal-split game is a potential game. Its anonymous symmetric equilibrium obeys a water-filling rule. In the canonical instance it achieves 0.5991: strictly above consensus, but below both private search and the planner. The exact mixed price of anarchy is 2 - 1/N. A sole-rescue reward, which pays only an agent who covers the target alone, makes every pure Nash equilibrium first-best. Finally, a latent common-cue model shows how correlated reports collapse effective discovery channels. The centralized planner gain rises strictly with copying, and in the canonical environment the symmetric market overtakes decentralized report-following at copying probability c = 0.788462. In a proportional large-market limit the five-protocol ordering survives exactly: consensus discovery vanishes while blind, market, private, and portfolio search converge to 0.500, 0.547, 0.847, and 0.874. The contribution is a compact benchmark that separates information, allocation, incentives, and dependence into exact, reusable quantities."
+        },
+        {
+          "title": "MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models",
+          "url": "https://arxiv.org/abs/2607.18006",
+          "arxivId": "2607.18006",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "Large language models achieve strong reasoning performance, but often at prohibitive training cost - a challenge that is especially acute for compact models ($\\leq 4 \\, \\mathrm{B}$ parameters) trained under limited budgets. We introduce MADA-RL, a post-training framework that specializes compact models into generator and critic roles and trains them with a debate-aware learning signal, fine-tuning only a small subset of parameters via LoRA adapters. Our central contribution is a counterfactual critic advantage: a dynamic, role-conditioned baseline that redefines the critic's advantage as its reward minus the generator ensemble's per-instance accuracy. This explicitly optimizes critics to improve over generator consensus rather than to merely reproduce a correct answer, yielding more targeted credit assignment than static mean-reward normalization. At deployment, the specialized agents are composed in a lightweight multi-round protocol. Across five mathematical reasoning benchmarks, MADA-RL raises the accuracy of the DeepSeek-R1-Distill-Qwen-1.5B model from $39.9 \\, \\%$ to $41.9 \\, \\%$ ($+2.0$ points, $p < 0.001$) using $16$ times fewer trainable parameters than fully fine-tuned baselines, placing it on the accuracy-trainable-parameter Pareto front. It approaches, but does not surpass, the strongest baselines (DeepScaleR, STILL-3), which are trained on substantially larger datasets; we analyse this gap and the associated inference-time cost directly. A controlled study isolates the source of MADA-RL's gains: the counterfactual advantage produces the highest critic improvement rate of any model evaluated, indicating that trained critics learn to correct generator errors rather than to imitate them."
+        },
+        {
+          "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+          "url": "https://arxiv.org/abs/2607.17986",
+          "arxivId": "2607.17986",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "Self-hosted AI agents read and write their own memory and configuration files to function. An agent may get compromised via corruption of its own state -- a compromise realized via legitimate OS system call invocation. We refer to this class of threats as self-state attacks. In this paper, we investigate the OS resilience to this class of attacks. Formally, we characterize a four-axis attack space (Target, Mechanism, Granularity, Temporal); investigate the structural limits of prevention, detection, and recovery; and introduce a workload-conditioned view of detectability. To instantiate the framework, we collect live activity traces from a representative self-hosted agent running across distinct workload profiles, and realize the attack space as a 23-cell matrix, 43 concrete operations on real self-state files, and injected into those traces. We then evaluate both canonical and workload-conditioned defense strategies. The empirical results show that a layered defense stack (access-control prevention on the instruction and configuration layers, workload-conditioned detection on the memory layer, and periodic backup for recovery) is effective on most attack cells while a small residual attack surface remains structurally indistinguishable at the OS level. These findings suggest that against the newly established class of self-state attacks, OS-level defense needs to be reconsidered, potentially opening new research directions in the field."
+        },
+        {
+          "title": "Towards Agentic Agent-based Models: Feasibility, Performance, and Statistical Model Checking",
+          "url": "https://arxiv.org/abs/2607.17948",
+          "arxivId": "2607.17948",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Agent-based models (ABMs) rely on simple, explicit and reproducible rules for individual decision making, while complex collective behavior emerges from interactions among agents. Recent advances in large language models (LLMs) make it tempting to replace, enrich, or perturb these rules with LLM-based agentic capabilities. However, this raises a methodological question: how does introducing LLM-driven decisions affect the reliability, computational cost, and behavior of ABM simulations? We investigate this for Mesa ABM models, a popular Python library for ABMs, analyzed by statistical model checking. Building on Mesa's integration with the statistical model checker MultiVeStA, we extend the classical Schelling segregation model with a hybrid population: ordinary agents classify neighbors using the standard symbolic rule, while one agent delegates this task to an LLM through tool calls. The LLM-enabled agent receives natural-language descriptions of neighboring agents and invokes tools that increment counters of similar/different neighbors; these counters determine its happiness according to the original Schelling dynamics. This provides a minimal but controlled setting where the semantic, operational, and computational behavior of LLM-based decisions can be studied inside an otherwise standard ABM. We report preliminary experiments with locally served LLMs of different sizes, showing that smaller models may fail simple semantic classification experiments or become operationally unusable during repeated tool-call generation, while larger tested models pass these preliminary checks. We discuss how statistical model checking can estimate classical ABM observables and quantify the impact of introducing agentic LLM components into simulation models."
+        },
+        {
+          "title": "Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization",
+          "url": "https://arxiv.org/abs/2607.17924",
+          "arxivId": "2607.17924",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "abstract": "Multi-agent policy optimization, exemplified by PPO-based methods, is a key branch of cooperative Multi-Agent Reinforcement Learning (MARL). A central design question is how many neighboring agents\\footnote{In this paper, \"neighbors\" refer not only to physical proximity but also to agents whose actions influence one another.} to aggregate in order to effectively utilize global information for cooperation. This decision must be made along two dimensions: in the advantage (which agents' rewards contribute to the credit signal) and in the ratio (which agents' likelihood ratios form the clipped importance weight). Existing methods occupy scattered, underexplored points on these two axes: IPPO treats both separately; MAPPO pairs a team-level advantage with per-agent ratios; HAPPO employs sequential ratios with per-agent advantages; and single-agent reductions operating on factorized joint policies aggregate both into fully joint products. We formalize these two design choices as support matrices $\\SA$ and $\\SR$, and prove a canonical structure: the expected multi-agent policy optimization objective depends on the pair $(\\SA,\\SR)$ only through their matrix product $\\tS=\\SR\\SA$. This yields two key consequences: (i) Redundancy: the two support matrices are interchangeable with respect to the signal, meaning neither aggregation pattern is inherently superior.(ii) Variance Ordering: the advantage aggregates rewards as a sum (additive variance with an interior bias-variance optimum at the coupling neighborhood), whereas the ratio aggregates likelihood ratios as a product (multiplicative variance that grows exponentially with support size, with no accompanying bias reduction). The resulting design principle is unambiguous: aggregate neighbors in the advantage, sized to the coupling neighborhood, and keep the ratio per-agent."
+        },
+        {
+          "title": "PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks",
+          "url": "https://arxiv.org/abs/2607.17922",
+          "arxivId": "2607.17922",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG",
+            "cs.NI"
+          ],
+          "abstract": "Most reinforcement learning controllers for these networks assume stationary conditions, and the few that handle change react to the external environment while leaving the network's internal state unexamined. We show that sustained non-stationarity damages this internal state directly: as objectives shift, neurons progressively fall dormant and the shared policy loses the capacity to learn. The obvious remedy, resetting dormant neurons, is unsafe under shared-parameter multi-agent training: many neurons that appear inactive are still receiving strong training gradients, and whether a neuron appears dormant depends on which agent's observations it processes. PRIME (Plasticity Recovery In Multi-agent Environments) therefore verifies both directions before intervening. Extending the bidirectional Silent Neuron framework to cooperative multi-agent reinforcement learning, it aggregates activation and gradient statistics over the full team batch, reads the backward signal from the gradient the training loss has already deposited , not from a hand-crafted proxy, and reinitializes only neurons that are simultaneously activation-dormant and gradient-silent. Useful representations are preserved while learning capacity is restored. On a phase-switching UAV emergency communication simulator, PRIME improves interquartile mean return by 24.9\\% over MAPPO and holds dormant neuron fractions at 10--20\\% versus 40--45\\%; ablations attribute the gains to the gradient signal and team-level aggregation rather than to the specific reset operator. A dynamic regret bound shows that the perturbation cost scales with the small silent-subspace dimension rather than the full parameter count."
+        },
+        {
+          "title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+          "url": "https://arxiv.org/abs/2607.17914",
+          "arxivId": "2607.17914",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "abstract": "Robust multi-agent coordination relies heavily on inter-agent communication, which is frequently disrupted by physical and environmental constraints in real-world deployments. To maintain operation during these intermittent communication failures, agents can employ internal prediction models to estimate missing shared state information. However, predictors trained with standard reconstruction objectives treat all transitions equally. In a Reinforcement Learning context, this forces the model to waste capacity learning stochastic exploration noise and the outdated dynamics of suboptimal policies. In this paper, we propose a value-aware extension of Multi-Agent Observation Sharing under Communication Dropout (MARO) to patch communication gaps; we refer to this method as Value-Aware MARO. By dynamically weighting the predictor's loss function using advantage estimates derived from the underlying actor-critic architecture, our objective explicitly couples the predictor's learning process to the policy's evolution. This formulation focuses the model's capacity on the intentional, high-return dynamics actively reinforced by the agents. We evaluate our framework on several tasks within the Multi-Agent Particle Environment under varying communication reliability levels. Experimental results demonstrate that our approach maintains performance under declining communication reliability, particularly below 40%. While our method performs comparably in tasks where the baseline already maintains high coordination, our value-aware weighting effectively prevents the performance collapse observed in the standard predictor during high-attrition scenarios. In these environments, our method achieves an average improvement in mean returns of more than 20% and reduces performance variance by a mean of 64.7% compared to the standard unweighted baseline."
+        },
+        {
+          "title": "ETAS: An Effect-Typed Language for Agent Systems",
+          "url": "https://arxiv.org/abs/2607.17780",
+          "arxivId": "2607.17780",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.PL",
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "ETAS is a programming language for agent systems that treats model-backed agents, tool calls, prompts, typed memory, human approvals, policies, and execution traces as semantic program elements rather than library conventions. It separates deterministic computation from agentic nondeterminism and externally visible actions while preserving a direct programming style. We present the core design of ETAS. Its static semantics assigns ordinary types through spec conformance and tracks each computation with two behavioral indices: an escaping effect row and a persistent abstraction of the typed action trace it may request. Specs form a terminating compile-time constraint calculus: type specs provide evidence for polymorphism and resource facts, callable specs constrain function and stage shapes, and trace specs express allow, deny, and temporal constraints. Typing checks requested traces against compiled monitors and emits residual obligations when dynamic resources preclude a complete static proof. The dynamic semantics distinguish requested, handled, denied, and committed events; handlers interpret typed actions without making their requests invisible to authorization or audit. We formalize a core calculus and state preservation, progress, type/effect soundness, handler trace-transparency, and policy safety. We also implement ETAS in Rust with a command-line interface, typed HIR checks, effect and policy diagnostics, handler checks, and trace-aware execution hooks. ETAS provides a programming-language foundation for reasoning about authorization, nondeterminism, recovery, and audit evidence before and during agent execution."
+        },
+        {
+          "title": "Autonomous Discovery of Wireless Communications Algorithms",
+          "url": "https://arxiv.org/abs/2607.17762",
+          "arxivId": "2607.17762",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.IT",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Large language model (LLM)-driven evolutionary search is an emerging algorithm-discovery paradigm that has already produced novel results in several scientific fields. Yet its application to wireless communications remains largely unexplored. To bridge this gap, we introduce The AI Telco Engineer (AITE), a framework to autonomously design algorithms for complex communication problems, while navigating performance-complexity tradeoffs. We showcase AITE on two challenging physical-layer problems: designing an equalizer for an orthogonal time-frequency space (OTFS) system, and constructing a receiver algorithm for an orthogonal frequency-division multiplexing (OFDM) system using a custom constellation and operating without pilots. For the first task, AITE develops algorithms that outperform the best-known solutions while reducing computational latency by a factor of 3.6 compared to the strongest baseline. For the second task, it discovers the first explicit, explainable algorithms that achieve performance parity with state-of-the-art neural receivers. These results demonstrate the strong potential of LLM-driven evolutionary search for the autonomous discovery of next-generation wireless communications algorithms."
+        },
+        {
+          "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
+          "url": "https://arxiv.org/abs/2607.17724",
+          "arxivId": "2607.17724",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Coordinating payload transfers between subsystems is a critical challenge in lifelong Multi-Agent Pickup and Delivery (MAPD). We study systems where agents are confined to separate regions and must exchange payloads through shared handover stations. These stations, equipped with single docks and finite buffers, are inherently vulnerable to blocking and starvation. We formalize this problem as Multi-Subsystem MAPD with Buffer-limited Handover Stations (MS-MAPD-BHS). We then propose Handover-Aware Reservation and Routing (HARR), an online controller that couples per-subsystem planners. HARR uses a shared dock reservation calendar and a deterministic rolling-horizon projection of buffer occupancy to coordinate actions. A candidate route is accepted only if its dock interval is free and the resulting buffer occupancy projection remains within capacity. Under perfect execution, these checks ensure collision-free dock use and buffer-safe committed operations within the reservation horizon. In simulation, HARR achieves up to 77% higher throughput and 92% lower backlog than a fixed-dock ablation at moderate load, while also reducing planning time relative to a coupled station-aware Token Passing baseline. These results show that explicit interface coordination substantially improves stability in modular multi-subsystem transport."
+        },
+        {
+          "title": "SR-Agent: An Experience-Driven Agentic Framework for Post-Ranking Strategies Refinement in E-Commerce Recommendation",
+          "url": "https://arxiv.org/abs/2607.17719",
+          "arxivId": "2607.17719",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "User experience is a first-class objective in industrial e-commerce recommender systems (RS). Post-ranking strategies, which govern diversity, similarity, and exposure over a ranked list, are widely deployed in industrial RS for their simplicity and low serving cost. However, as the online recommendation environment evolves continuously, these statically configured strategies gradually become stale, degrading the user experience. Refining them typically relies on manual inspection, diagnosis, and updates, a process that is slow, costly, and hard to reuse. Although recent LLM-based agents (e.g., RecUserSim, SimUSER, and Self-EvolveRec) offer promising directions, none of them close the full loop of automated, self-evolving strategy refinement. To bridge this gap, we introduce SR-Agent, a Strategy Refinement agentic framework that, to the best of our knowledge, is the first deployed for refining post-ranking strategies in industrial RS. SR-Agent unifies three components: (i) a UserSim agent that applies staged inspection skills to surface user-perceived bad cases; (ii) an Analysis agent that consolidates recurring bad cases into structured, reusable diagnoses; and (iii) a constrained Strategy Refinement Harness that maps diagnoses to typed and bounded actions, gated by a four-stage reward pipeline with reversible rollback. Deployed on the Kuaishou e-commerce platform, SR-Agent continuously runs this refinement loop and, in a one-month online A/B test, increases order volume by 0.71%, browsing depth by 0.34%, and clicked-category diversity by 0.48%, while markedly shortening the refinement cycle and lowering operational cost."
+        },
+        {
+          "title": "A Digital Twin-Based Method for Evaluating Local Collective Tariffs in Distribution-Level Energy Systems",
+          "url": "https://arxiv.org/abs/2607.17640",
+          "arxivId": "2607.17640",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "econ.GN",
+            "eess.SY"
+          ],
+          "abstract": "This work addresses the need for engineering-grounded evaluation of implement-ed tariff mechanisms in distribution-level energy systems. A digital twin-based method is proposed for assessing local collective tariffs under realistic behavioral and infrastructural conditions. The approach integrates agent-based modeling of household consumption and generation, virtual aggregation through a shared metering abstraction, and explicit representation of tariff logic within a unified simulation environment. The method is demonstrated through its application to the Danish Local Collective Tariff across representative residential energy community configurations, including scenarios with photovoltaic generation, battery storage, and electric vehicle charging. Results indicate that aggregation of heterogeneous demand profiles reduces peak coincidence and enables more efficient allocation of tariff components, leading to measurable cost reductions at the community level. At the same time, the outcomes reveal sensitivity to the temporal alignment of consumption and generation, influencing the degree of cost neutrality across participants. The findings illustrate how digital twin-based evaluation can support systematic assessment of tariff mechanisms by capturing the interaction between infrastructure, user behavior, and regulatory design. The proposed approach provides a basis for analyzing and comparing tariff structures in distribution-level energy systems beyond the specific case considered."
+        },
+        {
+          "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+          "url": "https://arxiv.org/abs/2607.17543",
+          "arxivId": "2607.17543",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "In two-player zero-sum games whose Nash equilibria form a convex set, regularized solvers such as Regularized Nash Dynamics (R-NaD) empirically select the maximum-entropy member: the information projection (I-projection) of a uniform reference onto the Nash set. On a panel of small games this match is exact, with one apparent exception: in Kuhn poker R-NaD lands at bluff coordinate 0.180 while the maximum-entropy member sits at 0.201, a coordinate gap of about 0.021, even though R-NaD attains 99.7 percent of the maximum entropy. We ask whether this gap is a genuine selection bias or an artifact, and answer it quantitatively. We show that for selection on a one-dimensional Nash manifold the coordinate gap factorizes as $\\mathrm{gap} \\approx \\sqrt{2δ/κ}$, where $δ$ is the entropy shortfall of the solver and $κ$ is the curvature of the entropy landscape at its peak. Across five games this relation holds to within $2 \\times 10^{-4}$ (under 1 percent relative error). The four matrix games have $δ\\approx 0$ (R-NaD reaches the maximum-entropy member exactly) and therefore no gap regardless of curvature; only the sequential game (Kuhn) has $δ> 0$. A causal sweep of the magnet strength drives $δ\\to 0$ and the gap toward zero along the predicted curve (fitted scaling exponent 0.50, $R^2 > 0.999999$, against the exact prediction of 1/2), until the dynamics destabilize at a stability floor: behavior consistent with a removable shortfall and inconsistent with a fixed bias. We quantify the curvature half of the law from measured curvatures and flag a moving-target pitfall in the natural Tsallis-entropy experiment. The Kuhn gap is thus the curvature shadow of a small, removable entropy shortfall on an unusually flat peak; the I-projection account is upheld up to a flatness-limited residual."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+              "url": "https://arxiv.org/abs/2607.18142",
+              "arxivId": "2607.18142",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an industrial process, which is crucial for modern manufacturing and quality control systems. Existing VLM-based anomaly reasoning methods are capable of detecting open-ended anomalies in general domains. However, their performance declines in industrial settings characterized by intricate object transformations, strict physics, and procedural constraints. To tackle the complexity of such interaction-intensive detection, we introduce a training-free agentic framework for anomaly detection free of domain-specific knowledge, emphasizing object state evolution like humans inspectors. It is designed to track spatial-temporal dynamics and underlying transformations of detected objects over time, and then reason over the object-wise temporal state trajectories to identify abnormal objects in grounded frames. Our method overcomes limitations of prior approaches that rely on retraining on normal clips or injecting domain knowledge as context for test-time inference. Extensive experiments on three IVAD datasets demonstrate that our method outperforms frontier VLMs, agentic frameworks, and traditional VAD methods fine-tuned on the respective datasets, while providing interpretable reports over anomaly processes and types."
+            },
+            {
+              "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
+              "url": "https://arxiv.org/abs/2607.18116",
+              "arxivId": "2607.18116",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CV",
+                "cs.GR",
+                "cs.MA",
+                "cs.MM"
+              ],
+              "abstract": "Recent work leverages Large Language Models (LLMs) to generate executable code for pedagogical animations using libraries such as Manim. However, ensuring spatial correctness and visual legibility remains challenging, as existing frameworks emphasize pedagogical content while overlooking geometric occlusions. We propose the Symbolic Geometric Agent (SGA), a plug-and-play module for code-centric animation pipelines that intercepts LLM-generated code, performs partial execution to extract symbolic scene graphs, and applies targeted refinement when spatial conflicts are detected. We further introduce the Manim Visual Quality Score (MVQS), a deterministic rendering-free proxy for spatial integrity. Experiments on the MMMC-Code benchmark across four LLM backbones and two agentic pipelines show that SGA achieves a peak MVQS of 73.11 (Code2Video + GPT-5.1), corresponding to a 16.1% relative improvement over the raw baseline, and improves MVQS in 7 of 8 backbone x pipeline configurations."
+            },
+            {
+              "title": "FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering",
+              "url": "https://arxiv.org/abs/2607.18102",
+              "arxivId": "2607.18102",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "Financial question answering over U.S. Securities and Exchange Commission (SEC) filings requires retrieving and synthesizing heterogeneous evidence dispersed across long, standardized, and highly redundant disclosures. Existing retrieval-augmented and multi-agent systems typically derive retrieval queries directly from the user's question and rank candidates by semantic similarity. Together, these choices create prior-corpus misalignment: a mismatch between model priors and the target filings' structure, terminology, and evidence standards. As a result, query generation misses corpus-specific evidence, while semantic reranking favors topically similar but evidentially invalid false-positive chunks. We propose FinSAgent, an evidence-grounded multi-agent framework that reframes SEC filing QA as corpus-aligned retrieval planning and corrects both ends with a single principle: inject corpus-side conditioning wherever model priors would otherwise dominate. FinSAgent combines (1) role-specialized agents anchored to the mandated 10-K item structure, (2) database-aware query decomposition that conditions each agent's sub-queries on a lightweight, summary-level view of the local corpus, and (3) multi-path retrieval with a learned feature-gated reranker that separates evidential validity from semantic similarity. Across five offline financial QA benchmarks, FinSAgent improves retrieval coverage and answer correctness over strong single-agent and multi-agent baselines; in a three-arm randomized online experiment with 1,000 anonymous user ratings, it also receives higher scores than baselines."
+            },
+            {
+              "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+              "url": "https://arxiv.org/abs/2607.18045",
+              "arxivId": "2607.18045",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA"
+              ],
+              "abstract": "Organizations often pool dispersed information into one ranking and then allow many agents to act on that shared view. In a discovery problem, this can improve beliefs while reducing coverage. We develop an exactly solvable benchmark with sixteen boxes, one target, eight searchers, and noisy private clues. Pooling raises the accuracy of the best single recommendation from 0.20 to 0.3835, but repeating that recommendation lowers group discovery from 0.8322 under decentralized clue-following to 0.3835. A coordinated eight-action portfolio using the same pooled reports reaches 0.8594, and seven coordinated actions recover the decentralized benchmark. The paradox is a protocol failure, not an information failure: a one-answer rule compresses a portfolio of available actions into one repeated choice. We then replace the planner with self-interested searchers who split a prize. The equal-split game is a potential game. Its anonymous symmetric equilibrium obeys a water-filling rule. In the canonical instance it achieves 0.5991: strictly above consensus, but below both private search and the planner. The exact mixed price of anarchy is 2 - 1/N. A sole-rescue reward, which pays only an agent who covers the target alone, makes every pure Nash equilibrium first-best. Finally, a latent common-cue model shows how correlated reports collapse effective discovery channels. The centralized planner gain rises strictly with copying, and in the canonical environment the symmetric market overtakes decentralized report-following at copying probability c = 0.788462. In a proportional large-market limit the five-protocol ordering survives exactly: consensus discovery vanishes while blind, market, private, and portfolio search converge to 0.500, 0.547, 0.847, and 0.874. The contribution is a compact benchmark that separates information, allocation, incentives, and dependence into exact, reusable quantities."
+            },
+            {
+              "title": "MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models",
+              "url": "https://arxiv.org/abs/2607.18006",
+              "arxivId": "2607.18006",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "Large language models achieve strong reasoning performance, but often at prohibitive training cost - a challenge that is especially acute for compact models ($\\leq 4 \\, \\mathrm{B}$ parameters) trained under limited budgets. We introduce MADA-RL, a post-training framework that specializes compact models into generator and critic roles and trains them with a debate-aware learning signal, fine-tuning only a small subset of parameters via LoRA adapters. Our central contribution is a counterfactual critic advantage: a dynamic, role-conditioned baseline that redefines the critic's advantage as its reward minus the generator ensemble's per-instance accuracy. This explicitly optimizes critics to improve over generator consensus rather than to merely reproduce a correct answer, yielding more targeted credit assignment than static mean-reward normalization. At deployment, the specialized agents are composed in a lightweight multi-round protocol. Across five mathematical reasoning benchmarks, MADA-RL raises the accuracy of the DeepSeek-R1-Distill-Qwen-1.5B model from $39.9 \\, \\%$ to $41.9 \\, \\%$ ($+2.0$ points, $p < 0.001$) using $16$ times fewer trainable parameters than fully fine-tuned baselines, placing it on the accuracy-trainable-parameter Pareto front. It approaches, but does not surpass, the strongest baselines (DeepScaleR, STILL-3), which are trained on substantially larger datasets; we analyse this gap and the associated inference-time cost directly. A controlled study isolates the source of MADA-RL's gains: the counterfactual advantage produces the highest critic improvement rate of any model evaluated, indicating that trained critics learn to correct generator errors rather than to imitate them."
+            },
+            {
+              "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+              "url": "https://arxiv.org/abs/2607.17986",
+              "arxivId": "2607.17986",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "Self-hosted AI agents read and write their own memory and configuration files to function. An agent may get compromised via corruption of its own state -- a compromise realized via legitimate OS system call invocation. We refer to this class of threats as self-state attacks. In this paper, we investigate the OS resilience to this class of attacks. Formally, we characterize a four-axis attack space (Target, Mechanism, Granularity, Temporal); investigate the structural limits of prevention, detection, and recovery; and introduce a workload-conditioned view of detectability. To instantiate the framework, we collect live activity traces from a representative self-hosted agent running across distinct workload profiles, and realize the attack space as a 23-cell matrix, 43 concrete operations on real self-state files, and injected into those traces. We then evaluate both canonical and workload-conditioned defense strategies. The empirical results show that a layered defense stack (access-control prevention on the instruction and configuration layers, workload-conditioned detection on the memory layer, and periodic backup for recovery) is effective on most attack cells while a small residual attack surface remains structurally indistinguishable at the OS level. These findings suggest that against the newly established class of self-state attacks, OS-level defense needs to be reconsidered, potentially opening new research directions in the field."
+            },
+            {
+              "title": "Towards Agentic Agent-based Models: Feasibility, Performance, and Statistical Model Checking",
+              "url": "https://arxiv.org/abs/2607.17948",
+              "arxivId": "2607.17948",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Agent-based models (ABMs) rely on simple, explicit and reproducible rules for individual decision making, while complex collective behavior emerges from interactions among agents. Recent advances in large language models (LLMs) make it tempting to replace, enrich, or perturb these rules with LLM-based agentic capabilities. However, this raises a methodological question: how does introducing LLM-driven decisions affect the reliability, computational cost, and behavior of ABM simulations? We investigate this for Mesa ABM models, a popular Python library for ABMs, analyzed by statistical model checking. Building on Mesa's integration with the statistical model checker MultiVeStA, we extend the classical Schelling segregation model with a hybrid population: ordinary agents classify neighbors using the standard symbolic rule, while one agent delegates this task to an LLM through tool calls. The LLM-enabled agent receives natural-language descriptions of neighboring agents and invokes tools that increment counters of similar/different neighbors; these counters determine its happiness according to the original Schelling dynamics. This provides a minimal but controlled setting where the semantic, operational, and computational behavior of LLM-based decisions can be studied inside an otherwise standard ABM. We report preliminary experiments with locally served LLMs of different sizes, showing that smaller models may fail simple semantic classification experiments or become operationally unusable during repeated tool-call generation, while larger tested models pass these preliminary checks. We discuss how statistical model checking can estimate classical ABM observables and quantify the impact of introducing agentic LLM components into simulation models."
+            },
+            {
+              "title": "Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization",
+              "url": "https://arxiv.org/abs/2607.17924",
+              "arxivId": "2607.17924",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG"
+              ],
+              "abstract": "Multi-agent policy optimization, exemplified by PPO-based methods, is a key branch of cooperative Multi-Agent Reinforcement Learning (MARL). A central design question is how many neighboring agents\\footnote{In this paper, \"neighbors\" refer not only to physical proximity but also to agents whose actions influence one another.} to aggregate in order to effectively utilize global information for cooperation. This decision must be made along two dimensions: in the advantage (which agents' rewards contribute to the credit signal) and in the ratio (which agents' likelihood ratios form the clipped importance weight). Existing methods occupy scattered, underexplored points on these two axes: IPPO treats both separately; MAPPO pairs a team-level advantage with per-agent ratios; HAPPO employs sequential ratios with per-agent advantages; and single-agent reductions operating on factorized joint policies aggregate both into fully joint products. We formalize these two design choices as support matrices $\\SA$ and $\\SR$, and prove a canonical structure: the expected multi-agent policy optimization objective depends on the pair $(\\SA,\\SR)$ only through their matrix product $\\tS=\\SR\\SA$. This yields two key consequences: (i) Redundancy: the two support matrices are interchangeable with respect to the signal, meaning neither aggregation pattern is inherently superior.(ii) Variance Ordering: the advantage aggregates rewards as a sum (additive variance with an interior bias-variance optimum at the coupling neighborhood), whereas the ratio aggregates likelihood ratios as a product (multiplicative variance that grows exponentially with support size, with no accompanying bias reduction). The resulting design principle is unambiguous: aggregate neighbors in the advantage, sized to the coupling neighborhood, and keep the ratio per-agent."
+            },
+            {
+              "title": "PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks",
+              "url": "https://arxiv.org/abs/2607.17922",
+              "arxivId": "2607.17922",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG",
+                "cs.NI"
+              ],
+              "abstract": "Most reinforcement learning controllers for these networks assume stationary conditions, and the few that handle change react to the external environment while leaving the network's internal state unexamined. We show that sustained non-stationarity damages this internal state directly: as objectives shift, neurons progressively fall dormant and the shared policy loses the capacity to learn. The obvious remedy, resetting dormant neurons, is unsafe under shared-parameter multi-agent training: many neurons that appear inactive are still receiving strong training gradients, and whether a neuron appears dormant depends on which agent's observations it processes. PRIME (Plasticity Recovery In Multi-agent Environments) therefore verifies both directions before intervening. Extending the bidirectional Silent Neuron framework to cooperative multi-agent reinforcement learning, it aggregates activation and gradient statistics over the full team batch, reads the backward signal from the gradient the training loss has already deposited , not from a hand-crafted proxy, and reinitializes only neurons that are simultaneously activation-dormant and gradient-silent. Useful representations are preserved while learning capacity is restored. On a phase-switching UAV emergency communication simulator, PRIME improves interquartile mean return by 24.9\\% over MAPPO and holds dormant neuron fractions at 10--20\\% versus 40--45\\%; ablations attribute the gains to the gradient signal and team-level aggregation rather than to the specific reset operator. A dynamic regret bound shows that the perturbation cost scales with the small silent-subspace dimension rather than the full parameter count."
+            },
+            {
+              "title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+              "url": "https://arxiv.org/abs/2607.17914",
+              "arxivId": "2607.17914",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG",
+                "cs.RO"
+              ],
+              "abstract": "Robust multi-agent coordination relies heavily on inter-agent communication, which is frequently disrupted by physical and environmental constraints in real-world deployments. To maintain operation during these intermittent communication failures, agents can employ internal prediction models to estimate missing shared state information. However, predictors trained with standard reconstruction objectives treat all transitions equally. In a Reinforcement Learning context, this forces the model to waste capacity learning stochastic exploration noise and the outdated dynamics of suboptimal policies. In this paper, we propose a value-aware extension of Multi-Agent Observation Sharing under Communication Dropout (MARO) to patch communication gaps; we refer to this method as Value-Aware MARO. By dynamically weighting the predictor's loss function using advantage estimates derived from the underlying actor-critic architecture, our objective explicitly couples the predictor's learning process to the policy's evolution. This formulation focuses the model's capacity on the intentional, high-return dynamics actively reinforced by the agents. We evaluate our framework on several tasks within the Multi-Agent Particle Environment under varying communication reliability levels. Experimental results demonstrate that our approach maintains performance under declining communication reliability, particularly below 40%. While our method performs comparably in tasks where the baseline already maintains high coordination, our value-aware weighting effectively prevents the performance collapse observed in the standard predictor during high-attrition scenarios. In these environments, our method achieves an average improvement in mean returns of more than 20% and reduces performance variance by a mean of 64.7% compared to the standard unweighted baseline."
+            },
+            {
+              "title": "ETAS: An Effect-Typed Language for Agent Systems",
+              "url": "https://arxiv.org/abs/2607.17780",
+              "arxivId": "2607.17780",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.PL",
+                "cs.AI",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "ETAS is a programming language for agent systems that treats model-backed agents, tool calls, prompts, typed memory, human approvals, policies, and execution traces as semantic program elements rather than library conventions. It separates deterministic computation from agentic nondeterminism and externally visible actions while preserving a direct programming style. We present the core design of ETAS. Its static semantics assigns ordinary types through spec conformance and tracks each computation with two behavioral indices: an escaping effect row and a persistent abstraction of the typed action trace it may request. Specs form a terminating compile-time constraint calculus: type specs provide evidence for polymorphism and resource facts, callable specs constrain function and stage shapes, and trace specs express allow, deny, and temporal constraints. Typing checks requested traces against compiled monitors and emits residual obligations when dynamic resources preclude a complete static proof. The dynamic semantics distinguish requested, handled, denied, and committed events; handlers interpret typed actions without making their requests invisible to authorization or audit. We formalize a core calculus and state preservation, progress, type/effect soundness, handler trace-transparency, and policy safety. We also implement ETAS in Rust with a command-line interface, typed HIR checks, effect and policy diagnostics, handler checks, and trace-aware execution hooks. ETAS provides a programming-language foundation for reasoning about authorization, nondeterminism, recovery, and audit evidence before and during agent execution."
+            },
+            {
+              "title": "Autonomous Discovery of Wireless Communications Algorithms",
+              "url": "https://arxiv.org/abs/2607.17762",
+              "arxivId": "2607.17762",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.IT",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Large language model (LLM)-driven evolutionary search is an emerging algorithm-discovery paradigm that has already produced novel results in several scientific fields. Yet its application to wireless communications remains largely unexplored. To bridge this gap, we introduce The AI Telco Engineer (AITE), a framework to autonomously design algorithms for complex communication problems, while navigating performance-complexity tradeoffs. We showcase AITE on two challenging physical-layer problems: designing an equalizer for an orthogonal time-frequency space (OTFS) system, and constructing a receiver algorithm for an orthogonal frequency-division multiplexing (OFDM) system using a custom constellation and operating without pilots. For the first task, AITE develops algorithms that outperform the best-known solutions while reducing computational latency by a factor of 3.6 compared to the strongest baseline. For the second task, it discovers the first explicit, explainable algorithms that achieve performance parity with state-of-the-art neural receivers. These results demonstrate the strong potential of LLM-driven evolutionary search for the autonomous discovery of next-generation wireless communications algorithms."
+            },
+            {
+              "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
+              "url": "https://arxiv.org/abs/2607.17724",
+              "arxivId": "2607.17724",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Coordinating payload transfers between subsystems is a critical challenge in lifelong Multi-Agent Pickup and Delivery (MAPD). We study systems where agents are confined to separate regions and must exchange payloads through shared handover stations. These stations, equipped with single docks and finite buffers, are inherently vulnerable to blocking and starvation. We formalize this problem as Multi-Subsystem MAPD with Buffer-limited Handover Stations (MS-MAPD-BHS). We then propose Handover-Aware Reservation and Routing (HARR), an online controller that couples per-subsystem planners. HARR uses a shared dock reservation calendar and a deterministic rolling-horizon projection of buffer occupancy to coordinate actions. A candidate route is accepted only if its dock interval is free and the resulting buffer occupancy projection remains within capacity. Under perfect execution, these checks ensure collision-free dock use and buffer-safe committed operations within the reservation horizon. In simulation, HARR achieves up to 77% higher throughput and 92% lower backlog than a fixed-dock ablation at moderate load, while also reducing planning time relative to a coupled station-aware Token Passing baseline. These results show that explicit interface coordination substantially improves stability in modular multi-subsystem transport."
+            },
+            {
+              "title": "SR-Agent: An Experience-Driven Agentic Framework for Post-Ranking Strategies Refinement in E-Commerce Recommendation",
+              "url": "https://arxiv.org/abs/2607.17719",
+              "arxivId": "2607.17719",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "User experience is a first-class objective in industrial e-commerce recommender systems (RS). Post-ranking strategies, which govern diversity, similarity, and exposure over a ranked list, are widely deployed in industrial RS for their simplicity and low serving cost. However, as the online recommendation environment evolves continuously, these statically configured strategies gradually become stale, degrading the user experience. Refining them typically relies on manual inspection, diagnosis, and updates, a process that is slow, costly, and hard to reuse. Although recent LLM-based agents (e.g., RecUserSim, SimUSER, and Self-EvolveRec) offer promising directions, none of them close the full loop of automated, self-evolving strategy refinement. To bridge this gap, we introduce SR-Agent, a Strategy Refinement agentic framework that, to the best of our knowledge, is the first deployed for refining post-ranking strategies in industrial RS. SR-Agent unifies three components: (i) a UserSim agent that applies staged inspection skills to surface user-perceived bad cases; (ii) an Analysis agent that consolidates recurring bad cases into structured, reusable diagnoses; and (iii) a constrained Strategy Refinement Harness that maps diagnoses to typed and bounded actions, gated by a four-stage reward pipeline with reversible rollback. Deployed on the Kuaishou e-commerce platform, SR-Agent continuously runs this refinement loop and, in a one-month online A/B test, increases order volume by 0.71%, browsing depth by 0.34%, and clicked-category diversity by 0.48%, while markedly shortening the refinement cycle and lowering operational cost."
+            },
+            {
+              "title": "A Digital Twin-Based Method for Evaluating Local Collective Tariffs in Distribution-Level Energy Systems",
+              "url": "https://arxiv.org/abs/2607.17640",
+              "arxivId": "2607.17640",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "econ.GN",
+                "eess.SY"
+              ],
+              "abstract": "This work addresses the need for engineering-grounded evaluation of implement-ed tariff mechanisms in distribution-level energy systems. A digital twin-based method is proposed for assessing local collective tariffs under realistic behavioral and infrastructural conditions. The approach integrates agent-based modeling of household consumption and generation, virtual aggregation through a shared metering abstraction, and explicit representation of tariff logic within a unified simulation environment. The method is demonstrated through its application to the Danish Local Collective Tariff across representative residential energy community configurations, including scenarios with photovoltaic generation, battery storage, and electric vehicle charging. Results indicate that aggregation of heterogeneous demand profiles reduces peak coincidence and enables more efficient allocation of tariff components, leading to measurable cost reductions at the community level. At the same time, the outcomes reveal sensitivity to the temporal alignment of consumption and generation, influencing the degree of cost neutrality across participants. The findings illustrate how digital twin-based evaluation can support systematic assessment of tariff mechanisms by capturing the interaction between infrastructure, user behavior, and regulatory design. The proposed approach provides a basis for analyzing and comparing tariff structures in distribution-level energy systems beyond the specific case considered."
+            },
+            {
+              "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+              "url": "https://arxiv.org/abs/2607.17543",
+              "arxivId": "2607.17543",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "In two-player zero-sum games whose Nash equilibria form a convex set, regularized solvers such as Regularized Nash Dynamics (R-NaD) empirically select the maximum-entropy member: the information projection (I-projection) of a uniform reference onto the Nash set. On a panel of small games this match is exact, with one apparent exception: in Kuhn poker R-NaD lands at bluff coordinate 0.180 while the maximum-entropy member sits at 0.201, a coordinate gap of about 0.021, even though R-NaD attains 99.7 percent of the maximum entropy. We ask whether this gap is a genuine selection bias or an artifact, and answer it quantitatively. We show that for selection on a one-dimensional Nash manifold the coordinate gap factorizes as $\\mathrm{gap} \\approx \\sqrt{2δ/κ}$, where $δ$ is the entropy shortfall of the solver and $κ$ is the curvature of the entropy landscape at its peak. Across five games this relation holds to within $2 \\times 10^{-4}$ (under 1 percent relative error). The four matrix games have $δ\\approx 0$ (R-NaD reaches the maximum-entropy member exactly) and therefore no gap regardless of curvature; only the sequential game (Kuhn) has $δ> 0$. A causal sweep of the magnet strength drives $δ\\to 0$ and the gap toward zero along the predicted curve (fitted scaling exponent 0.50, $R^2 > 0.999999$, against the exact prediction of 1/2), until the dynamics destabilize at a stability floor: behavior consistent with a removable shortfall and inconsistent with a fixed bias. We quantify the curvature half of the law from measured curvatures and flag a moving-target pitfall in the natural Tsallis-entropy experiment. The Kuhn gap is thus the curvature shadow of a small, removable entropy shortfall on an unusually flat peak; the I-projection account is upheld up to a flatness-limited residual."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 13,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 14,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 15,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+              "url": "https://arxiv.org/abs/2607.18142",
+              "arxivId": "2607.18142",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
+              "url": "https://arxiv.org/abs/2607.18116",
+              "arxivId": "2607.18116",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CV",
+                "cs.GR",
+                "cs.MA",
+                "cs.MM"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering",
+              "url": "https://arxiv.org/abs/2607.18102",
+              "arxivId": "2607.18102",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+              "url": "https://arxiv.org/abs/2607.18045",
+              "arxivId": "2607.18045",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models",
+              "url": "https://arxiv.org/abs/2607.18006",
+              "arxivId": "2607.18006",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+              "url": "https://arxiv.org/abs/2607.17986",
+              "arxivId": "2607.17986",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "Towards Agentic Agent-based Models: Feasibility, Performance, and Statistical Model Checking",
+              "url": "https://arxiv.org/abs/2607.17948",
+              "arxivId": "2607.17948",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization",
+              "url": "https://arxiv.org/abs/2607.17924",
+              "arxivId": "2607.17924",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks",
+              "url": "https://arxiv.org/abs/2607.17922",
+              "arxivId": "2607.17922",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG",
+                "cs.NI"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+              "url": "https://arxiv.org/abs/2607.17914",
+              "arxivId": "2607.17914",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG",
+                "cs.RO"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "ETAS: An Effect-Typed Language for Agent Systems",
+              "url": "https://arxiv.org/abs/2607.17780",
+              "arxivId": "2607.17780",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.PL",
+                "cs.AI",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Autonomous Discovery of Wireless Communications Algorithms",
+              "url": "https://arxiv.org/abs/2607.17762",
+              "arxivId": "2607.17762",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.IT",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
+              "url": "https://arxiv.org/abs/2607.17724",
+              "arxivId": "2607.17724",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "SR-Agent: An Experience-Driven Agentic Framework for Post-Ranking Strategies Refinement in E-Commerce Recommendation",
+              "url": "https://arxiv.org/abs/2607.17719",
+              "arxivId": "2607.17719",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "A Digital Twin-Based Method for Evaluating Local Collective Tariffs in Distribution-Level Energy Systems",
+              "url": "https://arxiv.org/abs/2607.17640",
+              "arxivId": "2607.17640",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "econ.GN",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+              "url": "https://arxiv.org/abs/2607.17543",
+              "arxivId": "2607.17543",
+              "date": "2026-07-20",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+          "url": "https://arxiv.org/abs/2607.18142",
+          "arxivId": "2607.18142",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
+          "url": "https://arxiv.org/abs/2607.18116",
+          "arxivId": "2607.18116",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.GR",
+            "cs.MA",
+            "cs.MM"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering",
+          "url": "https://arxiv.org/abs/2607.18102",
+          "arxivId": "2607.18102",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+          "url": "https://arxiv.org/abs/2607.18045",
+          "arxivId": "2607.18045",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "MADA-RL: Multi-Agent Debate-Aware Reinforcement Learning for Parameter-Efficient Reasoning in Compact Models",
+          "url": "https://arxiv.org/abs/2607.18006",
+          "arxivId": "2607.18006",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+          "url": "https://arxiv.org/abs/2607.17986",
+          "arxivId": "2607.17986",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Towards Agentic Agent-based Models: Feasibility, Performance, and Statistical Model Checking",
+          "url": "https://arxiv.org/abs/2607.17948",
+          "arxivId": "2607.17948",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization",
+          "url": "https://arxiv.org/abs/2607.17924",
+          "arxivId": "2607.17924",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks",
+          "url": "https://arxiv.org/abs/2607.17922",
+          "arxivId": "2607.17922",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG",
+            "cs.NI"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+          "url": "https://arxiv.org/abs/2607.17914",
+          "arxivId": "2607.17914",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "ETAS: An Effect-Typed Language for Agent Systems",
+          "url": "https://arxiv.org/abs/2607.17780",
+          "arxivId": "2607.17780",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.PL",
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Autonomous Discovery of Wireless Communications Algorithms",
+          "url": "https://arxiv.org/abs/2607.17762",
+          "arxivId": "2607.17762",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.IT",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
+          "url": "https://arxiv.org/abs/2607.17724",
+          "arxivId": "2607.17724",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "SR-Agent: An Experience-Driven Agentic Framework for Post-Ranking Strategies Refinement in E-Commerce Recommendation",
+          "url": "https://arxiv.org/abs/2607.17719",
+          "arxivId": "2607.17719",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "A Digital Twin-Based Method for Evaluating Local Collective Tariffs in Distribution-Level Energy Systems",
+          "url": "https://arxiv.org/abs/2607.17640",
+          "arxivId": "2607.17640",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "econ.GN",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+          "url": "https://arxiv.org/abs/2607.17543",
+          "arxivId": "2607.17543",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+          "url": "https://arxiv.org/abs/2607.18045",
+          "arxivId": "2607.18045",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization",
+          "url": "https://arxiv.org/abs/2607.17924",
+          "arxivId": "2607.17924",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "ETAS: An Effect-Typed Language for Agent Systems",
+          "url": "https://arxiv.org/abs/2607.17780",
+          "arxivId": "2607.17780",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.PL",
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+          "url": "https://arxiv.org/abs/2607.17543",
+          "arxivId": "2607.17543",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+          "url": "https://arxiv.org/abs/2607.17914",
+          "arxivId": "2607.17914",
+          "date": "2026-07-20",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search",
+            "url": "https://arxiv.org/abs/2607.18045",
+            "arxivId": "2607.18045",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.GT",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "共享发现悖论：单一答案规则如何将更优信息转化为更差搜索",
+            "researchParadigmTags": [
+              "理论推导",
+              "基准评测",
+              "机制设计",
+              "均衡分析",
+              "实验验证"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "信息聚合",
+              "集体发现",
+              "激励机制",
+              "信号相关性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么群体在掌握更好信息后反而更难发现目标？本文指出，组织常将分散线索汇总为统一排名，并让所有人据此行动，这虽提升单点预测准确率，却因重复尝试同一选项而降低整体发现概率。问题核心不在信息本身，而在‘一答多用’的决策协议，导致多样化探索被压缩为集中押注，形成信息越准、表现越差的悖论。",
+              "modelAndSetup": "研究基于一个精确可解的十六箱寻宝模型：八个搜索者各获一条含噪线索，目标是至少一人找到唯一奖箱。比较四种协议：个人跟随私有线索、全体服从共识推荐、中心化分配最优组合、自利参与者在共享后自主选择。通过枚举所有报告分布，计算不同机制下的发现成功率、行动质量与多样性，构建了一个分离信息价值与执行效率的量化基准。",
+              "contributionsAndResults": "论文揭示了‘共享发现悖论’——共识推荐将最佳单点准确率从20%提至38.35%，但群体发现率反从83.22%暴跌至38.35%。协调者利用相同信息却可达85.94%。关键贡献在于提出‘协议损失’概念，量化了信息增益被错误行动规则抵消的程度，并证明仅需7次协同行动即可恢复8人分散搜索的效果，凸显行动分配的设计重要性。",
+              "methodsAndTechniques": "作者构建了一个贝叶斯发现基准，将信息、分配、激励与依赖解耦为可测量量。通过定义‘可达前沿’与‘协议损失’，分离信息质量与执行效率；引入水填充均衡刻画自利行为；设计‘唯一救援’奖励使个体收益等于边际贡献，实现社会最优。复制模型则揭示信号相关性如何削弱自然多样性，迫使系统主动干预以维持探索广度。",
+              "limitationsAndReadingValue": "结论依赖于原子目标、同步行动与完全事后观察等强假设，匿名对称均衡的选择也忽略了角色分配的可能性。尽管如此，其价值在于提供了一套可复用的概念工具：协议损失、恢复预算、有效通道数等，帮助诊断现实系统中信息共享与行动多样性的权衡。最值得细读的是问题设定与理论边界分析，而非具体数值结果。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "共享发现悖论：单一答案规则如何将更优信息转化为更差搜索",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么群体在掌握更好信息后反而更难发现目标？本文指出，组织常将分散线索汇总为统一排名，并让所有人据此行动，这虽提升单点预测准确率，却因重复尝试同一选项而降低整体发现概率。问题核心不在信息本身，而在‘一答多用’的决策协议，导致多样化探索被压缩为集中押注，形成信息越准、表现越差的悖论。",
+              "modelAndSetup": "研究基于一个精确可解的十六箱寻宝模型：八个搜索者各获一条含噪线索，目标是至少一人找到唯一奖箱。比较四种协议：个人跟随私有线索、全体服从共识推荐、中心化分配最优组合、自利参与者在共享后自主选择。通过枚举所有报告分布，计算不同机制下的发现成功率、行动质量与多样性，构建了一个分离信息价值与执行效率的量化基准。",
+              "contributionsAndResults": "论文揭示了‘共享发现悖论’——共识推荐将最佳单点准确率从20%提至38.35%，但群体发现率反从83.22%暴跌至38.35%。协调者利用相同信息却可达85.94%。关键贡献在于提出‘协议损失’概念，量化了信息增益被错误行动规则抵消的程度，并证明仅需7次协同行动即可恢复8人分散搜索的效果，凸显行动分配的设计重要性。",
+              "methodsAndTechniques": "作者构建了一个贝叶斯发现基准，将信息、分配、激励与依赖解耦为可测量量。通过定义‘可达前沿’与‘协议损失’，分离信息质量与执行效率；引入水填充均衡刻画自利行为；设计‘唯一救援’奖励使个体收益等于边际贡献，实现社会最优。复制模型则揭示信号相关性如何削弱自然多样性，迫使系统主动干预以维持探索广度。",
+              "limitationsAndReadingValue": "结论依赖于原子目标、同步行动与完全事后观察等强假设，匿名对称均衡的选择也忽略了角色分配的可能性。尽管如此，其价值在于提供了一套可复用的概念工具：协议损失、恢复预算、有效通道数等，帮助诊断现实系统中信息共享与行动多样性的权衡。最值得细读的是问题设定与理论边界分析，而非具体数值结果。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "信息聚合",
+              "集体发现",
+              "激励机制",
+              "信号相关性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "基准评测",
+              "机制设计",
+              "均衡分析",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization",
+            "url": "https://arxiv.org/abs/2607.17924",
+            "arxivId": "2607.17924",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "在优势函数中聚合，而非比率：合作式多智能体策略优化的规范形式分析",
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "机制设计"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "策略优化",
+              "信用分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "合作式多智能体强化学习面临一个核心问题：更新每个智能体时，应聚合多少邻居的信息？现有方法在两个维度上分散尝试——优势函数（信用信号）和比率（信任区域权重），但缺乏统一原则。关键难点在于，盲目聚合会引入高方差或偏差，尤其在大规模系统中。本文指出，当前设计缺乏对‘何时、何地、为何聚合’的系统理解，导致实践依赖启发式选择。",
+              "modelAndSetup": "论文研究基于因子化联合策略的PPO类方法，在合成的合作博弈和真实交通信号控制任务中测试不同聚合模式。输入是各智能体的局部观测与动作，输出为策略更新方向。通过定义优势支持矩阵和比率支持矩阵，系统遍历不同聚合范围，并评估其对梯度估计偏差、方差及最终性能的影响。实验对比了独立、团队级与邻域级聚合组合。",
+              "contributionsAndResults": "论文发现预期梯度仅依赖于两个支持矩阵的乘积，揭示二者在信号层面冗余。更重要的是，优势聚合带来加性方差，而比率聚合引发指数增长的乘性方差。实验证明：在优势中聚合邻居、保持比率独立，是方差最优解。这一设计在交通网络中显著优于全局比率，验证了理论预测。",
+              "methodsAndTechniques": "作者建立规范形式分析，证明梯度信号由两支持矩阵的乘积唯一决定，从而解耦信号与方差。利用得分函数恒等式和独立性假设，推导出比率乘积的方差呈指数增长，而优势求和仅为线性增长。通过控制变量实验，在四类合作博弈中分离偏差与方差效应，清晰展示两种路径的性能分野。",
+              "limitationsAndReadingValue": "结论依赖因子化策略与已知耦合图的假设，在耦合未知或动态变化场景中需扩展。此外，实验集中在中小型系统，极端规模下的稳定性仍需验证。尽管如此，本文提供了清晰的设计法则。最值得读的是其理论框架与交通实证，它将模糊的工程选择转化为可分析的结构问题，对构建高效多智能体系统具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "在优势函数中聚合，而非比率：合作式多智能体策略优化的规范形式分析",
+            "summarySections": {
+              "backgroundAndQuestion": "合作式多智能体强化学习面临一个核心问题：更新每个智能体时，应聚合多少邻居的信息？现有方法在两个维度上分散尝试——优势函数（信用信号）和比率（信任区域权重），但缺乏统一原则。关键难点在于，盲目聚合会引入高方差或偏差，尤其在大规模系统中。本文指出，当前设计缺乏对‘何时、何地、为何聚合’的系统理解，导致实践依赖启发式选择。",
+              "modelAndSetup": "论文研究基于因子化联合策略的PPO类方法，在合成的合作博弈和真实交通信号控制任务中测试不同聚合模式。输入是各智能体的局部观测与动作，输出为策略更新方向。通过定义优势支持矩阵和比率支持矩阵，系统遍历不同聚合范围，并评估其对梯度估计偏差、方差及最终性能的影响。实验对比了独立、团队级与邻域级聚合组合。",
+              "contributionsAndResults": "论文发现预期梯度仅依赖于两个支持矩阵的乘积，揭示二者在信号层面冗余。更重要的是，优势聚合带来加性方差，而比率聚合引发指数增长的乘性方差。实验证明：在优势中聚合邻居、保持比率独立，是方差最优解。这一设计在交通网络中显著优于全局比率，验证了理论预测。",
+              "methodsAndTechniques": "作者建立规范形式分析，证明梯度信号由两支持矩阵的乘积唯一决定，从而解耦信号与方差。利用得分函数恒等式和独立性假设，推导出比率乘积的方差呈指数增长，而优势求和仅为线性增长。通过控制变量实验，在四类合作博弈中分离偏差与方差效应，清晰展示两种路径的性能分野。",
+              "limitationsAndReadingValue": "结论依赖因子化策略与已知耦合图的假设，在耦合未知或动态变化场景中需扩展。此外，实验集中在中小型系统，极端规模下的稳定性仍需验证。尽管如此，本文提供了清晰的设计法则。最值得读的是其理论框架与交通实证，它将模糊的工程选择转化为可分析的结构问题，对构建高效多智能体系统具有指导意义。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "策略优化",
+              "信用分配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "ETAS: An Effect-Typed Language for Agent Systems",
+            "url": "https://arxiv.org/abs/2607.17780",
+            "arxivId": "2607.17780",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.PL",
+              "cs.AI",
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "ETAS: 一种面向智能体系统的效应类型化语言",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "形式化语义",
+              "实验验证",
+              "类型系统"
+            ],
+            "contentTags": [
+              "智能体系统",
+              "效应系统",
+              "安全性",
+              "策略执行",
+              "程序语言设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前构建智能体系统依赖于框架级组合，将提示、工具调用、权限控制等作为运行时配置而非语言级语义元素，导致关键行为如审批顺序、权限边界难以静态验证。这使得诸如‘是否未经批准就发送邮件’或‘敏感数据是否流入模型’等问题无法在编译期回答，只能通过日志和中间件事后审计，增加了安全与可靠性风险。",
+              "modelAndSetup": "论文提出ETAs语言，将智能体、工具调用、内存访问、人类审批、执行轨迹等作为显式的程序元素。系统通过声明式语法定义流程，输入为带类型和效应标注的源代码，输出为经类型与策略检查的可执行程序。评估基于原型实现，检查其能否捕获违规行为，并生成用于回放、审计和调度的结构化执行轨迹。",
+              "contributionsAndResults": "核心贡献是将效应类型系统扩展至智能体场景，实现了对权限请求与执行轨迹的静态分析与动态监控。结果表明，ETAs能明确区分逃逸效应与持久请求痕迹，支持策略的静态验证与残余检查的生成，在原型中成功阻止越权操作并保留审计证据，为智能体系统提供了可推理的安全与恢复保障。",
+              "methodsAndTechniques": "ETAs引入‘spec’作为统一的编译时约束系统，涵盖类型、可调用项和轨迹规范。其类型系统分离逃逸效应与请求动作追踪，确保即使处理器拦截动作，请求仍被记录。轨迹规范被编译为有限状态机监控器，结合抽象解释进行静态验证，未能证明的部分转为显式运行时检查，从而连接静态分析与动态执行。",
+              "limitationsAndReadingValue": "目前原型侧重小规模案例，大规模部署下的性能与可扩展性尚未验证。此外，模型输出的不确定性未被纳入类型系统，仅外围控制流受保护。最值得阅读的是其机制设计——如何通过语言构造将审批、权限、轨迹等非功能需求转化为可编程、可验证的一等公民，这对构建可信智能体系统具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "ETAS: 一种面向智能体系统的效应类型化语言",
+            "summarySections": {
+              "backgroundAndQuestion": "当前构建智能体系统依赖于框架级组合，将提示、工具调用、权限控制等作为运行时配置而非语言级语义元素，导致关键行为如审批顺序、权限边界难以静态验证。这使得诸如‘是否未经批准就发送邮件’或‘敏感数据是否流入模型’等问题无法在编译期回答，只能通过日志和中间件事后审计，增加了安全与可靠性风险。",
+              "modelAndSetup": "论文提出ETAs语言，将智能体、工具调用、内存访问、人类审批、执行轨迹等作为显式的程序元素。系统通过声明式语法定义流程，输入为带类型和效应标注的源代码，输出为经类型与策略检查的可执行程序。评估基于原型实现，检查其能否捕获违规行为，并生成用于回放、审计和调度的结构化执行轨迹。",
+              "contributionsAndResults": "核心贡献是将效应类型系统扩展至智能体场景，实现了对权限请求与执行轨迹的静态分析与动态监控。结果表明，ETAs能明确区分逃逸效应与持久请求痕迹，支持策略的静态验证与残余检查的生成，在原型中成功阻止越权操作并保留审计证据，为智能体系统提供了可推理的安全与恢复保障。",
+              "methodsAndTechniques": "ETAs引入‘spec’作为统一的编译时约束系统，涵盖类型、可调用项和轨迹规范。其类型系统分离逃逸效应与请求动作追踪，确保即使处理器拦截动作，请求仍被记录。轨迹规范被编译为有限状态机监控器，结合抽象解释进行静态验证，未能证明的部分转为显式运行时检查，从而连接静态分析与动态执行。",
+              "limitationsAndReadingValue": "目前原型侧重小规模案例，大规模部署下的性能与可扩展性尚未验证。此外，模型输出的不确定性未被纳入类型系统，仅外围控制流受保护。最值得阅读的是其机制设计——如何通过语言构造将审批、权限、轨迹等非功能需求转化为可编程、可验证的一等公民，这对构建可信智能体系统具有启发意义。"
+            },
+            "contentTags": [
+              "智能体系统",
+              "效应系统",
+              "安全性",
+              "策略执行",
+              "程序语言设计"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "形式化语义",
+              "实验验证",
+              "类型系统"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Curvature Shadow: An Apparent Failure of Maximum-Entropy Equilibrium Selection is a Removable Artifact",
+            "url": "https://arxiv.org/abs/2607.17543",
+            "arxivId": "2607.17543",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.GT",
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "曲率阴影：最大熵均衡选择的表面失效是一种可消除的伪影",
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "均衡分析",
+              "算法设计"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "强化学习",
+              "最大熵",
+              "纳什均衡"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在两人零和博弈中，当纳什均衡构成一个凸集时，正则化求解器通常会收敛到最大熵均衡点。然而在Kuhn扑克中，R-NaD算法却稳定在一个偏离最大熵点的位置，产生约0.021的坐标差距。这引发了一个关键问题：这是算法存在固有选择偏置，还是由熵不足和景观平坦共同导致的可消除伪影？论文旨在定量区分这两种可能性。",
+              "modelAndSetup": "研究基于正则化纳什动力学（R-NaD）在五种小型博弈上的行为，其中四个为矩阵博弈，一个是序贯博弈Kuhn扑克。通过精确的表格化引擎计算反事实值与熵，并参数化每个博弈的纳什流形，测量R-NaD收敛点的熵损失、坐标偏差及熵景观曲率。特别在Kuhn扑克中调节磁力强度以观察熵损失与偏差的变化关系。",
+              "contributionsAndResults": "论文发现坐标偏差并非系统性偏置，而是熵损失在局部曲率下的几何投影，服从公式 gap ≈ √(2δ/K)。四组矩阵博弈中熵损失几乎为零，故无偏差；仅Kuhn扑克存在微小熵损失（δ~8.3e-4），结合其较平缓的熵峰（K≈4.0），足以解释观测到的偏差。削弱正则化强度可使偏差沿预测曲线趋近于零，支持‘伪影’假说。",
+              "methodsAndTechniques": "作者利用泰勒展开将熵流形局部二次化，推导出偏差与熵损失、曲率之间的解析关系。通过高精度数值拟合确定各博弈的峰值曲率，并在Kuhn扑克上进行因果干预——调整磁力参数n，系统性改变熵损失。结果显示偏差随熵损失平方根缩放，指数为0.50（R²>0.999999），与理论预测完全一致，排除了固定偏置的存在。",
+              "limitationsAndReadingValue": "结论依赖单一序贯博弈实例，尚未验证其他序列结构是否普遍出现熵损失；曲率影响未通过直接调控实现因果扫掠；且机制根源（如reach-weighting）仍属假设。尽管如此，论文提供了清晰的几何解释框架，揭示了‘选择偏差’可能是优化残差被平坦地形放大的结果，对理解正则化动态的极限行为具有重要指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "曲率阴影：最大熵均衡选择的表面失效是一种可消除的伪影",
+            "summarySections": {
+              "backgroundAndQuestion": "在两人零和博弈中，当纳什均衡构成一个凸集时，正则化求解器通常会收敛到最大熵均衡点。然而在Kuhn扑克中，R-NaD算法却稳定在一个偏离最大熵点的位置，产生约0.021的坐标差距。这引发了一个关键问题：这是算法存在固有选择偏置，还是由熵不足和景观平坦共同导致的可消除伪影？论文旨在定量区分这两种可能性。",
+              "modelAndSetup": "研究基于正则化纳什动力学（R-NaD）在五种小型博弈上的行为，其中四个为矩阵博弈，一个是序贯博弈Kuhn扑克。通过精确的表格化引擎计算反事实值与熵，并参数化每个博弈的纳什流形，测量R-NaD收敛点的熵损失、坐标偏差及熵景观曲率。特别在Kuhn扑克中调节磁力强度以观察熵损失与偏差的变化关系。",
+              "contributionsAndResults": "论文发现坐标偏差并非系统性偏置，而是熵损失在局部曲率下的几何投影，服从公式 gap ≈ √(2δ/K)。四组矩阵博弈中熵损失几乎为零，故无偏差；仅Kuhn扑克存在微小熵损失（δ~8.3e-4），结合其较平缓的熵峰（K≈4.0），足以解释观测到的偏差。削弱正则化强度可使偏差沿预测曲线趋近于零，支持‘伪影’假说。",
+              "methodsAndTechniques": "作者利用泰勒展开将熵流形局部二次化，推导出偏差与熵损失、曲率之间的解析关系。通过高精度数值拟合确定各博弈的峰值曲率，并在Kuhn扑克上进行因果干预——调整磁力参数n，系统性改变熵损失。结果显示偏差随熵损失平方根缩放，指数为0.50（R²>0.999999），与理论预测完全一致，排除了固定偏置的存在。",
+              "limitationsAndReadingValue": "结论依赖单一序贯博弈实例，尚未验证其他序列结构是否普遍出现熵损失；曲率影响未通过直接调控实现因果扫掠；且机制根源（如reach-weighting）仍属假设。尽管如此，论文提供了清晰的几何解释框架，揭示了‘选择偏差’可能是优化残差被平坦地形放大的结果，对理解正则化动态的极限行为具有重要指导意义。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "强化学习",
+              "最大熵",
+              "纳什均衡"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "均衡分析",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+            "url": "https://arxiv.org/abs/2607.17914",
+            "arxivId": "2607.17914",
+            "date": "2026-07-20",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.LG",
+              "cs.RO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "面向通信中断下鲁棒多智能体协同的价值感知预测",
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "鲁棒性",
+              "预测建模",
+              "通信中断"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统依赖通信共享状态以实现协作，但在现实部署中常因环境干扰导致信号丢失。传统预测模型在填补通信缺口时采用均等权重的学习目标，无法区分关键决策动态与随机探索噪声，导致模型资源浪费在低价值过渡上。这在强化学习背景下尤为突出，因为策略演进过程中已抛弃的行为仍被预测器学习，削弱了其在高影响时刻的估计能力。",
+              "modelAndSetup": "论文在混合部分可观马尔可夫决策过程（H-POMDP）框架下研究多智能体协作任务，其中通信可靠性由概率矩阵控制。模型输入为局部观测流，输出为对缺失同伴观测的重建值。预测器与策略网络并行运行，在通信中断时提供补全状态。实验基于多智能体粒子环境中的五项协作任务，评估不同通信可靠度下的平均回报与性能稳定性。",
+              "contributionsAndResults": "提出价值感知MARO方法，通过将预测器损失函数与策略优势信号加权耦合，使模型聚焦于高回报、有意图的状态转移。实验证明该方法在通信可靠性低于40%时显著优于基线，平均回报提升超20%，性能方差降低64.7%。尤其在高丢包场景下避免了基线的性能崩溃，验证了将预测学习与策略演化同步的有效性。",
+              "methodsAndTechniques": "方法核心是利用Actor-Critic架构中的优势估计作为动态权重，调整预测器的负对数似然损失。通过理论推导建立策略更新方向与预测误差之间的关联，并设计启发式加权损失函数，使预测器优先学习对策略改进贡献大的状态转移。ReLU处理确保权重非负，批归一化稳定训练过程，从而实现对高价值动态的选择性建模。",
+              "limitationsAndReadingValue": "研究局限于小规模代理群（最多四者）和简化物理环境，尚未扩展至带宽受限或时序相关丢包等更复杂通信模式。尽管在多种任务和算法上验证了通用性，但优势权重未做任务自适应调优。最值得阅读的是其问题抽象方式与价值感知机制的设计逻辑，为通信脆弱场景下的自主系统提供了可推广的鲁棒协调思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "面向通信中断下鲁棒多智能体协同的价值感知预测",
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统依赖通信共享状态以实现协作，但在现实部署中常因环境干扰导致信号丢失。传统预测模型在填补通信缺口时采用均等权重的学习目标，无法区分关键决策动态与随机探索噪声，导致模型资源浪费在低价值过渡上。这在强化学习背景下尤为突出，因为策略演进过程中已抛弃的行为仍被预测器学习，削弱了其在高影响时刻的估计能力。",
+              "modelAndSetup": "论文在混合部分可观马尔可夫决策过程（H-POMDP）框架下研究多智能体协作任务，其中通信可靠性由概率矩阵控制。模型输入为局部观测流，输出为对缺失同伴观测的重建值。预测器与策略网络并行运行，在通信中断时提供补全状态。实验基于多智能体粒子环境中的五项协作任务，评估不同通信可靠度下的平均回报与性能稳定性。",
+              "contributionsAndResults": "提出价值感知MARO方法，通过将预测器损失函数与策略优势信号加权耦合，使模型聚焦于高回报、有意图的状态转移。实验证明该方法在通信可靠性低于40%时显著优于基线，平均回报提升超20%，性能方差降低64.7%。尤其在高丢包场景下避免了基线的性能崩溃，验证了将预测学习与策略演化同步的有效性。",
+              "methodsAndTechniques": "方法核心是利用Actor-Critic架构中的优势估计作为动态权重，调整预测器的负对数似然损失。通过理论推导建立策略更新方向与预测误差之间的关联，并设计启发式加权损失函数，使预测器优先学习对策略改进贡献大的状态转移。ReLU处理确保权重非负，批归一化稳定训练过程，从而实现对高价值动态的选择性建模。",
+              "limitationsAndReadingValue": "研究局限于小规模代理群（最多四者）和简化物理环境，尚未扩展至带宽受限或时序相关丢包等更复杂通信模式。尽管在多种任务和算法上验证了通用性，但优势权重未做任务自适应调优。最值得阅读的是其问题抽象方式与价值感知机制的设计逻辑，为通信脆弱场景下的自主系统提供了可推广的鲁棒协调思路。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "鲁棒性",
+              "预测建模",
+              "通信中断"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
