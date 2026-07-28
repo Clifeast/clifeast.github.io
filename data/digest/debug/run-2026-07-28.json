@@ -1,0 +1,1407 @@
+{
+  "date": "2026-07-28",
+  "generatedAt": "2026-07-28T05:31:59.113408+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-07-27",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202607270000 TO 202607272359\"",
+            "totalResults": 8,
+            "fetchedCount": 8
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202607270000 TO 202607272359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          }
+        },
+        "dedupedCount": 8
+      },
+      "arxivTotalResults": 8,
+      "fetchedCount": 8,
+      "fetchedPapers": [
+        {
+          "title": "Learning Distributions from Multiple Data Providers",
+          "url": "https://arxiv.org/abs/2607.24732",
+          "arxivId": "2607.24732",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "abstract": "Motivated by learning from heterogeneous and overlapping data providers, we study a stylized model of distribution learning from restricted conditional samples. The goal is to learn an unknown distribution $p$ on a finite domain $[n]$. The learner is given a fixed family of queryable sets $\\mathscr{S} \\subseteq 2^{[n]}$, and each query to $S \\in \\mathscr{S}$ returns an independent sample from the conditional distribution $p(\\cdot \\mid S)$. Learnability is governed by the co-occurrence graph associated with $\\mathscr{S}$: two domain elements are adjacent if they appear together in some queryable set. Pointwise consistency is achievable when this graph is connected on the target support. PAC learning requires more: it is possible when the co-occurrence graph is complete. The optimal sample complexity of PAC learning ranges from nearly linear to quadratic. Every query family with complete co-occurrence graph admits sample complexity $\\widetilde O(n^2/ε^2)$, and this bound is tight in the worst case. On the other hand, if $[n]$ is queryable then ordinary sampling improves the bound to $Θ(n/ε^2)$, and this cannot be improved further even if every set is queryable. More generally, we identify hierarchical comparabilityas a sufficient structural condition on $\\mathscr S$ under which the optimal complexity is nearly linear, $\\widetilde Θ(n/ε^2)$, with pairwise query families as a canonical example. Finally, the full range of polynomial rates between linear and quadratic is attainable: for every $α\\in (1,2)$, there exists a query family with optimal PAC rate $\\widetilde Θ(n^α/ε^2)$."
+        },
+        {
+          "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+          "url": "https://arxiv.org/abs/2607.24676",
+          "arxivId": "2607.24676",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "The classic notion of strategyproofness implicitly assumes that a manipulating agent either possesses complete knowledge of what all other agents are going to report, or is willing to take the risk and act as if they know these reports. To capture the profound uncertainty of real-world voters, recent work introduced \\emph{risk-avoiding truthfulness (RAT)} and the \\emph{RAT-degree}, which quantifies the exact number of known reports required for a manipulation to be strictly safe. While the RAT-degree has been analyzed in settings such as single-winner elections, its implications for multi-winner voting remain unexplored. In this paper, we bridge this gap by extending the RAT-degree framework to approval-based committee (ABC) selection, a domain characterized by a fundamental tension between proportional representation and strategic robustness. Focusing on the prominent Proportional Approval Voting (PAV) rule, we investigate its susceptibility to safe subset manipulations. We establish tight bounds on its superset risk-avoiding strategy-proofness under dropping candidates, demonstrating that PAV is vulnerable to safe manipulation when the agent knows the exact ballots of $f = \\lceil n/k \\rceil$ other voters, but remains completely immune given knowledge of at most $f = \\lfloor \\frac{n}{k+1} \\rfloor - 1$ voters."
+        },
+        {
+          "title": "CAP-DO: Learned Contextual Action Proposals for Certified Double-Oracle Solving Across Related Zero-Sum Games",
+          "url": "https://arxiv.org/abs/2607.24610",
+          "arxivId": "2607.24610",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Many security and inspection-planning problems require solving a sequence of related zero-sum games. Across this sequence, the feasible defender and attacker action spaces re-main fixed, whereas each context induces a different payoff matrix through changes in target values, inspection effective-ness, costs, and interaction effects. Double Oracle (DO) solves large zero-sum games without materializing the full payoff matrix by iteratively expanding a restricted game. However, applying standard DO independently to each new payoff context requires restarting the search from a generic restricted game and requires rediscovering context-relevant actions through full-space best responses. We propose Con-textual Action Proposal Double Oracle (CAP-DO), a learning-augmented framework that warm-starts DO for repeated contextual games. Offline, CAP-DO trains separate defender and attacker rankers once from solved contexts. Online, the fixed rankers propose initial restricted action sets for each new context. Learning therefore determines where certified search starts, while the current game, through full-space best-response checks and a two-sided certificate, still determines whether the output is accepted. Theoretically, CAP-DO pre-serves DO's full-game certification guarantee, so every accepted output meets the prescribed certificate tolerance. Under standard exact-oracle assumptions, CAP-DO also retains finite convergence when expansion is uncapped. Empirically, across three scales of a non-additive contextual inspection-game benchmark, with up to 9,880 actions per player, CAP-DO-balanced achieves higher certification rates and uses few-er full-space best-response calls than cold-start, trace-reuse, and heuristic warm starts under fixed expansion budgets."
+        },
+        {
+          "title": "Near-Tight Theoretical Bounds for Incentive Compatibility in Bitcoin Mining",
+          "url": "https://arxiv.org/abs/2607.24415",
+          "arxivId": "2607.24415",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.GT"
+          ],
+          "abstract": "When is honest Bitcoin mining rational? This question is central to the incentive design of proof-of-work blockchains. Sapirshtein et al. computationally derived near-tight lower and upper bounds on the incentive-compatibility threshold using a Markov Decision Process. Kiayias et al.'s Blockchain Mining Games instead derived theoretical lower and upper bounds. However, this theoretical approach has two limitations: its model restricts miners to a narrow action space and assumes idealized tie behavior, and its lower and upper bounds are far from tight. We resolve both limitations. We develop a more realistic model with a broader miner action space and asymmetric tie-breaking parameters $γ^-$ and $γ^+$. We then propose an algorithm that computes lower and upper bounds on the incentive-compatibility threshold with a maximum error of $9.98006\\times10^{-4}$."
+        },
+        {
+          "title": "Algorithms for Equilibria in Concurrent Stopping Games",
+          "url": "https://arxiv.org/abs/2607.24219",
+          "arxivId": "2607.24219",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "Concurrent games are a standard model for multi-agent systems, with Nash equilibrium as their central solution concept. The associated \\emph{constrained existence problem}---does a game admit a Nash equilibrium whose expected payoff lies within a prescribed interval for every player?---is undecidable, and remains so even for 10-player \\emph{stopping} games, in which a terminal state is reached almost surely under every strategy profile. We give two routes to tractability. We first relax exactness and consider the problem of approximate constrained existence problem, parametrised by $\\varepsilon$-NE, which decides whether an \\(\\varepsilon\\)-Nash equilibrium with the prescribed payoffs exists. The algorithm runs in exponential time, and only polynomially in the bit-size of \\(\\varepsilon\\). We complement it with a \\PSPACE-hardness lower bound that holds already for turn-based games, and for pure equilibria as well. We then relax the solution concept, turning to \\emph{extreme risk-sensitive equilibria} (XRSE), recently introduced for turn-based stochastic games. Here the players are partitioned into optimists and pessimists, who evaluate a strategy profile by the best, respectively the worst, payoff attainable with positive probability, instead of the expected payoff. We prove that the constrained existence problem for XRSE is \\NP-complete on concurrent games, as for turn-based games."
+        },
+        {
+          "title": "Knapsack Secretary is not $1/e$-Competitive",
+          "url": "https://arxiv.org/abs/2607.24198",
+          "arxivId": "2607.24198",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "abstract": "We prove that no algorithm for the knapsack secretary problem can be $1/e$-competitive. The knapsack secretary problem was first introduced by Babaioff, Immorlica, Kempe, and Kleinberg (2007). There have been many improvements to the achievable competitive ratio since then, but the $1/e$ impossibility barrier has remained unchanged. Many combinatorial variants of the secretary problem, including knapsack secretary, inherit the $1/e$ impossibility by embedding the single-choice problem as a special case. We construct a family of hard instances for the $1$-$B$ knapsack secretary problem, which is a special case of the general knapsack secretary problem, to improve the existing impossibility result. We show in this special case that the competitive ratio is at most $0.36437 < \\frac{1}{e} - 0.0035$. Our construction is similar to the one used by Abels, Ladewig, Schewior, and Stinzendörfer (2022), for which they show an impossibility of $1/(1+e)$ for ordinal algorithms, where only the relative ranks of the items are known. Our work resolves an open question of theirs by showing that $1/e$ cannot be achieved even in the cardinal case of the $1$-$B$ knapsack secretary problem. We complement our impossibility result with a simple algorithm for $1$-$B$ knapsack secretary that is $(1/5.10-o(1))$-competitive for every fixed $B \\geq 2$. This improves the guarantee obtained by applying general-purpose random-order knapsack algorithms to this special case."
+        },
+        {
+          "title": "Modeling Stylistic Co-evolution in Symbolic Music Heritage Collections",
+          "url": "https://arxiv.org/abs/2607.23957",
+          "arxivId": "2607.23957",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.GT"
+          ],
+          "abstract": "Digitized musical heritage collections offer new opportunities to examine how stylistic traditions change over historical time, but computational analyses often reduce musical works to static classifications or similarity scores. This article proposes a representation-to-dynamics framework for studying cross-cultural harmonic change in Western art music. Starting from symbolic chord sequences, we derive contextual chord embeddings, project work-level representations into a shared harmonic space, and reconstruct country-level trajectories through temporally causal Kalman filtering. These trajectories are then modeled with DeGroot and Friedkin--Johnsen dynamics, yielding interpretable influence-like networks and estimates of stylistic anchoring. We apply the framework to a curated corpus of 480 dated works from 1875 to 1940 across Russia, France, Germany, Austria, and a heterogeneous ''Others'' group. Models fitted on 1875--1925 are evaluated through recursive forecasts for 1930--1940, testing whether the estimated dependency structure remains informative across a potentially changing historical and stylistic regime. The estimated trajectories and influence patterns are broadly consistent with established music-historical accounts of late Romantic and early modernist exchange, including the close relationship between German and Austrian traditions and historically plausible cross-currents between Russian and French traditions. PCA-variance-weighted estimation provides modest improvements while preserving a single interpretable influence network. Rather than treating the estimated matrices as direct causal evidence, the framework offers a reproducible quantitative layer for cultural heritage research, complementing archival and musicological interpretation."
+        },
+        {
+          "title": "Strategies for quantum-enabled Bitcoin miners",
+          "url": "https://arxiv.org/abs/2607.23952",
+          "arxivId": "2607.23952",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "quant-ph",
+            "cs.CR",
+            "cs.GT"
+          ],
+          "abstract": "We study the impact that two miners equipped with quantum computers purpose-built for quantum Bitcoin mining will have on the 51% attack threshold of the Bitcoin network, given that the miners are playing a competitive game against each other to be the first to mine a block. We extend an existing game-theoretic framework for Bitcoin mining and compute the resultant payoff matrices. From these payoff matrices, we determine optimal quantum mining strategies for two non-colluding and aggressive quantum miners with multiple opportunities at finding a valid block in an otherwise classical Bitcoin network. We show that these optimal quantum mining strategies have a negligible effect on the 51% attack threshold. The novelty of our work is the inclusion of the Aggressive Quantum Mining Strategy and the realistic approach of allowing the quantum miners to restart their search if their measurements do not yield a valid block when determining the optimal quantum mining strategies. Our result is important for evaluating quantum-mining threats on cryptocurrencies based on Proof-of-Work, e.g. Bitcoin"
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Learning Distributions from Multiple Data Providers",
+              "url": "https://arxiv.org/abs/2607.24732",
+              "arxivId": "2607.24732",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT",
+                "cs.LG",
+                "stat.ML"
+              ],
+              "abstract": "Motivated by learning from heterogeneous and overlapping data providers, we study a stylized model of distribution learning from restricted conditional samples. The goal is to learn an unknown distribution $p$ on a finite domain $[n]$. The learner is given a fixed family of queryable sets $\\mathscr{S} \\subseteq 2^{[n]}$, and each query to $S \\in \\mathscr{S}$ returns an independent sample from the conditional distribution $p(\\cdot \\mid S)$. Learnability is governed by the co-occurrence graph associated with $\\mathscr{S}$: two domain elements are adjacent if they appear together in some queryable set. Pointwise consistency is achievable when this graph is connected on the target support. PAC learning requires more: it is possible when the co-occurrence graph is complete. The optimal sample complexity of PAC learning ranges from nearly linear to quadratic. Every query family with complete co-occurrence graph admits sample complexity $\\widetilde O(n^2/ε^2)$, and this bound is tight in the worst case. On the other hand, if $[n]$ is queryable then ordinary sampling improves the bound to $Θ(n/ε^2)$, and this cannot be improved further even if every set is queryable. More generally, we identify hierarchical comparabilityas a sufficient structural condition on $\\mathscr S$ under which the optimal complexity is nearly linear, $\\widetilde Θ(n/ε^2)$, with pairwise query families as a canonical example. Finally, the full range of polynomial rates between linear and quadratic is attainable: for every $α\\in (1,2)$, there exists a query family with optimal PAC rate $\\widetilde Θ(n^α/ε^2)$."
+            },
+            {
+              "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+              "url": "https://arxiv.org/abs/2607.24676",
+              "arxivId": "2607.24676",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "The classic notion of strategyproofness implicitly assumes that a manipulating agent either possesses complete knowledge of what all other agents are going to report, or is willing to take the risk and act as if they know these reports. To capture the profound uncertainty of real-world voters, recent work introduced \\emph{risk-avoiding truthfulness (RAT)} and the \\emph{RAT-degree}, which quantifies the exact number of known reports required for a manipulation to be strictly safe. While the RAT-degree has been analyzed in settings such as single-winner elections, its implications for multi-winner voting remain unexplored. In this paper, we bridge this gap by extending the RAT-degree framework to approval-based committee (ABC) selection, a domain characterized by a fundamental tension between proportional representation and strategic robustness. Focusing on the prominent Proportional Approval Voting (PAV) rule, we investigate its susceptibility to safe subset manipulations. We establish tight bounds on its superset risk-avoiding strategy-proofness under dropping candidates, demonstrating that PAV is vulnerable to safe manipulation when the agent knows the exact ballots of $f = \\lceil n/k \\rceil$ other voters, but remains completely immune given knowledge of at most $f = \\lfloor \\frac{n}{k+1} \\rfloor - 1$ voters."
+            },
+            {
+              "title": "CAP-DO: Learned Contextual Action Proposals for Certified Double-Oracle Solving Across Related Zero-Sum Games",
+              "url": "https://arxiv.org/abs/2607.24610",
+              "arxivId": "2607.24610",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Many security and inspection-planning problems require solving a sequence of related zero-sum games. Across this sequence, the feasible defender and attacker action spaces re-main fixed, whereas each context induces a different payoff matrix through changes in target values, inspection effective-ness, costs, and interaction effects. Double Oracle (DO) solves large zero-sum games without materializing the full payoff matrix by iteratively expanding a restricted game. However, applying standard DO independently to each new payoff context requires restarting the search from a generic restricted game and requires rediscovering context-relevant actions through full-space best responses. We propose Con-textual Action Proposal Double Oracle (CAP-DO), a learning-augmented framework that warm-starts DO for repeated contextual games. Offline, CAP-DO trains separate defender and attacker rankers once from solved contexts. Online, the fixed rankers propose initial restricted action sets for each new context. Learning therefore determines where certified search starts, while the current game, through full-space best-response checks and a two-sided certificate, still determines whether the output is accepted. Theoretically, CAP-DO pre-serves DO's full-game certification guarantee, so every accepted output meets the prescribed certificate tolerance. Under standard exact-oracle assumptions, CAP-DO also retains finite convergence when expansion is uncapped. Empirically, across three scales of a non-additive contextual inspection-game benchmark, with up to 9,880 actions per player, CAP-DO-balanced achieves higher certification rates and uses few-er full-space best-response calls than cold-start, trace-reuse, and heuristic warm starts under fixed expansion budgets."
+            },
+            {
+              "title": "Near-Tight Theoretical Bounds for Incentive Compatibility in Bitcoin Mining",
+              "url": "https://arxiv.org/abs/2607.24415",
+              "arxivId": "2607.24415",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.GT"
+              ],
+              "abstract": "When is honest Bitcoin mining rational? This question is central to the incentive design of proof-of-work blockchains. Sapirshtein et al. computationally derived near-tight lower and upper bounds on the incentive-compatibility threshold using a Markov Decision Process. Kiayias et al.'s Blockchain Mining Games instead derived theoretical lower and upper bounds. However, this theoretical approach has two limitations: its model restricts miners to a narrow action space and assumes idealized tie behavior, and its lower and upper bounds are far from tight. We resolve both limitations. We develop a more realistic model with a broader miner action space and asymmetric tie-breaking parameters $γ^-$ and $γ^+$. We then propose an algorithm that computes lower and upper bounds on the incentive-compatibility threshold with a maximum error of $9.98006\\times10^{-4}$."
+            },
+            {
+              "title": "Algorithms for Equilibria in Concurrent Stopping Games",
+              "url": "https://arxiv.org/abs/2607.24219",
+              "arxivId": "2607.24219",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA"
+              ],
+              "abstract": "Concurrent games are a standard model for multi-agent systems, with Nash equilibrium as their central solution concept. The associated \\emph{constrained existence problem}---does a game admit a Nash equilibrium whose expected payoff lies within a prescribed interval for every player?---is undecidable, and remains so even for 10-player \\emph{stopping} games, in which a terminal state is reached almost surely under every strategy profile. We give two routes to tractability. We first relax exactness and consider the problem of approximate constrained existence problem, parametrised by $\\varepsilon$-NE, which decides whether an \\(\\varepsilon\\)-Nash equilibrium with the prescribed payoffs exists. The algorithm runs in exponential time, and only polynomially in the bit-size of \\(\\varepsilon\\). We complement it with a \\PSPACE-hardness lower bound that holds already for turn-based games, and for pure equilibria as well. We then relax the solution concept, turning to \\emph{extreme risk-sensitive equilibria} (XRSE), recently introduced for turn-based stochastic games. Here the players are partitioned into optimists and pessimists, who evaluate a strategy profile by the best, respectively the worst, payoff attainable with positive probability, instead of the expected payoff. We prove that the constrained existence problem for XRSE is \\NP-complete on concurrent games, as for turn-based games."
+            },
+            {
+              "title": "Knapsack Secretary is not $1/e$-Competitive",
+              "url": "https://arxiv.org/abs/2607.24198",
+              "arxivId": "2607.24198",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "abstract": "We prove that no algorithm for the knapsack secretary problem can be $1/e$-competitive. The knapsack secretary problem was first introduced by Babaioff, Immorlica, Kempe, and Kleinberg (2007). There have been many improvements to the achievable competitive ratio since then, but the $1/e$ impossibility barrier has remained unchanged. Many combinatorial variants of the secretary problem, including knapsack secretary, inherit the $1/e$ impossibility by embedding the single-choice problem as a special case. We construct a family of hard instances for the $1$-$B$ knapsack secretary problem, which is a special case of the general knapsack secretary problem, to improve the existing impossibility result. We show in this special case that the competitive ratio is at most $0.36437 < \\frac{1}{e} - 0.0035$. Our construction is similar to the one used by Abels, Ladewig, Schewior, and Stinzendörfer (2022), for which they show an impossibility of $1/(1+e)$ for ordinal algorithms, where only the relative ranks of the items are known. Our work resolves an open question of theirs by showing that $1/e$ cannot be achieved even in the cardinal case of the $1$-$B$ knapsack secretary problem. We complement our impossibility result with a simple algorithm for $1$-$B$ knapsack secretary that is $(1/5.10-o(1))$-competitive for every fixed $B \\geq 2$. This improves the guarantee obtained by applying general-purpose random-order knapsack algorithms to this special case."
+            },
+            {
+              "title": "Modeling Stylistic Co-evolution in Symbolic Music Heritage Collections",
+              "url": "https://arxiv.org/abs/2607.23957",
+              "arxivId": "2607.23957",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.SD",
+                "cs.GT"
+              ],
+              "abstract": "Digitized musical heritage collections offer new opportunities to examine how stylistic traditions change over historical time, but computational analyses often reduce musical works to static classifications or similarity scores. This article proposes a representation-to-dynamics framework for studying cross-cultural harmonic change in Western art music. Starting from symbolic chord sequences, we derive contextual chord embeddings, project work-level representations into a shared harmonic space, and reconstruct country-level trajectories through temporally causal Kalman filtering. These trajectories are then modeled with DeGroot and Friedkin--Johnsen dynamics, yielding interpretable influence-like networks and estimates of stylistic anchoring. We apply the framework to a curated corpus of 480 dated works from 1875 to 1940 across Russia, France, Germany, Austria, and a heterogeneous ''Others'' group. Models fitted on 1875--1925 are evaluated through recursive forecasts for 1930--1940, testing whether the estimated dependency structure remains informative across a potentially changing historical and stylistic regime. The estimated trajectories and influence patterns are broadly consistent with established music-historical accounts of late Romantic and early modernist exchange, including the close relationship between German and Austrian traditions and historically plausible cross-currents between Russian and French traditions. PCA-variance-weighted estimation provides modest improvements while preserving a single interpretable influence network. Rather than treating the estimated matrices as direct causal evidence, the framework offers a reproducible quantitative layer for cultural heritage research, complementing archival and musicological interpretation."
+            },
+            {
+              "title": "Strategies for quantum-enabled Bitcoin miners",
+              "url": "https://arxiv.org/abs/2607.23952",
+              "arxivId": "2607.23952",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "quant-ph",
+                "cs.CR",
+                "cs.GT"
+              ],
+              "abstract": "We study the impact that two miners equipped with quantum computers purpose-built for quantum Bitcoin mining will have on the 51% attack threshold of the Bitcoin network, given that the miners are playing a competitive game against each other to be the first to mine a block. We extend an existing game-theoretic framework for Bitcoin mining and compute the resultant payoff matrices. From these payoff matrices, we determine optimal quantum mining strategies for two non-colluding and aggressive quantum miners with multiple opportunities at finding a valid block in an otherwise classical Bitcoin network. We show that these optimal quantum mining strategies have a negligible effect on the 51% attack threshold. The novelty of our work is the inclusion of the Aggressive Quantum Mining Strategy and the realistic approach of allowing the quantum miners to restart their search if their measurements do not yield a valid block when determining the optimal quantum mining strategies. Our result is important for evaluating quantum-mining threats on cryptocurrencies based on Proof-of-Work, e.g. Bitcoin"
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 0,
+                  "theoreticalStrength": 0,
+                  "guaranteeQuality": 0,
+                  "readingValue": 0,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 4,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 1,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 0,
+                  "theoreticalStrength": 0,
+                  "guaranteeQuality": 0,
+                  "readingValue": 0,
+                  "penalty": -5,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 4,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Learning Distributions from Multiple Data Providers",
+              "url": "https://arxiv.org/abs/2607.24732",
+              "arxivId": "2607.24732",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT",
+                "cs.LG",
+                "stat.ML"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+              "url": "https://arxiv.org/abs/2607.24676",
+              "arxivId": "2607.24676",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.9,
+                "total": 27.8
+              }
+            },
+            {
+              "title": "CAP-DO: Learned Contextual Action Proposals for Certified Double-Oracle Solving Across Related Zero-Sum Games",
+              "url": "https://arxiv.org/abs/2607.24610",
+              "arxivId": "2607.24610",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 3.6,
+                "total": 27.5
+              }
+            },
+            {
+              "title": "Near-Tight Theoretical Bounds for Incentive Compatibility in Bitcoin Mining",
+              "url": "https://arxiv.org/abs/2607.24415",
+              "arxivId": "2607.24415",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 2.6,
+                "total": 25.7
+              }
+            },
+            {
+              "title": "Algorithms for Equilibria in Concurrent Stopping Games",
+              "url": "https://arxiv.org/abs/2607.24219",
+              "arxivId": "2607.24219",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.9,
+                "total": 30.9
+              }
+            },
+            {
+              "title": "Knapsack Secretary is not $1/e$-Competitive",
+              "url": "https://arxiv.org/abs/2607.24198",
+              "arxivId": "2607.24198",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "bonus": 0.8,
+                "total": 20.6
+              }
+            },
+            {
+              "title": "Modeling Stylistic Co-evolution in Symbolic Music Heritage Collections",
+              "url": "https://arxiv.org/abs/2607.23957",
+              "arxivId": "2607.23957",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.SD",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Strategies for quantum-enabled Bitcoin miners",
+              "url": "https://arxiv.org/abs/2607.23952",
+              "arxivId": "2607.23952",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "quant-ph",
+                "cs.CR",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 3.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 7.0,
+                "penalty": -2.0,
+                "baseTotal": 16.0,
+                "bonus": 2.1,
+                "total": 12.7
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Learning Distributions from Multiple Data Providers",
+          "url": "https://arxiv.org/abs/2607.24732",
+          "arxivId": "2607.24732",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+          "url": "https://arxiv.org/abs/2607.24676",
+          "arxivId": "2607.24676",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 27.8
+          }
+        },
+        {
+          "title": "CAP-DO: Learned Contextual Action Proposals for Certified Double-Oracle Solving Across Related Zero-Sum Games",
+          "url": "https://arxiv.org/abs/2607.24610",
+          "arxivId": "2607.24610",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 3.6,
+            "total": 27.5
+          }
+        },
+        {
+          "title": "Near-Tight Theoretical Bounds for Incentive Compatibility in Bitcoin Mining",
+          "url": "https://arxiv.org/abs/2607.24415",
+          "arxivId": "2607.24415",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 2.6,
+            "total": 25.7
+          }
+        },
+        {
+          "title": "Algorithms for Equilibria in Concurrent Stopping Games",
+          "url": "https://arxiv.org/abs/2607.24219",
+          "arxivId": "2607.24219",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          }
+        },
+        {
+          "title": "Knapsack Secretary is not $1/e$-Competitive",
+          "url": "https://arxiv.org/abs/2607.24198",
+          "arxivId": "2607.24198",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.8,
+            "total": 20.6
+          }
+        },
+        {
+          "title": "Modeling Stylistic Co-evolution in Symbolic Music Heritage Collections",
+          "url": "https://arxiv.org/abs/2607.23957",
+          "arxivId": "2607.23957",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Strategies for quantum-enabled Bitcoin miners",
+          "url": "https://arxiv.org/abs/2607.23952",
+          "arxivId": "2607.23952",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "quant-ph",
+            "cs.CR",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 3.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 16.0,
+            "bonus": 2.1,
+            "total": 12.7
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Algorithms for Equilibria in Concurrent Stopping Games",
+          "url": "https://arxiv.org/abs/2607.24219",
+          "arxivId": "2607.24219",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          }
+        },
+        {
+          "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+          "url": "https://arxiv.org/abs/2607.24676",
+          "arxivId": "2607.24676",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 27.8
+          }
+        },
+        {
+          "title": "CAP-DO: Learned Contextual Action Proposals for Certified Double-Oracle Solving Across Related Zero-Sum Games",
+          "url": "https://arxiv.org/abs/2607.24610",
+          "arxivId": "2607.24610",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 3.6,
+            "total": 27.5
+          }
+        },
+        {
+          "title": "Near-Tight Theoretical Bounds for Incentive Compatibility in Bitcoin Mining",
+          "url": "https://arxiv.org/abs/2607.24415",
+          "arxivId": "2607.24415",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 2.6,
+            "total": 25.7
+          }
+        },
+        {
+          "title": "Knapsack Secretary is not $1/e$-Competitive",
+          "url": "https://arxiv.org/abs/2607.24198",
+          "arxivId": "2607.24198",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.8,
+            "total": 20.6
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Algorithms for Equilibria in Concurrent Stopping Games",
+            "url": "https://arxiv.org/abs/2607.24219",
+            "arxivId": "2607.24219",
+            "date": "2026-07-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "并发停止博弈中的均衡算法",
+            "researchParadigmTags": [
+              "算法设计",
+              "复杂度分析",
+              "均衡分析",
+              "理论推导"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "纳什均衡",
+              "风险敏感决策",
+              "博弈学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在并发停止博弈中求解纳什均衡如此困难？因为即使限制为几乎必然终止的游戏，判断是否存在满足期望收益约束的纳什均衡仍是不可判定问题。这使得传统精确求解路径受阻，迫使研究者探索近似或替代均衡概念来绕过计算障碍。",
+              "modelAndSetup": "作者考虑一类终端奖励的并发随机博弈，其中玩家同步选择动作并影响状态转移概率，游戏在到达终端状态时结束，各玩家获得固定奖励。核心设定是‘停止博弈’——无论策略如何组合，终态几乎必然可达，从而排除无限路径的影响。",
+              "contributionsAndResults": "论文提出两条通往可判定性的路径：一是放宽精确性，设计可在指数时间内解决ε-近似纳什均衡存在性问题的算法；二是更换解概念，证明极端风险敏感均衡（XRSE）的存在性判定在并发停止博弈中仍为NP完全，与回合制情形一致。",
+              "methodsAndTechniques": "对于近似算法，作者利用有限记忆截断技术，将无限策略逼近为有限步后转为无记忆策略，并通过特征向量的空间离散化进行迭代覆盖。对于XRSE，则构造基于‘锚定玩家’的多项式大小记忆结构，结合团队惩罚策略处理并发环境下的偏离检测。",
+              "limitationsAndReadingValue": "两项算法均依赖‘停止性’强假设，且近似算法存在PSPACE下界与EXPTIME上界的复杂度差距。最值得读的是XRSE的有限记忆构造技巧及其对并发环境下非相关随机化的处理，为后续研究提供了新工具。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "并发停止博弈中的均衡算法",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在并发停止博弈中求解纳什均衡如此困难？因为即使限制为几乎必然终止的游戏，判断是否存在满足期望收益约束的纳什均衡仍是不可判定问题。这使得传统精确求解路径受阻，迫使研究者探索近似或替代均衡概念来绕过计算障碍。",
+              "modelAndSetup": "作者考虑一类终端奖励的并发随机博弈，其中玩家同步选择动作并影响状态转移概率，游戏在到达终端状态时结束，各玩家获得固定奖励。核心设定是‘停止博弈’——无论策略如何组合，终态几乎必然可达，从而排除无限路径的影响。",
+              "contributionsAndResults": "论文提出两条通往可判定性的路径：一是放宽精确性，设计可在指数时间内解决ε-近似纳什均衡存在性问题的算法；二是更换解概念，证明极端风险敏感均衡（XRSE）的存在性判定在并发停止博弈中仍为NP完全，与回合制情形一致。",
+              "methodsAndTechniques": "对于近似算法，作者利用有限记忆截断技术，将无限策略逼近为有限步后转为无记忆策略，并通过特征向量的空间离散化进行迭代覆盖。对于XRSE，则构造基于‘锚定玩家’的多项式大小记忆结构，结合团队惩罚策略处理并发环境下的偏离检测。",
+              "limitationsAndReadingValue": "两项算法均依赖‘停止性’强假设，且近似算法存在PSPACE下界与EXPTIME上界的复杂度差距。最值得读的是XRSE的有限记忆构造技巧及其对并发环境下非相关随机化的处理，为后续研究提供了新工具。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "纳什均衡",
+              "风险敏感决策",
+              "博弈学习"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "复杂度分析",
+              "均衡分析",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Degree of Strategy-Proofness for Risk-Averse Committee Selection",
+            "url": "https://arxiv.org/abs/2607.24676",
+            "arxivId": "2607.24676",
+            "date": "2026-07-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "风险规避型委员会选举中的策略免疫程度",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计"
+            ],
+            "contentTags": [
+              "机制设计",
+              "社会选择",
+              "策略稳健性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统策略免疫性假设操纵者知晓所有他人选票，这在现实中不成立。本文关注选民仅掌握部分信息时的安全操纵问题，填补了风险规避真实行为在多胜者选举中的研究空白。核心问题是：操纵者需知道多少他人选票才能安全地通过删减候选人来获利？这触及信息不对称下策略行为的根本边界。",
+              "modelAndSetup": "模型基于批准式委员会选举（ABC），投票人提交候选子集，机制选出固定规模委员会。采用风险规避策略免疫（RAT）框架，定义‘已知f个他人选票’下的安全操纵：操纵后结果永不更差且至少一种情况下更优。重点分析子集操纵（即删减真实偏好）下的Superset RASP度，量化机制的实际抗操纵能力。",
+              "contributionsAndResults": "论文首次将RAT-degree引入多胜者选举，聚焦比例批准投票（PAV）规则。得出紧确界：当操纵者知晓f=⌊n/k⌋个他人选票时，PAV易受安全子集操纵；但若仅知晓f=⌊n/k⌋−1张，则完全免疫。这揭示PAV在有限信息下仍具强稳健性，为比例性与策略稳健性的权衡提供新视角。",
+              "methodsAndTechniques": "证明通过构造极端投票分布实现。正向结果（可操纵）依赖于高支持率候选人与阈值效应的结合，展示操纵如何改变胜负格局。反向结果（免疫性）采用对抗性构造：针对任意潜在操纵，设计未知选票配置使操纵要么无效要么风险过高，核心在于利用PAV得分的边际贡献差异与委员会替换的得分损失分析。",
+              "limitationsAndReadingValue": "结果依赖于特定操纵类型（子集操纵）与评分规则（PAV），对其他规则或操纵形式的推广尚待探索。证明高度依赖组合构造，可能难以扩展至更复杂设置。最值得读的是其精细的信息-稳健性分析框架，为评估现实选举机制提供了比经典策略免疫更细腻的理论工具。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "风险规避型委员会选举中的策略免疫程度",
+            "summarySections": {
+              "backgroundAndQuestion": "传统策略免疫性假设操纵者知晓所有他人选票，这在现实中不成立。本文关注选民仅掌握部分信息时的安全操纵问题，填补了风险规避真实行为在多胜者选举中的研究空白。核心问题是：操纵者需知道多少他人选票才能安全地通过删减候选人来获利？这触及信息不对称下策略行为的根本边界。",
+              "modelAndSetup": "模型基于批准式委员会选举（ABC），投票人提交候选子集，机制选出固定规模委员会。采用风险规避策略免疫（RAT）框架，定义‘已知f个他人选票’下的安全操纵：操纵后结果永不更差且至少一种情况下更优。重点分析子集操纵（即删减真实偏好）下的Superset RASP度，量化机制的实际抗操纵能力。",
+              "contributionsAndResults": "论文首次将RAT-degree引入多胜者选举，聚焦比例批准投票（PAV）规则。得出紧确界：当操纵者知晓f=⌊n/k⌋个他人选票时，PAV易受安全子集操纵；但若仅知晓f=⌊n/k⌋−1张，则完全免疫。这揭示PAV在有限信息下仍具强稳健性，为比例性与策略稳健性的权衡提供新视角。",
+              "methodsAndTechniques": "证明通过构造极端投票分布实现。正向结果（可操纵）依赖于高支持率候选人与阈值效应的结合，展示操纵如何改变胜负格局。反向结果（免疫性）采用对抗性构造：针对任意潜在操纵，设计未知选票配置使操纵要么无效要么风险过高，核心在于利用PAV得分的边际贡献差异与委员会替换的得分损失分析。",
+              "limitationsAndReadingValue": "结果依赖于特定操纵类型（子集操纵）与评分规则（PAV），对其他规则或操纵形式的推广尚待探索。证明高度依赖组合构造，可能难以扩展至更复杂设置。最值得读的是其精细的信息-稳健性分析框架，为评估现实选举机制提供了比经典策略免疫更细腻的理论工具。"
+            },
+            "contentTags": [
+              "机制设计",
+              "社会选择",
+              "策略稳健性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "CAP-DO: Learned Contextual Action Proposals for Certified Double-Oracle Solving Across Related Zero-Sum Games",
+            "url": "https://arxiv.org/abs/2607.24610",
+            "arxivId": "2607.24610",
+            "date": "2026-07-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "CAP-DO: 用于相关零和博弈中认证双Oracle求解的学习型上下文动作提议",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "安全性",
+              "鲁棒性",
+              "在线算法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "许多安全与检查规划问题需反复求解一系列相关的零和博弈，其中行动空间固定但收益随上下文变化。标准双Oracle（DO）算法每次从头搜索，重复发现有用动作效率低下。本文提出CAP-DO框架，旨在利用历史求解痕迹加速新情境下的搜索，同时保持严格的全局认证，解决重复求解中的效率与可靠性平衡难题。",
+              "modelAndSetup": "模型考虑一个防御者与攻击者在共享组合动作空间下进行的序列化零和博弈，每个上下文决定不同的损失矩阵。CAP-DO离线训练两个独立的排序模型（ranker），根据历史认证轨迹为防御方和攻击方标注‘有用动作’，进而学习基于当前上下文的动作相关性评分函数，用于在线阶段初始化受限游戏的动作集合。",
+              "contributionsAndResults": "CAP-DO首次将学习型提议机制嵌入认证双Oracle框架，在不牺牲理论保障的前提下显著提升求解效率。理论上证明其继承DO的完全认证性和有限收敛性；实验表明，在多达9880个动作的情境下，CAP-DO比冷启动、启发式及历史重用方法更早达成认证，减少最佳响应调用次数并改善尾部性能。",
+              "methodsAndTechniques": "方法核心是分离‘提议’与‘验证’：离线通过监督学习将历史轨迹转化为上下文感知的动作排名模型；在线则以高分动作为初始受限游戏起点，后续仍遵循标准DO循环——精确求解受限博弈、全空间最佳响应检验、双向证书评估与必要扩展，确保最终策略始终针对当前游戏完成认证。",
+              "limitationsAndReadingValue": "局限在于离线训练成本较高，且仅适用于重复求解同构博弈场景，对单次博弈不具优势。其价值在于展示了如何安全地将机器学习融入严谨博弈求解流程：学习仅影响搜索起点，认证仍由原始游戏保证。最值得阅读的是其系统架构设计与理论-实践衔接方式，为安全敏感领域的学习增强算法提供了范本。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "CAP-DO: 用于相关零和博弈中认证双Oracle求解的学习型上下文动作提议",
+            "summarySections": {
+              "backgroundAndQuestion": "许多安全与检查规划问题需反复求解一系列相关的零和博弈，其中行动空间固定但收益随上下文变化。标准双Oracle（DO）算法每次从头搜索，重复发现有用动作效率低下。本文提出CAP-DO框架，旨在利用历史求解痕迹加速新情境下的搜索，同时保持严格的全局认证，解决重复求解中的效率与可靠性平衡难题。",
+              "modelAndSetup": "模型考虑一个防御者与攻击者在共享组合动作空间下进行的序列化零和博弈，每个上下文决定不同的损失矩阵。CAP-DO离线训练两个独立的排序模型（ranker），根据历史认证轨迹为防御方和攻击方标注‘有用动作’，进而学习基于当前上下文的动作相关性评分函数，用于在线阶段初始化受限游戏的动作集合。",
+              "contributionsAndResults": "CAP-DO首次将学习型提议机制嵌入认证双Oracle框架，在不牺牲理论保障的前提下显著提升求解效率。理论上证明其继承DO的完全认证性和有限收敛性；实验表明，在多达9880个动作的情境下，CAP-DO比冷启动、启发式及历史重用方法更早达成认证，减少最佳响应调用次数并改善尾部性能。",
+              "methodsAndTechniques": "方法核心是分离‘提议’与‘验证’：离线通过监督学习将历史轨迹转化为上下文感知的动作排名模型；在线则以高分动作为初始受限游戏起点，后续仍遵循标准DO循环——精确求解受限博弈、全空间最佳响应检验、双向证书评估与必要扩展，确保最终策略始终针对当前游戏完成认证。",
+              "limitationsAndReadingValue": "局限在于离线训练成本较高，且仅适用于重复求解同构博弈场景，对单次博弈不具优势。其价值在于展示了如何安全地将机器学习融入严谨博弈求解流程：学习仅影响搜索起点，认证仍由原始游戏保证。最值得阅读的是其系统架构设计与理论-实践衔接方式，为安全敏感领域的学习增强算法提供了范本。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "安全性",
+              "鲁棒性",
+              "在线算法"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Near-Tight Theoretical Bounds for Incentive Compatibility in Bitcoin Mining",
+            "url": "https://arxiv.org/abs/2607.24415",
+            "arxivId": "2607.24415",
+            "date": "2026-07-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.CR",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "比特币挖矿中激励相容性的近紧理论界限",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "多智能体系统",
+              "激励相容",
+              "区块链"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么诚实挖矿对比特币是理性的？这是区块链激励设计的核心问题。现有理论模型限制了矿工行为并假设理想化的分叉处理方式，导致激励相容阈值的上下界差距较大。本文旨在解决这两个缺陷，在更现实的模型中提供近乎紧致的理论界限。",
+              "modelAndSetup": "论文提出REAL模型，允许矿工采取更广泛策略，并引入非对称分叉决胜参数γ⁻和γ⁺，分别表示对手追平时诚实矿工跟随恶意链的比例和诚实链追平时的跟随比例。模型区分核心组件（可策略操作）与前沿组件（诚实执行），通过状态转移刻画挖矿动态，使分析更贴近实际网络行为。",
+              "contributionsAndResults": "作者提出了独立的下界与上界算法，计算激励相容阈值，最大误差仅为9.98006×10⁻⁴。通过对1100万组参数的精确有理数评估，点对点最大间隙低至2.415×10⁻⁷。结果表明该阈值在(γ⁻, γ⁺)上呈坐标单调递减，实现了对REAL模型激励边界的近紧刻画。",
+              "methodsAndTechniques": "下界基于IDEAL模型中的证书线性规划（LP），利用势函数构造Bellman不等式来证明无盈利偏离的存在；上界则通过显式构造三种触发策略（plus/minust-trigger与SM1）并分析其再生增益。最终结合单调性将网格结果外推至整个参数空间。",
+              "limitationsAndReadingValue": "尽管模型已较先前工作更现实，但仍聚焦于单个理性矿工偏离场景，未考虑多矿工共谋或复杂网络传播延迟。最值得阅读的是其势函数构造技巧、LP与显式策略结合的方法论，以及如何通过单调性实现高效参数覆盖，为后续激励分析提供了严谨框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "比特币挖矿中激励相容性的近紧理论界限",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么诚实挖矿对比特币是理性的？这是区块链激励设计的核心问题。现有理论模型限制了矿工行为并假设理想化的分叉处理方式，导致激励相容阈值的上下界差距较大。本文旨在解决这两个缺陷，在更现实的模型中提供近乎紧致的理论界限。",
+              "modelAndSetup": "论文提出REAL模型，允许矿工采取更广泛策略，并引入非对称分叉决胜参数γ⁻和γ⁺，分别表示对手追平时诚实矿工跟随恶意链的比例和诚实链追平时的跟随比例。模型区分核心组件（可策略操作）与前沿组件（诚实执行），通过状态转移刻画挖矿动态，使分析更贴近实际网络行为。",
+              "contributionsAndResults": "作者提出了独立的下界与上界算法，计算激励相容阈值，最大误差仅为9.98006×10⁻⁴。通过对1100万组参数的精确有理数评估，点对点最大间隙低至2.415×10⁻⁷。结果表明该阈值在(γ⁻, γ⁺)上呈坐标单调递减，实现了对REAL模型激励边界的近紧刻画。",
+              "methodsAndTechniques": "下界基于IDEAL模型中的证书线性规划（LP），利用势函数构造Bellman不等式来证明无盈利偏离的存在；上界则通过显式构造三种触发策略（plus/minust-trigger与SM1）并分析其再生增益。最终结合单调性将网格结果外推至整个参数空间。",
+              "limitationsAndReadingValue": "尽管模型已较先前工作更现实，但仍聚焦于单个理性矿工偏离场景，未考虑多矿工共谋或复杂网络传播延迟。最值得阅读的是其势函数构造技巧、LP与显式策略结合的方法论，以及如何通过单调性实现高效参数覆盖，为后续激励分析提供了严谨框架。"
+            },
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "多智能体系统",
+              "激励相容",
+              "区块链"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Knapsack Secretary is not $1/e$-Competitive",
+            "url": "https://arxiv.org/abs/2607.24198",
+            "arxivId": "2607.24198",
+            "date": "2026-07-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.DS",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "背包秘书问题不是 1/e-竞争的",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "在线算法",
+              "秘书问题",
+              "背包问题",
+              "竞争比分析"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么经典的1/e竞争比无法被突破？尽管许多组合型秘书问题继承了单选秘书问题的1/e不可能性，但人们一直不清楚这是否源于问题本身的结构性困难。本文聚焦背包秘书问题，质疑是否存在算法能达到1/e的竞争比，尤其是在允许使用数值信息（cardinal）的情况下。",
+              "modelAndSetup": "作者研究1-B背包秘书问题：物品大小为1或B，背包容量为B，因此只能选一个大物品或最多B个小物品。物品随机顺序到达，算法需在线决定接受或拒绝。目标是最大化所选物品总价值，竞争比相对于离线最优解衡量。",
+              "contributionsAndResults": "论文证明不存在1/e-竞争的算法。通过构造一类硬实例，展示了即使在简单的1-B情形下，最优竞争比至多为0.36437，严格小于1/e。同时提供了一个改进算法，在固定B>2时达到(1/5.10-o(1))-竞争比。",
+              "methodsAndTechniques": "作者采用分布松弛与序数化约简相结合的方法。首先构造数值差距极大的实例，使基数信息渐近无关；然后利用Ramsey理论将任意基数算法约简为序数行为。最后引入beta-binomial先验，建立动态规划并分析其极限ODE，得出紧致上界。",
+              "limitationsAndReadingValue": "结果依赖于特定构造的硬实例和共轭先验的选择，可能非普适最优。但该工作首次打破基数算法的1/e迷思，揭示了组合结构自身带来的额外难度。最值得读的是其新颖的序数化约简思路与动态规划+ODE的分析框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "背包秘书问题不是 1/e-竞争的",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么经典的1/e竞争比无法被突破？尽管许多组合型秘书问题继承了单选秘书问题的1/e不可能性，但人们一直不清楚这是否源于问题本身的结构性困难。本文聚焦背包秘书问题，质疑是否存在算法能达到1/e的竞争比，尤其是在允许使用数值信息（cardinal）的情况下。",
+              "modelAndSetup": "作者研究1-B背包秘书问题：物品大小为1或B，背包容量为B，因此只能选一个大物品或最多B个小物品。物品随机顺序到达，算法需在线决定接受或拒绝。目标是最大化所选物品总价值，竞争比相对于离线最优解衡量。",
+              "contributionsAndResults": "论文证明不存在1/e-竞争的算法。通过构造一类硬实例，展示了即使在简单的1-B情形下，最优竞争比至多为0.36437，严格小于1/e。同时提供了一个改进算法，在固定B>2时达到(1/5.10-o(1))-竞争比。",
+              "methodsAndTechniques": "作者采用分布松弛与序数化约简相结合的方法。首先构造数值差距极大的实例，使基数信息渐近无关；然后利用Ramsey理论将任意基数算法约简为序数行为。最后引入beta-binomial先验，建立动态规划并分析其极限ODE，得出紧致上界。",
+              "limitationsAndReadingValue": "结果依赖于特定构造的硬实例和共轭先验的选择，可能非普适最优。但该工作首次打破基数算法的1/e迷思，揭示了组合结构自身带来的额外难度。最值得读的是其新颖的序数化约简思路与动态规划+ODE的分析框架。"
+            },
+            "contentTags": [
+              "在线算法",
+              "秘书问题",
+              "背包问题",
+              "竞争比分析"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-07-27",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202607270000 TO 202607272359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          }
+        },
+        "dedupedCount": 2
+      },
+      "arxivTotalResults": 2,
+      "fetchedCount": 2,
+      "fetchedPapers": [
+        {
+          "title": "The K-SCAN Clustering Algorithm",
+          "url": "https://arxiv.org/abs/2607.24537",
+          "arxivId": "2607.24537",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "abstract": "In the Big Data era, the scalability of clustering algorithms constitutes a key challenge. Traditional density-based methods (e.g., DBSCAN) offer robustness to noise and the ability to detect non-linear clusters, yet their quadratic time complexity $O(N^2)$ drastically limits their applicability. Conversely, partitional algorithms (e.g., K-Means), with their linear complexity $O(N)$, impose sphericity on the resulting groups and fail in the presence of outliers. This paper presents K-SCAN -- a novel hybrid algorithm that optimizes this trade-off. The method integrates preliminary vector quantization (stochastic Mini-Batch K-Means) to extract a reduced set of weighted micro-clusters, followed by a subsequent density-based structural analysis. Empirical evaluation on datasets of up to $10^6$ samples confirms the linear computational complexity of the proposed solution. K-SCAN achieves more than a 3-fold speed-up over the hierarchical BIRCH algorithm, avoiding the costly management of tree-based structures. The method precisely identifies non-linear manifolds while maintaining structural stability (Adjusted Rand Index > 0.99), even with noise levels reaching 55\\% of the data volume. The main limitation of the proposed algorithm, which could not be fully eliminated in the present study, remains its susceptibility to over-smoothing and its difficulty in separating clusters with highly heterogeneous local density. In complex visual spaces, this can lead to the loss of the finest topological details."
+        },
+        {
+          "title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
+          "url": "https://arxiv.org/abs/2607.24519",
+          "arxivId": "2607.24519",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "abstract": "Pretrained EEG foundation models are increasingly proposed for clinical decoding, but their transfer across populations and robustness to negative controls remain unclear. We benchmark six models (LaBraM, EEGMamba, CBraMod, REVE, BENDR, and BIOT) on five clinical tasks across four datasets using frozen linear probes with leave-one-subject-out, subject-grouped, or explicitly identified recording-level splits. Selected REVE findings are tested against random initialisation, random features, label permutation, scrambled-label fine-tuning, and projection sensitivity. On Korean dementia (CAUEEG, three-way), frozen REVE reaches 0.568 AUROC versus 0.769 for classical features; the ordering persists on a patient-disjoint held-out split (0.565 versus 0.768). Dataset identity is readily decoded from frozen embeddings (AUROC 1.000 at PCA-50; 0.9998 after band restriction and per-epoch z-scoring), whereas the same PCA-50 pipeline decodes Korean diagnosis at 0.528. A randomly initialised encoder also outperforms pretrained REVE on this task (0.659 versus 0.570). On Alzheimer's disease, Gaussian random projection and PCA of the same pretrained embeddings perform similarly, and classical features nominally exceed REVE at the subject level. The clearest controlled positive is cross-subject ictal detection on CHB-MIT (n=23), where REVE achieves 0.793 AUROC, 9.2 percentage points above a randomly initialised encoder. These results show that EEG foundation-model conclusions depend strongly on evaluation unit, dataset shift, comparator strength, and targeted controls."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "The K-SCAN Clustering Algorithm",
+              "url": "https://arxiv.org/abs/2607.24537",
+              "arxivId": "2607.24537",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE"
+              ],
+              "abstract": "In the Big Data era, the scalability of clustering algorithms constitutes a key challenge. Traditional density-based methods (e.g., DBSCAN) offer robustness to noise and the ability to detect non-linear clusters, yet their quadratic time complexity $O(N^2)$ drastically limits their applicability. Conversely, partitional algorithms (e.g., K-Means), with their linear complexity $O(N)$, impose sphericity on the resulting groups and fail in the presence of outliers. This paper presents K-SCAN -- a novel hybrid algorithm that optimizes this trade-off. The method integrates preliminary vector quantization (stochastic Mini-Batch K-Means) to extract a reduced set of weighted micro-clusters, followed by a subsequent density-based structural analysis. Empirical evaluation on datasets of up to $10^6$ samples confirms the linear computational complexity of the proposed solution. K-SCAN achieves more than a 3-fold speed-up over the hierarchical BIRCH algorithm, avoiding the costly management of tree-based structures. The method precisely identifies non-linear manifolds while maintaining structural stability (Adjusted Rand Index > 0.99), even with noise levels reaching 55\\% of the data volume. The main limitation of the proposed algorithm, which could not be fully eliminated in the present study, remains its susceptibility to over-smoothing and its difficulty in separating clusters with highly heterogeneous local density. In complex visual spaces, this can lead to the loss of the finest topological details."
+            },
+            {
+              "title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
+              "url": "https://arxiv.org/abs/2607.24519",
+              "arxivId": "2607.24519",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "abstract": "Pretrained EEG foundation models are increasingly proposed for clinical decoding, but their transfer across populations and robustness to negative controls remain unclear. We benchmark six models (LaBraM, EEGMamba, CBraMod, REVE, BENDR, and BIOT) on five clinical tasks across four datasets using frozen linear probes with leave-one-subject-out, subject-grouped, or explicitly identified recording-level splits. Selected REVE findings are tested against random initialisation, random features, label permutation, scrambled-label fine-tuning, and projection sensitivity. On Korean dementia (CAUEEG, three-way), frozen REVE reaches 0.568 AUROC versus 0.769 for classical features; the ordering persists on a patient-disjoint held-out split (0.565 versus 0.768). Dataset identity is readily decoded from frozen embeddings (AUROC 1.000 at PCA-50; 0.9998 after band restriction and per-epoch z-scoring), whereas the same PCA-50 pipeline decodes Korean diagnosis at 0.528. A randomly initialised encoder also outperforms pretrained REVE on this task (0.659 versus 0.570). On Alzheimer's disease, Gaussian random projection and PCA of the same pretrained embeddings perform similarly, and classical features nominally exceed REVE at the subject level. The clearest controlled positive is cross-subject ictal detection on CHB-MIT (n=23), where REVE achieves 0.793 AUROC, 9.2 percentage points above a randomly initialised encoder. These results show that EEG foundation-model conclusions depend strongly on evaluation unit, dataset shift, comparator strength, and targeted controls."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 1,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "The K-SCAN Clustering Algorithm",
+              "url": "https://arxiv.org/abs/2607.24537",
+              "arxivId": "2607.24537",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 1.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 7.0,
+                "total": 7.0
+              }
+            },
+            {
+              "title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
+              "url": "https://arxiv.org/abs/2607.24519",
+              "arxivId": "2607.24519",
+              "date": "2026-07-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "The K-SCAN Clustering Algorithm",
+          "url": "https://arxiv.org/abs/2607.24537",
+          "arxivId": "2607.24537",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 1.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 7.0,
+            "total": 7.0
+          }
+        },
+        {
+          "title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
+          "url": "https://arxiv.org/abs/2607.24519",
+          "arxivId": "2607.24519",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
+          "url": "https://arxiv.org/abs/2607.24519",
+          "arxivId": "2607.24519",
+          "date": "2026-07-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
+            "url": "https://arxiv.org/abs/2607.24519",
+            "arxivId": "2607.24519",
+            "date": "2026-07-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.AI",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "压力测试用于临床解码的脑电图基础模型：数据集身份与针对性阴性对照",
+            "researchParadigmTags": [
+              "基准评测",
+              "实验验证",
+              "评测方法",
+              "系统框架"
+            ],
+            "contentTags": [
+              "EEG",
+              "基础模型",
+              "临床解码",
+              "鲁棒性",
+              "负控制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前脑电图（EEG）基础模型被广泛提议用于临床解码，但其性能增益是否真正源于可迁移的神经信号，还是依赖于数据集特定的非生理特征（如设备、预处理或人群差异），尚不明确。现有评测常忽略跨人群泛化能力和系统性阴性对照，导致可能高估模型价值。",
+              "modelAndSetup": "研究在五个临床任务上评估六种主流EEG基础模型，采用冻结线性探针协议，并引入显式的受试者分组或记录级划分以防止泄漏。特别针对REVE模型进行多项控制实验，包括随机初始化、标签打乱、随机特征等，以检验其表现是否依赖真实学习到的表征。",
+              "contributionsAndResults": "结果显示，在韩国痴呆数据集上，冻结的REVE模型显著落后于传统频谱特征，且其嵌入空间极易区分不同数据集身份，表明主导方差方向反映的是采集环境而非疾病状态。唯一稳健阳性结果出现在癫痫发作检测中，预训练模型优于随机初始化编码器。",
+              "methodsAndTechniques": "作者通过多种针对性控制手段分离模型架构与预训练权重的作用：随机初始化测试权重有效性，标签置换测试探针容量，打乱标签微调检验标签正确性影响，PCA与随机投影比较降维敏感性。这些方法共同构成一套实用检查流程，用于验证所谓‘增益’是否为可迁移信号。",
+              "limitationsAndReadingValue": "研究受限于数据集间多重差异混杂（地点、设备、人群等），无法单独剥离某一因素影响；部分模型存在通道数或采样率不匹配问题。尽管如此，论文提供了极具警示意义的经验结论，最值得阅读的是其评测理念与控制设计，对推动可信临床AI具有重要方法论价值。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "压力测试用于临床解码的脑电图基础模型：数据集身份与针对性阴性对照",
+            "summarySections": {
+              "backgroundAndQuestion": "当前脑电图（EEG）基础模型被广泛提议用于临床解码，但其性能增益是否真正源于可迁移的神经信号，还是依赖于数据集特定的非生理特征（如设备、预处理或人群差异），尚不明确。现有评测常忽略跨人群泛化能力和系统性阴性对照，导致可能高估模型价值。",
+              "modelAndSetup": "研究在五个临床任务上评估六种主流EEG基础模型，采用冻结线性探针协议，并引入显式的受试者分组或记录级划分以防止泄漏。特别针对REVE模型进行多项控制实验，包括随机初始化、标签打乱、随机特征等，以检验其表现是否依赖真实学习到的表征。",
+              "contributionsAndResults": "结果显示，在韩国痴呆数据集上，冻结的REVE模型显著落后于传统频谱特征，且其嵌入空间极易区分不同数据集身份，表明主导方差方向反映的是采集环境而非疾病状态。唯一稳健阳性结果出现在癫痫发作检测中，预训练模型优于随机初始化编码器。",
+              "methodsAndTechniques": "作者通过多种针对性控制手段分离模型架构与预训练权重的作用：随机初始化测试权重有效性，标签置换测试探针容量，打乱标签微调检验标签正确性影响，PCA与随机投影比较降维敏感性。这些方法共同构成一套实用检查流程，用于验证所谓‘增益’是否为可迁移信号。",
+              "limitationsAndReadingValue": "研究受限于数据集间多重差异混杂（地点、设备、人群等），无法单独剥离某一因素影响；部分模型存在通道数或采样率不匹配问题。尽管如此，论文提供了极具警示意义的经验结论，最值得阅读的是其评测理念与控制设计，对推动可信临床AI具有重要方法论价值。"
+            },
+            "contentTags": [
+              "EEG",
+              "基础模型",
+              "临床解码",
+              "鲁棒性",
+              "负控制"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "实验验证",
+              "评测方法",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 1
+  }
+}
