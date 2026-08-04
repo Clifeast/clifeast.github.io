@@ -1,0 +1,1922 @@
+{
+  "date": "2026-08-04",
+  "generatedAt": "2026-08-04T05:32:19.939410+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-03",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202608030000 TO 202608032359\"",
+            "totalResults": 9,
+            "fetchedCount": 9
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202608030000 TO 202608032359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          }
+        },
+        "dedupedCount": 12
+      },
+      "arxivTotalResults": 14,
+      "fetchedCount": 12,
+      "fetchedPapers": [
+        {
+          "title": "House-monotone multi-level apportionment has logarithmic quota discrepancy",
+          "url": "https://arxiv.org/abs/2608.02559",
+          "arxivId": "2608.02559",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.IT",
+            "eess.SP"
+          ],
+          "abstract": "Multi-level apportionment allocates integer seats through a hierarchy of groups. Schmidt-Kraepelin, Suksompong, and Wijaya proved that, at every fixed house size, lower and upper quota can be satisfied simultaneously; they also constructed house-monotone rules satisfying either quota separately. They left open whether one rule can satisfy lower quota, upper quota, and house monotonicity together, even when quota is required only relative to the root. We give a negative answer. For a full binary comb with $D$ equally entitled leaves, every house-monotone allocation sequence induces a sequence of seat recipients. Quota for the nested comb groups would force every grid-aligned prefix discrepancy to be below one. A midpoint embedding then bounds the full interval discrepancy by this quantity plus $1/2$, contradicting Schmidt's logarithmic lower bound. Conversely, a binary van der Corput seat schedule has comb-prefix error at most $\\log D/(3\\log 2)+1$. Thus the optimal worst-case error on the comb is $Θ(\\log D)$, and for sufficiently large finite $D$ no house-monotone quota rule exists. The proof isolates a static--dynamic gap: each house size admits a quota-feasible allocation, but the feasible allocations cannot be embedded into one monotone path. In quantization language, the result characterizes the order of the embedded-quantization penalty for progressive one-hot rounding on the comb."
+        },
+        {
+          "title": "Robust Scale-Free Auctions",
+          "url": "https://arxiv.org/abs/2608.02479",
+          "arxivId": "2608.02479",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "abstract": "We study prior-independent auction design when bidder values are independently and identically distributed and the seller knows only a scale-invariant shape restriction on their distribution, but neither the distribution nor the scale of values. We show that the maximin problem over a broad class of dominant-strategy incentive-compatible mechanisms reduces without loss to scale-free mechanisms. For any $n\\ge 2$ monotone-hazard-rate bidders, the second-price auction without a reserve is maximin optimal over this class, including randomized mechanisms that may allocate to a lower bidder. We derive its exact guarantee for every $n$ and the sharp exponential rate at which its loss relative to the Bayesian optimum vanishes. Many familiar auctions are standard: they allocate only to a highest bidder, although incentive compatibility does not require this. For two regular bidders, we solve the standard problem exactly: its optimal mechanism mixes the second-price auction with a relative-markup auction and achieves a worst-case ratio of approximately $0.524413$. We construct a nonstandard mechanism that sometimes allocates to the lower bidder and achieves approximately $0.524829$, proving that standardness is strictly costly. The contrast is driven by tail restrictions: monotone hazard rate makes lower-rank allocation unhelpful, whereas regularity permits it to improve worst-case revenue."
+        },
+        {
+          "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+          "url": "https://arxiv.org/abs/2608.02440",
+          "arxivId": "2608.02440",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "In noisy social dilemmas, intended actions are stochastically corrupted before execution, so an observed defection may reflect hostile intent or action error. Standard Markov Decision Process (MDP) formulations treat executed actions as states, structurally precluding this distinction and causing systematic over-retaliation. We introduce a Partially Observable MDP (POMDP) formulation encoding opponent intentions as latent states and executed actions as noisy observations, solved within the active inference (AIF) framework with a cost function that decomposes into epistemic and pragmatic components that jointly address inferring current intent and learning how intent evolves. In the Iterated Prisoner's Dilemma with symmetric noise, we derive a critical noise threshold governing cooperation collapse, connecting it to a fixed-point condition on learned priors. Experiments reveal that the value of intention inference is context-dependent: the POMDP provides consistent advantages against conditionally cooperative opponents, but mutual intention inference under sufficient noise produces correlated belief-driven collapse. The advantage is specific to games where intent attribution is decision-relevant."
+        },
+        {
+          "title": "Second-Order Potentials for Finite Games: Existence, Characterisation, and Game Decomposition",
+          "url": "https://arxiv.org/abs/2608.01967",
+          "arxivId": "2608.01967",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "abstract": "Monderer and Shapley (1996) showed that a game is an exact potential game exactly when the players' cross-differences agree pair by pair, a symmetry condition on how any two players' incentives interlock. This paper asks what can be built from these characteristics when symmetry fails. The resulting MS-potential is constructed from the second differences that represent the game's common-interest elements. The MS-potential is unique up to separable payoff terms and it exists precisely when a higher-order MS-condition holds. On the class of exact potential games it recovers the potential up to the players' individualistic main effects. A least-squares construction subsequently extends the MS-potential to the class of all finite games. The construction induces the MS-decomposition: every finite game splits into a common-interest MS-potential game and a residual that absorbs every player's individualistic payoffs. The paper's central result is an identity: for games in which all players have equally many actions, an augmentation of the MS-potential coincides --- up to the additive constant --- with the potential of Candogan, Menache, Ozdaglar and Parrilo (2011)."
+        },
+        {
+          "title": "Beyond the PPAD hardness of Auto-bidding Auctions",
+          "url": "https://arxiv.org/abs/2608.01889",
+          "arxivId": "2608.01889",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Computing certain autobidding equilibria is PPAD complete in the worst case. Yet such instances rarely arise in practice, where advertisers running simple, decentralized learning strategies usually converge quickly. We show there is no contradiction: the hardness requires atomicity and vanishes once the value distribution is nonatomic, as it is in real world markets. To bridge worst case hardness and practical convergence, we introduce diffuse analysis, a beyond worst case framework that studies equilibrium computation when bidder values are drawn from general nonatomic distributions. Under this framework, the autobidding equilibrium becomes a separately monotone generalized Nash equilibrium (GNE). For this GNE, we give the first solver with last iterate linear convergence. Thus, the equilibrium has polynomial diffuse complexity, matching the convergence observed in real-world markets. Concretely, our framework subsumes the budget pacing and the throttling equilibrium as special cases when the payment rule is a convex combination of first and second price."
+        },
+        {
+          "title": "Limitations of Best-of-Both-Worlds Solutions in Approval-Based Multiwinner Elections",
+          "url": "https://arxiv.org/abs/2608.01830",
+          "arxivId": "2608.01830",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the best-of-both-worlds fairness in approval-based multi-winner elections, asking whether ex-ante guarantees for a fractional outcome can be implemented while every realized committee satisfies an ex-post representation axiom. Recent work has shown that several ex-ante proportionality guarantees can be achieved together with strong ex-post representation axioms. We first prove that ex-ante weak Pareto optimality (weak PO), which requires that no other fractional outcome makes every voter strictly better off, is incompatible with ex-post justified representation (JR). Since fractional core stability implies weak PO, this also rules out the possibility of combining ex-ante fractional core, a central fairness notion for fractional committees, with ex-post JR. We further show that ex-ante AJR is incompatible with ex-post JR, even though AJR is a much stronger average-representation analogue of JR. On the positive side, we show that the fractional ex-ante side itself remains highly compatible: several natural ex-ante representation guarantees can be satisfied simultaneously, including fractional core, group-resource proportionality, AJR (as well as its strict strengthening AJR+), and Pareto-optimality. Hence, highly fair fractional committees may exist even when they cannot be implemented by randomization over JR committees. Our results separate fractional representation from best-of-both-worlds implementability and identify fundamental limitations of fair randomized committee selection."
+        },
+        {
+          "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+          "url": "https://arxiv.org/abs/2608.01703",
+          "arxivId": "2608.01703",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "This work studies no-regret online learning in Repeated Stackelberg Security Games with time-varying attack intensities. We formulate an extended security game in which an attacker may select multiple targets and derive an exact mixed-integer linear programming oracle under a optimistic tie-breaking rule. Under full-information feedback, the oracle is integrated with Follow-the-Perturbed-Leader and yields expected $\\mathcal{O}(\\sqrt{T})$ regret against non-anticipating sequences with time-varying follower numbers, attack intensities, and attacker types. Under bandit feedback, we consider multiple followers sharing a fixed attacker type and use a barycentric-spanner construction to reconstruct utility estimates from aggregate attack observations, obtaining expected $\\mathcal{O}(T^{2/3})$ regret. Extensive simulations demonstrate the robustness and effectiveness of our approach under full and partial information feedback."
+        },
+        {
+          "title": "Optimal Prior-Free Mechanisms for Consumer Surplus",
+          "url": "https://arxiv.org/abs/2608.01693",
+          "arxivId": "2608.01693",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We settle the worst-case approximability of residual-surplus maximization in general multidimensional mechanism-design environments. For $n$ agents with arbitrary nonnegative valuations over a finite outcome space, we give a universally truthful and ex-post individually rational mechanism whose expected residual surplus is at least $W(N)/H_n$, where $W(N)$ is the optimal social welfare and $H_n$ is the $n$-th harmonic number. This guarantee is worst-case optimal, including its constant, even for a single-item auction with a known i.i.d. prior and under the weaker requirement of Bayesian incentive compatibility. Our result resolves the welfare-approximation aspect of the open question of [Hartline and Roughgarden 2008] on the power of money burning beyond $k$-unit auctions, as well as an open question of [Ezra et al. 2025] concerning optimal guarantees for broader valuation classes. It also replaces the outcome-dependent $O(\\log|\\mathcal{O}|)$ guarantee of [Fotakis et al. 2015] by the tight agent-dependent factor $H_n$, while strengthening truthfulness in expectation to universal truthfulness. The mechanism is polynomial-time whenever welfare-maximizing VCG is polynomial-time, yielding efficient mechanisms for gross-substitutes and multi-unit valuations and for several natural single-parameter feasibility constraints."
+        },
+        {
+          "title": "Conjugation invariants determine the metacommutation permutation only up to relabelling",
+          "url": "https://arxiv.org/abs/2608.01610",
+          "arxivId": "2608.01610",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.GR"
+          ],
+          "abstract": "Let $\\mathcal{H}$ be the Hurwitz quaternions, $p$ an odd prime, and $Q \\in \\mathcal{H}$ a prime of norm $q \\neq p$. Metacommutation $PQ = Q'P'$ induces a permutation $π_Q$ of the $p+1$ left-associate classes of primes of norm $p$. Cohn and Kumar compute its sign and fixed-point count, and Leite and Machiavelo its full cycle structure, by formulas depending only on conjugation-invariant data of $Q$ (namely $q$ and $\\mathrm{tr}\\,Q$). We prove this is exactly the boundary of what such invariants can carry: no quantity $I(Q)$ invariant under unit conjugation determines $π_Q$ as a labelled permutation of the intrinsic class set, or even the image of a single specified class. The proof combines an equivariance identity $π_{uQu^{-1}} = ρ_u π_Q ρ_u^{-1}$ with a minimal, fully explicit witness at $(p,q) = (3,5)$: the four primes $2+i$, $2+j$, $2+k$, $2-i$ form a single unit-conjugacy orbit, hence agree under every conjugation-invariant function, yet induce four pairwise distinct $4$-cycles of the same four classes. We further observe that isomorphisms $\\mathcal{H}/p\\mathcal{H} \\to M_2(\\mathbb{F}_p)$ form a torsor under $\\mathrm{PGL}_2(\\mathbb{F}_p)$, so no projective labelling of the classes is canonical, and that by orbit-stabilizer the datum of one destination $π_Q(C)$ is exactly a coset $g_Q G_C$ in $\\mathrm{PGL}_2(\\mathbb{F}_p)/G_C$. All sixteen refactorizations in the witness are listed in the appendix and have been verified by machine along two independent routes."
+        },
+        {
+          "title": "Dynamic Traffic Allocation for Revenue Maximization on Creator Economy Platform",
+          "url": "https://arxiv.org/abs/2608.02293",
+          "arxivId": "2608.02293",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "econ.TH",
+            "math.PR",
+            "stat.AP",
+            "stat.ME"
+          ],
+          "abstract": "Creator economy platforms face a strategic dilemma: allocating traffic to established stars for immediate ad revenue versus nurturing emerging creators to build a follower base for future monetization. We develop a continuous-time dynamic optimization model to characterize the optimal traffic allocation policy for a platform managing heterogeneous creators with dual revenue streams (advertising and direct follower contributions). We characterize the optimal policy analytically, revealing a ``most-valuable-creator-first\" rule driven by a forward-looking activation set. Under Bass diffusion dynamics, this policy exhibits a sophisticated ``conditional reversal\" strategy, where the platform temporarily prioritizes lagging creators to capitalize on word-of-mouth effects. Regarding the ecosystem structure, we find the optimal policy acts as a selective gatekeeper. Unlike myopic policies that lead to a harsh ``winner-take-all\" market, or naive fairness-driven heuristics that foster inefficient ``indiscriminate growth,\" the optimal policy imposes a strict capability threshold that screens which creators receive platform traffic. Furthermore, it enforces disciplined growth for successful entrants, capping their follower bases at an optimal ceiling to prevent over-investment. Finally, we demonstrate that simple heuristics can lead to significant revenue losses (up to 25\\%) and propose a practical ``follower-growth adjusted\" heuristic that achieves near-optimal performance by leveraging observed growth momentum."
+        },
+        {
+          "title": "One-Shot Pricing for Hands-Off-the-Wheel Advertising Markets",
+          "url": "https://arxiv.org/abs/2608.01591",
+          "arxivId": "2608.01591",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Per-impression auctions have long served as the allocation mechanism in online advertising. We argue that in ``hands-off-the-wheel'' (HOTW) markets, where advertisers declare budgets and ``return-on-investment'' (ROI) targets and the exchange's ML models predict click values, auctions are no longer necessary: all information required for optimal pricing is already known to the exchange, which occupies the position of a monopolist pricing against a downward-sloping demand curve. A HOTW market is a Fisher market, whose competitive equilibrium can be computed via the convex program of Eisenberg and Gale, yielding market-clearing prices and allocations satisfying all budget and ROI constraints simultaneously. This competitive-equilibrium price is revenue-optimal for the exchange among all uniform-price mechanisms: avoiding the demand reduction problem in typical uniform-price multi-unit auctions. The resulting competitive equilibrium is moreover outcome-equivalent to sequential first-price auctions with pacing, with pacing multipliers computable ex-ante by the exchange. This one-shot approach replaces millions of individual auctions with one convex program, which is not only operationally simpler than dynamically evolving bidding strategies, but revenue-optimal for the exchange, while delivering the same equilibrium outcome."
+        },
+        {
+          "title": "P-Bubbles, Q-Bubbles, and Risk Premia",
+          "url": "https://arxiv.org/abs/2608.01554",
+          "arxivId": "2608.01554",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "q-fin.MF",
+            "econ.TH"
+          ],
+          "abstract": "We develop a unified modeling framework that connects two distinct types of bubbles defined in the literature: the rational bubbles (aka P-bubbles), and the local martingale bubbles (aka Q-bubbles). We show that the local martingale bubble model includes the classical rational bubble as a special case. We relate both types of bubbles to an equity's risk premium via a novel decomposition."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "House-monotone multi-level apportionment has logarithmic quota discrepancy",
+              "url": "https://arxiv.org/abs/2608.02559",
+              "arxivId": "2608.02559",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.IT",
+                "eess.SP"
+              ],
+              "abstract": "Multi-level apportionment allocates integer seats through a hierarchy of groups. Schmidt-Kraepelin, Suksompong, and Wijaya proved that, at every fixed house size, lower and upper quota can be satisfied simultaneously; they also constructed house-monotone rules satisfying either quota separately. They left open whether one rule can satisfy lower quota, upper quota, and house monotonicity together, even when quota is required only relative to the root. We give a negative answer. For a full binary comb with $D$ equally entitled leaves, every house-monotone allocation sequence induces a sequence of seat recipients. Quota for the nested comb groups would force every grid-aligned prefix discrepancy to be below one. A midpoint embedding then bounds the full interval discrepancy by this quantity plus $1/2$, contradicting Schmidt's logarithmic lower bound. Conversely, a binary van der Corput seat schedule has comb-prefix error at most $\\log D/(3\\log 2)+1$. Thus the optimal worst-case error on the comb is $Θ(\\log D)$, and for sufficiently large finite $D$ no house-monotone quota rule exists. The proof isolates a static--dynamic gap: each house size admits a quota-feasible allocation, but the feasible allocations cannot be embedded into one monotone path. In quantization language, the result characterizes the order of the embedded-quantization penalty for progressive one-hot rounding on the comb."
+            },
+            {
+              "title": "Robust Scale-Free Auctions",
+              "url": "https://arxiv.org/abs/2608.02479",
+              "arxivId": "2608.02479",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "abstract": "We study prior-independent auction design when bidder values are independently and identically distributed and the seller knows only a scale-invariant shape restriction on their distribution, but neither the distribution nor the scale of values. We show that the maximin problem over a broad class of dominant-strategy incentive-compatible mechanisms reduces without loss to scale-free mechanisms. For any $n\\ge 2$ monotone-hazard-rate bidders, the second-price auction without a reserve is maximin optimal over this class, including randomized mechanisms that may allocate to a lower bidder. We derive its exact guarantee for every $n$ and the sharp exponential rate at which its loss relative to the Bayesian optimum vanishes. Many familiar auctions are standard: they allocate only to a highest bidder, although incentive compatibility does not require this. For two regular bidders, we solve the standard problem exactly: its optimal mechanism mixes the second-price auction with a relative-markup auction and achieves a worst-case ratio of approximately $0.524413$. We construct a nonstandard mechanism that sometimes allocates to the lower bidder and achieves approximately $0.524829$, proving that standardness is strictly costly. The contrast is driven by tail restrictions: monotone hazard rate makes lower-rank allocation unhelpful, whereas regularity permits it to improve worst-case revenue."
+            },
+            {
+              "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+              "url": "https://arxiv.org/abs/2608.02440",
+              "arxivId": "2608.02440",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "In noisy social dilemmas, intended actions are stochastically corrupted before execution, so an observed defection may reflect hostile intent or action error. Standard Markov Decision Process (MDP) formulations treat executed actions as states, structurally precluding this distinction and causing systematic over-retaliation. We introduce a Partially Observable MDP (POMDP) formulation encoding opponent intentions as latent states and executed actions as noisy observations, solved within the active inference (AIF) framework with a cost function that decomposes into epistemic and pragmatic components that jointly address inferring current intent and learning how intent evolves. In the Iterated Prisoner's Dilemma with symmetric noise, we derive a critical noise threshold governing cooperation collapse, connecting it to a fixed-point condition on learned priors. Experiments reveal that the value of intention inference is context-dependent: the POMDP provides consistent advantages against conditionally cooperative opponents, but mutual intention inference under sufficient noise produces correlated belief-driven collapse. The advantage is specific to games where intent attribution is decision-relevant."
+            },
+            {
+              "title": "Second-Order Potentials for Finite Games: Existence, Characterisation, and Game Decomposition",
+              "url": "https://arxiv.org/abs/2608.01967",
+              "arxivId": "2608.01967",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "abstract": "Monderer and Shapley (1996) showed that a game is an exact potential game exactly when the players' cross-differences agree pair by pair, a symmetry condition on how any two players' incentives interlock. This paper asks what can be built from these characteristics when symmetry fails. The resulting MS-potential is constructed from the second differences that represent the game's common-interest elements. The MS-potential is unique up to separable payoff terms and it exists precisely when a higher-order MS-condition holds. On the class of exact potential games it recovers the potential up to the players' individualistic main effects. A least-squares construction subsequently extends the MS-potential to the class of all finite games. The construction induces the MS-decomposition: every finite game splits into a common-interest MS-potential game and a residual that absorbs every player's individualistic payoffs. The paper's central result is an identity: for games in which all players have equally many actions, an augmentation of the MS-potential coincides --- up to the additive constant --- with the potential of Candogan, Menache, Ozdaglar and Parrilo (2011)."
+            },
+            {
+              "title": "Beyond the PPAD hardness of Auto-bidding Auctions",
+              "url": "https://arxiv.org/abs/2608.01889",
+              "arxivId": "2608.01889",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Computing certain autobidding equilibria is PPAD complete in the worst case. Yet such instances rarely arise in practice, where advertisers running simple, decentralized learning strategies usually converge quickly. We show there is no contradiction: the hardness requires atomicity and vanishes once the value distribution is nonatomic, as it is in real world markets. To bridge worst case hardness and practical convergence, we introduce diffuse analysis, a beyond worst case framework that studies equilibrium computation when bidder values are drawn from general nonatomic distributions. Under this framework, the autobidding equilibrium becomes a separately monotone generalized Nash equilibrium (GNE). For this GNE, we give the first solver with last iterate linear convergence. Thus, the equilibrium has polynomial diffuse complexity, matching the convergence observed in real-world markets. Concretely, our framework subsumes the budget pacing and the throttling equilibrium as special cases when the payment rule is a convex combination of first and second price."
+            },
+            {
+              "title": "Limitations of Best-of-Both-Worlds Solutions in Approval-Based Multiwinner Elections",
+              "url": "https://arxiv.org/abs/2608.01830",
+              "arxivId": "2608.01830",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the best-of-both-worlds fairness in approval-based multi-winner elections, asking whether ex-ante guarantees for a fractional outcome can be implemented while every realized committee satisfies an ex-post representation axiom. Recent work has shown that several ex-ante proportionality guarantees can be achieved together with strong ex-post representation axioms. We first prove that ex-ante weak Pareto optimality (weak PO), which requires that no other fractional outcome makes every voter strictly better off, is incompatible with ex-post justified representation (JR). Since fractional core stability implies weak PO, this also rules out the possibility of combining ex-ante fractional core, a central fairness notion for fractional committees, with ex-post JR. We further show that ex-ante AJR is incompatible with ex-post JR, even though AJR is a much stronger average-representation analogue of JR. On the positive side, we show that the fractional ex-ante side itself remains highly compatible: several natural ex-ante representation guarantees can be satisfied simultaneously, including fractional core, group-resource proportionality, AJR (as well as its strict strengthening AJR+), and Pareto-optimality. Hence, highly fair fractional committees may exist even when they cannot be implemented by randomization over JR committees. Our results separate fractional representation from best-of-both-worlds implementability and identify fundamental limitations of fair randomized committee selection."
+            },
+            {
+              "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+              "url": "https://arxiv.org/abs/2608.01703",
+              "arxivId": "2608.01703",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "This work studies no-regret online learning in Repeated Stackelberg Security Games with time-varying attack intensities. We formulate an extended security game in which an attacker may select multiple targets and derive an exact mixed-integer linear programming oracle under a optimistic tie-breaking rule. Under full-information feedback, the oracle is integrated with Follow-the-Perturbed-Leader and yields expected $\\mathcal{O}(\\sqrt{T})$ regret against non-anticipating sequences with time-varying follower numbers, attack intensities, and attacker types. Under bandit feedback, we consider multiple followers sharing a fixed attacker type and use a barycentric-spanner construction to reconstruct utility estimates from aggregate attack observations, obtaining expected $\\mathcal{O}(T^{2/3})$ regret. Extensive simulations demonstrate the robustness and effectiveness of our approach under full and partial information feedback."
+            },
+            {
+              "title": "Optimal Prior-Free Mechanisms for Consumer Surplus",
+              "url": "https://arxiv.org/abs/2608.01693",
+              "arxivId": "2608.01693",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We settle the worst-case approximability of residual-surplus maximization in general multidimensional mechanism-design environments. For $n$ agents with arbitrary nonnegative valuations over a finite outcome space, we give a universally truthful and ex-post individually rational mechanism whose expected residual surplus is at least $W(N)/H_n$, where $W(N)$ is the optimal social welfare and $H_n$ is the $n$-th harmonic number. This guarantee is worst-case optimal, including its constant, even for a single-item auction with a known i.i.d. prior and under the weaker requirement of Bayesian incentive compatibility. Our result resolves the welfare-approximation aspect of the open question of [Hartline and Roughgarden 2008] on the power of money burning beyond $k$-unit auctions, as well as an open question of [Ezra et al. 2025] concerning optimal guarantees for broader valuation classes. It also replaces the outcome-dependent $O(\\log|\\mathcal{O}|)$ guarantee of [Fotakis et al. 2015] by the tight agent-dependent factor $H_n$, while strengthening truthfulness in expectation to universal truthfulness. The mechanism is polynomial-time whenever welfare-maximizing VCG is polynomial-time, yielding efficient mechanisms for gross-substitutes and multi-unit valuations and for several natural single-parameter feasibility constraints."
+            },
+            {
+              "title": "Conjugation invariants determine the metacommutation permutation only up to relabelling",
+              "url": "https://arxiv.org/abs/2608.01610",
+              "arxivId": "2608.01610",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.GR"
+              ],
+              "abstract": "Let $\\mathcal{H}$ be the Hurwitz quaternions, $p$ an odd prime, and $Q \\in \\mathcal{H}$ a prime of norm $q \\neq p$. Metacommutation $PQ = Q'P'$ induces a permutation $π_Q$ of the $p+1$ left-associate classes of primes of norm $p$. Cohn and Kumar compute its sign and fixed-point count, and Leite and Machiavelo its full cycle structure, by formulas depending only on conjugation-invariant data of $Q$ (namely $q$ and $\\mathrm{tr}\\,Q$). We prove this is exactly the boundary of what such invariants can carry: no quantity $I(Q)$ invariant under unit conjugation determines $π_Q$ as a labelled permutation of the intrinsic class set, or even the image of a single specified class. The proof combines an equivariance identity $π_{uQu^{-1}} = ρ_u π_Q ρ_u^{-1}$ with a minimal, fully explicit witness at $(p,q) = (3,5)$: the four primes $2+i$, $2+j$, $2+k$, $2-i$ form a single unit-conjugacy orbit, hence agree under every conjugation-invariant function, yet induce four pairwise distinct $4$-cycles of the same four classes. We further observe that isomorphisms $\\mathcal{H}/p\\mathcal{H} \\to M_2(\\mathbb{F}_p)$ form a torsor under $\\mathrm{PGL}_2(\\mathbb{F}_p)$, so no projective labelling of the classes is canonical, and that by orbit-stabilizer the datum of one destination $π_Q(C)$ is exactly a coset $g_Q G_C$ in $\\mathrm{PGL}_2(\\mathbb{F}_p)/G_C$. All sixteen refactorizations in the witness are listed in the appendix and have been verified by machine along two independent routes."
+            },
+            {
+              "title": "Dynamic Traffic Allocation for Revenue Maximization on Creator Economy Platform",
+              "url": "https://arxiv.org/abs/2608.02293",
+              "arxivId": "2608.02293",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "econ.TH",
+                "math.PR",
+                "stat.AP",
+                "stat.ME"
+              ],
+              "abstract": "Creator economy platforms face a strategic dilemma: allocating traffic to established stars for immediate ad revenue versus nurturing emerging creators to build a follower base for future monetization. We develop a continuous-time dynamic optimization model to characterize the optimal traffic allocation policy for a platform managing heterogeneous creators with dual revenue streams (advertising and direct follower contributions). We characterize the optimal policy analytically, revealing a ``most-valuable-creator-first\" rule driven by a forward-looking activation set. Under Bass diffusion dynamics, this policy exhibits a sophisticated ``conditional reversal\" strategy, where the platform temporarily prioritizes lagging creators to capitalize on word-of-mouth effects. Regarding the ecosystem structure, we find the optimal policy acts as a selective gatekeeper. Unlike myopic policies that lead to a harsh ``winner-take-all\" market, or naive fairness-driven heuristics that foster inefficient ``indiscriminate growth,\" the optimal policy imposes a strict capability threshold that screens which creators receive platform traffic. Furthermore, it enforces disciplined growth for successful entrants, capping their follower bases at an optimal ceiling to prevent over-investment. Finally, we demonstrate that simple heuristics can lead to significant revenue losses (up to 25\\%) and propose a practical ``follower-growth adjusted\" heuristic that achieves near-optimal performance by leveraging observed growth momentum."
+            },
+            {
+              "title": "One-Shot Pricing for Hands-Off-the-Wheel Advertising Markets",
+              "url": "https://arxiv.org/abs/2608.01591",
+              "arxivId": "2608.01591",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Per-impression auctions have long served as the allocation mechanism in online advertising. We argue that in ``hands-off-the-wheel'' (HOTW) markets, where advertisers declare budgets and ``return-on-investment'' (ROI) targets and the exchange's ML models predict click values, auctions are no longer necessary: all information required for optimal pricing is already known to the exchange, which occupies the position of a monopolist pricing against a downward-sloping demand curve. A HOTW market is a Fisher market, whose competitive equilibrium can be computed via the convex program of Eisenberg and Gale, yielding market-clearing prices and allocations satisfying all budget and ROI constraints simultaneously. This competitive-equilibrium price is revenue-optimal for the exchange among all uniform-price mechanisms: avoiding the demand reduction problem in typical uniform-price multi-unit auctions. The resulting competitive equilibrium is moreover outcome-equivalent to sequential first-price auctions with pacing, with pacing multipliers computable ex-ante by the exchange. This one-shot approach replaces millions of individual auctions with one convex program, which is not only operationally simpler than dynamically evolving bidding strategies, but revenue-optimal for the exchange, while delivering the same equilibrium outcome."
+            },
+            {
+              "title": "P-Bubbles, Q-Bubbles, and Risk Premia",
+              "url": "https://arxiv.org/abs/2608.01554",
+              "arxivId": "2608.01554",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "q-fin.MF",
+                "econ.TH"
+              ],
+              "abstract": "We develop a unified modeling framework that connects two distinct types of bubbles defined in the literature: the rational bubbles (aka P-bubbles), and the local martingale bubbles (aka Q-bubbles). We show that the local martingale bubble model includes the classical rational bubble as a special case. We relate both types of bubbles to an equity's risk premium via a novel decomposition."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 7,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 6,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 8,
+                  "readingValue": 7,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 3,
+                  "readingValue": 2,
+                  "penalty": -4,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 4,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 3,
+                  "guaranteeQuality": 2,
+                  "readingValue": 1,
+                  "penalty": -5,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "House-monotone multi-level apportionment has logarithmic quota discrepancy",
+              "url": "https://arxiv.org/abs/2608.02559",
+              "arxivId": "2608.02559",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.IT",
+                "eess.SP"
+              ],
+              "scores": {
+                "modelNaturalness": 4.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 19.0,
+                "bonus": 0.0,
+                "total": 15.2
+              }
+            },
+            {
+              "title": "Robust Scale-Free Auctions",
+              "url": "https://arxiv.org/abs/2608.02479",
+              "arxivId": "2608.02479",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+              "url": "https://arxiv.org/abs/2608.02440",
+              "arxivId": "2608.02440",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 23.0,
+                "bonus": 6.1,
+                "total": 26.2
+              }
+            },
+            {
+              "title": "Second-Order Potentials for Finite Games: Existence, Characterisation, and Game Decomposition",
+              "url": "https://arxiv.org/abs/2608.01967",
+              "arxivId": "2608.01967",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            },
+            {
+              "title": "Beyond the PPAD hardness of Auto-bidding Auctions",
+              "url": "https://arxiv.org/abs/2608.01889",
+              "arxivId": "2608.01889",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 6.5,
+                "total": 34.5
+              }
+            },
+            {
+              "title": "Limitations of Best-of-Both-Worlds Solutions in Approval-Based Multiwinner Elections",
+              "url": "https://arxiv.org/abs/2608.01830",
+              "arxivId": "2608.01830",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+              "url": "https://arxiv.org/abs/2608.01703",
+              "arxivId": "2608.01703",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 6.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 23.0,
+                "bonus": 4.6,
+                "total": 24.8
+              }
+            },
+            {
+              "title": "Optimal Prior-Free Mechanisms for Consumer Surplus",
+              "url": "https://arxiv.org/abs/2608.01693",
+              "arxivId": "2608.01693",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Conjugation invariants determine the metacommutation permutation only up to relabelling",
+              "url": "https://arxiv.org/abs/2608.01610",
+              "arxivId": "2608.01610",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.GR"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Dynamic Traffic Allocation for Revenue Maximization on Creator Economy Platform",
+              "url": "https://arxiv.org/abs/2608.02293",
+              "arxivId": "2608.02293",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "econ.TH",
+                "math.PR",
+                "stat.AP",
+                "stat.ME"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 7.0,
+                "penalty": -2.0,
+                "baseTotal": 21.0,
+                "bonus": 2.8,
+                "total": 16.7
+              }
+            },
+            {
+              "title": "One-Shot Pricing for Hands-Off-the-Wheel Advertising Markets",
+              "url": "https://arxiv.org/abs/2608.01591",
+              "arxivId": "2608.01591",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 25.0,
+                "bonus": 0.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "P-Bubbles, Q-Bubbles, and Risk Premia",
+              "url": "https://arxiv.org/abs/2608.01554",
+              "arxivId": "2608.01554",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "q-fin.MF",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "House-monotone multi-level apportionment has logarithmic quota discrepancy",
+          "url": "https://arxiv.org/abs/2608.02559",
+          "arxivId": "2608.02559",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.IT",
+            "eess.SP"
+          ],
+          "scores": {
+            "modelNaturalness": 4.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 19.0,
+            "bonus": 0.0,
+            "total": 15.2
+          }
+        },
+        {
+          "title": "Robust Scale-Free Auctions",
+          "url": "https://arxiv.org/abs/2608.02479",
+          "arxivId": "2608.02479",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+          "url": "https://arxiv.org/abs/2608.02440",
+          "arxivId": "2608.02440",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "bonus": 6.1,
+            "total": 26.2
+          }
+        },
+        {
+          "title": "Second-Order Potentials for Finite Games: Existence, Characterisation, and Game Decomposition",
+          "url": "https://arxiv.org/abs/2608.01967",
+          "arxivId": "2608.01967",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Beyond the PPAD hardness of Auto-bidding Auctions",
+          "url": "https://arxiv.org/abs/2608.01889",
+          "arxivId": "2608.01889",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 6.5,
+            "total": 34.5
+          }
+        },
+        {
+          "title": "Limitations of Best-of-Both-Worlds Solutions in Approval-Based Multiwinner Elections",
+          "url": "https://arxiv.org/abs/2608.01830",
+          "arxivId": "2608.01830",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+          "url": "https://arxiv.org/abs/2608.01703",
+          "arxivId": "2608.01703",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "bonus": 4.6,
+            "total": 24.8
+          }
+        },
+        {
+          "title": "Optimal Prior-Free Mechanisms for Consumer Surplus",
+          "url": "https://arxiv.org/abs/2608.01693",
+          "arxivId": "2608.01693",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Conjugation invariants determine the metacommutation permutation only up to relabelling",
+          "url": "https://arxiv.org/abs/2608.01610",
+          "arxivId": "2608.01610",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.GR"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Dynamic Traffic Allocation for Revenue Maximization on Creator Economy Platform",
+          "url": "https://arxiv.org/abs/2608.02293",
+          "arxivId": "2608.02293",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "econ.TH",
+            "math.PR",
+            "stat.AP",
+            "stat.ME"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 21.0,
+            "bonus": 2.8,
+            "total": 16.7
+          }
+        },
+        {
+          "title": "One-Shot Pricing for Hands-Off-the-Wheel Advertising Markets",
+          "url": "https://arxiv.org/abs/2608.01591",
+          "arxivId": "2608.01591",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "P-Bubbles, Q-Bubbles, and Risk Premia",
+          "url": "https://arxiv.org/abs/2608.01554",
+          "arxivId": "2608.01554",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "q-fin.MF",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Beyond the PPAD hardness of Auto-bidding Auctions",
+          "url": "https://arxiv.org/abs/2608.01889",
+          "arxivId": "2608.01889",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 6.5,
+            "total": 34.5
+          }
+        },
+        {
+          "title": "Optimal Prior-Free Mechanisms for Consumer Surplus",
+          "url": "https://arxiv.org/abs/2608.01693",
+          "arxivId": "2608.01693",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Robust Scale-Free Auctions",
+          "url": "https://arxiv.org/abs/2608.02479",
+          "arxivId": "2608.02479",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+          "url": "https://arxiv.org/abs/2608.02440",
+          "arxivId": "2608.02440",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "bonus": 6.1,
+            "total": 26.2
+          }
+        },
+        {
+          "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+          "url": "https://arxiv.org/abs/2608.01703",
+          "arxivId": "2608.01703",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "bonus": 4.6,
+            "total": 24.8
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Beyond the PPAD hardness of Auto-bidding Auctions",
+            "url": "https://arxiv.org/abs/2608.01889",
+            "arxivId": "2608.01889",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超越自动竞价拍卖中的 PPAD 难度",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "自动竞价拍卖中计算均衡被证明是 PPAD 完全问题，意味着最坏情况下难以高效求解。然而现实中广告主通过简单学习策略常能快速收敛，这与理论硬度矛盾。本文追问：为何实践有效？作者指出，现有硬度依赖于估值分布的原子性（离散点），而真实市场中估值是连续随机抽取的。因此，需一种新范式来桥接理论与实践差距。",
+              "modelAndSetup": "作者提出‘扩散分析’（diffuse analysis）框架，将重复拍卖建模为贝叶斯博弈：每个竞标者的每轮估值独立同分布于一个非原子、光滑的分布。在此设定下，竞标者通过调节乘数（如预算增速率）间接出价，并在长期预算约束下最大化期望价值。均衡变为广义纳什均衡（GNE），其中共享价格耦合各参与者的可行集。",
+              "contributionsAndResults": "论文证明，在扩散分析框架下，自动竞价均衡是‘分别单调’的广义纳什均衡，且满足一系列正则性条件（如 PL 条件、相对利普希茨性）。基于此，作者首次为该类 GNE 设计出具有最后一次迭代线性收敛率的求解器。这意味着在现实分布假设下，均衡具有多项式级的‘扩散复杂度’，解释了实践中快速收敛的现象。",
+              "methodsAndTechniques": "作者采用铰链增强拉格朗日方法处理预算约束，仅在约束激活时进行梯度更新。核心技术是嵌套莫罗包络（nested Moreau envelope），它双重平滑目标函数：第一层平滑个体目标，第二层抑制跨玩家干扰。收敛性证明以局部最优响应作为进展度量，结合李雅普诺夫分析，绕开了传统变分不等式方法对凸性的依赖。",
+              "limitationsAndReadingValue": "论文核心贡献在于提出了‘扩散分析’这一超越最坏情况的新范式，其假设虽更贴近现实，但仍排除了强相关或对抗性估值序列。结果依赖于特定正则分布族，且算法参数需精细设置。最值得读的是其模型抽象方式、对均衡结构的重新刻画，以及将平滑技术用于非凸非凹 GNE 收敛分析的创新手法。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超越自动竞价拍卖中的 PPAD 难度",
+            "summarySections": {
+              "backgroundAndQuestion": "自动竞价拍卖中计算均衡被证明是 PPAD 完全问题，意味着最坏情况下难以高效求解。然而现实中广告主通过简单学习策略常能快速收敛，这与理论硬度矛盾。本文追问：为何实践有效？作者指出，现有硬度依赖于估值分布的原子性（离散点），而真实市场中估值是连续随机抽取的。因此，需一种新范式来桥接理论与实践差距。",
+              "modelAndSetup": "作者提出‘扩散分析’（diffuse analysis）框架，将重复拍卖建模为贝叶斯博弈：每个竞标者的每轮估值独立同分布于一个非原子、光滑的分布。在此设定下，竞标者通过调节乘数（如预算增速率）间接出价，并在长期预算约束下最大化期望价值。均衡变为广义纳什均衡（GNE），其中共享价格耦合各参与者的可行集。",
+              "contributionsAndResults": "论文证明，在扩散分析框架下，自动竞价均衡是‘分别单调’的广义纳什均衡，且满足一系列正则性条件（如 PL 条件、相对利普希茨性）。基于此，作者首次为该类 GNE 设计出具有最后一次迭代线性收敛率的求解器。这意味着在现实分布假设下，均衡具有多项式级的‘扩散复杂度’，解释了实践中快速收敛的现象。",
+              "methodsAndTechniques": "作者采用铰链增强拉格朗日方法处理预算约束，仅在约束激活时进行梯度更新。核心技术是嵌套莫罗包络（nested Moreau envelope），它双重平滑目标函数：第一层平滑个体目标，第二层抑制跨玩家干扰。收敛性证明以局部最优响应作为进展度量，结合李雅普诺夫分析，绕开了传统变分不等式方法对凸性的依赖。",
+              "limitationsAndReadingValue": "论文核心贡献在于提出了‘扩散分析’这一超越最坏情况的新范式，其假设虽更贴近现实，但仍排除了强相关或对抗性估值序列。结果依赖于特定正则分布族，且算法参数需精细设置。最值得读的是其模型抽象方式、对均衡结构的重新刻画，以及将平滑技术用于非凸非凹 GNE 收敛分析的创新手法。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Optimal Prior-Free Mechanisms for Consumer Surplus",
+            "url": "https://arxiv.org/abs/2608.01693",
+            "arxivId": "2608.01693",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "最优无先验机制以最大化消费者剩余",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "算法设计",
+              "近似分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "消费者剩余",
+              "残差盈余",
+              "多维环境"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统机制设计通过支付实现社会福利最大化，但在许多场景中支付并不创造价值而是被‘烧毁’，如等待时间或计算开销。此时目标不再是社会福利，而是残差盈余（即总价值减去支付）。如何在不依赖先验分布的前提下平衡信息获取与支付成本，成为核心难题。已有工作在特定环境下取得对数近似，但通用多维环境中是否存在最优无先验机制仍未知。",
+              "modelAndSetup": "模型考虑n个代理人，每个对有限结果集O拥有非负估值函数，无任何结构限制。机制需决定结果和支付向量，目标是最大化期望残差盈余。要求机制满足普遍真实性（UT）和事后个体理性（EPIR），即无论随机性如何，诚实报告都是主导策略，且参与者效用非负。基准为最大社会福利W(N)，衡量机制对它的逼近程度。",
+              "contributionsAndResults": "论文提出一个显式的普遍真实且事后个体理性的机制——调和采样机制（HASM），其期望残差盈余至少为W(N)/Hₙ，其中Hₙ是第n个调和数。该近似比在最坏情况下最优，常数因子紧致，即使在单物品拍卖、已知i.i.d.先验和贝叶斯激励相容下也无法超越。结果统一适用于各种估值类，解决了Hartline与Roughgarden及Ezra等人提出的开放问题。",
+              "methodsAndTechniques": "机制核心是随机采样k个代理（按概率1/(kHₙ)），在其子集上运行VCG机制并忽略其余代理。分析关键在于利用线性期望与调和级数的望远性质：采样代理的总期望效用恰好构成望远和，最终抵消为W(N)/Hₙ。该方法不依赖估值结构，仅需福利最大化可高效求解，从而保证机制整体多项式时间可实现。",
+              "limitationsAndReadingValue": "机制虽具普适性和最优性，但依赖内部随机性且结果为期望保证，无法控制单次运行波动。其优势在代理人多而结果空间大时显著，反之可能不如基于结果数的机制。最值得阅读的是其简洁而强大的采样思想、对紧界构造的洞察，以及将复杂机制归约为基础VCG模块的技术路径，为后续研究提供了通用框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "最优无先验机制以最大化消费者剩余",
+            "summarySections": {
+              "backgroundAndQuestion": "传统机制设计通过支付实现社会福利最大化，但在许多场景中支付并不创造价值而是被‘烧毁’，如等待时间或计算开销。此时目标不再是社会福利，而是残差盈余（即总价值减去支付）。如何在不依赖先验分布的前提下平衡信息获取与支付成本，成为核心难题。已有工作在特定环境下取得对数近似，但通用多维环境中是否存在最优无先验机制仍未知。",
+              "modelAndSetup": "模型考虑n个代理人，每个对有限结果集O拥有非负估值函数，无任何结构限制。机制需决定结果和支付向量，目标是最大化期望残差盈余。要求机制满足普遍真实性（UT）和事后个体理性（EPIR），即无论随机性如何，诚实报告都是主导策略，且参与者效用非负。基准为最大社会福利W(N)，衡量机制对它的逼近程度。",
+              "contributionsAndResults": "论文提出一个显式的普遍真实且事后个体理性的机制——调和采样机制（HASM），其期望残差盈余至少为W(N)/Hₙ，其中Hₙ是第n个调和数。该近似比在最坏情况下最优，常数因子紧致，即使在单物品拍卖、已知i.i.d.先验和贝叶斯激励相容下也无法超越。结果统一适用于各种估值类，解决了Hartline与Roughgarden及Ezra等人提出的开放问题。",
+              "methodsAndTechniques": "机制核心是随机采样k个代理（按概率1/(kHₙ)），在其子集上运行VCG机制并忽略其余代理。分析关键在于利用线性期望与调和级数的望远性质：采样代理的总期望效用恰好构成望远和，最终抵消为W(N)/Hₙ。该方法不依赖估值结构，仅需福利最大化可高效求解，从而保证机制整体多项式时间可实现。",
+              "limitationsAndReadingValue": "机制虽具普适性和最优性，但依赖内部随机性且结果为期望保证，无法控制单次运行波动。其优势在代理人多而结果空间大时显著，反之可能不如基于结果数的机制。最值得阅读的是其简洁而强大的采样思想、对紧界构造的洞察，以及将复杂机制归约为基础VCG模块的技术路径，为后续研究提供了通用框架。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "消费者剩余",
+              "残差盈余",
+              "多维环境"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "算法设计",
+              "近似分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Robust Scale-Free Auctions",
+            "url": "https://arxiv.org/abs/2608.02479",
+            "arxivId": "2608.02479",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "稳健的尺度无关拍卖",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "鲁棒性",
+              "单调失效率",
+              "正则分布"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当卖家不知道竞拍者估值的具体分布，只知道其形状特征（如单调失效率或正则性）时，如何设计不依赖先验的拍卖机制？传统最优拍卖依赖已知分布设置保留价，但在分布未知时表现脆弱。本文研究在仅知尺度不变形状约束下，何种机制能在最坏情况下最大化相对最优收入的比例，解决分布不确定性下的稳健机制设计问题。",
+              "modelAndSetup": "模型考虑一个卖家和n个独立同分布的竞拍者，卖家仅知道共同分布属于某尺度不变类（如MHR或正则分布），但不知其具体形式和尺度。机制需满足占优策略激励相容和事后个体理性。目标是最大化最坏情况下的收入比率，即机制收入与该分布下贝叶斯最优收入之比的下确界。重点关注尺度无关机制，其决策在所有出价同比例缩放时保持一致。",
+              "contributionsAndResults": "论文证明，在单调失效率（MHR）分布下，无保留价的次价拍卖对任意n≥2都是极大极小最优的，即使在允许随机化和可能分配给低出价者的更广机制类中也成立。而在正则分布下，对于两个竞拍者，标准机制（总是分配给出价最高者）严格次优，通过构造一种随机偏好机制并混合使用，可获得略高的最坏情况收入比率，揭示了非标准分配的价值。",
+              "methodsAndTechniques": "作者采用极小极大分析框架，通过构造‘硬分布族’（如截断指数分布）来证明上界，并结合虚拟值分析、径向极限约简等技术。关键在于将一般机制约简为尺度无关机制而不损失性能。对于正则情形，利用阈值测度分解和配对折扣-溢价阈值结构，构造出超越标准机制的新机制，并通过三角形分布上的精确计算验证其优越性。",
+              "limitationsAndReadingValue": "结果高度依赖于分布类的尾部限制：MHR的强尾部衰减使低秩分配无效，而正则分布的较弱限制允许其提升稳健性。尽管数值改进微小，但结论结构性地否定了标准机制的普适最优性。论文价值在于清晰揭示了分布假设如何影响最优机制结构，其阈值分解和配对构造思想对后续鲁棒机制设计有启发意义，适合关注理论深度和机制创新的读者精读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "稳健的尺度无关拍卖",
+            "summarySections": {
+              "backgroundAndQuestion": "当卖家不知道竞拍者估值的具体分布，只知道其形状特征（如单调失效率或正则性）时，如何设计不依赖先验的拍卖机制？传统最优拍卖依赖已知分布设置保留价，但在分布未知时表现脆弱。本文研究在仅知尺度不变形状约束下，何种机制能在最坏情况下最大化相对最优收入的比例，解决分布不确定性下的稳健机制设计问题。",
+              "modelAndSetup": "模型考虑一个卖家和n个独立同分布的竞拍者，卖家仅知道共同分布属于某尺度不变类（如MHR或正则分布），但不知其具体形式和尺度。机制需满足占优策略激励相容和事后个体理性。目标是最大化最坏情况下的收入比率，即机制收入与该分布下贝叶斯最优收入之比的下确界。重点关注尺度无关机制，其决策在所有出价同比例缩放时保持一致。",
+              "contributionsAndResults": "论文证明，在单调失效率（MHR）分布下，无保留价的次价拍卖对任意n≥2都是极大极小最优的，即使在允许随机化和可能分配给低出价者的更广机制类中也成立。而在正则分布下，对于两个竞拍者，标准机制（总是分配给出价最高者）严格次优，通过构造一种随机偏好机制并混合使用，可获得略高的最坏情况收入比率，揭示了非标准分配的价值。",
+              "methodsAndTechniques": "作者采用极小极大分析框架，通过构造‘硬分布族’（如截断指数分布）来证明上界，并结合虚拟值分析、径向极限约简等技术。关键在于将一般机制约简为尺度无关机制而不损失性能。对于正则情形，利用阈值测度分解和配对折扣-溢价阈值结构，构造出超越标准机制的新机制，并通过三角形分布上的精确计算验证其优越性。",
+              "limitationsAndReadingValue": "结果高度依赖于分布类的尾部限制：MHR的强尾部衰减使低秩分配无效，而正则分布的较弱限制允许其提升稳健性。尽管数值改进微小，但结论结构性地否定了标准机制的普适最优性。论文价值在于清晰揭示了分布假设如何影响最优机制结构，其阈值分解和配对构造思想对后续鲁棒机制设计有启发意义，适合关注理论深度和机制创新的读者精读。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "鲁棒性",
+              "单调失效率",
+              "正则分布"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+            "url": "https://arxiv.org/abs/2608.02440",
+            "arxivId": "2608.02440",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "执行噪声下的意图推断：分离社会困境中的偶然性与认知不确定性",
+            "researchParadigmTags": [
+              "模型构建",
+              "理论推导",
+              "实验验证",
+              "算法设计"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "博弈学习",
+              "强化学习",
+              "意图推断",
+              "社会困境"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在嘈杂环境中合作会突然崩溃？标准强化学习模型将观测动作直接作为状态，无法区分对手的真实意图与执行错误，导致过度报复。本文指出，这种结构性缺失破坏了合作稳定性，尤其在存在动作噪声的重复囚徒困境中，简单的‘以牙还牙’策略因误判而引发恶性循环。问题核心在于如何从模糊行为中推理隐藏动机。",
+              "modelAndSetup": "作者构建了一个部分可观测马尔可夫决策过程（POMDP），其中对手的意图是隐状态，实际执行的动作则是带有噪声的观测。智能体通过贝叶斯推理更新对意图的信念，并结合主动推理框架下的期望自由能进行决策。该模型明确分离了偶然性噪声（执行错误）与认知不确定性（对意图的未知），并通过偏好向量体现收益结构，使推断与行动联合优化。",
+              "contributionsAndResults": "论文发现意图推断的价值具有情境依赖性：对抗有条件合作对手时，POMDP显著优于传统MDP；但在自博弈中，双方同时进行意图推断反而会在高噪声下引发相关性信念崩溃——看似精确的推理放大了噪声影响。此外，研究推导出一个临界噪声阈值，超过后合作必然瓦解，这源于长期规划窗口内合作意图持续存在的概率衰减。",
+              "methodsAndTechniques": "作者采用主动推理框架，将决策分解为实用价值（追求高回报观测）和认知价值（减少状态与模型不确定性）。通过Dirichlet计数在线学习对手策略，实现信念与模型的耦合更新。关键分析利用二元假设检验刻画多步宽容条件，并通过分解期望自由能揭示POMDP‘探索-承诺’的学习轨迹，对比MDP中持续犹豫的动态差异。",
+              "limitationsAndReadingValue": "模型假设已知噪声参数且对手策略平稳，限制了在非稳态环境中的适用性。其优势也仅在特定博弈（如IPD）中显现，在stag hunt等无剥削诱惑的任务中消失。尽管如此，本文深刻揭示了表示选择如何决定合作可能性，展示了精确推理在互信系统中的双刃剑效应，值得重视模型抽象与不确定性建模的研究者精读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "执行噪声下的意图推断：分离社会困境中的偶然性与认知不确定性",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在嘈杂环境中合作会突然崩溃？标准强化学习模型将观测动作直接作为状态，无法区分对手的真实意图与执行错误，导致过度报复。本文指出，这种结构性缺失破坏了合作稳定性，尤其在存在动作噪声的重复囚徒困境中，简单的‘以牙还牙’策略因误判而引发恶性循环。问题核心在于如何从模糊行为中推理隐藏动机。",
+              "modelAndSetup": "作者构建了一个部分可观测马尔可夫决策过程（POMDP），其中对手的意图是隐状态，实际执行的动作则是带有噪声的观测。智能体通过贝叶斯推理更新对意图的信念，并结合主动推理框架下的期望自由能进行决策。该模型明确分离了偶然性噪声（执行错误）与认知不确定性（对意图的未知），并通过偏好向量体现收益结构，使推断与行动联合优化。",
+              "contributionsAndResults": "论文发现意图推断的价值具有情境依赖性：对抗有条件合作对手时，POMDP显著优于传统MDP；但在自博弈中，双方同时进行意图推断反而会在高噪声下引发相关性信念崩溃——看似精确的推理放大了噪声影响。此外，研究推导出一个临界噪声阈值，超过后合作必然瓦解，这源于长期规划窗口内合作意图持续存在的概率衰减。",
+              "methodsAndTechniques": "作者采用主动推理框架，将决策分解为实用价值（追求高回报观测）和认知价值（减少状态与模型不确定性）。通过Dirichlet计数在线学习对手策略，实现信念与模型的耦合更新。关键分析利用二元假设检验刻画多步宽容条件，并通过分解期望自由能揭示POMDP‘探索-承诺’的学习轨迹，对比MDP中持续犹豫的动态差异。",
+              "limitationsAndReadingValue": "模型假设已知噪声参数且对手策略平稳，限制了在非稳态环境中的适用性。其优势也仅在特定博弈（如IPD）中显现，在stag hunt等无剥削诱惑的任务中消失。尽管如此，本文深刻揭示了表示选择如何决定合作可能性，展示了精确推理在互信系统中的双刃剑效应，值得重视模型抽象与不确定性建模的研究者精读。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "博弈学习",
+              "强化学习",
+              "意图推断",
+              "社会困境"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "理论推导",
+              "实验验证",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Online Learning in Stackelberg Security Games with Adaptive Attacker Sequences and Time-Varying Attack Intensities",
+            "url": "https://arxiv.org/abs/2608.01703",
+            "arxivId": "2608.01703",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "具有自适应攻击者序列和时变攻击强度的斯塔克尔伯格安全博弈中的在线学习",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "后悔分析",
+              "模型构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "机制设计",
+              "安全性",
+              "在线算法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有安全博弈模型通常假设攻击者能力固定，难以应对现实中攻击强度动态变化的情况。本文关注防御者如何在面对攻击目标数、类型和频率均可能随时间任意变化的对手时，仍能实现低遗憾的学习策略。这种动态性破坏了传统模型的静态最优响应结构，使得设计稳健的在线防御机制成为关键挑战。",
+              "modelAndSetup": "模型扩展了经典斯塔克尔伯格安全博弈，允许每个回合出现多个攻击者，各自拥有不同类型和可变的攻击强度（即同时攻击的目标数）。防御者提交混合策略后，攻击者观测并基于自身类型和强度选择最优响应。学习设置涵盖全信息反馈和仅观察聚合攻击结果的带臂反馈两种情形，更贴近实际监控限制。",
+              "contributionsAndResults": "论文提出了一个精确的混合整数线性规划（MILP）预言机来计算最优防御策略，并结合扰动领导者跟随（FPL）框架，在全信息下实现了O(√T)期望遗憾。在带臂反馈下，通过重心坐标跨度重构技术估计效用，获得了O(T²/³)的遗憾界。这是首个在时变攻击强度和多攻击者共存下提供后悔保证的工作。",
+              "methodsAndTechniques": "核心技术在于将双层优化问题转化为单层MILP，以处理动态攻击强度下的最优响应计算。在全信息下利用FPL引入随机扰动防止被对手预测。在带臂反馈下，则利用攻击响应形成的多面体结构，构造重心跨度进行探索，从而从聚合观测中线性重建全局攻击频率与效用估计。",
+              "limitationsAndReadingValue": "模型目前假设带臂反馈下的攻击者类型固定，尚未完全推广到类型也动态变化的情形。此外，MILP求解在大规模场景下可能面临计算负担。尽管如此，该文在建模现实威胁动态性和提供严谨学习保证之间取得了良好平衡，其预言机构造与几何估计方法对相关领域具有较高借鉴价值。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "具有自适应攻击者序列和时变攻击强度的斯塔克尔伯格安全博弈中的在线学习",
+            "summarySections": {
+              "backgroundAndQuestion": "现有安全博弈模型通常假设攻击者能力固定，难以应对现实中攻击强度动态变化的情况。本文关注防御者如何在面对攻击目标数、类型和频率均可能随时间任意变化的对手时，仍能实现低遗憾的学习策略。这种动态性破坏了传统模型的静态最优响应结构，使得设计稳健的在线防御机制成为关键挑战。",
+              "modelAndSetup": "模型扩展了经典斯塔克尔伯格安全博弈，允许每个回合出现多个攻击者，各自拥有不同类型和可变的攻击强度（即同时攻击的目标数）。防御者提交混合策略后，攻击者观测并基于自身类型和强度选择最优响应。学习设置涵盖全信息反馈和仅观察聚合攻击结果的带臂反馈两种情形，更贴近实际监控限制。",
+              "contributionsAndResults": "论文提出了一个精确的混合整数线性规划（MILP）预言机来计算最优防御策略，并结合扰动领导者跟随（FPL）框架，在全信息下实现了O(√T)期望遗憾。在带臂反馈下，通过重心坐标跨度重构技术估计效用，获得了O(T²/³)的遗憾界。这是首个在时变攻击强度和多攻击者共存下提供后悔保证的工作。",
+              "methodsAndTechniques": "核心技术在于将双层优化问题转化为单层MILP，以处理动态攻击强度下的最优响应计算。在全信息下利用FPL引入随机扰动防止被对手预测。在带臂反馈下，则利用攻击响应形成的多面体结构，构造重心跨度进行探索，从而从聚合观测中线性重建全局攻击频率与效用估计。",
+              "limitationsAndReadingValue": "模型目前假设带臂反馈下的攻击者类型固定，尚未完全推广到类型也动态变化的情形。此外，MILP求解在大规模场景下可能面临计算负担。尽管如此，该文在建模现实威胁动态性和提供严谨学习保证之间取得了良好平衡，其预言机构造与几何估计方法对相关领域具有较高借鉴价值。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "机制设计",
+              "安全性",
+              "在线算法"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "后悔分析",
+              "模型构建",
+              "实验验证"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-03",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202608030000 TO 202608032359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 3
+      },
+      "arxivTotalResults": 3,
+      "fetchedCount": 3,
+      "fetchedPapers": [
+        {
+          "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+          "url": "https://arxiv.org/abs/2608.02178",
+          "arxivId": "2608.02178",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "cond-mat.stat-mech",
+            "cs.MA",
+            "nlin.AO"
+          ],
+          "abstract": "Decentralized populations of Large Language Model (LLM) agents can spontaneously reach consensus on shared conventions, yet the microscopic mechanisms by which their internal stochasticity shapes macroscopic ordering remain unexplored. We study a minimal LLM Naming Game in which the listener's decision is a single-token LLM call at decoding temperature $T$, replacing the inventory check of the deterministic Naming Game. Each interaction decomposes into an in-inventory and an out-inventory channel with conditional rates $π(T)\\!\\equiv\\!P(\\text{YES}\\mid w\\in P_j)$ and $φ(T)\\!\\equiv\\!P(\\text{YES}\\mid w\\notin P_j)$, whose balance controls an ordering-disordering drift. A mean-field theory of the two-rate dynamics yields an analytical ordering condition that generalizes the consensus threshold of the stochastic Naming Game to a critical line in the $(π,φ)$ plane. Across three open-weight architectures, consensus is always reached, but through three distinct listener regimes: permissive (repaint-noise dominated), near-deterministic, and conservative (missed-collapse dominated). The effective finite-size exponent $β(T)$ in $t_{\\rm conv}\\!\\sim\\!N^β$ shifts with temperature, and the temperature-sensitivity $α$ in $t_c\\!\\sim\\!e^{αT}$ ranges from ${\\approx}\\,0.67$ to ${\\approx}\\,0$ across architectures. Decoding temperature thus emerges as an architecture-dependent control parameter for decentralized LLM populations, quantitatively characterized by the statistical-physics toolkit."
+        },
+        {
+          "title": "No One Wins in Nuclear War: A Social Simulation of Military Decision-making",
+          "url": "https://arxiv.org/abs/2608.01868",
+          "arxivId": "2608.01868",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.CY",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "WOPR is a social-simulation environment for studying how organizations make high-stakes decisions, built on a deterministic, replay-validated rules engine and using wargames as the vehicle. We instantiate it first with the published card game Nuclear War, traced against its published rules. We start with military decision-making because of its safety implications and because it needs further study, but the design is not specific to it: the decision-point contract that exposes the engine to agents is reusable across verifiable rule systems. Existing social-simulation work emphasizes persona fidelity and synthetic opinion, but lacks a verifiable rules engine with replay-checkable mechanics and private-channel negotiation. WOPR supplies that engine, and its contract makes every strategic choice an explicit agent decision. The method is agnostic to social-simulation frameworks; we adopt Concordia as the default harness for driving the game. On the same engine, WOPR layers a four-rung press ladder from silence to private single-recipient channels with structured commitments, and instantiates each faction as a collective command-and-control system rather than a single agent. We make all code, example configurations, and replay data publicly available at https://github.com/eilab-gt/wopr."
+        },
+        {
+          "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+          "url": "https://arxiv.org/abs/2608.01558",
+          "arxivId": "2608.01558",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CR",
+            "cs.MA"
+          ],
+          "abstract": "Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and technical standards. Their safety is therefore determined not by the correctness of individual actions, but by whether their overall behavior remains consistent with the rules and invariants of the systems in which they operate. As large language model (LLM)-based agents become more autonomous and increasingly delegate tasks across organizational boundaries, securing them evolves from a single challenge into a broad and interconnected landscape spanning the entire agentic stack. At the single-agent level, untrusted inputs through prompts, memory, retrieved knowledge, and tool interfaces create attack surfaces. In multi-agent settings, delegation and communication introduce challenges related to identity, trust, capability control, and decision transparency, while the underlying model routing and execution control plane remains vulnerable to manipulation and to unverified model provenance. Perhaps the most fundamental challenge is behavioral containment: sequences of individually permissible actions may collectively violate system-level constraints and safety invariants. At the broader level, supply-chain integrity, provenance, accountability, and end-to-end observability remain largely open problems. A common principle unifies these directions: security must become a verifiable property of the architectures, protocols, and runtimes that govern agent behavior, rather than an optional layer of guidance. Charting these challenges provides a roadmap toward trustworthy autonomous agent deployment."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+              "url": "https://arxiv.org/abs/2608.02178",
+              "arxivId": "2608.02178",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "cond-mat.stat-mech",
+                "cs.MA",
+                "nlin.AO"
+              ],
+              "abstract": "Decentralized populations of Large Language Model (LLM) agents can spontaneously reach consensus on shared conventions, yet the microscopic mechanisms by which their internal stochasticity shapes macroscopic ordering remain unexplored. We study a minimal LLM Naming Game in which the listener's decision is a single-token LLM call at decoding temperature $T$, replacing the inventory check of the deterministic Naming Game. Each interaction decomposes into an in-inventory and an out-inventory channel with conditional rates $π(T)\\!\\equiv\\!P(\\text{YES}\\mid w\\in P_j)$ and $φ(T)\\!\\equiv\\!P(\\text{YES}\\mid w\\notin P_j)$, whose balance controls an ordering-disordering drift. A mean-field theory of the two-rate dynamics yields an analytical ordering condition that generalizes the consensus threshold of the stochastic Naming Game to a critical line in the $(π,φ)$ plane. Across three open-weight architectures, consensus is always reached, but through three distinct listener regimes: permissive (repaint-noise dominated), near-deterministic, and conservative (missed-collapse dominated). The effective finite-size exponent $β(T)$ in $t_{\\rm conv}\\!\\sim\\!N^β$ shifts with temperature, and the temperature-sensitivity $α$ in $t_c\\!\\sim\\!e^{αT}$ ranges from ${\\approx}\\,0.67$ to ${\\approx}\\,0$ across architectures. Decoding temperature thus emerges as an architecture-dependent control parameter for decentralized LLM populations, quantitatively characterized by the statistical-physics toolkit."
+            },
+            {
+              "title": "No One Wins in Nuclear War: A Social Simulation of Military Decision-making",
+              "url": "https://arxiv.org/abs/2608.01868",
+              "arxivId": "2608.01868",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.CY",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "WOPR is a social-simulation environment for studying how organizations make high-stakes decisions, built on a deterministic, replay-validated rules engine and using wargames as the vehicle. We instantiate it first with the published card game Nuclear War, traced against its published rules. We start with military decision-making because of its safety implications and because it needs further study, but the design is not specific to it: the decision-point contract that exposes the engine to agents is reusable across verifiable rule systems. Existing social-simulation work emphasizes persona fidelity and synthetic opinion, but lacks a verifiable rules engine with replay-checkable mechanics and private-channel negotiation. WOPR supplies that engine, and its contract makes every strategic choice an explicit agent decision. The method is agnostic to social-simulation frameworks; we adopt Concordia as the default harness for driving the game. On the same engine, WOPR layers a four-rung press ladder from silence to private single-recipient channels with structured commitments, and instantiates each faction as a collective command-and-control system rather than a single agent. We make all code, example configurations, and replay data publicly available at https://github.com/eilab-gt/wopr."
+            },
+            {
+              "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+              "url": "https://arxiv.org/abs/2608.01558",
+              "arxivId": "2608.01558",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CR",
+                "cs.MA"
+              ],
+              "abstract": "Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and technical standards. Their safety is therefore determined not by the correctness of individual actions, but by whether their overall behavior remains consistent with the rules and invariants of the systems in which they operate. As large language model (LLM)-based agents become more autonomous and increasingly delegate tasks across organizational boundaries, securing them evolves from a single challenge into a broad and interconnected landscape spanning the entire agentic stack. At the single-agent level, untrusted inputs through prompts, memory, retrieved knowledge, and tool interfaces create attack surfaces. In multi-agent settings, delegation and communication introduce challenges related to identity, trust, capability control, and decision transparency, while the underlying model routing and execution control plane remains vulnerable to manipulation and to unverified model provenance. Perhaps the most fundamental challenge is behavioral containment: sequences of individually permissible actions may collectively violate system-level constraints and safety invariants. At the broader level, supply-chain integrity, provenance, accountability, and end-to-end observability remain largely open problems. A common principle unifies these directions: security must become a verifiable property of the architectures, protocols, and runtimes that govern agent behavior, rather than an optional layer of guidance. Charting these challenges provides a roadmap toward trustworthy autonomous agent deployment."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+              "url": "https://arxiv.org/abs/2608.02178",
+              "arxivId": "2608.02178",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "cond-mat.stat-mech",
+                "cs.MA",
+                "nlin.AO"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "No One Wins in Nuclear War: A Social Simulation of Military Decision-making",
+              "url": "https://arxiv.org/abs/2608.01868",
+              "arxivId": "2608.01868",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.CY",
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 13.0,
+                "total": 13.0
+              }
+            },
+            {
+              "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+              "url": "https://arxiv.org/abs/2608.01558",
+              "arxivId": "2608.01558",
+              "date": "2026-08-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CR",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+          "url": "https://arxiv.org/abs/2608.02178",
+          "arxivId": "2608.02178",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "cond-mat.stat-mech",
+            "cs.MA",
+            "nlin.AO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "No One Wins in Nuclear War: A Social Simulation of Military Decision-making",
+          "url": "https://arxiv.org/abs/2608.01868",
+          "arxivId": "2608.01868",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.CY",
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 13.0,
+            "total": 13.0
+          }
+        },
+        {
+          "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+          "url": "https://arxiv.org/abs/2608.01558",
+          "arxivId": "2608.01558",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CR",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+          "url": "https://arxiv.org/abs/2608.02178",
+          "arxivId": "2608.02178",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "cond-mat.stat-mech",
+            "cs.MA",
+            "nlin.AO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+          "url": "https://arxiv.org/abs/2608.01558",
+          "arxivId": "2608.01558",
+          "date": "2026-08-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CR",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+            "url": "https://arxiv.org/abs/2608.02178",
+            "arxivId": "2608.02178",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "physics.soc-ph",
+              "cond-mat.stat-mech",
+              "cs.MA",
+              "nlin.AO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "多智能体大语言模型命名游戏中的共识形成微观动力学",
+            "researchParadigmTags": [
+              "实验验证",
+              "理论推导",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "共识形成",
+              "统计物理",
+              "智能体决策"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "去中心化的大型语言模型（LLM）群体能否自发达成共识是一个关键科学与工程问题。传统命名游戏模型虽能描述共识涌现，但其确定性规则无法刻画LLM固有的随机性。现有研究多固定解码温度，忽视了该超参数作为统计物理意义上控制变量的潜力，导致缺乏从微观随机性到宏观秩序的连接理论。",
+              "modelAndSetup": "研究采用最小化的LLM命名游戏框架：N个LLM代理在全连接图上通过单轮对话协商词汇，听众的回应由一次单token的LLM调用决定，仅调节解码温度T。输入为其词汇表和提议词，输出为YES/NO，动态演化库存并最终收敛至单一词汇。通过跟踪词汇数、成功率及微观接受率来评估行为模式。",
+              "contributionsAndResults": "论文揭示了解码温度T如何通过两个条件概率——库存内接受率π和库存外误接受率φ——调控共识过程，并据此识别出三种定性不同的听众机制：宽容型、近确定型与保守型。实验证明共识总能达成，但收敛速度、规模律和温度响应因架构而异，挑战了‘温度即噪声’的简单认知。",
+              "methodsAndTechniques": "作者将每次交互分解为四个通道（真/假正负例），提取出π(T)和φ(T)两个核心速率，构建漂移代理量Δ(t)以量化净有序趋势。结合均场理论推导出相变临界线3π−2φ−1>0，解释不同架构下的宏观行为差异。该方法将黑箱式的LLM响应转化为可测量、可建模的微观机制。",
+              "limitationsAndReadingValue": "结论基于中小规模模拟（N≤150），外推至更大系统存在不确定性；提示词设计未系统扫描，可能影响绝对数值。然而，其将LLM群体行为映射到统计物理框架的做法极具启发性，最值得阅读的是其问题抽象方式、微观-宏观衔接逻辑以及对温度作用的重新诠释。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "多智能体大语言模型命名游戏中的共识形成微观动力学",
+            "summarySections": {
+              "backgroundAndQuestion": "去中心化的大型语言模型（LLM）群体能否自发达成共识是一个关键科学与工程问题。传统命名游戏模型虽能描述共识涌现，但其确定性规则无法刻画LLM固有的随机性。现有研究多固定解码温度，忽视了该超参数作为统计物理意义上控制变量的潜力，导致缺乏从微观随机性到宏观秩序的连接理论。",
+              "modelAndSetup": "研究采用最小化的LLM命名游戏框架：N个LLM代理在全连接图上通过单轮对话协商词汇，听众的回应由一次单token的LLM调用决定，仅调节解码温度T。输入为其词汇表和提议词，输出为YES/NO，动态演化库存并最终收敛至单一词汇。通过跟踪词汇数、成功率及微观接受率来评估行为模式。",
+              "contributionsAndResults": "论文揭示了解码温度T如何通过两个条件概率——库存内接受率π和库存外误接受率φ——调控共识过程，并据此识别出三种定性不同的听众机制：宽容型、近确定型与保守型。实验证明共识总能达成，但收敛速度、规模律和温度响应因架构而异，挑战了‘温度即噪声’的简单认知。",
+              "methodsAndTechniques": "作者将每次交互分解为四个通道（真/假正负例），提取出π(T)和φ(T)两个核心速率，构建漂移代理量Δ(t)以量化净有序趋势。结合均场理论推导出相变临界线3π−2φ−1>0，解释不同架构下的宏观行为差异。该方法将黑箱式的LLM响应转化为可测量、可建模的微观机制。",
+              "limitationsAndReadingValue": "结论基于中小规模模拟（N≤150），外推至更大系统存在不确定性；提示词设计未系统扫描，可能影响绝对数值。然而，其将LLM群体行为映射到统计物理框架的做法极具启发性，最值得阅读的是其问题抽象方式、微观-宏观衔接逻辑以及对温度作用的重新诠释。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "共识形成",
+              "统计物理",
+              "智能体决策"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "理论推导",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+            "url": "https://arxiv.org/abs/2608.01558",
+            "arxivId": "2608.01558",
+            "date": "2026-08-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.CR",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "保障智能体AI：从逐动作检查到轨迹保障",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "综述/教程",
+              "安全性分析",
+              "行为验证"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "安全性",
+              "多智能体系统",
+              "行为约束"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型驱动的自主智能体被用于医疗、金融等关键领域，其安全不再仅取决于单个动作的正确性，而在于整体行为是否持续符合系统规则。现有防护多聚焦于单步操作的合规性，难以应对由合法动作序列累积导致的违规行为。此外，智能体在记忆、工具调用、跨代理协作及模型路由等层面均存在攻击面，传统防御手段无法覆盖这些复合风险。",
+              "modelAndSetup": "论文不依赖特定模型或实验数据，而是基于现实部署场景构建分析框架，涵盖单智能体与多智能体系统的典型架构，如使用MCP进行工具交互、A2A协议实现跨代理通信。研究设定围绕真实威胁展开，包括提示注入、记忆投毒、工具污染、身份冒用与路由操控，并考察从输入处理到执行轨迹的全栈安全问题，评估标准聚焦于能否建立可验证的行为一致性保障。",
+              "contributionsAndResults": "论文提出将安全视为贯穿智能体架构、协议与运行时的可验证属性，而非附加指导层。核心贡献是系统梳理出十一个开放问题，涵盖从单点攻击面到跨系统行为保障的完整谱系，并倡导从‘逐动作检查’转向‘轨迹级保障’的安全范式变革。虽无量化实验，但通过现实漏洞案例（如EchoLeak、postmark-mcp）佐证了所提挑战的紧迫性与实际影响。",
+              "methodsAndTechniques": "作者采用威胁建模与系统分析相结合的方式，沿智能体垂直功能轴（推理、记忆、工具）与水平协作轴（代理间通信、委托）识别攻击路径。关键技术洞察包括：将不可信输入传播视为共性根源，主张对上下文所有权、能力声明、路由决策等关键环节实施协议级强制验证，并推动审计追踪、最小权限委托、形式化行为规范等机制成为默认设计要素。",
+              "limitationsAndReadingValue": "作为愿景论文，未提供具体实现方案或实证验证，其结论依赖于对现有脆弱性的归纳与趋势推断。部分建议如形式化规范编译尚处早期阶段，落地路径不明。尽管如此，该文极具阅读价值，尤其适合关注智能体安全架构的研究者与工程人员，其系统性视角与问题分类为后续研究提供了清晰路线图。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "保障智能体AI：从逐动作检查到轨迹保障",
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型驱动的自主智能体被用于医疗、金融等关键领域，其安全不再仅取决于单个动作的正确性，而在于整体行为是否持续符合系统规则。现有防护多聚焦于单步操作的合规性，难以应对由合法动作序列累积导致的违规行为。此外，智能体在记忆、工具调用、跨代理协作及模型路由等层面均存在攻击面，传统防御手段无法覆盖这些复合风险。",
+              "modelAndSetup": "论文不依赖特定模型或实验数据，而是基于现实部署场景构建分析框架，涵盖单智能体与多智能体系统的典型架构，如使用MCP进行工具交互、A2A协议实现跨代理通信。研究设定围绕真实威胁展开，包括提示注入、记忆投毒、工具污染、身份冒用与路由操控，并考察从输入处理到执行轨迹的全栈安全问题，评估标准聚焦于能否建立可验证的行为一致性保障。",
+              "contributionsAndResults": "论文提出将安全视为贯穿智能体架构、协议与运行时的可验证属性，而非附加指导层。核心贡献是系统梳理出十一个开放问题，涵盖从单点攻击面到跨系统行为保障的完整谱系，并倡导从‘逐动作检查’转向‘轨迹级保障’的安全范式变革。虽无量化实验，但通过现实漏洞案例（如EchoLeak、postmark-mcp）佐证了所提挑战的紧迫性与实际影响。",
+              "methodsAndTechniques": "作者采用威胁建模与系统分析相结合的方式，沿智能体垂直功能轴（推理、记忆、工具）与水平协作轴（代理间通信、委托）识别攻击路径。关键技术洞察包括：将不可信输入传播视为共性根源，主张对上下文所有权、能力声明、路由决策等关键环节实施协议级强制验证，并推动审计追踪、最小权限委托、形式化行为规范等机制成为默认设计要素。",
+              "limitationsAndReadingValue": "作为愿景论文，未提供具体实现方案或实证验证，其结论依赖于对现有脆弱性的归纳与趋势推断。部分建议如形式化规范编译尚处早期阶段，落地路径不明。尽管如此，该文极具阅读价值，尤其适合关注智能体安全架构的研究者与工程人员，其系统性视角与问题分类为后续研究提供了清晰路线图。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "安全性",
+              "多智能体系统",
+              "行为约束"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "综述/教程",
+              "安全性分析",
+              "行为验证"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 2
+  }
+}
