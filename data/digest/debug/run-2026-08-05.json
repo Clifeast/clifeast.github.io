@@ -1,0 +1,1861 @@
+{
+  "date": "2026-08-05",
+  "generatedAt": "2026-08-05T05:31:02.616697+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-04",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202608040000 TO 202608042359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202608040000 TO 202608042359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 6
+      },
+      "arxivTotalResults": 6,
+      "fetchedCount": 6,
+      "fetchedPapers": [
+        {
+          "title": "3 Players Auction Bridge - Statistical Algorithmic Strategies",
+          "url": "https://arxiv.org/abs/2608.03217",
+          "arxivId": "2608.03217",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Three-player auction bridge is an updated version of the worldwide-recognized auction bridge card game. Dynamic partners and opponents are the key factors in this game. This dynamic property reduces the bias and increases the authenticity of this game. The article provides insight on statistical learning and insight for a three-player auction bridge game. An exact algorithm for various scenarios is developed along with the corresponding winning strategies to explore different game plannings and the computational intelligence involved. Based on the algorithm, we simulate data and define the probabilistic values to win a certain game."
+        },
+        {
+          "title": "EFX Allocation In (Multi)Hypergraphs",
+          "url": "https://arxiv.org/abs/2608.03171",
+          "arxivId": "2608.03171",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI"
+          ],
+          "abstract": "We study fair allocations of indivisible goods among agents with heterogeneous monotone valuations. As fair we consider the allocations that are envy-free-up-to-any-good (EFX). Finding if EFX alloca- tions always exist, even for agents with additive valuations, is a major open problem in Fair Division. Christodoulou et al. (2023) introduced the (multi-hyper)graph setting, where agents and goods are represented by vertices and edges of a graph, respectively, and only the endpoints of an edge may have non-zero marginal value for it. We show that for hypergraphs with girth at least 4 and agents with general monotone valuations there always exists an EFX allocation and can be constructed in polynomial time. We generalize our approach to also show that multi-hypergraphs with girth (on the simple hypergraph) at least 4 always admit an EFX allocation, as long as there exists a single vertex whose incident edges have multiplicity at most the size of that edge minus 2; our construction in this case needs pseudo-polynomial time."
+        },
+        {
+          "title": "When Does Party Convergence Persist under Alienation-Based Abstention?",
+          "url": "https://arxiv.org/abs/2608.03788",
+          "arxivId": "2608.03788",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.OC"
+          ],
+          "abstract": "In the standard Downsian model, two office-seeking parties converge to the median voter. However alienated voters may abstain and turn out only for a party within their tolerance radius. For single-peaked voter distributions, convergence survives but relocates to a central voter, the median of the electorate that participates at the convergent platform. However single-peakedness of the voter distribution is an empirically contested assumption. So we first characterize pure-strategy equilibrium for any continuous voter distribution. For general distributions, pure-strategy equilibrium can fail to exist or be non-unique, and existence of equilibrium need not persist as the tolerance radius of the voters increases. In order to resolve these issues, we propose a fundamental object: \\emph{centripetal} structure for which there is a single anchor platform toward which competition always pulls. We show this structure produces convergence at equilibrium under alienation based abstention. Our main result concerns the emergence and persistence of this new structure as the tolerance radius increases. Even though equilibria for office-seeking parties themselves can vanish and reappear as the radius grows, once centripetal structure emerges, it persists as long as the midpoint voter is not alienated. Moreover, the centripetal structure always emerges, and this structure classifies equilibrium completely when parties are policy motivated."
+        },
+        {
+          "title": "Effort without Evidence",
+          "url": "https://arxiv.org/abs/2608.03719",
+          "arxivId": "2608.03719",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Actions determine not only payoffs but what can be learned. I study communication across successive decision makers when hidden effort governs public evidence and a sender motivates her successor while underweighting effort cost. Common sender rankings can force every message into a Bayes-unavoidable nonidentifying region. If experimentation is costly, strong motivation can make persuasive encouragement incredible and produce inactivity after a confounded failure. If maximal effort is technologically saturated, the same bias can produce universal overexertion after a bad pooled history, which is equally uninformative. At such nodes collapse is monotone: once strong motivation eliminates the identifying action, strengthening it cannot restore information. Moderate motivation instead preserves causal distinctions. In a threshold application, stronger motivation raises measured success yet lowers welfare because society fails to learn that less effort would suffice. A Kullback--Leibler decomposition shows that certification directly adds no information after entry into a fixed recursively nonidentifying region. Whether it prevents entry depends on attribution--selection alignment: do certificate-induced posteriors preserve the identifying action? The corrective action payment changes sign across technologies---subsidize effort when agents do too little, but subsidize restraint when maximal effort is saturated. Motivation selects the costly action, not the informative one."
+        },
+        {
+          "title": "Stable Matching with Payoff Guarantees",
+          "url": "https://arxiv.org/abs/2608.03230",
+          "arxivId": "2608.03230",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We consider a variant of the Assignment Game of Shapley and Shubik (1971), where agents do not observe the assignment or the surplus division of other matched pairs. We propose a set-valued solution concept (Self-Stabilizing Set) and characterize the largest such set. This leads to the formulation of the Stable Payoff Guarantee (SPG) set, which assumes that agents receive at least their payoff guarantees and that this is common knowledge. Our main result is that, for generic surplus matrices, the SPG set consists only of the efficient assignment. The associated payoff vectors are given by the smallest interval that contains the worker-optimal and firm-optimal stable payoffs."
+        },
+        {
+          "title": "Optimal Liability Design for Medical AI",
+          "url": "https://arxiv.org/abs/2608.03114",
+          "arxivId": "2608.03114",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.CY"
+          ],
+          "abstract": "Artificial intelligence (AI) is increasingly integrated into medical decision-making, yet its liability implications remain complex, particularly when physicians differ in diagnostic skills and their quality is unobservable. This paper develops a principal-agent model in which a social planner designs medical liability to regulate a physician with private quality information who chooses between a standard treatment, a personalized judgment-based treatment, or following an imperfect AI recommendation. Our analysis yields several novel insights. First, we show that the optimal mechanism under asymmetric information is surprisingly simple: a uniform, one-size-fits-all liability level for all physician types who deviate from the standard of care. Despite physician heterogeneity, this simple policy often achieves the full-information first-best outcome, particularly when standard care is reliable or AI is highly accurate. Second, the relationship between AI accuracy and optimal liability is non-monotonic. Contrary to common intuition, better AI does not always imply more relaxed liability. As AI accuracy increases, the optimal liability either decreases monotonically or follows an inverted-U pattern, depending on the uncertainty of the standard treatment. Third, asymmetric information does not universally reduce social welfare. Welfare loss arises only when standard care is unreliable and AI accuracy is too low; even then, its magnitude follows an inverted U-shape, initially increasing as AI complicates the regulatory problem, but declining as more accurate AI helps mitigate it. Finally, we find that information asymmetry is a double-edged sword in the presence of AI, and greater transparency does not benefit all stakeholders equally."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "3 Players Auction Bridge - Statistical Algorithmic Strategies",
+              "url": "https://arxiv.org/abs/2608.03217",
+              "arxivId": "2608.03217",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Three-player auction bridge is an updated version of the worldwide-recognized auction bridge card game. Dynamic partners and opponents are the key factors in this game. This dynamic property reduces the bias and increases the authenticity of this game. The article provides insight on statistical learning and insight for a three-player auction bridge game. An exact algorithm for various scenarios is developed along with the corresponding winning strategies to explore different game plannings and the computational intelligence involved. Based on the algorithm, we simulate data and define the probabilistic values to win a certain game."
+            },
+            {
+              "title": "EFX Allocation In (Multi)Hypergraphs",
+              "url": "https://arxiv.org/abs/2608.03171",
+              "arxivId": "2608.03171",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI"
+              ],
+              "abstract": "We study fair allocations of indivisible goods among agents with heterogeneous monotone valuations. As fair we consider the allocations that are envy-free-up-to-any-good (EFX). Finding if EFX alloca- tions always exist, even for agents with additive valuations, is a major open problem in Fair Division. Christodoulou et al. (2023) introduced the (multi-hyper)graph setting, where agents and goods are represented by vertices and edges of a graph, respectively, and only the endpoints of an edge may have non-zero marginal value for it. We show that for hypergraphs with girth at least 4 and agents with general monotone valuations there always exists an EFX allocation and can be constructed in polynomial time. We generalize our approach to also show that multi-hypergraphs with girth (on the simple hypergraph) at least 4 always admit an EFX allocation, as long as there exists a single vertex whose incident edges have multiplicity at most the size of that edge minus 2; our construction in this case needs pseudo-polynomial time."
+            },
+            {
+              "title": "When Does Party Convergence Persist under Alienation-Based Abstention?",
+              "url": "https://arxiv.org/abs/2608.03788",
+              "arxivId": "2608.03788",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.OC"
+              ],
+              "abstract": "In the standard Downsian model, two office-seeking parties converge to the median voter. However alienated voters may abstain and turn out only for a party within their tolerance radius. For single-peaked voter distributions, convergence survives but relocates to a central voter, the median of the electorate that participates at the convergent platform. However single-peakedness of the voter distribution is an empirically contested assumption. So we first characterize pure-strategy equilibrium for any continuous voter distribution. For general distributions, pure-strategy equilibrium can fail to exist or be non-unique, and existence of equilibrium need not persist as the tolerance radius of the voters increases. In order to resolve these issues, we propose a fundamental object: \\emph{centripetal} structure for which there is a single anchor platform toward which competition always pulls. We show this structure produces convergence at equilibrium under alienation based abstention. Our main result concerns the emergence and persistence of this new structure as the tolerance radius increases. Even though equilibria for office-seeking parties themselves can vanish and reappear as the radius grows, once centripetal structure emerges, it persists as long as the midpoint voter is not alienated. Moreover, the centripetal structure always emerges, and this structure classifies equilibrium completely when parties are policy motivated."
+            },
+            {
+              "title": "Effort without Evidence",
+              "url": "https://arxiv.org/abs/2608.03719",
+              "arxivId": "2608.03719",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Actions determine not only payoffs but what can be learned. I study communication across successive decision makers when hidden effort governs public evidence and a sender motivates her successor while underweighting effort cost. Common sender rankings can force every message into a Bayes-unavoidable nonidentifying region. If experimentation is costly, strong motivation can make persuasive encouragement incredible and produce inactivity after a confounded failure. If maximal effort is technologically saturated, the same bias can produce universal overexertion after a bad pooled history, which is equally uninformative. At such nodes collapse is monotone: once strong motivation eliminates the identifying action, strengthening it cannot restore information. Moderate motivation instead preserves causal distinctions. In a threshold application, stronger motivation raises measured success yet lowers welfare because society fails to learn that less effort would suffice. A Kullback--Leibler decomposition shows that certification directly adds no information after entry into a fixed recursively nonidentifying region. Whether it prevents entry depends on attribution--selection alignment: do certificate-induced posteriors preserve the identifying action? The corrective action payment changes sign across technologies---subsidize effort when agents do too little, but subsidize restraint when maximal effort is saturated. Motivation selects the costly action, not the informative one."
+            },
+            {
+              "title": "Stable Matching with Payoff Guarantees",
+              "url": "https://arxiv.org/abs/2608.03230",
+              "arxivId": "2608.03230",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We consider a variant of the Assignment Game of Shapley and Shubik (1971), where agents do not observe the assignment or the surplus division of other matched pairs. We propose a set-valued solution concept (Self-Stabilizing Set) and characterize the largest such set. This leads to the formulation of the Stable Payoff Guarantee (SPG) set, which assumes that agents receive at least their payoff guarantees and that this is common knowledge. Our main result is that, for generic surplus matrices, the SPG set consists only of the efficient assignment. The associated payoff vectors are given by the smallest interval that contains the worker-optimal and firm-optimal stable payoffs."
+            },
+            {
+              "title": "Optimal Liability Design for Medical AI",
+              "url": "https://arxiv.org/abs/2608.03114",
+              "arxivId": "2608.03114",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.CY"
+              ],
+              "abstract": "Artificial intelligence (AI) is increasingly integrated into medical decision-making, yet its liability implications remain complex, particularly when physicians differ in diagnostic skills and their quality is unobservable. This paper develops a principal-agent model in which a social planner designs medical liability to regulate a physician with private quality information who chooses between a standard treatment, a personalized judgment-based treatment, or following an imperfect AI recommendation. Our analysis yields several novel insights. First, we show that the optimal mechanism under asymmetric information is surprisingly simple: a uniform, one-size-fits-all liability level for all physician types who deviate from the standard of care. Despite physician heterogeneity, this simple policy often achieves the full-information first-best outcome, particularly when standard care is reliable or AI is highly accurate. Second, the relationship between AI accuracy and optimal liability is non-monotonic. Contrary to common intuition, better AI does not always imply more relaxed liability. As AI accuracy increases, the optimal liability either decreases monotonically or follows an inverted-U pattern, depending on the uncertainty of the standard treatment. Third, asymmetric information does not universally reduce social welfare. Welfare loss arises only when standard care is unreliable and AI accuracy is too low; even then, its magnitude follows an inverted U-shape, initially increasing as AI complicates the regulatory problem, but declining as more accurate AI helps mitigate it. Finally, we find that information asymmetry is a double-edged sword in the presence of AI, and greater transparency does not benefit all stakeholders equally."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 3,
+                  "guaranteeQuality": 2,
+                  "readingValue": 2,
+                  "penalty": -4,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 1,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 8,
+                  "readingValue": 7,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 1,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "3 Players Auction Bridge - Statistical Algorithmic Strategies",
+              "url": "https://arxiv.org/abs/2608.03217",
+              "arxivId": "2608.03217",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "EFX Allocation In (Multi)Hypergraphs",
+              "url": "https://arxiv.org/abs/2608.03171",
+              "arxivId": "2608.03171",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 2.8,
+                "total": 27.7
+              }
+            },
+            {
+              "title": "When Does Party Convergence Persist under Alienation-Based Abstention?",
+              "url": "https://arxiv.org/abs/2608.03788",
+              "arxivId": "2608.03788",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.9,
+                "total": 22.3
+              }
+            },
+            {
+              "title": "Effort without Evidence",
+              "url": "https://arxiv.org/abs/2608.03719",
+              "arxivId": "2608.03719",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 2.0,
+                "total": 28.8
+              }
+            },
+            {
+              "title": "Stable Matching with Payoff Guarantees",
+              "url": "https://arxiv.org/abs/2608.03230",
+              "arxivId": "2608.03230",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Optimal Liability Design for Medical AI",
+              "url": "https://arxiv.org/abs/2608.03114",
+              "arxivId": "2608.03114",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.CY"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 8.4,
+                "total": 29.1
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "3 Players Auction Bridge - Statistical Algorithmic Strategies",
+          "url": "https://arxiv.org/abs/2608.03217",
+          "arxivId": "2608.03217",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "EFX Allocation In (Multi)Hypergraphs",
+          "url": "https://arxiv.org/abs/2608.03171",
+          "arxivId": "2608.03171",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "When Does Party Convergence Persist under Alienation-Based Abstention?",
+          "url": "https://arxiv.org/abs/2608.03788",
+          "arxivId": "2608.03788",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.9,
+            "total": 22.3
+          }
+        },
+        {
+          "title": "Effort without Evidence",
+          "url": "https://arxiv.org/abs/2608.03719",
+          "arxivId": "2608.03719",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 28.8
+          }
+        },
+        {
+          "title": "Stable Matching with Payoff Guarantees",
+          "url": "https://arxiv.org/abs/2608.03230",
+          "arxivId": "2608.03230",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Optimal Liability Design for Medical AI",
+          "url": "https://arxiv.org/abs/2608.03114",
+          "arxivId": "2608.03114",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.CY"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 29.1
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Optimal Liability Design for Medical AI",
+          "url": "https://arxiv.org/abs/2608.03114",
+          "arxivId": "2608.03114",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.CY"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 29.1
+          }
+        },
+        {
+          "title": "Effort without Evidence",
+          "url": "https://arxiv.org/abs/2608.03719",
+          "arxivId": "2608.03719",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 28.8
+          }
+        },
+        {
+          "title": "EFX Allocation In (Multi)Hypergraphs",
+          "url": "https://arxiv.org/abs/2608.03171",
+          "arxivId": "2608.03171",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "Stable Matching with Payoff Guarantees",
+          "url": "https://arxiv.org/abs/2608.03230",
+          "arxivId": "2608.03230",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "When Does Party Convergence Persist under Alienation-Based Abstention?",
+          "url": "https://arxiv.org/abs/2608.03788",
+          "arxivId": "2608.03788",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.9,
+            "total": 22.3
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Optimal Liability Design for Medical AI",
+            "url": "https://arxiv.org/abs/2608.03114",
+            "arxivId": "2608.03114",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "cs.AI",
+              "cs.CY"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "医疗人工智能中的最优责任设计",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "信息不对称",
+              "人机协作",
+              "医疗AI",
+              "责任制度"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI在医疗决策中的广泛应用，医生与AI共同参与诊疗导致责任归属变得模糊。尤其当医生能力异质且不可观测时，如何设计法律责任规则以引导医生合理使用AI成为难题。本文旨在解决在信息不对称下，社会规划者应如何设定最优责任水平，以协调不同质量医生的行为并提升整体社会福利。",
+              "modelAndSetup": "文章构建了一个委托-代理模型，其中社会规划者（principal）设计针对医生（agent）的责任规则，医生私知自身诊断能力质量q，并在标准治疗、个性化治疗和遵循AI建议三种策略间选择。患者健康结果取决于治疗匹配度与医生能力，AI提供有噪声的信号。医生权衡法律责任、收入激励与患者福祉做出决策，而社会规划者通过机制设计诱导最优行为。",
+              "contributionsAndResults": "研究发现，在信息不对称下，一个简单的‘一刀切’统一责任水平即可实现接近第一优的社会效果，尤其当标准治疗可靠或AI精度高时。此外，AI精度与最优责任的关系是非单调的：当标准治疗风险低时，中等精度AI反而需更严格责任以防误用；而高精度AI则允许放松监管。这挑战了‘更好AI意味着更少监管’的直觉。",
+              "methodsAndTechniques": "作者采用机制设计框架，结合揭示原理，推导满足激励相容与个人理性约束的最优责任机制。通过比较完全信息与非对称信息下的均衡解，识别出关键阈值结构。利用分段优化与边界条件匹配，求解第二优机制，并借助数值模拟验证结果稳健性。核心在于刻画医生类型与AI信号间的交互如何影响责任激励的设计。",
+              "limitationsAndReadingValue": "模型假设责任仅在偏离标准治疗时触发，且AI精度外生，忽略了医生对AI的信任动态与反馈学习过程。机制虽简洁但依赖精确参数校准，实际实施可能面临挑战。然而，该文对责任制度与AI治理的互动提供了深刻洞见，特别适合关注信息不对称下人机协同机制设计的研究者深入阅读其模型抽象与均衡分析部分。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "医疗人工智能中的最优责任设计",
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI在医疗决策中的广泛应用，医生与AI共同参与诊疗导致责任归属变得模糊。尤其当医生能力异质且不可观测时，如何设计法律责任规则以引导医生合理使用AI成为难题。本文旨在解决在信息不对称下，社会规划者应如何设定最优责任水平，以协调不同质量医生的行为并提升整体社会福利。",
+              "modelAndSetup": "文章构建了一个委托-代理模型，其中社会规划者（principal）设计针对医生（agent）的责任规则，医生私知自身诊断能力质量q，并在标准治疗、个性化治疗和遵循AI建议三种策略间选择。患者健康结果取决于治疗匹配度与医生能力，AI提供有噪声的信号。医生权衡法律责任、收入激励与患者福祉做出决策，而社会规划者通过机制设计诱导最优行为。",
+              "contributionsAndResults": "研究发现，在信息不对称下，一个简单的‘一刀切’统一责任水平即可实现接近第一优的社会效果，尤其当标准治疗可靠或AI精度高时。此外，AI精度与最优责任的关系是非单调的：当标准治疗风险低时，中等精度AI反而需更严格责任以防误用；而高精度AI则允许放松监管。这挑战了‘更好AI意味着更少监管’的直觉。",
+              "methodsAndTechniques": "作者采用机制设计框架，结合揭示原理，推导满足激励相容与个人理性约束的最优责任机制。通过比较完全信息与非对称信息下的均衡解，识别出关键阈值结构。利用分段优化与边界条件匹配，求解第二优机制，并借助数值模拟验证结果稳健性。核心在于刻画医生类型与AI信号间的交互如何影响责任激励的设计。",
+              "limitationsAndReadingValue": "模型假设责任仅在偏离标准治疗时触发，且AI精度外生，忽略了医生对AI的信任动态与反馈学习过程。机制虽简洁但依赖精确参数校准，实际实施可能面临挑战。然而，该文对责任制度与AI治理的互动提供了深刻洞见，特别适合关注信息不对称下人机协同机制设计的研究者深入阅读其模型抽象与均衡分析部分。"
+            },
+            "contentTags": [
+              "机制设计",
+              "信息不对称",
+              "人机协作",
+              "医疗AI",
+              "责任制度"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Effort without Evidence",
+            "url": "https://arxiv.org/abs/2608.03719",
+            "arxivId": "2608.03719",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "努力无需证据",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "信息设计",
+              "社会学习",
+              "战略沟通",
+              "因果归因",
+              "动态激励"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么社会有时停止学习？本文关注一个深层矛盾：激励他人努力可能破坏信息积累。当前辈通过叙事影响后继者时，若她低估对方的努力成本，就会倾向于鼓动更费力的行为。这看似积极，却可能导致所有人都做无信息量的极端行为，从而阻断对技术真实回报的学习。",
+              "modelAndSetup": "模型刻画一系列短视决策者依次行动：每人基于公共历史和前任的廉价叙事选择是否付出高成本努力，观察公开成败后留下自己的因果解释。关键设定是隐藏行动与因果归因的结合——后继者无法区分失败源于尝试后失败还是根本未尝试，只能依赖前任的叙述，而前任有动机鼓励努力。",
+              "contributionsAndResults": "论文发现强激励反而导致信息陷阱：当鼓动倾向过强时，所有类型发送者都偏好同一行动，使得任何有说服力的叙事都被模仿而失去可信性。结果出现两种吸收态——要么因普遍不作为而无信息，要么因人人过度努力而无法识别低门槛技术，前者是‘劝说失效’，后者是‘过度努力悖论’。",
+              "methodsAndTechniques": "作者通过比较相邻行动配置下的接收者与发送者的收益差异来刻画激励扭曲。核心工具是‘贝叶斯不可避免性’：若群体平均信念落在非识别区域，且所有发送者偏好一致，则任何消息都无法突破该区域。结合递归非识别性与KL散度分解，证明认证仅在防止进入陷阱时有效。",
+              "limitationsAndReadingValue": "模型聚焦单一技术状态与二元叙事，结论依赖特定偏好错配结构。但其价值在于揭示‘动机性叙事’的双刃剑效应：推动行动的同时可能摧毁学习基础。最值得读的是行动区域塌缩的单调性论证，以及认证为何是边界而非修复工具的深刻洞察。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "努力无需证据",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么社会有时停止学习？本文关注一个深层矛盾：激励他人努力可能破坏信息积累。当前辈通过叙事影响后继者时，若她低估对方的努力成本，就会倾向于鼓动更费力的行为。这看似积极，却可能导致所有人都做无信息量的极端行为，从而阻断对技术真实回报的学习。",
+              "modelAndSetup": "模型刻画一系列短视决策者依次行动：每人基于公共历史和前任的廉价叙事选择是否付出高成本努力，观察公开成败后留下自己的因果解释。关键设定是隐藏行动与因果归因的结合——后继者无法区分失败源于尝试后失败还是根本未尝试，只能依赖前任的叙述，而前任有动机鼓励努力。",
+              "contributionsAndResults": "论文发现强激励反而导致信息陷阱：当鼓动倾向过强时，所有类型发送者都偏好同一行动，使得任何有说服力的叙事都被模仿而失去可信性。结果出现两种吸收态——要么因普遍不作为而无信息，要么因人人过度努力而无法识别低门槛技术，前者是‘劝说失效’，后者是‘过度努力悖论’。",
+              "methodsAndTechniques": "作者通过比较相邻行动配置下的接收者与发送者的收益差异来刻画激励扭曲。核心工具是‘贝叶斯不可避免性’：若群体平均信念落在非识别区域，且所有发送者偏好一致，则任何消息都无法突破该区域。结合递归非识别性与KL散度分解，证明认证仅在防止进入陷阱时有效。",
+              "limitationsAndReadingValue": "模型聚焦单一技术状态与二元叙事，结论依赖特定偏好错配结构。但其价值在于揭示‘动机性叙事’的双刃剑效应：推动行动的同时可能摧毁学习基础。最值得读的是行动区域塌缩的单调性论证，以及认证为何是边界而非修复工具的深刻洞察。"
+            },
+            "contentTags": [
+              "信息设计",
+              "社会学习",
+              "战略沟通",
+              "因果归因",
+              "动态激励"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "EFX Allocation In (Multi)Hypergraphs",
+            "url": "https://arxiv.org/abs/2608.03171",
+            "arxivId": "2608.03171",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超图中的 EFX 分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "模型构建"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "公平分配不可分物品时，EFX（去除任意物品后无妒忌）是一种强公平标准，但其存在性长期悬而未决。本文聚焦于图结构限制下的公平分配问题，延续 Christodoulou 等人提出的图模型设定，探讨在超图与多重超图中是否存在并可高效构造 EFX 分配，填补了高阶结构下公平分配的存在性空白。",
+              "modelAndSetup": "模型将代理与物品分别视为超图的顶点与边，仅当顶点是某边的端点时才对该边有价值。采用一般单调效用函数，不假设可加性。研究集中在围长至少为4的超图与多重超图，利用图结构限制代理之间的共同估值关系，从而降低分配复杂性，使存在性证明成为可能。",
+              "contributionsAndResults": "论文证明，在围长至少为4的超图中，总存在可通过多项式时间算法构造的 EFX 分配。进一步推广至多重超图，在存在一个顶点其关联边的重数不超过边大小减2的条件下，仍可构造出 EFX 分配，尽管需伪多项式时间。这显著扩展了已知的 EFX 存在性范围。",
+              "methodsAndTechniques": "作者采用构造性证明方法，设计两阶段算法：第一阶段通过优先级顺序分配边以满足部分 EFX 性质，第二阶段将剩余边分配给特定‘枢纽’顶点或其非妒忌邻居。关键技术在于预设‘停车顶点’来容纳无法定向分配的边，并利用围长条件确保该操作不引发新妒忌。",
+              "limitationsAndReadingValue": "结果依赖于较强的图结构假设，尤其是围长与重数限制，离完全一般的多重超图情形仍有距离。证明虽具构造性但运行时间较慢。最值得阅读的是其新颖的‘停车顶点’思想与两阶段算法框架，为解决一般 EFX 存在性提供了新路径与技术储备。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超图中的 EFX 分配",
+            "summarySections": {
+              "backgroundAndQuestion": "公平分配不可分物品时，EFX（去除任意物品后无妒忌）是一种强公平标准，但其存在性长期悬而未决。本文聚焦于图结构限制下的公平分配问题，延续 Christodoulou 等人提出的图模型设定，探讨在超图与多重超图中是否存在并可高效构造 EFX 分配，填补了高阶结构下公平分配的存在性空白。",
+              "modelAndSetup": "模型将代理与物品分别视为超图的顶点与边，仅当顶点是某边的端点时才对该边有价值。采用一般单调效用函数，不假设可加性。研究集中在围长至少为4的超图与多重超图，利用图结构限制代理之间的共同估值关系，从而降低分配复杂性，使存在性证明成为可能。",
+              "contributionsAndResults": "论文证明，在围长至少为4的超图中，总存在可通过多项式时间算法构造的 EFX 分配。进一步推广至多重超图，在存在一个顶点其关联边的重数不超过边大小减2的条件下，仍可构造出 EFX 分配，尽管需伪多项式时间。这显著扩展了已知的 EFX 存在性范围。",
+              "methodsAndTechniques": "作者采用构造性证明方法，设计两阶段算法：第一阶段通过优先级顺序分配边以满足部分 EFX 性质，第二阶段将剩余边分配给特定‘枢纽’顶点或其非妒忌邻居。关键技术在于预设‘停车顶点’来容纳无法定向分配的边，并利用围长条件确保该操作不引发新妒忌。",
+              "limitationsAndReadingValue": "结果依赖于较强的图结构假设，尤其是围长与重数限制，离完全一般的多重超图情形仍有距离。证明虽具构造性但运行时间较慢。最值得阅读的是其新颖的‘停车顶点’思想与两阶段算法框架，为解决一般 EFX 存在性提供了新路径与技术储备。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Stable Matching with Payoff Guarantees",
+            "url": "https://arxiv.org/abs/2608.03230",
+            "arxivId": "2608.03230",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Stable Matching with Payoff Guarantees",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "信息设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统匹配模型假设代理人能观察整个市场的配对与收益分配，从而评估是否发生阻挠。但现实中个体往往只能看到自己的匹配结果，无法验证他人情况。本文探讨在这种信息受限下，哪些匹配结果仍能被视为稳定。问题核心在于：当阻挠行为缺乏可观测信息支持时，如何定义合理的稳定性概念，并识别出在共同信念下不会被确定性推翻的匹配结果。",
+              "modelAndSetup": "模型基于Shapley-Shubik的分配博弈，工人与企业两两产生剩余，需决定匹配方式与剩余分割。关键设定是代理人仅知晓自身配对与收益，无法观测他人配对或支付。作者引入‘自稳定集’作为解概念：一组被普遍相信可能发生的匹配与支付组合，其中任一结果都不会因某方有把握成功发起阻挠而被排除。通过迭代剔除可能被确定阻挠的匹配，最终收敛到稳定收益保证（SPG）集。",
+              "contributionsAndResults": "主要结果表明，在剩余矩阵满足通用性（即唯一有效率匹配）时，SPG集中仅包含该效率匹配，对应的支付区间恰好由工人最优与企业最优稳定支付所界定。这说明即使信息不完全，只要剩余结构清晰，市场仍会收敛至唯一合理结果。此外，作者证明SPG集非空且包含所有经典稳定匹配，提供了更强的预测力。",
+              "methodsAndTechniques": "证明采用迭代更新代理人的收益保证下限与上限，类似理性化策略的构建过程。关键技术是通过图论路径与环的权重分析，论证非效率匹配下的收益保证终将超出可行范围，从而被剔除。对于效率匹配，则利用单调收敛性与格结构，证明支付区间会在有限步内稳定于经典稳定解的边界，无需依赖线性规划对偶或不动点定理。",
+              "limitationsAndReadingValue": "结果依赖通用性假设，在多重效率匹配情形下SPG集可能过大，削弱预测能力。模型未考虑显式搜寻或议价协议，而是聚焦于最弱意义上的阻挠可行性。尽管如此，论文的价值在于提出了一个信息稳健的稳定性概念，其构建方式为不完全信息匹配提供了新视角。最值得细读的是SPG集的定义逻辑与收敛性证明的技术路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Stable Matching with Payoff Guarantees",
+            "summarySections": {
+              "backgroundAndQuestion": "传统匹配模型假设代理人能观察整个市场的配对与收益分配，从而评估是否发生阻挠。但现实中个体往往只能看到自己的匹配结果，无法验证他人情况。本文探讨在这种信息受限下，哪些匹配结果仍能被视为稳定。问题核心在于：当阻挠行为缺乏可观测信息支持时，如何定义合理的稳定性概念，并识别出在共同信念下不会被确定性推翻的匹配结果。",
+              "modelAndSetup": "模型基于Shapley-Shubik的分配博弈，工人与企业两两产生剩余，需决定匹配方式与剩余分割。关键设定是代理人仅知晓自身配对与收益，无法观测他人配对或支付。作者引入‘自稳定集’作为解概念：一组被普遍相信可能发生的匹配与支付组合，其中任一结果都不会因某方有把握成功发起阻挠而被排除。通过迭代剔除可能被确定阻挠的匹配，最终收敛到稳定收益保证（SPG）集。",
+              "contributionsAndResults": "主要结果表明，在剩余矩阵满足通用性（即唯一有效率匹配）时，SPG集中仅包含该效率匹配，对应的支付区间恰好由工人最优与企业最优稳定支付所界定。这说明即使信息不完全，只要剩余结构清晰，市场仍会收敛至唯一合理结果。此外，作者证明SPG集非空且包含所有经典稳定匹配，提供了更强的预测力。",
+              "methodsAndTechniques": "证明采用迭代更新代理人的收益保证下限与上限，类似理性化策略的构建过程。关键技术是通过图论路径与环的权重分析，论证非效率匹配下的收益保证终将超出可行范围，从而被剔除。对于效率匹配，则利用单调收敛性与格结构，证明支付区间会在有限步内稳定于经典稳定解的边界，无需依赖线性规划对偶或不动点定理。",
+              "limitationsAndReadingValue": "结果依赖通用性假设，在多重效率匹配情形下SPG集可能过大，削弱预测能力。模型未考虑显式搜寻或议价协议，而是聚焦于最弱意义上的阻挠可行性。尽管如此，论文的价值在于提出了一个信息稳健的稳定性概念，其构建方式为不完全信息匹配提供了新视角。最值得细读的是SPG集的定义逻辑与收敛性证明的技术路径。"
+            },
+            "contentTags": [
+              "市场/匹配",
+              "机制设计",
+              "信息设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "When Does Party Convergence Persist under Alienation-Based Abstention?",
+            "url": "https://arxiv.org/abs/2608.03788",
+            "arxivId": "2608.03788",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH",
+              "math.OC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "基于疏离感的弃权下政党趋同何时持续？",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "政党竞争",
+              "空间投票模型",
+              "选民弃权",
+              "中位选民定理",
+              "政策收敛"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统 Downs 模型预测两党会向中位选民收敛，但现实中选民常因候选人远离自身立场而弃权。本文追问：当选民仅在候选人进入其容忍半径内才投票时，政党趋同是否仍会发生？尤其当选民分布非单峰（如极化社会）时，既有结论是否成立？这挑战了经典理论对外生参与的假设。",
+              "modelAndSetup": "模型设两政党同时宣布政策立场，连续统一体上的选民拥有理想点与容忍半径：仅当至少一党在其半径内时才参与，并投给较近者。政党目标为赢取多数票（后扩展至政策偏好）。关键变量是容忍半径大小，它决定了实际参与的选民集合，使平台吸引力与 turnout 内生互动。",
+              "contributionsAndResults": "作者发现，纯策略均衡未必存在或唯一，且随容忍半径变化可能消失重现。为此提出‘向心结构’——存在唯一锚点，使得竞争总被拉向该点。一旦此结构在某半径出现，只要中位选民未被疏离，它便持续存在并保证唯一收敛均衡。",
+              "methodsAndTechniques": "分析核心是‘窗口主导’概念，即平台的吸引区间质量不被任何其他区间超越。通过零多数集的几何刻画（线测试）与‘平移恒等式’，证明向心结构在容忍半径超过一定阈值后单调保持，从而绕过直接追踪均衡路径的困难。",
+              "limitationsAndReadingValue": "结果依赖连续正密度等强光滑性假设，且向心结构的存在性证明是非构造性的。但论文价值在于揭示：即使选民分布复杂，足够高的容忍度终将导向稳定收敛。最值得读的是其结构化分析视角与对经典理论稳健性的深刻探讨。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "基于疏离感的弃权下政党趋同何时持续？",
+            "summarySections": {
+              "backgroundAndQuestion": "传统 Downs 模型预测两党会向中位选民收敛，但现实中选民常因候选人远离自身立场而弃权。本文追问：当选民仅在候选人进入其容忍半径内才投票时，政党趋同是否仍会发生？尤其当选民分布非单峰（如极化社会）时，既有结论是否成立？这挑战了经典理论对外生参与的假设。",
+              "modelAndSetup": "模型设两政党同时宣布政策立场，连续统一体上的选民拥有理想点与容忍半径：仅当至少一党在其半径内时才参与，并投给较近者。政党目标为赢取多数票（后扩展至政策偏好）。关键变量是容忍半径大小，它决定了实际参与的选民集合，使平台吸引力与 turnout 内生互动。",
+              "contributionsAndResults": "作者发现，纯策略均衡未必存在或唯一，且随容忍半径变化可能消失重现。为此提出‘向心结构’——存在唯一锚点，使得竞争总被拉向该点。一旦此结构在某半径出现，只要中位选民未被疏离，它便持续存在并保证唯一收敛均衡。",
+              "methodsAndTechniques": "分析核心是‘窗口主导’概念，即平台的吸引区间质量不被任何其他区间超越。通过零多数集的几何刻画（线测试）与‘平移恒等式’，证明向心结构在容忍半径超过一定阈值后单调保持，从而绕过直接追踪均衡路径的困难。",
+              "limitationsAndReadingValue": "结果依赖连续正密度等强光滑性假设，且向心结构的存在性证明是非构造性的。但论文价值在于揭示：即使选民分布复杂，足够高的容忍度终将导向稳定收敛。最值得读的是其结构化分析视角与对经典理论稳健性的深刻探讨。"
+            },
+            "contentTags": [
+              "政党竞争",
+              "空间投票模型",
+              "选民弃权",
+              "中位选民定理",
+              "政策收敛"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-04",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202608040000 TO 202608042359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          }
+        },
+        "dedupedCount": 6
+      },
+      "arxivTotalResults": 6,
+      "fetchedCount": 6,
+      "fetchedPapers": [
+        {
+          "title": "The Transformer Revolution, Part 1: Dynamic Processing through Output- Weight Interconnections",
+          "url": "https://arxiv.org/abs/2608.03921",
+          "arxivId": "2608.03921",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.NE"
+          ],
+          "abstract": "This paper offers a new interpretation of the Transformer during inference. Against the \"stochastic parrot\" view that large language models merely reproduce statistical regularities learned in training, we argue that Transformers construct and apply prompt-dependent transformations whose parameters are generated during inference. We call this form of computation SIDPP: Sequence-level Interactive Dynamic Parallel Processing. The Transformer is interpreted as a system that transforms concepts by means of concepts. Token vectors are the concepts to be transformed; parameterized transformations defined by matrices and vectors are the transforming concepts. These may be static, when fixed through training, or dynamic, when generated from the input sequence. Mechanically, they correspond to groups of simple neural networks. The Transformer's architectural novelty lies in output-weight interconnections, through which the outputs of some networks determine the weights of others, alongside ordinary output-input interconnections. By means of these interconnections, the system constructs transformations from the prompt and uses them to modify token representations. The contribution of dynamic processing grows with prompt length and may equal or exceed that of static processing, a phenomenon we call strong prompt sensitivity. This account bears on interpretability, predictability, control, and the design of smaller, more sustainable systems. Finally, since the human neural system possesses the mechanisms required to implement SIDPP, we argue that a form of SIDPP may, in principle, be neurally realized in the cerebral cortex. We therefore conjecture that human language processing may itself be a form of SIDPP produced by a functional architecture relevantly similar to that of the Transformer."
+        },
+        {
+          "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+          "url": "https://arxiv.org/abs/2608.03887",
+          "arxivId": "2608.03887",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE",
+            "q-bio.MN"
+          ],
+          "abstract": "Fine-tuning a large language model on new data degrades what it previously learned. We present Omega-S, a drop-in penalty computed from the weight matrix alone: it needs no previous-task data, no Fisher matrix and no stored copy of the old weights. It is three lines in an existing training loop and adds under 4% to the cost of a step. Retention. On Llama-3-8B with LoRA, fine-tuned from code to prose and measured by HumanEval over ten seeds, Omega-S retains more of the original capability than no regularisation on 9 of 10 seeds (0.173 -> 0.238 absolute pass@1; sign test one-sided p=0.011, Wilcoxon p=0.006), as a retention ratio, 62.9% -> 84.1%. It also beats tuned weight decay on 10 of 10 seeds (p=0.002) and tuned EWC on 8 of 10 (p=0.014), every arm re-measured in the same session. Mechanism, measured rather than asserted. Omega-S is topological by construction, its objective built from Tr(A^3), but we measured which of its four factors actually moves and three do not: their elasticity with respect to the weights is at or below 1e-4, against 9e-3 for the degree-variance term. As implemented, the composite reduces to a penalty on the variance of node degrees, which means row magnitude in square modules and directional alignment in non-square ones. We report this because a method whose name promises one thing and whose gradient does another should say so. We also enumerate the open design choices, including a contrast-preserving construction that does what it was designed to do and makes retention worse on all ten seeds. Repeating an identical configuration, same seed and same hardware, gives a standard deviation of 0.104 in retention ratio. We have not found this quantified for low-rank fine-tuning of language models, and it bounds every seed-paired comparison in this literature, ours included. Code, per-seed results and the full record of negative results are available."
+        },
+        {
+          "title": "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble",
+          "url": "https://arxiv.org/abs/2608.03636",
+          "arxivId": "2608.03636",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI"
+          ],
+          "abstract": "Large language model-based automated heuristic design (LLM-AHD) has shown strong potential in discovering effective heuristics for combinatorial optimization problems. However, existing methods primarily optimize a single heuristic, whereas practical optimization frameworks often rely on multiple interacting components. Directly extending single-heuristic methods is challenging because early component selection can overlook components with late potential, while independent evolution ignores inter-component dependencies. We propose MuEvo, an LLM-driven framework for evolving heuristic ensembles under ensemble-level feedback. MuEvo combines Dynamic Component Management, which uses short-budget probing and a reversible lifecycle to revise component priorities throughout the search, with LLM-Driven Co-Evolution, which coordinates component populations through Multi-Ensemble Evaluation, Cross-Component Information Sharing, Relation-Guided Pair Evolution, and Adaptive Budget Allocation. We evaluate MuEvo on selection hyper-heuristics and componentized ant colony optimization across four combinatorial optimization domains. Results show that MuEvo consistently improves human-designed frameworks and outperforms representative multi-component extensions of state-of-the-art LLM-AHD methods, demonstrating its effectiveness across both controller-mediated heuristic pools and functionally differentiated algorithmic components."
+        },
+        {
+          "title": "AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN Federated Learning",
+          "url": "https://arxiv.org/abs/2608.03324",
+          "arxivId": "2608.03324",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "abstract": "Federated learning enables collaborative model training across distributed edge devices while strictly preserving data privacy. To facilitate practical deployment on resource-constrained edge devices, Spiking Neural Networks (SNNs) have emerged as a promising alternative to traditional Artificial Neural Networks (ANNs) due to their sparse computing mechanisms and high energy efficiency. However, jointly training ANNs and SNNs exposes a challenge of representational misalignment, which is intrinsically caused by differences in information representation, specifically the semantic gap between continuous real-valued activations in ANNs and discrete spatio-temporal spikes in SNNs. To overcome this barrier, we propose AS-FedBridge, a novel federated learning framework tailored for mixed ANN-SNN clients. AS-FedBridge features a lightweight Bridge equipped with a Pseudo-Spike Interface, which effectively projects continuous signals into a spike-compatible space to facilitate ANN-SNN alignment. Given the absence of existing mixed ANN-SNN federated frameworks, we establish a comprehensive benchmark to evaluate against multiple advanced heterogeneous FL methods. Our empirical analysis demonstrates a positive correlation between the degree of ANN-SNN alignment and the collaborative FL performance. Across four datasets, AS-FedBridge consistently demonstrates advanced accuracy while mitigating extreme scale, architecture, and client heterogeneity challenge. Furthermore, our framework enables a highly controllable trade-off between model performance and resource efficiency. AS-FedBridge accomplishes these robust performance gains while introducing only marginal computational overhead, establishing a robust and practical foundation for mixed ANN-SNN federated learning systems."
+        },
+        {
+          "title": "Impacts of Single-objective Landscapes on Multi-objective Optimization",
+          "url": "https://arxiv.org/abs/2608.03266",
+          "arxivId": "2608.03266",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "This work revealed a relationship between a multi-objective optimization problem and single-objective optimization problems that exist in the multi-objective problem. This work focused on combinatorial problems and investigated the relations between the local optima networks of the single-objective problems and the Pareto optima network of the multi-objective problem. Each of their networks has a graph structure. We divided the entire network into subgraphs. Each subgraph was called a component and characterized by overlapping relations between the single-objective local optima networks and the multi-objective Pareto optima network. Results on multi-objective landscape problems showed that most Pareto optimal solutions were reachable from the single-objective local optimal solutions. This tendency was emphasized by increasing the number of objectives and the objective correlation. The number of co-variables impacted the number of cross-link relations between the single-objective local optima networks and the multi-objective Pareto optima network. The results suggested that searching for single-objective problems is a clue to multi-objective optimization."
+        },
+        {
+          "title": "NeuroMosaic: Anatomically Grounded Multimodal Large Language Modeling for Molecularly Aware Glioma Reasoning from 3D MRI and Clinical Narratives",
+          "url": "https://arxiv.org/abs/2608.03187",
+          "arxivId": "2608.03187",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "Multimodal medical large language models remain structurally weak for neuro-oncology because volumetric evidence is compressed into generic visual tokens and diagnostic conclusions often lack an auditable link to MRI regions. We present NeuroMosaic, a 3D multimodal language model that converts multi-sequence brain MRI into anatomy-indexed regional tokens, aligns them with clinical narrative and molecular concepts, and generates evidence-linked outputs. The architecture combines a multi-resolution volumetric tokenizer, a neuroanatomical graph router, a molecular concept memory, and selective risk control. Across four glioma cohorts, NeuroMosaic achieved an internal subtype macro-F1 of 0.827 and external macro-F1 values of 0.784, 0.761, and 0.742. On UPenn-GBM, it improved over the strongest matched-input baseline by 3.6 percentage points (95% CI: 1.8 to 5.4, adjusted p = 0.0018), with IDH, 1p/19q, and MGMT AUROCs of 0.918, 0.861, and 0.781. Evidence pointing accuracy reached 0.703, and targeted evidence deletion reduced correct-answer probability by 0.187, compared with 0.046 for random deletion. These results establish anatomy-indexed routing as a measurable mechanism for accurate, grounded, and calibrated volumetric medical-language reasoning."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "The Transformer Revolution, Part 1: Dynamic Processing through Output- Weight Interconnections",
+              "url": "https://arxiv.org/abs/2608.03921",
+              "arxivId": "2608.03921",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.NE"
+              ],
+              "abstract": "This paper offers a new interpretation of the Transformer during inference. Against the \"stochastic parrot\" view that large language models merely reproduce statistical regularities learned in training, we argue that Transformers construct and apply prompt-dependent transformations whose parameters are generated during inference. We call this form of computation SIDPP: Sequence-level Interactive Dynamic Parallel Processing. The Transformer is interpreted as a system that transforms concepts by means of concepts. Token vectors are the concepts to be transformed; parameterized transformations defined by matrices and vectors are the transforming concepts. These may be static, when fixed through training, or dynamic, when generated from the input sequence. Mechanically, they correspond to groups of simple neural networks. The Transformer's architectural novelty lies in output-weight interconnections, through which the outputs of some networks determine the weights of others, alongside ordinary output-input interconnections. By means of these interconnections, the system constructs transformations from the prompt and uses them to modify token representations. The contribution of dynamic processing grows with prompt length and may equal or exceed that of static processing, a phenomenon we call strong prompt sensitivity. This account bears on interpretability, predictability, control, and the design of smaller, more sustainable systems. Finally, since the human neural system possesses the mechanisms required to implement SIDPP, we argue that a form of SIDPP may, in principle, be neurally realized in the cerebral cortex. We therefore conjecture that human language processing may itself be a form of SIDPP produced by a functional architecture relevantly similar to that of the Transformer."
+            },
+            {
+              "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+              "url": "https://arxiv.org/abs/2608.03887",
+              "arxivId": "2608.03887",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE",
+                "q-bio.MN"
+              ],
+              "abstract": "Fine-tuning a large language model on new data degrades what it previously learned. We present Omega-S, a drop-in penalty computed from the weight matrix alone: it needs no previous-task data, no Fisher matrix and no stored copy of the old weights. It is three lines in an existing training loop and adds under 4% to the cost of a step. Retention. On Llama-3-8B with LoRA, fine-tuned from code to prose and measured by HumanEval over ten seeds, Omega-S retains more of the original capability than no regularisation on 9 of 10 seeds (0.173 -> 0.238 absolute pass@1; sign test one-sided p=0.011, Wilcoxon p=0.006), as a retention ratio, 62.9% -> 84.1%. It also beats tuned weight decay on 10 of 10 seeds (p=0.002) and tuned EWC on 8 of 10 (p=0.014), every arm re-measured in the same session. Mechanism, measured rather than asserted. Omega-S is topological by construction, its objective built from Tr(A^3), but we measured which of its four factors actually moves and three do not: their elasticity with respect to the weights is at or below 1e-4, against 9e-3 for the degree-variance term. As implemented, the composite reduces to a penalty on the variance of node degrees, which means row magnitude in square modules and directional alignment in non-square ones. We report this because a method whose name promises one thing and whose gradient does another should say so. We also enumerate the open design choices, including a contrast-preserving construction that does what it was designed to do and makes retention worse on all ten seeds. Repeating an identical configuration, same seed and same hardware, gives a standard deviation of 0.104 in retention ratio. We have not found this quantified for low-rank fine-tuning of language models, and it bounds every seed-paired comparison in this literature, ours included. Code, per-seed results and the full record of negative results are available."
+            },
+            {
+              "title": "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble",
+              "url": "https://arxiv.org/abs/2608.03636",
+              "arxivId": "2608.03636",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI"
+              ],
+              "abstract": "Large language model-based automated heuristic design (LLM-AHD) has shown strong potential in discovering effective heuristics for combinatorial optimization problems. However, existing methods primarily optimize a single heuristic, whereas practical optimization frameworks often rely on multiple interacting components. Directly extending single-heuristic methods is challenging because early component selection can overlook components with late potential, while independent evolution ignores inter-component dependencies. We propose MuEvo, an LLM-driven framework for evolving heuristic ensembles under ensemble-level feedback. MuEvo combines Dynamic Component Management, which uses short-budget probing and a reversible lifecycle to revise component priorities throughout the search, with LLM-Driven Co-Evolution, which coordinates component populations through Multi-Ensemble Evaluation, Cross-Component Information Sharing, Relation-Guided Pair Evolution, and Adaptive Budget Allocation. We evaluate MuEvo on selection hyper-heuristics and componentized ant colony optimization across four combinatorial optimization domains. Results show that MuEvo consistently improves human-designed frameworks and outperforms representative multi-component extensions of state-of-the-art LLM-AHD methods, demonstrating its effectiveness across both controller-mediated heuristic pools and functionally differentiated algorithmic components."
+            },
+            {
+              "title": "AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN Federated Learning",
+              "url": "https://arxiv.org/abs/2608.03324",
+              "arxivId": "2608.03324",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE"
+              ],
+              "abstract": "Federated learning enables collaborative model training across distributed edge devices while strictly preserving data privacy. To facilitate practical deployment on resource-constrained edge devices, Spiking Neural Networks (SNNs) have emerged as a promising alternative to traditional Artificial Neural Networks (ANNs) due to their sparse computing mechanisms and high energy efficiency. However, jointly training ANNs and SNNs exposes a challenge of representational misalignment, which is intrinsically caused by differences in information representation, specifically the semantic gap between continuous real-valued activations in ANNs and discrete spatio-temporal spikes in SNNs. To overcome this barrier, we propose AS-FedBridge, a novel federated learning framework tailored for mixed ANN-SNN clients. AS-FedBridge features a lightweight Bridge equipped with a Pseudo-Spike Interface, which effectively projects continuous signals into a spike-compatible space to facilitate ANN-SNN alignment. Given the absence of existing mixed ANN-SNN federated frameworks, we establish a comprehensive benchmark to evaluate against multiple advanced heterogeneous FL methods. Our empirical analysis demonstrates a positive correlation between the degree of ANN-SNN alignment and the collaborative FL performance. Across four datasets, AS-FedBridge consistently demonstrates advanced accuracy while mitigating extreme scale, architecture, and client heterogeneity challenge. Furthermore, our framework enables a highly controllable trade-off between model performance and resource efficiency. AS-FedBridge accomplishes these robust performance gains while introducing only marginal computational overhead, establishing a robust and practical foundation for mixed ANN-SNN federated learning systems."
+            },
+            {
+              "title": "Impacts of Single-objective Landscapes on Multi-objective Optimization",
+              "url": "https://arxiv.org/abs/2608.03266",
+              "arxivId": "2608.03266",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "This work revealed a relationship between a multi-objective optimization problem and single-objective optimization problems that exist in the multi-objective problem. This work focused on combinatorial problems and investigated the relations between the local optima networks of the single-objective problems and the Pareto optima network of the multi-objective problem. Each of their networks has a graph structure. We divided the entire network into subgraphs. Each subgraph was called a component and characterized by overlapping relations between the single-objective local optima networks and the multi-objective Pareto optima network. Results on multi-objective landscape problems showed that most Pareto optimal solutions were reachable from the single-objective local optimal solutions. This tendency was emphasized by increasing the number of objectives and the objective correlation. The number of co-variables impacted the number of cross-link relations between the single-objective local optima networks and the multi-objective Pareto optima network. The results suggested that searching for single-objective problems is a clue to multi-objective optimization."
+            },
+            {
+              "title": "NeuroMosaic: Anatomically Grounded Multimodal Large Language Modeling for Molecularly Aware Glioma Reasoning from 3D MRI and Clinical Narratives",
+              "url": "https://arxiv.org/abs/2608.03187",
+              "arxivId": "2608.03187",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "Multimodal medical large language models remain structurally weak for neuro-oncology because volumetric evidence is compressed into generic visual tokens and diagnostic conclusions often lack an auditable link to MRI regions. We present NeuroMosaic, a 3D multimodal language model that converts multi-sequence brain MRI into anatomy-indexed regional tokens, aligns them with clinical narrative and molecular concepts, and generates evidence-linked outputs. The architecture combines a multi-resolution volumetric tokenizer, a neuroanatomical graph router, a molecular concept memory, and selective risk control. Across four glioma cohorts, NeuroMosaic achieved an internal subtype macro-F1 of 0.827 and external macro-F1 values of 0.784, 0.761, and 0.742. On UPenn-GBM, it improved over the strongest matched-input baseline by 3.6 percentage points (95% CI: 1.8 to 5.4, adjusted p = 0.0018), with IDH, 1p/19q, and MGMT AUROCs of 0.918, 0.861, and 0.781. Evidence pointing accuracy reached 0.703, and targeted evidence deletion reduced correct-answer probability by 0.187, compared with 0.046 for random deletion. These results establish anatomy-indexed routing as a measurable mechanism for accurate, grounded, and calibrated volumetric medical-language reasoning."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 4,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 3,
+                  "clarity": 4,
+                  "theoreticalDepth": 5,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "The Transformer Revolution, Part 1: Dynamic Processing through Output- Weight Interconnections",
+              "url": "https://arxiv.org/abs/2608.03921",
+              "arxivId": "2608.03921",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": -2.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+              "url": "https://arxiv.org/abs/2608.03887",
+              "arxivId": "2608.03887",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE",
+                "q-bio.MN"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble",
+              "url": "https://arxiv.org/abs/2608.03636",
+              "arxivId": "2608.03636",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN Federated Learning",
+              "url": "https://arxiv.org/abs/2608.03324",
+              "arxivId": "2608.03324",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Impacts of Single-objective Landscapes on Multi-objective Optimization",
+              "url": "https://arxiv.org/abs/2608.03266",
+              "arxivId": "2608.03266",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 3.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 5.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            },
+            {
+              "title": "NeuroMosaic: Anatomically Grounded Multimodal Large Language Modeling for Molecularly Aware Glioma Reasoning from 3D MRI and Clinical Narratives",
+              "url": "https://arxiv.org/abs/2608.03187",
+              "arxivId": "2608.03187",
+              "date": "2026-08-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "The Transformer Revolution, Part 1: Dynamic Processing through Output- Weight Interconnections",
+          "url": "https://arxiv.org/abs/2608.03921",
+          "arxivId": "2608.03921",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": -2.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+          "url": "https://arxiv.org/abs/2608.03887",
+          "arxivId": "2608.03887",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE",
+            "q-bio.MN"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble",
+          "url": "https://arxiv.org/abs/2608.03636",
+          "arxivId": "2608.03636",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN Federated Learning",
+          "url": "https://arxiv.org/abs/2608.03324",
+          "arxivId": "2608.03324",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Impacts of Single-objective Landscapes on Multi-objective Optimization",
+          "url": "https://arxiv.org/abs/2608.03266",
+          "arxivId": "2608.03266",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 3.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 5.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        },
+        {
+          "title": "NeuroMosaic: Anatomically Grounded Multimodal Large Language Modeling for Molecularly Aware Glioma Reasoning from 3D MRI and Clinical Narratives",
+          "url": "https://arxiv.org/abs/2608.03187",
+          "arxivId": "2608.03187",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+          "url": "https://arxiv.org/abs/2608.03887",
+          "arxivId": "2608.03887",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE",
+            "q-bio.MN"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "NeuroMosaic: Anatomically Grounded Multimodal Large Language Modeling for Molecularly Aware Glioma Reasoning from 3D MRI and Clinical Narratives",
+          "url": "https://arxiv.org/abs/2608.03187",
+          "arxivId": "2608.03187",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "The Transformer Revolution, Part 1: Dynamic Processing through Output- Weight Interconnections",
+          "url": "https://arxiv.org/abs/2608.03921",
+          "arxivId": "2608.03921",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": -2.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN Federated Learning",
+          "url": "https://arxiv.org/abs/2608.03324",
+          "arxivId": "2608.03324",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble",
+          "url": "https://arxiv.org/abs/2608.03636",
+          "arxivId": "2608.03636",
+          "date": "2026-08-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+            "url": "https://arxiv.org/abs/2608.03887",
+            "arxivId": "2608.03887",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.NE",
+              "q-bio.MN"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Omega-S: 大语言模型微调的功能韧性指数",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "微调",
+              "灾难性遗忘",
+              "正则化",
+              "拓扑结构"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型在微调时容易遗忘先前知识，即灾难性遗忘。现有方法如权重衰减或EWC依赖旧任务数据或费雪矩阵，在生产环境中常不可行。本文关注如何在不访问历史数据的前提下，防止微调过程中原始能力的退化，核心问题是模型内部权重结构的集中化导致关键连接被覆盖。",
+              "modelAndSetup": "研究在Llama-3-8B上使用LoRA进行顺序微调，从代码任务转向散文任务，通过HumanEval评估代码能力保留情况。实验采用十次随机种子重复，所有对比方法在同一会话中运行以排除运行间变异干扰，主指标为绝对pass@1分数及保留率，确保比较可靠。",
+              "contributionsAndResults": "提出Omega-S，一种仅基于当前权重矩阵的正则化项，无需旧数据或存储旧权重。在相同条件下，其优于无正则化、调优的权重衰减和EWC，在10次中有9次以上保持更高代码能力，相对提升达37.7%。该结果挑战了传统正则化依赖历史信息的必要性。",
+              "methodsAndTechniques": "Omega-S构建于权重图WWT的拓扑指标之上，形式为log(M·Coex/(C·D))，实际起效的是对节点度方差（Coex）的惩罚。尽管目标函数源自生态网络韧性指数并包含聚类项，实测发现聚类通道因sigmoid压缩而失效，真正机制是控制连接分布的均匀性，而非预期的拓扑重组。",
+              "limitationsAndReadingValue": "方法的有效性依赖特定构造（如log-ratio形式），且机制与初衷不符——实际作用是度方差控制而非拓扑优化。run-to-run变异性高达0.104，削弱小效应可信度。最值得读的是其反直觉的机制分析与负结果报告，揭示了设计假设与实际梯度行为的脱节。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Omega-S: 大语言模型微调的功能韧性指数",
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型在微调时容易遗忘先前知识，即灾难性遗忘。现有方法如权重衰减或EWC依赖旧任务数据或费雪矩阵，在生产环境中常不可行。本文关注如何在不访问历史数据的前提下，防止微调过程中原始能力的退化，核心问题是模型内部权重结构的集中化导致关键连接被覆盖。",
+              "modelAndSetup": "研究在Llama-3-8B上使用LoRA进行顺序微调，从代码任务转向散文任务，通过HumanEval评估代码能力保留情况。实验采用十次随机种子重复，所有对比方法在同一会话中运行以排除运行间变异干扰，主指标为绝对pass@1分数及保留率，确保比较可靠。",
+              "contributionsAndResults": "提出Omega-S，一种仅基于当前权重矩阵的正则化项，无需旧数据或存储旧权重。在相同条件下，其优于无正则化、调优的权重衰减和EWC，在10次中有9次以上保持更高代码能力，相对提升达37.7%。该结果挑战了传统正则化依赖历史信息的必要性。",
+              "methodsAndTechniques": "Omega-S构建于权重图WWT的拓扑指标之上，形式为log(M·Coex/(C·D))，实际起效的是对节点度方差（Coex）的惩罚。尽管目标函数源自生态网络韧性指数并包含聚类项，实测发现聚类通道因sigmoid压缩而失效，真正机制是控制连接分布的均匀性，而非预期的拓扑重组。",
+              "limitationsAndReadingValue": "方法的有效性依赖特定构造（如log-ratio形式），且机制与初衷不符——实际作用是度方差控制而非拓扑优化。run-to-run变异性高达0.104，削弱小效应可信度。最值得读的是其反直觉的机制分析与负结果报告，揭示了设计假设与实际梯度行为的脱节。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "微调",
+              "灾难性遗忘",
+              "正则化",
+              "拓扑结构"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "NeuroMosaic: Anatomically Grounded Multimodal Large Language Modeling for Molecularly Aware Glioma Reasoning from 3D MRI and Clinical Narratives",
+            "url": "https://arxiv.org/abs/2608.03187",
+            "arxivId": "2608.03187",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "NeuroMosaic：基于解剖学定位的多模态大语言模型用于从3D MRI和临床文本中进行分子感知的胶质瘤推理",
+            "researchParadigmTags": [
+              "模型构建",
+              "实验验证",
+              "系统框架",
+              "评测方法",
+              "机制设计"
+            ],
+            "contentTags": [
+              "多模态大语言模型",
+              "医学影像分析",
+              "胶质瘤诊断",
+              "证据接地生成",
+              "可解释AI"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有医疗多模态模型在处理脑肿瘤诊断时面临结构性缺陷：3D MRI常被压缩为全局视觉标记，导致空间解剖关系丢失，使得模型虽能预测正确类别却无法提供可追溯至具体病灶区域的临床依据。尤其在胶质瘤这类依赖分子标志物与精细影像特征整合的疾病中，缺乏证据链的推理难以满足临床可信需求。",
+              "modelAndSetup": "论文研究从多序列3D脑部MRI和临床叙述中联合推理胶质瘤亚型、分子状态及生成带证据支持的报告任务。输入为原始MRI序列与非结构化文本，输出包括分类结果、语言化解释、引用的影像区域与置信度。评估涵盖多中心队列上的亚型分类、分子预测、报告事实性、证据定位准确性和选择性风险控制。",
+              "contributionsAndResults": "提出NeuroMosaic架构，通过解剖索引的稀疏路由机制实现精准的空间-语义对齐，在四个胶质瘤队列上显著优于强基线，外部测试宏F1达0.784–0.742。关键结果表明其证据指向准确率达0.703，且删除关键证据会大幅降低正确率，验证了推理过程的可审计性与因果一致性。",
+              "methodsAndTechniques": "模型采用三阶段令牌化提取多分辨率3D影像特征，并构建患者特异性神经解剖图谱作为路由结构，使语言模型仅关注相关解剖节点。结合分子概念记忆库约束诊断术语逻辑，并通过分阶段训练与结构化生成确保输出与证据绑定，从而在机制层面保障了解释的真实性。",
+              "limitationsAndReadingValue": "尽管性能提升显著，但缺失两个MRI序列时性能下降明显（−0.055），显示对模态完整性的依赖仍存。此外，外部机构样本量较小影响稳定性估计。最值得阅读的是其系统设计与消融实验，清晰展示了如何通过架构显式建模来增强医学AI的可信推理链条。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "NeuroMosaic：基于解剖学定位的多模态大语言模型用于从3D MRI和临床文本中进行分子感知的胶质瘤推理",
+            "summarySections": {
+              "backgroundAndQuestion": "现有医疗多模态模型在处理脑肿瘤诊断时面临结构性缺陷：3D MRI常被压缩为全局视觉标记，导致空间解剖关系丢失，使得模型虽能预测正确类别却无法提供可追溯至具体病灶区域的临床依据。尤其在胶质瘤这类依赖分子标志物与精细影像特征整合的疾病中，缺乏证据链的推理难以满足临床可信需求。",
+              "modelAndSetup": "论文研究从多序列3D脑部MRI和临床叙述中联合推理胶质瘤亚型、分子状态及生成带证据支持的报告任务。输入为原始MRI序列与非结构化文本，输出包括分类结果、语言化解释、引用的影像区域与置信度。评估涵盖多中心队列上的亚型分类、分子预测、报告事实性、证据定位准确性和选择性风险控制。",
+              "contributionsAndResults": "提出NeuroMosaic架构，通过解剖索引的稀疏路由机制实现精准的空间-语义对齐，在四个胶质瘤队列上显著优于强基线，外部测试宏F1达0.784–0.742。关键结果表明其证据指向准确率达0.703，且删除关键证据会大幅降低正确率，验证了推理过程的可审计性与因果一致性。",
+              "methodsAndTechniques": "模型采用三阶段令牌化提取多分辨率3D影像特征，并构建患者特异性神经解剖图谱作为路由结构，使语言模型仅关注相关解剖节点。结合分子概念记忆库约束诊断术语逻辑，并通过分阶段训练与结构化生成确保输出与证据绑定，从而在机制层面保障了解释的真实性。",
+              "limitationsAndReadingValue": "尽管性能提升显著，但缺失两个MRI序列时性能下降明显（−0.055），显示对模态完整性的依赖仍存。此外，外部机构样本量较小影响稳定性估计。最值得阅读的是其系统设计与消融实验，清晰展示了如何通过架构显式建模来增强医学AI的可信推理链条。"
+            },
+            "contentTags": [
+              "多模态大语言模型",
+              "医学影像分析",
+              "胶质瘤诊断",
+              "证据接地生成",
+              "可解释AI"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "实验验证",
+              "系统框架",
+              "评测方法",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Transformer Revolution, Part 1: Dynamic Processing through Output- Weight Interconnections",
+            "url": "https://arxiv.org/abs/2608.03921",
+            "arxivId": "2608.03921",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Transformer 革命，第一部分：通过输出-权重互连实现动态处理",
+            "researchParadigmTags": [
+              "模型构建",
+              "机制设计",
+              "理论推导",
+              "解释性研究"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "Transformer 架构",
+              "动态处理",
+              "可解释性",
+              "神经网络机制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么现有对Transformer的理解不够？传统观点认为大语言模型只是‘随机鹦鹉’，机械复现训练中学到的统计规律。本文挑战这一看法，指出其推理过程远不止静态参数的应用。核心问题是：Transformer在推理时是否真正构建了依赖于输入的新计算结构？若如此，这种动态性从何而来，又如何改变我们对模型行为的理解？",
+              "modelAndSetup": "论文研究的是Transformer在推理阶段的内部工作机制，而非训练或特定任务性能。输入是一个提示（prompt），输出是模型生成的响应。作者不依赖外部实验或新数据集，而是通过对标准Transformer架构进行形式化分析，将其解构为由简单神经网络组成的系统，并重点考察其矩阵运算背后的结构性连接模式，尤其是输出与权重之间的动态关联。",
+              "contributionsAndResults": "论文提出了SIDPP（序列级交互式动态并行处理）这一新解释框架，揭示Transformer的核心创新在于‘输出-权重互连’——某些网络的输出直接成为另一些网络的权重。这使得模型能在推理时动态生成变换，其影响随提示长度增长，甚至超过静态参数的作用。GPT-4.5通过图灵测试的结果被用作强提示敏感性的实证支持，表明动态处理是其实现类人表现的关键。",
+              "methodsAndTechniques": "作者将Transformer重新建模为一组通过特殊方式连接的简单神经网络，区分了传统的输出-输入连接与新型的输出-权重连接。后者允许一个子网络的输出动态配置另一个子网络的连接权重，从而实现基于输入的实时结构重组。这种方法不依赖黑箱实验，而是通过功能分解和结构映射，阐明了注意力机制和残差连接中动态参数的实际作用路径，解释了为何微小提示变化可能导致显著行为差异。",
+              "limitationsAndReadingValue": "论文的结论建立在理论分析和间接证据之上，缺乏对真实神经活动中类似机制的直接验证。其大胆猜想人类皮层可能存在类似计算尚属推测。然而，该文极具阅读价值，尤其适合想深入理解Transformer本质机制的研究者。最值得细读的是其对‘输出-权重互连’的形式化定义及其引发的动态处理现象，这对提升模型可解释性、控制性和未来硬件设计具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Transformer 革命，第一部分：通过输出-权重互连实现动态处理",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么现有对Transformer的理解不够？传统观点认为大语言模型只是‘随机鹦鹉’，机械复现训练中学到的统计规律。本文挑战这一看法，指出其推理过程远不止静态参数的应用。核心问题是：Transformer在推理时是否真正构建了依赖于输入的新计算结构？若如此，这种动态性从何而来，又如何改变我们对模型行为的理解？",
+              "modelAndSetup": "论文研究的是Transformer在推理阶段的内部工作机制，而非训练或特定任务性能。输入是一个提示（prompt），输出是模型生成的响应。作者不依赖外部实验或新数据集，而是通过对标准Transformer架构进行形式化分析，将其解构为由简单神经网络组成的系统，并重点考察其矩阵运算背后的结构性连接模式，尤其是输出与权重之间的动态关联。",
+              "contributionsAndResults": "论文提出了SIDPP（序列级交互式动态并行处理）这一新解释框架，揭示Transformer的核心创新在于‘输出-权重互连’——某些网络的输出直接成为另一些网络的权重。这使得模型能在推理时动态生成变换，其影响随提示长度增长，甚至超过静态参数的作用。GPT-4.5通过图灵测试的结果被用作强提示敏感性的实证支持，表明动态处理是其实现类人表现的关键。",
+              "methodsAndTechniques": "作者将Transformer重新建模为一组通过特殊方式连接的简单神经网络，区分了传统的输出-输入连接与新型的输出-权重连接。后者允许一个子网络的输出动态配置另一个子网络的连接权重，从而实现基于输入的实时结构重组。这种方法不依赖黑箱实验，而是通过功能分解和结构映射，阐明了注意力机制和残差连接中动态参数的实际作用路径，解释了为何微小提示变化可能导致显著行为差异。",
+              "limitationsAndReadingValue": "论文的结论建立在理论分析和间接证据之上，缺乏对真实神经活动中类似机制的直接验证。其大胆猜想人类皮层可能存在类似计算尚属推测。然而，该文极具阅读价值，尤其适合想深入理解Transformer本质机制的研究者。最值得细读的是其对‘输出-权重互连’的形式化定义及其引发的动态处理现象，这对提升模型可解释性、控制性和未来硬件设计具有启发意义。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "Transformer 架构",
+              "动态处理",
+              "可解释性",
+              "神经网络机制"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "机制设计",
+              "理论推导",
+              "解释性研究"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "AS-FedBridge: Pseudo-Spike Bridge Distillation for Heterogeneous ANN-SNN Federated Learning",
+            "url": "https://arxiv.org/abs/2608.03324",
+            "arxivId": "2608.03324",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "AS-FedBridge: 面向异构ANN-SNN联邦学习的伪脉冲桥接蒸馏",
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "基准评测"
+            ],
+            "contentTags": [
+              "联邦学习",
+              "脉冲神经网络",
+              "异构学习",
+              "知识蒸馏",
+              "表示对齐"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "联邦学习允许多设备协作训练，但资源受限设备难以运行高耗能的传统人工神经网络（ANN）。虽然脉冲神经网络（SNN）更节能，但其离散时空脉冲与ANN的连续激活存在根本性语义鸿沟，导致直接联合训练失效。现有异构联邦方法假设表示空间兼容，无法解决ANN与SNN间的结构性失配问题。",
+              "modelAndSetup": "论文研究混合ANN与SNN客户端的联邦学习设定，其中各客户端拥有私有数据和不同类型的骨干网络。服务器不聚合骨干参数，而是维护一个轻量级共享‘桥接模型’（Bridge），通过双向知识蒸馏协调两类模型。评估基于多个视觉数据集，在非独立同分布、架构与规模异构等复杂配置下测试全局与分组准确率。",
+              "contributionsAndResults": "论文提出了首个面向混合ANN-SNN联邦学习的框架AS-FedBridge，并建立了相应评测基准。结果显示，该方法显著提升了异构联邦下的模型性能，尤其在极端非IID和架构差异下仍保持稳定。实验证明表示对齐程度与最终精度正相关，验证了桥接机制的有效性。",
+              "methodsAndTechniques": "核心是引入带伪脉冲接口的桥接模型，将ANN的连续信号映射到与SNN脉冲率兼容的空间。通过双向蒸馏，ANN与SNN分别从桥接模型提取知识并反向注入本地更新。关键创新在于伪脉冲极化正则化（PSPR），它约束桥接层的伪脉冲分布，使其在统计上与SNN的实际发放率对齐，从而弥合表示鸿沟。",
+              "limitationsAndReadingValue": "实验集中在图像分类任务，对更复杂场景和动态负载的适应性未充分验证。尽管通信开销低，但桥接模型的额外计算可能影响极低功耗设备。最值得阅读的是其问题建模方式、桥接蒸馏机制的设计逻辑，以及关于表示对齐与协作性能关系的实证分析，为异构神经协同提供了新思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "AS-FedBridge: 面向异构ANN-SNN联邦学习的伪脉冲桥接蒸馏",
+            "summarySections": {
+              "backgroundAndQuestion": "联邦学习允许多设备协作训练，但资源受限设备难以运行高耗能的传统人工神经网络（ANN）。虽然脉冲神经网络（SNN）更节能，但其离散时空脉冲与ANN的连续激活存在根本性语义鸿沟，导致直接联合训练失效。现有异构联邦方法假设表示空间兼容，无法解决ANN与SNN间的结构性失配问题。",
+              "modelAndSetup": "论文研究混合ANN与SNN客户端的联邦学习设定，其中各客户端拥有私有数据和不同类型的骨干网络。服务器不聚合骨干参数，而是维护一个轻量级共享‘桥接模型’（Bridge），通过双向知识蒸馏协调两类模型。评估基于多个视觉数据集，在非独立同分布、架构与规模异构等复杂配置下测试全局与分组准确率。",
+              "contributionsAndResults": "论文提出了首个面向混合ANN-SNN联邦学习的框架AS-FedBridge，并建立了相应评测基准。结果显示，该方法显著提升了异构联邦下的模型性能，尤其在极端非IID和架构差异下仍保持稳定。实验证明表示对齐程度与最终精度正相关，验证了桥接机制的有效性。",
+              "methodsAndTechniques": "核心是引入带伪脉冲接口的桥接模型，将ANN的连续信号映射到与SNN脉冲率兼容的空间。通过双向蒸馏，ANN与SNN分别从桥接模型提取知识并反向注入本地更新。关键创新在于伪脉冲极化正则化（PSPR），它约束桥接层的伪脉冲分布，使其在统计上与SNN的实际发放率对齐，从而弥合表示鸿沟。",
+              "limitationsAndReadingValue": "实验集中在图像分类任务，对更复杂场景和动态负载的适应性未充分验证。尽管通信开销低，但桥接模型的额外计算可能影响极低功耗设备。最值得阅读的是其问题建模方式、桥接蒸馏机制的设计逻辑，以及关于表示对齐与协作性能关系的实证分析，为异构神经协同提供了新思路。"
+            },
+            "contentTags": [
+              "联邦学习",
+              "脉冲神经网络",
+              "异构学习",
+              "知识蒸馏",
+              "表示对齐"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "MuEvo: LLM-Driven Evolution of Multi-Heuristic Ensemble",
+            "url": "https://arxiv.org/abs/2608.03636",
+            "arxivId": "2608.03636",
+            "date": "2026-08-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.NE",
+              "cs.AI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MuEvo: 基于大语言模型驱动的多启发式集成进化",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "机制设计"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "组合优化",
+              "启发式设计",
+              "多组件协同",
+              "自动化算法设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型的启发式设计方法大多只优化单一启发式，但实际优化系统通常由多个相互依赖的组件构成。直接扩展单启发式方法会因早期筛选忽略后期潜力或独立演化忽视协作关系而导致性能下降。本文旨在解决多启发式集成在动态适应和协同演化上的挑战。",
+              "modelAndSetup": "论文研究在选择超启发式和组件化蚁群优化两种框架下，如何联合演化多个可替换的启发式组件。输入为问题实例与初始组件池，输出为优化后的启发式集成。通过在四个组合优化任务上对比人类设计与多种基线，评估集成在解质量上的提升。",
+              "contributionsAndResults": "提出MuEvo框架，首次系统支持多启发式集成的LLM驱动协同演化。实验显示其在多个领域均优于人工设计及主流LLM-AHD方法的多组件扩展，在TSP和流水车间调度中显著缩小最优性差距，验证了动态协同机制的有效性。",
+              "methodsAndTechniques": "MuEvo结合动态组件管理与LLM驱动的协同演化。前者通过短期探测与可逆生命周期重评组件优先级，后者通过多集成评估、跨组件信息共享、关系引导的配对进化和自适应预算分配促进组件间共适应，形成闭环反馈。",
+              "limitationsAndReadingValue": "方法依赖特定框架接口设计，且计算开销较高。消融实验证明核心机制有效，但在更广泛算法结构上的泛化需进一步验证。最值得阅读的是其对多组件协同瓶颈的分析与系统性解决方案的设计思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MuEvo: 基于大语言模型驱动的多启发式集成进化",
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型的启发式设计方法大多只优化单一启发式，但实际优化系统通常由多个相互依赖的组件构成。直接扩展单启发式方法会因早期筛选忽略后期潜力或独立演化忽视协作关系而导致性能下降。本文旨在解决多启发式集成在动态适应和协同演化上的挑战。",
+              "modelAndSetup": "论文研究在选择超启发式和组件化蚁群优化两种框架下，如何联合演化多个可替换的启发式组件。输入为问题实例与初始组件池，输出为优化后的启发式集成。通过在四个组合优化任务上对比人类设计与多种基线，评估集成在解质量上的提升。",
+              "contributionsAndResults": "提出MuEvo框架，首次系统支持多启发式集成的LLM驱动协同演化。实验显示其在多个领域均优于人工设计及主流LLM-AHD方法的多组件扩展，在TSP和流水车间调度中显著缩小最优性差距，验证了动态协同机制的有效性。",
+              "methodsAndTechniques": "MuEvo结合动态组件管理与LLM驱动的协同演化。前者通过短期探测与可逆生命周期重评组件优先级，后者通过多集成评估、跨组件信息共享、关系引导的配对进化和自适应预算分配促进组件间共适应，形成闭环反馈。",
+              "limitationsAndReadingValue": "方法依赖特定框架接口设计，且计算开销较高。消融实验证明核心机制有效，但在更广泛算法结构上的泛化需进一步验证。最值得阅读的是其对多组件协同瓶颈的分析与系统性解决方案的设计思路。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "组合优化",
+              "启发式设计",
+              "多组件协同",
+              "自动化算法设计"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "机制设计"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
