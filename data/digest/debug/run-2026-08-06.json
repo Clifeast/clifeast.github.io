@@ -1,0 +1,2401 @@
+{
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-06T05:33:41.940698+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-05",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202608050000 TO 202608052359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202608050000 TO 202608052359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          }
+        },
+        "dedupedCount": 9
+      },
+      "arxivTotalResults": 9,
+      "fetchedCount": 9,
+      "fetchedPapers": [
+        {
+          "title": "Dimensions of Power: A Systematic Guide to Power Indices for Explainable AI",
+          "url": "https://arxiv.org/abs/2608.05031",
+          "arxivId": "2608.05031",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Power indices, originating in cooperative game theory, quantify each player's influence on the outcome of a given game. Originally designed to distribute profits or costs among players and to analyse the fairness of voting systems, power indices have recently gained prominence as methods for attributing outputs of AI-based systems to inputs, thus facilitating explainability. However, selecting the appropriate power index for a given explanation task is an understudied problem. To address this, we organise power indices along three attribution dimensions: single-player, set-based, and cardinality-based. For each dimension, we review the corresponding power indices, generalise existing ones where applicable, and analyse which formal principles they satisfy. We provide proofs for properties that are missing in the literature and show that moving to the cardinality-based setting removes player-identity information while preserving some index-level distinctions. Using concrete examples, we illustrate how the choice of dimension and index affects the resulting attributions in practice, and offer guidance for practitioners seeking to select a suitable power index for a given application context."
+        },
+        {
+          "title": "Towards Decentralized Searcher Competition in MEV Markets",
+          "url": "https://arxiv.org/abs/2608.05011",
+          "arxivId": "2608.05011",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CR"
+          ],
+          "abstract": "Centralization in maximal extractable value (MEV) markets is a significant concern for blockchain systems, as persistent concentration of economic power can weaken competition, reduce openness, and undermine the decentralization goals of permissionless protocols. While much of the existing analysis has focused on builders, validators, and block-building markets, this paper studies centralization from the perspective of searcher competition. We develop a heterogeneous model in which searchers differ in opportunity coverage and execution efficiency, and we analyze how auction design affects fairness, decentralization, and security among searchers competing for the same MEV opportunity. To evaluate searcher competition, we introduce two metrics: a Shapley-weighted Jain fairness index, which measures whether rewards are proportional to searchers' marginal contributions, and an expected-reward Herfindahl-Hirschman Index (HHI), which measures concentration in long-run searcher rewards. Using these metrics, we first analyze the standard first-price, winner-take-all auction as a benchmark. Our analysis shows that, under searcher heterogeneity, first-price competition can reward rank dominance rather than marginal contribution, leading to concentrated rewards and weaker contribution-adjusted fairness. Motivated by these limitations, we propose an entry-filtered Shapley-capped auction mechanism that distributes searcher rewards more fairly and broadly among admitted high-quality submissions. Designing such a mechanism in a permissionless blockchain environment is challenging: searchers may create Sybil identities by submitting copied or degraded versions of the same execution strategy, and validators may collude with searchers to increase joint payoff. We address these concerns through Bayesian security constraints for copied-code Sybil deviations and validator-searcher coalition deviations."
+        },
+        {
+          "title": "From Cake-Cutting and Necklace-Splitting to Fair Division of Indivisible Items",
+          "url": "https://arxiv.org/abs/2608.04340",
+          "arxivId": "2608.04340",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We give an existential transfer framework for converting continuous fair division theorems into guarantees for indivisible items arranged on a path. This allows continuous envy-freeness and consensus results to translate directly into EF$k$-type guarantees for indivisible allocations. Combining this method with connected cake-cutting theorems, we obtain connected allocations satisfying envy-freeness up to one good and one chore for identical valuations and for arbitrary valuations when the number of agents is a prime power. Combining this method with the equicardinal necklace-splitting theorem of Jojić et al., we show that, for any prime-power number $r$ of bundles and $n$ arbitrary valuation functions, there exists an allocation in which every bundle is the union of at most $n$ intervals, and the bundles satisfy consensus up to $n$ goods and $n$ chores. This result is the first EF$k$-type guarantee for consensus fair division with non-additive valuations beyond the halving case. Envy-freeness constraints can be imposed simultaneously at the cost of one additional interval and one additional item in each guarantee. As a consequence, when the number of agents is a prime power, every instance with monotone valuations admits an EF$2$ allocation whose bundle sizes differ by at most two."
+        },
+        {
+          "title": "From Compensation Design to Budget-Feasible Mechanisms: A Constant Approximation for Subadditive Valuations",
+          "url": "https://arxiv.org/abs/2608.04337",
+          "arxivId": "2608.04337",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "abstract": "Budget-feasible mechanism design is a classic framework introduced by Singer, but there is still a wide gap between existing upper and lower bounds. In this paper, we significantly advance the state of the art. First, without computational constraints, we show that there exists a budget-feasible universally truthful mechanism with the following approximation ratios: - $3$ for monotone submodular valuations and $e+1$ for nonmonotone submodular valuations, improving over $3.798$ and $9.742$, respectively. - $e+1$ for XOS valuations, improving over $28$. In large markets, our approximation can be improved deterministically to $e$. - $2e+1$ for subadditive valuations, improving over $33$. In large markets, our approximation can be improved deterministically to $2e$. Moreover, for subadditive valuations, we obtain a constant-approximation mechanism that runs in polynomial time using demand queries. This improves over the previous best approximation of $O(\\log \\log n)$, resolving a long-standing open problem going back to Dobzinski, Papadimitriou, and Singer, who conjectured that a constant approximation requires exponentially many demand queries. We obtain these results through a simple and unifying framework based on non-truthful indirect mechanisms, recently coined compensation design. In particular, through a potential argument, we establish constant price-of-stability bounds for compensation design based on marginal-contribution payment rules, which we then translate into truthful direct mechanisms. For subadditive valuations, the core of the argument is a new smoothing lemma showing that every subadditive function can be approximated within a factor of $2$ by a self-bounding function. This is also of independent interest, readily addressing an open question in multiwinner elections by showing the existence of a $2e$-approximate core even under subadditive valuations."
+        },
+        {
+          "title": "Decision Making Under Multidimensional Risk",
+          "url": "https://arxiv.org/abs/2608.05043",
+          "arxivId": "2608.05043",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Choice alternatives are often multidimensional and risky. We introduce and axiomatize the \\textit{structured multidimensional expected utility} representation, a unified framework that generalizes existing approaches to evaluating such alternatives. The representation uses a \\textit{rooted clustered tree} to organize the joint, separate, and conditional evaluation of risk across dimensions within a common structure. We analyze the uniqueness of the representation and characterize useful special cases. We apply the representation to inequality across individuals, groups, and generations and to multisource income, characterizing the implications of bracketing for stochastic dominance and the avoidance of multidimensional risk."
+        },
+        {
+          "title": "Revealed Rationality: Label-Free Evaluation and Regularization from Representation Theorems",
+          "url": "https://arxiv.org/abs/2608.05015",
+          "arxivId": "2608.05015",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "Representation theorems in decision theory establish that behavior satisfies certain axioms if and only if it can be rationalized by a well-defined objective. I argue that this ``if and only if'' structure provides a potentially useful foundation for label-free evaluation and regularization of LLMs and other AI systems. Axiom compliance can be checked from the model's own responses to synthetic choice problems, with no external labels or human feedback, and the penalties are readily computable. Because the axioms are necessary and sufficient, the resulting checks exhaust the implications of the relevant rationality standard for the elicited data: a model that passes cannot be rejected on rationality grounds by any further test of the same data. I discuss three instantiations: probabilistic coherence via a theorem of de Finetti, preference rationality via Afriat's theorem, and subjective expected utility via a theorem of Echenique and Saito (2015), each yielding a continuous penalty that is zero whenever behavior can be rationalized. Since coherence does not restrict which objective rationalizes behavior, these penalties complement rather than replace other evaluation and training signals."
+        },
+        {
+          "title": "Quantum Bayes Correlated Equilibrium and the Comparison of Quantum Information Structures in Games",
+          "url": "https://arxiv.org/abs/2608.04973",
+          "arxivId": "2608.04973",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "quant-ph",
+            "econ.TH",
+            "math.OC"
+          ],
+          "abstract": "Bergemann and Morris (2016) show that one information structure is more informative than another exactly when it induces a smaller set of Bayes correlated equilibrium outcomes in every game. We build the quantum analogue. An information structure becomes a family of density operators indexed by the payoff state, which the mediator observes. We show that obedience is equivalent to a Loewner domination between operators on one player's subsystem. The equilibrium set is then a nonempty compact spectrahedron computable by semidefinite programming, classical structures embed exactly, and under quantum individual sufficiency more information shrinks the equilibrium set in every game."
+        },
+        {
+          "title": "Defensive Pessimism: Growth, Culture, and the Survival of Evidence",
+          "url": "https://arxiv.org/abs/2608.04787",
+          "arxivId": "2608.04787",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Successful cooperation can destroy the practice needed to recognize its own failure. I study a growing society in which a common technology raises output and the hazard of an appropriative regime, while a culturally sustained outside practice supplies the counterfactual and operating capacity needed for correction. The key object is cumulative practice erosion measured in breakdown-hazard time. If erosion is less scale-sensitive than breakdown, expected correction is finite; if it is more sensitive, the mean delay is infinite; and equal elasticities produce an exact coefficient boundary. Correction nevertheless remains almost surely eventual unless politics eliminates the outside practice. The same mechanism creates a mass--share wedge: growth can increase skeptical mass and diagnostic evidence while the skeptics' political share vanishes. Every fixed nonunanimous population threshold is then crossed in finite time. Culture is a stock of epistemic capital rather than an irreplaceable ideology. A fully funded pilot that maintains the complete outside practice can replicate it, but creates a capitalized enforcement and rebuilding liability. Under external commitment, a rolling performance bond forfeited upon cancellation funds that liability, blocking opportunistic repeal while permitting reforms valuable enough to replace the lost experiment."
+        },
+        {
+          "title": "Informational Content of Auction Prices",
+          "url": "https://arxiv.org/abs/2608.04332",
+          "arxivId": "2608.04332",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study auctions of k identical objects to n bidders, each of whom wants at most one. The objects have a common but unknown value and the bidders receive private signals about this value. The discriminatory price auction and the uniform-price auction are compared in terms of how informative the resulting auction prices (not bids) are in conveying the true value to an outside observer/investor. Since both auctions have symmetric, monotone equilibria, the problem reduces to comparing the informativeness of the highest order statistic of a sample to the (k+1)st highest. We find sufficient conditions under which the highest order statistic is superior---in the sense of Lehmann---in this regard. The sufficient conditions involve the informativeness of high versus low signals and the ratio k/n of objects to bidders. These conditions are also qualitatively necessary."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Dimensions of Power: A Systematic Guide to Power Indices for Explainable AI",
+              "url": "https://arxiv.org/abs/2608.05031",
+              "arxivId": "2608.05031",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Power indices, originating in cooperative game theory, quantify each player's influence on the outcome of a given game. Originally designed to distribute profits or costs among players and to analyse the fairness of voting systems, power indices have recently gained prominence as methods for attributing outputs of AI-based systems to inputs, thus facilitating explainability. However, selecting the appropriate power index for a given explanation task is an understudied problem. To address this, we organise power indices along three attribution dimensions: single-player, set-based, and cardinality-based. For each dimension, we review the corresponding power indices, generalise existing ones where applicable, and analyse which formal principles they satisfy. We provide proofs for properties that are missing in the literature and show that moving to the cardinality-based setting removes player-identity information while preserving some index-level distinctions. Using concrete examples, we illustrate how the choice of dimension and index affects the resulting attributions in practice, and offer guidance for practitioners seeking to select a suitable power index for a given application context."
+            },
+            {
+              "title": "Towards Decentralized Searcher Competition in MEV Markets",
+              "url": "https://arxiv.org/abs/2608.05011",
+              "arxivId": "2608.05011",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CR"
+              ],
+              "abstract": "Centralization in maximal extractable value (MEV) markets is a significant concern for blockchain systems, as persistent concentration of economic power can weaken competition, reduce openness, and undermine the decentralization goals of permissionless protocols. While much of the existing analysis has focused on builders, validators, and block-building markets, this paper studies centralization from the perspective of searcher competition. We develop a heterogeneous model in which searchers differ in opportunity coverage and execution efficiency, and we analyze how auction design affects fairness, decentralization, and security among searchers competing for the same MEV opportunity. To evaluate searcher competition, we introduce two metrics: a Shapley-weighted Jain fairness index, which measures whether rewards are proportional to searchers' marginal contributions, and an expected-reward Herfindahl-Hirschman Index (HHI), which measures concentration in long-run searcher rewards. Using these metrics, we first analyze the standard first-price, winner-take-all auction as a benchmark. Our analysis shows that, under searcher heterogeneity, first-price competition can reward rank dominance rather than marginal contribution, leading to concentrated rewards and weaker contribution-adjusted fairness. Motivated by these limitations, we propose an entry-filtered Shapley-capped auction mechanism that distributes searcher rewards more fairly and broadly among admitted high-quality submissions. Designing such a mechanism in a permissionless blockchain environment is challenging: searchers may create Sybil identities by submitting copied or degraded versions of the same execution strategy, and validators may collude with searchers to increase joint payoff. We address these concerns through Bayesian security constraints for copied-code Sybil deviations and validator-searcher coalition deviations."
+            },
+            {
+              "title": "From Cake-Cutting and Necklace-Splitting to Fair Division of Indivisible Items",
+              "url": "https://arxiv.org/abs/2608.04340",
+              "arxivId": "2608.04340",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We give an existential transfer framework for converting continuous fair division theorems into guarantees for indivisible items arranged on a path. This allows continuous envy-freeness and consensus results to translate directly into EF$k$-type guarantees for indivisible allocations. Combining this method with connected cake-cutting theorems, we obtain connected allocations satisfying envy-freeness up to one good and one chore for identical valuations and for arbitrary valuations when the number of agents is a prime power. Combining this method with the equicardinal necklace-splitting theorem of Jojić et al., we show that, for any prime-power number $r$ of bundles and $n$ arbitrary valuation functions, there exists an allocation in which every bundle is the union of at most $n$ intervals, and the bundles satisfy consensus up to $n$ goods and $n$ chores. This result is the first EF$k$-type guarantee for consensus fair division with non-additive valuations beyond the halving case. Envy-freeness constraints can be imposed simultaneously at the cost of one additional interval and one additional item in each guarantee. As a consequence, when the number of agents is a prime power, every instance with monotone valuations admits an EF$2$ allocation whose bundle sizes differ by at most two."
+            },
+            {
+              "title": "From Compensation Design to Budget-Feasible Mechanisms: A Constant Approximation for Subadditive Valuations",
+              "url": "https://arxiv.org/abs/2608.04337",
+              "arxivId": "2608.04337",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS"
+              ],
+              "abstract": "Budget-feasible mechanism design is a classic framework introduced by Singer, but there is still a wide gap between existing upper and lower bounds. In this paper, we significantly advance the state of the art. First, without computational constraints, we show that there exists a budget-feasible universally truthful mechanism with the following approximation ratios: - $3$ for monotone submodular valuations and $e+1$ for nonmonotone submodular valuations, improving over $3.798$ and $9.742$, respectively. - $e+1$ for XOS valuations, improving over $28$. In large markets, our approximation can be improved deterministically to $e$. - $2e+1$ for subadditive valuations, improving over $33$. In large markets, our approximation can be improved deterministically to $2e$. Moreover, for subadditive valuations, we obtain a constant-approximation mechanism that runs in polynomial time using demand queries. This improves over the previous best approximation of $O(\\log \\log n)$, resolving a long-standing open problem going back to Dobzinski, Papadimitriou, and Singer, who conjectured that a constant approximation requires exponentially many demand queries. We obtain these results through a simple and unifying framework based on non-truthful indirect mechanisms, recently coined compensation design. In particular, through a potential argument, we establish constant price-of-stability bounds for compensation design based on marginal-contribution payment rules, which we then translate into truthful direct mechanisms. For subadditive valuations, the core of the argument is a new smoothing lemma showing that every subadditive function can be approximated within a factor of $2$ by a self-bounding function. This is also of independent interest, readily addressing an open question in multiwinner elections by showing the existence of a $2e$-approximate core even under subadditive valuations."
+            },
+            {
+              "title": "Decision Making Under Multidimensional Risk",
+              "url": "https://arxiv.org/abs/2608.05043",
+              "arxivId": "2608.05043",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Choice alternatives are often multidimensional and risky. We introduce and axiomatize the \\textit{structured multidimensional expected utility} representation, a unified framework that generalizes existing approaches to evaluating such alternatives. The representation uses a \\textit{rooted clustered tree} to organize the joint, separate, and conditional evaluation of risk across dimensions within a common structure. We analyze the uniqueness of the representation and characterize useful special cases. We apply the representation to inequality across individuals, groups, and generations and to multisource income, characterizing the implications of bracketing for stochastic dominance and the avoidance of multidimensional risk."
+            },
+            {
+              "title": "Revealed Rationality: Label-Free Evaluation and Regularization from Representation Theorems",
+              "url": "https://arxiv.org/abs/2608.05015",
+              "arxivId": "2608.05015",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.LG"
+              ],
+              "abstract": "Representation theorems in decision theory establish that behavior satisfies certain axioms if and only if it can be rationalized by a well-defined objective. I argue that this ``if and only if'' structure provides a potentially useful foundation for label-free evaluation and regularization of LLMs and other AI systems. Axiom compliance can be checked from the model's own responses to synthetic choice problems, with no external labels or human feedback, and the penalties are readily computable. Because the axioms are necessary and sufficient, the resulting checks exhaust the implications of the relevant rationality standard for the elicited data: a model that passes cannot be rejected on rationality grounds by any further test of the same data. I discuss three instantiations: probabilistic coherence via a theorem of de Finetti, preference rationality via Afriat's theorem, and subjective expected utility via a theorem of Echenique and Saito (2015), each yielding a continuous penalty that is zero whenever behavior can be rationalized. Since coherence does not restrict which objective rationalizes behavior, these penalties complement rather than replace other evaluation and training signals."
+            },
+            {
+              "title": "Quantum Bayes Correlated Equilibrium and the Comparison of Quantum Information Structures in Games",
+              "url": "https://arxiv.org/abs/2608.04973",
+              "arxivId": "2608.04973",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "quant-ph",
+                "econ.TH",
+                "math.OC"
+              ],
+              "abstract": "Bergemann and Morris (2016) show that one information structure is more informative than another exactly when it induces a smaller set of Bayes correlated equilibrium outcomes in every game. We build the quantum analogue. An information structure becomes a family of density operators indexed by the payoff state, which the mediator observes. We show that obedience is equivalent to a Loewner domination between operators on one player's subsystem. The equilibrium set is then a nonempty compact spectrahedron computable by semidefinite programming, classical structures embed exactly, and under quantum individual sufficiency more information shrinks the equilibrium set in every game."
+            },
+            {
+              "title": "Defensive Pessimism: Growth, Culture, and the Survival of Evidence",
+              "url": "https://arxiv.org/abs/2608.04787",
+              "arxivId": "2608.04787",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Successful cooperation can destroy the practice needed to recognize its own failure. I study a growing society in which a common technology raises output and the hazard of an appropriative regime, while a culturally sustained outside practice supplies the counterfactual and operating capacity needed for correction. The key object is cumulative practice erosion measured in breakdown-hazard time. If erosion is less scale-sensitive than breakdown, expected correction is finite; if it is more sensitive, the mean delay is infinite; and equal elasticities produce an exact coefficient boundary. Correction nevertheless remains almost surely eventual unless politics eliminates the outside practice. The same mechanism creates a mass--share wedge: growth can increase skeptical mass and diagnostic evidence while the skeptics' political share vanishes. Every fixed nonunanimous population threshold is then crossed in finite time. Culture is a stock of epistemic capital rather than an irreplaceable ideology. A fully funded pilot that maintains the complete outside practice can replicate it, but creates a capitalized enforcement and rebuilding liability. Under external commitment, a rolling performance bond forfeited upon cancellation funds that liability, blocking opportunistic repeal while permitting reforms valuable enough to replace the lost experiment."
+            },
+            {
+              "title": "Informational Content of Auction Prices",
+              "url": "https://arxiv.org/abs/2608.04332",
+              "arxivId": "2608.04332",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study auctions of k identical objects to n bidders, each of whom wants at most one. The objects have a common but unknown value and the bidders receive private signals about this value. The discriminatory price auction and the uniform-price auction are compared in terms of how informative the resulting auction prices (not bids) are in conveying the true value to an outside observer/investor. Since both auctions have symmetric, monotone equilibria, the problem reduces to comparing the informativeness of the highest order statistic of a sample to the (k+1)st highest. We find sufficient conditions under which the highest order statistic is superior---in the sense of Lehmann---in this regard. The sufficient conditions involve the informativeness of high versus low signals and the ratio k/n of objects to bidders. These conditions are also qualitatively necessary."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 4,
+                  "guaranteeQuality": 3,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 7,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 8,
+                  "penalty": -1,
+                  "aiRelevance": 10,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 8,
+                  "readingValue": 7,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 8,
+                  "readingValue": 9,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 4,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 9,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 7,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 3,
+                  "guaranteeQuality": 2,
+                  "readingValue": 2,
+                  "penalty": -4,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Dimensions of Power: A Systematic Guide to Power Indices for Explainable AI",
+              "url": "https://arxiv.org/abs/2608.05031",
+              "arxivId": "2608.05031",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 3.0,
+                "theoreticalStrength": 4.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 4.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 12.0,
+                "bonus": 2.8,
+                "total": 11.8
+              }
+            },
+            {
+              "title": "Towards Decentralized Searcher Competition in MEV Markets",
+              "url": "https://arxiv.org/abs/2608.05011",
+              "arxivId": "2608.05011",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CR"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 10.0,
+                "agtRelevance": 10.0,
+                "penalty": -1.0,
+                "baseTotal": 28.0,
+                "bonus": 9.3,
+                "total": 37.3
+              }
+            },
+            {
+              "title": "From Cake-Cutting and Necklace-Splitting to Fair Division of Indivisible Items",
+              "url": "https://arxiv.org/abs/2608.04340",
+              "arxivId": "2608.04340",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 25.2
+              }
+            },
+            {
+              "title": "From Compensation Design to Budget-Feasible Mechanisms: A Constant Approximation for Subadditive Valuations",
+              "url": "https://arxiv.org/abs/2608.04337",
+              "arxivId": "2608.04337",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Decision Making Under Multidimensional Risk",
+              "url": "https://arxiv.org/abs/2608.05043",
+              "arxivId": "2608.05043",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Revealed Rationality: Label-Free Evaluation and Regularization from Representation Theorems",
+              "url": "https://arxiv.org/abs/2608.05015",
+              "arxivId": "2608.05015",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH",
+                "cs.AI",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 6.3,
+                "total": 19.1
+              }
+            },
+            {
+              "title": "Quantum Bayes Correlated Equilibrium and the Comparison of Quantum Information Structures in Games",
+              "url": "https://arxiv.org/abs/2608.04973",
+              "arxivId": "2608.04973",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "quant-ph",
+                "econ.TH",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 25.0,
+                "bonus": 0.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Defensive Pessimism: Growth, Culture, and the Survival of Evidence",
+              "url": "https://arxiv.org/abs/2608.04787",
+              "arxivId": "2608.04787",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Informational Content of Auction Prices",
+              "url": "https://arxiv.org/abs/2608.04332",
+              "arxivId": "2608.04332",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Dimensions of Power: A Systematic Guide to Power Indices for Explainable AI",
+          "url": "https://arxiv.org/abs/2608.05031",
+          "arxivId": "2608.05031",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 3.0,
+            "theoreticalStrength": 4.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 4.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 12.0,
+            "bonus": 2.8,
+            "total": 11.8
+          }
+        },
+        {
+          "title": "Towards Decentralized Searcher Competition in MEV Markets",
+          "url": "https://arxiv.org/abs/2608.05011",
+          "arxivId": "2608.05011",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CR"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": -1.0,
+            "baseTotal": 28.0,
+            "bonus": 9.3,
+            "total": 37.3
+          }
+        },
+        {
+          "title": "From Cake-Cutting and Necklace-Splitting to Fair Division of Indivisible Items",
+          "url": "https://arxiv.org/abs/2608.04340",
+          "arxivId": "2608.04340",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "From Compensation Design to Budget-Feasible Mechanisms: A Constant Approximation for Subadditive Valuations",
+          "url": "https://arxiv.org/abs/2608.04337",
+          "arxivId": "2608.04337",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Decision Making Under Multidimensional Risk",
+          "url": "https://arxiv.org/abs/2608.05043",
+          "arxivId": "2608.05043",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Revealed Rationality: Label-Free Evaluation and Regularization from Representation Theorems",
+          "url": "https://arxiv.org/abs/2608.05015",
+          "arxivId": "2608.05015",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 6.3,
+            "total": 19.1
+          }
+        },
+        {
+          "title": "Quantum Bayes Correlated Equilibrium and the Comparison of Quantum Information Structures in Games",
+          "url": "https://arxiv.org/abs/2608.04973",
+          "arxivId": "2608.04973",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "quant-ph",
+            "econ.TH",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Defensive Pessimism: Growth, Culture, and the Survival of Evidence",
+          "url": "https://arxiv.org/abs/2608.04787",
+          "arxivId": "2608.04787",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Informational Content of Auction Prices",
+          "url": "https://arxiv.org/abs/2608.04332",
+          "arxivId": "2608.04332",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Towards Decentralized Searcher Competition in MEV Markets",
+          "url": "https://arxiv.org/abs/2608.05011",
+          "arxivId": "2608.05011",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CR"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": -1.0,
+            "baseTotal": 28.0,
+            "bonus": 9.3,
+            "total": 37.3
+          }
+        },
+        {
+          "title": "From Compensation Design to Budget-Feasible Mechanisms: A Constant Approximation for Subadditive Valuations",
+          "url": "https://arxiv.org/abs/2608.04337",
+          "arxivId": "2608.04337",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "From Cake-Cutting and Necklace-Splitting to Fair Division of Indivisible Items",
+          "url": "https://arxiv.org/abs/2608.04340",
+          "arxivId": "2608.04340",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Informational Content of Auction Prices",
+          "url": "https://arxiv.org/abs/2608.04332",
+          "arxivId": "2608.04332",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Quantum Bayes Correlated Equilibrium and the Comparison of Quantum Information Structures in Games",
+          "url": "https://arxiv.org/abs/2608.04973",
+          "arxivId": "2608.04973",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "quant-ph",
+            "econ.TH",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 20.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Towards Decentralized Searcher Competition in MEV Markets",
+            "url": "https://arxiv.org/abs/2608.05011",
+            "arxivId": "2608.05011",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.CR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Centralization in maximal extractable value (MEV) markets is a significant concern for blockchain systems, as persistent concentration of economic power can weaken competition, reduce openness, and undermine the decentralization goals of permissionless protoco...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Centralization in maximal extractable value (MEV) markets is a significant concern for blockchain systems, as persistent concentration of economic power can weaken competition, reduce openness, and undermine the decentralization goals of permissionless protoco...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "From Compensation Design to Budget-Feasible Mechanisms: A Constant Approximation for Subadditive Valuations",
+            "url": "https://arxiv.org/abs/2608.04337",
+            "arxivId": "2608.04337",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "从补偿设计到预算可行机制：次可加估值的常数近似",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "均衡分析",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习",
+              "公平性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "预算可行机制设计旨在解决买家在固定预算下采购服务时如何激励卖家真实报价并最大化自身价值的问题。尽管该框架已提出多年，但在非加性估值（如次可加）下，最优机制的近似比仍存在巨大理论缺口，尤其是计算效率与常数近似的兼容性长期悬而未决。",
+              "modelAndSetup": "模型考虑一个拥有预算B的买家和一组战略卖家，每个卖家有私有成本，买家希望选择子集以最大化次可加价值函数。机制需满足真实性、个体理性和预算可行性。卖家报价后，机制决定选中集合及支付，目标是逼近全信息最优值OPT。",
+              "contributionsAndResults": "论文首次为次可加估值设计出常数近似的通用真实机制，近似比为2e+1≈6.436，并在大市场下改进至2e。更关键的是，提出了首个多项式时间实现，仅需多项式次需求查询，解决了自Dobzinski等人以来的公开问题。",
+              "methodsAndTechniques": "核心方法基于‘补偿设计’——一种非真实间接机制。通过边际贡献支付规则构造势函数，证明其最优解构成纯纳什均衡且具常数价格稳定性。再利用揭示原理转化为直接真实机制，并结合平滑引理将次可加函数逼近为自界定函数以保证预算可行性。",
+              "limitationsAndReadingValue": "机制依赖需求查询和特定平滑构造，实际部署可能受限。虽在理论上突破显著，但常数因子较大，且对β-MPH类估值的大市场外情形存在强不可能性。最值得读的是其统一框架、平滑引理及从间接游戏到直接机制的转化思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "从补偿设计到预算可行机制：次可加估值的常数近似",
+            "summarySections": {
+              "backgroundAndQuestion": "预算可行机制设计旨在解决买家在固定预算下采购服务时如何激励卖家真实报价并最大化自身价值的问题。尽管该框架已提出多年，但在非加性估值（如次可加）下，最优机制的近似比仍存在巨大理论缺口，尤其是计算效率与常数近似的兼容性长期悬而未决。",
+              "modelAndSetup": "模型考虑一个拥有预算B的买家和一组战略卖家，每个卖家有私有成本，买家希望选择子集以最大化次可加价值函数。机制需满足真实性、个体理性和预算可行性。卖家报价后，机制决定选中集合及支付，目标是逼近全信息最优值OPT。",
+              "contributionsAndResults": "论文首次为次可加估值设计出常数近似的通用真实机制，近似比为2e+1≈6.436，并在大市场下改进至2e。更关键的是，提出了首个多项式时间实现，仅需多项式次需求查询，解决了自Dobzinski等人以来的公开问题。",
+              "methodsAndTechniques": "核心方法基于‘补偿设计’——一种非真实间接机制。通过边际贡献支付规则构造势函数，证明其最优解构成纯纳什均衡且具常数价格稳定性。再利用揭示原理转化为直接真实机制，并结合平滑引理将次可加函数逼近为自界定函数以保证预算可行性。",
+              "limitationsAndReadingValue": "机制依赖需求查询和特定平滑构造，实际部署可能受限。虽在理论上突破显著，但常数因子较大，且对β-MPH类估值的大市场外情形存在强不可能性。最值得读的是其统一框架、平滑引理及从间接游戏到直接机制的转化思路。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习",
+              "公平性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "均衡分析",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "From Cake-Cutting and Necklace-Splitting to Fair Division of Indivisible Items",
+            "url": "https://arxiv.org/abs/2608.04340",
+            "arxivId": "2608.04340",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "从蛋糕切割与项链分割到不可分物品的公平分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么不可分物品的公平分配难以直接继承连续资源的公平性结果？该文指出，尽管蛋糕切割和项链分割等连续模型能实现精确的公平划分，但在物品离散且排成路径时，经典公平概念如无妒忌无法直接应用。现有对不可分物品的松弛（如EF1）在非单调估值或多主体共识分配下仍存在存在性未知的问题，尤其当分配需满足结构性约束时。本文旨在填补这一理论空白。",
+              "modelAndSetup": "作者考虑一组排成路径的不可分物品，被分配给若干具有任意估值函数的代理。每个代理对物品子集赋予实数值，不假设单调性。目标是将物品划分为若干连通或近连通的区间型捆绑，并满足某种公平性。模型允许捆绑由多个区间组成，且通过虚拟估值与舍入映射连接连续与离散世界，从而将连续公平划分的存在性转化为离散情形下的近似公平保证。",
+              "contributionsAndResults": "论文证明了多种存在性结果：当代理数为素数幂时，总存在满足EF2的分配，且各捆绑大小相差至多2；对于任意估值，存在基于区间的分配满足共识公平至多n件物品和n项任务。这是首个在非加性估值下、超越二分情形的共识公平EFk型保证。此外，该框架统一导出了多种已知与新结果，增强了对结构化公平分配的理解。",
+              "methodsAndTechniques": "作者提出一种黑箱转换框架，将连续公平划分定理（如蛋糕切割与项链分割）转化为离散分配的近似公平性。核心技术是构造一个保持序关系的虚拟估值函数，并结合基于Kuhn三角剖分的舍入规则，使得连续分配的公平性在舍入后仅损失边界物品。该方法解耦了存在性证明与舍入误差分析，使拓扑工具可直接用于离散场景。",
+              "limitationsAndReadingValue": "该文依赖素数幂代理数等拓扑条件，限制了结果的普适性；且仅为存在性证明，未提供高效算法。然而，其转换框架极具启发性，为连接连续与离散公平分配提供了通用工具。最值得阅读的是其模型抽象方式与虚拟估值构造，不仅简化了复杂证明，还揭示了边界物品在公平性损失中的核心作用，对后续机制设计与算法研究具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "从蛋糕切割与项链分割到不可分物品的公平分配",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么不可分物品的公平分配难以直接继承连续资源的公平性结果？该文指出，尽管蛋糕切割和项链分割等连续模型能实现精确的公平划分，但在物品离散且排成路径时，经典公平概念如无妒忌无法直接应用。现有对不可分物品的松弛（如EF1）在非单调估值或多主体共识分配下仍存在存在性未知的问题，尤其当分配需满足结构性约束时。本文旨在填补这一理论空白。",
+              "modelAndSetup": "作者考虑一组排成路径的不可分物品，被分配给若干具有任意估值函数的代理。每个代理对物品子集赋予实数值，不假设单调性。目标是将物品划分为若干连通或近连通的区间型捆绑，并满足某种公平性。模型允许捆绑由多个区间组成，且通过虚拟估值与舍入映射连接连续与离散世界，从而将连续公平划分的存在性转化为离散情形下的近似公平保证。",
+              "contributionsAndResults": "论文证明了多种存在性结果：当代理数为素数幂时，总存在满足EF2的分配，且各捆绑大小相差至多2；对于任意估值，存在基于区间的分配满足共识公平至多n件物品和n项任务。这是首个在非加性估值下、超越二分情形的共识公平EFk型保证。此外，该框架统一导出了多种已知与新结果，增强了对结构化公平分配的理解。",
+              "methodsAndTechniques": "作者提出一种黑箱转换框架，将连续公平划分定理（如蛋糕切割与项链分割）转化为离散分配的近似公平性。核心技术是构造一个保持序关系的虚拟估值函数，并结合基于Kuhn三角剖分的舍入规则，使得连续分配的公平性在舍入后仅损失边界物品。该方法解耦了存在性证明与舍入误差分析，使拓扑工具可直接用于离散场景。",
+              "limitationsAndReadingValue": "该文依赖素数幂代理数等拓扑条件，限制了结果的普适性；且仅为存在性证明，未提供高效算法。然而，其转换框架极具启发性，为连接连续与离散公平分配提供了通用工具。最值得阅读的是其模型抽象方式与虚拟估值构造，不仅简化了复杂证明，还揭示了边界物品在公平性损失中的核心作用，对后续机制设计与算法研究具有指导意义。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Informational Content of Auction Prices",
+            "url": "https://arxiv.org/abs/2608.04332",
+            "arxivId": "2608.04332",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "拍卖价格的信息含量",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "拍卖理论",
+              "信息设计",
+              "机制设计",
+              "顺序统计量",
+              "社会选择"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么不同拍卖形式传递的信息量不同？文章关注在共同价值拍卖中，外部观察者仅通过成交价推断资产真实价值的能力差异。传统研究多聚焦投标行为，而本文提出一个新视角：比较歧视性拍卖与统一价拍卖的价格信息含量，揭示了哪种机制更有利于市场价格发现，尤其适用于投资者依赖公开价格做决策的场景。",
+              "modelAndSetup": "模型设定为k个同质物品拍卖给n>k个竞标者，每人最多得一件，物品有未知共同价值，竞标者拥有私有信号。两种机制下均存在对称单调均衡：歧视性拍卖中最高成交价反映最高信号，统一价拍卖中价格反映第k+1高信号。问题转化为比较最高与第k+1高顺序统计量的信息价值，核心在于信号分布特性与k/n比例的影响。",
+              "contributionsAndResults": "论文证明，在Lehmann信息序下，当k/n超过由信号分布决定的阈值时，歧视性拍卖比统一价拍卖更具信息性。该阈值取决于高低信号的相对信息量：高信号越具区分力、低信号越模糊，所需k/n越小。结果表明并非统一价更优，挑战了常见认知，并指出信息聚合不仅依赖参与人数，也受配售比例影响。",
+              "methodsAndTechniques": "作者采用Lehmann信息序而非Blackwell序进行实验比较，因后者过于严格难以排序顺序统计量。关键技巧是将拍卖价格映射为顺序统计量实验，利用累积得分函数（cumulative score）刻画端点信息性，并通过弹性、逆风险率等指标统一处理尺度族与位置族分布，最终将主导关系归结为边界导数与k/n的权衡。",
+              "limitationsAndReadingValue": "结果依赖MLRP与特定均衡存在性假设，且Lehmann序虽弱于Blackwell但仍强于实际应用需求。不过论文价值在于建立了拍卖机制与顺序统计量信息性的系统联系，其框架可拓展至评分平台、招生评估与陪审团投票等领域。最值得读的是其将机制设计问题转化为统计实验比较的抽象思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "拍卖价格的信息含量",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么不同拍卖形式传递的信息量不同？文章关注在共同价值拍卖中，外部观察者仅通过成交价推断资产真实价值的能力差异。传统研究多聚焦投标行为，而本文提出一个新视角：比较歧视性拍卖与统一价拍卖的价格信息含量，揭示了哪种机制更有利于市场价格发现，尤其适用于投资者依赖公开价格做决策的场景。",
+              "modelAndSetup": "模型设定为k个同质物品拍卖给n>k个竞标者，每人最多得一件，物品有未知共同价值，竞标者拥有私有信号。两种机制下均存在对称单调均衡：歧视性拍卖中最高成交价反映最高信号，统一价拍卖中价格反映第k+1高信号。问题转化为比较最高与第k+1高顺序统计量的信息价值，核心在于信号分布特性与k/n比例的影响。",
+              "contributionsAndResults": "论文证明，在Lehmann信息序下，当k/n超过由信号分布决定的阈值时，歧视性拍卖比统一价拍卖更具信息性。该阈值取决于高低信号的相对信息量：高信号越具区分力、低信号越模糊，所需k/n越小。结果表明并非统一价更优，挑战了常见认知，并指出信息聚合不仅依赖参与人数，也受配售比例影响。",
+              "methodsAndTechniques": "作者采用Lehmann信息序而非Blackwell序进行实验比较，因后者过于严格难以排序顺序统计量。关键技巧是将拍卖价格映射为顺序统计量实验，利用累积得分函数（cumulative score）刻画端点信息性，并通过弹性、逆风险率等指标统一处理尺度族与位置族分布，最终将主导关系归结为边界导数与k/n的权衡。",
+              "limitationsAndReadingValue": "结果依赖MLRP与特定均衡存在性假设，且Lehmann序虽弱于Blackwell但仍强于实际应用需求。不过论文价值在于建立了拍卖机制与顺序统计量信息性的系统联系，其框架可拓展至评分平台、招生评估与陪审团投票等领域。最值得读的是其将机制设计问题转化为统计实验比较的抽象思路。"
+            },
+            "contentTags": [
+              "拍卖理论",
+              "信息设计",
+              "机制设计",
+              "顺序统计量",
+              "社会选择"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Quantum Bayes Correlated Equilibrium and the Comparison of Quantum Information Structures in Games",
+            "url": "https://arxiv.org/abs/2608.04973",
+            "arxivId": "2608.04973",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "quant-ph",
+              "econ.TH",
+              "math.OC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "量子贝叶斯相关均衡与博弈中量子信息结构的比较",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "机制设计"
+            ],
+            "contentTags": [
+              "信息设计",
+              "博弈论",
+              "量子信息",
+              "贝叶斯均衡",
+              "机制比较"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统博弈论中，信息结构通过影响玩家信念来约束均衡行为，Bergemann 和 Morris 提出信息越丰富，贝叶斯相关均衡集合越小。但当信息载体为量子态时，经典框架不再适用。本文旨在建立量子版本的信息结构比较理论，解决量子测量自由度带来的新激励约束问题，并统一经典与量子情形。",
+              "modelAndSetup": "模型考虑不完全信息博弈，状态由量子密度算子族表示，每个玩家持有一个子系统。一个全知中介观察真实状态并发出经典推荐动作。玩家可对其量子子系统执行任意局部测量以决定是否服从推荐。均衡要求服从推荐的期望收益不低于任何其他测量策略，该条件被转化为算子上的Loewner序不等式。",
+              "contributionsAndResults": "论文定义了量子贝叶斯相关均衡（QBCE），证明其解集是一个紧致凸谱锥体，可通过半定规划求解。经典信息结构可精确嵌入该框架而不扩展均衡集。最重要的是，提出了‘量子个体充分性’作为信息排序标准，并证明其蕴含均衡集单调收缩，且在对角化与极小信息结构下该关系完备。",
+              "methodsAndTechniques": "核心技术是将无限维的POVM偏离检验转化为有限个Hermitian算子间的Loewner支配关系，从而将均衡判定变为半定约束。比较定理的证明沿用了经典传递核的思想，但使用正线性映射替代完全正映射，以容纳转置等非物理操作带来的等价性，确保排序关系既充分又尽可能必要。",
+              "limitationsAndReadingValue": "当前完备性仅在特定结构类成立，一般情形下排序是否完全仍开放。模型依赖中介全知假设，排除了分布式量子协议场景。最值得读的是其将量子信息几何与激励约束结合的方式，以及用正映射而非通道来刻画信息顺序的技术选择，这对广义信息理论有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "量子贝叶斯相关均衡与博弈中量子信息结构的比较",
+            "summarySections": {
+              "backgroundAndQuestion": "传统博弈论中，信息结构通过影响玩家信念来约束均衡行为，Bergemann 和 Morris 提出信息越丰富，贝叶斯相关均衡集合越小。但当信息载体为量子态时，经典框架不再适用。本文旨在建立量子版本的信息结构比较理论，解决量子测量自由度带来的新激励约束问题，并统一经典与量子情形。",
+              "modelAndSetup": "模型考虑不完全信息博弈，状态由量子密度算子族表示，每个玩家持有一个子系统。一个全知中介观察真实状态并发出经典推荐动作。玩家可对其量子子系统执行任意局部测量以决定是否服从推荐。均衡要求服从推荐的期望收益不低于任何其他测量策略，该条件被转化为算子上的Loewner序不等式。",
+              "contributionsAndResults": "论文定义了量子贝叶斯相关均衡（QBCE），证明其解集是一个紧致凸谱锥体，可通过半定规划求解。经典信息结构可精确嵌入该框架而不扩展均衡集。最重要的是，提出了‘量子个体充分性’作为信息排序标准，并证明其蕴含均衡集单调收缩，且在对角化与极小信息结构下该关系完备。",
+              "methodsAndTechniques": "核心技术是将无限维的POVM偏离检验转化为有限个Hermitian算子间的Loewner支配关系，从而将均衡判定变为半定约束。比较定理的证明沿用了经典传递核的思想，但使用正线性映射替代完全正映射，以容纳转置等非物理操作带来的等价性，确保排序关系既充分又尽可能必要。",
+              "limitationsAndReadingValue": "当前完备性仅在特定结构类成立，一般情形下排序是否完全仍开放。模型依赖中介全知假设，排除了分布式量子协议场景。最值得读的是其将量子信息几何与激励约束结合的方式，以及用正映射而非通道来刻画信息顺序的技术选择，这对广义信息理论有启发意义。"
+            },
+            "contentTags": [
+              "信息设计",
+              "博弈论",
+              "量子信息",
+              "贝叶斯均衡",
+              "机制比较"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "机制设计"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-05",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202608050000 TO 202608052359\"",
+            "totalResults": 10,
+            "fetchedCount": 10
+          }
+        },
+        "dedupedCount": 10
+      },
+      "arxivTotalResults": 10,
+      "fetchedCount": 10,
+      "fetchedPapers": [
+        {
+          "title": "MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off",
+          "url": "https://arxiv.org/abs/2608.04843",
+          "arxivId": "2608.04843",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Long-horizon LLM agents require memory systems that recover useful evidence from large interaction histories without passing excessive context to downstream models. Existing memory pipelines often rely on hand-crafted heuristics and repeated LLM calls, which can introduce redundant context and high inference cost. We propose MemoryCPT, an end-to-end trainable agent memory pipeline that spans offline memory construction and online query-conditioned context generation. MemoryCPT consists of two stages: Query-agnostic Distillation (QAD), which distills a modular memory-construction pipeline into a compact model using explicit reasoning traces; and Query-aware Retrieval and Summarization (QAR), which combines reciprocal rank fusion (RRF) with a LoRA-based summarizer trained via Group Relative Policy Optimization (GRPO) under a cost-aware reward. We further introduce Quality per Cost (QPC) to quantify answer quality per unit inference cost. Experiments on LoCoMo and LongMemEval show that MemoryCPT improves the cost-performance trade-off over the evaluated baselines, while ablation and sensitivity analyses characterize the contributions of its components and the effects of key design choices."
+        },
+        {
+          "title": "DEGR: Dual Exploration-Driven Generative Re-Ranking for Adaptive Cross-Request Context Bridging",
+          "url": "https://arxiv.org/abs/2608.04809",
+          "arxivId": "2608.04809",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "In industrial recommendation systems, the re-ranking stage balances business objectives and diversity for sequence-level optimization while modeling contextual information. However, constrained by fixed upstream supply, existing methods fail to deliver further effectiveness gains, especially under low-quality supply. To overcome this, re-ranking can actively balance immediate and exploratory value, for instance, by prioritizing exploratory exposure under low-quality supply to preserve browsing potential and facilitate serendipitous conversions. Therefore, we propose a Dual Exploration-Driven Generative Re-Ranking (DEGR) method. DEGR adopts a hybrid supervised-reinforcement exploration and optimization paradigm, guided by an exploratory reward model that adaptively balances immediate and exploratory value. The hybrid optimization paradigm integrates three key components: supervised learning, exploration diversity constraint, and adaptive reward-weighted ORPO for preference optimization. Through this dual exploration, the generator ultimately acts as an adaptive cross-request contextual bridge. Offline and online experiments indicate that DEGR outperforms SOTA methods, achieving improvements of up to 1.22% UCTR and 0.20% PV in the JD E-commerce recommendation system."
+        },
+        {
+          "title": "WatchLens: A Configurable Platform for Online Video Recommendation Experiments",
+          "url": "https://arxiv.org/abs/2608.04807",
+          "arxivId": "2608.04807",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Studying how video recommender systems shape user behavior requires online experiments that link playback behavior with the recommendation conditions that produced it. Existing user-study infrastructure provides one or the other, but not both within a single experimentation workflow. We present WatchLens, an open-source platform that fills this gap. WatchLens adopts a modular architecture in which user interfaces, content sources, and recommendation policies are independently configurable, with policies assignable separately to the feed and the watch page, while a standardized logging layer attaches the recommendation policy and ranking position to every event at recording time. This design enables researchers to analyze how recommendation policies and ranking positions shape downstream playback behavior, session continuation, and navigation between the feed and the watch page, with the linkage between policy and outcome available in each event rather than reconstructed afterwards. We demonstrate WatchLens with a short-form video case study that holds the interface, feed policy, and content pool constant while varying only the watch-page policy, showing how the platform supports session-level comparison of recommendation effects on real viewing behavior. WatchLens is released as a publicly available, single-server deployable system for reproducible online video recommendation research."
+        },
+        {
+          "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+          "url": "https://arxiv.org/abs/2608.04746",
+          "arxivId": "2608.04746",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $π_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $π_i$ and utility horizon $τ_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts."
+        },
+        {
+          "title": "Characterizing the Evolving Landscape of Modern Information Seeking",
+          "url": "https://arxiv.org/abs/2608.04609",
+          "arxivId": "2608.04609",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Information seeking (IS) evolves, as does the human IS process. Since the rise of Generative AI (GenAI), modern IS has shifted by introducing more interfaces, more complex interactions, and expanded system capabilities. We argue that these changes in modern IS should be systematically examined. This PhD research characterizes the changes in the modern IS process. We use mechanisms, including online crowdsourcing survey experiments, theoretical IS frameworks, and in-lab experiments with neurophysiological signals, to characterize the shifts in modern IS, especially those driven by GenAI. We offer insights into the current landscape of search interface preferences and the cognitive efforts involved in seeking information. We believe this PhD research will contribute to and inform future designs of personalized, cognition-aware IS systems."
+        },
+        {
+          "title": "Towards Robust Version Identification in the Wild: A Dataset, Benchmark, and Fine-Tuning Study",
+          "url": "https://arxiv.org/abs/2608.04543",
+          "arxivId": "2608.04543",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.IR"
+          ],
+          "abstract": "Existing datasets for musical version identification (VI) are primarily derived from curated metadata sources such as SecondHandSongs and Discogs, and are therefore dominated by professionally recorded tracks. This leads to a domain mismatch with real-world scenarios, where amateur and user-generated content is prevalent. To address this limitation, we introduce DiVers, a large-scale VI dataset comprising over 1.1 million musical versions, with train-validation-test splits compatible with established datasets such as Discogs-VI-YT, SHS100K, and Da-TACOS. In addition to standard version-level annotations, DiVers provides automatically assigned tags (e.g., instrumental, live) and segment-level predictions indicating the presence or absence of music. We evaluate the proposed dataset by training state-of-the-art VI systems. Our results show that models trained on DiVers achieve substantially improved robustness to acoustically diverse and noisy inputs, while maintaining a stable performance on cleaner, studio-quality benchmarks. We release the dataset metadata, code for its construction, and all experimental pipelines to support reproducibility."
+        },
+        {
+          "title": "Skills Know Their Neighbors: Cluster-Contrastive Capability Pages for Skill Retrieval",
+          "url": "https://arxiv.org/abs/2608.04482",
+          "arxivId": "2608.04482",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "As skill libraries grow, large language model agents must retrieve reusable skills from candidates that often share the same topic and vocabulary but implement different capabilities. Retrieval is limited not only by the scorer but also by the text being scored: a document may describe what a skill does without stating which similar requests should be routed elsewhere. We formalize a skill's capability as its \\emph{executable region}, the set of queries it can solve, and view its document as a lossy observation of that region. This view exposes a document-imposed component of retrieval error that cannot be removed by improving the retriever alone. We therefore propose \\emph{Capability Pages}, cluster-contrastive skill representations containing a positive trigger $\\Tpos$, a negative boundary $\\Tneg$, and a discriminative body $B$. An offline compiler compares neighboring skills to write these fields. At inference time, the index uses $\\Tpos$ and $B$ for candidate recall, while the router uses $\\Tneg$ to reject confusable alternatives. On SRA-Bench, which contains 26{,}262 skills and 5{,}400 questions from six datasets, Capability Pages improve Recall@10 for all five tested retrievers, with a mean gain of $2.94$ points. Adding $\\Tneg$ to candidate cards improves end-to-end task success by $3.62$ points on average across four executors and six datasets. A transfer evaluation on Chinese SSL-SkillDiscovery reaches $73.07\\%$ MRR@50 using the same encoder across conditions. Capability Pages require no modification to the online models; they improve routing by rewriting the offline skill library."
+        },
+        {
+          "title": "Multi-Objective Ranking for Live-Streaming: Balancing Fresh and Delayed Signals with Segment-Aware Targeting",
+          "url": "https://arxiv.org/abs/2608.04455",
+          "arxivId": "2608.04455",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "One of the most challenging problems entertainment live-streaming services face in recommendation systems is that user behaviors are sparse and delayed, and interaction data exhibits bias for different user segments. Unlike e-commerce applications where user actions follow linear sequences, live-streaming viewers engage in multiple concurrent behaviors of watching, chatting, following, and spending, each occurring with varying delays. We address these challenges through three key contributions: 1) a delayed window approach that extends feedback collection beyond immediate responses, 2) a multi-model architecture that combines fresh and delayed signals, and a segment-aware targeting module that optimizes ranking scores differently across user lifecycle stages, and 3) Multi-gate Mixture-of-Experts (MMoE) integration that jointly models correlated targets while reducing model parameters by 41.9% compared to independent models. Online A/B testing demonstrates significant improvements, including a +0.09% increase in Daily Active Viewers (DAV), generating millions more annual active viewer days, and +0.56% increase in highly engaged viewers' capped Average Revenue Per User (ARPU). Viewer-segment targeting achieved an additional +0.15% DAV improvement for newer and less engaged viewers, while MMoE enhancement added +0.08% overall DAV and +0.27% new follows. The proposed system processes ranking requests with low latency, providing a scalable approach for balancing multiple business objectives across diverse user populations. In addition, we tested the multi-model architecture on the Twitch mobile live feed and achieved a +1.12% increase in positive user-channel interactions (clicks, follows, and likes), demonstrating applicability beyond the primary use case."
+        },
+        {
+          "title": "The Price of Isolation: Estimating the Ecosystem Cost of Symmetric Two-Sided A/B Testing",
+          "url": "https://arxiv.org/abs/2608.04432",
+          "arxivId": "2608.04432",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG",
+            "cs.SI",
+            "stat.ME"
+          ],
+          "abstract": "On two-sided content platforms, symmetric two-sided isolation (assigning matched fractions of creators and viewers to isolated treatment and control submarkets) is widely used for creator-side and cold-start experiments because it removes cross-arm marketplace interference. Isolation, however, thins each viewer's candidate catalog, and intuition suggests the resulting engagement cost should fade as the platform grows: a small fraction of a vast catalog is still vast. We show that, in an order-statistics model of engagement, whether this intuition holds depends on the upper tail of match quality. Extreme-value theory yields tail-class loss laws with a sharp dichotomy: for light or bounded tails the loss vanishes as the candidate pool grows, whereas under heavy tails it converges to a size-independent constant, so expanding the candidate pool, even by orders of magnitude, does not asymptotically eliminate the cost. Evidence from two production experiments on a platform with millions of active creators is consistent with this picture: a pure A/A traffic sweep reveals a measurable, depth-graded engagement cost; a one-sided catalog ablation independently shows that per-viewer thinning contributes to the loss; and a tail index calibrated on the small exploration pool predicts an effect consistent with the one observed in the far larger full-catalog ablation. Isolation thus carries a price that experimenters should budget for, like any other cost. We give practitioners a preflight procedure that estimates it before launch, sizes traffic accordingly, and recommends a fallback design when the predicted cost exceeds a chosen tolerance."
+        },
+        {
+          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+          "url": "https://arxiv.org/abs/2608.04302",
+          "arxivId": "2608.04302",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR",
+            "cs.MM"
+          ],
+          "abstract": "Benchmarking video-language models has largely focused on short clips and single-sentence metrics, leaving open whether current systems can generate accurate long-form, paragraph-level descriptions. We introduce CLIP-CC-Bench, an evaluation suite for long-form video description built from 5 hours of movie content segmented into 90-second clips, each paired with an expert-written paragraph-style reference. The evaluation suite employs an ensemble of five state-of-the-art LLM-based embedding models to increase reliability and mitigate single-model bias, and applies two complementary methodologies: (i) coarse-grained semantic matching and (ii) fine-grained semantic matching to compare model-generated descriptions against CLIP-CC-Bench references. Using this framework, we evaluate 17 state-of-the-art video-language models and report both their Borda-aggregated rankings and their average scores on CLIP-CC-Bench. We further quantify the protocol's internal reliability through inter-judge agreement and bootstrap ranking stability. We release standardized evaluation scripts, model outputs, and aggregation tools at https://github.com/Multimodal-Intelligence-Lab/CLIP-CC-Bench to support reproducibility. CLIP-CC-Bench provides a practical evaluation framework for long-form video description, filling a gap left by existing short-clip and QA-only benchmarks."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off",
+              "url": "https://arxiv.org/abs/2608.04843",
+              "arxivId": "2608.04843",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Long-horizon LLM agents require memory systems that recover useful evidence from large interaction histories without passing excessive context to downstream models. Existing memory pipelines often rely on hand-crafted heuristics and repeated LLM calls, which can introduce redundant context and high inference cost. We propose MemoryCPT, an end-to-end trainable agent memory pipeline that spans offline memory construction and online query-conditioned context generation. MemoryCPT consists of two stages: Query-agnostic Distillation (QAD), which distills a modular memory-construction pipeline into a compact model using explicit reasoning traces; and Query-aware Retrieval and Summarization (QAR), which combines reciprocal rank fusion (RRF) with a LoRA-based summarizer trained via Group Relative Policy Optimization (GRPO) under a cost-aware reward. We further introduce Quality per Cost (QPC) to quantify answer quality per unit inference cost. Experiments on LoCoMo and LongMemEval show that MemoryCPT improves the cost-performance trade-off over the evaluated baselines, while ablation and sensitivity analyses characterize the contributions of its components and the effects of key design choices."
+            },
+            {
+              "title": "DEGR: Dual Exploration-Driven Generative Re-Ranking for Adaptive Cross-Request Context Bridging",
+              "url": "https://arxiv.org/abs/2608.04809",
+              "arxivId": "2608.04809",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "In industrial recommendation systems, the re-ranking stage balances business objectives and diversity for sequence-level optimization while modeling contextual information. However, constrained by fixed upstream supply, existing methods fail to deliver further effectiveness gains, especially under low-quality supply. To overcome this, re-ranking can actively balance immediate and exploratory value, for instance, by prioritizing exploratory exposure under low-quality supply to preserve browsing potential and facilitate serendipitous conversions. Therefore, we propose a Dual Exploration-Driven Generative Re-Ranking (DEGR) method. DEGR adopts a hybrid supervised-reinforcement exploration and optimization paradigm, guided by an exploratory reward model that adaptively balances immediate and exploratory value. The hybrid optimization paradigm integrates three key components: supervised learning, exploration diversity constraint, and adaptive reward-weighted ORPO for preference optimization. Through this dual exploration, the generator ultimately acts as an adaptive cross-request contextual bridge. Offline and online experiments indicate that DEGR outperforms SOTA methods, achieving improvements of up to 1.22% UCTR and 0.20% PV in the JD E-commerce recommendation system."
+            },
+            {
+              "title": "WatchLens: A Configurable Platform for Online Video Recommendation Experiments",
+              "url": "https://arxiv.org/abs/2608.04807",
+              "arxivId": "2608.04807",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Studying how video recommender systems shape user behavior requires online experiments that link playback behavior with the recommendation conditions that produced it. Existing user-study infrastructure provides one or the other, but not both within a single experimentation workflow. We present WatchLens, an open-source platform that fills this gap. WatchLens adopts a modular architecture in which user interfaces, content sources, and recommendation policies are independently configurable, with policies assignable separately to the feed and the watch page, while a standardized logging layer attaches the recommendation policy and ranking position to every event at recording time. This design enables researchers to analyze how recommendation policies and ranking positions shape downstream playback behavior, session continuation, and navigation between the feed and the watch page, with the linkage between policy and outcome available in each event rather than reconstructed afterwards. We demonstrate WatchLens with a short-form video case study that holds the interface, feed policy, and content pool constant while varying only the watch-page policy, showing how the platform supports session-level comparison of recommendation effects on real viewing behavior. WatchLens is released as a publicly available, single-server deployable system for reproducible online video recommendation research."
+            },
+            {
+              "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+              "url": "https://arxiv.org/abs/2608.04746",
+              "arxivId": "2608.04746",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $π_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $π_i$ and utility horizon $τ_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts."
+            },
+            {
+              "title": "Characterizing the Evolving Landscape of Modern Information Seeking",
+              "url": "https://arxiv.org/abs/2608.04609",
+              "arxivId": "2608.04609",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Information seeking (IS) evolves, as does the human IS process. Since the rise of Generative AI (GenAI), modern IS has shifted by introducing more interfaces, more complex interactions, and expanded system capabilities. We argue that these changes in modern IS should be systematically examined. This PhD research characterizes the changes in the modern IS process. We use mechanisms, including online crowdsourcing survey experiments, theoretical IS frameworks, and in-lab experiments with neurophysiological signals, to characterize the shifts in modern IS, especially those driven by GenAI. We offer insights into the current landscape of search interface preferences and the cognitive efforts involved in seeking information. We believe this PhD research will contribute to and inform future designs of personalized, cognition-aware IS systems."
+            },
+            {
+              "title": "Towards Robust Version Identification in the Wild: A Dataset, Benchmark, and Fine-Tuning Study",
+              "url": "https://arxiv.org/abs/2608.04543",
+              "arxivId": "2608.04543",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.SD",
+                "cs.IR"
+              ],
+              "abstract": "Existing datasets for musical version identification (VI) are primarily derived from curated metadata sources such as SecondHandSongs and Discogs, and are therefore dominated by professionally recorded tracks. This leads to a domain mismatch with real-world scenarios, where amateur and user-generated content is prevalent. To address this limitation, we introduce DiVers, a large-scale VI dataset comprising over 1.1 million musical versions, with train-validation-test splits compatible with established datasets such as Discogs-VI-YT, SHS100K, and Da-TACOS. In addition to standard version-level annotations, DiVers provides automatically assigned tags (e.g., instrumental, live) and segment-level predictions indicating the presence or absence of music. We evaluate the proposed dataset by training state-of-the-art VI systems. Our results show that models trained on DiVers achieve substantially improved robustness to acoustically diverse and noisy inputs, while maintaining a stable performance on cleaner, studio-quality benchmarks. We release the dataset metadata, code for its construction, and all experimental pipelines to support reproducibility."
+            },
+            {
+              "title": "Skills Know Their Neighbors: Cluster-Contrastive Capability Pages for Skill Retrieval",
+              "url": "https://arxiv.org/abs/2608.04482",
+              "arxivId": "2608.04482",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "As skill libraries grow, large language model agents must retrieve reusable skills from candidates that often share the same topic and vocabulary but implement different capabilities. Retrieval is limited not only by the scorer but also by the text being scored: a document may describe what a skill does without stating which similar requests should be routed elsewhere. We formalize a skill's capability as its \\emph{executable region}, the set of queries it can solve, and view its document as a lossy observation of that region. This view exposes a document-imposed component of retrieval error that cannot be removed by improving the retriever alone. We therefore propose \\emph{Capability Pages}, cluster-contrastive skill representations containing a positive trigger $\\Tpos$, a negative boundary $\\Tneg$, and a discriminative body $B$. An offline compiler compares neighboring skills to write these fields. At inference time, the index uses $\\Tpos$ and $B$ for candidate recall, while the router uses $\\Tneg$ to reject confusable alternatives. On SRA-Bench, which contains 26{,}262 skills and 5{,}400 questions from six datasets, Capability Pages improve Recall@10 for all five tested retrievers, with a mean gain of $2.94$ points. Adding $\\Tneg$ to candidate cards improves end-to-end task success by $3.62$ points on average across four executors and six datasets. A transfer evaluation on Chinese SSL-SkillDiscovery reaches $73.07\\%$ MRR@50 using the same encoder across conditions. Capability Pages require no modification to the online models; they improve routing by rewriting the offline skill library."
+            },
+            {
+              "title": "Multi-Objective Ranking for Live-Streaming: Balancing Fresh and Delayed Signals with Segment-Aware Targeting",
+              "url": "https://arxiv.org/abs/2608.04455",
+              "arxivId": "2608.04455",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "One of the most challenging problems entertainment live-streaming services face in recommendation systems is that user behaviors are sparse and delayed, and interaction data exhibits bias for different user segments. Unlike e-commerce applications where user actions follow linear sequences, live-streaming viewers engage in multiple concurrent behaviors of watching, chatting, following, and spending, each occurring with varying delays. We address these challenges through three key contributions: 1) a delayed window approach that extends feedback collection beyond immediate responses, 2) a multi-model architecture that combines fresh and delayed signals, and a segment-aware targeting module that optimizes ranking scores differently across user lifecycle stages, and 3) Multi-gate Mixture-of-Experts (MMoE) integration that jointly models correlated targets while reducing model parameters by 41.9% compared to independent models. Online A/B testing demonstrates significant improvements, including a +0.09% increase in Daily Active Viewers (DAV), generating millions more annual active viewer days, and +0.56% increase in highly engaged viewers' capped Average Revenue Per User (ARPU). Viewer-segment targeting achieved an additional +0.15% DAV improvement for newer and less engaged viewers, while MMoE enhancement added +0.08% overall DAV and +0.27% new follows. The proposed system processes ranking requests with low latency, providing a scalable approach for balancing multiple business objectives across diverse user populations. In addition, we tested the multi-model architecture on the Twitch mobile live feed and achieved a +1.12% increase in positive user-channel interactions (clicks, follows, and likes), demonstrating applicability beyond the primary use case."
+            },
+            {
+              "title": "The Price of Isolation: Estimating the Ecosystem Cost of Symmetric Two-Sided A/B Testing",
+              "url": "https://arxiv.org/abs/2608.04432",
+              "arxivId": "2608.04432",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG",
+                "cs.SI",
+                "stat.ME"
+              ],
+              "abstract": "On two-sided content platforms, symmetric two-sided isolation (assigning matched fractions of creators and viewers to isolated treatment and control submarkets) is widely used for creator-side and cold-start experiments because it removes cross-arm marketplace interference. Isolation, however, thins each viewer's candidate catalog, and intuition suggests the resulting engagement cost should fade as the platform grows: a small fraction of a vast catalog is still vast. We show that, in an order-statistics model of engagement, whether this intuition holds depends on the upper tail of match quality. Extreme-value theory yields tail-class loss laws with a sharp dichotomy: for light or bounded tails the loss vanishes as the candidate pool grows, whereas under heavy tails it converges to a size-independent constant, so expanding the candidate pool, even by orders of magnitude, does not asymptotically eliminate the cost. Evidence from two production experiments on a platform with millions of active creators is consistent with this picture: a pure A/A traffic sweep reveals a measurable, depth-graded engagement cost; a one-sided catalog ablation independently shows that per-viewer thinning contributes to the loss; and a tail index calibrated on the small exploration pool predicts an effect consistent with the one observed in the far larger full-catalog ablation. Isolation thus carries a price that experimenters should budget for, like any other cost. We give practitioners a preflight procedure that estimates it before launch, sizes traffic accordingly, and recommends a fallback design when the predicted cost exceeds a chosen tolerance."
+            },
+            {
+              "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+              "url": "https://arxiv.org/abs/2608.04302",
+              "arxivId": "2608.04302",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.IR",
+                "cs.MM"
+              ],
+              "abstract": "Benchmarking video-language models has largely focused on short clips and single-sentence metrics, leaving open whether current systems can generate accurate long-form, paragraph-level descriptions. We introduce CLIP-CC-Bench, an evaluation suite for long-form video description built from 5 hours of movie content segmented into 90-second clips, each paired with an expert-written paragraph-style reference. The evaluation suite employs an ensemble of five state-of-the-art LLM-based embedding models to increase reliability and mitigate single-model bias, and applies two complementary methodologies: (i) coarse-grained semantic matching and (ii) fine-grained semantic matching to compare model-generated descriptions against CLIP-CC-Bench references. Using this framework, we evaluate 17 state-of-the-art video-language models and report both their Borda-aggregated rankings and their average scores on CLIP-CC-Bench. We further quantify the protocol's internal reliability through inter-judge agreement and bootstrap ranking stability. We release standardized evaluation scripts, model outputs, and aggregation tools at https://github.com/Multimodal-Intelligence-Lab/CLIP-CC-Bench to support reproducibility. CLIP-CC-Bench provides a practical evaluation framework for long-form video description, filling a gap left by existing short-clip and QA-only benchmarks."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off",
+              "url": "https://arxiv.org/abs/2608.04843",
+              "arxivId": "2608.04843",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "DEGR: Dual Exploration-Driven Generative Re-Ranking for Adaptive Cross-Request Context Bridging",
+              "url": "https://arxiv.org/abs/2608.04809",
+              "arxivId": "2608.04809",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -3.0,
+                "baseTotal": 12.0,
+                "total": 12.0
+              }
+            },
+            {
+              "title": "WatchLens: A Configurable Platform for Online Video Recommendation Experiments",
+              "url": "https://arxiv.org/abs/2608.04807",
+              "arxivId": "2608.04807",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+              "url": "https://arxiv.org/abs/2608.04746",
+              "arxivId": "2608.04746",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Characterizing the Evolving Landscape of Modern Information Seeking",
+              "url": "https://arxiv.org/abs/2608.04609",
+              "arxivId": "2608.04609",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 8.0,
+                "total": 8.0
+              }
+            },
+            {
+              "title": "Towards Robust Version Identification in the Wild: A Dataset, Benchmark, and Fine-Tuning Study",
+              "url": "https://arxiv.org/abs/2608.04543",
+              "arxivId": "2608.04543",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.SD",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Skills Know Their Neighbors: Cluster-Contrastive Capability Pages for Skill Retrieval",
+              "url": "https://arxiv.org/abs/2608.04482",
+              "arxivId": "2608.04482",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Multi-Objective Ranking for Live-Streaming: Balancing Fresh and Delayed Signals with Segment-Aware Targeting",
+              "url": "https://arxiv.org/abs/2608.04455",
+              "arxivId": "2608.04455",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "The Price of Isolation: Estimating the Ecosystem Cost of Symmetric Two-Sided A/B Testing",
+              "url": "https://arxiv.org/abs/2608.04432",
+              "arxivId": "2608.04432",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG",
+                "cs.SI",
+                "stat.ME"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+              "url": "https://arxiv.org/abs/2608.04302",
+              "arxivId": "2608.04302",
+              "date": "2026-08-05",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.IR",
+                "cs.MM"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off",
+          "url": "https://arxiv.org/abs/2608.04843",
+          "arxivId": "2608.04843",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "DEGR: Dual Exploration-Driven Generative Re-Ranking for Adaptive Cross-Request Context Bridging",
+          "url": "https://arxiv.org/abs/2608.04809",
+          "arxivId": "2608.04809",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -3.0,
+            "baseTotal": 12.0,
+            "total": 12.0
+          }
+        },
+        {
+          "title": "WatchLens: A Configurable Platform for Online Video Recommendation Experiments",
+          "url": "https://arxiv.org/abs/2608.04807",
+          "arxivId": "2608.04807",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+          "url": "https://arxiv.org/abs/2608.04746",
+          "arxivId": "2608.04746",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Characterizing the Evolving Landscape of Modern Information Seeking",
+          "url": "https://arxiv.org/abs/2608.04609",
+          "arxivId": "2608.04609",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 8.0,
+            "total": 8.0
+          }
+        },
+        {
+          "title": "Towards Robust Version Identification in the Wild: A Dataset, Benchmark, and Fine-Tuning Study",
+          "url": "https://arxiv.org/abs/2608.04543",
+          "arxivId": "2608.04543",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.SD",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Skills Know Their Neighbors: Cluster-Contrastive Capability Pages for Skill Retrieval",
+          "url": "https://arxiv.org/abs/2608.04482",
+          "arxivId": "2608.04482",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Multi-Objective Ranking for Live-Streaming: Balancing Fresh and Delayed Signals with Segment-Aware Targeting",
+          "url": "https://arxiv.org/abs/2608.04455",
+          "arxivId": "2608.04455",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "The Price of Isolation: Estimating the Ecosystem Cost of Symmetric Two-Sided A/B Testing",
+          "url": "https://arxiv.org/abs/2608.04432",
+          "arxivId": "2608.04432",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG",
+            "cs.SI",
+            "stat.ME"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+          "url": "https://arxiv.org/abs/2608.04302",
+          "arxivId": "2608.04302",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR",
+            "cs.MM"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "The Price of Isolation: Estimating the Ecosystem Cost of Symmetric Two-Sided A/B Testing",
+          "url": "https://arxiv.org/abs/2608.04432",
+          "arxivId": "2608.04432",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG",
+            "cs.SI",
+            "stat.ME"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+          "url": "https://arxiv.org/abs/2608.04746",
+          "arxivId": "2608.04746",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Skills Know Their Neighbors: Cluster-Contrastive Capability Pages for Skill Retrieval",
+          "url": "https://arxiv.org/abs/2608.04482",
+          "arxivId": "2608.04482",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "WatchLens: A Configurable Platform for Online Video Recommendation Experiments",
+          "url": "https://arxiv.org/abs/2608.04807",
+          "arxivId": "2608.04807",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+          "url": "https://arxiv.org/abs/2608.04302",
+          "arxivId": "2608.04302",
+          "date": "2026-08-05",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR",
+            "cs.MM"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "The Price of Isolation: Estimating the Ecosystem Cost of Symmetric Two-Sided A/B Testing",
+            "url": "https://arxiv.org/abs/2608.04432",
+            "arxivId": "2608.04432",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.LG",
+              "cs.SI",
+              "stat.ME"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "隔离的代价：对称双侧A/B测试的生态系统成本估计",
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "机制设计",
+              "系统框架",
+              "评测方法"
+            ],
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "推荐系统",
+              "A/B测试",
+              "平台干扰"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在双面内容平台（如短视频）上进行创作者侧或冷启动实验时，常用对称双侧隔离设计来消除跨组市场干扰。然而，这种设计会减少每个用户可见的内容池，可能降低推荐质量。直觉认为平台规模越大，此问题越轻，但本文指出这取决于匹配质量的尾部特性，挑战了普遍假设。",
+              "modelAndSetup": "研究通过纯A/A实验设置，固定观众流量比例，仅改变创作者池大小，测量探索内容参与度的变化。同时设计独立的目录剔除实验，直接验证单个用户候选池缩减的影响。使用真实平台上的观看时长、完播率等指标评估生态成本。",
+              "contributionsAndResults": "论文揭示了对称隔离本身会造成显著的参与度损失，即使无实际干预。实验证明该损失随内容深度加深而加剧，在小流量下尤为严重。极端值理论表明：重尾分布下损失不随平台增长消失，预测与观测一致，说明此类成本需被主动预算而非忽略。",
+              "methodsAndTechniques": "基于顺序统计建立模型，将参与度损失归因于最佳匹配质量下降，并利用极值理论推导出三种尾部情形下的损失规律。通过A/A流量扫描和目录剔除实验验证机制，结合蒙特卡洛模拟确认理论边界。预飞检查程序可用于上线前估算成本并决定是否采用替代设计。",
+              "limitationsAndReadingValue": "研究依赖于特定平台数据，尾部类别无法完全识别，且假设独立同分布匹配质量。服务系统演化也可能影响校准稳定性。尽管如此，其对实验设计代价的量化极具实践价值，最值得阅读的是问题设定、理论建模与预飞流程，为工业级A/B测试提供关键决策工具。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "隔离的代价：对称双侧A/B测试的生态系统成本估计",
+            "summarySections": {
+              "backgroundAndQuestion": "在双面内容平台（如短视频）上进行创作者侧或冷启动实验时，常用对称双侧隔离设计来消除跨组市场干扰。然而，这种设计会减少每个用户可见的内容池，可能降低推荐质量。直觉认为平台规模越大，此问题越轻，但本文指出这取决于匹配质量的尾部特性，挑战了普遍假设。",
+              "modelAndSetup": "研究通过纯A/A实验设置，固定观众流量比例，仅改变创作者池大小，测量探索内容参与度的变化。同时设计独立的目录剔除实验，直接验证单个用户候选池缩减的影响。使用真实平台上的观看时长、完播率等指标评估生态成本。",
+              "contributionsAndResults": "论文揭示了对称隔离本身会造成显著的参与度损失，即使无实际干预。实验证明该损失随内容深度加深而加剧，在小流量下尤为严重。极端值理论表明：重尾分布下损失不随平台增长消失，预测与观测一致，说明此类成本需被主动预算而非忽略。",
+              "methodsAndTechniques": "基于顺序统计建立模型，将参与度损失归因于最佳匹配质量下降，并利用极值理论推导出三种尾部情形下的损失规律。通过A/A流量扫描和目录剔除实验验证机制，结合蒙特卡洛模拟确认理论边界。预飞检查程序可用于上线前估算成本并决定是否采用替代设计。",
+              "limitationsAndReadingValue": "研究依赖于特定平台数据，尾部类别无法完全识别，且假设独立同分布匹配质量。服务系统演化也可能影响校准稳定性。尽管如此，其对实验设计代价的量化极具实践价值，最值得阅读的是问题设定、理论建模与预飞流程，为工业级A/B测试提供关键决策工具。"
+            },
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "推荐系统",
+              "A/B测试",
+              "平台干扰"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "机制设计",
+              "系统框架",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+            "url": "https://arxiv.org/abs/2608.04746",
+            "arxivId": "2608.04746",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "面向未来的缓存：基于西部灌丛鸦情景记忆原理的智能体记忆系统",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "基准评测",
+              "实验验证",
+              "模型构建"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "记忆系统",
+              "时间推理",
+              "遗忘机制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前大语言模型智能体的记忆系统难以处理不同信息随时间变化的有效性差异。现有方法通常平等对待所有记忆，导致检索时混入过时信息。问题核心在于缺乏对‘何时信息失效’的建模能力，尤其在长期运行中，临时事实（如会议时间）与稳定知识（如职业）的衰减速率截然不同，统一机制无法兼顾。",
+              "modelAndSetup": "论文研究一种新型记忆架构Scrubby-Jay-MEM，其输入为智能体经历的事件，输出为经类型条件衰减加权的检索结果。系统在MemoryAgentBench EventQA-64k和新提出的Temporal Generalization Test（TGT）上评估，前者测试长程事件问答，后者专门衡量对未见时间间隔的泛化能力，使用F1、GenGap等指标。",
+              "contributionsAndResults": "论文提出首个将生物启发的情景记忆机制整合到LLM智能体中的系统，关键创新是为每条记忆分配自动分类的易腐系数，并实现回溯式更新。在TGT上，它是唯一取得显著正向GenGap的检索系统，消融实验证明类型化衰减是该结果的必要机制，揭示了显式时间建模对泛化的关键作用。",
+              "methodsAndTechniques": "方法核心是将记忆编码为‘内容-上下文-时间’三元组，并赋予类型相关的易腐系数，决定其效用衰减速率。检索时结合查询自适应权重与图传播增强。新信息触发O(1)次LLM调用的回溯更新，调整相关记忆参数。TGT通过预留未知时间间隔，构建因果证据链，验证系统是否真正学会泛化而非记忆模式。",
+              "limitationsAndReadingValue": "局限在于优势集中在易腐事实的时间推理，强骨干模型下收益缩小，且在需保留旧事实的合并任务中表现不佳。结论依赖TGT这一合成诊断基准，外部有效性待验证。最值得读的是其问题抽象方式、TGT的设计理念及类型化衰减的机制验证，为记忆系统的可解释性与时序建模提供了新范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "面向未来的缓存：基于西部灌丛鸦情景记忆原理的智能体记忆系统",
+            "summarySections": {
+              "backgroundAndQuestion": "当前大语言模型智能体的记忆系统难以处理不同信息随时间变化的有效性差异。现有方法通常平等对待所有记忆，导致检索时混入过时信息。问题核心在于缺乏对‘何时信息失效’的建模能力，尤其在长期运行中，临时事实（如会议时间）与稳定知识（如职业）的衰减速率截然不同，统一机制无法兼顾。",
+              "modelAndSetup": "论文研究一种新型记忆架构Scrubby-Jay-MEM，其输入为智能体经历的事件，输出为经类型条件衰减加权的检索结果。系统在MemoryAgentBench EventQA-64k和新提出的Temporal Generalization Test（TGT）上评估，前者测试长程事件问答，后者专门衡量对未见时间间隔的泛化能力，使用F1、GenGap等指标。",
+              "contributionsAndResults": "论文提出首个将生物启发的情景记忆机制整合到LLM智能体中的系统，关键创新是为每条记忆分配自动分类的易腐系数，并实现回溯式更新。在TGT上，它是唯一取得显著正向GenGap的检索系统，消融实验证明类型化衰减是该结果的必要机制，揭示了显式时间建模对泛化的关键作用。",
+              "methodsAndTechniques": "方法核心是将记忆编码为‘内容-上下文-时间’三元组，并赋予类型相关的易腐系数，决定其效用衰减速率。检索时结合查询自适应权重与图传播增强。新信息触发O(1)次LLM调用的回溯更新，调整相关记忆参数。TGT通过预留未知时间间隔，构建因果证据链，验证系统是否真正学会泛化而非记忆模式。",
+              "limitationsAndReadingValue": "局限在于优势集中在易腐事实的时间推理，强骨干模型下收益缩小，且在需保留旧事实的合并任务中表现不佳。结论依赖TGT这一合成诊断基准，外部有效性待验证。最值得读的是其问题抽象方式、TGT的设计理念及类型化衰减的机制验证，为记忆系统的可解释性与时序建模提供了新范式。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "记忆系统",
+              "时间推理",
+              "遗忘机制"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "基准评测",
+              "实验验证",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Skills Know Their Neighbors: Cluster-Contrastive Capability Pages for Skill Retrieval",
+            "url": "https://arxiv.org/abs/2608.04482",
+            "arxivId": "2608.04482",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "技能知晓其邻居：用于技能检索的聚类对比能力页",
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "评测方法",
+              "算法设计"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "技能检索",
+              "表示学习",
+              "生成式AI"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有技能检索常因相似技能文档难以区分而导致错误路由，即使强大编码器也难以从模糊文本中提取决策边界。本文指出问题根源在于文档本身缺失关键区分信息，而非仅模型能力不足。这属于智能体系统中技能调用的可靠性瓶颈，尤其在高规模技能库下，表面语义相近但功能不同的技能极易被混淆。",
+              "modelAndSetup": "研究设定为从大型技能库中检索并路由正确技能，输入是用户请求，输出是可执行技能标识。系统分为检索与路由两阶段，评估基于SRA-Bench等六大数据集上的Recall@10与端到端任务成功率。作者不修改在线模型，而是通过离线重写技能表示来提升性能，验证其方法在不同检索器与执行器下的普适性。",
+              "contributionsAndResults": "提出‘能力页’作为新技能表示形式，包含正向触发、负向边界与判别主体三字段，显著提升检索与路由效果。在五个检索器上平均Recall@10提升2.94点，端到端任务成功率平均提高3.62点，并在跨语言场景中展现良好迁移性。结果表明改进索引文本本身可有效缓解文档表达不足问题。",
+              "methodsAndTechniques": "方法核心是聚类对比编译：先将相似技能聚类，再由大模型对比生成各技能的能力页字段。正向触发和判别主体增强检索召回，负向边界则供路由器排除近邻干扰。采用双视图部署，避免负面描述污染嵌入空间。该机制针对性解决文档缺失边界信息的问题，与单纯增强模型或重排序形成互补。",
+              "limitationsAndReadingValue": "局限在于依赖高质量聚类与大模型生成，新增技能需局部重编译，且负向边界仅在候选池内有效，无法弥补召回失败。结论稳健但成本较高。最值得阅读的是其问题建模——将技能能力定义为可执行区域，并据此设计文本增强机制，为技能管理系统提供了可复用的设计范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "技能知晓其邻居：用于技能检索的聚类对比能力页",
+            "summarySections": {
+              "backgroundAndQuestion": "现有技能检索常因相似技能文档难以区分而导致错误路由，即使强大编码器也难以从模糊文本中提取决策边界。本文指出问题根源在于文档本身缺失关键区分信息，而非仅模型能力不足。这属于智能体系统中技能调用的可靠性瓶颈，尤其在高规模技能库下，表面语义相近但功能不同的技能极易被混淆。",
+              "modelAndSetup": "研究设定为从大型技能库中检索并路由正确技能，输入是用户请求，输出是可执行技能标识。系统分为检索与路由两阶段，评估基于SRA-Bench等六大数据集上的Recall@10与端到端任务成功率。作者不修改在线模型，而是通过离线重写技能表示来提升性能，验证其方法在不同检索器与执行器下的普适性。",
+              "contributionsAndResults": "提出‘能力页’作为新技能表示形式，包含正向触发、负向边界与判别主体三字段，显著提升检索与路由效果。在五个检索器上平均Recall@10提升2.94点，端到端任务成功率平均提高3.62点，并在跨语言场景中展现良好迁移性。结果表明改进索引文本本身可有效缓解文档表达不足问题。",
+              "methodsAndTechniques": "方法核心是聚类对比编译：先将相似技能聚类，再由大模型对比生成各技能的能力页字段。正向触发和判别主体增强检索召回，负向边界则供路由器排除近邻干扰。采用双视图部署，避免负面描述污染嵌入空间。该机制针对性解决文档缺失边界信息的问题，与单纯增强模型或重排序形成互补。",
+              "limitationsAndReadingValue": "局限在于依赖高质量聚类与大模型生成，新增技能需局部重编译，且负向边界仅在候选池内有效，无法弥补召回失败。结论稳健但成本较高。最值得阅读的是其问题建模——将技能能力定义为可执行区域，并据此设计文本增强机制，为技能管理系统提供了可复用的设计范式。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "技能检索",
+              "表示学习",
+              "生成式AI"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "评测方法",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "WatchLens: A Configurable Platform for Online Video Recommendation Experiments",
+            "url": "https://arxiv.org/abs/2608.04807",
+            "arxivId": "2608.04807",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "WATCHLENS：一个可配置的在线视频推荐实验平台",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "数据集构建",
+              "评测方法"
+            ],
+            "contentTags": [
+              "视频推荐系统",
+              "在线实验",
+              "用户行为研究",
+              "播放日志",
+              "开放平台"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "研究视频推荐系统如何影响用户行为需要在线实验，但现有工具难以同时控制推荐策略并记录细粒度的播放行为。传统离线数据只能反映历史策略下的用户反应，无法揭示因果效应。虽然已有用户研究平台支持内容展示和交互记录，但缺乏对视频特有行为（如观看时长、跳转路径）与推荐上下文的联动记录，导致分析时需事后关联，易出错。这使得研究推荐策略对会话级行为的影响变得困难。",
+              "modelAndSetup": "论文构建了一个名为 WATCHLENS 的可配置实验系统，用于开展在线视频推荐研究。研究人员可在统一平台上设置不同用户组，每组使用相同的界面和内容池，但应用不同的推荐策略（如首页流与观看页策略独立配置）。系统通过标准化事件追踪记录用户的每一次播放、暂停、滑动等行为，并实时绑定该行为发生的推荐策略和排序位置，形成带上下文的完整行为日志，支持后续对点击率、观看时长、会话长度等指标的跨组比较。",
+              "contributionsAndResults": "主要贡献是提出了 WATCHLENS 这一开源、模块化的实验平台，首次实现了推荐策略与视频播放行为在事件级别的直接关联。平台支持灵活替换界面、推荐算法和内容源，且日志自带曝光上下文，无需后处理即可进行因果分析。在一个短视屏案例中，系统成功验证了相似性策略比多样性策略更能延长单次观看时长和整体会话时间，证明其具备支持精细实验的能力。",
+              "methodsAndTechniques": "核心设计在于模块化解耦与暴露感知日志机制。前端界面、推荐策略和内容源通过插件层独立配置，互不影响。所有用户行为由统一的事件追踪器捕获，关键创新是在每个播放事件生成时即嵌入推荐策略类型和排名位置，确保行为与上下文的一致性。后台自动计算常用指标并提供分析接口，使研究人员能直接基于原始事件流进行会话级行为建模与策略对比。",
+              "limitationsAndReadingValue": "当前版本为单服务器部署，高并发性能尚未验证，限制了大规模实验的应用。移动端原生支持也待完善。尽管如此，其系统设计清晰解决了在线视频实验中策略控制与行为观测脱节的问题。最值得阅读的是其架构设计与案例分析，尤其适合关注真实用户行为评估、推荐系统实验方法或希望复现实验的研究者借鉴其工程实现思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "WATCHLENS：一个可配置的在线视频推荐实验平台",
+            "summarySections": {
+              "backgroundAndQuestion": "研究视频推荐系统如何影响用户行为需要在线实验，但现有工具难以同时控制推荐策略并记录细粒度的播放行为。传统离线数据只能反映历史策略下的用户反应，无法揭示因果效应。虽然已有用户研究平台支持内容展示和交互记录，但缺乏对视频特有行为（如观看时长、跳转路径）与推荐上下文的联动记录，导致分析时需事后关联，易出错。这使得研究推荐策略对会话级行为的影响变得困难。",
+              "modelAndSetup": "论文构建了一个名为 WATCHLENS 的可配置实验系统，用于开展在线视频推荐研究。研究人员可在统一平台上设置不同用户组，每组使用相同的界面和内容池，但应用不同的推荐策略（如首页流与观看页策略独立配置）。系统通过标准化事件追踪记录用户的每一次播放、暂停、滑动等行为，并实时绑定该行为发生的推荐策略和排序位置，形成带上下文的完整行为日志，支持后续对点击率、观看时长、会话长度等指标的跨组比较。",
+              "contributionsAndResults": "主要贡献是提出了 WATCHLENS 这一开源、模块化的实验平台，首次实现了推荐策略与视频播放行为在事件级别的直接关联。平台支持灵活替换界面、推荐算法和内容源，且日志自带曝光上下文，无需后处理即可进行因果分析。在一个短视屏案例中，系统成功验证了相似性策略比多样性策略更能延长单次观看时长和整体会话时间，证明其具备支持精细实验的能力。",
+              "methodsAndTechniques": "核心设计在于模块化解耦与暴露感知日志机制。前端界面、推荐策略和内容源通过插件层独立配置，互不影响。所有用户行为由统一的事件追踪器捕获，关键创新是在每个播放事件生成时即嵌入推荐策略类型和排名位置，确保行为与上下文的一致性。后台自动计算常用指标并提供分析接口，使研究人员能直接基于原始事件流进行会话级行为建模与策略对比。",
+              "limitationsAndReadingValue": "当前版本为单服务器部署，高并发性能尚未验证，限制了大规模实验的应用。移动端原生支持也待完善。尽管如此，其系统设计清晰解决了在线视频实验中策略控制与行为观测脱节的问题。最值得阅读的是其架构设计与案例分析，尤其适合关注真实用户行为评估、推荐系统实验方法或希望复现实验的研究者借鉴其工程实现思路。"
+            },
+            "contentTags": [
+              "视频推荐系统",
+              "在线实验",
+              "用户行为研究",
+              "播放日志",
+              "开放平台"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "数据集构建",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+            "url": "https://arxiv.org/abs/2608.04302",
+            "arxivId": "2608.04302",
+            "date": "2026-08-05",
+            "source": "arXiv",
+            "categories": [
+              "cs.CV",
+              "cs.IR",
+              "cs.MM"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "CLIP-CC-Bench: 评估视频语言模型中的段落级视频描述",
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "视频语言模型",
+              "长文本生成",
+              "评测方法",
+              "多模态生成",
+              "语义相似度"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前视频语言模型的评测大多依赖短片段和单句指标，难以反映其生成连贯、详细段落的能力。传统基于n-gram的指标无法捕捉语义一致性，而LLM-as-judge方法又缺乏透明性和稳定性。本文指出，现有评测体系无法有效衡量模型在长视频理解中兼顾整体叙事与细节还原的双重能力。",
+              "modelAndSetup": "作者构建了CLIP-CC-Bench，一个包含200个90秒电影片段的数据集，每个片段配有专家撰写的段落级描述。评测采用5种先进文本嵌入模型作为裁判，通过粗粒度（段落级）和细粒度（句子级）语义匹配相结合的方式，综合评估生成描述的质量，并使用Borda计分法聚合多裁判结果。",
+              "contributionsAndResults": "论文提出了首个专注于段落级视频描述的可靠评测基准，揭示了当前模型普遍存在‘重整体、轻细节’的问题——即能把握情节主干却遗漏关键视觉细节。实验显示，Transformer架构模型表现领先，而专门的时间建模设计并未带来优势，挑战了某些主流设计假设。",
+              "methodsAndTechniques": "方法的关键在于双粒度语义匹配与多模型集成。粗粒度匹配确保生成内容与整体语义一致，细粒度匹配防止模型忽略具体动作和属性。通过组合多种嵌入模型并采用排序聚合，有效降低了单一模型的偏见，使评测结果更具鲁棒性和可解释性，避免了黑箱打分的不稳定性。",
+              "limitationsAndReadingValue": "该评测局限于电影叙事场景，排除了专有名词也限制了现实对话的适用性。此外，仅依赖自动嵌入相似度，尚未验证与人类判断的相关性。尽管如此，其严谨的构建原则和可靠的内部一致性分析，使其成为研究长视频理解评测的必读工作，尤其值得借鉴其多维度评估设计。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "CLIP-CC-Bench: 评估视频语言模型中的段落级视频描述",
+            "summarySections": {
+              "backgroundAndQuestion": "当前视频语言模型的评测大多依赖短片段和单句指标，难以反映其生成连贯、详细段落的能力。传统基于n-gram的指标无法捕捉语义一致性，而LLM-as-judge方法又缺乏透明性和稳定性。本文指出，现有评测体系无法有效衡量模型在长视频理解中兼顾整体叙事与细节还原的双重能力。",
+              "modelAndSetup": "作者构建了CLIP-CC-Bench，一个包含200个90秒电影片段的数据集，每个片段配有专家撰写的段落级描述。评测采用5种先进文本嵌入模型作为裁判，通过粗粒度（段落级）和细粒度（句子级）语义匹配相结合的方式，综合评估生成描述的质量，并使用Borda计分法聚合多裁判结果。",
+              "contributionsAndResults": "论文提出了首个专注于段落级视频描述的可靠评测基准，揭示了当前模型普遍存在‘重整体、轻细节’的问题——即能把握情节主干却遗漏关键视觉细节。实验显示，Transformer架构模型表现领先，而专门的时间建模设计并未带来优势，挑战了某些主流设计假设。",
+              "methodsAndTechniques": "方法的关键在于双粒度语义匹配与多模型集成。粗粒度匹配确保生成内容与整体语义一致，细粒度匹配防止模型忽略具体动作和属性。通过组合多种嵌入模型并采用排序聚合，有效降低了单一模型的偏见，使评测结果更具鲁棒性和可解释性，避免了黑箱打分的不稳定性。",
+              "limitationsAndReadingValue": "该评测局限于电影叙事场景，排除了专有名词也限制了现实对话的适用性。此外，仅依赖自动嵌入相似度，尚未验证与人类判断的相关性。尽管如此，其严谨的构建原则和可靠的内部一致性分析，使其成为研究长视频理解评测的必读工作，尤其值得借鉴其多维度评估设计。"
+            },
+            "contentTags": [
+              "视频语言模型",
+              "长文本生成",
+              "评测方法",
+              "多模态生成",
+              "语义相似度"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Towards Decentralized Searcher Competition in MEV Markets (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
