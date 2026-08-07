@@ -1,0 +1,1805 @@
+{
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-07T04:36:33.377586+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-06",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202608060000 TO 202608062359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202608060000 TO 202608062359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 9
+      },
+      "arxivTotalResults": 9,
+      "fetchedCount": 9,
+      "fetchedPapers": [
+        {
+          "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+          "url": "https://arxiv.org/abs/2608.06362",
+          "arxivId": "2608.06362",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.CL",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while naive optional stopping with an ordinary confidence interval invalidates the stated level. We make such an evaluation stop as soon as its evidence suffices, with the guarantee intact. The Action-Informed Value Assessment Tool (AIVAT) reduces variance in imperfect-information games through conditional mean-zero corrections, by a median $54\\times$ across 15 LLM agent configurations spanning 71,439 paired Heads-Up No-Limit Hold'em (HUNL) hands, but does not say when to stop. We combine AIVAT with continuously monitored Confidence Sequences (CSs) into anytime-valid AIVAT (AV-AIVAT), whose online value model learns only from past games so that no game scores its own correction. At the nominal 95\\% level and a target precision of $\\pm1$ Big Blind, raw outcomes need a median $74\\times$ as many hands as AIVAT-corrected outcomes to stop under the Asymptotic CS (AsympCS). Exact finite-sample certification uses the Empirical-Bernstein CS (EB-CS), which needs an independently justified bound on corrected payoffs. We establish such a bound structurally for Leduc hold'em and characterize a width floor set by the CS's bet cap and that bound, which governs how much of a variance gain becomes earlier stopping; the descriptive HUNL EB-CS runs show a median $1.37\\times$ stopping-time ratio. AV-AIVAT turns variance reduction into efficient, auditable early stopping while separating asymptotic screening from exact certification, so an evaluation can stop the moment its evidence suffices and hand a third party everything needed to recheck the verdict at that very stopping time."
+        },
+        {
+          "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+          "url": "https://arxiv.org/abs/2608.06353",
+          "arxivId": "2608.06353",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the Safe AI paradigm that compute is an effective governance lever. We situate our work as a compliance or commons overlay on a deployer. One governance period is an extensive form game in which verified human stakeholders arrive sequentially and contribute, on a provision or a rejection market, in a governance currency that is deliberately distinct from the agents compute. A funding aggregator turns raw contributions into breadth weighted effective supports - a two threshold gate with hysteresis converts net support into a binary authorization that, through a coupling map bounded by an exogenously certified safety ceiling, releases a metered compute budget - realized in hardware as a signed compute license so that the decision is self-enforcing. We characterize the class of agents the mechanism can govern and isolate manipulation of the governing electorate by the governed agent as the central open problem. We also introduce several challenges addressing manipulation of governing electorate by the governed agents."
+        },
+        {
+          "title": "Fair and Efficient Balanced Allocations for Additive Valuations",
+          "url": "https://arxiv.org/abs/2608.06325",
+          "arxivId": "2608.06325",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the existence of fair and efficient allocations of indivisible goods under the balancedness constraint, which requires that any two agents' bundles differ in size by at most one. Our main result establishes the existence of balanced allocations that satisfy envy-freeness up to one good (EF1) and fractional Pareto optimality (fPO) for arbitrary additive valuations. This generalizes a recent result of Kawase et al. (2026), which establishes existence only for personalized bivalued valuations or when there are at most two distinct valuation types. Our proof applies the Knaster-Kuratowski-Mazurkiewicz (KKM) lemma to a weighted-welfare duality framework and develops a novel price-interlacing lemma to overcome barriers encountered by prior work. We extend this technique to category constraints, also known as partition-matroid constraints. In this setting, we establish the existence of an fPO allocation satisfying a weaker, category-sensitive relaxation of EF1, under which envy can be eliminated by removing at most one good from each category. All proofs in this paper were obtained using GPT-5.6-Sol with guidance from the authors. The authors verified the proofs, expanded the exposition, and simplified the arguments with assistance from GPT-5.6-Sol and Claude Fable 5."
+        },
+        {
+          "title": "Candidate Resignation Monotonicity in Approval-Based Committee Elections",
+          "url": "https://arxiv.org/abs/2608.06156",
+          "arxivId": "2608.06156",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Approval-based committee (ABC) elections select a fixed-size committee of candidates based on voters' approval preferences. We study a setting where elected members may resign and formalize resignation monotonicity: when we re-run the voting rule after resignations, a resignation monotone rule must still elect all remaining previously winning candidates. We show that many prominent ABC rules fail this property, and by connecting our notion to prior work on ABC elections with dynamic candidate sets, we show that the justified representation (JR) axiom is incompatible with resignation monotonicity. It turns out that fractional committee voting does not suffer from this issue: rules based on using maximum flows in the network representation of an election instance can satisfy both representation axioms and resignation monotonicity. We design an integral version of maximum flow, the Maximum Payment Rule (MPR), and show that it satisfies a relaxed form of resignation monotonicity that only requires there to be some way of replacing the resigning candidates in a way that guarantees the PJR+ axiom. MPR is NP-hard to compute in general, but becomes tractable in structured domains. Finally, we study a strategic setting where a losing candidate may introduce new weak candidates to the election to try to become a winner. We show that all resignation monotone rules as well as many sequential rules are immune, but that the PAV rule can be manipulated in this way."
+        },
+        {
+          "title": "Large-Market Discipline in Combinatorial Double Auctions: No Assembly, Bundle Selection, and Complementarities",
+          "url": "https://arxiv.org/abs/2608.06134",
+          "arxivId": "2608.06134",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.GT"
+          ],
+          "abstract": "We study double auctions for markets in which goods are valuable in bundles, such as data, model weights, and fine-tuned AI assets. A key friction in such markets is No Assembly: a platform may be unable, for legal or technical reasons, to combine components supplied by different sellers into a single bundle. We formulate a combinatorial buyer's-bid double auction under this constraint. Under explicit stability and price-influence conditions (maintained in general, and for two goods derived from local price-taking and a feedback bound), each bundle submarket inherits the large-market discipline of single-good double auctions: bid shading vanishes, and clearing prices concentrate on competitive levels and track the common value (price discovery). The key incentive step, that bidding on a bundle creates no first-order strategic distortion beyond the single-good logic, is proved for two goods; for larger item sets it remains a maintained condition. Multi-agent reinforcement-learning simulations decompose the welfare loss and indicate that No Assembly, not strategic shading, is the binding finite-market friction, with both losses small in moderately thick markets and declining with complementarity amongst goods."
+        },
+        {
+          "title": "There Ain't No Such Thing as a Free Equilibrium",
+          "url": "https://arxiv.org/abs/2608.06327",
+          "arxivId": "2608.06327",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "I argue that there is a sense in which universal equilibrium (defined loosely) existence in games is incompatible with eschewing strictly dominated strategies and a sense in which it isn't."
+        },
+        {
+          "title": "Stochastic Choice with Distribution-Dependent Preferences",
+          "url": "https://arxiv.org/abs/2608.06152",
+          "arxivId": "2608.06152",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We develop a continuous-time stochastic choice theory with endogenous preference evolution. Unlike dynamic random utility, observed behavior affects future preferences through the conditional distribution of latent preference states, generating endogenous distributional feedback. We show that this feedback has observable behavioral implications and characterize stochastic choice by a behavioral representation consisting of contemporaneous choice and continuation behavior. This representation is identified from stochastic choice, yields a rigidity result linking structural preference dynamics to observable behavior, and characterizes exactly when distribution dependent utility is behaviorally reducible to dynamic random utility. We further prove a behavioral impossibility theorem: stochastic choice arrays exhibiting behavioral distributional feedback admit no dynamic random utility representation. On the probabilistic side, we establish existence and weak uniqueness for the underlying conditional McKean-Vlasov system with conditional law feedback. The structure unifies endogenous information, latent preference dynamics, behavioral identification, and stochastic choice within a single continuous-time model."
+        },
+        {
+          "title": "Strategic Heterogeneity: Welfare Gains from Secession and Immigration",
+          "url": "https://arxiv.org/abs/2608.06092",
+          "arxivId": "2608.06092",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "This paper investigates the strategic and welfare properties of endogenous population partitioning (secession) within large-population anonymous games featuring strategic heterogeneity. We consider a continuum-player framework with a binary action space where players are categorized either as fol- lowers, who experience positive network externalities from conformity, or as contrarians, who seek distinctiveness via anti-conformism. We fully characterize the set of Nash equilibria and establish con- ditions under which costless secession yields structural Pareto improvements. We demonstrate that in any strategically mixed society, every mixed-strategy Nash equilibrium admits a Pareto-improving se- cession. With finitely many types, secession systematically mitigates coordination frictions, enhancing both individual payoffs and aggregate utility. Furthermore, we characterize social planner configura- tions optimizing weighted aggregate utility, establishing a formal mathematical isomorphism between optimal jurisdictional design and the theory of Bayesian persuasion solved via concavification. Finally, we derive the structural conditions governing migration stability when subgroups can unilaterally re- locate across distinct societies."
+        },
+        {
+          "title": "The Institutional Window: Occupation- and Jurisdiction-Specific Calibration of Liability Signaling for Preserved Human Fallback Capability",
+          "url": "https://arxiv.org/abs/2608.05969",
+          "arxivId": "2608.05969",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Problem definition. When generative AI produces expert artifacts clients cannot distinguish from a competent provider's, the classical cost-based quality signal collapses and only outcome-contingent commitments can separate types. Such a commitment certifies an endogenous, perishable asset: the human fallback capability a firm builds by keeping staff engaged with cases the AI handles, eroding otherwise. Prior work is silent on where that mechanism holds. We ask where, across occupations and liability institutions, it remains informative. Methodology/results. We introduce an institutional wedge between the liability cap a firm posts and the retained exposure that carries information, generated by four legal primitives: the cost rule, the enforceability of penalty clauses, the displacement of private liability by state liability or pooled indemnity, and mandatory limits on contractual liability. The wedge compresses the separating type space into a signaling window, bounded above by solvency and the penalty doctrine and below where standard-terms control voids caps beneath a threshold. We calibrate five occupations and seven jurisdictions on published evidence. In common-law agreed-damages channels the provability gross-up is unavailable whenever verifiability falls below 1/m, turning a contracting problem into an operational one. Verifiability investment widens the window where the ceiling binds but narrows it where the cap floor binds. In an agent-based market, within the tested policy class, every empty-window cell converges to zero engagement and skill collapse. Managerial implications. Liability institutions are a workforce-capability instrument, not merely a risk-allocation device. Firms should target the binding margin in each jurisdiction; cap floors and pooled indemnity each suppress the signal sustaining fallback capacity."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+              "url": "https://arxiv.org/abs/2608.06362",
+              "arxivId": "2608.06362",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.CL",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while naive optional stopping with an ordinary confidence interval invalidates the stated level. We make such an evaluation stop as soon as its evidence suffices, with the guarantee intact. The Action-Informed Value Assessment Tool (AIVAT) reduces variance in imperfect-information games through conditional mean-zero corrections, by a median $54\\times$ across 15 LLM agent configurations spanning 71,439 paired Heads-Up No-Limit Hold'em (HUNL) hands, but does not say when to stop. We combine AIVAT with continuously monitored Confidence Sequences (CSs) into anytime-valid AIVAT (AV-AIVAT), whose online value model learns only from past games so that no game scores its own correction. At the nominal 95\\% level and a target precision of $\\pm1$ Big Blind, raw outcomes need a median $74\\times$ as many hands as AIVAT-corrected outcomes to stop under the Asymptotic CS (AsympCS). Exact finite-sample certification uses the Empirical-Bernstein CS (EB-CS), which needs an independently justified bound on corrected payoffs. We establish such a bound structurally for Leduc hold'em and characterize a width floor set by the CS's bet cap and that bound, which governs how much of a variance gain becomes earlier stopping; the descriptive HUNL EB-CS runs show a median $1.37\\times$ stopping-time ratio. AV-AIVAT turns variance reduction into efficient, auditable early stopping while separating asymptotic screening from exact certification, so an evaluation can stop the moment its evidence suffices and hand a third party everything needed to recheck the verdict at that very stopping time."
+            },
+            {
+              "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+              "url": "https://arxiv.org/abs/2608.06353",
+              "arxivId": "2608.06353",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the Safe AI paradigm that compute is an effective governance lever. We situate our work as a compliance or commons overlay on a deployer. One governance period is an extensive form game in which verified human stakeholders arrive sequentially and contribute, on a provision or a rejection market, in a governance currency that is deliberately distinct from the agents compute. A funding aggregator turns raw contributions into breadth weighted effective supports - a two threshold gate with hysteresis converts net support into a binary authorization that, through a coupling map bounded by an exogenously certified safety ceiling, releases a metered compute budget - realized in hardware as a signed compute license so that the decision is self-enforcing. We characterize the class of agents the mechanism can govern and isolate manipulation of the governing electorate by the governed agent as the central open problem. We also introduce several challenges addressing manipulation of governing electorate by the governed agents."
+            },
+            {
+              "title": "Fair and Efficient Balanced Allocations for Additive Valuations",
+              "url": "https://arxiv.org/abs/2608.06325",
+              "arxivId": "2608.06325",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the existence of fair and efficient allocations of indivisible goods under the balancedness constraint, which requires that any two agents' bundles differ in size by at most one. Our main result establishes the existence of balanced allocations that satisfy envy-freeness up to one good (EF1) and fractional Pareto optimality (fPO) for arbitrary additive valuations. This generalizes a recent result of Kawase et al. (2026), which establishes existence only for personalized bivalued valuations or when there are at most two distinct valuation types. Our proof applies the Knaster-Kuratowski-Mazurkiewicz (KKM) lemma to a weighted-welfare duality framework and develops a novel price-interlacing lemma to overcome barriers encountered by prior work. We extend this technique to category constraints, also known as partition-matroid constraints. In this setting, we establish the existence of an fPO allocation satisfying a weaker, category-sensitive relaxation of EF1, under which envy can be eliminated by removing at most one good from each category. All proofs in this paper were obtained using GPT-5.6-Sol with guidance from the authors. The authors verified the proofs, expanded the exposition, and simplified the arguments with assistance from GPT-5.6-Sol and Claude Fable 5."
+            },
+            {
+              "title": "Candidate Resignation Monotonicity in Approval-Based Committee Elections",
+              "url": "https://arxiv.org/abs/2608.06156",
+              "arxivId": "2608.06156",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Approval-based committee (ABC) elections select a fixed-size committee of candidates based on voters' approval preferences. We study a setting where elected members may resign and formalize resignation monotonicity: when we re-run the voting rule after resignations, a resignation monotone rule must still elect all remaining previously winning candidates. We show that many prominent ABC rules fail this property, and by connecting our notion to prior work on ABC elections with dynamic candidate sets, we show that the justified representation (JR) axiom is incompatible with resignation monotonicity. It turns out that fractional committee voting does not suffer from this issue: rules based on using maximum flows in the network representation of an election instance can satisfy both representation axioms and resignation monotonicity. We design an integral version of maximum flow, the Maximum Payment Rule (MPR), and show that it satisfies a relaxed form of resignation monotonicity that only requires there to be some way of replacing the resigning candidates in a way that guarantees the PJR+ axiom. MPR is NP-hard to compute in general, but becomes tractable in structured domains. Finally, we study a strategic setting where a losing candidate may introduce new weak candidates to the election to try to become a winner. We show that all resignation monotone rules as well as many sequential rules are immune, but that the PAV rule can be manipulated in this way."
+            },
+            {
+              "title": "Large-Market Discipline in Combinatorial Double Auctions: No Assembly, Bundle Selection, and Complementarities",
+              "url": "https://arxiv.org/abs/2608.06134",
+              "arxivId": "2608.06134",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "cs.GT"
+              ],
+              "abstract": "We study double auctions for markets in which goods are valuable in bundles, such as data, model weights, and fine-tuned AI assets. A key friction in such markets is No Assembly: a platform may be unable, for legal or technical reasons, to combine components supplied by different sellers into a single bundle. We formulate a combinatorial buyer's-bid double auction under this constraint. Under explicit stability and price-influence conditions (maintained in general, and for two goods derived from local price-taking and a feedback bound), each bundle submarket inherits the large-market discipline of single-good double auctions: bid shading vanishes, and clearing prices concentrate on competitive levels and track the common value (price discovery). The key incentive step, that bidding on a bundle creates no first-order strategic distortion beyond the single-good logic, is proved for two goods; for larger item sets it remains a maintained condition. Multi-agent reinforcement-learning simulations decompose the welfare loss and indicate that No Assembly, not strategic shading, is the binding finite-market friction, with both losses small in moderately thick markets and declining with complementarity amongst goods."
+            },
+            {
+              "title": "There Ain't No Such Thing as a Free Equilibrium",
+              "url": "https://arxiv.org/abs/2608.06327",
+              "arxivId": "2608.06327",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "I argue that there is a sense in which universal equilibrium (defined loosely) existence in games is incompatible with eschewing strictly dominated strategies and a sense in which it isn't."
+            },
+            {
+              "title": "Stochastic Choice with Distribution-Dependent Preferences",
+              "url": "https://arxiv.org/abs/2608.06152",
+              "arxivId": "2608.06152",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We develop a continuous-time stochastic choice theory with endogenous preference evolution. Unlike dynamic random utility, observed behavior affects future preferences through the conditional distribution of latent preference states, generating endogenous distributional feedback. We show that this feedback has observable behavioral implications and characterize stochastic choice by a behavioral representation consisting of contemporaneous choice and continuation behavior. This representation is identified from stochastic choice, yields a rigidity result linking structural preference dynamics to observable behavior, and characterizes exactly when distribution dependent utility is behaviorally reducible to dynamic random utility. We further prove a behavioral impossibility theorem: stochastic choice arrays exhibiting behavioral distributional feedback admit no dynamic random utility representation. On the probabilistic side, we establish existence and weak uniqueness for the underlying conditional McKean-Vlasov system with conditional law feedback. The structure unifies endogenous information, latent preference dynamics, behavioral identification, and stochastic choice within a single continuous-time model."
+            },
+            {
+              "title": "Strategic Heterogeneity: Welfare Gains from Secession and Immigration",
+              "url": "https://arxiv.org/abs/2608.06092",
+              "arxivId": "2608.06092",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "This paper investigates the strategic and welfare properties of endogenous population partitioning (secession) within large-population anonymous games featuring strategic heterogeneity. We consider a continuum-player framework with a binary action space where players are categorized either as fol- lowers, who experience positive network externalities from conformity, or as contrarians, who seek distinctiveness via anti-conformism. We fully characterize the set of Nash equilibria and establish con- ditions under which costless secession yields structural Pareto improvements. We demonstrate that in any strategically mixed society, every mixed-strategy Nash equilibrium admits a Pareto-improving se- cession. With finitely many types, secession systematically mitigates coordination frictions, enhancing both individual payoffs and aggregate utility. Furthermore, we characterize social planner configura- tions optimizing weighted aggregate utility, establishing a formal mathematical isomorphism between optimal jurisdictional design and the theory of Bayesian persuasion solved via concavification. Finally, we derive the structural conditions governing migration stability when subgroups can unilaterally re- locate across distinct societies."
+            },
+            {
+              "title": "The Institutional Window: Occupation- and Jurisdiction-Specific Calibration of Liability Signaling for Preserved Human Fallback Capability",
+              "url": "https://arxiv.org/abs/2608.05969",
+              "arxivId": "2608.05969",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Problem definition. When generative AI produces expert artifacts clients cannot distinguish from a competent provider's, the classical cost-based quality signal collapses and only outcome-contingent commitments can separate types. Such a commitment certifies an endogenous, perishable asset: the human fallback capability a firm builds by keeping staff engaged with cases the AI handles, eroding otherwise. Prior work is silent on where that mechanism holds. We ask where, across occupations and liability institutions, it remains informative. Methodology/results. We introduce an institutional wedge between the liability cap a firm posts and the retained exposure that carries information, generated by four legal primitives: the cost rule, the enforceability of penalty clauses, the displacement of private liability by state liability or pooled indemnity, and mandatory limits on contractual liability. The wedge compresses the separating type space into a signaling window, bounded above by solvency and the penalty doctrine and below where standard-terms control voids caps beneath a threshold. We calibrate five occupations and seven jurisdictions on published evidence. In common-law agreed-damages channels the provability gross-up is unavailable whenever verifiability falls below 1/m, turning a contracting problem into an operational one. Verifiability investment widens the window where the ceiling binds but narrows it where the cap floor binds. In an agent-based market, within the tested policy class, every empty-window cell converges to zero engagement and skill collapse. Managerial implications. Liability institutions are a workforce-capability instrument, not merely a risk-allocation device. Firms should target the binding margin in each jurisdiction; cap floors and pooled indemnity each suppress the signal sustaining fallback capacity."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -2,
+                  "aiRelevance": 10,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 9,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 4,
+                  "guaranteeQuality": 2,
+                  "readingValue": 2,
+                  "penalty": -4,
+                  "aiRelevance": 0,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 1,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 1,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 7,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+              "url": "https://arxiv.org/abs/2608.06362",
+              "arxivId": "2608.06362",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.CL",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 8.4,
+                "total": 32.8
+              }
+            },
+            {
+              "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+              "url": "https://arxiv.org/abs/2608.06353",
+              "arxivId": "2608.06353",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 10.0,
+                "agtRelevance": 9.0,
+                "penalty": -2.0,
+                "baseTotal": 25.0,
+                "bonus": 8.3,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Fair and Efficient Balanced Allocations for Additive Valuations",
+              "url": "https://arxiv.org/abs/2608.06325",
+              "arxivId": "2608.06325",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 2.7,
+                "total": 26.7
+              }
+            },
+            {
+              "title": "Candidate Resignation Monotonicity in Approval-Based Committee Elections",
+              "url": "https://arxiv.org/abs/2608.06156",
+              "arxivId": "2608.06156",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "bonus": 1.7,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "Large-Market Discipline in Combinatorial Double Auctions: No Assembly, Bundle Selection, and Complementarities",
+              "url": "https://arxiv.org/abs/2608.06134",
+              "arxivId": "2608.06134",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.GN",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 26.0,
+                "bonus": 7.8,
+                "total": 30.4
+              }
+            },
+            {
+              "title": "There Ain't No Such Thing as a Free Equilibrium",
+              "url": "https://arxiv.org/abs/2608.06327",
+              "arxivId": "2608.06327",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Stochastic Choice with Distribution-Dependent Preferences",
+              "url": "https://arxiv.org/abs/2608.06152",
+              "arxivId": "2608.06152",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Strategic Heterogeneity: Welfare Gains from Secession and Immigration",
+              "url": "https://arxiv.org/abs/2608.06092",
+              "arxivId": "2608.06092",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "The Institutional Window: Occupation- and Jurisdiction-Specific Calibration of Liability Signaling for Preserved Human Fallback Capability",
+              "url": "https://arxiv.org/abs/2608.05969",
+              "arxivId": "2608.05969",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 26.0,
+                "bonus": 6.1,
+                "total": 22.5
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+          "url": "https://arxiv.org/abs/2608.06362",
+          "arxivId": "2608.06362",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.CL",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 32.8
+          }
+        },
+        {
+          "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+          "url": "https://arxiv.org/abs/2608.06353",
+          "arxivId": "2608.06353",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 9.0,
+            "penalty": -2.0,
+            "baseTotal": 25.0,
+            "bonus": 8.3,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Fair and Efficient Balanced Allocations for Additive Valuations",
+          "url": "https://arxiv.org/abs/2608.06325",
+          "arxivId": "2608.06325",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 2.7,
+            "total": 26.7
+          }
+        },
+        {
+          "title": "Candidate Resignation Monotonicity in Approval-Based Committee Elections",
+          "url": "https://arxiv.org/abs/2608.06156",
+          "arxivId": "2608.06156",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 1.7,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Large-Market Discipline in Combinatorial Double Auctions: No Assembly, Bundle Selection, and Complementarities",
+          "url": "https://arxiv.org/abs/2608.06134",
+          "arxivId": "2608.06134",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 7.8,
+            "total": 30.4
+          }
+        },
+        {
+          "title": "There Ain't No Such Thing as a Free Equilibrium",
+          "url": "https://arxiv.org/abs/2608.06327",
+          "arxivId": "2608.06327",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Stochastic Choice with Distribution-Dependent Preferences",
+          "url": "https://arxiv.org/abs/2608.06152",
+          "arxivId": "2608.06152",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Strategic Heterogeneity: Welfare Gains from Secession and Immigration",
+          "url": "https://arxiv.org/abs/2608.06092",
+          "arxivId": "2608.06092",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "The Institutional Window: Occupation- and Jurisdiction-Specific Calibration of Liability Signaling for Preserved Human Fallback Capability",
+          "url": "https://arxiv.org/abs/2608.05969",
+          "arxivId": "2608.05969",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 6.1,
+            "total": 22.5
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+          "url": "https://arxiv.org/abs/2608.06362",
+          "arxivId": "2608.06362",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.CL",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 32.8
+          }
+        },
+        {
+          "title": "Large-Market Discipline in Combinatorial Double Auctions: No Assembly, Bundle Selection, and Complementarities",
+          "url": "https://arxiv.org/abs/2608.06134",
+          "arxivId": "2608.06134",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "econ.GN",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 7.8,
+            "total": 30.4
+          }
+        },
+        {
+          "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+          "url": "https://arxiv.org/abs/2608.06353",
+          "arxivId": "2608.06353",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 9.0,
+            "penalty": -2.0,
+            "baseTotal": 25.0,
+            "bonus": 8.3,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Fair and Efficient Balanced Allocations for Additive Valuations",
+          "url": "https://arxiv.org/abs/2608.06325",
+          "arxivId": "2608.06325",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 2.7,
+            "total": 26.7
+          }
+        },
+        {
+          "title": "Candidate Resignation Monotonicity in Approval-Based Committee Elections",
+          "url": "https://arxiv.org/abs/2608.06156",
+          "arxivId": "2608.06156",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 1.7,
+            "total": 24.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+            "url": "https://arxiv.org/abs/2608.06362",
+            "arxivId": "2608.06362",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI",
+              "cs.CL",
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "AV-AIVAT：通过认证的任意时间有效停止在不完美信息博弈中实现74倍更便宜的智能体评估",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "理论推导",
+              "评测方法",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "智能体",
+              "评测方法",
+              "在线算法",
+              "大语言模型"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在不完美信息博弈中评估两个智能体强弱需大量对局，每局都消耗计算资源或专家时间。传统固定预算评估要么浪费资源，要么无法得出结论，而随意中途停止会破坏统计有效性。本文解决如何在保证统计可靠性的同时尽早停止评估的问题，尤其适用于高成本、高方差的交互式智能体评测场景。",
+              "modelAndSetup": "模型设定一个评估者持续观察两个固定策略智能体在如德州扑克等不完美信息游戏中对战。每局产生原始得分，通过AIVAT方法利用已知动作分布进行零均值修正以降低方差。评估者使用仅基于历史数据更新的价值函数生成修正项，并结合置信序列（CS）实现在任意时间点停止而不影响统计保证。",
+              "contributionsAndResults": "论文提出AV-AIVAT框架，将AIVAT方差缩减与任意时间有效的置信序列结合，实现了中位数74倍的样本效率提升。在±1BB精度下，相比原始得分，修正后得分显著减少所需对局数。同时提供精确有限样本证书与高效渐近区间，使评估既高效又可审计。",
+              "methodsAndTechniques": "核心技术是构建可预测的AIVAT接口，确保当前对局不参与自身修正，保持条件零均值性质。采用两种置信序列：基于有界支付的EB-CS提供精确有限样本保证，渐近CS则自适应实际方差实现高效监控。通过分离渐近筛选与精确认证，实现安全的在线学习与早停。",
+              "limitationsAndReadingValue": "局限在于EB-CS的速度受限于声明的支付边界，若边界宽松则难以转化为早停优势；HUNL中的修正支付尚无解析边界，限制了精确证书的应用。最值得读的是其系统性框架设计，平衡了效率、有效性与可验证性，为高成本智能体评测提供了实用解决方案。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "AV-AIVAT：通过认证的任意时间有效停止在不完美信息博弈中实现74倍更便宜的智能体评估",
+            "summarySections": {
+              "backgroundAndQuestion": "在不完美信息博弈中评估两个智能体强弱需大量对局，每局都消耗计算资源或专家时间。传统固定预算评估要么浪费资源，要么无法得出结论，而随意中途停止会破坏统计有效性。本文解决如何在保证统计可靠性的同时尽早停止评估的问题，尤其适用于高成本、高方差的交互式智能体评测场景。",
+              "modelAndSetup": "模型设定一个评估者持续观察两个固定策略智能体在如德州扑克等不完美信息游戏中对战。每局产生原始得分，通过AIVAT方法利用已知动作分布进行零均值修正以降低方差。评估者使用仅基于历史数据更新的价值函数生成修正项，并结合置信序列（CS）实现在任意时间点停止而不影响统计保证。",
+              "contributionsAndResults": "论文提出AV-AIVAT框架，将AIVAT方差缩减与任意时间有效的置信序列结合，实现了中位数74倍的样本效率提升。在±1BB精度下，相比原始得分，修正后得分显著减少所需对局数。同时提供精确有限样本证书与高效渐近区间，使评估既高效又可审计。",
+              "methodsAndTechniques": "核心技术是构建可预测的AIVAT接口，确保当前对局不参与自身修正，保持条件零均值性质。采用两种置信序列：基于有界支付的EB-CS提供精确有限样本保证，渐近CS则自适应实际方差实现高效监控。通过分离渐近筛选与精确认证，实现安全的在线学习与早停。",
+              "limitationsAndReadingValue": "局限在于EB-CS的速度受限于声明的支付边界，若边界宽松则难以转化为早停优势；HUNL中的修正支付尚无解析边界，限制了精确证书的应用。最值得读的是其系统性框架设计，平衡了效率、有效性与可验证性，为高成本智能体评测提供了实用解决方案。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "智能体",
+              "评测方法",
+              "在线算法",
+              "大语言模型"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "理论推导",
+              "评测方法",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Large-Market Discipline in Combinatorial Double Auctions: No Assembly, Bundle Selection, and Complementarities",
+            "url": "https://arxiv.org/abs/2608.06134",
+            "arxivId": "2608.06134",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "econ.GN",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "组合双边拍卖中的大市场纪律：不可组装性、捆绑选择与互补性",
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "实验验证",
+              "模型构建"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在商品具有互补性的市场中，简单的分散化拍卖仍能有效运作？现有理论表明单物品拍卖在大市场下表现良好，但当买家重视商品捆绑且平台无法跨卖家组装时（如因法律或技术限制），这一结论不再显然。本文填补了组合拍卖中‘不可组装’摩擦下的大市场行为分析空白。",
+              "modelAndSetup": "模型设定一个买卖双方提交捆绑报价的双边拍卖，每个交易者至多持有一个捆绑。关键约束是‘不可组装’：买方所需捆绑必须由单一卖家提供，不能拼合。采用相关私有价值模型，买家价值含共同成分与个体冲击，并通过互补性参数刻画捆绑溢价。机制采用买方出价双拍（BBDA）。",
+              "contributionsAndResults": "论文证明，在市场足够厚且满足稳定性与反馈有界条件下，组合拍卖继承单物品的大市场纪律：买家合谋性出价消失，清算价格集中于竞争水平并发现共同价值。数值模拟显示，‘不可组装’导致的结构性效率损失远大于策略性出价，且两者均随互补性增强而减小。",
+              "methodsAndTechniques": "作者通过‘子市场约简’技术，将组合拍卖局部还原为单物品拍卖进行分析。核心在于证明跨子市场重新分配的反馈效应不会破坏一阶激励结构。对于两物品情形，该结论被严格证明；更多物品时作为维持性假设。结合多智能体强化学习模拟，分解并量化了不同来源的福利损失。",
+              "limitationsAndReadingValue": "主要局限在于对多物品情形的关键假设尚未从原生条件推出，且依赖高斯分布等强正则性。尽管如此，论文清晰揭示了互补性如何内生促进市场整合，从而缓解结构性摩擦。最值得阅读的是其模型抽象、子市场约简逻辑及模拟对现实市场设计的启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "组合双边拍卖中的大市场纪律：不可组装性、捆绑选择与互补性",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在商品具有互补性的市场中，简单的分散化拍卖仍能有效运作？现有理论表明单物品拍卖在大市场下表现良好，但当买家重视商品捆绑且平台无法跨卖家组装时（如因法律或技术限制），这一结论不再显然。本文填补了组合拍卖中‘不可组装’摩擦下的大市场行为分析空白。",
+              "modelAndSetup": "模型设定一个买卖双方提交捆绑报价的双边拍卖，每个交易者至多持有一个捆绑。关键约束是‘不可组装’：买方所需捆绑必须由单一卖家提供，不能拼合。采用相关私有价值模型，买家价值含共同成分与个体冲击，并通过互补性参数刻画捆绑溢价。机制采用买方出价双拍（BBDA）。",
+              "contributionsAndResults": "论文证明，在市场足够厚且满足稳定性与反馈有界条件下，组合拍卖继承单物品的大市场纪律：买家合谋性出价消失，清算价格集中于竞争水平并发现共同价值。数值模拟显示，‘不可组装’导致的结构性效率损失远大于策略性出价，且两者均随互补性增强而减小。",
+              "methodsAndTechniques": "作者通过‘子市场约简’技术，将组合拍卖局部还原为单物品拍卖进行分析。核心在于证明跨子市场重新分配的反馈效应不会破坏一阶激励结构。对于两物品情形，该结论被严格证明；更多物品时作为维持性假设。结合多智能体强化学习模拟，分解并量化了不同来源的福利损失。",
+              "limitationsAndReadingValue": "主要局限在于对多物品情形的关键假设尚未从原生条件推出，且依赖高斯分布等强正则性。尽管如此，论文清晰揭示了互补性如何内生促进市场整合，从而缓解结构性摩擦。最值得阅读的是其模型抽象、子市场约简逻辑及模拟对现实市场设计的启示。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "博弈学习"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "实验验证",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+            "url": "https://arxiv.org/abs/2608.06353",
+            "arxivId": "2608.06353",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Resourced Authority: 一种用于部署型AI智能体参与治理的机制设计模型",
+            "researchParadigmTags": [
+              "机制设计",
+              "模型构建",
+              "均衡分析",
+              "理论推导",
+              "系统框架"
+            ],
+            "contentTags": [
+              "机制设计",
+              "AI治理",
+              "多智能体系统",
+              "计算资源控制",
+              "参与式治理"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI智能体广泛部署，如何让受影响的利益相关者持续参与其治理成为关键问题。传统对齐关注内部训练，而本文聚焦‘外环’问题：谁有权运行AI、在何种条件下运行。现有机制难以防止部署方滥用权力，因此需要一种基于资源调控的自执行治理模式，使授权决策由社区驱动而非单方面控制。",
+              "modelAndSetup": "模型设定一个由人类利益相关者组成的选举群体，通过两种市场（授权与终止）以治理货币进行贡献。系统采用二次方融资聚合器计算有效支持力度，并结合双阈值门控机制决定是否发放计算预算。计算释放受硬件级安全上限约束，且决策通过签名计算许可证实现物理自执行，确保治理结果不可篡改。",
+              "contributionsAndResults": "论文提出了首个将参与式治理与计算资源绑定的形式化机制，证明了该机制具备侧向激励相容性、早期承诺激励和广度加权授权定理：授权结果取决于支持者的数量与其强度的乘积，而非财富集中度。这使得广泛但小额的支持能够压倒少数高价值反对，真正体现集体意志。",
+              "methodsAndTechniques": "作者融合了供给点机制、二次方融资与预测市场思想，构建了一个带滞后效应的双侧门控博弈。通过完美贝叶斯均衡分析，结合事实验证与语义裁决分离的设计，论证了机制在不完全信息下的稳健性。关键技术在于将授权决策转化为硬件可执行的预算控制，从而实现治理与执行的一体化。",
+              "limitationsAndReadingValue": "该机制依赖可信的语义验证器来裁定伤害事件，这在争议性强或后果延迟的场景中可能难以实施。此外，AI智能体可能通过声誉操控影响选民判断，构成尚未解决的核心漏洞。尽管如此，本文的价值在于将治理原则转化为可验证的机制属性，特别适合关注安全可控AI部署的研究者深入阅读其模型抽象与开放问题。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Resourced Authority: 一种用于部署型AI智能体参与治理的机制设计模型",
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI智能体广泛部署，如何让受影响的利益相关者持续参与其治理成为关键问题。传统对齐关注内部训练，而本文聚焦‘外环’问题：谁有权运行AI、在何种条件下运行。现有机制难以防止部署方滥用权力，因此需要一种基于资源调控的自执行治理模式，使授权决策由社区驱动而非单方面控制。",
+              "modelAndSetup": "模型设定一个由人类利益相关者组成的选举群体，通过两种市场（授权与终止）以治理货币进行贡献。系统采用二次方融资聚合器计算有效支持力度，并结合双阈值门控机制决定是否发放计算预算。计算释放受硬件级安全上限约束，且决策通过签名计算许可证实现物理自执行，确保治理结果不可篡改。",
+              "contributionsAndResults": "论文提出了首个将参与式治理与计算资源绑定的形式化机制，证明了该机制具备侧向激励相容性、早期承诺激励和广度加权授权定理：授权结果取决于支持者的数量与其强度的乘积，而非财富集中度。这使得广泛但小额的支持能够压倒少数高价值反对，真正体现集体意志。",
+              "methodsAndTechniques": "作者融合了供给点机制、二次方融资与预测市场思想，构建了一个带滞后效应的双侧门控博弈。通过完美贝叶斯均衡分析，结合事实验证与语义裁决分离的设计，论证了机制在不完全信息下的稳健性。关键技术在于将授权决策转化为硬件可执行的预算控制，从而实现治理与执行的一体化。",
+              "limitationsAndReadingValue": "该机制依赖可信的语义验证器来裁定伤害事件，这在争议性强或后果延迟的场景中可能难以实施。此外，AI智能体可能通过声誉操控影响选民判断，构成尚未解决的核心漏洞。尽管如此，本文的价值在于将治理原则转化为可验证的机制属性，特别适合关注安全可控AI部署的研究者深入阅读其模型抽象与开放问题。"
+            },
+            "contentTags": [
+              "机制设计",
+              "AI治理",
+              "多智能体系统",
+              "计算资源控制",
+              "参与式治理"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "模型构建",
+              "均衡分析",
+              "理论推导",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Fair and Efficient Balanced Allocations for Additive Valuations",
+            "url": "https://arxiv.org/abs/2608.06325",
+            "arxivId": "2608.06325",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "加法估值下的公平且高效的平衡分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "资源分配",
+              "平衡约束",
+              "帕累托最优"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在物品分配中加入平衡约束后，公平与效率能否共存仍是一个难题？传统研究在无约束下已证明EF1与fPO可同时实现，但在实际场景如课程分配中，需限制每人获得物品数相近。这种平衡约束破坏了原有机制的有效性，最大纳什福利无法保证EF1，也无其他方法能同时满足公平与效率，本文正是在此缺口下探索是否存在满足平衡性、EF1与fPO的分配。",
+              "modelAndSetup": "作者考虑n个代理人与m个不可分物品的分配问题，每个代理人具非负加法估值，目标是寻找一个平衡分配——即每人获得⌊m/n⌋或⌈m/n⌉个物品。模型要求分配既是EF1（任一人在移除另一人某物品后不再嫉妒）又在平衡分数分配集中达到分数帕累托最优（fPO），即不存在任何分数分配能在不损害他人情况下改进某人效用。",
+              "contributionsAndResults": "论文证明了在任意加法估值下，始终存在满足平衡性、EF1与fPO的分配，推广了此前仅适用于特定估值类别的结果。此外，该结论还可扩展至类别约束（partition matroid）情形，此时存在一种弱化版EF1（EF1cat）与fPO的分配，允许从每个类别中移除至多一个物品来消除嫉妒，这比一般EF1更宽松但更具结构性适应性。",
+              "methodsAndTechniques": "作者采用加权福利最大化框架，结合对偶价格与正则化技术确保对偶解连续依赖于权重参数。通过引入前缀扰动项驱动价格交错性质，并利用KKM引理在单纯形上构造闭覆盖，找到一组权重使得所有代理人均成为最小支出者。最终借助极限论证消去扰动误差，从而构造出满足条件的整数分配。",
+              "limitationsAndReadingValue": "尽管结果具有普适性，但证明为存在性而非构造性，未提供多项式时间算法，其实现仍是开放问题。此外，在更广义的拟阵约束下是否仍成立尚不清楚。最值得阅读的是其巧妙融合拓扑工具（KKM）与对偶分析的技术路径，以及对相关工作的清晰梳理，为后续研究提供了坚实基础与方向指引。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "加法估值下的公平且高效的平衡分配",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在物品分配中加入平衡约束后，公平与效率能否共存仍是一个难题？传统研究在无约束下已证明EF1与fPO可同时实现，但在实际场景如课程分配中，需限制每人获得物品数相近。这种平衡约束破坏了原有机制的有效性，最大纳什福利无法保证EF1，也无其他方法能同时满足公平与效率，本文正是在此缺口下探索是否存在满足平衡性、EF1与fPO的分配。",
+              "modelAndSetup": "作者考虑n个代理人与m个不可分物品的分配问题，每个代理人具非负加法估值，目标是寻找一个平衡分配——即每人获得⌊m/n⌋或⌈m/n⌉个物品。模型要求分配既是EF1（任一人在移除另一人某物品后不再嫉妒）又在平衡分数分配集中达到分数帕累托最优（fPO），即不存在任何分数分配能在不损害他人情况下改进某人效用。",
+              "contributionsAndResults": "论文证明了在任意加法估值下，始终存在满足平衡性、EF1与fPO的分配，推广了此前仅适用于特定估值类别的结果。此外，该结论还可扩展至类别约束（partition matroid）情形，此时存在一种弱化版EF1（EF1cat）与fPO的分配，允许从每个类别中移除至多一个物品来消除嫉妒，这比一般EF1更宽松但更具结构性适应性。",
+              "methodsAndTechniques": "作者采用加权福利最大化框架，结合对偶价格与正则化技术确保对偶解连续依赖于权重参数。通过引入前缀扰动项驱动价格交错性质，并利用KKM引理在单纯形上构造闭覆盖，找到一组权重使得所有代理人均成为最小支出者。最终借助极限论证消去扰动误差，从而构造出满足条件的整数分配。",
+              "limitationsAndReadingValue": "尽管结果具有普适性，但证明为存在性而非构造性，未提供多项式时间算法，其实现仍是开放问题。此外，在更广义的拟阵约束下是否仍成立尚不清楚。最值得阅读的是其巧妙融合拓扑工具（KKM）与对偶分析的技术路径，以及对相关工作的清晰梳理，为后续研究提供了坚实基础与方向指引。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "资源分配",
+              "平衡约束",
+              "帕累托最优"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Candidate Resignation Monotonicity in Approval-Based Committee Elections",
+            "url": "https://arxiv.org/abs/2608.06156",
+            "arxivId": "2608.06156",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "基于认可的委员会选举中的候选人辞职单调性",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "公平性",
+              "委员会选举",
+              "策略操控"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究当选委员辞职后如何重新填补席位的问题。核心关切是：原有非辞职成员是否应自动留任？这看似合理的制度要求引出‘辞职单调性’公理。然而，许多主流比例代表制规则无法满足该性质，且与公平性公理存在根本冲突，暴露出动态调整场景下静态选举机制的内在缺陷。",
+              "modelAndSetup": "模型设定为认可式委员会选举（ABC），选民批准候选人子集，规则选出固定规模委员会。当部分胜选者辞职，需在剩余候选人中补选。辞职单调性要求原委员会中未辞职者仍属新委员会。研究对比了多种规则在此动态过程中的行为，并引入比例性公理如JR、PJR+作为评估标准。",
+              "contributionsAndResults": "论文证明多数经典ABC规则（如PAV、MES）不满足辞职单调性，且该性质与公正代表（JR）公理互斥。作为正面结果，作者提出最大支付规则（MPR），虽计算困难但满足较弱的PJR+-辞职单调性，即总能找到保持比例性的替换方案。此外，MPR在特定偏好结构下可高效求解。",
+              "methodsAndTechniques": "关键技术是将选举实例转化为网络流模型，利用最大流刻画公平性。MPR基于此构建整数版本的最大支付机制。证明中采用归约法建立NP难度，通过局部搜索算法实现近似恢复，并借助同质性将MPR与Monroe规则关联，从而继承其算法成果。",
+              "limitationsAndReadingValue": "主要局限在于MPR与MCAR均难精确计算，且更强的比例性EJR+无法与单调性共存。尽管如此，论文深刻揭示了动态调整与公平性之间的张力。最值得阅读的是其问题建模方式、不可能性证明的技术路径，以及通过流网络连接公平与稳健性的新颖视角。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "基于认可的委员会选举中的候选人辞职单调性",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究当选委员辞职后如何重新填补席位的问题。核心关切是：原有非辞职成员是否应自动留任？这看似合理的制度要求引出‘辞职单调性’公理。然而，许多主流比例代表制规则无法满足该性质，且与公平性公理存在根本冲突，暴露出动态调整场景下静态选举机制的内在缺陷。",
+              "modelAndSetup": "模型设定为认可式委员会选举（ABC），选民批准候选人子集，规则选出固定规模委员会。当部分胜选者辞职，需在剩余候选人中补选。辞职单调性要求原委员会中未辞职者仍属新委员会。研究对比了多种规则在此动态过程中的行为，并引入比例性公理如JR、PJR+作为评估标准。",
+              "contributionsAndResults": "论文证明多数经典ABC规则（如PAV、MES）不满足辞职单调性，且该性质与公正代表（JR）公理互斥。作为正面结果，作者提出最大支付规则（MPR），虽计算困难但满足较弱的PJR+-辞职单调性，即总能找到保持比例性的替换方案。此外，MPR在特定偏好结构下可高效求解。",
+              "methodsAndTechniques": "关键技术是将选举实例转化为网络流模型，利用最大流刻画公平性。MPR基于此构建整数版本的最大支付机制。证明中采用归约法建立NP难度，通过局部搜索算法实现近似恢复，并借助同质性将MPR与Monroe规则关联，从而继承其算法成果。",
+              "limitationsAndReadingValue": "主要局限在于MPR与MCAR均难精确计算，且更强的比例性EJR+无法与单调性共存。尽管如此，论文深刻揭示了动态调整与公平性之间的张力。最值得阅读的是其问题建模方式、不可能性证明的技术路径，以及通过流网络连接公平与稳健性的新颖视角。"
+            },
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "公平性",
+              "委员会选举",
+              "策略操控"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-06",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202608060000 TO 202608062359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary Activation",
+          "url": "https://arxiv.org/abs/2608.06177",
+          "arxivId": "2608.06177",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "abstract": "Binary neural networks are very attractive for constrained deployment, enabling small footprint and low-power inference. For binary activations, the dot products become sign-controlled additions or subtractions, but the number of operations is unchanged. Indeed, every neuron or output channel still accumulates all of its input, even though only the sign will be retained, which is often wasteful. As the accumulation progresses, the running partial sum frequently drifts so far from zero that its final sign becomes highly predictable long before the last term is reached; every contribution evaluated after that point changes the value of the sum but not the final output activation. This paper turns this observation into a post-training early-stopping mechanism. We characterize the behavior of the running accumulations on the training dataset and use this information to predict the final sign as soon as possible. No model parameter is retrained. We count the number of operations under an idealized ordering of weights. On VGG11 applied to the CIFAR-10 dataset, the method removes $86.6\\%$ of the accumulation terms of the deepest convolution for a $0.37$-point accuracy drop, and $25\\%$ of the full-network arithmetic when used on the three deepest convolutions simultaneously, for a $1.36$-point drop."
+        },
+        {
+          "title": "A Special Point Skeleton Reconstruction Algorithm for Dynamic Multiobjective Optimization",
+          "url": "https://arxiv.org/abs/2608.06096",
+          "arxivId": "2608.06096",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "abstract": "To address the issue that existing dynamic multi-objective optimization algorithms mainly rely on individual migration or independent special point sampling after environmental changes, while failing to fully exploit the structural relationships among representative solutions, a Special Point Skeleton Reconstruction based Dynamic Multi-Objective Evolutionary Algorithm (SPSR-DMOEA) is proposed. First, the centroid, knee points, and extreme points are extracted from the Pareto optimal solution set of the current environment, and their positions in the new environment are adaptively predicted according to their movement velocities across consecutive environments. Subsequently, in the decision space, the centroid is connected with other anchor points, and a minimum spanning tree is constructed among the non-centroid anchor points, thereby establishing a prediction skeleton capable of describing the overall population structure. According to the lengths of the skeleton edges, the number of individuals allocated to each edge is determined proportionally. Candidate solutions are uniformly generated along each edge, and random orthogonal perturbations are introduced to expand the search region around the skeleton. Experimental results on the DF dynamic multi-objective benchmark suite demonstrate the effectiveness of the proposed method in dynamic tracking capability."
+        },
+        {
+          "title": "Convergent Evolution in Neural Representation Space: Emergent Order in Deep Belief Networks",
+          "url": "https://arxiv.org/abs/2608.05996",
+          "arxivId": "2608.05996",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "q-bio.NC",
+            "cs.NE"
+          ],
+          "abstract": "Deep Belief Networks (DBNs) learn hierarchical generative models without class supervision. Here, we ask whether this purely unsupervised process nevertheless organizes internal representations according to the unknown data classes. We analyze successive layers of DBNs trained on MNIST, Fashion-MNIST, and KMNIST using the Generalized Discrimination Value (GDV), supervised probes applied only after training, a reconstruction-based measure of abstraction distance, effective dimensionality, and free sample generation. Remarkably, class-specific clustering generally increases with depth across datasets and network widths, although no label information is available during DBN training. Control experiments show that this effect depends on the learned feature structure and cannot be explained by random transformations, weight marginals, dimensionality reduction, or sigmoid saturation. The first hidden layers also frequently make class identity more accessible to linear and nonlinear probes. With greater depth, representations become increasingly compact and prototype-like as neurons acquire correlated feature directions. At the same time, GDV and probe accuracy reveal complementary aspects of class structure: improved average clustering can coexist with reduced accessibility for a few difficult class pairs. These findings demonstrate that layer-wise generative learning can spontaneously uncover and progressively amplify class-related structure in unlabeled data."
+        },
+        {
+          "title": "Relay, Don't Route: Adaptive Population Handoff for Cost-Efficient LLM-Driven Evolution",
+          "url": "https://arxiv.org/abs/2608.05651",
+          "arxivId": "2608.05651",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "abstract": "Large language model (LLM)-driven evolution has shown promise for program search and algorithm discovery, but relying on strong models throughout long evolutionary runs is costly. A natural alternative is to combine cheap and strong models under a fixed inference budget. However, existing approaches typically allocate models at the level of individual queries or mutation steps, overlooking that evolutionary search is \\textit{stateful}: each generated candidate changes the population from which subsequent mutations are produced. We empirically analyze LLM-driven evolutionary trajectories and find that search progress is strongly front-loaded, early trajectory performance is informative but noisy, and cheap models recover much of the early progress achieved by strong models at lower cost. Motivated by these findings, we propose \\textbf{\\model}, a training-free framework that shifts budget allocation from individual calls to evolving populations through adaptive \\textit{population handoff}. A cheap model explores multiple trajectories in short blocks allocated by a bandit scheduler. Relay Gain, defined as the marginal improvement of a compact, quality-diverse candidate bank constructed for handoff, serves as the scheduler reward and determines when to hand off. The curated candidates initialize a shared strong model population for refinement. Across four benchmarks and three budgets, \\model achieves the highest mean score in 11 of 12 settings, outperforming competitive baselines. Our results suggest that in stateful search, budget allocation should be organized around the population, not the individual call."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary Activation",
+              "url": "https://arxiv.org/abs/2608.06177",
+              "arxivId": "2608.06177",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE"
+              ],
+              "abstract": "Binary neural networks are very attractive for constrained deployment, enabling small footprint and low-power inference. For binary activations, the dot products become sign-controlled additions or subtractions, but the number of operations is unchanged. Indeed, every neuron or output channel still accumulates all of its input, even though only the sign will be retained, which is often wasteful. As the accumulation progresses, the running partial sum frequently drifts so far from zero that its final sign becomes highly predictable long before the last term is reached; every contribution evaluated after that point changes the value of the sum but not the final output activation. This paper turns this observation into a post-training early-stopping mechanism. We characterize the behavior of the running accumulations on the training dataset and use this information to predict the final sign as soon as possible. No model parameter is retrained. We count the number of operations under an idealized ordering of weights. On VGG11 applied to the CIFAR-10 dataset, the method removes $86.6\\%$ of the accumulation terms of the deepest convolution for a $0.37$-point accuracy drop, and $25\\%$ of the full-network arithmetic when used on the three deepest convolutions simultaneously, for a $1.36$-point drop."
+            },
+            {
+              "title": "A Special Point Skeleton Reconstruction Algorithm for Dynamic Multiobjective Optimization",
+              "url": "https://arxiv.org/abs/2608.06096",
+              "arxivId": "2608.06096",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "abstract": "To address the issue that existing dynamic multi-objective optimization algorithms mainly rely on individual migration or independent special point sampling after environmental changes, while failing to fully exploit the structural relationships among representative solutions, a Special Point Skeleton Reconstruction based Dynamic Multi-Objective Evolutionary Algorithm (SPSR-DMOEA) is proposed. First, the centroid, knee points, and extreme points are extracted from the Pareto optimal solution set of the current environment, and their positions in the new environment are adaptively predicted according to their movement velocities across consecutive environments. Subsequently, in the decision space, the centroid is connected with other anchor points, and a minimum spanning tree is constructed among the non-centroid anchor points, thereby establishing a prediction skeleton capable of describing the overall population structure. According to the lengths of the skeleton edges, the number of individuals allocated to each edge is determined proportionally. Candidate solutions are uniformly generated along each edge, and random orthogonal perturbations are introduced to expand the search region around the skeleton. Experimental results on the DF dynamic multi-objective benchmark suite demonstrate the effectiveness of the proposed method in dynamic tracking capability."
+            },
+            {
+              "title": "Convergent Evolution in Neural Representation Space: Emergent Order in Deep Belief Networks",
+              "url": "https://arxiv.org/abs/2608.05996",
+              "arxivId": "2608.05996",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "q-bio.NC",
+                "cs.NE"
+              ],
+              "abstract": "Deep Belief Networks (DBNs) learn hierarchical generative models without class supervision. Here, we ask whether this purely unsupervised process nevertheless organizes internal representations according to the unknown data classes. We analyze successive layers of DBNs trained on MNIST, Fashion-MNIST, and KMNIST using the Generalized Discrimination Value (GDV), supervised probes applied only after training, a reconstruction-based measure of abstraction distance, effective dimensionality, and free sample generation. Remarkably, class-specific clustering generally increases with depth across datasets and network widths, although no label information is available during DBN training. Control experiments show that this effect depends on the learned feature structure and cannot be explained by random transformations, weight marginals, dimensionality reduction, or sigmoid saturation. The first hidden layers also frequently make class identity more accessible to linear and nonlinear probes. With greater depth, representations become increasingly compact and prototype-like as neurons acquire correlated feature directions. At the same time, GDV and probe accuracy reveal complementary aspects of class structure: improved average clustering can coexist with reduced accessibility for a few difficult class pairs. These findings demonstrate that layer-wise generative learning can spontaneously uncover and progressively amplify class-related structure in unlabeled data."
+            },
+            {
+              "title": "Relay, Don't Route: Adaptive Population Handoff for Cost-Efficient LLM-Driven Evolution",
+              "url": "https://arxiv.org/abs/2608.05651",
+              "arxivId": "2608.05651",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "abstract": "Large language model (LLM)-driven evolution has shown promise for program search and algorithm discovery, but relying on strong models throughout long evolutionary runs is costly. A natural alternative is to combine cheap and strong models under a fixed inference budget. However, existing approaches typically allocate models at the level of individual queries or mutation steps, overlooking that evolutionary search is \\textit{stateful}: each generated candidate changes the population from which subsequent mutations are produced. We empirically analyze LLM-driven evolutionary trajectories and find that search progress is strongly front-loaded, early trajectory performance is informative but noisy, and cheap models recover much of the early progress achieved by strong models at lower cost. Motivated by these findings, we propose \\textbf{\\model}, a training-free framework that shifts budget allocation from individual calls to evolving populations through adaptive \\textit{population handoff}. A cheap model explores multiple trajectories in short blocks allocated by a bandit scheduler. Relay Gain, defined as the marginal improvement of a compact, quality-diverse candidate bank constructed for handoff, serves as the scheduler reward and determines when to hand off. The curated candidates initialize a shared strong model population for refinement. Across four benchmarks and three budgets, \\model achieves the highest mean score in 11 of 12 settings, outperforming competitive baselines. Our results suggest that in stateful search, budget allocation should be organized around the population, not the individual call."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 3,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary Activation",
+              "url": "https://arxiv.org/abs/2608.06177",
+              "arxivId": "2608.06177",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "A Special Point Skeleton Reconstruction Algorithm for Dynamic Multiobjective Optimization",
+              "url": "https://arxiv.org/abs/2608.06096",
+              "arxivId": "2608.06096",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 3.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 9.0,
+                "total": 9.0
+              }
+            },
+            {
+              "title": "Convergent Evolution in Neural Representation Space: Emergent Order in Deep Belief Networks",
+              "url": "https://arxiv.org/abs/2608.05996",
+              "arxivId": "2608.05996",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "q-bio.NC",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Relay, Don't Route: Adaptive Population Handoff for Cost-Efficient LLM-Driven Evolution",
+              "url": "https://arxiv.org/abs/2608.05651",
+              "arxivId": "2608.05651",
+              "date": "2026-08-06",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.NE"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary Activation",
+          "url": "https://arxiv.org/abs/2608.06177",
+          "arxivId": "2608.06177",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "A Special Point Skeleton Reconstruction Algorithm for Dynamic Multiobjective Optimization",
+          "url": "https://arxiv.org/abs/2608.06096",
+          "arxivId": "2608.06096",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 3.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 9.0,
+            "total": 9.0
+          }
+        },
+        {
+          "title": "Convergent Evolution in Neural Representation Space: Emergent Order in Deep Belief Networks",
+          "url": "https://arxiv.org/abs/2608.05996",
+          "arxivId": "2608.05996",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "q-bio.NC",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Relay, Don't Route: Adaptive Population Handoff for Cost-Efficient LLM-Driven Evolution",
+          "url": "https://arxiv.org/abs/2608.05651",
+          "arxivId": "2608.05651",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Convergent Evolution in Neural Representation Space: Emergent Order in Deep Belief Networks",
+          "url": "https://arxiv.org/abs/2608.05996",
+          "arxivId": "2608.05996",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "q-bio.NC",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Relay, Don't Route: Adaptive Population Handoff for Cost-Efficient LLM-Driven Evolution",
+          "url": "https://arxiv.org/abs/2608.05651",
+          "arxivId": "2608.05651",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary Activation",
+          "url": "https://arxiv.org/abs/2608.06177",
+          "arxivId": "2608.06177",
+          "date": "2026-08-06",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.NE"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Convergent Evolution in Neural Representation Space: Emergent Order in Deep Belief Networks",
+            "url": "https://arxiv.org/abs/2608.05996",
+            "arxivId": "2608.05996",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "q-bio.NC",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "神经表征空间中的趋同进化：深度置信网络中的涌现秩序",
+            "researchParadigmTags": [
+              "实验验证",
+              "机制分析",
+              "评测方法",
+              "模型构建"
+            ],
+            "contentTags": [
+              "表示学习",
+              "生成式AI",
+              "深度置信网络",
+              "无监督学习",
+              "表征几何"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "尽管深度置信网络（DBN）是无监督生成模型，历史上用于预训练，但人们不清楚其逐层学习是否会自发发现数据中隐藏的类别结构。现有研究多关注DBN对下游任务的帮助，却忽视其内部表征的演化过程。本文追问：在完全不接触标签的情况下，DBN能否通过生成式学习逐步增强类别分离性？这种组织是偶然还是系统性现象？",
+              "modelAndSetup": "研究在MNIST、Fashion-MNIST和KMNIST上训练多层DBN，仅使用对比散度进行无监督逐层训练。输入为原始图像，输出为各隐层的激活概率。通过冻结每一层表征，使用事后标签评估其几何性质：用广义判别值（GDV）量化类别聚类程度，用线性与非线性探针测试分类可提取性，并结合重构误差、有效维度和自由生成来综合刻画表征演化。",
+              "contributionsAndResults": "论文发现DBN在无监督训练下仍能逐层增强类别聚类，且该现象跨数据集和网络宽度一致。早期隐层提升类别可访问性，深层则趋向压缩为原型式表达。关键发现是GDV改善与探针性能下降可共存，说明平均聚类增强未必利于分类，因少数难分对可能退化。这揭示了无监督学习中不同表征属性的解耦。",
+              "methodsAndTechniques": "核心方法是事后分析：训练时不使用任何标签，仅在评估阶段引入标签计算GDV与训练探针。通过控制实验排除权重边缘分布、随机连接、sigmoid饱和等因素的影响，证实结构学习的必要性。同时分解有效维度损失，发现神经元间功能冗余而非单纯失活是压缩主因，且权重方向相似性预测响应相关性。",
+              "limitationsAndReadingValue": "结论基于经典图像数据集，是否推广至更复杂自然数据尚不明确。深层表征虽聚类更强，但探针性能下降，是否因信息丢失或编码方式改变仍需进一步验证。最值得读的是其严谨的因果式分析框架：通过系统性控制与多维指标，揭示了无监督深度学习中‘有序涌现’的内在机制与权衡。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "神经表征空间中的趋同进化：深度置信网络中的涌现秩序",
+            "summarySections": {
+              "backgroundAndQuestion": "尽管深度置信网络（DBN）是无监督生成模型，历史上用于预训练，但人们不清楚其逐层学习是否会自发发现数据中隐藏的类别结构。现有研究多关注DBN对下游任务的帮助，却忽视其内部表征的演化过程。本文追问：在完全不接触标签的情况下，DBN能否通过生成式学习逐步增强类别分离性？这种组织是偶然还是系统性现象？",
+              "modelAndSetup": "研究在MNIST、Fashion-MNIST和KMNIST上训练多层DBN，仅使用对比散度进行无监督逐层训练。输入为原始图像，输出为各隐层的激活概率。通过冻结每一层表征，使用事后标签评估其几何性质：用广义判别值（GDV）量化类别聚类程度，用线性与非线性探针测试分类可提取性，并结合重构误差、有效维度和自由生成来综合刻画表征演化。",
+              "contributionsAndResults": "论文发现DBN在无监督训练下仍能逐层增强类别聚类，且该现象跨数据集和网络宽度一致。早期隐层提升类别可访问性，深层则趋向压缩为原型式表达。关键发现是GDV改善与探针性能下降可共存，说明平均聚类增强未必利于分类，因少数难分对可能退化。这揭示了无监督学习中不同表征属性的解耦。",
+              "methodsAndTechniques": "核心方法是事后分析：训练时不使用任何标签，仅在评估阶段引入标签计算GDV与训练探针。通过控制实验排除权重边缘分布、随机连接、sigmoid饱和等因素的影响，证实结构学习的必要性。同时分解有效维度损失，发现神经元间功能冗余而非单纯失活是压缩主因，且权重方向相似性预测响应相关性。",
+              "limitationsAndReadingValue": "结论基于经典图像数据集，是否推广至更复杂自然数据尚不明确。深层表征虽聚类更强，但探针性能下降，是否因信息丢失或编码方式改变仍需进一步验证。最值得读的是其严谨的因果式分析框架：通过系统性控制与多维指标，揭示了无监督深度学习中‘有序涌现’的内在机制与权衡。"
+            },
+            "contentTags": [
+              "表示学习",
+              "生成式AI",
+              "深度置信网络",
+              "无监督学习",
+              "表征几何"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "机制分析",
+              "评测方法",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Relay, Don't Route: Adaptive Population Handoff for Cost-Efficient LLM-Driven Evolution",
+            "url": "https://arxiv.org/abs/2608.05651",
+            "arxivId": "2608.05651",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.AI",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "接力，而非路由：面向低成本大语言模型驱动进化的自适应群体交接",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "进化搜索",
+              "成本效率",
+              "智能体",
+              "程序优化"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型（LLM）驱动的进化搜索在程序发现中表现强大，但全程依赖强模型成本高昂。现有方法通常在单次调用层面做模型切换决策，忽略了进化过程的状态性——每次生成都会改变后续变异的基础种群。这导致局部决策无法捕捉全局进展节奏，难以平衡探索与成本。",
+              "modelAndSetup": "论文研究在固定推理预算下如何分配廉价与强LLM资源的问题。输入是初始程序，输出是经多代变异和评估后的最优解。模型通过LLM进行程序变异，外部评估器打分，采用ShinkaEvolve作为统一后端。在四个程序优化任务上比较不同预算下的性能，衡量最终解的质量。",
+              "contributionsAndResults": "提出RELAYEvoLVE，一种无需训练的群体交接框架，将预算分配从单次调用转向整个种群演化阶段。核心创新是‘接力增益’信号，用于指导何时停止廉价模型探索并移交种群。实验显示其在12个设置中11个取得最高平均分，证明群体级调度优于调用级路由。",
+              "methodsAndTechniques": "廉价模型以短区块形式并行探索多条轨迹，维护一个紧凑的中继银行记录高质量且多样化的候选。接力增益定义为该银行的边际提升，由带宽调度器据此决定启动新轨迹或深化现有轨迹。当增益饱和时，精选种子种群交由强模型集中精炼，实现高效交接。",
+              "limitationsAndReadingValue": "方法依赖于中继银行的构造质量，且消融实验集中在单一任务，跨任务泛化证据有限。强模型共享种群的设计虽促进交互，但也限制了独立演化路径的多样性。最值得读的是其对状态性搜索中预算分配的新视角，以及用集合级奖励协调多阶段决策的机制设计思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "接力，而非路由：面向低成本大语言模型驱动进化的自适应群体交接",
+            "summarySections": {
+              "backgroundAndQuestion": "大语言模型（LLM）驱动的进化搜索在程序发现中表现强大，但全程依赖强模型成本高昂。现有方法通常在单次调用层面做模型切换决策，忽略了进化过程的状态性——每次生成都会改变后续变异的基础种群。这导致局部决策无法捕捉全局进展节奏，难以平衡探索与成本。",
+              "modelAndSetup": "论文研究在固定推理预算下如何分配廉价与强LLM资源的问题。输入是初始程序，输出是经多代变异和评估后的最优解。模型通过LLM进行程序变异，外部评估器打分，采用ShinkaEvolve作为统一后端。在四个程序优化任务上比较不同预算下的性能，衡量最终解的质量。",
+              "contributionsAndResults": "提出RELAYEvoLVE，一种无需训练的群体交接框架，将预算分配从单次调用转向整个种群演化阶段。核心创新是‘接力增益’信号，用于指导何时停止廉价模型探索并移交种群。实验显示其在12个设置中11个取得最高平均分，证明群体级调度优于调用级路由。",
+              "methodsAndTechniques": "廉价模型以短区块形式并行探索多条轨迹，维护一个紧凑的中继银行记录高质量且多样化的候选。接力增益定义为该银行的边际提升，由带宽调度器据此决定启动新轨迹或深化现有轨迹。当增益饱和时，精选种子种群交由强模型集中精炼，实现高效交接。",
+              "limitationsAndReadingValue": "方法依赖于中继银行的构造质量，且消融实验集中在单一任务，跨任务泛化证据有限。强模型共享种群的设计虽促进交互，但也限制了独立演化路径的多样性。最值得读的是其对状态性搜索中预算分配的新视角，以及用集合级奖励协调多阶段决策的机制设计思路。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "进化搜索",
+              "成本效率",
+              "智能体",
+              "程序优化"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Threshold-Based Early Stopping of Accumulations in Neural Networks with Binary Activation",
+            "url": "https://arxiv.org/abs/2608.06177",
+            "arxivId": "2608.06177",
+            "date": "2026-08-06",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.NE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "基于阈值的二值激活神经网络累积过程早期停止",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "二值神经网络",
+              "推理加速",
+              "计算效率",
+              "早期终止"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在二值神经网络推理中仍需完成全部累加操作？尽管激活已被二值化，最终输出仅取决于累加和的符号，但传统方法依然执行完整的点积运算，导致大量冗余计算。现有动态推理方法多关注层间跳过或通道剪枝，未能深入到单个累加过程内部。本文指出，在累加过程中，部分和往往在中途已能可靠预测最终符号，因此存在提前终止的可能，从而节省算力。",
+              "modelAndSetup": "论文研究的是二值激活网络中全连接与卷积层的累加过程，输入为二值激活与实值权重，输出为符号决定的二值结果。作者不修改训练过程，而是在推理阶段引入后训练机制，通过监控部分和轨迹来判断是否可提前停止。实验基于CIFAR-10上的二值VGG11模型，评估不同层组合下的算术节省与精度损失，并以MAC等效操作数作为理想化计算代价度量。",
+              "contributionsAndResults": "论文提出一种无需重训练的早期停止机制，能在极小精度损失下大幅减少累加操作。在VGG11最深卷积层上节省86.6%的计算量，仅损失0.37个百分点精度；同时应用于三个最深卷积层时，全网算术量减少25%，精度下降1.36点。这表明局部可预测性蕴含巨大优化潜力，且该方法在不同层间具有一致有效性。",
+              "methodsAndTechniques": "方法核心是为每个输出单元建立基于部分和的决策带：当累加轨迹超出上下阈值时，即可确定最终符号并停止后续计算。阈值通过训练集上的部分和分布进行校准，采用分位数或高斯拟合方式设定。检查点按预设或数据驱动策略触发判断，结合降序权重排列以加速符号分离，从而在保障可靠性的同时最大化跳过机会。",
+              "limitationsAndReadingValue": "该方法依赖于每单元独立的权重重排序，与硬件共享输入读取不兼容，所报算术节省为理想上限而非实际延迟收益。此外，多层级联时误差会传播，且未进行微调补偿。尽管如此，其问题洞察清晰、机制简洁有效，最值得阅读的是其对累加过程动态行为的分析与阈值设计逻辑，为高效推理提供了新视角。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "基于阈值的二值激活神经网络累积过程早期停止",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在二值神经网络推理中仍需完成全部累加操作？尽管激活已被二值化，最终输出仅取决于累加和的符号，但传统方法依然执行完整的点积运算，导致大量冗余计算。现有动态推理方法多关注层间跳过或通道剪枝，未能深入到单个累加过程内部。本文指出，在累加过程中，部分和往往在中途已能可靠预测最终符号，因此存在提前终止的可能，从而节省算力。",
+              "modelAndSetup": "论文研究的是二值激活网络中全连接与卷积层的累加过程，输入为二值激活与实值权重，输出为符号决定的二值结果。作者不修改训练过程，而是在推理阶段引入后训练机制，通过监控部分和轨迹来判断是否可提前停止。实验基于CIFAR-10上的二值VGG11模型，评估不同层组合下的算术节省与精度损失，并以MAC等效操作数作为理想化计算代价度量。",
+              "contributionsAndResults": "论文提出一种无需重训练的早期停止机制，能在极小精度损失下大幅减少累加操作。在VGG11最深卷积层上节省86.6%的计算量，仅损失0.37个百分点精度；同时应用于三个最深卷积层时，全网算术量减少25%，精度下降1.36点。这表明局部可预测性蕴含巨大优化潜力，且该方法在不同层间具有一致有效性。",
+              "methodsAndTechniques": "方法核心是为每个输出单元建立基于部分和的决策带：当累加轨迹超出上下阈值时，即可确定最终符号并停止后续计算。阈值通过训练集上的部分和分布进行校准，采用分位数或高斯拟合方式设定。检查点按预设或数据驱动策略触发判断，结合降序权重排列以加速符号分离，从而在保障可靠性的同时最大化跳过机会。",
+              "limitationsAndReadingValue": "该方法依赖于每单元独立的权重重排序，与硬件共享输入读取不兼容，所报算术节省为理想上限而非实际延迟收益。此外，多层级联时误差会传播，且未进行微调补偿。尽管如此，其问题洞察清晰、机制简洁有效，最值得阅读的是其对累加过程动态行为的分析与阈值设计逻辑，为高效推理提供了新视角。"
+            },
+            "contentTags": [
+              "二值神经网络",
+              "推理加速",
+              "计算效率",
+              "早期终止"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 3
+  }
+}
