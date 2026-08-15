@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-15",
+  "generatedAt": "2026-08-15T03:18:57.612493+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-14",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-14",
+      "categories": [
+        "cs.CV"
+      ],
+      "categorySelection": "cs.CV",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.CV": {
+            "query": "cat:cs.CV AND submittedDate:\"202608140000 TO 202608142359\"",
+            "totalResults": 0,
+            "fetchedCount": 0
+          }
+        },
+        "dedupedCount": 0
+      },
+      "arxivTotalResults": 0,
+      "fetchedCount": 0,
+      "fetchedPapers": []
+    }
+  },
+  "warnings": [
+    "近期 AGT 新论文 arXiv 抓取失败：HTTP Error 503: Service Unavailable"
+  ],
+  "sectionCounts": {
+    "recent-agt": 0,
+    "recent-ai": 0
+  }
+}
