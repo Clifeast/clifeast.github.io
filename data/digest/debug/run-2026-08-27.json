@@ -1,0 +1,2058 @@
+{
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-27T13:01:52.110256+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-26",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202608260000 TO 202608262359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202608260000 TO 202608262359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 5
+      },
+      "arxivTotalResults": 5,
+      "fetchedCount": 5,
+      "fetchedPapers": [
+        {
+          "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+          "url": "https://arxiv.org/abs/2608.25832",
+          "arxivId": "2608.25832",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "Large language models access knowledge inconsistently across languages, but to what extent do they differ in their skill sets when interacting with different languages? This work quantifies cross-lingual skill inconsistency orthogonally from knowledge and general benchmark performance. We do this via multilingual self-play: two instances of the same model compete in a text-based game, each interacting through a different language interface. Since the model, opponent, rules, state space, and available actions remain fixed, this setting isolates the effect of language on the model's realized behavior. We build a multilingual extension to TextArena and evaluate three open-weight models across eight languages and six games covering spatial reasoning, imperfect information, resource allocation, and repeated interaction. We find that the same model can exhibit markedly different playing strength across languages, with systematic variation in win--loss margins, invalid actions, and strategic tendencies. Detailed analyses reveal language-specific failures in spatial reasoning, card-conditioned decisions, and optimal move selection. In some settings, changing only the intermediate reasoning language recovers much of the lost performance, suggesting that language can affect different stages of the decision process. These results show that skill discrepancies are a measurable major roadblock in the development of truly multilingual models. Better understanding these discrepancies can help us design models that perform more equitably across languages."
+        },
+        {
+          "title": "Sample Complexity of the Second-Best Bilateral Trade",
+          "url": "https://arxiv.org/abs/2608.25303",
+          "arxivId": "2608.25303",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the sample complexity of learning near-optimal bilateral trade mechanisms. Unlike previous work on learning simple or fixed-price bilateral-trade mechanisms, we focus on mechanisms satisfying Bayesian incentive compatibility (BIC), interim individual rationality (IIR), and ex-ante weak budget balance (WBB). In other words, our target is to design a sample-based mechanism that achieves the second-best gains-from-trade benchmark. We give matching or nearly matching upper and lower bounds in three regimes. For regular product distributions on $[0,h]^2$, additive $\\varepsilon$-approximation has sample complexity $\\widetildeΘ(h^2/\\varepsilon^2)$. For multiplicative $(1-α)$-approximation under the same assumptions, we find that the sample complexity is $\\widetildeΘ(h/(\\mathrm{SB}(D)α^2))$, which is benchmark-sensitive with unavoidable dependence on the second-best gains from trade $\\mathrm{SB}(D)$. We also investigate unbounded distributions under a monotone hazard rate (MHR) assumption. The sample complexity depends on the ratio $χ_μ(D)=μ(D)/\\mathrm{SB}(D)$, where $μ(D)$ is the sum of the buyer's expected value and the seller's expected cost."
+        },
+        {
+          "title": "Potentials and Weak Potentials in Acyclic and Weakly Acyclic Games",
+          "url": "https://arxiv.org/abs/2608.25966",
+          "arxivId": "2608.25966",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "In a number of large, important families of finite games, not only is the set of pure-strategy Nash equilibria nonempty but it is also reachable from any initial strategy profile by some sequence of myopic single-player moves to a better or best-reply strategy. This weak acyclicity property is weaker than acyclicity of the game, which requires every such sequence to reach an equilibrium. For example, all perfect-information extensive-form games are weakly acyclic, but they are generally not acyclic as even sequences of best-improvement steps may cycle. Weak acyclicity is equivalent to acyclicity of some priority rule, which is a rule that allows only some improvement moves. It is also equivalent to the existence of a weak potential, which unlike a potential increases along some rather than every sequence as above."
+        },
+        {
+          "title": "Agnostic Sequential Rationality",
+          "url": "https://arxiv.org/abs/2608.25731",
+          "arxivId": "2608.25731",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Agnostic sequential equilibrium (ASE) is a refinement of sequential equilibrium that does not force on the players a single, arbitrary belief system. In addition, whereas sequential equilibrium assumes the players' beliefs to be fully consistent (a notion that is based on perturbations of strategies), ASE employs a novel, simpler and local concept of strong consistency between strategy profiles and off-equilibrium beliefs, which is applicable to a large class of dynamic games, including games with a continuum of actions. In the last respect, the new solution concept is similar to perfect Bayesian equilibrium. It is shown that a strategy profile in an imperfect-information extensive-form game with perfect recall is an ASE precisely when it is a sequential equilibrium with every fully consistent belief system. ASE is generalized by the set-valued solution concept of agnostic sequential polyequilibrium, which allows leaving the players' actions in some information sets partially or completely unspecified."
+        },
+        {
+          "title": "The Reverse Big Push: Generative AI and Self-Fulfilling Automation",
+          "url": "https://arxiv.org/abs/2608.25602",
+          "arxivId": "2608.25602",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Generative AI relocates the fixed cost of automation. A model provider pays to train a frontier system, while a downstream firm rents capability by usage; the same firm must carry a continuing payroll to supply a human-augmented service. We study this asymmetry in a local service economy with household budgets and a market-clearing wage. Human augmentation earns a larger surplus from an additional customer, whereas automation has the lower break-even scale. Payroll supports demand across sectors. Wage adjustment works against this feedback but does not generally undo it: when the wage-income effect dominates the fall in the wage bill per retained worker, production modes are strategic complements. The economy can then possess both a high-demand human-augmented equilibrium and a low-demand automated equilibrium. The former is the local first best, even when flexible wages prevent a firm-profit ranking. With forward-looking firms and staggered revision opportunities, the same inherited employment structure can support an automation cascade or an augmentation recovery; the anticipated path of later adopters validates the first movers' choices. Under the regularity and boundary conditions of Frankel and Pauzner, a public aggregate shock selects a unique state-contingent path, while the vanishing-friction limit selects according to risk dominance. A transparent parameterization anchored to professional-services revenue-to-payroll ratios illustrates how high-autonomy uses can enter the coordination region and how wage adjustment compresses that region. Optimal policy combines the adoption wedge created by demand spillovers with a temporary bridge when the low state is locally self-sustaining."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+              "url": "https://arxiv.org/abs/2608.25832",
+              "arxivId": "2608.25832",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "Large language models access knowledge inconsistently across languages, but to what extent do they differ in their skill sets when interacting with different languages? This work quantifies cross-lingual skill inconsistency orthogonally from knowledge and general benchmark performance. We do this via multilingual self-play: two instances of the same model compete in a text-based game, each interacting through a different language interface. Since the model, opponent, rules, state space, and available actions remain fixed, this setting isolates the effect of language on the model's realized behavior. We build a multilingual extension to TextArena and evaluate three open-weight models across eight languages and six games covering spatial reasoning, imperfect information, resource allocation, and repeated interaction. We find that the same model can exhibit markedly different playing strength across languages, with systematic variation in win--loss margins, invalid actions, and strategic tendencies. Detailed analyses reveal language-specific failures in spatial reasoning, card-conditioned decisions, and optimal move selection. In some settings, changing only the intermediate reasoning language recovers much of the lost performance, suggesting that language can affect different stages of the decision process. These results show that skill discrepancies are a measurable major roadblock in the development of truly multilingual models. Better understanding these discrepancies can help us design models that perform more equitably across languages."
+            },
+            {
+              "title": "Sample Complexity of the Second-Best Bilateral Trade",
+              "url": "https://arxiv.org/abs/2608.25303",
+              "arxivId": "2608.25303",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the sample complexity of learning near-optimal bilateral trade mechanisms. Unlike previous work on learning simple or fixed-price bilateral-trade mechanisms, we focus on mechanisms satisfying Bayesian incentive compatibility (BIC), interim individual rationality (IIR), and ex-ante weak budget balance (WBB). In other words, our target is to design a sample-based mechanism that achieves the second-best gains-from-trade benchmark. We give matching or nearly matching upper and lower bounds in three regimes. For regular product distributions on $[0,h]^2$, additive $\\varepsilon$-approximation has sample complexity $\\widetildeΘ(h^2/\\varepsilon^2)$. For multiplicative $(1-α)$-approximation under the same assumptions, we find that the sample complexity is $\\widetildeΘ(h/(\\mathrm{SB}(D)α^2))$, which is benchmark-sensitive with unavoidable dependence on the second-best gains from trade $\\mathrm{SB}(D)$. We also investigate unbounded distributions under a monotone hazard rate (MHR) assumption. The sample complexity depends on the ratio $χ_μ(D)=μ(D)/\\mathrm{SB}(D)$, where $μ(D)$ is the sum of the buyer's expected value and the seller's expected cost."
+            },
+            {
+              "title": "Potentials and Weak Potentials in Acyclic and Weakly Acyclic Games",
+              "url": "https://arxiv.org/abs/2608.25966",
+              "arxivId": "2608.25966",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "In a number of large, important families of finite games, not only is the set of pure-strategy Nash equilibria nonempty but it is also reachable from any initial strategy profile by some sequence of myopic single-player moves to a better or best-reply strategy. This weak acyclicity property is weaker than acyclicity of the game, which requires every such sequence to reach an equilibrium. For example, all perfect-information extensive-form games are weakly acyclic, but they are generally not acyclic as even sequences of best-improvement steps may cycle. Weak acyclicity is equivalent to acyclicity of some priority rule, which is a rule that allows only some improvement moves. It is also equivalent to the existence of a weak potential, which unlike a potential increases along some rather than every sequence as above."
+            },
+            {
+              "title": "Agnostic Sequential Rationality",
+              "url": "https://arxiv.org/abs/2608.25731",
+              "arxivId": "2608.25731",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Agnostic sequential equilibrium (ASE) is a refinement of sequential equilibrium that does not force on the players a single, arbitrary belief system. In addition, whereas sequential equilibrium assumes the players' beliefs to be fully consistent (a notion that is based on perturbations of strategies), ASE employs a novel, simpler and local concept of strong consistency between strategy profiles and off-equilibrium beliefs, which is applicable to a large class of dynamic games, including games with a continuum of actions. In the last respect, the new solution concept is similar to perfect Bayesian equilibrium. It is shown that a strategy profile in an imperfect-information extensive-form game with perfect recall is an ASE precisely when it is a sequential equilibrium with every fully consistent belief system. ASE is generalized by the set-valued solution concept of agnostic sequential polyequilibrium, which allows leaving the players' actions in some information sets partially or completely unspecified."
+            },
+            {
+              "title": "The Reverse Big Push: Generative AI and Self-Fulfilling Automation",
+              "url": "https://arxiv.org/abs/2608.25602",
+              "arxivId": "2608.25602",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Generative AI relocates the fixed cost of automation. A model provider pays to train a frontier system, while a downstream firm rents capability by usage; the same firm must carry a continuing payroll to supply a human-augmented service. We study this asymmetry in a local service economy with household budgets and a market-clearing wage. Human augmentation earns a larger surplus from an additional customer, whereas automation has the lower break-even scale. Payroll supports demand across sectors. Wage adjustment works against this feedback but does not generally undo it: when the wage-income effect dominates the fall in the wage bill per retained worker, production modes are strategic complements. The economy can then possess both a high-demand human-augmented equilibrium and a low-demand automated equilibrium. The former is the local first best, even when flexible wages prevent a firm-profit ranking. With forward-looking firms and staggered revision opportunities, the same inherited employment structure can support an automation cascade or an augmentation recovery; the anticipated path of later adopters validates the first movers' choices. Under the regularity and boundary conditions of Frankel and Pauzner, a public aggregate shock selects a unique state-contingent path, while the vanishing-friction limit selects according to risk dominance. A transparent parameterization anchored to professional-services revenue-to-payroll ratios illustrates how high-autonomy uses can enter the coordination region and how wage adjustment compresses that region. Optimal policy combines the adoption wedge created by demand spillovers with a temporary bridge when the low state is locally self-sustaining."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 1,
+                  "guaranteeQuality": 1,
+                  "readingValue": 3,
+                  "penalty": -4,
+                  "aiRelevance": 9,
+                  "agtRelevance": 0
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -2,
+                  "aiRelevance": 5,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+              "url": "https://arxiv.org/abs/2608.25832",
+              "arxivId": "2608.25832",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 0.0,
+                "theoreticalStrength": 0.0,
+                "guaranteeQuality": 0.0,
+                "readingValue": 0.0,
+                "penalty": 0.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 0.0,
+                "baseTotal": 0.0,
+                "bonus": 0.0,
+                "total": 0.0
+              }
+            },
+            {
+              "title": "Sample Complexity of the Second-Best Bilateral Trade",
+              "url": "https://arxiv.org/abs/2608.25303",
+              "arxivId": "2608.25303",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 2.0,
+                "total": 32.0
+              }
+            },
+            {
+              "title": "Potentials and Weak Potentials in Acyclic and Weakly Acyclic Games",
+              "url": "https://arxiv.org/abs/2608.25966",
+              "arxivId": "2608.25966",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            },
+            {
+              "title": "Agnostic Sequential Rationality",
+              "url": "https://arxiv.org/abs/2608.25731",
+              "arxivId": "2608.25731",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 25.2
+              }
+            },
+            {
+              "title": "The Reverse Big Push: Generative AI and Self-Fulfilling Automation",
+              "url": "https://arxiv.org/abs/2608.25602",
+              "arxivId": "2608.25602",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 5.0,
+                "agtRelevance": 7.0,
+                "penalty": -2.0,
+                "baseTotal": 20.0,
+                "bonus": 3.3,
+                "total": 16.3
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+          "url": "https://arxiv.org/abs/2608.25832",
+          "arxivId": "2608.25832",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 0.0,
+            "theoreticalStrength": 0.0,
+            "guaranteeQuality": 0.0,
+            "readingValue": 0.0,
+            "penalty": 0.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 0.0,
+            "baseTotal": 0.0,
+            "bonus": 0.0,
+            "total": 0.0
+          }
+        },
+        {
+          "title": "Sample Complexity of the Second-Best Bilateral Trade",
+          "url": "https://arxiv.org/abs/2608.25303",
+          "arxivId": "2608.25303",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 32.0
+          }
+        },
+        {
+          "title": "Potentials and Weak Potentials in Acyclic and Weakly Acyclic Games",
+          "url": "https://arxiv.org/abs/2608.25966",
+          "arxivId": "2608.25966",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Agnostic Sequential Rationality",
+          "url": "https://arxiv.org/abs/2608.25731",
+          "arxivId": "2608.25731",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "The Reverse Big Push: Generative AI and Self-Fulfilling Automation",
+          "url": "https://arxiv.org/abs/2608.25602",
+          "arxivId": "2608.25602",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 3.3,
+            "total": 16.3
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Sample Complexity of the Second-Best Bilateral Trade",
+          "url": "https://arxiv.org/abs/2608.25303",
+          "arxivId": "2608.25303",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 2.0,
+            "total": 32.0
+          }
+        },
+        {
+          "title": "Agnostic Sequential Rationality",
+          "url": "https://arxiv.org/abs/2608.25731",
+          "arxivId": "2608.25731",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Potentials and Weak Potentials in Acyclic and Weakly Acyclic Games",
+          "url": "https://arxiv.org/abs/2608.25966",
+          "arxivId": "2608.25966",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "The Reverse Big Push: Generative AI and Self-Fulfilling Automation",
+          "url": "https://arxiv.org/abs/2608.25602",
+          "arxivId": "2608.25602",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 20.0,
+            "bonus": 3.3,
+            "total": 16.3
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Sample Complexity of the Second-Best Bilateral Trade",
+            "url": "https://arxiv.org/abs/2608.25303",
+            "arxivId": "2608.25303",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We study the sample complexity of learning near-optimal bilateral trade mechanisms. Unlike previous work on learning simple or fixed-price bilateral-trade mechanisms, we focus on mechanisms satisfying Bayesian incentive compatibility (BIC), interim individual...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We study the sample complexity of learning near-optimal bilateral trade mechanisms. Unlike previous work on learning simple or fixed-price bilateral-trade mechanisms, we focus on mechanisms satisfying Bayesian incentive compatibility (BIC), interim individual...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Agnostic Sequential Rationality",
+            "url": "https://arxiv.org/abs/2608.25731",
+            "arxivId": "2608.25731",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "无知序贯理性",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "信息设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统序贯均衡要求玩家在非均衡信息集持有特定信念，但这些信念往往任意且缺乏自我执行基础。本文质疑这种人为指定信念的做法，指出其违背了均衡作为自实施约定的理念。核心问题是：如何在不预设单一信念系统的情况下，仍能合理界定动态博弈中的序贯理性？这触及了信息不对称下策略可信性与信念合理性之间的根本张力。",
+              "modelAndSetup": "模型基于完美回忆的扩展式博弈，玩家拥有信息集和行为策略。关键创新在于用‘强一致性’替代传统信念系统：当到达某信息集时，仅考虑最小偏离集合所诱导的可能路径，并据此形成局部信念。这些信念不预先指定，而是由策略剖面和树结构内生决定，从而避免了对非均衡节点上任意贝叶斯更新的依赖。",
+              "contributionsAndResults": "提出了无知序贯均衡（ASE），它要求一个策略剖面在所有强一致信念下都满足序贯理性。主要结果表明，ASE等价于在所有完全一致信念下的序贯均衡，因此更为稳健。此外，ASE天然兼容结构一致性，解决了传统解概念中信念影响未来行为的逻辑矛盾，并可通过集值推广ASE——多均衡（ASPE）确保存在性。",
+              "methodsAndTechniques": "通过构造最小充分动作集来定义强一致性信念，利用极限论证证明其与完全一致信念的关系。关键技术是将ASE条件转化为对修改后策略剖面的收益比较，绕开显式信念系统。证明借助凸包关系和扰动序列，建立了ASE与传统解概念之间的紧联系，同时引入多均衡框架处理非存在性问题。",
+              "limitationsAndReadingValue": "ASE因要求在所有强一致信念下最优而可能导致无解，限制了其普适性。虽然ASPE修复了存在性，但牺牲了精确预测力。值得读的是其对信念合理性的重构逻辑：剥离任意性、强调结构性，为动态博弈提供更可信的理性标准。核心价值在于对‘何为合理信念’的哲学与技术双重反思。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "无知序贯理性",
+            "summarySections": {
+              "backgroundAndQuestion": "传统序贯均衡要求玩家在非均衡信息集持有特定信念，但这些信念往往任意且缺乏自我执行基础。本文质疑这种人为指定信念的做法，指出其违背了均衡作为自实施约定的理念。核心问题是：如何在不预设单一信念系统的情况下，仍能合理界定动态博弈中的序贯理性？这触及了信息不对称下策略可信性与信念合理性之间的根本张力。",
+              "modelAndSetup": "模型基于完美回忆的扩展式博弈，玩家拥有信息集和行为策略。关键创新在于用‘强一致性’替代传统信念系统：当到达某信息集时，仅考虑最小偏离集合所诱导的可能路径，并据此形成局部信念。这些信念不预先指定，而是由策略剖面和树结构内生决定，从而避免了对非均衡节点上任意贝叶斯更新的依赖。",
+              "contributionsAndResults": "提出了无知序贯均衡（ASE），它要求一个策略剖面在所有强一致信念下都满足序贯理性。主要结果表明，ASE等价于在所有完全一致信念下的序贯均衡，因此更为稳健。此外，ASE天然兼容结构一致性，解决了传统解概念中信念影响未来行为的逻辑矛盾，并可通过集值推广ASE——多均衡（ASPE）确保存在性。",
+              "methodsAndTechniques": "通过构造最小充分动作集来定义强一致性信念，利用极限论证证明其与完全一致信念的关系。关键技术是将ASE条件转化为对修改后策略剖面的收益比较，绕开显式信念系统。证明借助凸包关系和扰动序列，建立了ASE与传统解概念之间的紧联系，同时引入多均衡框架处理非存在性问题。",
+              "limitationsAndReadingValue": "ASE因要求在所有强一致信念下最优而可能导致无解，限制了其普适性。虽然ASPE修复了存在性，但牺牲了精确预测力。值得读的是其对信念合理性的重构逻辑：剥离任意性、强调结构性，为动态博弈提供更可信的理性标准。核心价值在于对‘何为合理信念’的哲学与技术双重反思。"
+            },
+            "contentTags": [
+              "机制设计",
+              "博弈学习",
+              "信息设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Potentials and Weak Potentials in Acyclic and Weakly Acyclic Games",
+            "url": "https://arxiv.org/abs/2608.25966",
+            "arxivId": "2608.25966",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "无环与弱无环博弈中的势与弱势",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "机制设计",
+              "均衡分析"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么某些博弈中玩家通过逐步改进策略总能到达均衡？虽然许多重要博弈类存在纯策略纳什均衡，但更关键的是这些均衡能否被个体理性行为动态达到。本文关注的问题是：是否存在某种路径或规则，使得无论从何种初始状态出发，玩家通过自私调整策略最终都能收敛到均衡，即使标准的改进路径可能循环。",
+              "modelAndSetup": "文章研究有限博弈，其中每个玩家有有限策略集并追求效用最大化。核心模型基于改进图和最优回应图，顶点是策略组合，边表示单个玩家可通过改善自身收益的移动。引入‘优先规则’限制可行移动，从而定义不同层次的无环性。该设定允许区分全局无环与弱无环，揭示哪些结构支持动态收敛。",
+              "contributionsAndResults": "论文证明弱无环性等价于存在弱势函数，并等价于从任意起点存在通往均衡的路径。这一结果统一了多种已知条件，如迭代剔除非最佳回应策略或子博弈唯一均衡性质均可推出弱BI-无环性。特别指出完美信息扩展式博弈虽不满足强无环性，但仍具弱无环性。",
+              "methodsAndTechniques": "作者使用图论与势函数方法，构造负最长路径长度作为势函数来刻画无环性，用到距离均衡的最短路径定义弱势。关键技术在于将动态过程转化为图上的行走性质，并通过优先规则的层级关系连接不同强度的收敛保证，使抽象函数与实际策略演化相对应。",
+              "limitationsAndReadingValue": "结果依赖于纯策略和有限性假设，难以直接推广至混合策略或无限博弈。证明多为存在性而非构造性，缺乏具体学习算法指导。但论文价值在于清晰梳理了动态可达均衡的不同层次，提供了统一框架理解多类博弈的稳定性，适合关注均衡学习路径的研究者精读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "无环与弱无环博弈中的势与弱势",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么某些博弈中玩家通过逐步改进策略总能到达均衡？虽然许多重要博弈类存在纯策略纳什均衡，但更关键的是这些均衡能否被个体理性行为动态达到。本文关注的问题是：是否存在某种路径或规则，使得无论从何种初始状态出发，玩家通过自私调整策略最终都能收敛到均衡，即使标准的改进路径可能循环。",
+              "modelAndSetup": "文章研究有限博弈，其中每个玩家有有限策略集并追求效用最大化。核心模型基于改进图和最优回应图，顶点是策略组合，边表示单个玩家可通过改善自身收益的移动。引入‘优先规则’限制可行移动，从而定义不同层次的无环性。该设定允许区分全局无环与弱无环，揭示哪些结构支持动态收敛。",
+              "contributionsAndResults": "论文证明弱无环性等价于存在弱势函数，并等价于从任意起点存在通往均衡的路径。这一结果统一了多种已知条件，如迭代剔除非最佳回应策略或子博弈唯一均衡性质均可推出弱BI-无环性。特别指出完美信息扩展式博弈虽不满足强无环性，但仍具弱无环性。",
+              "methodsAndTechniques": "作者使用图论与势函数方法，构造负最长路径长度作为势函数来刻画无环性，用到距离均衡的最短路径定义弱势。关键技术在于将动态过程转化为图上的行走性质，并通过优先规则的层级关系连接不同强度的收敛保证，使抽象函数与实际策略演化相对应。",
+              "limitationsAndReadingValue": "结果依赖于纯策略和有限性假设，难以直接推广至混合策略或无限博弈。证明多为存在性而非构造性，缺乏具体学习算法指导。但论文价值在于清晰梳理了动态可达均衡的不同层次，提供了统一框架理解多类博弈的稳定性，适合关注均衡学习路径的研究者精读。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "机制设计",
+              "均衡分析"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Reverse Big Push: Generative AI and Self-Fulfilling Automation",
+            "url": "https://arxiv.org/abs/2608.25602",
+            "arxivId": "2608.25602",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "反向大推动：生成式AI与自我实现的自动化",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "自动化",
+              "协调失败",
+              "多重均衡",
+              "劳动力市场"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么生成式AI可能导致大规模自动化并非因为技术更优，而是因预期自我实现？本文回应了当前AI冲击劳动力市场的核心争议：自动化是否必然占优。传统观点忽视了工资调整带来的需求反馈——企业裁员虽降成本，却削弱本地消费，使人工增强服务更难盈利。当这种需求外溢足够强时，生产模式成为战略互补，引发协调困境。",
+              "modelAndSetup": "作者构建了一个局部服务经济模型，包含异质工人、下游企业和内生工资。每个企业选择使用生成式AI辅助人力（增强）或替代人力（自动化），前者需维持固定团队并支付持续工资，后者按使用量付费。市场总需求由居民预算决定，其中工资收入是关键来源。企业作为原子化参与者，在给定就业水平下形成关于未来路径的理性预期，并据此决策。",
+              "contributionsAndResults": "论文证明即使在工资灵活调整下，仍可能存在两个稳态：高就业的人工增强均衡与低就业的自动化均衡，后者可能因悲观预期而锁定。关键条件是工资带来的需求效应超过其成本效应。更进一步，在前向看动态中，相同初始状态可走向复苏或崩溃，取决于对后续行为的预期。最终均衡由风险主导性选择。",
+              "methodsAndTechniques": "作者通过构建增广收益函数分析企业动态激励，利用积分形式表达远期预期的影响，并结合Frankel-Pauzner框架处理公共信号下的均衡选择。证明依赖于单调比较静态和期望路径积分的符号分析，借助线性化与边界条件推导出风险主导阈值。技术核心在于分离历史与预期的作用，并在随机环境下恢复唯一路径。",
+              "limitationsAndReadingValue": "模型假设本地封闭经济与特定需求结构，现实中的跨区域支出和资本流动可能弱化机制。此外，政策建议依赖精确参数估计，实施难度较高。但该文极具阅读价值，尤其在模型抽象层次——它清晰揭示了‘自动化陷阱’的逻辑结构，为理解AI时代的协调失败提供了基准理论框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "反向大推动：生成式AI与自我实现的自动化",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么生成式AI可能导致大规模自动化并非因为技术更优，而是因预期自我实现？本文回应了当前AI冲击劳动力市场的核心争议：自动化是否必然占优。传统观点忽视了工资调整带来的需求反馈——企业裁员虽降成本，却削弱本地消费，使人工增强服务更难盈利。当这种需求外溢足够强时，生产模式成为战略互补，引发协调困境。",
+              "modelAndSetup": "作者构建了一个局部服务经济模型，包含异质工人、下游企业和内生工资。每个企业选择使用生成式AI辅助人力（增强）或替代人力（自动化），前者需维持固定团队并支付持续工资，后者按使用量付费。市场总需求由居民预算决定，其中工资收入是关键来源。企业作为原子化参与者，在给定就业水平下形成关于未来路径的理性预期，并据此决策。",
+              "contributionsAndResults": "论文证明即使在工资灵活调整下，仍可能存在两个稳态：高就业的人工增强均衡与低就业的自动化均衡，后者可能因悲观预期而锁定。关键条件是工资带来的需求效应超过其成本效应。更进一步，在前向看动态中，相同初始状态可走向复苏或崩溃，取决于对后续行为的预期。最终均衡由风险主导性选择。",
+              "methodsAndTechniques": "作者通过构建增广收益函数分析企业动态激励，利用积分形式表达远期预期的影响，并结合Frankel-Pauzner框架处理公共信号下的均衡选择。证明依赖于单调比较静态和期望路径积分的符号分析，借助线性化与边界条件推导出风险主导阈值。技术核心在于分离历史与预期的作用，并在随机环境下恢复唯一路径。",
+              "limitationsAndReadingValue": "模型假设本地封闭经济与特定需求结构，现实中的跨区域支出和资本流动可能弱化机制。此外，政策建议依赖精确参数估计，实施难度较高。但该文极具阅读价值，尤其在模型抽象层次——它清晰揭示了‘自动化陷阱’的逻辑结构，为理解AI时代的协调失败提供了基准理论框架。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "自动化",
+              "协调失败",
+              "多重均衡",
+              "劳动力市场"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-26",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202608260000 TO 202608262359\"",
+            "totalResults": 11,
+            "fetchedCount": 11
+          }
+        },
+        "dedupedCount": 11
+      },
+      "arxivTotalResults": 11,
+      "fetchedCount": 11,
+      "fetchedPapers": [
+        {
+          "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+          "url": "https://arxiv.org/abs/2608.25992",
+          "arxivId": "2608.25992",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Multi-agent large language model (LLM) workflows have emerged as a powerful paradigm for solving complex, open-ended tasks through collaborative reasoning among specialized LLM agents, but they incur substantial operating costs due to repeated LLM invocations and long-horizon context accumulation. Existing cascade routing methods make one-shot, query-level decisions and cannot adapt to the dynamic, state-dependent nature of multi-step workflows, in which the right LLM at each step depends on evolving task progress, remaining task difficulty, and cost-efficiency requirements. We present ProgRouter, an online progress-guided routing framework that adaptively selects LLM agents across workflow steps to preserve task-solving quality while adhering to time and cost budgets. ProgRouter introduces a multi-view task progress scorer that combines coarse workflow outcome regimes with fine-grained signals on subtask completion, progress trends, and workflow state quality. Then, a dual-path task progress predictor and an adaptive meta-gating mechanism estimate the progress gain for each candidate routed LLM. ProgRouter makes online step-wise routing decisions that balance progress gain, task time budgets, and long-term operating cost efficiency. Experiments on HumanEval Plus, MBPP, MATH-500, and ASQA, spanning agentic code generation, mathematical reasoning, and retrieval-augmented long-form question answering, demonstrate that ProgRouter reduces the operating cost relative to key baselines while maintaining strong task-solving performance."
+        },
+        {
+          "title": "Praxist: From Experimental Artifacts to Solution Lineages",
+          "url": "https://arxiv.org/abs/2608.25955",
+          "arxivId": "2608.25955",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.SE"
+          ],
+          "abstract": "Autonomous R\\&D agents now write, run, and improve executable artifacts under automated evaluation---but largely as laboratory instruments: shown on curated benchmarks, with gains that are hard to trace to a cause and costs well above what sustained engineering practice absorbs. The limitation is structural. Most systems treat each attempt as nearly self-contained, so logs, memories, and search trees record what happened without establishing which design element produced an improvement, whether its evidence survived validation, or how it recombines with others. Long campaigns therefore keep re-learning the same lessons. We introduce Praxist, a lineage-centered generational system that converts reproducible artifacts and evaluator outcomes into a typed evidence graph of findings, lane-structured frontiers, and agendas. Separating local artifact construction from cohort-level evidence synthesis lets later attempts inherit validated mechanisms, unresolved claims, and useful constraints, and leaves results attached to an inspectable lineage. On the standardized 75-task MLE-bench suite, the finalized official-grader results give Praxist 60 medals (80.0\\%), 49 of them gold, against 55 medals (73.3\\%) and 34 gold for a Claude Code baseline on Claude Opus 4.8---at a recorded model spend of US\\$3,054 versus US\\$38,370, roughly a twelfth of the cost. Four case studies---quantitative trading, LiDAR-inertial-visual SLAM, tokamak magnetic control, and rocket landing---carry the same process into open-ended engineering problems, improving on each task-native baseline in headline accuracy, survival, or resource cost, with the discovery path on record. Stronger artifacts at an order of magnitude less spend, each backed by an auditable lineage, are, to our knowledge, first brought together here: the operating profile production research requires, not the one a benchmark demonstration establishes."
+        },
+        {
+          "title": "Spatial-Knowledge-Graph-Grounded LLM Agents for Neighborhood Livability Evaluation",
+          "url": "https://arxiv.org/abs/2608.25952",
+          "arxivId": "2608.25952",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.CY",
+            "cs.MA"
+          ],
+          "abstract": "Neighborhood livability is commonly assessed with static built-environment indicators, such as facility proximity, street connectivity, and access to public space. These measures describe available opportunities but do not directly represent how residents with different mobility capacities, household roles, schedules, and care responsibilities experience the neighborhood. This paper presents a prototype framework that uses a spatial knowledge graph (KG) and large language models (LLMs) to generate and revise household schedules, followed by rule-based feasibility checking and GIS-based network materialization. The spatial KG integrates residents, residences, facilities, neighborhood context, and sampled road hubs; Graph-RAG retrieves each household's nearby spatial context, including candidate POIs and approximate walking times, for the scheduling LLM. The LLM produces structured household schedules, while rules are used for lightweight repairs and auditable feasibility checks. The LLM then revises schedules in response to identified feasibility issues. A routing module derives the actual travel paths, travel times, modes, and event histories from the road network. The resulting events support synthetic resident-agent interviews about daily convenience, travel burden, activity feasibility, and household coordination. A prototype demonstration in a Shenzhen neighborhood shows that nominal facility availability does not necessarily imply convenient access: residents with limited mobility and households with care responsibilities experience greater travel and coordination burdens. The framework offers an auditable way to connect spatial opportunity, household activity constraints, and resident-specific livability interpretation, while keeping simulated experience distinct from observed perception."
+        },
+        {
+          "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+          "url": "https://arxiv.org/abs/2608.25937",
+          "arxivId": "2608.25937",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Multi-agent systems (MAS) sometimes already have the potential to answer correctly, but still report a wrong answer. Explaining this outcome is difficult because generation, communication and final answer-selection rules usually change simultaneously. We conceptualize multi-agent reasoning as an evolutionary pipeline of candidate generation, peer communication and terminal selection, wherein consensus without quality control can exhibit patterns of memetic drift. We study two questions: (1) when an LLM judge provides effective selection pressure by supplying a signal of answer correctness for candidates generated in a multi-agent system, and (2) when using that signal improves the reported answer. To map judge reliability, we analysed 15,336 questions from MMLU-Pro, GPQA, MedXpertQA and MuSR, with Humanity's Last Exam analysed separately. To test these rules, we replayed 81,390 fixed candidate pools drawn from 16,278 questions across five benchmarks. We report three findings. (1) A correct answer is often already present among the generated candidates, but the system can still converge on and report a wrong answer. (2) Judge reliability is not a fixed trait of the model, but varies with the task, the generator and how rare the correct answer is. (3) Combining answer frequency with the judge's evaluation changed only the final answer-selection rule and raised accuracy from 63.82% to 70.82-70.95%, primarily by rescuing correct answers that were outnumbered by popular errors. In the systems studied here, the value of generating more candidates depends on whether those extra samples make correct answers present, frequent or recognisable. By isolating generation, recognition and selection, these findings establish a diagnostic basis for designing multi-agent architectures that protect generated correct answers from being lost."
+        },
+        {
+          "title": "AI Agentic Selective Laser Sintering Process Optimization",
+          "url": "https://arxiv.org/abs/2608.25928",
+          "arxivId": "2608.25928",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Agentic systems enable the intelligent automation of complex workflows, specific to additive manufacturing this is applicable for complex tasks such as process parameter optimization for mechanical properties. This work investigates the AI enabled agentic process optimization within Selective Laser Sintering (SLS) to iteratively improve the tensile and flexural properties of 3 different materials on the Inova Mk1. These materials include PA12 GF, PA11 Onyx, and PA12 Blend (volume mixture of 25% PA12 GF and 75% PA12 White) and with using knowledge from previous builds and minimal guidance from the user, the agentic system was able to optimize process parameters over a small number of iterations to achieve comparable TDS specified mechanical properties. This work showcases the ability for an agentic system to continually learn from updated data, enabling the intelligent automation of complex tasks such as process parameter optimization for selective laser sintering."
+        },
+        {
+          "title": "The emergence and evolution of a referential code in populations of bee-like agents",
+          "url": "https://arxiv.org/abs/2608.25779",
+          "arxivId": "2608.25779",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "q-bio.PE",
+            "cs.MA"
+          ],
+          "abstract": "Communication requires a shared code, and any change to it must be coordinated between senders and receivers to avoid a breakdown of communication. The honeybee waggle dance illustrates this problem: species with horizontal combs point directly at a food source, while species with vertical combs cannot point directly and instead reference the dance to gravity, decoded against the position of the sun. We model the emergence and evolutionary transition between these two codes in populations of bee-like agents, with selection acting at the level of colonies. In a horizontal-comb model, we find that direct pointing evolves readily when food is moderately hard to find by random search alone, whether because sites are few and large or many and small, and fails when food is too sparse to spark dances or so abundant that it is found without signaling. Adding an exogenous benefit for vertical combs, we then find that the transition to the gravity-referenced code is driven mainly by the mutation rate and the magnitude of this benefit, with the coupling between sender and receiver mutations playing a further role at low mutation rates. Given a favorable confluence of these factors, the transition proceeds reliably and without a breakdown of communication."
+        },
+        {
+          "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+          "url": "https://arxiv.org/abs/2608.25770",
+          "arxivId": "2608.25770",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Large language models (LLMs) have enabled AI scientist systems to automate scientific discovery, yet existing approaches most rely on static prompting or fixed workflows and fail to accumulate experience for continual improvement. We propose HypoForge, an experience-guided multi-agent framework that learns reusable scientific skills for automated hypothesis generation and hypothesis testing. HypoForge is built on the observation that these two stages involve different supervision signals. For hypothesis generation, where explicit feedback is unavailable, HypoForge adopts an adversarial generator--discriminator mechanism to improve reasoning through comparative critique. For hypothesis testing, where empirical feedback is available, HypoForge learns testing skills from execution outcomes and ground-truth results. By matching skill learning strategies with stage-specific supervision, HypoForge enables continual improvement without fine-tuning foundation models. Experiments on hypothesis generation and testing benchmarks show that HypoForge consistently outperforms existing AI scientist frameworks and skill-level variants. Further analysis demonstrates the effectiveness of the proposed stage-specific skill learning paradigms."
+        },
+        {
+          "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+          "url": "https://arxiv.org/abs/2608.25690",
+          "arxivId": "2608.25690",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "abstract": "Sequential decision-making in multi-robot systems typically assumes that planning information is reliable and that agents execute the actions anticipated by the planner. Compromised agents can violate both assumptions, creating a mismatch between the planning model and physical execution. We study this problem in online multi-robot routing under localization spoofing. We introduce a distance-constrained spoofing model for monitor-aware adversaries, together with a tiered bipartite matching strategy that maximizes assignment influence while limiting spoofing magnitude. To mitigate such attacks, we develop a trust-aware monitor that combines probabilistic localization trust, calibrated using real GPS spoofing data, with behavioral evidence from task execution to classify agents and remove detected adversaries from subsequent planning. We further show that undetected adversaries can cause rollout to lose its expected cost-improvement behavior by violating planner-execution consistency. Trust-aware removal restores this consistency after detection, enabling stable routing and recovery of rollout's empirical advantage over the base policy. Experiments using real GPS spoofing datasets and San Francisco taxicab demand demonstrate effective detection and resilient routing across varying spoofing capabilities, adversarial fleet sizes, adaptive attacks, monitoring configurations, and rollout horizons."
+        },
+        {
+          "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+          "url": "https://arxiv.org/abs/2608.25570",
+          "arxivId": "2608.25570",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "Hardware kernel optimization requires repeated compilation, correctness testing, profiling, and revision. LLM agents can automate parts of this process, and stronger foundation models, longer context windows, and longer execution horizons have improved optimization within individual tasks. These advances alone do not enable an agent to learn from completed optimization runs. Existing kernel-optimization agents seldom preserve a decision, its observed execution feedback, and the later decisions that use that evidence. Retaining every prior trajectory is also impractical because an expanding history competes with the current task for context. We present KOPE, an experience-driven framework for hardware kernel optimization. KOPE records optimization trajectories with correctness and performance feedback in Experience Graph Memory, then uses Active Context Management and Injection to retrieve relevant experience under a fixed token budget. The graph retains decision order, observed outcomes, and alternative branches, allowing evidence collected on the target hardware to inform later optimization steps and tasks. Under the same GLM-5.2 setting, the geometric mean of KOPE's per-operator speedups is $1.54\\times$ that of CANNBot, the strongest competing baseline. In a complete 53-operator ablation, Active Context Management and Injection raises pass rate from 60.0\\% to 84.6\\%, increases the evaluator-reported positive-field geometric mean from 0.0382 to 0.0661, and reduces optimization token consumption from 15.9B to 1.113B tokens relative to passive agent-led context construction. Enabling Experience Graph Memory raises full-suite pass rate from 55.2\\% to 84.6\\% and yields a $1.43\\times$ geometric-mean speedup on valid timing comparisons. These results support continual optimization through external experience while the foundation model remains fixed."
+        },
+        {
+          "title": "MACGen: Toward Functionally Correct and Secure Code Generation via Multi-Agent Collaboration",
+          "url": "https://arxiv.org/abs/2608.25457",
+          "arxivId": "2608.25457",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Despite their strong ability to generate code, large language models often fail to produce secure code, as their outputs frequently contain security vulnerabilities. Secure code generation is inherently challenging because it requires solving a multi-objective problem: functional correctness and security. Existing approaches address this challenge by injecting external security knowledge or by using agentic feedback and iterative refinement. However, guideline retrieval often leaves the generator to translate generic advice into task-specific secure implementations, while shared-dialogue multi-agent feedback can blur role boundaries and suffer from context bloat. We present MACGen, a multi-agent framework that integrates planning, security analysis, code synthesis and refinement to jointly optimize security and functionality. A planner constructs a step-by-step plan to satisfy functional requirements. A security advisor identifies likely CWEs and synthesizes task-specific guidelines, a coder then generates code grounded in these artifacts, and a reviewer issues perspective-separated feedback. Rather than sharing full dialogue histories, each agent receives only structured artifacts from upstream stages, enforcing role specialization and reducing uncontrolled context growth. On CWEval and BaxBench, MACGen improves F&S@1 over direct prompting by 19.61 and 10.57 percentage points (pp) on average, respectively."
+        },
+        {
+          "title": "BVR Sim: An Open and High-Throughput Environment for Heterogeneous Air-Combat Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2608.25419",
+          "arxivId": "2608.25419",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "abstract": "Beyond-visual-range (BVR) air combat is a challenging reinforcement-learning domain characterized by partial observability, long-horizon decision making, energy management, and limited weapons. We present BVR Sim, an open-source Gymnasium-style environment designed for heterogeneous air-combat reinforcement learning. BVR Sim supports multiple JSBSim aircraft models, including the F-15, F-16, F/A-18, and F-22, with configurable weapons, sensors, controllers, and opponents. A unified tactical action interface specifies desired heading, altitude, speed, and weapon release above aircraft-specific inner-loop controllers, enabling policies to operate across heterogeneous platforms. The environment provides interchangeable Python and accelerated C++ backends, entity-oriented observations, compositional rewards, scripted opponents, replay and visualization, and adapters for multi-agent learning frameworks. At a 0.4-s decision interval, the C++ backend achieves 104 simulated seconds per wall-clock second in 1-vs-1 and remains practical through 10-vs-10 scenarios. A policy trained only on the F-16 transfers without retraining to four unseen aircraft, reaching a 45.5% mean win rate with aircraft-specific controller adaptation. MAPPO and HAPPO experiments further verify end-to-end compatibility with standard multi-agent reinforcement-learning pipelines."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+              "url": "https://arxiv.org/abs/2608.25992",
+              "arxivId": "2608.25992",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Multi-agent large language model (LLM) workflows have emerged as a powerful paradigm for solving complex, open-ended tasks through collaborative reasoning among specialized LLM agents, but they incur substantial operating costs due to repeated LLM invocations and long-horizon context accumulation. Existing cascade routing methods make one-shot, query-level decisions and cannot adapt to the dynamic, state-dependent nature of multi-step workflows, in which the right LLM at each step depends on evolving task progress, remaining task difficulty, and cost-efficiency requirements. We present ProgRouter, an online progress-guided routing framework that adaptively selects LLM agents across workflow steps to preserve task-solving quality while adhering to time and cost budgets. ProgRouter introduces a multi-view task progress scorer that combines coarse workflow outcome regimes with fine-grained signals on subtask completion, progress trends, and workflow state quality. Then, a dual-path task progress predictor and an adaptive meta-gating mechanism estimate the progress gain for each candidate routed LLM. ProgRouter makes online step-wise routing decisions that balance progress gain, task time budgets, and long-term operating cost efficiency. Experiments on HumanEval Plus, MBPP, MATH-500, and ASQA, spanning agentic code generation, mathematical reasoning, and retrieval-augmented long-form question answering, demonstrate that ProgRouter reduces the operating cost relative to key baselines while maintaining strong task-solving performance."
+            },
+            {
+              "title": "Praxist: From Experimental Artifacts to Solution Lineages",
+              "url": "https://arxiv.org/abs/2608.25955",
+              "arxivId": "2608.25955",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.SE"
+              ],
+              "abstract": "Autonomous R\\&D agents now write, run, and improve executable artifacts under automated evaluation---but largely as laboratory instruments: shown on curated benchmarks, with gains that are hard to trace to a cause and costs well above what sustained engineering practice absorbs. The limitation is structural. Most systems treat each attempt as nearly self-contained, so logs, memories, and search trees record what happened without establishing which design element produced an improvement, whether its evidence survived validation, or how it recombines with others. Long campaigns therefore keep re-learning the same lessons. We introduce Praxist, a lineage-centered generational system that converts reproducible artifacts and evaluator outcomes into a typed evidence graph of findings, lane-structured frontiers, and agendas. Separating local artifact construction from cohort-level evidence synthesis lets later attempts inherit validated mechanisms, unresolved claims, and useful constraints, and leaves results attached to an inspectable lineage. On the standardized 75-task MLE-bench suite, the finalized official-grader results give Praxist 60 medals (80.0\\%), 49 of them gold, against 55 medals (73.3\\%) and 34 gold for a Claude Code baseline on Claude Opus 4.8---at a recorded model spend of US\\$3,054 versus US\\$38,370, roughly a twelfth of the cost. Four case studies---quantitative trading, LiDAR-inertial-visual SLAM, tokamak magnetic control, and rocket landing---carry the same process into open-ended engineering problems, improving on each task-native baseline in headline accuracy, survival, or resource cost, with the discovery path on record. Stronger artifacts at an order of magnitude less spend, each backed by an auditable lineage, are, to our knowledge, first brought together here: the operating profile production research requires, not the one a benchmark demonstration establishes."
+            },
+            {
+              "title": "Spatial-Knowledge-Graph-Grounded LLM Agents for Neighborhood Livability Evaluation",
+              "url": "https://arxiv.org/abs/2608.25952",
+              "arxivId": "2608.25952",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.CY",
+                "cs.MA"
+              ],
+              "abstract": "Neighborhood livability is commonly assessed with static built-environment indicators, such as facility proximity, street connectivity, and access to public space. These measures describe available opportunities but do not directly represent how residents with different mobility capacities, household roles, schedules, and care responsibilities experience the neighborhood. This paper presents a prototype framework that uses a spatial knowledge graph (KG) and large language models (LLMs) to generate and revise household schedules, followed by rule-based feasibility checking and GIS-based network materialization. The spatial KG integrates residents, residences, facilities, neighborhood context, and sampled road hubs; Graph-RAG retrieves each household's nearby spatial context, including candidate POIs and approximate walking times, for the scheduling LLM. The LLM produces structured household schedules, while rules are used for lightweight repairs and auditable feasibility checks. The LLM then revises schedules in response to identified feasibility issues. A routing module derives the actual travel paths, travel times, modes, and event histories from the road network. The resulting events support synthetic resident-agent interviews about daily convenience, travel burden, activity feasibility, and household coordination. A prototype demonstration in a Shenzhen neighborhood shows that nominal facility availability does not necessarily imply convenient access: residents with limited mobility and households with care responsibilities experience greater travel and coordination burdens. The framework offers an auditable way to connect spatial opportunity, household activity constraints, and resident-specific livability interpretation, while keeping simulated experience distinct from observed perception."
+            },
+            {
+              "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+              "url": "https://arxiv.org/abs/2608.25937",
+              "arxivId": "2608.25937",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Multi-agent systems (MAS) sometimes already have the potential to answer correctly, but still report a wrong answer. Explaining this outcome is difficult because generation, communication and final answer-selection rules usually change simultaneously. We conceptualize multi-agent reasoning as an evolutionary pipeline of candidate generation, peer communication and terminal selection, wherein consensus without quality control can exhibit patterns of memetic drift. We study two questions: (1) when an LLM judge provides effective selection pressure by supplying a signal of answer correctness for candidates generated in a multi-agent system, and (2) when using that signal improves the reported answer. To map judge reliability, we analysed 15,336 questions from MMLU-Pro, GPQA, MedXpertQA and MuSR, with Humanity's Last Exam analysed separately. To test these rules, we replayed 81,390 fixed candidate pools drawn from 16,278 questions across five benchmarks. We report three findings. (1) A correct answer is often already present among the generated candidates, but the system can still converge on and report a wrong answer. (2) Judge reliability is not a fixed trait of the model, but varies with the task, the generator and how rare the correct answer is. (3) Combining answer frequency with the judge's evaluation changed only the final answer-selection rule and raised accuracy from 63.82% to 70.82-70.95%, primarily by rescuing correct answers that were outnumbered by popular errors. In the systems studied here, the value of generating more candidates depends on whether those extra samples make correct answers present, frequent or recognisable. By isolating generation, recognition and selection, these findings establish a diagnostic basis for designing multi-agent architectures that protect generated correct answers from being lost."
+            },
+            {
+              "title": "AI Agentic Selective Laser Sintering Process Optimization",
+              "url": "https://arxiv.org/abs/2608.25928",
+              "arxivId": "2608.25928",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Agentic systems enable the intelligent automation of complex workflows, specific to additive manufacturing this is applicable for complex tasks such as process parameter optimization for mechanical properties. This work investigates the AI enabled agentic process optimization within Selective Laser Sintering (SLS) to iteratively improve the tensile and flexural properties of 3 different materials on the Inova Mk1. These materials include PA12 GF, PA11 Onyx, and PA12 Blend (volume mixture of 25% PA12 GF and 75% PA12 White) and with using knowledge from previous builds and minimal guidance from the user, the agentic system was able to optimize process parameters over a small number of iterations to achieve comparable TDS specified mechanical properties. This work showcases the ability for an agentic system to continually learn from updated data, enabling the intelligent automation of complex tasks such as process parameter optimization for selective laser sintering."
+            },
+            {
+              "title": "The emergence and evolution of a referential code in populations of bee-like agents",
+              "url": "https://arxiv.org/abs/2608.25779",
+              "arxivId": "2608.25779",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "q-bio.PE",
+                "cs.MA"
+              ],
+              "abstract": "Communication requires a shared code, and any change to it must be coordinated between senders and receivers to avoid a breakdown of communication. The honeybee waggle dance illustrates this problem: species with horizontal combs point directly at a food source, while species with vertical combs cannot point directly and instead reference the dance to gravity, decoded against the position of the sun. We model the emergence and evolutionary transition between these two codes in populations of bee-like agents, with selection acting at the level of colonies. In a horizontal-comb model, we find that direct pointing evolves readily when food is moderately hard to find by random search alone, whether because sites are few and large or many and small, and fails when food is too sparse to spark dances or so abundant that it is found without signaling. Adding an exogenous benefit for vertical combs, we then find that the transition to the gravity-referenced code is driven mainly by the mutation rate and the magnitude of this benefit, with the coupling between sender and receiver mutations playing a further role at low mutation rates. Given a favorable confluence of these factors, the transition proceeds reliably and without a breakdown of communication."
+            },
+            {
+              "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+              "url": "https://arxiv.org/abs/2608.25770",
+              "arxivId": "2608.25770",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Large language models (LLMs) have enabled AI scientist systems to automate scientific discovery, yet existing approaches most rely on static prompting or fixed workflows and fail to accumulate experience for continual improvement. We propose HypoForge, an experience-guided multi-agent framework that learns reusable scientific skills for automated hypothesis generation and hypothesis testing. HypoForge is built on the observation that these two stages involve different supervision signals. For hypothesis generation, where explicit feedback is unavailable, HypoForge adopts an adversarial generator--discriminator mechanism to improve reasoning through comparative critique. For hypothesis testing, where empirical feedback is available, HypoForge learns testing skills from execution outcomes and ground-truth results. By matching skill learning strategies with stage-specific supervision, HypoForge enables continual improvement without fine-tuning foundation models. Experiments on hypothesis generation and testing benchmarks show that HypoForge consistently outperforms existing AI scientist frameworks and skill-level variants. Further analysis demonstrates the effectiveness of the proposed stage-specific skill learning paradigms."
+            },
+            {
+              "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+              "url": "https://arxiv.org/abs/2608.25690",
+              "arxivId": "2608.25690",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.RO"
+              ],
+              "abstract": "Sequential decision-making in multi-robot systems typically assumes that planning information is reliable and that agents execute the actions anticipated by the planner. Compromised agents can violate both assumptions, creating a mismatch between the planning model and physical execution. We study this problem in online multi-robot routing under localization spoofing. We introduce a distance-constrained spoofing model for monitor-aware adversaries, together with a tiered bipartite matching strategy that maximizes assignment influence while limiting spoofing magnitude. To mitigate such attacks, we develop a trust-aware monitor that combines probabilistic localization trust, calibrated using real GPS spoofing data, with behavioral evidence from task execution to classify agents and remove detected adversaries from subsequent planning. We further show that undetected adversaries can cause rollout to lose its expected cost-improvement behavior by violating planner-execution consistency. Trust-aware removal restores this consistency after detection, enabling stable routing and recovery of rollout's empirical advantage over the base policy. Experiments using real GPS spoofing datasets and San Francisco taxicab demand demonstrate effective detection and resilient routing across varying spoofing capabilities, adversarial fleet sizes, adaptive attacks, monitoring configurations, and rollout horizons."
+            },
+            {
+              "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+              "url": "https://arxiv.org/abs/2608.25570",
+              "arxivId": "2608.25570",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "Hardware kernel optimization requires repeated compilation, correctness testing, profiling, and revision. LLM agents can automate parts of this process, and stronger foundation models, longer context windows, and longer execution horizons have improved optimization within individual tasks. These advances alone do not enable an agent to learn from completed optimization runs. Existing kernel-optimization agents seldom preserve a decision, its observed execution feedback, and the later decisions that use that evidence. Retaining every prior trajectory is also impractical because an expanding history competes with the current task for context. We present KOPE, an experience-driven framework for hardware kernel optimization. KOPE records optimization trajectories with correctness and performance feedback in Experience Graph Memory, then uses Active Context Management and Injection to retrieve relevant experience under a fixed token budget. The graph retains decision order, observed outcomes, and alternative branches, allowing evidence collected on the target hardware to inform later optimization steps and tasks. Under the same GLM-5.2 setting, the geometric mean of KOPE's per-operator speedups is $1.54\\times$ that of CANNBot, the strongest competing baseline. In a complete 53-operator ablation, Active Context Management and Injection raises pass rate from 60.0\\% to 84.6\\%, increases the evaluator-reported positive-field geometric mean from 0.0382 to 0.0661, and reduces optimization token consumption from 15.9B to 1.113B tokens relative to passive agent-led context construction. Enabling Experience Graph Memory raises full-suite pass rate from 55.2\\% to 84.6\\% and yields a $1.43\\times$ geometric-mean speedup on valid timing comparisons. These results support continual optimization through external experience while the foundation model remains fixed."
+            },
+            {
+              "title": "MACGen: Toward Functionally Correct and Secure Code Generation via Multi-Agent Collaboration",
+              "url": "https://arxiv.org/abs/2608.25457",
+              "arxivId": "2608.25457",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Despite their strong ability to generate code, large language models often fail to produce secure code, as their outputs frequently contain security vulnerabilities. Secure code generation is inherently challenging because it requires solving a multi-objective problem: functional correctness and security. Existing approaches address this challenge by injecting external security knowledge or by using agentic feedback and iterative refinement. However, guideline retrieval often leaves the generator to translate generic advice into task-specific secure implementations, while shared-dialogue multi-agent feedback can blur role boundaries and suffer from context bloat. We present MACGen, a multi-agent framework that integrates planning, security analysis, code synthesis and refinement to jointly optimize security and functionality. A planner constructs a step-by-step plan to satisfy functional requirements. A security advisor identifies likely CWEs and synthesizes task-specific guidelines, a coder then generates code grounded in these artifacts, and a reviewer issues perspective-separated feedback. Rather than sharing full dialogue histories, each agent receives only structured artifacts from upstream stages, enforcing role specialization and reducing uncontrolled context growth. On CWEval and BaxBench, MACGen improves F&S@1 over direct prompting by 19.61 and 10.57 percentage points (pp) on average, respectively."
+            },
+            {
+              "title": "BVR Sim: An Open and High-Throughput Environment for Heterogeneous Air-Combat Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2608.25419",
+              "arxivId": "2608.25419",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG"
+              ],
+              "abstract": "Beyond-visual-range (BVR) air combat is a challenging reinforcement-learning domain characterized by partial observability, long-horizon decision making, energy management, and limited weapons. We present BVR Sim, an open-source Gymnasium-style environment designed for heterogeneous air-combat reinforcement learning. BVR Sim supports multiple JSBSim aircraft models, including the F-15, F-16, F/A-18, and F-22, with configurable weapons, sensors, controllers, and opponents. A unified tactical action interface specifies desired heading, altitude, speed, and weapon release above aircraft-specific inner-loop controllers, enabling policies to operate across heterogeneous platforms. The environment provides interchangeable Python and accelerated C++ backends, entity-oriented observations, compositional rewards, scripted opponents, replay and visualization, and adapters for multi-agent learning frameworks. At a 0.4-s decision interval, the C++ backend achieves 104 simulated seconds per wall-clock second in 1-vs-1 and remains practical through 10-vs-10 scenarios. A policy trained only on the F-16 transfers without retraining to four unseen aircraft, reaching a 45.5% mean win rate with aircraft-specific controller adaptation. MAPPO and HAPPO experiments further verify end-to-end compatibility with standard multi-agent reinforcement-learning pipelines."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 4,
+                  "theoreticalDepth": 5,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+              "url": "https://arxiv.org/abs/2608.25992",
+              "arxivId": "2608.25992",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Praxist: From Experimental Artifacts to Solution Lineages",
+              "url": "https://arxiv.org/abs/2608.25955",
+              "arxivId": "2608.25955",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.SE"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Spatial-Knowledge-Graph-Grounded LLM Agents for Neighborhood Livability Evaluation",
+              "url": "https://arxiv.org/abs/2608.25952",
+              "arxivId": "2608.25952",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.CY",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+              "url": "https://arxiv.org/abs/2608.25937",
+              "arxivId": "2608.25937",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "AI Agentic Selective Laser Sintering Process Optimization",
+              "url": "https://arxiv.org/abs/2608.25928",
+              "arxivId": "2608.25928",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 7.0,
+                "total": 7.0
+              }
+            },
+            {
+              "title": "The emergence and evolution of a referential code in populations of bee-like agents",
+              "url": "https://arxiv.org/abs/2608.25779",
+              "arxivId": "2608.25779",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "q-bio.PE",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 5.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+              "url": "https://arxiv.org/abs/2608.25770",
+              "arxivId": "2608.25770",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+              "url": "https://arxiv.org/abs/2608.25690",
+              "arxivId": "2608.25690",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.RO"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+              "url": "https://arxiv.org/abs/2608.25570",
+              "arxivId": "2608.25570",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "MACGen: Toward Functionally Correct and Secure Code Generation via Multi-Agent Collaboration",
+              "url": "https://arxiv.org/abs/2608.25457",
+              "arxivId": "2608.25457",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "BVR Sim: An Open and High-Throughput Environment for Heterogeneous Air-Combat Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2608.25419",
+              "arxivId": "2608.25419",
+              "date": "2026-08-26",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+          "url": "https://arxiv.org/abs/2608.25992",
+          "arxivId": "2608.25992",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Praxist: From Experimental Artifacts to Solution Lineages",
+          "url": "https://arxiv.org/abs/2608.25955",
+          "arxivId": "2608.25955",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Spatial-Knowledge-Graph-Grounded LLM Agents for Neighborhood Livability Evaluation",
+          "url": "https://arxiv.org/abs/2608.25952",
+          "arxivId": "2608.25952",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.CY",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+          "url": "https://arxiv.org/abs/2608.25937",
+          "arxivId": "2608.25937",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "AI Agentic Selective Laser Sintering Process Optimization",
+          "url": "https://arxiv.org/abs/2608.25928",
+          "arxivId": "2608.25928",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 7.0,
+            "total": 7.0
+          }
+        },
+        {
+          "title": "The emergence and evolution of a referential code in populations of bee-like agents",
+          "url": "https://arxiv.org/abs/2608.25779",
+          "arxivId": "2608.25779",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "q-bio.PE",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 5.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+          "url": "https://arxiv.org/abs/2608.25770",
+          "arxivId": "2608.25770",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+          "url": "https://arxiv.org/abs/2608.25690",
+          "arxivId": "2608.25690",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+          "url": "https://arxiv.org/abs/2608.25570",
+          "arxivId": "2608.25570",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "MACGen: Toward Functionally Correct and Secure Code Generation via Multi-Agent Collaboration",
+          "url": "https://arxiv.org/abs/2608.25457",
+          "arxivId": "2608.25457",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "BVR Sim: An Open and High-Throughput Environment for Heterogeneous Air-Combat Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2608.25419",
+          "arxivId": "2608.25419",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+          "url": "https://arxiv.org/abs/2608.25937",
+          "arxivId": "2608.25937",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Praxist: From Experimental Artifacts to Solution Lineages",
+          "url": "https://arxiv.org/abs/2608.25955",
+          "arxivId": "2608.25955",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+          "url": "https://arxiv.org/abs/2608.25570",
+          "arxivId": "2608.25570",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+          "url": "https://arxiv.org/abs/2608.25690",
+          "arxivId": "2608.25690",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+          "url": "https://arxiv.org/abs/2608.25770",
+          "arxivId": "2608.25770",
+          "date": "2026-08-26",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+            "url": "https://arxiv.org/abs/2608.25937",
+            "arxivId": "2608.25937",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "候选供给与答案选择塑造多智能体系统中大语言模型评判的价值",
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "评测方法"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生成式AI",
+              "推理",
+              "智能体"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统常通过代理间辩论或投票提升推理表现，但即便正确答案已被生成，系统仍可能因群体共识错误而报告错误结果。现有方法难以区分性能提升来自更好的候选生成、更有效的通信，还是更优的答案选择机制。本文聚焦于‘生成—识别—选择’链条中的后两个环节，揭示在缺乏质量筛选时，流行错误可能通过类似模因漂变的过程被放大，导致正确答案虽存在却被丢弃。",
+              "modelAndSetup": "研究将多智能体推理解耦为三个阶段：独立生成候选答案、同行交流演化信息、终端选择最终输出。实验基于医学与通用推理任务，在固定候选池上重放不同选择规则，剥离动态交互影响。通过引入外部大语言模型作为评判者，评估其能否可靠区分正确与错误推理，并测试结合频率与评判信号的选择策略在相同候选集上的表现。",
+              "contributionsAndResults": "研究发现，多数情况下正确答案已在初始生成中出现，但主流选择机制（如多数投票）常将其忽略。评判者的可靠性并非固定属性，而是随任务、生成器及正确答案稀有度动态变化。关键结果表明，将答案频率与评判排序结合，可在不新增采样的前提下，使准确率从63.82%提升至70.95%，主要得益于挽救了那些被流行错误压制的正确少数答案。",
+              "methodsAndTechniques": "作者提出‘正确答案可用性’（pgen）作为核心变量，衡量候选池中正确答案的比例，并以此预测评判者有效性。通过离线回放实验，固定生成结果仅改变选择规则，从而隔离选择机制的影响。方法利用排名AUC量化评判质量，并设计混合权重策略平衡共识频率与内容质量信号，使得即使未占多数的高质量答案也能被保留。",
+              "limitationsAndReadingValue": "研究依赖离线回放，未涵盖实时交互中接收方局部选择与信息转换的动态效应。评判信号的有效性高度依赖生成器与任务设置，结论在强基线或大规模采样下可能减弱。最值得阅读的是其诊断性框架——将多智能体系统分解为可独立评估的模块，为设计能保护正确答案不被丢失的透明架构提供了实用路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "候选供给与答案选择塑造多智能体系统中大语言模型评判的价值",
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统常通过代理间辩论或投票提升推理表现，但即便正确答案已被生成，系统仍可能因群体共识错误而报告错误结果。现有方法难以区分性能提升来自更好的候选生成、更有效的通信，还是更优的答案选择机制。本文聚焦于‘生成—识别—选择’链条中的后两个环节，揭示在缺乏质量筛选时，流行错误可能通过类似模因漂变的过程被放大，导致正确答案虽存在却被丢弃。",
+              "modelAndSetup": "研究将多智能体推理解耦为三个阶段：独立生成候选答案、同行交流演化信息、终端选择最终输出。实验基于医学与通用推理任务，在固定候选池上重放不同选择规则，剥离动态交互影响。通过引入外部大语言模型作为评判者，评估其能否可靠区分正确与错误推理，并测试结合频率与评判信号的选择策略在相同候选集上的表现。",
+              "contributionsAndResults": "研究发现，多数情况下正确答案已在初始生成中出现，但主流选择机制（如多数投票）常将其忽略。评判者的可靠性并非固定属性，而是随任务、生成器及正确答案稀有度动态变化。关键结果表明，将答案频率与评判排序结合，可在不新增采样的前提下，使准确率从63.82%提升至70.95%，主要得益于挽救了那些被流行错误压制的正确少数答案。",
+              "methodsAndTechniques": "作者提出‘正确答案可用性’（pgen）作为核心变量，衡量候选池中正确答案的比例，并以此预测评判者有效性。通过离线回放实验，固定生成结果仅改变选择规则，从而隔离选择机制的影响。方法利用排名AUC量化评判质量，并设计混合权重策略平衡共识频率与内容质量信号，使得即使未占多数的高质量答案也能被保留。",
+              "limitationsAndReadingValue": "研究依赖离线回放，未涵盖实时交互中接收方局部选择与信息转换的动态效应。评判信号的有效性高度依赖生成器与任务设置，结论在强基线或大规模采样下可能减弱。最值得阅读的是其诊断性框架——将多智能体系统分解为可独立评估的模块，为设计能保护正确答案不被丢失的透明架构提供了实用路径。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生成式AI",
+              "推理",
+              "智能体"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Praxist: From Experimental Artifacts to Solution Lineages",
+            "url": "https://arxiv.org/abs/2608.25955",
+            "arxivId": "2608.25955",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.SE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Praxist: 从实验产物到解决方案谱系",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证",
+              "基准评测"
+            ],
+            "contentTags": [
+              "智能体",
+              "证据继承",
+              "自主研发",
+              "评测方法",
+              "解决方案谱系"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前自主科研智能体虽能生成并评估代码产物，但多数系统仅记录评分或保存完整方案，导致每次尝试近乎孤立。这使得已发现的有效机制难以被后续迭代复用，相同教训反复学习，造成资源浪费且进展缓慢。论文旨在解决长期研发中知识无法有效积累的问题，推动从‘试错即丢弃’向‘证据驱动演进’转变。",
+              "modelAndSetup": "论文研究在标准化机器学习工程任务（MLE-bench）及多个开放性工程问题上，如何通过结构化流程提升研发效率。输入为任务描述与评估器，输出为可执行代码及伴随的演化谱系。系统以代际方式运行，每轮生成多个独立实验，经外部评估后提炼为带类型的发现，并通过合成机制决定下一代研究方向，最终产出高性能代码及其完整演化路径。",
+              "contributionsAndResults": "论文提出PRAXIST系统，首次实现强成果与低成本的结合：在75项MLE任务中获60枚奖牌（80%），其中49枚为金牌，性能优于Claude Code基线，而成本仅为其十二分之一（约3054美元 vs 38370美元）。更重要的是，每个结果均附有可追溯的解决方案谱系，使改进过程透明可信，标志着从‘黑箱优化’迈向‘可审计的研发协作’。",
+              "methodsAndTechniques": "核心是‘证据继承’机制：将每次实验转化为带有类型（如正向、负向、诊断）的发现，并分类存入不同继承通道（确认、候选、验证等）。通过‘建设者’‘怀疑者’‘组合管理者’等角色协同分析，决定哪些机制延续、哪些需验证或放弃。该设计确保知识被选择性保留与重组，而非简单堆叠，从而支持跨代累积创新。",
+              "limitationsAndReadingValue": "结论受限于固定仿真环境与特定任务设定，如火箭着陆依赖精确状态反馈，未考虑真实噪声与延迟。部分机制因果归因依赖事后分析，非完全自动化。尽管如此，其系统设计、证据管理流程与多案例实证极具参考价值，尤其适合关注高效、透明AI研发系统的读者深入研读方法与谱系构建逻辑。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Praxist: 从实验产物到解决方案谱系",
+            "summarySections": {
+              "backgroundAndQuestion": "当前自主科研智能体虽能生成并评估代码产物，但多数系统仅记录评分或保存完整方案，导致每次尝试近乎孤立。这使得已发现的有效机制难以被后续迭代复用，相同教训反复学习，造成资源浪费且进展缓慢。论文旨在解决长期研发中知识无法有效积累的问题，推动从‘试错即丢弃’向‘证据驱动演进’转变。",
+              "modelAndSetup": "论文研究在标准化机器学习工程任务（MLE-bench）及多个开放性工程问题上，如何通过结构化流程提升研发效率。输入为任务描述与评估器，输出为可执行代码及伴随的演化谱系。系统以代际方式运行，每轮生成多个独立实验，经外部评估后提炼为带类型的发现，并通过合成机制决定下一代研究方向，最终产出高性能代码及其完整演化路径。",
+              "contributionsAndResults": "论文提出PRAXIST系统，首次实现强成果与低成本的结合：在75项MLE任务中获60枚奖牌（80%），其中49枚为金牌，性能优于Claude Code基线，而成本仅为其十二分之一（约3054美元 vs 38370美元）。更重要的是，每个结果均附有可追溯的解决方案谱系，使改进过程透明可信，标志着从‘黑箱优化’迈向‘可审计的研发协作’。",
+              "methodsAndTechniques": "核心是‘证据继承’机制：将每次实验转化为带有类型（如正向、负向、诊断）的发现，并分类存入不同继承通道（确认、候选、验证等）。通过‘建设者’‘怀疑者’‘组合管理者’等角色协同分析，决定哪些机制延续、哪些需验证或放弃。该设计确保知识被选择性保留与重组，而非简单堆叠，从而支持跨代累积创新。",
+              "limitationsAndReadingValue": "结论受限于固定仿真环境与特定任务设定，如火箭着陆依赖精确状态反馈，未考虑真实噪声与延迟。部分机制因果归因依赖事后分析，非完全自动化。尽管如此，其系统设计、证据管理流程与多案例实证极具参考价值，尤其适合关注高效、透明AI研发系统的读者深入研读方法与谱系构建逻辑。"
+            },
+            "contentTags": [
+              "智能体",
+              "证据继承",
+              "自主研发",
+              "评测方法",
+              "解决方案谱系"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+            "url": "https://arxiv.org/abs/2608.25570",
+            "arxivId": "2608.25570",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "超越扩展：通过经验驱动的工作流和经验图记忆实现自进化的LLM代理用于硬件内核优化",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "基准评测",
+              "智能体"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "硬件内核优化",
+              "经验驱动学习",
+              "图记忆",
+              "上下文管理"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "硬件内核优化依赖专家反复编译、测试和调优，现有LLM代理虽能自动化部分流程，但难以从过往尝试中积累可复用的知识。直接保存全部历史会占用过多上下文资源，导致关键信息被淹没。本文关注的问题是：如何让LLM代理在缺乏公开训练数据的新硬件上，将执行反馈转化为跨任务可复用的经验。",
+              "modelAndSetup": "研究在华为昇腾NPU上优化AscendC内核，使用CANN Bench作为评测环境，包含53个算子共1060个测试用例。输入为算子规格和当前代码，输出为改进后的实现。代理通过编译、正确性验证和性能剖析获取反馈，并记录决策轨迹。评估指标包括通过率、几何平均加速比和token消耗量，对比不同上下文管理和记忆机制的效果。",
+              "contributionsAndResults": "论文提出KOPE框架，其核心是在固定基础模型的前提下，通过经验图记忆和主动上下文管理实现持续学习。实验显示，启用经验图后全集通过率从55.2%提升至84.6%，加速比达1.43倍；主动上下文机制将token消耗降低93%，同时显著提高成功率。结果表明，外部经验积累比单纯依赖模型能力更有效。",
+              "methodsAndTechniques": "KOPE构建了一个决策到结果的经验图，每个节点记录优化动作与观测结果，边表示状态转移。检索时结合语义相似性和下游成效进行排序。每次推理前动态组装上下文，优先注入热（当前任务状态）、温（相关历史经验）和冷（通用知识）三类信息，在固定token预算下最大化信息效用，使历史经验能指导当前决策。",
+              "limitationsAndReadingValue": "实验基于单一硬件平台和一次归档运行，缺乏多次重复以估计方差。性能增益的结论依赖于特定交叉集合，且未验证是否适用于其他体系结构。尽管如此，论文清晰展示了经验重用的价值。最值得阅读的是其系统设计思想、经验图构建方式以及上下文分层注入机制，对构建可持续进化的AI代理具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "超越扩展：通过经验驱动的工作流和经验图记忆实现自进化的LLM代理用于硬件内核优化",
+            "summarySections": {
+              "backgroundAndQuestion": "硬件内核优化依赖专家反复编译、测试和调优，现有LLM代理虽能自动化部分流程，但难以从过往尝试中积累可复用的知识。直接保存全部历史会占用过多上下文资源，导致关键信息被淹没。本文关注的问题是：如何让LLM代理在缺乏公开训练数据的新硬件上，将执行反馈转化为跨任务可复用的经验。",
+              "modelAndSetup": "研究在华为昇腾NPU上优化AscendC内核，使用CANN Bench作为评测环境，包含53个算子共1060个测试用例。输入为算子规格和当前代码，输出为改进后的实现。代理通过编译、正确性验证和性能剖析获取反馈，并记录决策轨迹。评估指标包括通过率、几何平均加速比和token消耗量，对比不同上下文管理和记忆机制的效果。",
+              "contributionsAndResults": "论文提出KOPE框架，其核心是在固定基础模型的前提下，通过经验图记忆和主动上下文管理实现持续学习。实验显示，启用经验图后全集通过率从55.2%提升至84.6%，加速比达1.43倍；主动上下文机制将token消耗降低93%，同时显著提高成功率。结果表明，外部经验积累比单纯依赖模型能力更有效。",
+              "methodsAndTechniques": "KOPE构建了一个决策到结果的经验图，每个节点记录优化动作与观测结果，边表示状态转移。检索时结合语义相似性和下游成效进行排序。每次推理前动态组装上下文，优先注入热（当前任务状态）、温（相关历史经验）和冷（通用知识）三类信息，在固定token预算下最大化信息效用，使历史经验能指导当前决策。",
+              "limitationsAndReadingValue": "实验基于单一硬件平台和一次归档运行，缺乏多次重复以估计方差。性能增益的结论依赖于特定交叉集合，且未验证是否适用于其他体系结构。尽管如此，论文清晰展示了经验重用的价值。最值得阅读的是其系统设计思想、经验图构建方式以及上下文分层注入机制，对构建可持续进化的AI代理具有启发意义。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "硬件内核优化",
+              "经验驱动学习",
+              "图记忆",
+              "上下文管理"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "基准评测",
+              "智能体"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems",
+            "url": "https://arxiv.org/abs/2608.25690",
+            "arxivId": "2608.25690",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.RO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "面向弹性多机器人系统的信任感知序列决策与回溯规划",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "算法设计",
+              "模型构建"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "鲁棒性",
+              "强化学习",
+              "在线算法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多机器人系统依赖序列决策算法进行协同，但现有方法通常假设状态信息可靠且代理行为可信。然而，定位欺骗等攻击可使恶意代理伪造位置以获取任务却不执行，导致规划与实际执行脱节，破坏系统稳定性。尤其在基于回溯（rollout）的规划中，若模拟时假定所有代理合作，而实际存在未检测出的对手，则预测轨迹将严重偏离真实行为，使回溯失去其本应有的性能优势。",
+              "modelAndSetup": "论文研究在线多机器人路径分配任务，输入为动态到达的服务请求与代理报告的位置，输出为任务指派方案。系统区分真实状态与感知状态，攻击者可在一定距离内伪造位置以影响调度。评估结合真实GPS欺骗数据与旧金山出租车需求数据，衡量指标包括积压请求、取消量及总成本，并测试不同欺骗范围、对抗比例与回溯视野下的表现。",
+              "contributionsAndResults": "提出一种信任感知的闭环规划框架，通过融合定位可信度与任务执行行为证据来识别并移除恶意代理。实验证明，该方法能有效检测受限欺骗攻击，在多种配置下恢复路由稳定性，并使回溯重新超越基线策略。关键结果表明，仅靠定位信号难以应对隐蔽攻击，而加入行为监控可显著提升检测能力与系统韧性。",
+              "methodsAndTechniques": "框架采用双源信任评估：定位信任基于GPS欺骗数据校准的贝塔分布建模异常程度；行为信任则通过任务完成、重分配频率与请求超时积累证据。两者融合后分类代理为合作、可疑或对抗，并从后续规划中剔除对抗者。此机制切断了错误模型在回溯模拟中的传播，修复了规划-执行一致性，从而保障长期决策质量。",
+              "limitationsAndReadingValue": "方法依赖外部定位完整性信号，且永久移除机制可能误伤故障代理。实验未涵盖Sybil攻击或部分合规对手。尽管如此，论文的价值在于揭示了信任不应止于检测，而应主动重塑规划状态。最值得细读的是其闭环设计思想、双证据融合逻辑及对回溯失效机制的深入分析，为安全关键型多智能体系统提供了可推广的架构范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "面向弹性多机器人系统的信任感知序列决策与回溯规划",
+            "summarySections": {
+              "backgroundAndQuestion": "多机器人系统依赖序列决策算法进行协同，但现有方法通常假设状态信息可靠且代理行为可信。然而，定位欺骗等攻击可使恶意代理伪造位置以获取任务却不执行，导致规划与实际执行脱节，破坏系统稳定性。尤其在基于回溯（rollout）的规划中，若模拟时假定所有代理合作，而实际存在未检测出的对手，则预测轨迹将严重偏离真实行为，使回溯失去其本应有的性能优势。",
+              "modelAndSetup": "论文研究在线多机器人路径分配任务，输入为动态到达的服务请求与代理报告的位置，输出为任务指派方案。系统区分真实状态与感知状态，攻击者可在一定距离内伪造位置以影响调度。评估结合真实GPS欺骗数据与旧金山出租车需求数据，衡量指标包括积压请求、取消量及总成本，并测试不同欺骗范围、对抗比例与回溯视野下的表现。",
+              "contributionsAndResults": "提出一种信任感知的闭环规划框架，通过融合定位可信度与任务执行行为证据来识别并移除恶意代理。实验证明，该方法能有效检测受限欺骗攻击，在多种配置下恢复路由稳定性，并使回溯重新超越基线策略。关键结果表明，仅靠定位信号难以应对隐蔽攻击，而加入行为监控可显著提升检测能力与系统韧性。",
+              "methodsAndTechniques": "框架采用双源信任评估：定位信任基于GPS欺骗数据校准的贝塔分布建模异常程度；行为信任则通过任务完成、重分配频率与请求超时积累证据。两者融合后分类代理为合作、可疑或对抗，并从后续规划中剔除对抗者。此机制切断了错误模型在回溯模拟中的传播，修复了规划-执行一致性，从而保障长期决策质量。",
+              "limitationsAndReadingValue": "方法依赖外部定位完整性信号，且永久移除机制可能误伤故障代理。实验未涵盖Sybil攻击或部分合规对手。尽管如此，论文的价值在于揭示了信任不应止于检测，而应主动重塑规划状态。最值得细读的是其闭环设计思想、双证据融合逻辑及对回溯失效机制的深入分析，为安全关键型多智能体系统提供了可推广的架构范式。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "鲁棒性",
+              "强化学习",
+              "在线算法"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "算法设计",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+            "url": "https://arxiv.org/abs/2608.25770",
+            "arxivId": "2608.25770",
+            "date": "2026-08-26",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "HypoForge：一种通过科学技能学习实现自动化假设生成与检验的自我改进多智能体框架",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "基准评测"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "生成式AI",
+              "科学发现"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有AI科学家系统大多依赖静态提示或固定流程，难以积累经验实现持续改进。尤其在假设生成阶段缺乏明确反馈，在假设检验阶段又未能从执行结果中提炼可复用技能。这导致每次任务都需重新推理，效率低下。本文针对科学发现中两个核心环节——假设生成与检验——如何根据各自不同的监督信号特性进行差异化技能学习的问题展开研究。",
+              "modelAndSetup": "系统接收一个科研问题和数据源，输出候选假设及其对应的测试轨迹，包括实验设计、代码和执行结果。在假设生成阶段，采用对抗式生成器-判别器机制，通过比较多个假设的质量差异来优化生成策略；在假设检验阶段，则利用真实结果反馈评估实验成败，并从中提炼可迁移的设计与执行技能。实验基于HypoBench基准，在多个真实与合成任务上评估假设质量与测试有效性。",
+              "contributionsAndResults": "论文提出了HypoForge框架，首次将阶段适配的技能学习机制引入自动化科学发现。结果显示，其在假设质量和测试通过率上均显著优于现有方法，且技能具备跨任务迁移能力。关键在于它不依赖模型微调即可实现持续改进，证明了通过结构化反馈提炼程序性知识的有效性，为构建可进化的AI科研助手提供了可行路径。",
+              "methodsAndTechniques": "框架分为两个阶段：生成阶段采用多维判别器对假设集合进行整体评分，指导生成器学习高质量假设的构造模式；检验阶段则从成功与失败的测试轨迹中提取实验设计与代码执行的经验，更新技能库。技能提炼由LLM代理完成，聚焦于变量选择、因果推理、混淆控制等通用策略，而非记忆具体案例，从而实现泛化。整个过程无需梯度更新，仅通过经验蒸馏驱动进化。",
+              "limitationsAndReadingValue": "方法依赖判别器和真实结果的可靠性，若反馈存在偏差可能导致技能退化。目前主要适用于可计算验证的任务，难以扩展至理论推导或湿实验场景。此外，技能的组织与组合仍需人工干预。最值得阅读的是其问题抽象方式与双阶段技能学习机制的设计思路，对构建长期演进的智能体系统具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "HypoForge：一种通过科学技能学习实现自动化假设生成与检验的自我改进多智能体框架",
+            "summarySections": {
+              "backgroundAndQuestion": "现有AI科学家系统大多依赖静态提示或固定流程，难以积累经验实现持续改进。尤其在假设生成阶段缺乏明确反馈，在假设检验阶段又未能从执行结果中提炼可复用技能。这导致每次任务都需重新推理，效率低下。本文针对科学发现中两个核心环节——假设生成与检验——如何根据各自不同的监督信号特性进行差异化技能学习的问题展开研究。",
+              "modelAndSetup": "系统接收一个科研问题和数据源，输出候选假设及其对应的测试轨迹，包括实验设计、代码和执行结果。在假设生成阶段，采用对抗式生成器-判别器机制，通过比较多个假设的质量差异来优化生成策略；在假设检验阶段，则利用真实结果反馈评估实验成败，并从中提炼可迁移的设计与执行技能。实验基于HypoBench基准，在多个真实与合成任务上评估假设质量与测试有效性。",
+              "contributionsAndResults": "论文提出了HypoForge框架，首次将阶段适配的技能学习机制引入自动化科学发现。结果显示，其在假设质量和测试通过率上均显著优于现有方法，且技能具备跨任务迁移能力。关键在于它不依赖模型微调即可实现持续改进，证明了通过结构化反馈提炼程序性知识的有效性，为构建可进化的AI科研助手提供了可行路径。",
+              "methodsAndTechniques": "框架分为两个阶段：生成阶段采用多维判别器对假设集合进行整体评分，指导生成器学习高质量假设的构造模式；检验阶段则从成功与失败的测试轨迹中提取实验设计与代码执行的经验，更新技能库。技能提炼由LLM代理完成，聚焦于变量选择、因果推理、混淆控制等通用策略，而非记忆具体案例，从而实现泛化。整个过程无需梯度更新，仅通过经验蒸馏驱动进化。",
+              "limitationsAndReadingValue": "方法依赖判别器和真实结果的可靠性，若反馈存在偏差可能导致技能退化。目前主要适用于可计算验证的任务，难以扩展至理论推导或湿实验场景。此外，技能的组织与组合仍需人工干预。最值得阅读的是其问题抽象方式与双阶段技能学习机制的设计思路，对构建长期演进的智能体系统具有启发意义。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "生成式AI",
+              "科学发现"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "基准评测"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Sample Complexity of the Second-Best Bilateral Trade (<urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 4,
+    "recent-ai": 5
+  }
+}
