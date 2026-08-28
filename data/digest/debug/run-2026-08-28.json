@@ -1,0 +1,1644 @@
+{
+  "date": "2026-08-28",
+  "generatedAt": "2026-08-28T14:32:33.993837+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-08-27",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202608270000 TO 202608272359\"",
+            "totalResults": 8,
+            "fetchedCount": 8
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202608270000 TO 202608272359\"",
+            "totalResults": 1,
+            "fetchedCount": 1
+          }
+        },
+        "dedupedCount": 9
+      },
+      "arxivTotalResults": 9,
+      "fetchedCount": 9,
+      "fetchedPapers": [
+        {
+          "title": "Algorithms for Robbins' Problem using Markov Decision Processes",
+          "url": "https://arxiv.org/abs/2608.27419",
+          "arxivId": "2608.27419",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.PR"
+          ],
+          "abstract": "In this paper, we consider Robbins' problem, which is a full information variant of the well-known secretary selection problem. In this version of the problem, the goal is to minimize the expected rank of the selected candidate among $n$ that are interviewed sequentially, and a decision to select or not the $m^{th}$ candidate needs to be taken right after the interview (so without seeing the last $n-m$ candidates and without recall). We first show how to model instances of Robbins' problem as infinite Markov Decision Processes (MDPs). Then we propose several finite-state abstractions of these MDPs that allow us to approximate the value of the problem for fixed $n$. While it is known that the full memory of past candidates' values is necessary for optimal expected rank minimization, making the analysis of the problem challenging, we highlight simple memory structures that are sufficient for obtaining near-optimal selection strategies. Additionally, we provide approximate values for Robbins' problem for numbers of candidates $n$ up to 100 for which no good approximations were previously known (the exact value is only known for instances where $n \\leq 4$ and numerical approximations were for small values of $n$ not exceeding one digit), for all $n : 5 \\leq n \\leq 100$, we give better approximation than what was previously known."
+        },
+        {
+          "title": "Token-Level Advertising",
+          "url": "https://arxiv.org/abs/2608.27382",
+          "arxivId": "2608.27382",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "Generative AI is transforming how people access information, challenging traditional advertising mechanisms built around predefined slots. Towards generation-native advertising, we propose the Latent Advertiser Mixture Auction (LAMA), a token-level advertising mechanism that embeds advertiser influence directly into the generation process. Advertisers report local continuation values that induce advertiser-specific next-token policies, from which the platform decodes through a latent mixture while updating an allocation posterior. We show that LAMA satisfies Markov DSIC and IR, and achieves near-optimal KL-regularized welfare. We further develop a learning-based implementation that reconstructs the required reports online from learned local advantages and root values. Proof-of-concept experiments on real-world commercial-search query splits show that LAMA improves platform welfare and revenue while maintaining user-facing response quality, providing initial evidence for the feasibility of generation-native advertising."
+        },
+        {
+          "title": "Blindfolded pursuit with delays of your choice",
+          "url": "https://arxiv.org/abs/2608.27347",
+          "arxivId": "2608.27347",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study pursuit-evasion games on graphs with a single pursuer and an invisible evader. The pursuer may assign integer travel times to the edges of the graph and specify a finite sequence of vertices to query, one per time step. The evader then chooses a walk over the same time horizon, aiming to elude all queries. With unit travel times, the setting in which the evader must move at every time step is known as the hunter and rabbit game, while the variant in which the evader can wait at a vertex can be phrased as a firefighting game: the vertices of a burning graph must be extinguished, and any vertex left burning reignites its neighbors. For both settings, we show that the power to choose travel times allows a single pursuer to succeed in polynomial time on any graph. This contrasts with unweighted graphs, where the number of hunters or firefighters needed can grow linearly in the number of vertices. If the evader, in addition to waiting, may start at an earlier time unknown to the pursuer, we show that the pursuer still wins on any graph given exponential time."
+        },
+        {
+          "title": "Nash Loci",
+          "url": "https://arxiv.org/abs/2608.27300",
+          "arxivId": "2608.27300",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "math.AG",
+            "cs.GT"
+          ],
+          "abstract": "In the study of Nash equilibria of finite-player games, one often seeks equilibria that are compatible with predetermined constraints, either determined by the players or by an external agent. We discuss the algebraic loci, called Nash loci, of games whose Nash equilibrium scheme intersects a fixed algebraic variety in a product of projective spaces. We determine their dimensions and multidegrees in multiprojective space, and their equations for two-player games and for small multiple-player games. The multilinear equations defining the Nash equilibrium scheme allow us to describe Nash loci in the language of Grassmannians and Plücker coordinates. Motivated by this fact, we relate Nash loci to multigraded associated varieties, which are subvarieties in products of Grassmannians that generalize the multigraded Cayley-Chow hypersurfaces of Osserman and Trager."
+        },
+        {
+          "title": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+          "url": "https://arxiv.org/abs/2608.26896",
+          "arxivId": "2608.26896",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "abstract": "As electricity market participants increasingly adopt learning-based agents for their bidding strategies, electricity markets are becoming algorithmic. Evidence from algorithmic markets in other domains shows that tacit collusion can arise purely through independent learning. Moreover, electricity markets are typically oligopolistic and feature repeated interaction among a small number of participants, making them structurally susceptible to non-competitive behavior. In the face of these observations, this paper investigates the hypothesis that tacit collusion may emerge in electricity markets where participants' actions are controlled by autonomous learning-based algorithms. We model strategic bidding as a repeated game with imperfect public monitoring, and model the participants' emergent behavior using multi-agent reinforcement learning. We propose a multi-dimensional set of criteria (going beyond profit comparisons against Nash equilibria) to assess whether the resulting behavior constitutes tacit collusion. Our experimental results showcase that such a danger is realistic for electricity markets: there are cases where agents do learn to sustain supra-competitive outcomes that are supportive of tacit collusion indicators, even though the agents were never instructed to collude."
+        },
+        {
+          "title": "Robust Lottery Compression for Metric Voting: A Transfer Principle for Bounded Randomness",
+          "url": "https://arxiv.org/abs/2608.26854",
+          "arxivId": "2608.26854",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study metric distortion in randomized social choice under bounded randomness: on every preference profile, the voting rule must deterministically identify a multiset of $K$ candidates and then select a uniformly random entry. Previous work showed that this restricted model can beat the optimal deterministic distortion of $3$. We show that it can in fact approach the current best unrestricted upper benchmark of $5/2$. For every integer $K\\ge 802$, there exists a bounded-randomness rule with distortion at most $\\frac{5}{2} +3\\left(\\fracπ{8K}\\right)^{1/3} +2\\sqrt{\\fracπ{8K}}$. Consequently, $O(\\varepsilon^{-3})$ entries suffice for distortion $5/2+\\varepsilon$, independently of the numbers of voters and candidates. We also show that $164$ entries already achieve distortion strictly below $3$, giving $2\\le N^\\star\\le 164$ for the minimum list size needed to break the deterministic barrier. Our main technical contribution is a dimension-free compression theorem: if a lottery has distortion at most $ρ$ and every candidate in its support has deterministic distortion at most $H$, then it admits a uniform $K$-entry approximation with distortion at most $ρ+(H+1)\\sqrt{π/(8K)}$. Thus, lotteries whose possible outcomes are already well behaved incur only $O(K^{-1/2})$ compression loss. Mixed Integrated Veto does not satisfy this support condition, so we first remove early-eliminated outcomes, trading $O(τ^2)$ distortion loss for an $O(1/τ)$ bound on the deterministic distortion of every supported candidate. Balancing this repair cost against compression yields the $O(K^{-1/3})$ convergence rate."
+        },
+        {
+          "title": "A lone divider allocation algorithm with subjective divisibility",
+          "url": "https://arxiv.org/abs/2608.26801",
+          "arxivId": "2608.26801",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "In the subjective divisibility allocation model, all goods are divisible, every agent $i$ has a non-negative additive valuation function $v_i$, where for some goods $v_i$ is additive over fractions of the good, and for some goods, any fraction smaller than~1 has value~0. Previous work established the existence of $\\frac{5}{9}$-MMS allocations in this setting. We show that $\\frac{3}{5}$-MMS allocations exist. Our proof is based on an adaptation of the lone divider framework."
+        },
+        {
+          "title": "Trusting AI in Competitive Markets",
+          "url": "https://arxiv.org/abs/2608.26539",
+          "arxivId": "2608.26539",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Problem definition: People's trust in AI advice diverges as they use it, deepening for some and eroding for others. We study this divergence in oligopoly pricing, where advice cannot prove itself: rivals' responses decide whether it pays off. Methodology/results: In a laboratory experiment, 273 sellers compete across 91 three-seller markets over 30 rounds; we vary the presence of AI pricing recommendations and the gender composition of the market (female-only, male-only, or mixed). We find that the gender composition of the market shapes how sellers learn from the advice, and where prices settle as a result. In female-only markets, recommendations raise prices by 29% and profits by 39%; in male-only and mixed-gender markets, they have no significant effect. A Non-Homogeneous Hidden Markov Model reveals a composition-specific dynamic association: profitable rounds predict rising adherence to the AI in female-only markets and declining adherence otherwise, a pattern consistent with learned trust and self-serving attribution. The pattern reverses what recent evidence on gender and AI would predict. Managerial implications: We discuss implications for platform governance and regulatory oversight, which should focus not only on the algorithm but on the human side that shapes its effects."
+        },
+        {
+          "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+          "url": "https://arxiv.org/abs/2608.27261",
+          "arxivId": "2608.27261",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study random assignment of indivisible objects among a set of agents with strict preferences and outside options. When agents may rank some objects as unacceptable, we consider different notions of measuring waste of object(s) from an ex-ante perspective. The most natural one is $q$-agent-object-waste whereby both one agent and one of his acceptable objects are unassigned with at least probability $q$. On the one hand, we show that any mechanism satisfying equal treatement of almost equals (whereby any two agents with identical rankings over objects receive the same probability shares for objects they both regard acceptable), strategy-proofness and ex-post weak non-wastefulness (whereby in any assignment in the support we cannot have that both one agent and one of his acceptable objects are unassigned) must be $q$-agent-object-wasteful with $q\\geq \\frac{1}{6}$. On the other hand, we show that random serial dictatorship (RSD) attains the minimal bound of $\\frac{1}{6}$ in this class for four agents or three objects. In addition, we consider $q$-object-wastefulness where an object remains unassigned with probability $q$, while agents, who consider it acceptable, remain unassigned with aggregate probability $q$. We again show that RSD attains the minimal bound of $\\frac{1}{4}$ in this class of mechanisms with respect to $q$-object-wastefulness for three objects. Finally, we show that random deferred acceptance (RDA) may be strictly less agent-object-wasteful than RSD (but at the cost of violating equal treatment of almost equals)."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Algorithms for Robbins' Problem using Markov Decision Processes",
+              "url": "https://arxiv.org/abs/2608.27419",
+              "arxivId": "2608.27419",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.PR"
+              ],
+              "abstract": "In this paper, we consider Robbins' problem, which is a full information variant of the well-known secretary selection problem. In this version of the problem, the goal is to minimize the expected rank of the selected candidate among $n$ that are interviewed sequentially, and a decision to select or not the $m^{th}$ candidate needs to be taken right after the interview (so without seeing the last $n-m$ candidates and without recall). We first show how to model instances of Robbins' problem as infinite Markov Decision Processes (MDPs). Then we propose several finite-state abstractions of these MDPs that allow us to approximate the value of the problem for fixed $n$. While it is known that the full memory of past candidates' values is necessary for optimal expected rank minimization, making the analysis of the problem challenging, we highlight simple memory structures that are sufficient for obtaining near-optimal selection strategies. Additionally, we provide approximate values for Robbins' problem for numbers of candidates $n$ up to 100 for which no good approximations were previously known (the exact value is only known for instances where $n \\leq 4$ and numerical approximations were for small values of $n$ not exceeding one digit), for all $n : 5 \\leq n \\leq 100$, we give better approximation than what was previously known."
+            },
+            {
+              "title": "Token-Level Advertising",
+              "url": "https://arxiv.org/abs/2608.27382",
+              "arxivId": "2608.27382",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "Generative AI is transforming how people access information, challenging traditional advertising mechanisms built around predefined slots. Towards generation-native advertising, we propose the Latent Advertiser Mixture Auction (LAMA), a token-level advertising mechanism that embeds advertiser influence directly into the generation process. Advertisers report local continuation values that induce advertiser-specific next-token policies, from which the platform decodes through a latent mixture while updating an allocation posterior. We show that LAMA satisfies Markov DSIC and IR, and achieves near-optimal KL-regularized welfare. We further develop a learning-based implementation that reconstructs the required reports online from learned local advantages and root values. Proof-of-concept experiments on real-world commercial-search query splits show that LAMA improves platform welfare and revenue while maintaining user-facing response quality, providing initial evidence for the feasibility of generation-native advertising."
+            },
+            {
+              "title": "Blindfolded pursuit with delays of your choice",
+              "url": "https://arxiv.org/abs/2608.27347",
+              "arxivId": "2608.27347",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study pursuit-evasion games on graphs with a single pursuer and an invisible evader. The pursuer may assign integer travel times to the edges of the graph and specify a finite sequence of vertices to query, one per time step. The evader then chooses a walk over the same time horizon, aiming to elude all queries. With unit travel times, the setting in which the evader must move at every time step is known as the hunter and rabbit game, while the variant in which the evader can wait at a vertex can be phrased as a firefighting game: the vertices of a burning graph must be extinguished, and any vertex left burning reignites its neighbors. For both settings, we show that the power to choose travel times allows a single pursuer to succeed in polynomial time on any graph. This contrasts with unweighted graphs, where the number of hunters or firefighters needed can grow linearly in the number of vertices. If the evader, in addition to waiting, may start at an earlier time unknown to the pursuer, we show that the pursuer still wins on any graph given exponential time."
+            },
+            {
+              "title": "Nash Loci",
+              "url": "https://arxiv.org/abs/2608.27300",
+              "arxivId": "2608.27300",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "math.AG",
+                "cs.GT"
+              ],
+              "abstract": "In the study of Nash equilibria of finite-player games, one often seeks equilibria that are compatible with predetermined constraints, either determined by the players or by an external agent. We discuss the algebraic loci, called Nash loci, of games whose Nash equilibrium scheme intersects a fixed algebraic variety in a product of projective spaces. We determine their dimensions and multidegrees in multiprojective space, and their equations for two-player games and for small multiple-player games. The multilinear equations defining the Nash equilibrium scheme allow us to describe Nash loci in the language of Grassmannians and Plücker coordinates. Motivated by this fact, we relate Nash loci to multigraded associated varieties, which are subvarieties in products of Grassmannians that generalize the multigraded Cayley-Chow hypersurfaces of Osserman and Trager."
+            },
+            {
+              "title": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+              "url": "https://arxiv.org/abs/2608.26896",
+              "arxivId": "2608.26896",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "abstract": "As electricity market participants increasingly adopt learning-based agents for their bidding strategies, electricity markets are becoming algorithmic. Evidence from algorithmic markets in other domains shows that tacit collusion can arise purely through independent learning. Moreover, electricity markets are typically oligopolistic and feature repeated interaction among a small number of participants, making them structurally susceptible to non-competitive behavior. In the face of these observations, this paper investigates the hypothesis that tacit collusion may emerge in electricity markets where participants' actions are controlled by autonomous learning-based algorithms. We model strategic bidding as a repeated game with imperfect public monitoring, and model the participants' emergent behavior using multi-agent reinforcement learning. We propose a multi-dimensional set of criteria (going beyond profit comparisons against Nash equilibria) to assess whether the resulting behavior constitutes tacit collusion. Our experimental results showcase that such a danger is realistic for electricity markets: there are cases where agents do learn to sustain supra-competitive outcomes that are supportive of tacit collusion indicators, even though the agents were never instructed to collude."
+            },
+            {
+              "title": "Robust Lottery Compression for Metric Voting: A Transfer Principle for Bounded Randomness",
+              "url": "https://arxiv.org/abs/2608.26854",
+              "arxivId": "2608.26854",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study metric distortion in randomized social choice under bounded randomness: on every preference profile, the voting rule must deterministically identify a multiset of $K$ candidates and then select a uniformly random entry. Previous work showed that this restricted model can beat the optimal deterministic distortion of $3$. We show that it can in fact approach the current best unrestricted upper benchmark of $5/2$. For every integer $K\\ge 802$, there exists a bounded-randomness rule with distortion at most $\\frac{5}{2} +3\\left(\\fracπ{8K}\\right)^{1/3} +2\\sqrt{\\fracπ{8K}}$. Consequently, $O(\\varepsilon^{-3})$ entries suffice for distortion $5/2+\\varepsilon$, independently of the numbers of voters and candidates. We also show that $164$ entries already achieve distortion strictly below $3$, giving $2\\le N^\\star\\le 164$ for the minimum list size needed to break the deterministic barrier. Our main technical contribution is a dimension-free compression theorem: if a lottery has distortion at most $ρ$ and every candidate in its support has deterministic distortion at most $H$, then it admits a uniform $K$-entry approximation with distortion at most $ρ+(H+1)\\sqrt{π/(8K)}$. Thus, lotteries whose possible outcomes are already well behaved incur only $O(K^{-1/2})$ compression loss. Mixed Integrated Veto does not satisfy this support condition, so we first remove early-eliminated outcomes, trading $O(τ^2)$ distortion loss for an $O(1/τ)$ bound on the deterministic distortion of every supported candidate. Balancing this repair cost against compression yields the $O(K^{-1/3})$ convergence rate."
+            },
+            {
+              "title": "A lone divider allocation algorithm with subjective divisibility",
+              "url": "https://arxiv.org/abs/2608.26801",
+              "arxivId": "2608.26801",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "In the subjective divisibility allocation model, all goods are divisible, every agent $i$ has a non-negative additive valuation function $v_i$, where for some goods $v_i$ is additive over fractions of the good, and for some goods, any fraction smaller than~1 has value~0. Previous work established the existence of $\\frac{5}{9}$-MMS allocations in this setting. We show that $\\frac{3}{5}$-MMS allocations exist. Our proof is based on an adaptation of the lone divider framework."
+            },
+            {
+              "title": "Trusting AI in Competitive Markets",
+              "url": "https://arxiv.org/abs/2608.26539",
+              "arxivId": "2608.26539",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Problem definition: People's trust in AI advice diverges as they use it, deepening for some and eroding for others. We study this divergence in oligopoly pricing, where advice cannot prove itself: rivals' responses decide whether it pays off. Methodology/results: In a laboratory experiment, 273 sellers compete across 91 three-seller markets over 30 rounds; we vary the presence of AI pricing recommendations and the gender composition of the market (female-only, male-only, or mixed). We find that the gender composition of the market shapes how sellers learn from the advice, and where prices settle as a result. In female-only markets, recommendations raise prices by 29% and profits by 39%; in male-only and mixed-gender markets, they have no significant effect. A Non-Homogeneous Hidden Markov Model reveals a composition-specific dynamic association: profitable rounds predict rising adherence to the AI in female-only markets and declining adherence otherwise, a pattern consistent with learned trust and self-serving attribution. The pattern reverses what recent evidence on gender and AI would predict. Managerial implications: We discuss implications for platform governance and regulatory oversight, which should focus not only on the algorithm but on the human side that shapes its effects."
+            },
+            {
+              "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+              "url": "https://arxiv.org/abs/2608.27261",
+              "arxivId": "2608.27261",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study random assignment of indivisible objects among a set of agents with strict preferences and outside options. When agents may rank some objects as unacceptable, we consider different notions of measuring waste of object(s) from an ex-ante perspective. The most natural one is $q$-agent-object-waste whereby both one agent and one of his acceptable objects are unassigned with at least probability $q$. On the one hand, we show that any mechanism satisfying equal treatement of almost equals (whereby any two agents with identical rankings over objects receive the same probability shares for objects they both regard acceptable), strategy-proofness and ex-post weak non-wastefulness (whereby in any assignment in the support we cannot have that both one agent and one of his acceptable objects are unassigned) must be $q$-agent-object-wasteful with $q\\geq \\frac{1}{6}$. On the other hand, we show that random serial dictatorship (RSD) attains the minimal bound of $\\frac{1}{6}$ in this class for four agents or three objects. In addition, we consider $q$-object-wastefulness where an object remains unassigned with probability $q$, while agents, who consider it acceptable, remain unassigned with aggregate probability $q$. We again show that RSD attains the minimal bound of $\\frac{1}{4}$ in this class of mechanisms with respect to $q$-object-wastefulness for three objects. Finally, we show that random deferred acceptance (RDA) may be strictly less agent-object-wasteful than RSD (but at the cost of violating equal treatment of almost equals)."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 7,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 3,
+                  "readingValue": 4,
+                  "penalty": -3,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 6,
+                  "readingValue": 7,
+                  "penalty": 0,
+                  "aiRelevance": 10,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 7,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Algorithms for Robbins' Problem using Markov Decision Processes",
+              "url": "https://arxiv.org/abs/2608.27419",
+              "arxivId": "2608.27419",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.PR"
+              ],
+              "scores": {
+                "modelNaturalness": 3.0,
+                "theoreticalStrength": 5.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "bonus": 0.0,
+                "total": 9.8
+              }
+            },
+            {
+              "title": "Token-Level Advertising",
+              "url": "https://arxiv.org/abs/2608.27382",
+              "arxivId": "2608.27382",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 8.7,
+                "total": 37.7
+              }
+            },
+            {
+              "title": "Blindfolded pursuit with delays of your choice",
+              "url": "https://arxiv.org/abs/2608.27347",
+              "arxivId": "2608.27347",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 24.0,
+                "bonus": 0.0,
+                "total": 21.6
+              }
+            },
+            {
+              "title": "Nash Loci",
+              "url": "https://arxiv.org/abs/2608.27300",
+              "arxivId": "2608.27300",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "math.AG",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 2.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -3.0,
+                "baseTotal": 13.0,
+                "bonus": 0.0,
+                "total": 10.4
+              }
+            },
+            {
+              "title": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+              "url": "https://arxiv.org/abs/2608.26896",
+              "arxivId": "2608.26896",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 10.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 9.0,
+                "total": 36.0
+              }
+            },
+            {
+              "title": "Robust Lottery Compression for Metric Voting: A Transfer Principle for Bounded Randomness",
+              "url": "https://arxiv.org/abs/2608.26854",
+              "arxivId": "2608.26854",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "A lone divider allocation algorithm with subjective divisibility",
+              "url": "https://arxiv.org/abs/2608.26801",
+              "arxivId": "2608.26801",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 0.0,
+                "total": 18.9
+              }
+            },
+            {
+              "title": "Trusting AI in Competitive Markets",
+              "url": "https://arxiv.org/abs/2608.26539",
+              "arxivId": "2608.26539",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 5.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "bonus": 5.9,
+                "total": 25.1
+              }
+            },
+            {
+              "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+              "url": "https://arxiv.org/abs/2608.27261",
+              "arxivId": "2608.27261",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Algorithms for Robbins' Problem using Markov Decision Processes",
+          "url": "https://arxiv.org/abs/2608.27419",
+          "arxivId": "2608.27419",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.PR"
+          ],
+          "scores": {
+            "modelNaturalness": 3.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "bonus": 0.0,
+            "total": 9.8
+          }
+        },
+        {
+          "title": "Token-Level Advertising",
+          "url": "https://arxiv.org/abs/2608.27382",
+          "arxivId": "2608.27382",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          }
+        },
+        {
+          "title": "Blindfolded pursuit with delays of your choice",
+          "url": "https://arxiv.org/abs/2608.27347",
+          "arxivId": "2608.27347",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "bonus": 0.0,
+            "total": 21.6
+          }
+        },
+        {
+          "title": "Nash Loci",
+          "url": "https://arxiv.org/abs/2608.27300",
+          "arxivId": "2608.27300",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "math.AG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 2.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -3.0,
+            "baseTotal": 13.0,
+            "bonus": 0.0,
+            "total": 10.4
+          }
+        },
+        {
+          "title": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+          "url": "https://arxiv.org/abs/2608.26896",
+          "arxivId": "2608.26896",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 9.0,
+            "total": 36.0
+          }
+        },
+        {
+          "title": "Robust Lottery Compression for Metric Voting: A Transfer Principle for Bounded Randomness",
+          "url": "https://arxiv.org/abs/2608.26854",
+          "arxivId": "2608.26854",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "A lone divider allocation algorithm with subjective divisibility",
+          "url": "https://arxiv.org/abs/2608.26801",
+          "arxivId": "2608.26801",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 0.0,
+            "total": 18.9
+          }
+        },
+        {
+          "title": "Trusting AI in Competitive Markets",
+          "url": "https://arxiv.org/abs/2608.26539",
+          "arxivId": "2608.26539",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 5.9,
+            "total": 25.1
+          }
+        },
+        {
+          "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+          "url": "https://arxiv.org/abs/2608.27261",
+          "arxivId": "2608.27261",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Token-Level Advertising",
+          "url": "https://arxiv.org/abs/2608.27382",
+          "arxivId": "2608.27382",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          }
+        },
+        {
+          "title": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+          "url": "https://arxiv.org/abs/2608.26896",
+          "arxivId": "2608.26896",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 9.0,
+            "total": 36.0
+          }
+        },
+        {
+          "title": "Robust Lottery Compression for Metric Voting: A Transfer Principle for Bounded Randomness",
+          "url": "https://arxiv.org/abs/2608.26854",
+          "arxivId": "2608.26854",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Trusting AI in Competitive Markets",
+          "url": "https://arxiv.org/abs/2608.26539",
+          "arxivId": "2608.26539",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 5.9,
+            "total": 25.1
+          }
+        },
+        {
+          "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+          "url": "https://arxiv.org/abs/2608.27261",
+          "arxivId": "2608.27261",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Token-Level Advertising",
+            "url": "https://arxiv.org/abs/2608.27382",
+            "arxivId": "2608.27382",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Token-Level Advertising",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "实验验证",
+              "算法设计"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "大语言模型",
+              "拍卖理论",
+              "机制设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统广告依赖预设展示位，但在生成式AI中，内容动态生成，广告机会也随之实时演化。这使得固定槽位的拍卖机制不再适用，因为广告相关性取决于生成路径。论文因此提出‘生成原生广告’范式，核心问题是：如何将广告主的影响嵌入到逐token的生成过程中，同时保持激励相容与内容质量。",
+              "modelAndSetup": "模型设定一个用户查询启动序列生成过程，平台基于参考语言模型生成内容，多个广告主作为策略参与者，在每个前缀状态下报告子树价值向量。平台据此维护一个关于‘最优广告主’的信念分布，并通过混合策略采样生成下一个token。最终广告分配由终止时的后验信念决定，支付规则结合入口费与路径上信念变化的累积收费。",
+              "contributionsAndResults": "论文提出了LAMA机制，首次实现了token级的生成原生广告。该机制满足马尔可夫主导策略激励相容（Markov DSIC）和个人理性（IR），并达到近似最优的KL正则化福利，损失上界为βlog[N]。实验证明LAMA在真实搜索查询上优于基线，提升平台收益与广告主价值的同时不损害用户体验。",
+              "methodsAndTechniques": "作者通过将生成过程视为对‘最优广告主’的贝叶斯推理来构建机制。关键技巧是利用软值函数与贝尔曼一致性约束，使广告主报告的价值能诱导出局部策略。支付设计采用势函数方法，确保激励兼容；而KL正则化目标则连接了强化学习中的软最优控制视角，使生成与分配联合优化。",
+              "limitationsAndReadingValue": "机制依赖广告主报告的贝尔曼一致性，实际中需平台提供学习服务重构报告，增加了实现复杂性。结果在单赢家设定下成立，扩展至多广告分配尚待研究。最值得读的是其将机制设计深度融入生成过程的范式创新，以及贝叶斯信念更新与拍卖支付结合的设计巧思。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Token-Level Advertising",
+            "summarySections": {
+              "backgroundAndQuestion": "传统广告依赖预设展示位，但在生成式AI中，内容动态生成，广告机会也随之实时演化。这使得固定槽位的拍卖机制不再适用，因为广告相关性取决于生成路径。论文因此提出‘生成原生广告’范式，核心问题是：如何将广告主的影响嵌入到逐token的生成过程中，同时保持激励相容与内容质量。",
+              "modelAndSetup": "模型设定一个用户查询启动序列生成过程，平台基于参考语言模型生成内容，多个广告主作为策略参与者，在每个前缀状态下报告子树价值向量。平台据此维护一个关于‘最优广告主’的信念分布，并通过混合策略采样生成下一个token。最终广告分配由终止时的后验信念决定，支付规则结合入口费与路径上信念变化的累积收费。",
+              "contributionsAndResults": "论文提出了LAMA机制，首次实现了token级的生成原生广告。该机制满足马尔可夫主导策略激励相容（Markov DSIC）和个人理性（IR），并达到近似最优的KL正则化福利，损失上界为βlog[N]。实验证明LAMA在真实搜索查询上优于基线，提升平台收益与广告主价值的同时不损害用户体验。",
+              "methodsAndTechniques": "作者通过将生成过程视为对‘最优广告主’的贝叶斯推理来构建机制。关键技巧是利用软值函数与贝尔曼一致性约束，使广告主报告的价值能诱导出局部策略。支付设计采用势函数方法，确保激励兼容；而KL正则化目标则连接了强化学习中的软最优控制视角，使生成与分配联合优化。",
+              "limitationsAndReadingValue": "机制依赖广告主报告的贝尔曼一致性，实际中需平台提供学习服务重构报告，增加了实现复杂性。结果在单赢家设定下成立，扩展至多广告分配尚待研究。最值得读的是其将机制设计深度融入生成过程的范式创新，以及贝叶斯信念更新与拍卖支付结合的设计巧思。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "大语言模型",
+              "拍卖理论",
+              "机制设计"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "实验验证",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+            "url": "https://arxiv.org/abs/2608.26896",
+            "arxivId": "2608.26896",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.GT",
+              "cs.MA",
+              "eess.SY"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+            "researchParadigmTags": [
+              "模型构建",
+              "实验验证",
+              "多智能体系统"
+            ],
+            "contentTags": [
+              "电力市场",
+              "默契合谋",
+              "强化学习",
+              "战略行为",
+              "自主智能体"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着越来越多电力市场参与者采用基于学习的AI代理进行竞价，市场正变得算法化。尽管法律禁止明示合谋，但缺乏沟通的默契合谋可能通过独立学习自发出现。电力市场通常为寡头结构且存在重复互动，具备默契合谋滋生的土壤。本文探究一个关键问题：当参与者由自主学习算法控制时，是否会在无指令、无通信的情况下涌现出默契合谋行为。",
+              "modelAndSetup": "文章将战略竞价建模为一个不完美公共监控下的重复博弈，参与者为多个发电厂商，每个厂商作为独立智能体通过历史观察（自身出力、利润及节点电价）调整报价策略。市场通过直流最优潮流（DC-OPF）出清，形成节点边际价格（LMP）。智能体使用多智能体强化学习（MARL）训练，目标是最大化长期累积利润，策略更新基于私有历史而非对手动作，模拟真实市场中的信息不对称环境。",
+              "contributionsAndResults": "研究发现，在存在输电约束的情境下，智能体确实能学会维持高于竞争水平的利润，表现出默契合谋迹象，即使从未被指示合谋。作者提出多维判据（惩罚偏离、短期不可持续性、短期偏离盈利性）综合识别合谋，发现低需求情境下存在清晰的‘惩罚-宽恕’模式与偏离后利润回落，表明合谋机制成立；而高需求情境则更多源于结构性市场势力，非策略协调所致。",
+              "methodsAndTechniques": "采用多智能体TD3算法在集中训练-分散执行范式下训练智能体，报价策略通过线性供给函数参数化以降低维度。通过三类测试验证合谋：强制某智能体回归竞争策略观察对手反应（惩罚测试）、削弱长期视野与记忆能力看是否破坏合谋（短视消融）、以及从学习结果出发迭代求解最佳响应看利润轨迹变化（IBR分析），从而多角度验证策略互动性质。",
+              "limitationsAndReadingValue": "模型简化了报价空间并假设固定成本与需求，现实市场动态更复杂。结果依赖特定网络结构与参数设置，普适性有待检验。但该研究价值在于首次系统论证了电力市场中AI代理可能自发达成默契合谋，揭示了算法驱动市场的潜在风险。最值得读的是其多维判据框架与实验设计，为监管与市场机制设计提供了警示与方法参考。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "AI agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion",
+            "summarySections": {
+              "backgroundAndQuestion": "随着越来越多电力市场参与者采用基于学习的AI代理进行竞价，市场正变得算法化。尽管法律禁止明示合谋，但缺乏沟通的默契合谋可能通过独立学习自发出现。电力市场通常为寡头结构且存在重复互动，具备默契合谋滋生的土壤。本文探究一个关键问题：当参与者由自主学习算法控制时，是否会在无指令、无通信的情况下涌现出默契合谋行为。",
+              "modelAndSetup": "文章将战略竞价建模为一个不完美公共监控下的重复博弈，参与者为多个发电厂商，每个厂商作为独立智能体通过历史观察（自身出力、利润及节点电价）调整报价策略。市场通过直流最优潮流（DC-OPF）出清，形成节点边际价格（LMP）。智能体使用多智能体强化学习（MARL）训练，目标是最大化长期累积利润，策略更新基于私有历史而非对手动作，模拟真实市场中的信息不对称环境。",
+              "contributionsAndResults": "研究发现，在存在输电约束的情境下，智能体确实能学会维持高于竞争水平的利润，表现出默契合谋迹象，即使从未被指示合谋。作者提出多维判据（惩罚偏离、短期不可持续性、短期偏离盈利性）综合识别合谋，发现低需求情境下存在清晰的‘惩罚-宽恕’模式与偏离后利润回落，表明合谋机制成立；而高需求情境则更多源于结构性市场势力，非策略协调所致。",
+              "methodsAndTechniques": "采用多智能体TD3算法在集中训练-分散执行范式下训练智能体，报价策略通过线性供给函数参数化以降低维度。通过三类测试验证合谋：强制某智能体回归竞争策略观察对手反应（惩罚测试）、削弱长期视野与记忆能力看是否破坏合谋（短视消融）、以及从学习结果出发迭代求解最佳响应看利润轨迹变化（IBR分析），从而多角度验证策略互动性质。",
+              "limitationsAndReadingValue": "模型简化了报价空间并假设固定成本与需求，现实市场动态更复杂。结果依赖特定网络结构与参数设置，普适性有待检验。但该研究价值在于首次系统论证了电力市场中AI代理可能自发达成默契合谋，揭示了算法驱动市场的潜在风险。最值得读的是其多维判据框架与实验设计，为监管与市场机制设计提供了警示与方法参考。"
+            },
+            "contentTags": [
+              "电力市场",
+              "默契合谋",
+              "强化学习",
+              "战略行为",
+              "自主智能体"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "实验验证",
+              "多智能体系统"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Robust Lottery Compression for Metric Voting: A Transfer Principle for Bounded Randomness",
+            "url": "https://arxiv.org/abs/2608.26854",
+            "arxivId": "2608.26854",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "鲁棒彩票压缩用于度量投票：有界随机性的转移原理",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "鲁棒性",
+              "随机化机制",
+              "度量失真"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么简单的随机化机制也能达到强福利保证？在度量失真框架下，完全随机化投票规则已能突破确定性机制的最优失真3，但这类规则可能依赖复杂的概率分布。本文关注‘有界随机性’模型：每轮投票仅从一个固定大小的候选名单中均匀随机选择一人。问题是，这种受限模型能否逼近当前最好的无限制随机化性能，而不仅仅是打破3的壁垒？",
+              "modelAndSetup": "模型考虑选民与候选人在未知度量空间中的位置，选民按距离排序候选人。投票机制只能看到序数偏好，目标是最小化社会成本的期望失真。机制需先确定性地选出一个大小为K的候选多重集，然后均匀随机选一人。K独立于选民和候选人数量，体现‘有界随机性’。研究焦点是该模型下的最小可达失真如何随K变化。",
+              "contributionsAndResults": "论文证明，对于任意整数K≥802，存在有界随机性机制使度量失真不超过5/2 + O(K⁻¹/³)，表明仅需O(ε⁻³)个候选即可达到5/2 + ε失真，逼近当前最佳无限制上界。此外，明确构造出大小为164的列表即可实现低于3的失真，故打破确定性屏障所需的最小列表大小N*满足2≤N*≤164。",
+              "methodsAndTechniques": "核心技术是‘均匀支持压缩定理’：若一个彩票的失真至多为p，且其每个支持候选的确定性失真至多为H，则可用大小为K的均匀多重集逼近，失真增加O((H+1)/√K)。为应用此定理，作者先‘鲁棒化’Mixed Integrated Veto机制，剔除早期淘汰候选的概率质量，换取对其剩余候选的统一失真上界，再进行压缩。",
+              "limitationsAndReadingValue": "结果依赖于对源彩票的支持候选施加统一确定性失真界，这不适用于原始Mixed Integrated Veto。证明虽具构造性但计算开销大，需枚举多重集。最值得读的是其‘鲁棒化-压缩’方法论，为将复杂随机机制转化为简洁、透明规则提供了通用框架，相关工作和开放问题也极具启发性。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "鲁棒彩票压缩用于度量投票：有界随机性的转移原理",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么简单的随机化机制也能达到强福利保证？在度量失真框架下，完全随机化投票规则已能突破确定性机制的最优失真3，但这类规则可能依赖复杂的概率分布。本文关注‘有界随机性’模型：每轮投票仅从一个固定大小的候选名单中均匀随机选择一人。问题是，这种受限模型能否逼近当前最好的无限制随机化性能，而不仅仅是打破3的壁垒？",
+              "modelAndSetup": "模型考虑选民与候选人在未知度量空间中的位置，选民按距离排序候选人。投票机制只能看到序数偏好，目标是最小化社会成本的期望失真。机制需先确定性地选出一个大小为K的候选多重集，然后均匀随机选一人。K独立于选民和候选人数量，体现‘有界随机性’。研究焦点是该模型下的最小可达失真如何随K变化。",
+              "contributionsAndResults": "论文证明，对于任意整数K≥802，存在有界随机性机制使度量失真不超过5/2 + O(K⁻¹/³)，表明仅需O(ε⁻³)个候选即可达到5/2 + ε失真，逼近当前最佳无限制上界。此外，明确构造出大小为164的列表即可实现低于3的失真，故打破确定性屏障所需的最小列表大小N*满足2≤N*≤164。",
+              "methodsAndTechniques": "核心技术是‘均匀支持压缩定理’：若一个彩票的失真至多为p，且其每个支持候选的确定性失真至多为H，则可用大小为K的均匀多重集逼近，失真增加O((H+1)/√K)。为应用此定理，作者先‘鲁棒化’Mixed Integrated Veto机制，剔除早期淘汰候选的概率质量，换取对其剩余候选的统一失真上界，再进行压缩。",
+              "limitationsAndReadingValue": "结果依赖于对源彩票的支持候选施加统一确定性失真界，这不适用于原始Mixed Integrated Veto。证明虽具构造性但计算开销大，需枚举多重集。最值得读的是其‘鲁棒化-压缩’方法论，为将复杂随机机制转化为简洁、透明规则提供了通用框架，相关工作和开放问题也极具启发性。"
+            },
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "鲁棒性",
+              "随机化机制",
+              "度量失真"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Trusting AI in Competitive Markets",
+            "url": "https://arxiv.org/abs/2608.26539",
+            "arxivId": "2608.26539",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "竞争市场中的AI信任",
+            "researchParadigmTags": [
+              "实验验证",
+              "行为建模",
+              "非均匀隐马尔可夫模型"
+            ],
+            "contentTags": [
+              "人机交互",
+              "算法定价",
+              "性别差异",
+              "学习动态",
+              "协调行为"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么AI建议在市场竞争中会引发不同群体的信任分化？现有研究多关注算法本身能否促成合谋，却忽视人类如何从互动结果中学习并调整对AI的信任。本文指出，在寡头定价市场中，建议是否有效取决于对手反应，成功经验可能被归因为AI能力或个人判断，这种认知差异会通过反馈循环放大，最终导致市场走向高价协调或激烈竞争的不同结局。",
+              "modelAndSetup": "作者构建了一个三人重复伯川德定价实验，卖家可选择是否采纳AI提供的价格建议。每个市场由全女性、全男性或混合性别组成，参与者不知晓对手性别。AI基于市场历史自适应生成建议，但不强制执行。卖家目标是最大化长期利润，每轮可观察自身表现及市场价格统计。该设定捕捉了战略互动下的学习过程，使信任演化内生于市场反馈。",
+              "contributionsAndResults": "研究发现AI建议仅在全女性市场显著提升价格（+29%）和利润（+39%），而在男性和混合市场无显著影响。进一步分析显示，女性卖家在盈利后更倾向于继续遵循AI建议，体现‘习得性信任’；男性则更可能将成功归功于自己并偏离建议，符合‘自我服务归因’模式。这表明AI是否促成超竞争协调，取决于人群构成所塑造的学习动态。",
+              "methodsAndTechniques": "作者采用非齐次隐马尔可夫模型（NHMM）识别个体对AI建议的高/低遵从状态，并建模状态转移如何受前期利润影响。该方法分离出潜变量驱动的行为模式，揭示性别组别间截然相反的反馈机制：盈利增强女性后续遵从，却削弱男性遵从。文本理由编码进一步佐证了信任更新与归因偏差的存在，增强了机制解释力。",
+              "limitationsAndReadingValue": "实验环境控制性强但生态效度有限，结论外推需谨慎。模型未分离个体性别与群体环境效应，且AI建议形式被动单一。尽管如此，本文价值在于揭示‘人-AI系统’而非算法本身决定协调结果，挑战了监管聚焦算法的主流思路。最值得读的是其将信任动态嵌入战略市场的视角，以及用NHMM解构学习路径的方法创新。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "竞争市场中的AI信任",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么AI建议在市场竞争中会引发不同群体的信任分化？现有研究多关注算法本身能否促成合谋，却忽视人类如何从互动结果中学习并调整对AI的信任。本文指出，在寡头定价市场中，建议是否有效取决于对手反应，成功经验可能被归因为AI能力或个人判断，这种认知差异会通过反馈循环放大，最终导致市场走向高价协调或激烈竞争的不同结局。",
+              "modelAndSetup": "作者构建了一个三人重复伯川德定价实验，卖家可选择是否采纳AI提供的价格建议。每个市场由全女性、全男性或混合性别组成，参与者不知晓对手性别。AI基于市场历史自适应生成建议，但不强制执行。卖家目标是最大化长期利润，每轮可观察自身表现及市场价格统计。该设定捕捉了战略互动下的学习过程，使信任演化内生于市场反馈。",
+              "contributionsAndResults": "研究发现AI建议仅在全女性市场显著提升价格（+29%）和利润（+39%），而在男性和混合市场无显著影响。进一步分析显示，女性卖家在盈利后更倾向于继续遵循AI建议，体现‘习得性信任’；男性则更可能将成功归功于自己并偏离建议，符合‘自我服务归因’模式。这表明AI是否促成超竞争协调，取决于人群构成所塑造的学习动态。",
+              "methodsAndTechniques": "作者采用非齐次隐马尔可夫模型（NHMM）识别个体对AI建议的高/低遵从状态，并建模状态转移如何受前期利润影响。该方法分离出潜变量驱动的行为模式，揭示性别组别间截然相反的反馈机制：盈利增强女性后续遵从，却削弱男性遵从。文本理由编码进一步佐证了信任更新与归因偏差的存在，增强了机制解释力。",
+              "limitationsAndReadingValue": "实验环境控制性强但生态效度有限，结论外推需谨慎。模型未分离个体性别与群体环境效应，且AI建议形式被动单一。尽管如此，本文价值在于揭示‘人-AI系统’而非算法本身决定协调结果，挑战了监管聚焦算法的主流思路。最值得读的是其将信任动态嵌入战略市场的视角，以及用NHMM解构学习路径的方法创新。"
+            },
+            "contentTags": [
+              "人机交互",
+              "算法定价",
+              "性别差异",
+              "学习动态",
+              "协调行为"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "行为建模",
+              "非均匀隐马尔可夫模型"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+            "url": "https://arxiv.org/abs/2608.27261",
+            "arxivId": "2608.27261",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "策略证明且最小浪费的随机分配",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "公平性",
+              "策略证明",
+              "资源分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当个体对不可分物品有严格偏好并可能拒绝某些选项时，如何设计既防操纵又尽可能减少资源闲置的随机分配机制？现有研究已表明，满足公平与策略免疫的机制必然产生浪费，本文追问：这种浪费能否被最小化？它聚焦于在策略证明与弱非浪费性之间权衡的理论边界。",
+              "modelAndSetup": "模型考虑一组代理人与物品，每个代理人有严格的偏好排序，可将部分物品视为不可接受。机制从偏好报告中生成概率性分配。关键设定包括策略证明（无法通过谎报获益）、几乎相等者同等待遇（偏好相近者得相似份额）及事后弱非浪费性（不存在代理人与可接受物品同时空闲的确定性分配）。",
+              "contributionsAndResults": "论文证明，在满足策略证明、几乎相等者同等待遇和事后弱非浪费性的机制类中，任何机制都不可避免地存在至少1/6的代理人物品浪费下界。而随机序列独裁（RSD）机制恰好达到这一下界，因而在四代理或三物品情形下是最小浪费的。此外，RSD也在另一浪费度量下最优。",
+              "methodsAndTechniques": "作者通过构造特定偏好剖面并结合反证法，利用策略证明与公平性公理推导出分配概率的约束关系。关键技术在于逐步修改偏好并应用不变性引理，揭示机制在极端情况下的行为矛盾，从而确立浪费下界，并通过显式计算RSD在临界例子中的表现来验证其最优性。",
+              "limitationsAndReadingValue": "结果依赖于特定公平标准与小规模场景，且RSD虽达理论最优但仍存浪费。然而，论文清晰刻画了策略证明与效率之间的根本张力，其精细的概率分析与下界构造技巧极具阅读价值，尤其适合关注机制设计理论极限的研究者深入研读核心证明部分。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "策略证明且最小浪费的随机分配",
+            "summarySections": {
+              "backgroundAndQuestion": "当个体对不可分物品有严格偏好并可能拒绝某些选项时，如何设计既防操纵又尽可能减少资源闲置的随机分配机制？现有研究已表明，满足公平与策略免疫的机制必然产生浪费，本文追问：这种浪费能否被最小化？它聚焦于在策略证明与弱非浪费性之间权衡的理论边界。",
+              "modelAndSetup": "模型考虑一组代理人与物品，每个代理人有严格的偏好排序，可将部分物品视为不可接受。机制从偏好报告中生成概率性分配。关键设定包括策略证明（无法通过谎报获益）、几乎相等者同等待遇（偏好相近者得相似份额）及事后弱非浪费性（不存在代理人与可接受物品同时空闲的确定性分配）。",
+              "contributionsAndResults": "论文证明，在满足策略证明、几乎相等者同等待遇和事后弱非浪费性的机制类中，任何机制都不可避免地存在至少1/6的代理人物品浪费下界。而随机序列独裁（RSD）机制恰好达到这一下界，因而在四代理或三物品情形下是最小浪费的。此外，RSD也在另一浪费度量下最优。",
+              "methodsAndTechniques": "作者通过构造特定偏好剖面并结合反证法，利用策略证明与公平性公理推导出分配概率的约束关系。关键技术在于逐步修改偏好并应用不变性引理，揭示机制在极端情况下的行为矛盾，从而确立浪费下界，并通过显式计算RSD在临界例子中的表现来验证其最优性。",
+              "limitationsAndReadingValue": "结果依赖于特定公平标准与小规模场景，且RSD虽达理论最优但仍存浪费。然而，论文清晰刻画了策略证明与效率之间的根本张力，其精细的概率分析与下界构造技巧极具阅读价值，尤其适合关注机制设计理论极限的研究者深入研读核心证明部分。"
+            },
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "公平性",
+              "策略证明",
+              "资源分配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-08-27",
+      "categories": [
+        "cs.NE"
+      ],
+      "categorySelection": "cs.NE",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.NE": {
+            "query": "cat:cs.NE AND submittedDate:\"202608270000 TO 202608272359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 3
+      },
+      "arxivTotalResults": 3,
+      "fetchedCount": 3,
+      "fetchedPapers": [
+        {
+          "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+          "url": "https://arxiv.org/abs/2608.27150",
+          "arxivId": "2608.27150",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "Object classification in event-based computer vision is a task that is attracting considerable research attention. Event-based object classification is a fundamental task in the fields of security and applied computer vision, which typically use synchronous frame-based cameras and computing pipelines for operation. This approach has several practical flaws. The size, weight and power consumption of the device could prohibit deployment at the extreme edge or in covert sensing environments. Besides this, there are security concerns inherent in cloud-based or other off-device computation approaches due to the requirement of sending and receiving potentially sensitive data. Furthermore, this transmission of data introduces latency and requires consistent connectivity to the cloud infrastructure to function. The use of Spiking Neural Networks (SNNs) hosted on neuromorphic devices attempts to solve several issues present in this conventional approach. Research into event-based object classification methods are hindered by the lack of high-quality vision datasets to use. To this end, the ANTShapes simulation tool has been previously proposed to create and label event-based vision datasets. In this paper, four novel datasets of varying difficulties are created using the tool and are benchmarked against existing spiking datasets commonly used for event-based vision research (N-MNIST, CIFAR10-DVS, DVSGesture and POKER-DVS). Classification is performed using a convolutional SNN. This work simultaneously provides four datasets with rich details for future experiments to use and validates the output of the ANTShapes dataset simulation tool as being suitable for its purpose."
+        },
+        {
+          "title": "Bug Localization from Bug Reports: A Multi-Objective Approach",
+          "url": "https://arxiv.org/abs/2608.27089",
+          "arxivId": "2608.27089",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.SE"
+          ],
+          "abstract": "Bug localization is a labor-intensive task, particularly in large software systems. When abnormal behavior occurs, developers must perform repetitive and time-consuming steps to identify faulty files. Previous studies have mainly focused on single-objective localization methods, many of which are limited to specific programming languages. In addition, relying solely on lexical similarity between source code and bug reports is often insufficient due to the natural language nature of bug descriptions. In this study, we propose a class-level automated multi-objective search-based system to identify and rank potentially buggy classes from bug reports. The main objective is to maximize similarity while minimizing the number of suggested faulty files. The evolutionary optimization algorithm SPEA-2 was applied to six open-source Java projects comprising more than 22,000 bug reports. The proposed approach was evaluated against two widely used algorithms, NSGA-II and MOEA/D. Results indicate that SPEA-2 achieved higher precision and recall than both multi-objective and single-objective baseline methods. The proposed recommender system successfully identified buggy classes or files for 88.5\\% of bug reports within the top 10 recommendations and 94\\% within the top 20. The effectiveness of the model was further validated on an industrial Android project written in Kotlin, demonstrating its adaptability across programming languages."
+        },
+        {
+          "title": "Asymmetric Coupling Anisotropy for Causal Information Filtering in Physical Reservoirs",
+          "url": "https://arxiv.org/abs/2608.26741",
+          "arxivId": "2608.26741",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "nlin.AO",
+            "cs.NE",
+            "physics.class-ph"
+          ],
+          "abstract": "We demonstrate a physical mechanism for causal information filtering in a physical reservoir computing (PRC) by exploiting asymmetric coupling anisotropy. Using a network of coupled Duffing oscillators, we show that the directionality of internal coupling induces a spatial gradient in the effective potential, establishing a deterministic upstream-to-downstream information flow. This anisotropy allows for the selective amplification of semantic drifts, triggering a macroscopic saddle-node bifurcation as a physical interlock before global computational failure. Through spatiotemporal analysis of a 50-node system under traveling wave inputs, we confirm that local phase transitions effectively purge anomalous information while preserving the computational integrity of the remaining nodes. The results suggest that the intrinsic causality of the reservoir's topology provides a robust framework for autonomous reliability and fault-tolerant physical intelligence."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+              "url": "https://arxiv.org/abs/2608.27150",
+              "arxivId": "2608.27150",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI",
+                "cs.CV"
+              ],
+              "abstract": "Object classification in event-based computer vision is a task that is attracting considerable research attention. Event-based object classification is a fundamental task in the fields of security and applied computer vision, which typically use synchronous frame-based cameras and computing pipelines for operation. This approach has several practical flaws. The size, weight and power consumption of the device could prohibit deployment at the extreme edge or in covert sensing environments. Besides this, there are security concerns inherent in cloud-based or other off-device computation approaches due to the requirement of sending and receiving potentially sensitive data. Furthermore, this transmission of data introduces latency and requires consistent connectivity to the cloud infrastructure to function. The use of Spiking Neural Networks (SNNs) hosted on neuromorphic devices attempts to solve several issues present in this conventional approach. Research into event-based object classification methods are hindered by the lack of high-quality vision datasets to use. To this end, the ANTShapes simulation tool has been previously proposed to create and label event-based vision datasets. In this paper, four novel datasets of varying difficulties are created using the tool and are benchmarked against existing spiking datasets commonly used for event-based vision research (N-MNIST, CIFAR10-DVS, DVSGesture and POKER-DVS). Classification is performed using a convolutional SNN. This work simultaneously provides four datasets with rich details for future experiments to use and validates the output of the ANTShapes dataset simulation tool as being suitable for its purpose."
+            },
+            {
+              "title": "Bug Localization from Bug Reports: A Multi-Objective Approach",
+              "url": "https://arxiv.org/abs/2608.27089",
+              "arxivId": "2608.27089",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.SE"
+              ],
+              "abstract": "Bug localization is a labor-intensive task, particularly in large software systems. When abnormal behavior occurs, developers must perform repetitive and time-consuming steps to identify faulty files. Previous studies have mainly focused on single-objective localization methods, many of which are limited to specific programming languages. In addition, relying solely on lexical similarity between source code and bug reports is often insufficient due to the natural language nature of bug descriptions. In this study, we propose a class-level automated multi-objective search-based system to identify and rank potentially buggy classes from bug reports. The main objective is to maximize similarity while minimizing the number of suggested faulty files. The evolutionary optimization algorithm SPEA-2 was applied to six open-source Java projects comprising more than 22,000 bug reports. The proposed approach was evaluated against two widely used algorithms, NSGA-II and MOEA/D. Results indicate that SPEA-2 achieved higher precision and recall than both multi-objective and single-objective baseline methods. The proposed recommender system successfully identified buggy classes or files for 88.5\\% of bug reports within the top 10 recommendations and 94\\% within the top 20. The effectiveness of the model was further validated on an industrial Android project written in Kotlin, demonstrating its adaptability across programming languages."
+            },
+            {
+              "title": "Asymmetric Coupling Anisotropy for Causal Information Filtering in Physical Reservoirs",
+              "url": "https://arxiv.org/abs/2608.26741",
+              "arxivId": "2608.26741",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "nlin.AO",
+                "cs.NE",
+                "physics.class-ph"
+              ],
+              "abstract": "We demonstrate a physical mechanism for causal information filtering in a physical reservoir computing (PRC) by exploiting asymmetric coupling anisotropy. Using a network of coupled Duffing oscillators, we show that the directionality of internal coupling induces a spatial gradient in the effective potential, establishing a deterministic upstream-to-downstream information flow. This anisotropy allows for the selective amplification of semantic drifts, triggering a macroscopic saddle-node bifurcation as a physical interlock before global computational failure. Through spatiotemporal analysis of a 50-node system under traveling wave inputs, we confirm that local phase transitions effectively purge anomalous information while preserving the computational integrity of the remaining nodes. The results suggest that the intrinsic causality of the reservoir's topology provides a robust framework for autonomous reliability and fault-tolerant physical intelligence."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 3,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 2,
+                  "theoreticalDepth": 6,
+                  "overall": 2,
+                  "penalty": -3
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+              "url": "https://arxiv.org/abs/2608.27150",
+              "arxivId": "2608.27150",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.AI",
+                "cs.CV"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "Bug Localization from Bug Reports: A Multi-Objective Approach",
+              "url": "https://arxiv.org/abs/2608.27089",
+              "arxivId": "2608.27089",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "cs.NE",
+                "cs.SE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 3.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Asymmetric Coupling Anisotropy for Causal Information Filtering in Physical Reservoirs",
+              "url": "https://arxiv.org/abs/2608.26741",
+              "arxivId": "2608.26741",
+              "date": "2026-08-27",
+              "source": "arXiv",
+              "categories": [
+                "nlin.AO",
+                "cs.NE",
+                "physics.class-ph"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 2.0,
+                "theoreticalDepth": 6.0,
+                "overall": 2.0,
+                "penalty": -3.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+          "url": "https://arxiv.org/abs/2608.27150",
+          "arxivId": "2608.27150",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "Bug Localization from Bug Reports: A Multi-Objective Approach",
+          "url": "https://arxiv.org/abs/2608.27089",
+          "arxivId": "2608.27089",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 3.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Asymmetric Coupling Anisotropy for Causal Information Filtering in Physical Reservoirs",
+          "url": "https://arxiv.org/abs/2608.26741",
+          "arxivId": "2608.26741",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "nlin.AO",
+            "cs.NE",
+            "physics.class-ph"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 2.0,
+            "theoreticalDepth": 6.0,
+            "overall": 2.0,
+            "penalty": -3.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Bug Localization from Bug Reports: A Multi-Objective Approach",
+          "url": "https://arxiv.org/abs/2608.27089",
+          "arxivId": "2608.27089",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 3.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+          "url": "https://arxiv.org/abs/2608.27150",
+          "arxivId": "2608.27150",
+          "date": "2026-08-27",
+          "source": "arXiv",
+          "categories": [
+            "cs.NE",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Bug Localization from Bug Reports: A Multi-Objective Approach",
+            "url": "https://arxiv.org/abs/2608.27089",
+            "arxivId": "2608.27089",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.NE",
+              "cs.SE"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "从缺陷报告中定位缺陷：一种多目标方法",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "模型构建",
+              "基准评测"
+            ],
+            "contentTags": [
+              "缺陷定位",
+              "多目标优化",
+              "信息检索",
+              "搜索式软件工程",
+              "代码推荐"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "软件缺陷定位依赖开发者手动分析自然语言描述与源码的关联，但两者间存在语义鸿沟，仅靠文本相似性常导致误报。现有方法多为单目标优化，难以平衡高召回与低推荐量的需求。本文针对这一矛盾，提出需同时优化相关性和推荐数量的多目标框架，解决传统方法在大型项目中效率低、泛化差的问题。",
+              "modelAndSetup": "系统输入为缺陷报告、历史修复记录、API文档及源码元素，输出为可疑类的排序列表。采用SPEA-2、MOEA/D等进化算法进行搜索，在六项Java开源项目（超2.2万缺陷报告）和一项工业级Kotlin安卓项目上评估。评价指标包括Precision@k、Recall@k和Accuracy@k，重点考察前10至20个推荐的覆盖率。",
+              "contributionsAndResults": "论文提出首个融合历史行为与词汇相似性的多目标缺陷定位框架，显著优于NSGA-II、MOEA/D及单目标基线。在Java项目中，SPEA-2实现88.5%的Accuracy@10和94%的Accuracy@20，表明其能高效聚焦真实缺陷文件。跨语言验证显示其在Kotlin项目中仍保持优势，证明方法具备良好适应性。",
+              "methodsAndTechniques": "核心是将缺陷定位建模为最大化相关性与最小化推荐数的双目标优化问题。通过结合词汇相似性（基于向量空间模型）、历史修复频率与时序信息构建复合目标函数，并引入改进的tokenization策略，仅处理类名、注释等关键元素以提升效率。采用SPEA-2等算法求解Pareto前沿，利用对立学习加速收敛。",
+              "limitationsAndReadingValue": "模型依赖高质量历史数据与API文档，在文档缺失或变更频繁的项目中性能可能下降。实验集中于Java/Kotlin，对函数式或脚本语言泛化性未知。尽管如此，其多目标建模思路、对立学习集成与轻量预处理设计极具启发性，最值得细读的是问题形式化过程与跨语言验证部分，为自动化维护工具提供了可靠框架参考。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "从缺陷报告中定位缺陷：一种多目标方法",
+            "summarySections": {
+              "backgroundAndQuestion": "软件缺陷定位依赖开发者手动分析自然语言描述与源码的关联，但两者间存在语义鸿沟，仅靠文本相似性常导致误报。现有方法多为单目标优化，难以平衡高召回与低推荐量的需求。本文针对这一矛盾，提出需同时优化相关性和推荐数量的多目标框架，解决传统方法在大型项目中效率低、泛化差的问题。",
+              "modelAndSetup": "系统输入为缺陷报告、历史修复记录、API文档及源码元素，输出为可疑类的排序列表。采用SPEA-2、MOEA/D等进化算法进行搜索，在六项Java开源项目（超2.2万缺陷报告）和一项工业级Kotlin安卓项目上评估。评价指标包括Precision@k、Recall@k和Accuracy@k，重点考察前10至20个推荐的覆盖率。",
+              "contributionsAndResults": "论文提出首个融合历史行为与词汇相似性的多目标缺陷定位框架，显著优于NSGA-II、MOEA/D及单目标基线。在Java项目中，SPEA-2实现88.5%的Accuracy@10和94%的Accuracy@20，表明其能高效聚焦真实缺陷文件。跨语言验证显示其在Kotlin项目中仍保持优势，证明方法具备良好适应性。",
+              "methodsAndTechniques": "核心是将缺陷定位建模为最大化相关性与最小化推荐数的双目标优化问题。通过结合词汇相似性（基于向量空间模型）、历史修复频率与时序信息构建复合目标函数，并引入改进的tokenization策略，仅处理类名、注释等关键元素以提升效率。采用SPEA-2等算法求解Pareto前沿，利用对立学习加速收敛。",
+              "limitationsAndReadingValue": "模型依赖高质量历史数据与API文档，在文档缺失或变更频繁的项目中性能可能下降。实验集中于Java/Kotlin，对函数式或脚本语言泛化性未知。尽管如此，其多目标建模思路、对立学习集成与轻量预处理设计极具启发性，最值得细读的是问题形式化过程与跨语言验证部分，为自动化维护工具提供了可靠框架参考。"
+            },
+            "contentTags": [
+              "缺陷定位",
+              "多目标优化",
+              "信息检索",
+              "搜索式软件工程",
+              "代码推荐"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "系统框架",
+              "模型构建",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+            "url": "https://arxiv.org/abs/2608.27150",
+            "arxivId": "2608.27150",
+            "date": "2026-08-27",
+            "source": "arXiv",
+            "categories": [
+              "cs.NE",
+              "cs.AI",
+              "cs.CV"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "ANTShapes：面向事件型神经形态物体分类的基准数据集",
+            "researchParadigmTags": [
+              "数据集构建",
+              "基准评测",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "神经形态计算",
+              "事件相机",
+              "脉冲神经网络",
+              "物体分类",
+              "计算机视觉"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有事件型视觉数据集难以真实反映3D物体分类任务的需求，多数数据集由静态图像经人工运动转换而来，缺乏自然演化的时空特征，且受传感器噪声干扰。这导致模型评估偏离实际应用场景，尤其在边缘部署和低延迟需求下，缺少干净、可控、富含动态特征的数据来研究纯物体识别能力。",
+              "modelAndSetup": "研究构建了四个基于ANTShapes仿真工具生成的新型事件数据集，模拟12类3D形状在旋转、平移、形变和随机转动下的动态行为，输出为地址事件表示（AER）格式。通过卷积脉冲神经网络进行多类别分类实验，使用准确率和混淆矩阵评估性能，并与N-MNIST、CIFAR10-DVS等主流数据集对比。",
+              "contributionsAndResults": "论文提供了四个高质量、无噪声、具丰富时空动态的3D物体分类基准数据集，填补了现有数据集中物体级语义与真实动态分离的空白。实验表明，所提数据集在SNN上达到与经典数据集相当的分类性能，验证了其合理性和可用性，同时揭示了CIFAR10-DVS等数据存在特征重叠严重的问题。",
+              "methodsAndTechniques": "采用计算仿真而非物理采集的方式生成数据，精确控制光照、运动轨迹和形变参数，确保事件流源于真实的场景亮度变化。通过设定不同难度级别（如加入随机位移或缩放），系统性考察模型对动态变异的鲁棒性。主干网络使用带代理梯度的LIF神经元，结合膜电位统计特征进行最终分类。",
+              "limitationsAndReadingValue": "当前实验仅基于单一SNN架构，未能全面测试不同模型对数据特性的敏感度；且新增挑战带来的性能下降幅度有限，可能不足以区分更先进模型的能力差异。最值得阅读的是其数据生成逻辑与PCA可视化分析，为未来事件数据集设计提供了可复现的范式与验证手段。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "ANTShapes：面向事件型神经形态物体分类的基准数据集",
+            "summarySections": {
+              "backgroundAndQuestion": "现有事件型视觉数据集难以真实反映3D物体分类任务的需求，多数数据集由静态图像经人工运动转换而来，缺乏自然演化的时空特征，且受传感器噪声干扰。这导致模型评估偏离实际应用场景，尤其在边缘部署和低延迟需求下，缺少干净、可控、富含动态特征的数据来研究纯物体识别能力。",
+              "modelAndSetup": "研究构建了四个基于ANTShapes仿真工具生成的新型事件数据集，模拟12类3D形状在旋转、平移、形变和随机转动下的动态行为，输出为地址事件表示（AER）格式。通过卷积脉冲神经网络进行多类别分类实验，使用准确率和混淆矩阵评估性能，并与N-MNIST、CIFAR10-DVS等主流数据集对比。",
+              "contributionsAndResults": "论文提供了四个高质量、无噪声、具丰富时空动态的3D物体分类基准数据集，填补了现有数据集中物体级语义与真实动态分离的空白。实验表明，所提数据集在SNN上达到与经典数据集相当的分类性能，验证了其合理性和可用性，同时揭示了CIFAR10-DVS等数据存在特征重叠严重的问题。",
+              "methodsAndTechniques": "采用计算仿真而非物理采集的方式生成数据，精确控制光照、运动轨迹和形变参数，确保事件流源于真实的场景亮度变化。通过设定不同难度级别（如加入随机位移或缩放），系统性考察模型对动态变异的鲁棒性。主干网络使用带代理梯度的LIF神经元，结合膜电位统计特征进行最终分类。",
+              "limitationsAndReadingValue": "当前实验仅基于单一SNN架构，未能全面测试不同模型对数据特性的敏感度；且新增挑战带来的性能下降幅度有限，可能不足以区分更先进模型的能力差异。最值得阅读的是其数据生成逻辑与PCA可视化分析，为未来事件数据集设计提供了可复现的范式与验证手段。"
+            },
+            "contentTags": [
+              "神经形态计算",
+              "事件相机",
+              "脉冲神经网络",
+              "物体分类",
+              "计算机视觉"
+            ],
+            "researchParadigmTags": [
+              "数据集构建",
+              "基准评测",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 2
+  }
+}
