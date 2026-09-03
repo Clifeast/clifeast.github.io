@@ -1,0 +1,2723 @@
+{
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-03T07:20:31.075484+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-09-02",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202609020000 TO 202609022359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202609020000 TO 202609022359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 7
+      },
+      "arxivTotalResults": 7,
+      "fetchedCount": 7,
+      "fetchedPapers": [
+        {
+          "title": "Approximately Efficient Multidimensional Bilateral Trade",
+          "url": "https://arxiv.org/abs/2609.02872",
+          "arxivId": "2609.02872",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "A central challenge in mechanism design is to develop truthful trade mechanisms that maximize the expected gains-from-trade (GFT) in two-sided markets. Because achieving the full GFT is generally impossible, the literature has focused on constant-factor approximations---a notoriously difficult problem even in simple settings. It was only recently that a breakthrough result by [DMSW22] achieved a constant-factor approximation for single-item bilateral trade. The same guarantee was later extended to single-dimensional matching markets with general downward-closed constraints [BRTW26]. Most existing results, however, are limited to single-dimensional agents. A notable multi-dimensional exception is [CGMZ21]. They considered a market with one constrained-additive buyer and $n$ single-dimensional sellers and provided a mechanism that achieves a $\\log^2(n)$ approximation to the second-best GFT, i.e., the maximum expected GFT theoretically achievable by any mechanism satisfying Bayesian Incentive Compatibility (BIC), Interim Individual Rationality (IIR), and ex-ante Weak Budget Balance (WBB). In this paper, we study multi-dimensional bilateral trade problem where both sides of the market are multi-dimensional. We start with one buyer with XOS valuation and one seller with an additive cost function. We then generalize to a market with $n$ XOS buyers and one additive seller. Assuming independent items' values and costs, in both settings we propose simple mechanisms that are BIC, IIR, and ex-ante WBB, while achieving a constant fraction of the optimal (first-best) expected GFT."
+        },
+        {
+          "title": "Almost Envy-Freeness for Additive Mixed Manna with Entitlements: Deterministic and Randomized Guarantees",
+          "url": "https://arxiv.org/abs/2609.02724",
+          "arxivId": "2609.02724",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We investigate the fair allocation of indivisible items among agents with asymmetric entitlements in mixed manna settings, where the items consist of both goods and chores. For additive valuations, we establish that weighted envy-free up to one item (WEF1) allocations always exist and can be computed in polynomial time. We also study fair and efficient allocation and show that weighted envy-freeness up to one transfer (WEF1T) is compatible with fractional Pareto optimality (fPO) for every mixed-manna instance. This relaxation from WEF1 to WEF1T is tight, as demonstrated by our impossibility result. We further show a best-of-both-worlds result via a finite lottery that guarantees weighted envy-freeness (WEF) in expectation, with every realized allocation satisfying WEF1T and achieving the tight characterization complemented by the existing impossibility result."
+        },
+        {
+          "title": "Fair Stable Matching: A Nash Social Welfare Approach",
+          "url": "https://arxiv.org/abs/2609.02354",
+          "arxivId": "2609.02354",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI"
+          ],
+          "abstract": "While traditional stable matching algorithms, such as the Gale-Shapley algorithm, prioritize stability, they may fall short of achieving equitable outcomes among participants. We study the role of \\emph{Nash social welfare} (NSW) as a fairness objective in the classic \\emph{stable marriage problem}. We develop \\texttt{SNSW-Alg} that finds a stable matching that maximizes Nash social welfare under rank-induced utilities in $\\tilde{\\mathcal{O}}(n^4)$ time, where $n$ is the number of men or women. We demonstrate that \\texttt{SNSW-Alg} balances equity while preserving stability. We empirically evaluate our methods across diverse preference distributions, demonstrating significant gains in fairness without substantial losses in other key measures such as regret, egalitarian criterion, and sex equality. Our findings suggest that the stable matching produced by \\texttt{SNSW-Alg} is statistically Pareto-undominated by stable matchings based on other fairness measures - regret, egalitarian, and sex equality. This study offers compelling insights for designing fair-stable matching."
+        },
+        {
+          "title": "The Complexity of Justified Representation with Additive Utilities",
+          "url": "https://arxiv.org/abs/2609.02030",
+          "arxivId": "2609.02030",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the computational complexity of satisfying proportional representation -- in particular proportional, extended, and fully justified representation (PJR, EJR, and FJR) -- in participatory budgeting and committee elections with additive utilities. First, we give a complete picture of the complexity of the axioms for a constant number of voters or voter types. Second, we show that even for committee elections with integer utilities bounded above by a small constant, satisfying FJR is intractable, giving the first strong NP-hardness result for a justified representation axiom. Third, we extend the Expanding Approvals Rule to committee elections with additive utilities and show that it satisfies PJR. Lastly, we show that no sequential voting rule can improve on the known positive result, thus proving that novel, substantially different voting rules are needed to surpass these boundaries. Beyond their theoretical merit, our results carry practical importance, as multi-winner voting with additive utilities has recently been gaining prominence in online deliberation and real-world participatory budgeting."
+        },
+        {
+          "title": "Sequential Pricing Mechanisms for Surplus Division",
+          "url": "https://arxiv.org/abs/2609.02773",
+          "arxivId": "2609.02773",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Extending the Price-and-Choose (P&C) mechanism of Echenique and Nunez (2025), we propose the Price-Accept-and-Choose (PA&C) mechanism, which preserves efficiency while eliminating P&C's first-mover advantage. We then analyze randomized and bidding variants and show that the resulting equilibrium payoffs correspond to standard solutions in transferable utility games: the Center of the Imputation Set value for P&C and the Shapley value for PA&C. In the randomized variants, these solutions arise in expectation; in the bidding variants, they are implemented on every equilibrium path. We further relate other efficient designs, such as balanced VCG payments, to additional solution concepts, forging an interpretable bridge between implementation theory and cooperative game theory."
+        },
+        {
+          "title": "Strategic Centrality and the Emergence of Core-Periphery Networks",
+          "url": "https://arxiv.org/abs/2609.02357",
+          "arxivId": "2609.02357",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study a network formation game in which agents sponsor links at a linear cost in order to maximize centrality, defined as a weighted sum of walk counts with positive and weakly decreasing weights. This class includes Katz Bonacich centrality and total communicability and captures environments in which access decays with distance. Our main result is a sharp equilibrium characterization: every Nash equilibrium network is core periphery, meaning there exists a set $C$ such that every node is linked to every node in $C$, and there are no other edges. The driving force is that linking to better connected agents generates many additional short connections at once, so incentives concentrate links on a dense subset. Finally, we show that the welfare maximizing network is always either empty or complete."
+        },
+        {
+          "title": "Equilibrium Architecture in Multi-Battle Contests with Count-Dependent Prizes",
+          "url": "https://arxiv.org/abs/2609.02031",
+          "arxivId": "2609.02031",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Two contestants with possibly different marginal costs compete across identical battlefields governed by a Tullock technology with discriminatory power at most one. A symmetric schedule divides a fixed prize according to the number of victories. Allowing for inactivity, unequal efforts across battlefields, and arbitrary mixed strategies, we prove the existence and uniformity of equilibrium. Equilibrium may be pure, semi-pure (one contestant mixes), or two-sided mixed; in a two-sided mixed equilibrium, each contestant uses at most countably many positive effort levels. Multiple equilibria with different structures can coexist while generating the same expected effort, prize share, cost, and payoff. For every admissible schedule and cost ratio, equilibrium is unique with six or fewer battlefields, whereas seven first permits multiplicity or two-sided mixing. We also characterize all equilibria under majority rule."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Approximately Efficient Multidimensional Bilateral Trade",
+              "url": "https://arxiv.org/abs/2609.02872",
+              "arxivId": "2609.02872",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "A central challenge in mechanism design is to develop truthful trade mechanisms that maximize the expected gains-from-trade (GFT) in two-sided markets. Because achieving the full GFT is generally impossible, the literature has focused on constant-factor approximations---a notoriously difficult problem even in simple settings. It was only recently that a breakthrough result by [DMSW22] achieved a constant-factor approximation for single-item bilateral trade. The same guarantee was later extended to single-dimensional matching markets with general downward-closed constraints [BRTW26]. Most existing results, however, are limited to single-dimensional agents. A notable multi-dimensional exception is [CGMZ21]. They considered a market with one constrained-additive buyer and $n$ single-dimensional sellers and provided a mechanism that achieves a $\\log^2(n)$ approximation to the second-best GFT, i.e., the maximum expected GFT theoretically achievable by any mechanism satisfying Bayesian Incentive Compatibility (BIC), Interim Individual Rationality (IIR), and ex-ante Weak Budget Balance (WBB). In this paper, we study multi-dimensional bilateral trade problem where both sides of the market are multi-dimensional. We start with one buyer with XOS valuation and one seller with an additive cost function. We then generalize to a market with $n$ XOS buyers and one additive seller. Assuming independent items' values and costs, in both settings we propose simple mechanisms that are BIC, IIR, and ex-ante WBB, while achieving a constant fraction of the optimal (first-best) expected GFT."
+            },
+            {
+              "title": "Almost Envy-Freeness for Additive Mixed Manna with Entitlements: Deterministic and Randomized Guarantees",
+              "url": "https://arxiv.org/abs/2609.02724",
+              "arxivId": "2609.02724",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We investigate the fair allocation of indivisible items among agents with asymmetric entitlements in mixed manna settings, where the items consist of both goods and chores. For additive valuations, we establish that weighted envy-free up to one item (WEF1) allocations always exist and can be computed in polynomial time. We also study fair and efficient allocation and show that weighted envy-freeness up to one transfer (WEF1T) is compatible with fractional Pareto optimality (fPO) for every mixed-manna instance. This relaxation from WEF1 to WEF1T is tight, as demonstrated by our impossibility result. We further show a best-of-both-worlds result via a finite lottery that guarantees weighted envy-freeness (WEF) in expectation, with every realized allocation satisfying WEF1T and achieving the tight characterization complemented by the existing impossibility result."
+            },
+            {
+              "title": "Fair Stable Matching: A Nash Social Welfare Approach",
+              "url": "https://arxiv.org/abs/2609.02354",
+              "arxivId": "2609.02354",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI"
+              ],
+              "abstract": "While traditional stable matching algorithms, such as the Gale-Shapley algorithm, prioritize stability, they may fall short of achieving equitable outcomes among participants. We study the role of \\emph{Nash social welfare} (NSW) as a fairness objective in the classic \\emph{stable marriage problem}. We develop \\texttt{SNSW-Alg} that finds a stable matching that maximizes Nash social welfare under rank-induced utilities in $\\tilde{\\mathcal{O}}(n^4)$ time, where $n$ is the number of men or women. We demonstrate that \\texttt{SNSW-Alg} balances equity while preserving stability. We empirically evaluate our methods across diverse preference distributions, demonstrating significant gains in fairness without substantial losses in other key measures such as regret, egalitarian criterion, and sex equality. Our findings suggest that the stable matching produced by \\texttt{SNSW-Alg} is statistically Pareto-undominated by stable matchings based on other fairness measures - regret, egalitarian, and sex equality. This study offers compelling insights for designing fair-stable matching."
+            },
+            {
+              "title": "The Complexity of Justified Representation with Additive Utilities",
+              "url": "https://arxiv.org/abs/2609.02030",
+              "arxivId": "2609.02030",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the computational complexity of satisfying proportional representation -- in particular proportional, extended, and fully justified representation (PJR, EJR, and FJR) -- in participatory budgeting and committee elections with additive utilities. First, we give a complete picture of the complexity of the axioms for a constant number of voters or voter types. Second, we show that even for committee elections with integer utilities bounded above by a small constant, satisfying FJR is intractable, giving the first strong NP-hardness result for a justified representation axiom. Third, we extend the Expanding Approvals Rule to committee elections with additive utilities and show that it satisfies PJR. Lastly, we show that no sequential voting rule can improve on the known positive result, thus proving that novel, substantially different voting rules are needed to surpass these boundaries. Beyond their theoretical merit, our results carry practical importance, as multi-winner voting with additive utilities has recently been gaining prominence in online deliberation and real-world participatory budgeting."
+            },
+            {
+              "title": "Sequential Pricing Mechanisms for Surplus Division",
+              "url": "https://arxiv.org/abs/2609.02773",
+              "arxivId": "2609.02773",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Extending the Price-and-Choose (P&C) mechanism of Echenique and Nunez (2025), we propose the Price-Accept-and-Choose (PA&C) mechanism, which preserves efficiency while eliminating P&C's first-mover advantage. We then analyze randomized and bidding variants and show that the resulting equilibrium payoffs correspond to standard solutions in transferable utility games: the Center of the Imputation Set value for P&C and the Shapley value for PA&C. In the randomized variants, these solutions arise in expectation; in the bidding variants, they are implemented on every equilibrium path. We further relate other efficient designs, such as balanced VCG payments, to additional solution concepts, forging an interpretable bridge between implementation theory and cooperative game theory."
+            },
+            {
+              "title": "Strategic Centrality and the Emergence of Core-Periphery Networks",
+              "url": "https://arxiv.org/abs/2609.02357",
+              "arxivId": "2609.02357",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study a network formation game in which agents sponsor links at a linear cost in order to maximize centrality, defined as a weighted sum of walk counts with positive and weakly decreasing weights. This class includes Katz Bonacich centrality and total communicability and captures environments in which access decays with distance. Our main result is a sharp equilibrium characterization: every Nash equilibrium network is core periphery, meaning there exists a set $C$ such that every node is linked to every node in $C$, and there are no other edges. The driving force is that linking to better connected agents generates many additional short connections at once, so incentives concentrate links on a dense subset. Finally, we show that the welfare maximizing network is always either empty or complete."
+            },
+            {
+              "title": "Equilibrium Architecture in Multi-Battle Contests with Count-Dependent Prizes",
+              "url": "https://arxiv.org/abs/2609.02031",
+              "arxivId": "2609.02031",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Two contestants with possibly different marginal costs compete across identical battlefields governed by a Tullock technology with discriminatory power at most one. A symmetric schedule divides a fixed prize according to the number of victories. Allowing for inactivity, unequal efforts across battlefields, and arbitrary mixed strategies, we prove the existence and uniformity of equilibrium. Equilibrium may be pure, semi-pure (one contestant mixes), or two-sided mixed; in a two-sided mixed equilibrium, each contestant uses at most countably many positive effort levels. Multiple equilibria with different structures can coexist while generating the same expected effort, prize share, cost, and payoff. For every admissible schedule and cost ratio, equilibrium is unique with six or fewer battlefields, whereas seven first permits multiplicity or two-sided mixing. We also characterize all equilibria under majority rule."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Approximately Efficient Multidimensional Bilateral Trade",
+              "url": "https://arxiv.org/abs/2609.02872",
+              "arxivId": "2609.02872",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Almost Envy-Freeness for Additive Mixed Manna with Entitlements: Deterministic and Randomized Guarantees",
+              "url": "https://arxiv.org/abs/2609.02724",
+              "arxivId": "2609.02724",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "Fair Stable Matching: A Nash Social Welfare Approach",
+              "url": "https://arxiv.org/abs/2609.02354",
+              "arxivId": "2609.02354",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "The Complexity of Justified Representation with Additive Utilities",
+              "url": "https://arxiv.org/abs/2609.02030",
+              "arxivId": "2609.02030",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "Sequential Pricing Mechanisms for Surplus Division",
+              "url": "https://arxiv.org/abs/2609.02773",
+              "arxivId": "2609.02773",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            },
+            {
+              "title": "Strategic Centrality and the Emergence of Core-Periphery Networks",
+              "url": "https://arxiv.org/abs/2609.02357",
+              "arxivId": "2609.02357",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            },
+            {
+              "title": "Equilibrium Architecture in Multi-Battle Contests with Count-Dependent Prizes",
+              "url": "https://arxiv.org/abs/2609.02031",
+              "arxivId": "2609.02031",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "bonus": 0.0,
+                "total": 22.5
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Approximately Efficient Multidimensional Bilateral Trade",
+          "url": "https://arxiv.org/abs/2609.02872",
+          "arxivId": "2609.02872",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Almost Envy-Freeness for Additive Mixed Manna with Entitlements: Deterministic and Randomized Guarantees",
+          "url": "https://arxiv.org/abs/2609.02724",
+          "arxivId": "2609.02724",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Fair Stable Matching: A Nash Social Welfare Approach",
+          "url": "https://arxiv.org/abs/2609.02354",
+          "arxivId": "2609.02354",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "The Complexity of Justified Representation with Additive Utilities",
+          "url": "https://arxiv.org/abs/2609.02030",
+          "arxivId": "2609.02030",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Sequential Pricing Mechanisms for Surplus Division",
+          "url": "https://arxiv.org/abs/2609.02773",
+          "arxivId": "2609.02773",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Strategic Centrality and the Emergence of Core-Periphery Networks",
+          "url": "https://arxiv.org/abs/2609.02357",
+          "arxivId": "2609.02357",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Equilibrium Architecture in Multi-Battle Contests with Count-Dependent Prizes",
+          "url": "https://arxiv.org/abs/2609.02031",
+          "arxivId": "2609.02031",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 22.5
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Approximately Efficient Multidimensional Bilateral Trade",
+          "url": "https://arxiv.org/abs/2609.02872",
+          "arxivId": "2609.02872",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Almost Envy-Freeness for Additive Mixed Manna with Entitlements: Deterministic and Randomized Guarantees",
+          "url": "https://arxiv.org/abs/2609.02724",
+          "arxivId": "2609.02724",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "The Complexity of Justified Representation with Additive Utilities",
+          "url": "https://arxiv.org/abs/2609.02030",
+          "arxivId": "2609.02030",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Sequential Pricing Mechanisms for Surplus Division",
+          "url": "https://arxiv.org/abs/2609.02773",
+          "arxivId": "2609.02773",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Strategic Centrality and the Emergence of Core-Periphery Networks",
+          "url": "https://arxiv.org/abs/2609.02357",
+          "arxivId": "2609.02357",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Approximately Efficient Multidimensional Bilateral Trade",
+            "url": "https://arxiv.org/abs/2609.02872",
+            "arxivId": "2609.02872",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "近似高效的多维双边贸易",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "模型构建",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "多智能体系统",
+              "信息不对称"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么多维双边贸易难以高效？传统机制设计中，双边贸易因买卖双方私有信息导致效率损失（Myerson-Satterthwaite不可能性），现有研究多聚焦单维情形。本文关注更现实的多维场景——买方对多种商品有组合估值，卖方成本也跨项独立，此时如何设计激励相容机制以逼近最大交易收益（GFT）成为难题，尤其缺乏常数因子近似保证。",
+              "modelAndSetup": "模型设定为一个卖方持有多个异质物品，n个买方各具XOS估值函数，买卖双方类型均私有且分布已知。卖方加总成本，买方估值为子集上的最大线性组合。机制需满足贝叶斯激励相容（BIC）、中间个体理性（IIR）和事前弱预算平衡（WBB），目标是最大化期望GFT，即成交带来的总价值增益。",
+              "contributionsAndResults": "论文首次在多维双边贸易中实现了对第一优GFT的常数因子近似。对于单XOS买方与加性卖方，随机化委托买卖双方最优机制可获至少1/44的GFT；推广至多买方时，通过设计基于入口费与单元需求约简的机制，在保持激励与预算约束下仍保证常数近似比，突破了此前仅有的对数因子结果。",
+              "methodsAndTechniques": "作者采用核心-尾部分解技术：将GFT拆分为集中性强的‘核心’与稀疏高值的‘尾部’。核心部分通过卖方收取入口费提取近似利润，利用截断与浓度不等式控制风险；尾部则归约到单维复制实例，借助虚拟估值与预言不等式设计定价机制，最终整合两部分实现整体近似。",
+              "limitationsAndReadingValue": "局限在于依赖类型独立性假设，且机制虽理论可行但实现复杂。然而其核心思想——通过分解处理多维性、结合入口费与单维工具逼近GFT——提供了新范式。最值得读的是模型抽象方式、核心-尾部技术路线及对多买方正外部性的处理，为后续研究开辟了路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "近似高效的多维双边贸易",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么多维双边贸易难以高效？传统机制设计中，双边贸易因买卖双方私有信息导致效率损失（Myerson-Satterthwaite不可能性），现有研究多聚焦单维情形。本文关注更现实的多维场景——买方对多种商品有组合估值，卖方成本也跨项独立，此时如何设计激励相容机制以逼近最大交易收益（GFT）成为难题，尤其缺乏常数因子近似保证。",
+              "modelAndSetup": "模型设定为一个卖方持有多个异质物品，n个买方各具XOS估值函数，买卖双方类型均私有且分布已知。卖方加总成本，买方估值为子集上的最大线性组合。机制需满足贝叶斯激励相容（BIC）、中间个体理性（IIR）和事前弱预算平衡（WBB），目标是最大化期望GFT，即成交带来的总价值增益。",
+              "contributionsAndResults": "论文首次在多维双边贸易中实现了对第一优GFT的常数因子近似。对于单XOS买方与加性卖方，随机化委托买卖双方最优机制可获至少1/44的GFT；推广至多买方时，通过设计基于入口费与单元需求约简的机制，在保持激励与预算约束下仍保证常数近似比，突破了此前仅有的对数因子结果。",
+              "methodsAndTechniques": "作者采用核心-尾部分解技术：将GFT拆分为集中性强的‘核心’与稀疏高值的‘尾部’。核心部分通过卖方收取入口费提取近似利润，利用截断与浓度不等式控制风险；尾部则归约到单维复制实例，借助虚拟估值与预言不等式设计定价机制，最终整合两部分实现整体近似。",
+              "limitationsAndReadingValue": "局限在于依赖类型独立性假设，且机制虽理论可行但实现复杂。然而其核心思想——通过分解处理多维性、结合入口费与单维工具逼近GFT——提供了新范式。最值得读的是模型抽象方式、核心-尾部技术路线及对多买方正外部性的处理，为后续研究开辟了路径。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "多智能体系统",
+              "信息不对称"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "模型构建",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Almost Envy-Freeness for Additive Mixed Manna with Entitlements: Deterministic and Randomized Guarantees",
+            "url": "https://arxiv.org/abs/2609.02724",
+            "arxivId": "2609.02724",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "带权益的加法混合负资产中的几乎无嫉妒性：确定性与随机性保证",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "机制设计",
+              "均衡分析",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "资源分配",
+              "混合负资产"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究在物品同时包含商品（正效用）和任务（负效用）的混合负资产场景下，如何为具有不同权益权重的代理公平分配不可分物品。传统无嫉妒性（EF）难以满足，尤其当代理权利不均等时，现有放松标准如WEF1的存在性和效率兼容性仍不明确，尤其是在混合物品设置中。这引出了核心问题：能否在一般混合负资产实例中保证WEF1的存在并高效计算？",
+              "modelAndSetup": "模型考虑一组代理N和一组不可分物品M，每个代理i拥有正权重wi表示其权益，并通过加法估值函数评估物品。物品对不同代理可为商品或任务。目标是找到满足加权公平性（如WEF1、WEF1T）和效率（如fPO）的分配。WEF1允许通过移除一个物品来消除嫉妒，而WEF1T则允许通过一次物品转移来缓解。",
+              "contributionsAndResults": "论文证明了任意混合负资产实例均存在且可在多项式时间内计算出WEF1分配，解决了该领域的开放问题。进一步指出WEF1与分数帕累托最优（fPO）无法共存，但WEF1T可与fPO同时达成。此外，提出一种有限彩票机制，在期望下满足加权无嫉妒性（WEF），且每次实现均满足WEF1T，实现了期望与事后公平性的最佳结合。",
+              "methodsAndTechniques": "作者采用元商品技术预处理物品，将多个物品打包为满足特定结构性质的元商品，从而保留单物品比较能力。结合前向与反向加权挑选序列算法进行分配。对于效率与随机性结果，使用KKM引理结合扰动福利最大化和tie-breaking技巧构造fPO与WEF1T共存解；随机机制则利用最大熵分解与分数霍尔条件耦合残余任务与元商品分配。",
+              "limitationsAndReadingValue": "尽管结果广泛适用，但WEF1与PO的兼容性仍未解决，且机制依赖精细构造如元商品与KKM论证，实际部署可能复杂。然而，论文清晰刻画了加权混合分配中公平与效率的边界，tight地确立了WEF1T的关键角色。其模型抽象、组合算法设计及对随机保证的处理极具阅读价值，特别是对追求理论深度的研究者。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "带权益的加法混合负资产中的几乎无嫉妒性：确定性与随机性保证",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究在物品同时包含商品（正效用）和任务（负效用）的混合负资产场景下，如何为具有不同权益权重的代理公平分配不可分物品。传统无嫉妒性（EF）难以满足，尤其当代理权利不均等时，现有放松标准如WEF1的存在性和效率兼容性仍不明确，尤其是在混合物品设置中。这引出了核心问题：能否在一般混合负资产实例中保证WEF1的存在并高效计算？",
+              "modelAndSetup": "模型考虑一组代理N和一组不可分物品M，每个代理i拥有正权重wi表示其权益，并通过加法估值函数评估物品。物品对不同代理可为商品或任务。目标是找到满足加权公平性（如WEF1、WEF1T）和效率（如fPO）的分配。WEF1允许通过移除一个物品来消除嫉妒，而WEF1T则允许通过一次物品转移来缓解。",
+              "contributionsAndResults": "论文证明了任意混合负资产实例均存在且可在多项式时间内计算出WEF1分配，解决了该领域的开放问题。进一步指出WEF1与分数帕累托最优（fPO）无法共存，但WEF1T可与fPO同时达成。此外，提出一种有限彩票机制，在期望下满足加权无嫉妒性（WEF），且每次实现均满足WEF1T，实现了期望与事后公平性的最佳结合。",
+              "methodsAndTechniques": "作者采用元商品技术预处理物品，将多个物品打包为满足特定结构性质的元商品，从而保留单物品比较能力。结合前向与反向加权挑选序列算法进行分配。对于效率与随机性结果，使用KKM引理结合扰动福利最大化和tie-breaking技巧构造fPO与WEF1T共存解；随机机制则利用最大熵分解与分数霍尔条件耦合残余任务与元商品分配。",
+              "limitationsAndReadingValue": "尽管结果广泛适用，但WEF1与PO的兼容性仍未解决，且机制依赖精细构造如元商品与KKM论证，实际部署可能复杂。然而，论文清晰刻画了加权混合分配中公平与效率的边界，tight地确立了WEF1T的关键角色。其模型抽象、组合算法设计及对随机保证的处理极具阅读价值，特别是对追求理论深度的研究者。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "资源分配",
+              "混合负资产"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "机制设计",
+              "均衡分析",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Complexity of Justified Representation with Additive Utilities",
+            "url": "https://arxiv.org/abs/2609.02030",
+            "arxivId": "2609.02030",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "加法效用下合理代表性的复杂性",
+            "researchParadigmTags": [
+              "复杂度分析",
+              "算法设计",
+              "理论推导"
+            ],
+            "contentTags": [
+              "社会选择",
+              "公平性",
+              "机制设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在多获胜者投票中满足强比例性公理如此困难？现有研究在审批制和一般预算分配之间存在理论断层。本文聚焦于加法效用下的合理代表性（PJR/EJR/FJR），追问计算难度的边界究竟由哪些参数决定，特别是在选民数、效用和成本的取值范围变化时。",
+              "modelAndSetup": "模型考虑一个参与式预算实例，包含选民、备选项、预算及每个选民对选项的加法效用函数。核心是分析PJR、EJR和FJR三种公理的满足条件，其中FJR要求任何有足够预算份额的连贯群体，其成员中最不满意的结果不应低于该群体对某备选方案集的整体满意度。",
+              "contributionsAndResults": "论文给出了完整的复杂性图谱：对于常数个选民，当效用多项式有界时FJR可在多项式时间求解；但对于一般整数效用即使只有两个选民且单位成本，FJR也是NP难的。此外，首次证明FJR在单位成本下是强NP难的，并表明扩展批准规则可满足PJR。",
+              "methodsAndTechniques": "作者通过动态规划实现了对固定选民数情形下的高效算法设计，利用子集枚举与背包式状态转移来预计算最优凝聚组。对于硬度证明，则采用从Knapsack和Partial Triple Cover等问题的归约，精心构造选民效用以编码原问题的解空间。",
+              "limitationsAndReadingValue": "结果依赖于特定效用结构和归约构造，实际机制可能难以实现FJR。然而，论文清晰揭示了比例性保证的计算极限，特别是序列类投票规则无法突破PJR。最值得阅读的是其硬度归约技巧与对‘规划前瞻性’机制必要性的论证。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "加法效用下合理代表性的复杂性",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在多获胜者投票中满足强比例性公理如此困难？现有研究在审批制和一般预算分配之间存在理论断层。本文聚焦于加法效用下的合理代表性（PJR/EJR/FJR），追问计算难度的边界究竟由哪些参数决定，特别是在选民数、效用和成本的取值范围变化时。",
+              "modelAndSetup": "模型考虑一个参与式预算实例，包含选民、备选项、预算及每个选民对选项的加法效用函数。核心是分析PJR、EJR和FJR三种公理的满足条件，其中FJR要求任何有足够预算份额的连贯群体，其成员中最不满意的结果不应低于该群体对某备选方案集的整体满意度。",
+              "contributionsAndResults": "论文给出了完整的复杂性图谱：对于常数个选民，当效用多项式有界时FJR可在多项式时间求解；但对于一般整数效用即使只有两个选民且单位成本，FJR也是NP难的。此外，首次证明FJR在单位成本下是强NP难的，并表明扩展批准规则可满足PJR。",
+              "methodsAndTechniques": "作者通过动态规划实现了对固定选民数情形下的高效算法设计，利用子集枚举与背包式状态转移来预计算最优凝聚组。对于硬度证明，则采用从Knapsack和Partial Triple Cover等问题的归约，精心构造选民效用以编码原问题的解空间。",
+              "limitationsAndReadingValue": "结果依赖于特定效用结构和归约构造，实际机制可能难以实现FJR。然而，论文清晰揭示了比例性保证的计算极限，特别是序列类投票规则无法突破PJR。最值得阅读的是其硬度归约技巧与对‘规划前瞻性’机制必要性的论证。"
+            },
+            "contentTags": [
+              "社会选择",
+              "公平性",
+              "机制设计"
+            ],
+            "researchParadigmTags": [
+              "复杂度分析",
+              "算法设计",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Sequential Pricing Mechanisms for Surplus Division",
+            "url": "https://arxiv.org/abs/2609.02773",
+            "arxivId": "2609.02773",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Sequential Pricing Mechanisms for Surplus Division",
+            "researchParadigmTags": [
+              "机制设计",
+              "均衡分析",
+              "理论推导"
+            ],
+            "contentTags": [
+              "机制设计",
+              "社会选择",
+              "合作博弈",
+              "Shapley值",
+              "价格机制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当群体通过货币转移实现高效决策时，如何公平分配由此产生的剩余是一个核心问题。传统机制虽能保证效率，却常因顺序优势导致分配不公。本文关注的是，简单的序贯定价机制如何影响剩余分配，并填补了非对称顺序下效率与公平兼顾的设计空白。",
+              "modelAndSetup": "模型考虑一组参与者依次提出替代方案的价格向量，后续玩家可接受或拒绝并继续报价，最终由末位玩家选择方案。效用具线性形式，机制采用子博弈完美均衡分析。关键设定在于是否允许玩家拒绝先前价格，这改变了其独立行动时的保障收益，从而影响整个分配结构。",
+              "contributionsAndResults": "论文提出PA&C机制，在保持效率的同时消除了P&C中的先行者优势。结果显示，PA&C的均衡支付恰好对应合作博弈中的Shapley值，而P&C对应CIS值。随机化或引入竞价阶段后，这些解在期望或每条路径上均可实现，建立了序贯机制与经典解概念之间的精确映射。",
+              "methodsAndTechniques": "作者通过归纳法证明各位置玩家的均衡支付等于其边际贡献。关键在于利用拒绝选项所赋予的外部选择权，构造出与合作博弈中单例价值相对应的威胁点。竞价机制的设计则基于净投标补偿原理，使位置租金被内生化，从而实现目标解的完全实施。",
+              "limitationsAndReadingValue": "机制依赖于无预算约束和完全信息假设，现实应用可能受限。结果高度依赖于序贯结构和拒绝规则的特定设计。最值得读的是其将动态机制与合作解概念系统关联的视角，以及通过微小设计变化（是否可拒）切换不同公平准则的洞察力。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Sequential Pricing Mechanisms for Surplus Division",
+            "summarySections": {
+              "backgroundAndQuestion": "当群体通过货币转移实现高效决策时，如何公平分配由此产生的剩余是一个核心问题。传统机制虽能保证效率，却常因顺序优势导致分配不公。本文关注的是，简单的序贯定价机制如何影响剩余分配，并填补了非对称顺序下效率与公平兼顾的设计空白。",
+              "modelAndSetup": "模型考虑一组参与者依次提出替代方案的价格向量，后续玩家可接受或拒绝并继续报价，最终由末位玩家选择方案。效用具线性形式，机制采用子博弈完美均衡分析。关键设定在于是否允许玩家拒绝先前价格，这改变了其独立行动时的保障收益，从而影响整个分配结构。",
+              "contributionsAndResults": "论文提出PA&C机制，在保持效率的同时消除了P&C中的先行者优势。结果显示，PA&C的均衡支付恰好对应合作博弈中的Shapley值，而P&C对应CIS值。随机化或引入竞价阶段后，这些解在期望或每条路径上均可实现，建立了序贯机制与经典解概念之间的精确映射。",
+              "methodsAndTechniques": "作者通过归纳法证明各位置玩家的均衡支付等于其边际贡献。关键在于利用拒绝选项所赋予的外部选择权，构造出与合作博弈中单例价值相对应的威胁点。竞价机制的设计则基于净投标补偿原理，使位置租金被内生化，从而实现目标解的完全实施。",
+              "limitationsAndReadingValue": "机制依赖于无预算约束和完全信息假设，现实应用可能受限。结果高度依赖于序贯结构和拒绝规则的特定设计。最值得读的是其将动态机制与合作解概念系统关联的视角，以及通过微小设计变化（是否可拒）切换不同公平准则的洞察力。"
+            },
+            "contentTags": [
+              "机制设计",
+              "社会选择",
+              "合作博弈",
+              "Shapley值",
+              "价格机制"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "均衡分析",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Strategic Centrality and the Emergence of Core-Periphery Networks",
+            "url": "https://arxiv.org/abs/2609.02357",
+            "arxivId": "2609.02357",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "战略中心性与核心-边缘网络的出现",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "网络形成",
+              "中心性",
+              "核心-边缘结构",
+              "博弈论",
+              "社会网络"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么许多社会和经济网络会自发形成核心-边缘结构？现有研究多聚焦特定情形，如星形网络，但缺乏对一般核心-边缘架构的统一解释。本文追问：当个体单纯为提升自身在网络中的中心性而战略性地建立连接时，是否必然导致此类结构？这触及网络形成的深层激励机制——个体追求影响力最大化是否会内生出结构性不平等。",
+              "modelAndSetup": "模型考虑n个代理人通过单方面资助链接来构建无向网络，每位代理人的收益是其发起的所有路径的加权总和，权重随路径长度正则递减（如Katz中心性），成本则与所赞助链接数呈线性关系。采用纳什均衡作为解概念，每个代理人在给定他人策略下选择最优链接集合，从而形成最终网络结构。",
+              "contributionsAndResults": "论文的核心发现是，在任意此类中心性最大化博弈中，所有纳什均衡网络必为核心-边缘结构：存在一个核心集C，使得每个节点都与C中所有成员相连，且非核心节点间无边。此外，社会福利最大化的网络只能是空网络或完全网络，揭示了个别理性与集体效率的根本张力。",
+              "methodsAndTechniques": "证明的关键在于构造一种结构性互补论证：通过定义‘增量中心性’并利用映射引理，展示若某代理断开与稀疏区域的连接而转向更密集区域，可获得更多短路径收益。该技术结合弱递减权重假设，排除了非核心-边缘构型的可能性，并辅以超模性分析处理效率问题。",
+              "limitationsAndReadingValue": "结果高度依赖于线性成本与累积式中心性收益的设定，若改为PageRank类归一化中心性，则可能导向碎片化网络。尽管如此，本文提供了理解核心-边缘结构涌现的全新视角，其模型简洁有力，证明技巧精巧，特别适合关注网络形成博弈、中心性动力学及系统性风险的研究者深入研读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "战略中心性与核心-边缘网络的出现",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么许多社会和经济网络会自发形成核心-边缘结构？现有研究多聚焦特定情形，如星形网络，但缺乏对一般核心-边缘架构的统一解释。本文追问：当个体单纯为提升自身在网络中的中心性而战略性地建立连接时，是否必然导致此类结构？这触及网络形成的深层激励机制——个体追求影响力最大化是否会内生出结构性不平等。",
+              "modelAndSetup": "模型考虑n个代理人通过单方面资助链接来构建无向网络，每位代理人的收益是其发起的所有路径的加权总和，权重随路径长度正则递减（如Katz中心性），成本则与所赞助链接数呈线性关系。采用纳什均衡作为解概念，每个代理人在给定他人策略下选择最优链接集合，从而形成最终网络结构。",
+              "contributionsAndResults": "论文的核心发现是，在任意此类中心性最大化博弈中，所有纳什均衡网络必为核心-边缘结构：存在一个核心集C，使得每个节点都与C中所有成员相连，且非核心节点间无边。此外，社会福利最大化的网络只能是空网络或完全网络，揭示了个别理性与集体效率的根本张力。",
+              "methodsAndTechniques": "证明的关键在于构造一种结构性互补论证：通过定义‘增量中心性’并利用映射引理，展示若某代理断开与稀疏区域的连接而转向更密集区域，可获得更多短路径收益。该技术结合弱递减权重假设，排除了非核心-边缘构型的可能性，并辅以超模性分析处理效率问题。",
+              "limitationsAndReadingValue": "结果高度依赖于线性成本与累积式中心性收益的设定，若改为PageRank类归一化中心性，则可能导向碎片化网络。尽管如此，本文提供了理解核心-边缘结构涌现的全新视角，其模型简洁有力，证明技巧精巧，特别适合关注网络形成博弈、中心性动力学及系统性风险的研究者深入研读。"
+            },
+            "contentTags": [
+              "网络形成",
+              "中心性",
+              "核心-边缘结构",
+              "博弈论",
+              "社会网络"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-09-02",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202609020000 TO 202609022359\"",
+            "totalResults": 16,
+            "fetchedCount": 16
+          }
+        },
+        "dedupedCount": 16
+      },
+      "arxivTotalResults": 16,
+      "fetchedCount": 16,
+      "fetchedPapers": [
+        {
+          "title": "Incremental Pooled LLM Evaluation for Cost-Effective Retrieval Model Selection",
+          "url": "https://arxiv.org/abs/2609.02745",
+          "arxivId": "2609.02745",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "abstract": "Selecting a retrieval model for a production RAG system requires reliable comparative evaluation, but obtaining relevance judgments at scale is expensive and difficult to repeat as new candidate systems arrive. We study pooled LLM evaluation, in which an LLM judges the union of documents retrieved by the current set of candidate systems, and the pool is then expanded incrementally as new systems are introduced by judging only the new documents they contribute. These judgments are reused to evaluate all systems on a common basis. We validate this approach on four retrieval benchmarks with 11 systems spanning dense, sparse, and hybrid configurations, and deploy it to compare 62 retrieval configurations for a financial news QA system. Pooled LLM rankings correlate strongly with gold-standard evaluation across datasets, and 97% of pairwise system orderings are preserved once bootstrap uncertainty in the qrels is taken into account. In production, document overlap yields 65-80% judgment reuse and up to 4.9x lower evaluation cost, allowing teams to benchmark new retrieval candidates without re-judging previously assessed documents. These results suggest pooled LLM evaluation is a practical and cost-effective workflow for incremental retrieval model selection in deployed systems."
+        },
+        {
+          "title": "Recommender System as Slow and Fast Thinkers",
+          "url": "https://arxiv.org/abs/2609.02671",
+          "arxivId": "2609.02671",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Sequential recommendation models are foundational to modern personalized services, yet their effectiveness varies substantially across heterogeneous user environments. In particular, static one-pass recommenders often perform well on common behavior patterns but degrade on operationally challenging user groups, such as users with longer histories or less mainstream item profiles. To address this limitation, we propose \\textsc{DS-Frame}, an adaptive fast--slow inference framework for sequential recommendation. \\textsc{DS-Frame} combines a Fast System for efficient routine prediction, a Slow System for iterative latent refinement, and a learned selector that routes each sample under a controllable computation budget. Experiments on five real-world datasets show that \\textsc{DS-Frame} consistently improves representative sequential recommendation backbones, with larger gains on challenging groups and effective accuracy--efficiency trade-offs. This highlights the potential of adaptive inference for more efficient and robust recommendation. Code is available at \\href{https://github.com/ZichenYuan233/Recommender-System-as-Slow-and-Fast-Thinkers}{this link}."
+        },
+        {
+          "title": "Training seeds and model-selection stability in recommender-system evaluation",
+          "url": "https://arxiv.org/abs/2609.02499",
+          "arxivId": "2609.02499",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "Recommender-system experiments often rely on a single random training seed, assuming that run-to-run stochasticity has limited impact on evaluation conclusions. This assumption is risky, as a training seed may influence several algorithm-dependent mechanisms, including parameter initialization, mini-batch ordering, dropout, masking, latent sampling, and training-time negative sampling. We examine this assumption by fixing the data partition and varying the training seed across hyperparameter configurations. We analyze seed effects at three levels: user-level metric sensitivity, validation-based model selection and recommendation-list agreement. Results show that seed variation is often detectable. Its impact depends on whether configurations are clearly separated, whether validation results transfer to test, and whether similar scores lead to similar top-$k$ lists. Findings suggest that reporting single-seed results can overstate the stability of recommender system evaluation, and that training seeds should be treated as part of the evaluation protocol rather than as incidental implementation noise."
+        },
+        {
+          "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+          "url": "https://arxiv.org/abs/2609.02486",
+          "arxivId": "2609.02486",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "Document Visual Question Answering (DocVQA) often leverages Retrieval-Augmented Generation (RAG), where late-interaction encoders are commonly used to identify document pages relevant to a user query, before answer generation by a Large Vision-Language Model (LVLM). Existing approaches typically retrieve a fixed top-$k$ number of pages regardless of query complexity, which increases LVLM latency and may degrade answer accuracy. We introduce ViSAR (Visual Semantic Activation Retrieval), a training-free adaptive-$k$ retrieval method for late-interaction visual document retrieval. ViSAR operates directly in the embedding space to construct a query-conditioned page-level similarity matrix that highlights query-relevant semantics and dynamically determines the number of pages to retrieve. Across multiple encoders and LVLMs, ViSAR retrieves compact, query-adapted page sets that reduce RAG latency by up to 58.7\\%, while maintaining or improving answer accuracy compared with fixed top-$k$ and adaptive retrieval heuristics. Furthermore, we show that the similarity matrix structure correlates with answer accuracy, suggesting future directions for retrieval quality-aware document understanding."
+        },
+        {
+          "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+          "url": "https://arxiv.org/abs/2609.02379",
+          "arxivId": "2609.02379",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CY",
+            "cs.DL",
+            "cs.IR"
+          ],
+          "abstract": "While existing work on LLM authorship attribution (AA) has made progress, available benchmarks remain limited, often focusing on English, controlled settings, or relatively outdated models, with the few multilingual studies considering only relatively short texts. We introduce MultiGhostBench, a multilingual benchmark comprising 928 books generated by five recent LLMs across six languages and three scripts, with an average length of approximately 59K words per book. The benchmark supports evaluation under domain, author, and language shifts. Evaluation of representative AA methods shows that no single method consistently performs best across settings, and performance generally degrades under distribution shifts. Transformer-based detectors can retain generator-related information across languages, although transfer effectiveness varies by language pair, whereas statistical and fingerprint-based detectors are more language-dependent. We envision MultiGhostBench as a valuable resource for the development and evaluation of robust AA methods. The dataset and code can be found at https://github.com/GrecoMT/MultiGhostBench."
+        },
+        {
+          "title": "Adaptive Test-Time Inference for Text2Cypher with Trace Budgeting and Selective Refinement",
+          "url": "https://arxiv.org/abs/2609.02324",
+          "arxivId": "2609.02324",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large language models have enabled natural language interfaces for structured databases, but generated queries may still contain syntactic errors, violate database schemas, or fail during execution. Test-time inference strategies improve generation reliability without additional training, but existing approaches often use fixed inference budgets and uniform refinement strategies, leading to unnecessary computation across questions with different complexity levels. In this work, we investigate adaptive test-time inference for Text2Cypher and introduce two strategies: adaptive trace budgeting, which dynamically adjusts the candidate generation budget based on question difficulty, and selective execution-guided refinement, which applies correction only when additional inference is expected to be beneficial. Experiments on Gemma-2-9B and Qwen-2.5-7B show that adaptive trace budgeting reduces the average generation budget by 30.7% and wall-clock inference time by 21-25% while maintaining comparable generation quality. Selective refinement preserves nearly all execution success gains of full refinement, reducing execution success by only 0.2-0.5% while avoiding unnecessary refinement for simpler questions. Experiments show that a single correction model (Gemma-4) effectively refines outputs from a different model family, suggesting refinement transfers across families."
+        },
+        {
+          "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting Generative Engine Optimization",
+          "url": "https://arxiv.org/abs/2609.02316",
+          "arxivId": "2609.02316",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.CR"
+          ],
+          "abstract": "Generative engine optimization (GEO) enables content producers to increase the visibility of their web pages in generative search engines, but the same techniques can deliver targeted misinformation when adversaries publish ordinary-looking GEO-optimized documents that victim large language models (LLMs) retrieve and synthesize into distorted answers. No existing benchmark evaluates defenses against this threat under controlled conditions. Therefore, we present Counter-GEO-Bench, a defense benchmark that pairs 247 human-verified, quality-gated queries with information-preserving and information-distorting GEO rewrites, and evaluates defenses on attack success rate (ASR), false positive rate, and answer quality across three victim LLMs. Under Counter-GEO-Bench, three off-the-shelf defenses (Granite Guardian, Llama Guard 3, and NeMo Self-Check Fact-Checking) reduce ASR by at most 5.7% relative, while Granite Guardian's reduction is not statistically significant. Safety-taxonomy guardrails target policy violations, while GEO misinformation passes through them as fluent informational content. To this end, a lightweight benchmark baseline, C-GEO Guard, is proposed, reducing ASR by 47.6% relative with near-zero utility loss, which proves threat tractable."
+        },
+        {
+          "title": "Genuine Information Needs of Social Scientists Looking for Data",
+          "url": "https://arxiv.org/abs/2609.02303",
+          "arxivId": "2609.02303",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Publishing research data is widely expected to increase its reuse and to inspire new research. In the social sciences, data from surveys, interviews, polls, and statistics are primary resources for research. There is a long tradition to collect and offer research data in data archives and online repositories. Researchers use these systems to identify data relevant to their research. However, especially in data search, users' complex information needs seem to collide with the capabilities of data search systems. The search capabilities, in turn, depend to a high degree upon the metadata schemes used to describe the data. In this research, we conducted an online survey with 72 social science researchers who expressed their individual information needs for research data like they would do when asking a colleague for help. We analyzed these information needs and attributed their different components to the categories: topic, metadata, and intention. We compared these categories and their content to existing metadata models of research data and the search and filter opportunities offered in existing data search systems. We found a mismatch between what users have as a requirement for their data and what is offered on metadata level and search system possibilities."
+        },
+        {
+          "title": "Group-Aware Adaptive Retrieval for Evidence Navigation",
+          "url": "https://arxiv.org/abs/2609.02188",
+          "arxivId": "2609.02188",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Reasoning-intensive retrieval addresses queries whose relevance cannot be identified by surface-level matching, thereby requiring multi-step reasoning. Because relevant documents rarely appear in the initial candidate set, retrieval systems suffer from the bounded recall problem. Existing methods iteratively expand a candidate pool at the document level over a corpus graph, examining each neighbor in isolation and drifting toward a narrow region of the corpus. To address this problem, we propose Group-Aware Adaptive Retrieval for Evidence Navigation (GAREN), which explores the corpus graph through group-level expansion. GAREN organizes documents into semantically coherent and distinguishable groups based on their connections in the corpus graph. The information in each group indicates what can be accessed by expanding through it, providing guidance beyond individual document-level signals. At each iteration, GAREN uses a group-level navigator to identify promising expansion directions, retrieves documents from the selected groups, and applies a document-level reranker to evaluate the updated candidate set. Extensive experiments show that GAREN achieves up to 8.0% improvement over the strongest baseline on BRIGHT. The source code is available at https://github.com/KJ12124/GAREN"
+        },
+        {
+          "title": "GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation",
+          "url": "https://arxiv.org/abs/2609.02162",
+          "arxivId": "2609.02162",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "Serving useful recommendations under distribution shift is crucial for balancing utility and risk in out-of-distribution (OOD) recommendation. However, most existing OOD methods improve ranking or construct counterfactual candidates without controlling the proxy-label false discovery rate (FDR) of the served set. In this work, we formulate OOD serving as the $α$-Valid Counterfactual Recommendation ($α$-VCR) problem to retain candidate support learned from counterfactual supervision while controlling proxy-label FDR, and propose GenCAR, which couples preference-grounded counterfactual supervision with calibrated set selection. In particular, GenCAR fixes the stable-preference representation while intervening on the environmental factor, grounds offline large language model proposals through preference anchors and trust-radius filtering, and uses conformal $p$-values for Benjamini--Hochberg selection. We theoretically bound conditional counterfactual approximation error and prove finite-sample, distribution-free control of proxy-label FDR under exchangeability and positive regression dependence, with a Benjamini--Yekutieli guarantee under arbitrary dependence. Extensive experiments audit realized proxy false discovery proportions and demonstrate that GenCAR consistently enhances OOD candidate recovery across diverse benchmarks."
+        },
+        {
+          "title": "Beyond Modality Harmony: Orthogonal Purification and Topology-Guided MoE for Conflict-Aware Multimodal Recommendation",
+          "url": "https://arxiv.org/abs/2609.02152",
+          "arxivId": "2609.02152",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "abstract": "Multimodal Recommender Systems (MRSs) typically rely on a flawed \"modality harmony\" assumption, presuming that multimodal features are inherently beneficial and strictly aligned with users' collaborative interaction patterns. However, modality-topology conflicts are ubiquitous in real-world scenarios due to deceptive visual clickbaits and mismatched semantics. Blindly integrating these noisy modalities inevitably pollutes the pristine collaborative space, causing severe representation distortion. To address this, we propose Orthogonal purification and topology-guided MoE for conflict-aware multimodal Recommendation (OrthoRec). At its core, OrthoRec introduces Collaborative-Guided Orthogonal Purification (CGOP), which geometrically decouples multimodal features into directions parallel and orthogonal to a pure collaborative anchor. By adaptively truncating the orthogonal noise with an energy-preserving normalization, CGOP rectifies deceptive semantic directions while preserving the modality's intrinsic representation capacity. Furthermore, we design a Topology-Aware Routing Mixture-of-Experts (TAR-MoE). Guided by the collaborative topology, TAR-MoE employs decoupled sigmoid gating to break the zero-sum bottleneck of traditional softmax attention, autonomously determining the injection scale for each purified modality. Finally, a safe-SSL objective is introduced to dynamically penalize the forced contrastive alignment of contradictory pairs. Experiments on three real-world Amazon datasets show that OrthoRec consistently outperforms competitive recent baselines and exhibits improved robustness under modality noise and item sparsity."
+        },
+        {
+          "title": "A Power Law in Logarithm's Clothing: On the Scalability of Graph-Based Vector Search",
+          "url": "https://arxiv.org/abs/2609.02143",
+          "arxivId": "2609.02143",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "Most vector databases rely on graph-based indexes, notably HNSW and Vamana, for approximate nearest neighbor search. With embedding models widely adopted, the datasets these databases store grow rapidly. At a fixed accuracy, how does search cost scale with dataset size? The prevailing answer is poly-logarithmic growth. Yet the claim is proven only under special conditions and asserted without proof for the indexes used in practice. It is also largely untested: standard benchmarks measure cost at one dataset size, not across sizes. We put the claim to the test. The answer depends on the scale itself. While the dataset size $N$ is small relative to the data's intrinsic dimensionality, search cost grows as $N^c$ for a constant $0<c<1$. We call this scaling the Sublinear Power Law. Once $N$ is large enough, growth slows to subpolynomial, consistent with the poly-logarithmic claim. The Sublinear Power Law appears on every dataset, mostly up to its full size, at every recall target, query hardness level, and index configuration we test. The transition to subpolynomial growth appears on the two datasets that grow large enough relative to their intrinsic dimensionality. One mechanism underlies both behaviors: a dataset's intrinsic dimensionality grows with its size until the data resolves its underlying distribution. Higher intrinsic dimensionality packs more vectors into the query neighborhood the search must examine. We present a unifying theory of beam-search cost that explains our observations. For exact and bounded-degree constructions, we prove the Sublinear Power Law and the eventual transition to poly-logarithmic scaling, and derive the scale at which it occurs. We also develop models that predict the power-law exponents for any recall target and index configuration. These models give a principled way to navigate trade-offs among search cost, insertion cost, and recall as data grows."
+        },
+        {
+          "title": "Beyond Context Windows: Persistent Discovery Context for Data-Centric Agents",
+          "url": "https://arxiv.org/abs/2609.02129",
+          "arxivId": "2609.02129",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Data-centric agents repeatedly perform a discovery step before planning or execution: identifying the data objects relevant to a task. Yet successful discovery outcomes are typically discarded rather than reused. We introduce persistent discovery context, a lightweight memory layer that stores prior intent-to-object mappings and reuses them to augment future retrieval. Across three structured data environments, persistent discovery context consistently improves retrieval quality over metadata-only search, remains effective with automatically generated memories, and exposes a reproducible interference failure mode. In lexically sparse domains, memory-only retrieval can even outperform metadata-based retrieval. These findings suggest that discovery outcomes constitute a useful form of reusable context for data-centric agents."
+        },
+        {
+          "title": "SPAR: Enhancing Industrial-Scale Generative POI Recommendation via Real-World Spatial Perception",
+          "url": "https://arxiv.org/abs/2609.02062",
+          "arxivId": "2609.02062",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Generative Point-of-Interest (POI) recommendation, autoregressively generating a target POI's semantic ID (SID), holds great promise for Location-Based Services, where a recommendation helps only if the user can reach it. Yet, existing methods operate within an interest space defined by behavior sequences and collaborative signals, where geography enters only as a textual attribute of the SID, leaving no explicit mechanism to learn or preserve how urban places are related by distance, direction, and reachability; their predictions are thus behaviorally plausible yet far from the user's real-time location. We argue that such services require injecting real urban spatial knowledge into the interest space, rather than inferring geography from behavior alone. Hence, we propose SPAR, a unified framework whose three synergistic stages jointly construct, cultivate, and preserve urban spatial knowledge: (1) at the tokenization level, Spatially-Intrinsic SID (SI-SID) explicitly encodes longitude--latitude coordinates into a sinusoidal geospatial embedding and fuses it with the textual semantic embedding, producing identifiers via RQ-Kmeans that are simultaneously semantically and geographically consistent; (2) at the cognition level, Multi-Granular Geospatial CPT (MG-CPT) continually pre-trains the base LLM on 25 curated geospatial datasets organized into three tiers of basic attributes, pairwise relations, and city-scale navigation, so that scattered POIs cohere into a connected urban space; and (3) at the adaptation level, Task-Vector Anchored SFT (TV-SFT) anchors the acquired spatial knowledge as a frozen parameter-space task vector to prevent its catastrophic forgetting during behavioral fine-tuning, thereby fusing the two spaces. Extensive quantitative and visualization experiments on two public and four industrial-scale datasets demonstrate the effectiveness of SPAR."
+        },
+        {
+          "title": "GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching",
+          "url": "https://arxiv.org/abs/2609.02012",
+          "arxivId": "2609.02012",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR"
+          ],
+          "abstract": "Point-of-interest (POI) localization -- matching a user's close-up storefront photograph against large-scale geo-tagged street-view imagery -- underpins map construction, POI verification, and location-based services. Its closest existing paradigm, visual place recognition (VPR), assumes symmetric, whole-image matching of the same scene at a comparable scale; POI localization instead must match a close-up query, in which the target fills the frame, against wide references in which the same POI occupies only a small, off-center region among visually similar shops, under a substantial capture-domain gap. We introduce GeoStore, to our knowledge the first benchmark dedicated to this asymmetric, fine-grained, open-set formulation, and show that global-descriptor methods tuned for symmetric VPR are systematically limited on it, since a single global vector dilutes the small target. We further propose GLAM (Global-to-Local Asymmetric Matching), which couples a retrieval-anchoring global descriptor with an asymmetric local pathway: each reference is kept as a compact set of pooled region tokens and matched against a single query probe through a learnable soft late interaction; at inference, the same tokens enable a lightweight mutual-nearest-neighbor re-ranking. GLAM surpasses strong global and two-stage baselines on Recall@1/5/10 and mAP, with ~5x smaller re-ranking features and ~two orders of magnitude lower per-pair matching cost than prior local re-ranking. The benchmark and code will be publicly released."
+        },
+        {
+          "title": "Seed-Anchored Budget-Bounded Graph Rendering for Question Answering on Industry-Standard Power-Grid Information and Exchange Models",
+          "url": "https://arxiv.org/abs/2609.02011",
+          "arxivId": "2609.02011",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Large language model question answering over power-grid models must respect a fixed context budget. We introduce seed-anchored graph rendering, a deterministic method that prioritizes query-local graph evidence without adding method-specific tuned or learned parameters beyond the shared hop bound and context budget. The method provides a checkable condition under which predefined seed-local answer-bearing render units are preserved in a greedy bounded-context prefix. We evaluate the approach on Common Information Model (CIM) network models exchanged through the Common Grid Model Exchange Standard (CGMES). On two budget-binding CGMES encodings, naive descriptions-first rendering retains local evidence for every single-hop item but only 0.12 and 0.00 of multi-hop items, whereas seed-anchored rendering retains all such evidence. On a preregistered fresh 100-item bank from the SmallGrid topology family, accuracy rises from 0.450 to 0.970 under a fixed 8,000-character context budget. Under a common retrieval and rendering pipeline, the standards-native seed-anchored graph matches or exceeds extracted graph representations produced by LightRAG, Microsoft GraphRAG, and HippoRAG, while avoiding LLM graph-construction tokens. The results are specific to the evaluated CIM/CGMES models, reader, and context budget; they concern budget-bounded retrieval rather than general question answering."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Incremental Pooled LLM Evaluation for Cost-Effective Retrieval Model Selection",
+              "url": "https://arxiv.org/abs/2609.02745",
+              "arxivId": "2609.02745",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL"
+              ],
+              "abstract": "Selecting a retrieval model for a production RAG system requires reliable comparative evaluation, but obtaining relevance judgments at scale is expensive and difficult to repeat as new candidate systems arrive. We study pooled LLM evaluation, in which an LLM judges the union of documents retrieved by the current set of candidate systems, and the pool is then expanded incrementally as new systems are introduced by judging only the new documents they contribute. These judgments are reused to evaluate all systems on a common basis. We validate this approach on four retrieval benchmarks with 11 systems spanning dense, sparse, and hybrid configurations, and deploy it to compare 62 retrieval configurations for a financial news QA system. Pooled LLM rankings correlate strongly with gold-standard evaluation across datasets, and 97% of pairwise system orderings are preserved once bootstrap uncertainty in the qrels is taken into account. In production, document overlap yields 65-80% judgment reuse and up to 4.9x lower evaluation cost, allowing teams to benchmark new retrieval candidates without re-judging previously assessed documents. These results suggest pooled LLM evaluation is a practical and cost-effective workflow for incremental retrieval model selection in deployed systems."
+            },
+            {
+              "title": "Recommender System as Slow and Fast Thinkers",
+              "url": "https://arxiv.org/abs/2609.02671",
+              "arxivId": "2609.02671",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Sequential recommendation models are foundational to modern personalized services, yet their effectiveness varies substantially across heterogeneous user environments. In particular, static one-pass recommenders often perform well on common behavior patterns but degrade on operationally challenging user groups, such as users with longer histories or less mainstream item profiles. To address this limitation, we propose \\textsc{DS-Frame}, an adaptive fast--slow inference framework for sequential recommendation. \\textsc{DS-Frame} combines a Fast System for efficient routine prediction, a Slow System for iterative latent refinement, and a learned selector that routes each sample under a controllable computation budget. Experiments on five real-world datasets show that \\textsc{DS-Frame} consistently improves representative sequential recommendation backbones, with larger gains on challenging groups and effective accuracy--efficiency trade-offs. This highlights the potential of adaptive inference for more efficient and robust recommendation. Code is available at \\href{https://github.com/ZichenYuan233/Recommender-System-as-Slow-and-Fast-Thinkers}{this link}."
+            },
+            {
+              "title": "Training seeds and model-selection stability in recommender-system evaluation",
+              "url": "https://arxiv.org/abs/2609.02499",
+              "arxivId": "2609.02499",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "Recommender-system experiments often rely on a single random training seed, assuming that run-to-run stochasticity has limited impact on evaluation conclusions. This assumption is risky, as a training seed may influence several algorithm-dependent mechanisms, including parameter initialization, mini-batch ordering, dropout, masking, latent sampling, and training-time negative sampling. We examine this assumption by fixing the data partition and varying the training seed across hyperparameter configurations. We analyze seed effects at three levels: user-level metric sensitivity, validation-based model selection and recommendation-list agreement. Results show that seed variation is often detectable. Its impact depends on whether configurations are clearly separated, whether validation results transfer to test, and whether similar scores lead to similar top-$k$ lists. Findings suggest that reporting single-seed results can overstate the stability of recommender system evaluation, and that training seeds should be treated as part of the evaluation protocol rather than as incidental implementation noise."
+            },
+            {
+              "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+              "url": "https://arxiv.org/abs/2609.02486",
+              "arxivId": "2609.02486",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.CL",
+                "cs.CV"
+              ],
+              "abstract": "Document Visual Question Answering (DocVQA) often leverages Retrieval-Augmented Generation (RAG), where late-interaction encoders are commonly used to identify document pages relevant to a user query, before answer generation by a Large Vision-Language Model (LVLM). Existing approaches typically retrieve a fixed top-$k$ number of pages regardless of query complexity, which increases LVLM latency and may degrade answer accuracy. We introduce ViSAR (Visual Semantic Activation Retrieval), a training-free adaptive-$k$ retrieval method for late-interaction visual document retrieval. ViSAR operates directly in the embedding space to construct a query-conditioned page-level similarity matrix that highlights query-relevant semantics and dynamically determines the number of pages to retrieve. Across multiple encoders and LVLMs, ViSAR retrieves compact, query-adapted page sets that reduce RAG latency by up to 58.7\\%, while maintaining or improving answer accuracy compared with fixed top-$k$ and adaptive retrieval heuristics. Furthermore, we show that the similarity matrix structure correlates with answer accuracy, suggesting future directions for retrieval quality-aware document understanding."
+            },
+            {
+              "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+              "url": "https://arxiv.org/abs/2609.02379",
+              "arxivId": "2609.02379",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.CY",
+                "cs.DL",
+                "cs.IR"
+              ],
+              "abstract": "While existing work on LLM authorship attribution (AA) has made progress, available benchmarks remain limited, often focusing on English, controlled settings, or relatively outdated models, with the few multilingual studies considering only relatively short texts. We introduce MultiGhostBench, a multilingual benchmark comprising 928 books generated by five recent LLMs across six languages and three scripts, with an average length of approximately 59K words per book. The benchmark supports evaluation under domain, author, and language shifts. Evaluation of representative AA methods shows that no single method consistently performs best across settings, and performance generally degrades under distribution shifts. Transformer-based detectors can retain generator-related information across languages, although transfer effectiveness varies by language pair, whereas statistical and fingerprint-based detectors are more language-dependent. We envision MultiGhostBench as a valuable resource for the development and evaluation of robust AA methods. The dataset and code can be found at https://github.com/GrecoMT/MultiGhostBench."
+            },
+            {
+              "title": "Adaptive Test-Time Inference for Text2Cypher with Trace Budgeting and Selective Refinement",
+              "url": "https://arxiv.org/abs/2609.02324",
+              "arxivId": "2609.02324",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large language models have enabled natural language interfaces for structured databases, but generated queries may still contain syntactic errors, violate database schemas, or fail during execution. Test-time inference strategies improve generation reliability without additional training, but existing approaches often use fixed inference budgets and uniform refinement strategies, leading to unnecessary computation across questions with different complexity levels. In this work, we investigate adaptive test-time inference for Text2Cypher and introduce two strategies: adaptive trace budgeting, which dynamically adjusts the candidate generation budget based on question difficulty, and selective execution-guided refinement, which applies correction only when additional inference is expected to be beneficial. Experiments on Gemma-2-9B and Qwen-2.5-7B show that adaptive trace budgeting reduces the average generation budget by 30.7% and wall-clock inference time by 21-25% while maintaining comparable generation quality. Selective refinement preserves nearly all execution success gains of full refinement, reducing execution success by only 0.2-0.5% while avoiding unnecessary refinement for simpler questions. Experiments show that a single correction model (Gemma-4) effectively refines outputs from a different model family, suggesting refinement transfers across families."
+            },
+            {
+              "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting Generative Engine Optimization",
+              "url": "https://arxiv.org/abs/2609.02316",
+              "arxivId": "2609.02316",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.CR"
+              ],
+              "abstract": "Generative engine optimization (GEO) enables content producers to increase the visibility of their web pages in generative search engines, but the same techniques can deliver targeted misinformation when adversaries publish ordinary-looking GEO-optimized documents that victim large language models (LLMs) retrieve and synthesize into distorted answers. No existing benchmark evaluates defenses against this threat under controlled conditions. Therefore, we present Counter-GEO-Bench, a defense benchmark that pairs 247 human-verified, quality-gated queries with information-preserving and information-distorting GEO rewrites, and evaluates defenses on attack success rate (ASR), false positive rate, and answer quality across three victim LLMs. Under Counter-GEO-Bench, three off-the-shelf defenses (Granite Guardian, Llama Guard 3, and NeMo Self-Check Fact-Checking) reduce ASR by at most 5.7% relative, while Granite Guardian's reduction is not statistically significant. Safety-taxonomy guardrails target policy violations, while GEO misinformation passes through them as fluent informational content. To this end, a lightweight benchmark baseline, C-GEO Guard, is proposed, reducing ASR by 47.6% relative with near-zero utility loss, which proves threat tractable."
+            },
+            {
+              "title": "Genuine Information Needs of Social Scientists Looking for Data",
+              "url": "https://arxiv.org/abs/2609.02303",
+              "arxivId": "2609.02303",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Publishing research data is widely expected to increase its reuse and to inspire new research. In the social sciences, data from surveys, interviews, polls, and statistics are primary resources for research. There is a long tradition to collect and offer research data in data archives and online repositories. Researchers use these systems to identify data relevant to their research. However, especially in data search, users' complex information needs seem to collide with the capabilities of data search systems. The search capabilities, in turn, depend to a high degree upon the metadata schemes used to describe the data. In this research, we conducted an online survey with 72 social science researchers who expressed their individual information needs for research data like they would do when asking a colleague for help. We analyzed these information needs and attributed their different components to the categories: topic, metadata, and intention. We compared these categories and their content to existing metadata models of research data and the search and filter opportunities offered in existing data search systems. We found a mismatch between what users have as a requirement for their data and what is offered on metadata level and search system possibilities."
+            },
+            {
+              "title": "Group-Aware Adaptive Retrieval for Evidence Navigation",
+              "url": "https://arxiv.org/abs/2609.02188",
+              "arxivId": "2609.02188",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Reasoning-intensive retrieval addresses queries whose relevance cannot be identified by surface-level matching, thereby requiring multi-step reasoning. Because relevant documents rarely appear in the initial candidate set, retrieval systems suffer from the bounded recall problem. Existing methods iteratively expand a candidate pool at the document level over a corpus graph, examining each neighbor in isolation and drifting toward a narrow region of the corpus. To address this problem, we propose Group-Aware Adaptive Retrieval for Evidence Navigation (GAREN), which explores the corpus graph through group-level expansion. GAREN organizes documents into semantically coherent and distinguishable groups based on their connections in the corpus graph. The information in each group indicates what can be accessed by expanding through it, providing guidance beyond individual document-level signals. At each iteration, GAREN uses a group-level navigator to identify promising expansion directions, retrieves documents from the selected groups, and applies a document-level reranker to evaluate the updated candidate set. Extensive experiments show that GAREN achieves up to 8.0% improvement over the strongest baseline on BRIGHT. The source code is available at https://github.com/KJ12124/GAREN"
+            },
+            {
+              "title": "GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation",
+              "url": "https://arxiv.org/abs/2609.02162",
+              "arxivId": "2609.02162",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "Serving useful recommendations under distribution shift is crucial for balancing utility and risk in out-of-distribution (OOD) recommendation. However, most existing OOD methods improve ranking or construct counterfactual candidates without controlling the proxy-label false discovery rate (FDR) of the served set. In this work, we formulate OOD serving as the $α$-Valid Counterfactual Recommendation ($α$-VCR) problem to retain candidate support learned from counterfactual supervision while controlling proxy-label FDR, and propose GenCAR, which couples preference-grounded counterfactual supervision with calibrated set selection. In particular, GenCAR fixes the stable-preference representation while intervening on the environmental factor, grounds offline large language model proposals through preference anchors and trust-radius filtering, and uses conformal $p$-values for Benjamini--Hochberg selection. We theoretically bound conditional counterfactual approximation error and prove finite-sample, distribution-free control of proxy-label FDR under exchangeability and positive regression dependence, with a Benjamini--Yekutieli guarantee under arbitrary dependence. Extensive experiments audit realized proxy false discovery proportions and demonstrate that GenCAR consistently enhances OOD candidate recovery across diverse benchmarks."
+            },
+            {
+              "title": "Beyond Modality Harmony: Orthogonal Purification and Topology-Guided MoE for Conflict-Aware Multimodal Recommendation",
+              "url": "https://arxiv.org/abs/2609.02152",
+              "arxivId": "2609.02152",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "abstract": "Multimodal Recommender Systems (MRSs) typically rely on a flawed \"modality harmony\" assumption, presuming that multimodal features are inherently beneficial and strictly aligned with users' collaborative interaction patterns. However, modality-topology conflicts are ubiquitous in real-world scenarios due to deceptive visual clickbaits and mismatched semantics. Blindly integrating these noisy modalities inevitably pollutes the pristine collaborative space, causing severe representation distortion. To address this, we propose Orthogonal purification and topology-guided MoE for conflict-aware multimodal Recommendation (OrthoRec). At its core, OrthoRec introduces Collaborative-Guided Orthogonal Purification (CGOP), which geometrically decouples multimodal features into directions parallel and orthogonal to a pure collaborative anchor. By adaptively truncating the orthogonal noise with an energy-preserving normalization, CGOP rectifies deceptive semantic directions while preserving the modality's intrinsic representation capacity. Furthermore, we design a Topology-Aware Routing Mixture-of-Experts (TAR-MoE). Guided by the collaborative topology, TAR-MoE employs decoupled sigmoid gating to break the zero-sum bottleneck of traditional softmax attention, autonomously determining the injection scale for each purified modality. Finally, a safe-SSL objective is introduced to dynamically penalize the forced contrastive alignment of contradictory pairs. Experiments on three real-world Amazon datasets show that OrthoRec consistently outperforms competitive recent baselines and exhibits improved robustness under modality noise and item sparsity."
+            },
+            {
+              "title": "A Power Law in Logarithm's Clothing: On the Scalability of Graph-Based Vector Search",
+              "url": "https://arxiv.org/abs/2609.02143",
+              "arxivId": "2609.02143",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.AI",
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "Most vector databases rely on graph-based indexes, notably HNSW and Vamana, for approximate nearest neighbor search. With embedding models widely adopted, the datasets these databases store grow rapidly. At a fixed accuracy, how does search cost scale with dataset size? The prevailing answer is poly-logarithmic growth. Yet the claim is proven only under special conditions and asserted without proof for the indexes used in practice. It is also largely untested: standard benchmarks measure cost at one dataset size, not across sizes. We put the claim to the test. The answer depends on the scale itself. While the dataset size $N$ is small relative to the data's intrinsic dimensionality, search cost grows as $N^c$ for a constant $0<c<1$. We call this scaling the Sublinear Power Law. Once $N$ is large enough, growth slows to subpolynomial, consistent with the poly-logarithmic claim. The Sublinear Power Law appears on every dataset, mostly up to its full size, at every recall target, query hardness level, and index configuration we test. The transition to subpolynomial growth appears on the two datasets that grow large enough relative to their intrinsic dimensionality. One mechanism underlies both behaviors: a dataset's intrinsic dimensionality grows with its size until the data resolves its underlying distribution. Higher intrinsic dimensionality packs more vectors into the query neighborhood the search must examine. We present a unifying theory of beam-search cost that explains our observations. For exact and bounded-degree constructions, we prove the Sublinear Power Law and the eventual transition to poly-logarithmic scaling, and derive the scale at which it occurs. We also develop models that predict the power-law exponents for any recall target and index configuration. These models give a principled way to navigate trade-offs among search cost, insertion cost, and recall as data grows."
+            },
+            {
+              "title": "Beyond Context Windows: Persistent Discovery Context for Data-Centric Agents",
+              "url": "https://arxiv.org/abs/2609.02129",
+              "arxivId": "2609.02129",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Data-centric agents repeatedly perform a discovery step before planning or execution: identifying the data objects relevant to a task. Yet successful discovery outcomes are typically discarded rather than reused. We introduce persistent discovery context, a lightweight memory layer that stores prior intent-to-object mappings and reuses them to augment future retrieval. Across three structured data environments, persistent discovery context consistently improves retrieval quality over metadata-only search, remains effective with automatically generated memories, and exposes a reproducible interference failure mode. In lexically sparse domains, memory-only retrieval can even outperform metadata-based retrieval. These findings suggest that discovery outcomes constitute a useful form of reusable context for data-centric agents."
+            },
+            {
+              "title": "SPAR: Enhancing Industrial-Scale Generative POI Recommendation via Real-World Spatial Perception",
+              "url": "https://arxiv.org/abs/2609.02062",
+              "arxivId": "2609.02062",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Generative Point-of-Interest (POI) recommendation, autoregressively generating a target POI's semantic ID (SID), holds great promise for Location-Based Services, where a recommendation helps only if the user can reach it. Yet, existing methods operate within an interest space defined by behavior sequences and collaborative signals, where geography enters only as a textual attribute of the SID, leaving no explicit mechanism to learn or preserve how urban places are related by distance, direction, and reachability; their predictions are thus behaviorally plausible yet far from the user's real-time location. We argue that such services require injecting real urban spatial knowledge into the interest space, rather than inferring geography from behavior alone. Hence, we propose SPAR, a unified framework whose three synergistic stages jointly construct, cultivate, and preserve urban spatial knowledge: (1) at the tokenization level, Spatially-Intrinsic SID (SI-SID) explicitly encodes longitude--latitude coordinates into a sinusoidal geospatial embedding and fuses it with the textual semantic embedding, producing identifiers via RQ-Kmeans that are simultaneously semantically and geographically consistent; (2) at the cognition level, Multi-Granular Geospatial CPT (MG-CPT) continually pre-trains the base LLM on 25 curated geospatial datasets organized into three tiers of basic attributes, pairwise relations, and city-scale navigation, so that scattered POIs cohere into a connected urban space; and (3) at the adaptation level, Task-Vector Anchored SFT (TV-SFT) anchors the acquired spatial knowledge as a frozen parameter-space task vector to prevent its catastrophic forgetting during behavioral fine-tuning, thereby fusing the two spaces. Extensive quantitative and visualization experiments on two public and four industrial-scale datasets demonstrate the effectiveness of SPAR."
+            },
+            {
+              "title": "GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching",
+              "url": "https://arxiv.org/abs/2609.02012",
+              "arxivId": "2609.02012",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.IR"
+              ],
+              "abstract": "Point-of-interest (POI) localization -- matching a user's close-up storefront photograph against large-scale geo-tagged street-view imagery -- underpins map construction, POI verification, and location-based services. Its closest existing paradigm, visual place recognition (VPR), assumes symmetric, whole-image matching of the same scene at a comparable scale; POI localization instead must match a close-up query, in which the target fills the frame, against wide references in which the same POI occupies only a small, off-center region among visually similar shops, under a substantial capture-domain gap. We introduce GeoStore, to our knowledge the first benchmark dedicated to this asymmetric, fine-grained, open-set formulation, and show that global-descriptor methods tuned for symmetric VPR are systematically limited on it, since a single global vector dilutes the small target. We further propose GLAM (Global-to-Local Asymmetric Matching), which couples a retrieval-anchoring global descriptor with an asymmetric local pathway: each reference is kept as a compact set of pooled region tokens and matched against a single query probe through a learnable soft late interaction; at inference, the same tokens enable a lightweight mutual-nearest-neighbor re-ranking. GLAM surpasses strong global and two-stage baselines on Recall@1/5/10 and mAP, with ~5x smaller re-ranking features and ~two orders of magnitude lower per-pair matching cost than prior local re-ranking. The benchmark and code will be publicly released."
+            },
+            {
+              "title": "Seed-Anchored Budget-Bounded Graph Rendering for Question Answering on Industry-Standard Power-Grid Information and Exchange Models",
+              "url": "https://arxiv.org/abs/2609.02011",
+              "arxivId": "2609.02011",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "eess.SY",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Large language model question answering over power-grid models must respect a fixed context budget. We introduce seed-anchored graph rendering, a deterministic method that prioritizes query-local graph evidence without adding method-specific tuned or learned parameters beyond the shared hop bound and context budget. The method provides a checkable condition under which predefined seed-local answer-bearing render units are preserved in a greedy bounded-context prefix. We evaluate the approach on Common Information Model (CIM) network models exchanged through the Common Grid Model Exchange Standard (CGMES). On two budget-binding CGMES encodings, naive descriptions-first rendering retains local evidence for every single-hop item but only 0.12 and 0.00 of multi-hop items, whereas seed-anchored rendering retains all such evidence. On a preregistered fresh 100-item bank from the SmallGrid topology family, accuracy rises from 0.450 to 0.970 under a fixed 8,000-character context budget. Under a common retrieval and rendering pipeline, the standards-native seed-anchored graph matches or exceeds extracted graph representations produced by LightRAG, Microsoft GraphRAG, and HippoRAG, while avoiding LLM graph-construction tokens. The results are specific to the evaluated CIM/CGMES models, reader, and context budget; they concern budget-bounded retrieval rather than general question answering."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 1,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 13,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 14,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 15,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Incremental Pooled LLM Evaluation for Cost-Effective Retrieval Model Selection",
+              "url": "https://arxiv.org/abs/2609.02745",
+              "arxivId": "2609.02745",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Recommender System as Slow and Fast Thinkers",
+              "url": "https://arxiv.org/abs/2609.02671",
+              "arxivId": "2609.02671",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "Training seeds and model-selection stability in recommender-system evaluation",
+              "url": "https://arxiv.org/abs/2609.02499",
+              "arxivId": "2609.02499",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+              "url": "https://arxiv.org/abs/2609.02486",
+              "arxivId": "2609.02486",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.CL",
+                "cs.CV"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+              "url": "https://arxiv.org/abs/2609.02379",
+              "arxivId": "2609.02379",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.CY",
+                "cs.DL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Adaptive Test-Time Inference for Text2Cypher with Trace Budgeting and Selective Refinement",
+              "url": "https://arxiv.org/abs/2609.02324",
+              "arxivId": "2609.02324",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting Generative Engine Optimization",
+              "url": "https://arxiv.org/abs/2609.02316",
+              "arxivId": "2609.02316",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL",
+                "cs.CR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "Genuine Information Needs of Social Scientists Looking for Data",
+              "url": "https://arxiv.org/abs/2609.02303",
+              "arxivId": "2609.02303",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 1.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 13.0,
+                "total": 13.0
+              }
+            },
+            {
+              "title": "Group-Aware Adaptive Retrieval for Evidence Navigation",
+              "url": "https://arxiv.org/abs/2609.02188",
+              "arxivId": "2609.02188",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation",
+              "url": "https://arxiv.org/abs/2609.02162",
+              "arxivId": "2609.02162",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Beyond Modality Harmony: Orthogonal Purification and Topology-Guided MoE for Conflict-Aware Multimodal Recommendation",
+              "url": "https://arxiv.org/abs/2609.02152",
+              "arxivId": "2609.02152",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "A Power Law in Logarithm's Clothing: On the Scalability of Graph-Based Vector Search",
+              "url": "https://arxiv.org/abs/2609.02143",
+              "arxivId": "2609.02143",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.DB",
+                "cs.AI",
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Beyond Context Windows: Persistent Discovery Context for Data-Centric Agents",
+              "url": "https://arxiv.org/abs/2609.02129",
+              "arxivId": "2609.02129",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "SPAR: Enhancing Industrial-Scale Generative POI Recommendation via Real-World Spatial Perception",
+              "url": "https://arxiv.org/abs/2609.02062",
+              "arxivId": "2609.02062",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching",
+              "url": "https://arxiv.org/abs/2609.02012",
+              "arxivId": "2609.02012",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Seed-Anchored Budget-Bounded Graph Rendering for Question Answering on Industry-Standard Power-Grid Information and Exchange Models",
+              "url": "https://arxiv.org/abs/2609.02011",
+              "arxivId": "2609.02011",
+              "date": "2026-09-02",
+              "source": "arXiv",
+              "categories": [
+                "eess.SY",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Incremental Pooled LLM Evaluation for Cost-Effective Retrieval Model Selection",
+          "url": "https://arxiv.org/abs/2609.02745",
+          "arxivId": "2609.02745",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Recommender System as Slow and Fast Thinkers",
+          "url": "https://arxiv.org/abs/2609.02671",
+          "arxivId": "2609.02671",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "Training seeds and model-selection stability in recommender-system evaluation",
+          "url": "https://arxiv.org/abs/2609.02499",
+          "arxivId": "2609.02499",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+          "url": "https://arxiv.org/abs/2609.02486",
+          "arxivId": "2609.02486",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+          "url": "https://arxiv.org/abs/2609.02379",
+          "arxivId": "2609.02379",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CY",
+            "cs.DL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Adaptive Test-Time Inference for Text2Cypher with Trace Budgeting and Selective Refinement",
+          "url": "https://arxiv.org/abs/2609.02324",
+          "arxivId": "2609.02324",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting Generative Engine Optimization",
+          "url": "https://arxiv.org/abs/2609.02316",
+          "arxivId": "2609.02316",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.CR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Genuine Information Needs of Social Scientists Looking for Data",
+          "url": "https://arxiv.org/abs/2609.02303",
+          "arxivId": "2609.02303",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 1.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 13.0,
+            "total": 13.0
+          }
+        },
+        {
+          "title": "Group-Aware Adaptive Retrieval for Evidence Navigation",
+          "url": "https://arxiv.org/abs/2609.02188",
+          "arxivId": "2609.02188",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation",
+          "url": "https://arxiv.org/abs/2609.02162",
+          "arxivId": "2609.02162",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Beyond Modality Harmony: Orthogonal Purification and Topology-Guided MoE for Conflict-Aware Multimodal Recommendation",
+          "url": "https://arxiv.org/abs/2609.02152",
+          "arxivId": "2609.02152",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "A Power Law in Logarithm's Clothing: On the Scalability of Graph-Based Vector Search",
+          "url": "https://arxiv.org/abs/2609.02143",
+          "arxivId": "2609.02143",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Beyond Context Windows: Persistent Discovery Context for Data-Centric Agents",
+          "url": "https://arxiv.org/abs/2609.02129",
+          "arxivId": "2609.02129",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "SPAR: Enhancing Industrial-Scale Generative POI Recommendation via Real-World Spatial Perception",
+          "url": "https://arxiv.org/abs/2609.02062",
+          "arxivId": "2609.02062",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching",
+          "url": "https://arxiv.org/abs/2609.02012",
+          "arxivId": "2609.02012",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Seed-Anchored Budget-Bounded Graph Rendering for Question Answering on Industry-Standard Power-Grid Information and Exchange Models",
+          "url": "https://arxiv.org/abs/2609.02011",
+          "arxivId": "2609.02011",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "eess.SY",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "A Power Law in Logarithm's Clothing: On the Scalability of Graph-Based Vector Search",
+          "url": "https://arxiv.org/abs/2609.02143",
+          "arxivId": "2609.02143",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.DB",
+            "cs.AI",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation",
+          "url": "https://arxiv.org/abs/2609.02162",
+          "arxivId": "2609.02162",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting Generative Engine Optimization",
+          "url": "https://arxiv.org/abs/2609.02316",
+          "arxivId": "2609.02316",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL",
+            "cs.CR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Training seeds and model-selection stability in recommender-system evaluation",
+          "url": "https://arxiv.org/abs/2609.02499",
+          "arxivId": "2609.02499",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+          "url": "https://arxiv.org/abs/2609.02379",
+          "arxivId": "2609.02379",
+          "date": "2026-09-02",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CY",
+            "cs.DL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "A Power Law in Logarithm's Clothing: On the Scalability of Graph-Based Vector Search",
+            "url": "https://arxiv.org/abs/2609.02143",
+            "arxivId": "2609.02143",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.DB",
+              "cs.AI",
+              "cs.IR",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "对数伪装下的幂律：基于图的向量搜索的可扩展性研究",
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "复杂度分析",
+              "系统框架"
+            ],
+            "contentTags": [
+              "向量搜索",
+              "近似最近邻",
+              "图索引",
+              "可扩展性",
+              "内在维度"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着嵌入模型广泛应用，向量数据库存储的数据规模迅速增长，引发一个关键问题：在保持检索精度不变的前提下，搜索代价如何随数据量扩大而变化？业界普遍认为代价呈对数级增长，但这一定论缺乏实证支持，仅在特定条件下被理论证明。本文质疑这一‘对数标度’共识，探究真实场景下图索引的扩展行为。",
+              "modelAndSetup": "论文以HNSW和Vamana两类主流图索引为研究对象，在多个真实与合成数据集上测量固定召回率下的查询代价（距离计算次数）随数据规模的变化趋势。通过动态调整搜索参数efsearch维持目标召回率，系统评估不同数据集、召回目标、查询难度及索引配置下的扩展规律，揭示搜索代价与数据规模之间的实际关系。",
+              "contributionsAndResults": "研究发现搜索代价并非始终对数增长，而是呈现两阶段模式：当数据量较小时，代价遵循亚线性幂律增长；仅当数据量足够大、密集采样底层分布后，才过渡到次多项式增长。这一转变由数据的内在维度随规模增长所驱动，挑战了现有文献的单一标度假设，并通过统一理论解释了两种行为的共存机制。",
+              "methodsAndTechniques": "作者提出一个统一理论，指出搜索代价主要取决于查询邻域内的点数，而该数量受内在维度影响。利用局部均匀性假设和LID估计，证明在稀疏采样阶段内在维度随log N增长，导致邻域大小呈幂律扩张；当采样变密后增长放缓，代价趋于次多项式。该机制同时适用于精确与有界度图结构，并得到理论边界支持。",
+              "limitationsAndReadingValue": "尽管理论在球面均匀假设下建立，且大规模实验受限于构建成本，但其核心洞见——内在维度演化决定扩展行为——在多种设置下均成立。最值得阅读的是其对‘对数标度’迷思的破除、两阶段扩展的实证与理论统一，以及对索引参数调优的建模指导，为系统设计提供了更现实的成本预测框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "对数伪装下的幂律：基于图的向量搜索的可扩展性研究",
+            "summarySections": {
+              "backgroundAndQuestion": "随着嵌入模型广泛应用，向量数据库存储的数据规模迅速增长，引发一个关键问题：在保持检索精度不变的前提下，搜索代价如何随数据量扩大而变化？业界普遍认为代价呈对数级增长，但这一定论缺乏实证支持，仅在特定条件下被理论证明。本文质疑这一‘对数标度’共识，探究真实场景下图索引的扩展行为。",
+              "modelAndSetup": "论文以HNSW和Vamana两类主流图索引为研究对象，在多个真实与合成数据集上测量固定召回率下的查询代价（距离计算次数）随数据规模的变化趋势。通过动态调整搜索参数efsearch维持目标召回率，系统评估不同数据集、召回目标、查询难度及索引配置下的扩展规律，揭示搜索代价与数据规模之间的实际关系。",
+              "contributionsAndResults": "研究发现搜索代价并非始终对数增长，而是呈现两阶段模式：当数据量较小时，代价遵循亚线性幂律增长；仅当数据量足够大、密集采样底层分布后，才过渡到次多项式增长。这一转变由数据的内在维度随规模增长所驱动，挑战了现有文献的单一标度假设，并通过统一理论解释了两种行为的共存机制。",
+              "methodsAndTechniques": "作者提出一个统一理论，指出搜索代价主要取决于查询邻域内的点数，而该数量受内在维度影响。利用局部均匀性假设和LID估计，证明在稀疏采样阶段内在维度随log N增长，导致邻域大小呈幂律扩张；当采样变密后增长放缓，代价趋于次多项式。该机制同时适用于精确与有界度图结构，并得到理论边界支持。",
+              "limitationsAndReadingValue": "尽管理论在球面均匀假设下建立，且大规模实验受限于构建成本，但其核心洞见——内在维度演化决定扩展行为——在多种设置下均成立。最值得阅读的是其对‘对数标度’迷思的破除、两阶段扩展的实证与理论统一，以及对索引参数调优的建模指导，为系统设计提供了更现实的成本预测框架。"
+            },
+            "contentTags": [
+              "向量搜索",
+              "近似最近邻",
+              "图索引",
+              "可扩展性",
+              "内在维度"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "复杂度分析",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation",
+            "url": "https://arxiv.org/abs/2609.02162",
+            "arxivId": "2609.02162",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "GenCAR: 面向分布外推荐的风险可控生成式反事实对齐",
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "理论分析",
+              "系统框架"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "大语言模型",
+              "鲁棒性",
+              "对齐",
+              "推荐系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "分布外推荐面临环境变化导致的历史交互失效问题，现有方法虽尝试解耦用户偏好与环境因素，但缺乏对生成候选集可靠性的量化控制。关键瓶颈在于如何在扩大候选集的同时，防止引入与用户真实偏好错位的低质量推荐，从而平衡实用性与风险。",
+              "modelAndSetup": "论文研究在环境干预下生成并筛选候选物品的任务，输入为用户历史行为，输出为经风险控制的个性化推荐列表。模型通过离线大模型生成反事实候选，结合稳定偏好锚点进行过滤，并在推理阶段基于共形p值与Benjamini-Hochberg过程动态决定保留哪些候选，确保错误发现率受控。",
+              "contributionsAndResults": "论文提出了首个将反事实生成与统计风险控制结合的推荐框架GenCAR，其核心贡献在于实现了可证伪的代理标签错误发现率控制。实验显示该方法在多个基准上显著提升候选恢复能力，且在线延迟极低，证明了离线生成与在线轻量服务分离的有效性。",
+              "methodsAndTechniques": "方法通过固定稳定偏好表示并对环境变量进行干预来构造反事实候选，利用大模型提案并以信任半径过滤保证相关性。随后采用共形预测将代理标签转化为校准p值，进而通过多重检验程序实现集合级风险控制，整个机制在理论上保证了有限样本下的错误率边界。",
+              "limitationsAndReadingValue": "局限在于代理标签与真实因果错位之间的差距依赖额外假设，且大模型生成覆盖不全时性能提升受限。尽管如此，论文在问题设定、方法严谨性和系统可行性上的完整闭环极具阅读价值，尤其适合关注生成式推荐可靠性与落地成本的研究者借鉴。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "GenCAR: 面向分布外推荐的风险可控生成式反事实对齐",
+            "summarySections": {
+              "backgroundAndQuestion": "分布外推荐面临环境变化导致的历史交互失效问题，现有方法虽尝试解耦用户偏好与环境因素，但缺乏对生成候选集可靠性的量化控制。关键瓶颈在于如何在扩大候选集的同时，防止引入与用户真实偏好错位的低质量推荐，从而平衡实用性与风险。",
+              "modelAndSetup": "论文研究在环境干预下生成并筛选候选物品的任务，输入为用户历史行为，输出为经风险控制的个性化推荐列表。模型通过离线大模型生成反事实候选，结合稳定偏好锚点进行过滤，并在推理阶段基于共形p值与Benjamini-Hochberg过程动态决定保留哪些候选，确保错误发现率受控。",
+              "contributionsAndResults": "论文提出了首个将反事实生成与统计风险控制结合的推荐框架GenCAR，其核心贡献在于实现了可证伪的代理标签错误发现率控制。实验显示该方法在多个基准上显著提升候选恢复能力，且在线延迟极低，证明了离线生成与在线轻量服务分离的有效性。",
+              "methodsAndTechniques": "方法通过固定稳定偏好表示并对环境变量进行干预来构造反事实候选，利用大模型提案并以信任半径过滤保证相关性。随后采用共形预测将代理标签转化为校准p值，进而通过多重检验程序实现集合级风险控制，整个机制在理论上保证了有限样本下的错误率边界。",
+              "limitationsAndReadingValue": "局限在于代理标签与真实因果错位之间的差距依赖额外假设，且大模型生成覆盖不全时性能提升受限。尽管如此，论文在问题设定、方法严谨性和系统可行性上的完整闭环极具阅读价值，尤其适合关注生成式推荐可靠性与落地成本的研究者借鉴。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "大语言模型",
+              "鲁棒性",
+              "对齐",
+              "推荐系统"
+            ],
+            "researchParadigmTags": [
+              "模型构建",
+              "算法设计",
+              "实验验证",
+              "理论分析",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting Generative Engine Optimization",
+            "url": "https://arxiv.org/abs/2609.02316",
+            "arxivId": "2609.02316",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.CL",
+              "cs.CR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Counter-GEO-Bench: 评估防御信息扭曲的生成引擎优化",
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证",
+              "系统框架",
+              "机制设计"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "大语言模型",
+              "安全性",
+              "评测方法",
+              "鲁棒性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型成为主要信息源，攻击者利用生成引擎优化（GEO）技术在看似正常的网页中嵌入虚假信息，诱导模型生成误导性回答。这类攻击绕过传统安全过滤器，因其内容流畅且无明显违规。现有评测缺乏对这类信息扭曲威胁的系统性防御评估，导致防御能力难以衡量。",
+              "modelAndSetup": "论文构建了COUNTER-GEO-BENCH，一个包含247个高质量查询的防御评测基准，每个查询配对信息保持与信息扭曲的网页重写版本。通过控制检索到生成的全流程，使用三个开源大模型作为受害者，在相同查询下比较不同防御方法对攻击成功率、误报率和答案质量的影响。",
+              "contributionsAndResults": "研究发现主流安全护栏（如Granite Guardian、Llama Guard 3）几乎无法降低攻击成功率，最多仅减少3.2个百分点，且部分方法甚至会放大攻击效果。相比之下，提出的轻量级检测器C-GEO Guard将攻击成功率相对降低47.6%，同时几乎不损失正常查询的回答质量，证明该威胁是可防御的。",
+              "methodsAndTechniques": "C-GEO Guard采用对比学习机制，训练一个基于DeBERTa的小型模型区分良性GEO优化与恶意信息扭曲文本。其核心是识别重写中隐藏的操作模式，而非依赖表面安全规则。训练数据来自未入选基准的低质量重写样本，形成硬负例，使模型聚焦于细微操纵信号而非通用风格特征。",
+              "limitationsAndReadingValue": "评测局限于英文单一文档攻击，未涵盖多语言或多文档协同攻击场景，且未测试商业闭源系统。尽管如此，其构造流程可复用于本地防御数据生成。最值得阅读的是其严谨的配对实验设计、对现有防御失效的深入分析，以及轻量高效的新防御思路，为对抗GEO misinformation提供了可靠起点。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Counter-GEO-Bench: 评估防御信息扭曲的生成引擎优化",
+            "summarySections": {
+              "backgroundAndQuestion": "随着大语言模型成为主要信息源，攻击者利用生成引擎优化（GEO）技术在看似正常的网页中嵌入虚假信息，诱导模型生成误导性回答。这类攻击绕过传统安全过滤器，因其内容流畅且无明显违规。现有评测缺乏对这类信息扭曲威胁的系统性防御评估，导致防御能力难以衡量。",
+              "modelAndSetup": "论文构建了COUNTER-GEO-BENCH，一个包含247个高质量查询的防御评测基准，每个查询配对信息保持与信息扭曲的网页重写版本。通过控制检索到生成的全流程，使用三个开源大模型作为受害者，在相同查询下比较不同防御方法对攻击成功率、误报率和答案质量的影响。",
+              "contributionsAndResults": "研究发现主流安全护栏（如Granite Guardian、Llama Guard 3）几乎无法降低攻击成功率，最多仅减少3.2个百分点，且部分方法甚至会放大攻击效果。相比之下，提出的轻量级检测器C-GEO Guard将攻击成功率相对降低47.6%，同时几乎不损失正常查询的回答质量，证明该威胁是可防御的。",
+              "methodsAndTechniques": "C-GEO Guard采用对比学习机制，训练一个基于DeBERTa的小型模型区分良性GEO优化与恶意信息扭曲文本。其核心是识别重写中隐藏的操作模式，而非依赖表面安全规则。训练数据来自未入选基准的低质量重写样本，形成硬负例，使模型聚焦于细微操纵信号而非通用风格特征。",
+              "limitationsAndReadingValue": "评测局限于英文单一文档攻击，未涵盖多语言或多文档协同攻击场景，且未测试商业闭源系统。尽管如此，其构造流程可复用于本地防御数据生成。最值得阅读的是其严谨的配对实验设计、对现有防御失效的深入分析，以及轻量高效的新防御思路，为对抗GEO misinformation提供了可靠起点。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "大语言模型",
+              "安全性",
+              "评测方法",
+              "鲁棒性"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证",
+              "系统框架",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Training seeds and model-selection stability in recommender-system evaluation",
+            "url": "https://arxiv.org/abs/2609.02499",
+            "arxivId": "2609.02499",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "训练种子与推荐系统评估中的模型选择稳定性",
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "基准评测"
+            ],
+            "contentTags": [
+              "推荐系统",
+              "评测方法",
+              "随机性影响",
+              "模型稳定性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "推荐系统研究常依赖单次随机训练种子进行实验，假设其对评估结论影响微小。然而，训练种子会影响参数初始化、负采样、dropout等多种随机机制，可能导致结果不可靠。本文质疑这一假设，聚焦于固定数据划分下仅改变训练种子是否会影响用户级指标、模型选择和推荐列表的一致性，揭示当前评估实践中潜在的不稳定性。",
+              "modelAndSetup": "研究在三个时序划分的公开数据集上评估四种典型推荐模型，包括矩阵分解与序列神经网络。实验固定数据分割与超参数空间，对每个配置重复使用10个不同训练种子独立训练，并基于验证集选择最优模型。通过比较不同种子下的测试性能、配置选择一致性及推荐列表重叠度，系统分析训练随机性对评估的影响。",
+              "contributionsAndResults": "论文发现训练种子变化常导致用户级指标显著差异，且验证集选出的最优配置在不同种子间可能不一致，甚至在测试集上表现差距明显。更重要的是，即使聚合指标相近，不同种子生成的top-k推荐列表也可能高度不同。这表明单一种子报告会高估评估稳定性，影响实际部署效果。",
+              "methodsAndTechniques": "作者采用多层级分析框架：使用Friedman检验检测用户级指标敏感性，计算验证到测试的性能回撤，统计验证胜者在测试中是否保持优势，并用Jaccard和平均重叠率衡量推荐列表一致性。该证据链有效区分了统计可检测变异与实际决策不稳定，揭示了验证集有效性与列表稳定性的解耦现象。",
+              "limitationsAndReadingValue": "研究未分离种子影响的具体来源（如初始化vs负采样），也未考虑数据划分随机性。结论主要基于精度类指标，未涉及多样性或公平性。尽管如此，论文强烈提醒社区应将训练种子视为评估协议的一部分。最值得读的是其严谨的实验设计与多层次分析视角，对追求可靠结论的研究者极具参考价值。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "训练种子与推荐系统评估中的模型选择稳定性",
+            "summarySections": {
+              "backgroundAndQuestion": "推荐系统研究常依赖单次随机训练种子进行实验，假设其对评估结论影响微小。然而，训练种子会影响参数初始化、负采样、dropout等多种随机机制，可能导致结果不可靠。本文质疑这一假设，聚焦于固定数据划分下仅改变训练种子是否会影响用户级指标、模型选择和推荐列表的一致性，揭示当前评估实践中潜在的不稳定性。",
+              "modelAndSetup": "研究在三个时序划分的公开数据集上评估四种典型推荐模型，包括矩阵分解与序列神经网络。实验固定数据分割与超参数空间，对每个配置重复使用10个不同训练种子独立训练，并基于验证集选择最优模型。通过比较不同种子下的测试性能、配置选择一致性及推荐列表重叠度，系统分析训练随机性对评估的影响。",
+              "contributionsAndResults": "论文发现训练种子变化常导致用户级指标显著差异，且验证集选出的最优配置在不同种子间可能不一致，甚至在测试集上表现差距明显。更重要的是，即使聚合指标相近，不同种子生成的top-k推荐列表也可能高度不同。这表明单一种子报告会高估评估稳定性，影响实际部署效果。",
+              "methodsAndTechniques": "作者采用多层级分析框架：使用Friedman检验检测用户级指标敏感性，计算验证到测试的性能回撤，统计验证胜者在测试中是否保持优势，并用Jaccard和平均重叠率衡量推荐列表一致性。该证据链有效区分了统计可检测变异与实际决策不稳定，揭示了验证集有效性与列表稳定性的解耦现象。",
+              "limitationsAndReadingValue": "研究未分离种子影响的具体来源（如初始化vs负采样），也未考虑数据划分随机性。结论主要基于精度类指标，未涉及多样性或公平性。尽管如此，论文强烈提醒社区应将训练种子视为评估协议的一部分。最值得读的是其严谨的实验设计与多层次分析视角，对追求可靠结论的研究者极具参考价值。"
+            },
+            "contentTags": [
+              "推荐系统",
+              "评测方法",
+              "随机性影响",
+              "模型稳定性"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+            "url": "https://arxiv.org/abs/2609.02379",
+            "arxivId": "2609.02379",
+            "date": "2026-09-02",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.AI",
+              "cs.CY",
+              "cs.DL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "MultiGhostBench: 面向分布偏移的长文本大语言模型生成内容溯源多语言评测基准",
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "鲁棒性",
+              "评测方法",
+              "多语言"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前大语言模型生成文本的溯源研究多局限于英文、短文本或封闭设定，难以反映真实场景下的跨语言、跨领域和跨生成器的泛化挑战。现有基准在文本长度、语言多样性和分布偏移维度上存在明显缺口，导致方法评估缺乏现实代表性。本文指出，真正鲁棒的溯源方法需在长文本、多语言及未知生成条件下仍保持性能，而这正是现有工作未能系统覆盖的关键瓶颈。",
+              "modelAndSetup": "论文构建了一个包含928本长篇书籍的多语言基准MultiGhostBench，涵盖六种语言、三种文字和五个最新大模型。任务设定包括同语言内识别（ID）、跨领域泛化（OOD-Domain）、跨生成器泛化（OOD-Author）和跨语言迁移（OOD-Language）。通过高/低资源训练对比，评估各类方法在不同分布偏移下的表现，使用宏观F1作为核心指标，并引入拒绝机制以模拟开放世界设定。",
+              "contributionsAndResults": "论文提出了首个支持多语言、长文本与多重分布偏移联合评估的溯源基准。实验发现，没有任何单一方法在所有设定下最优，Transformer类模型（如XLM-R）在跨语言迁移中显著优于其他方法，而指纹与统计方法则严重依赖语言一致性。结果揭示了当前方法在跨语言场景中的根本局限，强调了开发语言不变特征的重要性。",
+              "methodsAndTechniques": "作者系统比较了三类方法：基于token概率的统计检测器（如RANK、GLTR）、监督分类模型（如XLM-R、DETECTIVE）和后验指纹方法（如TRACE）。关键在于分析其在跨语言迁移中的表示稳定性——Transformer模型通过共享子词空间和深层语义编码保留生成器信号，而指纹方法因依赖语言特异的token转移模式，在跨语言时完全失效，从而解释了性能差异的根本原因。",
+              "limitationsAndReadingValue": "基准未覆盖低资源语言和更复杂的对抗场景，人类评估也仅限于部分样本。尽管如此，其严谨的分布偏移设定和对跨语言迁移的深入分析极具启发性。最值得阅读的是其问题建模方式与跨语言实验设计，为未来鲁棒溯源研究提供了清晰坐标系，尤其适合关注多语言AI安全与生成内容鉴别的读者精读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "MultiGhostBench: 面向分布偏移的长文本大语言模型生成内容溯源多语言评测基准",
+            "summarySections": {
+              "backgroundAndQuestion": "当前大语言模型生成文本的溯源研究多局限于英文、短文本或封闭设定，难以反映真实场景下的跨语言、跨领域和跨生成器的泛化挑战。现有基准在文本长度、语言多样性和分布偏移维度上存在明显缺口，导致方法评估缺乏现实代表性。本文指出，真正鲁棒的溯源方法需在长文本、多语言及未知生成条件下仍保持性能，而这正是现有工作未能系统覆盖的关键瓶颈。",
+              "modelAndSetup": "论文构建了一个包含928本长篇书籍的多语言基准MultiGhostBench，涵盖六种语言、三种文字和五个最新大模型。任务设定包括同语言内识别（ID）、跨领域泛化（OOD-Domain）、跨生成器泛化（OOD-Author）和跨语言迁移（OOD-Language）。通过高/低资源训练对比，评估各类方法在不同分布偏移下的表现，使用宏观F1作为核心指标，并引入拒绝机制以模拟开放世界设定。",
+              "contributionsAndResults": "论文提出了首个支持多语言、长文本与多重分布偏移联合评估的溯源基准。实验发现，没有任何单一方法在所有设定下最优，Transformer类模型（如XLM-R）在跨语言迁移中显著优于其他方法，而指纹与统计方法则严重依赖语言一致性。结果揭示了当前方法在跨语言场景中的根本局限，强调了开发语言不变特征的重要性。",
+              "methodsAndTechniques": "作者系统比较了三类方法：基于token概率的统计检测器（如RANK、GLTR）、监督分类模型（如XLM-R、DETECTIVE）和后验指纹方法（如TRACE）。关键在于分析其在跨语言迁移中的表示稳定性——Transformer模型通过共享子词空间和深层语义编码保留生成器信号，而指纹方法因依赖语言特异的token转移模式，在跨语言时完全失效，从而解释了性能差异的根本原因。",
+              "limitationsAndReadingValue": "基准未覆盖低资源语言和更复杂的对抗场景，人类评估也仅限于部分样本。尽管如此，其严谨的分布偏移设定和对跨语言迁移的深入分析极具启发性。最值得阅读的是其问题建模方式与跨语言实验设计，为未来鲁棒溯源研究提供了清晰坐标系，尤其适合关注多语言AI安全与生成内容鉴别的读者精读。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "鲁棒性",
+              "评测方法",
+              "多语言"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "数据集构建",
+              "实验验证"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
