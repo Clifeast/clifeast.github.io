@@ -1,0 +1,2134 @@
+{
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T07:22:50.102012+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-09-03",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202609030000 TO 202609032359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202609030000 TO 202609032359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 8
+      },
+      "arxivTotalResults": 8,
+      "fetchedCount": 8,
+      "fetchedPapers": [
+        {
+          "title": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189",
+          "arxivId": "2609.04189",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT",
+            "cs.LO",
+            "cs.MA"
+          ],
+          "abstract": "We introduce the first Probably Approximately Correct (PAC) learning framework for general-sum concurrent stochastic games (CSGs) with transition uncertainty, while addressing the challenge of Nash equilibrium (NE) existence. Our algorithm maintains data-driven $L^1$ confidence sets over transition kernels and solves a robust CSG to compute a social-welfare optimal $\\varepsilon$-NE, using a robust MDP-based exploration mechanism to drive joint state-action coverage. Crucially, we introduce a Nash margin characterisation that enables principled reasoning about equilibrium existence: the framework either returns an $\\varepsilon$-approximate NE whose social-welfare value is $\\varepsilon$-close to optimal, or provides a sound certificate that no exact NE exists. Under a minimum reachability condition $p_{\\mathrm{reach}}>0$ over relevant state-action pairs, the algorithm terminates after a polynomial number of trajectory samples, with sample complexity $\\widetilde{O}\\left( {R_{\\max}^2 H^4 |S|^2 |A| / (p_{\\mathrm{reach}} \\varepsilon^2)} \\right)$. Empirical results on benchmark CSGs demonstrate near-optimal performance, correct handling of equilibrium (non-)existence, and sample complexity consistent with theory."
+        },
+        {
+          "title": "Constant regret in general games via higher-order optimism",
+          "url": "https://arxiv.org/abs/2609.04113",
+          "arxivId": "2609.04113",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "abstract": "We introduce an uncoupled learning algorithm which, when employed by all players of an arbitrary $N$-player normal form game with up to $K$ actions per player, guarantees $O(N^3\\log^2 K)$ individual regret, uniformly over the horizon of play. The proposed algorithm - which we call higher-order optimism with discounting (HOOD) is a variant of optimistic follow-the-regularized-leader (OptFTRL) that combines a discounted $(N+1)$-th order predictor with entropic regularization over a suitable \"lifting\" of the game's strategy space. This combination of ingredients is purposefully designed to dampen large oscillations of the induced sequence of play in a controlled manner, removing in this way a key stumbling block of previous attempts to achieve constant regret in general games. Our approach bears several striking similarities to the concurrent - and completely independent - work of Liu, Farina, and Ozdaglar (arXiv:2608.31166), who very recently derived an $O(N^{21}\\log^{4} K)$ regret bound through the use of higher-order optimism and an exponential moving average estimator."
+        },
+        {
+          "title": "Batched Pandora's Box",
+          "url": "https://arxiv.org/abs/2609.04059",
+          "arxivId": "2609.04059",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "abstract": "Motivated by numerous parallelizable stochastic search problems, most notable and timely among them being LLM inference-time scaling, we propose and study batched versions of the Pandora's Box problem of Weitzman. In particular, boxes are opened in capacity-constrained batches, each batch has a setup cost, and all rewards in a batch are revealed together. We consider two different variants, motivated by different application environments: one where boxes are reusable (i.e., can provide multiple i.i.d.~samples) and another where they are not. For both variants we rule out most ``simple'' natural heuristics, and also formally prove NP-hardness of approximation in the traditional sense. We then relax the problem to allow bi-criteria approximations, with respect to both rewards and setup costs, where we exhibit constant approximation algorithms for both the reusable and non-reusable settings. This is obtained through a linear-programming relaxation of Pandora's Box problem, followed by randomized or Pipage rounding."
+        },
+        {
+          "title": "EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments",
+          "url": "https://arxiv.org/abs/2609.03846",
+          "arxivId": "2609.03846",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "We study the allocation of indivisible goods among agents with identical additive valuations, focusing on envy-freeness up to one good (EF1) and Nash social welfare (NSW). Since every maximum-NSW allocation is EF1 under additive valuations, the associated threshold problem inherits the known strong NP-hardness of NSW maximization under identical additive valuations and is strongly NP-complete. We therefore focus on welfare guarantees satisfied by arbitrary EF1 allocations. Although every such allocation is known to achieve an $e^{-1/e}$-approximation to the unrestricted optimal NSW, we identify conditions yielding stronger guarantees. Under uniform valuations, every EF1 allocation is NSW-optimal. Under an $\\varepsilon$-small-item condition, every EF1 allocation achieves an explicit approximation ratio $ρ_n(\\varepsilon)$ satisfying $ρ_n(\\varepsilon) = 1-O(\\varepsilon^2)$ as $\\varepsilon\\to 0$ for fixed $n$. We further consider the stronger sequential requirement that EF1 be maintained after every item assignment. For this setting, we propose \\emph{PriorityNet}, a deep reinforcement learning framework trained using Proximal Policy Optimization and equipped with prospective EF1 action masking. The mask restricts every decision to assignments that preserve EF1, thereby guaranteeing prefix-wise EF1 by construction without post-processing repair. Across 3,000 test instances in each of the offline and random-order online regimes ($n\\in[2,20]$ and $m\\in[5,100]$), PriorityNet attains mean normalized $\\operatorname{NSW}$ values of $0.9911$ and $0.9701$, respectively. Relative to offline Longest Processing Time (LPT) and online least-valued-bundle baselines, it achieves instance-wise win-minus-loss rates of $+27.10\\%$ and $+17.87\\%$, while matching the offline baseline's mean normalized welfare to four decimal places and modestly improving the online mean from $0.9694$ to $0.9701$."
+        },
+        {
+          "title": "Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution",
+          "url": "https://arxiv.org/abs/2609.03474",
+          "arxivId": "2609.03474",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Miner extractable value (MEV) in automated market makers allows block builders to profit from transaction ordering and injected trades, imposing costs on users and contributing to builder centralization. We introduce Otter (Optimal Truthful Trading with Excess Redistribution), a two-asset batch AMM that achieves provable MEV resilience when the consensus layer provides censorship resilience and block space is uncongested. Otter makes truthful behavior a dominant strategy for both users and builders. Consequently, a builder cannot profit from strategic deviations, including reordering bids or injecting sybil bids, even when the builder is itself a trader with intrinsic value. Moreover, we show that Otter maximizes social welfare, in a strong sense, within a natural class of mechanisms satisfying the desired game-theoretic properties. To achieve these guarantees, we introduce a new paradigm called surplus redistribution, which provably prevents residual surplus from being captured as MEV by redirecting it to the broader community. Specifically, the pool's output tokens need not be distributed entirely among users in the current batch. Instead, residual surplus may be transferred to a smart contract governed by the decentralized community. The accumulated surplus can be used to benefit community members --- for example, by subsidizing transaction fees, rewarding liquidity providers, or returning assets to the pool. Our approach relies on the underlying consensus layer to provide censorship resilience. We motivate its necessity through an impossibility result showing that the desired game-theoretic guarantees become unattainable when the builder is additionally allowed to censor transactions. Thus, our results also provide a mathematically formal demonstration of how consensus-level security guarantees can fundamentally expand what is achievable at the application layer."
+        },
+        {
+          "title": "Tournaments with Managerial Discretion",
+          "url": "https://arxiv.org/abs/2609.04068",
+          "arxivId": "2609.04068",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study tournaments with managerial discretion in hiring. A manager selects a coworker from a pool of candidates and then competes against him in a Lazear--Rosen--style tournament with a prize equal to a share of total output. A profit-maximizing principal sets the prize share together with a head start (or handicap)---an advantage (or disadvantage) in the output comparison---granted to the manager. The head start affects output through three channels: (i) encouraging the manager, (ii) discouraging the new hire, and (iii) inducing the manager to hire a stronger candidate. The hiring effect dominates the discouragement effect until the strongest candidate is hired; beyond that point, any further head start discourages the new hire more than it encourages the manager. The optimal contract therefore grants a head start just large enough to induce the manager to hire the strongest candidate."
+        },
+        {
+          "title": "Proof of Steady-State Multiplicity in Aiyagari",
+          "url": "https://arxiv.org/abs/2609.03730",
+          "arxivId": "2609.03730",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "I provide the first analytic construction of a canonical Aiyagari economy exhibiting at least three steady states. Along the way, I provide new upper and lower bounds on the stationary capital supply for the case where the net return on saving is negative. I also give parameter restrictions that guarantee the existence of a steady state with a rental rate in the neighborhood of a remarkably simple number: the capital share times the depreciation rate."
+        },
+        {
+          "title": "Knowledge-Based Mechanisms",
+          "url": "https://arxiv.org/abs/2609.03439",
+          "arxivId": "2609.03439",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study robust mechanisms when the designer possesses a Bayesian belief over some components of agents' private information but faces ambiguity over others. The designer evaluates mechanisms by their worst-case performance over all joint distributions consistent with her belief over the Bayesian components. The framework encompasses settings such as multidimensional delegation in which a principal knows the distribution of the state but not the agent's preferences (e.g., his tradeoffs across dimensions), screening in which a seller only has misspecified estimates of buyer preferences, and auction and voting design when agents' beliefs about each other are ambiguous to the designer. We provide conditions under which a \\emph{knowledge-based} mechanism---one that conditions only on the Bayesian components but not the ambiguous ones---is robustly optimal. Our results unify earlier work across distinct economic environments and uncover new applications."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Robust PAC Learning of Concurrent Stochastic Games",
+              "url": "https://arxiv.org/abs/2609.04189",
+              "arxivId": "2609.04189",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT",
+                "cs.LO",
+                "cs.MA"
+              ],
+              "abstract": "We introduce the first Probably Approximately Correct (PAC) learning framework for general-sum concurrent stochastic games (CSGs) with transition uncertainty, while addressing the challenge of Nash equilibrium (NE) existence. Our algorithm maintains data-driven $L^1$ confidence sets over transition kernels and solves a robust CSG to compute a social-welfare optimal $\\varepsilon$-NE, using a robust MDP-based exploration mechanism to drive joint state-action coverage. Crucially, we introduce a Nash margin characterisation that enables principled reasoning about equilibrium existence: the framework either returns an $\\varepsilon$-approximate NE whose social-welfare value is $\\varepsilon$-close to optimal, or provides a sound certificate that no exact NE exists. Under a minimum reachability condition $p_{\\mathrm{reach}}>0$ over relevant state-action pairs, the algorithm terminates after a polynomial number of trajectory samples, with sample complexity $\\widetilde{O}\\left( {R_{\\max}^2 H^4 |S|^2 |A| / (p_{\\mathrm{reach}} \\varepsilon^2)} \\right)$. Empirical results on benchmark CSGs demonstrate near-optimal performance, correct handling of equilibrium (non-)existence, and sample complexity consistent with theory."
+            },
+            {
+              "title": "Constant regret in general games via higher-order optimism",
+              "url": "https://arxiv.org/abs/2609.04113",
+              "arxivId": "2609.04113",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "abstract": "We introduce an uncoupled learning algorithm which, when employed by all players of an arbitrary $N$-player normal form game with up to $K$ actions per player, guarantees $O(N^3\\log^2 K)$ individual regret, uniformly over the horizon of play. The proposed algorithm - which we call higher-order optimism with discounting (HOOD) is a variant of optimistic follow-the-regularized-leader (OptFTRL) that combines a discounted $(N+1)$-th order predictor with entropic regularization over a suitable \"lifting\" of the game's strategy space. This combination of ingredients is purposefully designed to dampen large oscillations of the induced sequence of play in a controlled manner, removing in this way a key stumbling block of previous attempts to achieve constant regret in general games. Our approach bears several striking similarities to the concurrent - and completely independent - work of Liu, Farina, and Ozdaglar (arXiv:2608.31166), who very recently derived an $O(N^{21}\\log^{4} K)$ regret bound through the use of higher-order optimism and an exponential moving average estimator."
+            },
+            {
+              "title": "Batched Pandora's Box",
+              "url": "https://arxiv.org/abs/2609.04059",
+              "arxivId": "2609.04059",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "abstract": "Motivated by numerous parallelizable stochastic search problems, most notable and timely among them being LLM inference-time scaling, we propose and study batched versions of the Pandora's Box problem of Weitzman. In particular, boxes are opened in capacity-constrained batches, each batch has a setup cost, and all rewards in a batch are revealed together. We consider two different variants, motivated by different application environments: one where boxes are reusable (i.e., can provide multiple i.i.d.~samples) and another where they are not. For both variants we rule out most ``simple'' natural heuristics, and also formally prove NP-hardness of approximation in the traditional sense. We then relax the problem to allow bi-criteria approximations, with respect to both rewards and setup costs, where we exhibit constant approximation algorithms for both the reusable and non-reusable settings. This is obtained through a linear-programming relaxation of Pandora's Box problem, followed by randomized or Pipage rounding."
+            },
+            {
+              "title": "EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments",
+              "url": "https://arxiv.org/abs/2609.03846",
+              "arxivId": "2609.03846",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "We study the allocation of indivisible goods among agents with identical additive valuations, focusing on envy-freeness up to one good (EF1) and Nash social welfare (NSW). Since every maximum-NSW allocation is EF1 under additive valuations, the associated threshold problem inherits the known strong NP-hardness of NSW maximization under identical additive valuations and is strongly NP-complete. We therefore focus on welfare guarantees satisfied by arbitrary EF1 allocations. Although every such allocation is known to achieve an $e^{-1/e}$-approximation to the unrestricted optimal NSW, we identify conditions yielding stronger guarantees. Under uniform valuations, every EF1 allocation is NSW-optimal. Under an $\\varepsilon$-small-item condition, every EF1 allocation achieves an explicit approximation ratio $ρ_n(\\varepsilon)$ satisfying $ρ_n(\\varepsilon) = 1-O(\\varepsilon^2)$ as $\\varepsilon\\to 0$ for fixed $n$. We further consider the stronger sequential requirement that EF1 be maintained after every item assignment. For this setting, we propose \\emph{PriorityNet}, a deep reinforcement learning framework trained using Proximal Policy Optimization and equipped with prospective EF1 action masking. The mask restricts every decision to assignments that preserve EF1, thereby guaranteeing prefix-wise EF1 by construction without post-processing repair. Across 3,000 test instances in each of the offline and random-order online regimes ($n\\in[2,20]$ and $m\\in[5,100]$), PriorityNet attains mean normalized $\\operatorname{NSW}$ values of $0.9911$ and $0.9701$, respectively. Relative to offline Longest Processing Time (LPT) and online least-valued-bundle baselines, it achieves instance-wise win-minus-loss rates of $+27.10\\%$ and $+17.87\\%$, while matching the offline baseline's mean normalized welfare to four decimal places and modestly improving the online mean from $0.9694$ to $0.9701$."
+            },
+            {
+              "title": "Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution",
+              "url": "https://arxiv.org/abs/2609.03474",
+              "arxivId": "2609.03474",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Miner extractable value (MEV) in automated market makers allows block builders to profit from transaction ordering and injected trades, imposing costs on users and contributing to builder centralization. We introduce Otter (Optimal Truthful Trading with Excess Redistribution), a two-asset batch AMM that achieves provable MEV resilience when the consensus layer provides censorship resilience and block space is uncongested. Otter makes truthful behavior a dominant strategy for both users and builders. Consequently, a builder cannot profit from strategic deviations, including reordering bids or injecting sybil bids, even when the builder is itself a trader with intrinsic value. Moreover, we show that Otter maximizes social welfare, in a strong sense, within a natural class of mechanisms satisfying the desired game-theoretic properties. To achieve these guarantees, we introduce a new paradigm called surplus redistribution, which provably prevents residual surplus from being captured as MEV by redirecting it to the broader community. Specifically, the pool's output tokens need not be distributed entirely among users in the current batch. Instead, residual surplus may be transferred to a smart contract governed by the decentralized community. The accumulated surplus can be used to benefit community members --- for example, by subsidizing transaction fees, rewarding liquidity providers, or returning assets to the pool. Our approach relies on the underlying consensus layer to provide censorship resilience. We motivate its necessity through an impossibility result showing that the desired game-theoretic guarantees become unattainable when the builder is additionally allowed to censor transactions. Thus, our results also provide a mathematically formal demonstration of how consensus-level security guarantees can fundamentally expand what is achievable at the application layer."
+            },
+            {
+              "title": "Tournaments with Managerial Discretion",
+              "url": "https://arxiv.org/abs/2609.04068",
+              "arxivId": "2609.04068",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study tournaments with managerial discretion in hiring. A manager selects a coworker from a pool of candidates and then competes against him in a Lazear--Rosen--style tournament with a prize equal to a share of total output. A profit-maximizing principal sets the prize share together with a head start (or handicap)---an advantage (or disadvantage) in the output comparison---granted to the manager. The head start affects output through three channels: (i) encouraging the manager, (ii) discouraging the new hire, and (iii) inducing the manager to hire a stronger candidate. The hiring effect dominates the discouragement effect until the strongest candidate is hired; beyond that point, any further head start discourages the new hire more than it encourages the manager. The optimal contract therefore grants a head start just large enough to induce the manager to hire the strongest candidate."
+            },
+            {
+              "title": "Proof of Steady-State Multiplicity in Aiyagari",
+              "url": "https://arxiv.org/abs/2609.03730",
+              "arxivId": "2609.03730",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "I provide the first analytic construction of a canonical Aiyagari economy exhibiting at least three steady states. Along the way, I provide new upper and lower bounds on the stationary capital supply for the case where the net return on saving is negative. I also give parameter restrictions that guarantee the existence of a steady state with a rental rate in the neighborhood of a remarkably simple number: the capital share times the depreciation rate."
+            },
+            {
+              "title": "Knowledge-Based Mechanisms",
+              "url": "https://arxiv.org/abs/2609.03439",
+              "arxivId": "2609.03439",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study robust mechanisms when the designer possesses a Bayesian belief over some components of agents' private information but faces ambiguity over others. The designer evaluates mechanisms by their worst-case performance over all joint distributions consistent with her belief over the Bayesian components. The framework encompasses settings such as multidimensional delegation in which a principal knows the distribution of the state but not the agent's preferences (e.g., his tradeoffs across dimensions), screening in which a seller only has misspecified estimates of buyer preferences, and auction and voting design when agents' beliefs about each other are ambiguous to the designer. We provide conditions under which a \\emph{knowledge-based} mechanism---one that conditions only on the Bayesian components but not the ambiguous ones---is robustly optimal. Our results unify earlier work across distinct economic environments and uncover new applications."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 8,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 8,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 5,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 7,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 6,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 10,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 9,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 10,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 7,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 5,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 6
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 8,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Robust PAC Learning of Concurrent Stochastic Games",
+              "url": "https://arxiv.org/abs/2609.04189",
+              "arxivId": "2609.04189",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT",
+                "cs.LO",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 7.5,
+                "total": 31.9
+              }
+            },
+            {
+              "title": "Constant regret in general games via higher-order optimism",
+              "url": "https://arxiv.org/abs/2609.04113",
+              "arxivId": "2609.04113",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 5.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 5.0,
+                "total": 31.5
+              }
+            },
+            {
+              "title": "Batched Pandora's Box",
+              "url": "https://arxiv.org/abs/2609.04059",
+              "arxivId": "2609.04059",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 6.5,
+                "total": 31.1
+              }
+            },
+            {
+              "title": "EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments",
+              "url": "https://arxiv.org/abs/2609.03846",
+              "arxivId": "2609.03846",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 6.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 25.0,
+                "bonus": 5.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution",
+              "url": "https://arxiv.org/abs/2609.03474",
+              "arxivId": "2609.03474",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 10.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 10.0,
+                "total": 40.0
+              }
+            },
+            {
+              "title": "Tournaments with Managerial Discretion",
+              "url": "https://arxiv.org/abs/2609.04068",
+              "arxivId": "2609.04068",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 1.7,
+                "total": 22.2
+              }
+            },
+            {
+              "title": "Proof of Steady-State Multiplicity in Aiyagari",
+              "url": "https://arxiv.org/abs/2609.03730",
+              "arxivId": "2609.03730",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 3.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 6.0,
+                "penalty": -2.0,
+                "baseTotal": 17.0,
+                "bonus": 0.0,
+                "total": 10.2
+              }
+            },
+            {
+              "title": "Knowledge-Based Mechanisms",
+              "url": "https://arxiv.org/abs/2609.03439",
+              "arxivId": "2609.03439",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 2.9,
+                "total": 28.7
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189",
+          "arxivId": "2609.04189",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT",
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Constant regret in general games via higher-order optimism",
+          "url": "https://arxiv.org/abs/2609.04113",
+          "arxivId": "2609.04113",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 5.0,
+            "total": 31.5
+          }
+        },
+        {
+          "title": "Batched Pandora's Box",
+          "url": "https://arxiv.org/abs/2609.04059",
+          "arxivId": "2609.04059",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 6.5,
+            "total": 31.1
+          }
+        },
+        {
+          "title": "EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments",
+          "url": "https://arxiv.org/abs/2609.03846",
+          "arxivId": "2609.03846",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 6.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 5.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution",
+          "url": "https://arxiv.org/abs/2609.03474",
+          "arxivId": "2609.03474",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 10.0,
+            "total": 40.0
+          }
+        },
+        {
+          "title": "Tournaments with Managerial Discretion",
+          "url": "https://arxiv.org/abs/2609.04068",
+          "arxivId": "2609.04068",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 22.2
+          }
+        },
+        {
+          "title": "Proof of Steady-State Multiplicity in Aiyagari",
+          "url": "https://arxiv.org/abs/2609.03730",
+          "arxivId": "2609.03730",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 3.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 6.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "bonus": 0.0,
+            "total": 10.2
+          }
+        },
+        {
+          "title": "Knowledge-Based Mechanisms",
+          "url": "https://arxiv.org/abs/2609.03439",
+          "arxivId": "2609.03439",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 28.7
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution",
+          "url": "https://arxiv.org/abs/2609.03474",
+          "arxivId": "2609.03474",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 10.0,
+            "total": 40.0
+          }
+        },
+        {
+          "title": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189",
+          "arxivId": "2609.04189",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT",
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 31.9
+          }
+        },
+        {
+          "title": "Constant regret in general games via higher-order optimism",
+          "url": "https://arxiv.org/abs/2609.04113",
+          "arxivId": "2609.04113",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 5.0,
+            "total": 31.5
+          }
+        },
+        {
+          "title": "Batched Pandora's Box",
+          "url": "https://arxiv.org/abs/2609.04059",
+          "arxivId": "2609.04059",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 6.5,
+            "total": 31.1
+          }
+        },
+        {
+          "title": "Knowledge-Based Mechanisms",
+          "url": "https://arxiv.org/abs/2609.03439",
+          "arxivId": "2609.03439",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 2.9,
+            "total": 28.7
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution",
+            "url": "https://arxiv.org/abs/2609.03474",
+            "arxivId": "2609.03474",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Otter：通过盈余再分配实现可证明抗MEV的自动化做市商",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "MEV缓解",
+              "拍卖理论",
+              "博弈论",
+              "去中心化金融"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么现有自动化做市商（AMM）无法根除矿工可提取价值（MEV）？因为交易排序权集中在少数建设者手中，导致前/后运行攻击频发，损害用户并加剧中心化。传统方案要么依赖更强共识假设，要么允许盈余被攫取。本文追问：能否在不依赖完美排序的前提下，设计一种机制使诚实行为成为占优策略，并彻底消除MEV盈利空间？",
+              "modelAndSetup": "作者构建了一个双资产批处理AMM模型，参与者包括普通用户和可能自身也是交易者的区块建设者。用户申报估值与预算进行买卖，机制基于凹形定价曲线执行交易。关键设定是引入‘合格报价’概念——仅当报价优于初始市场价格时才参与清算，并允许部分盈余不分配给用户而是重定向至社区，从而打破传统AMM必须完全分配产出的约束。",
+              "contributionsAndResults": "论文提出了名为Otter的新机制，证明其在审查弹性共识下能实现多重理想性质：用户和建设者均无动机撒谎或注入虚假订单；交易顺序不影响结果；且均衡下实现合格用户的帕累托最优与社会福利最大化。更重要的是，文章证明若不允许盈余再分配，则无法同时满足激励相容与效率，揭示了该设计的必要性。",
+              "methodsAndTechniques": "核心方法是将VCG拍卖思想扩展到双向流动性场景，并结合‘盈余再分配’范式。通过构造修正后的补偿曲线，在主导侧运行单边VCG机制，确保边际外部性内部化。技术关键在于利用子模性与层蛋糕表示法分析福利函数，并通过反证法建立不可能性结果，阐明审查抵抗与盈余处理对激励兼容的根本影响。",
+              "limitationsAndReadingValue": "局限在于依赖共识层提供审查弹性，且未解决实际部署中的计算开销与用户体验问题。尽管如此，该文价值在于提出了一个清晰的理论分水岭：通过放弃完全分配假设，开辟了新的MEV韧性设计空间。最值得细读的是其机制构造逻辑与不可能性证明，为后续应用层机制设计提供了范式参考。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Otter：通过盈余再分配实现可证明抗MEV的自动化做市商",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么现有自动化做市商（AMM）无法根除矿工可提取价值（MEV）？因为交易排序权集中在少数建设者手中，导致前/后运行攻击频发，损害用户并加剧中心化。传统方案要么依赖更强共识假设，要么允许盈余被攫取。本文追问：能否在不依赖完美排序的前提下，设计一种机制使诚实行为成为占优策略，并彻底消除MEV盈利空间？",
+              "modelAndSetup": "作者构建了一个双资产批处理AMM模型，参与者包括普通用户和可能自身也是交易者的区块建设者。用户申报估值与预算进行买卖，机制基于凹形定价曲线执行交易。关键设定是引入‘合格报价’概念——仅当报价优于初始市场价格时才参与清算，并允许部分盈余不分配给用户而是重定向至社区，从而打破传统AMM必须完全分配产出的约束。",
+              "contributionsAndResults": "论文提出了名为Otter的新机制，证明其在审查弹性共识下能实现多重理想性质：用户和建设者均无动机撒谎或注入虚假订单；交易顺序不影响结果；且均衡下实现合格用户的帕累托最优与社会福利最大化。更重要的是，文章证明若不允许盈余再分配，则无法同时满足激励相容与效率，揭示了该设计的必要性。",
+              "methodsAndTechniques": "核心方法是将VCG拍卖思想扩展到双向流动性场景，并结合‘盈余再分配’范式。通过构造修正后的补偿曲线，在主导侧运行单边VCG机制，确保边际外部性内部化。技术关键在于利用子模性与层蛋糕表示法分析福利函数，并通过反证法建立不可能性结果，阐明审查抵抗与盈余处理对激励兼容的根本影响。",
+              "limitationsAndReadingValue": "局限在于依赖共识层提供审查弹性，且未解决实际部署中的计算开销与用户体验问题。尽管如此，该文价值在于提出了一个清晰的理论分水岭：通过放弃完全分配假设，开辟了新的MEV韧性设计空间。最值得细读的是其机制构造逻辑与不可能性证明，为后续应用层机制设计提供了范式参考。"
+            },
+            "contentTags": [
+              "机制设计",
+              "MEV缓解",
+              "拍卖理论",
+              "博弈论",
+              "去中心化金融"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Robust PAC Learning of Concurrent Stochastic Games",
+            "url": "https://arxiv.org/abs/2609.04189",
+            "arxivId": "2609.04189",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT",
+              "cs.LO",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "并发随机博弈的鲁棒PAC学习",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "鲁棒性",
+              "强化学习",
+              "均衡存在性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在未知环境动态下仍能学习到稳定的多智能体均衡？现有方法通常假设转移概率已知，或忽略均衡可能不存在的问题。本文针对一般和并发随机博弈，在转移不确定性下首次建立PAC学习框架，同时解决近似均衡计算与精确均衡存在性的判定难题，填补了鲁棒规划与PAC学习在多智能体场景下的理论空白。",
+              "modelAndSetup": "作者考虑两个玩家在状态-动作空间上的联合交互，每个状态中双方同时选择动作并共同决定转移。模型允许奖励和转移未知，通过集中式学习者收集轨迹数据。关键设定包括社会福利最优作为目标、使用鲁棒马尔可夫决策过程（RMDP）进行探索，并引入Nash margin来量化均衡存在的程度，从而区分近似均衡与非存在情形。",
+              "contributionsAndResults": "论文提出了首个能检测纳什均衡存在性的PAC学习算法PAC-CSG。该算法要么输出一个社会福利接近最优的ε-近似均衡，要么提供无精确均衡的可靠证明。在最小可达性条件下，算法以多项式样本复杂度终止，结果揭示了鲁棒均衡估计与真实游戏之间的误差传递关系，并实现了存在性判断的形式化。",
+              "methodsAndTechniques": "作者结合L1置信集与鲁棒并发随机博弈求解器，利用Nash margin刻画均衡稳定性。关键技术是构建辅助的探索型RMDP，将联合状态-动作覆盖转化为鲁棒可达性问题，并采用基于Freedman不等式的鞅集中分析，将依赖的历史事件聚合为全局高概率保证，从而克服并发设置下个体无法控制联合行为的挑战。",
+              "limitationsAndReadingValue": "算法依赖中心化探索、图保持假设及可达性条件，限制了去中心化场景的应用。非存在证书虽可靠但不完备。尽管如此，其将均衡存在性纳入学习输出的设计极具启发性，核心在于Nash margin的引入与鲁棒探索机制的耦合，最值得细读的是模型抽象方式、主要定理的证明结构以及实验对理论边界的验证。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "并发随机博弈的鲁棒PAC学习",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在未知环境动态下仍能学习到稳定的多智能体均衡？现有方法通常假设转移概率已知，或忽略均衡可能不存在的问题。本文针对一般和并发随机博弈，在转移不确定性下首次建立PAC学习框架，同时解决近似均衡计算与精确均衡存在性的判定难题，填补了鲁棒规划与PAC学习在多智能体场景下的理论空白。",
+              "modelAndSetup": "作者考虑两个玩家在状态-动作空间上的联合交互，每个状态中双方同时选择动作并共同决定转移。模型允许奖励和转移未知，通过集中式学习者收集轨迹数据。关键设定包括社会福利最优作为目标、使用鲁棒马尔可夫决策过程（RMDP）进行探索，并引入Nash margin来量化均衡存在的程度，从而区分近似均衡与非存在情形。",
+              "contributionsAndResults": "论文提出了首个能检测纳什均衡存在性的PAC学习算法PAC-CSG。该算法要么输出一个社会福利接近最优的ε-近似均衡，要么提供无精确均衡的可靠证明。在最小可达性条件下，算法以多项式样本复杂度终止，结果揭示了鲁棒均衡估计与真实游戏之间的误差传递关系，并实现了存在性判断的形式化。",
+              "methodsAndTechniques": "作者结合L1置信集与鲁棒并发随机博弈求解器，利用Nash margin刻画均衡稳定性。关键技术是构建辅助的探索型RMDP，将联合状态-动作覆盖转化为鲁棒可达性问题，并采用基于Freedman不等式的鞅集中分析，将依赖的历史事件聚合为全局高概率保证，从而克服并发设置下个体无法控制联合行为的挑战。",
+              "limitationsAndReadingValue": "算法依赖中心化探索、图保持假设及可达性条件，限制了去中心化场景的应用。非存在证书虽可靠但不完备。尽管如此，其将均衡存在性纳入学习输出的设计极具启发性，核心在于Nash margin的引入与鲁棒探索机制的耦合，最值得细读的是模型抽象方式、主要定理的证明结构以及实验对理论边界的验证。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "鲁棒性",
+              "强化学习",
+              "均衡存在性"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Constant regret in general games via higher-order optimism",
+            "url": "https://arxiv.org/abs/2609.04113",
+            "arxivId": "2609.04113",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过高阶乐观性实现一般博弈中的常数遗憾",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "后悔分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "在线算法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在多玩家重复博弈中，每个玩家通过学习调整策略以最大化自身收益，理想情况是不后悔过去的选择。传统无耦合学习算法在对抗环境中遗憾随时间增长，尽管近年研究表明在特定博弈结构中可实现常数遗憾，但在一般博弈中是否所有玩家都能同时保持总遗憾有界仍是开放问题。",
+              "modelAndSetup": "模型考虑一个N人标准型博弈，每位玩家有至多K个动作，采用完全信息反馈：每轮玩家选择混合策略并观察全部对手带来的收益向量。学习规则需无耦合，即不依赖他人收益函数，仅基于自身收益演化进行更新。目标是设计一种通用学习动态，使个体遗憾在任意有限博弈中均被常数控制。",
+              "contributionsAndResults": "论文提出名为‘带折现的高阶乐观性’（HOOD）的学习算法，首次证明在任意N人有限博弈中，所有玩家采用该算法时，个体遗憾被统一控制在O(N³log²K)，与时间无关。这表明学习过程最终趋于稳定，经验分布以O(1/T)速率收敛至粗相关均衡，解决了长期存在的理论难题。",
+              "methodsAndTechniques": "方法结合高阶外推预测与提升空间上的熵正则化。算法利用几何折现的(N+1)阶差分预测未来收益，将预测误差转化为可控的高阶差分项；通过在包含原点的提升单纯形上设计特殊正则器，确保Bregman散度能有效约束策略变动，并隔离正向遗憾，从而闭环控制累积误差。",
+              "limitationsAndReadingValue": "局限在于遗憾界依赖玩家数N的立方，相比近期O(N²log⁴K)结果稍弱，且依赖精细调参。但其价值在于清晰揭示了高阶平滑性与正则化协同抑制振荡的机制，证明了常数遗憾的普遍可能性，为简化动态与更强遗憾概念的研究提供了新路径，值得细读其技术构造与展开分析。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过高阶乐观性实现一般博弈中的常数遗憾",
+            "summarySections": {
+              "backgroundAndQuestion": "在多玩家重复博弈中，每个玩家通过学习调整策略以最大化自身收益，理想情况是不后悔过去的选择。传统无耦合学习算法在对抗环境中遗憾随时间增长，尽管近年研究表明在特定博弈结构中可实现常数遗憾，但在一般博弈中是否所有玩家都能同时保持总遗憾有界仍是开放问题。",
+              "modelAndSetup": "模型考虑一个N人标准型博弈，每位玩家有至多K个动作，采用完全信息反馈：每轮玩家选择混合策略并观察全部对手带来的收益向量。学习规则需无耦合，即不依赖他人收益函数，仅基于自身收益演化进行更新。目标是设计一种通用学习动态，使个体遗憾在任意有限博弈中均被常数控制。",
+              "contributionsAndResults": "论文提出名为‘带折现的高阶乐观性’（HOOD）的学习算法，首次证明在任意N人有限博弈中，所有玩家采用该算法时，个体遗憾被统一控制在O(N³log²K)，与时间无关。这表明学习过程最终趋于稳定，经验分布以O(1/T)速率收敛至粗相关均衡，解决了长期存在的理论难题。",
+              "methodsAndTechniques": "方法结合高阶外推预测与提升空间上的熵正则化。算法利用几何折现的(N+1)阶差分预测未来收益，将预测误差转化为可控的高阶差分项；通过在包含原点的提升单纯形上设计特殊正则器，确保Bregman散度能有效约束策略变动，并隔离正向遗憾，从而闭环控制累积误差。",
+              "limitationsAndReadingValue": "局限在于遗憾界依赖玩家数N的立方，相比近期O(N²log⁴K)结果稍弱，且依赖精细调参。但其价值在于清晰揭示了高阶平滑性与正则化协同抑制振荡的机制，证明了常数遗憾的普遍可能性，为简化动态与更强遗憾概念的研究提供了新路径，值得细读其技术构造与展开分析。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "在线算法"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "后悔分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Batched Pandora's Box",
+            "url": "https://arxiv.org/abs/2609.04059",
+            "arxivId": "2609.04059",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.DS",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "批处理潘多拉盒子",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "信息设计",
+              "在线算法",
+              "大语言模型",
+              "随机搜索",
+              "机制设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么传统潘多拉盒子模型不足以描述现代并行搜索场景？论文指出，在广告测试、超参数调优和大语言模型推理中，观测常以批量方式进行，且每次启动批次有固定开销。这改变了适应性与延迟间的权衡：决策者必须在未见结果前承诺一组操作，导致经典逐项打开策略失效。问题核心在于如何在批量反馈与设置成本下重新设计最优搜索机制。",
+              "modelAndSetup": "作者构建了两种批处理潘多拉盒子模型：非可重用版本中，每个盒子只能打开一次，批次是盒子的划分；可重用版本中，盒子可多次采样，批次为多重集。每批至多含k个盒子，并支付固定设置成本T。打开后整批奖励同时揭示，目标是最大化观察到的最大奖励减去总成本。模型通过容量约束和联合开销刻画了并行实验中的经济结构。",
+              "contributionsAndResults": "论文发现经典魏茨曼指数规则在批处理下不再最优，且两类自然启发式（如按指数排序合并）均会失败。更严重的是，精确求解和常规近似均为NP难，甚至区分零与正收益也难。为此，作者提出双标准近似框架：允许折扣成本评估算法性能。在此下，分别设计了基于线性规划松弛与舍入的常数因子近似算法，实现了可证明的性能保证。",
+              "methodsAndTechniques": "关键技术是将自适应策略转化为线性规划松弛。对于非可重用情形，LP记录打开概率、期望批次数及赢家分布，结合相关间隙分析与pipage舍入处理子模奖励。对于可重用情形，则归约为寻找单一高保留值批次，并通过可行性LP与二分搜索确定最优阈值，再经条件期望法去随机化。整个分析利用了保留值分解与随机路径论证来控制适应性损失。",
+              "limitationsAndReadingValue": "论文的主要局限在于其强硬度结果使得传统近似不可行，不得不转向双标准模型，削弱了原始目标的直接性。此外，算法依赖LP求解与舍入，实际部署可能较重。尽管如此，该文价值在于精准刻画了批量反馈下的信息经济学本质，提出了新的建模范式与算法框架，尤其对LLM推理优化等现实场景提供了理论基础，值得关注机制设计与在线学习交叉方向的研究者深入阅读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "批处理潘多拉盒子",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么传统潘多拉盒子模型不足以描述现代并行搜索场景？论文指出，在广告测试、超参数调优和大语言模型推理中，观测常以批量方式进行，且每次启动批次有固定开销。这改变了适应性与延迟间的权衡：决策者必须在未见结果前承诺一组操作，导致经典逐项打开策略失效。问题核心在于如何在批量反馈与设置成本下重新设计最优搜索机制。",
+              "modelAndSetup": "作者构建了两种批处理潘多拉盒子模型：非可重用版本中，每个盒子只能打开一次，批次是盒子的划分；可重用版本中，盒子可多次采样，批次为多重集。每批至多含k个盒子，并支付固定设置成本T。打开后整批奖励同时揭示，目标是最大化观察到的最大奖励减去总成本。模型通过容量约束和联合开销刻画了并行实验中的经济结构。",
+              "contributionsAndResults": "论文发现经典魏茨曼指数规则在批处理下不再最优，且两类自然启发式（如按指数排序合并）均会失败。更严重的是，精确求解和常规近似均为NP难，甚至区分零与正收益也难。为此，作者提出双标准近似框架：允许折扣成本评估算法性能。在此下，分别设计了基于线性规划松弛与舍入的常数因子近似算法，实现了可证明的性能保证。",
+              "methodsAndTechniques": "关键技术是将自适应策略转化为线性规划松弛。对于非可重用情形，LP记录打开概率、期望批次数及赢家分布，结合相关间隙分析与pipage舍入处理子模奖励。对于可重用情形，则归约为寻找单一高保留值批次，并通过可行性LP与二分搜索确定最优阈值，再经条件期望法去随机化。整个分析利用了保留值分解与随机路径论证来控制适应性损失。",
+              "limitationsAndReadingValue": "论文的主要局限在于其强硬度结果使得传统近似不可行，不得不转向双标准模型，削弱了原始目标的直接性。此外，算法依赖LP求解与舍入，实际部署可能较重。尽管如此，该文价值在于精准刻画了批量反馈下的信息经济学本质，提出了新的建模范式与算法框架，尤其对LLM推理优化等现实场景提供了理论基础，值得关注机制设计与在线学习交叉方向的研究者深入阅读。"
+            },
+            "contentTags": [
+              "信息设计",
+              "在线算法",
+              "大语言模型",
+              "随机搜索",
+              "机制设计"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Knowledge-Based Mechanisms",
+            "url": "https://arxiv.org/abs/2609.03439",
+            "arxivId": "2609.03439",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "基于知识的机制",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计"
+            ],
+            "contentTags": [
+              "机制设计",
+              "鲁棒性",
+              "信息设计",
+              "社会选择",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当机制设计者面临部分信息有明确分布（贝叶斯信念），另一部分却完全不确定（模糊性）时，如何设计表现稳健的机制？传统贝叶斯方法难以应对这种混合不确定性，尤其在代理人偏好、跨维度权衡或信念结构未知时，复杂机制可能因误设而失效。本文探究在何种条件下，仅利用已知信息维度的简单机制——即‘基于知识的机制’——已是鲁棒最优。",
+              "modelAndSetup": "模型考虑一个设计者与拥有私有信息的代理人，其类型分为‘贝叶斯成分’（设计者有先验分布）和‘模糊成分’（设计者仅知可能性集合）。设计者采用极小极大准则，在所有与贝叶斯成分一致的联合分布中，最大化最坏情况下的期望效用。机制只需满足激励相容与个人理性，而‘基于知识的机制’被定义为仅依赖贝叶斯成分、忽略模糊成分的机制。",
+              "contributionsAndResults": "论文核心发现是，当代理人在模糊维度上的偏好满足‘共同偏离’与‘u-凸性’时，基于知识的机制是鲁棒最优的。这表明，即使不直接利用模糊信息，只要不同类型的激励方向相似且偏好空间足够丰富，简单机制就能达到最佳抗干扰性能。该结论统一并推广了委托、拍卖、投票等多个领域的独立结果。",
+              "methodsAndTechniques": "作者通过‘最坏情况类型约简’来认证鲁棒最优性：若某类机制在集中于特定‘最坏类型’的分布下是最优的，则其全局鲁棒最优。证明结合了对偶规划与鞍点论证，构造出使设计者无利可图的对抗性分布，并利用偏好结构的凸性来聚合激励约束，从而绕过复杂的极小极大求解。",
+              "limitationsAndReadingValue": "模型假设模糊成分不影响设计者效用，这虽常见但限制了适用范围。结果高度依赖‘共同偏离’等结构性条件，在激励方向差异大的场景可能不成立。最值得读的是其统一框架与清晰的经济洞见：何时‘无知’反而成为设计优势，这对理解鲁棒机制的简洁性根源极具启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "基于知识的机制",
+            "summarySections": {
+              "backgroundAndQuestion": "当机制设计者面临部分信息有明确分布（贝叶斯信念），另一部分却完全不确定（模糊性）时，如何设计表现稳健的机制？传统贝叶斯方法难以应对这种混合不确定性，尤其在代理人偏好、跨维度权衡或信念结构未知时，复杂机制可能因误设而失效。本文探究在何种条件下，仅利用已知信息维度的简单机制——即‘基于知识的机制’——已是鲁棒最优。",
+              "modelAndSetup": "模型考虑一个设计者与拥有私有信息的代理人，其类型分为‘贝叶斯成分’（设计者有先验分布）和‘模糊成分’（设计者仅知可能性集合）。设计者采用极小极大准则，在所有与贝叶斯成分一致的联合分布中，最大化最坏情况下的期望效用。机制只需满足激励相容与个人理性，而‘基于知识的机制’被定义为仅依赖贝叶斯成分、忽略模糊成分的机制。",
+              "contributionsAndResults": "论文核心发现是，当代理人在模糊维度上的偏好满足‘共同偏离’与‘u-凸性’时，基于知识的机制是鲁棒最优的。这表明，即使不直接利用模糊信息，只要不同类型的激励方向相似且偏好空间足够丰富，简单机制就能达到最佳抗干扰性能。该结论统一并推广了委托、拍卖、投票等多个领域的独立结果。",
+              "methodsAndTechniques": "作者通过‘最坏情况类型约简’来认证鲁棒最优性：若某类机制在集中于特定‘最坏类型’的分布下是最优的，则其全局鲁棒最优。证明结合了对偶规划与鞍点论证，构造出使设计者无利可图的对抗性分布，并利用偏好结构的凸性来聚合激励约束，从而绕过复杂的极小极大求解。",
+              "limitationsAndReadingValue": "模型假设模糊成分不影响设计者效用，这虽常见但限制了适用范围。结果高度依赖‘共同偏离’等结构性条件，在激励方向差异大的场景可能不成立。最值得读的是其统一框架与清晰的经济洞见：何时‘无知’反而成为设计优势，这对理解鲁棒机制的简洁性根源极具启发。"
+            },
+            "contentTags": [
+              "机制设计",
+              "鲁棒性",
+              "信息设计",
+              "社会选择",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-09-03",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202609030000 TO 202609032359\"",
+            "totalResults": 7,
+            "fetchedCount": 7
+          }
+        },
+        "dedupedCount": 7
+      },
+      "arxivTotalResults": 7,
+      "fetchedCount": 7,
+      "fetchedPapers": [
+        {
+          "title": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189",
+          "arxivId": "2609.04189",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT",
+            "cs.LO",
+            "cs.MA"
+          ],
+          "abstract": "We introduce the first Probably Approximately Correct (PAC) learning framework for general-sum concurrent stochastic games (CSGs) with transition uncertainty, while addressing the challenge of Nash equilibrium (NE) existence. Our algorithm maintains data-driven $L^1$ confidence sets over transition kernels and solves a robust CSG to compute a social-welfare optimal $\\varepsilon$-NE, using a robust MDP-based exploration mechanism to drive joint state-action coverage. Crucially, we introduce a Nash margin characterisation that enables principled reasoning about equilibrium existence: the framework either returns an $\\varepsilon$-approximate NE whose social-welfare value is $\\varepsilon$-close to optimal, or provides a sound certificate that no exact NE exists. Under a minimum reachability condition $p_{\\mathrm{reach}}>0$ over relevant state-action pairs, the algorithm terminates after a polynomial number of trajectory samples, with sample complexity $\\widetilde{O}\\left( {R_{\\max}^2 H^4 |S|^2 |A| / (p_{\\mathrm{reach}} \\varepsilon^2)} \\right)$. Empirical results on benchmark CSGs demonstrate near-optimal performance, correct handling of equilibrium (non-)existence, and sample complexity consistent with theory."
+        },
+        {
+          "title": "Bioinfoysis Technical Report",
+          "url": "https://arxiv.org/abs/2609.03871",
+          "arxivId": "2609.03871",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replanning: the planner maintains an executable checklist and revises pending steps using structured handoffs returned after each worker execution. These handoffs bind intermediate results to their responsible agent, checklist step, and plan generation, preventing stale evidence from being silently reused after replanning. A controlled runtime validates generated scripts, tables, and figures before they are used in downstream analysis or reporting, while role-specific context, persistent memory, and governed bioinformatics skills support reliable execution over long analysis trajectories. We evaluate Bioinfoysis on BixBench and two question-answering tracks of LAB-Bench 2. On BixBench, Bioinfoysis achieves state-of-the-art accuracy of 82.4\\%. Across four underlying language models, Bioinfoysis increases average accuracy from 27.81\\% to 64.13\\% on SeqQA2 and from 3.13\\% to 31.25\\% on DbQA2. These results demonstrate that reliable bioinformatics automation depends not only on model capability, but also on the harness that governs planning, execution, memory, and evidence flow. We hope that the emergence of Bioinfoysis will play a driving and leading role in the development of the bioinformatics community. Our demo website can be seen in https://report.bioinfoysis.com/."
+        },
+        {
+          "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+          "url": "https://arxiv.org/abs/2609.03753",
+          "arxivId": "2609.03753",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "As large language models (LLMs) become increasingly capable, the long-term value of AI systems depends not only on solving individual requests, but also on transforming experience and accumulated knowledge into durable, reusable competence. We introduce SimSkill, a self-evolving agent built around the Simulation of Urban MObility (SUMO) traffic simulator. SimSkill identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory without updating the backbone model. Through autonomous exploration, it builds a reusable library spanning the traffic-simulation workflow. We evaluate SimSkill on two held-out benchmarks with three backbone LLMs and independent artifact-based verification. SimSkill improves verified completion by up to 25 percentage points, while ablations show complementary contributions from procedural and semantic memory. Its benefits remain backbone- and budget-dependent: memory does not improve every model or uniformly reduce inference cost. More broadly, SimSkill illustrates a design paradigm in which natural language preserves and composes computational capabilities, while executable tools and code provide precise and reproducible execution. All code and experimental data are publicly available at https://github.com/qiliuchn/SimSkill-V1."
+        },
+        {
+          "title": "The Civilization Framework: Sovereign-Anchored Communication Between Personal Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.03425",
+          "arxivId": "2609.03425",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "abstract": "Humans are the transport layer between AI systems, losing context at every hop. We present the Civilization Framework, whose addressable party is the civilization, not the agent (one human sovereign, a persistent ledger, and interchangeable agents), and the Embassy Protocol, a carrier-agnostic overlay: messages arrive asynchronously at a resident ledger endpoint, any online agent of the receiver handles them, and commitment state on both ledgers, not delivery, is ground truth. Authority derives from memory: an agent's power to act for its civilization is capped by the memory it can access and externalized through signed credentials, separate from civilization-level reputation. We identify the temporal-weight effect, a hazard in AI-to-AI communication where what arrives first acquires unearned authority, and test it in one frontier model in a preregistered 1,908-trial experiment. With verification removed, an incorrect upstream claim arriving first captures 54.2% of answers (4.2% under full verification), while the same claim arriving after the receiver has sealed its own answer captures 31.6% (the two prompt shells are not length-matched, so part of that gap may reflect shell form; see Section 7), and both registered question-set specifications agree on these two verdicts (the exclusion specification is preregistered as under-powered). Two secondary results, the mitigation from instruction-level provenance labeling and sealed-answer accuracy equivalence, are specification-dependent, holding only under the all-questions specification. Because a registered check of tool use failed its call-budget condition, the registration classifies the round as inconclusive and every result above, primary and secondary, is reported as exploratory; a replication with harness-enforced budgets is planned. The framework's intra-civilization layer has a working implementation."
+        },
+        {
+          "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+          "url": "https://arxiv.org/abs/2609.03422",
+          "arxivId": "2609.03422",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "Diversity is a widely observed factor in the resilient function of collective systems, yet the type of diversity that matters depends on the properties and failure modes of the system. This distinction is important for systems composed of multiple language models. Different models may be treated as independent components even when their behaviour and failures remain strongly correlated. Assessments of language-model populations using semantic similarity demonstrate limited semantic diversity, but this captures only differences in the meaning of observed outputs. We argue that a more fundamental notion of model diversity is generative-process diversity, the differences between processes capable of generating the observed outputs. Drawing from Algorithmic Information Theory, we use Normalised Compression Distance between raw model outputs, residualised against a permutation control, as a measure of inferred generative-process diversity. Across 38 language models, this measure identifies population structure missed by semantic similarity and predicts cross-task variation in chance-corrected correlated failure among model pairs across ten disjoint benchmark families, beyond semantic similarity and model-pair capability. The cross-benchmark partial rank association is $-0.216$ with a 95% interval of $[-0.309,-0.122]$, and the estimate is negative on all ten benchmarks. These results indicate that increased generative-process diversity is associated with reduced correlated failure in model pairs that is not attributable to semantic similarity or capability. Inferred generative-process diversity offers a novel and practical approach for investigating diversity of multi-model systems in safety-relevant contexts."
+        },
+        {
+          "title": "Risk and Anomaly Identification for Distribution Network Optimal Operation Based on Reinforcement Learning and Uncertainty Quantification",
+          "url": "https://arxiv.org/abs/2609.03308",
+          "arxivId": "2609.03308",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "abstract": "Reliable operation of modern distribution networks requires timely identification of operational risks and anomalous events under pervasive uncertainty. In practice, operators must identify risks that are inherent in stochastic yet in-distribution conditions, and anomalies that correspond to out-of-distribution behaviors such as unusual load patterns, extreme weather or cyber-physical attacks. This paper addresses this joint risk and anomaly identification problem for optimal distribution network operation and proposes a deep reinforcement learning framework that is explicitly uncertainty aware. We integrate distributional and Bayesian deep reinforcement learning to realize a second- order uncertainty quantification scheme that decomposes total uncertainty into aleatoric and epistemic components, which are respectively used to characterize inherent risk and out-of- distribution anomalies. The resulting epistemic estimates drive both exploration during training and out-of-distribution detec- tion with fallback control during deployment, whereas aleatoric estimates are used to characterize intrinsic operational risk. Simulation results demonstrate the performance of our DRL agent and the effectiveness of the uncertainty quantification."
+        },
+        {
+          "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+          "url": "https://arxiv.org/abs/2609.03236",
+          "arxivId": "2609.03236",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Tool-using LLM agents spend wall-clock time not only on model inference but also in serial action--observation turns, where each tool call, environment transition, and observation can delay subsequent decisions. We introduce \\textbf{Speculative Macro Commit} (SMC), a runtime mechanism for a two-tier agent system: a large authoritative actor model produces the official trajectory, while a faster speculative drafter model continuously predicts and executes future action chains on an isolated environment snapshot. SMC mines recurring multi-action skeletons from training traces and stores them in a macro library used to match against action chains predicted by the drafter at runtime. When the actor's next tool call matches the first drafted action, SMC commits the remaining pre-executed draft steps, together with their observations, to the official trajectory. Using Qwen3.5-27B INT4 as the authoritative actor model and Qwen3.5-4B as the speculative drafter model, SMC matches the sequential agent's overall accuracy while reducing latency by 10.23\\% over the Speculative Actions (SA) baseline and 18.59\\% over sequential execution on the $τ^2$-Bench Telecom subset. On AppWorld, SMC reduces wall time by 7.7\\% over SA baseline and 44.9\\% over sequential execution, with a small reduction in task completion. Overall, SMC provides a practical way to reuse multi-step speculative execution and reduce agent latency beyond single-step speculative actions. Our code is publicly available \\href{https://github.com/zeyuliu1037/speculative-macro-commit}{\\textcolor{magenta}{here}}."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Robust PAC Learning of Concurrent Stochastic Games",
+              "url": "https://arxiv.org/abs/2609.04189",
+              "arxivId": "2609.04189",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT",
+                "cs.LO",
+                "cs.MA"
+              ],
+              "abstract": "We introduce the first Probably Approximately Correct (PAC) learning framework for general-sum concurrent stochastic games (CSGs) with transition uncertainty, while addressing the challenge of Nash equilibrium (NE) existence. Our algorithm maintains data-driven $L^1$ confidence sets over transition kernels and solves a robust CSG to compute a social-welfare optimal $\\varepsilon$-NE, using a robust MDP-based exploration mechanism to drive joint state-action coverage. Crucially, we introduce a Nash margin characterisation that enables principled reasoning about equilibrium existence: the framework either returns an $\\varepsilon$-approximate NE whose social-welfare value is $\\varepsilon$-close to optimal, or provides a sound certificate that no exact NE exists. Under a minimum reachability condition $p_{\\mathrm{reach}}>0$ over relevant state-action pairs, the algorithm terminates after a polynomial number of trajectory samples, with sample complexity $\\widetilde{O}\\left( {R_{\\max}^2 H^4 |S|^2 |A| / (p_{\\mathrm{reach}} \\varepsilon^2)} \\right)$. Empirical results on benchmark CSGs demonstrate near-optimal performance, correct handling of equilibrium (non-)existence, and sample complexity consistent with theory."
+            },
+            {
+              "title": "Bioinfoysis Technical Report",
+              "url": "https://arxiv.org/abs/2609.03871",
+              "arxivId": "2609.03871",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replanning: the planner maintains an executable checklist and revises pending steps using structured handoffs returned after each worker execution. These handoffs bind intermediate results to their responsible agent, checklist step, and plan generation, preventing stale evidence from being silently reused after replanning. A controlled runtime validates generated scripts, tables, and figures before they are used in downstream analysis or reporting, while role-specific context, persistent memory, and governed bioinformatics skills support reliable execution over long analysis trajectories. We evaluate Bioinfoysis on BixBench and two question-answering tracks of LAB-Bench 2. On BixBench, Bioinfoysis achieves state-of-the-art accuracy of 82.4\\%. Across four underlying language models, Bioinfoysis increases average accuracy from 27.81\\% to 64.13\\% on SeqQA2 and from 3.13\\% to 31.25\\% on DbQA2. These results demonstrate that reliable bioinformatics automation depends not only on model capability, but also on the harness that governs planning, execution, memory, and evidence flow. We hope that the emergence of Bioinfoysis will play a driving and leading role in the development of the bioinformatics community. Our demo website can be seen in https://report.bioinfoysis.com/."
+            },
+            {
+              "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+              "url": "https://arxiv.org/abs/2609.03753",
+              "arxivId": "2609.03753",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "As large language models (LLMs) become increasingly capable, the long-term value of AI systems depends not only on solving individual requests, but also on transforming experience and accumulated knowledge into durable, reusable competence. We introduce SimSkill, a self-evolving agent built around the Simulation of Urban MObility (SUMO) traffic simulator. SimSkill identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory without updating the backbone model. Through autonomous exploration, it builds a reusable library spanning the traffic-simulation workflow. We evaluate SimSkill on two held-out benchmarks with three backbone LLMs and independent artifact-based verification. SimSkill improves verified completion by up to 25 percentage points, while ablations show complementary contributions from procedural and semantic memory. Its benefits remain backbone- and budget-dependent: memory does not improve every model or uniformly reduce inference cost. More broadly, SimSkill illustrates a design paradigm in which natural language preserves and composes computational capabilities, while executable tools and code provide precise and reproducible execution. All code and experimental data are publicly available at https://github.com/qiliuchn/SimSkill-V1."
+            },
+            {
+              "title": "The Civilization Framework: Sovereign-Anchored Communication Between Personal Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2609.03425",
+              "arxivId": "2609.03425",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "abstract": "Humans are the transport layer between AI systems, losing context at every hop. We present the Civilization Framework, whose addressable party is the civilization, not the agent (one human sovereign, a persistent ledger, and interchangeable agents), and the Embassy Protocol, a carrier-agnostic overlay: messages arrive asynchronously at a resident ledger endpoint, any online agent of the receiver handles them, and commitment state on both ledgers, not delivery, is ground truth. Authority derives from memory: an agent's power to act for its civilization is capped by the memory it can access and externalized through signed credentials, separate from civilization-level reputation. We identify the temporal-weight effect, a hazard in AI-to-AI communication where what arrives first acquires unearned authority, and test it in one frontier model in a preregistered 1,908-trial experiment. With verification removed, an incorrect upstream claim arriving first captures 54.2% of answers (4.2% under full verification), while the same claim arriving after the receiver has sealed its own answer captures 31.6% (the two prompt shells are not length-matched, so part of that gap may reflect shell form; see Section 7), and both registered question-set specifications agree on these two verdicts (the exclusion specification is preregistered as under-powered). Two secondary results, the mitigation from instruction-level provenance labeling and sealed-answer accuracy equivalence, are specification-dependent, holding only under the all-questions specification. Because a registered check of tool use failed its call-budget condition, the registration classifies the round as inconclusive and every result above, primary and secondary, is reported as exploratory; a replication with harness-enforced budgets is planned. The framework's intra-civilization layer has a working implementation."
+            },
+            {
+              "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+              "url": "https://arxiv.org/abs/2609.03422",
+              "arxivId": "2609.03422",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "Diversity is a widely observed factor in the resilient function of collective systems, yet the type of diversity that matters depends on the properties and failure modes of the system. This distinction is important for systems composed of multiple language models. Different models may be treated as independent components even when their behaviour and failures remain strongly correlated. Assessments of language-model populations using semantic similarity demonstrate limited semantic diversity, but this captures only differences in the meaning of observed outputs. We argue that a more fundamental notion of model diversity is generative-process diversity, the differences between processes capable of generating the observed outputs. Drawing from Algorithmic Information Theory, we use Normalised Compression Distance between raw model outputs, residualised against a permutation control, as a measure of inferred generative-process diversity. Across 38 language models, this measure identifies population structure missed by semantic similarity and predicts cross-task variation in chance-corrected correlated failure among model pairs across ten disjoint benchmark families, beyond semantic similarity and model-pair capability. The cross-benchmark partial rank association is $-0.216$ with a 95% interval of $[-0.309,-0.122]$, and the estimate is negative on all ten benchmarks. These results indicate that increased generative-process diversity is associated with reduced correlated failure in model pairs that is not attributable to semantic similarity or capability. Inferred generative-process diversity offers a novel and practical approach for investigating diversity of multi-model systems in safety-relevant contexts."
+            },
+            {
+              "title": "Risk and Anomaly Identification for Distribution Network Optimal Operation Based on Reinforcement Learning and Uncertainty Quantification",
+              "url": "https://arxiv.org/abs/2609.03308",
+              "arxivId": "2609.03308",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "abstract": "Reliable operation of modern distribution networks requires timely identification of operational risks and anomalous events under pervasive uncertainty. In practice, operators must identify risks that are inherent in stochastic yet in-distribution conditions, and anomalies that correspond to out-of-distribution behaviors such as unusual load patterns, extreme weather or cyber-physical attacks. This paper addresses this joint risk and anomaly identification problem for optimal distribution network operation and proposes a deep reinforcement learning framework that is explicitly uncertainty aware. We integrate distributional and Bayesian deep reinforcement learning to realize a second- order uncertainty quantification scheme that decomposes total uncertainty into aleatoric and epistemic components, which are respectively used to characterize inherent risk and out-of- distribution anomalies. The resulting epistemic estimates drive both exploration during training and out-of-distribution detec- tion with fallback control during deployment, whereas aleatoric estimates are used to characterize intrinsic operational risk. Simulation results demonstrate the performance of our DRL agent and the effectiveness of the uncertainty quantification."
+            },
+            {
+              "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+              "url": "https://arxiv.org/abs/2609.03236",
+              "arxivId": "2609.03236",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Tool-using LLM agents spend wall-clock time not only on model inference but also in serial action--observation turns, where each tool call, environment transition, and observation can delay subsequent decisions. We introduce \\textbf{Speculative Macro Commit} (SMC), a runtime mechanism for a two-tier agent system: a large authoritative actor model produces the official trajectory, while a faster speculative drafter model continuously predicts and executes future action chains on an isolated environment snapshot. SMC mines recurring multi-action skeletons from training traces and stores them in a macro library used to match against action chains predicted by the drafter at runtime. When the actor's next tool call matches the first drafted action, SMC commits the remaining pre-executed draft steps, together with their observations, to the official trajectory. Using Qwen3.5-27B INT4 as the authoritative actor model and Qwen3.5-4B as the speculative drafter model, SMC matches the sequential agent's overall accuracy while reducing latency by 10.23\\% over the Speculative Actions (SA) baseline and 18.59\\% over sequential execution on the $τ^2$-Bench Telecom subset. On AppWorld, SMC reduces wall time by 7.7\\% over SA baseline and 44.9\\% over sequential execution, with a small reduction in task completion. Overall, SMC provides a practical way to reuse multi-step speculative execution and reduce agent latency beyond single-step speculative actions. Our code is publicly available \\href{https://github.com/zeyuliu1037/speculative-macro-commit}{\\textcolor{magenta}{here}}."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 3,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -4
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 3,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Robust PAC Learning of Concurrent Stochastic Games",
+              "url": "https://arxiv.org/abs/2609.04189",
+              "arxivId": "2609.04189",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.GT",
+                "cs.LO",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "Bioinfoysis Technical Report",
+              "url": "https://arxiv.org/abs/2609.03871",
+              "arxivId": "2609.03871",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+              "url": "https://arxiv.org/abs/2609.03753",
+              "arxivId": "2609.03753",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "The Civilization Framework: Sovereign-Anchored Communication Between Personal Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2609.03425",
+              "arxivId": "2609.03425",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -4.0,
+                "baseTotal": 12.0,
+                "total": 12.0
+              }
+            },
+            {
+              "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+              "url": "https://arxiv.org/abs/2609.03422",
+              "arxivId": "2609.03422",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "Risk and Anomaly Identification for Distribution Network Optimal Operation Based on Reinforcement Learning and Uncertainty Quantification",
+              "url": "https://arxiv.org/abs/2609.03308",
+              "arxivId": "2609.03308",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 3.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 13.0,
+                "total": 13.0
+              }
+            },
+            {
+              "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+              "url": "https://arxiv.org/abs/2609.03236",
+              "arxivId": "2609.03236",
+              "date": "2026-09-03",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189",
+          "arxivId": "2609.04189",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT",
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Bioinfoysis Technical Report",
+          "url": "https://arxiv.org/abs/2609.03871",
+          "arxivId": "2609.03871",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+          "url": "https://arxiv.org/abs/2609.03753",
+          "arxivId": "2609.03753",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "The Civilization Framework: Sovereign-Anchored Communication Between Personal Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.03425",
+          "arxivId": "2609.03425",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -4.0,
+            "baseTotal": 12.0,
+            "total": 12.0
+          }
+        },
+        {
+          "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+          "url": "https://arxiv.org/abs/2609.03422",
+          "arxivId": "2609.03422",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Risk and Anomaly Identification for Distribution Network Optimal Operation Based on Reinforcement Learning and Uncertainty Quantification",
+          "url": "https://arxiv.org/abs/2609.03308",
+          "arxivId": "2609.03308",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 3.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 13.0,
+            "total": 13.0
+          }
+        },
+        {
+          "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+          "url": "https://arxiv.org/abs/2609.03236",
+          "arxivId": "2609.03236",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189",
+          "arxivId": "2609.04189",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.GT",
+            "cs.LO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+          "url": "https://arxiv.org/abs/2609.03422",
+          "arxivId": "2609.03422",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+          "url": "https://arxiv.org/abs/2609.03753",
+          "arxivId": "2609.03753",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+          "url": "https://arxiv.org/abs/2609.03236",
+          "arxivId": "2609.03236",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Bioinfoysis Technical Report",
+          "url": "https://arxiv.org/abs/2609.03871",
+          "arxivId": "2609.03871",
+          "date": "2026-09-03",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Robust PAC Learning of Concurrent Stochastic Games",
+            "url": "https://arxiv.org/abs/2609.04189",
+            "arxivId": "2609.04189",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT",
+              "cs.LO",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "并发随机博弈的鲁棒 PAC 学习",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "实验验证",
+              "均衡分析",
+              "机制设计"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "博弈学习",
+              "鲁棒性",
+              "纳什均衡"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在多智能体强化学习中，当环境转移概率未知时，传统方法难以稳定求解纳什均衡，因为微小估计误差可能导致策略失衡。现有方法要么假设动态已知，要么忽略均衡存在性问题。本文聚焦于一般和并发随机博弈（CSG）下的 PAC 学习，核心挑战在于：如何在未知转移下既高效探索状态空间，又能可靠判断精确均衡是否存在，而非盲目输出近似解。",
+              "modelAndSetup": "研究设定为双人一般和并发随机博弈，其中真实转移核未知但支持结构已知。学习者通过集中式交互收集轨迹，维护基于 L1 范数的置信集来刻画不确定性。目标是输出一个 ε-近似纳什均衡，其社会福利接近最优，或提供无精确均衡的可靠证明。评估基于是否满足 PAC-CSG 框架定义的高概率正确性与样本复杂度。",
+              "contributionsAndResults": "本文提出了首个处理转移不确定性的 CSG 的 PAC 学习框架 PAC-CSG，其核心贡献是引入‘纳什裕度’来形式化均衡存在性，并结合鲁棒 CSG 求解与探索机制。实验证明该方法能在多项基准上达到近优性能，正确识别均衡存在与否，且样本消耗符合理论界，验证了框架的有效性与可靠性。",
+              "methodsAndTechniques": "方法通过维护数据驱动的 L1 置信集构建鲁棒 CSG，并求解其社会福利最优的 ε-鲁棒纳什均衡。为确保充分探索，设计了一个辅助的鲁棒 MDP 来主动访问低频状态动作对。关键创新是利用纳什裕度作为判据：当不确定性足够小时，若鲁棒求解器失败，则可证伪精确均衡的存在，从而实现存在性检测。",
+              "limitationsAndReadingValue": "局限在于依赖中心化探索、图保持假设及可达性条件，限制了去中心化或稀疏支持场景的应用。非存在性证书虽可靠但不完备。尽管如此，该论文在问题建模、均衡存在性量化和探索机制设计方面极具启发性，最值得阅读的是其将鲁棒规划与 PAC 学习融合的框架思想及其理论分析过程。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "并发随机博弈的鲁棒 PAC 学习",
+            "summarySections": {
+              "backgroundAndQuestion": "在多智能体强化学习中，当环境转移概率未知时，传统方法难以稳定求解纳什均衡，因为微小估计误差可能导致策略失衡。现有方法要么假设动态已知，要么忽略均衡存在性问题。本文聚焦于一般和并发随机博弈（CSG）下的 PAC 学习，核心挑战在于：如何在未知转移下既高效探索状态空间，又能可靠判断精确均衡是否存在，而非盲目输出近似解。",
+              "modelAndSetup": "研究设定为双人一般和并发随机博弈，其中真实转移核未知但支持结构已知。学习者通过集中式交互收集轨迹，维护基于 L1 范数的置信集来刻画不确定性。目标是输出一个 ε-近似纳什均衡，其社会福利接近最优，或提供无精确均衡的可靠证明。评估基于是否满足 PAC-CSG 框架定义的高概率正确性与样本复杂度。",
+              "contributionsAndResults": "本文提出了首个处理转移不确定性的 CSG 的 PAC 学习框架 PAC-CSG，其核心贡献是引入‘纳什裕度’来形式化均衡存在性，并结合鲁棒 CSG 求解与探索机制。实验证明该方法能在多项基准上达到近优性能，正确识别均衡存在与否，且样本消耗符合理论界，验证了框架的有效性与可靠性。",
+              "methodsAndTechniques": "方法通过维护数据驱动的 L1 置信集构建鲁棒 CSG，并求解其社会福利最优的 ε-鲁棒纳什均衡。为确保充分探索，设计了一个辅助的鲁棒 MDP 来主动访问低频状态动作对。关键创新是利用纳什裕度作为判据：当不确定性足够小时，若鲁棒求解器失败，则可证伪精确均衡的存在，从而实现存在性检测。",
+              "limitationsAndReadingValue": "局限在于依赖中心化探索、图保持假设及可达性条件，限制了去中心化或稀疏支持场景的应用。非存在性证书虽可靠但不完备。尽管如此，该论文在问题建模、均衡存在性量化和探索机制设计方面极具启发性，最值得阅读的是其将鲁棒规划与 PAC 学习融合的框架思想及其理论分析过程。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "强化学习",
+              "博弈学习",
+              "鲁棒性",
+              "纳什均衡"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "实验验证",
+              "均衡分析",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+            "url": "https://arxiv.org/abs/2609.03422",
+            "arxivId": "2609.03422",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "推断的生成过程多样性预测语言模型间的相关失败",
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "机制设计",
+              "算法设计",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "安全性",
+              "鲁棒性",
+              "生成式AI"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前多模型系统依赖冗余提升可靠性，但不同语言模型常因共享错误模式而同时失效，导致冗余失效。现有评估多基于语义相似性，仅衡量输出含义的接近程度，无法捕捉模型是否以相同机制生成答案。本文关注的问题是：如何衡量模型间真正独立的生成行为，以预测它们是否会共同出错。",
+              "modelAndSetup": "研究使用38个公开语言模型，在100个开放式提示下生成重复响应，用于计算模型对之间的多样性指标。随后在十个无交集的闭式基准测试中，通过五次独立采样评估模型对的联合错误率。核心设定是分离多样性测量与错误评估的数据源，确保结果不因任务重叠而产生偏差，并控制模型能力与语义相似性的影响。",
+              "contributionsAndResults": "论文提出‘推断的生成过程多样性’作为新指标，发现该指标能显著预测跨任务的相关错误率，且效果超越语义相似性和模型能力。结果显示，生成过程差异越大的模型对，其共同犯错的概率越低。这一发现揭示了传统语义评估忽略的关键维度，为构建更可靠的多模型系统提供了实证依据。",
+              "methodsAndTechniques": "作者采用算法信息论中的归一化压缩距离（NCD）作用于原始字节序列，捕捉输出中的顺序规律。为排除字符频率干扰，进一步对随机排列控制进行残差化处理，提取仅由序列结构决定的差异。该方法无需访问模型内部结构，仅从输入输出即可推断生成机制的异同，是一种黑箱、特征无关的比较方式。",
+              "limitationsAndReadingValue": "研究局限于静态输入输出行为，未涵盖具身智能体的记忆、工具调用等动态交互。结论基于特定压缩器与统计检验，外推至实际系统需谨慎。尽管如此，其问题设定与方法设计极具启发性，最值得阅读的是其对‘多样性’本质的重新定义、残差化控制的设计逻辑，以及将理论压缩距离应用于安全评测的创新思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "推断的生成过程多样性预测语言模型间的相关失败",
+            "summarySections": {
+              "backgroundAndQuestion": "当前多模型系统依赖冗余提升可靠性，但不同语言模型常因共享错误模式而同时失效，导致冗余失效。现有评估多基于语义相似性，仅衡量输出含义的接近程度，无法捕捉模型是否以相同机制生成答案。本文关注的问题是：如何衡量模型间真正独立的生成行为，以预测它们是否会共同出错。",
+              "modelAndSetup": "研究使用38个公开语言模型，在100个开放式提示下生成重复响应，用于计算模型对之间的多样性指标。随后在十个无交集的闭式基准测试中，通过五次独立采样评估模型对的联合错误率。核心设定是分离多样性测量与错误评估的数据源，确保结果不因任务重叠而产生偏差，并控制模型能力与语义相似性的影响。",
+              "contributionsAndResults": "论文提出‘推断的生成过程多样性’作为新指标，发现该指标能显著预测跨任务的相关错误率，且效果超越语义相似性和模型能力。结果显示，生成过程差异越大的模型对，其共同犯错的概率越低。这一发现揭示了传统语义评估忽略的关键维度，为构建更可靠的多模型系统提供了实证依据。",
+              "methodsAndTechniques": "作者采用算法信息论中的归一化压缩距离（NCD）作用于原始字节序列，捕捉输出中的顺序规律。为排除字符频率干扰，进一步对随机排列控制进行残差化处理，提取仅由序列结构决定的差异。该方法无需访问模型内部结构，仅从输入输出即可推断生成机制的异同，是一种黑箱、特征无关的比较方式。",
+              "limitationsAndReadingValue": "研究局限于静态输入输出行为，未涵盖具身智能体的记忆、工具调用等动态交互。结论基于特定压缩器与统计检验，外推至实际系统需谨慎。尽管如此，其问题设定与方法设计极具启发性，最值得阅读的是其对‘多样性’本质的重新定义、残差化控制的设计逻辑，以及将理论压缩距离应用于安全评测的创新思路。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "安全性",
+              "鲁棒性",
+              "生成式AI"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "机制设计",
+              "算法设计",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+            "url": "https://arxiv.org/abs/2609.03753",
+            "arxivId": "2609.03753",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "SimSkill: 一种用于交通仿真自主掌握的终身学习 AI 智能体",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "智能体",
+              "记忆架构"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "终身学习",
+              "交通仿真",
+              "经验积累",
+              "自主探索"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有大语言模型智能体在完成任务后难以保留和复用经验，尤其在交通仿真这类需反复建模与验证的技术领域，缺乏跨任务的能力积累机制。本文指出，仅靠更新模型参数无法实现可审查、可组合的长期能力演化，关键在于如何将交互经验转化为持久、可检索的外部知识。",
+              "modelAndSetup": "SimSkill 在 SUMO 交通仿真环境中通过自主提出任务、执行并验证结果来持续学习。输入是自然语言指令与当前记忆状态，输出为可执行脚本与结构化报告。系统采用独立的评判代理进行多轮反馈，并基于两个基准共 80 项任务评估完成率，使用外部验证而非自我报告衡量性能。",
+              "contributionsAndResults": "论文提出了 SimSkill 框架，其核心贡献是将经验分离为程序性、语义性和情景性三种记忆形式，并通过自主探索闭环实现能力累积。实验显示，在三个不同大模型上，该系统使验证完成率最高提升 25 个百分点，且程序性与语义性记忆贡献互补，证明了无需微调即可实现系统级进化。",
+              "methodsAndTechniques": "SimSkill 利用自然语言作为协调层，指导子智能体完成课程生成、行动与批评。它不依赖参数更新，而是通过检索、执行、批评、提炼四步循环，将成功经验固化为带可执行代码的技能与结构化知识页。关键机制在于动作-批评双循环设计，确保解决方案经得起独立验证，从而保障记忆质量。",
+              "limitationsAndReadingValue": "效果高度依赖骨干模型能力，某些模型（如 GLM-5.2）未见提升，且内存开销常增加推理成本。记忆维护虽能修复引用漂移，但未解决自动遗忘。最值得阅读的是其记忆架构设计与自主学习闭环，展示了语言作为计算能力组织媒介的潜力，对构建可持续进化的 AI 系统具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "SimSkill: 一种用于交通仿真自主掌握的终身学习 AI 智能体",
+            "summarySections": {
+              "backgroundAndQuestion": "现有大语言模型智能体在完成任务后难以保留和复用经验，尤其在交通仿真这类需反复建模与验证的技术领域，缺乏跨任务的能力积累机制。本文指出，仅靠更新模型参数无法实现可审查、可组合的长期能力演化，关键在于如何将交互经验转化为持久、可检索的外部知识。",
+              "modelAndSetup": "SimSkill 在 SUMO 交通仿真环境中通过自主提出任务、执行并验证结果来持续学习。输入是自然语言指令与当前记忆状态，输出为可执行脚本与结构化报告。系统采用独立的评判代理进行多轮反馈，并基于两个基准共 80 项任务评估完成率，使用外部验证而非自我报告衡量性能。",
+              "contributionsAndResults": "论文提出了 SimSkill 框架，其核心贡献是将经验分离为程序性、语义性和情景性三种记忆形式，并通过自主探索闭环实现能力累积。实验显示，在三个不同大模型上，该系统使验证完成率最高提升 25 个百分点，且程序性与语义性记忆贡献互补，证明了无需微调即可实现系统级进化。",
+              "methodsAndTechniques": "SimSkill 利用自然语言作为协调层，指导子智能体完成课程生成、行动与批评。它不依赖参数更新，而是通过检索、执行、批评、提炼四步循环，将成功经验固化为带可执行代码的技能与结构化知识页。关键机制在于动作-批评双循环设计，确保解决方案经得起独立验证，从而保障记忆质量。",
+              "limitationsAndReadingValue": "效果高度依赖骨干模型能力，某些模型（如 GLM-5.2）未见提升，且内存开销常增加推理成本。记忆维护虽能修复引用漂移，但未解决自动遗忘。最值得阅读的是其记忆架构设计与自主学习闭环，展示了语言作为计算能力组织媒介的潜力，对构建可持续进化的 AI 系统具有启发意义。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "终身学习",
+              "交通仿真",
+              "经验积累",
+              "自主探索"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "智能体",
+              "记忆架构"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+            "url": "https://arxiv.org/abs/2609.03236",
+            "arxivId": "2609.03236",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "用于加速工具使用智能体的推测性宏提交",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "基准评测"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "推测性执行",
+              "推理延迟",
+              "工具调用"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型的工具使用智能体在执行任务时面临严重的串行延迟问题，因为每个动作都需要等待前一个工具调用返回结果后才能进行下一步决策。尽管已有推测性动作（Speculative Actions）等方法尝试并行预测动作，但仅限于单步重用，难以突破多步依赖带来的性能瓶颈。本文关注如何在不增加模型选择负担的前提下，有效利用重复出现的动作模式来减少端到端延迟。",
+              "modelAndSetup": "研究设定在一个双层运行时系统中，由一个大型权威模型作为主决策者，一个小而快的推测性模型提前预测未来动作链并在隔离环境中预执行。评估基于完整的工具使用基准T2-Bench Telecom和AppWorld，输入是任务历史，输出是逐步的工具调用序列。通过对比顺序执行、单步推测与多步推测机制，在真实墙钟时间下衡量延迟改善，并以任务准确率或完成率为质量指标。",
+              "contributionsAndResults": "论文提出了推测性宏提交（SMC），首次实现了多步推测动作的批量提交。核心贡献在于将从训练轨迹中挖掘出的高频多动作模式作为隐藏运行时状态，而非暴露给模型选择。实验表明，SMC在保持甚至略优于基线准确率的同时，显著降低了延迟——在T2-Bench上比顺序执行快18.59%，在AppWorld上比单步推测再提速7.7%，证明了多步推测机制的有效性和实用性。",
+              "methodsAndTechniques": "SMC的关键机制是：首先从成功执行轨迹中挖掘规范化动作序列构成宏库；运行时，推测模型持续生成动作链，当权威模型的第一步动作与某宏的首步匹配时，系统便提交该宏剩余已预执行的步骤及其观测结果。这一过程依赖锚定验证、最小跳过深度限制和在线安全检查，确保近似提交不会破坏任务一致性，从而在保障质量的前提下实现跨步跳跃，突破传统逐级依赖。",
+              "limitationsAndReadingValue": "SMC的效果依赖于动作模式的可预测性和预执行环境的一致性，在动态或不可逆操作较多的场景中可能受限。AppWorld上的微小准确率下降也提示其近似性质存在风险。但论文通过严谨的消融和精度审计增强了可信度。最值得阅读的是其机制设计思路——如何将工作流压缩转化为运行时优化，而非模型侧扩展，这对构建高效智能体系统具有重要启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "用于加速工具使用智能体的推测性宏提交",
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型的工具使用智能体在执行任务时面临严重的串行延迟问题，因为每个动作都需要等待前一个工具调用返回结果后才能进行下一步决策。尽管已有推测性动作（Speculative Actions）等方法尝试并行预测动作，但仅限于单步重用，难以突破多步依赖带来的性能瓶颈。本文关注如何在不增加模型选择负担的前提下，有效利用重复出现的动作模式来减少端到端延迟。",
+              "modelAndSetup": "研究设定在一个双层运行时系统中，由一个大型权威模型作为主决策者，一个小而快的推测性模型提前预测未来动作链并在隔离环境中预执行。评估基于完整的工具使用基准T2-Bench Telecom和AppWorld，输入是任务历史，输出是逐步的工具调用序列。通过对比顺序执行、单步推测与多步推测机制，在真实墙钟时间下衡量延迟改善，并以任务准确率或完成率为质量指标。",
+              "contributionsAndResults": "论文提出了推测性宏提交（SMC），首次实现了多步推测动作的批量提交。核心贡献在于将从训练轨迹中挖掘出的高频多动作模式作为隐藏运行时状态，而非暴露给模型选择。实验表明，SMC在保持甚至略优于基线准确率的同时，显著降低了延迟——在T2-Bench上比顺序执行快18.59%，在AppWorld上比单步推测再提速7.7%，证明了多步推测机制的有效性和实用性。",
+              "methodsAndTechniques": "SMC的关键机制是：首先从成功执行轨迹中挖掘规范化动作序列构成宏库；运行时，推测模型持续生成动作链，当权威模型的第一步动作与某宏的首步匹配时，系统便提交该宏剩余已预执行的步骤及其观测结果。这一过程依赖锚定验证、最小跳过深度限制和在线安全检查，确保近似提交不会破坏任务一致性，从而在保障质量的前提下实现跨步跳跃，突破传统逐级依赖。",
+              "limitationsAndReadingValue": "SMC的效果依赖于动作模式的可预测性和预执行环境的一致性，在动态或不可逆操作较多的场景中可能受限。AppWorld上的微小准确率下降也提示其近似性质存在风险。但论文通过严谨的消融和精度审计增强了可信度。最值得阅读的是其机制设计思路——如何将工作流压缩转化为运行时优化，而非模型侧扩展，这对构建高效智能体系统具有重要启发。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "推测性执行",
+              "推理延迟",
+              "工具调用"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Bioinfoysis Technical Report",
+            "url": "https://arxiv.org/abs/2609.03871",
+            "arxivId": "2609.03871",
+            "date": "2026-09-03",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Bioinfoysis 技术报告",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "基准评测",
+              "智能体"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生物信息学",
+              "科学计算",
+              "可验证推理"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型的生物信息学代理多关注生成最终答案，忽视中间过程的可追溯性和持续性。这导致在长周期、多步骤的生物数据分析中，错误难以定位，结果不可复现。本文针对的问题是：如何构建一个能连接规划、执行、记忆与证据流的持久化分析系统，使AI代理不仅给出答案，还能提供可审计、可恢复、可验证的完整科研路径。",
+              "modelAndSetup": "系统接收自然语言问题和输入文件，将其转化为一个持久化的分析运行（run），通过多角色智能体协作完成任务。输入包括生物数据文件和用户请求，输出为带证据引用的科学报告。核心流程由协调者、规划者、研究员、编码员和报告生成器协同完成，并通过结构化交接传递中间结果。评估基于BixBench和LAB-Bench2两个基准，衡量端到端任务完成率与结果可追溯性。",
+              "contributionsAndResults": "论文提出了Bioinfoysis——一种面向长周期生物信息学分析的多智能体系统框架，其关键贡献在于将分析过程建模为可持久化、可审计的运行实例。在BixBench上达到82.4%的准确率，显著优于现有系统；更重要的是，跨多种模型的实验表明，该框架能大幅提升弱模型的表现，说明系统设计本身是性能提升的关键因素，而不只是依赖更强的语言模型。",
+              "methodsAndTechniques": "系统采用自适应规划机制，结合全局检查清单与基于中间结果的动态重规划。每个步骤产生结构化交接，绑定结果与其负责代理、计划版本和上下文，防止陈旧证据被误用。通过受控运行时验证脚本、表格和图表的有效性，并利用角色特定上下文与持久化记忆维持长期一致性。技能模块封装了生物信息学常见流程，确保方法调用符合领域规范，从而提升执行可靠性。",
+              "limitationsAndReadingValue": "系统的分析能力受限于当前集成工具与技能模块的覆盖范围，对非标准或高度定制化任务支持有限。此外，评估仍集中于特定基准，未能全面反映开放科研场景下的鲁棒性。尽管如此，该论文的价值在于展示了可靠科学自动化不仅依赖模型能力，更取决于执行框架的设计。最值得细读的是其系统架构设计与消融实验，揭示了持久化记忆、结构化交接与领域技能对复杂任务的关键作用。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Bioinfoysis 技术报告",
+            "summarySections": {
+              "backgroundAndQuestion": "现有基于大语言模型的生物信息学代理多关注生成最终答案，忽视中间过程的可追溯性和持续性。这导致在长周期、多步骤的生物数据分析中，错误难以定位，结果不可复现。本文针对的问题是：如何构建一个能连接规划、执行、记忆与证据流的持久化分析系统，使AI代理不仅给出答案，还能提供可审计、可恢复、可验证的完整科研路径。",
+              "modelAndSetup": "系统接收自然语言问题和输入文件，将其转化为一个持久化的分析运行（run），通过多角色智能体协作完成任务。输入包括生物数据文件和用户请求，输出为带证据引用的科学报告。核心流程由协调者、规划者、研究员、编码员和报告生成器协同完成，并通过结构化交接传递中间结果。评估基于BixBench和LAB-Bench2两个基准，衡量端到端任务完成率与结果可追溯性。",
+              "contributionsAndResults": "论文提出了Bioinfoysis——一种面向长周期生物信息学分析的多智能体系统框架，其关键贡献在于将分析过程建模为可持久化、可审计的运行实例。在BixBench上达到82.4%的准确率，显著优于现有系统；更重要的是，跨多种模型的实验表明，该框架能大幅提升弱模型的表现，说明系统设计本身是性能提升的关键因素，而不只是依赖更强的语言模型。",
+              "methodsAndTechniques": "系统采用自适应规划机制，结合全局检查清单与基于中间结果的动态重规划。每个步骤产生结构化交接，绑定结果与其负责代理、计划版本和上下文，防止陈旧证据被误用。通过受控运行时验证脚本、表格和图表的有效性，并利用角色特定上下文与持久化记忆维持长期一致性。技能模块封装了生物信息学常见流程，确保方法调用符合领域规范，从而提升执行可靠性。",
+              "limitationsAndReadingValue": "系统的分析能力受限于当前集成工具与技能模块的覆盖范围，对非标准或高度定制化任务支持有限。此外，评估仍集中于特定基准，未能全面反映开放科研场景下的鲁棒性。尽管如此，该论文的价值在于展示了可靠科学自动化不仅依赖模型能力，更取决于执行框架的设计。最值得细读的是其系统架构设计与消融实验，揭示了持久化记忆、结构化交接与领域技能对复杂任务的关键作用。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生物信息学",
+              "科学计算",
+              "可验证推理"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "基准评测",
+              "智能体"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
