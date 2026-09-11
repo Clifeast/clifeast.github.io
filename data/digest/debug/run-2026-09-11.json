@@ -1,0 +1,2370 @@
+{
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-11T07:26:29.956099+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-09-10",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202609100000 TO 202609102359\"",
+            "totalResults": 6,
+            "fetchedCount": 6
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202609100000 TO 202609102359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          }
+        },
+        "dedupedCount": 8
+      },
+      "arxivTotalResults": 8,
+      "fetchedCount": 8,
+      "fetchedPapers": [
+        {
+          "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+          "url": "https://arxiv.org/abs/2609.11923",
+          "arxivId": "2609.11923",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.DC",
+            "cs.AI",
+            "cs.GT",
+            "cs.MS",
+            "cs.PL"
+          ],
+          "abstract": "Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issued through a generic tree interface. On a GPU every kernel finishes in microseconds, so kernel launches and framework dispatch dominate the run time, and prior GPU implementations have lost to optimized CPU code. We observe that for a fixed game, everything about a CFR iteration except the numerical values is known before the first iteration runs. We propose GPU-CFR, a compiler and runtime built on this observation. It compiles any game once into static dataflow: flat edge and information-set arrays, precomputed indices, and depth-level batched passes fix the entire operation sequence, and only solver state changes between iterations. Static chance folding, depth-level execution blocks, and a dual-lane reach buffer cut the number of framework operations by up to 18.1x. Because shapes, indices, and buffer addresses never change, CUDA Graph Replay records the iteration once and replays it with a single graph launch. On one A100, across an eight-game suite that spans card games, dice games, and board games, GPU-CFR runs 29.8--80.4x faster than the fastest prior GPU CFR on the same accelerator, and 14--258x faster than LiteEFG, one of the fastest open-source CPU implementations, on the four largest games. The compiled representation carries most of that margin: on eight CPU threads with no accelerator it is already 2.2--51.1x faster than the GPU baseline. On the CPU the optimized path reproduces the reference iterates bitwise, and tree construction and graph capture pay for themselves within the first solve. GPU-CFR beats every CPU and GPU baseline on the mid-to-large games of the suite without changing the update rule."
+        },
+        {
+          "title": "Existence of the Core in Approval-Based Committee Elections",
+          "url": "https://arxiv.org/abs/2609.11912",
+          "arxivId": "2609.11912",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We settle the main open question in the theory of approval-based multi-winner elections: we show that there always exists a committee in the core. The core is a stability and group fairness concept. The proof introduces a new voting rule that optimizes an entropy-like objective function over committees and payment systems. All local optima of this objective function lie in the core, which implies that a core committee can be found in polynomial time."
+        },
+        {
+          "title": "ABRA: An algorithm which cannot converge to low-quality Nash equilibria",
+          "url": "https://arxiv.org/abs/2609.11889",
+          "arxivId": "2609.11889",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal. A recent work further shows that the equilibria which achieve this worst-case bound are not stable. Leveraging this, we design an Approximate Best Response Algorithm (ABRA) governed by a noise parameter and a rationality parameter. The noise allows ABRA to escape the bad equilibria and the rationality parameter balances any degradation in the objective function caused by the noise. We show for any two-player game that if ABRA converges to a Nash equilibrium, its system objective value is strictly more than 50% of optimal plus a term controlled by the noise parameter. Otherwise, ABRA converges to some recurrent class: if a recurrent class contains any action profile yielding system objective less than 50% of the optimal, the class must also contain either the optimal action profile or an action profile yielding system objective strictly more than 50\\% of the optimal by the same amount in addition to a factor controlled by noise parameter. The time that ABRA spends in such action profiles can be controlled using the rationality parameter. Using numerical simulations, we show that the minimum expected objective function is typically well above half of the optimal."
+        },
+        {
+          "title": "Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees",
+          "url": "https://arxiv.org/abs/2609.11863",
+          "arxivId": "2609.11863",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "abstract": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular maximization objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal, but that the equilibria which achieve this worst-case bound are not stable. To exploit this instability, we propose a family of algorithms which we call Truncated Noisy Best-Response (TNBR) Algorithms. These algorithms are flexibly characterized by agents asynchronously and stochastically selecting actions from a neighbourhood of their best response payoffs. We compute bounds on the recurrent classes of TNBR algorithms' associated Markov chains. Our bounds fall into two categories: first, \"Performance\" bounds ensure that TNBR algorithms always have a high-value recurrent state; second, \"Safety\" bounds ensure that TNBR algorithms never have arbitrarily-bad recurrent states. Furthermore, these two types of bounds are linked by a waterbed-like effect: every game with a poor Safety guarantee necessarily has a favorable Performance guarantee."
+        },
+        {
+          "title": "Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures",
+          "url": "https://arxiv.org/abs/2609.11116",
+          "arxivId": "2609.11116",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "abstract": "We introduce cooperative integer programming games (CIPGs), in which agents pool budget constraints to accomplish indivisible tasks jointly and the characteristic function maps every coalition to the optimal value of a pooled integer program. Our goal is to identify an optimal coalition structure (OCS) and a stable one (OSCS). We derive a stability inequality that keeps each formed coalition in the Core with respect to itself, and present two mixed-integer OCS formulations, aggregated and disaggregated, proving that the disaggregated formulation is integer-equivalent yet yields a tighter LP relaxation. Building on the stability inequality we develop lifted stability cuts, several separation strategies inside a cutting-plane algorithm, an SCS-feasible primal heuristic that constructs warm starts with guaranteed stability, and a payoff-refinement step computing the Shapley value and the nucleolus of every formed coalition. On benchmark cooperative knapsack games, the method certifies optimality with up to 16 players and reaches MIP gaps below 1% at 30 players while evaluating 766 of the roughly $10^9$ coalition values."
+        },
+        {
+          "title": "MMS Allocation for Chores with Online Agent Arrivals",
+          "url": "https://arxiv.org/abs/2609.10960",
+          "arxivId": "2609.10960",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the fair allocation of $m$ indivisible chores to $n$ agents with subadditive cost functions arriving online in an arbitrary order. Upon an agent's arrival, we are informed of her cost function and must irrevocably assign her a set of chores. We focus on the Maximin Share (MMS) fairness notion and aim to compute an allocation in which all items are assigned, and no agent incurs a cost more than $α$ times her MMS. Without any prior information about the instance (other than $n$ and $m$), we design an algorithm with a competitive ratio of $O(\\min\\{n, k\\log^{1+ε}k, \\log m\\})$ for any constant $ε> 0$, where $k$ denotes the number of cost function types. Our bound matches the best known offline approximation guarantees for MMS under subadditive costs and is nearly optimal with respect to all three parameters: we show that even for binary additive cost functions, no online algorithm can achieve a competitive ratio of $o(\\min\\{n, k\\log k, \\log m\\})$. We then consider the setting in which the $k$ cost function types are known in advance (though the realized types of arriving agents are not). For additive cost functions, we provide an algorithm with a competitive ratio of $O(\\min\\{\\log k, \\log(kn)/\\log\\log(kn)\\})$, and show that constant-competitive algorithms do not exist for general $k$, even for the binary additive setting. For binary additive functions when $k \\le n$, we propose a $3$-competitive algorithm and establish a lower bound of $2$."
+        },
+        {
+          "title": "Utility-Level-Dependent Ambiguity",
+          "url": "https://arxiv.org/abs/2609.11748",
+          "arxivId": "2609.11748",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Experimental evidence suggests that ambiguity-sensitive choice can vary systematically with the circumstances of a decision. This paper isolates one channel within a stable preference relation: ambiguity weighting may depend on the act's certainty-equivalent level. After the standard Anscombe-Aumann calibration of consequence utility, a set of behavioral axioms yields a unique continuous family of normalized monotone capacities $\\{ν_v\\}_{v\\in(0,1)}$. Each nonendpoint act is evaluated by the Choquet integral associated with the capacity at its own interior certainty-equivalent level, while nonendpoint acts on the same indifference surface share the same capacity. Binary event comparisons identify local event weights at each elicited level and trace their cross-level variation, providing tests of the fixed-capacity restriction. Local uncertainty aversion is equivalent to convexity of $ν_v$ and yields an implicit multiple-priors representation with certainty-equivalent-indexed local cores. Certainty translation invariance holds if and only if the capacity is fixed across levels, recovering the maintained nondegenerate fixed-capacity Choquet expected utility benchmark; global mixture-betweenness yields implicit additive utility, and imposing both restrictions recovers full-support subjective expected utility. The capacity schedule is a reduced-form ambiguity weighting whose variation may reflect changes in ambiguity perception, ambiguity attitude, or both."
+        },
+        {
+          "title": "Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism",
+          "url": "https://arxiv.org/abs/2609.11374",
+          "arxivId": "2609.11374",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study a mechanism of cooperation in the Prisoner's Dilemma (PD). Incorporating social preferences as efficiency concerns into the PD game, we study how altruism translates into cooperation. Under complete information, cooperation requires the opponent's altruism to clear a threshold. We then introduce a subjective extension of Bayesian Nash equilibrium that relaxes the Common Prior Assumption, letting players hold heterogeneous, potentially misspecified beliefs about each other's altruistic type. Cooperation then depends on beliefs about altruism rather than altruism itself, and can be sustained even when opponents are, on average, only weakly altruistic. When fear of exploitation dominates the temptation to defect, beliefs about the opponent's cooperation become strategic complements, so a cooperative and an uncooperative equilibrium can coexist under identical payoffs and an identical, correctly specified prior. Using multiplier preferences, we then study how robust this belief-driven cooperation is to model misspecification. Cooperation is fragile: it survives only above a threshold level of confidence in one's own belief, and can unravel even when the belief itself correctly supports cooperation. As a formal extension, the same robust-control apparatus, applied to a player's action choice, nests Nash equilibrium, Bayesian Nash equilibrium, and logit Quantal Response Equilibrium as limiting cases. Cooperation depends less on how altruistic agents are than on what they believe about each other, and how confident they are that this belief is right."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+              "url": "https://arxiv.org/abs/2609.11923",
+              "arxivId": "2609.11923",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.DC",
+                "cs.AI",
+                "cs.GT",
+                "cs.MS",
+                "cs.PL"
+              ],
+              "abstract": "Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issued through a generic tree interface. On a GPU every kernel finishes in microseconds, so kernel launches and framework dispatch dominate the run time, and prior GPU implementations have lost to optimized CPU code. We observe that for a fixed game, everything about a CFR iteration except the numerical values is known before the first iteration runs. We propose GPU-CFR, a compiler and runtime built on this observation. It compiles any game once into static dataflow: flat edge and information-set arrays, precomputed indices, and depth-level batched passes fix the entire operation sequence, and only solver state changes between iterations. Static chance folding, depth-level execution blocks, and a dual-lane reach buffer cut the number of framework operations by up to 18.1x. Because shapes, indices, and buffer addresses never change, CUDA Graph Replay records the iteration once and replays it with a single graph launch. On one A100, across an eight-game suite that spans card games, dice games, and board games, GPU-CFR runs 29.8--80.4x faster than the fastest prior GPU CFR on the same accelerator, and 14--258x faster than LiteEFG, one of the fastest open-source CPU implementations, on the four largest games. The compiled representation carries most of that margin: on eight CPU threads with no accelerator it is already 2.2--51.1x faster than the GPU baseline. On the CPU the optimized path reproduces the reference iterates bitwise, and tree construction and graph capture pay for themselves within the first solve. GPU-CFR beats every CPU and GPU baseline on the mid-to-large games of the suite without changing the update rule."
+            },
+            {
+              "title": "Existence of the Core in Approval-Based Committee Elections",
+              "url": "https://arxiv.org/abs/2609.11912",
+              "arxivId": "2609.11912",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We settle the main open question in the theory of approval-based multi-winner elections: we show that there always exists a committee in the core. The core is a stability and group fairness concept. The proof introduces a new voting rule that optimizes an entropy-like objective function over committees and payment systems. All local optima of this objective function lie in the core, which implies that a core committee can be found in polynomial time."
+            },
+            {
+              "title": "ABRA: An algorithm which cannot converge to low-quality Nash equilibria",
+              "url": "https://arxiv.org/abs/2609.11889",
+              "arxivId": "2609.11889",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal. A recent work further shows that the equilibria which achieve this worst-case bound are not stable. Leveraging this, we design an Approximate Best Response Algorithm (ABRA) governed by a noise parameter and a rationality parameter. The noise allows ABRA to escape the bad equilibria and the rationality parameter balances any degradation in the objective function caused by the noise. We show for any two-player game that if ABRA converges to a Nash equilibrium, its system objective value is strictly more than 50% of optimal plus a term controlled by the noise parameter. Otherwise, ABRA converges to some recurrent class: if a recurrent class contains any action profile yielding system objective less than 50% of the optimal, the class must also contain either the optimal action profile or an action profile yielding system objective strictly more than 50\\% of the optimal by the same amount in addition to a factor controlled by noise parameter. The time that ABRA spends in such action profiles can be controlled using the rationality parameter. Using numerical simulations, we show that the minimum expected objective function is typically well above half of the optimal."
+            },
+            {
+              "title": "Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees",
+              "url": "https://arxiv.org/abs/2609.11863",
+              "arxivId": "2609.11863",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "abstract": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular maximization objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal, but that the equilibria which achieve this worst-case bound are not stable. To exploit this instability, we propose a family of algorithms which we call Truncated Noisy Best-Response (TNBR) Algorithms. These algorithms are flexibly characterized by agents asynchronously and stochastically selecting actions from a neighbourhood of their best response payoffs. We compute bounds on the recurrent classes of TNBR algorithms' associated Markov chains. Our bounds fall into two categories: first, \"Performance\" bounds ensure that TNBR algorithms always have a high-value recurrent state; second, \"Safety\" bounds ensure that TNBR algorithms never have arbitrarily-bad recurrent states. Furthermore, these two types of bounds are linked by a waterbed-like effect: every game with a poor Safety guarantee necessarily has a favorable Performance guarantee."
+            },
+            {
+              "title": "Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures",
+              "url": "https://arxiv.org/abs/2609.11116",
+              "arxivId": "2609.11116",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT"
+              ],
+              "abstract": "We introduce cooperative integer programming games (CIPGs), in which agents pool budget constraints to accomplish indivisible tasks jointly and the characteristic function maps every coalition to the optimal value of a pooled integer program. Our goal is to identify an optimal coalition structure (OCS) and a stable one (OSCS). We derive a stability inequality that keeps each formed coalition in the Core with respect to itself, and present two mixed-integer OCS formulations, aggregated and disaggregated, proving that the disaggregated formulation is integer-equivalent yet yields a tighter LP relaxation. Building on the stability inequality we develop lifted stability cuts, several separation strategies inside a cutting-plane algorithm, an SCS-feasible primal heuristic that constructs warm starts with guaranteed stability, and a payoff-refinement step computing the Shapley value and the nucleolus of every formed coalition. On benchmark cooperative knapsack games, the method certifies optimality with up to 16 players and reaches MIP gaps below 1% at 30 players while evaluating 766 of the roughly $10^9$ coalition values."
+            },
+            {
+              "title": "MMS Allocation for Chores with Online Agent Arrivals",
+              "url": "https://arxiv.org/abs/2609.10960",
+              "arxivId": "2609.10960",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the fair allocation of $m$ indivisible chores to $n$ agents with subadditive cost functions arriving online in an arbitrary order. Upon an agent's arrival, we are informed of her cost function and must irrevocably assign her a set of chores. We focus on the Maximin Share (MMS) fairness notion and aim to compute an allocation in which all items are assigned, and no agent incurs a cost more than $α$ times her MMS. Without any prior information about the instance (other than $n$ and $m$), we design an algorithm with a competitive ratio of $O(\\min\\{n, k\\log^{1+ε}k, \\log m\\})$ for any constant $ε> 0$, where $k$ denotes the number of cost function types. Our bound matches the best known offline approximation guarantees for MMS under subadditive costs and is nearly optimal with respect to all three parameters: we show that even for binary additive cost functions, no online algorithm can achieve a competitive ratio of $o(\\min\\{n, k\\log k, \\log m\\})$. We then consider the setting in which the $k$ cost function types are known in advance (though the realized types of arriving agents are not). For additive cost functions, we provide an algorithm with a competitive ratio of $O(\\min\\{\\log k, \\log(kn)/\\log\\log(kn)\\})$, and show that constant-competitive algorithms do not exist for general $k$, even for the binary additive setting. For binary additive functions when $k \\le n$, we propose a $3$-competitive algorithm and establish a lower bound of $2$."
+            },
+            {
+              "title": "Utility-Level-Dependent Ambiguity",
+              "url": "https://arxiv.org/abs/2609.11748",
+              "arxivId": "2609.11748",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Experimental evidence suggests that ambiguity-sensitive choice can vary systematically with the circumstances of a decision. This paper isolates one channel within a stable preference relation: ambiguity weighting may depend on the act's certainty-equivalent level. After the standard Anscombe-Aumann calibration of consequence utility, a set of behavioral axioms yields a unique continuous family of normalized monotone capacities $\\{ν_v\\}_{v\\in(0,1)}$. Each nonendpoint act is evaluated by the Choquet integral associated with the capacity at its own interior certainty-equivalent level, while nonendpoint acts on the same indifference surface share the same capacity. Binary event comparisons identify local event weights at each elicited level and trace their cross-level variation, providing tests of the fixed-capacity restriction. Local uncertainty aversion is equivalent to convexity of $ν_v$ and yields an implicit multiple-priors representation with certainty-equivalent-indexed local cores. Certainty translation invariance holds if and only if the capacity is fixed across levels, recovering the maintained nondegenerate fixed-capacity Choquet expected utility benchmark; global mixture-betweenness yields implicit additive utility, and imposing both restrictions recovers full-support subjective expected utility. The capacity schedule is a reduced-form ambiguity weighting whose variation may reflect changes in ambiguity perception, ambiguity attitude, or both."
+            },
+            {
+              "title": "Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism",
+              "url": "https://arxiv.org/abs/2609.11374",
+              "arxivId": "2609.11374",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study a mechanism of cooperation in the Prisoner's Dilemma (PD). Incorporating social preferences as efficiency concerns into the PD game, we study how altruism translates into cooperation. Under complete information, cooperation requires the opponent's altruism to clear a threshold. We then introduce a subjective extension of Bayesian Nash equilibrium that relaxes the Common Prior Assumption, letting players hold heterogeneous, potentially misspecified beliefs about each other's altruistic type. Cooperation then depends on beliefs about altruism rather than altruism itself, and can be sustained even when opponents are, on average, only weakly altruistic. When fear of exploitation dominates the temptation to defect, beliefs about the opponent's cooperation become strategic complements, so a cooperative and an uncooperative equilibrium can coexist under identical payoffs and an identical, correctly specified prior. Using multiplier preferences, we then study how robust this belief-driven cooperation is to model misspecification. Cooperation is fragile: it survives only above a threshold level of confidence in one's own belief, and can unravel even when the belief itself correctly supports cooperation. As a formal extension, the same robust-control apparatus, applied to a player's action choice, nests Nash equilibrium, Bayesian Nash equilibrium, and logit Quantal Response Equilibrium as limiting cases. Cooperation depends less on how altruistic agents are than on what they believe about each other, and how confident they are that this belief is right."
+            }
+          ],
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 6.5,
+                  "theoreticalStrength": 6.1,
+                  "guaranteeQuality": 4.1,
+                  "readingValue": 5.4,
+                  "aiRelevance": 6.5,
+                  "agtRelevance": 8.5,
+                  "penalty": -1.0,
+                  "baseTotal": 21.1,
+                  "bonus": 4.6,
+                  "total": 21.8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 5.2,
+                  "theoreticalStrength": 8.4,
+                  "guaranteeQuality": 4.2,
+                  "readingValue": 4.2,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 6.0,
+                  "penalty": -1.0,
+                  "baseTotal": 21.0,
+                  "bonus": 6.0,
+                  "total": 16.2
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 6.6,
+                  "theoreticalStrength": 8.4,
+                  "guaranteeQuality": 5.4,
+                  "readingValue": 5.5,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 8.5,
+                  "penalty": -1.0,
+                  "baseTotal": 24.9,
+                  "bonus": 7.1,
+                  "total": 27.2
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 5.8,
+                  "theoreticalStrength": 7.6,
+                  "guaranteeQuality": 4.6,
+                  "readingValue": 4.7,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 8.5,
+                  "penalty": -1.0,
+                  "baseTotal": 21.7,
+                  "bonus": 6.1,
+                  "total": 23.6
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 5.6,
+                  "theoreticalStrength": 5.2,
+                  "guaranteeQuality": 4.4,
+                  "readingValue": 4.5,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 8.5,
+                  "penalty": -1.0,
+                  "baseTotal": 18.7,
+                  "bonus": 5.3,
+                  "total": 20.4
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 6.1,
+                  "theoreticalStrength": 7.9,
+                  "guaranteeQuality": 4.9,
+                  "readingValue": 5.0,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 6.0,
+                  "penalty": -1.0,
+                  "baseTotal": 22.9,
+                  "bonus": 6.5,
+                  "total": 17.6
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 5.0,
+                  "theoreticalStrength": 6.0,
+                  "guaranteeQuality": 4.0,
+                  "readingValue": 5.3,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 6.0,
+                  "penalty": -1.0,
+                  "baseTotal": 19.3,
+                  "bonus": 5.5,
+                  "total": 14.9
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 6.1,
+                  "theoreticalStrength": 7.9,
+                  "guaranteeQuality": 3.7,
+                  "readingValue": 3.7,
+                  "aiRelevance": 8.5,
+                  "agtRelevance": 8.5,
+                  "penalty": -1.0,
+                  "baseTotal": 20.4,
+                  "bonus": 5.8,
+                  "total": 22.3
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+              "url": "https://arxiv.org/abs/2609.11923",
+              "arxivId": "2609.11923",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.DC",
+                "cs.AI",
+                "cs.GT",
+                "cs.MS",
+                "cs.PL"
+              ],
+              "scores": {
+                "modelNaturalness": 6.5,
+                "theoreticalStrength": 6.1,
+                "guaranteeQuality": 4.1,
+                "readingValue": 5.4,
+                "aiRelevance": 6.5,
+                "agtRelevance": 8.5,
+                "penalty": -1.0,
+                "baseTotal": 21.1,
+                "bonus": 4.6,
+                "total": 21.8
+              }
+            },
+            {
+              "title": "Existence of the Core in Approval-Based Committee Elections",
+              "url": "https://arxiv.org/abs/2609.11912",
+              "arxivId": "2609.11912",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.2,
+                "theoreticalStrength": 8.4,
+                "guaranteeQuality": 4.2,
+                "readingValue": 4.2,
+                "aiRelevance": 8.5,
+                "agtRelevance": 6.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 6.0,
+                "total": 16.2
+              }
+            },
+            {
+              "title": "ABRA: An algorithm which cannot converge to low-quality Nash equilibria",
+              "url": "https://arxiv.org/abs/2609.11889",
+              "arxivId": "2609.11889",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.6,
+                "theoreticalStrength": 8.4,
+                "guaranteeQuality": 5.4,
+                "readingValue": 5.5,
+                "aiRelevance": 8.5,
+                "agtRelevance": 8.5,
+                "penalty": -1.0,
+                "baseTotal": 24.9,
+                "bonus": 7.1,
+                "total": 27.2
+              }
+            },
+            {
+              "title": "Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees",
+              "url": "https://arxiv.org/abs/2609.11863",
+              "arxivId": "2609.11863",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA",
+                "eess.SY"
+              ],
+              "scores": {
+                "modelNaturalness": 5.8,
+                "theoreticalStrength": 7.6,
+                "guaranteeQuality": 4.6,
+                "readingValue": 4.7,
+                "aiRelevance": 8.5,
+                "agtRelevance": 8.5,
+                "penalty": -1.0,
+                "baseTotal": 21.7,
+                "bonus": 6.1,
+                "total": 23.6
+              }
+            },
+            {
+              "title": "Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures",
+              "url": "https://arxiv.org/abs/2609.11116",
+              "arxivId": "2609.11116",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.6,
+                "theoreticalStrength": 5.2,
+                "guaranteeQuality": 4.4,
+                "readingValue": 4.5,
+                "aiRelevance": 8.5,
+                "agtRelevance": 8.5,
+                "penalty": -1.0,
+                "baseTotal": 18.7,
+                "bonus": 5.3,
+                "total": 20.4
+              }
+            },
+            {
+              "title": "MMS Allocation for Chores with Online Agent Arrivals",
+              "url": "https://arxiv.org/abs/2609.10960",
+              "arxivId": "2609.10960",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.1,
+                "theoreticalStrength": 7.9,
+                "guaranteeQuality": 4.9,
+                "readingValue": 5.0,
+                "aiRelevance": 8.5,
+                "agtRelevance": 6.0,
+                "penalty": -1.0,
+                "baseTotal": 22.9,
+                "bonus": 6.5,
+                "total": 17.6
+              }
+            },
+            {
+              "title": "Utility-Level-Dependent Ambiguity",
+              "url": "https://arxiv.org/abs/2609.11748",
+              "arxivId": "2609.11748",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.3,
+                "aiRelevance": 8.5,
+                "agtRelevance": 6.0,
+                "penalty": -1.0,
+                "baseTotal": 19.3,
+                "bonus": 5.5,
+                "total": 14.9
+              }
+            },
+            {
+              "title": "Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism",
+              "url": "https://arxiv.org/abs/2609.11374",
+              "arxivId": "2609.11374",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.1,
+                "theoreticalStrength": 7.9,
+                "guaranteeQuality": 3.7,
+                "readingValue": 3.7,
+                "aiRelevance": 8.5,
+                "agtRelevance": 8.5,
+                "penalty": -1.0,
+                "baseTotal": 20.4,
+                "bonus": 5.8,
+                "total": 22.3
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+          "url": "https://arxiv.org/abs/2609.11923",
+          "arxivId": "2609.11923",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.DC",
+            "cs.AI",
+            "cs.GT",
+            "cs.MS",
+            "cs.PL"
+          ],
+          "scores": {
+            "modelNaturalness": 6.5,
+            "theoreticalStrength": 6.1,
+            "guaranteeQuality": 4.1,
+            "readingValue": 5.4,
+            "aiRelevance": 6.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 21.1,
+            "bonus": 4.6,
+            "total": 21.8
+          }
+        },
+        {
+          "title": "Existence of the Core in Approval-Based Committee Elections",
+          "url": "https://arxiv.org/abs/2609.11912",
+          "arxivId": "2609.11912",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.2,
+            "theoreticalStrength": 8.4,
+            "guaranteeQuality": 4.2,
+            "readingValue": 4.2,
+            "aiRelevance": 8.5,
+            "agtRelevance": 6.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 6.0,
+            "total": 16.2
+          }
+        },
+        {
+          "title": "ABRA: An algorithm which cannot converge to low-quality Nash equilibria",
+          "url": "https://arxiv.org/abs/2609.11889",
+          "arxivId": "2609.11889",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.6,
+            "theoreticalStrength": 8.4,
+            "guaranteeQuality": 5.4,
+            "readingValue": 5.5,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 24.9,
+            "bonus": 7.1,
+            "total": 27.2
+          }
+        },
+        {
+          "title": "Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees",
+          "url": "https://arxiv.org/abs/2609.11863",
+          "arxivId": "2609.11863",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 5.8,
+            "theoreticalStrength": 7.6,
+            "guaranteeQuality": 4.6,
+            "readingValue": 4.7,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 21.7,
+            "bonus": 6.1,
+            "total": 23.6
+          }
+        },
+        {
+          "title": "Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures",
+          "url": "https://arxiv.org/abs/2609.11116",
+          "arxivId": "2609.11116",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.6,
+            "theoreticalStrength": 5.2,
+            "guaranteeQuality": 4.4,
+            "readingValue": 4.5,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 18.7,
+            "bonus": 5.3,
+            "total": 20.4
+          }
+        },
+        {
+          "title": "MMS Allocation for Chores with Online Agent Arrivals",
+          "url": "https://arxiv.org/abs/2609.10960",
+          "arxivId": "2609.10960",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.1,
+            "theoreticalStrength": 7.9,
+            "guaranteeQuality": 4.9,
+            "readingValue": 5.0,
+            "aiRelevance": 8.5,
+            "agtRelevance": 6.0,
+            "penalty": -1.0,
+            "baseTotal": 22.9,
+            "bonus": 6.5,
+            "total": 17.6
+          }
+        },
+        {
+          "title": "Utility-Level-Dependent Ambiguity",
+          "url": "https://arxiv.org/abs/2609.11748",
+          "arxivId": "2609.11748",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.3,
+            "aiRelevance": 8.5,
+            "agtRelevance": 6.0,
+            "penalty": -1.0,
+            "baseTotal": 19.3,
+            "bonus": 5.5,
+            "total": 14.9
+          }
+        },
+        {
+          "title": "Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism",
+          "url": "https://arxiv.org/abs/2609.11374",
+          "arxivId": "2609.11374",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.1,
+            "theoreticalStrength": 7.9,
+            "guaranteeQuality": 3.7,
+            "readingValue": 3.7,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 20.4,
+            "bonus": 5.8,
+            "total": 22.3
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "ABRA: An algorithm which cannot converge to low-quality Nash equilibria",
+          "url": "https://arxiv.org/abs/2609.11889",
+          "arxivId": "2609.11889",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.6,
+            "theoreticalStrength": 8.4,
+            "guaranteeQuality": 5.4,
+            "readingValue": 5.5,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 24.9,
+            "bonus": 7.1,
+            "total": 27.2
+          }
+        },
+        {
+          "title": "Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees",
+          "url": "https://arxiv.org/abs/2609.11863",
+          "arxivId": "2609.11863",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 5.8,
+            "theoreticalStrength": 7.6,
+            "guaranteeQuality": 4.6,
+            "readingValue": 4.7,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 21.7,
+            "bonus": 6.1,
+            "total": 23.6
+          }
+        },
+        {
+          "title": "Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism",
+          "url": "https://arxiv.org/abs/2609.11374",
+          "arxivId": "2609.11374",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.1,
+            "theoreticalStrength": 7.9,
+            "guaranteeQuality": 3.7,
+            "readingValue": 3.7,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 20.4,
+            "bonus": 5.8,
+            "total": 22.3
+          }
+        },
+        {
+          "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+          "url": "https://arxiv.org/abs/2609.11923",
+          "arxivId": "2609.11923",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.DC",
+            "cs.AI",
+            "cs.GT",
+            "cs.MS",
+            "cs.PL"
+          ],
+          "scores": {
+            "modelNaturalness": 6.5,
+            "theoreticalStrength": 6.1,
+            "guaranteeQuality": 4.1,
+            "readingValue": 5.4,
+            "aiRelevance": 6.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 21.1,
+            "bonus": 4.6,
+            "total": 21.8
+          }
+        },
+        {
+          "title": "Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures",
+          "url": "https://arxiv.org/abs/2609.11116",
+          "arxivId": "2609.11116",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.6,
+            "theoreticalStrength": 5.2,
+            "guaranteeQuality": 4.4,
+            "readingValue": 4.5,
+            "aiRelevance": 8.5,
+            "agtRelevance": 8.5,
+            "penalty": -1.0,
+            "baseTotal": 18.7,
+            "bonus": 5.3,
+            "total": 20.4
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "ABRA: An algorithm which cannot converge to low-quality Nash equilibria",
+            "url": "https://arxiv.org/abs/2609.11889",
+            "arxivId": "2609.11889",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal. A recent work further shows tha...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal. A recent work further shows tha...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees",
+            "url": "https://arxiv.org/abs/2609.11863",
+            "arxivId": "2609.11863",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.MA",
+              "eess.SY"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular maximization objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal, but that the equil...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We consider a game theoretic approach to solve multi-agent coordination problems with submodular maximization objectives. It is known for such problems that the Nash equilibria for the corresponding game are always within 50% of the optimal, but that the equil...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism",
+            "url": "https://arxiv.org/abs/2609.11374",
+            "arxivId": "2609.11374",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We study a mechanism of cooperation in the Prisoner's Dilemma (PD). Incorporating social preferences as efficiency concerns into the PD game, we study how altruism translates into cooperation. Under complete information, cooperation requires the opponent's alt...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We study a mechanism of cooperation in the Prisoner's Dilemma (PD). Incorporating social preferences as efficiency concerns into the PD game, we study how altruism translates into cooperation. Under complete information, cooperation requires the opponent's alt...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+            "url": "https://arxiv.org/abs/2609.11923",
+            "arxivId": "2609.11923",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.DC",
+              "cs.AI",
+              "cs.GT",
+              "cs.MS",
+              "cs.PL"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issu...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issu...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures",
+            "url": "https://arxiv.org/abs/2609.11116",
+            "arxivId": "2609.11116",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "math.OC",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We introduce cooperative integer programming games (CIPGs), in which agents pool budget constraints to accomplish indivisible tasks jointly and the characteristic function maps every coalition to the optimal value of a pooled integer program. Our goal is to id...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We introduce cooperative integer programming games (CIPGs), in which agents pool budget constraints to accomplish indivisible tasks jointly and the characteristic function maps every coalition to the optimal value of a pooled integer program. Our goal is to id...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-09-10",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202609100000 TO 202609102359\"",
+            "totalResults": 12,
+            "fetchedCount": 12
+          }
+        },
+        "dedupedCount": 12
+      },
+      "arxivTotalResults": 12,
+      "fetchedCount": 12,
+      "fetchedPapers": [
+        {
+          "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+          "url": "https://arxiv.org/abs/2609.11808",
+          "arxivId": "2609.11808",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Late-interaction retrieval is the state-of-the-art for visual document search, but it pays for its accuracy in storage. Existing compression methods retain a subset or local average of the N~1,000 vectors per page. Under aggressive storage budgets, however, these methods degrade sharply, and alternatives require retraining the encoder. Investigating this degradation across three encoders, we found two consistent properties: the vectors lie exactly on the unit sphere and concentrate near a manifold of intrinsic dimension five to six. This geometry yields two insights. First, standard k-means centroids fall inside the sphere, causing systematic underestimation of MaxSim scores. Normalizing them to the surface is a free correction worth up to +0.093 nDCG@5 over raw centroids. Second, because the page manifold has few degrees of freedom, the full set of vectors can be regenerated from only a few. To this end, we introduce Generative Late-Interaction Embeddings (GLIE): k << N vectors per page learned from the normalized centroids to serve as both a lightweight index and a basis for regenerating the page's full embedding set. At query time, search runs exclusively on these k vectors, and a decoder expands only the top candidates back to all N vectors for exact rescoring. At four vectors per page on ViDoRe v1, GLIE retains nearly 80% of the uncompressed system's nDCG@5, against 70% for the best prior post-hoc method. These results use a 415K-parameter network fitted in under three GPU-minutes on just a thousand training pages. At a matched training budget, fine-tuning the encoder does not reach even the training-free stage of GLIE, and the full system beats it at every budget. These patterns hold across a second encoder and ViDoRe v2. By reconstructing evidence on demand rather than sampling it, GLIE opens a new axis for storage-efficient retrieval, with the decoder as its main design surface."
+        },
+        {
+          "title": "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety",
+          "url": "https://arxiv.org/abs/2609.11758",
+          "arxivId": "2609.11758",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Allowing large language models (LLMs) to retrieve information from a set of trusted documents can increase reliability and reduce hallucination. However, recent work has demonstrated that retrieval-augmented generation (RAG) can have unintended side effects on the overall safety of the generated responses, when prompted for harmful or dangerous content. A clearer understanding of the mechanisms leading to this result is needed, as increasing numbers of end users turn to RAG to incorporate corporate documents and knowledge bases into LLM-based systems. We introduce RAG-Safety-Bench, a benchmark to measure the safety impact of RAG on LLM models. By removing the confounding effect of retriever quality, and cleanly separating the problem into four conditions -- non-RAG, RAG with an oracle document containing the answer to the harmful request, RAG with documents related to the harmful request but without the specific answer, and RAG with random, safe documents -- the benchmark isolates the impacts of different factors in the observed safety degradation. We report results across five open-source LLMs, showing an inverse relationship between benign and unsafe capability, strong evidence that baseline safety guardrails do not lead to downstream safety guarantees in the RAG case, and model-specific support for previous findings that even benign documents can lead to unsafe generation in retrieval-enabled systems."
+        },
+        {
+          "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+          "url": "https://arxiv.org/abs/2609.11646",
+          "arxivId": "2609.11646",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment where data sensitivity precludes third-party LLM APIs, we compare three Query Performance Prediction (QPP) paradigms for retrieval sufficiency in RAG: score-based features, a content-based LLM judge, and a hybrid. On the eight ViDoRe vision domains (14,514 queries), our 24 non-lexical features (GeneralQPP; 15 distribution-shape, 5 query-surface, 4 global) reach a weighted-average AUROC of 0.856 at 2 ms per query, ahead of a classic-QPP literature pool (Classic Full, 0.835) and well above a local Qwen3.5 LLM judge (0.649, +0.207 gap; $\\sim$3000$\\times$ faster and cheaper per query). Adding the LLM judgment as one feature (hybrid) matches S1 on ViDoRe (0.863) but gains a statistically significant edge on SÚJB (AUROC 0.911 at Hit@5, adversarial-detection 0.954; 1,510 queries, 500 synthetic adversarial), at LLM latency. Rankings agree across datasets (Spearman $ρ= 0.90$). Under Leave-One-Domain-Out, S1 drops to 0.706; a 13-feature LODO-stepwise subset (S1-Lean) recovers to 0.719 (+0.032 over the literature pool)."
+        },
+        {
+          "title": "FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation",
+          "url": "https://arxiv.org/abs/2609.11632",
+          "arxivId": "2609.11632",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Federated recommendation enables collaborative model training while keeping user interaction data on local clients. A central problem in federated recommendation is how to aggregate useful information across clients for personalized recommendation. Existing personalized aggregation methods usually construct client relations from predefined parameter-based assumptions, such as parameter similarity or complementarity, and use these relations to determine aggregation weights. However, such methods construct a single global relation, which is insufficient to capture the hierarchical and multi-granularity nature of user relations in recommendation. Moreover, these predefined relations cannot directly reflect whether the related clients can improve prediction performance after aggregation. To address these limitations, we propose FedHUR, a federated recommendation framework for learning hierarchical utility-guided client relations. FedHUR takes item-item filters as the object for relation construction and aggregation. Specifically, it first aggregates and clusters each client's local information to obtain global hierarchical information. Each client computes hierarchical utility signals based on its local information and the global hierarchical information, indicating which collaborative information is useful for improving its prediction. The server uses these utility signals to retrieve clients that are useful to that client for further personalized aggregation. Extensive experiments on five real-world datasets show that FedHUR consistently outperforms existing federated recommendation baselines, demonstrating the effectiveness of hierarchical utility-guided client relation learning. Code is available at https://github.com/Mingzhe-Han/FedHUR."
+        },
+        {
+          "title": "TimelyRAG: Semantic-Temporal Hybrid Retrieval for Time-Critical Question Answering in Overlapping-Evolving Documents",
+          "url": "https://arxiv.org/abs/2609.11572",
+          "arxivId": "2609.11572",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Although large language models (LLMs) and retrieval-augmented generation (RAG) have advanced open-domain question answering (QA), they remain unreliable when documents evolve through amendments. Existing time-sensitive retrieval methods address only the disjoint-evolving environment, where each update is an independent snapshot. However, laws, policies, and regulations often operate in overlapping-evolving environments, where amendments override earlier clauses while preserving most content, creating strong semantic overlap across versions. We propose TimelyRAG, a retriever-agnostic framework that incorporates temporal distance into ranking to align queries with version-appropriate documents. We also introduce TimelyQABench, the first benchmark for regulation-heavy domains with overlapping-evolving challenges. Experiments show consistent gains, up to +28.6% in nDCG@10, highlighting the importance of temporal reasoning for reliable QA over evolving documents. All resources are available at https://github.com/kaist-dmlab/TimelyRAG."
+        },
+        {
+          "title": "ReGround: Grounding Reviewer Comments in Multimodal Evidence",
+          "url": "https://arxiv.org/abs/2609.11460",
+          "arxivId": "2609.11460",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Reviewer comments naturally relate to specific parts of the reviewed paper, yet grounding these comments to the underlying evidence is difficult due to long multimodal documents. Existing benchmarks do not capture this setting and largely focus on explicit, information-seeking queries. We introduce ReGround, a large-scale dataset for reviewer comment grounding that links 10,267 reviewer comments to 16,274 evidence in the original anonymous submission of 3,656 papers. We build on a simple observation: author rebuttals often include explicit references to content of the submission used to address reviewer comments, providing a high-precision annotation source. We cast grounding as a retrieval task and evaluate a wide range of retrieval methods. Results show that retrieval over the entire paper content performs poorly, evidence-type inference is a major bottleneck, and multimodal evidence provides complementary signals that text alone misses. Our dataset exposes grounding reviewer comments as a difficult and practically important problem for scientific document understanding."
+        },
+        {
+          "title": "SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations",
+          "url": "https://arxiv.org/abs/2609.11414",
+          "arxivId": "2609.11414",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Large language models exhibit complementary strengths, motivating routing methods that dispatch each query to the most suitable model. Although existing routers are effective in single-turn settings, they do not directly transfer to multi-turn dialogue, where routing performance critically depends on how historical context is segmented, retained, and incorporated into the current prompt. This introduces two fundamental challenges: preventing information loss and information confusion during context construction, and evaluating routing quality without conflating model selection with prompt construction quality. In this paper, we propose SWRouter, a Similarity-Contractive Window Router for multi-turn large language model routing. SWRouter combines a similarity-based context segmentation mechanism for prompt construction with a dual-metric evaluation framework that decouples construction accuracy from router performance. Experiments on multi-turn dialogue benchmarks demonstrate that SWRouter consistently surpasses strong baselines, achieving a 16.26% improvement in evaluation accuracy over the best individual large language model and an additional 8.22% gain over the Conv-ID Context baseline. Our results highlight that multi-turn large language model routing requires a joint design of context construction and evaluation, rather than a direct extension of single-turn routing methods."
+        },
+        {
+          "title": "VikingRAG: Accurate and Token-efficient Retrieval-augmented Generation over Structured Documents",
+          "url": "https://arxiv.org/abs/2609.11390",
+          "arxivId": "2609.11390",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CL",
+            "cs.DB",
+            "cs.LG"
+          ],
+          "abstract": "State-of-the-art retrieval-augmented generation (RAG) methods exploit document structures to acquire sufficient evidence, but often incur substantial token costs. To reduce structural-context tokens without compromising high RAG accuracy, we present {\\sf VikingRAG}, a directory-aware semantic data management system that tightly integrates semantic and structural access to support structural-context-efficient, evidence-gap-driven multi-round retrieval. To further reduce token overhead of multi-round interaction, we materialize agentic multi-round retrieval traces as experience edges, and reuse these edges for similar queries, avoiding repeated multi-round exploration. To additionally reduce token costs when agentic multi-round retrieval is unnecessary, we introduce an adaptive escalation strategy that answers from one-round experience-augmented retrieval when the evidence is sufficient, and invokes agentic multi-round retrieval only otherwise. Experiments on real datasets show that the base system {\\sf VikingRAG} matches high accuracy of state-of-the-art methods while consuming only 11.6\\%--51.9\\% of their tokens. With retrieval-trace reuse and adaptive escalation, token costs drop to 5.1\\%--32.5\\% while maintaining competitive accuracy and practical document-storage performance, showing the utility of this work for emerging AI knowledge bases."
+        },
+        {
+          "title": "REVA: Reusable Evidence View Aggregation for Context-Efficient RAG Serving",
+          "url": "https://arxiv.org/abs/2609.11209",
+          "arxivId": "2609.11209",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Retrieval-augmented generation (RAG) improves knowledge-intensive large language model (LLM) applications by conditioning generation on retrieved documents, but longer contexts increase latency, key-value (KV) cache memory, and token cost. Post-retrieval compression can reduce this cost, yet existing compressors often operate independently for each query, rely on auxiliary models or rewriting, and introduce online overhead that can offset the benefit of shorter prompts. We revisit RAG compression from a data-mining perspective by aggregating historical query--document--model interactions into reusable evidence views. We first show that modern compressors have unstable gains over simple truncation and can add substantial inference-time latency. We then propose Reusable Evidence View Aggregation (REVA), a framework that mines the target generator's historical attention traces into a document-keyed, budget-agnostic score store. REVA maps token-level attention to readable word units, aggregates importance across repeated document accesses, and renders budget-specific plain-text views that preserve document order and the standard RAG interface. Across four representative benchmarks and modern LLMs, REVA improves generation quality by 1.0--5.8 points over existing advances, while reducing compression overhead by a factor of 5.3 to 15.6, adding less than 40 ms of latency."
+        },
+        {
+          "title": "Agentic Share-of-Search: A Multi-Agent AI System for Competitive Decision-Making in LLM-Mediated E-Commerce",
+          "url": "https://arxiv.org/abs/2609.11190",
+          "arxivId": "2609.11190",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "AI shopping assistants increasingly redirect consumer discovery, creating an urgent need for tools that support seller-side competitive decision-making. We present a multi-agent AI system that automates competitive visibility measurement and root cause diagnosis in LLM-mediated ecommerce. The system introduces Agentic Share-of-Search (ASoS) as the decision target, deploys query agents across leading AI platforms, and uses a ReAct-based diagnostic agent to recommend prioritized merchandising interventions. A 100-trial ablation study, presented as a feasibility evaluation of this prototype, shows the agent recovers the ablated signal in 39% of trials (95% CI: 30.0% - 48.8%, 5.5x over chance), rising to 63.9% among high-correlation ablations."
+        },
+        {
+          "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+          "url": "https://arxiv.org/abs/2609.11115",
+          "arxivId": "2609.11115",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI benchmarks, covering LLM evaluation, agentic and tool-use benchmarks, coding, reasoning, safety, and domain-specific evaluations. The system combines daily discovery of benchmark papers, repositories, datasets, and releases with a searchable benchmark catalog, mentions in model cards and technical reports, and score histories. It retains source identities and citations so readers can inspect candidate benchmarks and their evaluation evidence. Daily discovery draws on 37 sources: 13 direct connectors and 24 first-party research and engineering feeds. The catalog contains 1,283 source records drawn from 4 benchmark catalogs and 12,916 numeric observations on 790 records. We describe collection and retrieval, audit the full catalog, and examine benchmark saturation, adoption trends, and the limits of score comparisons. A worked example walks through a complete prior-art search, showing how to query the catalog and inspect benchmark evidence when designing a new evaluation. We release the web dashboard with a benchmark leaderboard, a Pareto frontier view of score against measured use, saturation and trend views, daily feeds, downloadable evidence, a command-line interface (CLI) for offline queries, and reproducible analysis."
+        },
+        {
+          "title": "UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems",
+          "url": "https://arxiv.org/abs/2609.11052",
+          "arxivId": "2609.11052",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Industrial recommender systems use cascaded stages with different objectives, feature spaces, and latency constraints. Optimizing pre-ranking and ranking separately can create cross-stage inconsistency: upstream models may filter out items preferred by downstream rankers, and independently tuned downstream fusion can offset upstream improvements. Existing multi-task fusion methods focus on multi-objective fusion within the ranking stage, and cross-stage methods typically only add a downstream score factor to upstream ranking. Joint optimization of fusion modules across both stages remains largely unexplored. We propose UniRec, a Unified Cross-stage Recommendation Fusion model. First, the two fusion agents partially share input embeddings and are trained in a single computation graph, so gradients from either stage propagate through the shared representation and influence the other. Second, we introduce a dual-axis preference alignment objective: a vertical cross-stage consistency term transfers downstream pairwise preferences to the upstream fusion score, and a horizontal compact aggregation term reorganizes dozens of pairwise objectives over heterogeneous prior signals into bidirectional preference evidence. Third, we find that unconstrained end-to-end fusion optimization can exploit imbalances in item attribute distributions, over-concentrating on high-reward regions at the cost of other objectives. We therefore add an attribute group-relative regularization that computes advantages within attribute groups and normalizes the policy over the same groups, so uniformly promoting an entire high-reward group yields no optimization gain. Offline, UniRec consistently outperforms single-stage fusion and cross-stage coordination baselines. Online A/B tests show a 0.616\\% gain in app usage duration. UniRec is fully deployed on the Kuaishou platform."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+              "url": "https://arxiv.org/abs/2609.11808",
+              "arxivId": "2609.11808",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Late-interaction retrieval is the state-of-the-art for visual document search, but it pays for its accuracy in storage. Existing compression methods retain a subset or local average of the N~1,000 vectors per page. Under aggressive storage budgets, however, these methods degrade sharply, and alternatives require retraining the encoder. Investigating this degradation across three encoders, we found two consistent properties: the vectors lie exactly on the unit sphere and concentrate near a manifold of intrinsic dimension five to six. This geometry yields two insights. First, standard k-means centroids fall inside the sphere, causing systematic underestimation of MaxSim scores. Normalizing them to the surface is a free correction worth up to +0.093 nDCG@5 over raw centroids. Second, because the page manifold has few degrees of freedom, the full set of vectors can be regenerated from only a few. To this end, we introduce Generative Late-Interaction Embeddings (GLIE): k << N vectors per page learned from the normalized centroids to serve as both a lightweight index and a basis for regenerating the page's full embedding set. At query time, search runs exclusively on these k vectors, and a decoder expands only the top candidates back to all N vectors for exact rescoring. At four vectors per page on ViDoRe v1, GLIE retains nearly 80% of the uncompressed system's nDCG@5, against 70% for the best prior post-hoc method. These results use a 415K-parameter network fitted in under three GPU-minutes on just a thousand training pages. At a matched training budget, fine-tuning the encoder does not reach even the training-free stage of GLIE, and the full system beats it at every budget. These patterns hold across a second encoder and ViDoRe v2. By reconstructing evidence on demand rather than sampling it, GLIE opens a new axis for storage-efficient retrieval, with the decoder as its main design surface."
+            },
+            {
+              "title": "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety",
+              "url": "https://arxiv.org/abs/2609.11758",
+              "arxivId": "2609.11758",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Allowing large language models (LLMs) to retrieve information from a set of trusted documents can increase reliability and reduce hallucination. However, recent work has demonstrated that retrieval-augmented generation (RAG) can have unintended side effects on the overall safety of the generated responses, when prompted for harmful or dangerous content. A clearer understanding of the mechanisms leading to this result is needed, as increasing numbers of end users turn to RAG to incorporate corporate documents and knowledge bases into LLM-based systems. We introduce RAG-Safety-Bench, a benchmark to measure the safety impact of RAG on LLM models. By removing the confounding effect of retriever quality, and cleanly separating the problem into four conditions -- non-RAG, RAG with an oracle document containing the answer to the harmful request, RAG with documents related to the harmful request but without the specific answer, and RAG with random, safe documents -- the benchmark isolates the impacts of different factors in the observed safety degradation. We report results across five open-source LLMs, showing an inverse relationship between benign and unsafe capability, strong evidence that baseline safety guardrails do not lead to downstream safety guarantees in the RAG case, and model-specific support for previous findings that even benign documents can lead to unsafe generation in retrieval-enabled systems."
+            },
+            {
+              "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+              "url": "https://arxiv.org/abs/2609.11646",
+              "arxivId": "2609.11646",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment where data sensitivity precludes third-party LLM APIs, we compare three Query Performance Prediction (QPP) paradigms for retrieval sufficiency in RAG: score-based features, a content-based LLM judge, and a hybrid. On the eight ViDoRe vision domains (14,514 queries), our 24 non-lexical features (GeneralQPP; 15 distribution-shape, 5 query-surface, 4 global) reach a weighted-average AUROC of 0.856 at 2 ms per query, ahead of a classic-QPP literature pool (Classic Full, 0.835) and well above a local Qwen3.5 LLM judge (0.649, +0.207 gap; $\\sim$3000$\\times$ faster and cheaper per query). Adding the LLM judgment as one feature (hybrid) matches S1 on ViDoRe (0.863) but gains a statistically significant edge on SÚJB (AUROC 0.911 at Hit@5, adversarial-detection 0.954; 1,510 queries, 500 synthetic adversarial), at LLM latency. Rankings agree across datasets (Spearman $ρ= 0.90$). Under Leave-One-Domain-Out, S1 drops to 0.706; a 13-feature LODO-stepwise subset (S1-Lean) recovers to 0.719 (+0.032 over the literature pool)."
+            },
+            {
+              "title": "FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation",
+              "url": "https://arxiv.org/abs/2609.11632",
+              "arxivId": "2609.11632",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Federated recommendation enables collaborative model training while keeping user interaction data on local clients. A central problem in federated recommendation is how to aggregate useful information across clients for personalized recommendation. Existing personalized aggregation methods usually construct client relations from predefined parameter-based assumptions, such as parameter similarity or complementarity, and use these relations to determine aggregation weights. However, such methods construct a single global relation, which is insufficient to capture the hierarchical and multi-granularity nature of user relations in recommendation. Moreover, these predefined relations cannot directly reflect whether the related clients can improve prediction performance after aggregation. To address these limitations, we propose FedHUR, a federated recommendation framework for learning hierarchical utility-guided client relations. FedHUR takes item-item filters as the object for relation construction and aggregation. Specifically, it first aggregates and clusters each client's local information to obtain global hierarchical information. Each client computes hierarchical utility signals based on its local information and the global hierarchical information, indicating which collaborative information is useful for improving its prediction. The server uses these utility signals to retrieve clients that are useful to that client for further personalized aggregation. Extensive experiments on five real-world datasets show that FedHUR consistently outperforms existing federated recommendation baselines, demonstrating the effectiveness of hierarchical utility-guided client relation learning. Code is available at https://github.com/Mingzhe-Han/FedHUR."
+            },
+            {
+              "title": "TimelyRAG: Semantic-Temporal Hybrid Retrieval for Time-Critical Question Answering in Overlapping-Evolving Documents",
+              "url": "https://arxiv.org/abs/2609.11572",
+              "arxivId": "2609.11572",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Although large language models (LLMs) and retrieval-augmented generation (RAG) have advanced open-domain question answering (QA), they remain unreliable when documents evolve through amendments. Existing time-sensitive retrieval methods address only the disjoint-evolving environment, where each update is an independent snapshot. However, laws, policies, and regulations often operate in overlapping-evolving environments, where amendments override earlier clauses while preserving most content, creating strong semantic overlap across versions. We propose TimelyRAG, a retriever-agnostic framework that incorporates temporal distance into ranking to align queries with version-appropriate documents. We also introduce TimelyQABench, the first benchmark for regulation-heavy domains with overlapping-evolving challenges. Experiments show consistent gains, up to +28.6% in nDCG@10, highlighting the importance of temporal reasoning for reliable QA over evolving documents. All resources are available at https://github.com/kaist-dmlab/TimelyRAG."
+            },
+            {
+              "title": "ReGround: Grounding Reviewer Comments in Multimodal Evidence",
+              "url": "https://arxiv.org/abs/2609.11460",
+              "arxivId": "2609.11460",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Reviewer comments naturally relate to specific parts of the reviewed paper, yet grounding these comments to the underlying evidence is difficult due to long multimodal documents. Existing benchmarks do not capture this setting and largely focus on explicit, information-seeking queries. We introduce ReGround, a large-scale dataset for reviewer comment grounding that links 10,267 reviewer comments to 16,274 evidence in the original anonymous submission of 3,656 papers. We build on a simple observation: author rebuttals often include explicit references to content of the submission used to address reviewer comments, providing a high-precision annotation source. We cast grounding as a retrieval task and evaluate a wide range of retrieval methods. Results show that retrieval over the entire paper content performs poorly, evidence-type inference is a major bottleneck, and multimodal evidence provides complementary signals that text alone misses. Our dataset exposes grounding reviewer comments as a difficult and practically important problem for scientific document understanding."
+            },
+            {
+              "title": "SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations",
+              "url": "https://arxiv.org/abs/2609.11414",
+              "arxivId": "2609.11414",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Large language models exhibit complementary strengths, motivating routing methods that dispatch each query to the most suitable model. Although existing routers are effective in single-turn settings, they do not directly transfer to multi-turn dialogue, where routing performance critically depends on how historical context is segmented, retained, and incorporated into the current prompt. This introduces two fundamental challenges: preventing information loss and information confusion during context construction, and evaluating routing quality without conflating model selection with prompt construction quality. In this paper, we propose SWRouter, a Similarity-Contractive Window Router for multi-turn large language model routing. SWRouter combines a similarity-based context segmentation mechanism for prompt construction with a dual-metric evaluation framework that decouples construction accuracy from router performance. Experiments on multi-turn dialogue benchmarks demonstrate that SWRouter consistently surpasses strong baselines, achieving a 16.26% improvement in evaluation accuracy over the best individual large language model and an additional 8.22% gain over the Conv-ID Context baseline. Our results highlight that multi-turn large language model routing requires a joint design of context construction and evaluation, rather than a direct extension of single-turn routing methods."
+            },
+            {
+              "title": "VikingRAG: Accurate and Token-efficient Retrieval-augmented Generation over Structured Documents",
+              "url": "https://arxiv.org/abs/2609.11390",
+              "arxivId": "2609.11390",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.CL",
+                "cs.DB",
+                "cs.LG"
+              ],
+              "abstract": "State-of-the-art retrieval-augmented generation (RAG) methods exploit document structures to acquire sufficient evidence, but often incur substantial token costs. To reduce structural-context tokens without compromising high RAG accuracy, we present {\\sf VikingRAG}, a directory-aware semantic data management system that tightly integrates semantic and structural access to support structural-context-efficient, evidence-gap-driven multi-round retrieval. To further reduce token overhead of multi-round interaction, we materialize agentic multi-round retrieval traces as experience edges, and reuse these edges for similar queries, avoiding repeated multi-round exploration. To additionally reduce token costs when agentic multi-round retrieval is unnecessary, we introduce an adaptive escalation strategy that answers from one-round experience-augmented retrieval when the evidence is sufficient, and invokes agentic multi-round retrieval only otherwise. Experiments on real datasets show that the base system {\\sf VikingRAG} matches high accuracy of state-of-the-art methods while consuming only 11.6\\%--51.9\\% of their tokens. With retrieval-trace reuse and adaptive escalation, token costs drop to 5.1\\%--32.5\\% while maintaining competitive accuracy and practical document-storage performance, showing the utility of this work for emerging AI knowledge bases."
+            },
+            {
+              "title": "REVA: Reusable Evidence View Aggregation for Context-Efficient RAG Serving",
+              "url": "https://arxiv.org/abs/2609.11209",
+              "arxivId": "2609.11209",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Retrieval-augmented generation (RAG) improves knowledge-intensive large language model (LLM) applications by conditioning generation on retrieved documents, but longer contexts increase latency, key-value (KV) cache memory, and token cost. Post-retrieval compression can reduce this cost, yet existing compressors often operate independently for each query, rely on auxiliary models or rewriting, and introduce online overhead that can offset the benefit of shorter prompts. We revisit RAG compression from a data-mining perspective by aggregating historical query--document--model interactions into reusable evidence views. We first show that modern compressors have unstable gains over simple truncation and can add substantial inference-time latency. We then propose Reusable Evidence View Aggregation (REVA), a framework that mines the target generator's historical attention traces into a document-keyed, budget-agnostic score store. REVA maps token-level attention to readable word units, aggregates importance across repeated document accesses, and renders budget-specific plain-text views that preserve document order and the standard RAG interface. Across four representative benchmarks and modern LLMs, REVA improves generation quality by 1.0--5.8 points over existing advances, while reducing compression overhead by a factor of 5.3 to 15.6, adding less than 40 ms of latency."
+            },
+            {
+              "title": "Agentic Share-of-Search: A Multi-Agent AI System for Competitive Decision-Making in LLM-Mediated E-Commerce",
+              "url": "https://arxiv.org/abs/2609.11190",
+              "arxivId": "2609.11190",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "AI shopping assistants increasingly redirect consumer discovery, creating an urgent need for tools that support seller-side competitive decision-making. We present a multi-agent AI system that automates competitive visibility measurement and root cause diagnosis in LLM-mediated ecommerce. The system introduces Agentic Share-of-Search (ASoS) as the decision target, deploys query agents across leading AI platforms, and uses a ReAct-based diagnostic agent to recommend prioritized merchandising interventions. A 100-trial ablation study, presented as a feasibility evaluation of this prototype, shows the agent recovers the ablated signal in 39% of trials (95% CI: 30.0% - 48.8%, 5.5x over chance), rising to 63.9% among high-correlation ablations."
+            },
+            {
+              "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+              "url": "https://arxiv.org/abs/2609.11115",
+              "arxivId": "2609.11115",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI benchmarks, covering LLM evaluation, agentic and tool-use benchmarks, coding, reasoning, safety, and domain-specific evaluations. The system combines daily discovery of benchmark papers, repositories, datasets, and releases with a searchable benchmark catalog, mentions in model cards and technical reports, and score histories. It retains source identities and citations so readers can inspect candidate benchmarks and their evaluation evidence. Daily discovery draws on 37 sources: 13 direct connectors and 24 first-party research and engineering feeds. The catalog contains 1,283 source records drawn from 4 benchmark catalogs and 12,916 numeric observations on 790 records. We describe collection and retrieval, audit the full catalog, and examine benchmark saturation, adoption trends, and the limits of score comparisons. A worked example walks through a complete prior-art search, showing how to query the catalog and inspect benchmark evidence when designing a new evaluation. We release the web dashboard with a benchmark leaderboard, a Pareto frontier view of score against measured use, saturation and trend views, daily feeds, downloadable evidence, a command-line interface (CLI) for offline queries, and reproducible analysis."
+            },
+            {
+              "title": "UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems",
+              "url": "https://arxiv.org/abs/2609.11052",
+              "arxivId": "2609.11052",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Industrial recommender systems use cascaded stages with different objectives, feature spaces, and latency constraints. Optimizing pre-ranking and ranking separately can create cross-stage inconsistency: upstream models may filter out items preferred by downstream rankers, and independently tuned downstream fusion can offset upstream improvements. Existing multi-task fusion methods focus on multi-objective fusion within the ranking stage, and cross-stage methods typically only add a downstream score factor to upstream ranking. Joint optimization of fusion modules across both stages remains largely unexplored. We propose UniRec, a Unified Cross-stage Recommendation Fusion model. First, the two fusion agents partially share input embeddings and are trained in a single computation graph, so gradients from either stage propagate through the shared representation and influence the other. Second, we introduce a dual-axis preference alignment objective: a vertical cross-stage consistency term transfers downstream pairwise preferences to the upstream fusion score, and a horizontal compact aggregation term reorganizes dozens of pairwise objectives over heterogeneous prior signals into bidirectional preference evidence. Third, we find that unconstrained end-to-end fusion optimization can exploit imbalances in item attribute distributions, over-concentrating on high-reward regions at the cost of other objectives. We therefore add an attribute group-relative regularization that computes advantages within attribute groups and normalizes the policy over the same groups, so uniformly promoting an entire high-reward group yields no optimization gain. Offline, UniRec consistently outperforms single-stage fusion and cross-stage coordination baselines. Online A/B tests show a 0.616\\% gain in app usage duration. UniRec is fully deployed on the Kuaishou platform."
+            }
+          ],
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4.5,
+                  "horizonValue": 5.6,
+                  "clarity": 5.5,
+                  "theoreticalDepth": 4.5,
+                  "overall": 3.2,
+                  "penalty": 0.0,
+                  "baseTotal": 23.3,
+                  "total": 23.3
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5.2,
+                  "horizonValue": 3.8,
+                  "clarity": 4.9,
+                  "theoreticalDepth": 3.9,
+                  "overall": 3.2,
+                  "penalty": -1.0,
+                  "baseTotal": 20.0,
+                  "total": 20.0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 4.5,
+                  "horizonValue": 5.6,
+                  "clarity": 4.7,
+                  "theoreticalDepth": 4.5,
+                  "overall": 3.2,
+                  "penalty": 0.0,
+                  "baseTotal": 22.5,
+                  "total": 22.5
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 4.1,
+                  "horizonValue": 5.2,
+                  "clarity": 5.1,
+                  "theoreticalDepth": 4.1,
+                  "overall": 3.2,
+                  "penalty": 0.0,
+                  "baseTotal": 21.7,
+                  "total": 21.7
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 4.7,
+                  "horizonValue": 4.5,
+                  "clarity": 4.4,
+                  "theoreticalDepth": 3.4,
+                  "overall": 2.4,
+                  "penalty": -1.0,
+                  "baseTotal": 18.4,
+                  "total": 18.4
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 4.4,
+                  "horizonValue": 4.3,
+                  "clarity": 5.4,
+                  "theoreticalDepth": 4.4,
+                  "overall": 2.4,
+                  "penalty": -1.0,
+                  "baseTotal": 19.9,
+                  "total": 19.9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 5.7,
+                  "horizonValue": 5.5,
+                  "clarity": 5.4,
+                  "theoreticalDepth": 4.4,
+                  "overall": 2.4,
+                  "penalty": -1.0,
+                  "baseTotal": 22.4,
+                  "total": 22.4
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 4.8,
+                  "horizonValue": 3.4,
+                  "clarity": 4.5,
+                  "theoreticalDepth": 3.5,
+                  "overall": 3.2,
+                  "penalty": 0.0,
+                  "baseTotal": 19.4,
+                  "total": 19.4
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 4.4,
+                  "horizonValue": 4.2,
+                  "clarity": 4.1,
+                  "theoreticalDepth": 3.1,
+                  "overall": 2.4,
+                  "penalty": -1.0,
+                  "baseTotal": 17.2,
+                  "total": 17.2
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5.0,
+                  "horizonValue": 3.6,
+                  "clarity": 4.7,
+                  "theoreticalDepth": 3.7,
+                  "overall": 2.4,
+                  "penalty": 0.0,
+                  "baseTotal": 19.4,
+                  "total": 19.4
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 4.8,
+                  "horizonValue": 4.6,
+                  "clarity": 4.5,
+                  "theoreticalDepth": 3.5,
+                  "overall": 2.4,
+                  "penalty": -1.0,
+                  "baseTotal": 18.8,
+                  "total": 18.8
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5.3,
+                  "horizonValue": 5.1,
+                  "clarity": 5.0,
+                  "theoreticalDepth": 6.2,
+                  "overall": 3.2,
+                  "penalty": 0.0,
+                  "baseTotal": 24.8,
+                  "total": 24.8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+              "url": "https://arxiv.org/abs/2609.11808",
+              "arxivId": "2609.11808",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.5,
+                "horizonValue": 5.6,
+                "clarity": 5.5,
+                "theoreticalDepth": 4.5,
+                "overall": 3.2,
+                "penalty": 0.0,
+                "baseTotal": 23.3,
+                "total": 23.3
+              }
+            },
+            {
+              "title": "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety",
+              "url": "https://arxiv.org/abs/2609.11758",
+              "arxivId": "2609.11758",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.2,
+                "horizonValue": 3.8,
+                "clarity": 4.9,
+                "theoreticalDepth": 3.9,
+                "overall": 3.2,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+              "url": "https://arxiv.org/abs/2609.11646",
+              "arxivId": "2609.11646",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.5,
+                "horizonValue": 5.6,
+                "clarity": 4.7,
+                "theoreticalDepth": 4.5,
+                "overall": 3.2,
+                "penalty": 0.0,
+                "baseTotal": 22.5,
+                "total": 22.5
+              }
+            },
+            {
+              "title": "FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation",
+              "url": "https://arxiv.org/abs/2609.11632",
+              "arxivId": "2609.11632",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.1,
+                "horizonValue": 5.2,
+                "clarity": 5.1,
+                "theoreticalDepth": 4.1,
+                "overall": 3.2,
+                "penalty": 0.0,
+                "baseTotal": 21.7,
+                "total": 21.7
+              }
+            },
+            {
+              "title": "TimelyRAG: Semantic-Temporal Hybrid Retrieval for Time-Critical Question Answering in Overlapping-Evolving Documents",
+              "url": "https://arxiv.org/abs/2609.11572",
+              "arxivId": "2609.11572",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.7,
+                "horizonValue": 4.5,
+                "clarity": 4.4,
+                "theoreticalDepth": 3.4,
+                "overall": 2.4,
+                "penalty": -1.0,
+                "baseTotal": 18.4,
+                "total": 18.4
+              }
+            },
+            {
+              "title": "ReGround: Grounding Reviewer Comments in Multimodal Evidence",
+              "url": "https://arxiv.org/abs/2609.11460",
+              "arxivId": "2609.11460",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.4,
+                "horizonValue": 4.3,
+                "clarity": 5.4,
+                "theoreticalDepth": 4.4,
+                "overall": 2.4,
+                "penalty": -1.0,
+                "baseTotal": 19.9,
+                "total": 19.9
+              }
+            },
+            {
+              "title": "SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations",
+              "url": "https://arxiv.org/abs/2609.11414",
+              "arxivId": "2609.11414",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.7,
+                "horizonValue": 5.5,
+                "clarity": 5.4,
+                "theoreticalDepth": 4.4,
+                "overall": 2.4,
+                "penalty": -1.0,
+                "baseTotal": 22.4,
+                "total": 22.4
+              }
+            },
+            {
+              "title": "VikingRAG: Accurate and Token-efficient Retrieval-augmented Generation over Structured Documents",
+              "url": "https://arxiv.org/abs/2609.11390",
+              "arxivId": "2609.11390",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.CL",
+                "cs.DB",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 4.8,
+                "horizonValue": 3.4,
+                "clarity": 4.5,
+                "theoreticalDepth": 3.5,
+                "overall": 3.2,
+                "penalty": 0.0,
+                "baseTotal": 19.4,
+                "total": 19.4
+              }
+            },
+            {
+              "title": "REVA: Reusable Evidence View Aggregation for Context-Efficient RAG Serving",
+              "url": "https://arxiv.org/abs/2609.11209",
+              "arxivId": "2609.11209",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.4,
+                "horizonValue": 4.2,
+                "clarity": 4.1,
+                "theoreticalDepth": 3.1,
+                "overall": 2.4,
+                "penalty": -1.0,
+                "baseTotal": 17.2,
+                "total": 17.2
+              }
+            },
+            {
+              "title": "Agentic Share-of-Search: A Multi-Agent AI System for Competitive Decision-Making in LLM-Mediated E-Commerce",
+              "url": "https://arxiv.org/abs/2609.11190",
+              "arxivId": "2609.11190",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 3.6,
+                "clarity": 4.7,
+                "theoreticalDepth": 3.7,
+                "overall": 2.4,
+                "penalty": 0.0,
+                "baseTotal": 19.4,
+                "total": 19.4
+              }
+            },
+            {
+              "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+              "url": "https://arxiv.org/abs/2609.11115",
+              "arxivId": "2609.11115",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.8,
+                "horizonValue": 4.6,
+                "clarity": 4.5,
+                "theoreticalDepth": 3.5,
+                "overall": 2.4,
+                "penalty": -1.0,
+                "baseTotal": 18.8,
+                "total": 18.8
+              }
+            },
+            {
+              "title": "UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems",
+              "url": "https://arxiv.org/abs/2609.11052",
+              "arxivId": "2609.11052",
+              "date": "2026-09-10",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.3,
+                "horizonValue": 5.1,
+                "clarity": 5.0,
+                "theoreticalDepth": 6.2,
+                "overall": 3.2,
+                "penalty": 0.0,
+                "baseTotal": 24.8,
+                "total": 24.8
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+          "url": "https://arxiv.org/abs/2609.11808",
+          "arxivId": "2609.11808",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.5,
+            "horizonValue": 5.6,
+            "clarity": 5.5,
+            "theoreticalDepth": 4.5,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 23.3,
+            "total": 23.3
+          }
+        },
+        {
+          "title": "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety",
+          "url": "https://arxiv.org/abs/2609.11758",
+          "arxivId": "2609.11758",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.2,
+            "horizonValue": 3.8,
+            "clarity": 4.9,
+            "theoreticalDepth": 3.9,
+            "overall": 3.2,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+          "url": "https://arxiv.org/abs/2609.11646",
+          "arxivId": "2609.11646",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.5,
+            "horizonValue": 5.6,
+            "clarity": 4.7,
+            "theoreticalDepth": 4.5,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 22.5,
+            "total": 22.5
+          }
+        },
+        {
+          "title": "FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation",
+          "url": "https://arxiv.org/abs/2609.11632",
+          "arxivId": "2609.11632",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.1,
+            "horizonValue": 5.2,
+            "clarity": 5.1,
+            "theoreticalDepth": 4.1,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 21.7,
+            "total": 21.7
+          }
+        },
+        {
+          "title": "TimelyRAG: Semantic-Temporal Hybrid Retrieval for Time-Critical Question Answering in Overlapping-Evolving Documents",
+          "url": "https://arxiv.org/abs/2609.11572",
+          "arxivId": "2609.11572",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.7,
+            "horizonValue": 4.5,
+            "clarity": 4.4,
+            "theoreticalDepth": 3.4,
+            "overall": 2.4,
+            "penalty": -1.0,
+            "baseTotal": 18.4,
+            "total": 18.4
+          }
+        },
+        {
+          "title": "ReGround: Grounding Reviewer Comments in Multimodal Evidence",
+          "url": "https://arxiv.org/abs/2609.11460",
+          "arxivId": "2609.11460",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.4,
+            "horizonValue": 4.3,
+            "clarity": 5.4,
+            "theoreticalDepth": 4.4,
+            "overall": 2.4,
+            "penalty": -1.0,
+            "baseTotal": 19.9,
+            "total": 19.9
+          }
+        },
+        {
+          "title": "SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations",
+          "url": "https://arxiv.org/abs/2609.11414",
+          "arxivId": "2609.11414",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.7,
+            "horizonValue": 5.5,
+            "clarity": 5.4,
+            "theoreticalDepth": 4.4,
+            "overall": 2.4,
+            "penalty": -1.0,
+            "baseTotal": 22.4,
+            "total": 22.4
+          }
+        },
+        {
+          "title": "VikingRAG: Accurate and Token-efficient Retrieval-augmented Generation over Structured Documents",
+          "url": "https://arxiv.org/abs/2609.11390",
+          "arxivId": "2609.11390",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CL",
+            "cs.DB",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 4.8,
+            "horizonValue": 3.4,
+            "clarity": 4.5,
+            "theoreticalDepth": 3.5,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 19.4,
+            "total": 19.4
+          }
+        },
+        {
+          "title": "REVA: Reusable Evidence View Aggregation for Context-Efficient RAG Serving",
+          "url": "https://arxiv.org/abs/2609.11209",
+          "arxivId": "2609.11209",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.4,
+            "horizonValue": 4.2,
+            "clarity": 4.1,
+            "theoreticalDepth": 3.1,
+            "overall": 2.4,
+            "penalty": -1.0,
+            "baseTotal": 17.2,
+            "total": 17.2
+          }
+        },
+        {
+          "title": "Agentic Share-of-Search: A Multi-Agent AI System for Competitive Decision-Making in LLM-Mediated E-Commerce",
+          "url": "https://arxiv.org/abs/2609.11190",
+          "arxivId": "2609.11190",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 3.6,
+            "clarity": 4.7,
+            "theoreticalDepth": 3.7,
+            "overall": 2.4,
+            "penalty": 0.0,
+            "baseTotal": 19.4,
+            "total": 19.4
+          }
+        },
+        {
+          "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+          "url": "https://arxiv.org/abs/2609.11115",
+          "arxivId": "2609.11115",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.8,
+            "horizonValue": 4.6,
+            "clarity": 4.5,
+            "theoreticalDepth": 3.5,
+            "overall": 2.4,
+            "penalty": -1.0,
+            "baseTotal": 18.8,
+            "total": 18.8
+          }
+        },
+        {
+          "title": "UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems",
+          "url": "https://arxiv.org/abs/2609.11052",
+          "arxivId": "2609.11052",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.3,
+            "horizonValue": 5.1,
+            "clarity": 5.0,
+            "theoreticalDepth": 6.2,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 24.8,
+            "total": 24.8
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems",
+          "url": "https://arxiv.org/abs/2609.11052",
+          "arxivId": "2609.11052",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.3,
+            "horizonValue": 5.1,
+            "clarity": 5.0,
+            "theoreticalDepth": 6.2,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 24.8,
+            "total": 24.8
+          }
+        },
+        {
+          "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+          "url": "https://arxiv.org/abs/2609.11808",
+          "arxivId": "2609.11808",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.5,
+            "horizonValue": 5.6,
+            "clarity": 5.5,
+            "theoreticalDepth": 4.5,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 23.3,
+            "total": 23.3
+          }
+        },
+        {
+          "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+          "url": "https://arxiv.org/abs/2609.11646",
+          "arxivId": "2609.11646",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.5,
+            "horizonValue": 5.6,
+            "clarity": 4.7,
+            "theoreticalDepth": 4.5,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 22.5,
+            "total": 22.5
+          }
+        },
+        {
+          "title": "SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations",
+          "url": "https://arxiv.org/abs/2609.11414",
+          "arxivId": "2609.11414",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.7,
+            "horizonValue": 5.5,
+            "clarity": 5.4,
+            "theoreticalDepth": 4.4,
+            "overall": 2.4,
+            "penalty": -1.0,
+            "baseTotal": 22.4,
+            "total": 22.4
+          }
+        },
+        {
+          "title": "FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation",
+          "url": "https://arxiv.org/abs/2609.11632",
+          "arxivId": "2609.11632",
+          "date": "2026-09-10",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.1,
+            "horizonValue": 5.2,
+            "clarity": 5.1,
+            "theoreticalDepth": 4.1,
+            "overall": 3.2,
+            "penalty": 0.0,
+            "baseTotal": 21.7,
+            "total": 21.7
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems",
+            "url": "https://arxiv.org/abs/2609.11052",
+            "arxivId": "2609.11052",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Industrial recommender systems use cascaded stages with different objectives, feature spaces, and latency constraints. Optimizing pre-ranking and ranking separately can create cross-stage inconsistency: upstream models may filter out items preferred by downstr...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Industrial recommender systems use cascaded stages with different objectives, feature spaces, and latency constraints. Optimizing pre-ranking and ranking separately can create cross-stage inconsistency: upstream models may filter out items preferred by downstr...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Generative Late-Interaction Embeddings For Visual Document Retrieval",
+            "url": "https://arxiv.org/abs/2609.11808",
+            "arxivId": "2609.11808",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Late-interaction retrieval is the state-of-the-art for visual document search, but it pays for its accuracy in storage. Existing compression methods retain a subset or local average of the N~1,000 vectors per page. Under aggressive storage budgets, however, th...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Late-interaction retrieval is the state-of-the-art for visual document search, but it pays for its accuracy in storage. Existing compression methods retain a subset or local average of the N~1,000 vectors per page. Under aggressive storage budgets, however, th...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+            "url": "https://arxiv.org/abs/2609.11646",
+            "arxivId": "2609.11646",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment whe...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment whe...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations",
+            "url": "https://arxiv.org/abs/2609.11414",
+            "arxivId": "2609.11414",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.AI",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Large language models exhibit complementary strengths, motivating routing methods that dispatch each query to the most suitable model. Although existing routers are effective in single-turn settings, they do not directly transfer to multi-turn dialogue, where...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Large language models exhibit complementary strengths, motivating routing methods that dispatch each query to the most suitable model. Although existing routers are effective in single-turn settings, they do not directly transfer to multi-turn dialogue, where...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation",
+            "url": "https://arxiv.org/abs/2609.11632",
+            "arxivId": "2609.11632",
+            "date": "2026-09-10",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Federated recommendation enables collaborative model training while keeping user interaction data on local clients. A central problem in federated recommendation is how to aggregate useful information across clients for personalized recommendation. Existing pe...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Federated recommendation enables collaborative model training while keeping user interaction data on local clients. A central problem in federated recommendation is how to aggregate useful information across clients for personalized recommendation. Existing pe...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 400: Bad Request",
+    "LLM 精读生成失败，使用 Mock fallback：ABRA: An algorithm which cannot converge to low-quality Nash equilibria (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Truncated Noisy Best-Response Algorithms: Toward Game Theoretic Learning with Safety Guarantees (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Social Preferences and Cooperation: Beliefs, Robustness, and the Limits of Altruism (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Cooperative Integer Programming Games: Core Stability and Optimal Coalition Structures (HTTP Error 400: Bad Request)",
+    "LLM 批量粗排失败，使用 Mock fallback：HTTP Error 400: Bad Request",
+    "LLM 精读生成失败，使用 Mock fallback：UniRec: Cross-stage Multi-Task Fusion with Preference Alignment for Cascaded Recommender Systems (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Generative Late-Interaction Embeddings For Visual Document Retrieval (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation (HTTP Error 400: Bad Request)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
