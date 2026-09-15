@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T07:59:09.868952+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-09-14",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null
+    },
+    "recent-ai": {
+      "targetDate": "2026-09-14",
+      "categories": [
+        "cs.AI"
+      ],
+      "categorySelection": "cs.AI",
+      "fetchLimit": 50
+    }
+  },
+  "warnings": [
+    "近期 AGT 新论文 arXiv 抓取失败：HTTP Error 429: Unknown Error",
+    "近期 AI 新论文 arXiv 抓取失败：HTTP Error 429: Unknown Error"
+  ],
+  "sectionCounts": {
+    "recent-agt": 0,
+    "recent-ai": 0
+  }
+}
