@@ -1,0 +1,2532 @@
+{
+  "date": "2026-09-16",
+  "generatedAt": "2026-09-16T07:51:53.609412+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-09-15",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202609150000 TO 202609152359\"",
+            "totalResults": 7,
+            "fetchedCount": 7
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202609150000 TO 202609152359\"",
+            "totalResults": 2,
+            "fetchedCount": 2
+          }
+        },
+        "dedupedCount": 7
+      },
+      "arxivTotalResults": 9,
+      "fetchedCount": 7,
+      "fetchedPapers": [
+        {
+          "title": "On testing the incentive compatibility of single-parameter allocation mechanisms",
+          "url": "https://arxiv.org/abs/2609.17406",
+          "arxivId": "2609.17406",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC",
+            "cs.DS",
+            "econ.TH"
+          ],
+          "abstract": "This paper is the first work at the intersection of game theory and property testing, giving algorithms and lower bounds for efficiently testing whether an allocation mechanism is incentive compatible (IC). We propose distinguishing whether a mechanism is $ε$-far from being IC, i.e., when it observes many monotonicity \"violations.\" Conceptually, inspired by the literature on Boolean function monotonicity testing, we construct a tester for discrete single-parameter allocation rules. Technically, our work is the first to consider monotonicity testing of vector-valued functions on the hypergrid. We give a $\\tilde{O}(n/ε)$-query algorithm to test whether a function (representing n-player allocation mechanisms) is coordinate-wise monotone versus $ε$-far from it. We also show a matching lower bound: the class of coordinate-wise monotone vector-valued functions on a Boolean hypercube or hypergrid requires $\\tildeΩ(n/ε)$ queries to test whether it is $ε$-far from monotonicity, and this holds even if the tester is two-sided and allowed to make adaptive queries. Finally, we extend our upper bound to and give a tester of the same query complexity for pricing functions of allocation mechanisms. This requires overcoming the technical challenge that the path in function space to the closest IC mechanism may involve interdependent changes to both the price and the allocation rule."
+        },
+        {
+          "title": "The price of anarchy in the max-distance network creation game is not constant",
+          "url": "https://arxiv.org/abs/2609.17395",
+          "arxivId": "2609.17395",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM"
+          ],
+          "abstract": "At edge price $α=1$, we construct an infinite family of pure Nash equilibria of the unilateral max-distance network creation game with $\\PoA\\ge2^{\\sqrt{\\log_2 n}-O(\\log\\log n)}$. Together with the known upper bound, this gives $2^{Θ(\\sqrt{\\log n})}$ along the constructed sequence of population sizes. We subdivide every edge of the bipartite double cover of a distance-uniform graph with large diameter constructed by Lavrov, Loh and Messegué, and let each subdivision vertex buy its two incident edges. A distance calculation rules out every profitable unilateral deviation. The equilibria are not strict. We also give a short proof that the price of anarchy is constant for every polynomially vanishing edge price."
+        },
+        {
+          "title": "Online Allocation using Few Samples",
+          "url": "https://arxiv.org/abs/2609.17343",
+          "arxivId": "2609.17343",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "abstract": "We study online allocation problems where $n$ requests over $m$ resources arrive in an adversarial order and must be served immediately and irrevocably. This framework captures both Online Resource Allocation, where the goal is to maximize value subject to resource budgets, and Online Load Balancing, where the goal is to minimize the makespan. We seek $(1\\pmε)$-competitive algorithms in the large-budget or large-makespan regime. We consider a sampling model that generalizes the following two well-studied sampling models. In the Single-Sample Prophet Inequality ($\\mathsf{SSPI}$) model, request $t$ is drawn from an unknown distribution $\\mathcal{D}_t$, and the algorithm is given one independent sample from each $\\mathcal{D}_t$ before the online phase. In the $p$-$\\mathsf{Sample}$ model, the requests are adversarial, but a uniformly random $p$-fraction is revealed upfront as training data. Although near-optimal algorithms are known in the easier random-order model ($\\mathsf{RO}$), where the requests arrive in a uniformly random order, prior algorithms for $\\mathsf{SSPI}$ and $p$-$\\mathsf{Sample}$ were problem-specific and incurred substantially worse dependencies on $ε$, $m$, and $n$. Our main contribution is a general framework that converts $\\mathsf{RO}$ algorithms into algorithms for the $p$-$\\mathsf{Preview}$ model, a model that generalizes both $\\mathsf{SSPI}$ and $p$-$\\mathsf{Sample}$. As consequences, we obtain near-optimal bounds for Online Resource Allocation, generalized Online Load Balancing, and online mixed packing-covering problems in these adversarial-order sampling models, significantly improving the bounds of [Ghuge, Singla, Wang (STOC'25)] and [Gupta and Molinaro (SODA'26)]."
+        },
+        {
+          "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+          "url": "https://arxiv.org/abs/2609.17146",
+          "arxivId": "2609.17146",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "cs.MA",
+            "cs.SI",
+            "eess.SY"
+          ],
+          "abstract": "We study an optimal intervention problem for linear threshold models. This is a popular class of dynamical network systems whereby a number of agents, identified with the nodes of a graph, strategically change their binary action (0 or 1) according to a threshold rule. Specifically, an agent adopts action 1 if and only if the fraction of its neighbors in the interaction graph that do so is greater than or equal to a prescribed threshold. Assuming that a planner can modify the agents' thresholds at a cost equal to the aggregate threshold increase, we study the minimum intervention cost needed to ensure global convergence to the all-1 configuration. Our main contribution is the introduction of a new graph-theoretic quantity, called oriented path number, that is the minimum number of disjoint paths needed to cover the graph that can be oriented to form a directed acyclic graph. When thresholds are all equal to 1/2, the optimal cost is shown to coincide with the oriented path number, whereas, in the general case, it turns out to be the main ingredient of a bound on the optimal intervention cost."
+        },
+        {
+          "title": "Constant Swap Regret in General-Sum Games via Optimistic Transition Matrices",
+          "url": "https://arxiv.org/abs/2609.16751",
+          "arxivId": "2609.16751",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "We give deterministic and uncoupled learning dynamics for finite multiplayer general-sum games under full-information feedback that achieve constant individual swap regret, independent of the horizon $T$. With $n$ players and at most $m$ actions each, the individual swap regret of every player is $O(\\sqrt{n} m \\log m \\log^{5/2}(nm))$ at every finite horizon. Each player predicts the deviation gains, then uses these predictions to update a row-stochastic transition matrix, and plays its stationary distribution. The proof combines a potential argument exploiting stationarity with a two-scale higher-order prediction analysis, using rooted-tree representations to handle the nonlinear dependence of deviation gains on the stationary distributions. An adversarially robust variant, obtained through a generic common-prefix switching wrapper, preserves the self-play bound up to a universal constant and guarantees individual swap regret at most $7\\sqrt{m T \\log m}$ in the adversarial setting."
+        },
+        {
+          "title": "Anchored Sequential Deliberation",
+          "url": "https://arxiv.org/abs/2609.16673",
+          "arxivId": "2609.16673",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "Sequential deliberation is a mechanism for collective decision making: at each round, a uniformly randomly selected pair is asked to revise a collective outcome, which then becomes the reference point for the next round. Existing theory by Fain et al.~\\cite{fain2017sequential} treats the current outcome solely as the disagreement alternative in bargaining. Yet an existing draft, policy, or proposal might carry social influence and anchor participants' expressed positions toward the status quo. We introduce anchored sequential deliberation on a one-dimensional decision space. In each round, two participants with bliss points $U$ and $V$ shift their positions toward the previous outcome $O_{t-1}$ with anchoring strength $λ$, then Nash-bargain using $O_{t-1}$ as the disagreement alternative. The update simplifies to $O_t=(1-λ)\\mathsf{Median}\\{U,V,O_{t-1}\\}+λO_{t-1}$. We establish a convergence--stability trade-off. For every population distribution and $λ<1$, the process has a unique stationary distribution. A monotone coupling yields a $1$-Wasserstein contraction factor of at most $\\frac{1+λ}{2}$ and at least $λ$; thus, stronger anchoring slows mixing. On the other hand, stationary social cost weakly decreases with $λ$, although the worst-case distortion remains $\\frac{1+\\sqrt{2}}{2}$. We also identify a unique \\emph{deliberative fixed point}, where the expected unanchored movement is zero, and prove that the stationary distribution concentrates around it as $λ\\to 1$. For the uniform population, stationary distortion lies between $1+\\frac{1-λ}{9+7λ}$ and $1+\\frac{1-λ}{6(1+λ)}$, with both bounds approaching $1$ as $λ\\to1$. Simulations for uniform and Beta populations show that stronger anchoring slows mixing, concentrates the stationary distribution, and lowers stationary distortion in these instances."
+        },
+        {
+          "title": "Auction Design with ROI-Constrained Bidders: Truthfulness and Revenue Maximization",
+          "url": "https://arxiv.org/abs/2609.16522",
+          "arxivId": "2609.16522",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "abstract": "The return-on-investment (ROI) constraint is central to many auctions, particularly in online advertising, where a bidder is unwilling to pay more than a fixed fraction of the value obtained. We study truthful and revenue-maximizing auctions for ROI-constrained bidders. We first characterize truthful auctions when both valuations and ROI constraints are private, showing that the allocation rule uniquely determines the payment rule. Building on this characterization, for multiple bidders we introduce $σ$-increment mechanisms that resemble Myerson's optimal mechanism~\\cite{journals/mor/Myerson81}; as $σ$ vanishes, these mechanisms become asymptotically optimal among deterministic truthful mechanisms, and their revenue approaches at least a $1/\\bar r$ fraction of the optimal expected revenue over all truthful mechanisms, where $\\bar r$ is the largest possible ROI constraint. In the single-bidder setting, we prove that every truthful auction can be replaced by a convex pricing function with weakly higher payments for every type, and we derive the optimal pricing functions when either the valuation or the ROI constraint is public."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "On testing the incentive compatibility of single-parameter allocation mechanisms",
+              "url": "https://arxiv.org/abs/2609.17406",
+              "arxivId": "2609.17406",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC",
+                "cs.DS",
+                "econ.TH"
+              ],
+              "abstract": "This paper is the first work at the intersection of game theory and property testing, giving algorithms and lower bounds for efficiently testing whether an allocation mechanism is incentive compatible (IC). We propose distinguishing whether a mechanism is $ε$-far from being IC, i.e., when it observes many monotonicity \"violations.\" Conceptually, inspired by the literature on Boolean function monotonicity testing, we construct a tester for discrete single-parameter allocation rules. Technically, our work is the first to consider monotonicity testing of vector-valued functions on the hypergrid. We give a $\\tilde{O}(n/ε)$-query algorithm to test whether a function (representing n-player allocation mechanisms) is coordinate-wise monotone versus $ε$-far from it. We also show a matching lower bound: the class of coordinate-wise monotone vector-valued functions on a Boolean hypercube or hypergrid requires $\\tildeΩ(n/ε)$ queries to test whether it is $ε$-far from monotonicity, and this holds even if the tester is two-sided and allowed to make adaptive queries. Finally, we extend our upper bound to and give a tester of the same query complexity for pricing functions of allocation mechanisms. This requires overcoming the technical challenge that the path in function space to the closest IC mechanism may involve interdependent changes to both the price and the allocation rule."
+            },
+            {
+              "title": "The price of anarchy in the max-distance network creation game is not constant",
+              "url": "https://arxiv.org/abs/2609.17395",
+              "arxivId": "2609.17395",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM"
+              ],
+              "abstract": "At edge price $α=1$, we construct an infinite family of pure Nash equilibria of the unilateral max-distance network creation game with $\\PoA\\ge2^{\\sqrt{\\log_2 n}-O(\\log\\log n)}$. Together with the known upper bound, this gives $2^{Θ(\\sqrt{\\log n})}$ along the constructed sequence of population sizes. We subdivide every edge of the bipartite double cover of a distance-uniform graph with large diameter constructed by Lavrov, Loh and Messegué, and let each subdivision vertex buy its two incident edges. A distance calculation rules out every profitable unilateral deviation. The equilibria are not strict. We also give a short proof that the price of anarchy is constant for every polynomially vanishing edge price."
+            },
+            {
+              "title": "Online Allocation using Few Samples",
+              "url": "https://arxiv.org/abs/2609.17343",
+              "arxivId": "2609.17343",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "abstract": "We study online allocation problems where $n$ requests over $m$ resources arrive in an adversarial order and must be served immediately and irrevocably. This framework captures both Online Resource Allocation, where the goal is to maximize value subject to resource budgets, and Online Load Balancing, where the goal is to minimize the makespan. We seek $(1\\pmε)$-competitive algorithms in the large-budget or large-makespan regime. We consider a sampling model that generalizes the following two well-studied sampling models. In the Single-Sample Prophet Inequality ($\\mathsf{SSPI}$) model, request $t$ is drawn from an unknown distribution $\\mathcal{D}_t$, and the algorithm is given one independent sample from each $\\mathcal{D}_t$ before the online phase. In the $p$-$\\mathsf{Sample}$ model, the requests are adversarial, but a uniformly random $p$-fraction is revealed upfront as training data. Although near-optimal algorithms are known in the easier random-order model ($\\mathsf{RO}$), where the requests arrive in a uniformly random order, prior algorithms for $\\mathsf{SSPI}$ and $p$-$\\mathsf{Sample}$ were problem-specific and incurred substantially worse dependencies on $ε$, $m$, and $n$. Our main contribution is a general framework that converts $\\mathsf{RO}$ algorithms into algorithms for the $p$-$\\mathsf{Preview}$ model, a model that generalizes both $\\mathsf{SSPI}$ and $p$-$\\mathsf{Sample}$. As consequences, we obtain near-optimal bounds for Online Resource Allocation, generalized Online Load Balancing, and online mixed packing-covering problems in these adversarial-order sampling models, significantly improving the bounds of [Ghuge, Singla, Wang (STOC'25)] and [Gupta and Molinaro (SODA'26)]."
+            },
+            {
+              "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+              "url": "https://arxiv.org/abs/2609.17146",
+              "arxivId": "2609.17146",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "cs.MA",
+                "cs.SI",
+                "eess.SY"
+              ],
+              "abstract": "We study an optimal intervention problem for linear threshold models. This is a popular class of dynamical network systems whereby a number of agents, identified with the nodes of a graph, strategically change their binary action (0 or 1) according to a threshold rule. Specifically, an agent adopts action 1 if and only if the fraction of its neighbors in the interaction graph that do so is greater than or equal to a prescribed threshold. Assuming that a planner can modify the agents' thresholds at a cost equal to the aggregate threshold increase, we study the minimum intervention cost needed to ensure global convergence to the all-1 configuration. Our main contribution is the introduction of a new graph-theoretic quantity, called oriented path number, that is the minimum number of disjoint paths needed to cover the graph that can be oriented to form a directed acyclic graph. When thresholds are all equal to 1/2, the optimal cost is shown to coincide with the oriented path number, whereas, in the general case, it turns out to be the main ingredient of a bound on the optimal intervention cost."
+            },
+            {
+              "title": "Constant Swap Regret in General-Sum Games via Optimistic Transition Matrices",
+              "url": "https://arxiv.org/abs/2609.16751",
+              "arxivId": "2609.16751",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "We give deterministic and uncoupled learning dynamics for finite multiplayer general-sum games under full-information feedback that achieve constant individual swap regret, independent of the horizon $T$. With $n$ players and at most $m$ actions each, the individual swap regret of every player is $O(\\sqrt{n} m \\log m \\log^{5/2}(nm))$ at every finite horizon. Each player predicts the deviation gains, then uses these predictions to update a row-stochastic transition matrix, and plays its stationary distribution. The proof combines a potential argument exploiting stationarity with a two-scale higher-order prediction analysis, using rooted-tree representations to handle the nonlinear dependence of deviation gains on the stationary distributions. An adversarially robust variant, obtained through a generic common-prefix switching wrapper, preserves the self-play bound up to a universal constant and guarantees individual swap regret at most $7\\sqrt{m T \\log m}$ in the adversarial setting."
+            },
+            {
+              "title": "Anchored Sequential Deliberation",
+              "url": "https://arxiv.org/abs/2609.16673",
+              "arxivId": "2609.16673",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA"
+              ],
+              "abstract": "Sequential deliberation is a mechanism for collective decision making: at each round, a uniformly randomly selected pair is asked to revise a collective outcome, which then becomes the reference point for the next round. Existing theory by Fain et al.~\\cite{fain2017sequential} treats the current outcome solely as the disagreement alternative in bargaining. Yet an existing draft, policy, or proposal might carry social influence and anchor participants' expressed positions toward the status quo. We introduce anchored sequential deliberation on a one-dimensional decision space. In each round, two participants with bliss points $U$ and $V$ shift their positions toward the previous outcome $O_{t-1}$ with anchoring strength $λ$, then Nash-bargain using $O_{t-1}$ as the disagreement alternative. The update simplifies to $O_t=(1-λ)\\mathsf{Median}\\{U,V,O_{t-1}\\}+λO_{t-1}$. We establish a convergence--stability trade-off. For every population distribution and $λ<1$, the process has a unique stationary distribution. A monotone coupling yields a $1$-Wasserstein contraction factor of at most $\\frac{1+λ}{2}$ and at least $λ$; thus, stronger anchoring slows mixing. On the other hand, stationary social cost weakly decreases with $λ$, although the worst-case distortion remains $\\frac{1+\\sqrt{2}}{2}$. We also identify a unique \\emph{deliberative fixed point}, where the expected unanchored movement is zero, and prove that the stationary distribution concentrates around it as $λ\\to 1$. For the uniform population, stationary distortion lies between $1+\\frac{1-λ}{9+7λ}$ and $1+\\frac{1-λ}{6(1+λ)}$, with both bounds approaching $1$ as $λ\\to1$. Simulations for uniform and Beta populations show that stronger anchoring slows mixing, concentrates the stationary distribution, and lowers stationary distortion in these instances."
+            },
+            {
+              "title": "Auction Design with ROI-Constrained Bidders: Truthfulness and Revenue Maximization",
+              "url": "https://arxiv.org/abs/2609.16522",
+              "arxivId": "2609.16522",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "abstract": "The return-on-investment (ROI) constraint is central to many auctions, particularly in online advertising, where a bidder is unwilling to pay more than a fixed fraction of the value obtained. We study truthful and revenue-maximizing auctions for ROI-constrained bidders. We first characterize truthful auctions when both valuations and ROI constraints are private, showing that the allocation rule uniquely determines the payment rule. Building on this characterization, for multiple bidders we introduce $σ$-increment mechanisms that resemble Myerson's optimal mechanism~\\cite{journals/mor/Myerson81}; as $σ$ vanishes, these mechanisms become asymptotically optimal among deterministic truthful mechanisms, and their revenue approaches at least a $1/\\bar r$ fraction of the optimal expected revenue over all truthful mechanisms, where $\\bar r$ is the largest possible ROI constraint. In the single-bidder setting, we prove that every truthful auction can be replaced by a convex pricing function with weakly higher payments for every type, and we derive the optimal pricing functions when either the valuation or the ROI constraint is public."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "On testing the incentive compatibility of single-parameter allocation mechanisms",
+              "url": "https://arxiv.org/abs/2609.17406",
+              "arxivId": "2609.17406",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC",
+                "cs.DS",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "The price of anarchy in the max-distance network creation game is not constant",
+              "url": "https://arxiv.org/abs/2609.17395",
+              "arxivId": "2609.17395",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Online Allocation using Few Samples",
+              "url": "https://arxiv.org/abs/2609.17343",
+              "arxivId": "2609.17343",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 24.0,
+                "bonus": 0.0,
+                "total": 19.2
+              }
+            },
+            {
+              "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+              "url": "https://arxiv.org/abs/2609.17146",
+              "arxivId": "2609.17146",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "cs.MA",
+                "cs.SI",
+                "eess.SY"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -2.0,
+                "baseTotal": 18.0,
+                "bonus": 0.0,
+                "total": 12.6
+              }
+            },
+            {
+              "title": "Constant Swap Regret in General-Sum Games via Optimistic Transition Matrices",
+              "url": "https://arxiv.org/abs/2609.16751",
+              "arxivId": "2609.16751",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 25.2
+              }
+            },
+            {
+              "title": "Anchored Sequential Deliberation",
+              "url": "https://arxiv.org/abs/2609.16673",
+              "arxivId": "2609.16673",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 25.2
+              }
+            },
+            {
+              "title": "Auction Design with ROI-Constrained Bidders: Truthfulness and Revenue Maximization",
+              "url": "https://arxiv.org/abs/2609.16522",
+              "arxivId": "2609.16522",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "On testing the incentive compatibility of single-parameter allocation mechanisms",
+          "url": "https://arxiv.org/abs/2609.17406",
+          "arxivId": "2609.17406",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC",
+            "cs.DS",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "The price of anarchy in the max-distance network creation game is not constant",
+          "url": "https://arxiv.org/abs/2609.17395",
+          "arxivId": "2609.17395",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Online Allocation using Few Samples",
+          "url": "https://arxiv.org/abs/2609.17343",
+          "arxivId": "2609.17343",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "bonus": 0.0,
+            "total": 19.2
+          }
+        },
+        {
+          "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+          "url": "https://arxiv.org/abs/2609.17146",
+          "arxivId": "2609.17146",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "cs.MA",
+            "cs.SI",
+            "eess.SY"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -2.0,
+            "baseTotal": 18.0,
+            "bonus": 0.0,
+            "total": 12.6
+          }
+        },
+        {
+          "title": "Constant Swap Regret in General-Sum Games via Optimistic Transition Matrices",
+          "url": "https://arxiv.org/abs/2609.16751",
+          "arxivId": "2609.16751",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Anchored Sequential Deliberation",
+          "url": "https://arxiv.org/abs/2609.16673",
+          "arxivId": "2609.16673",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Auction Design with ROI-Constrained Bidders: Truthfulness and Revenue Maximization",
+          "url": "https://arxiv.org/abs/2609.16522",
+          "arxivId": "2609.16522",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "On testing the incentive compatibility of single-parameter allocation mechanisms",
+          "url": "https://arxiv.org/abs/2609.17406",
+          "arxivId": "2609.17406",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC",
+            "cs.DS",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Auction Design with ROI-Constrained Bidders: Truthfulness and Revenue Maximization",
+          "url": "https://arxiv.org/abs/2609.16522",
+          "arxivId": "2609.16522",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Constant Swap Regret in General-Sum Games via Optimistic Transition Matrices",
+          "url": "https://arxiv.org/abs/2609.16751",
+          "arxivId": "2609.16751",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Anchored Sequential Deliberation",
+          "url": "https://arxiv.org/abs/2609.16673",
+          "arxivId": "2609.16673",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "The price of anarchy in the max-distance network creation game is not constant",
+          "url": "https://arxiv.org/abs/2609.17395",
+          "arxivId": "2609.17395",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "On testing the incentive compatibility of single-parameter allocation mechanisms",
+            "url": "https://arxiv.org/abs/2609.17406",
+            "arxivId": "2609.17406",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC",
+              "cs.DS",
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "关于单参数分配机制激励相容性的测试",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "机制设计"
+            ],
+            "contentTags": [
+              "机制设计",
+              "激励相容",
+              "属性测试",
+              "单调性测试",
+              "博弈论"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "如何高效验证一个黑箱分配机制是否激励相容？传统机制设计假设机制是可信的，但现实中许多复杂系统（如广告拍卖）缺乏透明度，参与者无法确认其是否鼓励真实报价。直接穷举检测计算不可行，本文因此引入属性测试框架，研究在少量查询下区分机制接近激励相容或远离它的可能性。",
+              "modelAndSetup": "模型考虑n个单参数参与者的分配机制，每个玩家提交标价，机制决定其是否赢得物品及支付金额。激励相容等价于分配规则在Myerson意义上是坐标单调的。研究者仅能通过查询机制在特定输入下的输出来获取信息，并评估该机制距离最近的激励相容机制有多远，允许分布未知并支持条件采样。",
+              "contributionsAndResults": "论文首次建立了激励相容性可测试性的理论基础。核心结果是给出了坐标单调向量值函数的最优测试复杂度：任何测试算法都需要Ω(n/ε)次查询，而作者构造了一种O(n/ε)查询的一侧非自适应测试器，实现了紧确界。该结果也扩展到同时测试分配与定价规则的情形。",
+              "methodsAndTechniques": "技术上，作者将高维机制分解为多个‘线’上的子问题，在每条线上应用单调性测试。下界证明采用对抗性分布构造，利用超立方体上边界的局部性论证测试器难以发现稀疏违规。上界则结合了随机抽线与已有的单调性检验器，并通过投资策略平衡不同误差尺度下的检测概率。",
+              "limitationsAndReadingValue": "主要局限在于最优测试器虽查询效率高但运行时间指数级于输入维度，而多项式时间算法未达最优查询复杂度，二者间是否存在本质权衡仍是开放问题。本文价值在于开创了机制测试的新方向，其模型抽象清晰，技术融合巧妙，特别适合关注机制可靠性、算法博弈论与属性测试交叉领域的读者深入研读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "关于单参数分配机制激励相容性的测试",
+            "summarySections": {
+              "backgroundAndQuestion": "如何高效验证一个黑箱分配机制是否激励相容？传统机制设计假设机制是可信的，但现实中许多复杂系统（如广告拍卖）缺乏透明度，参与者无法确认其是否鼓励真实报价。直接穷举检测计算不可行，本文因此引入属性测试框架，研究在少量查询下区分机制接近激励相容或远离它的可能性。",
+              "modelAndSetup": "模型考虑n个单参数参与者的分配机制，每个玩家提交标价，机制决定其是否赢得物品及支付金额。激励相容等价于分配规则在Myerson意义上是坐标单调的。研究者仅能通过查询机制在特定输入下的输出来获取信息，并评估该机制距离最近的激励相容机制有多远，允许分布未知并支持条件采样。",
+              "contributionsAndResults": "论文首次建立了激励相容性可测试性的理论基础。核心结果是给出了坐标单调向量值函数的最优测试复杂度：任何测试算法都需要Ω(n/ε)次查询，而作者构造了一种O(n/ε)查询的一侧非自适应测试器，实现了紧确界。该结果也扩展到同时测试分配与定价规则的情形。",
+              "methodsAndTechniques": "技术上，作者将高维机制分解为多个‘线’上的子问题，在每条线上应用单调性测试。下界证明采用对抗性分布构造，利用超立方体上边界的局部性论证测试器难以发现稀疏违规。上界则结合了随机抽线与已有的单调性检验器，并通过投资策略平衡不同误差尺度下的检测概率。",
+              "limitationsAndReadingValue": "主要局限在于最优测试器虽查询效率高但运行时间指数级于输入维度，而多项式时间算法未达最优查询复杂度，二者间是否存在本质权衡仍是开放问题。本文价值在于开创了机制测试的新方向，其模型抽象清晰，技术融合巧妙，特别适合关注机制可靠性、算法博弈论与属性测试交叉领域的读者深入研读。"
+            },
+            "contentTags": [
+              "机制设计",
+              "激励相容",
+              "属性测试",
+              "单调性测试",
+              "博弈论"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Auction Design with ROI-Constrained Bidders: Truthfulness and Revenue Maximization",
+            "url": "https://arxiv.org/abs/2609.16522",
+            "arxivId": "2609.16522",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "面向ROI约束竞拍者的拍卖设计：真实性与收益最大化",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "模型构建"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "信息设计",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在线广告拍卖中，广告主通常受投资回报率（ROI）约束，不愿支付超过其收益固定比例的费用。这使得传统拟线性效用模型不再适用，导致激励相容性和收益最大化变得复杂。本文关注竞拍者同时私藏估值和ROI约束的情形，填补了多维类型空间下真实机制设计的研究空白。",
+              "modelAndSetup": "模型考虑一个卖家向多个风险中立的竞拍者拍卖单一物品。每个竞拍者拥有私有的估值v和ROI约束r，其效用在满足p≤(v/r)x时为vx−p，否则为负无穷。作者引入单位支付上限c=v/r作为等价表示，将类型空间转化为(v,c)，并研究在此空间下的DSIC与个体理性机制。",
+              "contributionsAndResults": "论文证明了在该设定下，真实机制的支付规则由分配规则唯一确定，并提出了‘0-增量机制’——一种渐近最优的确定性机制，其收益随参数趋于零而逼近确定性机制的上界，且至少达到所有真实机制最优收益的1/r倍。单竞拍者情形下，任意真实机制可被凸定价函数替代而不降低收入。",
+              "methodsAndTechniques": "作者通过将机制限制在对角线类型和固定单位支付上限的子集上，应用单维包络定理推导出支付恒等式。利用单位支付与分配之间的单调性关系，结合虚拟估值思想，构建类Myerson机制。关键技术在于将二维类型问题通过变换降维，并用凸包络方法处理单买方定价。",
+              "limitationsAndReadingValue": "结果依赖于单位支付上限分布的正则性假设，且0-增量机制仅为渐近最优。完全私有信息下的最优定价仍未解决。最值得阅读的是其新颖的类型空间转换、对真实性的精确刻画，以及将经典拍卖理论推广到ROI约束环境的方法论框架。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "面向ROI约束竞拍者的拍卖设计：真实性与收益最大化",
+            "summarySections": {
+              "backgroundAndQuestion": "在线广告拍卖中，广告主通常受投资回报率（ROI）约束，不愿支付超过其收益固定比例的费用。这使得传统拟线性效用模型不再适用，导致激励相容性和收益最大化变得复杂。本文关注竞拍者同时私藏估值和ROI约束的情形，填补了多维类型空间下真实机制设计的研究空白。",
+              "modelAndSetup": "模型考虑一个卖家向多个风险中立的竞拍者拍卖单一物品。每个竞拍者拥有私有的估值v和ROI约束r，其效用在满足p≤(v/r)x时为vx−p，否则为负无穷。作者引入单位支付上限c=v/r作为等价表示，将类型空间转化为(v,c)，并研究在此空间下的DSIC与个体理性机制。",
+              "contributionsAndResults": "论文证明了在该设定下，真实机制的支付规则由分配规则唯一确定，并提出了‘0-增量机制’——一种渐近最优的确定性机制，其收益随参数趋于零而逼近确定性机制的上界，且至少达到所有真实机制最优收益的1/r倍。单竞拍者情形下，任意真实机制可被凸定价函数替代而不降低收入。",
+              "methodsAndTechniques": "作者通过将机制限制在对角线类型和固定单位支付上限的子集上，应用单维包络定理推导出支付恒等式。利用单位支付与分配之间的单调性关系，结合虚拟估值思想，构建类Myerson机制。关键技术在于将二维类型问题通过变换降维，并用凸包络方法处理单买方定价。",
+              "limitationsAndReadingValue": "结果依赖于单位支付上限分布的正则性假设，且0-增量机制仅为渐近最优。完全私有信息下的最优定价仍未解决。最值得阅读的是其新颖的类型空间转换、对真实性的精确刻画，以及将经典拍卖理论推广到ROI约束环境的方法论框架。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "信息设计",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Constant Swap Regret in General-Sum Games via Optimistic Transition Matrices",
+            "url": "https://arxiv.org/abs/2609.16751",
+            "arxivId": "2609.16751",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过乐观转移矩阵在一般和博弈中实现常数交换遗憾",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "后悔分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "在线算法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在多人一般和博弈中难以实现个体交换遗憾的常数上界？传统学习动态在对抗环境中能达到O(√T)遗憾，但在自博弈中能否突破这一界限？本文指出，尽管近期外部遗憾已实现常数界，但交换遗憾因涉及非线性策略依赖和玩家内耦合，仍缺乏独立于时间范围的保证。这构成了一个关键的研究缺口。",
+              "modelAndSetup": "作者考虑n个玩家的一般和博弈，每个玩家有至多m个动作，在完全信息反馈下进行重复交互。每位玩家作为独立学习者，基于历史收益预测偏差增益，并更新行随机转移矩阵，最终采用其平稳分布出招。模型强调去中心化、无耦合与无需预知总轮次的特性，聚焦个体交换遗憾的累积表现。",
+              "contributionsAndResults": "论文提出了首个能在一般和博弈中实现常数个体交换遗憾的学习动态，上界为O(√n m log m log⁵/²(nm))，完全独立于博弈长度T。同时，该动态在对抗环境下仍保持O(√mT log m)遗憾，兼具自博弈高效性与鲁棒性。这一结果首次将交换遗憾从多项式依赖降至常数级，显著推进了博弈学习的收敛速率理论。",
+              "methodsAndTechniques": "核心技术结合了乐观预测与平稳分布分析：利用Markov链树定理将平稳策略表示为有向树平均，从而解耦玩家间影响；通过两阶段高阶预测分析，先以玩家粒度中心化处理变化，再在过渡索引层面追踪新鲜变量，延迟昂贵的动作相关曲率绑定，最终借助势能论证闭合误差循环。",
+              "limitationsAndReadingValue": "方法依赖复杂的指数移动平均级联与精确求解，实际实现可能面临数值挑战；且常数因子随n和m增长较快。然而，其两尺度分析框架与对固定点耦合的处理极具启发性，特别值得研究博弈学习、在线优化与高阶预测的读者深入阅读其技术附录与证明结构。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过乐观转移矩阵在一般和博弈中实现常数交换遗憾",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在多人一般和博弈中难以实现个体交换遗憾的常数上界？传统学习动态在对抗环境中能达到O(√T)遗憾，但在自博弈中能否突破这一界限？本文指出，尽管近期外部遗憾已实现常数界，但交换遗憾因涉及非线性策略依赖和玩家内耦合，仍缺乏独立于时间范围的保证。这构成了一个关键的研究缺口。",
+              "modelAndSetup": "作者考虑n个玩家的一般和博弈，每个玩家有至多m个动作，在完全信息反馈下进行重复交互。每位玩家作为独立学习者，基于历史收益预测偏差增益，并更新行随机转移矩阵，最终采用其平稳分布出招。模型强调去中心化、无耦合与无需预知总轮次的特性，聚焦个体交换遗憾的累积表现。",
+              "contributionsAndResults": "论文提出了首个能在一般和博弈中实现常数个体交换遗憾的学习动态，上界为O(√n m log m log⁵/²(nm))，完全独立于博弈长度T。同时，该动态在对抗环境下仍保持O(√mT log m)遗憾，兼具自博弈高效性与鲁棒性。这一结果首次将交换遗憾从多项式依赖降至常数级，显著推进了博弈学习的收敛速率理论。",
+              "methodsAndTechniques": "核心技术结合了乐观预测与平稳分布分析：利用Markov链树定理将平稳策略表示为有向树平均，从而解耦玩家间影响；通过两阶段高阶预测分析，先以玩家粒度中心化处理变化，再在过渡索引层面追踪新鲜变量，延迟昂贵的动作相关曲率绑定，最终借助势能论证闭合误差循环。",
+              "limitationsAndReadingValue": "方法依赖复杂的指数移动平均级联与精确求解，实际实现可能面临数值挑战；且常数因子随n和m增长较快。然而，其两尺度分析框架与对固定点耦合的处理极具启发性，特别值得研究博弈学习、在线优化与高阶预测的读者深入阅读其技术附录与证明结构。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "在线算法"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "后悔分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Anchored Sequential Deliberation",
+            "url": "https://arxiv.org/abs/2609.16673",
+            "arxivId": "2609.16673",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "锚定序贯协商",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "博弈学习",
+              "多智能体系统",
+              "公平性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统序贯协商机制将当前提案仅视为谈判破裂的备选项，忽略了其作为现状可能产生的锚定效应。现实中，已有草案会通过社会影响塑造参与者的立场表达，改变协商动力。本文追问：当个体因惯性或风险规避而向当前结果靠拢时，这种行为偏差如何影响协商过程的收敛速度与最终结果质量？这触及了集体决策中动态议程设置与路径依赖的核心张力。",
+              "modelAndSetup": "模型考虑一个一维决策空间上的群体，每个参与者有一个理想点。每轮随机抽取两人，他们先将其理想点向当前提案进行线性锚定调整，形成临时立场；然后以当前提案为威胁点进行纳什讨价还价，产出新提案。锚定强度由参数λ控制，λ越大表示个体越倾向于贴近现状。该马尔可夫过程的长期行为成为分析焦点。",
+              "contributionsAndResults": "论文揭示了一个根本权衡：更强的锚定减慢了过程混合（收敛变慢），但提升了稳态稳定性。具体而言，随着λ增大，稳态分布的社会成本单调下降，并集中于一个独特的‘协商不动点’周围。对于对称群体，该点即为最优中位数，此时更强锚定能显著降低稳态扭曲。这表明适度的现状偏好反而可能提升长期决策质量。",
+              "methodsAndTechniques": "分析主要依赖耦合技术与漂移分析。通过构造单调耦合，建立了1-Wasserstein距离的收缩率上下界，量化了收敛速度随λ增加而减缓的程度。为分析稳态性质，引入漂移函数刻画期望移动方向，并利用凸性论证和递归矩分析，证明了稳态集中在不动点附近且社会成本随λ改善。积分表示法被用于精确计算均匀分布下的扭曲界限。",
+              "limitationsAndReadingValue": "模型假设所有个体共享相同锚定强度，且更新规则高度结构化，这限制了对异质行为的刻画能力。结果虽揭示了普适权衡，但紧确界依赖特定分布。最值得阅读的是其核心洞见——锚定带来的收敛-稳定性权衡，以及将认知偏差系统性融入动态社会选择框架的建模范式，这对理解现实协商中的路径依赖与制度惯性提供了严谨理论基础。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "锚定序贯协商",
+            "summarySections": {
+              "backgroundAndQuestion": "传统序贯协商机制将当前提案仅视为谈判破裂的备选项，忽略了其作为现状可能产生的锚定效应。现实中，已有草案会通过社会影响塑造参与者的立场表达，改变协商动力。本文追问：当个体因惯性或风险规避而向当前结果靠拢时，这种行为偏差如何影响协商过程的收敛速度与最终结果质量？这触及了集体决策中动态议程设置与路径依赖的核心张力。",
+              "modelAndSetup": "模型考虑一个一维决策空间上的群体，每个参与者有一个理想点。每轮随机抽取两人，他们先将其理想点向当前提案进行线性锚定调整，形成临时立场；然后以当前提案为威胁点进行纳什讨价还价，产出新提案。锚定强度由参数λ控制，λ越大表示个体越倾向于贴近现状。该马尔可夫过程的长期行为成为分析焦点。",
+              "contributionsAndResults": "论文揭示了一个根本权衡：更强的锚定减慢了过程混合（收敛变慢），但提升了稳态稳定性。具体而言，随着λ增大，稳态分布的社会成本单调下降，并集中于一个独特的‘协商不动点’周围。对于对称群体，该点即为最优中位数，此时更强锚定能显著降低稳态扭曲。这表明适度的现状偏好反而可能提升长期决策质量。",
+              "methodsAndTechniques": "分析主要依赖耦合技术与漂移分析。通过构造单调耦合，建立了1-Wasserstein距离的收缩率上下界，量化了收敛速度随λ增加而减缓的程度。为分析稳态性质，引入漂移函数刻画期望移动方向，并利用凸性论证和递归矩分析，证明了稳态集中在不动点附近且社会成本随λ改善。积分表示法被用于精确计算均匀分布下的扭曲界限。",
+              "limitationsAndReadingValue": "模型假设所有个体共享相同锚定强度，且更新规则高度结构化，这限制了对异质行为的刻画能力。结果虽揭示了普适权衡，但紧确界依赖特定分布。最值得阅读的是其核心洞见——锚定带来的收敛-稳定性权衡，以及将认知偏差系统性融入动态社会选择框架的建模范式，这对理解现实协商中的路径依赖与制度惯性提供了严谨理论基础。"
+            },
+            "contentTags": [
+              "社会选择",
+              "机制设计",
+              "博弈学习",
+              "多智能体系统",
+              "公平性"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The price of anarchy in the max-distance network creation game is not constant",
+            "url": "https://arxiv.org/abs/2609.17395",
+            "arxivId": "2609.17395",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.DM"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "最大距离网络创建博弈中的无政府代价非常数",
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "模型构建"
+            ],
+            "contentTags": [
+              "网络创建博弈",
+              "无政府代价",
+              "最大距离"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么网络创建博弈中的效率损失可能无法被常数限制？该问题源于Fabrikant等人提出的经典模型，后续Demaine等人引入最大距离版本（MaxGame），关注个体在构建网络时因自私行为导致的整体性能下降。尽管已有研究表明在某些参数下无政府代价（PoA）有常数上界，但一个核心问题仍未解决：当边价为1时，PoA是否始终有界？本文正是针对这一理论缺口展开。",
+              "modelAndSetup": "作者考虑n个玩家通过购买边来构建网络的博弈，每个玩家的目标是最小化自身购边成本与网络中最远节点距离（即偏心率）之和。边的价格α固定，策略为选择购买哪些邻接边，均衡为纯纳什均衡。社会成本是所有玩家成本之和，PoA定义为最差均衡的社会成本与最优结构的比值。重点分析α=1时的行为。",
+              "contributionsAndResults": "论文证明了在边价α=1时，最大距离网络创建博弈的无政府代价不是常数，而是至少为Ω(√log n)，从而否定了此前可能存在的常数猜想。通过构造一族纯纳什均衡图结构，展示了随着节点数增长，效率损失会持续上升。这一结果填补了该模型下PoA增长性的理论空白，并紧致匹配已知上界。",
+              "methodsAndTechniques": "作者基于Lavrov-Loh-Messegue（LLM）构造的距离一致图，取其二部双覆盖并细分每条边，形成高度对称的图结构。利用‘支持集不相交则距离最大’的性质，为每个潜在偏离者找到远离的新目标节点。通过细致的距离计算，验证所有玩家均无严格盈利的单方面偏离，从而证明其为纳什均衡。",
+              "limitationsAndReadingValue": "所构造的均衡是非严格的，在边价低于1时不成立，因此不能推广到更广的价格区间。此外，构造依赖特定图结构，未必反映真实网络形成过程。但论文的价值在于提供了首个非常数PoA的明确证明，其构造方法和对距离性质的运用极具启发性，特别值得对均衡分析和下界构造感兴趣的读者深入研读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "最大距离网络创建博弈中的无政府代价非常数",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么网络创建博弈中的效率损失可能无法被常数限制？该问题源于Fabrikant等人提出的经典模型，后续Demaine等人引入最大距离版本（MaxGame），关注个体在构建网络时因自私行为导致的整体性能下降。尽管已有研究表明在某些参数下无政府代价（PoA）有常数上界，但一个核心问题仍未解决：当边价为1时，PoA是否始终有界？本文正是针对这一理论缺口展开。",
+              "modelAndSetup": "作者考虑n个玩家通过购买边来构建网络的博弈，每个玩家的目标是最小化自身购边成本与网络中最远节点距离（即偏心率）之和。边的价格α固定，策略为选择购买哪些邻接边，均衡为纯纳什均衡。社会成本是所有玩家成本之和，PoA定义为最差均衡的社会成本与最优结构的比值。重点分析α=1时的行为。",
+              "contributionsAndResults": "论文证明了在边价α=1时，最大距离网络创建博弈的无政府代价不是常数，而是至少为Ω(√log n)，从而否定了此前可能存在的常数猜想。通过构造一族纯纳什均衡图结构，展示了随着节点数增长，效率损失会持续上升。这一结果填补了该模型下PoA增长性的理论空白，并紧致匹配已知上界。",
+              "methodsAndTechniques": "作者基于Lavrov-Loh-Messegue（LLM）构造的距离一致图，取其二部双覆盖并细分每条边，形成高度对称的图结构。利用‘支持集不相交则距离最大’的性质，为每个潜在偏离者找到远离的新目标节点。通过细致的距离计算，验证所有玩家均无严格盈利的单方面偏离，从而证明其为纳什均衡。",
+              "limitationsAndReadingValue": "所构造的均衡是非严格的，在边价低于1时不成立，因此不能推广到更广的价格区间。此外，构造依赖特定图结构，未必反映真实网络形成过程。但论文的价值在于提供了首个非常数PoA的明确证明，其构造方法和对距离性质的运用极具启发性，特别值得对均衡分析和下界构造感兴趣的读者深入研读。"
+            },
+            "contentTags": [
+              "网络创建博弈",
+              "无政府代价",
+              "最大距离"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "模型构建"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-09-15",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202609150000 TO 202609152359\"",
+            "totalResults": 13,
+            "fetchedCount": 13
+          }
+        },
+        "dedupedCount": 13
+      },
+      "arxivTotalResults": 13,
+      "fetchedCount": 13,
+      "fetchedPapers": [
+        {
+          "title": "Agentic Societies Need a Social Harness",
+          "url": "https://arxiv.org/abs/2609.17527",
+          "arxivId": "2609.17527",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.NI"
+          ],
+          "abstract": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \\emph{social harness} for inter-agent interactions, in addition to each agent's \\emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities."
+        },
+        {
+          "title": "Decomposition Buys Integrity, Not Yield",
+          "url": "https://arxiv.org/abs/2609.17464",
+          "arxivId": "2609.17464",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.DC"
+          ],
+          "abstract": "Multi-agent systems split a task across a tree of agents and justify the split with folklore: smaller contexts, cleaner separation, parallelism. We ask what the split does to how much of what the leaves discover reaches the root. Model a decomposition as a tree in which an agent handed $b$ items keeps any one with probability $r(b)$. If $r(b)=1/b$, every tree delivers exactly one finding, for every task size and every shape; we verify this to $2.4 \\times 10^{-15}$ on 20,000 random irregular trees. If $r(b)=Cb^{-δ}$, a depth-$k$ tree over $N$ findings yields $C^k N^{1-δ}$: task size and architecture separate, and architecture contributes only $C \\le 1$ per level, so flat is optimal for yield and no arrangement of agents escapes the exponent $δ$. On 600 production deep-research traces $δ= 0.34$ [0.30, 0.38], by three identifications that do not share a failure mode. At a hop where item boundaries come from the tool rather than a text heuristic, and where $b=1$ occurs 550 times, $C = 0.571$ [0.527, 0.615] is observed rather than extrapolated, over 16,082 hops. A tier also costs alignment: on 1,012 annotated multi-agent traces one brief in sixteen goes off-target, giving $μ= 0.939$ and a per-tier penalty $Cμ= 0.536$. Depth is bought on two other axes. The root context is the only state that persists and the only one that cannot cheaply forget, and depth cuts its exposure from $N$ items to $N^{1/k}$. Depth is also cheaper: production flat agents bill as $N^{1.39}$, not the $N^2$ an append-only context predicts, and at equal spend two tiers overtake flat at 403 findings. Across every parameter we measured the model says 0.7% to 11.3% of production sessions are worth delegating, against 7.8% that do. A hazard model on 743,819 production tool calls finds that delegation does not respond to a filling context and is instead an opening move."
+        },
+        {
+          "title": "Exact Fusion and Coordinated Exploration in Multi-Robot Active Inference",
+          "url": "https://arxiv.org/abs/2609.17384",
+          "arxivId": "2609.17384",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA"
+          ],
+          "abstract": "Robot teams that learn a common environment model exchange belief summaries and plan by the expected information gain of their actions. Under conjugate exponential-family beliefs the shared belief is counted once per robot at two points: at fusion, the product of local posteriors counts the common prior $n$ times, and at planning, every robot scores its plan under the same belief and the team converges on the same unknown. Both errors are removed by adding evidence increments to the shared natural parameter, realized increments at fusion and expected increments at planning. The expected increment of a committed teammate gives the next robot its conditional gain; corrected gains sum to the joint gain, the redundancy removed equals the total correlation of the planned observation streams, and sequential commitment keeps the $1/2$ greedy guarantee. The expected increment is exact for Gaussian beliefs with fixed sampling paths and for Dirichlet beliefs under the novelty approximation of discrete active inference, whose team objective has a closed concave form within an explicit bound of the exact mutual information, and fails for finite hypothesis classes, where a short exact enumeration replaces it. Experiments on cooperative RockSample, foraging, and field monitoring show that fusion correction leaves exploration redundancy unchanged, anticipated evidence removes it, and sequential commitment recovers most of the value of centralized joint planning at cost linear in the team size."
+        },
+        {
+          "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.17320",
+          "arxivId": "2609.17320",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems."
+        },
+        {
+          "title": "Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.17306",
+          "arxivId": "2609.17306",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "abstract": "Multi-agent Systems (MAS) combine multiple model outputs to solve complex reasoning tasks. However, despite rapid growth of available open-source models, there is limited research on how to select optimal model candidates out of this massive pool. We systematically evaluate 8 model selection strategies (including model size, accuracy and answer diversity) across before-generation (routing) and after-generation (majority-voting, LLM-as-a-judge) MAS architectures on challenging scientific benchmarks. Our findings show a significant gap between theoretical oracle potential and actual performance: Expanding candidate pool sizes often degrades performance below that of the top performing base-model. We find that candidate selection within a single model family is the strategy that yields the best relative performance over a standalone model. These results demonstrate that adding arbitrary models to a heterogeneous MAS can introduce system instability, highlighting model selection as a critical design choice for multi-agent systems."
+        },
+        {
+          "title": "Calibrate Once, Fly Any Team: Residual-Grounded Low-Fidelity Training for Cooperative Drone Swarms",
+          "url": "https://arxiv.org/abs/2609.17265",
+          "arxivId": "2609.17265",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "abstract": "Training multi-agent drone-swarm policies directly in high-fidelity (HF) rigid-body physics is accurate but computationally expensive. This cost scales poorly with team size, as each additional agent multiplies contact-resolution complexity and sharply raises the in-simulation crash rate. To address this, we propose a mixed-fidelity training scheme that eliminates HF reinforcement learning entirely. A single shared, decentralized policy is optimized inside a fully-differentiable, JAX-native low-fidelity (LF) point-mass simulator. The simulator is corrected by a small, per-agent bagged residual ensemble fit once, offline, using short calibration flights in the HF simulator. Because calibration requires only one isolated drone, the data collection budget does not compound with team size. Reference trajectories are generated by rolling out an existing LF-only policy and tracked in the HF simulator by a zero-training PD controller. Evaluated across four cooperative drone tasks and team sizes from 3 to 18, the residual-corrected policy outperforms an uncorrected LF baseline in all combinations, and a from-scratch HF policy in 22 of 24 combinations tested. It trails an HF-finetuned policy by a margin that narrows steadily with team size. Ultimately, the proposed method achieves near-equivalent performance at the largest team sizes at a fraction of the computational cost, completely avoiding the high crash rates typical of HF training."
+        },
+        {
+          "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+          "url": "https://arxiv.org/abs/2609.17146",
+          "arxivId": "2609.17146",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "cs.MA",
+            "cs.SI",
+            "eess.SY"
+          ],
+          "abstract": "We study an optimal intervention problem for linear threshold models. This is a popular class of dynamical network systems whereby a number of agents, identified with the nodes of a graph, strategically change their binary action (0 or 1) according to a threshold rule. Specifically, an agent adopts action 1 if and only if the fraction of its neighbors in the interaction graph that do so is greater than or equal to a prescribed threshold. Assuming that a planner can modify the agents' thresholds at a cost equal to the aggregate threshold increase, we study the minimum intervention cost needed to ensure global convergence to the all-1 configuration. Our main contribution is the introduction of a new graph-theoretic quantity, called oriented path number, that is the minimum number of disjoint paths needed to cover the graph that can be oriented to form a directed acyclic graph. When thresholds are all equal to 1/2, the optimal cost is shown to coincide with the oriented path number, whereas, in the general case, it turns out to be the main ingredient of a bound on the optimal intervention cost."
+        },
+        {
+          "title": "BeWater: Effective Protesters Navigate Watersheds in Street Networks",
+          "url": "https://arxiv.org/abs/2609.17017",
+          "arxivId": "2609.17017",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "During social movements, protesters need to gather with limited communication means and limited knowledge other than what they observe in their direct surroundings. We propose BeWater, a fully distributed walking protocol that achieves gathering thanks to city information like street length, number of restaurants, number of lanes, or street names. Even though using only one of these observables performs poorly, we show that combining them in more advanced tactics rapidly leads to groups of significant sizes. To do so, our work leverages OpenStreetMap data to perform experiments on several real-world cities."
+        },
+        {
+          "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress",
+          "url": "https://arxiv.org/abs/2609.16995",
+          "arxivId": "2609.16995",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "Autoresearch agents are reshaping the research ecosystem, but they can also let flawed claims enter the literature at scale. Human advisors catch such issues in drafts through careful, traceable feedback, yet advisor-style assessment requires extensive manual effort and does not scale. To shift automated paper assessment from a judge to a diagnostician, we introduce PaperDoctor, an agent framework for pre-submission feedback with three key innovations. First, a holistic hierarchical framework evaluates writing, layout, references, code, theory, prior work, and experiments through three layers: L1 surface screening, L2 typed verifiers that route each claim to the appropriate evidence, and L3 reproducers that rerun experiments by priority. Second, each finding contains an observation, a pointer to specific evidence such as a sentence, equation, or code line, and a revision suggestion, making critiques auditable and actionable. Third, PaperDoctor selectively rebuilds and reruns experiments based on claim importance and compute budget, surfacing reproducibility gaps and quantitative limitations that are invisible from the manuscript alone. We evaluate PaperDoctor on 30 in-progress papers, yielding 70.6% agreement and all positive holistic scores, and on 40 manuscripts across machine learning, natural science, and social science, covering human- and AI-authored papers with code. Overall, PaperDoctor produces more auditable feedback than human and other agentic reviewers, pairs critiques with concrete suggestions by design, and complements dimensions often overlooked by human reviewers. We also develop an interactive interface that lets authors browse findings grounded in their paper. PaperDoctor reframes automated paper assessment as diagnosis rather than verdict, taking a concrete step toward AI advisors for more rigorous AI-assisted scientific discovery."
+        },
+        {
+          "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+          "url": "https://arxiv.org/abs/2609.16986",
+          "arxivId": "2609.16986",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B. On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items. Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint. The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring. ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation."
+        },
+        {
+          "title": "Multi-Agent Learning with Cooperation-Driven Optimization Dynamics",
+          "url": "https://arxiv.org/abs/2609.16917",
+          "arxivId": "2609.16917",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "abstract": "Multilayer Artificial Neural Networks trained via backpropagation are the basic blocks of many, more complex, classification algorithms. Their strength lies in the possibility of realizing, with arbitrary precision, any function. This result comes at the cost of the large number of involved parameters to be optimized. In this work, we propose a mechanism for cooperation, i.e., information exchange among several artificial neural networks, with the goal of reducing model complexity while maintaining performance. More precisely, we consider several \"small\" agents, i.e., containing fewer parameters than a reference \"large\" one, that during training share their predictions by incorporating this information into the loss function and thus directly influence weight updates. We consider several strategies for implementing cooperation, e.g., the voter model, majority model, and weighted average model based on an agent's confidence in its prediction. We numerically compare the accuracy of those strategies on several standard benchmarks. Our results support the claim that several small agents can outperform a single large model on a given classification task; the shared signals affect each agent's optimization algorithm by modulating both the descent direction and the step size, converging toward a global consensus. The proposed proof-of-concept significantly reduces the number of parameters to be trained while preserving comparable performance, thereby limiting computational resource usage."
+        },
+        {
+          "title": "Anchored Sequential Deliberation",
+          "url": "https://arxiv.org/abs/2609.16673",
+          "arxivId": "2609.16673",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "Sequential deliberation is a mechanism for collective decision making: at each round, a uniformly randomly selected pair is asked to revise a collective outcome, which then becomes the reference point for the next round. Existing theory by Fain et al.~\\cite{fain2017sequential} treats the current outcome solely as the disagreement alternative in bargaining. Yet an existing draft, policy, or proposal might carry social influence and anchor participants' expressed positions toward the status quo. We introduce anchored sequential deliberation on a one-dimensional decision space. In each round, two participants with bliss points $U$ and $V$ shift their positions toward the previous outcome $O_{t-1}$ with anchoring strength $λ$, then Nash-bargain using $O_{t-1}$ as the disagreement alternative. The update simplifies to $O_t=(1-λ)\\mathsf{Median}\\{U,V,O_{t-1}\\}+λO_{t-1}$. We establish a convergence--stability trade-off. For every population distribution and $λ<1$, the process has a unique stationary distribution. A monotone coupling yields a $1$-Wasserstein contraction factor of at most $\\frac{1+λ}{2}$ and at least $λ$; thus, stronger anchoring slows mixing. On the other hand, stationary social cost weakly decreases with $λ$, although the worst-case distortion remains $\\frac{1+\\sqrt{2}}{2}$. We also identify a unique \\emph{deliberative fixed point}, where the expected unanchored movement is zero, and prove that the stationary distribution concentrates around it as $λ\\to 1$. For the uniform population, stationary distortion lies between $1+\\frac{1-λ}{9+7λ}$ and $1+\\frac{1-λ}{6(1+λ)}$, with both bounds approaching $1$ as $λ\\to1$. Simulations for uniform and Beta populations show that stronger anchoring slows mixing, concentrates the stationary distribution, and lowers stationary distortion in these instances."
+        },
+        {
+          "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+          "url": "https://arxiv.org/abs/2609.16487",
+          "arxivId": "2609.16487",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "We present a framework for evaluating data-science agents on live, continuously updated data using executable ground truth and format-agnostic factoid scoring. Consider this example query: \"what were last week's audience sizes\"---the reference answer changes as the underlying data changes, so static references become outdated and standard LLM-as-a-judge pipelines cannot verify responses against a fixed ground truth. Our central contribution, ground-truth-as-code, encodes each expected answer as an executable reference function that recomputes the answer directly from live data at evaluation time, ensuring the reference remains consistent with the system it describes. We combine this with a factoid-level, format-agnostic judge that decomposes both the agent's response and the computed ground truth into atomic claims and scores precision, recall, and accuracy over them, irrespective of the response format (prose, list, table, HTML, etc.). The approach is applicable to agents whose expected outputs can be expressed as executable data computations. We validate the framework through a human--LLM agreement study on an internally developed machine learning skill deployed in production, using a synthetic database constructed to reproduce production schemas and entity relationships. Relative to a natural-language ground-truth baseline, our method achieves a 29% improvement in the Matthews Correlation Coefficient (MCC)---a class-balanced measure of agreement between expert annotators and LLM-as-a-judge predictions---and a 16% reduction in token consumption per test case, while a self-directed baseline lacking explicit ground truth is anti-correlated with human judgment. Agents that perform multi-source data integration and computation over non-stationary data are routinely deployed in industry; we propose ground-truth-as-code as a practical methodology for their evaluation."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Agentic Societies Need a Social Harness",
+              "url": "https://arxiv.org/abs/2609.17527",
+              "arxivId": "2609.17527",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.NI"
+              ],
+              "abstract": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \\emph{social harness} for inter-agent interactions, in addition to each agent's \\emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities."
+            },
+            {
+              "title": "Decomposition Buys Integrity, Not Yield",
+              "url": "https://arxiv.org/abs/2609.17464",
+              "arxivId": "2609.17464",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.DC"
+              ],
+              "abstract": "Multi-agent systems split a task across a tree of agents and justify the split with folklore: smaller contexts, cleaner separation, parallelism. We ask what the split does to how much of what the leaves discover reaches the root. Model a decomposition as a tree in which an agent handed $b$ items keeps any one with probability $r(b)$. If $r(b)=1/b$, every tree delivers exactly one finding, for every task size and every shape; we verify this to $2.4 \\times 10^{-15}$ on 20,000 random irregular trees. If $r(b)=Cb^{-δ}$, a depth-$k$ tree over $N$ findings yields $C^k N^{1-δ}$: task size and architecture separate, and architecture contributes only $C \\le 1$ per level, so flat is optimal for yield and no arrangement of agents escapes the exponent $δ$. On 600 production deep-research traces $δ= 0.34$ [0.30, 0.38], by three identifications that do not share a failure mode. At a hop where item boundaries come from the tool rather than a text heuristic, and where $b=1$ occurs 550 times, $C = 0.571$ [0.527, 0.615] is observed rather than extrapolated, over 16,082 hops. A tier also costs alignment: on 1,012 annotated multi-agent traces one brief in sixteen goes off-target, giving $μ= 0.939$ and a per-tier penalty $Cμ= 0.536$. Depth is bought on two other axes. The root context is the only state that persists and the only one that cannot cheaply forget, and depth cuts its exposure from $N$ items to $N^{1/k}$. Depth is also cheaper: production flat agents bill as $N^{1.39}$, not the $N^2$ an append-only context predicts, and at equal spend two tiers overtake flat at 403 findings. Across every parameter we measured the model says 0.7% to 11.3% of production sessions are worth delegating, against 7.8% that do. A hazard model on 743,819 production tool calls finds that delegation does not respond to a filling context and is instead an opening move."
+            },
+            {
+              "title": "Exact Fusion and Coordinated Exploration in Multi-Robot Active Inference",
+              "url": "https://arxiv.org/abs/2609.17384",
+              "arxivId": "2609.17384",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA"
+              ],
+              "abstract": "Robot teams that learn a common environment model exchange belief summaries and plan by the expected information gain of their actions. Under conjugate exponential-family beliefs the shared belief is counted once per robot at two points: at fusion, the product of local posteriors counts the common prior $n$ times, and at planning, every robot scores its plan under the same belief and the team converges on the same unknown. Both errors are removed by adding evidence increments to the shared natural parameter, realized increments at fusion and expected increments at planning. The expected increment of a committed teammate gives the next robot its conditional gain; corrected gains sum to the joint gain, the redundancy removed equals the total correlation of the planned observation streams, and sequential commitment keeps the $1/2$ greedy guarantee. The expected increment is exact for Gaussian beliefs with fixed sampling paths and for Dirichlet beliefs under the novelty approximation of discrete active inference, whose team objective has a closed concave form within an explicit bound of the exact mutual information, and fails for finite hypothesis classes, where a short exact enumeration replaces it. Experiments on cooperative RockSample, foraging, and field monitoring show that fusion correction leaves exploration redundancy unchanged, anticipated evidence removes it, and sequential commitment recovers most of the value of centralized joint planning at cost linear in the team size."
+            },
+            {
+              "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2609.17320",
+              "arxivId": "2609.17320",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems."
+            },
+            {
+              "title": "Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2609.17306",
+              "arxivId": "2609.17306",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "abstract": "Multi-agent Systems (MAS) combine multiple model outputs to solve complex reasoning tasks. However, despite rapid growth of available open-source models, there is limited research on how to select optimal model candidates out of this massive pool. We systematically evaluate 8 model selection strategies (including model size, accuracy and answer diversity) across before-generation (routing) and after-generation (majority-voting, LLM-as-a-judge) MAS architectures on challenging scientific benchmarks. Our findings show a significant gap between theoretical oracle potential and actual performance: Expanding candidate pool sizes often degrades performance below that of the top performing base-model. We find that candidate selection within a single model family is the strategy that yields the best relative performance over a standalone model. These results demonstrate that adding arbitrary models to a heterogeneous MAS can introduce system instability, highlighting model selection as a critical design choice for multi-agent systems."
+            },
+            {
+              "title": "Calibrate Once, Fly Any Team: Residual-Grounded Low-Fidelity Training for Cooperative Drone Swarms",
+              "url": "https://arxiv.org/abs/2609.17265",
+              "arxivId": "2609.17265",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.RO"
+              ],
+              "abstract": "Training multi-agent drone-swarm policies directly in high-fidelity (HF) rigid-body physics is accurate but computationally expensive. This cost scales poorly with team size, as each additional agent multiplies contact-resolution complexity and sharply raises the in-simulation crash rate. To address this, we propose a mixed-fidelity training scheme that eliminates HF reinforcement learning entirely. A single shared, decentralized policy is optimized inside a fully-differentiable, JAX-native low-fidelity (LF) point-mass simulator. The simulator is corrected by a small, per-agent bagged residual ensemble fit once, offline, using short calibration flights in the HF simulator. Because calibration requires only one isolated drone, the data collection budget does not compound with team size. Reference trajectories are generated by rolling out an existing LF-only policy and tracked in the HF simulator by a zero-training PD controller. Evaluated across four cooperative drone tasks and team sizes from 3 to 18, the residual-corrected policy outperforms an uncorrected LF baseline in all combinations, and a from-scratch HF policy in 22 of 24 combinations tested. It trails an HF-finetuned policy by a margin that narrows steadily with team size. Ultimately, the proposed method achieves near-equivalent performance at the largest team sizes at a fraction of the computational cost, completely avoiding the high crash rates typical of HF training."
+            },
+            {
+              "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+              "url": "https://arxiv.org/abs/2609.17146",
+              "arxivId": "2609.17146",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "cs.MA",
+                "cs.SI",
+                "eess.SY"
+              ],
+              "abstract": "We study an optimal intervention problem for linear threshold models. This is a popular class of dynamical network systems whereby a number of agents, identified with the nodes of a graph, strategically change their binary action (0 or 1) according to a threshold rule. Specifically, an agent adopts action 1 if and only if the fraction of its neighbors in the interaction graph that do so is greater than or equal to a prescribed threshold. Assuming that a planner can modify the agents' thresholds at a cost equal to the aggregate threshold increase, we study the minimum intervention cost needed to ensure global convergence to the all-1 configuration. Our main contribution is the introduction of a new graph-theoretic quantity, called oriented path number, that is the minimum number of disjoint paths needed to cover the graph that can be oriented to form a directed acyclic graph. When thresholds are all equal to 1/2, the optimal cost is shown to coincide with the oriented path number, whereas, in the general case, it turns out to be the main ingredient of a bound on the optimal intervention cost."
+            },
+            {
+              "title": "BeWater: Effective Protesters Navigate Watersheds in Street Networks",
+              "url": "https://arxiv.org/abs/2609.17017",
+              "arxivId": "2609.17017",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "During social movements, protesters need to gather with limited communication means and limited knowledge other than what they observe in their direct surroundings. We propose BeWater, a fully distributed walking protocol that achieves gathering thanks to city information like street length, number of restaurants, number of lanes, or street names. Even though using only one of these observables performs poorly, we show that combining them in more advanced tactics rapidly leads to groups of significant sizes. To do so, our work leverages OpenStreetMap data to perform experiments on several real-world cities."
+            },
+            {
+              "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress",
+              "url": "https://arxiv.org/abs/2609.16995",
+              "arxivId": "2609.16995",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "Autoresearch agents are reshaping the research ecosystem, but they can also let flawed claims enter the literature at scale. Human advisors catch such issues in drafts through careful, traceable feedback, yet advisor-style assessment requires extensive manual effort and does not scale. To shift automated paper assessment from a judge to a diagnostician, we introduce PaperDoctor, an agent framework for pre-submission feedback with three key innovations. First, a holistic hierarchical framework evaluates writing, layout, references, code, theory, prior work, and experiments through three layers: L1 surface screening, L2 typed verifiers that route each claim to the appropriate evidence, and L3 reproducers that rerun experiments by priority. Second, each finding contains an observation, a pointer to specific evidence such as a sentence, equation, or code line, and a revision suggestion, making critiques auditable and actionable. Third, PaperDoctor selectively rebuilds and reruns experiments based on claim importance and compute budget, surfacing reproducibility gaps and quantitative limitations that are invisible from the manuscript alone. We evaluate PaperDoctor on 30 in-progress papers, yielding 70.6% agreement and all positive holistic scores, and on 40 manuscripts across machine learning, natural science, and social science, covering human- and AI-authored papers with code. Overall, PaperDoctor produces more auditable feedback than human and other agentic reviewers, pairs critiques with concrete suggestions by design, and complements dimensions often overlooked by human reviewers. We also develop an interactive interface that lets authors browse findings grounded in their paper. PaperDoctor reframes automated paper assessment as diagnosis rather than verdict, taking a concrete step toward AI advisors for more rigorous AI-assisted scientific discovery."
+            },
+            {
+              "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+              "url": "https://arxiv.org/abs/2609.16986",
+              "arxivId": "2609.16986",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B. On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items. Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint. The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring. ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation."
+            },
+            {
+              "title": "Multi-Agent Learning with Cooperation-Driven Optimization Dynamics",
+              "url": "https://arxiv.org/abs/2609.16917",
+              "arxivId": "2609.16917",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG"
+              ],
+              "abstract": "Multilayer Artificial Neural Networks trained via backpropagation are the basic blocks of many, more complex, classification algorithms. Their strength lies in the possibility of realizing, with arbitrary precision, any function. This result comes at the cost of the large number of involved parameters to be optimized. In this work, we propose a mechanism for cooperation, i.e., information exchange among several artificial neural networks, with the goal of reducing model complexity while maintaining performance. More precisely, we consider several \"small\" agents, i.e., containing fewer parameters than a reference \"large\" one, that during training share their predictions by incorporating this information into the loss function and thus directly influence weight updates. We consider several strategies for implementing cooperation, e.g., the voter model, majority model, and weighted average model based on an agent's confidence in its prediction. We numerically compare the accuracy of those strategies on several standard benchmarks. Our results support the claim that several small agents can outperform a single large model on a given classification task; the shared signals affect each agent's optimization algorithm by modulating both the descent direction and the step size, converging toward a global consensus. The proposed proof-of-concept significantly reduces the number of parameters to be trained while preserving comparable performance, thereby limiting computational resource usage."
+            },
+            {
+              "title": "Anchored Sequential Deliberation",
+              "url": "https://arxiv.org/abs/2609.16673",
+              "arxivId": "2609.16673",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA"
+              ],
+              "abstract": "Sequential deliberation is a mechanism for collective decision making: at each round, a uniformly randomly selected pair is asked to revise a collective outcome, which then becomes the reference point for the next round. Existing theory by Fain et al.~\\cite{fain2017sequential} treats the current outcome solely as the disagreement alternative in bargaining. Yet an existing draft, policy, or proposal might carry social influence and anchor participants' expressed positions toward the status quo. We introduce anchored sequential deliberation on a one-dimensional decision space. In each round, two participants with bliss points $U$ and $V$ shift their positions toward the previous outcome $O_{t-1}$ with anchoring strength $λ$, then Nash-bargain using $O_{t-1}$ as the disagreement alternative. The update simplifies to $O_t=(1-λ)\\mathsf{Median}\\{U,V,O_{t-1}\\}+λO_{t-1}$. We establish a convergence--stability trade-off. For every population distribution and $λ<1$, the process has a unique stationary distribution. A monotone coupling yields a $1$-Wasserstein contraction factor of at most $\\frac{1+λ}{2}$ and at least $λ$; thus, stronger anchoring slows mixing. On the other hand, stationary social cost weakly decreases with $λ$, although the worst-case distortion remains $\\frac{1+\\sqrt{2}}{2}$. We also identify a unique \\emph{deliberative fixed point}, where the expected unanchored movement is zero, and prove that the stationary distribution concentrates around it as $λ\\to 1$. For the uniform population, stationary distortion lies between $1+\\frac{1-λ}{9+7λ}$ and $1+\\frac{1-λ}{6(1+λ)}$, with both bounds approaching $1$ as $λ\\to1$. Simulations for uniform and Beta populations show that stronger anchoring slows mixing, concentrates the stationary distribution, and lowers stationary distortion in these instances."
+            },
+            {
+              "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+              "url": "https://arxiv.org/abs/2609.16487",
+              "arxivId": "2609.16487",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "abstract": "We present a framework for evaluating data-science agents on live, continuously updated data using executable ground truth and format-agnostic factoid scoring. Consider this example query: \"what were last week's audience sizes\"---the reference answer changes as the underlying data changes, so static references become outdated and standard LLM-as-a-judge pipelines cannot verify responses against a fixed ground truth. Our central contribution, ground-truth-as-code, encodes each expected answer as an executable reference function that recomputes the answer directly from live data at evaluation time, ensuring the reference remains consistent with the system it describes. We combine this with a factoid-level, format-agnostic judge that decomposes both the agent's response and the computed ground truth into atomic claims and scores precision, recall, and accuracy over them, irrespective of the response format (prose, list, table, HTML, etc.). The approach is applicable to agents whose expected outputs can be expressed as executable data computations. We validate the framework through a human--LLM agreement study on an internally developed machine learning skill deployed in production, using a synthetic database constructed to reproduce production schemas and entity relationships. Relative to a natural-language ground-truth baseline, our method achieves a 29% improvement in the Matthews Correlation Coefficient (MCC)---a class-balanced measure of agreement between expert annotators and LLM-as-a-judge predictions---and a 16% reduction in token consumption per test case, while a self-directed baseline lacking explicit ground truth is anti-correlated with human judgment. Agents that perform multi-source data integration and computation over non-stationary data are routinely deployed in industry; we propose ground-truth-as-code as a practical methodology for their evaluation."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 5,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 4,
+                  "theoreticalDepth": 7,
+                  "overall": 2,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 2,
+                  "horizonValue": 2,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 4,
+                  "theoreticalDepth": 3,
+                  "overall": 1,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 3,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Agentic Societies Need a Social Harness",
+              "url": "https://arxiv.org/abs/2609.17527",
+              "arxivId": "2609.17527",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.NI"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Decomposition Buys Integrity, Not Yield",
+              "url": "https://arxiv.org/abs/2609.17464",
+              "arxivId": "2609.17464",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI",
+                "cs.DC"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "Exact Fusion and Coordinated Exploration in Multi-Robot Active Inference",
+              "url": "https://arxiv.org/abs/2609.17384",
+              "arxivId": "2609.17384",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2609.17320",
+              "arxivId": "2609.17320",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2609.17306",
+              "arxivId": "2609.17306",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.AI"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            },
+            {
+              "title": "Calibrate Once, Fly Any Team: Residual-Grounded Low-Fidelity Training for Cooperative Drone Swarms",
+              "url": "https://arxiv.org/abs/2609.17265",
+              "arxivId": "2609.17265",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.RO"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 5.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+              "url": "https://arxiv.org/abs/2609.17146",
+              "arxivId": "2609.17146",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "cs.MA",
+                "cs.SI",
+                "eess.SY"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 7.0,
+                "overall": 2.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "BeWater: Effective Protesters Navigate Watersheds in Street Networks",
+              "url": "https://arxiv.org/abs/2609.17017",
+              "arxivId": "2609.17017",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 2.0,
+                "horizonValue": 2.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 6.0,
+                "total": 6.0
+              }
+            },
+            {
+              "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress",
+              "url": "https://arxiv.org/abs/2609.16995",
+              "arxivId": "2609.16995",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+              "url": "https://arxiv.org/abs/2609.16986",
+              "arxivId": "2609.16986",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            },
+            {
+              "title": "Multi-Agent Learning with Cooperation-Driven Optimization Dynamics",
+              "url": "https://arxiv.org/abs/2609.16917",
+              "arxivId": "2609.16917",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 3.0,
+                "overall": 1.0,
+                "penalty": -3.0,
+                "baseTotal": 10.0,
+                "total": 10.0
+              }
+            },
+            {
+              "title": "Anchored Sequential Deliberation",
+              "url": "https://arxiv.org/abs/2609.16673",
+              "arxivId": "2609.16673",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 3.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+              "url": "https://arxiv.org/abs/2609.16487",
+              "arxivId": "2609.16487",
+              "date": "2026-09-15",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.LG",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Agentic Societies Need a Social Harness",
+          "url": "https://arxiv.org/abs/2609.17527",
+          "arxivId": "2609.17527",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.NI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Decomposition Buys Integrity, Not Yield",
+          "url": "https://arxiv.org/abs/2609.17464",
+          "arxivId": "2609.17464",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.DC"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Exact Fusion and Coordinated Exploration in Multi-Robot Active Inference",
+          "url": "https://arxiv.org/abs/2609.17384",
+          "arxivId": "2609.17384",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.17320",
+          "arxivId": "2609.17320",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.17306",
+          "arxivId": "2609.17306",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        },
+        {
+          "title": "Calibrate Once, Fly Any Team: Residual-Grounded Low-Fidelity Training for Cooperative Drone Swarms",
+          "url": "https://arxiv.org/abs/2609.17265",
+          "arxivId": "2609.17265",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.RO"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 5.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Intervention problems in the Linear Threshold Model: A general formulation and new results",
+          "url": "https://arxiv.org/abs/2609.17146",
+          "arxivId": "2609.17146",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "cs.MA",
+            "cs.SI",
+            "eess.SY"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 7.0,
+            "overall": 2.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "BeWater: Effective Protesters Navigate Watersheds in Street Networks",
+          "url": "https://arxiv.org/abs/2609.17017",
+          "arxivId": "2609.17017",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 2.0,
+            "horizonValue": 2.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 6.0,
+            "total": 6.0
+          }
+        },
+        {
+          "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress",
+          "url": "https://arxiv.org/abs/2609.16995",
+          "arxivId": "2609.16995",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+          "url": "https://arxiv.org/abs/2609.16986",
+          "arxivId": "2609.16986",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        },
+        {
+          "title": "Multi-Agent Learning with Cooperation-Driven Optimization Dynamics",
+          "url": "https://arxiv.org/abs/2609.16917",
+          "arxivId": "2609.16917",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 3.0,
+            "overall": 1.0,
+            "penalty": -3.0,
+            "baseTotal": 10.0,
+            "total": 10.0
+          }
+        },
+        {
+          "title": "Anchored Sequential Deliberation",
+          "url": "https://arxiv.org/abs/2609.16673",
+          "arxivId": "2609.16673",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+          "url": "https://arxiv.org/abs/2609.16487",
+          "arxivId": "2609.16487",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Decomposition Buys Integrity, Not Yield",
+          "url": "https://arxiv.org/abs/2609.17464",
+          "arxivId": "2609.17464",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.AI",
+            "cs.DC"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2609.17320",
+          "arxivId": "2609.17320",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress",
+          "url": "https://arxiv.org/abs/2609.16995",
+          "arxivId": "2609.16995",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+          "url": "https://arxiv.org/abs/2609.16487",
+          "arxivId": "2609.16487",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Exact Fusion and Coordinated Exploration in Multi-Robot Active Inference",
+          "url": "https://arxiv.org/abs/2609.17384",
+          "arxivId": "2609.17384",
+          "date": "2026-09-15",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 3.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Decomposition Buys Integrity, Not Yield",
+            "url": "https://arxiv.org/abs/2609.17464",
+            "arxivId": "2609.17464",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI",
+              "cs.DC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "分解换取完整性，而非产出",
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "评测方法"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "鲁棒性",
+              "推理"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统常通过任务分解提升效率，其合理性基于上下文更小、职责分离等直觉。但这种做法是否真能提高最终产出——即有多少原子发现能传递至根节点——尚未被检验。论文指出，若信息保留随规模呈幂律衰减，则深层结构在产出上必然劣于扁平结构，挑战了主流设计假设。",
+              "modelAndSetup": "研究将多智能体协作建模为树形分解结构，叶节点产生N个原子发现，内部节点以概率r(b)保留每个输入项，b为子节点数。产出定义为从叶到根路径上幸存发现的期望数量。使用真实生产日志（工具调用、搜索、提取）测量保留函数r(b)，并评估不同拓扑在产出、根上下文污染与计算成本间的权衡。",
+              "contributionsAndResults": "论文证明：当r(b)=1/b时，任何树结构产出恒为1；而实际中r(b)=Cb⁻ᵟ（δ≈0.34）导致产出随深度指数下降。实测每层保留率C≈0.57，意味着每增加一层损失近半信息。尽管如此，深度可通过减少根节点暴露项数（N¹ᐟᵏ）来增强系统完整性，最优深度通常为2–3层。",
+              "methodsAndTechniques": "作者建立了一个形式化模型，将产出分解为任务规模与架构因子的乘积Y=CKN¹⁻ᵟ，揭示架构无法提升产出。通过三种独立方法测量δ，在16,082次工具跳转中直接观测C。利用生存分析识别委托决策，并构建成本模型纳入token消耗，验证深度仅在预算约束下因更高效而受益。",
+              "limitationsAndReadingValue": "结论依赖于幂律保留假设，且C和δ在不同层级可能变化；u（对齐成功率）估计受限于少数框架。尽管模型预测仅0.7%–11.3%会话应分层，实际7.8%已委托，接近合理范围。最值得读的是其对‘为何分层’的根本重构：不是为了信息保留，而是控制持久状态的风险暴露。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "分解换取完整性，而非产出",
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统常通过任务分解提升效率，其合理性基于上下文更小、职责分离等直觉。但这种做法是否真能提高最终产出——即有多少原子发现能传递至根节点——尚未被检验。论文指出，若信息保留随规模呈幂律衰减，则深层结构在产出上必然劣于扁平结构，挑战了主流设计假设。",
+              "modelAndSetup": "研究将多智能体协作建模为树形分解结构，叶节点产生N个原子发现，内部节点以概率r(b)保留每个输入项，b为子节点数。产出定义为从叶到根路径上幸存发现的期望数量。使用真实生产日志（工具调用、搜索、提取）测量保留函数r(b)，并评估不同拓扑在产出、根上下文污染与计算成本间的权衡。",
+              "contributionsAndResults": "论文证明：当r(b)=1/b时，任何树结构产出恒为1；而实际中r(b)=Cb⁻ᵟ（δ≈0.34）导致产出随深度指数下降。实测每层保留率C≈0.57，意味着每增加一层损失近半信息。尽管如此，深度可通过减少根节点暴露项数（N¹ᐟᵏ）来增强系统完整性，最优深度通常为2–3层。",
+              "methodsAndTechniques": "作者建立了一个形式化模型，将产出分解为任务规模与架构因子的乘积Y=CKN¹⁻ᵟ，揭示架构无法提升产出。通过三种独立方法测量δ，在16,082次工具跳转中直接观测C。利用生存分析识别委托决策，并构建成本模型纳入token消耗，验证深度仅在预算约束下因更高效而受益。",
+              "limitationsAndReadingValue": "结论依赖于幂律保留假设，且C和δ在不同层级可能变化；u（对齐成功率）估计受限于少数框架。尽管模型预测仅0.7%–11.3%会话应分层，实际7.8%已委托，接近合理范围。最值得读的是其对‘为何分层’的根本重构：不是为了信息保留，而是控制持久状态的风险暴露。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "鲁棒性",
+              "推理"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "系统框架",
+              "机制设计",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+            "url": "https://arxiv.org/abs/2609.17320",
+            "arxivId": "2609.17320",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Emergence World：长周期多智能体系统的对抗性压力测试",
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "鲁棒性",
+              "评测方法",
+              "生成式AI"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI智能体从短期任务转向长期部署，单次交互的失败可能通过记忆、工具、其他智能体和环境状态持续传播，形成难以预测的系统级风险。传统孤立评估模型响应的方式无法捕捉这类长周期依赖下的连锁失效。本文指出，现有评测体系忽视了智能体在真实环境中持续互动所引发的安全问题，亟需一种能够模拟并测试多智能体系统在长期运行中应对恶意干扰能力的新方法。",
+              "modelAndSetup": "研究构建了一个名为Emergence World的持续运行多智能体环境，八个平行世界各含十个智能体，分别由不同前沿大模型驱动，在共享空间中自主行动、使用工具、维护记忆并进行民主治理。实验在系统稳定后引入三类可控压力事件：间接提示注入、虚假信息攻击和私有记忆泄露，观察系统能否检测、遏制、适应并恢复。评价不仅关注个体行为，更聚焦于群体层面的集体响应与制度演化。",
+              "contributionsAndResults": "研究发现，没有任何一个世界能在全部三项压力测试中保持完全韧性。识别威胁不等于成功遏制，有害内容仍会被写入持久记忆并在数十小时后被调用。同模型-角色组合在混合与单一模型群体中表现迥异，表明模型级对齐不具备可组合性。这揭示了多智能体系统会涌现出独立于个体能力的全新故障模式，安全性的重心应从对齐模型转向构建韧性系统。",
+              "methodsAndTechniques": "作者通过设计可重复的压力事件与多维度系统级指标（Agent World Indicators）来量化系统韧性。事件经由智能体日常使用的通信渠道注入，确保其不可预知性。评估标准区分了威胁识别、行动克制、信息遏制、协调响应与持久防御等阶段，并结合纵向分析追踪语言漂移、目标偏移与工具可靠性变化，从而揭示出仅靠单次交互评测无法发现的深层缺陷。",
+              "limitationsAndReadingValue": "研究受限于每个配置仅一次运行轨迹，且压力事件未预先告知，可能高估了实际系统风险。同时，上下文窗口被统一限制，未考察原生长上下文的影响。尽管如此，其实验设计极具启发性。最值得细读的是其问题设定、系统框架设计及对集体行为的深度分析，为未来长周期智能体系统的安全评测提供了关键范式转移的实证基础。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Emergence World：长周期多智能体系统的对抗性压力测试",
+            "summarySections": {
+              "backgroundAndQuestion": "随着AI智能体从短期任务转向长期部署，单次交互的失败可能通过记忆、工具、其他智能体和环境状态持续传播，形成难以预测的系统级风险。传统孤立评估模型响应的方式无法捕捉这类长周期依赖下的连锁失效。本文指出，现有评测体系忽视了智能体在真实环境中持续互动所引发的安全问题，亟需一种能够模拟并测试多智能体系统在长期运行中应对恶意干扰能力的新方法。",
+              "modelAndSetup": "研究构建了一个名为Emergence World的持续运行多智能体环境，八个平行世界各含十个智能体，分别由不同前沿大模型驱动，在共享空间中自主行动、使用工具、维护记忆并进行民主治理。实验在系统稳定后引入三类可控压力事件：间接提示注入、虚假信息攻击和私有记忆泄露，观察系统能否检测、遏制、适应并恢复。评价不仅关注个体行为，更聚焦于群体层面的集体响应与制度演化。",
+              "contributionsAndResults": "研究发现，没有任何一个世界能在全部三项压力测试中保持完全韧性。识别威胁不等于成功遏制，有害内容仍会被写入持久记忆并在数十小时后被调用。同模型-角色组合在混合与单一模型群体中表现迥异，表明模型级对齐不具备可组合性。这揭示了多智能体系统会涌现出独立于个体能力的全新故障模式，安全性的重心应从对齐模型转向构建韧性系统。",
+              "methodsAndTechniques": "作者通过设计可重复的压力事件与多维度系统级指标（Agent World Indicators）来量化系统韧性。事件经由智能体日常使用的通信渠道注入，确保其不可预知性。评估标准区分了威胁识别、行动克制、信息遏制、协调响应与持久防御等阶段，并结合纵向分析追踪语言漂移、目标偏移与工具可靠性变化，从而揭示出仅靠单次交互评测无法发现的深层缺陷。",
+              "limitationsAndReadingValue": "研究受限于每个配置仅一次运行轨迹，且压力事件未预先告知，可能高估了实际系统风险。同时，上下文窗口被统一限制，未考察原生长上下文的影响。尽管如此，其实验设计极具启发性。最值得细读的是其问题设定、系统框架设计及对集体行为的深度分析，为未来长周期智能体系统的安全评测提供了关键范式转移的实证基础。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "鲁棒性",
+              "评测方法",
+              "生成式AI"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架",
+              "机制设计",
+              "多智能体系统"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress",
+            "url": "https://arxiv.org/abs/2609.16995",
+            "arxivId": "2609.16995",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "PaperDoctor: 面向在研科学论文的证据锚定与可操作反馈",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "评测方法"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "科学发现",
+              "论文评审",
+              "可重复性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前自动审稿系统多以‘接受’或‘拒绝’为目标，缺乏对作者有帮助的修改建议。随着AI辅助写作普及，论文草稿数量激增，但质量参差，人类导师难以逐一批注。现有自动化工具无法像导师那样指出具体问题位置并提供可操作反馈，尤其在理论推导、代码一致性与实验可复现性方面存在盲区。本文旨在构建一个能提供诊断级反馈的智能代理系统。",
+              "modelAndSetup": "论文提出PaperDoctor框架，接收论文稿件及其代码与数据作为输入，输出结构化反馈。反馈包含问题描述、证据定位（如某句话、公式或代码行）和修改建议三元组。评估涵盖30份在研论文的人类反馈研究及40篇跨学科已发表手稿，涉及机器学习、自然科学与社会科学领域，并比较其与人工审稿人及其他AI评审系统的差异。",
+              "contributionsAndResults": "PaperDoctor的核心贡献在于将自动化论文评估从‘裁判’转变为‘诊断者’。它通过分层流水线实现多维度检查，在人类作者评估中获得70.6%的问题接受率且全部评分为正面。相比人类审稿与现有AI评审，其反馈更可审计、更具行动导向，并能发现仅靠阅读无法察觉的实验不可复现问题，显著提升了反馈的实用性与覆盖面。",
+              "methodsAndTechniques": "方法采用三层分层架构：L1进行表面筛查（写作、格式、引用），L2针对不同主张调用专用验证器（如理论推导重演、文献检索、代码比对），L3则基于重要性优先级选择性重跑实验。每个发现均为‘观察-证据-建议’三元组，确保可追溯与可执行。系统通过共享解析中间件高效调度各模块，实现成本与深度的平衡。",
+              "limitationsAndReadingValue": "尽管反馈量大，部分建议仍存在误报，尤其在图表设计等主观性强的领域。其强依赖于可运行代码与清晰文档，对无代码或湿实验论文支持有限。然而，该工作展示了AI作为科研协作者的新范式。最值得阅读的是其系统设计逻辑与诊断闭环机制，对构建可信AI科研助手具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "PaperDoctor: 面向在研科学论文的证据锚定与可操作反馈",
+            "summarySections": {
+              "backgroundAndQuestion": "当前自动审稿系统多以‘接受’或‘拒绝’为目标，缺乏对作者有帮助的修改建议。随着AI辅助写作普及，论文草稿数量激增，但质量参差，人类导师难以逐一批注。现有自动化工具无法像导师那样指出具体问题位置并提供可操作反馈，尤其在理论推导、代码一致性与实验可复现性方面存在盲区。本文旨在构建一个能提供诊断级反馈的智能代理系统。",
+              "modelAndSetup": "论文提出PaperDoctor框架，接收论文稿件及其代码与数据作为输入，输出结构化反馈。反馈包含问题描述、证据定位（如某句话、公式或代码行）和修改建议三元组。评估涵盖30份在研论文的人类反馈研究及40篇跨学科已发表手稿，涉及机器学习、自然科学与社会科学领域，并比较其与人工审稿人及其他AI评审系统的差异。",
+              "contributionsAndResults": "PaperDoctor的核心贡献在于将自动化论文评估从‘裁判’转变为‘诊断者’。它通过分层流水线实现多维度检查，在人类作者评估中获得70.6%的问题接受率且全部评分为正面。相比人类审稿与现有AI评审，其反馈更可审计、更具行动导向，并能发现仅靠阅读无法察觉的实验不可复现问题，显著提升了反馈的实用性与覆盖面。",
+              "methodsAndTechniques": "方法采用三层分层架构：L1进行表面筛查（写作、格式、引用），L2针对不同主张调用专用验证器（如理论推导重演、文献检索、代码比对），L3则基于重要性优先级选择性重跑实验。每个发现均为‘观察-证据-建议’三元组，确保可追溯与可执行。系统通过共享解析中间件高效调度各模块，实现成本与深度的平衡。",
+              "limitationsAndReadingValue": "尽管反馈量大，部分建议仍存在误报，尤其在图表设计等主观性强的领域。其强依赖于可运行代码与清晰文档，对无代码或湿实验论文支持有限。然而，该工作展示了AI作为科研协作者的新范式。最值得阅读的是其系统设计逻辑与诊断闭环机制，对构建可信AI科研助手具有指导意义。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "科学发现",
+              "论文评审",
+              "可重复性"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+            "url": "https://arxiv.org/abs/2609.16487",
+            "arxivId": "2609.16487",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.LG",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "面向实时数据科学任务的技能型智能体评测",
+            "researchParadigmTags": [
+              "系统框架",
+              "评测方法",
+              "实验验证"
+            ],
+            "contentTags": [
+              "智能体",
+              "评测方法",
+              "大语言模型",
+              "数据科学",
+              "事实核查"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有评测方法难以应对依赖实时动态数据的AI智能体，因为传统静态参考答案会随数据更新迅速过时。这类任务常见于营销、风控等需访问最新数据库的场景，而基于固定文本或快照的评估无法反映真实性能，导致评测结果失真。论文聚焦于解决动态环境中智能体输出正确性难以持续衡量的问题。",
+              "modelAndSetup": "研究设定为对一个能执行机器学习任务规划的数据科学智能体进行单轮查询评测，输入是业务需求描述，输出是包含目标变量、数据集和特征定义的代码方案。评测系统通过合成数据库模拟生产环境的数据结构与时序演进，并采用专家标注作为人类判断基准，对比不同地面实况表达方式下的自动评分一致性。",
+              "contributionsAndResults": "论文提出‘代码化地面实况’（ground-truth-as-code）框架，将预期答案编码为可执行函数，在评测时从实时数据重新计算参考结果。实验显示该方法比自然语言基线提升29%的人类-LLM一致性（MCC），并减少16%的token消耗，显著优于无明确参考或自由文本参考的设置，验证了其在保持评测时效性和准确性上的优势。",
+              "methodsAndTechniques": "核心方法是将参考答案转化为Python函数，在每次评测时与智能体响应同步执行，确保两者基于相同数据状态。随后利用LLM将响应和参考分解为原子事实单元，进行格式无关的事实级匹配，分别计算精确率、召回率和准确率。这一机制分离了内容正确性与表达形式，使评测不受输出格式影响。",
+              "limitationsAndReadingValue": "局限在于依赖专家编写可执行参考函数，成本较高，且若函数本身不完整会影响评测有效性。同时评测使用同一LLM驱动被测技能与评分器，可能存在自偏好偏差。最值得阅读的是其系统设计思路与对动态评测挑战的实证分析，尤其适合关注AI智能体落地评测的研究者和工程团队。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "面向实时数据科学任务的技能型智能体评测",
+            "summarySections": {
+              "backgroundAndQuestion": "现有评测方法难以应对依赖实时动态数据的AI智能体，因为传统静态参考答案会随数据更新迅速过时。这类任务常见于营销、风控等需访问最新数据库的场景，而基于固定文本或快照的评估无法反映真实性能，导致评测结果失真。论文聚焦于解决动态环境中智能体输出正确性难以持续衡量的问题。",
+              "modelAndSetup": "研究设定为对一个能执行机器学习任务规划的数据科学智能体进行单轮查询评测，输入是业务需求描述，输出是包含目标变量、数据集和特征定义的代码方案。评测系统通过合成数据库模拟生产环境的数据结构与时序演进，并采用专家标注作为人类判断基准，对比不同地面实况表达方式下的自动评分一致性。",
+              "contributionsAndResults": "论文提出‘代码化地面实况’（ground-truth-as-code）框架，将预期答案编码为可执行函数，在评测时从实时数据重新计算参考结果。实验显示该方法比自然语言基线提升29%的人类-LLM一致性（MCC），并减少16%的token消耗，显著优于无明确参考或自由文本参考的设置，验证了其在保持评测时效性和准确性上的优势。",
+              "methodsAndTechniques": "核心方法是将参考答案转化为Python函数，在每次评测时与智能体响应同步执行，确保两者基于相同数据状态。随后利用LLM将响应和参考分解为原子事实单元，进行格式无关的事实级匹配，分别计算精确率、召回率和准确率。这一机制分离了内容正确性与表达形式，使评测不受输出格式影响。",
+              "limitationsAndReadingValue": "局限在于依赖专家编写可执行参考函数，成本较高，且若函数本身不完整会影响评测有效性。同时评测使用同一LLM驱动被测技能与评分器，可能存在自偏好偏差。最值得阅读的是其系统设计思路与对动态评测挑战的实证分析，尤其适合关注AI智能体落地评测的研究者和工程团队。"
+            },
+            "contentTags": [
+              "智能体",
+              "评测方法",
+              "大语言模型",
+              "数据科学",
+              "事实核查"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "评测方法",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Exact Fusion and Coordinated Exploration in Multi-Robot Active Inference",
+            "url": "https://arxiv.org/abs/2609.17384",
+            "arxivId": "2609.17384",
+            "date": "2026-09-15",
+            "source": "arXiv",
+            "categories": [
+              "cs.RO",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "多机器人主动推理中的精确融合与协同探索",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "理论推导",
+              "机制设计",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "主动推理",
+              "信息增益",
+              "信念融合",
+              "分布式规划"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多机器人团队在未知环境中通过共享信念来协调探索，但现有方法存在双重误差：融合时重复计算共同先验，规划时各机器人基于相同信念独立打分，导致集体重复探索同一区域。这源于主动推理中信息增益评估依赖共享信念的结构性缺陷，使得即使正确融合也无法消除冗余，问题核心在于如何解耦个体与联合的信息价值评估。",
+              "modelAndSetup": "论文研究n个机器人在共享环境参数未知下的协作任务，每个机器人维护共轭指数族信念（如高斯、狄利克雷），通过离散主动推理选择策略以最小化自由能。实验设定涵盖RockSample、觅食和场域监测三类任务，评估指标包括团队奖励、行为冗余、目标达成率及通信开销，对比不同融合与规划组合，并以集中式联合枚举作为上界基准。",
+              "contributionsAndResults": "提出FEDAIF-AE框架，统一用证据增量加法实现精确融合与协同规划：融合时累加实际观测增量，规划时预播期望增量。结果显示修正融合不影响探索冗余，而预期证据几乎完全消除冗余；序列承诺在接近线性成本下恢复了集中规划大部分价值，在多种设定下达到最优目标的78%-98%，显著优于朴素方法。",
+              "methodsAndTechniques": "关键创新是将信念更新分解为增量传递：实际增量用于融合以精确还原全局后验，期望增量用于规划以计算条件信息增益。在高斯与狄利克雷共轭情形下，期望增量足以精确反映条件增益，因其仅依赖计划固定的统计量；而在有限假设空间则需显式枚举。该机制使单条消息同时服务于状态同步与行动协调，无需访问他人传感器或运动模型。",
+              "limitationsAndReadingValue": "方法依赖共轭先验与条件独立假设，排除了非共轭表示学习与相关噪声场景；序列承诺需n轮通信，延迟较高。尽管在合成与真实温度场数据上验证有效，但模型误设时几何划分可能优于信息驱动。最值得阅读的是其对‘共享信念双重重用’问题的清晰剖析及其统一增量机制的设计思想。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "多机器人主动推理中的精确融合与协同探索",
+            "summarySections": {
+              "backgroundAndQuestion": "多机器人团队在未知环境中通过共享信念来协调探索，但现有方法存在双重误差：融合时重复计算共同先验，规划时各机器人基于相同信念独立打分，导致集体重复探索同一区域。这源于主动推理中信息增益评估依赖共享信念的结构性缺陷，使得即使正确融合也无法消除冗余，问题核心在于如何解耦个体与联合的信息价值评估。",
+              "modelAndSetup": "论文研究n个机器人在共享环境参数未知下的协作任务，每个机器人维护共轭指数族信念（如高斯、狄利克雷），通过离散主动推理选择策略以最小化自由能。实验设定涵盖RockSample、觅食和场域监测三类任务，评估指标包括团队奖励、行为冗余、目标达成率及通信开销，对比不同融合与规划组合，并以集中式联合枚举作为上界基准。",
+              "contributionsAndResults": "提出FEDAIF-AE框架，统一用证据增量加法实现精确融合与协同规划：融合时累加实际观测增量，规划时预播期望增量。结果显示修正融合不影响探索冗余，而预期证据几乎完全消除冗余；序列承诺在接近线性成本下恢复了集中规划大部分价值，在多种设定下达到最优目标的78%-98%，显著优于朴素方法。",
+              "methodsAndTechniques": "关键创新是将信念更新分解为增量传递：实际增量用于融合以精确还原全局后验，期望增量用于规划以计算条件信息增益。在高斯与狄利克雷共轭情形下，期望增量足以精确反映条件增益，因其仅依赖计划固定的统计量；而在有限假设空间则需显式枚举。该机制使单条消息同时服务于状态同步与行动协调，无需访问他人传感器或运动模型。",
+              "limitationsAndReadingValue": "方法依赖共轭先验与条件独立假设，排除了非共轭表示学习与相关噪声场景；序列承诺需n轮通信，延迟较高。尽管在合成与真实温度场数据上验证有效，但模型误设时几何划分可能优于信息驱动。最值得阅读的是其对‘共享信念双重重用’问题的清晰剖析及其统一增量机制的设计思想。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "主动推理",
+              "信息增益",
+              "信念融合",
+              "分布式规划"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "理论推导",
+              "机制设计",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
