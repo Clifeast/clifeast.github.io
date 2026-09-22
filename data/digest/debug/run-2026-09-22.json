@@ -1,0 +1,1944 @@
+{
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T07:54:49.426992+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-09-21",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202609210000 TO 202609212359\"",
+            "totalResults": 5,
+            "fetchedCount": 5
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202609210000 TO 202609212359\"",
+            "totalResults": 1,
+            "fetchedCount": 1
+          }
+        },
+        "dedupedCount": 6
+      },
+      "arxivTotalResults": 6,
+      "fetchedCount": 6,
+      "fetchedPapers": [
+        {
+          "title": "The Facility Advantage in the One-Round Discrete Voronoi Game on a Line",
+          "url": "https://arxiv.org/abs/2609.24936",
+          "arxivId": "2609.24936",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.CG",
+            "cs.GT"
+          ],
+          "abstract": "In the one-round discrete Voronoi game a multiset $V$ of $n$ voters on a line is given; player P places $k$ facilities, player Q then places $\\ell$, and each voter is won by the nearer facility, ties going to P. P wins if it keeps at least $n/2$ voters. In the vocabulary of competitive location this is the absolute $(\\ell|k)$-centroid problem on a path with unit demands, and the responder's problem is the $(\\ell|X_k)$-medianoid, whose closed form on a path -- the sum of the $\\ell$ largest of at most $2k$ explicit marginals -- is due to Spoerhase and Wirth. We record this structure, with complete proofs, and draw two consequences that we believe are new. First, we compute the value of the game against a single responding facility, $Γ_{k,1}(V)$, together with an optimal strategy for P, in $O(n\\log n)$ time for arbitrary positive real demands and every $k$. This improves the $O(kn\\log^2 n)$ bound of Lazar and Tamir for the absolute $(1|k)$-centroid on a path. Second, we study the facility advantage $k^*(\\ell)$, the least $k$ for which P wins every instance against $\\ell$ facilities. We prove $k^*(\\ell)\\le 2\\ell-1$, exhibit instances proving $k^*(\\ell)\\ge\\ell+1$ for $2\\le\\ell\\le6$ (an exact, computer-assisted proof resting on a half-integer discretisation), determine $k^*(1)=1$ and $k^*(2)=3$, and show that on uniform instances $k=\\ell$ already suffices, so the extremal instances are weighted and Q wins them by a single voter. We conjecture $k^*(\\ell)=\\ell+1$ for all $\\ell\\ge2$."
+        },
+        {
+          "title": "Equilibrium Numbers in Non-Square Bimatrix Games",
+          "url": "https://arxiv.org/abs/2609.24878",
+          "arxivId": "2609.24878",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.CO"
+          ],
+          "abstract": "Bimatrix games may have an exponential number of mixed Nash equilibria if both dimensions of the game are allowed to grow. Bounds on their maximal number give structural insights that have been used to construct hard-to-solve games. We show new sharp or asymptotically sharp bounds on the (polynomial) number of equilibria for generic games where one dimension of the game is fixed and the number of strategies of the other player grows. These results go beyond the hitherto studied square games. Our methods employ combinatorial properties of polytopes, and recent obstructions that relate to the graph of those polytopes. For $n\\ge5$, we construct $3\\times n$ games that have all $2n+1$ vertices of the best-response polytope as equilibrium strategies, proved using a simple case of the 4-color theorem for planar graphs. Generic $4\\times 5$ games are shown to have at most 17 equilibria, using computer calculations with existing datasets for all combinatorial types of the relevant polytopes. For $d\\times n$ games, we construct games where all but a fraction of $O(1/n)$ of the maximum number of vertices are equilibrium strategies."
+        },
+        {
+          "title": "An Incremental Algorithm for Checking the Possibility of Braess Paradox in Dynamic Nets",
+          "url": "https://arxiv.org/abs/2609.24719",
+          "arxivId": "2609.24719",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "abstract": "Braess paradox is a well-known phenomenon that originates when latency at Wardrop equilibrium in traffic networks decreases because of removing edges. The possibility of having the paradox was called vulnerability by Roughgarden in 2006 and was characterized later on by graph-theoretical notions, both for undirected and for directed graphs. In this paper we provide an algorithm for the incremental case of checking vulnerability for dynamically evolving graphs. The crucial idea to keep the amortized cost linear for every edge addition is that we do not need to run the vulnerability algorithm on the whole graph, but only on a well-identified subgraph, determined by the edge that we are adding. Overall, to add m edges, we pay a cost of O(m2); this aligns with the O(m2) cost of the state-of-the-art static algorithm for vulnerability."
+        },
+        {
+          "title": "Polyhedral Methods for Cooperative Games: Small Lifts and Hard Faces",
+          "url": "https://arxiv.org/abs/2609.24593",
+          "arxivId": "2609.24593",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC",
+            "math.CO",
+            "math.OC"
+          ],
+          "abstract": "We study the computational complexity of fundamental algorithmic problems -- membership testing, separation, valid-inequality testing, and linear optimization -- over polytopes and cones arising from cooperative games (also known as pseudo-Boolean functions). A central obstacle in the study of such problems is that a general cooperative game on $n$ players requires $2^n$ values, so the input size is $2^n$ for a game with $n$ players, making these computational tasks theoretically trivial. Restricting to $k$-additive games reduces the input size to $O(n^k)$, making such games a natural target for meaningful questions about the existence of efficient algorithms. On the positive side, we give an explicit extended formulation of size $O(n^k)$ for the core of $k$-additive $k$-monotone games, allowing all four problems to be solved by a single polynomial-size linear program -- in particular, circumventing the ellipsoid method that is needed when building from earlier tractability results of Deng and Papadimitriou, or of Edmonds. For the cone of $k$-additive $(k{-}1)$-monotone games, we give a complete characterization of its extreme rays and derive the same $O(n^k)$ bound on extension complexity, yielding a geometry-based proof and generalization of a result of Billionnet and Minoux. On the negative side, we show that for $l \\leq k-2$ the cone of $k$-additive $l$-monotone games is computationally intractable: membership testing is not in NP (unless NP\\,=\\,coNP), valid-inequality testing is NP-complete, and extension complexity is at least $1.5^n$. Our hardness results yield, as a special case, a result of Crama and of Gallo and Simone. Furthermore, our hardness results also explain the lack of any good characterization of the extreme rays of the cone of $k$-additive $(k{-}2)$-monotone games."
+        },
+        {
+          "title": "Subgame-Perfect Nash Equilibria of Plurality Voting with Abstention: a PSPACE-Completeness Result for Restricted Ballots",
+          "url": "https://arxiv.org/abs/2609.24292",
+          "arxivId": "2609.24292",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We consider sequential Plurality elections in which each voter may abstain or vote for a single candidate. Each voter assigns utilities to all candidates; for each voter, this induces a (weak) order over the candidates. Ties are resolved uniformly at random, and voting has a small positive cost, so that a voter prefers to abstain when their vote cannot change the election outcome. We consider a variant of this model where, for each voter, we additionally specify a prefix of her ranking, so that she is only allowed to vote for a candidate from that prefix (or abstain). We prove that for this variant of the model, deciding whether a designated candidate is among the election winners in a subgame-perfect equilibrium of the associated extensive-form game is PSPACE-complete. This partially resolves an open problem from the work of Desmedt and Elkind [2010]."
+        },
+        {
+          "title": "Audit the Auditors: Commitment versus Professional Judgment",
+          "url": "https://arxiv.org/abs/2609.24020",
+          "arxivId": "2609.24020",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "This paper provides a theoretical framework to evaluate the trade-off between the self-regulated peer review system and independent government inspection (PCAOB) in the auditing profession. We model the peer review system as a Judgment Regime, where a stakeholder utilizes professional expertise, captured as a private signal, to make ex-post decisions on verifying audit failures. In contrast, PCAOB inspection is modeled as a Commitment Regime, where the stakeholder lacks private information but can commit ex-ante to a predetermined level of verification. We find that the Judgment Regime benefits from a resource-allocation effect and a deterrence effect driven by informed verification, whereas the Commitment Regime deters audit failures through the first-mover advantage of ex-ante commitment. Our analysis demonstrates that the stakeholder prefers the peer review system if and only if the private signal is sufficiently informative. Furthermore, comparative statics reveal that higher verification costs or stronger audit incentives shift the stakeholder's preference toward PCAOB inspection."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "The Facility Advantage in the One-Round Discrete Voronoi Game on a Line",
+              "url": "https://arxiv.org/abs/2609.24936",
+              "arxivId": "2609.24936",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.CG",
+                "cs.GT"
+              ],
+              "abstract": "In the one-round discrete Voronoi game a multiset $V$ of $n$ voters on a line is given; player P places $k$ facilities, player Q then places $\\ell$, and each voter is won by the nearer facility, ties going to P. P wins if it keeps at least $n/2$ voters. In the vocabulary of competitive location this is the absolute $(\\ell|k)$-centroid problem on a path with unit demands, and the responder's problem is the $(\\ell|X_k)$-medianoid, whose closed form on a path -- the sum of the $\\ell$ largest of at most $2k$ explicit marginals -- is due to Spoerhase and Wirth. We record this structure, with complete proofs, and draw two consequences that we believe are new. First, we compute the value of the game against a single responding facility, $Γ_{k,1}(V)$, together with an optimal strategy for P, in $O(n\\log n)$ time for arbitrary positive real demands and every $k$. This improves the $O(kn\\log^2 n)$ bound of Lazar and Tamir for the absolute $(1|k)$-centroid on a path. Second, we study the facility advantage $k^*(\\ell)$, the least $k$ for which P wins every instance against $\\ell$ facilities. We prove $k^*(\\ell)\\le 2\\ell-1$, exhibit instances proving $k^*(\\ell)\\ge\\ell+1$ for $2\\le\\ell\\le6$ (an exact, computer-assisted proof resting on a half-integer discretisation), determine $k^*(1)=1$ and $k^*(2)=3$, and show that on uniform instances $k=\\ell$ already suffices, so the extremal instances are weighted and Q wins them by a single voter. We conjecture $k^*(\\ell)=\\ell+1$ for all $\\ell\\ge2$."
+            },
+            {
+              "title": "Equilibrium Numbers in Non-Square Bimatrix Games",
+              "url": "https://arxiv.org/abs/2609.24878",
+              "arxivId": "2609.24878",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.CO"
+              ],
+              "abstract": "Bimatrix games may have an exponential number of mixed Nash equilibria if both dimensions of the game are allowed to grow. Bounds on their maximal number give structural insights that have been used to construct hard-to-solve games. We show new sharp or asymptotically sharp bounds on the (polynomial) number of equilibria for generic games where one dimension of the game is fixed and the number of strategies of the other player grows. These results go beyond the hitherto studied square games. Our methods employ combinatorial properties of polytopes, and recent obstructions that relate to the graph of those polytopes. For $n\\ge5$, we construct $3\\times n$ games that have all $2n+1$ vertices of the best-response polytope as equilibrium strategies, proved using a simple case of the 4-color theorem for planar graphs. Generic $4\\times 5$ games are shown to have at most 17 equilibria, using computer calculations with existing datasets for all combinatorial types of the relevant polytopes. For $d\\times n$ games, we construct games where all but a fraction of $O(1/n)$ of the maximum number of vertices are equilibrium strategies."
+            },
+            {
+              "title": "An Incremental Algorithm for Checking the Possibility of Braess Paradox in Dynamic Nets",
+              "url": "https://arxiv.org/abs/2609.24719",
+              "arxivId": "2609.24719",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS"
+              ],
+              "abstract": "Braess paradox is a well-known phenomenon that originates when latency at Wardrop equilibrium in traffic networks decreases because of removing edges. The possibility of having the paradox was called vulnerability by Roughgarden in 2006 and was characterized later on by graph-theoretical notions, both for undirected and for directed graphs. In this paper we provide an algorithm for the incremental case of checking vulnerability for dynamically evolving graphs. The crucial idea to keep the amortized cost linear for every edge addition is that we do not need to run the vulnerability algorithm on the whole graph, but only on a well-identified subgraph, determined by the edge that we are adding. Overall, to add m edges, we pay a cost of O(m2); this aligns with the O(m2) cost of the state-of-the-art static algorithm for vulnerability."
+            },
+            {
+              "title": "Polyhedral Methods for Cooperative Games: Small Lifts and Hard Faces",
+              "url": "https://arxiv.org/abs/2609.24593",
+              "arxivId": "2609.24593",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC",
+                "math.CO",
+                "math.OC"
+              ],
+              "abstract": "We study the computational complexity of fundamental algorithmic problems -- membership testing, separation, valid-inequality testing, and linear optimization -- over polytopes and cones arising from cooperative games (also known as pseudo-Boolean functions). A central obstacle in the study of such problems is that a general cooperative game on $n$ players requires $2^n$ values, so the input size is $2^n$ for a game with $n$ players, making these computational tasks theoretically trivial. Restricting to $k$-additive games reduces the input size to $O(n^k)$, making such games a natural target for meaningful questions about the existence of efficient algorithms. On the positive side, we give an explicit extended formulation of size $O(n^k)$ for the core of $k$-additive $k$-monotone games, allowing all four problems to be solved by a single polynomial-size linear program -- in particular, circumventing the ellipsoid method that is needed when building from earlier tractability results of Deng and Papadimitriou, or of Edmonds. For the cone of $k$-additive $(k{-}1)$-monotone games, we give a complete characterization of its extreme rays and derive the same $O(n^k)$ bound on extension complexity, yielding a geometry-based proof and generalization of a result of Billionnet and Minoux. On the negative side, we show that for $l \\leq k-2$ the cone of $k$-additive $l$-monotone games is computationally intractable: membership testing is not in NP (unless NP\\,=\\,coNP), valid-inequality testing is NP-complete, and extension complexity is at least $1.5^n$. Our hardness results yield, as a special case, a result of Crama and of Gallo and Simone. Furthermore, our hardness results also explain the lack of any good characterization of the extreme rays of the cone of $k$-additive $(k{-}2)$-monotone games."
+            },
+            {
+              "title": "Subgame-Perfect Nash Equilibria of Plurality Voting with Abstention: a PSPACE-Completeness Result for Restricted Ballots",
+              "url": "https://arxiv.org/abs/2609.24292",
+              "arxivId": "2609.24292",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We consider sequential Plurality elections in which each voter may abstain or vote for a single candidate. Each voter assigns utilities to all candidates; for each voter, this induces a (weak) order over the candidates. Ties are resolved uniformly at random, and voting has a small positive cost, so that a voter prefers to abstain when their vote cannot change the election outcome. We consider a variant of this model where, for each voter, we additionally specify a prefix of her ranking, so that she is only allowed to vote for a candidate from that prefix (or abstain). We prove that for this variant of the model, deciding whether a designated candidate is among the election winners in a subgame-perfect equilibrium of the associated extensive-form game is PSPACE-complete. This partially resolves an open problem from the work of Desmedt and Elkind [2010]."
+            },
+            {
+              "title": "Audit the Auditors: Commitment versus Professional Judgment",
+              "url": "https://arxiv.org/abs/2609.24020",
+              "arxivId": "2609.24020",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "This paper provides a theoretical framework to evaluate the trade-off between the self-regulated peer review system and independent government inspection (PCAOB) in the auditing profession. We model the peer review system as a Judgment Regime, where a stakeholder utilizes professional expertise, captured as a private signal, to make ex-post decisions on verifying audit failures. In contrast, PCAOB inspection is modeled as a Commitment Regime, where the stakeholder lacks private information but can commit ex-ante to a predetermined level of verification. We find that the Judgment Regime benefits from a resource-allocation effect and a deterrence effect driven by informed verification, whereas the Commitment Regime deters audit failures through the first-mover advantage of ex-ante commitment. Our analysis demonstrates that the stakeholder prefers the peer review system if and only if the private signal is sufficiently informative. Furthermore, comparative statics reveal that higher verification costs or stronger audit incentives shift the stakeholder's preference toward PCAOB inspection."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 4,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "The Facility Advantage in the One-Round Discrete Voronoi Game on a Line",
+              "url": "https://arxiv.org/abs/2609.24936",
+              "arxivId": "2609.24936",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.CG",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 24.3
+              }
+            },
+            {
+              "title": "Equilibrium Numbers in Non-Square Bimatrix Games",
+              "url": "https://arxiv.org/abs/2609.24878",
+              "arxivId": "2609.24878",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "math.CO"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "An Incremental Algorithm for Checking the Possibility of Braess Paradox in Dynamic Nets",
+              "url": "https://arxiv.org/abs/2609.24719",
+              "arxivId": "2609.24719",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "bonus": 0.0,
+                "total": 22.5
+              }
+            },
+            {
+              "title": "Polyhedral Methods for Cooperative Games: Small Lifts and Hard Faces",
+              "url": "https://arxiv.org/abs/2609.24593",
+              "arxivId": "2609.24593",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC",
+                "math.CO",
+                "math.OC"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Subgame-Perfect Nash Equilibria of Plurality Voting with Abstention: a PSPACE-Completeness Result for Restricted Ballots",
+              "url": "https://arxiv.org/abs/2609.24292",
+              "arxivId": "2609.24292",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "Audit the Auditors: Commitment versus Professional Judgment",
+              "url": "https://arxiv.org/abs/2609.24020",
+              "arxivId": "2609.24020",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 0.0,
+                "total": 14.7
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "The Facility Advantage in the One-Round Discrete Voronoi Game on a Line",
+          "url": "https://arxiv.org/abs/2609.24936",
+          "arxivId": "2609.24936",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.CG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "Equilibrium Numbers in Non-Square Bimatrix Games",
+          "url": "https://arxiv.org/abs/2609.24878",
+          "arxivId": "2609.24878",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.CO"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "An Incremental Algorithm for Checking the Possibility of Braess Paradox in Dynamic Nets",
+          "url": "https://arxiv.org/abs/2609.24719",
+          "arxivId": "2609.24719",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 22.5
+          }
+        },
+        {
+          "title": "Polyhedral Methods for Cooperative Games: Small Lifts and Hard Faces",
+          "url": "https://arxiv.org/abs/2609.24593",
+          "arxivId": "2609.24593",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC",
+            "math.CO",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Subgame-Perfect Nash Equilibria of Plurality Voting with Abstention: a PSPACE-Completeness Result for Restricted Ballots",
+          "url": "https://arxiv.org/abs/2609.24292",
+          "arxivId": "2609.24292",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Audit the Auditors: Commitment versus Professional Judgment",
+          "url": "https://arxiv.org/abs/2609.24020",
+          "arxivId": "2609.24020",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 0.0,
+            "total": 14.7
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Equilibrium Numbers in Non-Square Bimatrix Games",
+          "url": "https://arxiv.org/abs/2609.24878",
+          "arxivId": "2609.24878",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "math.CO"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Polyhedral Methods for Cooperative Games: Small Lifts and Hard Faces",
+          "url": "https://arxiv.org/abs/2609.24593",
+          "arxivId": "2609.24593",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC",
+            "math.CO",
+            "math.OC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Subgame-Perfect Nash Equilibria of Plurality Voting with Abstention: a PSPACE-Completeness Result for Restricted Ballots",
+          "url": "https://arxiv.org/abs/2609.24292",
+          "arxivId": "2609.24292",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "The Facility Advantage in the One-Round Discrete Voronoi Game on a Line",
+          "url": "https://arxiv.org/abs/2609.24936",
+          "arxivId": "2609.24936",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.CG",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          }
+        },
+        {
+          "title": "An Incremental Algorithm for Checking the Possibility of Braess Paradox in Dynamic Nets",
+          "url": "https://arxiv.org/abs/2609.24719",
+          "arxivId": "2609.24719",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 22.5
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Equilibrium Numbers in Non-Square Bimatrix Games",
+            "url": "https://arxiv.org/abs/2609.24878",
+            "arxivId": "2609.24878",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "math.CO"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "非方双矩阵博弈中的均衡数量",
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "博弈论",
+              "纳什均衡",
+              "双矩阵博弈"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么非方双矩阵博弈的均衡数量值得关注？传统研究多集中于方阵博弈（玩家策略数相等），而本文关注行数固定、列数增长的非方情形。这拓展了Quint-Shubik猜想的研究边界，旨在揭示当博弈维度不对称时，均衡数量的上限及其结构性规律，从而深化对博弈复杂性的理解。",
+              "modelAndSetup": "作者如何建模这一问题？研究基于标准双矩阵博弈框架，两个玩家分别选择行和列策略，收益由矩阵决定。通过引入最佳响应多面体P和Q，将混合纳什均衡转化为多面体顶点上的完全标记对。博弈的非退化性确保每个顶点至多属于一个均衡，使顶点数成为均衡数的自然上界。",
+              "contributionsAndResults": "论文的核心发现是什么？对于3×n和4×5博弈，给出了紧的均衡数量上界，并证明存在达到2n+1个均衡的3×n博弈。更一般地，对固定d的d×n博弈，构造出几乎达到最大顶点数的均衡数量，渐近意义上仅缺失O(1/n)比例，表明此类构造在理论上是最优的。",
+              "methodsAndTechniques": "作者如何证明这些结果？关键技术结合了几何与组合方法：利用对偶循环多面体的最大顶点性质，通过Gale偶性条件刻画顶点结构；引入‘交换排列’标签方案，使互补顶点对满足均衡条件；并借助图论中的独立集界限和4色定理特例来排除不可能的均衡配置，从而建立紧界。",
+              "limitationsAndReadingValue": "该研究有何局限与阅读价值？结果高度依赖循环多面体的精细组合结构，实际博弈中难以精确实现，存在‘数值脆性’。尽管如此，其理论构造为均衡计数提供了最优范例，揭示了高维博弈中均衡密集存在的可能性，对理解均衡计算难度及设计极端测试案例具有重要意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "非方双矩阵博弈中的均衡数量",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么非方双矩阵博弈的均衡数量值得关注？传统研究多集中于方阵博弈（玩家策略数相等），而本文关注行数固定、列数增长的非方情形。这拓展了Quint-Shubik猜想的研究边界，旨在揭示当博弈维度不对称时，均衡数量的上限及其结构性规律，从而深化对博弈复杂性的理解。",
+              "modelAndSetup": "作者如何建模这一问题？研究基于标准双矩阵博弈框架，两个玩家分别选择行和列策略，收益由矩阵决定。通过引入最佳响应多面体P和Q，将混合纳什均衡转化为多面体顶点上的完全标记对。博弈的非退化性确保每个顶点至多属于一个均衡，使顶点数成为均衡数的自然上界。",
+              "contributionsAndResults": "论文的核心发现是什么？对于3×n和4×5博弈，给出了紧的均衡数量上界，并证明存在达到2n+1个均衡的3×n博弈。更一般地，对固定d的d×n博弈，构造出几乎达到最大顶点数的均衡数量，渐近意义上仅缺失O(1/n)比例，表明此类构造在理论上是最优的。",
+              "methodsAndTechniques": "作者如何证明这些结果？关键技术结合了几何与组合方法：利用对偶循环多面体的最大顶点性质，通过Gale偶性条件刻画顶点结构；引入‘交换排列’标签方案，使互补顶点对满足均衡条件；并借助图论中的独立集界限和4色定理特例来排除不可能的均衡配置，从而建立紧界。",
+              "limitationsAndReadingValue": "该研究有何局限与阅读价值？结果高度依赖循环多面体的精细组合结构，实际博弈中难以精确实现，存在‘数值脆性’。尽管如此，其理论构造为均衡计数提供了最优范例，揭示了高维博弈中均衡密集存在的可能性，对理解均衡计算难度及设计极端测试案例具有重要意义。"
+            },
+            "contentTags": [
+              "博弈论",
+              "纳什均衡",
+              "双矩阵博弈"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "均衡分析",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Polyhedral Methods for Cooperative Games: Small Lifts and Hard Faces",
+            "url": "https://arxiv.org/abs/2609.24593",
+            "arxivId": "2609.24593",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC",
+              "math.CO",
+              "math.OC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "合作博弈的多面体方法：小提升与难题面",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "模型构建"
+            ],
+            "contentTags": [
+              "合作博弈",
+              "核心解",
+              "超模性",
+              "扩展复杂度"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "合作博弈中的核心（core）和单调性检验等计算任务通常面临指数级输入规模的问题，导致传统算法虽‘高效’却无实际意义。本文聚焦于k-可加性博弈这一参数化子类，探讨何时能设计出真正高效的多项式时间算法。核心问题是：在k-可加性框架下，哪些单调性阶数允许良好计算性质，而哪些会导致内在难解性。",
+              "modelAndSetup": "模型基于n个玩家的合作博弈，通过Mobius系数定义k-可加性（仅子集大小≤k的项非零），并引入l-单调性作为结构性约束。研究对象为两类多面体：一是k-可加且k-单调博弈的核心C(N,v)，二是k-可加且l-单调博弈构成的锥M_l^k(n)。问题转化为对这些多面体进行成员测试、分离、有效不等式验证和优化的计算复杂性分析。",
+              "contributionsAndResults": "论文建立了清晰的算法边界：当l≥k−1时问题可解，而l≤k−2时则难解。具体而言，对于k-可加k-单调博弈的核心，给出了大小为O(n^k)的显式扩展公式，使四类问题均可通过小型线性规划求解；而对于l≤k−2的情形，则证明了成员测试不在NP中（除非NP=coNP）、有效不等式测试为NP完全，且扩展复杂度至少为1.5^n。",
+              "methodsAndTechniques": "正向结果通过构造显式的扩展公式实现，利用变量y_{i,J}编码边际贡献顺序，从而投影得到核心。负向结果采用几何嵌入策略：在对偶锥中逐步进行面操作，识别出与广义相关多面体CORR^{k−l}(n−l)同构的面，并利用其已知的高扩展复杂度与计算难度传递至原问题，实现了从几何结构到复杂性的转化。",
+              "limitationsAndReadingValue": "结果高度依赖k-可加性与l-单调性的精确阶数关系，在边界情况l=k−2处的紧性尚不明确。尽管如此，论文的价值在于首次系统揭示了合作博弈中计算易解性与难解性的几何根源。最值得阅读的是其统一框架、显式扩展公式的构造技巧，以及通过面部嵌入反向推导计算硬度的新路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "合作博弈的多面体方法：小提升与难题面",
+            "summarySections": {
+              "backgroundAndQuestion": "合作博弈中的核心（core）和单调性检验等计算任务通常面临指数级输入规模的问题，导致传统算法虽‘高效’却无实际意义。本文聚焦于k-可加性博弈这一参数化子类，探讨何时能设计出真正高效的多项式时间算法。核心问题是：在k-可加性框架下，哪些单调性阶数允许良好计算性质，而哪些会导致内在难解性。",
+              "modelAndSetup": "模型基于n个玩家的合作博弈，通过Mobius系数定义k-可加性（仅子集大小≤k的项非零），并引入l-单调性作为结构性约束。研究对象为两类多面体：一是k-可加且k-单调博弈的核心C(N,v)，二是k-可加且l-单调博弈构成的锥M_l^k(n)。问题转化为对这些多面体进行成员测试、分离、有效不等式验证和优化的计算复杂性分析。",
+              "contributionsAndResults": "论文建立了清晰的算法边界：当l≥k−1时问题可解，而l≤k−2时则难解。具体而言，对于k-可加k-单调博弈的核心，给出了大小为O(n^k)的显式扩展公式，使四类问题均可通过小型线性规划求解；而对于l≤k−2的情形，则证明了成员测试不在NP中（除非NP=coNP）、有效不等式测试为NP完全，且扩展复杂度至少为1.5^n。",
+              "methodsAndTechniques": "正向结果通过构造显式的扩展公式实现，利用变量y_{i,J}编码边际贡献顺序，从而投影得到核心。负向结果采用几何嵌入策略：在对偶锥中逐步进行面操作，识别出与广义相关多面体CORR^{k−l}(n−l)同构的面，并利用其已知的高扩展复杂度与计算难度传递至原问题，实现了从几何结构到复杂性的转化。",
+              "limitationsAndReadingValue": "结果高度依赖k-可加性与l-单调性的精确阶数关系，在边界情况l=k−2处的紧性尚不明确。尽管如此，论文的价值在于首次系统揭示了合作博弈中计算易解性与难解性的几何根源。最值得阅读的是其统一框架、显式扩展公式的构造技巧，以及通过面部嵌入反向推导计算硬度的新路径。"
+            },
+            "contentTags": [
+              "合作博弈",
+              "核心解",
+              "超模性",
+              "扩展复杂度"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "模型构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Subgame-Perfect Nash Equilibria of Plurality Voting with Abstention: a PSPACE-Completeness Result for Restricted Ballots",
+            "url": "https://arxiv.org/abs/2609.24292",
+            "arxivId": "2609.24292",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "多数投票中子博弈完美纳什均衡的PSPACE完备性结果（限制选票情形）",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "社会选择",
+              "博弈学习",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么要研究这个问题？该论文关注顺序投票中的策略行为：每个选民依次决定投票给谁或弃权，且知道前面人的选择。由于投票有微小成本，选民仅在能改变结果时才投票。Desmedt和Elkind曾猜想此类博弈的均衡结果判定问题是PSPACE-完全的，但未证明。本文研究一个受限版本——每位选民只能投自己排名前k位的候选人——并解决了这一开放问题。",
+              "modelAndSetup": "作者如何建模？模型包含一组候选人和按序投票的选民，每人有显式效用函数，并可观察历史投票记录。每位选民可投一票或弃权，最终得票最高的候选人获胜（平局则随机选）。投票需付出微小代价，因此选民倾向弃权除非其票能影响结果。关键扩展是‘前缀选票’约束：每人只能投其效用排序前k位的候选人。均衡采用子博弈完美纳什均衡（SPNE），通过逆向归纳求解。",
+              "contributionsAndResults": "论文的核心发现是什么？作者证明，在上述受限模型下，判断某指定候选人在SPNE中是否可能获胜的问题是PSPACE-完全的。这表明即使限制选票范围，预测顺序多数投票的均衡结果仍极其困难。该结果部分解决了Desmedt与Elkind的公开问题，并揭示了策略投票中固有的计算复杂性，即便在简化设定下也无法高效求解均衡结果。",
+              "methodsAndTechniques": "作者如何证明？证明采用从量化布尔公式（TQBF）的经典PSPACE-完全问题到投票游戏的归约。构造中，变量投票者对应布尔变量赋值，子句投票者的行为取决于子句是否被满足，守卫和终局投票者则确保特定均衡结构成立。通过精心设计效用值，使得TQBF公式的真假直接对应于最终胜者是否为特定候选人，从而完成归约。",
+              "limitationsAndReadingValue": "论文有何局限与阅读价值？虽然结果针对‘前缀选票’这一限制情形，未完全解决原始无约束猜想，但其归约构造清晰且富有启发性。证明展示了如何用投票博弈模拟逻辑推理过程，技术细节对研究策略行为与计算复杂性的交叉极具参考价值。最值得读的是其模型抽象方式、核心归约结构及对SPNE动态的精细控制。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "多数投票中子博弈完美纳什均衡的PSPACE完备性结果（限制选票情形）",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么要研究这个问题？该论文关注顺序投票中的策略行为：每个选民依次决定投票给谁或弃权，且知道前面人的选择。由于投票有微小成本，选民仅在能改变结果时才投票。Desmedt和Elkind曾猜想此类博弈的均衡结果判定问题是PSPACE-完全的，但未证明。本文研究一个受限版本——每位选民只能投自己排名前k位的候选人——并解决了这一开放问题。",
+              "modelAndSetup": "作者如何建模？模型包含一组候选人和按序投票的选民，每人有显式效用函数，并可观察历史投票记录。每位选民可投一票或弃权，最终得票最高的候选人获胜（平局则随机选）。投票需付出微小代价，因此选民倾向弃权除非其票能影响结果。关键扩展是‘前缀选票’约束：每人只能投其效用排序前k位的候选人。均衡采用子博弈完美纳什均衡（SPNE），通过逆向归纳求解。",
+              "contributionsAndResults": "论文的核心发现是什么？作者证明，在上述受限模型下，判断某指定候选人在SPNE中是否可能获胜的问题是PSPACE-完全的。这表明即使限制选票范围，预测顺序多数投票的均衡结果仍极其困难。该结果部分解决了Desmedt与Elkind的公开问题，并揭示了策略投票中固有的计算复杂性，即便在简化设定下也无法高效求解均衡结果。",
+              "methodsAndTechniques": "作者如何证明？证明采用从量化布尔公式（TQBF）的经典PSPACE-完全问题到投票游戏的归约。构造中，变量投票者对应布尔变量赋值，子句投票者的行为取决于子句是否被满足，守卫和终局投票者则确保特定均衡结构成立。通过精心设计效用值，使得TQBF公式的真假直接对应于最终胜者是否为特定候选人，从而完成归约。",
+              "limitationsAndReadingValue": "论文有何局限与阅读价值？虽然结果针对‘前缀选票’这一限制情形，未完全解决原始无约束猜想，但其归约构造清晰且富有启发性。证明展示了如何用投票博弈模拟逻辑推理过程，技术细节对研究策略行为与计算复杂性的交叉极具参考价值。最值得读的是其模型抽象方式、核心归约结构及对SPNE动态的精细控制。"
+            },
+            "contentTags": [
+              "机制设计",
+              "社会选择",
+              "博弈学习",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Facility Advantage in the One-Round Discrete Voronoi Game on a Line",
+            "url": "https://arxiv.org/abs/2609.24936",
+            "arxivId": "2609.24936",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.DS",
+              "cs.CG",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "线段上单轮离散 Voronoi 博弈中的设施优势",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究在竞争性设施选址中先行者需要多少数量优势才能确保胜利。问题源于Hotelling经济模型，在离散Voronoi博弈中，两个玩家依次放置设施，选民归属更近的设施，平局归先手。现有研究已解决响应方最优策略，但领导者最优布局仍缺乏高效算法与结构性理解，尤其在不同设施数量下的胜负边界尚不清晰。",
+              "modelAndSetup": "模型设定在一维线上，给定n个带权选民位置，先手P放置k个设施，后手Q随后放置l个。每个选民由最近设施赢得，平局归P。P获胜当且仅当赢得至少一半选民。目标是计算P能保证的最小最大得票数，并分析k与l的关系。关键设定是设施可置于任意实数点，称为绝对版本。",
+              "contributionsAndResults": "论文给出了对抗单个响应设施时的O(n log n)时间算法，显著快于此前O(kn log²n)结果。同时提出了‘设施优势’k*(l)，即P必胜所需的最少k值，证明k*(l) ≤ 2l−1，并通过计算机辅助验证k*(l) ≥ l+1（2≤l≤6），猜想k*(l)=l+1对所有l>2成立。这揭示了数量优势的紧致界限。",
+              "methodsAndTechniques": "作者利用Spoerhase与Wirth关于响应方最优解的间隙分解结构，将Q的收益表示为至多2k个边际值中的l个最大值之和。基于此，将领导者问题转化为最小化最大边际的贪心构造，并通过双指针扫描预计算重块，实现一次扫描完成所有k的求解。下界证明借助半整数离散化进行穷举验证。",
+              "limitationsAndReadingValue": "结果高度依赖一维路径结构，难以直接推广到高维或环形拓扑。算法虽高效但仅适用于l=1情形，l≥2时复杂度仍待突破。尽管如此，论文清晰整合了运筹学与博弈论视角，其间隙分解思想、贪心加速技术和精确下界构造极具教学价值，推荐关注其模型转化与计算机辅助证明方法。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "线段上单轮离散 Voronoi 博弈中的设施优势",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究在竞争性设施选址中先行者需要多少数量优势才能确保胜利。问题源于Hotelling经济模型，在离散Voronoi博弈中，两个玩家依次放置设施，选民归属更近的设施，平局归先手。现有研究已解决响应方最优策略，但领导者最优布局仍缺乏高效算法与结构性理解，尤其在不同设施数量下的胜负边界尚不清晰。",
+              "modelAndSetup": "模型设定在一维线上，给定n个带权选民位置，先手P放置k个设施，后手Q随后放置l个。每个选民由最近设施赢得，平局归P。P获胜当且仅当赢得至少一半选民。目标是计算P能保证的最小最大得票数，并分析k与l的关系。关键设定是设施可置于任意实数点，称为绝对版本。",
+              "contributionsAndResults": "论文给出了对抗单个响应设施时的O(n log n)时间算法，显著快于此前O(kn log²n)结果。同时提出了‘设施优势’k*(l)，即P必胜所需的最少k值，证明k*(l) ≤ 2l−1，并通过计算机辅助验证k*(l) ≥ l+1（2≤l≤6），猜想k*(l)=l+1对所有l>2成立。这揭示了数量优势的紧致界限。",
+              "methodsAndTechniques": "作者利用Spoerhase与Wirth关于响应方最优解的间隙分解结构，将Q的收益表示为至多2k个边际值中的l个最大值之和。基于此，将领导者问题转化为最小化最大边际的贪心构造，并通过双指针扫描预计算重块，实现一次扫描完成所有k的求解。下界证明借助半整数离散化进行穷举验证。",
+              "limitationsAndReadingValue": "结果高度依赖一维路径结构，难以直接推广到高维或环形拓扑。算法虽高效但仅适用于l=1情形，l≥2时复杂度仍待突破。尽管如此，论文清晰整合了运筹学与博弈论视角，其间隙分解思想、贪心加速技术和精确下界构造极具教学价值，推荐关注其模型转化与计算机辅助证明方法。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "机制设计",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "An Incremental Algorithm for Checking the Possibility of Braess Paradox in Dynamic Nets",
+            "url": "https://arxiv.org/abs/2609.24719",
+            "arxivId": "2609.24719",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "一种用于动态网络中检测 Braess 悲剧可能性的增量算法",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "复杂度分析",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "算法博弈论",
+              "交通网络",
+              "Braess 悲剧",
+              "动态图算法",
+              "自私路由"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在网络中增加一条路反而可能加剧拥堵？这种反直觉现象称为 Braess 悲剧，其根源在于个体自私行为导致系统效率下降。本文关注的问题是：当网络拓扑随时间动态演化（如新增连接）时，如何高效判断该网络是否可能出现 Braess 悲剧，而不必每次重新运行高成本的静态检测算法。",
+              "modelAndSetup": "作者将交通网络建模为带源汇点的有向图，边上的延迟函数反映流量影响，系统达到 Wardrop 均衡。一个网络被称为‘脆弱’（vulnerable），当存在某种延迟函数配置使得移除某条边反而降低整体延迟。研究聚焦于动态场景下，通过维护最大不可冗余子图（MIS）并利用其系列-并行结构特征来判断脆弱性。",
+              "contributionsAndResults": "论文提出了首个针对边增加情形的增量算法，可在 O(m²) 总时间内处理 m 次边添加操作，摊还代价为每次 O(m)。核心结果是：仅需检查新增边所激活的冗余连通分量（RCC），而非整个图。这显著优于每次从头运行 O(m²) 静态算法的做法，并保持最优渐进性能。",
+              "methodsAndTechniques": "作者的关键技术是将脆弱性判定归约为检测图中是否存在与特定‘W 图’同胚的子图。通过改进现有静态算法 MS 的复杂度分析，结合对 RCC 的线性时间识别与分类（无影响、有影响、破坏性），仅在必要时调用 MS 处理局部子图。利用系列-并行图的递归分解性质和节点偏序关系实现高效判断。",
+              "limitationsAndReadingValue": "该算法目前仅适用于增量场景（仅加边），不支持删边或完全动态更新。此外，依赖于 MIS 结构的精确维护，在高度动态环境中可能面临挑战。最值得阅读的是其巧妙的摊还分析思路与局部化检测框架，为动态网络中的博弈效率监测提供了可扩展的新工具。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "一种用于动态网络中检测 Braess 悲剧可能性的增量算法",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在网络中增加一条路反而可能加剧拥堵？这种反直觉现象称为 Braess 悲剧，其根源在于个体自私行为导致系统效率下降。本文关注的问题是：当网络拓扑随时间动态演化（如新增连接）时，如何高效判断该网络是否可能出现 Braess 悲剧，而不必每次重新运行高成本的静态检测算法。",
+              "modelAndSetup": "作者将交通网络建模为带源汇点的有向图，边上的延迟函数反映流量影响，系统达到 Wardrop 均衡。一个网络被称为‘脆弱’（vulnerable），当存在某种延迟函数配置使得移除某条边反而降低整体延迟。研究聚焦于动态场景下，通过维护最大不可冗余子图（MIS）并利用其系列-并行结构特征来判断脆弱性。",
+              "contributionsAndResults": "论文提出了首个针对边增加情形的增量算法，可在 O(m²) 总时间内处理 m 次边添加操作，摊还代价为每次 O(m)。核心结果是：仅需检查新增边所激活的冗余连通分量（RCC），而非整个图。这显著优于每次从头运行 O(m²) 静态算法的做法，并保持最优渐进性能。",
+              "methodsAndTechniques": "作者的关键技术是将脆弱性判定归约为检测图中是否存在与特定‘W 图’同胚的子图。通过改进现有静态算法 MS 的复杂度分析，结合对 RCC 的线性时间识别与分类（无影响、有影响、破坏性），仅在必要时调用 MS 处理局部子图。利用系列-并行图的递归分解性质和节点偏序关系实现高效判断。",
+              "limitationsAndReadingValue": "该算法目前仅适用于增量场景（仅加边），不支持删边或完全动态更新。此外，依赖于 MIS 结构的精确维护，在高度动态环境中可能面临挑战。最值得阅读的是其巧妙的摊还分析思路与局部化检测框架，为动态网络中的博弈效率监测提供了可扩展的新工具。"
+            },
+            "contentTags": [
+              "算法博弈论",
+              "交通网络",
+              "Braess 悲剧",
+              "动态图算法",
+              "自私路由"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "复杂度分析",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-09-21",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202609210000 TO 202609212359\"",
+            "totalResults": 7,
+            "fetchedCount": 7
+          }
+        },
+        "dedupedCount": 7
+      },
+      "arxivTotalResults": 7,
+      "fetchedCount": 7,
+      "fetchedPapers": [
+        {
+          "title": "Ascent: An Agentic System over the Model Context Protocol for Real-World Clinical Data Analysis",
+          "url": "https://arxiv.org/abs/2609.24620",
+          "arxivId": "2609.24620",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Answering epidemiological questions from real-world clinical data requires medical coding, schema-aware SQL, and validation of implicit choices about populations, denominators, and time. We present Ascent, an agentic system that exposes medical coding, question answering, and cohort analysis through a shared Model Context Protocol tool surface for standardized and native schemas. We introduce EpiTrap, a dataset testing whether systems avoid recognized pharmacoepidemiological errors, and compare a fixed pipeline with agents across models and orchestrators. With capable models, agents improve accuracy over the fixed pipeline by an average of 27 and 20 percentage points on native and standardized schemas, respectively. These gains require more tool calls and longer runtimes. Experience from real projects highlights the system's value for feasibility assessment, diagnostic iteration, and expert-guided analysis."
+        },
+        {
+          "title": "UK-PRBENCH: A Paragraph-Level Precedent Retrieval Benchmark for United Kingdom Case Law",
+          "url": "https://arxiv.org/abs/2609.24613",
+          "arxivId": "2609.24613",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "abstract": "Prior case retrieval (PCR) aims to identify precedent cases relevant to a given query case. Existing PCR benchmarks and methods predominantly operate at the document level, treating entire judgments as the unit of relevance. This formulation is suboptimal for legal practitioners, as judgments address multiple legal issues and only a small subset of paragraphs is relevant to a particular query. Addressing this gap, we introduce UK-PRBench, a benchmark for paragraph-level precedent retrieval in UK case law, constructed from judgments obtained from the UK National Archives and covering a broad range of UK courts and tribunals. Furthermore, we evaluate state-of-the-art retrieval models and establish baseline results. Our experiments show that paragraph-level precedent retrieval remains challenging for current retrieval approaches, highlighting substantial room for improvement. UK-PRBench provides a standardised benchmark for evaluating fine-grained precedent retrieval and advancing retrieval systems for the UK legal domain."
+        },
+        {
+          "title": "What Makes a Good Semantic ID for Generative Recommendation? A Reproducibility Study",
+          "url": "https://arxiv.org/abs/2609.24430",
+          "arxivId": "2609.24430",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Generative recommendation has emerged as an active research direction, where items are commonly represented by semantic IDs (SIDs): discrete codes generated token by token. Despite strong empirical results, SID designs vary widely in construction strategy, codebook organization, and code length, making their true impact on recommendation performance unclear. We conduct a large-scale reproducibility study to systematically investigate the impact of semantic ID design on generative recommendation under a unified experimental framework. We focus on a fundamental question: What makes a good semantic ID for generative recommendation? To answer this question, we examine four aspects: the relative effectiveness of different semantic ID designs, the connection between codebook utilization and recommendation quality, the effect of semantic code length, and the influence of semantic ID design on local item semantic preservation. Through a unified evaluation and additional cross-dataset controlled analyses, we find that the effects of SID design are largely non-monotonic: no single SID design is universally best, and commonly used RQ-VAE- and OPQ-based designs can behave inconsistently across datasets. The method with the most balanced first-level codebook is not consistently the best recommender, showing that utilization is diagnostic but insufficient. Scaling either the generative backbone or the SID length is also not always beneficial. Finally, semantic-neighborhood analysis reveals that no single SID design dominates all notions of local semantic preservation; instead, different designs exhibit complementary strengths that remain stable across datasets and neighborhood sizes. Our study provides a controlled and reproducible understanding of semantic ID design and offers practical insights for future generative recommender systems."
+        },
+        {
+          "title": "Auditing Source Exposure in Baidu and Google AI Search",
+          "url": "https://arxiv.org/abs/2609.24407",
+          "arxivId": "2609.24407",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "AI-generated overviews are becoming an increasingly prominent layer of search interfaces, yet their behavior in Chinese-language search remains underexplored. We conduct a cross-lingual audit of AI overview behavior on Baidu and Google using English queries sampled from MS MARCO and their translated Chinese counterparts. Our analysis examines when overviews are triggered across platform-language settings, which host domains receive visible exposure in Chinese-language overviews, how concentrated that exposure is, and how source overlap varies across settings. We also compare the embedding-based semantic similarity of generated answers for matched query intents. The results reveal substantial differences across platform-language settings in overview availability and visible source exposure. At the aggregate level, the settings exhibit low overlap in visible host-domain inventories, while matched-query answers yield median cosine similarities ranging from 0.701 to 0.813. These findings indicate that answer-level semantic similarity and aggregate source exposure capture distinct dimensions of AI-mediated search. Evaluations of AI search should therefore consider not only the content of generated answers but also how source visibility is distributed across platforms, languages, and information environments."
+        },
+        {
+          "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+          "url": "https://arxiv.org/abs/2609.24152",
+          "arxivId": "2609.24152",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "Visual search on large e-commerce catalogs must serve both \"similarity\" queries that ask for items resembling an uploaded image and \"modifier\" queries that comprise an image and text describing a desired modification (e.g. a color change or style swap). The latter is the setting known as composed image retrieval (CIR). Existing CIR methods, however, treat relevance as binary and train on triplets with a single positive target - a poor fit for real catalogs where many candidates partially satisfy a user query and ranking across that partial-match spectrum drives the customer experience. We propose a methodology for training CIR retrievers on graded relevance, consisting of: (i) a VLM to curate training data, generating both queries (object detection + modifier synthesis) and 4-level relevance labels without manual annotation, (ii) an iterative relevance-feedback loop that expands the training set by mining hard negatives from the in-training retriever, and (iii) a hierarchy-aware angular objective to train the retriever directly on the graded labels rather than collapsing them to a binary split. We call this methodology GradCIR and instantiate it on a PaliGemma2 bi-encoder trained on 3.5M graded pairs curated from raw Walmart catalog data. A controlled graded-vs-binary ablation isolates the supervision granularity and shows lift of 4.9%-5.9% in NDCG@10. The same recipe applied to other multimodal encoders lifts early-fusion backbones by up to 8.5% NDCG@10. On the public FashionIQ benchmark, GradCIR (applied to PaliGemma2) reaches 0.6703 average recall when fine-tuned, slightly ahead of the strongest peer-reviewed supervised baseline we compare against, and matching or exceeding all published CLIP-L-class zero-shot CIR methods. The system is deployed in production at Walmart, where it's serving live visual-search user traffic."
+        },
+        {
+          "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+          "url": "https://arxiv.org/abs/2609.24101",
+          "arxivId": "2609.24101",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Automated biomedical evidence synthesis depends on retrieving published studies, but the biomedical literature is systematically skewed toward positive findings. Deeper retrieval can therefore make a system \\emph{more} likely to falsely infer benefit when the true effect is null. We formalise this phenomenon as \\emph{evidence drift} and prove that, under a standard publication-bias model, the false-positive probability on null-effect queries follows a strictly increasing large-sample envelope in retrieval depth, approaching one. Empirically, on a held-out test set of 140 Cochrane-derived queries, drift rises monotonically from 7.9\\% to 15.7\\% as the retrieval budget grows from 3 to 20 steps, and concentrates in the null-effect class. We present DACG-agent, a drift-aware causal-graph agent that incrementally builds a causal knowledge graph from PubMed abstracts and applies a two-layer stopping policy with complementary roles: a KL-divergence monitor that detects posterior convergence (the accuracy layer), and a Bradley--Terry process reward model (PRM) whose online decline detection halts retrieval once evidence quality peaks (the efficiency layer). Against full-budget retrieval, DACG-agent reduces evidence drift from 15.7\\% to 6.4\\% and improves null-effect accuracy by 21 percentage points (40.0\\%$\\to$61.4\\%) while using 67\\% fewer retrieval steps; overall accuracy rises from 61.4\\% to 69.3\\% (95\\% CI 61--77). A simulation confirms the drift result transfers from the analysed vote-counting aggregator to the deployed noisy-OR one."
+        },
+        {
+          "title": "UniK: Universal Knowledge Perception for Digital and Physical AI",
+          "url": "https://arxiv.org/abs/2609.23971",
+          "arxivId": "2609.23971",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "Two transformative classes of AI systems are reshaping how organizations operate: \\textit{digital AI}, which reasons over enterprise knowledge to power chatbots and agent workflows; and \\textit{physical AI}, which learns to control robots and autonomous systems from video, gameplay, and sensor telemetry. Both face the same foundational bottleneck: raw knowledge at scale, spanning heterogeneous modalities, locked in private corpora that existing AI infrastructure cannot access reliably or efficiently. We propose \\textit{Universal Knowledge Perception (UniK)} as a common platform for both classes, covering the full knowledge lifecycle (ingestion, enrichment, indexing, retrieval, and continuous evaluation) across modalities from rich text and video to molecular data and sensor telemetry. We present UniK, built on Polymath Retrieval (multi-index fusion over automatically enriched indices) with no task-specific fine-tuning. Across five digital AI domains (medical literature, open-domain QA, chemistry, legal video proceedings, and government open data) UniK combined with an open-source 70-billion-parameter model consistently matches or outperforms frontier proprietary LLMs that are orders of magnitude larger: 76\\% RAG accuracy on government data versus 47\\% for GPT-5; 77.9\\% on medical QA without fine-tuning; topping all open-source chemistry pipelines. We show that the same infrastructure directly addresses the data curation, indexing, and retrieval challenges facing physical AI world model training, where the knowledge problem is harder but structurally identical."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Ascent: An Agentic System over the Model Context Protocol for Real-World Clinical Data Analysis",
+              "url": "https://arxiv.org/abs/2609.24620",
+              "arxivId": "2609.24620",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Answering epidemiological questions from real-world clinical data requires medical coding, schema-aware SQL, and validation of implicit choices about populations, denominators, and time. We present Ascent, an agentic system that exposes medical coding, question answering, and cohort analysis through a shared Model Context Protocol tool surface for standardized and native schemas. We introduce EpiTrap, a dataset testing whether systems avoid recognized pharmacoepidemiological errors, and compare a fixed pipeline with agents across models and orchestrators. With capable models, agents improve accuracy over the fixed pipeline by an average of 27 and 20 percentage points on native and standardized schemas, respectively. These gains require more tool calls and longer runtimes. Experience from real projects highlights the system's value for feasibility assessment, diagnostic iteration, and expert-guided analysis."
+            },
+            {
+              "title": "UK-PRBENCH: A Paragraph-Level Precedent Retrieval Benchmark for United Kingdom Case Law",
+              "url": "https://arxiv.org/abs/2609.24613",
+              "arxivId": "2609.24613",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL"
+              ],
+              "abstract": "Prior case retrieval (PCR) aims to identify precedent cases relevant to a given query case. Existing PCR benchmarks and methods predominantly operate at the document level, treating entire judgments as the unit of relevance. This formulation is suboptimal for legal practitioners, as judgments address multiple legal issues and only a small subset of paragraphs is relevant to a particular query. Addressing this gap, we introduce UK-PRBench, a benchmark for paragraph-level precedent retrieval in UK case law, constructed from judgments obtained from the UK National Archives and covering a broad range of UK courts and tribunals. Furthermore, we evaluate state-of-the-art retrieval models and establish baseline results. Our experiments show that paragraph-level precedent retrieval remains challenging for current retrieval approaches, highlighting substantial room for improvement. UK-PRBench provides a standardised benchmark for evaluating fine-grained precedent retrieval and advancing retrieval systems for the UK legal domain."
+            },
+            {
+              "title": "What Makes a Good Semantic ID for Generative Recommendation? A Reproducibility Study",
+              "url": "https://arxiv.org/abs/2609.24430",
+              "arxivId": "2609.24430",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Generative recommendation has emerged as an active research direction, where items are commonly represented by semantic IDs (SIDs): discrete codes generated token by token. Despite strong empirical results, SID designs vary widely in construction strategy, codebook organization, and code length, making their true impact on recommendation performance unclear. We conduct a large-scale reproducibility study to systematically investigate the impact of semantic ID design on generative recommendation under a unified experimental framework. We focus on a fundamental question: What makes a good semantic ID for generative recommendation? To answer this question, we examine four aspects: the relative effectiveness of different semantic ID designs, the connection between codebook utilization and recommendation quality, the effect of semantic code length, and the influence of semantic ID design on local item semantic preservation. Through a unified evaluation and additional cross-dataset controlled analyses, we find that the effects of SID design are largely non-monotonic: no single SID design is universally best, and commonly used RQ-VAE- and OPQ-based designs can behave inconsistently across datasets. The method with the most balanced first-level codebook is not consistently the best recommender, showing that utilization is diagnostic but insufficient. Scaling either the generative backbone or the SID length is also not always beneficial. Finally, semantic-neighborhood analysis reveals that no single SID design dominates all notions of local semantic preservation; instead, different designs exhibit complementary strengths that remain stable across datasets and neighborhood sizes. Our study provides a controlled and reproducible understanding of semantic ID design and offers practical insights for future generative recommender systems."
+            },
+            {
+              "title": "Auditing Source Exposure in Baidu and Google AI Search",
+              "url": "https://arxiv.org/abs/2609.24407",
+              "arxivId": "2609.24407",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "AI-generated overviews are becoming an increasingly prominent layer of search interfaces, yet their behavior in Chinese-language search remains underexplored. We conduct a cross-lingual audit of AI overview behavior on Baidu and Google using English queries sampled from MS MARCO and their translated Chinese counterparts. Our analysis examines when overviews are triggered across platform-language settings, which host domains receive visible exposure in Chinese-language overviews, how concentrated that exposure is, and how source overlap varies across settings. We also compare the embedding-based semantic similarity of generated answers for matched query intents. The results reveal substantial differences across platform-language settings in overview availability and visible source exposure. At the aggregate level, the settings exhibit low overlap in visible host-domain inventories, while matched-query answers yield median cosine similarities ranging from 0.701 to 0.813. These findings indicate that answer-level semantic similarity and aggregate source exposure capture distinct dimensions of AI-mediated search. Evaluations of AI search should therefore consider not only the content of generated answers but also how source visibility is distributed across platforms, languages, and information environments."
+            },
+            {
+              "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+              "url": "https://arxiv.org/abs/2609.24152",
+              "arxivId": "2609.24152",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.CV"
+              ],
+              "abstract": "Visual search on large e-commerce catalogs must serve both \"similarity\" queries that ask for items resembling an uploaded image and \"modifier\" queries that comprise an image and text describing a desired modification (e.g. a color change or style swap). The latter is the setting known as composed image retrieval (CIR). Existing CIR methods, however, treat relevance as binary and train on triplets with a single positive target - a poor fit for real catalogs where many candidates partially satisfy a user query and ranking across that partial-match spectrum drives the customer experience. We propose a methodology for training CIR retrievers on graded relevance, consisting of: (i) a VLM to curate training data, generating both queries (object detection + modifier synthesis) and 4-level relevance labels without manual annotation, (ii) an iterative relevance-feedback loop that expands the training set by mining hard negatives from the in-training retriever, and (iii) a hierarchy-aware angular objective to train the retriever directly on the graded labels rather than collapsing them to a binary split. We call this methodology GradCIR and instantiate it on a PaliGemma2 bi-encoder trained on 3.5M graded pairs curated from raw Walmart catalog data. A controlled graded-vs-binary ablation isolates the supervision granularity and shows lift of 4.9%-5.9% in NDCG@10. The same recipe applied to other multimodal encoders lifts early-fusion backbones by up to 8.5% NDCG@10. On the public FashionIQ benchmark, GradCIR (applied to PaliGemma2) reaches 0.6703 average recall when fine-tuned, slightly ahead of the strongest peer-reviewed supervised baseline we compare against, and matching or exceeding all published CLIP-L-class zero-shot CIR methods. The system is deployed in production at Walmart, where it's serving live visual-search user traffic."
+            },
+            {
+              "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+              "url": "https://arxiv.org/abs/2609.24101",
+              "arxivId": "2609.24101",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Automated biomedical evidence synthesis depends on retrieving published studies, but the biomedical literature is systematically skewed toward positive findings. Deeper retrieval can therefore make a system \\emph{more} likely to falsely infer benefit when the true effect is null. We formalise this phenomenon as \\emph{evidence drift} and prove that, under a standard publication-bias model, the false-positive probability on null-effect queries follows a strictly increasing large-sample envelope in retrieval depth, approaching one. Empirically, on a held-out test set of 140 Cochrane-derived queries, drift rises monotonically from 7.9\\% to 15.7\\% as the retrieval budget grows from 3 to 20 steps, and concentrates in the null-effect class. We present DACG-agent, a drift-aware causal-graph agent that incrementally builds a causal knowledge graph from PubMed abstracts and applies a two-layer stopping policy with complementary roles: a KL-divergence monitor that detects posterior convergence (the accuracy layer), and a Bradley--Terry process reward model (PRM) whose online decline detection halts retrieval once evidence quality peaks (the efficiency layer). Against full-budget retrieval, DACG-agent reduces evidence drift from 15.7\\% to 6.4\\% and improves null-effect accuracy by 21 percentage points (40.0\\%$\\to$61.4\\%) while using 67\\% fewer retrieval steps; overall accuracy rises from 61.4\\% to 69.3\\% (95\\% CI 61--77). A simulation confirms the drift result transfers from the analysed vote-counting aggregator to the deployed noisy-OR one."
+            },
+            {
+              "title": "UniK: Universal Knowledge Perception for Digital and Physical AI",
+              "url": "https://arxiv.org/abs/2609.23971",
+              "arxivId": "2609.23971",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CV",
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "Two transformative classes of AI systems are reshaping how organizations operate: \\textit{digital AI}, which reasons over enterprise knowledge to power chatbots and agent workflows; and \\textit{physical AI}, which learns to control robots and autonomous systems from video, gameplay, and sensor telemetry. Both face the same foundational bottleneck: raw knowledge at scale, spanning heterogeneous modalities, locked in private corpora that existing AI infrastructure cannot access reliably or efficiently. We propose \\textit{Universal Knowledge Perception (UniK)} as a common platform for both classes, covering the full knowledge lifecycle (ingestion, enrichment, indexing, retrieval, and continuous evaluation) across modalities from rich text and video to molecular data and sensor telemetry. We present UniK, built on Polymath Retrieval (multi-index fusion over automatically enriched indices) with no task-specific fine-tuning. Across five digital AI domains (medical literature, open-domain QA, chemistry, legal video proceedings, and government open data) UniK combined with an open-source 70-billion-parameter model consistently matches or outperforms frontier proprietary LLMs that are orders of magnitude larger: 76\\% RAG accuracy on government data versus 47\\% for GPT-5; 77.9\\% on medical QA without fine-tuning; topping all open-source chemistry pipelines. We show that the same infrastructure directly addresses the data curation, indexing, and retrieval challenges facing physical AI world model training, where the knowledge problem is harder but structurally identical."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 1,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 3,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 2,
+                  "penalty": -4
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Ascent: An Agentic System over the Model Context Protocol for Real-World Clinical Data Analysis",
+              "url": "https://arxiv.org/abs/2609.24620",
+              "arxivId": "2609.24620",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "UK-PRBENCH: A Paragraph-Level Precedent Retrieval Benchmark for United Kingdom Case Law",
+              "url": "https://arxiv.org/abs/2609.24613",
+              "arxivId": "2609.24613",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 1.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "What Makes a Good Semantic ID for Generative Recommendation? A Reproducibility Study",
+              "url": "https://arxiv.org/abs/2609.24430",
+              "arxivId": "2609.24430",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "Auditing Source Exposure in Baidu and Google AI Search",
+              "url": "https://arxiv.org/abs/2609.24407",
+              "arxivId": "2609.24407",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+              "url": "https://arxiv.org/abs/2609.24152",
+              "arxivId": "2609.24152",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.AI",
+                "cs.CV"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "total": 21.0
+              }
+            },
+            {
+              "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+              "url": "https://arxiv.org/abs/2609.24101",
+              "arxivId": "2609.24101",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "UniK: Universal Knowledge Perception for Digital and Physical AI",
+              "url": "https://arxiv.org/abs/2609.23971",
+              "arxivId": "2609.23971",
+              "date": "2026-09-21",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CV",
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 3.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 2.0,
+                "penalty": -4.0,
+                "baseTotal": 9.0,
+                "total": 9.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Ascent: An Agentic System over the Model Context Protocol for Real-World Clinical Data Analysis",
+          "url": "https://arxiv.org/abs/2609.24620",
+          "arxivId": "2609.24620",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "UK-PRBENCH: A Paragraph-Level Precedent Retrieval Benchmark for United Kingdom Case Law",
+          "url": "https://arxiv.org/abs/2609.24613",
+          "arxivId": "2609.24613",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 1.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "What Makes a Good Semantic ID for Generative Recommendation? A Reproducibility Study",
+          "url": "https://arxiv.org/abs/2609.24430",
+          "arxivId": "2609.24430",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "Auditing Source Exposure in Baidu and Google AI Search",
+          "url": "https://arxiv.org/abs/2609.24407",
+          "arxivId": "2609.24407",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+          "url": "https://arxiv.org/abs/2609.24152",
+          "arxivId": "2609.24152",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+          "url": "https://arxiv.org/abs/2609.24101",
+          "arxivId": "2609.24101",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "UniK: Universal Knowledge Perception for Digital and Physical AI",
+          "url": "https://arxiv.org/abs/2609.23971",
+          "arxivId": "2609.23971",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 3.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 2.0,
+            "penalty": -4.0,
+            "baseTotal": 9.0,
+            "total": 9.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+          "url": "https://arxiv.org/abs/2609.24101",
+          "arxivId": "2609.24101",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Auditing Source Exposure in Baidu and Google AI Search",
+          "url": "https://arxiv.org/abs/2609.24407",
+          "arxivId": "2609.24407",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+          "url": "https://arxiv.org/abs/2609.24152",
+          "arxivId": "2609.24152",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "total": 21.0
+          }
+        },
+        {
+          "title": "UK-PRBENCH: A Paragraph-Level Precedent Retrieval Benchmark for United Kingdom Case Law",
+          "url": "https://arxiv.org/abs/2609.24613",
+          "arxivId": "2609.24613",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 1.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Ascent: An Agentic System over the Model Context Protocol for Real-World Clinical Data Analysis",
+          "url": "https://arxiv.org/abs/2609.24620",
+          "arxivId": "2609.24620",
+          "date": "2026-09-21",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+            "url": "https://arxiv.org/abs/2609.24101",
+            "arxivId": "2609.24101",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "当更多证据有害时：发表偏倚漂移与生物医学因果搜索中的原则性停止",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "实验验证",
+              "系统框架",
+              "机制设计"
+            ],
+            "contentTags": [
+              "生物医学因果推理",
+              "发表偏倚",
+              "知识图谱",
+              "智能体系统",
+              "检索停止策略"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么检索更多文献反而可能导致错误结论？本文指出，在生物医学证据合成中，由于期刊更倾向发表阳性结果，系统性检索会逐渐积累偏向‘有益’的偏倚证据，导致对真实无效应的查询误判为有益，这种现象称为‘证据漂移’。现有方法如零样本大模型或静态知识图谱无法应对该问题，关键挑战在于如何在信号被偏倚淹没前及时停止检索。",
+              "modelAndSetup": "论文研究的是从PubMed摘要中逐步构建因果知识图并动态决定何时停止检索的任务。输入是形如‘干预→结果’的因果查询，系统通过迭代检索、三元组抽取、图更新与路径推理，输出分类标签及证据链。评估基于140个Cochrane综述衍生的测试查询，主要指标为无效应类准确率与漂移率，实验采用离线回放轨迹以确保公平比较。",
+              "contributionsAndResults": "论文首次形式化证明在发表偏倚下，随着检索深度增加，无效应查询的误判概率趋于1。提出的DACG-agent通过双层停止策略，在保持总体准确率提升至69.3%的同时，将无效应准确率提高21个百分点至61.4%，漂移率从15.7%降至6.4%，且仅用3.7步（减少67%）。这表明原则性停止能有效缓解偏倚累积，改变‘越多证据越好’的传统假设。",
+              "methodsAndTechniques": "DACG-agent采用两层互补的停止机制：第一层监测后验分布的KL散度，判断信念是否收敛；第二层使用基于Bradley-Terry模型的过程奖励模型（PRM），检测图状态是否偏离历史正确决策点。前者保障准确性，后者防止在偏倚证据上过度收敛。结合能量函数建模解释子图质量，使系统能在证据质量峰值时主动停止，而非被动耗尽预算。",
+              "limitationsAndReadingValue": "论文核心结论依赖于Cochrane标签作为金标准，但其本身也可能受发表偏倚影响；实体解析未接入UMLS等权威本体，限制了泛化性。PRM在线下降检测为保守近似，可能提前终止有益查询。尽管如此，该文的问题设定极具现实意义，方法设计逻辑严密，最值得阅读的是其对证据漂移的形式化分析与双层停止机制的协同设计，为可信医疗AI提供了新范式。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "当更多证据有害时：发表偏倚漂移与生物医学因果搜索中的原则性停止",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么检索更多文献反而可能导致错误结论？本文指出，在生物医学证据合成中，由于期刊更倾向发表阳性结果，系统性检索会逐渐积累偏向‘有益’的偏倚证据，导致对真实无效应的查询误判为有益，这种现象称为‘证据漂移’。现有方法如零样本大模型或静态知识图谱无法应对该问题，关键挑战在于如何在信号被偏倚淹没前及时停止检索。",
+              "modelAndSetup": "论文研究的是从PubMed摘要中逐步构建因果知识图并动态决定何时停止检索的任务。输入是形如‘干预→结果’的因果查询，系统通过迭代检索、三元组抽取、图更新与路径推理，输出分类标签及证据链。评估基于140个Cochrane综述衍生的测试查询，主要指标为无效应类准确率与漂移率，实验采用离线回放轨迹以确保公平比较。",
+              "contributionsAndResults": "论文首次形式化证明在发表偏倚下，随着检索深度增加，无效应查询的误判概率趋于1。提出的DACG-agent通过双层停止策略，在保持总体准确率提升至69.3%的同时，将无效应准确率提高21个百分点至61.4%，漂移率从15.7%降至6.4%，且仅用3.7步（减少67%）。这表明原则性停止能有效缓解偏倚累积，改变‘越多证据越好’的传统假设。",
+              "methodsAndTechniques": "DACG-agent采用两层互补的停止机制：第一层监测后验分布的KL散度，判断信念是否收敛；第二层使用基于Bradley-Terry模型的过程奖励模型（PRM），检测图状态是否偏离历史正确决策点。前者保障准确性，后者防止在偏倚证据上过度收敛。结合能量函数建模解释子图质量，使系统能在证据质量峰值时主动停止，而非被动耗尽预算。",
+              "limitationsAndReadingValue": "论文核心结论依赖于Cochrane标签作为金标准，但其本身也可能受发表偏倚影响；实体解析未接入UMLS等权威本体，限制了泛化性。PRM在线下降检测为保守近似，可能提前终止有益查询。尽管如此，该文的问题设定极具现实意义，方法设计逻辑严密，最值得阅读的是其对证据漂移的形式化分析与双层停止机制的协同设计，为可信医疗AI提供了新范式。"
+            },
+            "contentTags": [
+              "生物医学因果推理",
+              "发表偏倚",
+              "知识图谱",
+              "智能体系统",
+              "检索停止策略"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "实验验证",
+              "系统框架",
+              "机制设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Auditing Source Exposure in Baidu and Google AI Search",
+            "url": "https://arxiv.org/abs/2609.24407",
+            "arxivId": "2609.24407",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "审计百度和谷歌AI搜索中的来源暴露",
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架",
+              "数据集构建",
+              "评测方法"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "搜索系统",
+              "来源可见性",
+              "跨语言比较",
+              "平台差异"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着搜索引擎从网页排序转向AI生成概览，用户获取信息的方式发生了根本变化。这类概览不仅提供答案，还决定哪些网站来源被展示，从而影响信息生态。然而现有研究集中于英文系统如谷歌，对中文环境下百度与谷歌的行为差异缺乏系统审计。本文关注的核心问题是：不同平台和语言设置下，AI概览在触发频率、引用来源分布及答案语义一致性方面是否存在显著差异。",
+              "modelAndSetup": "研究基于MS MARCO的500个英文查询及其机器翻译后的中文版本，在百度和谷歌的中英文界面共采集近两万次搜索响应。通过自动化爬取AI概览是否出现、提取可见的引用域名，并计算答案文本的嵌入相似性，构建了一个跨平台、跨语言的对比框架。实验聚焦于概览触发率、来源集中度（Gini系数）、主机域重叠（Jaccard相似性）和语义相似性（余弦相似度）四个维度。",
+              "contributionsAndResults": "研究发现，尽管相同意图的查询在不同平台上生成的答案具有较高语义相似性（中位数0.701–0.813），但其引用来源的可见性却高度分化。百度中文概览来源极为集中（Gini达0.895），主要引用自家子域名；而谷歌则更分散。三者间主机域集合的Jaccard相似性均低于0.034，表明来源曝光存在巨大平台壁垒。这揭示了AI搜索评估不能仅看答案内容，还需关注来源可见性的结构性偏移。",
+              "methodsAndTechniques": "作者采用用户侧观测方法，模拟真实用户提交查询并解析前端呈现的概览组件，避免推测内部检索机制。通过统一的数据采集流程、标准化的域名归一化（保留子域名区分）和高精度提取验证（96.7%匹配率），确保比较的公平性。语义相似性使用多语言句子编码器进行对齐分析，仅在三方均成功生成概览的331个共同查询上计算，增强可比性。",
+              "limitationsAndReadingValue": "研究受限于查询翻译可能带来的语义偏移、地理位置（米兰）对结果的影响，以及未登录百度账号可能导致的偏差。此外，来源频率不等于质量或支持强度。尽管如此，该文的价值在于提出了‘来源可见性’作为独立于答案语义的重要评测维度，其严谨的交叉审计设计为后续研究提供了方法论范本，特别适合关注生成式搜索透明性与信息多样性的读者深入阅读。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "审计百度和谷歌AI搜索中的来源暴露",
+            "summarySections": {
+              "backgroundAndQuestion": "随着搜索引擎从网页排序转向AI生成概览，用户获取信息的方式发生了根本变化。这类概览不仅提供答案，还决定哪些网站来源被展示，从而影响信息生态。然而现有研究集中于英文系统如谷歌，对中文环境下百度与谷歌的行为差异缺乏系统审计。本文关注的核心问题是：不同平台和语言设置下，AI概览在触发频率、引用来源分布及答案语义一致性方面是否存在显著差异。",
+              "modelAndSetup": "研究基于MS MARCO的500个英文查询及其机器翻译后的中文版本，在百度和谷歌的中英文界面共采集近两万次搜索响应。通过自动化爬取AI概览是否出现、提取可见的引用域名，并计算答案文本的嵌入相似性，构建了一个跨平台、跨语言的对比框架。实验聚焦于概览触发率、来源集中度（Gini系数）、主机域重叠（Jaccard相似性）和语义相似性（余弦相似度）四个维度。",
+              "contributionsAndResults": "研究发现，尽管相同意图的查询在不同平台上生成的答案具有较高语义相似性（中位数0.701–0.813），但其引用来源的可见性却高度分化。百度中文概览来源极为集中（Gini达0.895），主要引用自家子域名；而谷歌则更分散。三者间主机域集合的Jaccard相似性均低于0.034，表明来源曝光存在巨大平台壁垒。这揭示了AI搜索评估不能仅看答案内容，还需关注来源可见性的结构性偏移。",
+              "methodsAndTechniques": "作者采用用户侧观测方法，模拟真实用户提交查询并解析前端呈现的概览组件，避免推测内部检索机制。通过统一的数据采集流程、标准化的域名归一化（保留子域名区分）和高精度提取验证（96.7%匹配率），确保比较的公平性。语义相似性使用多语言句子编码器进行对齐分析，仅在三方均成功生成概览的331个共同查询上计算，增强可比性。",
+              "limitationsAndReadingValue": "研究受限于查询翻译可能带来的语义偏移、地理位置（米兰）对结果的影响，以及未登录百度账号可能导致的偏差。此外，来源频率不等于质量或支持强度。尽管如此，该文的价值在于提出了‘来源可见性’作为独立于答案语义的重要评测维度，其严谨的交叉审计设计为后续研究提供了方法论范本，特别适合关注生成式搜索透明性与信息多样性的读者深入阅读。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "搜索系统",
+              "来源可见性",
+              "跨语言比较",
+              "平台差异"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "系统框架",
+              "数据集构建",
+              "评测方法"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+            "url": "https://arxiv.org/abs/2609.24152",
+            "arxivId": "2609.24152",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.AI",
+              "cs.CV"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "<urlopen error The write operation timed out>",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "Visual search on large e-commerce catalogs must serve both \"similarity\" queries that ask for items resembling an uploaded image and \"modifier\" queries that comprise an image and text describing a desired modification (e.g. a color change or style swap). The la...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "Visual search on large e-commerce catalogs must serve both \"similarity\" queries that ask for items resembling an uploaded image and \"modifier\" queries that comprise an image and text describing a desired modification (e.g. a color change or style swap). The la...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "UK-PRBENCH: A Paragraph-Level Precedent Retrieval Benchmark for United Kingdom Case Law",
+            "url": "https://arxiv.org/abs/2609.24613",
+            "arxivId": "2609.24613",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.CL"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "UK-PRBENCH：一个面向英国判例法的段落级先例检索基准",
+            "researchParadigmTags": [
+              "数据集构建",
+              "基准评测",
+              "实验验证"
+            ],
+            "contentTags": [
+              "法律人工智能",
+              "信息检索",
+              "段落级检索",
+              "文本表示"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有判例检索系统大多以整份判决书为单位进行匹配，但实际法律实践中，相关先例往往仅涉及少数段落。这种粗粒度检索会引入大量无关内容，降低效率。本文指出，缺乏细粒度标注的公开基准制约了英国法律领域精准检索的研究发展，尤其缺少针对段落级别先例引用的标准化评测。",
+              "modelAndSetup": "作者构建了UK-PRBENCH，从英国国家档案馆获取6.4万份判决书，通过识别其中明确引用的先例段落，构建查询段落与正例段落的配对数据。任务设定为密集检索形式，评估模型在单段和上下文扩展两种模式下，能否从候选池中准确召回被引段落，采用Recall@k作为核心指标。",
+              "contributionsAndResults": "论文的主要贡献是发布了首个面向英国判例法的段落级先例检索基准，并系统评测了多种先进嵌入模型。结果显示，即使最优模型在零样本设置下R@1也仅约0.4，微调后最高达0.54，表明该任务仍具挑战性，为后续研究提供了可靠基线与评测平台。",
+              "methodsAndTechniques": "数据基于判决书中显式引用关系自动提取，并用占位符屏蔽原始案号以防模型作弊。引入同案内非引用段落作为困难负例，提升检索难度。模型评估涵盖通用与法律专用嵌入模型，在零样本与微调两种设定下比较性能，揭示了模型结构、领域预训练与上下文利用的影响。",
+              "limitationsAndReadingValue": "该基准依赖显性引用，忽略了未明示但实质相关的段落；且受限于档案馆数据覆盖范围，部分法院和时期缺失。尽管如此，其严谨的数据构造和揭示的模型表现差异，使本论文最值得阅读的是其基准构建逻辑与实验分析结论，对法律信息检索研究具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "UK-PRBENCH：一个面向英国判例法的段落级先例检索基准",
+            "summarySections": {
+              "backgroundAndQuestion": "现有判例检索系统大多以整份判决书为单位进行匹配，但实际法律实践中，相关先例往往仅涉及少数段落。这种粗粒度检索会引入大量无关内容，降低效率。本文指出，缺乏细粒度标注的公开基准制约了英国法律领域精准检索的研究发展，尤其缺少针对段落级别先例引用的标准化评测。",
+              "modelAndSetup": "作者构建了UK-PRBENCH，从英国国家档案馆获取6.4万份判决书，通过识别其中明确引用的先例段落，构建查询段落与正例段落的配对数据。任务设定为密集检索形式，评估模型在单段和上下文扩展两种模式下，能否从候选池中准确召回被引段落，采用Recall@k作为核心指标。",
+              "contributionsAndResults": "论文的主要贡献是发布了首个面向英国判例法的段落级先例检索基准，并系统评测了多种先进嵌入模型。结果显示，即使最优模型在零样本设置下R@1也仅约0.4，微调后最高达0.54，表明该任务仍具挑战性，为后续研究提供了可靠基线与评测平台。",
+              "methodsAndTechniques": "数据基于判决书中显式引用关系自动提取，并用占位符屏蔽原始案号以防模型作弊。引入同案内非引用段落作为困难负例，提升检索难度。模型评估涵盖通用与法律专用嵌入模型，在零样本与微调两种设定下比较性能，揭示了模型结构、领域预训练与上下文利用的影响。",
+              "limitationsAndReadingValue": "该基准依赖显性引用，忽略了未明示但实质相关的段落；且受限于档案馆数据覆盖范围，部分法院和时期缺失。尽管如此，其严谨的数据构造和揭示的模型表现差异，使本论文最值得阅读的是其基准构建逻辑与实验分析结论，对法律信息检索研究具有指导意义。"
+            },
+            "contentTags": [
+              "法律人工智能",
+              "信息检索",
+              "段落级检索",
+              "文本表示"
+            ],
+            "researchParadigmTags": [
+              "数据集构建",
+              "基准评测",
+              "实验验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Ascent: An Agentic System over the Model Context Protocol for Real-World Clinical Data Analysis",
+            "url": "https://arxiv.org/abs/2609.24620",
+            "arxivId": "2609.24620",
+            "date": "2026-09-21",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "ASCENT: 基于模型上下文协议的现实世界临床数据分析智能体系统",
+            "researchParadigmTags": [
+              "系统框架",
+              "数据集构建",
+              "基准评测",
+              "实验验证",
+              "机制设计"
+            ],
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "真实世界数据",
+              "流行病学分析",
+              "医疗编码"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现实世界临床数据（如电子健康记录）常存在异构模式、隐含定义歧义等问题，直接使用文本到SQL模型难以确保流行病学问题被正确解析。现有方法往往忽略对人群、时间窗和分母等关键要素的显式确认，导致生成看似合理实则错误的答案。本文针对这一可靠性瓶颈，探索如何通过智能体机制提升复杂医学分析任务的准确性和可解释性。",
+              "modelAndSetup": "论文研究一个基于模型上下文协议（MCP）的智能体系统，在标准化（OMOP-CDM）和原生厂商两种数据模式下执行医学编码、队列构建与问答任务。输入为自然语言流行病学问句，输出为可执行SQL及结果。评估采用新构建的EPITRAP数据集，其每个问题嵌入特定已知错误陷阱，通过多模型裁判判断推理过程是否规避错误，而非仅比对最终查询或数值。",
+              "contributionsAndResults": "论文提出ASCENT系统与EPITRAP评测集两大核心贡献。实验表明，在强模型支持下，智能体配置相较固定流水线在原生和标准化模式上分别提升27%和20%的错误规避准确率，证明动态工具调用与反思能力的价值。同时揭示反思机制虽提升性能但显著增加开销，为临床AI部署提供权衡依据。",
+              "methodsAndTechniques": "ASCENT通过共享MCP工具面解耦分析逻辑与底层数据访问，支持任意客户端与模型调用编码、查询、队列等服务。其智能体可主动探测模式、澄清歧义、验证中间结果并修正计划。关键技术在于将医学知识、数据库特性与诊断流程封装为可组合工具，并引入可行性检查与专家引导机制，使系统能在复杂环境中自主迭代分析路径。",
+              "limitationsAndReadingValue": "评估局限于单一数据源且依赖LLM裁判，人工验证不足；EPITRAP仅测试单点错误，未覆盖端到端研究完整性。尽管如此，论文对智能体在高风险领域应用提供了宝贵实践经验。最值得阅读的是其系统设计理念、错误驱动评测思路以及真实项目中暴露的隐蔽失败模式分析。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "ASCENT: 基于模型上下文协议的现实世界临床数据分析智能体系统",
+            "summarySections": {
+              "backgroundAndQuestion": "现实世界临床数据（如电子健康记录）常存在异构模式、隐含定义歧义等问题，直接使用文本到SQL模型难以确保流行病学问题被正确解析。现有方法往往忽略对人群、时间窗和分母等关键要素的显式确认，导致生成看似合理实则错误的答案。本文针对这一可靠性瓶颈，探索如何通过智能体机制提升复杂医学分析任务的准确性和可解释性。",
+              "modelAndSetup": "论文研究一个基于模型上下文协议（MCP）的智能体系统，在标准化（OMOP-CDM）和原生厂商两种数据模式下执行医学编码、队列构建与问答任务。输入为自然语言流行病学问句，输出为可执行SQL及结果。评估采用新构建的EPITRAP数据集，其每个问题嵌入特定已知错误陷阱，通过多模型裁判判断推理过程是否规避错误，而非仅比对最终查询或数值。",
+              "contributionsAndResults": "论文提出ASCENT系统与EPITRAP评测集两大核心贡献。实验表明，在强模型支持下，智能体配置相较固定流水线在原生和标准化模式上分别提升27%和20%的错误规避准确率，证明动态工具调用与反思能力的价值。同时揭示反思机制虽提升性能但显著增加开销，为临床AI部署提供权衡依据。",
+              "methodsAndTechniques": "ASCENT通过共享MCP工具面解耦分析逻辑与底层数据访问，支持任意客户端与模型调用编码、查询、队列等服务。其智能体可主动探测模式、澄清歧义、验证中间结果并修正计划。关键技术在于将医学知识、数据库特性与诊断流程封装为可组合工具，并引入可行性检查与专家引导机制，使系统能在复杂环境中自主迭代分析路径。",
+              "limitationsAndReadingValue": "评估局限于单一数据源且依赖LLM裁判，人工验证不足；EPITRAP仅测试单点错误，未覆盖端到端研究完整性。尽管如此，论文对智能体在高风险领域应用提供了宝贵实践经验。最值得阅读的是其系统设计理念、错误驱动评测思路以及真实项目中暴露的隐蔽失败模式分析。"
+            },
+            "contentTags": [
+              "智能体",
+              "大语言模型",
+              "真实世界数据",
+              "流行病学分析",
+              "医疗编码"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "数据集构建",
+              "基准评测",
+              "实验验证",
+              "机制设计"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale (<urlopen error The write operation timed out>)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
