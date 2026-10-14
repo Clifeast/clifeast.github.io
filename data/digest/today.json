@@ -1,8 +1,10 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-10-13T09:41:03.671980+00:00",
-  "warnings": [],
+  "generatedAt": "2026-10-14T08:03:06.225009+00:00",
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：AI Information Synthesis and Content Polarization (HTTP Error 429: Too Many Requests)"
+  ],
   "llm": {
     "enabled": true,
     "provider": "qwen",
@@ -55,15 +57,658 @@
       "id": "recent-agt",
       "title": "近期 AGT 新论文",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 14,
+      "papers": [
+        {
+          "title": "Improved Combinatorial Auctions with and without Samples",
+          "titleZh": "Improved Combinatorial Auctions with and without Samples",
+          "authors": [
+            "Aviad Rubinstein",
+            "Sahil Singla"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.17517",
+          "abstract": "We give new mechanisms for combinatorial auctions in the offline, secretary, and prophet-with-samples models. Specifically, we obtain the following guarantees for social welfare maximization with $m$ items and $n$ XOS buyers: * In the prophet-with-samples version, buyers arrive in adversarial order and draw their values from independent distributions. We give a universally truthful, polynomial-time $(2+\\eps)$-approximation mechanism using $O(\\log\\!\\log m)$ samples from each distribution. The approximation factor is tight even for a single item and without the incentive constraints, due to the classic prophet inequality. Compared to the previous state-of-the-art with the same guarantees [Dütting--Kesselheim--Lucier--Reiffenhäuser--Singla (FOCS 2024)], our running time is exponentially faster, and our sample complexity is doubly-exponentially lower, resolving two explicit open problems by Dütting et al. * Using the same techniques, we also obtain improved mechanisms in the secretary and offline versions, where the values are worst-case, and buyers are processed in either random order (secretary) or without any timing restrictions (offline). After a long line of works, the state of the art in both models is an $O((\\log\\!\\log m)^2)$-approximation due to [Assadi--Kesselheim--Singla (SODA 2021)], who explicitly ask whether it can be improved to $O(\\log\\!\\log m)$. We indeed obtain an $O(\\log\\!\\log m)$-approximate universally truthful mechanism for the secretary and offline models.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么现有组合拍卖机制难以兼顾效率、真实性与低样本需求？传统基于均值定价的方法对分布尾部敏感，难以从少量样本学习；而虽有工作实现了常数近似，仍需多项式样本与运行时间。本文聚焦于XOS买家下的社会福利最大化，旨在解决如何用极少样本（甚至单样本）实现接近最优的真确机制，并统一处理离线、秘书与带样预言机模型。",
+            "modelAndSetup": "作者考虑m个物品与n个具私有XOS估值函数的买家，目标是通过真确机制最大化社会福利。买家按固定顺序到来，机制依次公布价格向量，买家按偏好购买剩余物品。在随机模型中，买家估值独立抽自未知分布；机制可通过采样获取估值轮廓，并利用需求查询模拟执行。核心挑战在于设计不依赖完整分布知识的价格策略，同时满足真实性与高近似比。",
+            "contributionsAndResults": "论文实现了多项紧性结果：在带样预言机模型中，首次给出仅需O(loglog m)样本的(2+ε)-近似真确机制，逼近经典预言机不等式的极限；在秘书与离线模型中，将近似比从O((loglog m)^2)改进至O(loglog m)，回答了Assadi等人提出的开放问题。这些结果表明，极低样本下仍可实现高效资源配置，且无需牺牲真实性或计算效率。",
+            "methodsAndTechniques": "关键技术是将中位数定价转化为相关均衡学习问题。作者提出‘截断校准’条件，弱于纳什均衡对应的中位数存在性，但仍足以支撑福利分析。通过最小化swap regret并设计特定损失函数，可在极少数训练轮次内学到满足该条件的价格分布。平滑扰动与分块反馈机制使单一样本可同时为所有物品提供有效学习信号，从而大幅降低样本复杂度。",
+            "limitationsAndReadingValue": "尽管机制在理论上突破显著，其依赖固定买家顺序与独立分布假设，在动态或强相关环境中可能受限。此外，‘截断校准’虽易于学习，但其经济解释不如传统中位数直观。最值得阅读的是其将博弈均衡与在线学习结合的技术路径，不仅解决了长期开放问题，也为样本高效机制设计提供了新范式，尤其适合关注低样本学习与真实性的研究者深入研读。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "算法设计",
+            "理论推导",
+            "后悔分析",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "组合拍卖",
+            "样本机制",
+            "在线机制",
+            "XOS估值",
+            "预言机模型"
+          ],
+          "tags": [
+            "组合拍卖",
+            "样本机制",
+            "在线机制",
+            "XOS估值",
+            "预言机模型",
+            "机制设计",
+            "算法设计",
+            "理论推导"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 4.0,
+            "total": 34.0
+          },
+          "ids": {
+            "arxiv": "2610.17517"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "A Matroid Generalization of Weighted Popular Matching: Characterization and Algorithm",
+          "titleZh": "加权流行匹配的拟阵推广：刻画与算法",
+          "authors": [
+            "Yuni Iwamasa",
+            "Yusuke Kobayashi",
+            "Ryoga Mahara",
+            "Kenjiro Takazawa"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.17744",
+          "abstract": "We study a problem that unifies two major generalizations of popular matchings in the one-sided preference model. In a bipartite graph in which each vertex, or applicant, on one side has preferences over the adjacent vertices, a matching is called popular if it does not lose a head-to-head election against any other matching. Since the seminal work of Abraham, Irving, Kavitha, and Mehlhorn, who gave the first polynomial-time algorithm for finding a popular matching, numerous generalizations of the popular matching problem have been investigated. Two prominent directions are weighted popular matchings, in which each applicant is assigned a voting weight, and popularity problems under matroid constraints. The former admits a polynomial-time algorithm due to Mestre, while the most general form of the latter is the popular common independent set problem, for which a polynomial-time algorithm is given by Kavitha, Makino, Schlotter, and Yokoi. In this paper, we introduce the weighted popular common independent set problem, which simultaneously generalizes weighted popular matchings and popular common independent sets. Our main result is the first polynomial-time algorithm for this problem. A key ingredient of the algorithm is a solution-independent characterization of weighted popular common independent sets, which we establish in this paper. As consequences of our algorithmic result, we obtain polynomial-time algorithms for several previously unresolved problems, including weighted popular matchings with matroid constraints and weighted popular branchings.",
+          "summarySections": {
+            "backgroundAndQuestion": "流行匹配是一种基于投票的全局最优匹配概念，在分配申请人与岗位等资源时具有优势。然而，现有研究在同时处理申请人的不同投票权重和复杂的可行性约束（如拟阵）时缺乏有效算法。本文旨在统一加权流行匹配与拟阵约束下的流行独立集两大方向，解决此前未能攻克的算法难题。",
+            "modelAndSetup": "模型考虑一个二分图上的匹配问题，其中一侧的申请人具有偏好和投票权重，另一侧的资源受两个拟阵交的约束：一个是划分拟阵确保每个申请人至多被分配一个元素，另一个是通用拟阵刻画整体可行性。目标是寻找一个在加权投票中不输于任何其他可行解的公共独立集。",
+            "contributionsAndResults": "本文提出了‘加权流行公共独立集’的新模型，并首次给出了多项式时间算法来求解该问题。核心结果是一个不依赖于具体解的刻画定理，表明流行解恰好是排除所有‘正元素’的良构公共基。这一结果直接解决了加权流行匹配带拟阵约束和加权流行分支等长期开放问题。",
+            "methodsAndTechniques": "作者通过推广‘良构性’和‘晋升路径’的概念构建分析框架。关键技术是引入‘本质晋升路径’，其存在性独立于当前解，从而实现了从依赖解的刻画到独立刻画的跨越。结合辅助有向图与势函数分析，最终将流行性判定转化为最长路径问题，奠定了算法基础。",
+            "limitationsAndReadingValue": "尽管结果具有一般性，但模型仍假设严格偏好和精确权重，未涵盖偏好含平局或部分序的情况。证明高度依赖拟阵结构，难以直接推广到更一般的约束。最值得阅读的是其创新的‘本质晋升路径’思想和解无关刻画的构造方式，为后续加权投票与组合优化的融合提供了新范式。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "理论推导",
+            "模型构建"
+          ],
+          "contentTags": [
+            "市场/匹配",
+            "拟阵",
+            "权重投票"
+          ],
+          "tags": [
+            "市场/匹配",
+            "拟阵",
+            "权重投票",
+            "算法设计",
+            "理论推导",
+            "模型构建"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          },
+          "ids": {
+            "arxiv": "2610.17744"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "AI Information Synthesis and Content Polarization",
+          "titleZh": "",
+          "authors": [
+            "Chang Liu",
+            "Yuting Zhu"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.17674",
+          "abstract": "Artificial intelligence (AI) can synthesize dispersed information into balanced and informative content, raising the possibility that AI may help reduce polarization. We show that this promise can be undermined by the strategic response of content producers. We develop a game-theoretic model in which consumers acquire information to make downstream decisions, content producers allocate limited informational capacity between broadly valuable vertical information and horizontally differentiated information, and AI provides an alternative source of synthesized information. The effects of AI unfold in three phases as its reliability increases. When reliability is low, AI has no effect on the market. At intermediate levels, AI disciplines prices without attracting consumers or changing content. When AI becomes sufficiently reliable, consumers begin to substitute toward it, and content producers respond by shifting informational capacity away from the vertical dimension and toward horizontally differentiated content, thereby increasing content polarization. The mechanism operates through audience composition: AI attracts consumers who are less well matched to individual producers, leaving producers with stronger incentives to cater to their remaining audiences. The polarization effect intensifies with AI reliability but weakens with greater competition among content producers. Our findings highlight a potential wedge between AI's direct and equilibrium effects: a technology that provides consumers with more balanced information can indirectly make the broader content ecosystem more polarized.",
+          "summarySections": {
+            "backgroundAndQuestion": "Artificial intelligence (AI) can synthesize dispersed information into balanced and informative content, raising the possibility that AI may help reduce polarization. We show that this promise can be undermined by the strategic response of content producers. W...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 7.7,
+            "total": 33.0
+          },
+          "ids": {
+            "arxiv": "2610.17674"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "Strategic Multi-Agent Resource Allocation via Statistical Contracts",
+          "titleZh": "通过统计合约进行战略多智能体资源分配",
+          "authors": [
+            "Ben Chugg",
+            "Michael I. Jordan",
+            "Aaditya Ramdas"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18336",
+          "abstract": "We study a class of strategic hypothesis testing problems in which a principal aims to allocate resources among competing agents who possess data or data-generating mechanisms that may be relevant to the principal's goals. Each agent can pay a participation cost to opt into a statistical contract, in which case they generate data from a private distribution and receive an allocation based on a predetermined (and publicly known) mechanism. Each agent is either \"null\" or \"non-null\" and the principal's goal is to design the contract to limit the allocation to the former while maximizing transactions with the latter. Using e-values, we define a \"continuous-closure,\" a set of allocations which prevents null agents from profiting in expectation and provides post-hoc risk control for general loss functions under arbitrary dependence. When the loss is the fraction of resources allocated to null agents, the region admits polynomial-time linear optimization. We also give explicit, interpretable closed-form approximations, and we analyze participation from a non-null agent's perspective, giving conditions under which entry into the contract is profitable. Finally, we extend the framework to support online arrival of the agents, in which case the principal has to make irrevocable on-the-fly decisions, and provide a method which gives time-uniform error-control in this setting.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文研究在信息不对称下，一个主导者如何向多个拥有私有数据的智能体分配资源。核心问题是防止无效智能体（null）骗取资源，同时激励有效智能体（non-null）参与。这源于制药合作、广告竞价等场景，其中主导者需基于不可靠报告做出分配决策，传统多重检验方法难以应对策略性进入行为。",
+            "modelAndSetup": "模型包含一个主导者和多个智能体，每个智能体知道自身数据分布是否有效，并决定是否支付成本加入合约。一旦加入，其数据被观测，主导者基于预设机制分配资源。关键设定是使用e值衡量证据强度，机制需满足‘无效者不获利’（null deterrence）并控制无效者分得资源的比例（NAR）。",
+            "contributionsAndResults": "论文提出了‘连续闭包’（continuous-closure）区域，能在任意损失函数下实现事后风险控制，并证明对于NAR损失，该区域允许多项式时间内的线性优化。此外，设计了三种显式机制（累积证据、全有或全无、e-BH），在可解释性和性能间取得良好平衡，且能激励非零智能体参与。",
+            "methodsAndTechniques": "核心技术是利用e值构造统计合约，确保无效智能体无法期望获利。通过将子集约束转化为流网络中的割，实现了对指数级约束的高效分离，从而支持线性规划求解。显式机制的设计则借鉴了多重检验中的e-BH程序，并结合截断策略来保障非零智能体的收益下限。",
+            "limitationsAndReadingValue": "模型假设智能体在生成数据前决定是否参与，未完全解决事后选择性提交的问题。机制依赖e值的质量，且最优解缺乏闭式表达。但论文在统计合约理论上的扩展极具启发性，其将假说检验与机制设计融合的框架、对策略性参与的处理、以及高效算法设计，都值得深入研读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "多智能体系统",
+            "信息不对称",
+            "假说检验",
+            "资源分配"
+          ],
+          "tags": [
+            "机制设计",
+            "多智能体系统",
+            "信息不对称",
+            "假说检验",
+            "资源分配",
+            "理论推导",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 7.5,
+            "total": 31.9
+          },
+          "ids": {
+            "arxiv": "2610.18336"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.GT",
+              "stat.ME"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "Truthful Two-Facility Location with Candidate Locations in Metric Spaces",
+          "titleZh": "度量空间中候选位置下的真实双设施选址",
+          "authors": [
+            "Panagiotis Kanellopoulos",
+            "Alexandros A. Voudouris"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18006",
+          "abstract": "We study a truthful facility location problem in which agents have private positions in a metric space and known approval preferences over two distinct facilities. Each agent incurs a cost equal to her total distance from the facilities she approves. The goal is to locate the facilities at a given set of candidate locations so as to approximately minimize either the social cost or the max cost, while incentivizing the agents to report their positions truthfully. This problem was previously studied for line metrics and deterministic mechanisms. We first settle the approximation ratio of deterministic mechanisms for the social cost on the line by establishing a lower bound of $7$, matching the upper bound from previous work, and show that randomization leads to a strict improvement. For the max cost, we show that the previously known optimal deterministic guarantee of $3$ remains tight even for universally strategyproof mechanisms. We then turn to general metric spaces. For deterministic strategyproof mechanisms, we obtain tight approximation ratios of $2n-1$ for the social cost and $5$ for the max cost. We also show that randomization yields substantial improvements for both objectives: for the social cost, we obtain a tight characterization, while for the max cost we establish nearly matching upper and lower",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在设施只能建于候选点且代理人位置私有时，仍能设计出激励相容的机制？该问题源于公共服务选址中既要尊重个体报告真实性，又要兼顾社会效率的矛盾。现有研究多集中于直线上的单设施或无候选点限制情形，而本文填补了双设施、候选点约束与策略行为交互的研究空白。",
+            "modelAndSetup": "模型考虑一组代理人在度量空间中的私有位置和对两个不同设施的已知批准偏好，每个代理人的成本是其到所批准设施的距离之和。目标是在给定候选位置集合中放置两设施于不同地点，最小化社会成本或最大成本，同时确保代理人如实报告位置。机制需满足策略证明性，即无人可通过谎报位置降低自身成本。",
+            "contributionsAndResults": "论文确立了确定性机制在直线上的社会成本近似比紧界为7，并证明随机化可将其降至介于2.5与3之间；对于一般度量空间，确定性机制的社会成本近似比紧界为2n-1，而随机化可提升至渐近最优的4。最大成本方面，在直线和一般空间均给出了确定性和随机化机制的紧或近乎紧界限。",
+            "methodsAndTechniques": "作者通过构造加权百分位机制（如SERIAL-PAIR）并结合固定代理人规则来设计随机化机制，利用单峰偏好和固定秩论证保证策略证明性。下界证明则借助任意度量空间可实现全排序的能力，应用吉巴德-萨特思韦特定理识别出独裁者结构，从而构造极端实例推导近似比下限。",
+            "limitationsAndReadingValue": "结果高度依赖候选点离散性和双设施互斥约束，机制在现实中可能因复杂概率分配难以实施。然而，论文对策略证明机制的设计模式、随机化带来的改进潜力以及不同度量结构的影响提供了深刻洞察，最值得阅读的是其紧确界分析思路与混合机制构造技巧。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "均衡分析",
+            "复杂度分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "机制设计",
+            "设施选址",
+            "策略证明",
+            "近似机制",
+            "社会成本优化"
+          ],
+          "tags": [
+            "机制设计",
+            "设施选址",
+            "策略证明",
+            "近似机制",
+            "社会成本优化",
+            "理论推导",
+            "均衡分析",
+            "复杂度分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          },
+          "ids": {
+            "arxiv": "2610.18006"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        }
+      ]
     },
     {
       "id": "recent-ai",
       "title": "近期 AI 新论文（cs.LG）",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Statistical Vignettes on the Grokking Phenomenon",
+          "titleZh": "关于 Grokking 现象的统计小品",
+          "authors": [
+            "Baye Malick Gning",
+            "Elvis Dohmatob"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18811",
+          "abstract": "In this work, we study grokking in a simple, analytically tractable setting whose rich phenomenology allows us to disentangle the effects of initialization, signal strength, weight decay, sample size, and input dimension. These factors can produce superficially similar learning curves through distinct mechanisms, complicating their interpretation. Our analysis distinguishes early fitting through nuisance features, core feature learning, and delayed generalization. We identify sharp conditions under which grokking provably occurs and derive analytic asymptotic expressions for the lengths of the generalization plateaus. Our results also characterize regimes of early generalization and failure to reach a prescribed test accuracy target. We show that the interpolation edge constitutes a distinct dynamical regime, where vanishing spectral gaps separate core learning from generalization, helping clarify the role of proximity to interpolation in existing accounts of grokking. The resulting picture is analogous to fast and slow phases in chemical kinetics and suggests that the lazy-to-rich transition discussed in the literature may reflect a similar separation of dynamical time scales. Our theoretical results are faithfully supported by extensive experiments.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么模型在训练准确率很高后很久才突然泛化？这种被称为 grokking 的现象挑战了传统学习理论。现有解释常归因于正则化或初始化，但缺乏统一视角区分优化与统计因素的作用。本文旨在从信号强度、维度、样本量和权重衰减等变量中解耦出导致延迟泛化的根本机制，揭示其背后的动态时间尺度分离。",
+            "modelAndSetup": "研究在一个含核心特征与冗余特征的二分类任务上进行，模型对核心维度呈双线性。输入包含一个决定标签的微弱信号特征和大量与标签无关的噪声特征。通过梯度流最小化带权重衰减的平方损失，跟踪核心系数、训练/测试准确率的变化，分析不同正则化与维度比下的学习轨迹。",
+            "contributionsAndResults": "论文首次给出了 grokking 发生的精确条件，并推导出泛化平台期长度的渐近表达式。结果显示 grokking 可在无权重衰减时发生，且在插值边缘因谱隙消失而加剧。实验验证了理论预测，表明延迟泛化源于核心学习与噪声拟合的时间尺度分离，而非单纯正则化驱动。",
+            "methodsAndTechniques": "采用奇异摄动理论分析梯度流方程，识别快慢变量：噪声权重快速松弛至慢流形，核心特征随后以近似 Logistic 方式缓慢增长。通过控制信号强度与样本维度比，量化了不同机制对 hitting time 的影响。理论结合高维随机矩阵分析，严格推导了各阶段的时间尺度。",
+            "limitationsAndReadingValue": "模型假设核心特征已知，忽略了特征发现过程，限制了对更复杂任务的直接推广。结论依赖渐近分析，在小样本非极限区间的适用性需谨慎外推。最值得阅读的是其将 grokking 分解为优化与统计两阶段的框架，以及对插值边缘动力学的精细刻画，为理解深层网络中的延迟泛化提供了新范式。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "实验验证",
+            "模型构建"
+          ],
+          "contentTags": [
+            "表示学习",
+            "泛化性",
+            "正则化",
+            "优化动力学",
+            "高维统计"
+          ],
+          "tags": [
+            "表示学习",
+            "泛化性",
+            "正则化",
+            "优化动力学",
+            "高维统计",
+            "理论推导",
+            "实验验证",
+            "模型构建"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.18811"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "On Collusion-Free Teaching in Planar Graphs",
+          "titleZh": "平面图中的无合谋教学",
+          "authors": [
+            "Khazaliya Liana",
+            "Kuske Clemens"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18714",
+          "abstract": "Non-clashing teaching minimizes teaching complexity among models satisfying the Goldman--Mathias collusion-avoidance criterion. While the Vapnik--Chervonenkis dimension (VCdim) measures the complexity of learning from samples, non-clashing teaching dimension (NCTD) measures the number of examples required when a teacher can select them. Whether NCTD is always bounded above by VCdim remains a fundamental open question in learning theory. In this paper, we investigate this question for the concept classes of closed neighborhoods in planar graphs. We prove a tight upper bound of two on their NCTD, thereby establishing the conjectured inequality for this family. For the positive variant NCTD+, in which teaching sets contain only positive examples, we obtain a tight upper bound of four. Finally, we show that deciding whether either NCTD+ or NCTD is at most one is NP-complete, even for concept classes of closed neighborhoods in planar graphs. In particular, despite the upper bound of two on NCTD for such classes, distinguishing between NCTD values of one and two remains NP-hard.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文研究机器教学中一个核心开放问题：非冲突教学维度（NCTD）是否始终不超过VC维。该问题关乎教学与学习复杂性的根本联系。作者聚焦于平面图闭邻域构成的概念类，这类结构既有几何约束又具表达能力，是验证猜想的理想切入点，同时此前上界仍不紧，存在改进空间。",
+            "modelAndSetup": "论文考察两类教学设定：一般非冲突教学与仅用正例的正向教学。输入为平面图及其闭邻域集合，输出为满足非冲突条件的教学集映射。评价标准是最小化最大教学集大小，并判定其是否≤k。核心问题是分析NCTD与NCTD+的上界及决策问题的计算复杂性。",
+            "contributionsAndResults": "作者证明了平面图闭邻域的NCTD上界为2，NCTD+上界为4，均为紧界，首次确立该类下NCTD≤VCdim成立。此外，证明即使在此受限图类中，判断任一维度是否≤1仍是NP完全问题，揭示了理论优界与实际计算难度间的深刻分离。",
+            "methodsAndTechniques": "证明依赖于精细的组合构造与图论性质。通过外平面图子结构分解和极小三角面分析，构造常数大小教学集。关键技巧包括利用最小度5顶点的局部结构（路径或环），结合归纳式教学映射扩展，并借助K₄/K₅禁子图特性维护平面性约束下的区分性。",
+            "limitationsAndReadingValue": "结论局限于闭邻域类和平面图结构，难以直接推广至任意概念类。尽管上界紧，但最优教学集的实际构造成本高。最值得阅读的是其将图论结构性质转化为教学复杂性分析的方法论，以及对NCTD与VCdim关系的实质性推进，为后续研究提供了坚实范例。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "算法设计",
+            "模型构建"
+          ],
+          "contentTags": [
+            "机器教学",
+            "VC维",
+            "图上的概念类",
+            "非冲突教学",
+            "计算复杂性"
+          ],
+          "tags": [
+            "机器教学",
+            "VC维",
+            "图上的概念类",
+            "非冲突教学",
+            "计算复杂性",
+            "理论推导",
+            "复杂度分析",
+            "算法设计"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.18714"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.DM",
+              "cs.CC",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.DM",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "On the Monitorability of Natural Language Autoencoders: Identification vs Discrimination",
+          "titleZh": "论自然语言自编码器的可监控性：识别与区分",
+          "authors": [
+            "Kevin Yandoka Denamganaï"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18727",
+          "abstract": "Natural Language Autoencoders (NLAs) are proposed as oversight tools for language models: an Activation Verbaliser (AV) writes an English explanation of an activation vector, and an Activation Reconstructor (AR) maps the explanation back to a vector. Their value for oversight depends on a human monitor being able to tell a true account of an activation from a false one, given the Av's explanation. We formalise NLA training and NLA oversight deployment as two different referential games from Emergent Communication: training is a generative referential game, while oversight is a discriminative, multi-modal, partially-observable referential game played over a many-to-many relation between the monitored language model's activations and the accounts that are true of them. The gap between the two games predicts that AV's explanations will identify which activation they describe without discriminating its true account from closely matched false ones, since training never asks explanations to rule anything out. Using the NLA's own AR as a maximally-sympathetic surrogate monitor model, we experimentally confirm this theoretical insight on one released checkpoint: true accounts beat accounts of other activations in all 320 comparisons, but beat fluent rivals differing in a single claim only 60.2% of the time (std.err. 6.7%, chance at 50%, $n = 35$). A meaning-preserving rewrite by an uninvolved model costs only 2.1% of the distance to another activation's account, so the failure is not due to the NLA pair having developed private conventions in the AV's explanations. Our rival accounts test only transcript-level truths, which the monitored language model's conversation settles, so these results bound the easiest case and leave claims about the monitored model's own processing untested. We state conjectures that would make both results consequences of the framework.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么自然语言自编码器（NLA）作为语言模型监控工具的有效性存疑？因为其训练目标只要求解释激活向量，不要求区分真假陈述。这导致人类监督者难以判断解释的真实性，尽管解释看似合理。问题核心在于识别一个激活与区分关于它的真伪叙述是两种不同的任务，而现有训练方式只优化前者。",
+            "modelAndSetup": "论文将NLA的训练与部署形式化为两种不同的指代博弈：生成式与判别式。实验使用已发布的NLA检查点，在40个对话上构建对比测试，通过代理监听模型比较真实解释与伪造解释的得分。输入是激活向量和候选文本解释，输出是相似度评分，评估方式为排序性能而非重建精度。",
+            "contributionsAndResults": "研究发现NLA能完美识别其所描述的激活（320次全对），但在区分仅篡改单个主张的真假解释时仅略优于随机猜测（60.2%）。这揭示了‘识别’与‘区分’能力的根本分离，说明当前NLA不适合作为可靠监控工具，除非改进训练目标以增强判别能力。",
+            "methodsAndTechniques": "作者构建了一个基于NLA自身重构器的代理监听模型，模拟理想化的人类监督者。通过生成语义相近但事实错误的竞争解释，并控制表面改动程度，实验隔离了真实性的影响。理论框架预测该失效源于训练中缺乏对反例的判别压力，而控制实验证明并非因私有通信惯例所致。",
+            "limitationsAndReadingValue": "结论局限于对话级事实，未涉及模型内部意图等更关键的隐藏状态。代理模型依赖真实激活向量，高估实际人类表现。尽管如此，论文的价值在于提出了新的评测范式——对抗性解释排序，暴露了现有解释系统的根本缺陷，值得细读其问题抽象方式与实验设计逻辑。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "实验验证",
+            "评测方法",
+            "机制设计",
+            "系统框架"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "对齐",
+            "安全性",
+            "评测方法",
+            "多智能体系统"
+          ],
+          "tags": [
+            "大语言模型",
+            "对齐",
+            "安全性",
+            "评测方法",
+            "多智能体系统",
+            "理论推导",
+            "实验验证",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.18727"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling",
+          "titleZh": "BridgeTwist: 用于免训练条件采样的扭转薛定谔桥",
+          "authors": [
+            "Mengyu Li",
+            "Qianqian Qu",
+            "Jun S. Liu"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18658",
+          "abstract": "Generative models are often required to serve many downstream conditional tasks. In the training-free setting, a pretrained unconditional model is reused as a prior and combined with a task-specific likelihood to sample from the corresponding posterior. While such training-free samplers have been developed for diffusion and flow models, their counterpart for Schrödinger bridge (SB) models remains unexplored, despite the growing appeal of SBs as flexible stochastic transport models between general source and target distributions. We propose BridgeTwist, a training-free conditional sampler for pretrained SB generative models, formulated as a tempered twisted sequential Monte Carlo scheme. Its twist is a closed-form plug-in surrogate, obtained by combining the velocity and score fields exposed by SB pretraining into an endpoint predictor and evaluating the likelihood there. Since this surrogate is less reliable near the source, we temper the twist with a time-varying exponent, downweighting its influence at early steps. We further introduce a bridge-shaped inference-time diffusion schedule that concentrates the proposal noise in the interior of the path. Telescoping importance weights then cancel all intermediate twist factors, yielding an asymptotically exact sampler for the posterior. Empirically, BridgeTwist outperforms training-free baselines on class-conditional and text-prompted image generation, and is competitive with specialized inverse problem solvers on inpainting, deblurring, and super-resolution.",
+          "summarySections": {
+            "backgroundAndQuestion": "生成模型常需执行多种下游条件任务，传统方法依赖任务特定训练。本文聚焦免训练条件采样，即复用预训练无条件模型作为先验，结合任务似然进行后验采样。尽管扩散与流模型已有相关方案，薛定谔桥（SB）模型因兼具灵活源分布与随机传输能力而具潜力，但其免训练条件采样仍未被探索，构成核心问题。",
+            "modelAndSetup": "研究设定为从预训练SB模型出发，在不微调的前提下实现任意可微似然下的条件采样。输入为噪声源与似然函数，输出为目标后验样本。通过构建基于序贯蒙特卡洛（SMC）的采样器，在时间网格上推进粒子并重加权。实验涵盖分类引导生成、文本图像生成及图像修复等任务，采用ACCE、KID、PSNR等指标评估质量与对齐度。",
+            "contributionsAndResults": "论文提出首个适用于预训练SB模型的免训练条件采样器BRIDGETWIST。其关键创新在于融合速度场与得分场构建端点预测器，并引入时间依赖的温度系数调节预测置信度。实验表明，该方法在多项任务上超越现有免训练基线，甚至媲美专用逆问题求解器，验证了SB模型在灵活条件采样中的优势。",
+            "methodsAndTechniques": "方法核心是构造一个闭式插件替代理想扭曲函数，利用SB模型暴露的速度与得分场联合估计端点条件均值。为缓解早期阶段预测过自信问题，采用随时间递增的温度函数对扭曲进行退火。同时设计桥形扩散调度，集中噪声于路径中部，配合望远镜权重抵消中间因子，最终实现渐近精确采样。",
+            "limitationsAndReadingValue": "局限包括仅限布朗参考下的SB模型、忽略端点不确定性可能导致强非线性似然下性能下降，且依赖额外得分头带来预训练开销。结论可靠性受合成假设与有限数据集影响。最值得阅读的是其将速度与得分通道统一的端点预测视角，以及对SMC中扭曲、退火与调度协同设计的系统性分析。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "实验验证",
+            "理论推导",
+            "模型构建",
+            "评测方法"
+          ],
+          "contentTags": [
+            "生成式AI",
+            "条件采样",
+            "扩散模型",
+            "蒙特卡洛方法",
+            "逆问题求解"
+          ],
+          "tags": [
+            "生成式AI",
+            "条件采样",
+            "扩散模型",
+            "蒙特卡洛方法",
+            "逆问题求解",
+            "算法设计",
+            "实验验证",
+            "理论推导"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.18658"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "stat.ML"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        },
+        {
+          "title": "Bayesian Test-Time Inference of Task-Aligned Similarity from Weak Interactive Feedback",
+          "titleZh": "从弱交互反馈中进行任务对齐相似性的贝叶斯测试时推断",
+          "authors": [
+            "Weida Liang",
+            "Kenji Kawaguchi"
+          ],
+          "date": "2026-10-13",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18656",
+          "abstract": "Language model systems repeatedly make test-time decisions by comparing similarity: they retrieve exemplars, rank candidates, and revise responses. Yet similarity is not unique: lexical, semantic, structural, and stylistic resemblance can point to different candidates, and the task-aligned notion can change across instances. We introduce BASIS (Bayesian Axis Selection via Interactive Signals), a training-free Bayesian method that uses weak test-time feedback to infer which criterion in a supplied, task-specific library governs the current decision. It maintains a joint posterior over candidate targets and criteria, updates it from scalar scores, pairwise preferences, or verifier outputs, and selects probes by expected information gain. In a finite noisy model, we characterize when the target-criterion pair is recoverable and show why fixed-criterion and fixed-mixture rules can fail under criterion shift. Across concept recovery, reasoning exemplar selection, and response refinement, BASIS improves six-probe concept-recovery Success@1 from 56.0% to 68.1%, reasoning accuracy from 72.3% to 73.1%, and refinement win rate from 61.4% to 63.8% over tuned static mixtures. It also exceeds compute-matched best-of-N selection on reasoning (72.1%) and refinement (61.2%). Gains are largest under criterion mismatch and with larger candidate pools, and matched controls indicate that adaptive criterion weighting explains much of the benefit, with joint target-criterion inference adding further value. BASIS selects only among supplied criteria and does not discover new ones.",
+          "summarySections": {
+            "backgroundAndQuestion": "语言模型在检索、排序和修改响应时依赖固定的相似性度量，但不同任务所需的‘相关性’标准可能随实例变化，例如数学题需匹配解题结构而非话题。现有方法使用固定嵌入或混合权重，在测试时无法适应动态的相关性标准，导致选出的候选虽合理却不符任务需求。本文针对这一测试时动态对齐问题，提出一种无需训练的自适应机制。",
+            "modelAndSetup": "研究设定为从候选池中选出最优示例或响应，输入是查询和候选集合，输出是经交互反馈后选出的目标。系统通过标量评分、成对偏好或验证器信号获取弱反馈，并基于预定义的相似性准则库（如语义、结构、风格）进行推理。评估涵盖概念恢复、推理示例选择和响应优化，比较目标恢复率、下游准确率及胜率，所有方法共享候选池与基础模型。",
+            "contributionsAndResults": "提出BASIS框架，首次将测试时选择建模为联合推断目标与相关性准则的问题。实验显示其在六次探针后概念恢复Success@1达68.1%，优于调优静态混合的56.0%；推理准确率提升至73.1%，响应优化胜率达63.8%。增益在准则不匹配和候选池扩大时更显著，且控制实验证明自适应加权与联合推断共同贡献性能提升。",
+            "methodsAndTechniques": "BASIS维护候选与准则的联合后验，利用弱反馈更新信念，并以期望信息增益指导探针选择。每个准则对应一个投影函数生成条件相似性分数，贝叶斯更新结合高斯、布拉德利-特里或逻辑模型处理不同类型反馈。该机制保留目标-准则依赖关系，使选择过程可解释，并通过主动探针高效减少不确定性。",
+            "limitationsAndReadingValue": "方法依赖预设准则库的完整性，若关键准则缺失则性能下降；计算开销随候选规模线性增长，全库打分成本较高。反馈来自离线验证器，未测试真实人类偏好漂移。尽管如此，论文清晰展示了动态准则推断的价值，最值得阅读的是其问题抽象、联合推断机制与消融分析，为测试时适应提供了新范式。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "实验验证",
+            "系统框架",
+            "机制设计",
+            "评测方法"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "生成式AI",
+            "智能体",
+            "对齐",
+            "鲁棒性"
+          ],
+          "tags": [
+            "大语言模型",
+            "生成式AI",
+            "智能体",
+            "对齐",
+            "鲁棒性",
+            "算法设计",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.18656"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-13",
+            "updated": "2026-10-13"
+          }
+        }
+      ]
     }
   ]
 }
