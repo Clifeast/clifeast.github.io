@@ -1,11 +1,8 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-10-17T07:09:46.868914+00:00",
-  "warnings": [
-    "近期 AGT 新论文 arXiv 抓取失败：HTTP Error 429: Too Many Requests",
-    "近期 AI 新论文 arXiv 抓取失败：HTTP Error 429: Too Many Requests"
-  ],
+  "generatedAt": "2026-10-18T07:23:09.179349+00:00",
+  "warnings": [],
   "llm": {
     "enabled": true,
     "provider": "qwen",
@@ -63,7 +60,7 @@
     },
     {
       "id": "recent-ai",
-      "title": "近期 AI 新论文（cs.NE）",
+      "title": "近期 AI 新论文（cs.MA）",
       "source": "arxiv-llm-ranked",
       "fetchedCount": 0,
       "papers": []
