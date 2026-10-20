@@ -1,0 +1,751 @@
+{
+  "date": "2026-10-20",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-10-20T07:59:13.176409+00:00",
+  "warnings": [],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 9,
+      "papers": [
+        {
+          "title": "Bayesian Analysis of Inclusion Transaction Fee Mechanisms with Multiple Concurrent Proposers",
+          "titleZh": "多重并发提议者下交易费用机制的贝叶斯分析",
+          "authors": [
+            "Jason Milionis",
+            "Kushal Babel"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26570",
+          "abstract": "The goal of this paper is to distill insight around the trade-offs present on Bayesian equilibria of transaction fee mechanism (TFM) design under $n$ multiple concurrent proposers (MCP). We conceptualize a technical toolkit that unlocks the analysis of hard-to-characterize equilibria of finite Bayesian MCP TFM games by examining sequences of joint user--proposer mixed equilibria as the number of users increases and keeping the relative congestion $ρ$ that they cause fixed in the sequence limit. We first consider the popular mechanisms of \"pay-once\" (which charges transactions its bid only once regardless of the duplicate copies that end up being included by proposers) and \"pay-per-inclusion\" (PPI in short, which charges a transaction for each copy that appears). We prove that PPI is efficient in the limit of equilibria sequences, and incentivizes users to route to only one proposer. We characterize $m$ users' asymptotic behavior in PPI even in finite markets varying with $O(\\sqrt{m})$, where we show users in a $Θ(n\\sqrt{ρ(1-ρ)/m})$ window near an efficient cutoff exhibit fixed inclusion probability akin to a normal distribution's CDF. We additionally show that on a value-dependent basis, pay-once exhibits a higher degree of duplication and lower probability of inclusion for higher-value transactions than PPI. Pay-once's inefficiency persists even in the large market limit and even in regimes with ample blockspace where all transactions fit across all blocks. We study interpolations between these two mechanisms proving that some higher coefficients (towards PPI) reduce duplication and increase inclusion probability. We then use our tools to show that exclusive proposer payments yield inefficient equilibria (in fact, with maximal possible duplication), even if users still pay multiple times when included more than once and their payment is burnt when non-exclusive.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在多重并发提议者（MCP）的区块链系统中，交易费用机制的设计会面临效率与激励的权衡？传统单提议者模型无法捕捉多提议者间的策略竞争与重复包含问题。本文聚焦于‘支付一次’与‘每次包含均支付’两类主流机制，揭示其在拥堵与宽松区块空间下的不同行为表现，填补了贝叶斯博弈框架下MCP交易费机制分析的技术空白。",
+            "modelAndSetup": "作者构建了一个包含m个交易用户与n个并行提议者的贝叶斯博弈模型。每个用户拥有私有价值v，选择出价b及向k个随机提议者广播交易。提议者受限于容量，基于收到的交易进行收益最大化选择。用户效用取决于是否被包含、支付金额及基础费。研究关注对称贝叶斯纳什均衡，并通过固定相对拥塞率p=cm/m，在m→∞极限下分析均衡序列的行为。",
+            "contributionsAndResults": "论文证明：在‘每次包含均支付’（PPI）机制下，均衡趋向高效，高价值用户仅路由至一个提议者且几乎必然被包含；而在‘支付一次’机制下，用户倾向于广播至所有提议者，导致严重重复包含与低价值交易被排除，造成经济效率损失。即使在区块空间充足时，PPI仍优于pay-once。此外，独占奖励机制反而可能引发更高复制率。",
+            "methodsAndTechniques": "作者采用‘均衡序列极限’方法，通过分析有限博弈在m→∞且保持拥塞率固定的极限行为，规避了直接求解有限博弈的复杂性。核心技术包括构造连续体博弈作为启发，利用集中不等式将猜测的均衡转化为真实极限，并识别稀有拥塞事件在极限下的等价性，从而刻画出具有明确经济含义的渐近均衡结构。",
+            "limitationsAndReadingValue": "论文假设对称策略与外生容量，未考虑提议者间合谋或动态调整容量的情形。其技术路径高度依赖渐近分析，对小规模市场的精确刻画有限。然而，该文提供了首个对MCP交易费机制的系统性贝叶斯分析框架，其模型构建、极限分析技巧及对PPI优越性的严格证明，对于理解去中心化交易市场的激励机制极具阅读价值。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "机制设计"
+          ],
+          "contentTags": [
+            "机制设计",
+            "拍卖理论",
+            "多智能体系统",
+            "交易费用机制",
+            "区块链"
+          ],
+          "tags": [
+            "机制设计",
+            "拍卖理论",
+            "多智能体系统",
+            "交易费用机制",
+            "区块链",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 30.8
+          },
+          "ids": {
+            "arxiv": "2610.26570"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Tight Inapproximability for Generalized Circuits",
+          "titleZh": "广义电路的紧致不可近似性",
+          "authors": [
+            "Panagiotis Kanellopoulos",
+            "Themistoklis Melissourgos"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26772",
+          "abstract": "Generalized circuits are a fundamental tool for establishing PPAD-hardness and membership of approximate equilibrium problems. Despite their importance, the complexity of finding approximate solutions has remained unresolved for a wide range of approximation parameters. We settle this question by establishing a tight threshold at $\\varepsilon=1/6$. Specifically, we prove that $\\varepsilon$-GCircuit is PPAD-complete for every constant $0<\\varepsilon<1/6$, even when restricted to four gate types, and polynomial-time solvable for every constant $\\varepsilon\\ge1/6$. This closes the gap between the previously known hardness bound of $1/10$ and the polynomial-time solvability bound of $1/2$. We further investigate the relaxation in which a fraction $δ$ of the gates may be violated. We establish polynomial-time solvability of $(\\varepsilon,δ)$-GCircuit for every constant $\\varepsilon>0$ and $δ>1/5$, and of the fan-out-one formulations of $δ$-Pure-Circuit for every constant $δ>1/8$. These results follow from a decomposition theorem for directed graphs of maximum in-degree two and establish that the PCP-for-PPAD conjecture cannot be true for the aforementioned values of $\\varepsilon$ and $δ$, unless PPAD = P. To showcase the contribution of our positive results, we apply them to a variety of problems in algorithmic game theory, including public goods games, financial networks, Bayesian, polymatrix, and graphical games, and obtain improved approximation guarantees.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么广义电路的近似求解难度存在一个精确阈值？该问题源于计算均衡的复杂性研究，特别是PPAD类问题的硬度刻画。此前研究在近似参数1/10和1/2之间留下巨大空白，导致基于此的均衡近似下界不够紧。本文旨在确定e-GCIRCUIT的精确硬度阈值，从而为近似均衡问题提供最强可能的归约起点。",
+            "modelAndSetup": "作者采用广义电路（GCIRCUIT）作为核心模型，其中变量取值于[0,1]，并通过算术、比较和布尔门施加近似约束。每个门允许至多e的加性误差。问题的关键在于门之间的循环依赖构成不动点系统，解的存在由布劳威尔定理保证。模型关注在不同e值下寻找满足大多数门约束的解的计算复杂性，并特别考察当部分门可被违反时的放松版本。",
+            "contributionsAndResults": "论文证明了e-GCIRCUIT的精确复杂性相变：当常数e<1/6时为PPAD-完全，而当e≥1/6时可在多项式时间内求解。这将此前的硬度下界从1/10提升至紧致的1/6，并首次给出小于1/2的常数近似下的多项式时间算法。此外，对于允许一定比例门被违反的情形，也建立了多项式时间可解的新边界。",
+            "methodsAndTechniques": "证明通过从PURE-CIRCUIT到e-GCIRCUIT的归约完成，核心是构造在e<1/6时能正确模拟NOT、OR和PURIFY门的门电路。算法端则设计了一种基于七种信息状态的状态传播机制，利用单调更新规则和‘无翻转’引理确保在有限步内收敛。对于含违规门的问题，采用了图分解技术，结合消去序和强连通分量大小控制。",
+            "limitationsAndReadingValue": "尽管结果紧致，但算法仅适用于特定门类型和误差约定，且对e=1/6的处理依赖精细的状态设计。证明中的归约构造较为复杂，实际应用受限。然而，其价值在于提供了首个紧致的广义电路近似阈值，揭示了非单调性对近似的影响，其状态传播思想和图分解技术对后续研究具有启发意义，值得细读方法部分。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "算法设计",
+            "均衡分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "广义电路",
+            "PPAD完全性",
+            "近似均衡",
+            "博弈论",
+            "计算复杂性"
+          ],
+          "tags": [
+            "广义电路",
+            "PPAD完全性",
+            "近似均衡",
+            "博弈论",
+            "计算复杂性",
+            "理论推导",
+            "复杂度分析",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.26772"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Hardness Amplification for Approximate Nash Equilibrium with Constantly Many Players",
+          "titleZh": "常数个玩家下近似纳什均衡的硬度放大",
+          "authors": [
+            "Xiaotie Deng",
+            "Ningyuan Li",
+            "Zihe Wang",
+            "Jie Zhang"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.25608",
+          "abstract": "For every fixed $\\varepsilon\\in(0,1)$ and $η\\in[0,1)$, we prove that computing an $(\\varepsilon,η)$-weak approximate Nash equilibrium requires quasipolynomial time assuming deterministic PPAD-ETH, even in symmetric binary-payoff games with a constant number of players. The games are given by complete payoff tables, and the player count depends only on the tolerances. The weak approximate Nash equilibrium allows at most an $η$ fraction of players to gain more than $\\varepsilon$ by deviating unilaterally. The main technical result is an unconditional error-amplification reduction from bimatrix games. For every fixed $δ\\in(0,1)$, it transforms a rational bimatrix game with payoffs in $[0,1]$ into a symmetric binary-payoff game with a polynomial-size complete table and a player count depending only on $δ,\\varepsilon,η$. Every $(\\varepsilon,η)$-weak approximate equilibrium of the constructed game yields a $δ$-approximate Nash equilibrium of the bimatrix game. Construction and recovery take polynomial time in their explicit inputs. Combining this reduction with the bimatrix hardness result of Rubinstein [FOCS 16] gives a deterministic worst-case running-time lower bound of $N^{(\\log N)^{1-o(1)}}$, where $N$ is the constructed table's binary encoding length.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在固定数量玩家的博弈中仍难以计算近似纳什均衡？尽管已有多项式时间算法可在特定误差下求解，但当误差低于1时是否存在通用多项式时间算法仍是开放问题。本文探究该问题的计算极限，填补了从双人博弈到多人博弈的硬度结果空白。",
+            "modelAndSetup": "作者考虑由完全支付表表示的对称二元支付博弈，其中每个玩家选择一个动作序列作为纯策略。通过引入弱近似纳什均衡概念，允许至多n比例的玩家可通过单方面偏离获得超过e的收益提升，从而放宽传统均衡要求，并构建了一个基于过滤机制的新博弈模型。",
+            "contributionsAndResults": "论文证明，在确定性PPAD-ETH假设下，对于任意固定的e∈(0,1)和n∈[0,1)，计算(e,n)-弱近似纳什均衡需要拟多项式时间，即使是对称二元支付博弈且玩家数为仅依赖于e和n的常数。这一结果将双矩阵博弈的硬度推广到了常数个玩家的情形。",
+            "methodsAndTechniques": "核心技术是无条件的误差放大归约：将一个有理数双矩阵博弈转化为一个对称二元支付博弈，使得后者任何弱近似均衡都能恢复出前者的近似解。通过重复过滤过程制造平均收益与可偏离收益之间的差距，并利用参考滤波器进行策略恢复分析。",
+            "limitationsAndReadingValue": "构造中的玩家数量随容差指数级增长，尚不清楚线性规模是否可达。尽管如此，该文提供了首个针对常数个玩家博弈的强硬度结果。最值得阅读的是其创新的归约框架与过滤机制设计，对理解近似均衡的内在复杂性具有深远意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "均衡分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "多智能体系统",
+            "近似纳什均衡",
+            "PPAD复杂性"
+          ],
+          "tags": [
+            "博弈学习",
+            "多智能体系统",
+            "近似纳什均衡",
+            "PPAD复杂性",
+            "理论推导",
+            "复杂度分析",
+            "均衡分析",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.25608"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Single-level reformulations for network pricing under Wardrop equilibrium with separable affine costs",
+          "titleZh": "基于分离仿射成本下Wardrop均衡的网络定价单层重构",
+          "authors": [
+            "Miguel F. Anjos",
+            "José Neto"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.25938",
+          "abstract": "We consider the problem of setting tolls on a subset of the arcs of a congested network so as to maximize the revenue of a network authority, anticipating that users route according to a Wardrop equilibrium. This problem is naturally cast as a bilevel program in which the leader sets tolls while the followers respond by choosing an equilibrium routing. We focus on the important special case of separable affine arc cost functions. Under this assumption, Wardrop equilibria admit Beckmann's convex characterization, from which we derive three new single-level reformulations of the bilevel problem, exploiting both Beckmann's formulation and its dual: an arc-based formulation, which we solve exactly, and two path-based formulations, solved by column-and-constraint generation. Beyond the reformulations, we further derive from Beckmann's potential an upper bound on the optimal revenue that can be used to certify optimality gaps across all formulations. An extensive computational study on instances derived from the Sioux Falls and Eastern Massachusetts networks compares our formulations with the recent mixed-integer nonlinear formulation of Beck, Labbé and Schmidt. The arc-based formulation solves substantially more instances to proven optimality (within a time limit of 1800 s) than this formulation and, unlike it, returns a feasible solution on every instance. It remains effective on the largest, 74-node network, on which the formulation of Beck et al. solves none. The magnitude of the upper bounds on the tolls proves to be a major driver of tractability: the genuinely hard core of the benchmark emerges once the regulatory cap on tolls is removed. The two path-based formulations, used as heuristics, return a solution within one percent of the optimum on every instance whose optimal value is known, often in seconds where exact formulations reach the time limit.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文研究在拥堵网络中设置通行费以最大化管理者收入的问题。由于用户会根据实际费用（含拥堵）选择路径，而收费影响流量分布，导致领导者-跟随者双层博弈。现有模型难以求解，尤其当成本为流量相关的仿射函数时，传统方法计算效率低且常无法找到可行解。",
+            "modelAndSetup": "模型考虑一个有向图网络，边上的成本为流量的仿射函数，部分边可设非负通行费。领导者设定收费标准以最大化总收费收入，追随者作为原子用户按Wardrop均衡原则选择最小成本路径。问题被建模为双层优化：上层为领导者收益最大化，下层为用户路径选择的均衡响应。",
+            "contributionsAndResults": "论文提出了三种新的单层重构方法来替代原双层问题。其中弧流变量公式可精确求解并显著优于现有方法，在更大规模网络上仍有效；两种基于路径的公式结合列与约束生成，作为高效启发式，能在秒级返回接近最优解。此外，还推导出最优收入的上界用于评估解的质量。",
+            "methodsAndTechniques": "核心方法利用Beckmann势函数及其对偶，将Wardrop均衡条件转化为凸规划，并通过强对偶性将双层问题降为单层。关键技术包括：利用势函数与对偶变量关系消去下层问题、设计基于路径的列生成策略、引入隐式通行费上限以增强数值稳定性，以及通过松弛互补条件构建可解模型。",
+            "limitationsAndReadingValue": "尽管新方法大幅提升求解能力，但仍依赖仿射成本假设，推广至更一般成本函数较难。弧流公式虽精确但非凸，求解仍具挑战；路径基启发式不保证全局最优。最值得阅读的是其将复杂均衡嵌套问题转化为可计算单层模型的思路，以及对大规模实例的有效性验证。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "算法设计",
+            "均衡分析",
+            "基准评测"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "博弈学习",
+            "多智能体系统",
+            "在线算法"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "博弈学习",
+            "多智能体系统",
+            "在线算法",
+            "理论推导",
+            "模型构建",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          },
+          "ids": {
+            "arxiv": "2610.25938"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "math.OC",
+              "cs.GT"
+            ],
+            "primaryCategory": "math.OC",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Regularizing the Veto Core",
+          "titleZh": "正则化否决核",
+          "authors": [
+            "M. August Rossi"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26535",
+          "abstract": "The metric distortion framework asks voting rules to elect a candidate close to the voters using only their rankings. SimultaneousPluralityVeto elects from the plurality veto core and achieves the optimal worst-case distortion of 3, but it is not Pareto-efficient: it can declare a tie between two candidates even when every voter prefers one of them. Removing Pareto-dominated candidates afterward would break the convexity of tied winner sets. We instead introduce regularization, which adds a small $\\varepsilon$ to every candidate's weight, restoring Pareto-efficiency. To study its effect on distortion, we introduce the rank score veto core, whose candidate weights come from a positional scoring vector $\\mathbf{s}$, and prove that its distortion lies in $[1 + 2(||\\mathbf{s}|| - s_m),\\, 1 + 2||\\mathbf{s}||]$; we conjecture that the lower bound is tight. A fixed $\\varepsilon$ can increase distortion, but letting $\\varepsilon$ depend on the number of voters preserves the distortion guarantee of the original veto core. Regularized SimultaneousPluralityVeto thus has optimal distortion, is Pareto-efficient, and has convex tied winner sets, resolving an open question of Kızılkaya and Kempe.",
+          "summarySections": {
+            "backgroundAndQuestion": "在基于排序的单胜者选举中，选民仅提交候选人偏好顺序，而真实偏好强度未知。度量失真框架假设选民与候选人在同一度量空间中，目标是选出总距离最小的社会最优候选人。已知最优失真下界为3，且基于否决核的规则（如SIMULTANEOUSPLURALITYVETO）可达此界。但该方法不满足帕累托效率：即使所有选民一致偏好某候选人，仍可能出现非优候选人并列获胜的情况。这违背了基本的社会选择公理，引发一个问题：能否在保持最优失真和赢家集合凸性的同时恢复帕累托效率？",
+            "modelAndSetup": "模型设定在度量失真框架下，选民和候选人在一个未知的度量空间中，每个选民按距离对候选人排序。投票规则只能看到排序信息，需选出失真比（当选者社会成本与最优者之比）尽可能小的候选人。否决核由加权支配图中的分数完美匹配定义：给定选民权重向量p和候选人权重向量q，若某候选人的支配图存在分数完美匹配，则其属于(p,q)-否决核。SIMULTANEOUSVETO是一种实用算法，通过并行削减候选人支持度来隐式构造匹配，最终未被淘汰者构成赢家集。",
+            "contributionsAndResults": "论文提出正则化技术：将每个候选人的权重q(c)加上一个小量ε后重新归一化，得到qₑ。此举确保所有候选人都有正权重，从而自动排除帕累托被支配者，恢复帕累托效率。关键结果是，当ε随选民数n适当减小时，正则化后的否决核仍是原核的子集，因此继承原机制的最优失真保证。特别地，应用于多数否决核时，正则化SIMULTANEOUSPLURALITYVETO解决了Kizilkaya与Kempe提出的开放问题，在不失最优失真和赢家集凸性的前提下实现了帕累托效率。",
+            "methodsAndTechniques": "作者引入正则化作为平滑技术，其本质是将原始权重q与均匀权重q_unif进行凸组合，混合参数由ε控制。分析中利用了候选人得分的离散性：当q来自有理数评分向量时，其取值具有最小步长。通过选取小于该步长的ε，可确保未通过原匹配条件的候选人也无法通过正则化后的条件，从而维持包含关系。此外，论文提出了“排名得分否决核”家族，将不同评分规则纳入统一框架，并通过构造极端实例和应用通用上界来推导失真上下界，为分析正则化影响提供了基础。",
+            "limitationsAndReadingValue": "正则化依赖于权重的离散结构和理性评分向量假设，若q连续变化则可能无法保持失真界。同时，正则化虽修复帕累托缺陷，但未改变SIMULTANEOUSVETO本身的确定性与路径无关性等深层机制特性。其价值在于提供了一种通用技术路径，可在不牺牲近似保证的前提下修复机制的公理缺陷。最值得阅读的是其问题意识——在失真、公理与几何性质间寻求平衡，以及将优化思想（正则化）引入机制设计的技术类比，这对设计兼具理论保证与实际合理性的投票规则具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "社会选择",
+            "投票理论",
+            "度量失真",
+            "否决核",
+            "帕累托效率"
+          ],
+          "tags": [
+            "社会选择",
+            "投票理论",
+            "度量失真",
+            "否决核",
+            "帕累托效率",
+            "理论推导",
+            "机制设计",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 22.5
+          },
+          "ids": {
+            "arxiv": "2610.26535"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.LG）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Copying Under Repetition: From Prefix Matching to Position Hashing",
+          "titleZh": "重复下的复制：从前缀匹配到位置哈希",
+          "authors": [
+            "Anxin Guo",
+            "Tianlong Huang",
+            "Chenxiao Yang",
+            "Zhiyuan Li"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26722",
+          "abstract": "Frontier LLMs can copy random text almost flawlessly, yet they often overrun or truncate long blocks of repeated characters. In repeated strings, matching local content no longer reliably identifies where copying should continue or when it should stop. Nevertheless, we show that a two-layer transformer with $O(\\log\\log N)$-bit precision and $O(\\log N/\\log\\log N)$ width can copy every string up to a chosen design horizon $N$ and terminate correctly under arbitrary repetition. We use RoPE-style rotations of attention values and outputs (VO-rotations) with small prime periods to encode distances from delimiter anchors modulo those primes. By the Chinese Remainder Theorem, these periodic encodings jointly distinguish all required distances, allowing one retrieval rule to select either the next source token or the end marker. In contrast, we prove a width-independent impossibility result for copying under sequential finite-precision softmax accumulation. It applies to transformers whose only positional input is an additive attention bias that eventually becomes constant, including NoPE and a recursive implementation of ALiBi. Once an identical-token run exceeds the resulting saturation threshold, further repetitions leave the logits unchanged. If this threshold grows sublinearly with $N$, these models cannot both complete a long all-identical copy and stop correctly, a pattern resembling the termination errors of frontier LLMs. In synthetic copying experiments, baseline transformer models fail on long repeated strings even within the training range. Trained VO models, by contrast, generalize beyond the training lengths with near-perfect accuracy up to length $\\approx 5005$, the selected primes' period product.",
+          "summarySections": {
+            "backgroundAndQuestion": "现代大语言模型虽能近乎完美地复制随机文本，但在处理长串重复字符时常出现提前终止或无限重复的错误。这是因为基于局部内容匹配的‘归纳头’机制在重复序列中无法区分不同位置，导致模型难以判断何时停止复制。论文聚焦于这一重复敏感性问题，探究浅层低精度模型能否在任意重复下正确完成复制与终止。",
+            "modelAndSetup": "研究设定为在固定词汇表上，让同一模型参数复制任意长度不超过设计上限N的字符串，并正确结束。输入为源字符串加复制指令，输出需逐字还原并以结束符终止。评估采用合成数据，涵盖均匀随机、中度重复和全同字符三种分布，在训练长度内外测试精确复制率，重点观察模型对重复结构的泛化能力。",
+            "contributionsAndResults": "论文证明一个两层、O(log log N)-比特精度、O(log N/log log N)宽度的Transformer可通过位置哈希机制可靠复制任意字符串并正确终止。实验显示，传统位置编码模型在长重复串上性能骤降，而基于值旋转（VO-RoPE）的模型在训练长度2000内达到完美复制，并外推至5005仍保持近完美准确率，验证了理论构造的有效性。",
+            "methodsAndTechniques": "方法核心是用值/输出旋转（VO-RoPE）将位置编码为小素数周期的模余数，通过中国剩余定理联合解码唯一偏移量。第一层注意力锚定分隔符并写入相对距离的周期指纹，第二层利用该指纹检索下一个源标记或结束符。该机制不依赖内容匹配，而是通过位置哈希实现统一的检索规则，从而绕开重复带来的歧义。",
+            "limitationsAndReadingValue": "理论下界仅适用于最终常数偏置类模型，实验中的VO模型依赖特定周期乘积，超出后因模冲突而失效，限制了其通用性。此外，模拟FP8精度与实际部署仍有差距。最值得阅读的是其将位置信息嵌入值通路的设计思想、理论与实验结合的严谨性，以及对当前LLM重复失败模式的形式化解释。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "实验验证",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "生成式AI",
+            "鲁棒性",
+            "位置编码",
+            "长度泛化"
+          ],
+          "tags": [
+            "大语言模型",
+            "生成式AI",
+            "鲁棒性",
+            "位置编码",
+            "长度泛化",
+            "理论推导",
+            "模型构建",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.26722"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Newton-Based Methods for Bilevel Optimization Beyond Lower-Level Strong Convexity",
+          "titleZh": "超越下层强凸性的牛顿型双层优化方法",
+          "authors": [
+            "Youran Dong",
+            "Junfeng Yang",
+            "Wei Yao",
+            "Jin Zhang"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26839",
+          "abstract": "Bilevel optimization provides a framework for machine learning tasks such as hyperparameter optimization, data reweighting, and meta-learning. Existing Newton-based bilevel methods typically rely on the classical hypergradient formula, which is generally unavailable when lower-level solutions are nonunique and the lower-level Hessian is singular. We develop two Newton-based methods beyond lower-level strong convexity by exploiting curvature shared by the lower-level and multiplier updates. Newton-based GALET handles potentially singular lower-level curvature under a positive spectral-gap condition, exploiting its range structure to avoid the squared-Hessian multiplier system used in GALET. Newton-based BAMM uses a strongly convex aggregation model when the lower-level objective is convex and the upper-level objective is strongly convex in the lower-level variable. We establish convergence guarantees and improved complexity bounds relative to GALET and sl-BAMM under the corresponding assumptions. We further introduce GNBO, a generalized Newton-based framework that captures the shared-curvature structure of the proposed methods and several existing Newton and quasi-Newton bilevel methods. Experiments on synthetic problems, data hyper-cleaning, and GPT-2 data reweighting evaluate the proposed methods across different bilevel learning tasks.",
+          "summarySections": {
+            "backgroundAndQuestion": "双层优化广泛用于超参数学习、数据加权等任务，但传统牛顿法依赖下层强凸性以确保唯一解和可逆Hessian。当下层解不唯一时，经典超梯度公式失效，现有方法需解平方Hessian系统，计算昂贵且不稳定。本文旨在突破这一限制，在下层非强凸甚至Hessian奇异时仍能高效求解。",
+            "modelAndSetup": "论文研究一般双层问题，其中下层目标可能非强凸、解集多点，上层目标依赖其最优解。通过KKT条件重构原问题，采用残差最小化视角，输入为上下层函数及其导数，输出为近似稳定点。在合成问题、数据清洗与GPT-2重加权任务上测试，评估指标为各阶KKT残差下降速度与最终性能。",
+            "contributionsAndResults": "提出两种新型牛顿法：Newton-based GALET在正谱隙条件下直接利用范围结构避免平方系统；Newton-based BAMM借助强凸聚合模型耦合更新。两者均获理论收敛保证，并在复杂度上优于基线。实验显示其更快降低残差，尤其在病态条件下更稳健，验证了共享曲率结构的有效性。",
+            "methodsAndTechniques": "核心思想是利用下层与乘子更新间的共享曲率结构。GALET利用Hessian值域包含梯度的性质，用同一线性系统同时逼近下层解与乘子；BAMM则构造随迭代衰减的强凸聚合函数，使Hessian始终可逆。二者均采用不精确牛顿步，通过梯度下降求解线性系统，避免显式矩阵求逆。",
+            "limitationsAndReadingValue": "方法依赖Hessian-向量积，对大规模模型内存开销大，且假设条件如谱隙或凸性未必总成立。实验虽涵盖神经网络，但未在更大模型上验证扩展性。最值得读的是其统一框架GNBO，清晰揭示了多类双层算法的共性结构，对设计高效二阶方法具指导意义。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "复杂度分析",
+            "理论推导",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "双层优化",
+            "牛顿方法",
+            "非唯一解",
+            "KKT条件",
+            "计算复杂度"
+          ],
+          "tags": [
+            "双层优化",
+            "牛顿方法",
+            "非唯一解",
+            "KKT条件",
+            "计算复杂度",
+            "算法设计",
+            "复杂度分析",
+            "理论推导"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.26839"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "math.OC",
+              "cs.LG"
+            ],
+            "primaryCategory": "math.OC",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Deep Pontryagin Learning for Continuous-Time Stochastic Control with Jumps",
+          "titleZh": "Deep Pontryagin Learning for Continuous-Time Stochastic Control with Jumps",
+          "authors": [
+            "Jean-Loup Dupret",
+            "Patrick Cheridito"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26718",
+          "abstract": "We develop a deep Pontryagin learning framework for high-dimensional continuous-time stochastic control problems that naturally accommodates jump-diffusions. In contrast to direct policy optimization, which repeatedly differentiates the objective through the entire time-discretized dynamics, our method separates adjoint learning from policy improvement by explicitly incorporating state-sensitivity information from the Pontryagin stochastic maximum principle. For a fixed Markov control, we first compute pathwise adjoint labels by backpropagating the reward through time along simulated state trajectories, and project these labels onto the Markov state through a supervised regression step. The control is then updated by enforcing the pointwise Hamiltonian stationarity condition. We prove that the resulting projected adjoint process satisfies a discrete-time Pontryagin principle and converges, as the time step tends to zero, to the solution of the corresponding continuous-time adjoint backward stochastic differential equation. Numerical experiments illustrate the accuracy, stability, and scalability of the approach.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有基于直接策略优化的深度学习方法在求解高维连续时间随机控制问题时，因需通过整个时间离散化动态进行反向传播，常面临梯度消失/爆炸、误差累积和训练不稳定等问题。尤其当系统包含跳跃扩散过程时，传统方法更难处理。本文旨在克服这些数值挑战，提供一种更稳定高效的替代方案。",
+            "modelAndSetup": "研究设定为带跳跃扩散的连续时间随机控制问题，目标是最大化期望奖励。状态轨迹由含布朗运动和泊松随机测度的SDE驱动，控制为马尔可夫反馈形式。模型采用神经网络分别逼近控制策略和伴随变量，通过模拟轨迹生成数据，并以终端奖励和运行奖励定义目标函数，评估指标为策略性能与最优解的接近程度。",
+            "contributionsAndResults": "提出了一种名为Deep PMP的新框架，其核心贡献在于分离伴随学习与策略更新。该方法不仅避免了端到端反向传播的稳定性问题，还能自然处理跳跃项。数值实验在多个高维非线性基准上验证了其优于直接策略优化的精度与稳定性，结果可信且具说服力。",
+            "methodsAndTechniques": "方法基于Pontryagin最大值原理，首先固定当前控制策略，沿模拟轨迹使用反向传播计算路径伴随标签，再通过监督回归将其投影为马尔可夫伴随场。随后利用该场通过逐点哈密顿驻留条件更新控制策略。关键技术在于将伴随变量的学习转化为回归问题，从而解耦长期依赖。",
+            "limitationsAndReadingValue": "局限在于收敛性分析仅针对理想投影伴随过程，未涵盖神经网络近似与优化误差；且未测试状态或控制依赖的跳跃强度情形。最值得阅读的是其方法设计与理论分析部分，展示了如何将经典最优控制理论与深度学习结合，为高维随机控制提供了新思路。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "模型构建",
+            "实验验证",
+            "理论推导"
+          ],
+          "contentTags": [
+            "强化学习",
+            "随机最优控制",
+            "跳跃扩散过程",
+            "深度学习",
+            "Pontryagin最大值原理"
+          ],
+          "tags": [
+            "强化学习",
+            "随机最优控制",
+            "跳跃扩散过程",
+            "深度学习",
+            "Pontryagin最大值原理",
+            "算法设计",
+            "模型构建",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.26718"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "eess.SY",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Parallel Language Models via Variational Decoding",
+          "titleZh": "通过变分解码实现并行语言模型",
+          "authors": [
+            "Felix Draxler",
+            "Robin C. Geyer",
+            "Daniel Geyfman",
+            "Farrin Marouf Sofian",
+            "Justus Will",
+            "Philipp Hildebrandt",
+            "Giosue Migliorini",
+            "Prakhar Srivastava",
+            "Gagan Sai Trinadh Duggaraju Peddiraju",
+            "Kushagra Pandey",
+            "Jorge da Silva Gonçalves",
+            "Elijah Tavares",
+            "Jan Niklas Groeneveld",
+            "Yang Meng",
+            "Julia E. Vogt",
+            "Stephan Mandt"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26693",
+          "abstract": "Autoregressive language models emit one token per forward pass. This causes high inference latency, in particular as models are scaled up for quality. In this paper, we introduce Parallel Language Models (PLMs), which generate mutually consistent tokens in one forward pass by routing dependencies through latent auxiliary variables. PLMs are trained using a variational bound that reduces to an autoregressive loss plus a parallel decoding loss. Empirically, PLMs are on a faster and better Pareto frontier than autoregressive and discrete diffusion baselines. Pretrained PLMs achieve near-autoregressive pretraining loss on model scales of 80M to 3B parameters, and speedup follows a power law in model size. When post-trained, our 1.3B model matches or exceeds an identically trained autoregressive model on math, coding, and instruction-following benchmarks, speeding up inference $2.3\\text{-}5.7\\times$. Together, we show that parallel generation can be trained from a single training objective at autoregressive quality. We will make our code available at https://github.com/mandt-lab/plm.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统自回归语言模型逐个生成token，导致推理延迟高，尤其在大模型上更严重。尽管推测解码和离散扩散等方法尝试提速，但前者受限于草稿模型质量，后者需多步迭代。本文旨在构建一种从单一定训练目标出发、能直接从序列数据学习并行生成的语言模型框架，在保持生成质量的同时显著提升推理速度。",
+            "modelAndSetup": "模型采用共享权重的编码器-解码器结构，编码器为标准自回归模型，解码器通过辅助隐变量并行生成多个token。训练基于变分下界，结合自回归损失与并行重建损失。在预训练阶段使用通用语料，在后训练阶段加入指令微调与偏好优化。评估涵盖文本质量（负对数似然）、生成速度（tokens/s）及下游任务性能（如数学、编程）。",
+            "contributionsAndResults": "提出并实现了完整的并行语言模型（PLM）训练方案，无需依赖教师模型蒸馏。实验证明，PLM在预训练阶段即可达到接近自回归模型的质量，并随模型规模增大而提升并行度。后训练后的1.3B和3B模型在数学、代码和指令遵循任务上表现相当或更优，同时推理速度快2.3至5.7倍，验证了高质量并行生成的可行性。",
+            "methodsAndTechniques": "核心是通过隐变量协调并行预测：编码器将历史token映射为隐变量分布，解码器据此一次性生成多个未来token。训练目标由自回归损失与KL散度项构成，确保隐变量承载必要上下文信息。引入几何感知的Voronoi辅助空间和表示对齐损失，提升了训练效率与重建能力。推理时采用二次解码，结合宽松验证规则进一步提高吞吐量。",
+            "limitationsAndReadingValue": "模型仍需验证步骤来保障生成一致性，完全单步无损生成尚未实现。训练计算开销高于纯自回归模型，且当前结果集中于特定规模。然而，其端到端训练范式、清晰的变分动机与可扩展性分析极具启发性。最值得阅读的是其统一的建模范式、高效的训练机制设计及系统的实验验证路径。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "实验验证",
+            "系统框架",
+            "机制设计"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "生成式AI",
+            "推理加速",
+            "变分方法",
+            "并行生成"
+          ],
+          "tags": [
+            "大语言模型",
+            "生成式AI",
+            "推理加速",
+            "变分方法",
+            "并行生成",
+            "模型构建",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.26693"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        },
+        {
+          "title": "Degree Bounds for Separating Polynomial and Neural Invariants for Point Clouds",
+          "titleZh": "点云分离多项式与神经不变量的度界",
+          "authors": [
+            "Snir Hordan",
+            "Harm Derksen",
+            "Mircea Petrache",
+            "Nadav Dym"
+          ],
+          "date": "2026-10-19",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26612",
+          "abstract": "Neural networks that respect the symmetries of point clouds commonly compute high-order representations of the rotation group to improve their expressivity. Such models are known to be universal, and thus able to separate any pair of point clouds, when using representations of sufficiently high order, yet no precise bound on this order, as a function of the number of points, was previously known. We establish the first quadratic lower and upper degree bounds for polynomials that separate point clouds of n points up to rotations and permutations. By showing Tensor Field Networks and MACE can express all invariant polynomials of a given degree with sufficient representation order, we additionally derive the first explicit, quadratic bound on the representation order sufficient for these architectures to be complete, replacing previous existence results with concrete guarantees. We further show that, under local regularity assumptions, point cloud separation can be achieved with a message-passing-based model using invariants whose degree depends only on the size of a local neighborhood, rather than on the size of the full point cloud. Finally, we provide counterexamples showing MACE must compute high order irreducible representations to separate locally regular point clouds.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么现有基于对称性的点云模型虽通用却缺乏定量保障？当前高阶张量网络如TFN和MACE被证明能分离任意非对称点云，但其完备性依赖于‘足够高’的表示阶数，具体需要多高始终未知。这导致实际设计中阶数选择依赖经验，无法平衡表达力与计算成本，尤其在局部消息传递架构下更不清楚邻域大小如何影响所需复杂度。",
+            "modelAndSetup": "论文研究了在旋转与置换群作用下，多项式不变量分离点云所需的最小度数。输入是n个d维点构成的点云，输出是能区分不同轨道的不变函数。通过分析Gram矩阵的Sn轨道分离问题，并结合局部正则性假设，作者建立了分离度的上下界，并将其映射到TFN和MACE等模型的表示阶数需求，实验设定聚焦于理论边界推导而非具体数据集训练。",
+            "contributionsAndResults": "论文首次给出了点云分离的二次下界与dn²量级上界，填补了不变量理论在此问题上的空白。由此导出TFN和MACE实现完备性所需表示阶数的首个显式二次界，取代了以往存在性结论。进一步，在局部正则假设下，分离仅依赖邻域大小的平方，但反例也表明高阶不可约表示不可或缺，为模型设计提供了精确指导。",
+            "methodsAndTechniques": "作者利用中心化技巧将含平移的群作用转化为无平移情形，通过构造共面旋转多边形族证明下界，借助Gram矩阵与Sn轨道关系建立上界。关键在于将分离问题转化为低秩对称矩阵的轨道区分，并用拉格朗日插值与幂和多项式构造显式分离不变量。对于神经网络，则通过证明其可表达特定度数多项式来传递界限。",
+            "limitationsAndReadingValue": "论文核心结论基于理想化假设，如局部强正则性和全局消息传递，实际中可能不成立。反例构造依赖特殊对称配置，现实点云未必触发。此外，未考虑非多项式激活的影响，下界是否紧仍开放。最值得读的是问题形式化过程、度界证明思路及对MACE超参的量化分析，为理解几何模型表达力提供了坚实理论基底。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "实验验证"
+          ],
+          "contentTags": [
+            "几何深度学习",
+            "不变量理论",
+            "点云表示",
+            "图神经网络"
+          ],
+          "tags": [
+            "几何深度学习",
+            "不变量理论",
+            "点云表示",
+            "图神经网络",
+            "理论推导",
+            "复杂度分析",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.26612"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "math.AC"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-19",
+            "updated": "2026-10-19"
+          }
+        }
+      ]
+    }
+  ]
+}
