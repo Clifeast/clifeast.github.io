@@ -1,0 +1,733 @@
+{
+  "date": "2026-10-21",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-10-21T08:06:11.796751+00:00",
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Learning the 4D World through Point Trajectory Forecasting (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：LocaLeJEPA: Maximum Entropy Representations under Geometric Priors (<urlopen error The write operation timed out>)"
+  ],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 13,
+      "papers": [
+        {
+          "title": "Exact Envy-Free Cake Cutting with Polynomial Expected Queries",
+          "titleZh": "精确无妒忌蛋糕切割的多项式期望查询",
+          "authors": [
+            "Simon Mackenzie",
+            "Mashbat Suzuki"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28535",
+          "abstract": "Envy-free cake cutting asks how to divide a resource so that no agent prefers another agent's share. Finding such a division with few queries about preferences has been a longstanding challenge. Aziz and Mackenzie gave the first query bound depending only on the number $n$ of agents: a tower of six $n$'s. Subsequent improvements culminated in Ye and Bai's single-exponential bound of $n^{O(1)}2^n$. A large gap remains between this deterministic upper bound and Procaccia's general lower bound of $Ω(n^2)$. Whether polynomially many queries suffice is a central open question in fair division. We show that a polynomial expected query bound is possible. Our randomised protocol uses only independent, uniformly sampled points from the cake as its source of randomness. For every profile of $n$ agents with nonnegative, additive, nonatomic valuations, the protocol has the following guarantees: (1) It terminates with probability one. (2) Every allocation it returns is complete and exactly envy-free. (3) Its expected number of Robertson-Webb queries is $\\widetilde{O}(n^{30})$. The expectation is taken solely over the protocol's random choices, with no distributional assumptions on preferences.",
+          "summarySections": {
+            "backgroundAndQuestion": "如何用尽可能少的信息交互实现完全公平的资源分割，是公平分配领域的核心难题。传统确定性协议需要指数级甚至塔式增长的查询次数，而是否存在仅需多项式次查询的方案长期悬而未决。本文聚焦于在不牺牲公平性的前提下，突破这一计算效率瓶颈。",
+            "modelAndSetup": "模型考虑n个代理人对一个连续资源（蛋糕）拥有非负、可加且非原子的价值观。通过标准的Robertson-Webb查询模型获取偏好信息，目标是设计一种随机协议，使得最终分配是完整的且精确无妒忌的，同时最小化期望查询次数，且不对代理人偏好做任何分布假设。",
+            "contributionsAndResults": "论文提出了首个期望查询复杂度为多项式的随机协议，实现了O(n³⁰)的期望查询数，解决了该领域的一个中心开放问题。所有分配结果都是精确无妒忌且完整的，且协议以概率一终止，显著优于此前单指数级别的确定性上界。",
+            "methodsAndTechniques": "作者引入了一种基于随机采样的补偿机制，通过设立‘储备蛋糕’并进行数值信用支付来消除妒忌。关键创新在于利用随机抽样控制估值差异，并结合局部修复、快照和收缩等子程序，在保持整块分配的前提下逐步完成分割，从而控制总成本。",
+            "limitationsAndReadingValue": "尽管期望查询数为多项式，但常数因子较大，实际效率仍有提升空间；此外，协议依赖连续随机抽样，离散化实现可能带来挑战。最值得阅读的是其新颖的随机化补偿思想与局部-全局协调的技术路线，为后续研究提供了新方向。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "复杂度分析",
+            "理论推导"
+          ],
+          "contentTags": [
+            "公平性",
+            "机制设计",
+            "多智能体系统"
+          ],
+          "tags": [
+            "公平性",
+            "机制设计",
+            "多智能体系统",
+            "算法设计",
+            "复杂度分析",
+            "理论推导"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.28535"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "Fixed Sets and the Hardness of Computing Correlated Equilibria",
+          "titleZh": "固定集与计算相关均衡的难度",
+          "authors": [
+            "Ioannis Anagnostides",
+            "Constantinos Daskalakis",
+            "Gabriele Farina",
+            "Noah Golowich",
+            "Tuomas Sandholm",
+            "Brian Hu Zhang"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28141",
+          "abstract": "We show that computing an approximate correlated equilibrium of a polytope game is PPAD-complete, and thus polynomial-time equivalent to finding a Nash equilibrium. This challenges the conventional view in game theory that correlated equilibria are more tractable objects than Nash equilibria. From a conceptual standpoint, we connect correlated equilibria to a natural generalization of fixed points, which we call fixed sets. A fixed set of a continuous function $f$ is a nonempty finite set $S$ such that $S \\subseteq \\operatorname{conv} f(S)$. Our main technical contribution is to prove that computing a fixed set is PPAD-hard even at inverse polynomial precision.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统观点认为相关均衡比纳什均衡更容易计算，因其可通过线性规划求解。但该结论依赖于策略空间较小的‘多项式类型’游戏，现实中玩家常有复杂策略集。本文质疑这一便利性是否普遍成立，核心问题是：在更一般的博弈中，计算相关均衡是否依然比纳什均衡更简单？这触及博弈论中关于均衡可计算性的根本认知。",
+            "modelAndSetup": "作者研究连续策略空间中的凹博弈与多线性博弈，其中玩家策略位于高维立方体或多面体上，效用函数为二次或多元线性形式。相关均衡定义为一个联合分布，使得任何玩家都无法通过事后映射策略获得显著收益提升。模型的关键在于允许策略空间指数级增长，从而避开传统多项式时间算法的前提条件，揭示计算复杂性的真实边界。",
+            "contributionsAndResults": "论文证明，在凹博弈和显式多面体上的多线性博弈中，计算近似相关均衡是PPAD-完全的，因此与计算纳什均衡一样难。这一结果颠覆了‘相关均衡更易算’的传统观念。此外，即使限制解的支撑集大小为多项式，问题仍为PPAD-难，表明不存在通用的高效算法来找到稀疏的相关均衡。",
+            "methodsAndTechniques": "作者引入‘固定集’（fixed set）这一新概念，作为对传统不动点的推广，并证明计算固定集本身是PPAD-难的。随后通过构造特定的模仿博弈，将不动点问题归约到相关均衡的计算问题。关键技术包括多尺度缩放论证、熵方法控制条件方差，以及利用分段线性插值将非线性项嵌入策略约束，从而在不增加精度依赖的情况下完成归约。",
+            "limitationsAndReadingValue": "结果依赖于对抗性构造的博弈实例，实际应用中相关均衡可能仍较易逼近。此外，证明聚焦于最坏情况复杂性，不排除在特定结构博弈中存在高效算法。尽管如此，本文的价值在于从根本上修正了理论认知。最值得读的是其核心归约思想、固定集的新定义及其与均衡的深刻联系，这对理解均衡计算的极限具有深远意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "均衡分析",
+            "模型构建",
+            "算法设计"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "多智能体系统",
+            "相关均衡",
+            "纳什均衡",
+            "固定点"
+          ],
+          "tags": [
+            "博弈学习",
+            "多智能体系统",
+            "相关均衡",
+            "纳什均衡",
+            "固定点",
+            "理论推导",
+            "复杂度分析",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.28141"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC",
+              "cs.DS",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "Overlapping Reserves without a Common Priority: Theory and an Application to School Choice in Chile",
+          "titleZh": "无共同优先级的重叠配额：理论与智利学校择校的应用",
+          "authors": [
+            "Battal Doğan",
+            "Kenzo Imamura",
+            "M. Bumin Yenmez"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28471",
+          "abstract": "We study matching markets with overlapping reserves governed by heterogeneous priorities. When applicants qualify for multiple reserves, how they are routed can affect reserve utilization and which applicants are admitted. We introduce classify-and-rank choice rules that yield strategy-proof deferred acceptance mechanisms satisfying maximum reserve utilization and priority-respect. We axiomatically characterize our mechanism's admission outcomes for any given classification and reserve order. With two reserve categories, we provide a foundation for the reserve order and establish its distributional implications for access across eligibility groups. Using nine cycles of Chilean school admissions, which feature such reserves, we document reserve-utilization failures under the deployed mechanism and show that their frequency depends sharply on the reserve order. We show how our mechanism can be adapted to Chile's institutional setting to prevent such failures. Under this alternative mechanism, the reserve order generates a distributional pattern across eligibility groups, consistent with our theory.",
+          "summarySections": {
+            "backgroundAndQuestion": "当学生可同时符合多个招生配额（如成绩优异和弱势群体）时，不同配额采用不同优先级排序，会导致录取结果受申请路径影响。现有机制可能浪费配额名额，且无法兼顾效率与公平。本文研究如何在无统一优先级的情况下，设计一个既能充分利用配额、又尊重各类别优先权并防止策略性申报的录取机制。",
+            "modelAndSetup": "模型包含学生、学校与多种配额类别，学生对学校有偏好，学校对不同类别的学生有独立优先级。学生可符合多个配额，学校需在满足软性配额约束下进行录取。机制通过分类-排序规则处理：先将共享同一优先标准的配额归为一类，再依固定顺序处理各类别，并在每步确保仍能达到最大配额利用率。",
+            "contributionsAndResults": "本文提出classify-and-rank机制，在延迟接受框架下实现了策略免疫、最大配额利用与联合优先权尊重。证明该机制在给定分类与顺序下是唯一满足个体理性、非浪费、优先权与策略免疫等性质的机制。实证发现智利现行机制因顺序不当导致每年数百个配额未被有效利用。",
+            "methodsAndTechniques": "作者通过分阶段贪心选择与可扩展性测试来实现机制：先按类别承诺学生资格，再分配具体配额，始终保留通向最大配额利用的可能性。利用拟阵基与字典序极大性证明选择规则的合理性，并借助提升定理将学校层面的唯一性推广至整个机制。反例构造揭示了传统Gale主导思想在此场景下的失效。",
+            "limitationsAndReadingValue": "该机制依赖人为设定的配额分类与顺序，虽经公理化刻画但其选择仍具政策主观性。结果在多类别共用优先标准时最优，但在更复杂层级结构中可能受限。最值得阅读的是其对配额利用失败的精准诊断、classify-and-rank机制的设计直觉及其在真实制度环境中的可实施性论证。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "公平性",
+            "学校择校",
+            "配额制度"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "公平性",
+            "学校择校",
+            "配额制度",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.28471"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "Best-of-Both Worlds Proportionality in Structured Committee Elections",
+          "titleZh": "结构化委员会选举中的兼顾事前事后比例性的比例性",
+          "authors": [
+            "Dimitris Avramidis",
+            "Mark de Berg",
+            "Ulrike Schmidt-Kraepelin"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28151",
+          "abstract": "We study randomized committee elections with additive preferences, where we seek best-of-both-worlds proportionality. That is, we strive for strong guarantees for the selection probabilities ex ante and each realized committee ex post. We focus on structured preferences and introduce antichain single-peakedness, a restricted domain generalizing single-peaked additive preferences as well as several well-studied approval domains. Our approach first computes a fractional committee and then decomposes it through a rounding rule called systematic rounding. Among profile-oblivious rounding rules, we characterize systematic rounding as the unique rule satisfying natural quota guarantees, and thereby the only promising rule for our two-step approach. We show that ex-ante core stability is incompatible with ex-post justified representation $JR$, even under single-peaked preferences. However, applying systematic rounding to certain fractional allocations that form so-called Lindahl equilibria yields ex-ante core stability and ex-post core stability up to one. Alternatively, we retain exact ex-post proportionality and approximate the ex-ante core using two parameters: $α$ raises the utility gain required for a deviation, while $β$ reduces the coalition's proportional share. We establish the tight threshold $αβ$=2. Below it, ex-post JR is incompatible even under single-peaked preferences; at and above it, adapting a fractional rule called BestRepresentative [Pierczyński and Skowron, 2022] and applying systematic rounding to its output yields ex-ante $α, β$-fractional core stability and ex-post PJR under antichain single-peaked preferences.",
+          "summarySections": {
+            "backgroundAndQuestion": "如何在委员会选举中同时实现事前比例性和事后比例性？传统方法因席位不可分而难以完美满足比例性，随机化机制通过概率分配提供了一种兼顾路径。然而，在一般偏好下，事前核心稳定性与事后代表性（如JR）已被证明不兼容。本文聚焦于结构化偏好场景，试图在保持强事前保障的同时提升事后公平性。",
+            "modelAndSetup": "模型考虑一个由选民、候选人、效用函数和委员会规模构成的选举环境，其中选民具有加性效用。机制输出一个在若干整数委员会上的概率分布（即彩票）。核心稳定性用于衡量事前公平，而JR、PJR等公理刻画事后公平。关键设定是引入‘反链单峰性’这一偏好结构，它统一并推广了单峰偏好与多种批准制偏好域。",
+            "contributionsAndResults": "论文证明了即使在单峰偏好下，事前核心稳定也无法与事后JR共存。作为替代，作者提出两种路径：一是采用系统性舍入法对分数核心解进行分解，获得事前核心稳定与事后‘差一核心稳定’；二是放宽事前要求，建立紧阈值αβ=2，在此之上可同时达成近似事前核心与精确事后PJR。",
+            "methodsAndTechniques": "核心方法是两步法：先计算满足特定性质的分数委员会，再通过系统性舍入转化为整数委员会彩票。该舍入法被刻画为唯一满足区间上下额约束的无剖面感知规则。技术关键在于利用蛋糕层表示与上轮廓集分析，结合反链单峰性结构来控制舍入误差，并通过构造性论证建立近似核心的紧界。",
+            "limitationsAndReadingValue": "结果高度依赖反链单峰性假设，且系统性舍入需外部提供候选顺序。尽管如此，论文清晰揭示了事前事后公平的根本张力，并提供了迄今最强的正向结果。最值得阅读的是其两步框架的设计思想、舍入规则的刻画及其在结构化偏好下的强大表现。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "社会选择",
+            "公平性",
+            "机制设计",
+            "委员会选举",
+            "偏好结构"
+          ],
+          "tags": [
+            "社会选择",
+            "公平性",
+            "机制设计",
+            "委员会选举",
+            "偏好结构",
+            "理论推导",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.28151"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "Optimal Incentive-Compatible Assignments with Endogenous School Priorities",
+          "titleZh": "具有内生学校优先权的最优激励相容分配",
+          "authors": [
+            "Federico Echenique",
+            "Juan S. Pereyra"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28582",
+          "abstract": "We study whether a planner can favor students at schools they rank more highly while preserving truthful reporting. The standard implementation of the deferred acceptance (DA) algorithm is typically not the solution. With interior cutoffs, DA with multiple tie-breaking (DA-MTB) solves the planner's optimization problem if and only if the planner's payoff from a school assignment is independent of the students' preferences. This is typically not the case, and strict incentive compatibility under DA-MTB leaves room for improvement via preference-dependent priority adjustments. We characterize optimal rank-dependent cutoff adjustments in a two-school model and show that, in a many-school environment, near-optimal approximately incentive-compatible assignments can be chosen with small support (so each type of student may only attend a small number of schools).",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么标准的择校机制无法兼顾学生偏好与公平分配？现实中许多学区希望奖励将某校列为首选的学生，但这常导致学生策略性地操纵排名。本文探究一个规划者能否在不破坏真实报告激励的前提下，通过调整学校优先级来更优地分配学生，从而填补了传统延迟接受机制在目标灵活性上的理论空白。",
+            "modelAndSetup": "模型考虑一个单位质量的学生群体和有限容量的学校，每个学生有私有的严格偏好排序及对应的冯诺依曼-摩根斯坦效用。规划者的收益取决于学生类型与分配学校的组合。机制需满足激励相容与容量约束，目标是最大化期望总收益。该设定将分配问题转化为带线性约束的优化问题。",
+            "contributionsAndResults": "论文发现，仅当规划者对某一学校的收益不随学生偏好变化时，多重随机抽签下的延迟接受机制（DA-MTB）才是最优的。否则存在改进空间。在双校情形下，作者刻画了基于排名的截止分数调整的最优解，并证明在特定条件下，单次与多次抽签的最优调整能达到相同的首志愿分配率。",
+            "methodsAndTechniques": "作者利用线性规划框架分析最优分配的存在性与结构，通过构造带报告依赖优先级的截止分数表示任意可行分配。关键证明依赖于DA-MTB在内部截止点下的严格激励相容性，并结合概率方法论证稀疏近似解的存在性，使用集中不等式控制偏差。",
+            "limitationsAndReadingValue": "模型假设学生类型分布已知且基数效用固定，限制了其在信息不完全环境中的直接应用。机制虽具理论深度，但实际部署需复杂的优先级定制。最值得阅读的是其对‘为何DA通常非最优’的清晰刻画，以及通过端到端优化视角重新审视学校选择机制的设计逻辑。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "信息设计",
+            "激励兼容",
+            "学校选择"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "信息设计",
+            "激励兼容",
+            "学校选择",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.28582"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.CV）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Predictive Latents for Autoregressive Language Models: Possibility, Gauge, and Obstruction",
+          "titleZh": "自回归语言模型的预测潜变量：可能性、规范与阻碍",
+          "authors": [
+            "Yuzhou Hong"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28540",
+          "abstract": "Autoregressive language models are trained by next-token cross-entropy, yet several recent systems also iterate a hidden state without emitting a token: continuous thoughts, pause steps, and recurrent depth. This note separates three risks on one latent process. The token risk $R_{\\mathrm{tok}}$ scores a readout. The teacher-forced latent risk $R_1$ scores a one-step map that sees the true hidden state. The open-loop risk $R_H$ scores the same map after it has been iterated on its own outputs. If the Bayes next-token posterior is a function of a $k$-dimensional statistic with full-rank covariance, a width-$k$ latent, a linear least-squares transition, and a refit unembedding match the Bayes token predictor. The statistic is identified only up to an invertible gauge: whitening the residual stream does not change the token law once the unembedding is refit. The matching obstructions are sharp. A constant latent drives $R_1$ to zero while token cross-entropy falls back to the marginal entropy. A perfect token predictor can still hide a null-space walk whose open-loop error grows linearly in the horizon. A small next-latent loss does not certificate next-token prediction, and a small next-token loss does not certificate free latent rollout, unless a rank or injectivity condition is stated with the number.",
+          "summarySections": {
+            "backgroundAndQuestion": "现代语言模型通过下一词预测训练，但越来越多系统在不生成词的情况下迭代隐藏状态，如连续思维、暂停步和递归深度。这引发一个核心问题：隐状态上的预测损失能否可靠反映最终的词预测性能？本文指出，仅靠下一隐状态损失无法保证词分布准确或自由 rollout 稳定，揭示了训练信号与实际行为之间的根本脱节。",
+            "modelAndSetup": "论文建立了一个统一框架来分析同一潜在过程上的三种风险：词预测风险 Rtok、教师强制下的隐状态一步预测风险 R1 和开环 rollout 风险 RH。设定基于平稳符号序列及其历史 σ-代数，定义编码器生成实值隐状态，并考察线性解码与非线性映射下的不同损失表现，重点比较在充分统计量存在时各风险的关系。",
+            "contributionsAndResults": "论文证明，若贝叶斯词后验是某 k 维统计量的函数，则宽度为 k 的隐状态配合线性最小二乘转移和重拟合解码可达到贝叶斯最优词预测。但存在两个关键障碍：隐状态坍缩使 R1=0 而词熵退化至边际熵；即使词预测最优，隐空间零方向上的随机游走仍导致开环误差随步长线性增长。",
+            "methodsAndTechniques": "作者引入三个风险的概念分离——Rtok 衡量读出性能，R1 衡量单步转移精度，RH 衡量自由 rollout 偏差。利用最小二乘回归识别充分统计量的动态，结合仿射变换下的不变性（规范自由）分析解的唯一性。通过构造反例展示 R1 与 Rtok、RH 之间缺乏必然联系，辅以 Lipschitz 条件下的误差传播界说明开环累积效应。",
+            "limitationsAndReadingValue": "结论依赖于理想化假设如同方差协方差矩阵满秩、线性可分性等，在实际训练中可能难以满足。未涉及具体模型结构如何逼近这些条件。最值得读的是其对‘潜变量训练不能替代词预测认证’的理论警示，以及 Table 1 对不同小损失含义的澄清，这对设计可信的隐空间推理系统具有指导意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "评测方法"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "生成式AI",
+            "潜变量建模",
+            "推理过程",
+            "表示学习"
+          ],
+          "tags": [
+            "大语言模型",
+            "生成式AI",
+            "潜变量建模",
+            "推理过程",
+            "表示学习",
+            "理论推导",
+            "机制设计",
+            "评测方法"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.28540"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CV"
+            ],
+            "primaryCategory": "cs.CV",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+          "titleZh": "UniWALM：用于具身机器人控制的统一世界动作语言模型",
+          "authors": [
+            "Rahul Sajnani",
+            "Diego Romeres",
+            "Mingyuan Zhang",
+            "Kai Gao",
+            "Carl Qi",
+            "Baichuan Huang",
+            "Srinath Sridhar",
+            "Dylan Randle",
+            "Lillian J. Ratliff",
+            "Jose Barreiros",
+            "Manikantan Nambi",
+            "Jeroen Vanbaar"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28626",
+          "abstract": "Motivated by the human ability to integrate experience across language, perception, and action, we introduce UniWALM, a unified world-action-language model that learns video, action, and language in a single shared representation, where each modality is both a conditioning signal and a supervision target. We ask: can jointly generating language enrich this shared representation, improving manipulation and supporting memory-dependent behavior? Unlike prior approaches that attach a reasoning or vision-language model to a video-action backbone and run them as distinct stages, UniWALM unifies all three modalities inside a single mixture-of-transformers backbone whose per-modality diffusion heads co-denoise synchronously, decoding subtask and textual memory in the same pass as action with no separate planning stage; the generated language is re-consumed on the next step, closing a language-as-memory loop without an external planner or memory bank. To keep the action stream reliable under this richer objective, we further introduce Flow Matching with Correction (FMC), a training objective that teaches recovery from perturbed action trajectories at no inference-time cost. UniWALM consistently improves over same-backbone baselines (e.g., FastWAM) on compositional pick-and-place (MolmoSpaces) and across the memory-dependent subset of RMBench, where it reaches 34.5% without any pretrained language or reasoning model and exceeds Mem-0's keyframe-equipped setup (28.5%) using only a single anchor frame. On a real-world Find-the-Item task, generating textual memory lifts success from 11.1% to 61.1%, while state-of-the-art VLAs stay at or below chance (<=33.3%).",
+          "summarySections": {
+            "backgroundAndQuestion": "现有机器人模型通常将视觉、语言和动作割裂处理，语言仅作为输入条件，无法参与动态推理和长期记忆。这导致在需要跨步记忆的任务中表现崩溃。本文关注如何让语言不仅是输入，还能被生成并作为内部记忆，在统一表示下协同视频预测与动作生成，从而提升复杂操作与长程依赖任务的能力。",
+            "modelAndSetup": "模型以单一视频主干网络为基础，同步生成未来视频帧、机器人动作和语言子任务描述。输入包括当前观测、任务指令和可选的关键帧记忆，输出为动作序列、完成信号及包含子任务与文本记忆的语言串。后者在下一步重新作为提示输入，形成闭环。实验涵盖模拟与真实世界的操作任务，尤其强调记忆依赖场景。",
+            "contributionsAndResults": "论文提出UniWALM，首次实现语言、视频与动作在共享扩散过程中的联合生成，并利用自产语言作为工作记忆。在无需预训练语言模型的情况下，其在组合性操作任务上显著超越基线，在记忆依赖任务中成功率远超现有方法，甚至优于使用特权关键帧的系统，验证了统一建模与语言即记忆的有效性。",
+            "methodsAndTechniques": "核心在于混合Transformer架构中三个模态头（视频、动作、语言）通过统一自注意力共享表示，并同步去噪。语言流生成子任务与文本记忆，随动作一同输出并回流至下一步。配合锚定帧视觉记忆与任务完成信号门控，确保记忆更新时机正确。训练中引入带修正的流匹配，增强动作轨迹鲁棒性。",
+            "limitationsAndReadingValue": "模型仍存在动作边界误触发、复杂物体抓取不准等问题，且推理速度受限。消融实验证明语言生成是记忆性能提升主因，但视觉记忆与语言协同更优。读者应重点关注其统一建模范式、语言即内存机制的设计逻辑与实验分析，尤其是真实世界记忆任务的对比，这对构建通用具身智能体具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "实验验证",
+            "机制设计",
+            "系统框架",
+            "基准评测"
+          ],
+          "contentTags": [
+            "具身智能体",
+            "多模态学习",
+            "生成式AI",
+            "机器人控制",
+            "记忆与推理"
+          ],
+          "tags": [
+            "具身智能体",
+            "多模态学习",
+            "生成式AI",
+            "机器人控制",
+            "记忆与推理",
+            "模型构建",
+            "实验验证",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2610.28626"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.AI",
+              "cs.CV"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "Learning the 4D World through Point Trajectory Forecasting",
+          "titleZh": "",
+          "authors": [
+            "Byungwoo Jeon",
+            "Sunghwan Hong",
+            "Dohyeon Kim",
+            "Jonghoon Lee",
+            "Jungwoo Park",
+            "Inhee Lee",
+            "Doosan Baek",
+            "Jinil Kim",
+            "Taehyun Lim",
+            "Hanbyul Joo",
+            "Marc Pollefeys",
+            "Saining Xie",
+            "Jinwoo Shin"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28594",
+          "abstract": "Reliable multi-view forecasting requires videos from different cameras to describe the same evolving 3D scene. To this end, we introduce Video-Point Model (VPM), a world model that conditions on multi-view video histories and a language instruction to jointly forecast future videos from arbitrary viewpoints and the 3D trajectories of persistent scene points. We extend a pretrained world model with camera-conditioned multi-view processing that integrates complementary observations across cameras, and add a trajectory head that predicts how physical points move through time. Each trajectory tracks a single point across all views, and supervising these trajectories alongside video generation therefore anchors appearance changes in every camera to a shared description of 3D motion. To support training and evaluation, we build VPM-Data, a simulation corpus pairing synchronized multi-view videos with persistent point trajectories, and VP-WorldBench, a forecasting benchmark spanning simulated and real environments. We further extend VPM to robot control by adding robot actions as a token modality in the generator. Action tokens share the point-supervised backbone and are denoised jointly with future videos, thereby grounding the policy in the same 3D-aware representation. On VP-WorldBench and existing 4D generation benchmarks, point supervision improves both video fidelity and 3D motion accuracy over a video-only counterpart, and in simulated and real-robot experiments, it also raises the manipulation success of the action-enabled model.",
+          "summarySections": {
+            "backgroundAndQuestion": "Reliable multi-view forecasting requires videos from different cameras to describe the same evolving 3D scene. To this end, we introduce Video-Point Model (VPM), a world model that conditions on multi-view video histories and a language instruction to jointly...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          },
+          "ids": {
+            "arxiv": "2610.28594"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CV"
+            ],
+            "primaryCategory": "cs.CV",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "LocaLeJEPA: Maximum Entropy Representations under Geometric Priors",
+          "titleZh": "",
+          "authors": [
+            "Kartik Tandon",
+            "Alessio Borgi",
+            "Pavel Snopov",
+            "Inés García-Redondo",
+            "Davide D'Ascenzo",
+            "Sebastiano Cultrera di Montesano",
+            "Fabrizio Silvestri",
+            "Pietro Liò",
+            "Francesca Dominici",
+            "Randall Balestriero",
+            "Claudio Battiloro"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28458",
+          "abstract": "Joint-Embedding Predictive Architectures (JEPA) offer an appealing approach to self-supervised learning, but are typically prone to representation collapse. LeJEPA resolves this by introducing a theoretically grounded distribution-matching objective that drives the embedding towards an isotropic Gaussian. However, this approach is fundamentally tied to Euclidean assumptions, and its global target does not reflect domain-specific geometric priors, such as the use of non-Euclidean embedding geometries, e.g., equivariant CNNs or hyperbolic ViTs. We thus introduce LocaLeJEPA, a framework motivated by a manifold-theoretic reformulation of LeJEPA's entropy-maximization property. The accompanying LocaLeReg, a novel locally Euclidean distribution-matching regularizer, enables a stable and scalable implementation of the LocaLeJEPA framework. We then perform extensive experiments in the vision setting on models trained on ImageNet-1K. LocaLeJEPA significantly outperforms LeJEPA when paired with hyperbolic ViT-S/8 and equivariant ResNet-50 backbones, and also with ordinary Euclidean ViT-S/8 and ViT-L/14 backbones. This holds both in terms of linear and k-NN classification performance on ImageNet and on a series of downstream tasks tested. We view the LocaLeJEPA formalism as a principled approach to the JEPA paradigm that better respects intrinsic data geometry while also accommodating generalizations to exotic embedding geometries. Code available at https://github.com/alessioborgi/LocaLeJEPA.",
+          "summarySections": {
+            "backgroundAndQuestion": "Joint-Embedding Predictive Architectures (JEPA) offer an appealing approach to self-supervised learning, but are typically prone to representation collapse. LeJEPA resolves this by introducing a theoretically grounded distribution-matching objective that drive...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          },
+          "ids": {
+            "arxiv": "2610.28458"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CV"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        },
+        {
+          "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+          "titleZh": "通过混合灵巧模仿学习可适应的灵巧技能",
+          "authors": [
+            "Yuxuan Kuang",
+            "Jiashun Wang",
+            "Yixuan Sun",
+            "Yufei Ye",
+            "Sungjae Park",
+            "Umar Iqbal",
+            "Katerina Fragkiadaki",
+            "Shubham Tulsiani"
+          ],
+          "date": "2026-10-20",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28628",
+          "abstract": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning recipes force a trade-off. Goal-reaching reinforcement learning generalizes to arbitrary object poses but, lacking any human prior, converges to unnatural and unreliable finger strategies; motion tracking reproduces human-like behavior from a single clip but cannot deviate from it. We present AdaDex, a goal-conditioned RL framework that turns a single hand-object trajectory of a few seconds---from mocap data or HOI reconstruction from in-the-wild RGB(D) video---into an adaptable dexterous skill. At the core of AdaDex is Hybrid Dexterous Mimicking: a shared policy is trained on two populations of massively parallel environments: motion tracking environments trained with dense motion tracking objective, which instill the human prior from human motion; and generalization environments with noised initial states and goals and a sparse object-success reward, which force the skill to work far off the reference. From seconds of human motion per skill, the resulting policies can learn diverse adaptable dexterous skills, such as functional grasping, object reposing, in-hand reorientation with finger gaiting, and dynamic behaviors like throw-and-catch. Our method outperforms baselines in terms of generalization and functionality, and we demonstrate transfer across simulators and to the real world. Project page: https://yuxuank.com/AdaDex/.",
+          "summarySections": {
+            "backgroundAndQuestion": "灵巧手操作长期面临功能性和泛化性的两难：基于目标的强化学习能泛化但动作不自然，运动跟踪能复现人类行为却无法偏离参考轨迹。本文要解决的问题是如何从几秒人类动作中学习既符合人体工学又可适应新场景的灵巧技能。核心难点在于高维接触动力学下，稀疏奖励难以引导精细指法，而密集跟踪又限制自由度。",
+            "modelAndSetup": "论文研究从单段人类手物交互视频中学习可泛化技能的任务。输入是数秒RGB-D视频或动捕数据，输出为能在仿真和真实世界执行的功能性操作策略。模型采用目标条件强化学习框架，在两类并行环境中联合训练：一个用密集跟踪奖励注入人类先验，另一个用稀疏目标奖励提升泛化能力。评价涵盖运动复现精度、随机目标达成率及下游任务完成度。",
+            "contributionsAndResults": "本文最大贡献是提出‘混合灵巧模仿’框架，首次实现仅需数秒人类演示即可获得兼具功能性与适应性的灵巧技能。结果显示，该方法在已见和未见动作上均显著优于基线，在随机目标达成率上超过专用目标学习方法。更重要的是，学到的技能可被视觉语言模型驱动完成锤击、倒水等复杂任务，并成功迁移至真实机械手。",
+            "methodsAndTechniques": "方法核心是在共享策略网络下并行运行两种环境：跟踪环境通过密集奖励教会模型人类指法与接触序列；泛化环境则施加大幅状态扰动和远距离目标，仅以物体成功定位为奖励，迫使策略脱离参考轨迹但仍保持合理指法。两者通过目标作为唯一信息通道耦合，使人类行为模式可被新目标激活，从而实现自然且可控的技能扩展。",
+            "limitationsAndReadingValue": "当前方法需为每个物体和动作单独训练策略，尚未实现跨任务组合。此外，依赖精确物体网格和位姿估计，在遮挡或纹理缺失时可能失效。尽管如此，其将真实人类动作高效转化为可编程技能的闭环极具启发性。最值得阅读的是其系统设计思想、仿真到真实的重建管道，以及与高层规划器的集成方式。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "实验验证",
+            "系统框架",
+            "基准评测"
+          ],
+          "contentTags": [
+            "强化学习",
+            "灵巧操作",
+            "人形机器人",
+            "视觉语言模型代理",
+            "仿真到真实"
+          ],
+          "tags": [
+            "强化学习",
+            "灵巧操作",
+            "人形机器人",
+            "视觉语言模型代理",
+            "仿真到真实",
+            "模型构建",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          },
+          "ids": {
+            "arxiv": "2610.28628"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.CV",
+              "cs.GR",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-10-20",
+            "updated": "2026-10-20"
+          }
+        }
+      ]
+    }
+  ]
+}
