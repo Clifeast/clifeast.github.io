@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-10-22T07:57:58.060575+00:00",
+  "generatedAt": "2026-10-23T07:57:02.566891+00:00",
   "warnings": [],
   "llm": {
     "enabled": true,
@@ -55,29 +55,31 @@
       "id": "recent-agt",
       "title": "近期 AGT 新论文",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 11,
+      "fetchedCount": 12,
       "papers": [
         {
-          "title": "GSP Autobidding Equilibria with Few Advertisers or Slots",
-          "titleZh": "GSP Autobidding Equilibria with Few Advertisers or Slots",
+          "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+          "titleZh": "通过省略实现真实：面向大语言模型原生广告的点击稀释机制",
           "authors": [
-            "Yiyang Huang",
-            "Zhengyang Liu",
-            "Yonglei Yan",
-            "Zihe Wang"
+            "Junhua Liu",
+            "Zhicheng Liang",
+            "Zejun Zhang",
+            "Langzhou He",
+            "Feng Qian"
           ],
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29310",
-          "abstract": "In sponsored-shopping auctions, one advertiser may win several positions, and a product that is never displayed may determine the prices of several winners. Under generalized second-price (GSP) pricing without self-pricing, these interactions couple allocation and payment through a single global ranking. We prove that exact autobidding equilibria under budget and return-on-investment (ROI) constraints can be computed in polynomial time whenever either the number $n$ of advertisers or the number $K$ of display slots is fixed. Our algorithms rely on two structural reductions. With few advertisers, the payment polytopes of tied bid layers combine by a Minkowski sum, giving a fixed-dimensional representation of exponentially many rankings. With few slots, budget equilibria admit threshold recovery and an exact submodular description of attainable payments at the display boundary. For ROI, we prove that every group-consecutive equilibrium has a representative with at most $K+2$ nonunit multipliers, preserving the item and price in every displayed slot. In each case, the reduction leads to polynomially many systems of polynomial equations and inequalities in bounded dimension. The algorithms compute exact multipliers and explicit distributions over valid group-consecutive rankings, with support at most $n+1$; for ROI with few slots, this improves to $\\min\\{n+1,K+3\\}$.",
+          "url": "https://arxiv.org/abs/2610.30999",
+          "abstract": "Generative AI assistants are becoming an advertising medium, embedding sponsored content in their answers. This setting departs from classical position auctions in two ways: an ad's click-through rate depends on the passage that hosts it, and because users stop at their first click, earlier ads take clicks from later ones. This competition for clicks makes truthfulness delicate: a higher bid can reshape the allocation and put a competitor ahead of the bidder, reducing the bidder's clicks. Existing mechanisms either attain a constant fraction of the optimal welfare (advertisers' total click value) but are not known to be truthful, or are truthful but their welfare guarantee degrades as the number of passages grows. We achieve both even when the answer and its editorial order are fixed before bidding. Assuming each ad's click-through rate when reached is known and unaffected by omitting other ads, we give a computationally efficient mechanism that is truthful in expectation and attains at least half the optimal welfare under free reordering. Our key idea, click thinning, omits ads at random, showing earlier ads less often so that each ad's overall click probability no longer depends on the order of the ads. Welfare maximization then reduces to a tractable matching problem, and solving it exactly with VCG-style payments makes truthful bidding optimal in expectation. Characterizing the click probabilities that omission can achieve sharpens the approximation factor from $2$ to $2-(1-δ)^{K-1}$ when at most $K$ ads are shown and each click-through rate is at most $δ$. This factor is the best possible for any order-preserving rule, even one that ignores incentives and computation, so truthfulness and computational efficiency incur no additional worst-case loss.",
           "summarySections": {
-            "backgroundAndQuestion": "在赞助购物广告拍卖中，一个广告主可能拥有多个商品并赢得多个展示位，而未展示的商品也可能决定赢家的价格。由于GSP机制下禁止自定价，价格由其他广告主的出价决定，导致排名与支付高度耦合。这种全局依赖使得计算预算和ROI约束下的自动竞价均衡极为困难。本文关注是否存在结构简化（如广告主或展示位较少）时，能高效求解精确均衡。",
-            "modelAndSetup": "模型考虑n个广告主和K个展示位，每个广告主拥有多件商品，通过统一乘数调整所有商品的出价。在GSP机制下，展示位按出价排序，点击价格为下一个不同广告主的出价。广告主受预算或ROI约束，并采用最大化出价的均衡策略。均衡由乘数配置和在有效排名上的概率分布构成，需满足支付可行性与激励相容。",
-            "contributionsAndResults": "论文证明当广告主数量n或展示位数量K固定时，预算和ROI约束下的精确自动竞价均衡可在输入规模的多项式时间内计算。算法输出精确代数乘数和至多n+1个（ROI下为min{n+1,K+3}）有效分组连续排名的支持分布。这是首个针对GSP赞助购物场景提供精确多项式时间均衡算法的工作。",
-            "methodsAndTechniques": "核心方法基于两种结构约简：当广告主少时，利用各出价层内支付矩阵的凸包组合（Minkowski和）压缩指数级排名；当展示位少时，预算情形通过阈值恢复与子模容量多面体刻画边界支付，ROI情形则证明存在仅含至多K+2个非单位乘数的代表性均衡。两者均转化为低维多项式方程组求解。",
-            "limitationsAndReadingValue": "结果依赖于n或K固定的强结构性假设，难以扩展到二者同时增长的情形。算法虽精确但复杂度仍较高，实际部署挑战大。然而，其对支付几何与阈值结构的刻画深刻揭示了GSP中多物品竞价的本质困难。最值得阅读的是其分层凸化与稀疏乘数表示的技术路径，为后续研究提供了新工具。"
+            "backgroundAndQuestion": "随着生成式AI助手嵌入广告成为新型广告媒介，传统位置拍卖机制面临挑战。用户自上而下浏览并首次点击即停止的行为模式，使得靠前广告会抢占后续广告的点击机会，导致广告主出价提升反而可能因排序变化而减少自身点击量，破坏激励相容性。现有机制难以同时兼顾真实性与社会福利近似比，本文旨在解决在固定内容顺序下如何设计既真实又高效的社会福利最大化机制。",
+            "modelAndSetup": "模型考虑n个广告主与m个上下文（如回答中的段落），每个广告主-上下文对具有公开的独立点击概率，广告主私有每点击价值。平台需在至多展示K个广告的约束下进行匹配，并在固定的编辑顺序下决定展示哪些广告。用户遵循首次点击停止模型，平台通过随机省略机制调控展示，目标是设计激励相容且社会福利接近最优的机制，其中最优基准允许自由重排上下文顺序。",
+            "contributionsAndResults": "论文提出‘点击稀释’机制，通过在展示前以特定概率随机省略已匹配的广告，使每个广告的实际点击概率仅取决于其自身属性与匹配集合，而与展示顺序无关，从而实现期望下的激励相容。该机制在多项式时间内可计算，且社会福利至少达到自由重排最优值的一半。进一步地，当点击概率有上界δ<1时，近似比可紧致提升至2-(1-δ)^{K-1}，且此因子在所有保序机制中是最优的。",
+            "methodsAndTechniques": "核心技术是‘点击稀释’，即为每个匹配中的广告设计独立的保留概率，使其实际点击服务公式化为与顺序无关的形式。这将社会福利优化转化为一个线性分式匹配问题，可通过Charnes-Cooper变换转为线性规划精确求解。结合VCG风格的按点击收费支付规则，确保期望下的真实性。通过阈值比较技术分析福利损失，并利用权重单调性刻画可实现的服务区域，证明近似比的紧性。",
+            "limitationsAndReadingValue": "机制依赖于省略不变性假设，即移除广告不影响其余内容的点击率，这在实际中需谨慎验证。虽然机制计算高效且激励兼容，但其核心创新在于理论构造而非直接部署可行性。最值得阅读的是其巧妙的‘点击稀释’思想、对顺序敏感环境下的激励设计突破，以及紧致近似比的证明，为LLM原生广告机制设计提供了坚实理论基础。"
           },
           "researchParadigmTags": [
+            "机制设计",
             "理论推导",
             "算法设计",
             "均衡分析",
@@ -86,169 +88,236 @@
           "contentTags": [
             "机制设计",
             "拍卖理论",
-            "市场/匹配",
-            "博弈学习"
+            "大语言模型",
+            "生成式AI",
+            "多智能体系统"
           ],
           "tags": [
             "机制设计",
             "拍卖理论",
-            "市场/匹配",
-            "博弈学习",
+            "大语言模型",
+            "生成式AI",
+            "多智能体系统",
             "理论推导",
             "算法设计",
-            "均衡分析",
-            "复杂度分析"
+            "均衡分析"
           ],
           "scores": {
             "modelNaturalness": 8.0,
             "theoreticalStrength": 9.0,
             "guaranteeQuality": 6.0,
             "readingValue": 6.0,
-            "aiRelevance": 8.0,
-            "agtRelevance": 9.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
             "penalty": 0.0,
             "baseTotal": 29.0,
-            "bonus": 7.7,
-            "total": 33.0
+            "bonus": 8.7,
+            "total": 37.7
           },
           "ids": {
-            "arxiv": "2610.29310"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
-          }
-        },
-        {
-          "title": "When Are We Near Nash? Certifying Solutions in General-Sum Games",
-          "titleZh": "何时接近纳什？一般和博弈中解的认证",
-          "authors": [
-            "Boning Li",
-            "Longbo Huang"
-          ],
-          "date": "2026-10-21",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29300",
-          "abstract": "Heuristic solvers for general-sum extensive-form games produce a stream of iterates, and practice reports the NashGap of the returned profile. We ask what a solver can know about its own iterates from the regret accumulators and the terminal-distribution accumulators its updates already maintain. In two-player games the NashGap of a weighted average strategy equals, at the maximizing player, the weighted external regret plus a signed value correction. Bounding the regret by the running counterfactual-regret accumulator gives an online certificate whose cost per checkpoint is linear in the number of terminal histories. The certificate stays sound under alternating updates and in games with three or more players. The mismatch between what alternation evaluates and what the averages record enters as one signed comparator term, maximized in a single backward pass per player whose comparator weight is nonzero. The bound is read off the regret state, with no best response against the average. Run a portfolio of training-free regret-matching solvers, output the iterate with the smallest certificate, and verify that iterate once. On the benchmark's biased Leduc family a pool of sixteen training-free solvers, seven original and nine recent variants, solves $89\\%$ of the $64$ instances at threshold $10^{-5}$ this way, matching the trajectory-minimum union of the solvers. The same protocol solves $92\\%$ of the $64$ pre-registered held-out instances and $89\\%$ again on a third set of $64$ instances that no earlier stage used. The zero-best-response certificate certifies all $57$ in-sample solves and all $57$ fresh ones, and $58$ of the $59$ held-out ones. Its exact-comparator refinement certifies every solve in the three sets. The certificate states both and attributes its bound. Code is available at https://github.com/lbn187/CertNE.",
-          "summarySections": {
-            "backgroundAndQuestion": "在一般和博弈中，计算纳什均衡是PPAD完全问题，因此实践中常使用启发式求解器并事后评估其纳什间隙（NashGap）。然而现有评测协议往往依赖于对每个检查点进行精确的最佳响应计算，成本高昂且选择规则不透明。本文指出，这种‘轨迹最小’评估隐含了一个未声明的选择规则和大量额外计算，导致报告结果难以复现和比较。因此，问题在于：能否仅利用求解器自身维护的状态，在不进行最佳响应的情况下，实时提供一个可靠且紧致的纳什间隙上界？",
-            "modelAndSetup": "文章考虑n人完美回忆扩展式博弈，关注基于后悔最小化的求解器（如CFR系列）所产生的加权平均策略。模型追踪每个玩家的累积反事实后悔、终端分布及其实现计划，并引入加权外部后悔、相关水平和值修正项等概念。关键设定是允许任意更新顺序（包括交替更新），并区分求解器实际评估的对手策略与平均策略之间的差异，从而捕捉到因更新异步性带来的偏差。",
-            "contributionsAndResults": "论文证明了在两人博弈中，加权平均策略的纳什间隙等于加权外部后悔加上一个带符号的值修正项，这是一个恒等式而非上界。基于此，作者构建了一个在线证书，其零最佳响应形式仅需读取累加器即可给出纳什间隙的上界，而精确版本只需一次带符号的后向传递。该证书适用于任意玩家数和更新顺序，并能通过一次最终的最佳响应验证所选策略的真实间隙。",
-            "methodsAndTechniques": "作者通过对加权外部后悔进行分解，并结合双线性性质处理比较项，将纳什间隙精确拆分为后悔项、值修正项和比较项。关键技术是引入一个可测量的比较函数来量化由于交替更新或多人博弈中联盟不平衡引起的误差，并通过累加器直接估计该量。整个分析不依赖于对平均策略的最佳响应，而是利用求解过程中已有的状态信息。",
-            "limitationsAndReadingValue": "该方法依赖于求解器维护特定累加器（如原始后悔、联合到达率等），因此不适用于无此类状态的算法（如LLM代理）。此外，证书的紧致性在低平局退款分数的游戏实例中有所下降。尽管如此，本文的价值在于提出了一个透明、低成本且可验证的评估范式，其核心思想——利用内部状态构造在线证书——对博弈求解的评测体系具有深远影响。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "算法设计",
-            "实验验证",
-            "基准评测",
-            "均衡分析"
-          ],
-          "contentTags": [
-            "博弈学习",
-            "多智能体系统",
-            "纳什均衡",
-            "后悔最小化",
-            "评测方法"
-          ],
-          "tags": [
-            "博弈学习",
-            "多智能体系统",
-            "纳什均衡",
-            "后悔最小化",
-            "评测方法",
-            "理论推导",
-            "算法设计",
-            "实验验证"
-          ],
-          "scores": {
-            "modelNaturalness": 7.0,
-            "theoreticalStrength": 9.0,
-            "guaranteeQuality": 6.0,
-            "readingValue": 6.0,
-            "aiRelevance": 9.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 28.0,
-            "bonus": 8.4,
-            "total": 32.8
-          },
-          "ids": {
-            "arxiv": "2610.29300"
+            "arxiv": "2610.30999"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
               "cs.GT",
               "cs.AI",
-              "cs.MA"
+              "cs.DS"
             ],
             "primaryCategory": "cs.GT",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
           }
         },
         {
-          "title": "Correlated Quantal Response Equilibrium: A New Equilibrium Notion for Human-AI Strategic Interactions",
-          "titleZh": "相关量化响应均衡：人类与人工智能战略交互的新均衡概念",
+          "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+          "titleZh": "通过深度强化学习实现快速迭代组合拍卖",
           "authors": [
-            "Zehao Zhao",
-            "Rahul Jain",
-            "Vijay Subramanian"
+            "Luis F. Paul Tosta",
+            "Quinn Arnold",
+            "Gianluca Brero"
           ],
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29020",
-          "abstract": "The modeling of the behavior of agents in strategic environments and the prediction of the resulting outcomes has long been a challenging problem; this has been the focus of game theory. The introduction of AI agents as human-aids or as sole decision-makers expands the underlying question: Can we model behavior and predict outcomes of strategic games that involve a mix of AI agents and human players? As an initial answer, we propose Correlated Quantal Response Equilibrium (CQRE) that combines and generalizes classical solution concepts such as Quantal Response Equilibrium and Correlated Equilibrium. We answer questions of existence and propose a method for computing the CQRE that is a best fit to a given joint action distribution. We demonstrate the empirical effectiveness of CQRE predictions using a diverse collection of complex general-sum games, including high-rank and large-action two-player games, challenging multiplayer games, and a large-scale extension of the Selten--Chmura setting to AI--AI and human--AI play.",
+          "url": "https://arxiv.org/abs/2610.30667",
+          "abstract": "Iterative combinatorial auctions are used in spectrum allocation, transportation, and industrial procurement, but rounds are costly. We introduce FastCombo, a deep reinforcement learning approach to sequential price discovery. Bayesian pricing has sharply reduced auction rounds even against subgradient benchmarks tuned with hindsight for each instance, but relies on a one-step objective and repeated online inference and optimization. We prove that greedily maximizing immediate clearing probability can require arbitrarily more rounds in expectation than an informative policy, even with the true valuation distribution known. FastCombo learns price policies offline, assigning credit to queries for the future decisions they enable and producing each online price update with a single neural-network forward pass. We formulate the objective of minimizing expected rounds to clearing in single-minded auctions as a partially observable Markov decision process and train a recurrent bidder-item graph policy over complete auction trajectories. In a one-item experiment, all five trained policies learn an informative opening, reducing expected rounds from 1.85 to 1.65 relative to the tested Bayesian one-step rule. Across four domains from the Combinatorial Auction Test Suite, FastCombo achieves competitive clearing while reducing measured online price-selection time per auction by a factor of roughly 300-900 relative to the standard Bayesian baseline. These results demonstrate the value of learning sequential price policies for both information acquisition and online computational efficiency.",
           "summarySections": {
-            "backgroundAndQuestion": "传统博弈论中的纳什均衡难以准确预测人类在战略互动中的实际行为，而量化响应均衡（QRE）虽能刻画人类的有限理性，却忽略了玩家间的协调与行为依赖。随着大语言模型作为决策者参与战略游戏，如何统一建模人类与AI的混合交互成为新挑战。本文旨在填补一个理论空白：是否存在一种既能捕捉跨玩家行为依赖，又能允许异质性非完全服从的点预测均衡。",
-            "modelAndSetup": "作者提出了相关量化响应均衡（CQRE），将相关均衡（CE）与量化响应均衡（QRE）结合。模型允许每个玩家对每个推荐动作设置独立的‘松弛’参数，表示偏离该动作所能获得的最大期望收益。在满足这些松弛约束的联合分布集合中，CQRE选取香农熵最大的那个，即最接近均匀分布的预测。这种设定既保留了CE的协调能力，又通过松弛机制模拟了类似QRE的随机响应行为。",
-            "contributionsAndResults": "论文证明了CQRE在任意固定松弛向量下均存在唯一解，并提出了CQRE-c（公共松弛）、CQRE-pp（逐玩家松弛）和CQRE-pa（逐玩家逐动作松弛）三种变体，形成了嵌套的模型体系。实证结果显示，CQRE-pa在拟合12个经典人类博弈数据时，KL散度比Logit-QRE降低56.9%，并在多数AI-AI和三人博弈中表现更优，显著提升了对真实联合行为分布的预测精度。",
-            "methodsAndTechniques": "作者将CQRE的求解构造成一个双层优化问题：内层对给定松弛向量求解最大熵联合分布，外层则通过最小化预测与观测分布间的KL散度来拟合最优松弛参数。内层问题被转化为带线性不等式约束的凸优化，采用序列最小二乘规划求解；外层利用隐函数微分计算梯度，结合网格搜索与L-BFGS-B算法进行多起点优化，确保稳定性与效率。",
-            "limitationsAndReadingValue": "CQRE的优势在人为构造的乘积形式人机交互数据上反而不如Logit-QRE，表明其联合分布建模特性在缺乏真实依赖时可能过拟合。此外，最大熵选择在高度集中行为下可能不够灵活。尽管如此，该模型为人类-AI混合博弈提供了首个统一的、可计算的点预测框架，其模型构建思路、双层估计方法及大规模LLM行为数据集极具阅读与借鉴价值。"
+            "backgroundAndQuestion": "迭代组合拍卖用于频谱、运输等资源分配，但每轮需投标人评估报价，成本高昂。现有贝叶斯方法虽减少轮次，但依赖单步最优准则，忽视查询的信息价值，且每轮需重复推理与优化，计算昂贵。本文问：能否设计一种兼顾信息获取与计算效率的定价策略，以最小化清仓轮数？",
+            "modelAndSetup": "模型聚焦单愿求投标人，每人仅对一个物品束有估值。拍卖者发布价格向量，观察需求反馈，目标是尽快达到清仓——即价格支持高效分配。状态部分可观测，因估值隐藏。问题被建模为POMDP，策略基于历史公共信息选择下一轮价格，每轮计为一次查询。",
+            "contributionsAndResults": "论文证明，贪心最大化即时清仓概率的策略，在期望轮数上可能远劣于信息性策略，即使知道真实分布。提出FastCombo，通过离线训练学习序列化定价策略，在线部署时单次神经网络前向传播即可生成价格。实验证明其在清仓表现接近贝叶斯方法，但在线计算耗时降低300-900倍。",
+            "methodsAndTechniques": "作者将最小化期望轮数的目标转化为POMDP，使用深度强化学习训练策略网络。策略采用图神经网络编码投标人-物品关系，并用GRU维护价格-需求历史记忆。训练时利用完整拍卖轨迹进行信用分配，使早期查询因促进后续决策而获奖励，从而学会主动获取信息。",
+            "limitationsAndReadingValue": "模型限于单愿求投标人，未考虑策略性出价或复杂估值。结果依赖离线训练，泛化性和大规模应用待验证。但论文清晰展示了信息价值在机制设计中的作用，以及RL在学习复杂策略上的潜力。值得细读其POMDP建模思路与实验设计，尤其对关注高效市场机制的研究者。"
           },
           "researchParadigmTags": [
-            "模型构建",
-            "均衡分析",
+            "算法设计",
             "实验验证",
-            "数据集构建"
+            "机制设计",
+            "模型构建",
+            "基准评测"
           ],
           "contentTags": [
-            "博弈学习",
+            "拍卖理论",
+            "机制设计",
+            "强化学习",
             "多智能体系统",
-            "大语言模型",
-            "人类-AI交互",
-            "均衡预测"
+            "信息设计"
           ],
           "tags": [
-            "博弈学习",
+            "拍卖理论",
+            "机制设计",
+            "强化学习",
             "多智能体系统",
-            "大语言模型",
-            "人类-AI交互",
-            "均衡预测",
+            "信息设计",
+            "算法设计",
+            "实验验证",
+            "模型构建"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
+          },
+          "ids": {
+            "arxiv": "2610.30667"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
+          }
+        },
+        {
+          "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+          "titleZh": "区块链的时间流动性交叉：一种低于基础费用的准入EIP-1559扩展",
+          "authors": [
+            "Duanyang Dan Guo"
+          ],
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.30595",
+          "abstract": "Transactions differ in how their value changes with execution time and relative position. Ethereum's EIP-1559 lets them compete through fee fields, but a fee bid gives no enforceable claim to an earlier position in the block, and no way to express willingness to accept a later one. Its base fee is a hard admission floor. We introduce temporal liquidity markets (TLM), a framework for crossing complementary temporal requirements: transactions seeking early-region execution (consumers) can fund transactions that opt into exclusion from that region (providers). Selected consumers complete within the early region and are ordered among themselves by authorization density, both validator-checked. In our block-local EIP-1559 extension, providers may be admitted below the base-fee floor. Under TLM regulation, funding-conditioned and capacity-capped provider gas is excluded from the ordinary EIP-1559 controller input. Counting it there instead raises the base fee and displaces ordinary demand at a positive base-fee fixed point. Exclusion lets the controller regulate ordinary demand at its original target and preserves the no-TLM ordinary allocation by construction; in synthetic experiments it raises total utilization with funded gas. Selected consumers pay their signed authorizations, which fund provider shortfalls; the surplus is burned. We state an adversary model with strategic senders and builders and prove eight properties under it, among them validator-checked rule validity, full burn of the base fee, and no subsidy. An inserted consumer bid cannot raise any other consumer's charge. With a provider fee-cap floor, a small, capped inclusion fee and a consumer allowance tied to funded provider gas by a large enough link ratio, no finite set of consumer bids or providers that the builder inserts raises its direct fee payoff.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有区块链交易定价机制如EIP-1559仅通过费用竞争决定排序，无法表达交易对执行时间的偏好差异。高频交易需尽早执行，而支付类交易可容忍延迟，但当前模型缺乏直接表达这种‘时间流动性’需求的手段。这导致资源错配：高延迟容忍交易可能因出价低被排除，即使有人愿为其推迟执行提供补偿。论文由此提出问题：能否设计一个机制，让希望提前执行的交易资助愿意延后执行的交易，从而提升整体效率？",
+            "modelAndSetup": "作者构建了一个双侧时间流动性市场（TLM），引入两类角色：消费者（consumer）愿支付以确保在区块前部区域执行，提供者（provider）则接受延后执行并获得补偿。每个交易提交一个时间流动性授权（TLA），正数表示消费者，负数表示提供者。机制基于EIP-1559扩展，验证者检查消费者是否在指定早期区域内完成，并按单位消耗Gas的授权密度排序。提供者可低于基础费准入，其费用缺口由消费者支付池填补。",
+            "contributionsAndResults": "论文提出了一种自融资的时间流动性交叉机制，证明其能在不损害普通交易分配的前提下，提升区块总利用率。关键结果包括：选定消费者获得区块前20%内的完成保障；提供者可在基础费以下被纳入；消费者支付的资金用于填补提供者费用缺口，剩余部分被销毁，无外部补贴。在合成实验中，该机制在保持基础费不变的同时，将利用率从50%提升至70%以上。",
+            "methodsAndTechniques": "作者采用机制设计方法，结合固定点分析与博弈论模型，论证了TLM调节下基础费控制器的稳定性。通过定义‘参考块保留规则’，确保无TLM时的交易不受影响。技术上利用线性约束与贪婪选择算法实现消费者筛选，并通过结算规则设计防止建造者插入虚假交易获利。安全性分析基于诚实多数验证者假设，验证所有规则均可在链上验证。",
+            "limitationsAndReadingValue": "模型假设声明值非真实披露，且未考虑跨区块策略行为或协议外共谋。机制依赖特定参数配置（如链接比率λ）防止操纵，实际部署需谨慎调参。尽管如此，该文提供了将时间维度显式引入交易费用机制的新范式，其双侧市场设计与自融资结构对后续研究具有启发意义，值得重点关注其机制抽象与对抗性分析部分。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "理论推导",
             "模型构建",
-            "均衡分析",
+            "实验验证",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "拍卖理论",
+            "市场/匹配",
+            "多智能体系统",
+            "信息设计"
+          ],
+          "tags": [
+            "机制设计",
+            "拍卖理论",
+            "市场/匹配",
+            "多智能体系统",
+            "信息设计",
+            "理论推导",
+            "模型构建",
             "实验验证"
           ],
           "scores": {
             "modelNaturalness": 8.0,
-            "theoreticalStrength": 7.0,
-            "guaranteeQuality": 5.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
             "readingValue": 6.0,
-            "aiRelevance": 10.0,
-            "agtRelevance": 9.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
             "penalty": 0.0,
-            "baseTotal": 26.0,
-            "bonus": 8.7,
-            "total": 31.2
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
           },
           "ids": {
-            "arxiv": "2610.29020"
+            "arxiv": "2610.30595"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CR",
+              "cs.DC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
+          }
+        },
+        {
+          "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+          "titleZh": "平衡的固定报价在稳态双边市场中的应用",
+          "authors": [
+            "Ilan Reuven Cohen"
+          ],
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31153",
+          "abstract": "We study an intermediary that buys nonperishing items from arriving sellers and sells them to arriving buyers, subject to limited storage. Sellers and buyers arrive according to independent Poisson processes. The intermediary pays and charges the same fixed item prices, aiming to maximize long-run gains from trade: buyer value minus seller cost. Our benchmark may choose allocations directly, has unlimited storage, and must purchase each unit before allocating it. Its optimal long-run gain rate equals the value of a linear program of average purchase and allocation rates, with or without knowledge of future arrivals. For buyers whose bundle values are maxima of nonnegative additive valuations (XOS), we compute static common prices that guarantee half of this benchmark for arbitrary finite item capacities, even one storage slot per item, regardless of how ties are resolved without using future arrivals. The prices are computable in polynomial time using demand and supporting-value queries. The construction equalizes itemwise lower bounds on buyer and seller contributions to gains from trade, accounting for procurement costs. We call this contribution balance. As a single-item foundation, we also equalize the rates of purchases and sales selected by the price, before checking inventory availability. We call this rate balance. For capacity $C$, it yields the tight guarantee $C/(C+1)$. The two principles parallel proofs of the classical prophet inequality based on half the expected benchmark and on a median threshold, adapting these balancing ideas to recurring two-sided markets with limited inventory.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文研究一个中间商如何通过统一的买卖价格协调供需，最大化长期交易收益。现实中如社区二手回收平台面临库存有限、买卖随机到达的问题：高价吸引供给却抑制需求，低价刺激购买却可能导致缺货。传统机制需动态定价或直接分配，本文则探索静态共同价格能否在信息不完全下逼近最优效率。",
+            "modelAndSetup": "模型考虑稳态下的双边市场：卖家携带物品以泊松流到达并索取成本，买家以独立泊松流到达并对捆绑品有XOS估值。中间商设固定单价，买入时支付该价，售出时收取相同价格，目标是最大化买方价值减去卖方成本的长期平均增益。库存容量有限，决策即时且不可逆，未来到达未知。",
+            "contributionsAndResults": "论文证明对于任意有限容量（即使单个存储槽），存在静态共同价格可实现离线无限库存基准至少一半的社会增益。这一1/2竞争比是紧的，且价格可在多项式时间内通过需求与XOS支持子句查询计算得出。此外，在单一商品情形下，速率平衡定价可达到紧的C/(C+1)比率。",
+            "methodsAndTechniques": "作者提出两种‘平衡’原则：一是贡献平衡，使每个物品在买家效用和卖家剩余上的下界相等，结合支持加法子句分解价值；二是速率平衡，调整价格与无差异行为使潜在买卖强度一致。技术上利用流动松弛作为上界，并借助PASTA性质将到达概率与稳态库存关联，避免显式求解库存分布。",
+            "limitationsAndReadingValue": "结果虽具普适性，但1/2保证未随容量增长而提升，而最优采样机制可达Cmin/(Cmin+1)，是否存在容量敏感的静态定价仍是开放问题。多物品速率平衡的存在性依赖不动点论证，缺乏高效构造。最值得读的是其将经典预言家不等式思想推广至双向库存市场的创新视角与技术转化。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "在线算法",
+            "博弈学习"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "在线算法",
+            "博弈学习",
+            "理论推导",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          },
+          "ids": {
+            "arxiv": "2610.31153"
           },
           "metadata": {
             "provider": "arxiv",
@@ -256,483 +325,422 @@
               "cs.GT"
             ],
             "primaryCategory": "cs.GT",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
           }
         },
         {
-          "title": "Memory Manipulation",
-          "titleZh": "记忆操纵",
+          "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+          "titleZh": "匹配任务与代理：多代理合约的机制设计",
           "authors": [
-            "Benson Tsz Kin Leung"
+            "Matteo Bollini",
+            "Matteo Castiglioni",
+            "Alberto Marchesi"
           ],
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29847",
-          "abstract": "We study persuasion that works through memory: a manipulator alters the probabilities with which a Bayesian decision-maker recalls the signals he has received. The decision-maker corrects for the elevated or reduced probabilities of recalling different signals, and this correction disciplines what manipulation can achieve. Manipulation cannot move the average posterior. It backfires on decision-makers with few memories, whose sparse recall is evidence against the favored state, yet it is effective on those with many, who can be led to arbitrarily confident beliefs in the wrong state. It thickens the right tail of the belief distribution and, under Poisson memory, lowers its hazard rate. In a monopoly pricing application, the seller manipulates memory retrieval at high prices, and manipulation in turn raises the optimal price. In a narrative persuasion application, memory manipulation reduces information provision and creates echo chambers.",
+          "url": "https://arxiv.org/abs/2610.31002",
+          "abstract": "We study task assignment under adverse selection and moral hazard. In the single-task setting, agents privately know their types, which determine their success probabilities and effort costs. Based on the agents' reported types, the principal selects an agent to perform the task and offers a success-contingent payment. Although optimal Bayesian contract design is generally computationally intractable and Myerson's characterization does not directly extend to settings with hidden actions and multidimensional private information, we show that the single-task problem admits a simple Myerson-style characterization. Our key insight is that incentive constraints depend only on the ratio between effort cost and success probability. We characterize an optimal mechanism and show that it can be computed in polynomial time. We also establish a tight $Θ(1/(NK))$ worst-case bound on the ratio between the optimal profit and the full-information benchmark, where $N$ is the number of agents and $K$ is the number of types per agent. We then extend our analysis to multiple tasks, showing that an optimal mechanism may not exist. Nevertheless, for a constant number of agents, we provide a polynomial-time approximation scheme for the supremum profit.",
           "summarySections": {
-            "backgroundAndQuestion": "为什么人们会因回忆方式不同而被说服？本文研究一种非传统说服机制：说服者不提供新信息，而是操纵决策者从记忆中提取信号的概率。这回应了心理学中‘可得性启发’和经济学中记忆偏差的实证发现，填补了标准贝叶斯说服模型未考虑内生记忆检索的空白。核心问题是：当个体知道自己记忆被操纵时，这种操纵还能否有效，以及它如何影响信念分布。",
-            "modelAndSetup": "模型设定一个贝叶斯决策者拥有由状态决定的随机信号记忆库，每个信号按与其内容相关的概率被回忆。说服者通过提高支持目标状态信号的回忆概率、降低反对信号的概率来操纵记忆提取。决策者知道操纵机制并据此理性修正信念，使用贝叶斯法则结合回忆到的信号和对未回忆可能性的认知。关键假设是回忆概率可被外部影响，且记忆规模服从类泊松分布以保证修正项有界。",
-            "contributionsAndResults": "论文发现操纵无法改变平均后验信念，但会重塑其分布：对记忆少的人可能适得其反（稀疏回忆成为反面证据），对记忆多的人则极为有效，甚至使其在错误状态下形成高度确信。操纵使信念分布右尾变厚，在泊松记忆下还降低其风险率。这揭示了一个反直觉结论：越是见多识广者，越可能因选择性回忆陷入顽固错觉。",
-            "methodsAndTechniques": "作者通过分解后验对数几率为直接效应（已回忆信号）和间接效应（回忆难易度修正）进行分析。利用大偏差原理和鞍点逼近技术比较操纵前后极端信念的概率衰减速率。关键在于证明在大记忆量下，直接证据积累速度超过修正项的增长，从而主导信念方向。该方法系统刻画了操纵如何通过改变尾部行为影响决策。",
-            "limitationsAndReadingValue": "模型依赖类泊松记忆假设，若记忆分布尾部更重（如几何分布），修正效应可能随回忆增多而不受控，削弱结论。操纵效果也受限于信号结构，当信号完全揭示状态时增益消失。尽管如此，论文的价值在于提出了‘记忆提取操纵’这一新颖的信息设计框架，其核心模型、尾部支配结果及对专家与外行反应差异的解释极具启发性，值得细读其理论构建与均衡分析部分。"
+            "backgroundAndQuestion": "为什么在代理人拥有私有信息的情况下，仍能有效分配任务并激励努力？本文研究的是同时存在逆向选择（类型私有）和道德风险（行动不可观测）的任务委派问题。现有研究难以兼顾多维私人信息与隐藏行动的计算复杂性，本文旨在寻找结构清晰、可高效计算的最优机制。",
+            "modelAndSetup": "模型设定为一个委托人需将一项或多项任务分配给N个代理人，每个代理人的类型由成功概率和努力成本构成，该信息为其私有。代理人报告类型后，委托人决定任务分配与成功后的支付。代理人决定是否付出努力，其收益取决于支付减去成本。机制需满足贝叶斯激励相容与个人理性。",
+            "contributionsAndResults": "论文发现单任务情形下存在简洁的最优机制：通过‘临界值’（成本与成功率之比）对类型排序，并基于铁化虚拟效用最大化分配任务，该机制可在多项式时间内计算。而在多任务情形，最优机制可能不存在，但可对常数个代理人设计逼近最优利润的多项式时间近似方案。",
+            "methodsAndTechniques": "作者的关键洞察是将二维私有信息（成本与成功率）压缩为一维‘临界值’，从而恢复类似单参数拍卖的单调性结构。利用Myerson式的虚拟效用分析，并结合线性规划与铁化技术处理非单调性。对于多任务情形，通过构造支付趋于无穷的序列机制来逼近上确界利润。",
+            "limitationsAndReadingValue": "单任务结果依赖于临界值的一维排序，该结构在多任务中失效，导致最优机制可能不存在。机制虽可计算，但多任务下的逼近方案仅适用于代理人数为常数的情形。最值得阅读的是其对多维信息与隐藏行动耦合问题的简化思路与Myerson风格的扩展应用。"
           },
           "researchParadigmTags": [
+            "机制设计",
             "理论推导",
-            "模型构建",
+            "算法设计",
+            "复杂度分析",
             "均衡分析"
           ],
           "contentTags": [
-            "信息设计",
-            "信念形成",
-            "说服机制",
-            "叙事传播",
-            "贝叶斯学习"
+            "机制设计",
+            "多智能体系统",
+            "信息不对称",
+            "合约理论",
+            "任务分配"
           ],
           "tags": [
-            "信息设计",
-            "信念形成",
-            "说服机制",
-            "叙事传播",
-            "贝叶斯学习",
+            "机制设计",
+            "多智能体系统",
+            "信息不对称",
+            "合约理论",
+            "任务分配",
             "理论推导",
-            "模型构建",
-            "均衡分析"
+            "算法设计",
+            "复杂度分析"
           ],
           "scores": {
             "modelNaturalness": 8.0,
             "theoreticalStrength": 9.0,
             "guaranteeQuality": 6.0,
             "readingValue": 6.0,
-            "aiRelevance": 0.0,
-            "agtRelevance": 9.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
             "penalty": 0.0,
             "baseTotal": 29.0,
-            "bonus": 0.0,
-            "total": 26.1
+            "bonus": 3.9,
+            "total": 32.9
           },
           "ids": {
-            "arxiv": "2610.29847"
+            "arxiv": "2610.31002"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "econ.TH"
+              "cs.GT"
             ],
-            "primaryCategory": "econ.TH",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
-          }
-        },
-        {
-          "title": "Revenue Guarantee Equivalence between Dominant-Strategy and Bayesian Mechanisms",
-          "titleZh": "主导策略与贝叶斯机制之间的收益保证等价性",
-          "authors": [
-            "Nir Bachrach",
-            "Yi-Chun Chen",
-            "Inbal Talgam-Cohen",
-            "Xiangqian Yang",
-            "Wanchang Zhang"
-          ],
-          "date": "2026-10-21",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29208",
-          "abstract": "In auction design with limited information about bidders' value distributions, we provide an optimality foundation for dominant-strategy mechanisms. We show that simple dominant-strategy incentive compatible (DIC) mechanisms--either a second-price auction with a random reserve or the standard second-price auction without a reserve--achieve a revenue guarantee equal to the worst-case optimal revenue attainable by Bayesian incentive compatible (BIC) mechanisms, thereby establishing a robust form of DIC-BIC equivalence.",
-          "summarySections": {
-            "backgroundAndQuestion": "传统拍卖理论假设卖家知道买家估值分布，从而设计最优贝叶斯机制。但在现实中，卖家往往缺乏完整分布信息。本文探讨在仅知部分统计量（如最高或次高期望值）的情况下，能否仍通过简单的主导策略机制实现最优收益保证，从而为不依赖信念假设的机制提供理论基础。",
-            "modelAndSetup": "模型考虑对称独立私有价值环境下的单物品拍卖，卖家不知道价值分布F，但知道某些顺序统计量的期望，如最高值的期望u或次高值的期望n。买家独立同分布采样自F，机制需满足激励相容和参与约束。研究比较两类机制：主导策略激励相容（DIC）与贝叶斯激励相容（BIC），关注其最坏情况下的收益表现。",
-            "contributionsAndResults": "论文证明在多种信息环境下均存在稳健的DIC-BIC收益等价性：当已知最高期望值时，带随机保留价的第二价格拍卖（SPA-RR）是最优的；当已知次高期望值时，标准第二价格拍卖即最优。这表明简单且无需信念的主导策略机制可达到理论上最优的收益保障。",
-            "methodsAndTechniques": "作者通过构造匹配的上下界来证明等价性：上界由特定等收益分布下的最优贝叶斯收入给出，下界则通过精心设计的随机保留价分布使SPA-RR在所有可行分布上至少获得相同收入。关键技术是基于累积分布函数（CDF）的收入表示，实现点态最小化分析。",
-            "limitationsAndReadingValue": "结果依赖于对称性和i.i.d.假设，在更复杂的非对称或相关价值场景中可能不再成立。尽管如此，论文的价值在于清晰揭示了信息结构如何决定最优机制形式，并展示了主导策略机制在鲁棒性设计中的强大潜力，其构造性证明方法尤其值得深入研读。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "机制设计",
-            "均衡分析"
-          ],
-          "contentTags": [
-            "机制设计",
-            "拍卖理论",
-            "鲁棒性",
-            "信息设计"
-          ],
-          "tags": [
-            "机制设计",
-            "拍卖理论",
-            "鲁棒性",
-            "信息设计",
-            "理论推导",
-            "均衡分析"
-          ],
-          "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 9.0,
-            "guaranteeQuality": 6.0,
-            "readingValue": 6.0,
-            "aiRelevance": 0.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 29.0,
-            "bonus": 0.0,
-            "total": 26.1
-          },
-          "ids": {
-            "arxiv": "2610.29208"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "econ.TH"
-            ],
-            "primaryCategory": "econ.TH",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
           }
         }
       ]
     },
     {
       "id": "recent-ai",
-      "title": "近期 AI 新论文（cs.NE）",
+      "title": "近期 AI 新论文（cs.IR）",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 6,
+      "fetchedCount": 15,
       "papers": [
         {
-          "title": "Reconstruction differences rival individual differences in the fly compass connectome and break trained circuit models",
-          "titleZh": "重建差异堪比个体差异：果蝇罗盘连接组中的训练电路模型断裂",
+          "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+          "titleZh": "LYCHEE: 高召回向量搜索中倒排列表的认证筛选",
           "authors": [
-            "Md Ali Ashraf Yad",
-            "Nazifa Tabassum Nabila"
+            "Dongfang Zhao"
           ],
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29205",
-          "abstract": "Neural network models are increasingly constructed from synapse-resolution connectomes, and the same circuit is now available in reconstructions from other animals and pipelines. We do not know whether such models are dependent on the reconstruction they are built from, and whether connectome differences are biological or measurement errors. We studied the Drosophila head-direction circuit in nine versions: four flies (male CNS, hemibrain, Fly Wire, BANC) and five variants of the same fly varying only by thresholds, proofreading or synapse detection. Using wiring-based correspondences validated by anatomical labels, we place all differences on one scale. A change of synapse detection within one fly changed the circuit more than halfway to the smallest inter-fly difference on four distances; proofreading differences were smaller but depended on the metric, and left and right halves of one fly differed no more than a random half. Networks trained on each wiring to hold a cued heading developed near-perfect ring attractors, but their error increased from below 1 degree to 10-28 degrees when all weights changed by 1%. Training on each wiring did not transfer to any other connectome, including other versions of the same fly; refitting thirty cell-type gains, we repaired filtering-level differences but remaining error depended on wiring distance. Training with noise lowered precision and enhanced transfer. Imaging data indicate compasses drift smoothly and do not break; they function despite differences comparable to those of this study.Therefore, connectome-constrained models need to reflect the reconstruction they stem from and the robustness normal circuits exhibit and models lack.",
+          "url": "https://arxiv.org/abs/2610.30697",
+          "abstract": "Nearest-neighbor search over embedding vectors matches faces against watchlists, transactions against known fraud patterns, and medical images against confirmed cases, where a missed neighbor is a missed threat, fraud, or diagnosis. Because an approximate index cannot report which queries lost a true neighbor, these applications require recall of 0.999 to 0.9999, at a cost far below that of exact search over billions of vectors. Inverted-file indexes reach high recall by probing more lists, but they read and score every probed vector at full precision, so that throughput falls in inverse proportion to the number of probed lists. Graph indexes saturate below these targets, whereas quantized lists must rerank their candidates with the full vectors. Our insight is to decide for almost every probed vector that it cannot enter the top k of the probed lists without reading the vector, through the certified lower bound of exact search by certified exclusion. This paper turns this insight into Lychee, a GPU inverted-file search that screens the probed lists on tensor cores under a threshold from anchors of the same lists and computes exact distances only for the few survivors. We prove that Lychee returns exactly the k nearest vectors of the probed lists, the answer of an inverted-file search at full precision, while it reads a few hundred full vectors per query regardless of the number of probed lists. On eleven datasets from one million to one billion vectors and against ten GPU and CPU baselines, Lychee is 9.7 to 117 times faster than IVF-Flat at equal recall with 200 probed lists on datasets of up to 100 million vectors. It also reaches recall levels that CAGRA and HNSW do not reach and outruns exact search by certified exclusion by 5 to 18 times above ten million vectors. On four GPUs, Lychee searches one billion vectors at recall 0.9999, 44.5 times faster than IVF-Flat on BIGANN-1B.",
           "summarySections": {
-            "backgroundAndQuestion": "当前神经网络模型越来越多基于高分辨率连接组构建，但同一神经回路在不同重建版本间存在显著差异。问题是：这些差异源于生物个体变异还是重建技术误差？更重要的是，基于某一特定连接组训练的模型能否迁移到其他重建版本上？这关系到模型结论的可靠性与普适性。",
-            "modelAndSetup": "研究聚焦果蝇头部方向回路，在九种不同连接组版本上训练速率网络模型，包括四只不同果蝇的数据及同一只果蝇因突触检测、过滤或校正步骤不同产生的五种变体。模型任务是维持一个提示的方向记忆，并通过零样本迁移测试其跨连接组泛化能力。",
-            "contributionsAndResults": "研究发现，仅改变突触检测方法所导致的连接组差异，已接近甚至超过不同果蝇之间的最小生物学差异。尽管各真实连接组均能训练出近乎完美的环吸引子，但模型完全无法迁移到其他连接组，即使来自同一只果蝇的不同重建版本。这表明当前训练模型极度脆弱，而真实神经系统更具鲁棒性。",
-            "methodsAndTechniques": "作者采用基于连接模式的距离度量，统一量化不同来源的差异。通过一对一神经元映射进行模型参数移植，并引入细胞类型增益重拟合与噪声训练来探索恢复性能的可能。机制验证依赖预注册的环吸引子判据，结合雅可比乘子、持续同调等动态系统分析工具。",
-            "limitationsAndReadingValue": "结论受限于现有四只果蝇与三种重建流程，跨个体比较仍混杂技术因素。未注册的探索性分析（如噪声训练）虽揭示精度-鲁棒性权衡，但缺乏理论解释。最值得读的是其严谨的问题设定、差异分解方法与对‘模型脆弱性’的深刻揭示，警示连接组模型需正视重建不确定性。"
-          },
-          "researchParadigmTags": [
-            "实验验证",
-            "模型构建",
-            "基准评测",
-            "机制设计",
-            "数据分析"
-          ],
-          "contentTags": [
-            "神经网络模型",
-            "连接组学",
-            "环吸引子",
-            "鲁棒性",
-            "重建误差"
-          ],
-          "tags": [
-            "神经网络模型",
-            "连接组学",
-            "环吸引子",
-            "鲁棒性",
-            "重建误差",
-            "实验验证",
-            "模型构建",
-            "基准评测"
-          ],
-          "scores": {
-            "importance": 6.0,
-            "horizonValue": 6.0,
-            "clarity": 6.0,
-            "theoreticalDepth": 8.0,
-            "overall": 4.0,
-            "penalty": 0.0,
-            "baseTotal": 30.0,
-            "total": 30.0
-          },
-          "ids": {
-            "arxiv": "2610.29205"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.NE",
-              "cs.LG"
-            ],
-            "primaryCategory": "cs.NE",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
-          }
-        },
-        {
-          "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
-          "titleZh": "生物启发的听觉处理：耦合并行共振-放电动力学与三值循环网络用于语音识别",
-          "authors": [
-            "Pavlos Poulos",
-            "Katelyn Sadorf",
-            "Themos Stafylakis",
-            "Costas A. Anastassiou"
-          ],
-          "date": "2026-10-21",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29720",
-          "abstract": "Spiking Neural Networks (SNNs) promise energy-efficient inference through sparse, event-driven computation, yet remain constrained on continuous, context-dependent tasks such as automatic speech recognition (ASR). A key bottleneck is the Leaky Integrate-and-Fire (LIF) neuron, whose membrane decay erases information across pauses and phonetic boundaries while it must both extract features and retain long-range context. Inspired by cortical separation of nonlinear filtering and somatic integration, we introduce the Spiking Ternary GRU (stGRU): a ternary-weight gated recurrent unit performs temporal filtering, while downstream Resonate-and-Fire (RF) neurons generate the binary spike stream driving the next block's event pathway. This makes binary event transmission a native training constraint rather than a separate deployment-time activation quantization step; together with ternary weights, learned projections avoid dense floating-point matrix MACs. Trained end-to-end on LibriSpeech-960, Small, Medium, and Large stGRUs reach 8.09%, 7.04%, and $6.44 \\pm 0.17\\%$ WER on test-clean without an external language model. To our knowledge, these are the first matrix-MAC-free spiking networks without a learned ANN sequence decoder to achieve single-digit WER on LibriSpeech. The architecture also achieves 10.88% test CER on Aishell-1 (9.28% on dev) when trained from scratch. Internally, trained networks develop a depth-graded hierarchy: shallow layers act as fast acoustic filters, while deep layers form slower semantic integrators whose latent representations segregate into part-of-speech manifolds and word-level spike events. Deep-layer firing rates follow lognormal distributions with a sparsity gradient, mirroring hierarchical processing observed in human cortex in vivo. Our biologically grounded architecture combines competitive ASR with favorable modeled compute and memory cost.",
-          "summarySections": {
-            "backgroundAndQuestion": "现有脉冲神经网络（SNN）在连续语音识别任务上受限于漏电积分-放电（LIF）神经元的记忆衰减问题，难以维持长时上下文。同时，主流方法依赖浮点循环解码器，抵消了事件驱动的节能优势。本文针对语音识别中效率与性能难以兼顾的问题，探索如何在不损失精度的前提下实现全低精度、无密集矩阵乘的端到端训练。",
-            "modelAndSetup": "模型输入为梅尔频谱图，经卷积前端下采样后送入由三值门控循环单元（MLGRU）和共振-放电（RF）神经元构成的深度网络。MLGRU进行非线性时间滤波，RF神经元生成二值脉冲流作为下一层输入。训练采用连接主义时序分类（CTC）目标，直接优化离散脉冲通信过程，评估基于LibriSpeech和Aishell-1上的词错误率（WER）和字符错误率（CER）。",
-            "contributionsAndResults": "提出首个无需外部语言模型、无密集矩阵乘且实现个位数词错误率的纯脉冲语音识别系统。在LibriSpeech上，大型模型达到6.44% test-clean WER，显著优于同类SNN方法。模型通过三值权重与二值脉冲的双重离散化，在保持竞争力的同时大幅降低计算能耗与存储开销，揭示了高效事件驱动架构的可行性。",
-            "methodsAndTechniques": "核心创新在于将三值权重投影与共振-放电神经元结合，并将脉冲通信作为训练约束而非部署量化步骤。MLGRU负责高维时序建模，其输出驱动RF神经元产生稀疏脉冲，实现‘存储-通信’双离散化。延迟缩放机制避免浮点乘累加，FFT加速RF积分，使训练可并行化，解决了传统SNN训练慢的瓶颈。",
-            "limitationsAndReadingValue": "能量估算基于理论操作计数，未在真实硬件测量；仍需少量浮点运算用于CTC读出层。三值权重限制容量，依赖宽通道补偿。尽管如此，论文完整展示了从生物启发设计到高效系统实现的闭环，其方法设计、稀疏动态分析与能耗建模部分最具阅读价值，为边缘语音识别提供了新范式。"
-          },
-          "researchParadigmTags": [
-            "模型构建",
-            "实验验证",
-            "系统框架",
-            "算法设计"
-          ],
-          "contentTags": [
-            "语音识别",
-            "脉冲神经网络",
-            "低精度计算",
-            "生物启发模型",
-            "高效推理"
-          ],
-          "tags": [
-            "语音识别",
-            "脉冲神经网络",
-            "低精度计算",
-            "生物启发模型",
-            "高效推理",
-            "模型构建",
-            "实验验证",
-            "系统框架"
-          ],
-          "scores": {
-            "importance": 5.0,
-            "horizonValue": 5.0,
-            "clarity": 5.0,
-            "theoreticalDepth": 7.0,
-            "overall": 4.0,
-            "penalty": 0.0,
-            "baseTotal": 26.0,
-            "total": 26.0
-          },
-          "ids": {
-            "arxiv": "2610.29720"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.SD",
-              "cs.AI",
-              "cs.NE",
-              "eess.AS",
-              "q-bio.NC"
-            ],
-            "primaryCategory": "cs.SD",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
-          }
-        },
-        {
-          "title": "Probing Spatial and Spectral Grounding in EEG Foundation Models",
-          "titleZh": "探究EEG基础模型中的空间与频谱接地",
-          "authors": [
-            "Kleanthis Avramidis",
-            "Ivan Tashev",
-            "Dimitra Emmanouilidou"
-          ],
-          "date": "2026-10-21",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29367",
-          "abstract": "EEG foundation models are advancing at an unprecedented pace, yet their evaluation is driven by downstream accuracy, which reveals little about whether their predictions rely on physiologically interpretable signal structure. We introduce a set of perturbation probes in two grounding axes: spatial grounding in channel identity and topographic locality, and spectral grounding in oscillatory content and waveform morphology. We apply these probes to five published EEG foundation models across motor-imagery and seizure recordings. Our experiments reveal differences in both representational sensitivity and downstream reliance. Electrode identity may be encoded without influencing downstream classification: permuting LaBraM's positional codes heavily displaced its embeddings yet reduced motor-imagery accuracy by only 1.2 points, while spectral details may be discriminable without producing specific responses to simulated clinical markers, as only REVE exceeded a spectral baseline on this task. These dissociations are hidden in common benchmarks, demonstrating how grounding probes can complement performance-based evaluation by revealing what EEG foundation models encode and what their predictions depend on.",
-          "summarySections": {
-            "backgroundAndQuestion": "当前EEG基础模型虽在下游任务上表现优异，但其预测是否依赖生理上可解释的信号特征仍不清楚。传统准确率指标无法揭示模型是否真正捕捉了临床相关的空间分布或波形形态，可能导致依赖伪影的捷径学习。本文质疑仅靠性能评估的局限性，强调需探明模型编码了什么信息及其决策依赖何种信号属性。",
-            "modelAndSetup": "研究在五个公开的EEG基础模型上进行，使用运动想象与癫痫发作两类数据集。通过冻结预训练编码器并仅训练线性读出头，分别测试模型对空间位置（如电极身份、拓扑顺序）和频谱结构（如相位依赖波形、振荡节律）的敏感性。评估不仅看表征变化，更关注这些变化是否影响最终分类决策。",
-            "contributionsAndResults": "论文发现模型表征中编码的信息与其实际决策所依赖的信息常不一致。例如某些模型强烈编码电极位置但分类不受影响，另一些能检测模拟振荡却对临床样放电无特异性响应。这表明常规基准会掩盖模型是否真正‘理解’EEG信号的关键结构，必须结合扰动探针才能全面评估。",
-            "methodsAndTechniques": "作者设计了空间与频谱两个维度的扰动探针：空间上打乱电极标签或顺序，观察嵌入变化与预测稳定性；频谱上使用相位随机化的替代数据、注入窄带振荡或临床样波形，检验模型能否超越功率谱识别细微结构。这些探针分离了‘能否访问信息’‘是否编码信息’与‘是否依赖该信息做决策’三个层次。",
-            "limitationsAndReadingValue": "结论受限于小样本临床数据与仅使用线性读出头，可能无法完全反映微调后的行为。尽管如此，该工作揭示了评测EEG模型的新维度——接地性。读者应重点关注其问题设定与探针设计，这对构建可信、可解释的神经信号AI系统具有指导意义，尤其适合关心模型真实性与临床适用性的研究者。"
-          },
-          "researchParadigmTags": [
-            "实验验证",
-            "评测方法",
-            "模型构建"
-          ],
-          "contentTags": [
-            "脑电图",
-            "基础模型",
-            "表示学习",
-            "鲁棒性",
-            "可解释性"
-          ],
-          "tags": [
-            "脑电图",
-            "基础模型",
-            "表示学习",
-            "鲁棒性",
-            "可解释性",
-            "实验验证",
-            "评测方法",
-            "模型构建"
-          ],
-          "scores": {
-            "importance": 5.0,
-            "horizonValue": 6.0,
-            "clarity": 6.0,
-            "theoreticalDepth": 4.0,
-            "overall": 4.0,
-            "penalty": 0.0,
-            "baseTotal": 25.0,
-            "total": 25.0
-          },
-          "ids": {
-            "arxiv": "2610.29367"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.NE"
-            ],
-            "primaryCategory": "cs.NE",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
-          }
-        },
-        {
-          "title": "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning",
-          "titleZh": "HGM-Dual: 面向长视野规划的谱系感知引导型智能体控制器优化",
-          "authors": [
-            "Sudipta Paul",
-            "Pengrui Quan",
-            "Aounon Kumar",
-            "Nicholas Tzou",
-            "Vivek Kulkarni",
-            "Srinivas Chappidi"
-          ],
-          "date": "2026-10-21",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.30042",
-          "abstract": "Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and were developed mainly for coding, where the competence needed to improve the agent coincides with the competence being improved. Planning tasks, in which an agent must produce a sequence of tool calls that jointly satisfies interacting constraints, break this alignment. There, open-ended self-modification repeatedly explores ineffective changes and consumes substantial evaluation budgets. We introduce HGM-Dual, a diagnostic-guided framework for budget-efficient harness evolution for planning agents. First, HGM-Dual represents agent evolution as lineage-aware context. This context records what each ancestor changed, which behaviors improved or regressed, and which modifications were ineffective, giving the editor explicit edit-outcome attribution instead of an unstructured archive of past agents. Second, HGM-Dual introduces error-conditioned dual-path child generation. For each selected parent, it generates a general child that preserves open-ended exploration and specialized children that target the harness components most likely responsible for the parent's highest-ranked constraint violations. HGM-Dual outperforms the strongest baseline by up to 14.45% relative improvement in case accuracy while matching HGM variants' final performance with 2x-4x fewer evaluation budget.",
-          "summarySections": {
-            "backgroundAndQuestion": "现有智能体通过修改提示、工具和流程来提升性能，但这类自改进方法在长视野规划任务中效率低下。因为规划涉及多个相互依赖的约束，盲目修改常重复无效尝试或忽略关键错误。传统方法缺乏对历史修改效果的结构化记忆，也未针对当前失败原因定向调整，导致评估资源浪费严重。",
-            "modelAndSetup": "研究基于冻结的大语言模型构建任务智能体，其行为由控制器（含提示、工具和工作流）决定。在旅行和购物两类需满足复杂全局约束的规划任务上，通过执行生成方案并用多维规则评分来评估性能。目标是在有限评估预算下找到最优控制器，衡量指标包括整体得分和完全正确率。",
-            "contributionsAndResults": "提出HGM-Dual框架，在相同预算下比最强基线提升最高达14.45%的案例准确率，并以2-4倍更少预算达到相近最终性能。关键在于结合谱系感知的历史上下文与错误导向的双路径生成，显著减少冗余编辑并集中资源修复高频失效点，证明结构化进化记忆与诊断引导能大幅提升优化效率。",
-            "methodsAndTechniques": "HGM-Dual将进化过程建模为可解释的编辑记录，汇总祖先路径上的改动内容与成效，使编辑器避免重复失败。同时采用双路径子代生成：一条保持开放探索，另一条聚焦父代最严重的错误类别进行定向修正。两者结合平衡探索与利用，确保每次评估更具信息量。",
-            "limitationsAndReadingValue": "实验集中在特定规则驱动的规划任务，错误分类依赖预定义规则，可能限制在动态或模糊反馈场景的应用。虽有消融验证核心机制，但跨模型迁移仅测试单一替代主干。最值得阅读的是其问题抽象方式、进化上下文的设计思想及错误条件生成的实现逻辑，对构建高效自进化系统具指导意义。"
+            "backgroundAndQuestion": "高召回近邻搜索在人脸识别、医疗诊断和反欺诈等关键场景中至关重要，漏检意味着严重后果。传统倒排索引（IVF）通过增加探测列表数提升召回，但需全精度扫描所有候选向量，导致查询吞吐急剧下降。图索引虽快却难以达到0.999以上召回，而量化方法仍需重排序。论文核心问题是：如何在保持倒排索引高召回能力的同时，避免全量精细计算带来的性能瓶颈。",
+            "modelAndSetup": "论文研究在大规模向量集合中进行精确top-k搜索的任务，输入为查询向量，输出为其在探测倒排列表中的精确最近邻。系统基于GPU实现，利用张量核加速低维投影下的下界计算，仅对可能进入top-k的少量候选执行全精度距离计算。评估涵盖从百万到十亿级向量的数据集，以召回率和查询吞吐为核心指标，对比多种CPU/GPU基线。",
+            "contributionsAndResults": "论文提出LYCHEE，首次将认证排除机制引入倒排索引内部，实现了探测列表的高效筛选。其核心贡献是列表局部阈值机制，使筛选既能大幅减少全精度计算，又不损失最终结果的精确性。实验表明，在相同召回率下，LYCHEE比cuVS中的IVF-Flat快9.7至117倍，在十亿级数据上仍保持44.5倍优势，显著改变了高召回搜索的成本模型。",
+            "methodsAndTechniques": "LYCHEE的关键在于三阶段流水线：首先基于探测列表的锚点计算一个保守的距离阈值；然后利用张量核批量计算所有候选向量的认证下界，并筛除不可能进入top-k的项；最后按认证下界升序验证剩余候选，一旦下界超过当前第k小距离即终止。这种方法将计算代价从探测向量数解耦，转而取决于幸存者数量。",
+            "limitationsAndReadingValue": "论文依赖预定义的倒排划分和锚点设置，其性能增益在列表数较多时更显著，对极小规模或低召回需求场景优势减弱。虽然实验充分，但未测试动态更新场景。最值得阅读的是其方法论创新——如何将全局认证思想适配到局部子集筛选，这对任何基于候选集过滤的检索系统都有启发意义。"
           },
           "researchParadigmTags": [
             "算法设计",
             "系统框架",
             "实验验证",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "向量搜索",
+            "高召回检索",
+            "GPU加速",
+            "近似最近邻"
+          ],
+          "tags": [
+            "向量搜索",
+            "高召回检索",
+            "GPU加速",
+            "近似最近邻",
+            "算法设计",
+            "系统框架",
+            "实验验证",
+            "复杂度分析"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.30697"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.IR"
+            ],
+            "primaryCategory": "cs.IR",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
+          }
+        },
+        {
+          "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+          "titleZh": "更好的推理，而非更大的模型：一种用于高效可靠推理的结构化框架",
+          "authors": [
+            "Amirhossein Aghaei",
+            "Liangyan Li",
+            "Shiyi Yang",
+            "Shaohua Wang",
+            "Yan Wang"
+          ],
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.30611",
+          "abstract": "Scaling large language models has substantially improved linguistic fluency, yet reliable autonomous agents require more than fluent generation. In multi-turn inference, current agentic systems often produce semantically plausible but structurally ungrounded reasoning, especially under incomplete observations. We propose Structure-Grounded Uncertainty Reduction (SGUR), a training-free framework that complements token-level generation with active uncertainty reduction over structured hypothesis spaces. SGUR represents incomplete observations as a query graph and aligns them with candidate hypothesis graphs through a prior-weighted partial graph matching mechanism, where database-derived empirical priors assign greater importance to decision-relevant relations rather than treating all graph edges uniformly. The resulting inference state is iteratively refined by an active information-gain strategy that selects the next most informative node to query, systematically pruning the candidate space. We instantiate SGUR on a challenging PrimeKG-derived sequential medical diagnosis benchmark, demonstrating that structural grounding can partially substitute for model scale: starting from only two observed symptoms, SGUR achieves 92.5% Hit@3, outperforming the strongest Graph-RAG baseline by 9.4 percentage points while using approximately 5x fewer tokens. Notably, SGUR enables smaller backbone models to match or exceed the performance of models up to 10x larger, suggesting that structural grounding provides a more robust and efficient paradigm for scaling agent performance than relying exclusively on increasing model size.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前基于大语言模型的智能体在多轮推理中常因缺乏结构约束而产生语义合理但逻辑断裂的推断，尤其在观测不全时更易出错。现有方法依赖文本生成或检索增强，但未能将关系结构直接融入推理状态，导致决策路径脆弱且效率低下。本文指出，仅靠扩大模型规模无法根本解决此问题，关键在于如何组织推理过程。",
+            "modelAndSetup": "论文在基于PrimeKG构建的分层医学诊断任务上评估方法，任务模拟医生逐步获取症状并缩小诊断范围的过程。输入为初始症状，输出为候选疾病排序，系统通过多轮交互主动查询新信息。评价指标包括Hit@3、收敛速度（MTTC）、token消耗和延迟，强调推理准确性与效率的平衡。",
+            "contributionsAndResults": "论文提出SGUR框架，证明结构化推理可部分替代模型规模带来的收益。在仅观察两个症状的情况下，SGUR达到92.5%的Hit@3，超越最强基线9.4个百分点，同时减少约5倍token消耗。更重要的是，小模型配合SGUR可媲美甚至超过10倍大的模型，揭示结构化设计对提升智能体性能的关键作用。",
+            "methodsAndTechniques": "SGUR将不完整观测建模为查询图，并通过先验加权的部分图匹配机制与候选假设图对齐，赋予关键关系更高权重。推理过程中，系统采用信息增益策略主动选择最具判别性的节点进行查询，迭代收缩假设空间。整个过程无需训练，依赖结构一致性而非纯语义相似性驱动推理，增强了决策的可解释性和稳定性。",
+            "limitationsAndReadingValue": "SGUR依赖高质量、结构化的知识图谱和实体对齐能力，在噪声多或知识稀疏的实际场景中可能受限。其优势在证据稀缺时最显著，但在信息充足时增益减弱。读者应重点关注其问题抽象方式、闭环推理机制设计及对‘结构换规模’现象的实证分析，这对构建高可靠性AI智能体具有指导意义。"
+          },
+          "researchParadigmTags": [
+            "系统框架",
+            "实验验证",
             "机制设计",
+            "算法设计",
             "基准评测"
           ],
           "contentTags": [
-            "智能体",
             "大语言模型",
-            "长视野规划",
-            "自我优化",
-            "错误诊断"
+            "智能体",
+            "推理",
+            "知识图谱",
+            "鲁棒性"
           ],
           "tags": [
-            "智能体",
             "大语言模型",
-            "长视野规划",
-            "自我优化",
-            "错误诊断",
+            "智能体",
+            "推理",
+            "知识图谱",
+            "鲁棒性",
+            "系统框架",
+            "实验验证",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.30611"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.AI",
+              "cs.IR"
+            ],
+            "primaryCategory": "cs.AI",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
+          }
+        },
+        {
+          "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+          "titleZh": "真实文档修订下的块重组计算：测量固定、递归与内容定义分块的更新成本与检索质量",
+          "authors": [
+            "Yuning Bian",
+            "Lele Xu",
+            "Yifan Yuan",
+            "Xinyu Yin",
+            "Chengyan Zhan"
+          ],
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31019",
+          "abstract": "Chunking strategies for retrieval-augmented generation are almost always evaluated on a static snapshot, yet the documents underlying a knowledge base continue to change. Because chunks are embedded independently, a boundary that moves after an edit forces unchanged text to be re-embedded. We measure this update cost on 120 pairs of adjacent Chinese and English Wikipedia revisions for three stateless chunkers (non-overlapping fixed-size, recursive paragraph-first, and content-defined chunking) under a strict byte-identical reuse rule and a frozen dense encoder. On the 116-article common-success pool, with frozen, length-calibrated parameters, fixed-size chunking recomputes 57-68% of its full new-version embedding-input workload, recursive chunking 38-56%, and content-defined chunking 43-54% (it failed on 4 of 62 Chinese articles), while at these parameters mean evidence recall under a fixed 2048-token retrieval budget differs by less than two percentage points within either language. A cost-only parameter grid shows that the ranking of the two content-aware chunkers changes with chunk-length settings, whereas non-overlapping fixed-size chunking has the highest recomputation cost in every length-matched condition. Controlled edits and a verbatim-presence diagnostic support boundary drift as one contributor to recomputation of text already present in the previous version. Update cost is therefore a substantial, parameter-sensitive dimension that static retrieval evaluations do not expose and that should be reported alongside retrieval quality.",
+          "summarySections": {
+            "backgroundAndQuestion": "在检索增强生成（RAG）系统中，文档持续更新，但现有分块方法通常在静态语料上评估。一旦文本修改导致分块边界漂移，即使内容未变的部分也可能被重新嵌入，造成计算浪费。本文指出，传统评测忽略更新成本这一关键维度，无法反映实际维护知识库的开销，因此需要量化不同分块策略在真实修订中的重计算比例。",
+            "modelAndSetup": "研究基于120对中英文维基百科相邻修订版本，比较三种无状态分块方法：固定大小、递归段落优先和内容定义分块。使用冻结的嵌入模型，在严格字节完全匹配规则下判断能否复用旧嵌入。输入为原始文本，输出为分块序列，通过重计算分数衡量更新成本，并在固定2048token检索预算下评估证据召回率。",
+            "contributionsAndResults": "论文构建了首个面向真实文档修订的双语基准，发现固定分块在更新时需重计算57%-68%的嵌入输入，显著高于递归（38%-56%）和内容定义（43%-54%）。但在相同条件下，三者检索召回率差异不足两个百分点。这揭示了一个权衡：低更新成本不一定牺牲检索性能，且内容感知分块的优劣受参数影响。",
+            "methodsAndTechniques": "核心方法是定义严格的嵌入输入复用规则——仅当完整输入字节完全一致时才视为可复用。通过对比新旧版本分块集合，计算需重新处理的比例。结合受控编辑实验与逐字存在性诊断，验证边界漂移是重计算主因之一。参数敏感性分析进一步显示，固定分块始终代价最高，而两种内容感知方法排名随长度设置变化。",
+            "limitationsAndReadingValue": "局限在于仅使用维基百科数据，标注未经多人独立校验，且未审计精确的token级编辑比率。检索评估也仅在冻结参数下进行。尽管如此，论文的价值在于揭示了静态评测盲区，提醒实践者在选择分块策略时必须报告更新成本。最值得细读的是其问题设定、实验设计与对边界漂移的归因分析。"
+          },
+          "researchParadigmTags": [
+            "基准评测",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "生成式AI",
+            "检索增强生成",
+            "分块策略",
+            "嵌入更新",
+            "文档修订"
+          ],
+          "tags": [
+            "生成式AI",
+            "检索增强生成",
+            "分块策略",
+            "嵌入更新",
+            "文档修订",
+            "基准评测",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2610.31019"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
+          }
+        },
+        {
+          "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+          "titleZh": "将自回归LLM控制编译为策略精确的并行推理以实现分层RAG",
+          "authors": [
+            "Zehao Lin",
+            "Qianfeng Shen",
+            "Xixuan Hao",
+            "Shaobo Cui",
+            "Chunyu Li",
+            "Kai Chen",
+            "Bo Tang",
+            "Zhenjun Wang",
+            "Jin Yan",
+            "Zhiyu Li",
+            "Feiyu Xiong"
+          ],
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.30664",
+          "abstract": "Large language models increasingly act as controllers in structured decision pipelines, yet their decisions are still executed by autoregressive text decoding. Hierarchical RAG is one such setting: at each frontier of a document tree, an LLM commits to $b$ of $k$ sections under an input-dependent action grammar, executed as either failure-prone free-form JSON or reliable but strictly serial grammar-constrained generation. We show that this serialization is unnecessary for bounded-horizon control: the reachable future forms a shallow action-prefix tree, which we compile --- one root prefill plus one tree-causal probe evaluate every prefix-conditioned action distribution with serial decoding's tokens, positions, and causal ancestry. A prefix-state lemma makes compiled control policy-exact in exact arithmetic: the same policy with a two-forward critical path and zero output tokens. One further probe pass certifies the exact order-marginalized MAP set. Across four document-disjoint splits and two scales on the primary MetaX device, compiled control matches the serial policy on $84$--$89\\%$ of questions --- every instrumented divergence a floating-point near-tie --- and cuts control latency by $35$--$47\\%$ versus token-wise serial decoding and $6$--$7\\%$ versus an idealized chunked engine; an H800 repetition preserves the ordering.",
+          "summarySections": {
+            "backgroundAndQuestion": "在分层检索增强生成（RAG）中，大语言模型作为控制器需依次选择文档子树，传统方法依赖自回归文本解码执行决策，导致串行延迟高、协议错误频发。现有方案要么因自由格式输出不可靠，要么因语法约束解码效率低下。本文指出，这类有限动作空间的控制器本质无需逐token生成，其未来状态空间有限，因此串行解码是执行方式而非任务必需，核心问题是能否打破序列依赖以提升效率。",
+            "modelAndSetup": "研究设定为在文档树前沿节点从k个候选章节中选出b个，输入为问题与上下文，输出为有序或无序的动作集合。模型基于冻结的Qwen2.5系列LLM，不进行微调，仅通过改变推理过程实现控制。评估在QASPER数据集上进行，采用AllEvidence@B等指标衡量证据覆盖率，并对比串行语法解码、理想化块解码等多种基线，重点测量控制延迟、策略一致性与协议错误率。",
+            "contributionsAndResults": "论文提出将控制器行为编译为前缀树结构，通过一次根预填充和一次树因果探针完成全部动作分布计算，实现策略等价下的并行推理。实验显示该方法在四个数据划分上与串行策略一致率达84%-89%，延迟降低35%-47%，且零输出token、零协议错误。同时支持精确的后验集合推断与历史依赖强度量化，结果证实串行路径可被替代而不损失策略保真度。",
+            "methodsAndTechniques": "方法核心是构建动作前缀树，每个节点对应一个已选动作序列，探针在单次前向传播中并行评估所有可能前缀的下一个动作分布，利用块因果掩码确保各路径独立感知提示与自身祖先。由于每个位置接收到的token、位置、注意力祖先与串行解码完全一致，因此logits在精确算术下等价。最终决策通过算术还原而非生成获得，从而实现深度为2的关键路径。",
+            "limitationsAndReadingValue": "局限在于探针宽度随动作数阶乘增长，n=4时已难收益；bf16精度下近似平局可能导致决策翻转，虽与跨硬件串行差异相当，但仍限制绝对一致性。此外，仅适用于有限动作、短视界控制场景。最值得读的是其方法设计与理论证明，展示了如何将顺序决策转化为并行图计算，在保持策略精确的同时重构推理流程，对LLM控制系统优化具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "系统框架",
+            "实验验证",
+            "理论推导",
+            "基准评测"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "生成式AI",
+            "推理",
+            "受限解码",
+            "并行化"
+          ],
+          "tags": [
+            "大语言模型",
+            "生成式AI",
+            "推理",
+            "受限解码",
+            "并行化",
             "算法设计",
             "系统框架",
             "实验验证"
           ],
           "scores": {
             "importance": 5.0,
-            "horizonValue": 4.0,
-            "clarity": 5.0,
-            "theoreticalDepth": 3.0,
-            "overall": 3.0,
-            "penalty": -1.0,
-            "baseTotal": 19.0,
-            "total": 19.0
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
           },
           "ids": {
-            "arxiv": "2610.30042"
+            "arxiv": "2610.30664"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.AI",
-              "cs.LG",
-              "cs.NE"
+              "cs.CL",
+              "cs.IR"
             ],
-            "primaryCategory": "cs.AI",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
+            "primaryCategory": "cs.CL",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
           }
         },
         {
-          "title": "BrainCodes: A Lightweight EEG Foundation Model over Discrete Neural Codes",
-          "titleZh": "BrainCodes: 基于离散神经码的轻量级脑电图基础模型",
+          "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+          "titleZh": "融合税：混合检索何时造成损害的诊断分析",
           "authors": [
-            "Kleanthis Avramidis",
-            "Ivan Tashev",
-            "Dimitra Emmanouilidou"
+            "Aaditya Chauhan",
+            "Arun Agarwal"
           ],
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2610.29320",
-          "abstract": "Recent electroencephalography (EEG) foundation models increasingly emphasize model scale, potentially limiting their deployment on resource-constrained devices and in everyday environments. We argue that transferable EEG features can instead be learned with a compact architecture and introduce BrainCodes, a lightweight foundation model pretrained through self-supervised learning on more than 800 hours of recordings from over 1,000 participants. Our architecture combines a quantization-based neural tokenizer with a spatiotemporal encoder that supports arbitrary electrode configurations. The pretraining objective explicitly encourages representations that capture spatial connectivity through channel positional encoding, and sensitivity to narrowband neural oscillations through an auxiliary training objective. Our model matches or surpasses the state of the art across diverse neurophysiological monitoring tasks, including sleep staging, attention assessment, and cognitive load estimation. BrainCodes transfers effectively to low-resource wearable devices while using up to 97% fewer trainable parameters than comparable architectures. Beyond predictive accuracy, our evaluation framework characterizes the geometry and invariances of learned EEG representations across measurable spatial, temporal, and spectral signal properties.",
+          "url": "https://arxiv.org/abs/2610.30612",
+          "abstract": "Hybrid retrieval, which fuses a sparse lexical retriever with a dense neural one, is widely recommended in the software documentation surveyed in September 2026, usually with reciprocal rank fusion (RRF), on the strength of aggregate gains. We ask what fusion costs on individual queries, treating \"do not fuse\" as a first-class outcome, in the setting in which hybrid retrieval is deployed: a standard Anserini BM25, five dense encoders spanning 22M-596M parameters and three model generations, a learned-sparse (SPLADE) alternative, and a cross-encoder second stage, on seven BEIR datasets and three fusion functions. Even the best method, dense-weighted score interpolation, ranks relevant documents below the better of its two components on 13-48% of queries and below the deployable dense-only retriever on 8-21% (14-48% and 11-25% at a weight selected under leave-one-corpus-out validation), while beating dense-only in aggregate on every corpus with the primary encoder; the downside is significant under loss-averse risk-sensitive evaluation on six of the seven corpora. We call this loss the fusion tax. It is mostly a ranking effect that preserves recall in aggregate, it is most likely on the queries that only one retriever covers, and it persists across the encoder ladder and the SPLADE substitution. RRF carries the higher tax wherever the dense retriever is clearly stronger and only beats dense-only where the two components are balanced. Fusion failure is weakly predictable within a corpus but transfers unreliably across corpora, because the features that predict it change sign with the sparse-dense balance. A cross-encoder recovers part of the tax only where it is itself reliable. We distill these findings into guidance that keys the fusion decision to the measured sparse-dense balance of the target corpus.",
           "summarySections": {
-            "backgroundAndQuestion": "现有脑电图（EEG）基础模型往往依赖大规模参数，在资源受限设备上难以部署。传统重建式预训练目标易受高功率非周期信号主导，可能忽略对认知状态敏感的窄带振荡特征。本文旨在探索能否通过更紧凑的架构和更有针对性的训练目标，学习到既高效又生理相关的可迁移EEG表示。",
-            "modelAndSetup": "模型输入为多通道脑电信号，经冻结的向量量化编码器转换为离散神经码序列。主干网络采用时空分离的因子化Transformer，预测被掩码的神经码，并辅以注入窄带扰动的区域进行频率、持续时间和空间位置预测。在14项下游任务上评估线性探测与全微调性能，涵盖临床、认知与消费级硬件场景。",
-            "contributionsAndResults": "提出仅含190万参数的轻量模型BrainCodes，在多数任务上达到或超越更大模型的表现，尤其在小样本与稀疏电极设置下优势显著。其表示在低资源设备上保持91%性能，并首次系统验证了EEG基础模型向消费级穿戴设备迁移的可行性，证明紧凑模型亦可具备强泛化能力。",
-            "methodsAndTechniques": "核心在于结合离散码预测与生理感知辅助目标：量化编码迫使模型关注判别性差异而非波形细节；通道位置编码基于电极相对位移，使模型适应任意布局；窄带扰动预测则显式增强对节律活动的敏感性。该设计规避了重建误差对频谱功率的偏倚，引导表示保留关键时空谱结构。",
-            "limitationsAndReadingValue": "尽管结果优越，但其优势在超大数据集上可能减弱，且对极短事件的捕捉能力受限于量化时间分辨率。评测虽覆盖多样任务，但临床有效性未经前瞻性验证。最值得细读的是其训练目标设计逻辑与消融分析，揭示了轻量模型成功的关键机制。"
+            "backgroundAndQuestion": "当前主流推荐将稀疏与密集检索器融合以提升整体效果，但这种聚合收益可能掩盖个体查询的损失。本文关注混合检索在哪些情况下反而会降低性能，核心问题是：当融合导致相关文档排名下降时，其代价有多大？这揭示了现有评估方式忽略的风险，尤其是在对排序敏感的应用中。",
+            "modelAndSetup": "研究在标准信息检索设定下进行，输入为查询，输出为排序文档列表。使用BM25和多种稠密编码器作为基础检索器，在七个BEIR数据集上测试三种融合函数，并引入交叉编码器重排序阶段。评估不仅看平均指标，更注重单个查询的表现变化。",
+            "contributionsAndResults": "论文提出了‘融合税’概念，量化了融合在单个查询上的负面影响。结果显示，即使最佳融合方法在总体上优于单一检索器，仍会导致13%-48%的查询表现变差，且在六项数据集中存在显著风险。这一发现挑战了‘融合总是更好’的默认假设。",
+            "methodsAndTechniques": "作者通过定义‘融合税’来衡量每个查询的损失，将其与最优组件及可部署的稠密检索器对比。采用四象限分类诊断失败模式，结合跨语料库留一法验证权重选择，并测试重排序能否缓解损失。整个分析强调可操作的工程指导而非单纯模型改进。",
+            "limitationsAndReadingValue": "结论受限于所选模型、数据集和第一阶段检索设定，未直接评估对最终生成答案的影响。然而，其价值在于提供了清晰的决策框架：应基于语料中稀疏与稠密检索器的实际平衡来决定是否融合。最值得阅读的是其实证逻辑与实用建议。"
           },
           "researchParadigmTags": [
-            "模型构建",
             "实验验证",
             "基准评测",
-            "消融研究",
-            "系统设计"
+            "评测方法",
+            "系统框架"
           ],
           "contentTags": [
-            "脑电图表示学习",
-            "自监督学习",
-            "轻量化模型",
-            "神经编码",
-            "可迁移表示"
+            "信息检索",
+            "混合搜索",
+            "检索增强生成",
+            "查询性能预测",
+            "排序融合"
           ],
           "tags": [
-            "脑电图表示学习",
-            "自监督学习",
-            "轻量化模型",
-            "神经编码",
-            "可迁移表示",
-            "模型构建",
+            "信息检索",
+            "混合搜索",
+            "检索增强生成",
+            "查询性能预测",
+            "排序融合",
             "实验验证",
-            "基准评测"
+            "基准评测",
+            "评测方法"
           ],
           "scores": {
-            "importance": 5.0,
-            "horizonValue": 4.0,
-            "clarity": 5.0,
-            "theoreticalDepth": 3.0,
-            "overall": 3.0,
-            "penalty": -1.0,
-            "baseTotal": 19.0,
-            "total": 19.0
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
           },
           "ids": {
-            "arxiv": "2610.29320"
+            "arxiv": "2610.30612"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.LG",
-              "cs.NE"
+              "cs.IR",
+              "cs.CL"
             ],
-            "primaryCategory": "cs.LG",
-            "published": "2026-10-21",
-            "updated": "2026-10-21"
+            "primaryCategory": "cs.IR",
+            "published": "2026-10-22",
+            "updated": "2026-10-22"
           }
         }
       ]

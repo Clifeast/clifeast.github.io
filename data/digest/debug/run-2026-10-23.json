@@ -1,0 +1,3058 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T07:51:48.560660+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-10-22",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202610220000 TO 202610222359\"",
+            "totalResults": 10,
+            "fetchedCount": 10
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202610220000 TO 202610222359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 12
+      },
+      "arxivTotalResults": 14,
+      "fetchedCount": 12,
+      "fetchedPapers": [
+        {
+          "title": "FairFRESH: A Neuro-Symbolic Framework for Fair and Explainable Household Food Recommendation",
+          "url": "https://arxiv.org/abs/2610.31506",
+          "arxivId": "2610.31506",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT"
+          ],
+          "abstract": "Recommender systems typically serve one user at a time. However, in households, members share a finite pantry and follow different dietary rules, making independent recommendations prone to resource conflicts and dietary violations. We formulate household food recommendation as constrained fair division and present FairFRESH, a neuro-symbolic framework that learns per-member utilities, allocates foods under explicit welfare objectives, enforces dietary rules through a deterministic filter, and explains recommendations using Shapley and Banzhaf attributions. Theoretically, we show that no finite penalty guarantees compliance near a dietary-rule threshold, establish approximation guarantees for greedy allocation under utilitarian and smoothed Nash objectives in the stock-free model before filtering, and characterize the scale invariance of Nash welfare. We also use the minimax theorem to analyze rotating shared meals. On NHANES-derived data, the learned utility model achieves Recall@20 of 0.293, outperforming five learned recommenders (at most 0.244) but not a previous-day repetition heuristic (0.321). On held-out four-person households, Nash allocation reduces Gini disparity by 42% relative to conflict resolution while improving Recall@20 from 0.180 to 0.197. It comes within 2% of an upper bound on the smoothed Nash optimum, and rescaling one member's utilities changes at most 1.5% of assignments. All recommendations satisfy the encoded dietary rules, while attribution scores correlate with utility loss upon component removal (r = 0.76). In simulation, shared meals reduce pantry use by about one-third, and weekly rotation increases the worst-off member's utility by 38% over the best fixed meal."
+        },
+        {
+          "title": "A Resource Allocation Tournament",
+          "url": "https://arxiv.org/abs/2610.31418",
+          "arxivId": "2610.31418",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "econ.TH"
+          ],
+          "abstract": "We introduce and analyze a round-robin simultaneous resource allocation contest, motivated by sports leagues and other competitive environments where agents must distribute limited resources across multiple encounters. Players allocate resources in advance to matches against all opponents, and match outcomes are determined by relative allocations. We study two payoff schemes: total points, where players accumulate rewards for each win, and winner-takes-all, where only the tournament winner is rewarded. For three players, we provide complete equilibrium characterizations under both schemes. For four or more players, we show that the total points payoff admits Blotto-type equilibria, while the winner-takes-all payoff requires numerical and algorithmic analysis. To address this, we develop a best-response dynamics algorithm with stochastic inertia and use it to approximate equilibria in games with four and five players."
+        },
+        {
+          "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+          "url": "https://arxiv.org/abs/2610.31153",
+          "arxivId": "2610.31153",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study an intermediary that buys nonperishing items from arriving sellers and sells them to arriving buyers, subject to limited storage. Sellers and buyers arrive according to independent Poisson processes. The intermediary pays and charges the same fixed item prices, aiming to maximize long-run gains from trade: buyer value minus seller cost. Our benchmark may choose allocations directly, has unlimited storage, and must purchase each unit before allocating it. Its optimal long-run gain rate equals the value of a linear program of average purchase and allocation rates, with or without knowledge of future arrivals. For buyers whose bundle values are maxima of nonnegative additive valuations (XOS), we compute static common prices that guarantee half of this benchmark for arbitrary finite item capacities, even one storage slot per item, regardless of how ties are resolved without using future arrivals. The prices are computable in polynomial time using demand and supporting-value queries. The construction equalizes itemwise lower bounds on buyer and seller contributions to gains from trade, accounting for procurement costs. We call this contribution balance. As a single-item foundation, we also equalize the rates of purchases and sales selected by the price, before checking inventory availability. We call this rate balance. For capacity $C$, it yields the tight guarantee $C/(C+1)$. The two principles parallel proofs of the classical prophet inequality based on half the expected benchmark and on a median threshold, adapting these balancing ideas to recurring two-sided markets with limited inventory."
+        },
+        {
+          "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+          "url": "https://arxiv.org/abs/2610.31002",
+          "arxivId": "2610.31002",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study task assignment under adverse selection and moral hazard. In the single-task setting, agents privately know their types, which determine their success probabilities and effort costs. Based on the agents' reported types, the principal selects an agent to perform the task and offers a success-contingent payment. Although optimal Bayesian contract design is generally computationally intractable and Myerson's characterization does not directly extend to settings with hidden actions and multidimensional private information, we show that the single-task problem admits a simple Myerson-style characterization. Our key insight is that incentive constraints depend only on the ratio between effort cost and success probability. We characterize an optimal mechanism and show that it can be computed in polynomial time. We also establish a tight $Θ(1/(NK))$ worst-case bound on the ratio between the optimal profit and the full-information benchmark, where $N$ is the number of agents and $K$ is the number of types per agent. We then extend our analysis to multiple tasks, showing that an optimal mechanism may not exist. Nevertheless, for a constant number of agents, we provide a polynomial-time approximation scheme for the supremum profit."
+        },
+        {
+          "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+          "url": "https://arxiv.org/abs/2610.30999",
+          "arxivId": "2610.30999",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.DS"
+          ],
+          "abstract": "Generative AI assistants are becoming an advertising medium, embedding sponsored content in their answers. This setting departs from classical position auctions in two ways: an ad's click-through rate depends on the passage that hosts it, and because users stop at their first click, earlier ads take clicks from later ones. This competition for clicks makes truthfulness delicate: a higher bid can reshape the allocation and put a competitor ahead of the bidder, reducing the bidder's clicks. Existing mechanisms either attain a constant fraction of the optimal welfare (advertisers' total click value) but are not known to be truthful, or are truthful but their welfare guarantee degrades as the number of passages grows. We achieve both even when the answer and its editorial order are fixed before bidding. Assuming each ad's click-through rate when reached is known and unaffected by omitting other ads, we give a computationally efficient mechanism that is truthful in expectation and attains at least half the optimal welfare under free reordering. Our key idea, click thinning, omits ads at random, showing earlier ads less often so that each ad's overall click probability no longer depends on the order of the ads. Welfare maximization then reduces to a tractable matching problem, and solving it exactly with VCG-style payments makes truthful bidding optimal in expectation. Characterizing the click probabilities that omission can achieve sharpens the approximation factor from $2$ to $2-(1-δ)^{K-1}$ when at most $K$ ads are shown and each click-through rate is at most $δ$. This factor is the best possible for any order-preserving rule, even one that ignores incentives and computation, so truthfulness and computational efficiency incur no additional worst-case loss."
+        },
+        {
+          "title": "Assortment optimization under the perception-adjusted Luce model",
+          "url": "https://arxiv.org/abs/2610.30904",
+          "arxivId": "2610.30904",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "abstract": "The Perception-Adjusted Luce Model (PALM) introduced by by Echenique et al. (2018) is a sequential choice model that can accommodate violations of regularity and choice overload, behaviors not captured by the utility-maximization framework. Flores et al. (2019) studied the assortment problem under the PALM and proved that, for the case of two levels, there is always an optimal solution that is revenue-ordered by level. They also conjectured that revenue-ordered by levels remain optimal for the general PALM with any number of levels. We resolve this question in the affirmative by showing that every PALM instance admits an optimal assortment that includes, within each level, all products at or above a level-specific revenue threshold. The proof involves first showing how the conjecture which deals with a discrete optimization problem, can be reduced to proving certain property of a related continuous optimization problem. Specifically, we study a continuous refinement of the assortment decision under the same PALM choice rule. Although the refinement permits partial utility selections, we prove it always has an optimum that selects complete revenue tiers. This allows us to show that the assortment problem is polynomial-time solvable when the number of levels is fixed."
+        },
+        {
+          "title": "Equilibria and Learning in Competitive Market Making",
+          "url": "https://arxiv.org/abs/2610.30891",
+          "arxivId": "2610.30891",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG",
+            "q-fin.TR"
+          ],
+          "abstract": "We propose a market-making game played among $N \\ge 2$ strategic market makers and a single non-strategic representative trader. In a continuous quote space, standard finite-game arguments do not apply, while non-convex and discontinuous payoffs rule out classical continuous existence results and complicate learning. Nonetheless, we characterize pure-strategy Nash equilibria (PSNEs) and show that at least one PSNE always exists under minimal assumptions on the underlying asset value distribution, and that the equilibrium bid-ask spread widens strictly with asset value volatility. To obtain a tractable learning framework, we discretize prices and, under an additional regularity condition, show that the time-averaged play of no-internal-regret learners approaches the continuous Nash price envelope as the tick size vanishes. Finally, we empirically validate our theoretical results through numerical simulations."
+        },
+        {
+          "title": "A Weakly Group Strategy-Proof and Pareto-Stable Matching Mechanism with Two-Sided Indifferences under Gross Substitutes",
+          "url": "https://arxiv.org/abs/2610.30807",
+          "arxivId": "2610.30807",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "abstract": "We study finite many-to-one matching markets with indifferences on both sides and publicly known firm preferences over sets of workers. A standard approach breaks ties uniformly at random and runs deferred acceptance, which is strategy-proof for workers but may select a weakly stable matching that is Pareto dominated under the agents' original preferences. For the broad class of markets in which each firm's preferences admit a gross substitutes (GS) representation, we construct a deterministic generalized deferred acceptance mechanism that is weakly stable, Pareto efficient with respect to both sides, worker weakly group strategy-proof, and implementable in strongly polynomial time given value oracles for the GS representations. This domain includes nonresponsive firm preferences, such as additive scores under matroid constraints and assignment values. Our analysis bridges ordinal matching with indifferences and competitive equilibria under imperfectly transferable utility. Although the mechanism uses only ordinal comparisons, it returns a seller-optimal equilibrium matching of a tiered auxiliary market, and the equilibrium structure of this market yields the stability, efficiency, and incentive guarantees."
+        },
+        {
+          "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2610.30667",
+          "arxivId": "2610.30667",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "Iterative combinatorial auctions are used in spectrum allocation, transportation, and industrial procurement, but rounds are costly. We introduce FastCombo, a deep reinforcement learning approach to sequential price discovery. Bayesian pricing has sharply reduced auction rounds even against subgradient benchmarks tuned with hindsight for each instance, but relies on a one-step objective and repeated online inference and optimization. We prove that greedily maximizing immediate clearing probability can require arbitrarily more rounds in expectation than an informative policy, even with the true valuation distribution known. FastCombo learns price policies offline, assigning credit to queries for the future decisions they enable and producing each online price update with a single neural-network forward pass. We formulate the objective of minimizing expected rounds to clearing in single-minded auctions as a partially observable Markov decision process and train a recurrent bidder-item graph policy over complete auction trajectories. In a one-item experiment, all five trained policies learn an informative opening, reducing expected rounds from 1.85 to 1.65 relative to the tested Bayesian one-step rule. Across four domains from the Combinatorial Auction Test Suite, FastCombo achieves competitive clearing while reducing measured online price-selection time per auction by a factor of roughly 300-900 relative to the standard Bayesian baseline. These results demonstrate the value of learning sequential price policies for both information acquisition and online computational efficiency."
+        },
+        {
+          "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+          "url": "https://arxiv.org/abs/2610.30595",
+          "arxivId": "2610.30595",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CR",
+            "cs.DC"
+          ],
+          "abstract": "Transactions differ in how their value changes with execution time and relative position. Ethereum's EIP-1559 lets them compete through fee fields, but a fee bid gives no enforceable claim to an earlier position in the block, and no way to express willingness to accept a later one. Its base fee is a hard admission floor. We introduce temporal liquidity markets (TLM), a framework for crossing complementary temporal requirements: transactions seeking early-region execution (consumers) can fund transactions that opt into exclusion from that region (providers). Selected consumers complete within the early region and are ordered among themselves by authorization density, both validator-checked. In our block-local EIP-1559 extension, providers may be admitted below the base-fee floor. Under TLM regulation, funding-conditioned and capacity-capped provider gas is excluded from the ordinary EIP-1559 controller input. Counting it there instead raises the base fee and displaces ordinary demand at a positive base-fee fixed point. Exclusion lets the controller regulate ordinary demand at its original target and preserves the no-TLM ordinary allocation by construction; in synthetic experiments it raises total utilization with funded gas. Selected consumers pay their signed authorizations, which fund provider shortfalls; the surplus is burned. We state an adversary model with strategic senders and builders and prove eight properties under it, among them validator-checked rule validity, full burn of the base fee, and no subsidy. An inserted consumer bid cannot raise any other consumer's charge. With a provider fee-cap floor, a small, capped inclusion fee and a consumer allowance tied to funded provider gas by a large enough link ratio, no finite set of consumer bids or providers that the builder inserts raises its direct fee payoff."
+        },
+        {
+          "title": "Risk Sensitivity and Stationary Equilibrium in Incomplete Markets",
+          "url": "https://arxiv.org/abs/2610.30956",
+          "arxivId": "2610.30956",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study stationary equilibrium and comparative statics in an incomplete market economy with risk-sensitive preferences. We prove that a stationary equilibrium exists for every nonnegative degree of risk sensitivity. With independent income, greater risk sensitivity weakly raises aggregate saving at fixed prices and weakly lowers the smallest and the largest equilibrium interest rates. With stochastically monotone Markov income, these comparisons hold when the lower risk-sensitivity parameter is sufficiently small or the upper parameter sufficiently large. For pairs of intermediate values, however, greater risk sensitivity can lower saving, contrary to an existing result in the literature, and can raise the smallest and largest equilibrium rates. An exact decomposition identifies the forces driving these reversals."
+        },
+        {
+          "title": "Selling Evidence Bit by Bit",
+          "url": "https://arxiv.org/abs/2610.30563",
+          "arxivId": "2610.30563",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We study the sale of an asset to competitive buyers. Before the sale, the seller can buy hard information about the asset from an intermediary who designs and prices a test to maximize his revenue guarantee across equilibria. The test consists of one or more signals, and the seller privately chooses which subset of signals to buy and selectively discloses their realization to the buyers. We show that the intermediary benefits from splitting information into multiple signals and characterize his maximal revenue guarantee as the cumulative entropy of the asset value distribution. This guarantee is achieved by a sequence of ``skim from the top'' tests with binary, i.i.d.\\ signals and additive pricing. Furthermore, any sequence of tests that achieves the maximal guarantee reveals the asset's value in the limit. For binary values, we also characterize the revenue guarantee for any given number of signals, and show that it is achieved by a test that corresponds to a ``Swiss cheese\" model of failure with conclusive good news."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "FairFRESH: A Neuro-Symbolic Framework for Fair and Explainable Household Food Recommendation",
+              "url": "https://arxiv.org/abs/2610.31506",
+              "arxivId": "2610.31506",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT"
+              ],
+              "abstract": "Recommender systems typically serve one user at a time. However, in households, members share a finite pantry and follow different dietary rules, making independent recommendations prone to resource conflicts and dietary violations. We formulate household food recommendation as constrained fair division and present FairFRESH, a neuro-symbolic framework that learns per-member utilities, allocates foods under explicit welfare objectives, enforces dietary rules through a deterministic filter, and explains recommendations using Shapley and Banzhaf attributions. Theoretically, we show that no finite penalty guarantees compliance near a dietary-rule threshold, establish approximation guarantees for greedy allocation under utilitarian and smoothed Nash objectives in the stock-free model before filtering, and characterize the scale invariance of Nash welfare. We also use the minimax theorem to analyze rotating shared meals. On NHANES-derived data, the learned utility model achieves Recall@20 of 0.293, outperforming five learned recommenders (at most 0.244) but not a previous-day repetition heuristic (0.321). On held-out four-person households, Nash allocation reduces Gini disparity by 42% relative to conflict resolution while improving Recall@20 from 0.180 to 0.197. It comes within 2% of an upper bound on the smoothed Nash optimum, and rescaling one member's utilities changes at most 1.5% of assignments. All recommendations satisfy the encoded dietary rules, while attribution scores correlate with utility loss upon component removal (r = 0.76). In simulation, shared meals reduce pantry use by about one-third, and weekly rotation increases the worst-off member's utility by 38% over the best fixed meal."
+            },
+            {
+              "title": "A Resource Allocation Tournament",
+              "url": "https://arxiv.org/abs/2610.31418",
+              "arxivId": "2610.31418",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "econ.TH"
+              ],
+              "abstract": "We introduce and analyze a round-robin simultaneous resource allocation contest, motivated by sports leagues and other competitive environments where agents must distribute limited resources across multiple encounters. Players allocate resources in advance to matches against all opponents, and match outcomes are determined by relative allocations. We study two payoff schemes: total points, where players accumulate rewards for each win, and winner-takes-all, where only the tournament winner is rewarded. For three players, we provide complete equilibrium characterizations under both schemes. For four or more players, we show that the total points payoff admits Blotto-type equilibria, while the winner-takes-all payoff requires numerical and algorithmic analysis. To address this, we develop a best-response dynamics algorithm with stochastic inertia and use it to approximate equilibria in games with four and five players."
+            },
+            {
+              "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+              "url": "https://arxiv.org/abs/2610.31153",
+              "arxivId": "2610.31153",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study an intermediary that buys nonperishing items from arriving sellers and sells them to arriving buyers, subject to limited storage. Sellers and buyers arrive according to independent Poisson processes. The intermediary pays and charges the same fixed item prices, aiming to maximize long-run gains from trade: buyer value minus seller cost. Our benchmark may choose allocations directly, has unlimited storage, and must purchase each unit before allocating it. Its optimal long-run gain rate equals the value of a linear program of average purchase and allocation rates, with or without knowledge of future arrivals. For buyers whose bundle values are maxima of nonnegative additive valuations (XOS), we compute static common prices that guarantee half of this benchmark for arbitrary finite item capacities, even one storage slot per item, regardless of how ties are resolved without using future arrivals. The prices are computable in polynomial time using demand and supporting-value queries. The construction equalizes itemwise lower bounds on buyer and seller contributions to gains from trade, accounting for procurement costs. We call this contribution balance. As a single-item foundation, we also equalize the rates of purchases and sales selected by the price, before checking inventory availability. We call this rate balance. For capacity $C$, it yields the tight guarantee $C/(C+1)$. The two principles parallel proofs of the classical prophet inequality based on half the expected benchmark and on a median threshold, adapting these balancing ideas to recurring two-sided markets with limited inventory."
+            },
+            {
+              "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+              "url": "https://arxiv.org/abs/2610.31002",
+              "arxivId": "2610.31002",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study task assignment under adverse selection and moral hazard. In the single-task setting, agents privately know their types, which determine their success probabilities and effort costs. Based on the agents' reported types, the principal selects an agent to perform the task and offers a success-contingent payment. Although optimal Bayesian contract design is generally computationally intractable and Myerson's characterization does not directly extend to settings with hidden actions and multidimensional private information, we show that the single-task problem admits a simple Myerson-style characterization. Our key insight is that incentive constraints depend only on the ratio between effort cost and success probability. We characterize an optimal mechanism and show that it can be computed in polynomial time. We also establish a tight $Θ(1/(NK))$ worst-case bound on the ratio between the optimal profit and the full-information benchmark, where $N$ is the number of agents and $K$ is the number of types per agent. We then extend our analysis to multiple tasks, showing that an optimal mechanism may not exist. Nevertheless, for a constant number of agents, we provide a polynomial-time approximation scheme for the supremum profit."
+            },
+            {
+              "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+              "url": "https://arxiv.org/abs/2610.30999",
+              "arxivId": "2610.30999",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.DS"
+              ],
+              "abstract": "Generative AI assistants are becoming an advertising medium, embedding sponsored content in their answers. This setting departs from classical position auctions in two ways: an ad's click-through rate depends on the passage that hosts it, and because users stop at their first click, earlier ads take clicks from later ones. This competition for clicks makes truthfulness delicate: a higher bid can reshape the allocation and put a competitor ahead of the bidder, reducing the bidder's clicks. Existing mechanisms either attain a constant fraction of the optimal welfare (advertisers' total click value) but are not known to be truthful, or are truthful but their welfare guarantee degrades as the number of passages grows. We achieve both even when the answer and its editorial order are fixed before bidding. Assuming each ad's click-through rate when reached is known and unaffected by omitting other ads, we give a computationally efficient mechanism that is truthful in expectation and attains at least half the optimal welfare under free reordering. Our key idea, click thinning, omits ads at random, showing earlier ads less often so that each ad's overall click probability no longer depends on the order of the ads. Welfare maximization then reduces to a tractable matching problem, and solving it exactly with VCG-style payments makes truthful bidding optimal in expectation. Characterizing the click probabilities that omission can achieve sharpens the approximation factor from $2$ to $2-(1-δ)^{K-1}$ when at most $K$ ads are shown and each click-through rate is at most $δ$. This factor is the best possible for any order-preserving rule, even one that ignores incentives and computation, so truthfulness and computational efficiency incur no additional worst-case loss."
+            },
+            {
+              "title": "Assortment optimization under the perception-adjusted Luce model",
+              "url": "https://arxiv.org/abs/2610.30904",
+              "arxivId": "2610.30904",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT"
+              ],
+              "abstract": "The Perception-Adjusted Luce Model (PALM) introduced by by Echenique et al. (2018) is a sequential choice model that can accommodate violations of regularity and choice overload, behaviors not captured by the utility-maximization framework. Flores et al. (2019) studied the assortment problem under the PALM and proved that, for the case of two levels, there is always an optimal solution that is revenue-ordered by level. They also conjectured that revenue-ordered by levels remain optimal for the general PALM with any number of levels. We resolve this question in the affirmative by showing that every PALM instance admits an optimal assortment that includes, within each level, all products at or above a level-specific revenue threshold. The proof involves first showing how the conjecture which deals with a discrete optimization problem, can be reduced to proving certain property of a related continuous optimization problem. Specifically, we study a continuous refinement of the assortment decision under the same PALM choice rule. Although the refinement permits partial utility selections, we prove it always has an optimum that selects complete revenue tiers. This allows us to show that the assortment problem is polynomial-time solvable when the number of levels is fixed."
+            },
+            {
+              "title": "Equilibria and Learning in Competitive Market Making",
+              "url": "https://arxiv.org/abs/2610.30891",
+              "arxivId": "2610.30891",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG",
+                "q-fin.TR"
+              ],
+              "abstract": "We propose a market-making game played among $N \\ge 2$ strategic market makers and a single non-strategic representative trader. In a continuous quote space, standard finite-game arguments do not apply, while non-convex and discontinuous payoffs rule out classical continuous existence results and complicate learning. Nonetheless, we characterize pure-strategy Nash equilibria (PSNEs) and show that at least one PSNE always exists under minimal assumptions on the underlying asset value distribution, and that the equilibrium bid-ask spread widens strictly with asset value volatility. To obtain a tractable learning framework, we discretize prices and, under an additional regularity condition, show that the time-averaged play of no-internal-regret learners approaches the continuous Nash price envelope as the tick size vanishes. Finally, we empirically validate our theoretical results through numerical simulations."
+            },
+            {
+              "title": "A Weakly Group Strategy-Proof and Pareto-Stable Matching Mechanism with Two-Sided Indifferences under Gross Substitutes",
+              "url": "https://arxiv.org/abs/2610.30807",
+              "arxivId": "2610.30807",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "abstract": "We study finite many-to-one matching markets with indifferences on both sides and publicly known firm preferences over sets of workers. A standard approach breaks ties uniformly at random and runs deferred acceptance, which is strategy-proof for workers but may select a weakly stable matching that is Pareto dominated under the agents' original preferences. For the broad class of markets in which each firm's preferences admit a gross substitutes (GS) representation, we construct a deterministic generalized deferred acceptance mechanism that is weakly stable, Pareto efficient with respect to both sides, worker weakly group strategy-proof, and implementable in strongly polynomial time given value oracles for the GS representations. This domain includes nonresponsive firm preferences, such as additive scores under matroid constraints and assignment values. Our analysis bridges ordinal matching with indifferences and competitive equilibria under imperfectly transferable utility. Although the mechanism uses only ordinal comparisons, it returns a seller-optimal equilibrium matching of a tiered auxiliary market, and the equilibrium structure of this market yields the stability, efficiency, and incentive guarantees."
+            },
+            {
+              "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2610.30667",
+              "arxivId": "2610.30667",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "Iterative combinatorial auctions are used in spectrum allocation, transportation, and industrial procurement, but rounds are costly. We introduce FastCombo, a deep reinforcement learning approach to sequential price discovery. Bayesian pricing has sharply reduced auction rounds even against subgradient benchmarks tuned with hindsight for each instance, but relies on a one-step objective and repeated online inference and optimization. We prove that greedily maximizing immediate clearing probability can require arbitrarily more rounds in expectation than an informative policy, even with the true valuation distribution known. FastCombo learns price policies offline, assigning credit to queries for the future decisions they enable and producing each online price update with a single neural-network forward pass. We formulate the objective of minimizing expected rounds to clearing in single-minded auctions as a partially observable Markov decision process and train a recurrent bidder-item graph policy over complete auction trajectories. In a one-item experiment, all five trained policies learn an informative opening, reducing expected rounds from 1.85 to 1.65 relative to the tested Bayesian one-step rule. Across four domains from the Combinatorial Auction Test Suite, FastCombo achieves competitive clearing while reducing measured online price-selection time per auction by a factor of roughly 300-900 relative to the standard Bayesian baseline. These results demonstrate the value of learning sequential price policies for both information acquisition and online computational efficiency."
+            },
+            {
+              "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+              "url": "https://arxiv.org/abs/2610.30595",
+              "arxivId": "2610.30595",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CR",
+                "cs.DC"
+              ],
+              "abstract": "Transactions differ in how their value changes with execution time and relative position. Ethereum's EIP-1559 lets them compete through fee fields, but a fee bid gives no enforceable claim to an earlier position in the block, and no way to express willingness to accept a later one. Its base fee is a hard admission floor. We introduce temporal liquidity markets (TLM), a framework for crossing complementary temporal requirements: transactions seeking early-region execution (consumers) can fund transactions that opt into exclusion from that region (providers). Selected consumers complete within the early region and are ordered among themselves by authorization density, both validator-checked. In our block-local EIP-1559 extension, providers may be admitted below the base-fee floor. Under TLM regulation, funding-conditioned and capacity-capped provider gas is excluded from the ordinary EIP-1559 controller input. Counting it there instead raises the base fee and displaces ordinary demand at a positive base-fee fixed point. Exclusion lets the controller regulate ordinary demand at its original target and preserves the no-TLM ordinary allocation by construction; in synthetic experiments it raises total utilization with funded gas. Selected consumers pay their signed authorizations, which fund provider shortfalls; the surplus is burned. We state an adversary model with strategic senders and builders and prove eight properties under it, among them validator-checked rule validity, full burn of the base fee, and no subsidy. An inserted consumer bid cannot raise any other consumer's charge. With a provider fee-cap floor, a small, capped inclusion fee and a consumer allowance tied to funded provider gas by a large enough link ratio, no finite set of consumer bids or providers that the builder inserts raises its direct fee payoff."
+            },
+            {
+              "title": "Risk Sensitivity and Stationary Equilibrium in Incomplete Markets",
+              "url": "https://arxiv.org/abs/2610.30956",
+              "arxivId": "2610.30956",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study stationary equilibrium and comparative statics in an incomplete market economy with risk-sensitive preferences. We prove that a stationary equilibrium exists for every nonnegative degree of risk sensitivity. With independent income, greater risk sensitivity weakly raises aggregate saving at fixed prices and weakly lowers the smallest and the largest equilibrium interest rates. With stochastically monotone Markov income, these comparisons hold when the lower risk-sensitivity parameter is sufficiently small or the upper parameter sufficiently large. For pairs of intermediate values, however, greater risk sensitivity can lower saving, contrary to an existing result in the literature, and can raise the smallest and largest equilibrium rates. An exact decomposition identifies the forces driving these reversals."
+            },
+            {
+              "title": "Selling Evidence Bit by Bit",
+              "url": "https://arxiv.org/abs/2610.30563",
+              "arxivId": "2610.30563",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We study the sale of an asset to competitive buyers. Before the sale, the seller can buy hard information about the asset from an intermediary who designs and prices a test to maximize his revenue guarantee across equilibria. The test consists of one or more signals, and the seller privately chooses which subset of signals to buy and selectively discloses their realization to the buyers. We show that the intermediary benefits from splitting information into multiple signals and characterize his maximal revenue guarantee as the cumulative entropy of the asset value distribution. This guarantee is achieved by a sequence of ``skim from the top'' tests with binary, i.i.d.\\ signals and additive pricing. Furthermore, any sequence of tests that achieves the maximal guarantee reveals the asset's value in the limit. For binary values, we also characterize the revenue guarantee for any given number of signals, and show that it is achieved by a test that corresponds to a ``Swiss cheese\" model of failure with conclusive good news."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -2,
+                  "aiRelevance": 7,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 8,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 4,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 8,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 3,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 5,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 9,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 4,
+                  "penalty": -1,
+                  "aiRelevance": 1,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 7,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "FairFRESH: A Neuro-Symbolic Framework for Fair and Explainable Household Food Recommendation",
+              "url": "https://arxiv.org/abs/2610.31506",
+              "arxivId": "2610.31506",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 7.0,
+                "agtRelevance": 8.0,
+                "penalty": -2.0,
+                "baseTotal": 17.0,
+                "bonus": 4.0,
+                "total": 16.8
+              }
+            },
+            {
+              "title": "A Resource Allocation Tournament",
+              "url": "https://arxiv.org/abs/2610.31418",
+              "arxivId": "2610.31418",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.9,
+                "total": 27.8
+              }
+            },
+            {
+              "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+              "url": "https://arxiv.org/abs/2610.31153",
+              "arxivId": "2610.31153",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 3.0,
+                "total": 33.0
+              }
+            },
+            {
+              "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+              "url": "https://arxiv.org/abs/2610.31002",
+              "arxivId": "2610.31002",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 4.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 3.9,
+                "total": 32.9
+              }
+            },
+            {
+              "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+              "url": "https://arxiv.org/abs/2610.30999",
+              "arxivId": "2610.30999",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 8.7,
+                "total": 37.7
+              }
+            },
+            {
+              "title": "Assortment optimization under the perception-adjusted Luce model",
+              "url": "https://arxiv.org/abs/2610.30904",
+              "arxivId": "2610.30904",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "math.OC",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 1.7,
+                "total": 22.2
+              }
+            },
+            {
+              "title": "Equilibria and Learning in Competitive Market Making",
+              "url": "https://arxiv.org/abs/2610.30891",
+              "arxivId": "2610.30891",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG",
+                "q-fin.TR"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 3.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 2.8,
+                "total": 27.7
+              }
+            },
+            {
+              "title": "A Weakly Group Strategy-Proof and Pareto-Stable Matching Mechanism with Two-Sided Indifferences under Gross Substitutes",
+              "url": "https://arxiv.org/abs/2610.30807",
+              "arxivId": "2610.30807",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 5.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 4.7,
+                "total": 29.4
+              }
+            },
+            {
+              "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2610.30667",
+              "arxivId": "2610.30667",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 8.4,
+                "total": 36.4
+              }
+            },
+            {
+              "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+              "url": "https://arxiv.org/abs/2610.30595",
+              "arxivId": "2610.30595",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CR",
+                "cs.DC"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 9.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 8.4,
+                "total": 36.4
+              }
+            },
+            {
+              "title": "Risk Sensitivity and Stationary Equilibrium in Incomplete Markets",
+              "url": "https://arxiv.org/abs/2610.30956",
+              "arxivId": "2610.30956",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 4.0,
+                "aiRelevance": 1.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 0.7,
+                "total": 15.2
+              }
+            },
+            {
+              "title": "Selling Evidence Bit by Bit",
+              "url": "https://arxiv.org/abs/2610.30563",
+              "arxivId": "2610.30563",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 1.9,
+                "total": 27.8
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "FairFRESH: A Neuro-Symbolic Framework for Fair and Explainable Household Food Recommendation",
+          "url": "https://arxiv.org/abs/2610.31506",
+          "arxivId": "2610.31506",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 8.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "bonus": 4.0,
+            "total": 16.8
+          }
+        },
+        {
+          "title": "A Resource Allocation Tournament",
+          "url": "https://arxiv.org/abs/2610.31418",
+          "arxivId": "2610.31418",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 27.8
+          }
+        },
+        {
+          "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+          "url": "https://arxiv.org/abs/2610.31153",
+          "arxivId": "2610.31153",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          }
+        },
+        {
+          "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+          "url": "https://arxiv.org/abs/2610.31002",
+          "arxivId": "2610.31002",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 3.9,
+            "total": 32.9
+          }
+        },
+        {
+          "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+          "url": "https://arxiv.org/abs/2610.30999",
+          "arxivId": "2610.30999",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          }
+        },
+        {
+          "title": "Assortment optimization under the perception-adjusted Luce model",
+          "url": "https://arxiv.org/abs/2610.30904",
+          "arxivId": "2610.30904",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "math.OC",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 1.7,
+            "total": 22.2
+          }
+        },
+        {
+          "title": "Equilibria and Learning in Competitive Market Making",
+          "url": "https://arxiv.org/abs/2610.30891",
+          "arxivId": "2610.30891",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG",
+            "q-fin.TR"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 27.7
+          }
+        },
+        {
+          "title": "A Weakly Group Strategy-Proof and Pareto-Stable Matching Mechanism with Two-Sided Indifferences under Gross Substitutes",
+          "url": "https://arxiv.org/abs/2610.30807",
+          "arxivId": "2610.30807",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 4.7,
+            "total": 29.4
+          }
+        },
+        {
+          "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2610.30667",
+          "arxivId": "2610.30667",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
+          }
+        },
+        {
+          "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+          "url": "https://arxiv.org/abs/2610.30595",
+          "arxivId": "2610.30595",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CR",
+            "cs.DC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
+          }
+        },
+        {
+          "title": "Risk Sensitivity and Stationary Equilibrium in Incomplete Markets",
+          "url": "https://arxiv.org/abs/2610.30956",
+          "arxivId": "2610.30956",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 4.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 0.7,
+            "total": 15.2
+          }
+        },
+        {
+          "title": "Selling Evidence Bit by Bit",
+          "url": "https://arxiv.org/abs/2610.30563",
+          "arxivId": "2610.30563",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 27.8
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+          "url": "https://arxiv.org/abs/2610.30999",
+          "arxivId": "2610.30999",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          }
+        },
+        {
+          "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2610.30667",
+          "arxivId": "2610.30667",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
+          }
+        },
+        {
+          "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+          "url": "https://arxiv.org/abs/2610.30595",
+          "arxivId": "2610.30595",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CR",
+            "cs.DC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
+          }
+        },
+        {
+          "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+          "url": "https://arxiv.org/abs/2610.31153",
+          "arxivId": "2610.31153",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 3.0,
+            "total": 33.0
+          }
+        },
+        {
+          "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+          "url": "https://arxiv.org/abs/2610.31002",
+          "arxivId": "2610.31002",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 3.9,
+            "total": 32.9
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Truthful by Omission: Click Thinning for LLM-Native Advertising",
+            "url": "https://arxiv.org/abs/2610.30999",
+            "arxivId": "2610.30999",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI",
+              "cs.DS"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过省略实现真实：面向大语言模型原生广告的点击稀释机制",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "算法设计",
+              "均衡分析",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "大语言模型",
+              "生成式AI",
+              "多智能体系统"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "随着生成式AI助手嵌入广告成为新型广告媒介，传统位置拍卖机制面临挑战。用户自上而下浏览并首次点击即停止的行为模式，使得靠前广告会抢占后续广告的点击机会，导致广告主出价提升反而可能因排序变化而减少自身点击量，破坏激励相容性。现有机制难以同时兼顾真实性与社会福利近似比，本文旨在解决在固定内容顺序下如何设计既真实又高效的社会福利最大化机制。",
+              "modelAndSetup": "模型考虑n个广告主与m个上下文（如回答中的段落），每个广告主-上下文对具有公开的独立点击概率，广告主私有每点击价值。平台需在至多展示K个广告的约束下进行匹配，并在固定的编辑顺序下决定展示哪些广告。用户遵循首次点击停止模型，平台通过随机省略机制调控展示，目标是设计激励相容且社会福利接近最优的机制，其中最优基准允许自由重排上下文顺序。",
+              "contributionsAndResults": "论文提出‘点击稀释’机制，通过在展示前以特定概率随机省略已匹配的广告，使每个广告的实际点击概率仅取决于其自身属性与匹配集合，而与展示顺序无关，从而实现期望下的激励相容。该机制在多项式时间内可计算，且社会福利至少达到自由重排最优值的一半。进一步地，当点击概率有上界δ<1时，近似比可紧致提升至2-(1-δ)^{K-1}，且此因子在所有保序机制中是最优的。",
+              "methodsAndTechniques": "核心技术是‘点击稀释’，即为每个匹配中的广告设计独立的保留概率，使其实际点击服务公式化为与顺序无关的形式。这将社会福利优化转化为一个线性分式匹配问题，可通过Charnes-Cooper变换转为线性规划精确求解。结合VCG风格的按点击收费支付规则，确保期望下的真实性。通过阈值比较技术分析福利损失，并利用权重单调性刻画可实现的服务区域，证明近似比的紧性。",
+              "limitationsAndReadingValue": "机制依赖于省略不变性假设，即移除广告不影响其余内容的点击率，这在实际中需谨慎验证。虽然机制计算高效且激励兼容，但其核心创新在于理论构造而非直接部署可行性。最值得阅读的是其巧妙的‘点击稀释’思想、对顺序敏感环境下的激励设计突破，以及紧致近似比的证明，为LLM原生广告机制设计提供了坚实理论基础。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过省略实现真实：面向大语言模型原生广告的点击稀释机制",
+            "summarySections": {
+              "backgroundAndQuestion": "随着生成式AI助手嵌入广告成为新型广告媒介，传统位置拍卖机制面临挑战。用户自上而下浏览并首次点击即停止的行为模式，使得靠前广告会抢占后续广告的点击机会，导致广告主出价提升反而可能因排序变化而减少自身点击量，破坏激励相容性。现有机制难以同时兼顾真实性与社会福利近似比，本文旨在解决在固定内容顺序下如何设计既真实又高效的社会福利最大化机制。",
+              "modelAndSetup": "模型考虑n个广告主与m个上下文（如回答中的段落），每个广告主-上下文对具有公开的独立点击概率，广告主私有每点击价值。平台需在至多展示K个广告的约束下进行匹配，并在固定的编辑顺序下决定展示哪些广告。用户遵循首次点击停止模型，平台通过随机省略机制调控展示，目标是设计激励相容且社会福利接近最优的机制，其中最优基准允许自由重排上下文顺序。",
+              "contributionsAndResults": "论文提出‘点击稀释’机制，通过在展示前以特定概率随机省略已匹配的广告，使每个广告的实际点击概率仅取决于其自身属性与匹配集合，而与展示顺序无关，从而实现期望下的激励相容。该机制在多项式时间内可计算，且社会福利至少达到自由重排最优值的一半。进一步地，当点击概率有上界δ<1时，近似比可紧致提升至2-(1-δ)^{K-1}，且此因子在所有保序机制中是最优的。",
+              "methodsAndTechniques": "核心技术是‘点击稀释’，即为每个匹配中的广告设计独立的保留概率，使其实际点击服务公式化为与顺序无关的形式。这将社会福利优化转化为一个线性分式匹配问题，可通过Charnes-Cooper变换转为线性规划精确求解。结合VCG风格的按点击收费支付规则，确保期望下的真实性。通过阈值比较技术分析福利损失，并利用权重单调性刻画可实现的服务区域，证明近似比的紧性。",
+              "limitationsAndReadingValue": "机制依赖于省略不变性假设，即移除广告不影响其余内容的点击率，这在实际中需谨慎验证。虽然机制计算高效且激励兼容，但其核心创新在于理论构造而非直接部署可行性。最值得阅读的是其巧妙的‘点击稀释’思想、对顺序敏感环境下的激励设计突破，以及紧致近似比的证明，为LLM原生广告机制设计提供了坚实理论基础。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "大语言模型",
+              "生成式AI",
+              "多智能体系统"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "算法设计",
+              "均衡分析",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Fast Iterative Combinatorial Auctions via Deep Reinforcement Learning",
+            "url": "https://arxiv.org/abs/2610.30667",
+            "arxivId": "2610.30667",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "通过深度强化学习实现快速迭代组合拍卖",
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "基准评测"
+            ],
+            "contentTags": [
+              "拍卖理论",
+              "机制设计",
+              "强化学习",
+              "多智能体系统",
+              "信息设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "迭代组合拍卖用于频谱、运输等资源分配，但每轮需投标人评估报价，成本高昂。现有贝叶斯方法虽减少轮次，但依赖单步最优准则，忽视查询的信息价值，且每轮需重复推理与优化，计算昂贵。本文问：能否设计一种兼顾信息获取与计算效率的定价策略，以最小化清仓轮数？",
+              "modelAndSetup": "模型聚焦单愿求投标人，每人仅对一个物品束有估值。拍卖者发布价格向量，观察需求反馈，目标是尽快达到清仓——即价格支持高效分配。状态部分可观测，因估值隐藏。问题被建模为POMDP，策略基于历史公共信息选择下一轮价格，每轮计为一次查询。",
+              "contributionsAndResults": "论文证明，贪心最大化即时清仓概率的策略，在期望轮数上可能远劣于信息性策略，即使知道真实分布。提出FastCombo，通过离线训练学习序列化定价策略，在线部署时单次神经网络前向传播即可生成价格。实验证明其在清仓表现接近贝叶斯方法，但在线计算耗时降低300-900倍。",
+              "methodsAndTechniques": "作者将最小化期望轮数的目标转化为POMDP，使用深度强化学习训练策略网络。策略采用图神经网络编码投标人-物品关系，并用GRU维护价格-需求历史记忆。训练时利用完整拍卖轨迹进行信用分配，使早期查询因促进后续决策而获奖励，从而学会主动获取信息。",
+              "limitationsAndReadingValue": "模型限于单愿求投标人，未考虑策略性出价或复杂估值。结果依赖离线训练，泛化性和大规模应用待验证。但论文清晰展示了信息价值在机制设计中的作用，以及RL在学习复杂策略上的潜力。值得细读其POMDP建模思路与实验设计，尤其对关注高效市场机制的研究者。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "通过深度强化学习实现快速迭代组合拍卖",
+            "summarySections": {
+              "backgroundAndQuestion": "迭代组合拍卖用于频谱、运输等资源分配，但每轮需投标人评估报价，成本高昂。现有贝叶斯方法虽减少轮次，但依赖单步最优准则，忽视查询的信息价值，且每轮需重复推理与优化，计算昂贵。本文问：能否设计一种兼顾信息获取与计算效率的定价策略，以最小化清仓轮数？",
+              "modelAndSetup": "模型聚焦单愿求投标人，每人仅对一个物品束有估值。拍卖者发布价格向量，观察需求反馈，目标是尽快达到清仓——即价格支持高效分配。状态部分可观测，因估值隐藏。问题被建模为POMDP，策略基于历史公共信息选择下一轮价格，每轮计为一次查询。",
+              "contributionsAndResults": "论文证明，贪心最大化即时清仓概率的策略，在期望轮数上可能远劣于信息性策略，即使知道真实分布。提出FastCombo，通过离线训练学习序列化定价策略，在线部署时单次神经网络前向传播即可生成价格。实验证明其在清仓表现接近贝叶斯方法，但在线计算耗时降低300-900倍。",
+              "methodsAndTechniques": "作者将最小化期望轮数的目标转化为POMDP，使用深度强化学习训练策略网络。策略采用图神经网络编码投标人-物品关系，并用GRU维护价格-需求历史记忆。训练时利用完整拍卖轨迹进行信用分配，使早期查询因促进后续决策而获奖励，从而学会主动获取信息。",
+              "limitationsAndReadingValue": "模型限于单愿求投标人，未考虑策略性出价或复杂估值。结果依赖离线训练，泛化性和大规模应用待验证。但论文清晰展示了信息价值在机制设计中的作用，以及RL在学习复杂策略上的潜力。值得细读其POMDP建模思路与实验设计，尤其对关注高效市场机制的研究者。"
+            },
+            "contentTags": [
+              "拍卖理论",
+              "机制设计",
+              "强化学习",
+              "多智能体系统",
+              "信息设计"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "实验验证",
+              "机制设计",
+              "模型构建",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Temporal Liquidity Crossing for Blockchains: An EIP-1559 Extension for Admission Below the Base Fee",
+            "url": "https://arxiv.org/abs/2610.30595",
+            "arxivId": "2610.30595",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.CR",
+              "cs.DC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "区块链的时间流动性交叉：一种低于基础费用的准入EIP-1559扩展",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "模型构建",
+              "实验验证",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "多智能体系统",
+              "信息设计"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "现有区块链交易定价机制如EIP-1559仅通过费用竞争决定排序，无法表达交易对执行时间的偏好差异。高频交易需尽早执行，而支付类交易可容忍延迟，但当前模型缺乏直接表达这种‘时间流动性’需求的手段。这导致资源错配：高延迟容忍交易可能因出价低被排除，即使有人愿为其推迟执行提供补偿。论文由此提出问题：能否设计一个机制，让希望提前执行的交易资助愿意延后执行的交易，从而提升整体效率？",
+              "modelAndSetup": "作者构建了一个双侧时间流动性市场（TLM），引入两类角色：消费者（consumer）愿支付以确保在区块前部区域执行，提供者（provider）则接受延后执行并获得补偿。每个交易提交一个时间流动性授权（TLA），正数表示消费者，负数表示提供者。机制基于EIP-1559扩展，验证者检查消费者是否在指定早期区域内完成，并按单位消耗Gas的授权密度排序。提供者可低于基础费准入，其费用缺口由消费者支付池填补。",
+              "contributionsAndResults": "论文提出了一种自融资的时间流动性交叉机制，证明其能在不损害普通交易分配的前提下，提升区块总利用率。关键结果包括：选定消费者获得区块前20%内的完成保障；提供者可在基础费以下被纳入；消费者支付的资金用于填补提供者费用缺口，剩余部分被销毁，无外部补贴。在合成实验中，该机制在保持基础费不变的同时，将利用率从50%提升至70%以上。",
+              "methodsAndTechniques": "作者采用机制设计方法，结合固定点分析与博弈论模型，论证了TLM调节下基础费控制器的稳定性。通过定义‘参考块保留规则’，确保无TLM时的交易不受影响。技术上利用线性约束与贪婪选择算法实现消费者筛选，并通过结算规则设计防止建造者插入虚假交易获利。安全性分析基于诚实多数验证者假设，验证所有规则均可在链上验证。",
+              "limitationsAndReadingValue": "模型假设声明值非真实披露，且未考虑跨区块策略行为或协议外共谋。机制依赖特定参数配置（如链接比率λ）防止操纵，实际部署需谨慎调参。尽管如此，该文提供了将时间维度显式引入交易费用机制的新范式，其双侧市场设计与自融资结构对后续研究具有启发意义，值得重点关注其机制抽象与对抗性分析部分。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "区块链的时间流动性交叉：一种低于基础费用的准入EIP-1559扩展",
+            "summarySections": {
+              "backgroundAndQuestion": "现有区块链交易定价机制如EIP-1559仅通过费用竞争决定排序，无法表达交易对执行时间的偏好差异。高频交易需尽早执行，而支付类交易可容忍延迟，但当前模型缺乏直接表达这种‘时间流动性’需求的手段。这导致资源错配：高延迟容忍交易可能因出价低被排除，即使有人愿为其推迟执行提供补偿。论文由此提出问题：能否设计一个机制，让希望提前执行的交易资助愿意延后执行的交易，从而提升整体效率？",
+              "modelAndSetup": "作者构建了一个双侧时间流动性市场（TLM），引入两类角色：消费者（consumer）愿支付以确保在区块前部区域执行，提供者（provider）则接受延后执行并获得补偿。每个交易提交一个时间流动性授权（TLA），正数表示消费者，负数表示提供者。机制基于EIP-1559扩展，验证者检查消费者是否在指定早期区域内完成，并按单位消耗Gas的授权密度排序。提供者可低于基础费准入，其费用缺口由消费者支付池填补。",
+              "contributionsAndResults": "论文提出了一种自融资的时间流动性交叉机制，证明其能在不损害普通交易分配的前提下，提升区块总利用率。关键结果包括：选定消费者获得区块前20%内的完成保障；提供者可在基础费以下被纳入；消费者支付的资金用于填补提供者费用缺口，剩余部分被销毁，无外部补贴。在合成实验中，该机制在保持基础费不变的同时，将利用率从50%提升至70%以上。",
+              "methodsAndTechniques": "作者采用机制设计方法，结合固定点分析与博弈论模型，论证了TLM调节下基础费控制器的稳定性。通过定义‘参考块保留规则’，确保无TLM时的交易不受影响。技术上利用线性约束与贪婪选择算法实现消费者筛选，并通过结算规则设计防止建造者插入虚假交易获利。安全性分析基于诚实多数验证者假设，验证所有规则均可在链上验证。",
+              "limitationsAndReadingValue": "模型假设声明值非真实披露，且未考虑跨区块策略行为或协议外共谋。机制依赖特定参数配置（如链接比率λ）防止操纵，实际部署需谨慎调参。尽管如此，该文提供了将时间维度显式引入交易费用机制的新范式，其双侧市场设计与自融资结构对后续研究具有启发意义，值得重点关注其机制抽象与对抗性分析部分。"
+            },
+            "contentTags": [
+              "机制设计",
+              "拍卖理论",
+              "市场/匹配",
+              "多智能体系统",
+              "信息设计"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "模型构建",
+              "实验验证",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Balanced Posted Prices in Stationary Two-Sided Markets",
+            "url": "https://arxiv.org/abs/2610.31153",
+            "arxivId": "2610.31153",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "平衡的固定报价在稳态双边市场中的应用",
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "在线算法",
+              "博弈学习"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究一个中间商如何通过统一的买卖价格协调供需，最大化长期交易收益。现实中如社区二手回收平台面临库存有限、买卖随机到达的问题：高价吸引供给却抑制需求，低价刺激购买却可能导致缺货。传统机制需动态定价或直接分配，本文则探索静态共同价格能否在信息不完全下逼近最优效率。",
+              "modelAndSetup": "模型考虑稳态下的双边市场：卖家携带物品以泊松流到达并索取成本，买家以独立泊松流到达并对捆绑品有XOS估值。中间商设固定单价，买入时支付该价，售出时收取相同价格，目标是最大化买方价值减去卖方成本的长期平均增益。库存容量有限，决策即时且不可逆，未来到达未知。",
+              "contributionsAndResults": "论文证明对于任意有限容量（即使单个存储槽），存在静态共同价格可实现离线无限库存基准至少一半的社会增益。这一1/2竞争比是紧的，且价格可在多项式时间内通过需求与XOS支持子句查询计算得出。此外，在单一商品情形下，速率平衡定价可达到紧的C/(C+1)比率。",
+              "methodsAndTechniques": "作者提出两种‘平衡’原则：一是贡献平衡，使每个物品在买家效用和卖家剩余上的下界相等，结合支持加法子句分解价值；二是速率平衡，调整价格与无差异行为使潜在买卖强度一致。技术上利用流动松弛作为上界，并借助PASTA性质将到达概率与稳态库存关联，避免显式求解库存分布。",
+              "limitationsAndReadingValue": "结果虽具普适性，但1/2保证未随容量增长而提升，而最优采样机制可达Cmin/(Cmin+1)，是否存在容量敏感的静态定价仍是开放问题。多物品速率平衡的存在性依赖不动点论证，缺乏高效构造。最值得读的是其将经典预言家不等式思想推广至双向库存市场的创新视角与技术转化。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "平衡的固定报价在稳态双边市场中的应用",
+            "summarySections": {
+              "backgroundAndQuestion": "本文研究一个中间商如何通过统一的买卖价格协调供需，最大化长期交易收益。现实中如社区二手回收平台面临库存有限、买卖随机到达的问题：高价吸引供给却抑制需求，低价刺激购买却可能导致缺货。传统机制需动态定价或直接分配，本文则探索静态共同价格能否在信息不完全下逼近最优效率。",
+              "modelAndSetup": "模型考虑稳态下的双边市场：卖家携带物品以泊松流到达并索取成本，买家以独立泊松流到达并对捆绑品有XOS估值。中间商设固定单价，买入时支付该价，售出时收取相同价格，目标是最大化买方价值减去卖方成本的长期平均增益。库存容量有限，决策即时且不可逆，未来到达未知。",
+              "contributionsAndResults": "论文证明对于任意有限容量（即使单个存储槽），存在静态共同价格可实现离线无限库存基准至少一半的社会增益。这一1/2竞争比是紧的，且价格可在多项式时间内通过需求与XOS支持子句查询计算得出。此外，在单一商品情形下，速率平衡定价可达到紧的C/(C+1)比率。",
+              "methodsAndTechniques": "作者提出两种‘平衡’原则：一是贡献平衡，使每个物品在买家效用和卖家剩余上的下界相等，结合支持加法子句分解价值；二是速率平衡，调整价格与无差异行为使潜在买卖强度一致。技术上利用流动松弛作为上界，并借助PASTA性质将到达概率与稳态库存关联，避免显式求解库存分布。",
+              "limitationsAndReadingValue": "结果虽具普适性，但1/2保证未随容量增长而提升，而最优采样机制可达Cmin/(Cmin+1)，是否存在容量敏感的静态定价仍是开放问题。多物品速率平衡的存在性依赖不动点论证，缺乏高效构造。最值得读的是其将经典预言家不等式思想推广至双向库存市场的创新视角与技术转化。"
+            },
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "在线算法",
+              "博弈学习"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "机制设计",
+              "算法设计",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Matching Tasks to Agents: Mechanism Design for Multi-Agent Contracts",
+            "url": "https://arxiv.org/abs/2610.31002",
+            "arxivId": "2610.31002",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "匹配任务与代理：多代理合约的机制设计",
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "机制设计",
+              "多智能体系统",
+              "信息不对称",
+              "合约理论",
+              "任务分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在代理人拥有私有信息的情况下，仍能有效分配任务并激励努力？本文研究的是同时存在逆向选择（类型私有）和道德风险（行动不可观测）的任务委派问题。现有研究难以兼顾多维私人信息与隐藏行动的计算复杂性，本文旨在寻找结构清晰、可高效计算的最优机制。",
+              "modelAndSetup": "模型设定为一个委托人需将一项或多项任务分配给N个代理人，每个代理人的类型由成功概率和努力成本构成，该信息为其私有。代理人报告类型后，委托人决定任务分配与成功后的支付。代理人决定是否付出努力，其收益取决于支付减去成本。机制需满足贝叶斯激励相容与个人理性。",
+              "contributionsAndResults": "论文发现单任务情形下存在简洁的最优机制：通过‘临界值’（成本与成功率之比）对类型排序，并基于铁化虚拟效用最大化分配任务，该机制可在多项式时间内计算。而在多任务情形，最优机制可能不存在，但可对常数个代理人设计逼近最优利润的多项式时间近似方案。",
+              "methodsAndTechniques": "作者的关键洞察是将二维私有信息（成本与成功率）压缩为一维‘临界值’，从而恢复类似单参数拍卖的单调性结构。利用Myerson式的虚拟效用分析，并结合线性规划与铁化技术处理非单调性。对于多任务情形，通过构造支付趋于无穷的序列机制来逼近上确界利润。",
+              "limitationsAndReadingValue": "单任务结果依赖于临界值的一维排序，该结构在多任务中失效，导致最优机制可能不存在。机制虽可计算，但多任务下的逼近方案仅适用于代理人数为常数的情形。最值得阅读的是其对多维信息与隐藏行动耦合问题的简化思路与Myerson风格的扩展应用。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "匹配任务与代理：多代理合约的机制设计",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在代理人拥有私有信息的情况下，仍能有效分配任务并激励努力？本文研究的是同时存在逆向选择（类型私有）和道德风险（行动不可观测）的任务委派问题。现有研究难以兼顾多维私人信息与隐藏行动的计算复杂性，本文旨在寻找结构清晰、可高效计算的最优机制。",
+              "modelAndSetup": "模型设定为一个委托人需将一项或多项任务分配给N个代理人，每个代理人的类型由成功概率和努力成本构成，该信息为其私有。代理人报告类型后，委托人决定任务分配与成功后的支付。代理人决定是否付出努力，其收益取决于支付减去成本。机制需满足贝叶斯激励相容与个人理性。",
+              "contributionsAndResults": "论文发现单任务情形下存在简洁的最优机制：通过‘临界值’（成本与成功率之比）对类型排序，并基于铁化虚拟效用最大化分配任务，该机制可在多项式时间内计算。而在多任务情形，最优机制可能不存在，但可对常数个代理人设计逼近最优利润的多项式时间近似方案。",
+              "methodsAndTechniques": "作者的关键洞察是将二维私有信息（成本与成功率）压缩为一维‘临界值’，从而恢复类似单参数拍卖的单调性结构。利用Myerson式的虚拟效用分析，并结合线性规划与铁化技术处理非单调性。对于多任务情形，通过构造支付趋于无穷的序列机制来逼近上确界利润。",
+              "limitationsAndReadingValue": "单任务结果依赖于临界值的一维排序，该结构在多任务中失效，导致最优机制可能不存在。机制虽可计算，但多任务下的逼近方案仅适用于代理人数为常数的情形。最值得阅读的是其对多维信息与隐藏行动耦合问题的简化思路与Myerson风格的扩展应用。"
+            },
+            "contentTags": [
+              "机制设计",
+              "多智能体系统",
+              "信息不对称",
+              "合约理论",
+              "任务分配"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-10-22",
+      "categories": [
+        "cs.IR"
+      ],
+      "categorySelection": "cs.IR",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.IR": {
+            "query": "cat:cs.IR AND submittedDate:\"202610220000 TO 202610222359\"",
+            "totalResults": 15,
+            "fetchedCount": 15
+          }
+        },
+        "dedupedCount": 15
+      },
+      "arxivTotalResults": 15,
+      "fetchedCount": 15,
+      "fetchedPapers": [
+        {
+          "title": "A Task-Centric Survey of Long-Document Visual Question Answering: Taxonomy, Evolution, and Future Directions",
+          "url": "https://arxiv.org/abs/2610.31385",
+          "arxivId": "2610.31385",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Visual document understanding is essential for acquiring knowledge from visually rich documents and is attracting growing research interest. Existing surveys emphasize architectures or technical approaches, with limited attention to how task bottlenecks shape technical choices and research priorities. We present a task-centric survey that decomposes long-document visual question answering (VQA) into four components: document parsing, evidence organization and retrieval, generator organization and learning, and evaluation. For each, we develop a fine-grained taxonomy and trace motivations, technical responses, and cross-component connections. We focus on explicit retrieval while covering direct reading. Our temporal analysis traces expanding priorities from multimodal content understanding to sufficient, high-fidelity evidence acquisition and sustained evidence management. We outline future directions in evidence sufficiency, verifiable and correctable understanding, and budget-aware coordination, with an outlook on continual document understanding."
+        },
+        {
+          "title": "SurveyGraph: Generating Academic Surveys via Methods-Entity Knowledge Graphs",
+          "url": "https://arxiv.org/abs/2610.31317",
+          "arxivId": "2610.31317",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Most automated survey generation systems retrieve papers as flat documents, limiting their ability to capture research structure. We present SurveyGraph, a framework built around a Methods-Entity Knowledge Graph (MEKG) encoding method-level follow-on, competition, and shared-resource relations. The graph supports core-paper discovery, retrieval, hybrid outlining, and evidence-gated narrative synthesis. We evaluate retrieval, semantic edges, citation grounding, collection coverage, and generation-stage components. In a controlled seven-method equal-budget benchmark, MEKG-anchored fusion balances recall and structural density, with an independent co-citation check. In a separate archived graph-native diagnostic, graph-aware retrieval nearly doubles recall over flat lexical baselines across eight runs (p = 0.004). A semantic evidence gate achieves AUC = 0.75. Audits of 160 generated sentences find 80.6% anchored-or-partial citation support. Human adjudication of 108 stratified semantic edges finds 68.5% supported-or-partial relations (binary-support Cohen's kappa = 0.64), with improves strongest (80.6%) and extends weakest (52.8%). A SurveyBench-facing collection probe reaches mean reference coverage of 0.521 across four topics with an eight-paper budget. Same-backend Qwen diagnostics on a 30-paper/74-relation graph show reduced organization signals when hybrid outlining is removed. Concurrent-system comparisons provide bounded context rather than matched-backend end-to-end evidence. The results position MEKG as an auditable structural layer for typed diagnostics, relation-specific filtering, and controlled survey generation. Code and artifacts: https://github.com/xzzvsxd/SurveyGraph."
+        },
+        {
+          "title": "The Delayed Countdown Method for Validating Review-Oriented AI Workflows in eDiscovery",
+          "url": "https://arxiv.org/abs/2610.31311",
+          "arxivId": "2610.31311",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Review-oriented workflows have become the dominant approach to AI-assisted document review in electronic discovery (eDiscovery). How to validate the effectiveness of review-oriented workflows has, however, remained a confusing and controversial topic in technology-assisted review (TAR) in the law. We examine the sources of this controversy, and propose a simple and practical evaluation approach for review-oriented workflows. Our Delayed Countdown method is easily incorporated into existing review-oriented workflows and software, is compatible with arbitrary stopping rules, and produces valid frequentist confidence intervals on effectiveness. We explain the conceptual foundations of the method, provide example computations, discuss the handling of logically impossible recall values, and suggest future work on decreasing review costs."
+        },
+        {
+          "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+          "url": "https://arxiv.org/abs/2610.31019",
+          "arxivId": "2610.31019",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Chunking strategies for retrieval-augmented generation are almost always evaluated on a static snapshot, yet the documents underlying a knowledge base continue to change. Because chunks are embedded independently, a boundary that moves after an edit forces unchanged text to be re-embedded. We measure this update cost on 120 pairs of adjacent Chinese and English Wikipedia revisions for three stateless chunkers (non-overlapping fixed-size, recursive paragraph-first, and content-defined chunking) under a strict byte-identical reuse rule and a frozen dense encoder. On the 116-article common-success pool, with frozen, length-calibrated parameters, fixed-size chunking recomputes 57-68% of its full new-version embedding-input workload, recursive chunking 38-56%, and content-defined chunking 43-54% (it failed on 4 of 62 Chinese articles), while at these parameters mean evidence recall under a fixed 2048-token retrieval budget differs by less than two percentage points within either language. A cost-only parameter grid shows that the ranking of the two content-aware chunkers changes with chunk-length settings, whereas non-overlapping fixed-size chunking has the highest recomputation cost in every length-matched condition. Controlled edits and a verbatim-presence diagnostic support boundary drift as one contributor to recomputation of text already present in the previous version. Update cost is therefore a substantial, parameter-sensitive dimension that static retrieval evaluations do not expose and that should be reported alongside retrieval quality."
+        },
+        {
+          "title": "Formal-Informal Mathematical Alignment through and beyond Human Annotations",
+          "url": "https://arxiv.org/abs/2610.31011",
+          "arxivId": "2610.31011",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Formalized mathematics libraries such as Lean's \\texttt{mathlib} provide machine-verifiable representations of mathematical knowledge, including definitions, theorems, and their relationships. If effectively connected to informal mathematical resources, formal mathematics could help uncover previously implicit links between mathematical concepts and improve access to existing formalizations. However, connections between informal and formal mathematics libraries are currently sparse and unsystematic. In this paper, we make first strides towards better formal integration. We construct a dataset linking informal statements from the Stacks Project to their formalizations in \\texttt{mathlib} by exploiting expert annotations. We evaluate retrieval, LLM-based reranking, and LLM-assisted verification to discover new unannotated informal-to-formal links. To facilitate exploration and reuse of formalized knowledge, we integrated the newly discovered alignments into the MaRDI knowledge graph, enabling mathematicians to find formal counterparts to informal mathematical content. We discuss the difficulties and challenges in using LLMs for linking formal and informal mathematical content. All code and data necessary for reproducing this paper can be found at: https://github.com/AnkitSatpute/Formal-Informal-Mathematical-Alignment"
+        },
+        {
+          "title": "PAIR: Preference-Aligned Intent Retrieval for Premium People Recommendation at LinkedIn",
+          "url": "https://arxiv.org/abs/2610.30941",
+          "arxivId": "2610.30941",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "abstract": "General-purpose embeddings trained on profile similarity often misrank candidates in professional networks, where relevance is inherently complementary rather than symmetric. For example, job seekers usually engage with recruiters rather than peers with similar credentials. Current user recommendation systems are often built on profile similarity or social signals such as shared connections, which are effective in friend-oriented social networks where users tend to connect with similar people or within existing social circles. However, this does not hold in professional platforms like LinkedIn, where interactions are often goal-driven and cross-role interactions, requiring matching based on complementary intents rather than similarity or social proximity. In this paper, we propose Preference-Aligned Intent Retrieval, a retrieval framework that is designed to model user intent preference instead of profile similarity. Our approach is inspired by the preference-learning perspective of Direct Preference Optimization, but instantiates preference learning as an exposure-conditioned multi-negative contrastive objective over embeddings. This formulation simplifies training and scales efficiently to large candidate sets without requiring an explicit reference model. Furthermore, we incorporate user interaction history by aggregating click histories with positional encoding to capture temporal order, which enables constant-cost updates of user representations over a fixed history window, allowing new interactions to be incorporated without re-encoding history. As a result, personalization can be updated efficiently using lightweight CPU operations without repeated LLM inference during serving. We evaluate PAIR on LinkedIn's Premium retrieval task. A 0.6B parameter model achieves a MAR@100 of 0.45."
+        },
+        {
+          "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+          "url": "https://arxiv.org/abs/2610.30932",
+          "arxivId": "2610.30932",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation."
+        },
+        {
+          "title": "Lean Finder V2: Semantic Search for Mathlib That Disambiguates User Queries",
+          "url": "https://arxiv.org/abs/2610.30843",
+          "arxivId": "2610.30843",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.IR"
+          ],
+          "abstract": "We introduce Lean Finder V2, a semantic search framework for Mathlib that disambiguates user queries through complementary model-level adversarial training and input-level query rewriting. Human mathematicians and coding agents rarely search Mathlib by providing detailed context. In practice, they query short properties, notation, aliases, or hypotheses, leaving much of the intended mathematics implicit. In contrast, existing Mathlib search engines unrealistically assume context-rich queries. The scarcity of real-world short queries paired with ground-truth Mathlib statements makes this ambiguity even more intractable. We argue that this is essentially a data problem. Through adversarial training, we scale up the generation of labeled short and ambiguous queries, and learn to disambiguate user queries at both model-level fine-tuning and input-level query rewriting. On the human-curated MathlibQR benchmark, our Lean Finder V2 sets a new state of the art, with at least 11% relative improvement over the previous best Mathlib semantic search engines. On top of our state-of-the-art retriever, optimized query rewriting further improves MathlibQR retrieval. On unlabeled queries from human and coding-agent interactions, Lean Finder V2 is ranked as the strongest system. Integrated with Claude Code, Lean Finder V2 improves proof success on downstream theorem-proving task. Lean Finder V2 is available at: https://leanfinder.github.io/"
+        },
+        {
+          "title": "Bezier-Guided Adaptive Flow for Cross-domain Sequential Recommendation",
+          "url": "https://arxiv.org/abs/2610.30825",
+          "arxivId": "2610.30825",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Cross-domain sequential recommendation aims to alleviate data sparsity and cold-start problems by transferring useful preference knowledge across domains. However, users exhibit varying degrees of preference consistency across domains, while existing methods often rely on global alignment objectives or coarse-grained transfer strategies. Such approaches may introduce irrelevant information and provide limited flexibility in adapting semantic representations to individual user preferences. To address these challenges, we propose BGAFlow, a personalized framework that combines state-adaptive semantic evolution with user-specific transfer control. BGAFlow first establishes a shared semantic space through unified dual-domain pretraining with user profiles inferred by a large language model (LLM). Based on latent interest overlap, it then estimates a personalized horizon to determine the appropriate transfer extent for each user. To enable semantic adaptation, BGAFlow constructs a conditional Bezier curve as a geometric reference and learns a residual flow that progressively refines the trajectory based on intermediate preference states. The learned flow incorporates dynamic preference feedback to adjust transfer directions, while recommendation supervision and trajectory regularization encourage effective and smooth adaptation. Extensive experiments on real-world datasets demonstrate that BGAFlow consistently outperforms state-of-the-art baselines, validating the benefits of personalized transfer control and state-adaptive semantic evolution."
+        },
+        {
+          "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+          "url": "https://arxiv.org/abs/2610.30710",
+          "arxivId": "2610.30710",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.DB"
+          ],
+          "abstract": "Over-representation analysis (ORA) is widely used to interpret gene-expression studies, but its outputs are often fragmented across gene-set databases and presented as flat term lists that obscure gene-level links among related enrichment signals. We propose Graph-Based Over-Representation Retrieval-Augmented Generation (GBOR-RAG), an integrated and traceable framework for ORA interpretation. GBOR-RAG represents heterogeneous gene-set databases as a unified term--gene knowledge graph, where shared genes connect related terms across sources. After graph-based ORA scoring, the framework retrieves a compact connected evidence subgraph that preserves both cross-database relationships and gene-level support. The subgraph conditions an LLM to generate biological interpretations, and we introduce a claim-level faithfulness metric to assess whether generated claims are supported by explicit evidence. Experiments show that graph-based ORA preserves conventional ORA results with high consistency (mean Pearson $r=0.997$) while reducing query time by a median of $37\\times$ (up to $48\\times$). The retrieved subgraphs average 36.8 nodes and achieve the highest overall integration score (4.12), and GBOR-RAG attains the highest claim-level faithfulness (0.90) among the compared systems. Adding a PubMed literature layer further improves the overall interpretation quality from 4.17 to 4.75."
+        },
+        {
+          "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+          "url": "https://arxiv.org/abs/2610.30697",
+          "arxivId": "2610.30697",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Nearest-neighbor search over embedding vectors matches faces against watchlists, transactions against known fraud patterns, and medical images against confirmed cases, where a missed neighbor is a missed threat, fraud, or diagnosis. Because an approximate index cannot report which queries lost a true neighbor, these applications require recall of 0.999 to 0.9999, at a cost far below that of exact search over billions of vectors. Inverted-file indexes reach high recall by probing more lists, but they read and score every probed vector at full precision, so that throughput falls in inverse proportion to the number of probed lists. Graph indexes saturate below these targets, whereas quantized lists must rerank their candidates with the full vectors. Our insight is to decide for almost every probed vector that it cannot enter the top k of the probed lists without reading the vector, through the certified lower bound of exact search by certified exclusion. This paper turns this insight into Lychee, a GPU inverted-file search that screens the probed lists on tensor cores under a threshold from anchors of the same lists and computes exact distances only for the few survivors. We prove that Lychee returns exactly the k nearest vectors of the probed lists, the answer of an inverted-file search at full precision, while it reads a few hundred full vectors per query regardless of the number of probed lists. On eleven datasets from one million to one billion vectors and against ten GPU and CPU baselines, Lychee is 9.7 to 117 times faster than IVF-Flat at equal recall with 200 probed lists on datasets of up to 100 million vectors. It also reaches recall levels that CAGRA and HNSW do not reach and outruns exact search by certified exclusion by 5 to 18 times above ten million vectors. On four GPUs, Lychee searches one billion vectors at recall 0.9999, 44.5 times faster than IVF-Flat on BIGANN-1B."
+        },
+        {
+          "title": "OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models",
+          "url": "https://arxiv.org/abs/2610.30675",
+          "arxivId": "2610.30675",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "abstract": "Large language models (LLMs) have demonstrated strong reasoning capabilities, motivating their use as the backbone of foundation recommendation models (FRMs). Existing methods enhance recommendations through explicit Chain-of-Thought (CoT) reasoning under a Think-then-Answer paradigm. However, explicit CoT incurs substantial inference overhead by generating lengthy reasoning traces and relies on manually designed templates that struggle to capture diverse, dynamic user interests. We propose OneLatent, an efficient latent reasoning framework that compresses explicit reasoning traces into several learnable latent tokens, enabling Latent-Reason-then-Answer inference without generating verbose traces. OneLatent first introduces Multi-View Adaptive CoT (MV-ACoT), which creates diverse, high-quality teacher-generated supervision by exploring user interests from multiple perspectives and automatically adapting reasoning complexity to each instance. Building on pretrained FRMs, it then uses a three-stage latent-token alignment paradigm to progressively internalize CoT traces into learnable latent tokens. Finally, a multistage curriculum-based post-training strategy activates latent-token reasoning for downstream recommendation tasks. Experiments on an industrial-scale Kuaishou dataset and the public Kuaishou LLM-Rec benchmark show that OneLatent consistently outperforms explicit CoT-based methods and traditional baselines. Compared with the Think and No-Think variants of FRMs, OneLatent improves SID@64 by 17.44% and 9.33%, respectively, while achieving over 17x higher online inference throughput. We further develop a production serving system for scalable, real-time FRM inference. An online A/B test in Kuaishou's local-services advertising scenario shows that deploying OneLatent with this system yields an estimated 9.6% revenue lift over strong online baselines, including OneRec and OneReason."
+        },
+        {
+          "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+          "url": "https://arxiv.org/abs/2610.30664",
+          "arxivId": "2610.30664",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "Large language models increasingly act as controllers in structured decision pipelines, yet their decisions are still executed by autoregressive text decoding. Hierarchical RAG is one such setting: at each frontier of a document tree, an LLM commits to $b$ of $k$ sections under an input-dependent action grammar, executed as either failure-prone free-form JSON or reliable but strictly serial grammar-constrained generation. We show that this serialization is unnecessary for bounded-horizon control: the reachable future forms a shallow action-prefix tree, which we compile --- one root prefill plus one tree-causal probe evaluate every prefix-conditioned action distribution with serial decoding's tokens, positions, and causal ancestry. A prefix-state lemma makes compiled control policy-exact in exact arithmetic: the same policy with a two-forward critical path and zero output tokens. One further probe pass certifies the exact order-marginalized MAP set. Across four document-disjoint splits and two scales on the primary MetaX device, compiled control matches the serial policy on $84$--$89\\%$ of questions --- every instrumented divergence a floating-point near-tie --- and cuts control latency by $35$--$47\\%$ versus token-wise serial decoding and $6$--$7\\%$ versus an idealized chunked engine; an H800 repetition preserves the ordering."
+        },
+        {
+          "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+          "url": "https://arxiv.org/abs/2610.30612",
+          "arxivId": "2610.30612",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "abstract": "Hybrid retrieval, which fuses a sparse lexical retriever with a dense neural one, is widely recommended in the software documentation surveyed in September 2026, usually with reciprocal rank fusion (RRF), on the strength of aggregate gains. We ask what fusion costs on individual queries, treating \"do not fuse\" as a first-class outcome, in the setting in which hybrid retrieval is deployed: a standard Anserini BM25, five dense encoders spanning 22M-596M parameters and three model generations, a learned-sparse (SPLADE) alternative, and a cross-encoder second stage, on seven BEIR datasets and three fusion functions. Even the best method, dense-weighted score interpolation, ranks relevant documents below the better of its two components on 13-48% of queries and below the deployable dense-only retriever on 8-21% (14-48% and 11-25% at a weight selected under leave-one-corpus-out validation), while beating dense-only in aggregate on every corpus with the primary encoder; the downside is significant under loss-averse risk-sensitive evaluation on six of the seven corpora. We call this loss the fusion tax. It is mostly a ranking effect that preserves recall in aggregate, it is most likely on the queries that only one retriever covers, and it persists across the encoder ladder and the SPLADE substitution. RRF carries the higher tax wherever the dense retriever is clearly stronger and only beats dense-only where the two components are balanced. Fusion failure is weakly predictable within a corpus but transfers unreliably across corpora, because the features that predict it change sign with the sparse-dense balance. A cross-encoder recovers part of the tax only where it is itself reliable. We distill these findings into guidance that keys the fusion decision to the measured sparse-dense balance of the target corpus."
+        },
+        {
+          "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+          "url": "https://arxiv.org/abs/2610.30611",
+          "arxivId": "2610.30611",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "Scaling large language models has substantially improved linguistic fluency, yet reliable autonomous agents require more than fluent generation. In multi-turn inference, current agentic systems often produce semantically plausible but structurally ungrounded reasoning, especially under incomplete observations. We propose Structure-Grounded Uncertainty Reduction (SGUR), a training-free framework that complements token-level generation with active uncertainty reduction over structured hypothesis spaces. SGUR represents incomplete observations as a query graph and aligns them with candidate hypothesis graphs through a prior-weighted partial graph matching mechanism, where database-derived empirical priors assign greater importance to decision-relevant relations rather than treating all graph edges uniformly. The resulting inference state is iteratively refined by an active information-gain strategy that selects the next most informative node to query, systematically pruning the candidate space. We instantiate SGUR on a challenging PrimeKG-derived sequential medical diagnosis benchmark, demonstrating that structural grounding can partially substitute for model scale: starting from only two observed symptoms, SGUR achieves 92.5% Hit@3, outperforming the strongest Graph-RAG baseline by 9.4 percentage points while using approximately 5x fewer tokens. Notably, SGUR enables smaller backbone models to match or exceed the performance of models up to 10x larger, suggesting that structural grounding provides a more robust and efficient paradigm for scaling agent performance than relying exclusively on increasing model size."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "A Task-Centric Survey of Long-Document Visual Question Answering: Taxonomy, Evolution, and Future Directions",
+              "url": "https://arxiv.org/abs/2610.31385",
+              "arxivId": "2610.31385",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Visual document understanding is essential for acquiring knowledge from visually rich documents and is attracting growing research interest. Existing surveys emphasize architectures or technical approaches, with limited attention to how task bottlenecks shape technical choices and research priorities. We present a task-centric survey that decomposes long-document visual question answering (VQA) into four components: document parsing, evidence organization and retrieval, generator organization and learning, and evaluation. For each, we develop a fine-grained taxonomy and trace motivations, technical responses, and cross-component connections. We focus on explicit retrieval while covering direct reading. Our temporal analysis traces expanding priorities from multimodal content understanding to sufficient, high-fidelity evidence acquisition and sustained evidence management. We outline future directions in evidence sufficiency, verifiable and correctable understanding, and budget-aware coordination, with an outlook on continual document understanding."
+            },
+            {
+              "title": "SurveyGraph: Generating Academic Surveys via Methods-Entity Knowledge Graphs",
+              "url": "https://arxiv.org/abs/2610.31317",
+              "arxivId": "2610.31317",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Most automated survey generation systems retrieve papers as flat documents, limiting their ability to capture research structure. We present SurveyGraph, a framework built around a Methods-Entity Knowledge Graph (MEKG) encoding method-level follow-on, competition, and shared-resource relations. The graph supports core-paper discovery, retrieval, hybrid outlining, and evidence-gated narrative synthesis. We evaluate retrieval, semantic edges, citation grounding, collection coverage, and generation-stage components. In a controlled seven-method equal-budget benchmark, MEKG-anchored fusion balances recall and structural density, with an independent co-citation check. In a separate archived graph-native diagnostic, graph-aware retrieval nearly doubles recall over flat lexical baselines across eight runs (p = 0.004). A semantic evidence gate achieves AUC = 0.75. Audits of 160 generated sentences find 80.6% anchored-or-partial citation support. Human adjudication of 108 stratified semantic edges finds 68.5% supported-or-partial relations (binary-support Cohen's kappa = 0.64), with improves strongest (80.6%) and extends weakest (52.8%). A SurveyBench-facing collection probe reaches mean reference coverage of 0.521 across four topics with an eight-paper budget. Same-backend Qwen diagnostics on a 30-paper/74-relation graph show reduced organization signals when hybrid outlining is removed. Concurrent-system comparisons provide bounded context rather than matched-backend end-to-end evidence. The results position MEKG as an auditable structural layer for typed diagnostics, relation-specific filtering, and controlled survey generation. Code and artifacts: https://github.com/xzzvsxd/SurveyGraph."
+            },
+            {
+              "title": "The Delayed Countdown Method for Validating Review-Oriented AI Workflows in eDiscovery",
+              "url": "https://arxiv.org/abs/2610.31311",
+              "arxivId": "2610.31311",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Review-oriented workflows have become the dominant approach to AI-assisted document review in electronic discovery (eDiscovery). How to validate the effectiveness of review-oriented workflows has, however, remained a confusing and controversial topic in technology-assisted review (TAR) in the law. We examine the sources of this controversy, and propose a simple and practical evaluation approach for review-oriented workflows. Our Delayed Countdown method is easily incorporated into existing review-oriented workflows and software, is compatible with arbitrary stopping rules, and produces valid frequentist confidence intervals on effectiveness. We explain the conceptual foundations of the method, provide example computations, discuss the handling of logically impossible recall values, and suggest future work on decreasing review costs."
+            },
+            {
+              "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+              "url": "https://arxiv.org/abs/2610.31019",
+              "arxivId": "2610.31019",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Chunking strategies for retrieval-augmented generation are almost always evaluated on a static snapshot, yet the documents underlying a knowledge base continue to change. Because chunks are embedded independently, a boundary that moves after an edit forces unchanged text to be re-embedded. We measure this update cost on 120 pairs of adjacent Chinese and English Wikipedia revisions for three stateless chunkers (non-overlapping fixed-size, recursive paragraph-first, and content-defined chunking) under a strict byte-identical reuse rule and a frozen dense encoder. On the 116-article common-success pool, with frozen, length-calibrated parameters, fixed-size chunking recomputes 57-68% of its full new-version embedding-input workload, recursive chunking 38-56%, and content-defined chunking 43-54% (it failed on 4 of 62 Chinese articles), while at these parameters mean evidence recall under a fixed 2048-token retrieval budget differs by less than two percentage points within either language. A cost-only parameter grid shows that the ranking of the two content-aware chunkers changes with chunk-length settings, whereas non-overlapping fixed-size chunking has the highest recomputation cost in every length-matched condition. Controlled edits and a verbatim-presence diagnostic support boundary drift as one contributor to recomputation of text already present in the previous version. Update cost is therefore a substantial, parameter-sensitive dimension that static retrieval evaluations do not expose and that should be reported alongside retrieval quality."
+            },
+            {
+              "title": "Formal-Informal Mathematical Alignment through and beyond Human Annotations",
+              "url": "https://arxiv.org/abs/2610.31011",
+              "arxivId": "2610.31011",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Formalized mathematics libraries such as Lean's \\texttt{mathlib} provide machine-verifiable representations of mathematical knowledge, including definitions, theorems, and their relationships. If effectively connected to informal mathematical resources, formal mathematics could help uncover previously implicit links between mathematical concepts and improve access to existing formalizations. However, connections between informal and formal mathematics libraries are currently sparse and unsystematic. In this paper, we make first strides towards better formal integration. We construct a dataset linking informal statements from the Stacks Project to their formalizations in \\texttt{mathlib} by exploiting expert annotations. We evaluate retrieval, LLM-based reranking, and LLM-assisted verification to discover new unannotated informal-to-formal links. To facilitate exploration and reuse of formalized knowledge, we integrated the newly discovered alignments into the MaRDI knowledge graph, enabling mathematicians to find formal counterparts to informal mathematical content. We discuss the difficulties and challenges in using LLMs for linking formal and informal mathematical content. All code and data necessary for reproducing this paper can be found at: https://github.com/AnkitSatpute/Formal-Informal-Mathematical-Alignment"
+            },
+            {
+              "title": "PAIR: Preference-Aligned Intent Retrieval for Premium People Recommendation at LinkedIn",
+              "url": "https://arxiv.org/abs/2610.30941",
+              "arxivId": "2610.30941",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "abstract": "General-purpose embeddings trained on profile similarity often misrank candidates in professional networks, where relevance is inherently complementary rather than symmetric. For example, job seekers usually engage with recruiters rather than peers with similar credentials. Current user recommendation systems are often built on profile similarity or social signals such as shared connections, which are effective in friend-oriented social networks where users tend to connect with similar people or within existing social circles. However, this does not hold in professional platforms like LinkedIn, where interactions are often goal-driven and cross-role interactions, requiring matching based on complementary intents rather than similarity or social proximity. In this paper, we propose Preference-Aligned Intent Retrieval, a retrieval framework that is designed to model user intent preference instead of profile similarity. Our approach is inspired by the preference-learning perspective of Direct Preference Optimization, but instantiates preference learning as an exposure-conditioned multi-negative contrastive objective over embeddings. This formulation simplifies training and scales efficiently to large candidate sets without requiring an explicit reference model. Furthermore, we incorporate user interaction history by aggregating click histories with positional encoding to capture temporal order, which enables constant-cost updates of user representations over a fixed history window, allowing new interactions to be incorporated without re-encoding history. As a result, personalization can be updated efficiently using lightweight CPU operations without repeated LLM inference during serving. We evaluate PAIR on LinkedIn's Premium retrieval task. A 0.6B parameter model achieves a MAR@100 of 0.45."
+            },
+            {
+              "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+              "url": "https://arxiv.org/abs/2610.30932",
+              "arxivId": "2610.30932",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation."
+            },
+            {
+              "title": "Lean Finder V2: Semantic Search for Mathlib That Disambiguates User Queries",
+              "url": "https://arxiv.org/abs/2610.30843",
+              "arxivId": "2610.30843",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.IR"
+              ],
+              "abstract": "We introduce Lean Finder V2, a semantic search framework for Mathlib that disambiguates user queries through complementary model-level adversarial training and input-level query rewriting. Human mathematicians and coding agents rarely search Mathlib by providing detailed context. In practice, they query short properties, notation, aliases, or hypotheses, leaving much of the intended mathematics implicit. In contrast, existing Mathlib search engines unrealistically assume context-rich queries. The scarcity of real-world short queries paired with ground-truth Mathlib statements makes this ambiguity even more intractable. We argue that this is essentially a data problem. Through adversarial training, we scale up the generation of labeled short and ambiguous queries, and learn to disambiguate user queries at both model-level fine-tuning and input-level query rewriting. On the human-curated MathlibQR benchmark, our Lean Finder V2 sets a new state of the art, with at least 11% relative improvement over the previous best Mathlib semantic search engines. On top of our state-of-the-art retriever, optimized query rewriting further improves MathlibQR retrieval. On unlabeled queries from human and coding-agent interactions, Lean Finder V2 is ranked as the strongest system. Integrated with Claude Code, Lean Finder V2 improves proof success on downstream theorem-proving task. Lean Finder V2 is available at: https://leanfinder.github.io/"
+            },
+            {
+              "title": "Bezier-Guided Adaptive Flow for Cross-domain Sequential Recommendation",
+              "url": "https://arxiv.org/abs/2610.30825",
+              "arxivId": "2610.30825",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Cross-domain sequential recommendation aims to alleviate data sparsity and cold-start problems by transferring useful preference knowledge across domains. However, users exhibit varying degrees of preference consistency across domains, while existing methods often rely on global alignment objectives or coarse-grained transfer strategies. Such approaches may introduce irrelevant information and provide limited flexibility in adapting semantic representations to individual user preferences. To address these challenges, we propose BGAFlow, a personalized framework that combines state-adaptive semantic evolution with user-specific transfer control. BGAFlow first establishes a shared semantic space through unified dual-domain pretraining with user profiles inferred by a large language model (LLM). Based on latent interest overlap, it then estimates a personalized horizon to determine the appropriate transfer extent for each user. To enable semantic adaptation, BGAFlow constructs a conditional Bezier curve as a geometric reference and learns a residual flow that progressively refines the trajectory based on intermediate preference states. The learned flow incorporates dynamic preference feedback to adjust transfer directions, while recommendation supervision and trajectory regularization encourage effective and smooth adaptation. Extensive experiments on real-world datasets demonstrate that BGAFlow consistently outperforms state-of-the-art baselines, validating the benefits of personalized transfer control and state-adaptive semantic evolution."
+            },
+            {
+              "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+              "url": "https://arxiv.org/abs/2610.30710",
+              "arxivId": "2610.30710",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.DB"
+              ],
+              "abstract": "Over-representation analysis (ORA) is widely used to interpret gene-expression studies, but its outputs are often fragmented across gene-set databases and presented as flat term lists that obscure gene-level links among related enrichment signals. We propose Graph-Based Over-Representation Retrieval-Augmented Generation (GBOR-RAG), an integrated and traceable framework for ORA interpretation. GBOR-RAG represents heterogeneous gene-set databases as a unified term--gene knowledge graph, where shared genes connect related terms across sources. After graph-based ORA scoring, the framework retrieves a compact connected evidence subgraph that preserves both cross-database relationships and gene-level support. The subgraph conditions an LLM to generate biological interpretations, and we introduce a claim-level faithfulness metric to assess whether generated claims are supported by explicit evidence. Experiments show that graph-based ORA preserves conventional ORA results with high consistency (mean Pearson $r=0.997$) while reducing query time by a median of $37\\times$ (up to $48\\times$). The retrieved subgraphs average 36.8 nodes and achieve the highest overall integration score (4.12), and GBOR-RAG attains the highest claim-level faithfulness (0.90) among the compared systems. Adding a PubMed literature layer further improves the overall interpretation quality from 4.17 to 4.75."
+            },
+            {
+              "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+              "url": "https://arxiv.org/abs/2610.30697",
+              "arxivId": "2610.30697",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Nearest-neighbor search over embedding vectors matches faces against watchlists, transactions against known fraud patterns, and medical images against confirmed cases, where a missed neighbor is a missed threat, fraud, or diagnosis. Because an approximate index cannot report which queries lost a true neighbor, these applications require recall of 0.999 to 0.9999, at a cost far below that of exact search over billions of vectors. Inverted-file indexes reach high recall by probing more lists, but they read and score every probed vector at full precision, so that throughput falls in inverse proportion to the number of probed lists. Graph indexes saturate below these targets, whereas quantized lists must rerank their candidates with the full vectors. Our insight is to decide for almost every probed vector that it cannot enter the top k of the probed lists without reading the vector, through the certified lower bound of exact search by certified exclusion. This paper turns this insight into Lychee, a GPU inverted-file search that screens the probed lists on tensor cores under a threshold from anchors of the same lists and computes exact distances only for the few survivors. We prove that Lychee returns exactly the k nearest vectors of the probed lists, the answer of an inverted-file search at full precision, while it reads a few hundred full vectors per query regardless of the number of probed lists. On eleven datasets from one million to one billion vectors and against ten GPU and CPU baselines, Lychee is 9.7 to 117 times faster than IVF-Flat at equal recall with 200 probed lists on datasets of up to 100 million vectors. It also reaches recall levels that CAGRA and HNSW do not reach and outruns exact search by certified exclusion by 5 to 18 times above ten million vectors. On four GPUs, Lychee searches one billion vectors at recall 0.9999, 44.5 times faster than IVF-Flat on BIGANN-1B."
+            },
+            {
+              "title": "OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models",
+              "url": "https://arxiv.org/abs/2610.30675",
+              "arxivId": "2610.30675",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "abstract": "Large language models (LLMs) have demonstrated strong reasoning capabilities, motivating their use as the backbone of foundation recommendation models (FRMs). Existing methods enhance recommendations through explicit Chain-of-Thought (CoT) reasoning under a Think-then-Answer paradigm. However, explicit CoT incurs substantial inference overhead by generating lengthy reasoning traces and relies on manually designed templates that struggle to capture diverse, dynamic user interests. We propose OneLatent, an efficient latent reasoning framework that compresses explicit reasoning traces into several learnable latent tokens, enabling Latent-Reason-then-Answer inference without generating verbose traces. OneLatent first introduces Multi-View Adaptive CoT (MV-ACoT), which creates diverse, high-quality teacher-generated supervision by exploring user interests from multiple perspectives and automatically adapting reasoning complexity to each instance. Building on pretrained FRMs, it then uses a three-stage latent-token alignment paradigm to progressively internalize CoT traces into learnable latent tokens. Finally, a multistage curriculum-based post-training strategy activates latent-token reasoning for downstream recommendation tasks. Experiments on an industrial-scale Kuaishou dataset and the public Kuaishou LLM-Rec benchmark show that OneLatent consistently outperforms explicit CoT-based methods and traditional baselines. Compared with the Think and No-Think variants of FRMs, OneLatent improves SID@64 by 17.44% and 9.33%, respectively, while achieving over 17x higher online inference throughput. We further develop a production serving system for scalable, real-time FRM inference. An online A/B test in Kuaishou's local-services advertising scenario shows that deploying OneLatent with this system yields an estimated 9.6% revenue lift over strong online baselines, including OneRec and OneReason."
+            },
+            {
+              "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+              "url": "https://arxiv.org/abs/2610.30664",
+              "arxivId": "2610.30664",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "abstract": "Large language models increasingly act as controllers in structured decision pipelines, yet their decisions are still executed by autoregressive text decoding. Hierarchical RAG is one such setting: at each frontier of a document tree, an LLM commits to $b$ of $k$ sections under an input-dependent action grammar, executed as either failure-prone free-form JSON or reliable but strictly serial grammar-constrained generation. We show that this serialization is unnecessary for bounded-horizon control: the reachable future forms a shallow action-prefix tree, which we compile --- one root prefill plus one tree-causal probe evaluate every prefix-conditioned action distribution with serial decoding's tokens, positions, and causal ancestry. A prefix-state lemma makes compiled control policy-exact in exact arithmetic: the same policy with a two-forward critical path and zero output tokens. One further probe pass certifies the exact order-marginalized MAP set. Across four document-disjoint splits and two scales on the primary MetaX device, compiled control matches the serial policy on $84$--$89\\%$ of questions --- every instrumented divergence a floating-point near-tie --- and cuts control latency by $35$--$47\\%$ versus token-wise serial decoding and $6$--$7\\%$ versus an idealized chunked engine; an H800 repetition preserves the ordering."
+            },
+            {
+              "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+              "url": "https://arxiv.org/abs/2610.30612",
+              "arxivId": "2610.30612",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL"
+              ],
+              "abstract": "Hybrid retrieval, which fuses a sparse lexical retriever with a dense neural one, is widely recommended in the software documentation surveyed in September 2026, usually with reciprocal rank fusion (RRF), on the strength of aggregate gains. We ask what fusion costs on individual queries, treating \"do not fuse\" as a first-class outcome, in the setting in which hybrid retrieval is deployed: a standard Anserini BM25, five dense encoders spanning 22M-596M parameters and three model generations, a learned-sparse (SPLADE) alternative, and a cross-encoder second stage, on seven BEIR datasets and three fusion functions. Even the best method, dense-weighted score interpolation, ranks relevant documents below the better of its two components on 13-48% of queries and below the deployable dense-only retriever on 8-21% (14-48% and 11-25% at a weight selected under leave-one-corpus-out validation), while beating dense-only in aggregate on every corpus with the primary encoder; the downside is significant under loss-averse risk-sensitive evaluation on six of the seven corpora. We call this loss the fusion tax. It is mostly a ranking effect that preserves recall in aggregate, it is most likely on the queries that only one retriever covers, and it persists across the encoder ladder and the SPLADE substitution. RRF carries the higher tax wherever the dense retriever is clearly stronger and only beats dense-only where the two components are balanced. Fusion failure is weakly predictable within a corpus but transfers unreliably across corpora, because the features that predict it change sign with the sparse-dense balance. A cross-encoder recovers part of the tax only where it is itself reliable. We distill these findings into guidance that keys the fusion decision to the measured sparse-dense balance of the target corpus."
+            },
+            {
+              "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+              "url": "https://arxiv.org/abs/2610.30611",
+              "arxivId": "2610.30611",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "abstract": "Scaling large language models has substantially improved linguistic fluency, yet reliable autonomous agents require more than fluent generation. In multi-turn inference, current agentic systems often produce semantically plausible but structurally ungrounded reasoning, especially under incomplete observations. We propose Structure-Grounded Uncertainty Reduction (SGUR), a training-free framework that complements token-level generation with active uncertainty reduction over structured hypothesis spaces. SGUR represents incomplete observations as a query graph and aligns them with candidate hypothesis graphs through a prior-weighted partial graph matching mechanism, where database-derived empirical priors assign greater importance to decision-relevant relations rather than treating all graph edges uniformly. The resulting inference state is iteratively refined by an active information-gain strategy that selects the next most informative node to query, systematically pruning the candidate space. We instantiate SGUR on a challenging PrimeKG-derived sequential medical diagnosis benchmark, demonstrating that structural grounding can partially substitute for model scale: starting from only two observed symptoms, SGUR achieves 92.5% Hit@3, outperforming the strongest Graph-RAG baseline by 9.4 percentage points while using approximately 5x fewer tokens. Notably, SGUR enables smaller backbone models to match or exceed the performance of models up to 10x larger, suggesting that structural grounding provides a more robust and efficient paradigm for scaling agent performance than relying exclusively on increasing model size."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 3,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 13,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 14,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 6,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "A Task-Centric Survey of Long-Document Visual Question Answering: Taxonomy, Evolution, and Future Directions",
+              "url": "https://arxiv.org/abs/2610.31385",
+              "arxivId": "2610.31385",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CV",
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "SurveyGraph: Generating Academic Surveys via Methods-Entity Knowledge Graphs",
+              "url": "https://arxiv.org/abs/2610.31317",
+              "arxivId": "2610.31317",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "The Delayed Countdown Method for Validating Review-Oriented AI Workflows in eDiscovery",
+              "url": "https://arxiv.org/abs/2610.31311",
+              "arxivId": "2610.31311",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+              "url": "https://arxiv.org/abs/2610.31019",
+              "arxivId": "2610.31019",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Formal-Informal Mathematical Alignment through and beyond Human Annotations",
+              "url": "https://arxiv.org/abs/2610.31011",
+              "arxivId": "2610.31011",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "PAIR: Preference-Aligned Intent Retrieval for Premium People Recommendation at LinkedIn",
+              "url": "https://arxiv.org/abs/2610.30941",
+              "arxivId": "2610.30941",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+              "url": "https://arxiv.org/abs/2610.30932",
+              "arxivId": "2610.30932",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "Lean Finder V2: Semantic Search for Mathlib That Disambiguates User Queries",
+              "url": "https://arxiv.org/abs/2610.30843",
+              "arxivId": "2610.30843",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.LG",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 23.0,
+                "total": 23.0
+              }
+            },
+            {
+              "title": "Bezier-Guided Adaptive Flow for Cross-domain Sequential Recommendation",
+              "url": "https://arxiv.org/abs/2610.30825",
+              "arxivId": "2610.30825",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 3.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 13.0,
+                "total": 13.0
+              }
+            },
+            {
+              "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+              "url": "https://arxiv.org/abs/2610.30710",
+              "arxivId": "2610.30710",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.DB"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+              "url": "https://arxiv.org/abs/2610.30697",
+              "arxivId": "2610.30697",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models",
+              "url": "https://arxiv.org/abs/2610.30675",
+              "arxivId": "2610.30675",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "total": 20.0
+              }
+            },
+            {
+              "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+              "url": "https://arxiv.org/abs/2610.30664",
+              "arxivId": "2610.30664",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.CL",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+              "url": "https://arxiv.org/abs/2610.30612",
+              "arxivId": "2610.30612",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.IR",
+                "cs.CL"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+              "url": "https://arxiv.org/abs/2610.30611",
+              "arxivId": "2610.30611",
+              "date": "2026-10-22",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.IR"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 6.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "A Task-Centric Survey of Long-Document Visual Question Answering: Taxonomy, Evolution, and Future Directions",
+          "url": "https://arxiv.org/abs/2610.31385",
+          "arxivId": "2610.31385",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CV",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "SurveyGraph: Generating Academic Surveys via Methods-Entity Knowledge Graphs",
+          "url": "https://arxiv.org/abs/2610.31317",
+          "arxivId": "2610.31317",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "The Delayed Countdown Method for Validating Review-Oriented AI Workflows in eDiscovery",
+          "url": "https://arxiv.org/abs/2610.31311",
+          "arxivId": "2610.31311",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+          "url": "https://arxiv.org/abs/2610.31019",
+          "arxivId": "2610.31019",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Formal-Informal Mathematical Alignment through and beyond Human Annotations",
+          "url": "https://arxiv.org/abs/2610.31011",
+          "arxivId": "2610.31011",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "PAIR: Preference-Aligned Intent Retrieval for Premium People Recommendation at LinkedIn",
+          "url": "https://arxiv.org/abs/2610.30941",
+          "arxivId": "2610.30941",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+          "url": "https://arxiv.org/abs/2610.30932",
+          "arxivId": "2610.30932",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Lean Finder V2: Semantic Search for Mathlib That Disambiguates User Queries",
+          "url": "https://arxiv.org/abs/2610.30843",
+          "arxivId": "2610.30843",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.LG",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 23.0,
+            "total": 23.0
+          }
+        },
+        {
+          "title": "Bezier-Guided Adaptive Flow for Cross-domain Sequential Recommendation",
+          "url": "https://arxiv.org/abs/2610.30825",
+          "arxivId": "2610.30825",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 3.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 13.0,
+            "total": 13.0
+          }
+        },
+        {
+          "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+          "url": "https://arxiv.org/abs/2610.30710",
+          "arxivId": "2610.30710",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.DB"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+          "url": "https://arxiv.org/abs/2610.30697",
+          "arxivId": "2610.30697",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "OneLatent: Latent Reasoning for Efficient Foundation Recommendation Models",
+          "url": "https://arxiv.org/abs/2610.30675",
+          "arxivId": "2610.30675",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "total": 20.0
+          }
+        },
+        {
+          "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+          "url": "https://arxiv.org/abs/2610.30664",
+          "arxivId": "2610.30664",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+          "url": "https://arxiv.org/abs/2610.30612",
+          "arxivId": "2610.30612",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+          "url": "https://arxiv.org/abs/2610.30611",
+          "arxivId": "2610.30611",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+          "url": "https://arxiv.org/abs/2610.30697",
+          "arxivId": "2610.30697",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+          "url": "https://arxiv.org/abs/2610.30611",
+          "arxivId": "2610.30611",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+          "url": "https://arxiv.org/abs/2610.31019",
+          "arxivId": "2610.31019",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+          "url": "https://arxiv.org/abs/2610.30664",
+          "arxivId": "2610.30664",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+          "url": "https://arxiv.org/abs/2610.30612",
+          "arxivId": "2610.30612",
+          "date": "2026-10-22",
+          "source": "arXiv",
+          "categories": [
+            "cs.IR",
+            "cs.CL"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
+            "url": "https://arxiv.org/abs/2610.30697",
+            "arxivId": "2610.30697",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "LYCHEE: 高召回向量搜索中倒排列表的认证筛选",
+            "researchParadigmTags": [
+              "算法设计",
+              "系统框架",
+              "实验验证",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "向量搜索",
+              "高召回检索",
+              "GPU加速",
+              "近似最近邻"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "高召回近邻搜索在人脸识别、医疗诊断和反欺诈等关键场景中至关重要，漏检意味着严重后果。传统倒排索引（IVF）通过增加探测列表数提升召回，但需全精度扫描所有候选向量，导致查询吞吐急剧下降。图索引虽快却难以达到0.999以上召回，而量化方法仍需重排序。论文核心问题是：如何在保持倒排索引高召回能力的同时，避免全量精细计算带来的性能瓶颈。",
+              "modelAndSetup": "论文研究在大规模向量集合中进行精确top-k搜索的任务，输入为查询向量，输出为其在探测倒排列表中的精确最近邻。系统基于GPU实现，利用张量核加速低维投影下的下界计算，仅对可能进入top-k的少量候选执行全精度距离计算。评估涵盖从百万到十亿级向量的数据集，以召回率和查询吞吐为核心指标，对比多种CPU/GPU基线。",
+              "contributionsAndResults": "论文提出LYCHEE，首次将认证排除机制引入倒排索引内部，实现了探测列表的高效筛选。其核心贡献是列表局部阈值机制，使筛选既能大幅减少全精度计算，又不损失最终结果的精确性。实验表明，在相同召回率下，LYCHEE比cuVS中的IVF-Flat快9.7至117倍，在十亿级数据上仍保持44.5倍优势，显著改变了高召回搜索的成本模型。",
+              "methodsAndTechniques": "LYCHEE的关键在于三阶段流水线：首先基于探测列表的锚点计算一个保守的距离阈值；然后利用张量核批量计算所有候选向量的认证下界，并筛除不可能进入top-k的项；最后按认证下界升序验证剩余候选，一旦下界超过当前第k小距离即终止。这种方法将计算代价从探测向量数解耦，转而取决于幸存者数量。",
+              "limitationsAndReadingValue": "论文依赖预定义的倒排划分和锚点设置，其性能增益在列表数较多时更显著，对极小规模或低召回需求场景优势减弱。虽然实验充分，但未测试动态更新场景。最值得阅读的是其方法论创新——如何将全局认证思想适配到局部子集筛选，这对任何基于候选集过滤的检索系统都有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "LYCHEE: 高召回向量搜索中倒排列表的认证筛选",
+            "summarySections": {
+              "backgroundAndQuestion": "高召回近邻搜索在人脸识别、医疗诊断和反欺诈等关键场景中至关重要，漏检意味着严重后果。传统倒排索引（IVF）通过增加探测列表数提升召回，但需全精度扫描所有候选向量，导致查询吞吐急剧下降。图索引虽快却难以达到0.999以上召回，而量化方法仍需重排序。论文核心问题是：如何在保持倒排索引高召回能力的同时，避免全量精细计算带来的性能瓶颈。",
+              "modelAndSetup": "论文研究在大规模向量集合中进行精确top-k搜索的任务，输入为查询向量，输出为其在探测倒排列表中的精确最近邻。系统基于GPU实现，利用张量核加速低维投影下的下界计算，仅对可能进入top-k的少量候选执行全精度距离计算。评估涵盖从百万到十亿级向量的数据集，以召回率和查询吞吐为核心指标，对比多种CPU/GPU基线。",
+              "contributionsAndResults": "论文提出LYCHEE，首次将认证排除机制引入倒排索引内部，实现了探测列表的高效筛选。其核心贡献是列表局部阈值机制，使筛选既能大幅减少全精度计算，又不损失最终结果的精确性。实验表明，在相同召回率下，LYCHEE比cuVS中的IVF-Flat快9.7至117倍，在十亿级数据上仍保持44.5倍优势，显著改变了高召回搜索的成本模型。",
+              "methodsAndTechniques": "LYCHEE的关键在于三阶段流水线：首先基于探测列表的锚点计算一个保守的距离阈值；然后利用张量核批量计算所有候选向量的认证下界，并筛除不可能进入top-k的项；最后按认证下界升序验证剩余候选，一旦下界超过当前第k小距离即终止。这种方法将计算代价从探测向量数解耦，转而取决于幸存者数量。",
+              "limitationsAndReadingValue": "论文依赖预定义的倒排划分和锚点设置，其性能增益在列表数较多时更显著，对极小规模或低召回需求场景优势减弱。虽然实验充分，但未测试动态更新场景。最值得阅读的是其方法论创新——如何将全局认证思想适配到局部子集筛选，这对任何基于候选集过滤的检索系统都有启发意义。"
+            },
+            "contentTags": [
+              "向量搜索",
+              "高召回检索",
+              "GPU加速",
+              "近似最近邻"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "系统框架",
+              "实验验证",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+            "url": "https://arxiv.org/abs/2610.30611",
+            "arxivId": "2610.30611",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "更好的推理，而非更大的模型：一种用于高效可靠推理的结构化框架",
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "算法设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "推理",
+              "知识图谱",
+              "鲁棒性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型的智能体在多轮推理中常因缺乏结构约束而产生语义合理但逻辑断裂的推断，尤其在观测不全时更易出错。现有方法依赖文本生成或检索增强，但未能将关系结构直接融入推理状态，导致决策路径脆弱且效率低下。本文指出，仅靠扩大模型规模无法根本解决此问题，关键在于如何组织推理过程。",
+              "modelAndSetup": "论文在基于PrimeKG构建的分层医学诊断任务上评估方法，任务模拟医生逐步获取症状并缩小诊断范围的过程。输入为初始症状，输出为候选疾病排序，系统通过多轮交互主动查询新信息。评价指标包括Hit@3、收敛速度（MTTC）、token消耗和延迟，强调推理准确性与效率的平衡。",
+              "contributionsAndResults": "论文提出SGUR框架，证明结构化推理可部分替代模型规模带来的收益。在仅观察两个症状的情况下，SGUR达到92.5%的Hit@3，超越最强基线9.4个百分点，同时减少约5倍token消耗。更重要的是，小模型配合SGUR可媲美甚至超过10倍大的模型，揭示结构化设计对提升智能体性能的关键作用。",
+              "methodsAndTechniques": "SGUR将不完整观测建模为查询图，并通过先验加权的部分图匹配机制与候选假设图对齐，赋予关键关系更高权重。推理过程中，系统采用信息增益策略主动选择最具判别性的节点进行查询，迭代收缩假设空间。整个过程无需训练，依赖结构一致性而非纯语义相似性驱动推理，增强了决策的可解释性和稳定性。",
+              "limitationsAndReadingValue": "SGUR依赖高质量、结构化的知识图谱和实体对齐能力，在噪声多或知识稀疏的实际场景中可能受限。其优势在证据稀缺时最显著，但在信息充足时增益减弱。读者应重点关注其问题抽象方式、闭环推理机制设计及对‘结构换规模’现象的实证分析，这对构建高可靠性AI智能体具有指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "更好的推理，而非更大的模型：一种用于高效可靠推理的结构化框架",
+            "summarySections": {
+              "backgroundAndQuestion": "当前基于大语言模型的智能体在多轮推理中常因缺乏结构约束而产生语义合理但逻辑断裂的推断，尤其在观测不全时更易出错。现有方法依赖文本生成或检索增强，但未能将关系结构直接融入推理状态，导致决策路径脆弱且效率低下。本文指出，仅靠扩大模型规模无法根本解决此问题，关键在于如何组织推理过程。",
+              "modelAndSetup": "论文在基于PrimeKG构建的分层医学诊断任务上评估方法，任务模拟医生逐步获取症状并缩小诊断范围的过程。输入为初始症状，输出为候选疾病排序，系统通过多轮交互主动查询新信息。评价指标包括Hit@3、收敛速度（MTTC）、token消耗和延迟，强调推理准确性与效率的平衡。",
+              "contributionsAndResults": "论文提出SGUR框架，证明结构化推理可部分替代模型规模带来的收益。在仅观察两个症状的情况下，SGUR达到92.5%的Hit@3，超越最强基线9.4个百分点，同时减少约5倍token消耗。更重要的是，小模型配合SGUR可媲美甚至超过10倍大的模型，揭示结构化设计对提升智能体性能的关键作用。",
+              "methodsAndTechniques": "SGUR将不完整观测建模为查询图，并通过先验加权的部分图匹配机制与候选假设图对齐，赋予关键关系更高权重。推理过程中，系统采用信息增益策略主动选择最具判别性的节点进行查询，迭代收缩假设空间。整个过程无需训练，依赖结构一致性而非纯语义相似性驱动推理，增强了决策的可解释性和稳定性。",
+              "limitationsAndReadingValue": "SGUR依赖高质量、结构化的知识图谱和实体对齐能力，在噪声多或知识稀疏的实际场景中可能受限。其优势在证据稀缺时最显著，但在信息充足时增益减弱。读者应重点关注其问题抽象方式、闭环推理机制设计及对‘结构换规模’现象的实证分析，这对构建高可靠性AI智能体具有指导意义。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "智能体",
+              "推理",
+              "知识图谱",
+              "鲁棒性"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "实验验证",
+              "机制设计",
+              "算法设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+            "url": "https://arxiv.org/abs/2610.31019",
+            "arxivId": "2610.31019",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "真实文档修订下的块重组计算：测量固定、递归与内容定义分块的更新成本与检索质量",
+            "researchParadigmTags": [
+              "基准评测",
+              "实验验证",
+              "系统框架"
+            ],
+            "contentTags": [
+              "生成式AI",
+              "检索增强生成",
+              "分块策略",
+              "嵌入更新",
+              "文档修订"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在检索增强生成（RAG）系统中，文档持续更新，但现有分块方法通常在静态语料上评估。一旦文本修改导致分块边界漂移，即使内容未变的部分也可能被重新嵌入，造成计算浪费。本文指出，传统评测忽略更新成本这一关键维度，无法反映实际维护知识库的开销，因此需要量化不同分块策略在真实修订中的重计算比例。",
+              "modelAndSetup": "研究基于120对中英文维基百科相邻修订版本，比较三种无状态分块方法：固定大小、递归段落优先和内容定义分块。使用冻结的嵌入模型，在严格字节完全匹配规则下判断能否复用旧嵌入。输入为原始文本，输出为分块序列，通过重计算分数衡量更新成本，并在固定2048token检索预算下评估证据召回率。",
+              "contributionsAndResults": "论文构建了首个面向真实文档修订的双语基准，发现固定分块在更新时需重计算57%-68%的嵌入输入，显著高于递归（38%-56%）和内容定义（43%-54%）。但在相同条件下，三者检索召回率差异不足两个百分点。这揭示了一个权衡：低更新成本不一定牺牲检索性能，且内容感知分块的优劣受参数影响。",
+              "methodsAndTechniques": "核心方法是定义严格的嵌入输入复用规则——仅当完整输入字节完全一致时才视为可复用。通过对比新旧版本分块集合，计算需重新处理的比例。结合受控编辑实验与逐字存在性诊断，验证边界漂移是重计算主因之一。参数敏感性分析进一步显示，固定分块始终代价最高，而两种内容感知方法排名随长度设置变化。",
+              "limitationsAndReadingValue": "局限在于仅使用维基百科数据，标注未经多人独立校验，且未审计精确的token级编辑比率。检索评估也仅在冻结参数下进行。尽管如此，论文的价值在于揭示了静态评测盲区，提醒实践者在选择分块策略时必须报告更新成本。最值得细读的是其问题设定、实验设计与对边界漂移的归因分析。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "真实文档修订下的块重组计算：测量固定、递归与内容定义分块的更新成本与检索质量",
+            "summarySections": {
+              "backgroundAndQuestion": "在检索增强生成（RAG）系统中，文档持续更新，但现有分块方法通常在静态语料上评估。一旦文本修改导致分块边界漂移，即使内容未变的部分也可能被重新嵌入，造成计算浪费。本文指出，传统评测忽略更新成本这一关键维度，无法反映实际维护知识库的开销，因此需要量化不同分块策略在真实修订中的重计算比例。",
+              "modelAndSetup": "研究基于120对中英文维基百科相邻修订版本，比较三种无状态分块方法：固定大小、递归段落优先和内容定义分块。使用冻结的嵌入模型，在严格字节完全匹配规则下判断能否复用旧嵌入。输入为原始文本，输出为分块序列，通过重计算分数衡量更新成本，并在固定2048token检索预算下评估证据召回率。",
+              "contributionsAndResults": "论文构建了首个面向真实文档修订的双语基准，发现固定分块在更新时需重计算57%-68%的嵌入输入，显著高于递归（38%-56%）和内容定义（43%-54%）。但在相同条件下，三者检索召回率差异不足两个百分点。这揭示了一个权衡：低更新成本不一定牺牲检索性能，且内容感知分块的优劣受参数影响。",
+              "methodsAndTechniques": "核心方法是定义严格的嵌入输入复用规则——仅当完整输入字节完全一致时才视为可复用。通过对比新旧版本分块集合，计算需重新处理的比例。结合受控编辑实验与逐字存在性诊断，验证边界漂移是重计算主因之一。参数敏感性分析进一步显示，固定分块始终代价最高，而两种内容感知方法排名随长度设置变化。",
+              "limitationsAndReadingValue": "局限在于仅使用维基百科数据，标注未经多人独立校验，且未审计精确的token级编辑比率。检索评估也仅在冻结参数下进行。尽管如此，论文的价值在于揭示了静态评测盲区，提醒实践者在选择分块策略时必须报告更新成本。最值得细读的是其问题设定、实验设计与对边界漂移的归因分析。"
+            },
+            "contentTags": [
+              "生成式AI",
+              "检索增强生成",
+              "分块策略",
+              "嵌入更新",
+              "文档修订"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "实验验证",
+              "系统框架"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+            "url": "https://arxiv.org/abs/2610.30664",
+            "arxivId": "2610.30664",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "将自回归LLM控制编译为策略精确的并行推理以实现分层RAG",
+            "researchParadigmTags": [
+              "算法设计",
+              "系统框架",
+              "实验验证",
+              "理论推导",
+              "基准评测"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "推理",
+              "受限解码",
+              "并行化"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "在分层检索增强生成（RAG）中，大语言模型作为控制器需依次选择文档子树，传统方法依赖自回归文本解码执行决策，导致串行延迟高、协议错误频发。现有方案要么因自由格式输出不可靠，要么因语法约束解码效率低下。本文指出，这类有限动作空间的控制器本质无需逐token生成，其未来状态空间有限，因此串行解码是执行方式而非任务必需，核心问题是能否打破序列依赖以提升效率。",
+              "modelAndSetup": "研究设定为在文档树前沿节点从k个候选章节中选出b个，输入为问题与上下文，输出为有序或无序的动作集合。模型基于冻结的Qwen2.5系列LLM，不进行微调，仅通过改变推理过程实现控制。评估在QASPER数据集上进行，采用AllEvidence@B等指标衡量证据覆盖率，并对比串行语法解码、理想化块解码等多种基线，重点测量控制延迟、策略一致性与协议错误率。",
+              "contributionsAndResults": "论文提出将控制器行为编译为前缀树结构，通过一次根预填充和一次树因果探针完成全部动作分布计算，实现策略等价下的并行推理。实验显示该方法在四个数据划分上与串行策略一致率达84%-89%，延迟降低35%-47%，且零输出token、零协议错误。同时支持精确的后验集合推断与历史依赖强度量化，结果证实串行路径可被替代而不损失策略保真度。",
+              "methodsAndTechniques": "方法核心是构建动作前缀树，每个节点对应一个已选动作序列，探针在单次前向传播中并行评估所有可能前缀的下一个动作分布，利用块因果掩码确保各路径独立感知提示与自身祖先。由于每个位置接收到的token、位置、注意力祖先与串行解码完全一致，因此logits在精确算术下等价。最终决策通过算术还原而非生成获得，从而实现深度为2的关键路径。",
+              "limitationsAndReadingValue": "局限在于探针宽度随动作数阶乘增长，n=4时已难收益；bf16精度下近似平局可能导致决策翻转，虽与跨硬件串行差异相当，但仍限制绝对一致性。此外，仅适用于有限动作、短视界控制场景。最值得读的是其方法设计与理论证明，展示了如何将顺序决策转化为并行图计算，在保持策略精确的同时重构推理流程，对LLM控制系统优化具有启发意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "将自回归LLM控制编译为策略精确的并行推理以实现分层RAG",
+            "summarySections": {
+              "backgroundAndQuestion": "在分层检索增强生成（RAG）中，大语言模型作为控制器需依次选择文档子树，传统方法依赖自回归文本解码执行决策，导致串行延迟高、协议错误频发。现有方案要么因自由格式输出不可靠，要么因语法约束解码效率低下。本文指出，这类有限动作空间的控制器本质无需逐token生成，其未来状态空间有限，因此串行解码是执行方式而非任务必需，核心问题是能否打破序列依赖以提升效率。",
+              "modelAndSetup": "研究设定为在文档树前沿节点从k个候选章节中选出b个，输入为问题与上下文，输出为有序或无序的动作集合。模型基于冻结的Qwen2.5系列LLM，不进行微调，仅通过改变推理过程实现控制。评估在QASPER数据集上进行，采用AllEvidence@B等指标衡量证据覆盖率，并对比串行语法解码、理想化块解码等多种基线，重点测量控制延迟、策略一致性与协议错误率。",
+              "contributionsAndResults": "论文提出将控制器行为编译为前缀树结构，通过一次根预填充和一次树因果探针完成全部动作分布计算，实现策略等价下的并行推理。实验显示该方法在四个数据划分上与串行策略一致率达84%-89%，延迟降低35%-47%，且零输出token、零协议错误。同时支持精确的后验集合推断与历史依赖强度量化，结果证实串行路径可被替代而不损失策略保真度。",
+              "methodsAndTechniques": "方法核心是构建动作前缀树，每个节点对应一个已选动作序列，探针在单次前向传播中并行评估所有可能前缀的下一个动作分布，利用块因果掩码确保各路径独立感知提示与自身祖先。由于每个位置接收到的token、位置、注意力祖先与串行解码完全一致，因此logits在精确算术下等价。最终决策通过算术还原而非生成获得，从而实现深度为2的关键路径。",
+              "limitationsAndReadingValue": "局限在于探针宽度随动作数阶乘增长，n=4时已难收益；bf16精度下近似平局可能导致决策翻转，虽与跨硬件串行差异相当，但仍限制绝对一致性。此外，仅适用于有限动作、短视界控制场景。最值得读的是其方法设计与理论证明，展示了如何将顺序决策转化为并行图计算，在保持策略精确的同时重构推理流程，对LLM控制系统优化具有启发意义。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "推理",
+              "受限解码",
+              "并行化"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "系统框架",
+              "实验验证",
+              "理论推导",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+            "url": "https://arxiv.org/abs/2610.30612",
+            "arxivId": "2610.30612",
+            "date": "2026-10-22",
+            "source": "arXiv",
+            "categories": [
+              "cs.IR",
+              "cs.CL"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "融合税：混合检索何时造成损害的诊断分析",
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "评测方法",
+              "系统框架"
+            ],
+            "contentTags": [
+              "信息检索",
+              "混合搜索",
+              "检索增强生成",
+              "查询性能预测",
+              "排序融合"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前主流推荐将稀疏与密集检索器融合以提升整体效果，但这种聚合收益可能掩盖个体查询的损失。本文关注混合检索在哪些情况下反而会降低性能，核心问题是：当融合导致相关文档排名下降时，其代价有多大？这揭示了现有评估方式忽略的风险，尤其是在对排序敏感的应用中。",
+              "modelAndSetup": "研究在标准信息检索设定下进行，输入为查询，输出为排序文档列表。使用BM25和多种稠密编码器作为基础检索器，在七个BEIR数据集上测试三种融合函数，并引入交叉编码器重排序阶段。评估不仅看平均指标，更注重单个查询的表现变化。",
+              "contributionsAndResults": "论文提出了‘融合税’概念，量化了融合在单个查询上的负面影响。结果显示，即使最佳融合方法在总体上优于单一检索器，仍会导致13%-48%的查询表现变差，且在六项数据集中存在显著风险。这一发现挑战了‘融合总是更好’的默认假设。",
+              "methodsAndTechniques": "作者通过定义‘融合税’来衡量每个查询的损失，将其与最优组件及可部署的稠密检索器对比。采用四象限分类诊断失败模式，结合跨语料库留一法验证权重选择，并测试重排序能否缓解损失。整个分析强调可操作的工程指导而非单纯模型改进。",
+              "limitationsAndReadingValue": "结论受限于所选模型、数据集和第一阶段检索设定，未直接评估对最终生成答案的影响。然而，其价值在于提供了清晰的决策框架：应基于语料中稀疏与稠密检索器的实际平衡来决定是否融合。最值得阅读的是其实证逻辑与实用建议。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "融合税：混合检索何时造成损害的诊断分析",
+            "summarySections": {
+              "backgroundAndQuestion": "当前主流推荐将稀疏与密集检索器融合以提升整体效果，但这种聚合收益可能掩盖个体查询的损失。本文关注混合检索在哪些情况下反而会降低性能，核心问题是：当融合导致相关文档排名下降时，其代价有多大？这揭示了现有评估方式忽略的风险，尤其是在对排序敏感的应用中。",
+              "modelAndSetup": "研究在标准信息检索设定下进行，输入为查询，输出为排序文档列表。使用BM25和多种稠密编码器作为基础检索器，在七个BEIR数据集上测试三种融合函数，并引入交叉编码器重排序阶段。评估不仅看平均指标，更注重单个查询的表现变化。",
+              "contributionsAndResults": "论文提出了‘融合税’概念，量化了融合在单个查询上的负面影响。结果显示，即使最佳融合方法在总体上优于单一检索器，仍会导致13%-48%的查询表现变差，且在六项数据集中存在显著风险。这一发现挑战了‘融合总是更好’的默认假设。",
+              "methodsAndTechniques": "作者通过定义‘融合税’来衡量每个查询的损失，将其与最优组件及可部署的稠密检索器对比。采用四象限分类诊断失败模式，结合跨语料库留一法验证权重选择，并测试重排序能否缓解损失。整个分析强调可操作的工程指导而非单纯模型改进。",
+              "limitationsAndReadingValue": "结论受限于所选模型、数据集和第一阶段检索设定，未直接评估对最终生成答案的影响。然而，其价值在于提供了清晰的决策框架：应基于语料中稀疏与稠密检索器的实际平衡来决定是否融合。最值得阅读的是其实证逻辑与实用建议。"
+            },
+            "contentTags": [
+              "信息检索",
+              "混合搜索",
+              "检索增强生成",
+              "查询性能预测",
+              "排序融合"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "基准评测",
+              "评测方法",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
