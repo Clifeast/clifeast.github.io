@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-10-26T08:02:52.471028+00:00",
+  "generatedAt": "2026-10-27T08:24:54.923187+00:00",
   "warnings": [],
   "llm": {
     "enabled": true,
@@ -55,15 +55,670 @@
       "id": "recent-agt",
       "title": "近期 AGT 新论文",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 15,
+      "papers": [
+        {
+          "title": "Who Pays for Thinking? Billing Hidden Reasoning Tokens in Model Cloud Contracts",
+          "titleZh": "谁为思考付费？模型云合同中隐藏推理令牌的计费",
+          "authors": [
+            "Chao Feng",
+            "Burkhard Stiller"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35338",
+          "abstract": "In token-priced language model services, users can see the prompts they submit and the answers they receive, but may also pay for internal reasoning and candidate answers that are not shown in the final response. This paper develops a three-party service model to study how charging for this intermediate computation shapes providers' decisions and social welfare. Users purchase answers from a model firm that pays an execution cloud, with either supplier controlling the computation budget. The model separates user billing from upstream payments and identifies when metered pricing encourages excessive generation, when fixed service prices restrict valuable computation, and how responsibility for execution costs changes these choices. A LiveCodeBench study measures answer quality, latency, token use, and resource consumption across five model deployments, with numerical billing comparisons for the three covered by archived tariffs. At equal average charges on the reference workload, the calibrated comparisons show that billing structure changes both service participation and the computation budgets suppliers select. For accepted services with different budgets, the measured outcomes define the user-value thresholds at which their welfare ranking reverses. Metered pricing yields higher welfare when the additional inference it induces creates net social value, whereas fixed service pricing is preferable when the costs of that computation outweigh its benefits.",
+          "summarySections": {
+            "backgroundAndQuestion": "大型语言模型服务按令牌收费时，用户不仅为最终答案付费，还可能为未显示的内部推理过程埋单。这种隐藏计算的计费方式引发了一个核心问题：不同计价模式如何影响模型提供商与云计算平台之间的激励分配，并进而决定社会福利水平。现有研究多聚焦用户与服务商间的交易，忽视了上下游供应商间成本分担与控制权配置的关键作用。",
+            "modelAndSetup": "论文构建了一个三方博弈模型，包含用户、模型公司和执行云。模型公司选择候选答案尝试次数（预算k），并采用两种零售定价规则：按中间推理令牌计量收费或固定服务价格。上游云服务商通过GPU小时购买、容量费或收入分成获得报酬。控制权可归属任一方，决定预算选择。模型刻画了各参与方在质量、延迟、成本和用户估值下的决策逻辑与均衡结果。",
+            "contributionsAndResults": "研究发现，计量计价在收益共享下会激励双方扩大计算规模，可能导致过度推理；而固定定价则可能抑制高价值计算。当额外推理产生的社会价值超过其资源成本时，计量计价更优，反之则固定定价更好。关键洞见在于，分离的成本责任可能导致联合盈利的服务因某一方亏损而无法提供，揭示了合同结构对服务供给的根本影响。",
+            "methodsAndTechniques": "作者通过构建三阶段子博弈完美均衡模型，分析不同合同条件下供应商的参与约束与最优预算选择。利用LiveCodeBench上的实证数据校准服务质量参数，结合理论推导与数值模拟进行反事实比较。关键技术在于将社会福利分解为用户剩余与双边利润之和，识别出计量与固定定价导致预算差异的临界阈值条件。",
+            "limitationsAndReadingValue": "模型假设服务配置固定，未考虑动态调整或更复杂的用户行为。结果依赖于特定的线性计价与确定性质量提升关系。尽管如此，该文的价值在于首次系统揭示了模型-云供应链中的激励错配问题，其三方框架与成本责任分析为理解生成式AI服务的经济机制提供了基础工具，特别适合关注AI商业化、服务合同设计与推理效率的研究者深入阅读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "实验验证"
+          ],
+          "contentTags": [
+            "机制设计",
+            "大语言模型",
+            "生成式AI",
+            "推理经济学",
+            "云服务合同"
+          ],
+          "tags": [
+            "机制设计",
+            "大语言模型",
+            "生成式AI",
+            "推理经济学",
+            "云服务合同",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 10.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 9.3,
+            "total": 37.3
+          },
+          "ids": {
+            "arxiv": "2610.35338"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "BROCADE: Broker-based Contract Design for the Multi-Agency Model",
+          "titleZh": "BROCADE：基于中介的多委托人模型合约设计",
+          "authors": [
+            "Yangguang Shi",
+            "Ron Lavi",
+            "Jie Zhang"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35291",
+          "abstract": "We study welfare maximization in a contract model with $m$ principals who privately value a public project's success and $n$ agents whose costly effort is unobservable. Contracts induce truthful dominant strategies for principals and equilibrium effort by agents, maximizing the expected total value of eligible principals. We develop three tools: a broker that separates payments from principals and payments to agents, an extension of Myerson's Lemma characterizing dominant-strategy incentive compatibility (DSIC), and a black-box reduction to budget-constrained single-principal contract design. When the success probability is a strictly monotone XOS function of agents' actions, these tools yield three results. First, a deterministic DSIC contract achieves a constant approximation against a benchmark that qualifies every principal and maximizes success probability using budget $\\sum_j v^j$, but may violate budget balance (BB). Second, against benchmarks with budgets at least the largest principal value, deterministic DSIC and BB contracts admit no finite approximation guarantee, even with two agents. Universally DSIC and universally BB randomized contracts have an $Ω(n)$ approximation lower bound, even for a fixed number of principals. Third, using one quarter of the optimal fixed-price revenue supported by at least two principals as the benchmark budget, we obtain a universally DSIC and universally BB randomized contract with an $O(\\log m)$ approximation ratio independent of $n$.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在多个委托人和代理人的场景下难以同时实现激励相容与预算平衡？传统合约模型通常假设单一委托人，但在平台经济中，一个任务可能由多个出资方共同资助，而多个代理人协同完成，此时各方私有信息与隐藏行为交织，导致激励机制设计复杂化。本文指出，在这种多主体合约中，若要求收支平衡，经典方法无法保证近似最优的社会福利。",
+            "modelAndSetup": "模型包含m个拥有私有估值的委托人和n个付出成本并采取不可观测行动的代理人，项目成功概率取决于努力的代理人集合。合约通过中介分离资金流：委托人向中介付款，中介据此激励代理人。关键设定包括半公共品性质（仅部分委托人可受益）、主导策略激励相容（DSIC）与预算平衡（BB），目标是最大化可获益委托人的期望总价值。",
+            "contributionsAndResults": "论文提出了BROCADE框架，并证明：当成功概率函数为严格单调XOS时，非排他性确定性合约可在不满足预算平衡下取得常数近似；但若要求预算平衡，则任何确定性DSIC合约都无法获得有限近似比，随机合约也存在Ω(n)的下界；而通过采样分组获取通行费的SATOSH机制，在四分之一固定价格收入作为预算基准时，实现了O(log m)近似且满足普遍DSIC与普遍预算平衡。",
+            "methodsAndTechniques": "核心技术包括引入非策略性中介以解耦支付关系、扩展Myerson引理到有效分配函数以刻画DSIC条件、以及将预算受限的单委托人算法转化为预算可扩展的选择函数。特别是通过标记划分构造黑箱转换，使近似算法具备单调性，从而支持主导策略机制设计，这是连接算法与机制的关键桥梁。",
+            "limitationsAndReadingValue": "结果依赖于XOS函数假设与特定预算基准，且SATOSH的O(log m)近似比随委托人数增长，对大规模系统可能不够理想。然而，论文清晰揭示了预算平衡带来的根本性限制，并提供了处理多委托人合约的新范式。最值得阅读的是其模型抽象方式、中介框架的设计思想以及将算法转化为机制的技术路径。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "理论推导",
+            "算法设计",
+            "均衡分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "机制设计",
+            "合约理论",
+            "多智能体系统",
+            "拍卖理论",
+            "预算平衡"
+          ],
+          "tags": [
+            "机制设计",
+            "合约理论",
+            "多智能体系统",
+            "拍卖理论",
+            "预算平衡",
+            "理论推导",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 4.8,
+            "total": 33.8
+          },
+          "ids": {
+            "arxiv": "2610.35291"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "Fair Division of Lotteries",
+          "titleZh": "彩票物品的公平分配",
+          "authors": [
+            "Ayumi Igarashi",
+            "Yeeseok Oh"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.34906",
+          "abstract": "We study fair division of uncertain items, where the utility of each item is a random variable whose realization is observed only after the allocation is determined. This uncertainty creates a distinction between ex-ante fairness, evaluated before utilities are realized, and ex-post fairness, evaluated after realization. We examine to what extent these two notions are compatible. We first identify conditions under which ex-ante envy-free allocations maximize ex-post envy-freeness probability. These include two-agent instances where utilities toward the same item follow the same distribution from a convolution-power family. For an arbitrary number of agents, we establish analogous optimality results when the common generator is non-atomic or log-concave. Beyond convolution-power families, we derive approximation guarantees for ex-ante envy-free allocations relative to the optimal ex-post envy-freeness probability under log-concave or symmetric utilities. We also study the computational complexity of evaluating ex-post envy-freeness probabilities, establishing hardness results as well as pseudo-polynomial-time algorithms.",
+          "summarySections": {
+            "backgroundAndQuestion": "当物品的价值在分配后才随机实现时，事前公平的分配是否事后也公平？该问题源于体育选秀、论文评审等场景，其中代理人基于期望效用评估公平，但实际结果可能引发嫉妒。论文关注事前公平（基于期望效用）与事后公平（基于实现值）之间的张力，探究在何种条件下前者能最大化后者实现的概率。",
+            "modelAndSetup": "模型考虑n个代理人和m个‘彩票物品’，每个物品对代理人的效用是独立非负随机变量。分配方案在效用实现前确定，代理人具有加性效用。事前公平指在期望效用下无嫉妒，事后公平概率则是分配在效用实现后仍无嫉妒的概率。核心是比较事前公平分配与最优事后公平概率分配的表现。",
+            "contributionsAndResults": "论文发现，当物品效用分布来自同一卷积幂族（如泊松分布），且满足非原子性或对数凹性时，事前公平分配恰好最大化事后公平概率。对于更一般的对称或对数凹分布，事前公平分配虽不最优，但仍提供常数近似比，表明其稳健性。这揭示了特定分布下两种公平概念的兼容性。",
+            "methodsAndTechniques": "作者利用特征函数和反原子公式分析离散事件概率，通过动态规划计算事后公平概率，并借助对数凹分布的性质（如闭合性、Grinbaum型不等式）建立平衡引理。关键技巧是将多代理人的嫉妒概率分解，并利用随机序和全正性工具比较不同分配下的成功概率。",
+            "limitationsAndReadingValue": "结果高度依赖于效用分布的结构性假设（如卷积幂、对数凹性），在一般异质分布下近似比随代理人数量指数衰减。尽管如此，论文清晰刻画了不确定性下公平分配的边界，其模型抽象和概率分析技巧对随机公平问题具有启发价值，值得为方法论深度阅读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "公平性",
+            "机制设计",
+            "随机效用"
+          ],
+          "tags": [
+            "公平性",
+            "机制设计",
+            "随机效用",
+            "理论推导",
+            "模型构建",
+            "复杂度分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          },
+          "ids": {
+            "arxiv": "2610.34906"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "Exploring the Tractability Frontier of Hylland-Zeckhauser Models",
+          "titleZh": "探索 Hylland-Zeckhauser 模型的可解性边界",
+          "authors": [
+            "Ioannis Panageas",
+            "Avi Shein",
+            "Shayan Taherijam",
+            "Vijay V. Vazirani"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35848",
+          "abstract": "The Hylland-Zeckhauser (HZ) mechanism provides a market-based approach to one-sided matching, making efficient equilibrium computation central to its implementation. Bi-valued utilities admit a strongly polynomial-time algorithm [VY], whereas with four values per buyer, the problem is PPAD-hard under inverse polynomial approximation [CCPY]. To understand the tractability boundary, we study two extensions of the bi-valued case: a third linear utility value and separable concave utilities with two common marginal slopes. For every fixed rational $a\\in(0,1)$, we prove that computing a normalized additive $\\varepsilon_{*}(a)/N$-equilibrium in an $N$-buyer HZ market is PPAD-hard for some constant $\\varepsilon_{*}(a)>0$, even when all utilities belong to the same prescribed set $\\{0,a,1\\}$. This resolves the main question left open by [VY, CCPY]: whether three utility values already suffice for PPAD-hardness. Using the same market gadgets, we show that hardness at a specified constant accuracy on the recognizable family generated by our construction is equivalent to the PCP-for-PPAD conjecture. Consequently, assuming that conjecture, general markets over $\\{0,a,1\\}$ admit no PTAS unless $\\mathrm{PPAD}\\subseteq\\mathrm{P}$. For the concave extension, we compute an exact equilibrium in polynomial time with two marginal slopes common across goods for each buyer and arbitrary rational buyer--good breakpoints. The algorithm selects a cheapest utility-maximizing bundle for each buyer. With three common marginal slopes, suitable breakpoints encode the three valued linear case, yielding PPAD-hardness. Thus, our paper identifies two thresholds separating tractable and intractable cases of HZ models with utility functions specified by utility values or marginal slopes. In both cases, the tractability threshold lies between two and three.",
+          "summarySections": {
+            "backgroundAndQuestion": "Hylland-Zeckhauser（HZ）机制通过虚拟货币和市场均衡实现无支付的一边匹配，但均衡计算的难易程度尚不清晰。此前研究知道双值效用可高效求解，四值效用下逼近均衡是PPAD难的，但三值效用是否已进入难解范围一直未知。本文旨在精确刻画该机制从易到难的分界点，回答‘效用取值个数’如何影响计算复杂性的根本问题。",
+            "modelAndSetup": "模型考虑N个买家与N个单位供给商品的市场，每个买家有预算1并追求线性或凹效用下的最优概率分配。均衡要求价格使总需求等于供给，且每人获得预算内最优束。研究聚焦两类扩展：一是线性效用从两个取值扩展到三个固定值{0,a,1}；二是允许边际效用递减的凹效用，其中每个买家在不同商品上有共同的两个或三个边际斜率。",
+            "contributionsAndResults": "论文证明当所有买家效用均来自同一三值集合{0,a,1}时，计算逆多项式精度的近似HZ均衡是PPAD难的，解决了该领域的开放问题。进一步，对于凹效用情形，若每个买家在所有商品上共享两个边际斜率，则可在多项式时间内精确求解；但若有三个共同斜率则变为PPAD难。这表明无论在线性还是凹效用下，‘二’与‘三’之间存在明确的可解性相变。",
+            "methodsAndTechniques": "作者通过从阈值博弈（threshold game）到HZ市场的归约来证明硬度，精心设计商品和买家群体以编码变量与约束。关键在于利用价格比率关系强制实现混合购买行为，并通过收入抵消机制实现阈值逻辑。对于正向算法结果，采用基于最大流和线性规划的逐步定价方法，在每阶段确定最低可能价格组并分配有用数量。",
+            "limitationsAndReadingValue": "硬度结果依赖于特定构造，其实际市场中的自然性有待观察；而正向算法虽高效，但仅适用于高度结构化的效用形式。尽管如此，本文的价值在于首次明确了HZ模型的可解性边界，其归约技术和价格编码思想对其他市场均衡问题有启发意义，特别适合关注机制计算复杂性和算法博弈论的读者深入研读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "公平性",
+            "计算复杂性"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "公平性",
+            "计算复杂性",
+            "理论推导",
+            "复杂度分析",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.35848"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "Self-Confirming Equilibrium under Model Misspecification",
+          "titleZh": "模型误设下的自我确认均衡",
+          "authors": [
+            "Riccardo Formenti"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35692",
+          "abstract": "We study the steady states of games played recurrently within large anonymous populations of players who receive partial ex-post feedback about the play of their opponents. Departing from the classical Bayesian account, players do not trust their conjectures as a correct description of the strategic environment but consider them as approximations of a reality that is only partially modeled and partially observed. We introduce games with feedback and uncertainty attitudes, in which the normal-form structure is enriched with a profile of feedback functions and, for each player, a preference functional that encodes aversion to misspecification and to ambiguity. The induced misspecification sensitive criterion contains the variational, maxmin, and smooth-ambiguity evaluations as special cases and collapses to expected utility when beliefs are unambiguous and the player is neutral to misspecification. The appropriate steady-state notion for such games is the Self-Confirming Equilibrium under Model Misspecification (SCEM), which requires each player to best respond to a set of structured conjectures that the feedback generated by equilibrium play cannot falsify. In contrast with the classical theory and with its ambiguity-averse extensions, mixed-strategy Nash Equilibria need not be self-confirming. We therefore develop a companion notion of Robust Nash Equilibrium (R-NE), in which every supported action remains optimal under a variational evaluation. Robust Nash equilibria refine SCEM, exist whenever the statistical distances are continuous, thereby delivering existence of SCEM, and coincide with the latter under fully informative feedback. Under observationally consistent divergences and observable payoffs, R-NE and SCEM reduce, respectively, to Nash equilibrium and Self-Confirming Equilibrium under Ambiguity (SCEA), which generalizes smooth self-confirming equilibrium.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统博弈论假设玩家拥有正确信念，但在现实中，玩家只能观察到对手行为的部分反馈，且自身模型可能不完整。本文关注的问题是：当玩家意识到自己的信念只是对复杂环境的近似，并担忧模型被错误设定时，长期互动会收敛到何种稳态？这填补了自我确认均衡与模型误设理论之间的空白。",
+            "modelAndSetup": "模型考虑一个由角色构成的大群体重复博弈，每个玩家基于过往经验形成一组结构化信念（structured conjectures），并因担心这些模型不准确而表现出对误设的厌恶。玩家通过反馈函数获得部分信息，其偏好由一个两层准则刻画：内层对每个结构化信念做稳健评估，外层通过聚合函数处理模糊性，从而形成对行动的整体评价。",
+            "contributionsAndResults": "作者提出了‘模型误设下的自我确认均衡’（SCEM），要求玩家在无法被反馈证伪的信念上进行最优回应。关键发现是：纳什均衡不再自动成为自确认均衡；为此引入了稳健纳什均衡（R-NE）作为精炼，证明其存在并包含于SCEM。此外，更丰富的反馈缩小均衡集合，但更高的不确定性厌恶并不单调增加均衡数量。",
+            "methodsAndTechniques": "作者采用决策理论中对模型误设敏感的偏好表示，结合统计距离（如KL散度）和聚合函数来建模双重不确定性。通过构造辅助博弈并应用最大值定理与不动点论证，证明了R-NE的存在性。比较静态分析则依赖于对观测一致性集随反馈变化的刻画，以及对误设成本参数变动的反例构造。",
+            "limitationsAndReadingValue": "模型依赖较强的正则性假设（如连续性），且观测一致发散的设定限制了误设推理的范围。尽管如此，该框架成功整合了学习、模糊性与模型误设三大议题。最值得阅读的是其核心均衡概念的设计逻辑与存在性证明，以及对传统结论失效的深刻剖析，为非贝叶斯动态博弈提供了新视角。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "信息设计",
+            "鲁棒性",
+            "不确定性建模",
+            "非贝叶斯博弈"
+          ],
+          "tags": [
+            "博弈学习",
+            "信息设计",
+            "鲁棒性",
+            "不确定性建模",
+            "非贝叶斯博弈",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.35692"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        }
+      ]
     },
     {
       "id": "recent-ai",
       "title": "近期 AI 新论文（cs.LG）",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Quantitative Generalization Bounds for Multi-Layer Transformers: A Few Long Strings can Beat Many Short Ones",
+          "titleZh": "多层 Transformer 的定量泛化界：少量长序列胜过多量短序列",
+          "authors": [
+            "Marius Henry",
+            "Michael Rizvi-Martel",
+            "Michael Hahn"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35715",
+          "abstract": "Transformer-based language models exhibit an astonishing capacity to generalize to longer and more difficult problem instances than those seen in training. However, theoretical understanding of this phenomenon still lags behind. Unlike most machine learning models, the generalisation abilities of transformers inherently require considering two axes. On one hand, one must examine in-distribution statistical generalisation, which concerns the ability of a model to broaden a function from training samples to novel samples of the same distribution. On the other hand, given the sequential nature of language data, one must also consider length generalisation, which reflects whether a model trained on inputs of a given length can extrapolate to longer ones.These two notions have mostly been studied separately, leaving open how they interact. In this work, we give a joint treatment of both axes for fixed-precision transformers. We give generalisation guarantees in terms of the parameter sizes of the involved models, as well as the quantization space and the alphabet size that supply the sequences. Finally, we illustrate how the requirements in the sample count and training length trade off. In particular, we find that increasing training length can be exponentially more efficient than increasing the sample size. Experiments support predictions of the theory.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统统计学习理论难以解释 Transformer 在长于训练序列上的泛化能力，这限制了我们对模型何时真正学会算法而非依赖启发式的理解。现有工作多单独研究样本量或序列长度的影响，却忽略了二者在资源约束下的权衡关系，导致训练策略缺乏理论指导。",
+            "modelAndSetup": "论文在固定精度 Transformer 框架下，研究模型在不同长度和数量的训练样本上学习目标函数的能力。通过学生-教师范式，衡量学生模型在远超训练长度的测试序列上的行为一致性，并分析训练长度与样本数对泛化的联合影响。",
+            "contributionsAndResults": "论文给出了首个联合考虑样本大小与输入长度的 Transformer 泛化误差界，揭示增加训练序列长度比增加样本数更高效。实验证实，在相同 token 预算下，稍长的训练序列可显著降低所需样本量，验证了理论预测。",
+            "methodsAndTechniques": "作者将学生与教师 Transformer 的差异建模为一个偏序确定性有限自动机（poDFA），其状态高度决定了可观测行为的最长路径。基于此，推导出长度足以覆盖所有关键行为后，泛化所需的样本复杂度会指数级下降。",
+            "limitationsAndReadingValue": "理论依赖固定精度假设，且未涵盖位置编码与无限精度情形，实际训练动态也由理想化学习过程替代。尽管如此，论文对长度与样本的权衡提供了深刻洞见，最值得读的是其理论框架与实验对训练策略的启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "实验验证"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "泛化能力",
+            "长度外推",
+            "样本效率",
+            "Transformer"
+          ],
+          "tags": [
+            "大语言模型",
+            "泛化能力",
+            "长度外推",
+            "样本效率",
+            "Transformer",
+            "理论推导",
+            "复杂度分析",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2610.35715"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.AI",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "On the stability of learning",
+          "titleZh": "论学习的稳定性",
+          "authors": [
+            "John J. Vastola"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35856",
+          "abstract": "Learning algorithms are usually analyzed under the assumption that informative gradients are continuously available. But this is not always true---learning signals in biological neural networks, for example, may be sparse, local, and only intermittently available at any given synapse. In this work, we show that if gradient information is noisy and only intermittently available, learning may be unstable. In particular, even if average learning dynamics converge to the correct optimum, variance in learning may be asymptotically infinite. We explore this point in a number of analytically tractable settings, including single-layer and multi-layer linear networks, and derive explicit conditions under which learning is stable. These conditions complement, but are conceptually distinct from, existing conditions related to the stability of stochastic gradient descent. Our work demonstrates that unbiased credit assignment is not enough for reliable learning; sufficiently frequent and informative feedback is also required, which yields an additional constraint on models of biologically plausible learning.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统学习算法通常假设梯度信号持续可用，但在生物神经网络中，学习信号可能是稀疏、局部且间歇出现的。这引发了一个关键问题：当梯度信息不仅嘈杂而且不频繁到达时，学习过程是否仍能保持稳定？已有分析多关注平均行为的收敛性，却忽略了方差可能发散的风险。本文指出，即使信用分配在均值上无偏，若反馈过于稀疏，学习仍可能变得不稳定。",
+            "modelAndSetup": "论文研究了一种简化但具代表性的学习设定：权重通过间歇性的泊松过程接收梯度更新，两次更新之间受正则化项驱动向零衰减。输入服从高斯分布，目标是最小化带正则化的均方误差。作者分析了从单层线性模型到深层非线性网络等多种结构，并考察了参数共享与梯度累积等变体。评估重点不在最终性能，而在学习过程中误差协方差是否随时间发散。",
+            "contributionsAndResults": "核心发现是学习稳定性依赖于一个临界条件：梯度到达率必须超过由输入方差和正则强度决定的阈值，否则协方差将趋于无穷。这一现象在多种网络结构中普遍存在，且不能被标准随机梯度下降理论解释。结果显示，仅保证无偏信用分配不足以确保可靠学习，还需足够频繁的反馈，这对生物合理的学习模型提出了额外约束。",
+            "methodsAndTechniques": "作者采用连续时间随机微分方程建模稀疏梯度到达，结合泊松跳跃过程与确定性漂移项。通过分析权重均值与协方差的动力学方程，推导出稳定性判据。关键技术在于分离平均动态与方差动态，并证明后者对稀疏性更敏感。对于复杂结构，利用海森矩阵局部近似和傅里叶变换简化分析，揭示了深度与稳定性之间的温和关系。",
+            "limitationsAndReadingValue": "分析主要集中在线性或近线性区域，远离固定点的行为未充分探讨。假设梯度独立到达各突触，忽略了实际中可能存在的相关性。尽管如此，论文清晰揭示了稀疏反馈带来的独特稳定性挑战。最值得阅读的是其理论框架与直观解释，尤其是关于‘无偏但高方差’更新的危害，为设计鲁棒学习算法提供了新视角。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "实验验证"
+          ],
+          "contentTags": [
+            "学习动力学",
+            "梯度更新",
+            "生物可塑性",
+            "噪声影响",
+            "稳定性分析"
+          ],
+          "tags": [
+            "学习动力学",
+            "梯度更新",
+            "生物可塑性",
+            "噪声影响",
+            "稳定性分析",
+            "理论推导",
+            "模型构建",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.35856"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "q-bio.NC",
+              "cs.LG"
+            ],
+            "primaryCategory": "q-bio.NC",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "A theory of noisy linear recurrent neural network learning dynamics",
+          "titleZh": "关于噪声线性循环神经网络学习动力学的理论",
+          "authors": [
+            "John J. Vastola",
+            "Kanaka Rajan"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35785",
+          "abstract": "Biological neural networks are noisy: their dynamics involve difficult-to-predict fluctuations which are likely due not just to chaos, but also to a variety of low-level biophysical processes. Despite the omnipresence of intrinsic noise, its theoretical consequences are incompletely understood, especially in the context of learning. For example, does noise meaningfully shape representation learning, or is it better viewed as a nuisance factor whose presence or absence changes little about what solution is found and when? Here, we argue that intrinsic noise can significantly modulate representation learning in recurrent neural networks (RNNs), since it can strongly break solution-space degeneracies and in some cases control whether a non-degenerate solution exists at all. We show that this is true for an analytically tractable model of noisy RNN learning with a linear activation function and white noise inputs. We find that, in the so-called rich regime (where weights are initialized with small values), noise strongly modulates the directions in which the read-in, readout, and recurrent weights align. Moreover, we find that noise produces a kind of phase transition: for sufficiently high noise, a non-degenerate solution is not even optimal if parameter scales are limited (e.g., via regularization). These results extend recent analytic work on RNN representation learning and show that noise can act as a fundamental determinant of representations.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么内在噪声会影响循环神经网络的学习？传统观点常将噪声视为干扰项，但本文指出它可能是塑造表征的关键因素。现有理论多忽略噪声或将其简化处理，尤其在表示学习中，难以解释为何不同初始化会收敛到相似功能表现。本研究聚焦于噪声如何打破解空间的对称性和退化性，从而实质性引导学习方向。",
+            "modelAndSetup": "论文研究了一个带白噪声输入的线性RNN模型，其状态受各向异性加性噪声驱动。任务是通过梯度下降学习一个漏积分滤波器，目标是最小化输出与理想响应之间的均方误差，同时考虑噪声抑制和正则化。模型关注读入权重、读出权重和递归权重的联合学习动态，并分析在‘富集’训练模式下的演化过程。",
+            "contributionsAndResults": "文章证明了即使微弱的内在噪声也能显著改变学习轨迹和最终表征。噪声不仅偏好低噪声方向进行权重对齐，还引发读入与读出权重间的不对称增长——前者趋于增大，后者趋于减小。更关键的是，当噪声强度超过阈值时，会出现相变，导致系统放弃任务性能以最小化噪声，收敛至零振幅或无限快滤波的平凡解。",
+            "methodsAndTechniques": "作者采用解析可解的线性RNN框架，在小初始权重假设下推导出学习动力学的近似微分方程。通过分离对齐阶段与动态阶段，结合扩散张量S的特征分解，揭示噪声如何调制不同模态的增长率。进一步构造低维有效目标函数，用于分析噪声与正则化之间的竞争关系，从而预测相变边界的存在。",
+            "limitationsAndReadingValue": "结论依赖于线性模型、白噪声输入和特定初始化设定，推广至非线性或多任务情境尚需验证。尽管如此，该理论清晰展示了噪声作为表示选择机制的作用。读者应重点关注其对解空间退化的分析、相变条件的推导及对富集学习动态的新解释，这对理解生物与人工网络中的鲁棒表征形成具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "实验验证"
+          ],
+          "contentTags": [
+            "表示学习",
+            "循环神经网络",
+            "噪声建模",
+            "学习动力学",
+            "退化解"
+          ],
+          "tags": [
+            "表示学习",
+            "循环神经网络",
+            "噪声建模",
+            "学习动力学",
+            "退化解",
+            "理论推导",
+            "模型构建",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.35785"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "q-bio.NC"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "SCAFFOLD under Hessian Similarity: Sharp Convergence Rates",
+          "titleZh": "基于Hessian相似性的SCAFFOLD：尖锐收敛速率",
+          "authors": [
+            "Zhirayr Tovmasyan",
+            "Slavomír Hanzely",
+            "Egor Shulgin",
+            "Peter Richtárik",
+            "Sebastian U. Stich"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35663",
+          "abstract": "One of the main challenges of federated learning is heterogeneous data split among the clients, leading to biased local updates called client drift. The SCAFFOLD algorithm (Karimireddy et al., 2020) corrects client drift with control variates, but its relation to the similarity of client data is not yet fully understood: the original similarity-based guarantees cover only quadratics with a stronger second-order similarity assumption, and a follow-up weakly convex analysis (Luo et al., 2025) obtains a $\\sqrt{Lδ}$ dependence for $L$-smooth losses with averaged Hessian similarity $δ$. We analyze SCAFFOLD with minibatch-based control variates and establish linear dependence on Hessian similarity beyond quadratics, for both convex and nonconvex objectives. In particular, for convex objectives with exact gradients, $R$ SCAFFOLD rounds with $K$ local steps lead to an objective gap of order $(L/K+δ)D_0^2/R$, where $D_0$ is the initial distance to a minimizer. When $K=Θ(L/δ)$, it improves the minibatch SGD rate by a factor $Θ(L/δ)$. For nonconvex objectives, we prove an analogous stationarity guarantee under uniform Hessian similarity for a client-selection variant. In both settings, we extend these guarantees to stochastic gradients and prove matching lower bounds for the analyzed methods with constant local stepsizes. We also show that, under partial participation, even identical clients need not obtain the full communication benefit of additional local steps.",
+          "summarySections": {
+            "backgroundAndQuestion": "联邦学习中因客户端数据异构导致的局部更新偏差（即客户端漂移）是核心挑战。现有方法如SCAFFOLD虽通过控制变量缓解此问题，但其性能与数据相似性的关系尚不清晰，尤其缺乏在非二次目标下对Hessian相似性的精细依赖分析。",
+            "modelAndSetup": "论文研究SCAFFOLD算法在凸与非凸目标下的收敛行为，采用minibatch估计控制变量。设定包括全参与和部分参与两种模式，评估指标为期望目标差距与梯度范数平方，通过理论界与实验验证方法有效性。",
+            "contributionsAndResults": "论文建立了SCAFFOLD在Hessian相似性假设下的线性依赖收敛率，填补了此前仅在强二阶假设或弱凸情形下的分析空白。结果表明，在适当条件下，通信轮次复杂度可达O(δD/ε)，与正则化方法相当，且无需精确梯度。",
+            "methodsAndTechniques": "作者引入minibatch Option-I控制变量，结合平均与一致Hessian相似性假设，利用负向距离项吸收相似性误差，并通过后缀平均处理随机噪声。理论证明包含上下界匹配，验证了常数步长变体的最优性。",
+            "limitationsAndReadingValue": "尽管理论完备，但在部分参与下即使客户端相同也可能无法完全享受本地步数带来的通信增益。读者应重点关注其对Hessian相似性的建模方式、上下界构造技巧及神经网络实验中相似性与实际性能的关系。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "算法设计",
+            "复杂度分析",
+            "实验验证"
+          ],
+          "contentTags": [
+            "联邦学习",
+            "优化算法",
+            "客户端漂移",
+            "Hessian相似性",
+            "收敛性分析"
+          ],
+          "tags": [
+            "联邦学习",
+            "优化算法",
+            "客户端漂移",
+            "Hessian相似性",
+            "收敛性分析",
+            "理论推导",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.35663"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        },
+        {
+          "title": "Active Learning of Conditional Generative Models via the Transport Neural Tangent Kernel",
+          "titleZh": "通过传输神经正切核进行条件生成模型的主动学习",
+          "authors": [
+            "Jayoung Ryu",
+            "Kyunghyun Cho",
+            "Romain Lopez"
+          ],
+          "date": "2026-10-26",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.35652",
+          "abstract": "Many high-throughput scientific experiments produce distributional outputs, requiring conditional generative models to interpret the data, and to predict outcomes at new inputs. Acquiring experimental data at new conditions (e.g., for a new antigen or a new cell type) is often expensive, motivating the need for automated experimental design methods. However, existing active learning frameworks are limited as they assume scalar or vector-valued outputs. We first show that the Wasserstein test risk of a conditional generative task decomposes into a mean term and a shape term, demonstrating why mean-based active learning is blind to distributional shape. To capture both, we propose the transport Neural Tangent Kernel (tNTK), a tractable kernel that measures how sensitive a generative model's predicted distribution is with respect to its parameters. The tNTK recovers the standard NTK in the deterministic limit and upper-bounds the posterior Fréchet variance of the prediction under small parameter perturbations. It admits a closed-form expression for affine Gaussian transport and tractable Monte Carlo estimators otherwise. Treating the tNTK as the covariance function of a Gaussian process, we greedily select inputs that minimize the total GP posterior variance across the pool, yielding a distribution-aware active learning strategy. We evaluate this strategy across four classes of conditional generative models, including conditional flow matching and conditional Monge gap, on synthetic distributions, intent-labeled sentences, and single-cell perturbation responses. In these experiments, the tNTK outperforms the baseline NTK computed from the conditional mean, demonstrating the value of distribution-aware active learning for generative-modeling tasks.",
+          "summarySections": {
+            "backgroundAndQuestion": "许多科学实验产生的是分布输出而非标量，传统主动学习方法仅关注均值预测，忽略了分布形状的变化。这导致在高成本实验中采样效率低下。现有方法无法处理概率分布作为输出的情形，因为其核心假设是输出为向量或标量，因此难以捕捉生成模型中完整的不确定性。",
+            "modelAndSetup": "论文研究了条件生成模型下的主动学习问题，输入是实验条件x，输出是观测到的样本分布p(y|x)。模型通过参数化传输映射T_θ(x)将基分布ν推至目标分布。评估采用Wasserstein距离衡量预测分布与真实分布的差异，并在合成与真实数据上比较不同采样策略的效果。",
+            "contributionsAndResults": "提出运输神经正切核（tNTK），首次实现了对分布感知的主动学习。tNTK能同时捕获预测分布的均值和形状敏感性，在四类生成模型和多个数据集上优于基于均值的NTK方法。结果显示tNTK在26/30设置下表现更优，证明了建模分布级不确定性的必要性。",
+            "methodsAndTechniques": "tNTK通过测量生成模型输出分布对参数扰动的敏感性来量化不确定性，形式上是对传输映射雅可比的积分。它被用作高斯过程协方差函数，指导选择使池中总后验方差最小的输入。该方法无需显式建模分布参数，适用于各类基于传输的生成模型。",
+            "limitationsAndReadingValue": "tNTK在高维下理论界松散，且计算依赖蒙特卡洛估计。实验集中在特定生成模型，未涵盖所有分布族。尽管如此，其几何解释与实证优势使其成为分布级主动学习的重要进展。最值得阅读的是问题设定、tNTK的构造逻辑及其在多种模型上的统一有效性分析。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "实验验证",
+            "理论推导",
+            "模型构建",
+            "基准评测"
+          ],
+          "contentTags": [
+            "生成式AI",
+            "主动学习",
+            "条件生成模型",
+            "神经正切核",
+            "最优传输"
+          ],
+          "tags": [
+            "生成式AI",
+            "主动学习",
+            "条件生成模型",
+            "神经正切核",
+            "最优传输",
+            "算法设计",
+            "实验验证",
+            "理论推导"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.35652"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-10-26",
+            "updated": "2026-10-26"
+          }
+        }
+      ]
     }
   ]
 }
