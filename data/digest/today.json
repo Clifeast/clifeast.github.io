@@ -1,11 +1,8 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-10-28T08:54:36.145297+00:00",
-  "warnings": [
-    "近期 AGT 新论文 arXiv 抓取失败：HTTP Error 429: Unknown Error",
-    "近期 AI 新论文 arXiv 抓取失败：HTTP Error 429: Unknown Error"
-  ],
+  "generatedAt": "2026-10-29T08:49:26.742834+00:00",
+  "warnings": [],
   "llm": {
     "enabled": true,
     "provider": "qwen",
@@ -63,7 +60,7 @@
     },
     {
       "id": "recent-ai",
-      "title": "近期 AI 新论文（cs.AI）",
+      "title": "近期 AI 新论文（cs.RO）",
       "source": "arxiv-llm-ranked",
       "fetchedCount": 0,
       "papers": []
