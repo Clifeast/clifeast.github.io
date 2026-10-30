@@ -1,0 +1,648 @@
+{
+  "date": "2026-10-30",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-10-30T09:03:21.740815+00:00",
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Who Says What: Strategic Communication in Networks (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Fundamental Limits of Sampling-Based Reachability: Geometry and Flow Distortion (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Gym-Anything for Robotics: Scaling physical simulations with digital agents (HTTP Error 400: Bad Request)"
+  ],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 7,
+      "papers": [
+        {
+          "title": "First-Order Bilevel Optimization for Non-truthful Auction Design",
+          "titleZh": "非真实拍卖设计的一阶双层优化",
+          "authors": [
+            "Shing-Hei Ho",
+            "April Niu",
+            "Ellen Vitercik",
+            "Kai Wang"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40403",
+          "abstract": "Automated mechanism design has enabled the learning of complex auction mechanisms using neural networks. However, designing non-truthful auctions remains challenging because bidders' equilibrium strategies depend on the auction mechanism and thus evolve as the mechanism is optimized. In this work, we formulate auction design as a Stackelberg game with multiple strategic followers and develop a fully first-order algorithm for revenue optimization in non-truthful auctions. We establish non-asymptotic guarantees for hypergradient approximation and show that, under standard smoothness and strong-monotonicity assumptions, our method reaches an $O(ε)$-stationary point using $\\tilde{\\mathcal{O}}(ε^{-2})$ first-order oracle calls. Experiments on symmetric and asymmetric single-item auctions, as well as multi-item auctions, show that our method converges faster than second- and zeroth-order baselines and scales better as the number of bidders increases. Our method also discovers auctions that achieve revenue close to truthful baselines. These results provide a scalable framework for automated mechanism design beyond truthful auctions.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统自动机制设计多聚焦真实拍卖，因其激励兼容性简化了策略响应建模。然而现实中大量拍卖（如首价拍卖）是非真实的，改变机制会引发投标人策略调整，导致收入优化需通过动态均衡间接实现。现有方法或依赖零阶优化效率低下，或假设有可微均衡难以满足，因此缺乏高效且具理论保障的非真实拍卖学习框架。",
+            "modelAndSetup": "作者将非真实拍卖设计建模为斯塔克尔伯格博弈，拍卖方为领导者，投标人为策略性跟随者。每个投标人采用神经网络策略出价，其目标是最小化自身期望成本，形成一个多人非合作博弈。拍卖机制也由神经网络参数化，目标是最大化期望收入。问题归结为一个双层优化：上层优化机制参数，下层为投标人的纳什均衡策略。",
+            "contributionsAndResults": "论文提出了首个适用于多跟随者的全一阶双层优化算法，能在非对称雅可比情形下逼近超梯度，突破了以往仅适用于单跟随者或对称博弈的限制。在标准强单调和平滑性假设下，算法达到 $\\tilde{O}(\\epsilon^{-2})$ 阶梯度调用复杂度以收敛到 $\\epsilon$-平稳点，并在多种拍卖设置中发现接近真实基准的高收入非真实拍卖。",
+            "methodsAndTechniques": "核心挑战在于下层多玩家均衡的耦合性导致精确超梯度涉及雅可比逆的转置而非自身。作者构造了一个有限差分势函数，诱导出一个辅助博弈，其局部雅可比近似于所需转置结构。通过分析该辅助博弈的局部强单调性和超梯度逼近误差，实现了无需二阶信息的全一阶算法，并结合暖启动策略追踪可微均衡分支以应对多重均衡。",
+            "limitationsAndReadingValue": "方法依赖强单调性等理想化假设以保证均衡唯一性和收敛性，在弱单调或非凸场景下的适用性受限。算法复杂度随投标人数平方增长，扩展性面临挑战。最值得读的是其巧妙的势函数构造和对非对称双层问题的超梯度逼近分析，为学习策略性环境中的复杂机制提供了新工具和理论视角。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "理论推导",
+            "机制设计",
+            "均衡分析",
+            "实验验证"
+          ],
+          "contentTags": [
+            "机制设计",
+            "拍卖理论",
+            "多智能体系统",
+            "博弈学习",
+            "双层优化"
+          ],
+          "tags": [
+            "机制设计",
+            "拍卖理论",
+            "多智能体系统",
+            "博弈学习",
+            "双层优化",
+            "算法设计",
+            "理论推导",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 32.8
+          },
+          "ids": {
+            "arxiv": "2610.40403"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Finding Competitive Equilibria in Online Marketplaces with Platform Fees, Taxes, and Subsidies",
+          "titleZh": "在线市场中带平台费用、税收和补贴的竞争均衡求解",
+          "authors": [
+            "Taihei Oki",
+            "Ryosuke Sato"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40626",
+          "abstract": "We study equilibrium computation in multi-unit trading networks with valuations satisfying generalized full substitutes and agent- and transaction-specific piecewise-linear transfer functions. These transfers model platform fees, taxes, subsidies, and membership discounts in online marketplaces. Our ascending procedure raises prices at different rates and reaches the minimum equilibrium price vector in finitely many iterations, each implementable in strongly polynomial time under our oracle and arithmetic models. An equilibrium allocation can then be recovered efficiently. The method extends primal-dual techniques developed for ascending auctions to handle complementarities between purchases and sales through a submodular flow formulation. In single-seller markets with substitutes and complements, our framework also extends the double-track auctions of Sun and Yang (2009) and Shioura and Yang (2015) to bidder- and good-specific transfers.",
+          "summarySections": {
+            "backgroundAndQuestion": "在线市场中，不同交易方面临差异化的平台费、税负和补贴，导致买卖双方的实际收支与标价脱钩。这种异质性摩擦破坏了传统价格调整机制的有效性，使得市场出清变得困难。本文旨在解决：如何在存在非统一转移支付的情况下，通过价格调整算法构造性地找到竞争均衡。",
+            "modelAndSetup": "模型基于多单位交易网络，允许每个代理同时买卖，并拥有满足广义全替代性的估值函数。交易涉及买方和卖方特定的分段线性转移函数，涵盖平台费、税收和补贴。竞争均衡定义为价格向量与可行交易组合，使得每个代理在其预算下最大化效用，且市场在扭曲坐标下净需求等于指定的市场出清向量。",
+            "contributionsAndResults": "本文提出了一个升价算法，能够以不同的速率同步提升各类交易的价格，在有限步内收敛到最小均衡价格向量。该算法每次迭代均可在强多项式时间内完成。此外，可在均衡价格下高效恢复最大化总交易量的均衡配置，扩展了单卖家市场中的双轨拍卖至存在异质转移的情形。",
+            "methodsAndTechniques": "作者采用原对偶框架，结合次模流最小化来计算价格更新方向。通过扭转销售坐标将需求集转化为M凸集，并利用字典序成本下的次模流问题求解局部稳定的方向。关键技术在于利用对偶有效域的约束条件，无需假设秩函数单调性即可保证稳定性。",
+            "limitationsAndReadingValue": "论文依赖于广义全替代性和分段线性转移的强假设，限制了对更复杂非线性摩擦的适用性。尽管如此，其将离散凸分析与次模流结合的方法极具启发性，对于希望深入理解现代市场均衡算法设计与复杂交易网络建模的研究者而言，核心证明与机制构造非常值得精读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "拍卖理论"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "拍卖理论",
+            "理论推导",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 27.8
+          },
+          "ids": {
+            "arxiv": "2610.40626"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "econ.TH"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Fragmented Obedient Equilibria in Routing Games",
+          "titleZh": "路由博弈中的碎片化服从均衡",
+          "authors": [
+            "Zhengyang Wang",
+            "Achilleas Anastasopoulos"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.39225",
+          "abstract": "We study routing games in which competing mediators recommend routes to fixed nonatomic populations. Each mediator chooses a randomized flow allocation to minimize its population's expected travel cost, subject to users having no conditional expected gain above a tolerance $ε$ from disregarding their recommendations. We define a fragmented obedient equilibrium (FOE) by combining user obedience with mediator optimality, and establish existence under a lower-hemicontinuity assumption on the obedient policy correspondences. Under affine edge latencies and independent mediator sampling, we derive an exact reformulation in first and second flow moments that preserves best responses and equilibrium profiles. Every feasible moment pair admits a finitely supported realizing policy. When the network has at most four routes, each mediator's best-response problem is an exact semidefinite program. A numerical illustration on the Braess network shows that relaxing obedience can reduce FOE costs, while gaps relative to the social optimum and optimal obedient pooling can persist.",
+          "summarySections": {
+            "backgroundAndQuestion": "当多个导航平台为各自固定的用户群体推荐路径时，用户的服从性与平台间的竞争会如何影响整体交通效率？本文关注在用户仅轻微偏离推荐路径的条件下，平台策略互动所导致的均衡结果。这延续了信息设计与有界理性用户行为的研究脉络，揭示了分散决策可能导致效率损失。",
+            "modelAndSetup": "模型中有多个中介（平台）服务固定非原子用户群，每个中介选择随机化路径分配策略以最小化本群体期望成本。用户收到私有推荐后，仅当偏离带来的期望节省超过容忍阈值ε时才会不遵从。均衡要求各中介策略在满足用户服从约束下构成相互最优响应。",
+            "contributionsAndResults": "论文提出了碎片化服从均衡（FOE）概念并证明其存在性，关键创新在于将原分布优化问题转化为关于流量一阶与二阶矩的有限维问题。当边延迟为仿射函数且路径数不超过四时，均衡可通过半定规划精确求解，揭示了放松服从约束可能降低总成本但仍存效率差距。",
+            "methodsAndTechniques": "作者利用联合期望的连续性与可行集的闭图性质，结合Kakutani不动点定理证明均衡存在。核心技术是将服从约束和目标函数表示为流量矩的线性形式，从而将无限维概率分布优化转化为有限维矩问题，并借助完全正矩阵与双重非负矩阵的关系实现可计算化。",
+            "limitationsAndReadingValue": "结果依赖于较低维路径空间（≤4）才能精确转化为SDP，高维情形仅为松弛近似；同时均衡存在性需假设服从策略集下半连续，实际验证较难。最值得读的是其矩方法对信息设计问题的重构思路，以及对竞争性中介系统效率边界的新洞察。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "信息设计",
+            "博弈学习",
+            "多智能体系统",
+            "机制设计",
+            "路由博弈"
+          ],
+          "tags": [
+            "信息设计",
+            "博弈学习",
+            "多智能体系统",
+            "机制设计",
+            "路由博弈",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 2.7,
+            "total": 26.7
+          },
+          "ids": {
+            "arxiv": "2610.39225"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Persistence of Bounded Rationality in Financial Markets: An Evolutionary Game-Theoretic Model",
+          "titleZh": "金融市场的有限理性持久性：一个演化博弈论模型",
+          "authors": [
+            "Cheng Zhang"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.39198",
+          "abstract": "Classical theory predicts that irrational traders lose money to rational traders and are eventually driven out of the market. Yet noise trading, herding, and heuristic trading persist even in highly developed markets. We model a financial market as an ecology of two trading-behavior types, relatively rational (R) and boundedly rational (N), whose composition evolves under replicator dynamics according to relative performance. Each type's fitness depends on the share of the other type and on frictions. When the interaction is complementary, that is, rational traders profit from the mispricing created by boundedly rational traders while the latter benefit from the liquidity and price correction supplied by the former, and when the difference in frictions is moderate, a unique interior composition exists and is globally asymptotically stable: bounded rationality persists endogenously. When the interaction is antagonistic, the same point becomes a tipping threshold between two one-type regimes. Comparative statics show that lowering the costs of disciplined trading, as algorithmic and AI-based trading does, shifts the composition toward rational trading continuously but does not eliminate bounded rationality unless the cost advantage exceeds an explicit threshold.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统理论认为非理性交易者会被市场淘汰，但现实中噪声交易、羊群效应等有限理性行为持续存在。本文质疑这一选择性假说，追问为何有限理性能在演化过程中存续。问题核心在于市场生态中不同类型交易者之间的互动关系：理性交易者是否依赖非理性者创造的机会，而非单纯取代他们。",
+            "modelAndSetup": "作者构建了一个两类交易者共存的演化模型：相对理性（R）和有限理性（N）类型。他们的市场份额随复制动态调整，收益取决于对方比例和交易摩擦。R型通过纠正N型造成的误定价获利，N型则受益于R型提供的流动性和价格修正。模型用仿射收益函数刻画交叉互动效应，并引入摩擦参数反映执行成本和技术差异。",
+            "contributionsAndResults": "论文发现当两类行为相互补时，市场会稳定收敛到一个R与N共存的内点均衡，表明有限理性可内生持久。该均衡全局渐近稳定，无需外部干预。若互动转为对抗，则同一内点成为 tipping threshold，系统呈现双稳态。这揭示了市场结构对交互性质的高度敏感性，挑战了理性必然主导的传统观点。",
+            "methodsAndTechniques": "分析基于复制动态方程和适配度差函数的符号变化，利用单调性论证全局收敛性。关键在于将内点稳定性与交叉项系数之和的正负联系起来：互补时b+d>0导致负频率依赖，抑制任一类型垄断；对抗时b+d<0破坏稳定性。比较静态分析则直接对均衡表达式求导，揭示摩擦变化的影响路径。",
+            "limitationsAndReadingValue": "模型虽简洁但高度抽象，未内生价格形成过程或策略切换机制。结果依赖于仿射适配度假设，可能限制对极端波动的解释力。然而其核心价值在于提供了一个清晰的理论框架，用演化视角重新理解市场异质行为的共存逻辑，特别适合关注行为持久性与制度演化的读者深入研读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "市场/匹配",
+            "信息设计"
+          ],
+          "tags": [
+            "博弈学习",
+            "市场/匹配",
+            "信息设计",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 4.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 3.7,
+            "total": 25.4
+          },
+          "ids": {
+            "arxiv": "2610.39198"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "econ.TH",
+              "q-fin.GN"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Who Says What: Strategic Communication in Networks",
+          "titleZh": "",
+          "authors": [
+            "Anuj Bhowmik",
+            "Saptarshi P. Ghosh",
+            "Iman Kundu",
+            "Sandipan Saha"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40230",
+          "abstract": "We study a multiplayer communication coordination game in which privately informed agents communicate through a social network and choose their optimal actions while balancing them against their own bliss points and those of their neighbours. We show that equilibrium actions are convex combinations of the expected bliss points of all players, with weights determined by a degree-discounted Bonacich centrality measure. We also characterize when players report truthfully, over-report, or under-report their private information, and show that the incentive to misreport depends critically on the receiver's position in the network. A striking implication is that even under identical preferences, fully revealing communication may not be realized, and information transmission may remain coarse in a star network while becoming almost fully informative in a complete network. Finally, when biases are endogenously chosen, strategic responses to neighbours' biases are governed by their centralities, and unbiasedness may emerge as a Nash equilibrium.",
+          "summarySections": {
+            "backgroundAndQuestion": "We study a multiplayer communication coordination game in which privately informed agents communicate through a social network and choose their optimal actions while balancing them against their own bliss points and those of their neighbours. We show that equi...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 23.9
+          },
+          "ids": {
+            "arxiv": "2610.40230"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.RO）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Learning Safe Flow Matching Robot Policies from Binary Feasibility Oracles",
+          "titleZh": "从二值可行性预言机学习安全的流匹配机器人策略",
+          "authors": [
+            "Jianming Ma",
+            "Rongjun Jin",
+            "Yizhi Chen",
+            "Yue Gao"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40075",
+          "abstract": "Robot foundation models increasingly rely on flow-based action generation for general-purpose manipulation, yet the generated actions are not guaranteed to satisfy physical constraints such as joint limits and collision avoidance. This problem is especially challenging when the feasible set cannot be described analytically and is accessible only through black-box feasibility oracles. We study this practical oracle-only setting and propose an oracle-guided differentiable safeguard for safe flow-matching robot policies. The safeguard uses binary feasibility queries to correct unsafe updates in the forward pass, while extracting local boundary information to provide constraint-aware learning signals in the backward pass. Combined with discrete-time flow matching, the same safeguard is used during training and inference, enabling forward--backward aligned policy learning without explicit or differentiable constraint models. Experiments on obstacle-aware robotic manipulation demonstrate 100% constraint satisfaction while preserving task performance.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有基于流的机器人动作生成模型虽具备强泛化能力，但难以保证生成动作满足物理约束（如关节极限和避障）。传统方法依赖显式可微约束模型，但在真实场景中，可行区域常无法解析表达，只能通过黑箱查询判断可行性。本文针对这种仅能访问二值可行性预言机的实际设定，提出一种无需显式约束建模的安全策略学习方法。",
+            "modelAndSetup": "模型在每个流更新步接收观测与指令，预测未来多步关节轨迹。安全由一个可微防护层保障：前向过程通过沿预测方向射线搜索首个不可行点来截断更新，确保每一步输出可行；反向传播则利用边界邻近的二值查询估计局部法向量，构建边界感知的代理梯度。训练与推理均使用相同防护机制，实现在无显式约束下的对齐学习。",
+            "contributionsAndResults": "论文提出首个仅依赖二值可行性查询的可微安全防护机制，实现了训练与推理的一致性。在避障操作任务中达到100%步级安全性，同时保持接近基线的任务成功率，并提升了运动平滑性。结果表明，即使缺乏可微约束模型，也能通过预言机反馈实现高效的安全策略学习，突破了传统方法对解析约束的依赖。",
+            "methodsAndTechniques": "方法核心在于将二值预言机用于双重目的：前向修正与后向学习信号生成。通过射线搜索定位边界并截断更新，结合对称采样估计边界法向，构造出可微的代理雅可比矩阵。该设计使策略能在训练中感知约束边界的几何信息，从而调整预测行为，避免未来被截断，形成闭环的学习-安全干预机制。",
+            "limitationsAndReadingValue": "当前方法依赖线性插值路径，在高度非凸可行域中可能失效，且每次生成需大量预言机查询，导致推理延迟较高。此外，初始样本需已知可行，限制了极端初始化场景的应用。最值得阅读的是其问题设定与防护机制设计，为黑箱约束下的安全生成提供了通用思路，尤其适用于仿真到现实迁移等高安全需求场景。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "实验验证",
+            "模型构建",
+            "系统框架"
+          ],
+          "contentTags": [
+            "安全性",
+            "生成式AI",
+            "机器人控制",
+            "流匹配",
+            "约束满足"
+          ],
+          "tags": [
+            "安全性",
+            "生成式AI",
+            "机器人控制",
+            "流匹配",
+            "约束满足",
+            "算法设计",
+            "实验验证",
+            "模型构建"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.40075"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.AI"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+          "titleZh": "",
+          "authors": [
+            "Xi Zheng",
+            "Ivan Ruchkin",
+            "Hong Jin Kang",
+            "Tevfik Bultan",
+            "Vijay Ganesh",
+            "Taylor T. Johnson",
+            "Ziyang Li",
+            "Lei Ma",
+            "Aloysius K. Mok",
+            "Daniel Neider",
+            "Ruzica Piskac",
+            "Nalini Venkatasubramanian",
+            "Simon Thompson",
+            "Sanjoy Baruah"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.39547",
+          "abstract": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning layers, and interfaces; (ii) semantically grounded, conformance-based testing that combines formal specifications and symbolic world models with foundation-model-assisted specification mining, scenario generation, and test synthesis; and (iii) compositional verification and runtime assurance that target formally tractable components and interfaces through modular contracts, equivalence checking, verified synthesis, uncertainty-aware reasoning, and runtime monitoring and enforcement. Symbolic abstractions establish assurance boundaries between stochastic learning and formal reasoning, connecting testing, verification, and runtime evidence across the system lifecycle. Foundation models serve as constrained assistants whose outputs are independently checked wherever correctness can be formally specified. We identify research challenges in specification engineering, abstraction fidelity, evidence composition, and lifecycle certification, and outline a staged agenda toward trustworthy, deployable, and certifiable learning-enabled CPS.",
+          "summarySections": {
+            "backgroundAndQuestion": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2610.39547"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "eess.SY"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Fundamental Limits of Sampling-Based Reachability: Geometry and Flow Distortion",
+          "titleZh": "",
+          "authors": [
+            "Jixian Liu",
+            "Ihab Tabbara",
+            "Hussein Sibai",
+            "Enrique Mallada"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40473",
+          "abstract": "Sampling-based reachability estimates reachable sets from finitely many simulated trajectory endpoints. Existing guarantees often control missed probability mass or approximation error relative to the convex hull of the reachable set, leaving the geometric error relative to the reachable set incompletely characterized. We study this error as a problem of support estimation under flow distortion. Our assumptions combine a uniform lower bound on the local volume density of the initial set, a lower bound on the sampling density, and a one-sided Lipschitz constant $μ$ for the vector field. These conditions admit initial sets with corners and dynamics that may expand or contract. In the fine-accuracy regime, $\\tilde{\\mathcal O}\\bigl(2^ne^{nμT}(R/r)^n/(ρκ)\\bigr)$ independent endpoint samples suffice for Hausdorff accuracy $r$ using the endpoint cloud. Here, $n$ is the state dimension, $T$ is the horizon, $R$ is the volume-equivalent radius, and $ρ$ and $κ$ quantify sampling density and local volume density. For $n\\ge2$ and sufficiently small $κ$, a minimax lower bound over all estimators based only on independent endpoints matches these dependencies up to a dimension-dependent factor $2\\cdot4^n$ and logarithmic factors, within the stated parameter range and when the state domain accommodates the construction. The exponential burden in dimension, and in the horizon for expanding systems, is therefore intrinsic to this observation model. Planar experiments illustrate the predicted effects of corners and contraction; robot-arm experiments show how empirical accuracy deteriorates with dimension.",
+          "summarySections": {
+            "backgroundAndQuestion": "Sampling-based reachability estimates reachable sets from finitely many simulated trajectory endpoints. Existing guarantees often control missed probability mass or approximation error relative to the convex hull of the reachable set, leaving the geometric err...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.40473"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "eess.SY",
+              "cs.RO"
+            ],
+            "primaryCategory": "eess.SY",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function",
+          "titleZh": "",
+          "authors": [
+            "Dabin Seo",
+            "Eunhyek Joa"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40002",
+          "abstract": "Reasoning vision-language-action (VLA) policies write a reasoning trace and then decode the action from it. A wrong trace yields a wrong action, and even a correct-looking trace can mislead the plan. Existing remedies ask whether the reasoning is right. We ask how strongly it should steer. CoC-CFG applies classifier-free guidance between the policy's context and the same context without the reasoning span. One weight per Euler step attenuates or amplifies the reasoning, and w=1 recovers the original policy. We treat the choice of this weight as a Markov decision process whose action values are measured, not bootstrapped. With the expert frozen and the noise fixed, applying a weight for one step and finishing the plan under the current controller returns that weight's value exactly. Q-adaptive guidance fits these values with small critics and improves the controller conservatively. In the Alpasim driving simulator it outperforms every fixed weight and online RL (SAC, GRPO) in open loop, and in closed loop it passes 262 of 300 scenes, against 252 for the original policy. On held-out frames of the Waymo end-to-end driving benchmark, its first three stages outperform every fixed weight, four adaptive-guidance methods, SAC and GRPO. On the hidden test set, a frozen Alpamayo 1.5 with rule-based camera and vehicle conversions and Q-adaptive guidance sets a new state of the art among published methods: 8.135159 rater feedback score, against 8.079 for the best published method.",
+          "summarySections": {
+            "backgroundAndQuestion": "Reasoning vision-language-action (VLA) policies write a reasoning trace and then decode the action from it. A wrong trace yields a wrong action, and even a correct-looking trace can mislead the plan. Existing remedies ask whether the reasoning is right. We ask...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2610.40002"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.CV",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        },
+        {
+          "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+          "titleZh": "",
+          "authors": [
+            "Pranjal Aggarwal",
+            "Sean Welleck"
+          ],
+          "date": "2026-10-29",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.40565",
+          "abstract": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
+          "summarySections": {
+            "backgroundAndQuestion": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2610.40565"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "cs.AI",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-10-29",
+            "updated": "2026-10-29"
+          }
+        }
+      ]
+    }
+  ]
+}
