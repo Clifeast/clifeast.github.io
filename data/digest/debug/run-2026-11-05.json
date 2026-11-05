@@ -1,0 +1,2418 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T09:45:56.021513+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-11-04",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202611040000 TO 202611042359\"",
+            "totalResults": 14,
+            "fetchedCount": 14
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202611040000 TO 202611042359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 17
+      },
+      "arxivTotalResults": 18,
+      "fetchedCount": 17,
+      "fetchedPapers": [
+        {
+          "title": "Online Edge-Weighted Matching Beyond 0.55",
+          "url": "https://arxiv.org/abs/2611.06896",
+          "arxivId": "2611.06896",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "abstract": "We give a $0.556195$-competitive randomized algorithm for edge-weighted online bipartite matching with free disposal, improving the $0.5368$ guarantee of Blanc and Charikar. The result holds for arbitrary nonnegative edge weights and any input sequence fixed independently of the algorithm's randomness. Our algorithm builds on online correlated selection, introduced by Fahrbach, Huang, Tao, and Zadimoghaddam, and its multiway extension due to Blanc and Charikar. Our main contribution is a state-dependent primal--dual analysis of correlated selection. At each weight threshold, we track the state of the selection process jointly with an auxiliary failure event. The analysis accounts for arrivals below the threshold, which change the state without improving the matching value at that threshold. A potential function bounds the dual increase in both cases. We instantiate the analysis with an explicit win map that assigns a common score to an initial range of states. Its selection inequalities are verified by a finite computer-assisted proof covering every required candidate multiplicity and every real threshold; the verifiers are available in an accompanying repository. Triangular unit-weight inputs asymptotically attain the guarantee of the underlying ideal algorithm, proving that its analysis is tight."
+        },
+        {
+          "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
+          "url": "https://arxiv.org/abs/2611.06891",
+          "arxivId": "2611.06891",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "abstract": "The matroid prophet-secretary problem asks an online algorithm to select an independent set of elements whose nonnegative values are drawn independently and revealed in uniformly random order. Its combinatorial-auction counterpart asks the algorithm to allocate disjoint bundles to arriving buyers with independently drawn XOS valuation functions. In both problems the distributions are known, and the benchmark is the expected offline optimum. Ehsani, Hajiaghayi, Kesselheim, and Singla (SODA 2018) give $(1-1/e)$-competitive algorithms for both settings. In this work we show that these two guarantees have different limits. For every matroid, we give a randomized $(1-1/e+\\varepsilon_0)$-competitive algorithm, where $\\varepsilon_0=10^{-6}$. The guarantee holds for independent nonnegative values with finite expected optimum. For explicitly given finite distributions with rational values and probabilities, the algorithm has polynomial worst-case running time in the matroid independence-oracle model. The oracle tests whether a queried set is independent. The algorithm makes $O(N^4)$ such queries in expectation and $O(N^4\\log(N+2))$ in the worst case, where $N$ is the number of elements. For combinatorial auctions with XOS valuations, however, we show that $1-1/e$ is the optimal competitive ratio. We give an explicit family of finite instances showing that no online algorithm can guarantee a larger competitive ratio than $1-1/e$, even when the buyers' valuations are independent and identically distributed, every additive clause has coefficients in $\\{0,1\\}$, and computation is unrestricted. Thus the matroid improvement exploits structure absent from general allocation with XOS valuations."
+        },
+        {
+          "title": "Stability and Perfection in Constrained Weighted Network Games",
+          "url": "https://arxiv.org/abs/2611.06775",
+          "arxivId": "2611.06775",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "abstract": "We introduce a general framework of constrained weighted network formation in which agents allocate resources across coalitional interactions while facing feasibility constraints. More precisely, we allow arbitrary coalitions of agents to be assigned a continuous weight, and we incorporate both coalitional capacity constraints and individual budget constraints into the model. This framework extends the weighted network formation model of Bich and Morhaim by combining continuous interaction intensities with endogenous feasibility restrictions. Within this setting, we introduce a new notion of stability -- called coalitionwise stability -- extending pairwise stability to constrained network games. Under standard continuity and componentwise quasiconcavity assumptions on payoff functions, we establish the existence of coalitionwise stable networks. We then investigate refinements of stability inspired by the notion of perfect equilibrium introduced by Selten, and by the notion of perfect pairwise stability developed by Bich and Teteryatnikova for network games. The presence of feasibility constraints fundamentally alters the geometry of the feasible set, which no longer possesses a product structure. As a consequence, trembling-hand type refinements become substantially more delicate, since perturbations of some interactions may render other interactions infeasible. Nevertheless, we introduce constrained analogues of both the trembling-hand and perturbative notions of perfect stability considered by Bich and Teteryatnikova, and study their existence and their relationship. In particular, we show the equivalence between these trembling-hand and perturbative formulations under some componentwise monotonicity assumption."
+        },
+        {
+          "title": "Tight bounds for fractional and randomized truthful scheduling",
+          "url": "https://arxiv.org/abs/2611.06642",
+          "arxivId": "2611.06642",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We resolve one of the longest-standing open problems in algorithmic mechanism design by showing that randomization cannot yield a sublinear approximation for truthful scheduling on unrelated machines, even when truthfulness is required only in expectation. Our main technical result concerns fractional scheduling, where tasks may be split among machines. We prove that every deterministic truthful fractional mechanism on $n$ unrelated machines has worst-case approximation ratio at least $(n+1)/2$, even against the optimal integral makespan. This matches the known upper bound exactly and settles the optimal approximation ratio of truthful fractional scheduling. Since the expected allocations and payments of a truthful-in-expectation mechanism define a truthful fractional mechanism, the same lower bound applies to all truthful-in-expectation mechanisms and, in particular, to all universally truthful mechanisms. On the positive side, we give a universally truthful mechanism with approximation ratio $n/2+o(n)$. Together, these results establish the optimal leading constant $1/2$ for randomized truthful scheduling. Thus, randomization improves on the optimal deterministic approximation ratio by an asymptotic factor of two, and no more."
+        },
+        {
+          "title": "On Competing Sellers with Substitutable Goods",
+          "url": "https://arxiv.org/abs/2611.06595",
+          "arxivId": "2611.06595",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study mechanism design by an incumbent seller facing competition from an entrant seller of a substitute good. The incumbent commits to a potentially randomized mechanism before her competitor responds. A unit-demand buyer with fixed, publicly known values for the two goods observes both mechanisms and may interact with them in either order. How should a revenue-maximizing incumbent design her mechanism when her product is superior or inferior to her competitor's? We determine the incumbent's exact optimal revenue and characterize all mechanisms that obtain it. Commitment and randomization allow her to earn strictly positive revenue even against an arbitrarily superior product, despite earning nothing under posted-price (i.e., Bertrand) competition. Optimal mechanisms can require a continuum of lottery options, even though the buyer selects only one in equilibrium: unselected options shape the competitor's incentives rather than screen private buyer information. We also show that the buyer's ability to choose the interaction order can be strictly beneficial to the incumbent, even though the incumbent is always visited first at equilibrium. Finally, we show that without commitment, every pure Nash equilibrium yields Bertrand revenues even with randomized mechanisms."
+        },
+        {
+          "title": "Competitive Equilibrium for Linear Chores is CLS-complete",
+          "url": "https://arxiv.org/abs/2611.06589",
+          "arxivId": "2611.06589",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC"
+          ],
+          "abstract": "The competitive equilibrium (CE) is a fundamental concept for markets, with applications to efficient and fair allocation of resources. We consider the fundamental question of computing a CE in the most basic Fisher market model where agents have linear preferences. While it is known that we can compute a CE in strongly polynomial time with linear goods, there is no known polynomial-time algorithm for CE with linear chores. Computing a CE for linear chores is known to be in CLS with no hardness results. In this paper, we prove that computing an exact CE in Fisher markets with divisible chores and linear disutilities is CLS-hard and thus CLS-complete. To the best of our knowledge, this is the first CLS-completeness result for a market equilibrium problem. On the technical side, we use the nonconvex dual Eisenberg-Gale (EG) program whose Karush-Kuhn-Tucker (KKT) points are CE [Chaudhury, Kroer, Mehta, and Nan, 2024], and the CLS-complete problem of computing a KKT point of a quadratic program [Fearnley, Goldberg, Hollender, and Savani, 2024]. We show that from any exact equilibrium of the constructed market, we can recover in polynomial time an $\\varepsilon$-KKT point of the input quadratic program over the unit box."
+        },
+        {
+          "title": "On Existence and Computational Complexity of Quasi-strict Equilibria",
+          "url": "https://arxiv.org/abs/2611.06350",
+          "arxivId": "2611.06350",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Quasi-strict Nash equilibrium, introduced by Harsanyi in 1973, is the Nash equilibrium refinement that requires every pure best response to be played with positive probability. Norde established that any bimatrix game admits a quasi-strict Nash equilibrium. We give a substantially simpler proof of this result that in particular avoids an intricate limit argument used in the final step of the proof by Norde. Our existence proof allows us to positively resolve the outstanding open question of PPAD membership of the problem of computing a quasi-strict Nash equilibrium, thereby settling its precise complexity. In games with three or more players, a quasi-strict Nash equilibrium is not guaranteed to exist, leading to the natural problem of deciding the existence of a quasi-strict Nash equilibrium in a given strategic form game. We show that this problem is $\\exists\\mathbb{R}$-complete, strengthening a previous NP-hardness result."
+        },
+        {
+          "title": "One Strategic Woman: Sharp Ranks and a Persistent Core",
+          "url": "https://arxiv.org/abs/2611.06175",
+          "arxivId": "2611.06175",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "In a balanced random stable-marriage market, one fixed woman manipulates men-proposing deferred acceptance to obtain her best attainable partner. We prove that the women's expected average true partner rank is asymptotic to $(\\ln n)^2$, improving the previous $O((\\ln n)^4)$ bound, while the men's is asymptotic to $n/(2\\ln n)$. The men's and women's average ranks, normalized by $n/\\ln n$ and $\\ln n$, converge jointly in distribution to $(U,U^{-1})$, where $U$ is uniform on $(0,1)$. Under optimal truthful truncation, the span of women's average ranks within the reported stable core, divided by $\\ln n$, converges in distribution to $U^{-1}-1$."
+        },
+        {
+          "title": "Regret Bounds for Market Making with Persistent Orders",
+          "url": "https://arxiv.org/abs/2611.06159",
+          "arxivId": "2611.06159",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "We study adversarial market making with orders that remain active until execution. The maker operates on two markets: a primary market where orders are made and a secondary market where the resulting positions are hedged. In each round, the maker posts a quote on the primary market before observing both primary and secondary market prices. An order executes when the primary price reaches its quote, and the resulting position is immediately offset at the secondary price. When both price sequences are chosen by an adversary over $T$ rounds, we give a simple deterministic policy with regret of order $\\log T$ against the best fixed quote (static comparator) and $\\sqrt T$ against the best quote for each submission date (dynamic comparator), plus two terms measuring exposure to future primary and secondary prices. These rates remain optimal even when both exposure terms vanish and lower bounds show that the exposure terms are necessary. Our policy naturally extends to simultaneous bids and asks, where we show that static and dynamic regret are both characterized (up to constant factors) by the exposures terms (where the primary price exposure $V_T^{\\mathrm{two}}$ now accounts for both bids and asks) and a term of order $\\sqrt{V_T^{\\mathrm{two}}\\log T}$. Our policy is simple, efficient and fully parameterless. We extend this setting by demonstrating how natural assumptions on the price processes lead to improved guarantees without changing the policy."
+        },
+        {
+          "title": "Two-Sided Screening in Quality-Differentiated Markets",
+          "url": "https://arxiv.org/abs/2611.06097",
+          "arxivId": "2611.06097",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Motivated by digital marketplaces such as Uber and Airbnb, we study how a two-sided platform designs a menu of qualities, consumer prices, and provider wages. Consumers and providers self-select according to their private values and costs, so the platform must design its menu to attract consumers while inducing enough supply to meet their demand. We study this coordination problem over a continuous quality space, requiring supply to cover demand at every quality threshold. We formulate menu design as an optimization over trading distributions, which specify how much trade occurs at or above each quality. Through convexification of the technological cost function, we characterize the profit- and welfare-optimal trading distributions. This characterization shows how production technology alone can reduce menu size without sacrificing optimal profit or welfare, regardless of the type distributions, and determines when optimal menus can be finite. We then show that profit maximization can be highly efficient: under monotone hazard rate conditions on both sides, a profit-optimal menu achieves at least $1/(e-1)$ of optimal social welfare. We next consider the practical setting in which the menu size is restricted to a prescribed number of offers. We establish how the restricted menu approximates the unrestricted optimum in profit. We develop an algorithm that computes a menu within this size limit in polynomial time. The computed menu simultaneously approximates the unrestricted optimal profit and social welfare with additive error."
+        },
+        {
+          "title": "Breaking the One-Player Extension Barrier: History-Aware Repair for Multiplayer Approximate Nash Equilibria",
+          "url": "https://arxiv.org/abs/2611.06076",
+          "arxivId": "2611.06076",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "Computation of Nash equilibria is a central problem in algorithmic game theory, yet exact equilibrium computation is $\\mathsf{PPAD}$-complete even for two-player games. This hardness motivates the study of polynomial-time algorithms for approximate Nash equilibria. While substantial progress has been made for two-player and three-player games, existing algorithms for general $m$-player games have largely relied on repeatedly applying one-player extension starting from improved fixed-player algorithms. Such improvements can at best strengthen the classical $1-1/m$ guarantee to $1-1/(m-c)$, for some constant $c$ independent of $m$. We break this long-standing barrier by developing an iterative algorithm that directly tackles general $m$-player games and achieves a $(1-(σ_{\\star}-ε)/m)$-approximation for fixed $ε> 0$ and sufficiently large $m$, where $σ_\\star\\approx1.5867$ is the unique root in $(1,2)$ of $σ_\\star^3-19σ_\\star^2+27σ_\\star+1=0$. Our approach rests on a novel iterative descent-and-repair framework that allows multiple rounds of repair. At the heart of our analysis is a new potential function inspired by continuous-time dynamics, which certifies progress across iterations and ensures polynomial-time termination. Our results highlight the power of history-aware, iterative repair in breaking approximation barriers for multiplayer games."
+        },
+        {
+          "title": "Offline Learning of Reserve Prices from Censored Bids",
+          "url": "https://arxiv.org/abs/2611.06067",
+          "arxivId": "2611.06067",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG",
+            "econ.EM",
+            "stat.ML"
+          ],
+          "abstract": "We study how a seller can learn a reserve price for a second-price auction from censored historical bid data. Because values below past reserves are unobserved, even unlimited data may not reveal which reserve earns the most revenue. Under a monotone hazard rate (MHR) assumption, we characterize exactly when an optimal reserve is identified, even though the value distribution may not be: either revenue has not yet begun to fall at the lowest historical reserve, so the best reserve lies among the observed bids, or the censored fraction is as large as MHR allows, which pins down the entire distribution. When identification fails, we derive the reserve that minimizes worst-case revenue regret over distributions consistent with the data, and prove that this unique minimax reserve and its regret depend on just two observable quantities: the censored fraction and the hazard just above the lowest historical reserve. With $N$ historical bidders, the optimal reserve is learned with expected worst-case regret $O(N^{-1/2})$ when it lies among the observed bids, and $O(N^{-1})$ from the censored count alone when the censored fraction is as large as MHR allows and the optimum lies at or below the lowest reserve. In the nonidentifiable regime, plugging estimates of the two quantities into the minimax reserve gives expected worst-case regret within $O(N^{-2/5})$ of the population minimum under local density smoothness, with a matching minimax lower bound on a smooth class. Beyond MHR, we solve the minimax problem for regular and unrestricted distributions and prove an $O(N^{-2/5})$ learning bound in the regular nonidentifiable regime, given known bounds on the boundary parameters. Experiments on synthetic and eBay data show gains from exploiting MHR and the benefits of the robust rule when parametric models are misspecified."
+        },
+        {
+          "title": "AI-Assisted Classification under Correlation Neglect and Trust",
+          "url": "https://arxiv.org/abs/2611.05870",
+          "arxivId": "2611.05870",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "When does an AI assistant improve human decision-making, and when does it hurt? We argue that the answer depends not just on AI accuracy but also on how much its evidence overlaps with the human's and how the human combines the two. A worker makes a binary decision by observing her own signal and receiving a recommendation from an AI. We develop a human behavioral model with two primitives: her awareness of the overlap and her trust in the AI. Our analysis gives a closed-form phase diagram over AI capability and overlap, with regions of complementarity, impairment, and automation. A worker who neglects the overlap (correlation neglect) can be made less accurate by a more capable AI, double-counting the shared evidence. Trust reshapes the regions - undertrust may compensate for correlation neglect, so that the trust level maximizing accuracy depends on the deployment parameters. Empirically, we identify the two model parameters by pairing the same workers with different AIs, and break the accuracy loss into a correlation-neglect cost and an undertrust cost, one tied to reducing overlap on the AI side, the other to calibrating trust on the human side. On ChatBench, AI assistance raises accuracy by 21 points, yet workers apply only about a quarter of the Bayes-rational weight to AI information; GPT-4o falls in the automation region and Llama-3.1-8b stays at the complementarity boundary; and calibrating trust recovers about 2.6 points for GPT-4o but almost nothing for Llama-3.1-8b."
+        },
+        {
+          "title": "Sublinear Metric Distortion for Matching",
+          "url": "https://arxiv.org/abs/2611.05777",
+          "arxivId": "2611.05777",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS"
+          ],
+          "abstract": "We study metric distortion in one-sided matching. Given $n$ agents and $n$ items in an unknown metric space, our goal is to match agents to items so that the total distance between matched pairs is small. However, instead of direct access to the distances in the metric, we are only given each agent's ranking of the items by distance. What is the smallest worst-case approximation factor (called the distortion) that a mechanism can guarantee in expectation? Despite significant interest over the last decade, the best-known guarantee has been the $O(n)$ distortion of Random Serial Dictatorship since the beginning. We give a matching mechanism with distortion $O(n^{\\log_4 3})$, the first sublinear upper bound. The key idea is to use a partial matching derived from a truncated version of either Random Serial Dictatorship or the Probabilistic Serial rule. We then complete this matching using a new, general-purpose cluster completion algorithm that ensures unmatched agents receive nearby items. Along the way, we pin down the optimal distortion of Random Serial Dictatorship and Probabilistic Serial up to logarithmic and constant factors, respectively, and give improved lower bounds for truthful mechanisms."
+        },
+        {
+          "title": "Universal Nonexistence of Monotone Equilibrium in Multiunit Auctions with Risk Aversion",
+          "url": "https://arxiv.org/abs/2611.06644",
+          "arxivId": "2611.06644",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We establish universal nonexistence results for monotone pure-strategy equilibrium in multiunit auctions with risk-averse bidders. Fix any number of bidders greater than one and any profile of strictly increasing concave utilities, with at least one strictly risk-averse bidder. Under uniform pricing, for every supply of at least three units, we construct independent, full-support type distributions under which neither lowest-winning-bid nor highest-losing-bid pricing admits an admissible monotone equilibrium. Under discriminatory pricing, we construct a finite supply and independent, full-support type distributions that preclude monotone pure-strategy equilibrium. We extend these results to all-pay auctions and finite bid grids."
+        },
+        {
+          "title": "Weak Atomic Continuity and Subgame Perfection",
+          "url": "https://arxiv.org/abs/2611.06620",
+          "arxivId": "2611.06620",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Subgame-perfect equilibrium need not exist in continuous games with perfect information when Nature moves. Under standard regularity assumptions, we prove that weak atomic continuity of Nature's transition probabilities yields a measurable pure-strategy subgame-perfect equilibrium for finite and infinite horizons. The condition, originating in the population genetics literature, is necessary for the existence of subgame-perfect equilibrium uniformly over the remaining primitives: whenever this condition is violated, one can construct a dynamic game with no subgame-perfect equilibrium, even in behavioral strategies. The proof preserves compactness and upper hemicontinuity of continuation payoff correspondences under integration without requiring convexity."
+        },
+        {
+          "title": "Optimality of Separate Selling with Finite-Support Values",
+          "url": "https://arxiv.org/abs/2611.06101",
+          "arxivId": "2611.06101",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "We characterize when separate selling is exactly revenue-optimal in multi-item auctions with additive buyers and independent, finitely supported valuations. For each item, the valuation distribution is identical across buyers, but it may differ across items. We show that, provided at least two items have a strictly positive non-top support value, separate selling is optimal for any number of buyers $n \\ge 2$ if and only if top selling, which sells each item only at its highest possible value, is optimal for a single buyer. This equivalence holds under both dominant-strategy incentive compatibility and Bayesian incentive compatibility. We then characterize the optimality of top selling in the one-buyer problem through the existence of a particular class of dual flows and derive a necessary condition and several sufficient conditions on the value distributions for its optimality. These conditions reveal a common economic feature, which we call top-value isolation: high non-top valuations must be sufficiently far below the highest value or carry sufficiently little probability mass relative to the probability mass at the highest value."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Online Edge-Weighted Matching Beyond 0.55",
+              "url": "https://arxiv.org/abs/2611.06896",
+              "arxivId": "2611.06896",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "abstract": "We give a $0.556195$-competitive randomized algorithm for edge-weighted online bipartite matching with free disposal, improving the $0.5368$ guarantee of Blanc and Charikar. The result holds for arbitrary nonnegative edge weights and any input sequence fixed independently of the algorithm's randomness. Our algorithm builds on online correlated selection, introduced by Fahrbach, Huang, Tao, and Zadimoghaddam, and its multiway extension due to Blanc and Charikar. Our main contribution is a state-dependent primal--dual analysis of correlated selection. At each weight threshold, we track the state of the selection process jointly with an auxiliary failure event. The analysis accounts for arrivals below the threshold, which change the state without improving the matching value at that threshold. A potential function bounds the dual increase in both cases. We instantiate the analysis with an explicit win map that assigns a common score to an initial range of states. Its selection inequalities are verified by a finite computer-assisted proof covering every required candidate multiplicity and every real threshold; the verifiers are available in an accompanying repository. Triangular unit-weight inputs asymptotically attain the guarantee of the underlying ideal algorithm, proving that its analysis is tight."
+            },
+            {
+              "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
+              "url": "https://arxiv.org/abs/2611.06891",
+              "arxivId": "2611.06891",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "abstract": "The matroid prophet-secretary problem asks an online algorithm to select an independent set of elements whose nonnegative values are drawn independently and revealed in uniformly random order. Its combinatorial-auction counterpart asks the algorithm to allocate disjoint bundles to arriving buyers with independently drawn XOS valuation functions. In both problems the distributions are known, and the benchmark is the expected offline optimum. Ehsani, Hajiaghayi, Kesselheim, and Singla (SODA 2018) give $(1-1/e)$-competitive algorithms for both settings. In this work we show that these two guarantees have different limits. For every matroid, we give a randomized $(1-1/e+\\varepsilon_0)$-competitive algorithm, where $\\varepsilon_0=10^{-6}$. The guarantee holds for independent nonnegative values with finite expected optimum. For explicitly given finite distributions with rational values and probabilities, the algorithm has polynomial worst-case running time in the matroid independence-oracle model. The oracle tests whether a queried set is independent. The algorithm makes $O(N^4)$ such queries in expectation and $O(N^4\\log(N+2))$ in the worst case, where $N$ is the number of elements. For combinatorial auctions with XOS valuations, however, we show that $1-1/e$ is the optimal competitive ratio. We give an explicit family of finite instances showing that no online algorithm can guarantee a larger competitive ratio than $1-1/e$, even when the buyers' valuations are independent and identically distributed, every additive clause has coefficients in $\\{0,1\\}$, and computation is unrestricted. Thus the matroid improvement exploits structure absent from general allocation with XOS valuations."
+            },
+            {
+              "title": "Stability and Perfection in Constrained Weighted Network Games",
+              "url": "https://arxiv.org/abs/2611.06775",
+              "arxivId": "2611.06775",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "abstract": "We introduce a general framework of constrained weighted network formation in which agents allocate resources across coalitional interactions while facing feasibility constraints. More precisely, we allow arbitrary coalitions of agents to be assigned a continuous weight, and we incorporate both coalitional capacity constraints and individual budget constraints into the model. This framework extends the weighted network formation model of Bich and Morhaim by combining continuous interaction intensities with endogenous feasibility restrictions. Within this setting, we introduce a new notion of stability -- called coalitionwise stability -- extending pairwise stability to constrained network games. Under standard continuity and componentwise quasiconcavity assumptions on payoff functions, we establish the existence of coalitionwise stable networks. We then investigate refinements of stability inspired by the notion of perfect equilibrium introduced by Selten, and by the notion of perfect pairwise stability developed by Bich and Teteryatnikova for network games. The presence of feasibility constraints fundamentally alters the geometry of the feasible set, which no longer possesses a product structure. As a consequence, trembling-hand type refinements become substantially more delicate, since perturbations of some interactions may render other interactions infeasible. Nevertheless, we introduce constrained analogues of both the trembling-hand and perturbative notions of perfect stability considered by Bich and Teteryatnikova, and study their existence and their relationship. In particular, we show the equivalence between these trembling-hand and perturbative formulations under some componentwise monotonicity assumption."
+            },
+            {
+              "title": "Tight bounds for fractional and randomized truthful scheduling",
+              "url": "https://arxiv.org/abs/2611.06642",
+              "arxivId": "2611.06642",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We resolve one of the longest-standing open problems in algorithmic mechanism design by showing that randomization cannot yield a sublinear approximation for truthful scheduling on unrelated machines, even when truthfulness is required only in expectation. Our main technical result concerns fractional scheduling, where tasks may be split among machines. We prove that every deterministic truthful fractional mechanism on $n$ unrelated machines has worst-case approximation ratio at least $(n+1)/2$, even against the optimal integral makespan. This matches the known upper bound exactly and settles the optimal approximation ratio of truthful fractional scheduling. Since the expected allocations and payments of a truthful-in-expectation mechanism define a truthful fractional mechanism, the same lower bound applies to all truthful-in-expectation mechanisms and, in particular, to all universally truthful mechanisms. On the positive side, we give a universally truthful mechanism with approximation ratio $n/2+o(n)$. Together, these results establish the optimal leading constant $1/2$ for randomized truthful scheduling. Thus, randomization improves on the optimal deterministic approximation ratio by an asymptotic factor of two, and no more."
+            },
+            {
+              "title": "On Competing Sellers with Substitutable Goods",
+              "url": "https://arxiv.org/abs/2611.06595",
+              "arxivId": "2611.06595",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study mechanism design by an incumbent seller facing competition from an entrant seller of a substitute good. The incumbent commits to a potentially randomized mechanism before her competitor responds. A unit-demand buyer with fixed, publicly known values for the two goods observes both mechanisms and may interact with them in either order. How should a revenue-maximizing incumbent design her mechanism when her product is superior or inferior to her competitor's? We determine the incumbent's exact optimal revenue and characterize all mechanisms that obtain it. Commitment and randomization allow her to earn strictly positive revenue even against an arbitrarily superior product, despite earning nothing under posted-price (i.e., Bertrand) competition. Optimal mechanisms can require a continuum of lottery options, even though the buyer selects only one in equilibrium: unselected options shape the competitor's incentives rather than screen private buyer information. We also show that the buyer's ability to choose the interaction order can be strictly beneficial to the incumbent, even though the incumbent is always visited first at equilibrium. Finally, we show that without commitment, every pure Nash equilibrium yields Bertrand revenues even with randomized mechanisms."
+            },
+            {
+              "title": "Competitive Equilibrium for Linear Chores is CLS-complete",
+              "url": "https://arxiv.org/abs/2611.06589",
+              "arxivId": "2611.06589",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC"
+              ],
+              "abstract": "The competitive equilibrium (CE) is a fundamental concept for markets, with applications to efficient and fair allocation of resources. We consider the fundamental question of computing a CE in the most basic Fisher market model where agents have linear preferences. While it is known that we can compute a CE in strongly polynomial time with linear goods, there is no known polynomial-time algorithm for CE with linear chores. Computing a CE for linear chores is known to be in CLS with no hardness results. In this paper, we prove that computing an exact CE in Fisher markets with divisible chores and linear disutilities is CLS-hard and thus CLS-complete. To the best of our knowledge, this is the first CLS-completeness result for a market equilibrium problem. On the technical side, we use the nonconvex dual Eisenberg-Gale (EG) program whose Karush-Kuhn-Tucker (KKT) points are CE [Chaudhury, Kroer, Mehta, and Nan, 2024], and the CLS-complete problem of computing a KKT point of a quadratic program [Fearnley, Goldberg, Hollender, and Savani, 2024]. We show that from any exact equilibrium of the constructed market, we can recover in polynomial time an $\\varepsilon$-KKT point of the input quadratic program over the unit box."
+            },
+            {
+              "title": "On Existence and Computational Complexity of Quasi-strict Equilibria",
+              "url": "https://arxiv.org/abs/2611.06350",
+              "arxivId": "2611.06350",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Quasi-strict Nash equilibrium, introduced by Harsanyi in 1973, is the Nash equilibrium refinement that requires every pure best response to be played with positive probability. Norde established that any bimatrix game admits a quasi-strict Nash equilibrium. We give a substantially simpler proof of this result that in particular avoids an intricate limit argument used in the final step of the proof by Norde. Our existence proof allows us to positively resolve the outstanding open question of PPAD membership of the problem of computing a quasi-strict Nash equilibrium, thereby settling its precise complexity. In games with three or more players, a quasi-strict Nash equilibrium is not guaranteed to exist, leading to the natural problem of deciding the existence of a quasi-strict Nash equilibrium in a given strategic form game. We show that this problem is $\\exists\\mathbb{R}$-complete, strengthening a previous NP-hardness result."
+            },
+            {
+              "title": "One Strategic Woman: Sharp Ranks and a Persistent Core",
+              "url": "https://arxiv.org/abs/2611.06175",
+              "arxivId": "2611.06175",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "In a balanced random stable-marriage market, one fixed woman manipulates men-proposing deferred acceptance to obtain her best attainable partner. We prove that the women's expected average true partner rank is asymptotic to $(\\ln n)^2$, improving the previous $O((\\ln n)^4)$ bound, while the men's is asymptotic to $n/(2\\ln n)$. The men's and women's average ranks, normalized by $n/\\ln n$ and $\\ln n$, converge jointly in distribution to $(U,U^{-1})$, where $U$ is uniform on $(0,1)$. Under optimal truthful truncation, the span of women's average ranks within the reported stable core, divided by $\\ln n$, converges in distribution to $U^{-1}-1$."
+            },
+            {
+              "title": "Regret Bounds for Market Making with Persistent Orders",
+              "url": "https://arxiv.org/abs/2611.06159",
+              "arxivId": "2611.06159",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "We study adversarial market making with orders that remain active until execution. The maker operates on two markets: a primary market where orders are made and a secondary market where the resulting positions are hedged. In each round, the maker posts a quote on the primary market before observing both primary and secondary market prices. An order executes when the primary price reaches its quote, and the resulting position is immediately offset at the secondary price. When both price sequences are chosen by an adversary over $T$ rounds, we give a simple deterministic policy with regret of order $\\log T$ against the best fixed quote (static comparator) and $\\sqrt T$ against the best quote for each submission date (dynamic comparator), plus two terms measuring exposure to future primary and secondary prices. These rates remain optimal even when both exposure terms vanish and lower bounds show that the exposure terms are necessary. Our policy naturally extends to simultaneous bids and asks, where we show that static and dynamic regret are both characterized (up to constant factors) by the exposures terms (where the primary price exposure $V_T^{\\mathrm{two}}$ now accounts for both bids and asks) and a term of order $\\sqrt{V_T^{\\mathrm{two}}\\log T}$. Our policy is simple, efficient and fully parameterless. We extend this setting by demonstrating how natural assumptions on the price processes lead to improved guarantees without changing the policy."
+            },
+            {
+              "title": "Two-Sided Screening in Quality-Differentiated Markets",
+              "url": "https://arxiv.org/abs/2611.06097",
+              "arxivId": "2611.06097",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Motivated by digital marketplaces such as Uber and Airbnb, we study how a two-sided platform designs a menu of qualities, consumer prices, and provider wages. Consumers and providers self-select according to their private values and costs, so the platform must design its menu to attract consumers while inducing enough supply to meet their demand. We study this coordination problem over a continuous quality space, requiring supply to cover demand at every quality threshold. We formulate menu design as an optimization over trading distributions, which specify how much trade occurs at or above each quality. Through convexification of the technological cost function, we characterize the profit- and welfare-optimal trading distributions. This characterization shows how production technology alone can reduce menu size without sacrificing optimal profit or welfare, regardless of the type distributions, and determines when optimal menus can be finite. We then show that profit maximization can be highly efficient: under monotone hazard rate conditions on both sides, a profit-optimal menu achieves at least $1/(e-1)$ of optimal social welfare. We next consider the practical setting in which the menu size is restricted to a prescribed number of offers. We establish how the restricted menu approximates the unrestricted optimum in profit. We develop an algorithm that computes a menu within this size limit in polynomial time. The computed menu simultaneously approximates the unrestricted optimal profit and social welfare with additive error."
+            },
+            {
+              "title": "Breaking the One-Player Extension Barrier: History-Aware Repair for Multiplayer Approximate Nash Equilibria",
+              "url": "https://arxiv.org/abs/2611.06076",
+              "arxivId": "2611.06076",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "Computation of Nash equilibria is a central problem in algorithmic game theory, yet exact equilibrium computation is $\\mathsf{PPAD}$-complete even for two-player games. This hardness motivates the study of polynomial-time algorithms for approximate Nash equilibria. While substantial progress has been made for two-player and three-player games, existing algorithms for general $m$-player games have largely relied on repeatedly applying one-player extension starting from improved fixed-player algorithms. Such improvements can at best strengthen the classical $1-1/m$ guarantee to $1-1/(m-c)$, for some constant $c$ independent of $m$. We break this long-standing barrier by developing an iterative algorithm that directly tackles general $m$-player games and achieves a $(1-(σ_{\\star}-ε)/m)$-approximation for fixed $ε> 0$ and sufficiently large $m$, where $σ_\\star\\approx1.5867$ is the unique root in $(1,2)$ of $σ_\\star^3-19σ_\\star^2+27σ_\\star+1=0$. Our approach rests on a novel iterative descent-and-repair framework that allows multiple rounds of repair. At the heart of our analysis is a new potential function inspired by continuous-time dynamics, which certifies progress across iterations and ensures polynomial-time termination. Our results highlight the power of history-aware, iterative repair in breaking approximation barriers for multiplayer games."
+            },
+            {
+              "title": "Offline Learning of Reserve Prices from Censored Bids",
+              "url": "https://arxiv.org/abs/2611.06067",
+              "arxivId": "2611.06067",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG",
+                "econ.EM",
+                "stat.ML"
+              ],
+              "abstract": "We study how a seller can learn a reserve price for a second-price auction from censored historical bid data. Because values below past reserves are unobserved, even unlimited data may not reveal which reserve earns the most revenue. Under a monotone hazard rate (MHR) assumption, we characterize exactly when an optimal reserve is identified, even though the value distribution may not be: either revenue has not yet begun to fall at the lowest historical reserve, so the best reserve lies among the observed bids, or the censored fraction is as large as MHR allows, which pins down the entire distribution. When identification fails, we derive the reserve that minimizes worst-case revenue regret over distributions consistent with the data, and prove that this unique minimax reserve and its regret depend on just two observable quantities: the censored fraction and the hazard just above the lowest historical reserve. With $N$ historical bidders, the optimal reserve is learned with expected worst-case regret $O(N^{-1/2})$ when it lies among the observed bids, and $O(N^{-1})$ from the censored count alone when the censored fraction is as large as MHR allows and the optimum lies at or below the lowest reserve. In the nonidentifiable regime, plugging estimates of the two quantities into the minimax reserve gives expected worst-case regret within $O(N^{-2/5})$ of the population minimum under local density smoothness, with a matching minimax lower bound on a smooth class. Beyond MHR, we solve the minimax problem for regular and unrestricted distributions and prove an $O(N^{-2/5})$ learning bound in the regular nonidentifiable regime, given known bounds on the boundary parameters. Experiments on synthetic and eBay data show gains from exploiting MHR and the benefits of the robust rule when parametric models are misspecified."
+            },
+            {
+              "title": "AI-Assisted Classification under Correlation Neglect and Trust",
+              "url": "https://arxiv.org/abs/2611.05870",
+              "arxivId": "2611.05870",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.LG"
+              ],
+              "abstract": "When does an AI assistant improve human decision-making, and when does it hurt? We argue that the answer depends not just on AI accuracy but also on how much its evidence overlaps with the human's and how the human combines the two. A worker makes a binary decision by observing her own signal and receiving a recommendation from an AI. We develop a human behavioral model with two primitives: her awareness of the overlap and her trust in the AI. Our analysis gives a closed-form phase diagram over AI capability and overlap, with regions of complementarity, impairment, and automation. A worker who neglects the overlap (correlation neglect) can be made less accurate by a more capable AI, double-counting the shared evidence. Trust reshapes the regions - undertrust may compensate for correlation neglect, so that the trust level maximizing accuracy depends on the deployment parameters. Empirically, we identify the two model parameters by pairing the same workers with different AIs, and break the accuracy loss into a correlation-neglect cost and an undertrust cost, one tied to reducing overlap on the AI side, the other to calibrating trust on the human side. On ChatBench, AI assistance raises accuracy by 21 points, yet workers apply only about a quarter of the Bayes-rational weight to AI information; GPT-4o falls in the automation region and Llama-3.1-8b stays at the complementarity boundary; and calibrating trust recovers about 2.6 points for GPT-4o but almost nothing for Llama-3.1-8b."
+            },
+            {
+              "title": "Sublinear Metric Distortion for Matching",
+              "url": "https://arxiv.org/abs/2611.05777",
+              "arxivId": "2611.05777",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM",
+                "cs.DS"
+              ],
+              "abstract": "We study metric distortion in one-sided matching. Given $n$ agents and $n$ items in an unknown metric space, our goal is to match agents to items so that the total distance between matched pairs is small. However, instead of direct access to the distances in the metric, we are only given each agent's ranking of the items by distance. What is the smallest worst-case approximation factor (called the distortion) that a mechanism can guarantee in expectation? Despite significant interest over the last decade, the best-known guarantee has been the $O(n)$ distortion of Random Serial Dictatorship since the beginning. We give a matching mechanism with distortion $O(n^{\\log_4 3})$, the first sublinear upper bound. The key idea is to use a partial matching derived from a truncated version of either Random Serial Dictatorship or the Probabilistic Serial rule. We then complete this matching using a new, general-purpose cluster completion algorithm that ensures unmatched agents receive nearby items. Along the way, we pin down the optimal distortion of Random Serial Dictatorship and Probabilistic Serial up to logarithmic and constant factors, respectively, and give improved lower bounds for truthful mechanisms."
+            },
+            {
+              "title": "Universal Nonexistence of Monotone Equilibrium in Multiunit Auctions with Risk Aversion",
+              "url": "https://arxiv.org/abs/2611.06644",
+              "arxivId": "2611.06644",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We establish universal nonexistence results for monotone pure-strategy equilibrium in multiunit auctions with risk-averse bidders. Fix any number of bidders greater than one and any profile of strictly increasing concave utilities, with at least one strictly risk-averse bidder. Under uniform pricing, for every supply of at least three units, we construct independent, full-support type distributions under which neither lowest-winning-bid nor highest-losing-bid pricing admits an admissible monotone equilibrium. Under discriminatory pricing, we construct a finite supply and independent, full-support type distributions that preclude monotone pure-strategy equilibrium. We extend these results to all-pay auctions and finite bid grids."
+            },
+            {
+              "title": "Weak Atomic Continuity and Subgame Perfection",
+              "url": "https://arxiv.org/abs/2611.06620",
+              "arxivId": "2611.06620",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Subgame-perfect equilibrium need not exist in continuous games with perfect information when Nature moves. Under standard regularity assumptions, we prove that weak atomic continuity of Nature's transition probabilities yields a measurable pure-strategy subgame-perfect equilibrium for finite and infinite horizons. The condition, originating in the population genetics literature, is necessary for the existence of subgame-perfect equilibrium uniformly over the remaining primitives: whenever this condition is violated, one can construct a dynamic game with no subgame-perfect equilibrium, even in behavioral strategies. The proof preserves compactness and upper hemicontinuity of continuation payoff correspondences under integration without requiring convexity."
+            },
+            {
+              "title": "Optimality of Separate Selling with Finite-Support Values",
+              "url": "https://arxiv.org/abs/2611.06101",
+              "arxivId": "2611.06101",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "We characterize when separate selling is exactly revenue-optimal in multi-item auctions with additive buyers and independent, finitely supported valuations. For each item, the valuation distribution is identical across buyers, but it may differ across items. We show that, provided at least two items have a strictly positive non-top support value, separate selling is optimal for any number of buyers $n \\ge 2$ if and only if top selling, which sells each item only at its highest possible value, is optimal for a single buyer. This equivalence holds under both dominant-strategy incentive compatibility and Bayesian incentive compatibility. We then characterize the optimality of top selling in the one-buyer problem through the existence of a particular class of dual flows and derive a necessary condition and several sufficient conditions on the value distributions for its optimality. These conditions reveal a common economic feature, which we call top-value isolation: high non-top valuations must be sufficiently far below the highest value or carry sufficiently little probability mass relative to the probability mass at the highest value."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 3,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 5,
+                  "readingValue": 4,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 9,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 8
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 4,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 7
+                }
+              },
+              {
+                "index": 13,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 14,
+                "scores": {
+                  "modelNaturalness": 5,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 3,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 6
+                }
+              },
+              {
+                "index": 15,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 6,
+                  "guaranteeQuality": 3,
+                  "readingValue": 3,
+                  "penalty": -2,
+                  "aiRelevance": 0,
+                  "agtRelevance": 6
+                }
+              },
+              {
+                "index": 16,
+                "scores": {
+                  "modelNaturalness": 6,
+                  "theoreticalStrength": 7,
+                  "guaranteeQuality": 4,
+                  "readingValue": 4,
+                  "penalty": -1,
+                  "aiRelevance": 0,
+                  "agtRelevance": 7
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Online Edge-Weighted Matching Beyond 0.55",
+              "url": "https://arxiv.org/abs/2611.06896",
+              "arxivId": "2611.06896",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 3.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "bonus": 0.0,
+                "total": 12.6
+              }
+            },
+            {
+              "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
+              "url": "https://arxiv.org/abs/2611.06891",
+              "arxivId": "2611.06891",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.DS",
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Stability and Perfection in Constrained Weighted Network Games",
+              "url": "https://arxiv.org/abs/2611.06775",
+              "arxivId": "2611.06775",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": -1.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Tight bounds for fractional and randomized truthful scheduling",
+              "url": "https://arxiv.org/abs/2611.06642",
+              "arxivId": "2611.06642",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "On Competing Sellers with Substitutable Goods",
+              "url": "https://arxiv.org/abs/2611.06595",
+              "arxivId": "2611.06595",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 29.0,
+                "bonus": 0.0,
+                "total": 29.0
+              }
+            },
+            {
+              "title": "Competitive Equilibrium for Linear Chores is CLS-complete",
+              "url": "https://arxiv.org/abs/2611.06589",
+              "arxivId": "2611.06589",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "On Existence and Computational Complexity of Quasi-strict Equilibria",
+              "url": "https://arxiv.org/abs/2611.06350",
+              "arxivId": "2611.06350",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "bonus": 0.0,
+                "total": 19.2
+              }
+            },
+            {
+              "title": "One Strategic Woman: Sharp Ranks and a Persistent Core",
+              "url": "https://arxiv.org/abs/2611.06175",
+              "arxivId": "2611.06175",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "bonus": 0.0,
+                "total": 15.2
+              }
+            },
+            {
+              "title": "Regret Bounds for Market Making with Persistent Orders",
+              "url": "https://arxiv.org/abs/2611.06159",
+              "arxivId": "2611.06159",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "bonus": 0.0,
+                "total": 17.6
+              }
+            },
+            {
+              "title": "Two-Sided Screening in Quality-Differentiated Markets",
+              "url": "https://arxiv.org/abs/2611.06097",
+              "arxivId": "2611.06097",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "bonus": 0.0,
+                "total": 25.2
+              }
+            },
+            {
+              "title": "Breaking the One-Player Extension Barrier: History-Aware Repair for Multiplayer Approximate Nash Equilibria",
+              "url": "https://arxiv.org/abs/2611.06076",
+              "arxivId": "2611.06076",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "Offline Learning of Reserve Prices from Censored Bids",
+              "url": "https://arxiv.org/abs/2611.06067",
+              "arxivId": "2611.06067",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG",
+                "econ.EM",
+                "stat.ML"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "bonus": 0.0,
+                "total": 23.4
+              }
+            },
+            {
+              "title": "AI-Assisted Classification under Correlation Neglect and Trust",
+              "url": "https://arxiv.org/abs/2611.05870",
+              "arxivId": "2611.05870",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.AI",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 5.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 21.0,
+                "bonus": 5.6,
+                "total": 18.6
+              }
+            },
+            {
+              "title": "Sublinear Metric Distortion for Matching",
+              "url": "https://arxiv.org/abs/2611.05777",
+              "arxivId": "2611.05777",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.DM",
+                "cs.DS"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "bonus": 0.0,
+                "total": 22.5
+              }
+            },
+            {
+              "title": "Universal Nonexistence of Monotone Equilibrium in Multiunit Auctions with Risk Aversion",
+              "url": "https://arxiv.org/abs/2611.06644",
+              "arxivId": "2611.06644",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 5.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 3.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 6.0,
+                "penalty": -2.0,
+                "baseTotal": 16.0,
+                "bonus": 0.0,
+                "total": 9.6
+              }
+            },
+            {
+              "title": "Weak Atomic Continuity and Subgame Perfection",
+              "url": "https://arxiv.org/abs/2611.06620",
+              "arxivId": "2611.06620",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 4.0,
+                "theoreticalStrength": 6.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 3.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 6.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "bonus": 0.0,
+                "total": 8.4
+              }
+            },
+            {
+              "title": "Optimality of Separate Selling with Finite-Support Values",
+              "url": "https://arxiv.org/abs/2611.06101",
+              "arxivId": "2611.06101",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 6.0,
+                "theoreticalStrength": 7.0,
+                "guaranteeQuality": 4.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 7.0,
+                "penalty": -1.0,
+                "baseTotal": 20.0,
+                "bonus": 0.0,
+                "total": 14.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Online Edge-Weighted Matching Beyond 0.55",
+          "url": "https://arxiv.org/abs/2611.06896",
+          "arxivId": "2611.06896",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 3.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "bonus": 0.0,
+            "total": 12.6
+          }
+        },
+        {
+          "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
+          "url": "https://arxiv.org/abs/2611.06891",
+          "arxivId": "2611.06891",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Stability and Perfection in Constrained Weighted Network Games",
+          "url": "https://arxiv.org/abs/2611.06775",
+          "arxivId": "2611.06775",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Tight bounds for fractional and randomized truthful scheduling",
+          "url": "https://arxiv.org/abs/2611.06642",
+          "arxivId": "2611.06642",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "On Competing Sellers with Substitutable Goods",
+          "url": "https://arxiv.org/abs/2611.06595",
+          "arxivId": "2611.06595",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Competitive Equilibrium for Linear Chores is CLS-complete",
+          "url": "https://arxiv.org/abs/2611.06589",
+          "arxivId": "2611.06589",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "On Existence and Computational Complexity of Quasi-strict Equilibria",
+          "url": "https://arxiv.org/abs/2611.06350",
+          "arxivId": "2611.06350",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "bonus": 0.0,
+            "total": 19.2
+          }
+        },
+        {
+          "title": "One Strategic Woman: Sharp Ranks and a Persistent Core",
+          "url": "https://arxiv.org/abs/2611.06175",
+          "arxivId": "2611.06175",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "bonus": 0.0,
+            "total": 15.2
+          }
+        },
+        {
+          "title": "Regret Bounds for Market Making with Persistent Orders",
+          "url": "https://arxiv.org/abs/2611.06159",
+          "arxivId": "2611.06159",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "bonus": 0.0,
+            "total": 17.6
+          }
+        },
+        {
+          "title": "Two-Sided Screening in Quality-Differentiated Markets",
+          "url": "https://arxiv.org/abs/2611.06097",
+          "arxivId": "2611.06097",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Breaking the One-Player Extension Barrier: History-Aware Repair for Multiplayer Approximate Nash Equilibria",
+          "url": "https://arxiv.org/abs/2611.06076",
+          "arxivId": "2611.06076",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Offline Learning of Reserve Prices from Censored Bids",
+          "url": "https://arxiv.org/abs/2611.06067",
+          "arxivId": "2611.06067",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG",
+            "econ.EM",
+            "stat.ML"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "AI-Assisted Classification under Correlation Neglect and Trust",
+          "url": "https://arxiv.org/abs/2611.05870",
+          "arxivId": "2611.05870",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 5.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 21.0,
+            "bonus": 5.6,
+            "total": 18.6
+          }
+        },
+        {
+          "title": "Sublinear Metric Distortion for Matching",
+          "url": "https://arxiv.org/abs/2611.05777",
+          "arxivId": "2611.05777",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.DM",
+            "cs.DS"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "bonus": 0.0,
+            "total": 22.5
+          }
+        },
+        {
+          "title": "Universal Nonexistence of Monotone Equilibrium in Multiunit Auctions with Risk Aversion",
+          "url": "https://arxiv.org/abs/2611.06644",
+          "arxivId": "2611.06644",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 5.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 3.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 6.0,
+            "penalty": -2.0,
+            "baseTotal": 16.0,
+            "bonus": 0.0,
+            "total": 9.6
+          }
+        },
+        {
+          "title": "Weak Atomic Continuity and Subgame Perfection",
+          "url": "https://arxiv.org/abs/2611.06620",
+          "arxivId": "2611.06620",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 4.0,
+            "theoreticalStrength": 6.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 3.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 6.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "bonus": 0.0,
+            "total": 8.4
+          }
+        },
+        {
+          "title": "Optimality of Separate Selling with Finite-Support Values",
+          "url": "https://arxiv.org/abs/2611.06101",
+          "arxivId": "2611.06101",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 4.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 7.0,
+            "penalty": -1.0,
+            "baseTotal": 20.0,
+            "bonus": 0.0,
+            "total": 14.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Tight bounds for fractional and randomized truthful scheduling",
+          "url": "https://arxiv.org/abs/2611.06642",
+          "arxivId": "2611.06642",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "On Competing Sellers with Substitutable Goods",
+          "url": "https://arxiv.org/abs/2611.06595",
+          "arxivId": "2611.06595",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          }
+        },
+        {
+          "title": "Two-Sided Screening in Quality-Differentiated Markets",
+          "url": "https://arxiv.org/abs/2611.06097",
+          "arxivId": "2611.06097",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          }
+        },
+        {
+          "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
+          "url": "https://arxiv.org/abs/2611.06891",
+          "arxivId": "2611.06891",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.DS",
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 6.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        },
+        {
+          "title": "Stability and Perfection in Constrained Weighted Network Games",
+          "url": "https://arxiv.org/abs/2611.06775",
+          "arxivId": "2611.06775",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Tight bounds for fractional and randomized truthful scheduling",
+            "url": "https://arxiv.org/abs/2611.06642",
+            "arxivId": "2611.06642",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "HTTP Error 400: Bad Request",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We resolve one of the longest-standing open problems in algorithmic mechanism design by showing that randomization cannot yield a sublinear approximation for truthful scheduling on unrelated machines, even when truthfulness is required only in expectation. Our...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We resolve one of the longest-standing open problems in algorithmic mechanism design by showing that randomization cannot yield a sublinear approximation for truthful scheduling on unrelated machines, even when truthfulness is required only in expectation. Our...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "On Competing Sellers with Substitutable Goods",
+            "url": "https://arxiv.org/abs/2611.06595",
+            "arxivId": "2611.06595",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "mock-after-error",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "rawOutput": {
+            "provider": "mock",
+            "titleZh": "",
+            "researchParadigmTags": [],
+            "contentTags": [],
+            "summarySections": {
+              "backgroundAndQuestion": "We study mechanism design by an incumbent seller facing competition from an entrant seller of a substitute good. The incumbent commits to a potentially randomized mechanism before her competitor responds. A unit-demand buyer with fixed, publicly known values f...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "",
+            "summarySections": {
+              "backgroundAndQuestion": "We study mechanism design by an incumbent seller facing competition from an entrant seller of a substitute good. The incumbent commits to a potentially randomized mechanism before her competitor responds. A unit-demand buyer with fixed, publicly known values f...",
+              "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+              "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+              "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+              "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+            },
+            "contentTags": [],
+            "researchParadigmTags": []
+          }
+        },
+        {
+          "paper": {
+            "title": "Two-Sided Screening in Quality-Differentiated Markets",
+            "url": "https://arxiv.org/abs/2611.06097",
+            "arxivId": "2611.06097",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "质量差异化市场中的双边筛选",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "算法设计"
+            ],
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "信息不对称",
+              "平台经济",
+              "社会福利"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "平台在质量差异化的市场中需同时吸引消费者和供应商，但双方都有私人信息：消费者知道自己的估值，供应商知道自己的成本。传统单边筛选无法解决供需匹配问题，因为高质服务需要买得起的消费者和愿意提供的供应商同时存在。本文研究平台如何设计菜单式报价，使供需在每一质量层级上都能自然匹配，而不出现供给过剩或短缺。",
+              "modelAndSetup": "模型考虑一个垄断平台连接单位质量的消费者和供应商，质量连续分布于区间。消费者类型为其边际价值，供应商类型为其单位努力成本，生产成本由公共技术函数决定。平台设计包含价格、工资和质量的菜单，双方自选最优选项。关键约束是每个质量阈值上的供给必须不少于需求，否则交易无法完成。目标是最大化利润或社会福利。",
+              "contributionsAndResults": "论文发现最优菜单的设计可转化为对‘交易分布’的优化，即各质量以上交易量的函数。通过将技术成本函数凸化，作者证明最优解只需在凸包接触点提供质量，从而可能大幅缩减菜单规模。此外，在单调失效率（MHR）条件下，利润最大化机制至少能实现最优社会福利的1/(e−1)比例，该比率是紧的。",
+              "methodsAndTechniques": "核心方法是将机制设计问题转化为对交易分布函数的优化，并利用凸化技术简化目标函数。作者采用类似Myerson铁化的方法，但应用于质量维度而非类型维度，通过替换成本函数为其最大凸下界来消除局部凹性带来的复杂性。动态规划算法则用于在有限菜单限制下逼近最优解，结合离散化与分组优化实现多项式时间计算。",
+              "limitationsAndReadingValue": "模型假设平台完全了解类型分布且交易可降级处理，这在现实中可能受限。结果对MHR条件依赖较强，一般分布下效率可能极低。尽管如此，论文的价值在于提供了处理双边信息不对称的新框架，其凸化思想和交易分布刻画方式极具启发性，适合关注机制设计、平台定价和近似算法的研究者深入阅读核心定理与证明技巧。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "质量差异化市场中的双边筛选",
+            "summarySections": {
+              "backgroundAndQuestion": "平台在质量差异化的市场中需同时吸引消费者和供应商，但双方都有私人信息：消费者知道自己的估值，供应商知道自己的成本。传统单边筛选无法解决供需匹配问题，因为高质服务需要买得起的消费者和愿意提供的供应商同时存在。本文研究平台如何设计菜单式报价，使供需在每一质量层级上都能自然匹配，而不出现供给过剩或短缺。",
+              "modelAndSetup": "模型考虑一个垄断平台连接单位质量的消费者和供应商，质量连续分布于区间。消费者类型为其边际价值，供应商类型为其单位努力成本，生产成本由公共技术函数决定。平台设计包含价格、工资和质量的菜单，双方自选最优选项。关键约束是每个质量阈值上的供给必须不少于需求，否则交易无法完成。目标是最大化利润或社会福利。",
+              "contributionsAndResults": "论文发现最优菜单的设计可转化为对‘交易分布’的优化，即各质量以上交易量的函数。通过将技术成本函数凸化，作者证明最优解只需在凸包接触点提供质量，从而可能大幅缩减菜单规模。此外，在单调失效率（MHR）条件下，利润最大化机制至少能实现最优社会福利的1/(e−1)比例，该比率是紧的。",
+              "methodsAndTechniques": "核心方法是将机制设计问题转化为对交易分布函数的优化，并利用凸化技术简化目标函数。作者采用类似Myerson铁化的方法，但应用于质量维度而非类型维度，通过替换成本函数为其最大凸下界来消除局部凹性带来的复杂性。动态规划算法则用于在有限菜单限制下逼近最优解，结合离散化与分组优化实现多项式时间计算。",
+              "limitationsAndReadingValue": "模型假设平台完全了解类型分布且交易可降级处理，这在现实中可能受限。结果对MHR条件依赖较强，一般分布下效率可能极低。尽管如此，论文的价值在于提供了处理双边信息不对称的新框架，其凸化思想和交易分布刻画方式极具启发性，适合关注机制设计、平台定价和近似算法的研究者深入阅读核心定理与证明技巧。"
+            },
+            "contentTags": [
+              "机制设计",
+              "市场/匹配",
+              "信息不对称",
+              "平台经济",
+              "社会福利"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "机制设计",
+              "算法设计"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
+            "url": "https://arxiv.org/abs/2611.06891",
+            "arxivId": "2611.06891",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.DS",
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "拟阵与XOS估值下的先知秘书问题：在$1-1/e$处的严格分离",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "在线算法",
+              "机制设计",
+              "拍卖理论",
+              "拟阵",
+              "XOS估值"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在随机顺序下，某些资源分配问题能突破$1-1/e$的竞争比，而另一些不能？该问题源于先知不等式与秘书问题的融合——‘先知秘书模型’。尽管此前研究显示拟阵和组合拍卖在$1-1/e$上表现一致，但这是否反映了本质难度？本文质疑这种统一性，探究不同结构如何影响信息利用效率。",
+              "modelAndSetup": "模型考虑两类在线决策者：一是从带权元素流中选出独立集的算法（拟阵模型），二是向随机到达的买家分配物品的拍卖方（XOS组合拍卖）。两者均知道分布并面对随机到达顺序，目标是逼近离线最优期望收益。关键区别在于可行性约束：拟阵允许动态调整，而XOS拍卖需立即承诺分配及其支持条款。",
+              "contributionsAndResults": "论文证明了一个严格分离：对于任意拟阵，存在竞争比超过$1-1/e$的在线算法；而对于XOS组合拍卖，$1-1/e$是紧的上界。这表明拟阵的结构优势（如基交换性质）使算法能延迟承诺并提升性能，而XOS拍卖中早期对支持条款的选择会不可逆地限制未来协调能力。",
+              "methodsAndTechniques": "作者通过双重技术路径实现突破：在拟阵中，设计一个基于尾部重缩放参考分布的势函数，并结合确定性阈值与虚拟基交换机制，在‘波动’与‘持久’两种模式间切换以获取超额收益；在XOS下，则构造一族实例，利用公开划分与类型预测困难来证明任何在线策略都无法超越$1-1/e$。",
+              "limitationsAndReadingValue": "结果依赖于理想化的独立同分布与完全信息设定，实际部署可能受限。然而，其价值在于揭示了结构在信息利用中的根本作用：拟阵的交换性质提供了灵活性红利，而XOS的条款承诺则构成瓶颈。最值得细读的是其分离性证明的技术对比，展现了在线算法设计中‘何时承诺’的深层权衡。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "拟阵与XOS估值下的先知秘书问题：在$1-1/e$处的严格分离",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么在随机顺序下，某些资源分配问题能突破$1-1/e$的竞争比，而另一些不能？该问题源于先知不等式与秘书问题的融合——‘先知秘书模型’。尽管此前研究显示拟阵和组合拍卖在$1-1/e$上表现一致，但这是否反映了本质难度？本文质疑这种统一性，探究不同结构如何影响信息利用效率。",
+              "modelAndSetup": "模型考虑两类在线决策者：一是从带权元素流中选出独立集的算法（拟阵模型），二是向随机到达的买家分配物品的拍卖方（XOS组合拍卖）。两者均知道分布并面对随机到达顺序，目标是逼近离线最优期望收益。关键区别在于可行性约束：拟阵允许动态调整，而XOS拍卖需立即承诺分配及其支持条款。",
+              "contributionsAndResults": "论文证明了一个严格分离：对于任意拟阵，存在竞争比超过$1-1/e$的在线算法；而对于XOS组合拍卖，$1-1/e$是紧的上界。这表明拟阵的结构优势（如基交换性质）使算法能延迟承诺并提升性能，而XOS拍卖中早期对支持条款的选择会不可逆地限制未来协调能力。",
+              "methodsAndTechniques": "作者通过双重技术路径实现突破：在拟阵中，设计一个基于尾部重缩放参考分布的势函数，并结合确定性阈值与虚拟基交换机制，在‘波动’与‘持久’两种模式间切换以获取超额收益；在XOS下，则构造一族实例，利用公开划分与类型预测困难来证明任何在线策略都无法超越$1-1/e$。",
+              "limitationsAndReadingValue": "结果依赖于理想化的独立同分布与完全信息设定，实际部署可能受限。然而，其价值在于揭示了结构在信息利用中的根本作用：拟阵的交换性质提供了灵活性红利，而XOS的条款承诺则构成瓶颈。最值得细读的是其分离性证明的技术对比，展现了在线算法设计中‘何时承诺’的深层权衡。"
+            },
+            "contentTags": [
+              "在线算法",
+              "机制设计",
+              "拍卖理论",
+              "拟阵",
+              "XOS估值"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Stability and Perfection in Constrained Weighted Network Games",
+            "url": "https://arxiv.org/abs/2611.06775",
+            "arxivId": "2611.06775",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "econ.TH"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "约束加权网络博弈中的稳定性与完美性",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "网络形成",
+              "博弈论",
+              "稳定性",
+              "资源约束",
+              "完美均衡"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统网络形成模型通常忽略个体资源限制，难以刻画现实中时间、精力或预算受限的合作行为。本文关注在存在个体预算和群体容量约束下，如何定义并保证网络的稳定性与稳健性。核心问题是：当链接强度可调且受资源限制时，什么样的网络结构是稳定的？这种稳定是否能在微小扰动下持续存在？",
+              "modelAndSetup": "模型考虑一组代理人，他们可在任意规模的联盟中分配合作强度，每个联盟有最大容量，每个代理人有总资源预算。效用取决于自身及他人在各联盟中的投入。稳定性要求无人愿单方面降低参与强度，也无联盟能在不超预算前提下共同提升合作强度而使所有成员受益。",
+              "contributionsAndResults": "论文提出了‘联盟稳定性’概念，并证明在连续性和拟凹性假设下，此类稳定网络必然存在。进一步引入了约束下的颤抖手与扰动式完美性概念，并证明在固定符号单调性条件下，两者等价且存在。这扩展了经典完美均衡在网络博弈中的适用性。",
+              "methodsAndTechniques": "作者通过构造下半连续对应并应用Yannelis-Prabhakar不动点定理证明存在性。对于完美性，采用扰动环境序列逼近原游戏，并利用严格单调性确保极限行为的一致性。关键技术在于处理预算约束导致的非乘积可行集结构，避免扰动破坏可行性。",
+              "limitationsAndReadingValue": "模型虽更贴近现实，但完美性结果依赖较强的单调性假设，且机制实现难度未讨论。值得细读的是其对约束环境下稳定性与稳健性的重新建模，以及存在性证明的技术路径，对研究资源受限的多边互动系统有重要启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "约束加权网络博弈中的稳定性与完美性",
+            "summarySections": {
+              "backgroundAndQuestion": "传统网络形成模型通常忽略个体资源限制，难以刻画现实中时间、精力或预算受限的合作行为。本文关注在存在个体预算和群体容量约束下，如何定义并保证网络的稳定性与稳健性。核心问题是：当链接强度可调且受资源限制时，什么样的网络结构是稳定的？这种稳定是否能在微小扰动下持续存在？",
+              "modelAndSetup": "模型考虑一组代理人，他们可在任意规模的联盟中分配合作强度，每个联盟有最大容量，每个代理人有总资源预算。效用取决于自身及他人在各联盟中的投入。稳定性要求无人愿单方面降低参与强度，也无联盟能在不超预算前提下共同提升合作强度而使所有成员受益。",
+              "contributionsAndResults": "论文提出了‘联盟稳定性’概念，并证明在连续性和拟凹性假设下，此类稳定网络必然存在。进一步引入了约束下的颤抖手与扰动式完美性概念，并证明在固定符号单调性条件下，两者等价且存在。这扩展了经典完美均衡在网络博弈中的适用性。",
+              "methodsAndTechniques": "作者通过构造下半连续对应并应用Yannelis-Prabhakar不动点定理证明存在性。对于完美性，采用扰动环境序列逼近原游戏，并利用严格单调性确保极限行为的一致性。关键技术在于处理预算约束导致的非乘积可行集结构，避免扰动破坏可行性。",
+              "limitationsAndReadingValue": "模型虽更贴近现实，但完美性结果依赖较强的单调性假设，且机制实现难度未讨论。值得细读的是其对约束环境下稳定性与稳健性的重新建模，以及存在性证明的技术路径，对研究资源受限的多边互动系统有重要启发。"
+            },
+            "contentTags": [
+              "网络形成",
+              "博弈论",
+              "稳定性",
+              "资源约束",
+              "完美均衡"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-11-04",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202611040000 TO 202611042359\"",
+            "totalResults": 4,
+            "fetchedCount": 4
+          }
+        },
+        "dedupedCount": 4
+      },
+      "arxivTotalResults": 4,
+      "fetchedCount": 4,
+      "fetchedPapers": [
+        {
+          "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+          "url": "https://arxiv.org/abs/2611.06914",
+          "arxivId": "2611.06914",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "abstract": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested."
+        },
+        {
+          "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+          "url": "https://arxiv.org/abs/2611.06727",
+          "arxivId": "2611.06727",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: https://github.com/EdgeCitadelTeam/EdgeCitadel)."
+        },
+        {
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "https://arxiv.org/abs/2611.06585",
+          "arxivId": "2611.06585",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "AI agents rely on third-party tools, such as Model Context Protocol (MCP) servers, whose publishers can be authenticated and whose execution can be restricted by runtime security policies. Yet authenticity does not guarantee benign behaviour: a legitimately signed tool may perform its advertised function while concealing malicious code that leaks confidential information. We demonstrate this trust failure with a signed MCP tool that embeds sensitive data in requests to a policy-allowed destination. Meta's MCPGuard-Dynamic, a state-of-the-art runtime defence, blocks a direct exfiltration attempt in the same run, yet fails to prevent this attack in every trial. We introduce germline execution, which limits information disclosure without inspecting or trusting tool implementations. Each tool invocation runs in ephemeral copies forked from a data-free germline process, each receiving only information authorised for its destination. Even if malicious code executes, what it can disclose is bounded by the data available to its copy. Under explicit assumptions on copy confinement and a data-free germline, we prove sink noninterference for every signed release and, for releases deterministic within our replay model, show that a verified witness establishes a flow violation. Across 153 attack runs, no unauthorised disclosure was detected under germline execution, compared with 5.9-74.5% of runs under baseline defences and an ablation. Invocations served by a single copy completed in 10-49 ms, 2-28x faster than restarting the tool for every invocation, the conventional way to clear state. These results show that data-isolated execution protects agent toolchains against malicious code concealed within authenticated software."
+        },
+        {
+          "title": "Corralling AI Risks with Grassroots Contracts",
+          "url": "https://arxiv.org/abs/2611.06374",
+          "arxivId": "2611.06374",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.DC",
+            "cs.MA"
+          ],
+          "abstract": "AI's inflection point is a fountain of alarming risks. Digital platforms in particular are vulnerable to three major AI risks, as those in control of global platforms cede control to AI, of the algorithms, of membership and of content: (1) AI control of global platforms, social and economic, used by the majority of humanity, resulting in the majority of humanity becoming vulnerable to AI control. (2) Unaccountable AI agents operating anonymously on social and economic digital platforms, side-by-side with humans, possibly masquerading as humans, serving unknown masters with unknown goals, operating under unknown restraints without accountability or culpability. (3) Unattributed deepfakes generated by anonymous AI, with people unable to distinguish them from genuine content and with their producers evading accountability and culpability. Here, we propose to corral these AI risks with grassroots contracts, a digital incarnation of a two-centuries old notion of Pierre-Joseph Proudhon. We present grassroots contracts for a social graph with accountable AI agents and for a social network with digital provenance, and working smartphone apps that implement the two and show how they corral these major AI risks: (1) AI control of global platforms. (2) Unaccountable AI agents. (3) Unattributed deepfakes."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+              "url": "https://arxiv.org/abs/2611.06914",
+              "arxivId": "2611.06914",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.CL",
+                "cs.LG"
+              ],
+              "abstract": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested."
+            },
+            {
+              "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+              "url": "https://arxiv.org/abs/2611.06727",
+              "arxivId": "2611.06727",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: https://github.com/EdgeCitadelTeam/EdgeCitadel)."
+            },
+            {
+              "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+              "url": "https://arxiv.org/abs/2611.06585",
+              "arxivId": "2611.06585",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "AI agents rely on third-party tools, such as Model Context Protocol (MCP) servers, whose publishers can be authenticated and whose execution can be restricted by runtime security policies. Yet authenticity does not guarantee benign behaviour: a legitimately signed tool may perform its advertised function while concealing malicious code that leaks confidential information. We demonstrate this trust failure with a signed MCP tool that embeds sensitive data in requests to a policy-allowed destination. Meta's MCPGuard-Dynamic, a state-of-the-art runtime defence, blocks a direct exfiltration attempt in the same run, yet fails to prevent this attack in every trial. We introduce germline execution, which limits information disclosure without inspecting or trusting tool implementations. Each tool invocation runs in ephemeral copies forked from a data-free germline process, each receiving only information authorised for its destination. Even if malicious code executes, what it can disclose is bounded by the data available to its copy. Under explicit assumptions on copy confinement and a data-free germline, we prove sink noninterference for every signed release and, for releases deterministic within our replay model, show that a verified witness establishes a flow violation. Across 153 attack runs, no unauthorised disclosure was detected under germline execution, compared with 5.9-74.5% of runs under baseline defences and an ablation. Invocations served by a single copy completed in 10-49 ms, 2-28x faster than restarting the tool for every invocation, the conventional way to clear state. These results show that data-isolated execution protects agent toolchains against malicious code concealed within authenticated software."
+            },
+            {
+              "title": "Corralling AI Risks with Grassroots Contracts",
+              "url": "https://arxiv.org/abs/2611.06374",
+              "arxivId": "2611.06374",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.DC",
+                "cs.MA"
+              ],
+              "abstract": "AI's inflection point is a fountain of alarming risks. Digital platforms in particular are vulnerable to three major AI risks, as those in control of global platforms cede control to AI, of the algorithms, of membership and of content: (1) AI control of global platforms, social and economic, used by the majority of humanity, resulting in the majority of humanity becoming vulnerable to AI control. (2) Unaccountable AI agents operating anonymously on social and economic digital platforms, side-by-side with humans, possibly masquerading as humans, serving unknown masters with unknown goals, operating under unknown restraints without accountability or culpability. (3) Unattributed deepfakes generated by anonymous AI, with people unable to distinguish them from genuine content and with their producers evading accountability and culpability. Here, we propose to corral these AI risks with grassroots contracts, a digital incarnation of a two-centuries old notion of Pierre-Joseph Proudhon. We present grassroots contracts for a social graph with accountable AI agents and for a social network with digital provenance, and working smartphone apps that implement the two and show how they corral these major AI risks: (1) AI control of global platforms. (2) Unaccountable AI agents. (3) Unattributed deepfakes."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 2,
+                  "clarity": 3,
+                  "theoreticalDepth": 1,
+                  "overall": 1,
+                  "penalty": -4
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+              "url": "https://arxiv.org/abs/2611.06914",
+              "arxivId": "2611.06914",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.CL",
+                "cs.LG"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+              "url": "https://arxiv.org/abs/2611.06727",
+              "arxivId": "2611.06727",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+              "url": "https://arxiv.org/abs/2611.06585",
+              "arxivId": "2611.06585",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 28.0,
+                "total": 28.0
+              }
+            },
+            {
+              "title": "Corralling AI Risks with Grassroots Contracts",
+              "url": "https://arxiv.org/abs/2611.06374",
+              "arxivId": "2611.06374",
+              "date": "2026-11-04",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.DC",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 2.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 1.0,
+                "overall": 1.0,
+                "penalty": -4.0,
+                "baseTotal": 6.0,
+                "total": 6.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+          "url": "https://arxiv.org/abs/2611.06914",
+          "arxivId": "2611.06914",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+          "url": "https://arxiv.org/abs/2611.06727",
+          "arxivId": "2611.06727",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "https://arxiv.org/abs/2611.06585",
+          "arxivId": "2611.06585",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Corralling AI Risks with Grassroots Contracts",
+          "url": "https://arxiv.org/abs/2611.06374",
+          "arxivId": "2611.06374",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.DC",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 2.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 1.0,
+            "overall": 1.0,
+            "penalty": -4.0,
+            "baseTotal": 6.0,
+            "total": 6.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+          "url": "https://arxiv.org/abs/2611.06585",
+          "arxivId": "2611.06585",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.CR",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          }
+        },
+        {
+          "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+          "url": "https://arxiv.org/abs/2611.06727",
+          "arxivId": "2611.06727",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+          "url": "https://arxiv.org/abs/2611.06914",
+          "arxivId": "2611.06914",
+          "date": "2026-11-04",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+            "url": "https://arxiv.org/abs/2611.06585",
+            "arxivId": "2611.06585",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.CR",
+              "cs.AI",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "签了，封了，却泄露了：超越签名的MCP工具链信任",
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "形式化证明"
+            ],
+            "contentTags": [
+              "AI智能体",
+              "软件供应链安全",
+              "信息流控制",
+              "沙箱隔离",
+              "可信执行"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "AI智能体依赖第三方工具，通常通过代码签名验证发布者身份，但这只能确认‘谁发布了代码’，无法防止恶意行为。即使工具功能正常，其内部仍可能隐藏窃取敏感数据的逻辑，利用合法权限通道泄露信息。现有运行时防护如MCPGuard虽限制访问目标，但不检查请求内容，导致隐蔽的数据渗漏无法被发现，暴露出基于目的地的访问控制在细粒度信息保护上的根本局限。",
+              "modelAndSetup": "研究聚焦于MCP工具调用场景，输入是带标签的用户数据和声明了目的地址的工具函数，输出是返回结果与网络请求。系统在每次调用时执行工具，并监控其对外通信。评估采用攻击矩阵，包含多种隐藏数据泄露方式的恶意工具版本，在可控环境中运行多轮实验，通过注入唯一标识的‘蜜罐数据’检测是否发生未经授权的披露，并对比不同防御机制的表现。",
+              "contributionsAndResults": "论文提出germline execution机制，实现了对所有签名工具的信息流非干涉性保证。实验显示，在153次攻击尝试中，基线方法泄漏率高达5.9%-74.5%，而该机制完全阻止了所有未授权披露。同时，单副本调用延迟仅为10-49毫秒，比传统重启进程快2-28倍，证明其在强安全性与实用性之间取得了平衡，显著优于现有方案。",
+              "methodsAndTechniques": "核心思想是将每次工具调用限制在独立、短暂的副本中执行，这些副本均派生自一个从未接触用户数据的‘胚系’（germline）进程。每个副本仅接收当前调用中目标端点有权访问的数据，从而确保即使存在恶意代码，其可泄露的内容也受到严格限制。通过声明的目的地进行静态分组，避免运行时决策泄露秘密信息，结合双执行比较与可验证证据生成，实现对违规行为的检测与归因。",
+              "limitationsAndReadingValue": "方法假设副本间完全隔离且胚系进程保持无数据状态，依赖内核级隔离机制的正确性。远程不可控工具无法被分叉，只能通过保守标签缓解风险。此外，性能优势依赖预初始化副本池，对大量并发工具的内存开销需权衡。最值得阅读的是其问题抽象——‘调用纯净性’的提出、germline机制的设计原理及其形式化证明，为AI智能体安全提供了新的系统级思路。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "签了，封了，却泄露了：超越签名的MCP工具链信任",
+            "summarySections": {
+              "backgroundAndQuestion": "AI智能体依赖第三方工具，通常通过代码签名验证发布者身份，但这只能确认‘谁发布了代码’，无法防止恶意行为。即使工具功能正常，其内部仍可能隐藏窃取敏感数据的逻辑，利用合法权限通道泄露信息。现有运行时防护如MCPGuard虽限制访问目标，但不检查请求内容，导致隐蔽的数据渗漏无法被发现，暴露出基于目的地的访问控制在细粒度信息保护上的根本局限。",
+              "modelAndSetup": "研究聚焦于MCP工具调用场景，输入是带标签的用户数据和声明了目的地址的工具函数，输出是返回结果与网络请求。系统在每次调用时执行工具，并监控其对外通信。评估采用攻击矩阵，包含多种隐藏数据泄露方式的恶意工具版本，在可控环境中运行多轮实验，通过注入唯一标识的‘蜜罐数据’检测是否发生未经授权的披露，并对比不同防御机制的表现。",
+              "contributionsAndResults": "论文提出germline execution机制，实现了对所有签名工具的信息流非干涉性保证。实验显示，在153次攻击尝试中，基线方法泄漏率高达5.9%-74.5%，而该机制完全阻止了所有未授权披露。同时，单副本调用延迟仅为10-49毫秒，比传统重启进程快2-28倍，证明其在强安全性与实用性之间取得了平衡，显著优于现有方案。",
+              "methodsAndTechniques": "核心思想是将每次工具调用限制在独立、短暂的副本中执行，这些副本均派生自一个从未接触用户数据的‘胚系’（germline）进程。每个副本仅接收当前调用中目标端点有权访问的数据，从而确保即使存在恶意代码，其可泄露的内容也受到严格限制。通过声明的目的地进行静态分组，避免运行时决策泄露秘密信息，结合双执行比较与可验证证据生成，实现对违规行为的检测与归因。",
+              "limitationsAndReadingValue": "方法假设副本间完全隔离且胚系进程保持无数据状态，依赖内核级隔离机制的正确性。远程不可控工具无法被分叉，只能通过保守标签缓解风险。此外，性能优势依赖预初始化副本池，对大量并发工具的内存开销需权衡。最值得阅读的是其问题抽象——‘调用纯净性’的提出、germline机制的设计原理及其形式化证明，为AI智能体安全提供了新的系统级思路。"
+            },
+            "contentTags": [
+              "AI智能体",
+              "软件供应链安全",
+              "信息流控制",
+              "沙箱隔离",
+              "可信执行"
+            ],
+            "researchParadigmTags": [
+              "机制设计",
+              "系统框架",
+              "实验验证",
+              "形式化证明"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+            "url": "https://arxiv.org/abs/2611.06727",
+            "arxivId": "2611.06727",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "Airlock: 通过选择性在线遏制限定多智能体系统的故障影响范围",
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证",
+              "算法设计",
+              "理论推导"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "大语言模型",
+              "在线算法",
+              "故障遏制"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当多智能体系统对外部世界执行操作时，单个代理的错误输出可能在被发现前已扩散至下游任务，形成系统级的‘爆炸半径’。现有方法要么仅隔离源头而忽略已被污染的消费者，要么中断整个工作流从而牺牲健康任务。本文旨在解决如何在不中断正常运行的前提下，精准遏制已传播的故障影响。",
+              "modelAndSetup": "研究在一个树状权限结构的多智能体运行时EDGECITADEL上部署AIRLOCK控制器，利用追加式溯源有向无环图记录跨代理数据流动。在物理智能家居和模拟工作流中注入故障，评估其能否阻止错误执行的同时保留尽可能多的正确操作，核心指标是事后零泄漏和健康工作保留率。",
+              "contributionsAndResults": "AIRLOCK实现了对所有警报后错误操作的完全拦截，在主测试平台和智能家居环境中均无后期泄漏。相比A2A和LangGraph等基线，它多保留了68至96个百分点的健康工作，且在密集传播场景下比全隔离模式多保留46个百分点，证明其选择性遏制机制显著优于现有方案。",
+              "methodsAndTechniques": "系统结合垂直权限窄化与水平溯源追踪：EDGECITADEL建立父子代理间的硬性授权边界，AIRLOCK则通过溯源图向前追溯污染路径、向后缩小根源。警报触发后，采用‘围栏-修剪’协议执行截止时间感知的最小割，确保在系统持续运行中实现零后期泄漏的安全保障。",
+              "limitationsAndReadingValue": "结论依赖于运行时中介的完整性，且在协调器日志摄入饱和时无法达成收敛，限制了超大规模部署。此外，方法假设代理不会主动规避监控。最值得阅读的是其将权限边界与在线溯源共设计的系统思路，以及形式化证明安全性的两阶段遏制协议。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "Airlock: 通过选择性在线遏制限定多智能体系统的故障影响范围",
+            "summarySections": {
+              "backgroundAndQuestion": "当多智能体系统对外部世界执行操作时，单个代理的错误输出可能在被发现前已扩散至下游任务，形成系统级的‘爆炸半径’。现有方法要么仅隔离源头而忽略已被污染的消费者，要么中断整个工作流从而牺牲健康任务。本文旨在解决如何在不中断正常运行的前提下，精准遏制已传播的故障影响。",
+              "modelAndSetup": "研究在一个树状权限结构的多智能体运行时EDGECITADEL上部署AIRLOCK控制器，利用追加式溯源有向无环图记录跨代理数据流动。在物理智能家居和模拟工作流中注入故障，评估其能否阻止错误执行的同时保留尽可能多的正确操作，核心指标是事后零泄漏和健康工作保留率。",
+              "contributionsAndResults": "AIRLOCK实现了对所有警报后错误操作的完全拦截，在主测试平台和智能家居环境中均无后期泄漏。相比A2A和LangGraph等基线，它多保留了68至96个百分点的健康工作，且在密集传播场景下比全隔离模式多保留46个百分点，证明其选择性遏制机制显著优于现有方案。",
+              "methodsAndTechniques": "系统结合垂直权限窄化与水平溯源追踪：EDGECITADEL建立父子代理间的硬性授权边界，AIRLOCK则通过溯源图向前追溯污染路径、向后缩小根源。警报触发后，采用‘围栏-修剪’协议执行截止时间感知的最小割，确保在系统持续运行中实现零后期泄漏的安全保障。",
+              "limitationsAndReadingValue": "结论依赖于运行时中介的完整性，且在协调器日志摄入饱和时无法达成收敛，限制了超大规模部署。此外，方法假设代理不会主动规避监控。最值得阅读的是其将权限边界与在线溯源共设计的系统思路，以及形式化证明安全性的两阶段遏制协议。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "安全性",
+              "大语言模型",
+              "在线算法",
+              "故障遏制"
+            ],
+            "researchParadigmTags": [
+              "系统框架",
+              "机制设计",
+              "实验验证",
+              "算法设计",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+            "url": "https://arxiv.org/abs/2611.06914",
+            "arxivId": "2611.06914",
+            "date": "2026-11-04",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA",
+              "cs.CL",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "一种用于大语言模型社会智能体的情境增强与选择性鲁棒性框架",
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "系统框架",
+              "机制设计"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "多智能体系统",
+              "智能体",
+              "鲁棒性",
+              "评测方法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前使用大语言模型作为社会模拟智能体的研究面临严重验证难题：即使提示词的改动不改变社会情境含义，智能体行为也可能剧烈波动。这使得模拟结果难以可信，尤其是在合作、决策等敏感任务中。已有方法虽尝试通过增加上下文细节提升稳定性，但缺乏对‘何种信息真正起作用’的系统区分，导致改进方向模糊。",
+              "modelAndSetup": "论文在类似囚徒困境的社会决策任务中测试智能体行为，设定医院物资管理者需决定是否向另一家医院转移应急物资。情境分为区域共管与本地独立两种制度，模型需据此调整行为。通过四种语义等价的提示形式（如叙述、列表、表格）评估表面敏感性，并测量其对制度变化的响应程度。",
+              "contributionsAndResults": "论文提出‘选择性鲁棒性’作为核心评价标准——即智能体应对提示形式变化保持稳定，但对真实社会情境变化做出定向响应。同时设计了五种情境增强条件进行对照，发现描述性和规范性决策锚定能显著提升两类模型的世界响应能力，且在某些模型中大幅降低表面敏感性。",
+              "methodsAndTechniques": "作者将情境增强分解为功能不同的模块：中性填充、通用背景、描述性决策关联和规范性角色要求，确保变量间不累积干扰。通过固定任务结构与角色，仅替换情境块来隔离效应。选择性鲁棒性的两个维度分别由表面形式差异的平均绝对偏移和跨制度响应差来量化，构成可复现的评估协议。",
+              "limitationsAndReadingValue": "实验仅覆盖单一决策场景和两个模型，结论外推需谨慎。未通过人类评分验证各提示变体的语义等价性，且情境锚定本身可能增强了关键信息的显著性，混淆归因。尽管如此，其问题设定、评估框架与情境解耦方法极具启发性，值得研究者重点参考其设计逻辑而非具体结果。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "一种用于大语言模型社会智能体的情境增强与选择性鲁棒性框架",
+            "summarySections": {
+              "backgroundAndQuestion": "当前使用大语言模型作为社会模拟智能体的研究面临严重验证难题：即使提示词的改动不改变社会情境含义，智能体行为也可能剧烈波动。这使得模拟结果难以可信，尤其是在合作、决策等敏感任务中。已有方法虽尝试通过增加上下文细节提升稳定性，但缺乏对‘何种信息真正起作用’的系统区分，导致改进方向模糊。",
+              "modelAndSetup": "论文在类似囚徒困境的社会决策任务中测试智能体行为，设定医院物资管理者需决定是否向另一家医院转移应急物资。情境分为区域共管与本地独立两种制度，模型需据此调整行为。通过四种语义等价的提示形式（如叙述、列表、表格）评估表面敏感性，并测量其对制度变化的响应程度。",
+              "contributionsAndResults": "论文提出‘选择性鲁棒性’作为核心评价标准——即智能体应对提示形式变化保持稳定，但对真实社会情境变化做出定向响应。同时设计了五种情境增强条件进行对照，发现描述性和规范性决策锚定能显著提升两类模型的世界响应能力，且在某些模型中大幅降低表面敏感性。",
+              "methodsAndTechniques": "作者将情境增强分解为功能不同的模块：中性填充、通用背景、描述性决策关联和规范性角色要求，确保变量间不累积干扰。通过固定任务结构与角色，仅替换情境块来隔离效应。选择性鲁棒性的两个维度分别由表面形式差异的平均绝对偏移和跨制度响应差来量化，构成可复现的评估协议。",
+              "limitationsAndReadingValue": "实验仅覆盖单一决策场景和两个模型，结论外推需谨慎。未通过人类评分验证各提示变体的语义等价性，且情境锚定本身可能增强了关键信息的显著性，混淆归因。尽管如此，其问题设定、评估框架与情境解耦方法极具启发性，值得研究者重点参考其设计逻辑而非具体结果。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "多智能体系统",
+              "智能体",
+              "鲁棒性",
+              "评测方法"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "系统框架",
+              "机制设计"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Tight bounds for fractional and randomized truthful scheduling (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：On Competing Sellers with Substitutable Goods (<urlopen error [Errno 104] Connection reset by peer>)"
+  ],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 3
+  }
+}
