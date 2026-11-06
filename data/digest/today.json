@@ -1,10 +1,12 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-11-05T09:52:24.342793+00:00",
+  "generatedAt": "2026-11-06T09:54:34.572658+00:00",
   "warnings": [
-    "LLM 精读生成失败，使用 Mock fallback：Tight bounds for fractional and randomized truthful scheduling (HTTP Error 400: Bad Request)",
-    "LLM 精读生成失败，使用 Mock fallback：On Competing Sellers with Substitutable Goods (<urlopen error [Errno 104] Connection reset by peer>)"
+    "LLM 精读生成失败，使用 Mock fallback：Information Elicitation by Ordinal Agreement (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Learning and Steering in Incomplete-Information Games (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Regret Bounds for Profit Maximization in Bilateral Trade: Learning the Best Posted-Price Mechanism (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：GPWM: Modeling the World as 3D Particle Motion (HTTP Error 400: Bad Request)"
   ],
   "llm": {
     "enabled": true,
@@ -58,24 +60,121 @@
       "id": "recent-agt",
       "title": "近期 AGT 新论文",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 17,
+      "fetchedCount": 12,
       "papers": [
         {
-          "title": "Tight bounds for fractional and randomized truthful scheduling",
+          "title": "Information Elicitation by Ordinal Agreement",
           "titleZh": "",
           "authors": [
-            "Georgios Anastasiadis",
-            "George Christodoulou",
-            "Elias Koutsoupias",
-            "Annamaria Kovacs",
-            "Conrad Schecker"
+            "Yiling Chen",
+            "Shi Feng",
+            "Grant Schoenebeck",
+            "Fang-Yi Yu"
           ],
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06642",
-          "abstract": "We resolve one of the longest-standing open problems in algorithmic mechanism design by showing that randomization cannot yield a sublinear approximation for truthful scheduling on unrelated machines, even when truthfulness is required only in expectation. Our main technical result concerns fractional scheduling, where tasks may be split among machines. We prove that every deterministic truthful fractional mechanism on $n$ unrelated machines has worst-case approximation ratio at least $(n+1)/2$, even against the optimal integral makespan. This matches the known upper bound exactly and settles the optimal approximation ratio of truthful fractional scheduling. Since the expected allocations and payments of a truthful-in-expectation mechanism define a truthful fractional mechanism, the same lower bound applies to all truthful-in-expectation mechanisms and, in particular, to all universally truthful mechanisms. On the positive side, we give a universally truthful mechanism with approximation ratio $n/2+o(n)$. Together, these results establish the optimal leading constant $1/2$ for randomized truthful scheduling. Thus, randomization improves on the optimal deterministic approximation ratio by an asymptotic factor of two, and no more.",
+          "url": "https://arxiv.org/abs/2611.08366",
+          "abstract": "Ordinal information is central to tasks ranging from conference peer review to Reinforcement Learning from Human Feedback for large language models. In many such settings, there is no objective ground truth against which reports can be directly verified, making incentive-compatible elicitation challenging. Peer-prediction mechanisms have been designed to achieve truthful elicitation despite the lack of ground-truth verification. However, existing peer-prediction methods do not provide incentives for agents to truthfully compress rich private information (e.g. reviews) into coarser ordinal reports (e.g. rankings) requested by the mechanisms. We propose a simple ordinal peer-prediction mechanism that rewards agents based on pairwise agreement, measured by Kendall tau. Under a broad class of Bayesian Stochastically Order Consistent models---which includes classical models such as Mallows and Thurstone---we prove that truthful reporting is stochastically dominant, and strongly truthful under index-equivariant strategies. This provides robust incentives even for agents with non-linear utility functions, such as risk aversion. Our mechanism further accommodates heterogeneous agents, top-K reports, and subset assignments, where each agent is scored against one randomly drawn peer. Experiments on synthetic Mallows and Thurstone data, together with a real-data stress test on the SUSHI preference dataset, show right-shifted truthful-payment distributions and the highest normalized sensitivity among tested baselines.",
           "summarySections": {
-            "backgroundAndQuestion": "We resolve one of the longest-standing open problems in algorithmic mechanism design by showing that randomization cannot yield a sublinear approximation for truthful scheduling on unrelated machines, even when truthfulness is required only in expectation. Our...",
+            "backgroundAndQuestion": "Ordinal information is central to tasks ranging from conference peer review to Reinforcement Learning from Human Feedback for large language models. In many such settings, there is no objective ground truth against which reports can be directly verified, makin...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 8.7,
+            "total": 37.7
+          },
+          "ids": {
+            "arxiv": "2611.08366"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
+          }
+        },
+        {
+          "title": "Learning and Steering in Incomplete-Information Games",
+          "titleZh": "",
+          "authors": [
+            "Asrın Efe Yorulmaz",
+            "Tamer Başar"
+          ],
+          "date": "2026-11-05",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.07589",
+          "abstract": "In many modern multi-agent systems, a mediator seeks to influence strategic decision dynamics using only outcome-level feedback and without knowing agents' utilities. In this work, we study how a mediator can learn an unknown game and steer adaptive agents toward outcomes that maximize her utility using only trajectory feedback. The mediator knows the game form and her own objective, but not the agents' utilities. Moreover, she commits to nonnegative payments and provides recommendations and contexts, but receives only a single realized terminal outcome rather than full-information feedback. We develop halving-type algorithms that learn utility differences in normal-form games and conditional continuation-value differences in extensive-form games, achieving a sample complexity of $\\widetilde O(\\varepsilon^{-2})$ that matches worst-case lower bounds up to logarithmic factors. We then combine these learning procedures with a Lagrangian formulation in an online Learn-Compute-Steer algorithm that interleaves learning, equilibrium computation, and steering toward mediator-optimal extensive-form correlated equilibria (EFCE). With high probability, the Learn-Compute-Steer algorithm achieves a directness gap and an optimality gap of $\\widetilde O(T^{-1/4})$, while time-average payments are of $\\widetilde O(T^{-1/8})$.",
+          "summarySections": {
+            "backgroundAndQuestion": "In many modern multi-agent systems, a mediator seeks to influence strategic decision dynamics using only outcome-level feedback and without knowing agents' utilities. In this work, we study how a mediator can learn an unknown game and steer adaptive agents tow...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 8.4,
+            "total": 36.4
+          },
+          "ids": {
+            "arxiv": "2611.07589"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.AI",
+              "cs.LG",
+              "eess.SY",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
+          }
+        },
+        {
+          "title": "Regret Bounds for Profit Maximization in Bilateral Trade: Learning the Best Posted-Price Mechanism",
+          "titleZh": "",
+          "authors": [
+            "Johannes Brüstle",
+            "Simone Di Gregorio",
+            "Federico Fusco",
+            "Stefano Leonardi"
+          ],
+          "date": "2026-11-05",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.08173",
+          "abstract": "Bilateral trade models the task of intermediating between two strategic agents, a seller and a buyer, willing to trade a good for which they hold private valuations. We study this problem from the perspective of a profit-maximizing broker in a regret minimization framework. At each time step, a new seller and buyer arrive and the broker proposes a trading price to each agent. The trade happens if both agents accept, and the profit of the broker is the difference between the price received from the buyer and the one paid to the seller. At the end of each interaction, the learner only observes whether the trade occurred, and its goal is to achieve sublinear regret relative to the best fixed pair of prices in hindsight. We start by investigating the adversarial version of the problem, where buyer and seller valuations are generated by an adversary. In this setting, we construct a polynomial-time learning algorithm with a $\\tilde O(T^{\\frac 23})$ regret rate, which is nearly tight even if the valuations are drawn i.i.d. from independent distributions, thus matching the rate for one-sided pricing. Our adversarial algorithm combines a localized estimation procedure with an information-based minimax construction. We then consider valuations drawn i.i.d. from independent distributions satisfying the monotone-hazard-rate (MHR) property and provide a learning algorithm with nearly tight $\\tilde{O}(\\sqrt{T})$ regret. The algorithm combines localized estimation with a stochastic convex bandit routine applied to the negative logarithm of expected profit. Finally, we complement this result by showing a separation between MHR and regular distributions, proving that the minimax regret rate in the latter setting is $\\tilde Θ(T^{\\frac 35})$. This last result contrasts with the $\\tilde{O}(\\sqrt{T})$ regret bound that can be obtained for one-sided pricing with regular distributions.",
+          "summarySections": {
+            "backgroundAndQuestion": "Bilateral trade models the task of intermediating between two strategic agents, a seller and a buyer, willing to trade a good for which they hold private valuations. We study this problem from the perspective of a profit-maximizing broker in a regret minimizat...",
             "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
             "contributionsAndResults": "Mock fallback 未生成贡献细节。",
             "methodsAndTechniques": "Mock fallback 未生成技术路线。",
@@ -89,15 +188,81 @@
             "theoreticalStrength": 10.0,
             "guaranteeQuality": 6.0,
             "readingValue": 6.0,
-            "aiRelevance": 0.0,
+            "aiRelevance": 4.0,
             "agtRelevance": 10.0,
             "penalty": 0.0,
             "baseTotal": 30.0,
-            "bonus": 0.0,
-            "total": 30.0
+            "bonus": 4.0,
+            "total": 34.0
           },
           "ids": {
-            "arxiv": "2611.06642"
+            "arxiv": "2611.08173"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
+          }
+        },
+        {
+          "title": "Polynomial-Time Approximate EFX for Chores via Flow and Matching",
+          "titleZh": "通过流与匹配实现任务的多项式时间近似EFX",
+          "authors": [
+            "Genjie Qin",
+            "Qizhi Fang",
+            "Minming Li",
+            "Wenjing Liu",
+            "Xin Chen"
+          ],
+          "date": "2026-11-05",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.07468",
+          "abstract": "We study approximate EFX allocations of indivisible chores under nonnegative additive costs. Exact EFX allocations need not exist in general. We develop a polynomial-time algorithm that computes a complete $(3+\\varepsilon)$-EFX allocation for any rational $0<\\varepsilon\\leq1$, improving the previous approximation guarantee from a factor depending on the number of agents to a constant. The algorithm extends to EF$k$X, achieving a $(2+1/k+\\varepsilon)$-approximation for every integer $k\\geq1$. For instances with relatively few chores, the polynomial-time BRBI algorithm gives stronger guarantees. It finds exact EF$k$X allocations when $m\\leq2kn$ and achieves a factor of at most $2-1/k$ when $m\\le(3k-1)n$. In particular, $k=1$ and $m\\leq2n$ give exact EFX. We further show that the approximation factor \\(2+1/k\\) is asymptotically tight for our main algorithm. We also construct a four-agent, ten-chore instance in which every complete allocation has EFX approximation factor at least $11/10$, improving upon the $20/19$ lower bound for submodular costs even under additive costs.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么难以实现对不可分任务的公平分配？因为每个任务都会带来成本而非收益，且无法被拆分，导致传统意义上的无嫉妒分配（EF）通常不存在。现有研究虽证明了近似EFX分配的存在性，但缺乏高效算法将其构造出来。本文聚焦于如何在多项式时间内计算出高质量的近似EFX分配，填补了存在性与可计算性之间的空白。",
+            "modelAndSetup": "作者考虑n个代理和m个不可分任务的分配问题，每个代理对任务有非负加性的成本函数。目标是将所有任务完全分配，并使分配尽可能接近EFX——即任意代理在移除自己包中任一任务后不再嫉妒他人。模型允许近似，α-EFX表示其剩余成本至多为他人包成本的α倍。输入为有理数成本矩阵，要求输出为可在多项式时间内计算的分配方案。",
+            "contributionsAndResults": "论文提出了首个针对一般加性成本任务的多项式时间常数因子近似EFX算法。对于任意ε∈(0,1]，该算法可在多项式时间内构造出(3+ε)-EFX分配，显著改进此前随代理数平方增长的近似比。此外，算法可扩展至EFkX情形，达到(2+1/k+ε)-近似。同时，文章证明了该近似因子渐近紧，并构造了一个四代理十任务实例，证明EFX下界至少为11/10。",
+            "methodsAndTechniques": "作者采用三阶段流水线方法：首先通过最大流与带帽价格（MFCP）构造一个平衡的分数分配，确保近似MPB支持和收入均衡；然后利用排序槽舍入（SSR）将分数解转化为整数分配，控制高价格任务的数量；最后通过自适应包重分配（APR）修复残余不公平。关键技术包括基于最小割的权重更新、匹配舍入保持价格结构，以及有序交换防止公平性回退。",
+            "limitationsAndReadingValue": "尽管算法实现了常数近似并具多项式复杂度，但其3+ε因子略高于已知的2-EFX存在性结果，且构造过程较复杂，实际部署难度较高。然而，该文首次打通了从存在性到高效构造的路径，其流网络结合舍入的技术路线为后续研究提供了新范式。最值得阅读的是其算法框架设计与tightness分析，对公平分配与近似机制设计领域具有深远启发。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "理论推导",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "公平性",
+            "不可分任务",
+            "EFX分配"
+          ],
+          "tags": [
+            "公平性",
+            "不可分任务",
+            "EFX分配",
+            "算法设计",
+            "理论推导",
+            "复杂度分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.9,
+            "total": 30.9
+          },
+          "ids": {
+            "arxiv": "2611.07468"
           },
           "metadata": {
             "provider": "arxiv",
@@ -105,25 +270,241 @@
               "cs.GT"
             ],
             "primaryCategory": "cs.GT",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
           }
         },
         {
-          "title": "On Competing Sellers with Substitutable Goods",
+          "title": "Transparency in Team Contracts",
+          "titleZh": "团队合同中的透明度",
+          "authors": [
+            "Paul Dütting",
+            "Yingkai Li",
+            "Inbal Talgam-Cohen",
+            "Jinzhao Wu"
+          ],
+          "date": "2026-11-05",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.07494",
+          "abstract": "In contract design, the principal is often better informed about the project's chances of succeeding than the agents. To incentivize effort, the principal has two main tools: first, to design a contract, sharing part of the project's success among the agents; second, to design a (Bayesian) persuasion scheme, selectively sharing information with the agents. In this work we are interested in the optimal combination of both these tools. We tackle the joint problem through the prism of simplicity vs. optimality, and establish a stark dichotomy: The simple disclosure scheme of full transparency achieves a tight $4/3$-approximation to the optimal combination of information disclosure and team contract, when the team's production function is submodular. In contrast, full transparency can be arbitrarily far from optimal when production is supermodular. The techniques that we develop to bound the gap for submodular functions, also yield a new deterministic polynomial-time approximation algorithm for pure multi-agent contract design, with a significantly improved approximation ratio of $2.311$, and thus a $3.081$-approximation algorithm for the joint information and contracting problem.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在团队合作中完全公开信息可能并非最优？本文探讨了在委托人比代理人更了解项目前景时，如何联合设计信息披露与激励合同的问题。核心在于平衡信息透明带来的效率与隐藏信息对激励成本的节约，揭示了现实中广泛采用全透明制度背后的近似合理性。",
+            "modelAndSetup": "模型设定一个委托人与多个代理人的团队协作场景，项目成功概率取决于代理人努力组合，并受未知状态影响。委托人可设计公共信号披露机制和基于信号的奖励合同，代理人观测信号后决定是否付出代价努力。均衡下，委托人需权衡信息揭示程度与支付总额以最大化期望收益。",
+            "contributionsAndResults": "论文发现当代理人之间具有替代性（次模生产函数）时，全透明方案能实现最优联合设计的紧确4/3近似；而在互补情形（超模函数）下，全透明可能导致委托人收益归零。这表明信息结构的设计效果高度依赖于任务的技术特征，替代性使简单透明机制接近最优。",
+            "methodsAndTechniques": "作者通过‘全有或全无’引理将最优性分析简化为与无信息披露方案的比较。关键技术是构建势能函数引导剪枝过程，在每个状态下动态决定保留或剔除代理人，从而控制激励成本与成功率之间的权衡，并利用该分析导出高效的确定性近似算法。",
+            "limitationsAndReadingValue": "结果依赖于公共信号与线性合同假设，私有信号或多阶段互动可能改变结论。尽管模型抽象，但其对信息与激励交互的洞察深刻，尤其势能法与剪枝思想极具启发性。推荐关注模型设定、主定理证明及附录中的算法构造。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
+            "算法设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "信息设计",
+            "多智能体系统",
+            "合同理论",
+            "激励机制"
+          ],
+          "tags": [
+            "机制设计",
+            "信息设计",
+            "多智能体系统",
+            "合同理论",
+            "激励机制",
+            "理论推导",
+            "模型构建",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 3.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 2.8,
+            "total": 30.8
+          },
+          "ids": {
+            "arxiv": "2611.07494"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "econ.TH"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.RO）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "XM4D: 4D Reconstruction through Certifiable Geometric Optimization",
+          "titleZh": "XM4D：通过可认证几何优化实现4D重建",
+          "authors": [
+            "Haoyu Han",
+            "Jack Benarroch Jedlicki",
+            "Jiahui Lei",
+            "Heng Yang"
+          ],
+          "date": "2026-11-05",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.07902",
+          "abstract": "Accurate 4D reconstruction remains challenging: jointly estimating camera motion, scene geometry, and non-rigid deformation entails highly nonconvex optimization, making global optimality difficult to guarantee. We present XM4D, a framework for accurate and efficient 4D reconstruction built upon certifiably globally optimal geometric optimization. By separating the estimation of camera motion from non-rigid deformation, we formulate both stages as structured quadratically constrained quadratic programs (QCQP) that admit semidefinite programming (SDP) relaxations and verifiable global optimality certificates. For camera motion estimation, we lift static point tracks into 3D using foundational depth prediction models and formulate a scaled bundle adjustment problem that jointly estimates camera poses, depth scales, and static landmarks. By analytically eliminating translations and landmarks, we reduce the problem to a QCQP over scaled rotations. For non-rigid reconstruction, we represent dynamic motion using an embedded deformation graph (EDG) and show that its tracking, rigidity, and temporal regularization objectives similarly reduce to a rotation-only QCQP. Both problems admit SDP relaxations that we solve efficiently with a GPU-accelerated Burer-Monteiro solver based on Riemannian optimization. The recovered geometry further initializes dynamic Gaussian splatting for photometric refinement. Extensive experiments across seven benchmarks demonstrate accurate camera motion estimation on both static and dynamic scenes, efficient optimization that scales to thousands of frames, and state-of-the-art novel-view rendering quality.",
+          "summarySections": {
+            "backgroundAndQuestion": "4D重建旨在从单目视频中恢复动态场景的时变三维结构，但相机运动与物体形变耦合导致优化高度非凸，易陷入局部极小。现有方法常联合优化相机位姿、几何与形变，缺乏全局最优性保证。本文关注如何解耦估计过程并提供可验证的全局最优解，提升重建稳定性与精度。",
+            "modelAndSetup": "输入为单目视频帧及其预测深度与2D点轨迹，输出为相机位姿、静态几何与动态点3D轨迹。系统分三阶段：静态阶段估计带尺度校正的相机位姿，动态阶段用嵌入形变图（EDG）建模非刚性运动，最后通过动态高斯点阵进行光度细化。在七个基准上评估相机精度、运行效率与新视角合成质量。",
+            "contributionsAndResults": "提出XM4D框架，首次将可认证全局优化引入4D重建。其核心贡献在于将相机与形变估计分别建模为可松弛至半定规划（SDP）的二次约束二次规划（QCQP），并通过GPU加速求解。实验显示其在相机估计上领先，在长序列下仍高效，并在新视角渲染上达到最优性能。",
+            "methodsAndTechniques": "方法关键在于解耦与结构化建模：静态阶段通过尺度旋转变量消去平移与地标，形成带球面约束的QCQP；动态阶段将EDG的跟踪、刚性与时间平滑项也转化为仅含旋转的QCQP。两者均采用Burer-Monteiro方法结合黎曼优化求解，并通过对偶间隙验证全局最优性。",
+            "limitationsAndReadingValue": "局限在于认证依赖于输入质量，错误的深度与轨迹会偏置结果；矩阵存储密集，内存随帧数平方增长；EDG结构与权重固定，未联合优化。建议重点阅读方法设计与实验分析部分，其系统性工程实现与可认证优化思路对动态重建具指导意义。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "系统框架",
+            "实验验证",
+            "基准评测",
+            "模型构建"
+          ],
+          "contentTags": [
+            "4D重建",
+            "几何优化",
+            "动态场景",
+            "高斯点阵渲染",
+            "非刚性形变"
+          ],
+          "tags": [
+            "4D重建",
+            "几何优化",
+            "动态场景",
+            "高斯点阵渲染",
+            "非刚性形变",
+            "算法设计",
+            "系统框架",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.07902"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CV",
+              "cs.RO",
+              "math.OC"
+            ],
+            "primaryCategory": "cs.CV",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
+          }
+        },
+        {
+          "title": "Reversible Dynamics, Asymmetric Actions: Parking as a Trajectory-Level Affordance",
+          "titleZh": "Reversible Dynamics, Asymmetric Actions: Parking as a Trajectory-Level Affordance",
+          "authors": [
+            "Adam Y. Shavit"
+          ],
+          "date": "2026-11-05",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.07965",
+          "abstract": "Drivers are often told to back into a tight parking space, not drive in nose first. The advice looks paradoxical, because a slow car is dynamically reversible: reverse its speed and replay the steering backward, and it retraces a feasible path. Played backward, though, reverse-in shows a car driving forward out of the space. Reverse-in and forward-in are different tasks: they share a start position but end facing opposite ways. We separate three clearances between car and obstacles. Static fit $F$ is the clearance the parked car keeps at its best acceptable destination pose. Eventual access $A_\\infty$ is the clearance it can keep all the way there with unlimited corrections. Resource-bounded access $A_K$ is the clearance that survives a budget of $K$ reversals, switches between forward and reverse. They satisfy $F\\ge A_\\infty\\ge A_K$. In one fully specified scene (one car, bay, aisle and start), a certified argument proves $A_\\infty=F=0.5000$ m for both tasks. In this scene, all certified forward/reverse asymmetry therefore arises at finite $K$: it lies in how many corrections each task needs, not in the clearance either can eventually keep. With one reversal, an explicit path gives reverse-in at least $0.4410$ m clearance. A certified reachability argument caps forward-in's one-reversal clearance at $d_0<0.1720002$ m. With two reversals, forward-in gets at least $0.2833$ m. To keep a clearance strictly above any $d$ with $d_0\\le d<0.2833$ m, reverse-in thus needs exactly one reversal and forward-in exactly two when both tasks move forward first. If both move in reverse first, the counts are two and three. The contrast depends on the start position (Section 4.15). Proposed experiments test whether observers distinguish fit, eventual access and budgeted access. They compare these with simpler cues, such as how the turning body sweeps, and learned manoeuvre labels.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么倒车入库比正向入库更容易？尽管汽车动力学在时间上可逆，但人们普遍认为倒车更优。本文指出，这并非因为动力学本身不对称，而是任务边界条件不同所致。现有方法常混淆‘路径可逆’与‘任务对称’，忽略了动作预算（如方向切换次数）对可达性的实际影响，导致无法解释日常驾驶中的行为偏好。",
+            "modelAndSetup": "论文将停车建模为配置空间中的轨迹可达性问题，定义了三个关键量：静态适配度（终点能否容纳）、无界访问（无限修正下是否可达）和资源受限访问（限定K次前进/后退切换下的最优间隙）。通过几何证明与数值认证，比较前进入库与倒进入库在相同起点、障碍物和控制约束下的表现差异。",
+            "contributionsAndResults": "核心贡献在于分离了动态可逆性与任务对称性，并提出‘资源受限访问’作为心理判断的基础。在一个完全解析的场景中，两种方式的最终可达性相同，但在一次反转预算下，倒车可保持至少0.441米间隙，而前进入库上限仅为0.172米，揭示了动作效率的本质差异。",
+            "methodsAndTechniques": "作者采用理想化的自行车模型进行理论分析，结合严格的几何论证与计算验证。通过建立连接组件、反向运行引理和有限反转搜索状态，区分了路径存在性与最优性。关键技巧是利用‘转向阈值’（车身对角线）来界定何时无法调头，并以此构造上下界证书，确保结论不依赖于启发式搜索。",
+            "limitationsAndReadingValue": "结论依赖于理想化假设，如无打滑、精确控制和静态障碍。真实驾驶中的感知误差、执行噪声和动态环境未被建模。此外，仅一个场景被完全证明，推广需谨慎。最值得读的是其理论框架与认证方法，尤其是如何用数学工具澄清认知错觉，这对人机交互与自主系统设计有深远启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "实验验证",
+            "评测方法"
+          ],
+          "contentTags": [
+            "非完整系统",
+            "运动规划",
+            "感知-动作耦合",
+            "资源受限决策",
+            "车辆动力学"
+          ],
+          "tags": [
+            "非完整系统",
+            "运动规划",
+            "感知-动作耦合",
+            "资源受限决策",
+            "车辆动力学",
+            "理论推导",
+            "机制设计",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.07965"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "q-bio.NC",
+              "cs.RO",
+              "math.OC"
+            ],
+            "primaryCategory": "q-bio.NC",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
+          }
+        },
+        {
+          "title": "GPWM: Modeling the World as 3D Particle Motion",
           "titleZh": "",
           "authors": [
-            "Moshe Babaioff",
-            "Yuval Grofman",
-            "Brendan Lucier",
-            "Raghuvansh R. Saxena"
+            "Robert Ren",
+            "Matthew Bronars",
+            "He Zhu",
+            "Yikai Tang",
+            "Jianing Zhang",
+            "Sergey Zakharov",
+            "Pavel Tokmakov",
+            "Katerina Fragkiadaki"
           ],
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06595",
-          "abstract": "We study mechanism design by an incumbent seller facing competition from an entrant seller of a substitute good. The incumbent commits to a potentially randomized mechanism before her competitor responds. A unit-demand buyer with fixed, publicly known values for the two goods observes both mechanisms and may interact with them in either order. How should a revenue-maximizing incumbent design her mechanism when her product is superior or inferior to her competitor's? We determine the incumbent's exact optimal revenue and characterize all mechanisms that obtain it. Commitment and randomization allow her to earn strictly positive revenue even against an arbitrarily superior product, despite earning nothing under posted-price (i.e., Bertrand) competition. Optimal mechanisms can require a continuum of lottery options, even though the buyer selects only one in equilibrium: unselected options shape the competitor's incentives rather than screen private buyer information. We also show that the buyer's ability to choose the interaction order can be strictly beneficial to the incumbent, even though the incumbent is always visited first at equilibrium. Finally, we show that without commitment, every pure Nash equilibrium yields Bertrand revenues even with randomized mechanisms.",
+          "url": "https://arxiv.org/abs/2611.08338",
+          "abstract": "We introduce GPWM, a Generative Particle World Model that predicts how 3D scenes evolve by generating the motion of particles and rigid bodies over time. Unlike video world models that generate scene appearance, GPWM operates directly in 3D physical space. A single representation and architecture cover rigid, deformable, cloth, and granular materials, in both passive physics and robotic interaction. GPWM is an object-aware multi-resolution transformer that combines flow matching with diffusion forcing to generate coherent physical trajectories far beyond its training horizon. We train and evaluate GPWM on ParticleWorlds, a 25.5-million-frame corpus spanning diverse geometries, materials, interactions, and robot embodiments. GPWM outperforms the best prior learned-dynamics baseline in each of six physical domains, reducing prediction error by 31% on average. Breaking from the domain-specific setting of prior methods, a single Unified GPWM models these heterogeneous regimes with one set of weights, largely outperforming per-domain baselines and even surpassing our own specialist models in two domains. GPWM further generalizes to unseen geometries, physical properties, object counts, and rollout horizons. Beyond prediction, GPWM enables contact-rich planning by learning a generative prior over joint actuator-object motion. Instead of searching over unconstrained actions, planning searches the model's latent noise for interactions that achieve a desired object-space goal. With the same world model, noise-space planning substantially outperforms action-space search on pushing and picking, where complex contact sequences are hard to discover. Executed open-loop in simulation, the resulting plans achieve goal-directed manipulation without reference action trajectories or goal-specific policies.",
           "summarySections": {
-            "backgroundAndQuestion": "We study mechanism design by an incumbent seller facing competition from an entrant seller of a substitute good. The incumbent commits to a potentially randomized mechanism before her competitor responds. A unit-demand buyer with fixed, publicly known values f...",
+            "backgroundAndQuestion": "We introduce GPWM, a Generative Particle World Model that predicts how 3D scenes evolve by generating the motion of particles and rigid bodies over time. Unlike video world models that generate scene appearance, GPWM operates directly in 3D physical space. A s...",
             "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
             "contributionsAndResults": "Mock fallback 未生成贡献细节。",
             "methodsAndTechniques": "Mock fallback 未生成技术路线。",
@@ -133,353 +514,72 @@
           "contentTags": [],
           "tags": [],
           "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 9.0,
-            "guaranteeQuality": 6.0,
-            "readingValue": 6.0,
-            "aiRelevance": 0.0,
-            "agtRelevance": 10.0,
-            "penalty": 0.0,
-            "baseTotal": 29.0,
-            "bonus": 0.0,
-            "total": 29.0
-          },
-          "ids": {
-            "arxiv": "2611.06595"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
-          }
-        },
-        {
-          "title": "Two-Sided Screening in Quality-Differentiated Markets",
-          "titleZh": "质量差异化市场中的双边筛选",
-          "authors": [
-            "Yaohao Liu",
-            "Mengfan Ma",
-            "Mingyu Xiao"
-          ],
-          "date": "2026-11-04",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06097",
-          "abstract": "Motivated by digital marketplaces such as Uber and Airbnb, we study how a two-sided platform designs a menu of qualities, consumer prices, and provider wages. Consumers and providers self-select according to their private values and costs, so the platform must design its menu to attract consumers while inducing enough supply to meet their demand. We study this coordination problem over a continuous quality space, requiring supply to cover demand at every quality threshold. We formulate menu design as an optimization over trading distributions, which specify how much trade occurs at or above each quality. Through convexification of the technological cost function, we characterize the profit- and welfare-optimal trading distributions. This characterization shows how production technology alone can reduce menu size without sacrificing optimal profit or welfare, regardless of the type distributions, and determines when optimal menus can be finite. We then show that profit maximization can be highly efficient: under monotone hazard rate conditions on both sides, a profit-optimal menu achieves at least $1/(e-1)$ of optimal social welfare. We next consider the practical setting in which the menu size is restricted to a prescribed number of offers. We establish how the restricted menu approximates the unrestricted optimum in profit. We develop an algorithm that computes a menu within this size limit in polynomial time. The computed menu simultaneously approximates the unrestricted optimal profit and social welfare with additive error.",
-          "summarySections": {
-            "backgroundAndQuestion": "平台在质量差异化的市场中需同时吸引消费者和供应商，但双方都有私人信息：消费者知道自己的估值，供应商知道自己的成本。传统单边筛选无法解决供需匹配问题，因为高质服务需要买得起的消费者和愿意提供的供应商同时存在。本文研究平台如何设计菜单式报价，使供需在每一质量层级上都能自然匹配，而不出现供给过剩或短缺。",
-            "modelAndSetup": "模型考虑一个垄断平台连接单位质量的消费者和供应商，质量连续分布于区间。消费者类型为其边际价值，供应商类型为其单位努力成本，生产成本由公共技术函数决定。平台设计包含价格、工资和质量的菜单，双方自选最优选项。关键约束是每个质量阈值上的供给必须不少于需求，否则交易无法完成。目标是最大化利润或社会福利。",
-            "contributionsAndResults": "论文发现最优菜单的设计可转化为对‘交易分布’的优化，即各质量以上交易量的函数。通过将技术成本函数凸化，作者证明最优解只需在凸包接触点提供质量，从而可能大幅缩减菜单规模。此外，在单调失效率（MHR）条件下，利润最大化机制至少能实现最优社会福利的1/(e−1)比例，该比率是紧的。",
-            "methodsAndTechniques": "核心方法是将机制设计问题转化为对交易分布函数的优化，并利用凸化技术简化目标函数。作者采用类似Myerson铁化的方法，但应用于质量维度而非类型维度，通过替换成本函数为其最大凸下界来消除局部凹性带来的复杂性。动态规划算法则用于在有限菜单限制下逼近最优解，结合离散化与分组优化实现多项式时间计算。",
-            "limitationsAndReadingValue": "模型假设平台完全了解类型分布且交易可降级处理，这在现实中可能受限。结果对MHR条件依赖较强，一般分布下效率可能极低。尽管如此，论文的价值在于提供了处理双边信息不对称的新框架，其凸化思想和交易分布刻画方式极具启发性，适合关注机制设计、平台定价和近似算法的研究者深入阅读核心定理与证明技巧。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "模型构建",
-            "机制设计",
-            "算法设计"
-          ],
-          "contentTags": [
-            "机制设计",
-            "市场/匹配",
-            "信息不对称",
-            "平台经济",
-            "社会福利"
-          ],
-          "tags": [
-            "机制设计",
-            "市场/匹配",
-            "信息不对称",
-            "平台经济",
-            "社会福利",
-            "理论推导",
-            "模型构建",
-            "算法设计"
-          ],
-          "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 9.0,
-            "guaranteeQuality": 5.0,
-            "readingValue": 6.0,
-            "aiRelevance": 0.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 28.0,
-            "bonus": 0.0,
-            "total": 25.2
-          },
-          "ids": {
-            "arxiv": "2611.06097"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
-          }
-        },
-        {
-          "title": "Prophet Secretary for Matroids and XOS Valuations: A Strict Separation at $1-1/e$",
-          "titleZh": "拟阵与XOS估值下的先知秘书问题：在$1-1/e$处的严格分离",
-          "authors": [
-            "Hossein Esfandiari",
-            "MohammadTaghi Hajiaghayi"
-          ],
-          "date": "2026-11-04",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06891",
-          "abstract": "The matroid prophet-secretary problem asks an online algorithm to select an independent set of elements whose nonnegative values are drawn independently and revealed in uniformly random order. Its combinatorial-auction counterpart asks the algorithm to allocate disjoint bundles to arriving buyers with independently drawn XOS valuation functions. In both problems the distributions are known, and the benchmark is the expected offline optimum. Ehsani, Hajiaghayi, Kesselheim, and Singla (SODA 2018) give $(1-1/e)$-competitive algorithms for both settings. In this work we show that these two guarantees have different limits. For every matroid, we give a randomized $(1-1/e+\\varepsilon_0)$-competitive algorithm, where $\\varepsilon_0=10^{-6}$. The guarantee holds for independent nonnegative values with finite expected optimum. For explicitly given finite distributions with rational values and probabilities, the algorithm has polynomial worst-case running time in the matroid independence-oracle model. The oracle tests whether a queried set is independent. The algorithm makes $O(N^4)$ such queries in expectation and $O(N^4\\log(N+2))$ in the worst case, where $N$ is the number of elements. For combinatorial auctions with XOS valuations, however, we show that $1-1/e$ is the optimal competitive ratio. We give an explicit family of finite instances showing that no online algorithm can guarantee a larger competitive ratio than $1-1/e$, even when the buyers' valuations are independent and identically distributed, every additive clause has coefficients in $\\{0,1\\}$, and computation is unrestricted. Thus the matroid improvement exploits structure absent from general allocation with XOS valuations.",
-          "summarySections": {
-            "backgroundAndQuestion": "为什么在随机顺序下，某些资源分配问题能突破$1-1/e$的竞争比，而另一些不能？该问题源于先知不等式与秘书问题的融合——‘先知秘书模型’。尽管此前研究显示拟阵和组合拍卖在$1-1/e$上表现一致，但这是否反映了本质难度？本文质疑这种统一性，探究不同结构如何影响信息利用效率。",
-            "modelAndSetup": "模型考虑两类在线决策者：一是从带权元素流中选出独立集的算法（拟阵模型），二是向随机到达的买家分配物品的拍卖方（XOS组合拍卖）。两者均知道分布并面对随机到达顺序，目标是逼近离线最优期望收益。关键区别在于可行性约束：拟阵允许动态调整，而XOS拍卖需立即承诺分配及其支持条款。",
-            "contributionsAndResults": "论文证明了一个严格分离：对于任意拟阵，存在竞争比超过$1-1/e$的在线算法；而对于XOS组合拍卖，$1-1/e$是紧的上界。这表明拟阵的结构优势（如基交换性质）使算法能延迟承诺并提升性能，而XOS拍卖中早期对支持条款的选择会不可逆地限制未来协调能力。",
-            "methodsAndTechniques": "作者通过双重技术路径实现突破：在拟阵中，设计一个基于尾部重缩放参考分布的势函数，并结合确定性阈值与虚拟基交换机制，在‘波动’与‘持久’两种模式间切换以获取超额收益；在XOS下，则构造一族实例，利用公开划分与类型预测困难来证明任何在线策略都无法超越$1-1/e$。",
-            "limitationsAndReadingValue": "结果依赖于理想化的独立同分布与完全信息设定，实际部署可能受限。然而，其价值在于揭示了结构在信息利用中的根本作用：拟阵的交换性质提供了灵活性红利，而XOS的条款承诺则构成瓶颈。最值得细读的是其分离性证明的技术对比，展现了在线算法设计中‘何时承诺’的深层权衡。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "算法设计",
-            "复杂度分析"
-          ],
-          "contentTags": [
-            "在线算法",
-            "机制设计",
-            "拍卖理论",
-            "拟阵",
-            "XOS估值"
-          ],
-          "tags": [
-            "在线算法",
-            "机制设计",
-            "拍卖理论",
-            "拟阵",
-            "XOS估值",
-            "理论推导",
-            "算法设计",
-            "复杂度分析"
-          ],
-          "scores": {
-            "modelNaturalness": 6.0,
-            "theoreticalStrength": 9.0,
-            "guaranteeQuality": 6.0,
-            "readingValue": 5.0,
-            "aiRelevance": 0.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 26.0,
-            "bonus": 0.0,
-            "total": 23.4
-          },
-          "ids": {
-            "arxiv": "2611.06891"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.DS",
-              "cs.GT"
-            ],
-            "primaryCategory": "cs.DS",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
-          }
-        },
-        {
-          "title": "Stability and Perfection in Constrained Weighted Network Games",
-          "titleZh": "约束加权网络博弈中的稳定性与完美性",
-          "authors": [
-            "Julien Fixary",
-            "Rémi Castera",
-            "Rida Laraki"
-          ],
-          "date": "2026-11-04",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06775",
-          "abstract": "We introduce a general framework of constrained weighted network formation in which agents allocate resources across coalitional interactions while facing feasibility constraints. More precisely, we allow arbitrary coalitions of agents to be assigned a continuous weight, and we incorporate both coalitional capacity constraints and individual budget constraints into the model. This framework extends the weighted network formation model of Bich and Morhaim by combining continuous interaction intensities with endogenous feasibility restrictions. Within this setting, we introduce a new notion of stability -- called coalitionwise stability -- extending pairwise stability to constrained network games. Under standard continuity and componentwise quasiconcavity assumptions on payoff functions, we establish the existence of coalitionwise stable networks. We then investigate refinements of stability inspired by the notion of perfect equilibrium introduced by Selten, and by the notion of perfect pairwise stability developed by Bich and Teteryatnikova for network games. The presence of feasibility constraints fundamentally alters the geometry of the feasible set, which no longer possesses a product structure. As a consequence, trembling-hand type refinements become substantially more delicate, since perturbations of some interactions may render other interactions infeasible. Nevertheless, we introduce constrained analogues of both the trembling-hand and perturbative notions of perfect stability considered by Bich and Teteryatnikova, and study their existence and their relationship. In particular, we show the equivalence between these trembling-hand and perturbative formulations under some componentwise monotonicity assumption.",
-          "summarySections": {
-            "backgroundAndQuestion": "传统网络形成模型通常忽略个体资源限制，难以刻画现实中时间、精力或预算受限的合作行为。本文关注在存在个体预算和群体容量约束下，如何定义并保证网络的稳定性与稳健性。核心问题是：当链接强度可调且受资源限制时，什么样的网络结构是稳定的？这种稳定是否能在微小扰动下持续存在？",
-            "modelAndSetup": "模型考虑一组代理人，他们可在任意规模的联盟中分配合作强度，每个联盟有最大容量，每个代理人有总资源预算。效用取决于自身及他人在各联盟中的投入。稳定性要求无人愿单方面降低参与强度，也无联盟能在不超预算前提下共同提升合作强度而使所有成员受益。",
-            "contributionsAndResults": "论文提出了‘联盟稳定性’概念，并证明在连续性和拟凹性假设下，此类稳定网络必然存在。进一步引入了约束下的颤抖手与扰动式完美性概念，并证明在固定符号单调性条件下，两者等价且存在。这扩展了经典完美均衡在网络博弈中的适用性。",
-            "methodsAndTechniques": "作者通过构造下半连续对应并应用Yannelis-Prabhakar不动点定理证明存在性。对于完美性，采用扰动环境序列逼近原游戏，并利用严格单调性确保极限行为的一致性。关键技术在于处理预算约束导致的非乘积可行集结构，避免扰动破坏可行性。",
-            "limitationsAndReadingValue": "模型虽更贴近现实，但完美性结果依赖较强的单调性假设，且机制实现难度未讨论。值得细读的是其对约束环境下稳定性与稳健性的重新建模，以及存在性证明的技术路径，对研究资源受限的多边互动系统有重要启发。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "模型构建",
-            "均衡分析"
-          ],
-          "contentTags": [
-            "网络形成",
-            "博弈论",
-            "稳定性",
-            "资源约束",
-            "完美均衡"
-          ],
-          "tags": [
-            "网络形成",
-            "博弈论",
-            "稳定性",
-            "资源约束",
-            "完美均衡",
-            "理论推导",
-            "模型构建",
-            "均衡分析"
-          ],
-          "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 8.0,
-            "guaranteeQuality": 5.0,
-            "readingValue": 6.0,
-            "aiRelevance": 0.0,
-            "agtRelevance": 9.0,
-            "penalty": -1.0,
-            "baseTotal": 26.0,
-            "bonus": 0.0,
-            "total": 23.4
-          },
-          "ids": {
-            "arxiv": "2611.06775"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT",
-              "econ.TH"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
-          }
-        }
-      ]
-    },
-    {
-      "id": "recent-ai",
-      "title": "近期 AI 新论文（cs.MA）",
-      "source": "arxiv-llm-ranked",
-      "fetchedCount": 4,
-      "papers": [
-        {
-          "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
-          "titleZh": "签了，封了，却泄露了：超越签名的MCP工具链信任",
-          "authors": [
-            "Yichiet Aun",
-            "Mohammed A. Alhartomi",
-            "Jing Jie Tan",
-            "Waqas Nadeem",
-            "Adeb Salh",
-            "Shankar Karuppayah",
-            "Sin Chee Tan"
-          ],
-          "date": "2026-11-04",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06585",
-          "abstract": "AI agents rely on third-party tools, such as Model Context Protocol (MCP) servers, whose publishers can be authenticated and whose execution can be restricted by runtime security policies. Yet authenticity does not guarantee benign behaviour: a legitimately signed tool may perform its advertised function while concealing malicious code that leaks confidential information. We demonstrate this trust failure with a signed MCP tool that embeds sensitive data in requests to a policy-allowed destination. Meta's MCPGuard-Dynamic, a state-of-the-art runtime defence, blocks a direct exfiltration attempt in the same run, yet fails to prevent this attack in every trial. We introduce germline execution, which limits information disclosure without inspecting or trusting tool implementations. Each tool invocation runs in ephemeral copies forked from a data-free germline process, each receiving only information authorised for its destination. Even if malicious code executes, what it can disclose is bounded by the data available to its copy. Under explicit assumptions on copy confinement and a data-free germline, we prove sink noninterference for every signed release and, for releases deterministic within our replay model, show that a verified witness establishes a flow violation. Across 153 attack runs, no unauthorised disclosure was detected under germline execution, compared with 5.9-74.5% of runs under baseline defences and an ablation. Invocations served by a single copy completed in 10-49 ms, 2-28x faster than restarting the tool for every invocation, the conventional way to clear state. These results show that data-isolated execution protects agent toolchains against malicious code concealed within authenticated software.",
-          "summarySections": {
-            "backgroundAndQuestion": "AI智能体依赖第三方工具，通常通过代码签名验证发布者身份，但这只能确认‘谁发布了代码’，无法防止恶意行为。即使工具功能正常，其内部仍可能隐藏窃取敏感数据的逻辑，利用合法权限通道泄露信息。现有运行时防护如MCPGuard虽限制访问目标，但不检查请求内容，导致隐蔽的数据渗漏无法被发现，暴露出基于目的地的访问控制在细粒度信息保护上的根本局限。",
-            "modelAndSetup": "研究聚焦于MCP工具调用场景，输入是带标签的用户数据和声明了目的地址的工具函数，输出是返回结果与网络请求。系统在每次调用时执行工具，并监控其对外通信。评估采用攻击矩阵，包含多种隐藏数据泄露方式的恶意工具版本，在可控环境中运行多轮实验，通过注入唯一标识的‘蜜罐数据’检测是否发生未经授权的披露，并对比不同防御机制的表现。",
-            "contributionsAndResults": "论文提出germline execution机制，实现了对所有签名工具的信息流非干涉性保证。实验显示，在153次攻击尝试中，基线方法泄漏率高达5.9%-74.5%，而该机制完全阻止了所有未授权披露。同时，单副本调用延迟仅为10-49毫秒，比传统重启进程快2-28倍，证明其在强安全性与实用性之间取得了平衡，显著优于现有方案。",
-            "methodsAndTechniques": "核心思想是将每次工具调用限制在独立、短暂的副本中执行，这些副本均派生自一个从未接触用户数据的‘胚系’（germline）进程。每个副本仅接收当前调用中目标端点有权访问的数据，从而确保即使存在恶意代码，其可泄露的内容也受到严格限制。通过声明的目的地进行静态分组，避免运行时决策泄露秘密信息，结合双执行比较与可验证证据生成，实现对违规行为的检测与归因。",
-            "limitationsAndReadingValue": "方法假设副本间完全隔离且胚系进程保持无数据状态，依赖内核级隔离机制的正确性。远程不可控工具无法被分叉，只能通过保守标签缓解风险。此外，性能优势依赖预初始化副本池，对大量并发工具的内存开销需权衡。最值得阅读的是其问题抽象——‘调用纯净性’的提出、germline机制的设计原理及其形式化证明，为AI智能体安全提供了新的系统级思路。"
-          },
-          "researchParadigmTags": [
-            "机制设计",
-            "系统框架",
-            "实验验证",
-            "形式化证明"
-          ],
-          "contentTags": [
-            "AI智能体",
-            "软件供应链安全",
-            "信息流控制",
-            "沙箱隔离",
-            "可信执行"
-          ],
-          "tags": [
-            "AI智能体",
-            "软件供应链安全",
-            "信息流控制",
-            "沙箱隔离",
-            "可信执行",
-            "机制设计",
-            "系统框架",
-            "实验验证"
-          ],
-          "scores": {
             "importance": 6.0,
-            "horizonValue": 5.0,
+            "horizonValue": 6.0,
             "clarity": 6.0,
-            "theoreticalDepth": 7.0,
+            "theoreticalDepth": 6.0,
             "overall": 4.0,
             "penalty": 0.0,
             "baseTotal": 28.0,
             "total": 28.0
           },
           "ids": {
-            "arxiv": "2611.06585"
+            "arxiv": "2611.08338"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.CR",
-              "cs.AI",
-              "cs.MA"
+              "cs.RO"
             ],
-            "primaryCategory": "cs.CR",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
+            "primaryCategory": "cs.RO",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
           }
         },
         {
-          "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
-          "titleZh": "Airlock: 通过选择性在线遏制限定多智能体系统的故障影响范围",
+          "title": "Leave It Better Than Found: Value-Guided Cooperation in Sequential Tasks",
+          "titleZh": "留下比发现时更好的环境：基于价值引导的顺序任务协作",
           "authors": [
-            "Zhonghao Zhan",
-            "Javad Forough",
-            "Yefan Zhang",
-            "Krinos Li",
-            "Xiao Ma",
-            "Hamed Haddadi"
+            "Mario Gomez Andreu",
+            "Michael Amir",
+            "Antonio Marino",
+            "Tianxu An",
+            "Marco Hutter",
+            "Amanda Prorok"
           ],
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06727",
-          "abstract": "When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: https://github.com/EdgeCitadelTeam/EdgeCitadel).",
+          "url": "https://arxiv.org/abs/2611.08075",
+          "abstract": "We consider the problem of sequential task continuation, where one robot acts in a workspace that has been affected by a previous robot. Current approaches in multi-robot cooperation rely heavily on co-training or co-optimization, assumingthat the robots have access to collective interaction data during the policy training or planning process. However, as increasingly varied robotic embodiments and policies are deployed and operate in the same real-world environment, learning policies for cooperation becomes infeasible due to the combinatorial explosion of possible robot combinations that need to be accounted for. To address this challenge, this paper considers the problem of ad hoc sequential cooperation between robots that have never before operated together in a shared environment. We demonstrate that robots can explicitly communicate their environmental preferences through sharing their value functions, enabling coordination without the need for prior joint training. To ground this exchange and prevent overconfidence in out-of-distribution states, we further introduce a k-nearest neighbors (KNN)- based uncertainty filter. Our method yields an increase of up to 48.5 pp compared with naive or even selfish agents, in task success rates across simulated and real-world experiments, demonstrating that value function transmission between agents is useful not merely as an internal learning tool, but as an effective basis for ad hoc coordination. Website: https://proroklab.github.io/PAVE/",
           "summarySections": {
-            "backgroundAndQuestion": "当多智能体系统对外部世界执行操作时，单个代理的错误输出可能在被发现前已扩散至下游任务，形成系统级的‘爆炸半径’。现有方法要么仅隔离源头而忽略已被污染的消费者，要么中断整个工作流从而牺牲健康任务。本文旨在解决如何在不中断正常运行的前提下，精准遏制已传播的故障影响。",
-            "modelAndSetup": "研究在一个树状权限结构的多智能体运行时EDGECITADEL上部署AIRLOCK控制器，利用追加式溯源有向无环图记录跨代理数据流动。在物理智能家居和模拟工作流中注入故障，评估其能否阻止错误执行的同时保留尽可能多的正确操作，核心指标是事后零泄漏和健康工作保留率。",
-            "contributionsAndResults": "AIRLOCK实现了对所有警报后错误操作的完全拦截，在主测试平台和智能家居环境中均无后期泄漏。相比A2A和LangGraph等基线，它多保留了68至96个百分点的健康工作，且在密集传播场景下比全隔离模式多保留46个百分点，证明其选择性遏制机制显著优于现有方案。",
-            "methodsAndTechniques": "系统结合垂直权限窄化与水平溯源追踪：EDGECITADEL建立父子代理间的硬性授权边界，AIRLOCK则通过溯源图向前追溯污染路径、向后缩小根源。警报触发后，采用‘围栏-修剪’协议执行截止时间感知的最小割，确保在系统持续运行中实现零后期泄漏的安全保障。",
-            "limitationsAndReadingValue": "结论依赖于运行时中介的完整性，且在协调器日志摄入饱和时无法达成收敛，限制了超大规模部署。此外，方法假设代理不会主动规避监控。最值得阅读的是其将权限边界与在线溯源共设计的系统思路，以及形式化证明安全性的两阶段遏制协议。"
+            "backgroundAndQuestion": "随着越来越多异构机器人在同一环境中独立运行，如何实现无需联合训练的临时协作成为一个关键挑战。传统方法依赖共训或共享奖励，难以应对现实中机器人组合爆炸的问题。本文关注顺序任务延续场景：前序机器人改变环境后，后续机器人需在其遗留状态下完成任务，核心问题是前者如何在不知后者策略的情况下主动为其创造有利条件。",
+            "modelAndSetup": "研究设定两个依次行动的机器人——领导者与跟随者，二者不共享训练数据，仅通过传递跟随者的环境价值函数进行通信。领导者基于该价值函数在线规划自身行为，在完成本职任务的同时优化交接状态对跟随者的价值。实验在模拟与真实家庭环境中测试多种场景，评估指标为双方任务成功率及联合成功概率。",
+            "contributionsAndResults": "提出PAVE方法，首次将价值函数作为显式偏好接口用于跨独立智能体的顺序协作。实验显示，相比非合作基线，跟随者任务成功率平均提升27.9个百分点，最高达48.5个百分点。结果证明，即使没有联合训练，通过结构化信息交换也能实现高效协作，尤其在资源紧张、动作冲突明显的场景中优势显著。",
+            "methodsAndTechniques": "方法核心是领导者利用跟随者提供的环境价值函数指导在线重规划，并引入基于K近邻的分布外检测机制防止对未知状态过度信任。价值函数提供状态偏好信号，而不确定性过滤确保决策稳健。整个过程无需修改任一智能体原有架构，仅需一次通信即可实现动态适应，形成了轻量且可扩展的协作协议。",
+            "limitationsAndReadingValue": "当前方法假设环境表示一致且价值函数诚实可信，未考虑恶意误导或表示差异问题。此外，规划受限于短期视界，长程影响估计存在偏差。尽管如此，其问题设定新颖、机制简洁有效，最值得阅读的是其对‘环境即媒介’协作范式的重新定义，以及如何用最小通信实现最大协同增益的设计思想。"
           },
           "researchParadigmTags": [
-            "系统框架",
             "机制设计",
-            "实验验证",
             "算法设计",
-            "理论推导"
+            "实验验证",
+            "系统框架",
+            "消融研究"
           ],
           "contentTags": [
             "多智能体系统",
-            "安全性",
-            "大语言模型",
-            "在线算法",
-            "故障遏制"
+            "强化学习",
+            "智能体",
+            "在线适应",
+            "不确定性建模"
           ],
           "tags": [
             "多智能体系统",
-            "安全性",
-            "大语言模型",
-            "在线算法",
-            "故障遏制",
-            "系统框架",
+            "强化学习",
+            "智能体",
+            "在线适应",
+            "不确定性建模",
             "机制设计",
+            "算法设计",
             "实验验证"
           ],
           "scores": {
@@ -493,83 +593,93 @@
             "total": 27.0
           },
           "ids": {
-            "arxiv": "2611.06727"
+            "arxiv": "2611.08075"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.MA"
+              "cs.RO"
             ],
-            "primaryCategory": "cs.MA",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
+            "primaryCategory": "cs.RO",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
           }
         },
         {
-          "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
-          "titleZh": "一种用于大语言模型社会智能体的情境增强与选择性鲁棒性框架",
+          "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+          "titleZh": "学习任务还是学习验证器？重新思考具身自我改进中的准则暴露",
           "authors": [
-            "Mattia Greiche",
-            "Reihaneh Rabbany",
-            "Maximilian Puelma Touzel"
+            "Wenbo Huang",
+            "Jianxin Bi",
+            "Shunyu Yang",
+            "Ruiyang Si",
+            "Rui Ni",
+            "Qiang Wang",
+            "Shulong Jiang",
+            "Yintianrun Zhang",
+            "Feixiang Ruan",
+            "Kewei Zhang",
+            "Ye Huang",
+            "Shukai Gong",
+            "Daquan Zhou"
           ],
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.06914",
-          "abstract": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.",
+          "url": "https://arxiv.org/abs/2611.08318",
+          "abstract": "Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark's success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark's criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly across tasks. We further propose instruction-faithful criteria and show that they better reflect the performance of agent-generated programs.",
           "summarySections": {
-            "backgroundAndQuestion": "当前使用大语言模型作为社会模拟智能体的研究面临严重验证难题：即使提示词的改动不改变社会情境含义，智能体行为也可能剧烈波动。这使得模拟结果难以可信，尤其是在合作、决策等敏感任务中。已有方法虽尝试通过增加上下文细节提升稳定性，但缺乏对‘何种信息真正起作用’的系统区分，导致改进方向模糊。",
-            "modelAndSetup": "论文在类似囚徒困境的社会决策任务中测试智能体行为，设定医院物资管理者需决定是否向另一家医院转移应急物资。情境分为区域共管与本地独立两种制度，模型需据此调整行为。通过四种语义等价的提示形式（如叙述、列表、表格）评估表面敏感性，并测量其对制度变化的响应程度。",
-            "contributionsAndResults": "论文提出‘选择性鲁棒性’作为核心评价标准——即智能体应对提示形式变化保持稳定，但对真实社会情境变化做出定向响应。同时设计了五种情境增强条件进行对照，发现描述性和规范性决策锚定能显著提升两类模型的世界响应能力，且在某些模型中大幅降低表面敏感性。",
-            "methodsAndTechniques": "作者将情境增强分解为功能不同的模块：中性填充、通用背景、描述性决策关联和规范性角色要求，确保变量间不累积干扰。通过固定任务结构与角色，仅替换情境块来隔离效应。选择性鲁棒性的两个维度分别由表面形式差异的平均绝对偏移和跨制度响应差来量化，构成可复现的评估协议。",
-            "limitationsAndReadingValue": "实验仅覆盖单一决策场景和两个模型，结论外推需谨慎。未通过人类评分验证各提示变体的语义等价性，且情境锚定本身可能增强了关键信息的显著性，混淆归因。尽管如此，其问题设定、评估框架与情境解耦方法极具启发性，值得研究者重点参考其设计逻辑而非具体结果。"
+            "backgroundAndQuestion": "当前具身智能体通过自我改进提升性能时，常被暴露于任务的成功判定准则（如代码级验证器），这在真实场景中并不现实——机器人只能获得任务指令和最终成败反馈。问题是：当智能体读取这些内部验证规则时，它是在真正学会完成任务，还是仅仅学会了‘钻规则空子’？这种做法可能导致评测失真，掩盖模型实际泛化能力。",
+            "modelAndSetup": "研究者设计了一个可控的自我改进循环，对比两种设定：一种允许学习器读取验证准则代码、得分和阶段信息（含准则暴露），另一种仅提供任务是否成功（不含准则暴露）。两者使用相同冻结的编码主干，在RoboDojo等模拟环境中训练技能库，并在原始准则和重写的‘忠于指令’准则下分别测试，以检验性能迁移性和泛化性。",
+            "contributionsAndResults": "实验证明，暴露于验证准则确实能快速提升在原准则下的得分，但这种优势在切换至更符合人类意图的‘忠于指令’准则后几乎消失。更重要的是，这类学到的技能难以迁移到新任务或跨基准表现。结果揭示：所谓‘自我改进’增益，很大程度上只是对特定验证器的过拟合，而非任务能力的本质提升。",
+            "methodsAndTechniques": "核心方法是构建‘指令忠于准则’（instruction-faithful criteria），重写原有验证逻辑，使其仅检查指令明确要求的内容，消除隐藏规则、硬阈值等偏差。通过双盲评判同一轨迹、交换学习所用准则等方式，形成反事实对照，从而分离出‘学任务’与‘学验证器’的效果。该机制清晰揭示了反馈信号如何塑造学习行为。",
+            "limitationsAndReadingValue": "研究局限于仿真环境与单一基准的准则重写，且反馈为理想化模拟。尽管如此，其结论深刻警示了当前具身智能评测体系的潜在缺陷。最值得阅读的是其问题设定与实验设计，它提供了识别和缓解规范博弈的新范式，对构建可信、可泛化的智能体系统具有指导意义。"
           },
           "researchParadigmTags": [
             "实验验证",
             "评测方法",
+            "机制设计",
             "系统框架",
-            "机制设计"
+            "基准评测"
           ],
           "contentTags": [
-            "大语言模型",
-            "多智能体系统",
+            "具身智能体",
+            "自我改进",
+            "评测偏差",
             "智能体",
-            "鲁棒性",
-            "评测方法"
+            "大语言模型"
           ],
           "tags": [
-            "大语言模型",
-            "多智能体系统",
+            "具身智能体",
+            "自我改进",
+            "评测偏差",
             "智能体",
-            "鲁棒性",
-            "评测方法",
+            "大语言模型",
             "实验验证",
-            "系统框架",
+            "评测方法",
             "机制设计"
           ],
           "scores": {
-            "importance": 5.0,
-            "horizonValue": 4.0,
-            "clarity": 5.0,
-            "theoreticalDepth": 3.0,
-            "overall": 3.0,
-            "penalty": -1.0,
-            "baseTotal": 19.0,
-            "total": 19.0
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
           },
           "ids": {
-            "arxiv": "2611.06914"
+            "arxiv": "2611.08318"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.MA",
-              "cs.CL",
-              "cs.LG"
+              "cs.AI",
+              "cs.RO"
             ],
-            "primaryCategory": "cs.MA",
-            "published": "2026-11-04",
-            "updated": "2026-11-04"
+            "primaryCategory": "cs.AI",
+            "published": "2026-11-05",
+            "updated": "2026-11-05"
           }
         }
       ]
