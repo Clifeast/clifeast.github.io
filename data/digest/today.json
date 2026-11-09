@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-11-08T09:23:56.127571+00:00",
+  "generatedAt": "2026-11-09T10:09:58.811123+00:00",
   "warnings": [],
   "llm": {
     "enabled": true,
@@ -60,7 +60,7 @@
     },
     {
       "id": "recent-ai",
-      "title": "近期 AI 新论文（cs.CL）",
+      "title": "近期 AI 新论文（cs.LG）",
       "source": "arxiv-llm-ranked",
       "fetchedCount": 0,
       "papers": []
