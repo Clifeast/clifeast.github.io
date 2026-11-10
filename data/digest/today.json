@@ -1,8 +1,10 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-11-09T10:09:58.811123+00:00",
-  "warnings": [],
+  "generatedAt": "2026-11-10T10:25:31.278100+00:00",
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Learning Rate Decay Can Exponentially Accelerate SGD for Global Optimization of Nonconvex Functions (HTTP Error 400: Bad Request)"
+  ],
   "llm": {
     "enabled": true,
     "provider": "qwen",
@@ -55,15 +57,657 @@
       "id": "recent-agt",
       "title": "近期 AGT 新论文",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 10,
+      "papers": [
+        {
+          "title": "Tropical Gaussian Anticoncentration: Optimal Instance-Dependent Bounds for Online Learning in Extensive-Form Games",
+          "titleZh": "热带高斯反浓度：广延式博弈中在线学习的最优实例相关界",
+          "authors": [
+            "Ashkan Soleymani",
+            "Zhiyuan Fan",
+            "Lillian J. Ratliff",
+            "Patrick Jaillet",
+            "Gabriele Farina"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.11877",
+          "abstract": "We study the minimax regret of full-information online decision making in extensive-form games. For prediction with expert advice, the optimal regret is $Θ(\\sqrt{T\\log K})$, where $K$ is the number of experts, or equivalently, the number of normal-form actions. For treeplex strategy spaces, existing efficient algorithms, including KOMWU and online mirror descent with the weight-one dilated entropy regularizer, achieve regret $\\mathcal{O}(\\sqrt{T\\log|\\mathcal{V}|})$, where $\\mathcal{V}$ is the set of reduced normal-form strategies. We prove that this logarithmic dependence is minimax optimal in the worst-case full-information reward model. The main difficulty is that pure plans in a treeplex are not independent experts: their rewards are correlated through the recursive structure of decisions and observations. To capture this correlation, we introduce tropical Gaussian formulae, recursive Gaussian expressions built from maxima and normalized sums which preserve the variance. The index count of such a formula matches the number of reduced normal-form continuation plans in the corresponding subtree. Our main analytic result shows that every log-balanced tropical Gaussian formula with index count $N$ has Gaussian width $Ω(\\sqrt{\\log N})$. While a direct approach struggles to recover this lower bound, our proof uses a spherical entropy profile to measure scale-dependent separation among the Gaussian directions, and then applies Turán's theorem and Sudakov minoration to obtain the width lower bound. Applying this result to treeplexes gives an oblivious hard distribution with valid transition outcome and Rademacher terminal rewards, establishing a regret lower bound of $Ω(\\sqrt{T\\log|\\mathcal{V}|})$. This matches known upper bounds up to universal constants and shows that the DilEnt/KOMWU dependence on the reduced normal-form complexity is unavoidable.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么现有在线学习算法在广延式博弈中的遗憾界无法进一步改进？该问题源于树状策略空间中纯计划间的强相关性，使得传统独立专家模型不再适用。尽管KOMWU等算法达到了O(√T log |V|)的遗憾，但尚不清楚这一对数项是否本质存在。本文旨在证明该尺度是极小极大意义下的不可避免下界。",
+            "modelAndSetup": "作者考虑单人序贯决策问题，其策略空间由树plex结构刻画，代表广延式博弈中的行为策略集合。学习者每轮选择混合策略并观察全信息奖励向量，目标是最小化相对于最优固定纯计划的累积外部遗憾。对手可自适应但受限于合法转移核与有界终端奖励，分析聚焦于最坏情况下的期望遗憾下界。",
+            "contributionsAndResults": "论文证明了任意在线学习算法在树plex上的极小极大遗憾下界为Ω(√T log |V|)，与KOMWU和带权稀释熵的在线镜像下降法的上界匹配。这表明log |V|项是问题内在复杂性的体现，而非分析冗余。特别地，权重为1的稀释熵正则化已达到最优直径-强凸性比率，无法通过标准OMD框架进一步改进。",
+            "methodsAndTechniques": "作者引入‘热带高斯公式’作为分析工具，将纯计划的相关奖励过程递归建模为最大值与方差归一化和的组合。通过定义球面熵剖面来量化方向间的尺度依赖分离，并结合Turán定理与Sudakov下界，成功导出高斯宽度的精确下界。最终借助Chernozhukov等人的高维高斯逼近定理，将静态高斯下界转化为有限轮次Rademacher硬实例的遗憾下界。",
+            "limitationsAndReadingValue": "结果依赖于对抗性但可忽略的环境构造，且要求T ≥ Ω(log¹⁴ |V|)才能主导误差项，对于小规模博弈可能不紧。证明高度依赖树plex的递归结构，难以直接推广至非结构性策略空间。最值得阅读的是其新颖的热带高斯公式与球面熵方法，为处理相关动作空间中的极小极大下界提供了新范式。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "算法设计",
+            "后悔分析"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "在线算法",
+            "多智能体系统",
+            "机制设计"
+          ],
+          "tags": [
+            "博弈学习",
+            "在线算法",
+            "多智能体系统",
+            "机制设计",
+            "理论推导",
+            "复杂度分析",
+            "算法设计",
+            "后悔分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.11877"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks",
+          "titleZh": "通过信息网络引导多智能体大语言模型系统中的涌现行为",
+          "authors": [
+            "Sepehr Ilami",
+            "Babak Heydari"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.11714",
+          "abstract": "Large language model (LLM) agents increasingly operate in groups, each pursuing an individual objective while jointly determining system performance. If an operator controls which agent observes which other agent, but not their payoffs or messages, how should observations be structured to raise collective welfare? We make the information network (who observes whom) a design object, decoupled from the fixed interaction network over which agents act. Ten identical LLM agents play repeated group-decision games; by default each observes only an anonymous summary of the group's previous-round outcome, and a manager with a fixed budget adds directed observation links that reveal peers' past actions. Across 1,080 episodes and six games spanning coordination, anti-coordination, social dilemmas, and discovery, we ask how much information to share and, at a fixed budget, who should observe whom. Disclosure creates behavioral coupling: observation acts as a contagion channel whose welfare effect depends on the alignment between individually attractive behavior and the collective objective. First, the value of information is alignment-contingent: more peer information tends to help or be neutral when individual behavior is aligned with the collective goal, but under free-riding or congestion externalities it amplifies collectively harmful behavior; in a public-goods game the group does best with no information at all. We read this sign separation as a cross-game regularity within one controlled LLM population, not a model-invariant law. Second, at a fixed budget, who observes whom matters primarily when coupling is harmful: a modular \"barbell\" that lets sub-populations entrench harmful behavior is reliably the worst wiring, reversing the network-reciprocity intuition from human evolutionary game theory. These results argue against a default of full transparency for agent collectives.",
+          "summarySections": {
+            "backgroundAndQuestion": "当多个大语言模型（LLM）智能体协同工作时，每个个体追求自身目标，但集体表现却可能偏离系统最优。问题在于：若操作者无法改变智能体的奖励或通信内容，仅能控制谁观察谁的行为，应如何设计这种观察结构以提升整体福利？这触及信息透明度的治理边界——更多可见性是否总是更好？",
+            "modelAndSetup": "研究设置10个同质LLM智能体重复进行六类博弈任务，如协调、反协调和社会困境。默认下，智能体只能看到匿名的群体结果摘要；管理者可在固定预算内添加有向观察链接，使一个智能体能看到另一个的历史动作。信息网络独立于交互网络，仅传递过去行为，不透露即时决策或收益。",
+            "contributionsAndResults": "研究发现信息的价值取决于个体行为与集体目标的对齐程度：对齐时，更多信息提升或不改变福利；错位时（如公地悲剧），更多观察反而放大有害行为，导致‘越透明越差’。在固定预算下，网络架构仅在错位情境中有显著影响，模块化的‘杠铃’结构始终最差，而均匀混合网络更安全。",
+            "methodsAndTechniques": "作者采用模仿传播模型解释信息效应：观察引发行为耦合，形成类似传染的扩散机制。通过控制信息量（随机加边）和架构（四种极端拓扑对比），结合统计检验与趋势分析，在1080轮实验中识别出跨游戏的一致规律。直接回归验证了智能体确实更响应其所见同伴的行为。",
+            "limitationsAndReadingValue": "结论基于单一LLM模型（qwen2.5:7b）和特定设定，跨模型普适性尚待验证。时间调度效应微弱，且结构指标间存在共线性，难以归因至单一因素。但该文价值在于提出了‘信息作为治理杠杆’的新视角，尤其适合关注多智能体协调、信息调控与LLM社会模拟的研究者深入阅读其模型设计与实证逻辑。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "模型构建",
+            "机制设计"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "信息设计",
+            "大语言模型",
+            "博弈学习",
+            "智能体"
+          ],
+          "tags": [
+            "多智能体系统",
+            "信息设计",
+            "大语言模型",
+            "博弈学习",
+            "智能体",
+            "实验验证",
+            "模型构建",
+            "机制设计"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 25.0,
+            "bonus": 7.5,
+            "total": 29.2
+          },
+          "ids": {
+            "arxiv": "2611.11714"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.MA",
+              "cs.AI",
+              "cs.GT",
+              "cs.SI"
+            ],
+            "primaryCategory": "cs.MA",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Computing EF1 Allocations under Budget Constraints in Polynomial Time",
+          "titleZh": "在预算约束下多项式时间内计算 EF1 分配",
+          "authors": [
+            "Tingwei Hu",
+            "Lili Mei",
+            "Guochuan Zhang"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12740",
+          "abstract": "We study the fair allocation of indivisible items to agents with budget constraints and additive valuations. Each agent compares its own bundle with the subsets of another bundle that fit its budget. An allocation is envy-free up to one item (EF1) if, for every agent and every nonempty subset under comparison, removing an item of maximum value to that agent eliminates its envy. We require EF1 both between agents and towards the charity, which contains all unallocated items. EF1 allocations exist, but computing them in polynomial time has remained open even for homogeneous valuations. We resolve this problem with a polynomial-time algorithm for EF1 allocations under heterogeneous valuations. We also prove that detecting an EF1 violation is NP-complete. Equivalently, checking whether a given allocation is EF1 is coNP-complete. Finally, we give polynomial-time algorithms for envy-freeness up to any item (EFX) both when each agent's valuation is proportional to item size and when each agent has a fixed number of distinct positive item values. As an application, for homogeneous valuations and any $\\varepsilon>0$, we obtain an EF1 allocation with at least a $(1/2-\\varepsilon)$ fraction of the maximum social welfare in time polynomial in the input length and $1/\\varepsilon$.",
+          "summarySections": {
+            "backgroundAndQuestion": "如何在物品不可分且代理人受预算限制时实现公平分配？传统无嫉妒性难以满足，尤其当预算不同时，某些分配可能对他人不可行。现有研究虽知EF1分配存在，但能否在多项式时间内构造仍是公开问题，特别是对于异质估值情形。本文旨在填补这一计算空白。",
+            "modelAndSetup": "模型考虑多个代理人分配不可分物品，每个物品有固定大小，每个代理人有预算和加性估值。分配需满足预算可行性，即所获物品总大小不超过预算。公平性采用EF1标准：每位代理人对自己与其他可行子集间的比较，在移除一个最高价值物品后不再嫉妒，且需对他人和未分配物品（慈善）均成立。",
+            "contributionsAndResults": "论文提出了首个在预算约束下多项式时间计算EF1分配的算法，适用于异质加性估值和任意预算。该算法确保代理人间及对慈善的EF1性质。此外，证明了验证任意分配是否为EF1是coNP-完全问题，并在两类特殊情况下给出了EFX的多项式时间算法。",
+            "methodsAndTechniques": "算法通过迭代改进候选包实现：利用近似背包子程序生成高价值可行子集作为候选，逐步缩减以保护所有真子集的EF1性质，最终分配或修复该候选。关键在于设计价值断点序列并结合望远镜求和论证，以控制修复次数，从而保证多项式运行时间。",
+            "limitationsAndReadingValue": "尽管算法高效，但验证EF1的难度表明其构造路径依赖特定不变量而非通用测试。结果对实际机制设计具指导意义，但模型未考虑动态或策略行为。最值得阅读的是其新颖的候选构造机制与修复策略，以及对EF1可计算性的彻底解决。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "复杂度分析",
+            "理论推导"
+          ],
+          "contentTags": [
+            "公平性",
+            "机制设计",
+            "多智能体系统"
+          ],
+          "tags": [
+            "公平性",
+            "机制设计",
+            "多智能体系统",
+            "算法设计",
+            "复杂度分析",
+            "理论推导"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          },
+          "ids": {
+            "arxiv": "2611.12740"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Learning Global Equilibria in Non-Concave Prospect Theoretic Games",
+          "titleZh": "在非凹前景理论博弈中学习全局均衡",
+          "authors": [
+            "Ashok Krishnan K. S.",
+            "Lilou Malfoy",
+            "Helene Le Cadre",
+            "Ana Busic"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12611",
+          "abstract": "Human agents in non cooperative games often exhibit non rational behaviour. Prospect theory provides a behavioural framework to capture how agents perceive gains and losses under risk, but, its incorporation into games typically leads to non concave and non convex utility functions, making equilibrium computation challenging. In such cases, it is difficult to obtain algorithms that have global convergence behaviour. This paper proposes a learning algorithm which uses minorization-maximization (MM). Under a proximal Polyak-Lojasiewicz (PL) condition on the potential function, we establish global convergence of the algorithm to a potential-maximizing Nash equilibrium. We further show how the structure of the MM minorizer can be used to enable a distributed implementation of the algorithm. With additional noise injection, the individual updates of the agents can be obscured, while still ensuring global convergence.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统博弈论假设理性人最大化期望效用，但人类在风险下常表现出非理性行为，如损失厌恶和概率扭曲。前景理论（PT）能更好描述这类行为，却导致效用函数非凹甚至非光滑，使得纳什均衡难以计算，现有学习算法缺乏全局收敛保证。本文关注如何在非凹PT博弈中设计具有全局收敛性的分布式学习算法，并兼顾个体偏好隐私保护。",
+            "modelAndSetup": "考虑一个N+1参与者的势博弈，其中N个玩家从紧致凸集选择连续策略，效用由公共收益项和个体前景理论加权随机回报组成。势函数由集体项与个体PT项构成，不假设其凹性。玩家希望最大化自身效用，目标是达到势最大化纳什均衡。模型允许玩家通过协调者进行交互，但不愿直接暴露其私有的PT价值函数参数。",
+            "contributionsAndResults": "提出一种基于MM（minorization-maximization）的学习算法，在势函数满足近端Polyak-Łojasiewicz（PL）条件下，证明该算法以线性速率全局收敛到势最大化的纳什均衡。进一步设计可分式MM代理函数，使每步优化可通过ADMM分布式执行。引入噪声扰动更新可保护偏好隐私，同时只要噪声方差衰减，仍能保证收敛。",
+            "methodsAndTechniques": "利用MM框架构造每步可优化的代理函数，其中保持耦合项精确而线性化个体PT项，确保代理函数可分。收敛性分析依赖于近端PL条件，将势函数值与最优差距联系起来。将含噪ADMM视为不精确MM步骤，通过误差传播分析证明即使更新含噪，只要误差平方均值可控，仍可逼近最优解。",
+            "limitationsAndReadingValue": "核心限制在于需满足近端PL条件，这虽弱于凹性但仍属较强假设，未必适用于所有PT博弈。噪声机制提供隐私但无法实现差分隐私，且需随时间衰减才能收敛。最值得读的是其将MM与ADMM结合用于非凹博弈学习的架构设计，以及对隐私-精度权衡的清晰刻画，为行为博弈中的分布式学习提供了新范式。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "理论推导",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "多智能体系统",
+            "前景理论",
+            "隐私/安全"
+          ],
+          "tags": [
+            "博弈学习",
+            "多智能体系统",
+            "前景理论",
+            "隐私/安全",
+            "算法设计",
+            "理论推导",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": -1.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          },
+          "ids": {
+            "arxiv": "2611.12611"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "A Game-Theoretic Framework for Resource Allocation under Institutional Asymmetry",
+          "titleZh": "制度不对称下的资源分配博弈论框架",
+          "authors": [
+            "Jorge David Castaño-Yepes",
+            "Marcela Herrera",
+            "Javier Parra-Domínguez"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12534",
+          "abstract": "We develop a two-player knapsack game to investigate resource allocation under individual capacity constraints, competition over shared resources, and institutional asymmetry. Players select feasible subsets of resources, while their payoffs depend on competitive losses, allocation rules, and asymmetric institutional benefits and costs. We derive the aggregate welfare function and show that allocation coefficients redistribute payoffs without directly affecting total welfare, whereas institutional parameters influence welfare through their net contribution. Consequently, institutional arrangements with identical welfare effects may induce different strategic incentives and Nash equilibrium outcomes. We analyze how capacity constraints and institutional priority shape equilibrium configurations and their welfare properties. A central result concerns the distinction between the social efficiency and strategic stability of shared resources. We derive conditions under which sharing is socially preferable to exclusive allocation yet remains strategically unstable because the non-priority player can increase their payoff by abandoning the resource. Conversely, sharing may remain strategically stable even when exclusive allocation yields higher aggregate welfare. These findings demonstrate that social efficiency and strategic stability need not coincide under institutional asymmetry.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么资源竞争中的公平分配难以实现？本文关注在制度偏向存在的背景下，两个决策者如何争夺有限共享资源。传统模型常忽略机构特权带来的收益与成本差异，导致无法解释现实中弱势方为何放弃合作。该问题涉及竞争损耗、分配规则与制度偏袒三者的交互影响，核心在于个体激励与集体效率的脱节。",
+            "modelAndSetup": "作者构建了一个双人背包博弈模型，每位玩家有容量限制并独立选择资源子集。资源被独占时获全值，共享时则因竞争损失部分价值，并由分配系数决定剩余价值分割。此外，制度优势方获得额外收益，劣势方承担额外成本。总福利取决于竞争损耗与制度净效应之差，而个体收益受全部参数直接影响，从而分离了效率与激励。",
+            "contributionsAndResults": "论文发现社会最优与纳什均衡未必一致：即使共享资源更高效，非优先玩家仍可能因个人亏损而放弃；反之，低效共享也可能因个体获利而稳定存在。关键结果是‘社会-战略收敛点’，揭示了制度参数如何使福利等价的安排产生不同激励，进而导向不同均衡，说明仅看总效益不足以预测行为结果。",
+            "methodsAndTechniques": "通过解析个体与总体效用函数的结构差异，作者分离出影响福利与影响激励的不同参数组合。利用数值模拟展示四种典型情形下均衡变化，结合参数敏感性分析识别临界条件。技术核心在于将共享资源的损益分解为竞争耗散、分配扭曲与制度偏倚三项独立机制，并分别追踪其在个体与总体层面的作用路径。",
+            "limitationsAndReadingValue": "模型假设静态一次性决策，未考虑动态调整或信息不对称，且资源间无互补替代关系。尽管如此，其价值在于清晰揭示制度设计中‘谁受益’与‘何种配置可持续’之间的根本张力。最值得细读的是模型抽象方式与社会-战略非一致性论证，这对理解现实中的不平等协作机制具有深刻启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "博弈学习",
+            "多智能体系统"
+          ],
+          "tags": [
+            "机制设计",
+            "博弈学习",
+            "多智能体系统",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 23.4
+          },
+          "ids": {
+            "arxiv": "2611.12534"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        }
+      ]
     },
     {
       "id": "recent-ai",
       "title": "近期 AI 新论文（cs.LG）",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Generalized Adaptive Boosting and the Geometry of Mistakes",
+          "titleZh": "广义自适应提升与错误的几何学",
+          "authors": [
+            "Marco Bressan",
+            "Nataly Brukhim",
+            "Nicolò Cesa-Bianchi",
+            "Emmanuel Esposito",
+            "Yishay Mansour",
+            "Shay Moran",
+            "Maximilian Thiessen"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12696",
+          "abstract": "Not all mistakes are alike. For example, in medical diagnosis, false positive and false negative mistakes have a different impact and should not be aggregated. By revisiting the classical theory of boosting through this lens, we introduce the notion of $Z$-learner, which returns weak hypotheses achieving joint false-positive/false-negative guarantees $(\\mathrm{FP},\\mathrm{FN})$ from some set $Z \\subseteq [0,1]^2$. This formulation generalizes the standard notion of $γ$-weak learning--recovered by taking $Z=\\{(z_1,z_2): z_1+z_2<1/2-γ\\}$--and allows for more flexible notions of weak learnability that account for the impact of the distribution on the achievable learning guarantees. This raises a natural question: which sets $Z$ are boostable? We answer this by giving a complete geometric characterization that unifies, as special cases, both the classical boosting dichotomy and the recent multi-objective extension of Bressan et al. (COLT 2025). We also present an adaptive algorithm for boosting $Z$-learners without relying on the prior knowledge of $Z$, generalizing AdaBoost's ability to handle unknown margin parameters. Finally, we demonstrate that $Z$-learners can achieve confidence amplification. However, the analysis is significantly more involved than in classical boosting and relies on the centerpoint theorem from discrete and computational geometry.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统提升方法（如AdaBoost）假设弱学习器的总错误率低于1/2即可被增强，但现实中假阳性与假阴性错误的影响不对称，例如医疗诊断中两类错误代价不同。本文指出，当错误类型不可互换时，经典弱学习条件不再适用，一些虽总错率高但某类错误极低的学习器无法被传统方法利用。核心问题是：哪些关于（假阳，假阴）误差对的保证集合Z能被成功提升？",
+            "modelAndSetup": "论文研究在任意实可实现分布下，一个Z-学习器能否返回满足（FP, FN）误差向量被Z中某点上界控制的假设。Z是[0,1]²中的集合，编码了学习器在不同分布下的联合误差保证。目标是判断Z是否‘可提升’——即是否存在通用算法将其转化为PAC强学习器。同时考虑Z未知情况下的自适应提升与置信度放大问题，不依赖先验知识。",
+            "contributionsAndResults": "主要贡献是给出了Z可提升的充要条件：Z的凸包与特定区域C无交，其中C由√z₁+√z₂≥1定义。这统一并推广了经典提升与近期多目标结果。此外提出了无需知晓Z的自适应提升算法，并证明可通过中心点法实现置信度放大。结果表明，不存在中间状态——要么可完全提升至任意精度，要么等价于随机猜测。",
+            "methodsAndTechniques": "关键思想是将可提升性归结为conv(Z)与C之间的几何分离。通过引入权重向量w∈Δ₂作为判别方向，利用有效性函数v(w;z)衡量分离程度，并设计二分搜索估计最优w*。算法在失败时利用弱假设反馈缩小搜索区间。置信放大则借助中心点定理，在不知Z的情况下聚合多次调用结果，确保输出误差向量仍符合Z的保证。",
+            "limitationsAndReadingValue": "局限在于实际应用中Z往往未知且难以验证条件conv(Z)∩C=∅，且算法依赖高置信弱学习器，需额外开销进行放大。结果为存在性刻画，未提供对非凸或分布依赖Z的构造性处理。最值得读的是其几何视角与二分搜索机制，它揭示了提升本质是寻找分离方向，为设计新型自适应算法提供了理论基础。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "算法设计",
+            "机制设计"
+          ],
+          "contentTags": [
+            "提升方法",
+            "弱学习",
+            "错误类型",
+            "凸几何",
+            "自适应算法"
+          ],
+          "tags": [
+            "提升方法",
+            "弱学习",
+            "错误类型",
+            "凸几何",
+            "自适应算法",
+            "理论推导",
+            "算法设计",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.12696"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "stat.ML"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Agnostic Marginal-Nonuniform Learning",
+          "titleZh": "Agnostic Marginal-Nonuniform Learning",
+          "authors": [
+            "Tanmay Devale",
+            "Steve Hanneke",
+            "Amirreza Shaeiri"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12694",
+          "abstract": "We study the problem of binary classification in the marginal-nonuniform learning framework in the agnostic setting. In this model, the constants in the learning rate may depend on the marginal distribution of the unlabeled data, but the guarantee must hold uniformly over all conditional distributions of the labels. We also study fine-grained rates. We consider two criteria. (1) The standard agnostic setting, where the learner competes with the best concept in the class. In this setting, an immediate consequence of standard agnostic PAC learning results gives us the optimal rate of $\\tfrac{1}{\\sqrt{n}}$ for every class $\\mathcal{H}$ with finite $\\mathrm{VC}(\\mathcal{H})$ and shows that arbitrarily slow rates are necessary otherwise. This also gives us the optimal fine-grained rate of $\\sqrt{\\tfrac{\\mathrm{VC}(\\mathcal{H})}{n}}$. Therefore, the dependence on the marginal distribution does not help, which is in contrast to the realizable setting. (2) In the relaxed agnostic setting, where the learner competes with $(1+λ)$ times the error of the best concept for a fixed $λ\\in (0,1]$, the picture from the realizable setting reappears. We obtain a trichotomy of the achievable optimal rates: exponential rates of the form $e^{-n}$ arise precisely when the class is finite; linear rates of the form $\\tfrac{1}{n}$ arise when the class is infinite but $\\mathrm{VC}(\\mathcal{H})$ is finite; and arbitrarily slow rates occur when $\\mathrm{VC}(\\mathcal{H})=\\infty$. We also obtain the optimal fine-grained rate of $\\tfrac{\\mathrm{uVCE}(\\mathcal{H})}{λn}$, where $\\mathrm{uVCE}(\\mathcal{H})$ is a recently introduced combinatorial complexity dimension called the uncentered $\\mathrm{VC}$-eluder dimension.",
+          "summarySections": {
+            "backgroundAndQuestion": "本文探讨在不知道标签生成机制的情况下，如何利用已知的无标签数据边缘分布来提升学习效率。传统PAC学习假设最坏情况下的分布，无法区分简单与困难的数据分布。边际非均匀学习允许学习速率依赖于边缘分布，但在非真实情形下（即标签不完全由某假设生成）此前缺乏系统研究，这正是本文要解决的问题。",
+            "modelAndSetup": "论文研究二元分类任务，在非真实设定下分析学习速率：学习器竞争的是类别中最佳假设的误差，但允许常数因子依赖于边缘分布Dx，同时保证对所有条件分布一致成立。作者考虑两种目标：标准设定下竞争最优误差，放松设定下允许(1+λ)倍的乘性松弛。评价指标为期望超额误差，关注收敛速率及其精细刻画。",
+            "contributionsAndResults": "论文建立了完整的非真实边际非均匀学习理论。结果显示：在标准设定下，学习速率仍为1/√n，仅取决于VC维，边缘分布无实质帮助；而在放松设定下，速率三重分界重现——有限类可达指数速率，无限但有限VC维类达线性速率，否则需任意慢速率，且精细速率由新提出的uVCE维决定，表明乘性松弛恢复了真实情形的优势。",
+            "methodsAndTechniques": "作者通过结合第一阶学习器、清洁子样本版本空间与指数权重聚合来实现上界。关键在于利用边缘分布使版本空间‘简化’，并通过随机子样本避开标签噪声。下界则基于Assouad引理思想，在低质量块中隐藏比特，并利用KL散度与总变差控制学习器的混淆程度，从而证明速率不可改进。",
+            "limitationsAndReadingValue": "结果依赖于理想化的无限样本与组合维度，实际算法可能难实现理论常数。此外，放松设定虽恢复快速率，但引入了对λ的选择困境，且未提供自适应λ的方法。最值得读的是其对学习范式的清晰分类、uVCE维的引入及其在连接真实与非真实设定中的桥梁作用，这对理解学习瓶颈具有深刻启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "统计学习理论",
+            "二元分类",
+            "非均匀学习"
+          ],
+          "tags": [
+            "统计学习理论",
+            "二元分类",
+            "非均匀学习",
+            "理论推导",
+            "复杂度分析",
+            "均衡分析"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.12694"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
+          "titleZh": "Kolmogorov-Chapman Maps：用于模拟分子动力学的无轨迹学习",
+          "authors": [
+            "Majdi Hassan",
+            "Marta Skreta",
+            "Dominique Beaini",
+            "Kirill Neklyudov"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12880",
+          "abstract": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps into a single neural network forward pass, potentially enabling much faster simulation. However, existing supervised approaches typically require long simulated trajectory data, which restricts their applicability. In this work, we introduce Kolmogorov-Chapman Maps (KC-Maps), a method for learning the transition kernel of an SDE that relies only on the trajectory-free marginal samples together with the known drift and diffusion coefficients. Given an initial time and state of a process, KC-Maps models its distribution integrated to any given time, corresponding to the weak solution of the SDE. To recover the correct dynamics, KC-Maps satisfies two key properties: (i) it satisfies the boundary conditions, which we incorporate directly into the neural network architecture, and (ii) it respects the Kolmogorov--Chapman equation, which provides an efficient training objective. We empirically demonstrate that KC-Maps learns to integrate the dynamics of peptide molecular systems and outperforms classical molecular dynamics in terms of GPU-hours.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统分子动力学模拟依赖逐时间步积分，虽单步廉价但需百万步才能观测宏观转变，导致计算耗时且硬件利用率低。现有深度学习加速方法大多依赖成对轨迹数据训练，而生成这些数据本身仍需昂贵模拟。本文旨在摆脱对轨迹监督的依赖，仅利用静态平衡样本和已知物理场直接学习状态转移，突破数据生成瓶颈。",
+            "modelAndSetup": "模型输入为任意初始状态及目标时间间隔，输出该时刻的状态分布样本。采用条件归一化流建模转移核，训练时不需配对状态，仅依赖独立采样的初始构型及其对应的力场与扩散系数。通过前向传播生成长时转移，并用2-Wasserstein距离等指标评估其在能量分布、构象模式覆盖和动力学性质上的保真度。",
+            "contributionsAndResults": "提出Kolmogorov-Chapman Maps（KC-maps），首次实现仅凭边际样本和物理先验学习SDE转移核。在多肽体系上，单次前向传递可替代百步传统模拟，GPU小时吞吐提升2.3倍，并准确恢复构象动力学与跃迁速率。结果表明无需轨迹监督也能高效学习物理一致的长期演化。",
+            "methodsAndTechniques": "方法核心是将Kolmogorov-Chapman方程作为训练目标，强制不同时间尺度的转移组合保持分布一致性。同时在网络结构中嵌入边界条件，确保短时行为符合SDE的局部漂移与扩散。结合带时间门控的流模型与高斯参考核，使模型既能满足物理约束，又具备长时建模能力。",
+            "limitationsAndReadingValue": "方法性能受限于训练数据对构象空间的覆盖，稀疏区域的动力学恢复较差；且需为每个分子单独训练，缺乏跨体系迁移能力。最值得阅读的是其无轨迹学习范式的设计思想与Kolmogorov-Chapman一致性目标的实现机制，这对物理驱动的生成模型具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "实验验证",
+            "系统框架",
+            "机制设计"
+          ],
+          "contentTags": [
+            "生成式AI",
+            "分子动力学",
+            "随机微分方程",
+            "流模型",
+            "物理模拟"
+          ],
+          "tags": [
+            "生成式AI",
+            "分子动力学",
+            "随机微分方程",
+            "流模型",
+            "物理模拟",
+            "模型构建",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.12880"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Learning Rate Decay Can Exponentially Accelerate SGD for Global Optimization of Nonconvex Functions",
+          "titleZh": "",
+          "authors": [
+            "Guneykan Ozgul",
+            "Dylan Herman",
+            "Junhyung Lyle Kim",
+            "Shree Hari Sureshbabu",
+            "Shouvanik Chakrabarti"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12769",
+          "abstract": "Stochastic Gradient Descent (SGD) is a workhorse algorithm for continuous optimization. It is a folk belief among deep learning practitioners that learning rate decay in SGD substantially improves performance. However, it has remained unclear whether learning rate decay offers an asymptotic advantage for global nonconvex optimization. We answer this question in the affirmative by demonstrating a natural class of nonconvex functions for which, we prove that SGD with learning rate decay requires exponentially fewer gradient queries for global optimization than SGD with any fixed learning rate in the small-step size regime. To the best of our knowledge, this is the first exponential advantage that has been demonstrated for learning rate decay. The class of functions we consider includes many popular benchmark nonconvex functions. Our results provide a robust explanatory theory for the empirically observed benefits of learning rate decay for global optimization. We show that annealing performs the non-logconcave sampling task associated to the optimization problem in polynomial time, via a novel application of weak Poincaré inequalities.",
+          "summarySections": {
+            "backgroundAndQuestion": "Stochastic Gradient Descent (SGD) is a workhorse algorithm for continuous optimization. It is a folk belief among deep learning practitioners that learning rate decay in SGD substantially improves performance. However, it has remained unclear whether learning...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.12769"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "math.OC",
+              "cs.DS",
+              "cs.LG"
+            ],
+            "primaryCategory": "math.OC",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        },
+        {
+          "title": "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks",
+          "titleZh": "平均因果效应与期望因果效应在网络干扰下的比较：建模假设与估计瓶颈",
+          "authors": [
+            "Vishesh Karwa",
+            "Edoardo M. Airoldi",
+            "Donald B. Rubin"
+          ],
+          "date": "2026-11-09",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12690",
+          "abstract": "Causal inference under treatment interference requires assumptions to reduce the exponentially large number of potential outcomes. We develop hierarchical finite-population models for potential outcomes by separating these assumptions into three layers: interference neighborhoods, exposure mappings, and outcome models. Given an interference neighborhood and exposure mapping, we show that potential outcomes admit a nonparametric decomposition into direct, spillover, and treatment--spillover interaction components. This decomposition provides a common coordinate system for nonparametric, semiparametric, and parametric models of finite-population potential outcomes. For a given potential-outcome model, we define two classes of estimands. Average causal effects (ACEs), such as direct and total treatment effects, contrast potential outcomes under fixed treatment--exposure conditions. Expected causal effects (ECEs), such as expected direct and indirect effects, contrast expectations of potential outcomes under a specified allocation policy. For both classes, we bound the variance of the canonical Horvitz--Thompson estimator by three terms: a diagonal weight term, a term from overlapping interference neighborhoods, and a residual design-dependence term. Our upper and lower bounds show that under graph-unaware designs, nonparametric design-unbiased estimation of ACEs can require sample sizes growing exponentially in the interference degree, whereas polynomial growth can suffice for design-aligned ECEs. Under neighborhood interference, we construct graph-aware independent-set designs with variance bounds polynomial in the maximum degree for direct and total treatment effects on every graph, whereas graph cluster randomization can incur worst-case variance exponential in the degree.",
+          "summarySections": {
+            "backgroundAndQuestion": "在存在处理干扰（即一个个体的处理状态影响他人结果）的情况下，传统平均因果效应难以识别且估计效率低下。现有方法常混淆建模假设、估计目标与实验设计，导致对估计困难的根源不清。本文指出，将因果效应分为固定对比的平均因果效应（ACE）与基于分配策略的期望因果效应（ECE），是理解估计瓶颈的关键。",
+            "modelAndSetup": "论文在有限总体框架下研究因果推断，输入为个体处理分配向量与网络结构，输出为不同因果效应估计量。通过分层建模——干扰邻域、暴露映射与结果模型——统一表达各类潜在结果结构。实验设定基于模拟网络（如ER图、BA图），评估不同设计下ACE与ECE估计量的均方误差，核心评价指标是估计一致性的条件。",
+            "contributionsAndResults": "论文提出了ACE与ECE的统一分类，并揭示了二者在估计难度上的根本差异：非参数估计ACE在经典设计下需样本量随干扰度指数增长，而ECE仅需多项式增长。通过构造图感知的独立集设计，实现了ACE的多项式速率估计，澄清了‘估计困难’源于设计与目标不匹配，而非效应本身不可知。",
+            "methodsAndTechniques": "作者将潜在结果分解为直接效应、溢出效应与交互效应三部分，为各类模型提供统一坐标系。关键方法是利用霍维茨-汤普森估计量的方差分解，分离出权重项、干扰依赖项与设计依赖项。通过设计图感知的独立集随机化方案，使目标暴露组合的概率从指数小提升至多项式级，从而突破估计瓶颈。",
+            "limitationsAndReadingValue": "论文假设干扰图已知，但在实践中常需估计，若指定错误会影响结论。此外，独立集设计虽理论上优越，但实施成本可能高于简单设计。尽管如此，其核心洞见——区分ACE与ECE并匹配设计——极具价值，最值得读的是问题框架、方差分解论证与独立集设计的构造逻辑。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
+            "实验验证",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "因果推断",
+            "网络干扰",
+            "潜在结果模型",
+            "随机化设计",
+            "估计一致性"
+          ],
+          "tags": [
+            "因果推断",
+            "网络干扰",
+            "潜在结果模型",
+            "随机化设计",
+            "估计一致性",
+            "理论推导",
+            "模型构建",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.12690"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "stat.ME",
+              "cs.LG",
+              "econ.EM"
+            ],
+            "primaryCategory": "stat.ME",
+            "published": "2026-11-09",
+            "updated": "2026-11-09"
+          }
+        }
+      ]
     }
   ]
 }
