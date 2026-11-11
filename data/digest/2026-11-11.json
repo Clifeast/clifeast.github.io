@@ -1,0 +1,593 @@
+{
+  "date": "2026-11-11",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-11-11T09:51:57.425247+00:00",
+  "warnings": [],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 7,
+      "papers": [
+        {
+          "title": "Second-Best Trade Is Half Efficient in Multidimensional Markets",
+          "titleZh": "Second-Best Trade Is Half Efficient in Multidimensional Markets",
+          "authors": [
+            "Dirk Bergemann",
+            "Yang Cai",
+            "Kangning Wang",
+            "Jinzhao Wu",
+            "Renzhe Xu"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14489",
+          "abstract": "We prove that at least half of the first-best gains from trade can always be achieved in multidimensional two-sided markets with additive values and costs and arbitrary downward-closed feasibility constraints. The guarantee is achieved by a mechanism satisfying Bayesian incentive compatibility, interim individual rationality, and strong budget balance, and is tight already in single-item bilateral trade. Types are independent across agents, while the coordinates of each agent's type may be arbitrarily correlated. Feasibility constraints may couple trades across items and agents. This extends the known tight one-half guarantee for single-item bilateral trade. Our proof develops a new application of the Cai--Devanur--Weinberg duality framework. We show that the objective of every feasible dual is at least half of the first best. Strong duality then yields the guarantee without characterizing an optimal mechanism or dual. The key observation is that every feasible dual induces continuous-time Markov chains that, when stopped by exponential clocks, recover true types as expectations of virtual types. The dual constraints control the rate at which these chains change the prior distributions. We establish our bound by combining this control with a coupling of the agents' clocks.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在复杂的双边交易市场中无法实现完全有效的贸易？该问题源于Myerson-Satterthwaite经典结论：由于买卖双方私藏估值和成本，任何满足激励相容、个体理性和预算平衡的机制都无法总是促成有效交易。本文关注一个更普遍的多维场景——多个买家与卖家之间存在多种可能交易且类型高度相关时，第二优机制最多能实现多少第一优效率。",
+            "modelAndSetup": "作者考虑一个两方市场模型，其中买家有私人估值、卖家有私人成本，交易集合受向下封闭的可行性约束限制。每个代理人的类型可以是多维且内部坐标任意相关，但代理人之间独立。目标是最大化期望贸易收益，同时满足贝叶斯激励相容、事前个体理性和强预算平衡。模型涵盖了单物品交易、匹配市场、多物品采购等多种情形作为特例。",
+            "contributionsAndResults": "论文证明，在上述一般性多维市场中，第二优机制总能实现至少一半的第一优效率，且这个1/2比率是紧的。这意味着无论类型如何相关或约束多么复杂，只要满足标准机制设计约束，就永远不会低于50%的效率下限。这一结果推广了近期双边交易中的1/2界，并首次在如此广泛的多维设置中建立了统一的常数因子保证。",
+            "methodsAndTechniques": "作者采用Cai-Devanur-Weinberg对偶框架，将机制设计问题转化为对偶变量上的优化。关键创新在于将虚拟值变换解释为连续时间马尔可夫链的生成元，并利用指数时钟停止过程恢复真实类型。通过耦合买方与卖方的随机时钟（反向配对），结合流守恒约束控制密度变化率，最终在不刻画最优机制的情况下证明所有可行对偶目标值都不小于第一优的一半。",
+            "limitationsAndReadingValue": "尽管结果极具普适性，但并未提供显式的最优机制构造，仅证明其存在性。证明依赖于强对偶性和抽象对偶变量，可能难以直接用于实际机制设计。然而，其将虚拟值与马尔可夫过程联系的思想具有独立价值，为处理高维相关类型提供了新工具。最值得阅读的是其新颖的对偶分析视角和反直觉的时钟耦合技巧。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "信息不对称",
+            "贝叶斯博弈",
+            "预算平衡"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "信息不对称",
+            "贝叶斯博弈",
+            "预算平衡",
+            "理论推导",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 1.0,
+            "total": 31.0
+          },
+          "ids": {
+            "arxiv": "2611.14489"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        },
+        {
+          "title": "Herding with Multiple States: When the Prior Matters",
+          "titleZh": "多状态下的羊群效应：初始先验的重要性",
+          "authors": [
+            "Xiaoyu Chen"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13632",
+          "abstract": "In sequential observational learning with more than two states, the same information structure and preferences can yield learning for some full-support priors and herding for others. This disproves a conjecture of Kartik, Lee, Liu, and Rappoport (2024, working-paper version). In the counterexample, the cascade region has nonempty interior, yet learning occurs for generic full-support priors outside it. Focusing on information and preferences, we introduce two necessary conditions for learning. Escapability requires that signals can provide arbitrarily strong evidence that any given action is ex post suboptimal; pairwise escapability is its pairwise variant. If escapability fails, herding occurs for some initial prior; if pairwise escapability fails, it occurs for every full-support prior. For a class of environments with interval optimality and monotone likelihood ratios, escapability completely characterizes learning and herding independently of the full-support initial prior. With location-shift signals, this characterization reduces to pairwise distinguishability, a generalization of unbounded beliefs (Smith and Sørensen, 2000).",
+          "summarySections": {
+            "backgroundAndQuestion": "传统社会学习模型认为，在二元状态下，无论初始信念如何，群体最终是否学习成功是相同的。本文挑战了这一观点，指出在超过两个状态的情形下，即使信息结构和偏好相同，不同的全支撑先验可能导致有的群体学会真相，有的陷入错误羊群。这揭示了一个被忽视的关键问题：初始信念本身会影响学习结果。",
+            "modelAndSetup": "模型考虑一个序贯观测学习环境，未知的状态来自有限集合，代理依次行动，观察前人行为并接收私人信号。每个代理基于公共信念（由贝叶斯更新得出）选择最大化期望效用的动作。核心设定在于状态数大于二，且不同动作在不同状态下的最优性划分不一致，从而使得信念演化路径对初始点敏感。",
+            "contributionsAndResults": "论文的主要发现是推翻了Kartik等人关于多状态下学习与先验无关的猜想。作者构造出反例：某些全支撑先验导致几乎必然学习，而另一些则导致羊群效应。进一步，提出了逃逸性（escapability）与成对逃逸性两个必要条件，用于刻画何时会发生羊群效应，并在一类具区间最优性和单调似然比的环境中实现了完全表征。",
+            "methodsAndTechniques": "分析核心是追踪公共信念过程的鞅性质及其极限行为。通过考察信号能否提供足够强的证据来推翻当前最优动作，建立逃逸性条件。证明中利用区分性（distinguishability）概念，结合似然比分析与Borel-Cantelli引理，论证当成对逃逸性失败时，信念无法收敛到具备充分知识的平稳信念，从而必然出现羊群。",
+            "limitationsAndReadingValue": "结果高度依赖于信念动态的具体结构，尤其在非MLRP或非区间最优情形下，先验的影响可能更复杂且难以一般化。尽管如此，该文深刻揭示了多状态学习中初始信念的作用，打破了传统认知。最值得阅读的是其反例构造与逃逸性条件的设计，为理解社会学习的稳健性提供了新视角。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "信息设计",
+            "社会学习",
+            "博弈学习"
+          ],
+          "tags": [
+            "信息设计",
+            "社会学习",
+            "博弈学习",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.13632"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        },
+        {
+          "title": "Obvious Group Manipulations and Top Trading Cycles",
+          "titleZh": "明显的群体操纵与顶级交易循环",
+          "authors": [
+            "Ryoga Doi",
+            "Kazumasa Ikeda",
+            "Kensei Nakamura"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13469",
+          "abstract": "We introduce a group version of non-obvious manipulability, which is stronger than the original definition by Troyan and Morrill (2020) and weaker than group strategy-proofness, and study its implications in Shapley-Scarf housing markets. We provide several characterizations of the Top Trading Cycles mechanism using the new condition.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在住房市场中看似安全的机制仍可能被群体利用？论文指出，传统的‘非明显可操纵性’（NOM）虽弱于策略免疫，但在个体理性与配对效率下几乎自动成立，无法区分机制优劣。为此，作者提出‘非明显群体可操纵性’（NOGM），填补了从个体到群体、从完全抗操纵到弱抗操纵之间的理论空白。",
+            "modelAndSetup": "模型基于经典的Shapley-Scarf住房市场：每个代理人拥有一个不可分物品并有严格偏好。机制将偏好配置映射为分配结果。作者引入NOGM概念——若一群代理人在悲观或乐观预期下都无法通过联合谎报提升各自最差或最佳结果，则该机制满足NOGM。此定义统一了认知受限群体的行为边界，并适用于全域、单峰与单谷偏好子域。",
+            "contributionsAndResults": "论文核心发现是，顶级交易循环（TTC）机制在多个偏好域上均可被NOGM、个体理性和配对效率唯一刻画。这表明，即使放弃强策略免疫，只要考虑群体层面的认知限制，TTC仍是唯一稳健的机制。此外，NOGM弱于群体策略免疫但强于NOM，构成了新的中间标准。",
+            "methodsAndTechniques": "作者通过构造特定偏好配置来分离不同性质：利用配对效率与个体理性共同推出满射性，再结合NOGM推导帕累托效率。关键证明依赖于TTC与核心分配的一致性，并通过反证法显示任何偏离TTC的分配都会导致可识别的群体操纵机会。附录中还建立了NOGM与机制不确定性下的群体策略免疫的等价性。",
+            "limitationsAndReadingValue": "局限在于NOGM的定义依赖于群体联合最优/最差结果的帕累托比较，实际中较难观测。且结果集中于经典市场，未拓展至带钱或学校选择等场景。但论文价值突出：其模型抽象清晰，对NOM的群体扩展具有一般意义，相关工作梳理深入，适合想理解现代机制设计中‘操纵可见性’演进的研究者精读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "市场/匹配",
+            "策略操控",
+            "非明显操纵",
+            "TTC机制"
+          ],
+          "tags": [
+            "机制设计",
+            "市场/匹配",
+            "策略操控",
+            "非明显操纵",
+            "TTC机制",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 1.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 1.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.13469"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        },
+        {
+          "title": "Artificial Currency and Separate Selling: A 3-Approximation for Consumer Surplus",
+          "titleZh": "人工货币与分开销售：消费者剩余的3-近似",
+          "authors": [
+            "Yang Cai",
+            "Yingkai Li",
+            "Jinzhao Wu"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14509",
+          "abstract": "We study the allocation of indivisible items to buyers with additive values drawn from independent distributions. The objective is consumer surplus net of burnt payments. We consider artificial-currency mechanisms: buyers receive personalized budgets of a currency worthless outside the mechanism and use them to bid across items. The better of separate selling and artificial-currency mechanisms provides a 3-approximation to optimal consumer surplus. The guarantee holds at every Bayes--Nash equilibrium, without equilibrium selection. Both branches are necessary: either alone may capture only a vanishing share of the optimum. The proof decomposes benchmark surplus into a stable part captured by artificial currency and a variation covered by separate selling.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在无法使用真实货币的情况下仍能有效分配资源？现实中许多场景（如课程选课、食品银行配给）禁止收费，但需识别高价值需求者。传统‘烧钱’机制通过施加成本筛选偏好，却破坏总剩余；人工货币虽不烧钱，但预算固定难以响应极端高估值。本文探究这两类机制能否互补，在一般设置下逼近最优消费者剩余。",
+            "modelAndSetup": "模型考虑n个买家对m个不可分物品的加性估值，各价值独立抽取自任意分布。目标是最大化消费者剩余（总价值减去烧毁的支付）。对比两类机制：一是每个物品单独进行烧钱拍卖；二是发放不可交易的人工货币预算，买家用其竞标所有物品，采用按信用比例分配的概率规则。机制需满足贝叶斯激励相容与个体理性。",
+            "contributionsAndResults": "论文证明：无论价值分布如何，单独售卖与人工货币机制中表现更好的一个，总能在任何贝叶斯纳什均衡下实现至少三分之一的最优消费者剩余。该近似比紧致且无需均衡选择，揭示了两种机制的互补性——人工货币捕捉稳定收益部分，而烧钱机制覆盖估值波动部分。",
+            "methodsAndTechniques": "证明核心是将任意基准机制的消费者剩余分解为‘稳定部分’与‘变异部分’。前者由人工货币机制通过比例信用规则捕获，利用预算与隐含价格构造偏差论证；后者通过逐项替换估值并结合单物品烧钱上限来界定，依赖独立性假设与凸性分析，最终通过平滑性风格不等式和柯西-施瓦茨完成整合。",
+            "limitationsAndReadingValue": "结果依赖独立价值与加性估值假设，对相关性或复杂互补品结构尚未推广。机制设计具有一般性但预算需依赖先验。最值得读的是其分解思想与双机制比较框架，为无货币环境下的近似最优设计提供了新范式，开放问题关于更广估值类别的可扩展性也极具启发性。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "机制设计",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "机制设计",
+            "拍卖理论",
+            "市场/匹配",
+            "消费者剩余",
+            "无货币机制"
+          ],
+          "tags": [
+            "机制设计",
+            "拍卖理论",
+            "市场/匹配",
+            "消费者剩余",
+            "无货币机制",
+            "理论推导",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 26.9
+          },
+          "ids": {
+            "arxiv": "2611.14509"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        },
+        {
+          "title": "Feedback Design in the Shadow of Strategic Communication",
+          "titleZh": "战略沟通阴影下的反馈设计",
+          "authors": [
+            "Daiki Kishishita",
+            "Tomoki Tsujita"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13450",
+          "abstract": "We study optimal feedback design when evaluations affect subsequent strategic communication within organizations. A firm designs public feedback about an employee's potential before the employee communicates private information about project-specific circumstances to a manager. While more informative feedback helps the manager make better decisions, it can also intensify preference conflicts and undermine the credibility of subsequent communication. We characterize the optimal feedback policy. First, full disclosure is either optimal for all prior beliefs or strictly suboptimal for all of them. In particular, it is optimal when preference conflicts are sufficiently small or sufficiently large. Second, when full disclosure is suboptimal, no disclosure is optimal for some priors, while partial disclosure is strictly optimal for some priors if and only if the number of messages in equilibrium communication varies with posterior beliefs. Third, optimal partial disclosure can conclusively identify low-potential employees when high potential is rare, but high-potential employees when it is common.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么企业不应总是完全公开员工潜力评估？本文指出，虽然透明反馈有助于管理者决策，但它会改变员工在后续沟通中的激励，加剧利益冲突，从而削弱其对项目具体情况的坦诚交流。问题核心在于：反馈不仅传递信息，还重塑了战略沟通的可信度，因此最优设计需权衡直接信息收益与间接沟通成本。",
+            "modelAndSetup": "模型包含三类角色：企业（设计者）、员工（发送者）和经理（接收者）。员工知晓项目状态但潜力未知，企业在沟通前设计关于潜力的公共信号。员工随后通过廉价交谈向经理报告状态，经理据此决定项目雄心程度。各方理想行动依赖于状态和潜力，但员工更看重高潜力带来的职业发展收益，导致偏好差异。设计者选择信号结构以最小化决策误差。",
+            "contributionsAndResults": "论文发现全披露并非总是最优：当偏好冲突极小或极大时全披露最优，但在中间区间反而有害。此时，不披露或部分披露更优。特别地，部分披露可能仅明确识别低潜力员工（当高潜力稀少时）或高潜力员工（当其常见时），且最优政策随先验变化呈现最多五段式非单调结构，揭示了反馈标准应随人才构成调整的深刻洞见。",
+            "methodsAndTechniques": "作者结合贝叶斯劝说与Crawford-Sobel廉价交谈模型，将设计问题转化为对后验均值分布的凹包络构造。关键在于刻画通信均衡中消息数量随后验信念跳跃变化所导致的支付函数向上拐点，并利用这些拐点的斜率性质证明凹包络至多有两个接触区间，从而得出最优反馈政策的简洁结构。",
+            "limitationsAndReadingValue": "模型假设员工无法操纵潜力信号，且聚焦静态一次性反馈，忽略了长期激励与动态学习效应。尽管如此，论文的价值在于清晰揭示了组织内信息流动的双重作用机制。最值得细读的是其对信息设计中‘间接激励效应’的建模方式、均衡选择假设的合理性，以及处理离散均衡跃迁的技术路径。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "信息设计"
+          ],
+          "contentTags": [
+            "信息设计",
+            "廉价交谈",
+            "员工评估",
+            "激励机制",
+            "组织经济学"
+          ],
+          "tags": [
+            "信息设计",
+            "廉价交谈",
+            "员工评估",
+            "激励机制",
+            "组织经济学",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 1.9,
+            "total": 26.9
+          },
+          "ids": {
+            "arxiv": "2611.13450"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.NE）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 4,
+      "papers": [
+        {
+          "title": "A Functional Preservation Score for Auditing Connectome Operations: Compression, Alignment, Transport, and Local-Rule Writing",
+          "titleZh": "一种用于审计连接组操作的功能保持评分：压缩、对齐、传输与局部规则写入",
+          "authors": [
+            "Praveg Vashishtha"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13681",
+          "abstract": "We introduce the Functional Preservation Score (FPS), a null-normalised, behaviourally grounded measure of how much of a neural network's input-output function survives a structural operation, and use it to audit the operations underlying speculative \"mind-migration\" pipelines on public data that runs on a single laptop. Across five pre-registered studies on the C. elegans connectome, whole-brain calcium activity, and hippocampal replay, FPS yields two positive characterisations and a three-part negative. Low-bit quantisation of a real connectome exhibits a structure-dependent sparsity floor: uniform int4/ternary quantisation is forced to roughly 73%/98% effective sparsity because heavy-tailed integer synaptic weights round to zero, while mixed-precision protection of hub neurons lowers these floors to about 27%/32%. Decoded hippocampal replay sequences compress heavily yet remain identifiable at a cross-validated top-1 accuracy of 0.69 (95% CI [0.63, 0.74]; chance 0.125; permutation p < 1e-3) from latents of order 10-50 bits per event, and a bounded incremental store shows a graceful-versus-cliff capacity trade-off. The migration pipeline fails in simulation at each stage for largely independent reasons: the putative \"identity payload\" is not a functionally separable module (p >= 0.16 at every tested size); cross-individual functional transport via Gromov-Wasserstein collapses once the target's wiring is respected (fidelity 1.00 to 0.40, [0.31, 0.49], p < 1e-3) or alignment is imperfect (0.06, [0.00, 0.13]); and biologically plausible local plasticity cannot reach the function the target topology provably admits (gap 0.45, [0.27, 0.64], p < 1e-3, d = 2.0). We release FPS, the data loaders, and all operations as a toolkit. All results are at nematode / small-network scale and concern coherence in simulation, not the feasibility of reading or writing a living brain.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前许多关于‘意识迁移’的设想依赖于将大脑连接组压缩、对齐并重写到新基质中，但缺乏统一标准来衡量这些操作是否真正保留了原有功能。现有方法往往假设各步骤可行却无实证支持，尤其缺少行为层面的评估指标。本文核心问题是：在经历结构变换后，神经网络的输入-输出功能究竟被保留了多少？这触及模型压缩、跨个体映射与生物可塑性等多个领域的共同瓶颈。",
+            "modelAndSetup": "研究基于秀丽隐杆线虫连接组与海马体回放数据，在普通笔记本即可运行的仿真环境中测试四类操作：量化压缩、功能对齐、跨基质传输与局部学习写入。输入为刺激序列，输出为神经响应模式，通过比较变换前后系统的输入-输出一致性来评估功能保持程度。评价采用新提出的FPS指标，其以打乱或均值预测为零基准，确保得分反映真实功能而非随机相似性。",
+            "contributionsAndResults": "论文提出功能保持评分（FPS），首次实现对连接组操作的功能性审计。结果显示低比特量化存在由权重长尾分布决定的有效稀疏度下限（int4约73%）；海马序列可在每事件10–50比特下仍保持可识别性；而‘分割-对齐-写入’迁移路径在三阶段均独立失败：无显著身份模块、跨个体对齐崩溃、局部可塑性无法达到目标拓扑上限。这些发现挑战了当前迁移设想的基本可行性。",
+            "methodsAndTechniques": "FPS通过对比变换系统与参考系统的响应差异，并归一化至最佳平凡基线之上，从而剔除虚假相关。该方法不依赖特定模型形式，适用于多种操作。实验设计预注册，使用交叉验证与置换检验增强统计可信度。关键证据链包括量化下限的确定性分析、对齐保真度随约束收紧的骤降、以及全局优化与局部学习间的性能鸿沟，共同支撑‘功能不可迁’的结论。",
+            "limitationsAndReadingValue": "结论局限于小规模网络与简化动力学，未涉及真实大脑读写能力，也不主张主观体验的可转移性。FPS作为功能代理指标仍有局限，且跨个体对齐使用模拟扰动而非真实个体。尽管如此，论文的价值在于提供了一个可复现、可扩展的审计框架。最值得细读的是其问题设定与实验逻辑，尤其是如何将哲学性问题转化为可计算验证的科学命题。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "评测方法",
+            "模型构建",
+            "基准评测",
+            "系统框架"
+          ],
+          "contentTags": [
+            "神经网络",
+            "功能保持",
+            "连接组学",
+            "图神经网络",
+            "脑模拟"
+          ],
+          "tags": [
+            "神经网络",
+            "功能保持",
+            "连接组学",
+            "图神经网络",
+            "脑模拟",
+            "实验验证",
+            "评测方法",
+            "模型构建"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.13681"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.NE",
+              "q-bio.NC"
+            ],
+            "primaryCategory": "cs.NE",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        },
+        {
+          "title": "Recurrent Modular Structure in Spiking Neural Network Reinforcement Learning",
+          "titleZh": "脉冲神经网络强化学习中的循环模块结构",
+          "authors": [
+            "Vikram Ramavarapu",
+            "Himanshu Udupi",
+            "Ashish Gautam"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14262",
+          "abstract": "Biological neural circuits are both modular and recurrent, with dense communities sparsely linked to one another. Spiking neural networks (SNNs) for reinforcement learning are usually feed-forward, and it is unclear how to obtain functional modules in a recurrent SNN or what they buy. In this work, we introduce a class of spiking networks, called Community Recurrent SNNs (CoRe SNNs): recurrent networks partitioned into communities with fixed roles. A controller community receives the stimulus, each action has its own community, and latent communities carry internal state. Spiking activity is then a walk between communities, and the action is the community the walk reaches. All learning is local and three-factor, and the recurrent communities are closer to cortical microcircuits than a feed-forward actor. We compare three regimes for obtaining the communities: dynamic modularity, in which a new learning rule we introduce, Map-STDP, encourages modular structure during learning; partial modularity, in which a stochastic block model (SBM) initialization enforces it partly; and full modularity, in which sealing enforces it fully. On CartPole, across three spiking neuron models, Map-STDP improves learning over the same network without it matches full modularity (sealed communities) on two of the three models, and makes the observed spike walk more compressible. Replacing the feed-forward actor of a TD-STDP actor-critic with recurrent action communities improves on the feed-forward network on CartPole and LunarLander, and matches it on Acrobot. How strongly to enforce modularity depends on the task: full modularity helps most on Acrobot, while on LunarLander the dynamic, partial and full regimes perform alike. Overall, these recurrent modular networks can match or even improve upon feed-forward approaches, with improvements in bio-plausibility and energy efficiency.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有脉冲神经网络（SNN）在强化学习中多采用前馈结构，难以体现大脑皮层中普遍存在的模块化与循环连接特性。如何仅通过局部可实现的学习规则，在SNN中自发形成功能明确的模块，并提升任务性能与生物合理性，是一个开放问题。本文旨在探索循环模块结构能否在无需全局误差信号的情况下被诱导并带来实际收益。",
+            "modelAndSetup": "研究在CartPole、Acrobot和LunarLander等控制任务上评估一种名为CoRe SNN的新架构。该网络由控制器、动作社区和潜在社区组成，信息以神经元间的脉冲传播路径形式流动。训练基于局部三因子规则，结合TD误差与新提出的Map-STDP规则，后者利用随机游走的编码长度作为结构优化目标，衡量不同模块化构建方式对学习效果的影响。",
+            "contributionsAndResults": "论文提出了CoRe SNN架构与Map-STDP学习规则，实现了在强化学习中自组织的循环模块结构。实验表明，该方法在多个任务上优于前馈基线，尤其在CartPole上动态模块化显著提升学习效率，并使网络活动更可压缩，暗示更高的能量效率。模块化程度需依任务调整，某些任务中完全密封反而最优。",
+            "methodsAndTechniques": "核心创新在于Map-STDP规则，它将地图方程（map equation）转化为局部可计算的突触更新信号，鼓励脉冲活动局限于模块内部。该规则与TD调制的STDP协同工作，分别优化结构压缩性与任务性能。通过比较动态、部分和完全模块化设置，验证了结构引导的有效性，其机制更贴近生物神经回路的运作方式。",
+            "limitationsAndReadingValue": "方法依赖于随机游走抽象，随规模扩大可能成为瓶颈；且当前目标仅促进模块化，未赋予潜层主动计算能力。结果表明压缩性更多源于模块结构本身而非特定目标函数。值得阅读的是其将信息论原则融入局部学习规则的设计思想，以及对生物合理性和能效的实证探索。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "实验验证",
+            "机制设计",
+            "系统框架"
+          ],
+          "contentTags": [
+            "强化学习",
+            "脉冲神经网络",
+            "模块化网络",
+            "生物可塑性",
+            "能量效率"
+          ],
+          "tags": [
+            "强化学习",
+            "脉冲神经网络",
+            "模块化网络",
+            "生物可塑性",
+            "能量效率",
+            "模型构建",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          },
+          "ids": {
+            "arxiv": "2611.14262"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.AI",
+              "cs.LG",
+              "cs.NE"
+            ],
+            "primaryCategory": "cs.AI",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        },
+        {
+          "title": "Oscillatory Processing Units as a computing substrate for biomimetic intelligence",
+          "titleZh": "Oscillatory Processing Units as a computing substrate for biomimetic intelligence",
+          "authors": [
+            "Alexander A. Wolf"
+          ],
+          "date": "2026-11-10",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13840",
+          "abstract": "Biological intelligence emerges from neural activity that connects sensation, memory and action. Synaptic plasticity, neuronal assemblies and oscillations provide principles for biomimetic computing, but translating them into reusable operations requires a defined computational unit. We introduce Oscillatory Processing Units (OPUs), groups of synthetic neurons sharing a rhythm. Their directed interactions transform incoming activity and prior receiving state into an Oscillatory Occupancy Space (OOS), which becomes available to subsequent computation. We show that source--receiver conditions and oscillatory organization shape these transformations, including their geometry, persistence and historical accessibility. An Atlas of measured relationships supports prospective composition with predicted response classes. Configured circuits perform logical and numerical operations, express associative recall and generate closed-loop decisions with fixed synaptic weights. OPUs and OOS establish a computing substrate for biomimetic intelligence in which experience remains part of the state through which new input becomes action.",
+          "summarySections": {
+            "backgroundAndQuestion": "生物智能源于神经活动对感知、记忆与行为的整合，现有类脑计算虽借鉴了突触可塑性和神经集群等机制，却缺乏一个明确的计算单元来统一建模状态变换过程。本文旨在建立一种可复用的计算基底，解决如何将节律性动态转化为可预测、可组合的操作这一核心问题。",
+            "modelAndSetup": "研究提出振荡处理单元（OPU），即共享节律的人工神经元群，其定向交互产生振荡占据空间（OOS）作为中间状态。通过固定权重下的脉冲序列记录，测量不同节奏配对、连接强度与历史输入条件下的群体响应，并在逻辑运算、关联回忆与闭环决策任务中评估系统表现。",
+            "contributionsAndResults": "论文建立了首个基于OPU的可组合类脑计算框架，实验证明源-接收条件能预测变换几何、持久性与历史可及性。配置电路可在无权重更新下执行逻辑与数值操作、实现联想召回并驱动机器人避障，验证了经验持续参与计算的可行性。",
+            "methodsAndTechniques": "方法核心在于利用节律组织定义OPU间变换，通过因子化实验绘制‘神经动力学图谱’，量化源-接收关系如何塑造OOS。时间干预实验揭示振荡机制对状态几何与信息保持的关键作用，前瞻性组合则验证图谱预测新电路响应的能力。",
+            "limitationsAndReadingValue": "结论依赖特定人工神经元模型与节奏配置，XOR操作不完整、上下文转移预测失败等问题表明当前构造仍有局限。最值得阅读的是其系统设计理念——如何将生物学原理转化为可工程化的计算原语，为构建持续交互的经验性智能提供新路径。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "实验验证",
+            "系统框架"
+          ],
+          "contentTags": [
+            "生物启发智能",
+            "神经形态计算",
+            "状态持续性",
+            "振荡动力学",
+            "联想记忆"
+          ],
+          "tags": [
+            "生物启发智能",
+            "神经形态计算",
+            "状态持续性",
+            "振荡动力学",
+            "联想记忆",
+            "模型构建",
+            "实验验证",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 6.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          },
+          "ids": {
+            "arxiv": "2611.13840"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.NE",
+              "cs.ET",
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.NE",
+            "published": "2026-11-10",
+            "updated": "2026-11-10"
+          }
+        }
+      ]
+    }
+  ]
+}
