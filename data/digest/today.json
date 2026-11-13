@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-11-12T10:08:45.650462+00:00",
+  "generatedAt": "2026-11-13T10:04:24.433395+00:00",
   "warnings": [],
   "llm": {
     "enabled": true,
@@ -55,15 +55,689 @@
       "id": "recent-agt",
       "title": "近期 AGT 新论文",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 16,
+      "papers": [
+        {
+          "title": "Learning Dynamics of the Influencer's Game in Resource Landscapes",
+          "titleZh": "资源景观中影响者博弈的学习动态",
+          "authors": [
+            "Mark Lovett Feng Fu"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17148",
+          "abstract": "Across domains as varied as ecology, economics, and online platforms, individuals are incentivized to position themselves within resource-rich strategy spaces. In this work we introduce a new spatial game framework called the influencer's game. Within this new framework players' strategies are represented as positions within a trait space. Players then receive a share of a portion of a resource based on their relative influence at that resource's points traits. For the influencer's game, we show that there is a unique symmetric Nash equilibrium that exists under strict log-concavity of the influence kernel. Using the unique equilibrium we show that the stability of the system depends on the influence kernel's parameters, number of players, and the resource distribution shape. For any dimension we demonstrate a stability threshold that depends on both the scatter and curvature of the players. When this threshold is crossed, the symmetric equilibrium destabilizes and gives way to a variety of bifurcation types; including, specialist clusters, limit cycles, and sub-games that reproduce the larger game's structure. We ground these results using real-world data for resources as a demonstration of the game's application. Finally we extend the game dynamics to use multi-agent reinforcement learning and further show that the predicted bifurcation structure persists under partial observability and discretized strategy spaces. In all, the influencer's game provides a novel framework for predicting when competitive pressure drives convergence versus fragmentation with possible applications across domains.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在生态、经济和社交媒体中个体常聚集于资源密集区却最终分化？本文回应了经典空间竞争模型（如霍特林模型）无法统一解释收敛与分裂现象的问题。作者指出，现有框架受限于特定场景，难以推广到多玩家、高维策略空间下的动态演化。核心问题是：在共享资源的竞争中，何时会因竞争压力导致群体趋同，何时又会自发形成专业化集群？",
+            "modelAndSetup": "作者构建了一个名为‘影响者博弈’的新框架，其中N个玩家在L维特征空间中选择策略位置，通过影响力核函数决定其对各点资源的相对竞争力，并按比例分配资源。每个玩家的收益为其所获资源份额的总和，策略更新遵循梯度上升或强化学习。模型的关键假设是影响力核的严格对数凹性，这保证了对称纳什均衡的存在与唯一性，同时引入竞争范围参数σ来调控策略集中或分散的动力。",
+            "contributionsAndResults": "论文证明了对称纳什均衡的唯一性及其稳定性条件：当竞争范围σ高于阈值σ₀*时稳定，低于则失稳并引发分岔级联，产生专家集群、极限环甚至子博弈结构。特别地，两人博弈始终稳定，三人及以上才可能出现不稳定。该阈值取决于玩家数量、资源分布形状与核函数曲率。这一结果统一解释了最小差异化原理与中位选民定理作为不同极限情况的表现。",
+            "methodsAndTechniques": "作者利用博弈对称性将雅可比矩阵分解为两个不随玩家数增长的L×L块，从而简化稳定性分析。通过计算最大特征值符号判断局部稳定性，结合自洽方程导出闭式阈值。对于高维与非高斯核（如Dirichlet），方法仍适用。此外，采用独立Q学习模拟部分可观测与离散化情形，验证了分岔结构在更现实学习环境下的稳健性。",
+            "limitationsAndReadingValue": "模型假设所有玩家对称且拥有相同影响力核，限制了异质性主体的应用。稳定性结论为局部性质，全局吸引域几何尚不明确。尽管如此，论文价值在于提供了一个高度可解析的通用框架，能系统预测竞争驱动下的聚类与分裂。最值得阅读的是其模型抽象能力、核心稳定性定理及分岔分析，尤其适合关注多智能体策略演化的研究者。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "实验验证",
+            "多智能体系统"
+          ],
+          "contentTags": [
+            "多玩家博弈",
+            "空间竞争",
+            "强化学习",
+            "适应性动力学",
+            "资源分配"
+          ],
+          "tags": [
+            "多玩家博弈",
+            "空间竞争",
+            "强化学习",
+            "适应性动力学",
+            "资源分配",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 7.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 6.8,
+            "total": 35.8
+          },
+          "ids": {
+            "arxiv": "2611.17148"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "econ.TH",
+              "physics.soc-ph"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Regime-Uncertain Data Transactions: A Game-Theoretic Framework for Self-Adapting and Self-Diagnosing Multi-ML-Agent Systems",
+          "titleZh": "规制不确定的数据交易：面向自适应与自诊断多ML智能体系统的博弈论框架",
+          "authors": [
+            "Chethana Prasad Kabgere"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16603",
+          "abstract": "Autonomous ML agents in large organizations exchange data and model outputs across organizational and legal boundaries. Which rules bind a given exchange is not fixed. It depends on where the data subjects live, where the agents run, who owns them, whom they target, and which version of each rule is in force. Tags that describe the data can be noisy, and a counterparty can overclaim its safeguards. We model one exchange as a \\emph{regime-uncertain transfer game} between two ML agents, with an enforcer as a third player. Rules enter as hard constraints with a strictest-wins structure. Agents hold a Bayesian belief over which rules apply, can pay to unlock safeguards or verify claims, and then bargain over the remaining legal bundles.Our method, Legally-Constrained Nash Bargaining (\\LCNB), implements this with a Monotonic Concession Protocol using Zeuthen's rule. We prove four properties of the model and test it in a synthetic simulator with GDPR, DPDP, CCPA/CPRA and a stylised stricter regime. In two of three stress cases where residence and citizenship differ, a citizenship-based rule violates in 21--37\\% of shared records, and \\LCNB{} in under 1\\%. The results also show limits. With our default economics, \\LCNB{} shares almost only aggregates, and its low violation rate follows partly from that. Violation tolerance, tag noise and enforcement strength matter more than the choice of bargaining solution.",
+          "summarySections": {
+            "backgroundAndQuestion": "大型组织中的机器学习智能体在跨组织和法律边界交换数据时，面临适用规则高度不确定的问题。这种不确定性源于数据主体居住地、处理地点、所有权和目标区域的分离，加上标签噪声和对方可能虚报保护措施。现有方法难以处理动态变化和重叠的法规，因此需要一种能自我诊断并自适应调整的交易机制。",
+            "modelAndSetup": "模型考虑两个进行数据交易的ML智能体（发送方与接收方）及一个执法者。每个交易记录包含居住地、敏感性等属性，规则以硬约束形式作用于五维有序的‘法律束’空间，采用‘最严规则优先’结构。智能体持有贝叶斯信念来应对标签噪声，并可通过付费解锁保障或验证对方声明，最终在合法可行集中通过议价决定交易形式。",
+            "contributionsAndResults": "论文提出了LCNB算法，结合贝叶斯推理、代价性验证与基于Zeuthen规则的单调让步协议实现纳什议价。理论上证明了可行性单调性、标签噪声成本、执法阈值和版本滞后代价四项性质。实验表明，在居住地与国籍不一致的压力场景下，LCNB违规率低于1%，显著优于基于国籍或主机区域的基线方法。",
+            "methodsAndTechniques": "作者通过构建一个不完全信息博弈模型，将法律合规转化为带约束的效用最大化问题。关键技术包括使用后验信念处理标签噪声、基于信息价值的验证决策、拉格朗日对偶更新泄漏预算，以及用单调让步协议逼近纳什解。整个分析融合了贝叶斯推理、机制设计与约束优化的思想。",
+            "limitationsAndReadingValue": "LCNB的实际效果受限于默认经济参数设置，导致几乎只分享聚合数据，低违规率部分归因于此。验证模块未被触发，解锁仅在高容忍度下有效。尽管如此，该框架对理解多法域环境下智能体间的自适应合规交互提供了清晰建模路径，其核心价值在于问题抽象方式与可扩展的系统设计。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "均衡分析",
+            "实验验证",
+            "理论推导"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "机制设计",
+            "隐私/安全",
+            "博弈学习",
+            "智能体"
+          ],
+          "tags": [
+            "多智能体系统",
+            "机制设计",
+            "隐私/安全",
+            "博弈学习",
+            "智能体",
+            "模型构建",
+            "算法设计",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 8.1,
+            "total": 35.1
+          },
+          "ids": {
+            "arxiv": "2611.16603"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.SI"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Accuracy Is Not Welfare: Evaluating AI Buyers under Strategic Price Complexity in a Synthetic Duopoly",
+          "titleZh": "准确率不等于福利：在合成双头垄断中评估战略价格复杂性下的AI买家",
+          "authors": [
+            "Ning Jiaqu"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16471",
+          "abstract": "AI buying agents may alter sellers' incentives as well as consumers' decisions. In a synthetic duopoly, we evaluate price-comparison pipelines on a fixed menu and in empirical correlated-equilibrium games. Calculator assistance selects an optimal offer 84.00% of the time, versus 68.57% under verified-total disclosure, yet disclosure has a 20.14-unit higher consumer-worst equilibrium surplus. A frozen-strategy holdout comparison favors disclosure, while re-solving equilibria under scenario resampling produces a range spanning zero. These model-based results show why accuracy, loss severity, seller incentives, and welfare incidence require separate measurement.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么一个看似更准确的AI购物助手反而可能损害消费者？本文指出，在卖家能策略性调整价格和合同表述的市场中，单纯追求决策准确率会忽略激励扭曲。现有研究常假设产品信息固定，但现实中卖家会利用消费者处理信息的困难来设计复杂报价。问题核心在于：AI买家的设计如何改变卖家的最优策略，进而影响最终的福利分配。",
+            "modelAndSetup": "作者构建了一个合成订阅市场模型，两个卖家事先选择价格加成和三种不同复杂度的费用表述方式，随后一个语言模型驱动的AI买家根据服务价值和合同条款做出购买决策。消费者的效用由净剩余决定，包含支付、计算成本和外部选项。通过测量不同AI管道（标准、计算器辅助、披露总额）下的选择行为，构建出卖方博弈的收益矩阵，并用相关均衡（correlated equilibrium）刻画卖家在激励相容下的可能行为分布。",
+            "contributionsAndResults": "研究发现了一个关键反转：尽管‘计算器’管道在静态任务上准确率更高（84.00% vs 68.57%），但在考虑卖家策略响应后，‘披露总额’条件下的消费者最差均衡剩余反而高出20.14单位。这表明，准确率高的系统可能在特定高利润情境下犯错，从而诱发卖家采用更有利可图的复杂定价策略，最终损害消费者。福利结果取决于错误的分布而非仅频率。",
+            "methodsAndTechniques": "作者采用分阶段实证方法：首先在固定菜单上评估AI决策质量，然后基于观测到的选择行为估计卖方博弈的收益矩阵，求解相关均衡集合以确定消费者剩余的边界。通过冻结训练场景中的均衡策略并在新场景上测试，区分了静态性能与动态稳定性。重采样和敏感性分析用于检验结果稳健性，明确分离了固定策略比较与重新求解均衡的不同解释。",
+            "limitationsAndReadingValue": "论文结论基于单一模型、人工场景和固定动作网格，未观察真实卖家学习过程，也不直接推广至现实金融产品。然而，其价值在于清晰展示了评估AI代理时需分离准确率、损失严重性、激励效应和福利归属。最值得读的是其方法论框架——如何将AI决策系统嵌入经济模型进行综合评估，这对设计负责任的消费级AI具有重要启示。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "均衡分析",
+            "模型构建",
+            "评测方法"
+          ],
+          "contentTags": [
+            "信息设计",
+            "消费者福利",
+            "战略复杂性",
+            "AI代理",
+            "相关均衡"
+          ],
+          "tags": [
+            "信息设计",
+            "消费者福利",
+            "战略复杂性",
+            "AI代理",
+            "相关均衡",
+            "实验验证",
+            "均衡分析",
+            "模型构建"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 7.2,
+            "total": 34.2
+          },
+          "ids": {
+            "arxiv": "2611.16471"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "econ.GN",
+              "q-fin.CP"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Strategically Robust Multi-Agent Control",
+          "titleZh": "战略性鲁棒多智能体控制",
+          "authors": [
+            "Boris Velasevic",
+            "Nicolas Lanzetti",
+            "Eric Mazumdar"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16388",
+          "abstract": "A key source of uncertainty in multi-agent systems is the behavior of other agents. Game-theoretic control approaches ignore this uncertainty, while robust control approaches treat others as fully adversarial. In this paper, we introduce strategically robust multi-agent control to populate the spectrum between these two paradigms. Specifically, in dynamic games, we propose that players are strategically robust and seek protection against misspecified control policies of the other players. This formulation induces a novel equilibrium concept, strategically robust dynamic equilibrium, that interpolates between game-theoretic control and robust control. We study this concept across canonical open- and closed-loop settings and show that accounting for strategic robustness also has computational benefits over classic approaches in game-theoretic control. Numerical experiments on vehicle platooning, inventory management, and network control illustrate resilience to misspecification, and also exhibit a \"free-lunch\" phenomenon in which strategic robustness can improve performance or social welfare.",
+          "summarySections": {
+            "backgroundAndQuestion": "多智能体系统中的核心挑战是战略不确定性，即无法准确预知其他智能体的行为。传统博弈论假设对手行为完全理性，导致策略脆弱；而鲁棒控制则将其视为恶意干扰，又过于保守。本文旨在填补二者之间的空白，提出一种既能防范策略误设又能保持合理性能的新型控制范式。",
+            "modelAndSetup": "作者在离散时间动态博弈框架下建模，每个智能体通过状态反馈选择控制策略，最小化自身成本。关键创新在于引入‘战略性鲁棒’代价函数：每个智能体不直接对抗他人策略，而是面对一个虚构对手，该对手可在偏离他人原策略时造成最大损害，但需支付偏差惩罚。偏差惩罚的强弱调节了从纳什均衡到H∞鲁棒控制的连续谱。",
+            "contributionsAndResults": "论文提出了‘战略性鲁棒动态均衡’这一新解概念，并证明其在开环和闭环设定下均存在且唯一。特别地，在线性二次博弈中可通过耦合逆向Riccati方程求解；在无限时域下，当鲁棒性足够强时，均衡不仅存在且可通过最佳响应迭代快速收敛。数值实验还发现‘免费午餐’现象：增强鲁棒性反而提升个体或集体表现。",
+            "methodsAndTechniques": "作者采用增广博弈重构方法，将两阶段的主从对策转化为同时行动的鞍点问题，从而利用伪梯度单调性分析均衡性质。对于闭环情形，借助动态规划与Riccati递归刻画均衡策略；在无限时域分析中，则基于H∞控制理论构造邻域内的压缩映射，证明最佳响应迭代的几何收敛性。",
+            "limitationsAndReadingValue": "模型依赖于精确的动力学与代价函数结构，且当前分析集中于线性系统，推广至非线性场景仍有挑战。尽管如此，该工作为多智能体控制提供了统一视角，其核心价值在于平衡信任与防御的建模思想、清晰的均衡刻画及计算优势，值得重点关注其理论框架与‘免费午餐’现象背后的激励机制。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "多智能体系统",
+            "动态博弈",
+            "鲁棒性",
+            "博弈学习",
+            "最优控制"
+          ],
+          "tags": [
+            "多智能体系统",
+            "动态博弈",
+            "鲁棒性",
+            "博弈学习",
+            "最优控制",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 7.2,
+            "total": 34.2
+          },
+          "ids": {
+            "arxiv": "2611.16388"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "math.OC",
+              "cs.GT",
+              "eess.SY"
+            ],
+            "primaryCategory": "math.OC",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Tight Bounds for Downward-Closed Prophet and Secretary Problems",
+          "titleZh": "Tight Bounds for Downward-Closed Prophet and Secretary Problems",
+          "authors": [
+            "Hanrui Zhang"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16880",
+          "abstract": "We study online selection problems subject to arbitrary downward-closed feasibility constraints, under different arrival orders, with different distributional assumptions. We establish the following bounds: (1) $Θ(\\log^2 n / \\log \\log n)$ for the standard (adversarial-order) prophet problem, (2) $Ω(\\log n)$ for the (Bayesian, random-order) prophet secretary problem, and by extension, for the standard (prior-free, random-order) secretary problem, and (3) $O(\\log n / \\log \\log n)$ for the free-order prophet problem. Together with complementary bounds established in prior work, these results pin down the asymptotically tight competitive ratios for all these variants of prophet and secretary problems subject to downward-closed constraints. Our results refine and reinforce the big-decisions-first principle by Rubinstein and Singla [2026], establishing a superconstant separation between the random-order and free-order models.",
+          "summarySections": {
+            "backgroundAndQuestion": "在线选择问题中，如何在不同到达顺序和信息条件下最大化所选集合的价值是一个核心挑战。本文聚焦于任意向下闭合可行性约束下的prophet与secretary问题，旨在填补标准模型的竞争比上下界之间的差距，特别是当到达顺序分别为对抗性、随机性和自由选择时，理解信息与顺序灵活性带来的收益差异。",
+            "modelAndSetup": "模型考虑n个物品依次到达，每个物品具有独立非负值，在揭示其值后需立即决定接受或拒绝，且已接受物品必须构成可行集。研究四种变体：标准prophet（对抗顺序+已知分布）、prophet secretary（随机顺序+已知分布）、标准secretary（随机顺序+无先验）和free-order prophet（算法可选顺序）。可行性由向下闭合集合系统定义，允许高度复杂的组合约束。",
+            "contributionsAndResults": "论文建立了紧的竞争比界限：标准prophet问题为Θ(log²n/log logn)，prophet secretary和标准secretary为Θ(log n)，free-order prophet为Θ(log n/log logn)。这些结果首次完全刻画了各类模型在向下闭合约束下的渐近性能，揭示了自由排序相较于随机排序存在超常数分离，强化了‘大决策优先’原则的有效性。",
+            "methodsAndTechniques": "下界通过构造分层自编码实例实现，利用消息与码字间的纠错性质迫使算法提前承诺，从而限制其后续灵活性；上界则采用矩母函数归纳法（针对二元值）和基于激活指数变量的归约技术。关键创新在于设计了一种对首次分歧敏感的编码方案，并引入‘收获游戏’来分析随机顺序下的约束接受行为。",
+            "limitationsAndReadingValue": "尽管结果在渐近意义上紧致，但构造较为复杂且常数因子可能较大，实际机制不易直接部署。然而，论文对分层结构与编码技术的巧妙运用极具启发性，特别适合希望深入理解prophet不等式中信息与顺序作用的研究者阅读，其技术框架有望推广至更广泛的在线优化问题。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "在线算法",
+            "prophet不等式",
+            "秘书问题",
+            "向下闭合约束"
+          ],
+          "tags": [
+            "在线算法",
+            "prophet不等式",
+            "秘书问题",
+            "向下闭合约束",
+            "理论推导",
+            "复杂度分析",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.16880"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        }
+      ]
     },
     {
       "id": "recent-ai",
       "title": "近期 AI 新论文（cs.CL）",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Pretraining Data Statistics Shape the Phases of Learning Entity Comparison in Language Models",
+          "titleZh": "预训练数据统计特性塑造语言模型学习实体比较的阶段",
+          "authors": [
+            "Yik Siu Chan",
+            "Jing Huang",
+            "Yanai Elazar",
+            "Atticus Geiger"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16882",
+          "abstract": "How does data shape language model (LM) behavior throughout pretraining? We investigate this question through a case study on entity comparison, e.g., Between France and Brazil, which country is larger?, across nine comparison tasks spanning five entity types. We begin with controlled experiments in which we train small LMs (163M parameters) on mixtures of natural text from pretraining corpora and synthetic task data. Our analysis identifies three distinct phases of learning: (1) an early phase where the LM selects entities by frequency, (2) a middle phase where the LM selects entities by position in the prompt (first vs. last mentioned entity), and (3) a late phase where the LM selects the entity that is the correct answer. We show that the emergence of these three phases is causally determined by statistical properties of the training data. With small amounts of task-specific synthetic data, we observe only the first two phases and the model fails to learn the task; with large amounts, the model jumps directly from the frequency-based heuristic to solving the task correctly. Moreover, changing the entity frequency distribution from a naturally occurring Zipfian distribution (a small number of entities are very common and the vast majority are rare) to a uniform one weakens the frequency phase and speeds up learning of the task. Lastly, we show that the three phases of training dynamics from our controlled experiments appear in the open source model OLMo-2 32B. Together, our findings demonstrate that properties of pretraining data are causal drivers of heuristic learning and show that small-scale synthetic experiments can predict training dynamics at larger scales.",
+          "summarySections": {
+            "backgroundAndQuestion": "语言模型在预训练过程中如何受数据统计特性影响其行为？本文聚焦实体比较任务，如‘法国和巴西哪个国家更大’，发现模型并非直接学会正确算法，而是经历从频率、位置到正确答案的阶段性学习。现有研究缺乏对训练动态因果驱动因素的系统分析，本文旨在揭示数据分布如何塑造这些学习路径。",
+            "modelAndSetup": "研究通过控制实验训练小型语言模型，混合真实文本与合成任务数据，并在不同实体频率分布下观察学习轨迹。同时分析开源大模型OLMo系列在纯自然文本上的训练过程。输入为实体对及属性问题，输出为选择结果，通过回归模型追踪各策略（频率、位置、正确值）在预测中的作用演变。",
+            "contributionsAndResults": "论文首次识别出语言模型学习实体比较的三个因果驱动阶段：初期依赖实体出现频率，中期转向提示中位置偏好，最终掌握正确比较算法。关键发现是这些阶段的出现顺序和持续时间由训练数据的统计特性决定，尤其是Zipf分布会延长前两阶段，而均匀分布可加速正确算法的学习。",
+            "methodsAndTechniques": "作者采用特征归因方法，利用逻辑回归量化频率、位置和真实值特征对模型输出的解释力随训练的变化。通过操控合成数据比例和实体频率分布，建立因果证据链。该方法有效分离了数据分布对学习动态的影响，证明小规模可控实验能预测大规模模型的行为模式。",
+            "limitationsAndReadingValue": "研究局限于实体比较任务，结论外推需谨慎；人工干预数据分布可能引入领域偏移等混淆因素。尽管如此，论文提供了理解启发式学习起源的新视角。最值得阅读的是其训练动态分析框架和对数据分布效应的实证验证，这对改进预训练策略具有实际指导意义。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "机制分析",
+            "数据集构建"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "预训练数据",
+            "推理行为",
+            "启发式学习"
+          ],
+          "tags": [
+            "大语言模型",
+            "预训练数据",
+            "推理行为",
+            "启发式学习",
+            "实验验证",
+            "机制分析",
+            "数据集构建"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.16882"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
+          "titleZh": "将快速学习与神经网络中的组合结构联系起来：基于元学习参数空间中加法类比的证据",
+          "authors": [
+            "Abigail L. Tenenbaum",
+            "R. Thomas McCoy"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17314",
+          "abstract": "Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a neural network can enable it to learn rapidly. We study neural networks that have been optimized via meta-learning, a technique that exposes a network to many related functions to facilitate its subsequent learning of similar functions. Prior work has shown that these meta-learned networks can learn new functions rapidly, but how they do so remains unclear. To investigate their internal structure, we take inspiration from classic work demonstrating additive relationships among the learned vectors that neural networks use to represent words (e.g., \"king\" minus \"man\" plus \"woman\" approximates \"queen\"). Analogously, we look for additive relationships among a meta-learned network's \"representations\" of different functions; when a meta-learned network rapidly learns to implement a specific function, all of its adapted parameter values can be concatenated into a single vector that we treat as representing the function. We find that such parameter vectors can be added and subtracted according to symbolic relationships among the functions they represent, yielding new parameter vectors that successfully represent the functions predicted by the corresponding symbolic manipulations: the networks specified by these artificially recombined vectors actually implement the intended functions without any direct training on them. Our results suggest that meta-learning can tune a network's starting point to organize subsequent learning along systematic, functionally meaningful trajectories through the space of possible parameter vectors, providing a geometric basis for realizing inductive biases in neural networks.",
+          "summarySections": {
+            "backgroundAndQuestion": "人类能从极少经验中快速学习，而神经网络通常需要大量训练。这引发了一个核心问题：什么样的内部结构能让模型像人一样高效学习？传统连接主义模型缺乏显式的符号结构，难以实现系统性泛化，而符号系统虽具备结构性却不够灵活。本文聚焦于元学习框架下的神经网络，试图揭示其快速适应能力背后的几何机制，追问模型是否能在无显式符号的情况下自发形成类似符号系统的组织形式。",
+            "modelAndSetup": "研究采用MAML元学习框架，在结构化函数域上训练神经网络（如Transformer和LSTM）进行快速适应。每个函数由若干语义成分定义，模型通过少量样本调整参数以生成对应序列。关键设定在于将整个参数向量视为函数的‘嵌入’，并测试这些向量之间是否存在线性类比关系——例如，改变某一成分是否对应参数空间中的固定方向移动。评估不仅看直接适应性能，更检验人工重组参数向量能否实现未训练过的函数。",
+            "contributionsAndResults": "论文发现，经过元学习的网络参数空间展现出强健的加法类比结构：不同函数的参数向量可通过加减运算合成新功能，且无需训练即可正确执行。这种几何结构在多种架构与任务中一致出现，且显著优于随机初始化或预训练模型。结果表明，快速学习并非仅依赖初始权重，而是源于参数更新路径被组织成系统性的、功能明确的轨迹，为连接主义系统实现类符号推理提供了实证支持。",
+            "methodsAndTechniques": "方法的核心是将经典词向量类比（如king - man + woman ≈ queen）推广到函数实现层面，用参数向量间的线性操作模拟符号变换。通过控制变量比较MAML、预训练与随机初始化的效果，并设计‘均值-最大’指标缓解因表示歧义导致的低估。证据链显示，成功类比依赖于元学习对初始点的优化，使后续一步更新的方向具有可组合性和语义一致性，从而支持系统性泛化。",
+            "limitationsAndReadingValue": "局限在于当前结论建立在高度结构化的合成任务上，现实场景中符号成分更难界定；此外，不同实例间几何结构不互通，说明组织方式局部而非全局。尽管如此，论文的价值在于提出了理解归纳偏置的新视角——不仅是内置规则，更是状态空间中的运动结构。最值得细读的是其问题抽象方式、类比实验设计及对元学习机制的几何解释，为构建高效学习系统提供了新思路。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "机制设计",
+            "模型构建",
+            "评测方法"
+          ],
+          "contentTags": [
+            "元学习",
+            "表示学习",
+            "快速适应",
+            "归纳偏置",
+            "组合性"
+          ],
+          "tags": [
+            "元学习",
+            "表示学习",
+            "快速适应",
+            "归纳偏置",
+            "组合性",
+            "实验验证",
+            "机制设计",
+            "模型构建"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.17314"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Goal Encoding in LLMs",
+          "titleZh": "大语言模型中的目标编码",
+          "authors": [
+            "Arnab Sen Sharma",
+            "Eric Todd",
+            "Sheridan Feucht",
+            "Andy Arditi",
+            "Rohit Gandikota",
+            "Natalie Shapira",
+            "Gabriele Sarti",
+            "Constanza Fierro",
+            "Lisa Schut",
+            "David Bau"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17297",
+          "abstract": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this encoding is causal for next action and is plastic: transplanting it into a different environment, e.g., another programming language, triggers the same operation realized with a different sequence of tokens. The LM also sustains the encoding throughout the action's execution, which is puzzling because a transformer LM without recurrence cannot carry a state forward for more tokens than it has layers left. We propose that it does not need to. Under a non-recurrent goal-seeking (NRGS) account, the LM frequently re-reads the goal from the task specification, compares it with the progress visible in the growing context, and pursues what remains. We test the predictions of this account with targeted causal interventions.",
+          "summarySections": {
+            "backgroundAndQuestion": "大语言模型（LLM）表现出目标导向行为，但其内部是否存在明确的目标表示仍存争议。传统观点认为目标需持续保持状态，但Transformer架构缺乏递归连接，难以长期维持。本文探究LLM是否通过非循环机制实现功能性的目标追踪，挑战了经典认知模型。",
+            "modelAndSetup": "研究在多步编程任务中分析LLM行为，任务被分解为有序子目标。通过预填充上下文控制执行路径，并在特定位置探测即将执行的操作。利用激活修补等干预手段，检验目标表示的因果性、可塑性和持久性，评估其能否提前解码并跨语言触发相同操作。",
+            "contributionsAndResults": "论文发现一组稀疏注意力头编码了抽象子目标，该表示可提前数个token被读取，能在不同编程语言中触发相应操作，并在整个执行过程中保持。这表明LLM具备类似目标的功能性状态，且其表示具有前承诺、可塑性和时间持久性三大特征。",
+            "methodsAndTechniques": "作者提出非循环目标寻求（NRGS）机制：模型不维持单一状态，而是频繁重读任务规范，结合当前进度重新计算待办操作。通过操控注意力头读取的内容，可改变模型行为，验证了任务跨度的关键作用。该机制解释了深度受限模型如何实现长程依赖。",
+            "limitationsAndReadingValue": "结论基于受控代码生成任务，未涵盖开放域或自主设目标场景。障碍鲁棒性实验证明模型易受干扰，且NRGS是否适用于更大规模或含线性注意力的模型仍有待验证。最值得阅读的是其问题设定与干预实验设计，为理解LLM规划机制提供了新视角。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "机制设计",
+            "模型构建",
+            "评测方法"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "目标表示",
+            "推理机制",
+            "内部可解释性"
+          ],
+          "tags": [
+            "大语言模型",
+            "目标表示",
+            "推理机制",
+            "内部可解释性",
+            "实验验证",
+            "机制设计",
+            "模型构建",
+            "评测方法"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.17297"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL",
+              "cs.AI",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "How Should Planning Agents ReSHAPE Their Search Space?",
+          "titleZh": "规划智能体应如何重塑其搜索空间？",
+          "authors": [
+            "Yilin Zhang",
+            "Xinran Zhao",
+            "Tong Chen",
+            "Ziming Yuan",
+            "Tongshuang Wu"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16466",
+          "abstract": "Planning agents and benchmarks treat a user's initial specification as fixed. Yet the requests users write exclude plans they would gladly take, since they rarely discover the possible trade-offs they would accept until seeing the options. Agents already revise requests through interaction, but whether this helps planning is unknown. We formalize this step as the ReSHAPE task, which judges a revision by whether its search space matches the acceptable plans and a planner finds one there. Using ReSHAPE Planter, which builds instances from planning benchmarks with a human-validated simulated user, we analyze 5,800 agent-revised specifications in travel and shopping. We find that reshaping matters: one correct trade-off makes the same planner reach an acceptable plan up to 4.6x as often, and search space quality predicts what the planner finds. Current agents, however, admit at most 32% of the acceptable plans, where that trade-off alone admits over 52%, because they ask about preferences instead of showing plans; in travel, showing plans raises F1 by 9.7 points over asking, with two model families. Planning agents should thus treat a request as a hypothesis to test against the user's reactions to concrete plans to recognize user trade-offs.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前基于语言模型的规划智能体将用户的初始请求视为固定前提，但现实中用户往往无法提前表达自己愿意接受的权衡。这导致规划器的搜索空间排除了许多用户实际会接受的方案。尽管现有方法通过提问澄清需求，却缺乏对‘修改请求’这一步骤本身的独立评估，因此不清楚交互究竟是否真正提升了规划效果。",
+            "modelAndSetup": "论文提出了ReSHAPE任务，旨在衡量在规划前如何通过与用户交互来修订初始规范。作者构建了ReSHAPE Planter框架，从旅行和购物两类基准中生成包含隐藏偏好的实例，并模拟用户反应。智能体在有限反馈预算下与模拟用户互动，输出修订后的规范，再由固定规划器在其定义的搜索空间内寻找可行方案。",
+            "contributionsAndResults": "研究发现，仅加入一个正确的权衡条件，就能使相同规划器找到可接受方案的概率提升至4.6倍，且搜索空间的质量能有效预测最终规划成功率。然而当前智能体表现不佳，最多仅纳入32%的可接受方案，远低于理想情况下的52%，主因是过度依赖询问偏好而非展示具体方案。",
+            "methodsAndTechniques": "核心方法是将规范修订过程形式化为搜索空间的重塑，通过加权召回率和精确率来评估修订质量。作者设计了四种交互协议进行对比，发现展示计划（尤其是成对比较）比单纯提问更有效。关键机制在于先扩大搜索空间以纳入更多潜在好方案，再通过用户反馈保持筛选精度。",
+            "limitationsAndReadingValue": "局限在于假设用户偏好固定且每次决策一致，而真实用户可能在浏览选项过程中动态调整偏好。此外，每个实例只测试单一权衡，未涵盖复杂交互。最值得阅读的是其问题设定与实验设计，为评估交互式规划提供了可量化的基准思路。"
+          },
+          "researchParadigmTags": [
+            "基准评测",
+            "实验验证",
+            "机制设计",
+            "系统框架",
+            "数据集构建"
+          ],
+          "contentTags": [
+            "智能体",
+            "大语言模型",
+            "规划",
+            "人机交互",
+            "评测方法"
+          ],
+          "tags": [
+            "智能体",
+            "大语言模型",
+            "规划",
+            "人机交互",
+            "评测方法",
+            "基准评测",
+            "实验验证",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.16466"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.AI",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.AI",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        },
+        {
+          "title": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+          "titleZh": "用于递归自我改进的经验传递强化学习",
+          "authors": [
+            "Doyoung Kim",
+            "Byeongguk Jeon",
+            "Kailin Zhang",
+            "Sherry Yang"
+          ],
+          "date": "2026-11-12",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16409",
+          "abstract": "It is common to train Large Language Models (LLMs) for agentic tasks with Reinforcement Learning (RL) from scalar rewards. However, this throws away the fine-grained information about the environment that the agent experienced during the trial (e.g., error logs). To utilize this rich information, recent works wrap the agent in a harness that refines its own inputs through reflection or compaction and hands past experience to future rollouts, but the construction of the handed-off artifacts (e.g., a playbook) is itself not learned. We want the best of both worlds: gradient updates from a scalar reward, while also utilizing environment information to hand off experience. As a concrete testbed, we fix the Agentic Context Engineering (\\ace{}) harness and train one model to act, reflect, and curate task-local playbooks. Our method, \\acerl{}, evaluates candidate experience-handoff artifacts by their downstream effect on future actor rollouts, and co-optimizes the role-specific behaviors (action generator, insight reflector, and playbook curator) under a fixed scaffold. Across agentic benchmarks, \\acerl{} achieves higher held-out performance than baseline methods. The results suggest that agent training should optimize not only the actions in the current rollout, but also the model-written experience that future rollouts inherit.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有大语言模型智能体训练多依赖标量奖励进行强化学习，但这类方法丢弃了试错过程中丰富的环境反馈（如错误日志）。虽然已有框架通过反思或整理生成上下文供后续尝试使用，但这些经验的撰写过程本身并未被训练优化。本文旨在解决如何同时利用标量奖励和环境信息来训练模型，使其不仅能行动，还能主动写出对未来尝试真正有用的经验。",
+            "modelAndSetup": "研究基于一个固定的任务局部框架（ACE），在一个模型内定义三个角色：执行任务的行动者、从轨迹中提取洞察的反思者、以及编辑任务专属‘攻略’的策展人。训练时，模型通过多次迭代尝试同一任务，每次由反思者生成见解，策展人据此修改攻略，并交由下一轮尝试验证。评估采用递归自我改进协议（RSI@K），衡量在K次顺序尝试中是否至少有一次成功解决问题。",
+            "contributionsAndResults": "论文提出了经验传递强化学习（EHRL）框架及其实现ACE-RL，首次实现了对经验撰写行为的端到端训练。实验表明，在相同计算预算下，ACE-RL在多个基准上的表现显著优于仅训练行动者的基线方法，且其优势随尝试次数增加而持续扩大。这证明优化模型所撰写的‘经验’本身，是提升长期递归性能的关键。",
+            "methodsAndTechniques": "ACE-RL的核心是将最终任务奖励反向分配给每个经验撰写步骤。它为每个角色（行动、反思、策展）构建独立的比较组，通过执行候选攻略并观察下游表现来评估其价值，从而为反思和策展输出提供可学习的信号。这种方法避免了依赖单一链式奖励导致的高方差，使模型能明确学习到哪些反思和编辑真正有助于未来成功。",
+            "limitationsAndReadingValue": "该方法依赖于可独立评估的经验产物（如攻略），难以应用于经验与行动高度耦合的场景。实验局限于中小规模模型和特定任务，且未探索跨任务经验迁移。尽管如此，其问题设定、对经验传递的量化机制设计及系统性实验分析极具启发性，值得深入研读以理解如何构建真正会‘学习并传承经验’的智能体系统。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "实验验证",
+            "机制设计",
+            "系统框架"
+          ],
+          "contentTags": [
+            "强化学习",
+            "大语言模型",
+            "智能体",
+            "经验传递",
+            "递归自我改进"
+          ],
+          "tags": [
+            "强化学习",
+            "大语言模型",
+            "智能体",
+            "经验传递",
+            "递归自我改进",
+            "算法设计",
+            "实验验证",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.16409"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-12",
+            "updated": "2026-11-12"
+          }
+        }
+      ]
     }
   ]
 }
