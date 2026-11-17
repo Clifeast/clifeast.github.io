@@ -1,0 +1,2652 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T11:00:58.204911+00:00",
+  "sections": {
+    "recent-agt": {
+      "targetDate": "2026-11-16",
+      "categories": [
+        "cs.GT",
+        "econ.TH"
+      ],
+      "categorySelection": "all",
+      "fetchLimit": null,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.GT": {
+            "query": "cat:cs.GT AND submittedDate:\"202611160000 TO 202611162359\"",
+            "totalResults": 7,
+            "fetchedCount": 7
+          },
+          "econ.TH": {
+            "query": "cat:econ.TH AND submittedDate:\"202611160000 TO 202611162359\"",
+            "totalResults": 3,
+            "fetchedCount": 3
+          }
+        },
+        "dedupedCount": 9
+      },
+      "arxivTotalResults": 10,
+      "fetchedCount": 9,
+      "fetchedPapers": [
+        {
+          "title": "Leverage-Enhanced Sampling Owen Method for Explainable Artificial Intelligence",
+          "url": "https://arxiv.org/abs/2611.21504",
+          "arxivId": "2611.21504",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "Recently, the Shapley value has been widely applied in machine learning for feature importance analysis and model explainability. The multilinear extension of games proposed by Owen (1972) expresses the Shapley value as the integral of partial derivatives along the main diagonal of the cube. Direct evaluation of this integral requires exponential-time computation of the partial derivatives. To improve computational efficiency, we propose a sampling-based estimation strategy within Owen's multilinear extension framework, combining stratified sampling with coalition leverage scores. Experimental results demonstrate that the proposed method significantly reduces computational costs while maintaining explanation accuracy."
+        },
+        {
+          "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+          "url": "https://arxiv.org/abs/2611.21387",
+          "arxivId": "2611.21387",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "We study the fair division of indivisible chores among agents with additive disutilities, focusing on the central fairness notion of envy-freeness up to any chore (EFX), and its multiplicative approximations. Although the existence of constant-factor approximations to EFX are known, computing such an allocation in polynomial time remained open. We resolve this question by giving an algorithm that, for every $\\varepsilon\\in(0,1)$, computes a $(3+\\varepsilon)$-EFX allocation in time polynomial in the input length and $1/\\varepsilon$. Our result relies on two algorithmic contributions. First, we give a fully polynomial-time approximation scheme (FPTAS) for earning-restricted (ER) equilibria with equal earning requirements and arbitrary feasible chore earning limits. We develop a new nonconvex program with chore payouts and money-flow variables, and prove that every local maximum yields an exact ER equilibrium. We then give a mirror-ascent algorithm for this program and prove that it converges to an approximate ER equilibrium in polynomial time. Second, we give a new procedure that converts the approximate equilibrium into a $(3+\\varepsilon)$-EFX-friendly allocation, a suitable starting point for the chore-swap framework of Garg and Murhekar (2026). The procedure uses a flexible price threshold to choose swap chores and their recipients together, overcoming a factor-four bottleneck in the earlier approaches while accommodating approximate earnings. We expect these ideas to be useful more broadly in fair division, including for goods and other fairness notions."
+        },
+        {
+          "title": "Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity",
+          "url": "https://arxiv.org/abs/2611.21262",
+          "arxivId": "2611.21262",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "q-fin.RM",
+            "cs.GT",
+            "econ.TH",
+            "q-fin.MF"
+          ],
+          "abstract": "A network in which every bank pays in full can nevertheless admit a self-fulfilling settlement freeze under the same balance-sheet fundamentals. Thus, observing full repayment does not establish the uniqueness or robustness of the payment equilibrium. We derive this result from a precautionary-liquidity choice: banks may delay otherwise feasible payments to insure an interim funding need, trading a positive settlement-discipline cost against the marginal value of retained cash. The optimal reserve is a critical quantile of future liquidity requirements, and the repayment rule nests Eisenberg-Noe maximal feasible clearing exactly. Counterparty underpayment both reduces current cash and raises desired reserves. We characterise network amplification and the conditions for coexistence, including a homogeneous two-bank GPD frontier in which interbank exposure and maximum funding pass-through enter through one dimensionless index. A two-date settlement accounting rule distinguishes payment timing from ultimate default. The main result concerns equilibrium coexistence; the conditional best-response adjustment diagnostic does not assign selection probabilities."
+        },
+        {
+          "title": "Nearly Settling the Complexity of Connected $\\varepsilon$-Envy-Free Cake Cutting",
+          "url": "https://arxiv.org/abs/2611.20890",
+          "arxivId": "2611.20890",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC"
+          ],
+          "abstract": "Envy-free cake cutting has been one of the central problems in fair division. In cake cutting, agents' preferences over the cake are accessed through Robertson--Webb (RW) queries. For three or more agents, no algorithm that makes finitely many RW queries can always find a contiguous, exactly envy-free allocation. For contiguous $\\varepsilon$-envy-free allocations, however, Hollender and Rubinstein~(JACM, 2025) showed that $\\poly(\\log(1/\\varepsilon))$ RW queries suffice for four agents, leaving open whether such a bound is possible for five or more agents. In this paper, we establish a striking change in query complexity: $\\poly(\\log(1/\\varepsilon))$ RW queries suffice for up to five agents, whereas $(1/\\varepsilon)^{Ω(1)}$ queries are necessary for seven or more agents, even when valuations are additive. Thus, we resolve the five-agent case and, more broadly, determine whether polylogarithmic query complexity is possible for every number of agents except six. We also explore the computational complexity of finding contiguous $\\varepsilon$-envy-free allocations. When monotone Lipschitz valuations are given by polynomial-time evaluation procedures (e.g., arithmetic circuits and efficiently computable Turing machines), we show that an $\\varepsilon$-envy-free division can be computed in polynomial time for five agents. In contrast, even for additive valuations, finding an $\\varepsilon$-envy-free division is UEOPL-hard for every fixed number of agents $n\\ge7$ and PPAD-complete for every fixed $n\\ge13$."
+        },
+        {
+          "title": "A Combinatorial Characterization of Immunity to the Strong Braess Paradox",
+          "url": "https://arxiv.org/abs/2611.20640",
+          "arxivId": "2611.20640",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "In a nonatomic congestion game, a strong Braess paradox occurs when reducing resource costs, population demands, or both increases at least one population's equilibrium cost. We characterize immunity when each population's available strategies form a fixed finite family of nonempty subsets of a common resource set. Immunity means that no such paradox can arise for any nonnegative continuous nondecreasing resource cost functions common to all populations and any positive demand vector. Our characterization resolves the open question posed by Fujishige et al.(2017) without varying the resource embedding. A menu is positively exposed if it consists of all available strategies of minimum total weight for some strictly positive resource weights. For a single population, we prove that immunity holds if and only if the column matroid of the augmented incidence matrix is series-parallel for every positively exposed menu. For multiple populations, we consider one menu for each population, all exposed by the same positive weights. The associated dual matroid includes one labeled element for each population to track its demand. Immunity holds if and only if, for every such collection of menus, each marked resource block is series-parallel and all demand labels retained in that block are parallel. We establish these characterizations through an affine response criterion and a blockwise ray lemma. Our results recover the immunity of matroid base systems under arbitrary resource sharing and the series-parallel routing criterion for complete acyclic path systems. Whenever a strategy system is not immune, we construct a strong Braess paradox with all demands equal to one and affine resource costs having strictly positive slopes and intercepts, by lowering just one intercept while keeping it positive. When strategies are listed explicitly, nonimmunity has polynomial-size certificates."
+        },
+        {
+          "title": "Payoff-Based Certificates for Convergence to Pure Nash Equilibria under Replicator Dynamics",
+          "url": "https://arxiv.org/abs/2611.20407",
+          "arxivId": "2611.20407",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "abstract": "For finite bimatrix games, we give a payoff-based sufficient condition $E>0$ for an interior initial state to converge to a specified strict pure Nash equilibrium under replicator dynamics. The construction combines lower bounds on the growth rates of log probability ratios between target and alternative actions with a first integral of a two-dimensional comparison system. It allows one player's payoff advantage to compensate for the other's disadvantage, certifying convergence even when a target action initially loses probability. For rational inputs and integration base points with algebraic exponentials, we give a finite exact test. We obtain closed-form box probabilities and, when all nontarget actions are included, closed-form upper bounds on convergence time. In two-action coordination games, choosing the base points at the sign thresholds recovers the full basin of attraction. Experiments on random games show that basin coverage shrinks rapidly with the number of actions. For $n=4,5,6$, median entry times are approximately 70% of median box-entry times without shifts and 40% for a union over 16 shift choices. Extensions cover multiplayer games through cooperative comparison systems and explicit boxes, and discrete-time exponential-weights learning under explicit step-size conditions."
+        },
+        {
+          "title": "Settling the Support Complexity of Correlated Equilibria",
+          "url": "https://arxiv.org/abs/2611.20362",
+          "arxivId": "2611.20362",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "abstract": "We study the support complexity of approximate correlated equilibria (CE) in two-player games, that is, the minimum number of pure action profiles that must be assigned positive probability to approximate a correlated equilibrium of a two-player matrix game. For $\\varepsilon$-approximate coarse correlated equilibria, constant approximation is possible with support $O(\\log N/\\varepsilon^2)$ in $N\\times N$ games. For correlated equilibria, the best known upper bound was $O(\\log^2 N/\\varepsilon^4)$ [Babichenko et al., 2014, 2017], but whether this bound was tight remained open. We establish a matching lower bound, resolving the open question of Ko and Schvartzman [2017]. Specifically, we show that, already for two-player zero-sum games, for every $1\\leq k\\leq N^{1/2}$ the worst-case correlated-equilibrium gap achievable by a distribution supported on at most $k$ pure profiles is $$ Θ\\left( \\min\\left\\{1,\\frac{\\sqrt{\\log N}}{k^{1/4}}\\right\\} \\right), $$ which implies a $Θ(\\log^2 N/\\varepsilon^4)$ worst-case support bound. The proof builds on a probabilistic-method construction based on random sign matrices."
+        },
+        {
+          "title": "Intransigence or compromise: concatenated opinion dynamics with voting feedback",
+          "url": "https://arxiv.org/abs/2611.21113",
+          "arxivId": "2611.21113",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "econ.TH",
+            "eess.SY",
+            "nlin.AO"
+          ],
+          "abstract": "In this paper, we study opinion evolution in a sequence of Friedkin-Johnsen (FJ) models, concatenated so that the final opinions of each model serve as the initial opinions of the next. Each FJ model is followed by a vote, and each agent becomes partially or fully stubborn in the next model, depending on how close its opinion is to the voting result. With the state-dependent switching of stubbornness, the dynamics are not guaranteed to be contractive. We show that, over any fixed strongly connected network, the opinions always converge. A sufficient condition on the initial opinions is proposed, under which consensus is reached exponentially fast. For the complete graph, we further show that, if the agents' stubbornness levels do not differ too much, an agent that is partially stubborn in one FJ model can never become fully stubborn in a subsequent one: once it has started compromising, it keeps doing so."
+        },
+        {
+          "title": "When Better Artificial Intelligence Widens the Adoption Gap in Health Care",
+          "url": "https://arxiv.org/abs/2611.20561",
+          "arxivId": "2611.20561",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "abstract": "Artificial intelligence (AI) can assist healthcare providers in clinical practice or replace services for which they are paid. We model how provider influence shapes two policy choices. The first is adoption, the share of cases in which coverage is switched to care using AI. The second is the review requirement, the number of paid reviews that must accompany AI when it is used in clinical care. Assistance can lower providers' costs and increase their profits while leaving paid reviews unaffected. However, increasingly capable AI may support autonomous use that can replace reviews and reduce providers' profits. Provider gains from adoption first rise and subsequently fall as AI capability improves. Hence, providers oppose sufficiently autonomous AI if their lost income from reviews exceeds savings from better assistance. Opposition to AI adoption arises earlier for AI that displaces more reviews. When providers can influence adoption but not the review requirement, their opposition causes under-adoption. The patient value forgone at the margin grows as AI improves. At interior policies, provider influence over both decisions widens adoption and raises review requirements above the patient optimum."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Leverage-Enhanced Sampling Owen Method for Explainable Artificial Intelligence",
+              "url": "https://arxiv.org/abs/2611.21504",
+              "arxivId": "2611.21504",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "Recently, the Shapley value has been widely applied in machine learning for feature importance analysis and model explainability. The multilinear extension of games proposed by Owen (1972) expresses the Shapley value as the integral of partial derivatives along the main diagonal of the cube. Direct evaluation of this integral requires exponential-time computation of the partial derivatives. To improve computational efficiency, we propose a sampling-based estimation strategy within Owen's multilinear extension framework, combining stratified sampling with coalition leverage scores. Experimental results demonstrate that the proposed method significantly reduces computational costs while maintaining explanation accuracy."
+            },
+            {
+              "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+              "url": "https://arxiv.org/abs/2611.21387",
+              "arxivId": "2611.21387",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "We study the fair division of indivisible chores among agents with additive disutilities, focusing on the central fairness notion of envy-freeness up to any chore (EFX), and its multiplicative approximations. Although the existence of constant-factor approximations to EFX are known, computing such an allocation in polynomial time remained open. We resolve this question by giving an algorithm that, for every $\\varepsilon\\in(0,1)$, computes a $(3+\\varepsilon)$-EFX allocation in time polynomial in the input length and $1/\\varepsilon$. Our result relies on two algorithmic contributions. First, we give a fully polynomial-time approximation scheme (FPTAS) for earning-restricted (ER) equilibria with equal earning requirements and arbitrary feasible chore earning limits. We develop a new nonconvex program with chore payouts and money-flow variables, and prove that every local maximum yields an exact ER equilibrium. We then give a mirror-ascent algorithm for this program and prove that it converges to an approximate ER equilibrium in polynomial time. Second, we give a new procedure that converts the approximate equilibrium into a $(3+\\varepsilon)$-EFX-friendly allocation, a suitable starting point for the chore-swap framework of Garg and Murhekar (2026). The procedure uses a flexible price threshold to choose swap chores and their recipients together, overcoming a factor-four bottleneck in the earlier approaches while accommodating approximate earnings. We expect these ideas to be useful more broadly in fair division, including for goods and other fairness notions."
+            },
+            {
+              "title": "Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity",
+              "url": "https://arxiv.org/abs/2611.21262",
+              "arxivId": "2611.21262",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "q-fin.RM",
+                "cs.GT",
+                "econ.TH",
+                "q-fin.MF"
+              ],
+              "abstract": "A network in which every bank pays in full can nevertheless admit a self-fulfilling settlement freeze under the same balance-sheet fundamentals. Thus, observing full repayment does not establish the uniqueness or robustness of the payment equilibrium. We derive this result from a precautionary-liquidity choice: banks may delay otherwise feasible payments to insure an interim funding need, trading a positive settlement-discipline cost against the marginal value of retained cash. The optimal reserve is a critical quantile of future liquidity requirements, and the repayment rule nests Eisenberg-Noe maximal feasible clearing exactly. Counterparty underpayment both reduces current cash and raises desired reserves. We characterise network amplification and the conditions for coexistence, including a homogeneous two-bank GPD frontier in which interbank exposure and maximum funding pass-through enter through one dimensionless index. A two-date settlement accounting rule distinguishes payment timing from ultimate default. The main result concerns equilibrium coexistence; the conditional best-response adjustment diagnostic does not assign selection probabilities."
+            },
+            {
+              "title": "Nearly Settling the Complexity of Connected $\\varepsilon$-Envy-Free Cake Cutting",
+              "url": "https://arxiv.org/abs/2611.20890",
+              "arxivId": "2611.20890",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC"
+              ],
+              "abstract": "Envy-free cake cutting has been one of the central problems in fair division. In cake cutting, agents' preferences over the cake are accessed through Robertson--Webb (RW) queries. For three or more agents, no algorithm that makes finitely many RW queries can always find a contiguous, exactly envy-free allocation. For contiguous $\\varepsilon$-envy-free allocations, however, Hollender and Rubinstein~(JACM, 2025) showed that $\\poly(\\log(1/\\varepsilon))$ RW queries suffice for four agents, leaving open whether such a bound is possible for five or more agents. In this paper, we establish a striking change in query complexity: $\\poly(\\log(1/\\varepsilon))$ RW queries suffice for up to five agents, whereas $(1/\\varepsilon)^{Ω(1)}$ queries are necessary for seven or more agents, even when valuations are additive. Thus, we resolve the five-agent case and, more broadly, determine whether polylogarithmic query complexity is possible for every number of agents except six. We also explore the computational complexity of finding contiguous $\\varepsilon$-envy-free allocations. When monotone Lipschitz valuations are given by polynomial-time evaluation procedures (e.g., arithmetic circuits and efficiently computable Turing machines), we show that an $\\varepsilon$-envy-free division can be computed in polynomial time for five agents. In contrast, even for additive valuations, finding an $\\varepsilon$-envy-free division is UEOPL-hard for every fixed number of agents $n\\ge7$ and PPAD-complete for every fixed $n\\ge13$."
+            },
+            {
+              "title": "A Combinatorial Characterization of Immunity to the Strong Braess Paradox",
+              "url": "https://arxiv.org/abs/2611.20640",
+              "arxivId": "2611.20640",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "In a nonatomic congestion game, a strong Braess paradox occurs when reducing resource costs, population demands, or both increases at least one population's equilibrium cost. We characterize immunity when each population's available strategies form a fixed finite family of nonempty subsets of a common resource set. Immunity means that no such paradox can arise for any nonnegative continuous nondecreasing resource cost functions common to all populations and any positive demand vector. Our characterization resolves the open question posed by Fujishige et al.(2017) without varying the resource embedding. A menu is positively exposed if it consists of all available strategies of minimum total weight for some strictly positive resource weights. For a single population, we prove that immunity holds if and only if the column matroid of the augmented incidence matrix is series-parallel for every positively exposed menu. For multiple populations, we consider one menu for each population, all exposed by the same positive weights. The associated dual matroid includes one labeled element for each population to track its demand. Immunity holds if and only if, for every such collection of menus, each marked resource block is series-parallel and all demand labels retained in that block are parallel. We establish these characterizations through an affine response criterion and a blockwise ray lemma. Our results recover the immunity of matroid base systems under arbitrary resource sharing and the series-parallel routing criterion for complete acyclic path systems. Whenever a strategy system is not immune, we construct a strong Braess paradox with all demands equal to one and affine resource costs having strictly positive slopes and intercepts, by lowering just one intercept while keeping it positive. When strategies are listed explicitly, nonimmunity has polynomial-size certificates."
+            },
+            {
+              "title": "Payoff-Based Certificates for Convergence to Pure Nash Equilibria under Replicator Dynamics",
+              "url": "https://arxiv.org/abs/2611.20407",
+              "arxivId": "2611.20407",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "abstract": "For finite bimatrix games, we give a payoff-based sufficient condition $E>0$ for an interior initial state to converge to a specified strict pure Nash equilibrium under replicator dynamics. The construction combines lower bounds on the growth rates of log probability ratios between target and alternative actions with a first integral of a two-dimensional comparison system. It allows one player's payoff advantage to compensate for the other's disadvantage, certifying convergence even when a target action initially loses probability. For rational inputs and integration base points with algebraic exponentials, we give a finite exact test. We obtain closed-form box probabilities and, when all nontarget actions are included, closed-form upper bounds on convergence time. In two-action coordination games, choosing the base points at the sign thresholds recovers the full basin of attraction. Experiments on random games show that basin coverage shrinks rapidly with the number of actions. For $n=4,5,6$, median entry times are approximately 70% of median box-entry times without shifts and 40% for a union over 16 shift choices. Extensions cover multiplayer games through cooperative comparison systems and explicit boxes, and discrete-time exponential-weights learning under explicit step-size conditions."
+            },
+            {
+              "title": "Settling the Support Complexity of Correlated Equilibria",
+              "url": "https://arxiv.org/abs/2611.20362",
+              "arxivId": "2611.20362",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "abstract": "We study the support complexity of approximate correlated equilibria (CE) in two-player games, that is, the minimum number of pure action profiles that must be assigned positive probability to approximate a correlated equilibrium of a two-player matrix game. For $\\varepsilon$-approximate coarse correlated equilibria, constant approximation is possible with support $O(\\log N/\\varepsilon^2)$ in $N\\times N$ games. For correlated equilibria, the best known upper bound was $O(\\log^2 N/\\varepsilon^4)$ [Babichenko et al., 2014, 2017], but whether this bound was tight remained open. We establish a matching lower bound, resolving the open question of Ko and Schvartzman [2017]. Specifically, we show that, already for two-player zero-sum games, for every $1\\leq k\\leq N^{1/2}$ the worst-case correlated-equilibrium gap achievable by a distribution supported on at most $k$ pure profiles is $$ Θ\\left( \\min\\left\\{1,\\frac{\\sqrt{\\log N}}{k^{1/4}}\\right\\} \\right), $$ which implies a $Θ(\\log^2 N/\\varepsilon^4)$ worst-case support bound. The proof builds on a probabilistic-method construction based on random sign matrices."
+            },
+            {
+              "title": "Intransigence or compromise: concatenated opinion dynamics with voting feedback",
+              "url": "https://arxiv.org/abs/2611.21113",
+              "arxivId": "2611.21113",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "econ.TH",
+                "eess.SY",
+                "nlin.AO"
+              ],
+              "abstract": "In this paper, we study opinion evolution in a sequence of Friedkin-Johnsen (FJ) models, concatenated so that the final opinions of each model serve as the initial opinions of the next. Each FJ model is followed by a vote, and each agent becomes partially or fully stubborn in the next model, depending on how close its opinion is to the voting result. With the state-dependent switching of stubbornness, the dynamics are not guaranteed to be contractive. We show that, over any fixed strongly connected network, the opinions always converge. A sufficient condition on the initial opinions is proposed, under which consensus is reached exponentially fast. For the complete graph, we further show that, if the agents' stubbornness levels do not differ too much, an agent that is partially stubborn in one FJ model can never become fully stubborn in a subsequent one: once it has started compromising, it keeps doing so."
+            },
+            {
+              "title": "When Better Artificial Intelligence Widens the Adoption Gap in Health Care",
+              "url": "https://arxiv.org/abs/2611.20561",
+              "arxivId": "2611.20561",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "abstract": "Artificial intelligence (AI) can assist healthcare providers in clinical practice or replace services for which they are paid. We model how provider influence shapes two policy choices. The first is adoption, the share of cases in which coverage is switched to care using AI. The second is the review requirement, the number of paid reviews that must accompany AI when it is used in clinical care. Assistance can lower providers' costs and increase their profits while leaving paid reviews unaffected. However, increasingly capable AI may support autonomous use that can replace reviews and reduce providers' profits. Provider gains from adoption first rise and subsequently fall as AI capability improves. Hence, providers oppose sufficiently autonomous AI if their lost income from reviews exceeds savings from better assistance. Opposition to AI adoption arises earlier for AI that displaces more reviews. When providers can influence adoption but not the review requirement, their opposition causes under-adoption. The patient value forgone at the margin grows as AI improves. At interior policies, provider influence over both decisions widens adoption and raises review requirements above the patient optimum."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "modelNaturalness": 2,
+                  "theoreticalStrength": 4,
+                  "guaranteeQuality": 3,
+                  "readingValue": 3,
+                  "penalty": -3,
+                  "aiRelevance": 5,
+                  "agtRelevance": 6
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 2,
+                  "agtRelevance": 9
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 9,
+                  "guaranteeQuality": 5,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "modelNaturalness": 8,
+                  "theoreticalStrength": 10,
+                  "guaranteeQuality": 6,
+                  "readingValue": 6,
+                  "penalty": 0,
+                  "aiRelevance": 0,
+                  "agtRelevance": 10
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "modelNaturalness": 4,
+                  "theoreticalStrength": 5,
+                  "guaranteeQuality": 3,
+                  "readingValue": 4,
+                  "penalty": -3,
+                  "aiRelevance": 0,
+                  "agtRelevance": 6
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "modelNaturalness": 7,
+                  "theoreticalStrength": 8,
+                  "guaranteeQuality": 5,
+                  "readingValue": 5,
+                  "penalty": -1,
+                  "aiRelevance": 8,
+                  "agtRelevance": 8
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Leverage-Enhanced Sampling Owen Method for Explainable Artificial Intelligence",
+              "url": "https://arxiv.org/abs/2611.21504",
+              "arxivId": "2611.21504",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 2.0,
+                "theoreticalStrength": 4.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 3.0,
+                "aiRelevance": 5.0,
+                "agtRelevance": 6.0,
+                "penalty": -3.0,
+                "baseTotal": 9.0,
+                "bonus": 1.5,
+                "total": 6.3
+              }
+            },
+            {
+              "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+              "url": "https://arxiv.org/abs/2611.21387",
+              "arxivId": "2611.21387",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity",
+              "url": "https://arxiv.org/abs/2611.21262",
+              "arxivId": "2611.21262",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "q-fin.RM",
+                "cs.GT",
+                "econ.TH",
+                "q-fin.MF"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 2.0,
+                "agtRelevance": 9.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 1.8,
+                "total": 25.9
+              }
+            },
+            {
+              "title": "Nearly Settling the Complexity of Connected $\\varepsilon$-Envy-Free Cake Cutting",
+              "url": "https://arxiv.org/abs/2611.20890",
+              "arxivId": "2611.20890",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.CC"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "A Combinatorial Characterization of Immunity to the Strong Braess Paradox",
+              "url": "https://arxiv.org/abs/2611.20640",
+              "arxivId": "2611.20640",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Payoff-Based Certificates for Convergence to Pure Nash Equilibria under Replicator Dynamics",
+              "url": "https://arxiv.org/abs/2611.20407",
+              "arxivId": "2611.20407",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 9.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "bonus": 0.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Settling the Support Complexity of Correlated Equilibria",
+              "url": "https://arxiv.org/abs/2611.20362",
+              "arxivId": "2611.20362",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.GT",
+                "cs.LG"
+              ],
+              "scores": {
+                "modelNaturalness": 8.0,
+                "theoreticalStrength": 10.0,
+                "guaranteeQuality": 6.0,
+                "readingValue": 6.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 10.0,
+                "penalty": 0.0,
+                "baseTotal": 30.0,
+                "bonus": 0.0,
+                "total": 30.0
+              }
+            },
+            {
+              "title": "Intransigence or compromise: concatenated opinion dynamics with voting feedback",
+              "url": "https://arxiv.org/abs/2611.21113",
+              "arxivId": "2611.21113",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "econ.TH",
+                "eess.SY",
+                "nlin.AO"
+              ],
+              "scores": {
+                "modelNaturalness": 4.0,
+                "theoreticalStrength": 5.0,
+                "guaranteeQuality": 3.0,
+                "readingValue": 4.0,
+                "aiRelevance": 0.0,
+                "agtRelevance": 6.0,
+                "penalty": -3.0,
+                "baseTotal": 13.0,
+                "bonus": 0.0,
+                "total": 7.8
+              }
+            },
+            {
+              "title": "When Better Artificial Intelligence Widens the Adoption Gap in Health Care",
+              "url": "https://arxiv.org/abs/2611.20561",
+              "arxivId": "2611.20561",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "econ.TH"
+              ],
+              "scores": {
+                "modelNaturalness": 7.0,
+                "theoreticalStrength": 8.0,
+                "guaranteeQuality": 5.0,
+                "readingValue": 5.0,
+                "aiRelevance": 8.0,
+                "agtRelevance": 8.0,
+                "penalty": -1.0,
+                "baseTotal": 24.0,
+                "bonus": 6.4,
+                "total": 24.3
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Leverage-Enhanced Sampling Owen Method for Explainable Artificial Intelligence",
+          "url": "https://arxiv.org/abs/2611.21504",
+          "arxivId": "2611.21504",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 2.0,
+            "theoreticalStrength": 4.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 3.0,
+            "aiRelevance": 5.0,
+            "agtRelevance": 6.0,
+            "penalty": -3.0,
+            "baseTotal": 9.0,
+            "bonus": 1.5,
+            "total": 6.3
+          }
+        },
+        {
+          "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+          "url": "https://arxiv.org/abs/2611.21387",
+          "arxivId": "2611.21387",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity",
+          "url": "https://arxiv.org/abs/2611.21262",
+          "arxivId": "2611.21262",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "q-fin.RM",
+            "cs.GT",
+            "econ.TH",
+            "q-fin.MF"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 2.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 1.8,
+            "total": 25.9
+          }
+        },
+        {
+          "title": "Nearly Settling the Complexity of Connected $\\varepsilon$-Envy-Free Cake Cutting",
+          "url": "https://arxiv.org/abs/2611.20890",
+          "arxivId": "2611.20890",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "A Combinatorial Characterization of Immunity to the Strong Braess Paradox",
+          "url": "https://arxiv.org/abs/2611.20640",
+          "arxivId": "2611.20640",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Payoff-Based Certificates for Convergence to Pure Nash Equilibria under Replicator Dynamics",
+          "url": "https://arxiv.org/abs/2611.20407",
+          "arxivId": "2611.20407",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Settling the Support Complexity of Correlated Equilibria",
+          "url": "https://arxiv.org/abs/2611.20362",
+          "arxivId": "2611.20362",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Intransigence or compromise: concatenated opinion dynamics with voting feedback",
+          "url": "https://arxiv.org/abs/2611.21113",
+          "arxivId": "2611.21113",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "econ.TH",
+            "eess.SY",
+            "nlin.AO"
+          ],
+          "scores": {
+            "modelNaturalness": 4.0,
+            "theoreticalStrength": 5.0,
+            "guaranteeQuality": 3.0,
+            "readingValue": 4.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 6.0,
+            "penalty": -3.0,
+            "baseTotal": 13.0,
+            "bonus": 0.0,
+            "total": 7.8
+          }
+        },
+        {
+          "title": "When Better Artificial Intelligence Widens the Adoption Gap in Health Care",
+          "url": "https://arxiv.org/abs/2611.20561",
+          "arxivId": "2611.20561",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "econ.TH"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 5.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 8.0,
+            "penalty": -1.0,
+            "baseTotal": 24.0,
+            "bonus": 6.4,
+            "total": 24.3
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+          "url": "https://arxiv.org/abs/2611.21387",
+          "arxivId": "2611.21387",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Nearly Settling the Complexity of Connected $\\varepsilon$-Envy-Free Cake Cutting",
+          "url": "https://arxiv.org/abs/2611.20890",
+          "arxivId": "2611.20890",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.CC"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "A Combinatorial Characterization of Immunity to the Strong Braess Paradox",
+          "url": "https://arxiv.org/abs/2611.20640",
+          "arxivId": "2611.20640",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Settling the Support Complexity of Correlated Equilibria",
+          "url": "https://arxiv.org/abs/2611.20362",
+          "arxivId": "2611.20362",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT",
+            "cs.LG"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          }
+        },
+        {
+          "title": "Payoff-Based Certificates for Convergence to Pure Nash Equilibria under Replicator Dynamics",
+          "url": "https://arxiv.org/abs/2611.20407",
+          "arxivId": "2611.20407",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.GT"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 27.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+            "url": "https://arxiv.org/abs/2611.21387",
+            "arxivId": "2611.21387",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "常数因子EFX分配任务的多项式时间算法",
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "市场/匹配",
+              "多智能体系统",
+              "在线算法"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么要研究这个问题？当不可分的任务（如家务、轮班）需要公平分配时，经典公平概念‘无嫉妒’往往无法实现。为此，学界提出了更强的放松标准EFX（无嫉妒至任意任务），但此前虽知常数因子近似EFX存在，却缺乏多项式时间算法。本文旨在填补这一计算空白，解决从存在性到高效构造的关键跃迁。",
+              "modelAndSetup": "作者如何把问题抽象成模型？模型包含一组代理和一组不可分的负效用任务，每个代理对任务有加性厌恶。目标是分配任务使得任意代理在移除自己任一任务后都不嫉妒他人。核心挑战在于结合earning-restricted（ER）市场均衡与价格阈值机制，在满足代理最优行为（MPB）和收入限制的前提下逼近EFX。",
+              "contributionsAndResults": "论文真正证明或发现了什么？作者首次给出计算(3+ε)-EFX分配的多项式时间算法，解决了长期开放问题。该结果通过两个关键步骤达成：一是为ER均衡设计全多项式时间近似方案（FPTAS），二是提出灵活价格阈值法构造EFX友好型初始分配，突破了此前4-因子瓶颈。",
+              "methodsAndTechniques": "作者是怎么得到这些结果的？技术核心是构造一个非凸规划（ER-MaxMin），其局部极大解对应精确ER均衡，并应用镜像上升法高效逼近。随后通过动态调整价格阈值联合选择交换任务及其接收者，使残余束更小，从而在近似均衡基础上构造出高质量初始解用于后续任务交换框架。",
+              "limitationsAndReadingValue": "这篇论文该如何评价、是否值得继续读？尽管结果依赖于特定ER市场结构和固定收入假设，推广至非对称收入仍开放，但其方法极具启发性。最值得读的是镜像上升在非凸均衡求解中的创新应用，以及灵活阈值带来的因子改进直觉，对公平分配与市场设计均有深远影响。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "常数因子EFX分配任务的多项式时间算法",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么要研究这个问题？当不可分的任务（如家务、轮班）需要公平分配时，经典公平概念‘无嫉妒’往往无法实现。为此，学界提出了更强的放松标准EFX（无嫉妒至任意任务），但此前虽知常数因子近似EFX存在，却缺乏多项式时间算法。本文旨在填补这一计算空白，解决从存在性到高效构造的关键跃迁。",
+              "modelAndSetup": "作者如何把问题抽象成模型？模型包含一组代理和一组不可分的负效用任务，每个代理对任务有加性厌恶。目标是分配任务使得任意代理在移除自己任一任务后都不嫉妒他人。核心挑战在于结合earning-restricted（ER）市场均衡与价格阈值机制，在满足代理最优行为（MPB）和收入限制的前提下逼近EFX。",
+              "contributionsAndResults": "论文真正证明或发现了什么？作者首次给出计算(3+ε)-EFX分配的多项式时间算法，解决了长期开放问题。该结果通过两个关键步骤达成：一是为ER均衡设计全多项式时间近似方案（FPTAS），二是提出灵活价格阈值法构造EFX友好型初始分配，突破了此前4-因子瓶颈。",
+              "methodsAndTechniques": "作者是怎么得到这些结果的？技术核心是构造一个非凸规划（ER-MaxMin），其局部极大解对应精确ER均衡，并应用镜像上升法高效逼近。随后通过动态调整价格阈值联合选择交换任务及其接收者，使残余束更小，从而在近似均衡基础上构造出高质量初始解用于后续任务交换框架。",
+              "limitationsAndReadingValue": "这篇论文该如何评价、是否值得继续读？尽管结果依赖于特定ER市场结构和固定收入假设，推广至非对称收入仍开放，但其方法极具启发性。最值得读的是镜像上升在非凸均衡求解中的创新应用，以及灵活阈值带来的因子改进直觉，对公平分配与市场设计均有深远影响。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "市场/匹配",
+              "多智能体系统",
+              "在线算法"
+            ],
+            "researchParadigmTags": [
+              "算法设计",
+              "理论推导",
+              "均衡分析",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Nearly Settling the Complexity of Connected $\\varepsilon$-Envy-Free Cake Cutting",
+            "url": "https://arxiv.org/abs/2611.20890",
+            "arxivId": "2611.20890",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "几乎完全确定连通 ε-无嫉妒蛋糕切割的复杂度",
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析",
+              "形式化验证"
+            ],
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "计算复杂性",
+              "开放问题"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为何研究连通蛋糕切割的复杂度？经典结果表明，三名以上代理人无法通过有限次查询找到精确无嫉妒的连通分配。为此，研究转向允许少量嫉妒（ε-无嫉妒）的近似解。此前工作已知四人情形可在对数查询内解决，但五人及以上仍开放。本文旨在填补这一空白，探究不同代理人数下近似效率的根本分界。",
+              "modelAndSetup": "模型基于标准的Robertson-Webb查询框架，代理人通过估值函数表达对蛋糕区间的价值偏好。目标是将蛋糕划分为n个连通片段并分配给n名代理人，使得每人对自己片段的估值不低于他人片段减去ε。研究关注在任意非原子加法估值下，找到此类分配所需的最小查询次数，并区分确定性与随机协议的性能。",
+              "contributionsAndResults": "论文取得近乎完整的分类：对于五名及以下代理人，存在仅需O(log(1/ε))次查询的确定性算法；而对于七名及以上，任何确定性协议至少需要Ω(ε⁻¹ᐟ³)次查询，揭示了从对数到多项式的根本跃变。此外，计算复杂性上，七人以上为UEOPL难，十三人以上为PPAD完全，仅六人情形未决。",
+              "methodsAndTechniques": "核心技术在于统一的几何搜索框架：将分配转化为二维参数空间上的分区族，在其中寻找满足‘风数’非零的小单元格。五人算法利用平面平衡需求与霍尔匹配定理；七人下界则通过编码一条隐藏路径于嫉妒比较中，使每次查询仅泄露局部信息，从而强制高查询成本。",
+              "limitationsAndReadingValue": "主要局限在于六人情形仍未解决，且下界构造依赖特定密度限制。尽管如此，论文提供了清晰的复杂性图景，其方法融合了拓扑、组合与计算复杂性理论。最值得阅读的是其统一的搜索原理、紧致的上下界分析，以及对AI辅助数学证明的实践探索。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "几乎完全确定连通 ε-无嫉妒蛋糕切割的复杂度",
+            "summarySections": {
+              "backgroundAndQuestion": "为何研究连通蛋糕切割的复杂度？经典结果表明，三名以上代理人无法通过有限次查询找到精确无嫉妒的连通分配。为此，研究转向允许少量嫉妒（ε-无嫉妒）的近似解。此前工作已知四人情形可在对数查询内解决，但五人及以上仍开放。本文旨在填补这一空白，探究不同代理人数下近似效率的根本分界。",
+              "modelAndSetup": "模型基于标准的Robertson-Webb查询框架，代理人通过估值函数表达对蛋糕区间的价值偏好。目标是将蛋糕划分为n个连通片段并分配给n名代理人，使得每人对自己片段的估值不低于他人片段减去ε。研究关注在任意非原子加法估值下，找到此类分配所需的最小查询次数，并区分确定性与随机协议的性能。",
+              "contributionsAndResults": "论文取得近乎完整的分类：对于五名及以下代理人，存在仅需O(log(1/ε))次查询的确定性算法；而对于七名及以上，任何确定性协议至少需要Ω(ε⁻¹ᐟ³)次查询，揭示了从对数到多项式的根本跃变。此外，计算复杂性上，七人以上为UEOPL难，十三人以上为PPAD完全，仅六人情形未决。",
+              "methodsAndTechniques": "核心技术在于统一的几何搜索框架：将分配转化为二维参数空间上的分区族，在其中寻找满足‘风数’非零的小单元格。五人算法利用平面平衡需求与霍尔匹配定理；七人下界则通过编码一条隐藏路径于嫉妒比较中，使每次查询仅泄露局部信息，从而强制高查询成本。",
+              "limitationsAndReadingValue": "主要局限在于六人情形仍未解决，且下界构造依赖特定密度限制。尽管如此，论文提供了清晰的复杂性图景，其方法融合了拓扑、组合与计算复杂性理论。最值得阅读的是其统一的搜索原理、紧致的上下界分析，以及对AI辅助数学证明的实践探索。"
+            },
+            "contentTags": [
+              "公平性",
+              "机制设计",
+              "多智能体系统",
+              "计算复杂性",
+              "开放问题"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "算法设计",
+              "复杂度分析",
+              "均衡分析",
+              "形式化验证"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "A Combinatorial Characterization of Immunity to the Strong Braess Paradox",
+            "url": "https://arxiv.org/abs/2611.20640",
+            "arxivId": "2611.20640",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "强布雷斯悖论免疫性的组合刻画",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "复杂度分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "网络经济学",
+              "机制设计",
+              "资源分配"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么改善交通网络反而可能增加拥堵？这被称为布雷斯悖论。本文研究在非原子拥塞博弈中，何种策略系统结构能完全免疫于‘强布雷斯悖论’——即降低资源成本或需求后，反而使至少一个群体的均衡成本上升。该问题源于Fujishige等人（2017）提出的公开问题，即在固定资源嵌入下，如何组合刻画这种免疫力。",
+              "modelAndSetup": "模型考虑多个群体，每个群体有固定的需求和一组可用策略，策略是公共资源子集。所有群体共享相同的非递减连续资源成本函数。均衡采用Wardrop原理，即个体无法通过单方面换路降低成本。研究关注的是策略族本身的组合结构，而非特定成本函数或需求值，目标是找出哪些结构能确保任何成本或需求下降都不会导致任何群体的均衡成本上升。",
+              "contributionsAndResults": "论文给出了免疫力的完整组合刻画：对于单一群体，当且仅当每个正暴露菜单的增广关联列拟阵是串并联时，系统免疫；对于多群体，则需每个标记块拟阵既是串并联的，且其中所有保留的需求元素彼此平行。这一结果解决了长期存在的公开问题，并统一了拟阵基系统与串并联网络等已知免疫情形。",
+              "methodsAndTechniques": "作者通过均衡响应系数的仿射几何分析，将无限多的成本与需求变化归约为有限的代数检验。核心是‘基本解’的非负性条件，其与串并联拟阵结构等价。多群体情形的关键是‘射线引理’，它表明在每个资源块内，满足响应非负的需求方向必须共线，从而导出需求元素的平行性条件。",
+              "limitationsAndReadingValue": "结果依赖于对所有正暴露菜单的检验，枚举可能指数级增长，尽管非免疫力有小证书。证明深度结合了拟阵理论、凸几何与均衡敏感性分析，技术性强。最值得读的是其将复杂的动态响应问题转化为纯粹的组合结构判据的洞察力，以及对拟阵、串并联性和均衡稳定性之间深刻联系的揭示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "强布雷斯悖论免疫性的组合刻画",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么改善交通网络反而可能增加拥堵？这被称为布雷斯悖论。本文研究在非原子拥塞博弈中，何种策略系统结构能完全免疫于‘强布雷斯悖论’——即降低资源成本或需求后，反而使至少一个群体的均衡成本上升。该问题源于Fujishige等人（2017）提出的公开问题，即在固定资源嵌入下，如何组合刻画这种免疫力。",
+              "modelAndSetup": "模型考虑多个群体，每个群体有固定的需求和一组可用策略，策略是公共资源子集。所有群体共享相同的非递减连续资源成本函数。均衡采用Wardrop原理，即个体无法通过单方面换路降低成本。研究关注的是策略族本身的组合结构，而非特定成本函数或需求值，目标是找出哪些结构能确保任何成本或需求下降都不会导致任何群体的均衡成本上升。",
+              "contributionsAndResults": "论文给出了免疫力的完整组合刻画：对于单一群体，当且仅当每个正暴露菜单的增广关联列拟阵是串并联时，系统免疫；对于多群体，则需每个标记块拟阵既是串并联的，且其中所有保留的需求元素彼此平行。这一结果解决了长期存在的公开问题，并统一了拟阵基系统与串并联网络等已知免疫情形。",
+              "methodsAndTechniques": "作者通过均衡响应系数的仿射几何分析，将无限多的成本与需求变化归约为有限的代数检验。核心是‘基本解’的非负性条件，其与串并联拟阵结构等价。多群体情形的关键是‘射线引理’，它表明在每个资源块内，满足响应非负的需求方向必须共线，从而导出需求元素的平行性条件。",
+              "limitationsAndReadingValue": "结果依赖于对所有正暴露菜单的检验，枚举可能指数级增长，尽管非免疫力有小证书。证明深度结合了拟阵理论、凸几何与均衡敏感性分析，技术性强。最值得读的是其将复杂的动态响应问题转化为纯粹的组合结构判据的洞察力，以及对拟阵、串并联性和均衡稳定性之间深刻联系的揭示。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "网络经济学",
+              "机制设计",
+              "资源分配"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析",
+              "复杂度分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Settling the Support Complexity of Correlated Equilibria",
+            "url": "https://arxiv.org/abs/2611.20362",
+            "arxivId": "2611.20362",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT",
+              "cs.LG"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "解决相关均衡的支持复杂度",
+            "researchParadigmTags": [
+              "理论推导",
+              "复杂度分析",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "相关均衡",
+              "支持复杂度"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "为什么要研究相关均衡所需支持大小？在博弈论中，纳什均衡要求玩家独立随机化，而相关均衡允许外部协调，从而可能更高效地达到稳定状态。已有研究表明，粗相关均衡可用少量纯策略组合逼近，但相关均衡的最小支持规模尚不清楚。尽管已知上界为 O(log²N/ε⁴)，但此前下界仅为 Ω(log N/ε²)，留下显著差距。本文旨在填补这一空白，明确相关均衡在最坏情况下的支持复杂度。",
+              "modelAndSetup": "作者考虑两人矩阵博弈中的ε-近似相关均衡，目标是最小化联合分布中正概率的纯动作组合数（即支持大小）。定义‘相关均衡间隙’为任一玩家通过推荐依赖的转换函数所能获得的最大期望收益增益。若该间隙不超过ε，则称分布为ε-相关均衡。研究聚焦于零和博弈子类，并分析在不同支持规模k下，最坏情况下仍存在的最小间隙，以此刻画支持复杂度的极限。",
+              "contributionsAndResults": "论文证明了对于任意1≤k≤N¹ᐟ²，存在N×N零和博弈，使得任何至多k个纯策略组合支持的分布，其相关均衡间隙至少为Ω(min{1, √(log N)/k¹ᐟ⁴})。这直接推出最坏情况下支持大小需Ω(log²N/ε⁴)，与已知上界匹配，解决了Ko和Schvartzman提出的公开问题。结果表明，在最坏情况下，相关性无法比两个低支持极小极大策略的乘积进一步减少支持规模。",
+              "methodsAndTechniques": "作者采用概率方法构造硬实例：从独立Rademacher符号矩阵出发，归一化为常数和博弈。关键在于引入插值尺度κₚ(z)，结合最大项与尾部ℓ²质量，用于控制稀疏向量在随机矩阵下的内积行为。通过覆盖论证与Paley-Zygmund不等式，证明该矩阵以高概率同时对所有稀疏非负向量实现下界。最终结合混合范数不等式（Blei不等式）与稀疏性分析，建立总κₚ质量的确定性下界。",
+              "limitationsAndReadingValue": "结果为最坏情况分析，依赖精心构造的随机博弈实例，实际应用中可能无需如此大规模支持。此外，仅针对两人博弈，扩展至多人情形尚待研究。然而，论文的价值在于彻底厘清了相关均衡支持复杂度的本质极限，揭示了即使利用相关性也无法超越乘积策略的效率。最值得阅读的是其巧妙的随机矩阵构造与混合范数分析技术，对理解均衡表示的稀疏性具有深远启示。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "解决相关均衡的支持复杂度",
+            "summarySections": {
+              "backgroundAndQuestion": "为什么要研究相关均衡所需支持大小？在博弈论中，纳什均衡要求玩家独立随机化，而相关均衡允许外部协调，从而可能更高效地达到稳定状态。已有研究表明，粗相关均衡可用少量纯策略组合逼近，但相关均衡的最小支持规模尚不清楚。尽管已知上界为 O(log²N/ε⁴)，但此前下界仅为 Ω(log N/ε²)，留下显著差距。本文旨在填补这一空白，明确相关均衡在最坏情况下的支持复杂度。",
+              "modelAndSetup": "作者考虑两人矩阵博弈中的ε-近似相关均衡，目标是最小化联合分布中正概率的纯动作组合数（即支持大小）。定义‘相关均衡间隙’为任一玩家通过推荐依赖的转换函数所能获得的最大期望收益增益。若该间隙不超过ε，则称分布为ε-相关均衡。研究聚焦于零和博弈子类，并分析在不同支持规模k下，最坏情况下仍存在的最小间隙，以此刻画支持复杂度的极限。",
+              "contributionsAndResults": "论文证明了对于任意1≤k≤N¹ᐟ²，存在N×N零和博弈，使得任何至多k个纯策略组合支持的分布，其相关均衡间隙至少为Ω(min{1, √(log N)/k¹ᐟ⁴})。这直接推出最坏情况下支持大小需Ω(log²N/ε⁴)，与已知上界匹配，解决了Ko和Schvartzman提出的公开问题。结果表明，在最坏情况下，相关性无法比两个低支持极小极大策略的乘积进一步减少支持规模。",
+              "methodsAndTechniques": "作者采用概率方法构造硬实例：从独立Rademacher符号矩阵出发，归一化为常数和博弈。关键在于引入插值尺度κₚ(z)，结合最大项与尾部ℓ²质量，用于控制稀疏向量在随机矩阵下的内积行为。通过覆盖论证与Paley-Zygmund不等式，证明该矩阵以高概率同时对所有稀疏非负向量实现下界。最终结合混合范数不等式（Blei不等式）与稀疏性分析，建立总κₚ质量的确定性下界。",
+              "limitationsAndReadingValue": "结果为最坏情况分析，依赖精心构造的随机博弈实例，实际应用中可能无需如此大规模支持。此外，仅针对两人博弈，扩展至多人情形尚待研究。然而，论文的价值在于彻底厘清了相关均衡支持复杂度的本质极限，揭示了即使利用相关性也无法超越乘积策略的效率。最值得阅读的是其巧妙的随机矩阵构造与混合范数分析技术，对理解均衡表示的稀疏性具有深远启示。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "相关均衡",
+              "支持复杂度"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "复杂度分析",
+              "均衡分析"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Payoff-Based Certificates for Convergence to Pure Nash Equilibria under Replicator Dynamics",
+            "url": "https://arxiv.org/abs/2611.20407",
+            "arxivId": "2611.20407",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.GT"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "基于收益的纯纳什均衡在复制动态下的收敛性证书",
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ],
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "均衡分析"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "传统局部稳定性分析无法判断特定初始状态是否会收敛到某个纯纳什均衡。本文关注如何为复制子动态下向指定严格纯纳什均衡的收敛提供可验证的充分条件，尤其希望捕捉玩家间收益优势互补的现象，即一个玩家虽处劣势但另一玩家的优势足以补偿并推动整体收敛。",
+              "modelAndSetup": "考虑有限双矩阵博弈中的复制子动态，两名玩家在单纯形内更新混合策略。固定一个严格纯纳什均衡作为目标，通过选择‘危险动作’集合与位移参数，构建两个关于最小对数概率比的辅助变量X和Y，并定义其增长速率的下界函数F和G，形成可比较的低维系统。",
+              "contributionsAndResults": "提出了一个基于收益的证书E>0，用于判定初始状态是否收敛至目标均衡。该证书结合了对数概率比的增长率下界与可分比较系统的首次积分，允许一方优势补偿另一方劣势，从而覆盖更广的捕获区域，甚至包含目标动作初期概率下降的情形。",
+              "methodsAndTechniques": "核心技术是构造一个合作型比较系统，利用其守恒量设计证书函数E。通过分析E沿轨迹的单调性，结合Dini导数与积分不等式，证明只要E初值为正，则系统最终排除所有非目标动作。对于理性输入，还可进行有限精确判定。",
+              "limitationsAndReadingValue": "捕获区域随动作数增加迅速缩小，且证书仅为充分非必要条件。尽管如此，其闭式表达、精确计算路径及对补偿机制的刻画极具理论价值，特别适合希望深入理解学习动态中收敛性认证机制的研究者阅读核心定理与证明结构。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "基于收益的纯纳什均衡在复制动态下的收敛性证书",
+            "summarySections": {
+              "backgroundAndQuestion": "传统局部稳定性分析无法判断特定初始状态是否会收敛到某个纯纳什均衡。本文关注如何为复制子动态下向指定严格纯纳什均衡的收敛提供可验证的充分条件，尤其希望捕捉玩家间收益优势互补的现象，即一个玩家虽处劣势但另一玩家的优势足以补偿并推动整体收敛。",
+              "modelAndSetup": "考虑有限双矩阵博弈中的复制子动态，两名玩家在单纯形内更新混合策略。固定一个严格纯纳什均衡作为目标，通过选择‘危险动作’集合与位移参数，构建两个关于最小对数概率比的辅助变量X和Y，并定义其增长速率的下界函数F和G，形成可比较的低维系统。",
+              "contributionsAndResults": "提出了一个基于收益的证书E>0，用于判定初始状态是否收敛至目标均衡。该证书结合了对数概率比的增长率下界与可分比较系统的首次积分，允许一方优势补偿另一方劣势，从而覆盖更广的捕获区域，甚至包含目标动作初期概率下降的情形。",
+              "methodsAndTechniques": "核心技术是构造一个合作型比较系统，利用其守恒量设计证书函数E。通过分析E沿轨迹的单调性，结合Dini导数与积分不等式，证明只要E初值为正，则系统最终排除所有非目标动作。对于理性输入，还可进行有限精确判定。",
+              "limitationsAndReadingValue": "捕获区域随动作数增加迅速缩小，且证书仅为充分非必要条件。尽管如此，其闭式表达、精确计算路径及对补偿机制的刻画极具理论价值，特别适合希望深入理解学习动态中收敛性认证机制的研究者阅读核心定理与证明结构。"
+            },
+            "contentTags": [
+              "博弈学习",
+              "多智能体系统",
+              "均衡分析"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "模型构建",
+              "均衡分析"
+            ]
+          }
+        }
+      ]
+    },
+    "recent-ai": {
+      "targetDate": "2026-11-16",
+      "categories": [
+        "cs.MA"
+      ],
+      "categorySelection": "cs.MA",
+      "fetchLimit": 50,
+      "arxivFetch": {
+        "perCategory": {
+          "cs.MA": {
+            "query": "cat:cs.MA AND submittedDate:\"202611160000 TO 202611162359\"",
+            "totalResults": 13,
+            "fetchedCount": 13
+          }
+        },
+        "dedupedCount": 13
+      },
+      "arxivTotalResults": 13,
+      "fetchedCount": 13,
+      "fetchedPapers": [
+        {
+          "title": "Premise Recovery in Software Design: What Does This Decision Rest On?",
+          "url": "https://arxiv.org/abs/2611.21367",
+          "arxivId": "2611.21367",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Design decisions shape software architecture, and writing them down preserves the reasons behind it. Architecture decision records (ADRs) capture them, each with its context, choice, and consequences. A decision can depend on earlier ones: reversing one of them would force its review. We call these its premises. Yet ADRs do not always name their premises. When a decision is reversed, engineers supersede its ADR and search by hand for what it affects. That search can miss ADRs resting on an unnamed premise. We frame this as premise recovery: given an ADR with identifiers masked, find its premises among earlier records. We collect 1,060 ADRs from 36 repositories and label 1,529 candidate pairs for 60 target ADRs. Two LLM annotators agree at \\k{appa} = 0.859. An independent human annotator, blind to their labels, agrees with the stated/implicit tag on 30 of 32 premises (\\k{appa} = 0.875). We compare 7 open-weight models with 2 baselines that use no LLM. Qwen3.8-27B reaches F1 0.756, against 0.466 for word overlap; 2 models added post hoc score similarly. On the 11 premises whose titles barely overlap the target, it finds 0.758, while word overlap finds none. Reasoning raises its recall of implicit premises but not its F1. Word overlap with as many predictions gains 69% as much. We find only 2 to 3 stale dependents, though we searched for unlinked ones in only 30 of 66 supersessions. Open models could thus suggest unwritten premises when a decision is reversed, with precision between 0.68 and 0.78."
+        },
+        {
+          "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+          "url": "https://arxiv.org/abs/2611.21277",
+          "arxivId": "2611.21277",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "We study \\textsc{$r$-Connected Unlabeled Multi-agent Pathfinding} ($r$CUMAPF), a variant of MAPF where interchangeable agents have a proximity range $r\\in \\mathbb{N}$, and agents must form a single group in a given graph $G$ through limited-range communication at all times. The problem arises in fundamental applications such as self-reconfiguration and platooning, while standard MAPF does not capture proximity constraints. For the problem of finding a makespan-optimal solution, prior work shows \\NP-hardness for $r=1$ and polynomial-time solvability when $r$ is sufficiently large; the complexity for the intermediate case $2\\le r$ is largely unknown. To narrow this gap, we show that finding a solution to $r$CUMAPF with makespan at most $2$ is \\NP-hard for $2\\le r= O(|V|^{1-\\varepsilon})$, where $0<\\varepsilon\\le 1$ is a fixed constant and $|V|$ is the number of vertices. As a consequence, we show that the labeled analogue of $r$CUMAPF is also \\NP-hard under the same condition."
+        },
+        {
+          "title": "Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks",
+          "url": "https://arxiv.org/abs/2611.21259",
+          "arxivId": "2611.21259",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We evaluate LangChain, LangGraph, AutoGen, and OpenClaw through twelve experiments mapped to the OWASP Top 10 for Agentic Applications using a common LLM (gpt-4o-mini). The experiments cover prompt injection, unauthorized resource access and command execution, memory poisoning, and inter-agent trust and identity attacks. Adversarial inputs induced unauthorized tool invocation, while tool chaining, stale filesystem validation, encoded instructions, and inter-agent delegation exposed weaknesses in authorization across component boundaries. Memory poisoning showed that untrusted state can influence responses, a risk distinct from conventional access-control violations. In the evaluated protected configurations, explicit authorization, controlled capability assignment, filesystem containment, and execution safeguards prevented specific unauthorized operations. The findings emphasize preserving authorization and information-trust boundaries throughout agentic workflows rather than treating framework capabilities or model-level instructions as sufficient security guarantees."
+        },
+        {
+          "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+          "url": "https://arxiv.org/abs/2611.21250",
+          "arxivId": "2611.21250",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "In this work, we view multi-agent reasoning as a process of seeking a collective equilibrium of implicit belief dynamics and introduce Stream of Belief (SoB), where agents maintain continuous latent beliefs and iteratively refine them through communication and reflection. Our method seeks a collective belief state of a multi-agent system where further communication induces no meaningful information propagation. Through extensive experiments, we demonstrate the generalization of SoB across tasks and model families. More Broadly, our results suggest a new perspective on scaling multi-agent reasoning from belief dynamics."
+        },
+        {
+          "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+          "url": "https://arxiv.org/abs/2611.21235",
+          "arxivId": "2611.21235",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA",
+            "cs.SI"
+          ],
+          "abstract": "Language-model agents' beliefs can be manipulated through open channels such as social media, even when the information they receive is truthful. When agents fill gaps between fragments with self-induced relationships, they may accept those relationships as established facts and pass the resulting rumours to others. Drawing on cognitive theory of narrative understanding and film theory of montage, we introduce Generative Montage to operationalize this failure, termed narrative overfitting, by coordinating agents to arrange truthful fragments into misleading narratives. Across 1,090 rumour targets from six Twitter events, agents often accepted rumours overconfidently, with overall acceptance exceeding 65 percent in twelve of fourteen models. Acceptance remained above 50 percent after majority voting or review of the same evidence, showing how errors can reach downstream decisions. To explain this susceptibility, fragment interventions identify posts that influence belief within complete narratives. Synthetic controls then show that similar response patterns arise from valid evidence, separating belief influence from evidential support. This distinction motivates Grounded Monitor, a proof-of-concept neuro-symbolic runtime monitor that checks direct evidential support to guide agents' judgements, improving decision accuracy by 5.6 to 29.0 percentage points across original and anonymized settings. These findings expose a cognitive route to rumour amplification and support monitoring inferred relationships before agent-generated conclusions guide public decisions."
+        },
+        {
+          "title": "CoopDistill: Equilibrium-Guided Multi-Agent Policy Distillation for Cooperative Driving",
+          "url": "https://arxiv.org/abs/2611.21069",
+          "arxivId": "2611.21069",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA"
+          ],
+          "abstract": "Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints but often fix paths to simplify multi-vehicle planning, limiting spatial flexibility. Multi-agent reinforcement learning (MARL) explores alternatives through interaction, but coordinated learning and safe execution remain challenging. Their integration nevertheless faces challenges in exploration efficiency, experience allocation, and execution reliability. To address these challenges, this paper proposes CoopDistill, an equilibrium-guided multi-agent policy distillation framework. A potential-game (PG) formulation provides a fixed-path longitudinal reference, around which a residual MARL policy learns longitudinal acceleration, conflict-approach timing, and lateral path corrections. A hard-case curriculum concentrates experience on interactions that PG leaves unresolved or substantially delayed. A comparative rollout selector evaluates the joint consequences of learned corrections against PG before choosing the executed action. Experiments in merging, roundabout, and intersection scenarios compare CoopDistill with six baselines at four connected automated vehicle penetration levels. Relative to PG, success improves by 2.1--27.1 percentage points and delay decreases by 7.3--27.3\\%, with no observed collisions. Code is available at https://github.com/FanGShiYuu/CoopDistill"
+        },
+        {
+          "title": "OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction",
+          "url": "https://arxiv.org/abs/2611.20997",
+          "arxivId": "2611.20997",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Constructing multi-agent system (MAS) applications across domains requires translating diverse requirements into executable systems, involving task decomposition, agent and tool selection, and execution organization. Existing studies have explored individual aspects of MAS construction, including agent generation, architecture design, workflow generation, and component selection. However, these methods are often developed and evaluated independently, using different task specifications, component resources, and execution settings. This makes it difficult to compare their construction capabilities or determine how they can be applied to different domains. To address this problem, we propose OpenMAS-GApp, a One-for-All benchmark for MAS application construction across diverse domains. It standardizes task inputs, component resources, construction interfaces, and execution environments to support MAS construction under consistent conditions. Within OpenMAS-GApp, we provide Graph Harness as a reference construction method that derives task dependencies, selects compatible agents and tools, and organizes their interactions into executable graphs. We evaluate construction methods across 19 benchmark datasets under 20 evaluation settings spanning four application types and four professional domains."
+        },
+        {
+          "title": "Hivemind: A Federated Protocol for AI-Mediated Tacit Knowledge Sharing in Organisations",
+          "url": "https://arxiv.org/abs/2611.20988",
+          "arxivId": "2611.20988",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper presents Hivemind, a federated protocol that enables AI agents to exchange tacit knowledge on behalf of their users, asynchronously and without requiring any direct human interaction. Individual AI memory systems capture the decisions, reasoning, and contextual knowledge that surface during AI-assisted work. Hivemind creates the shared space in which this captured knowledge can flow between individuals across team and departmental boundaries, addressing a structural gap that neither centralised knowledge repositories nor existing AI tooling closes, even where partial solutions such as expert-finding systems exist. The paper evaluates centralised versus decentralised design approaches, proposes a federated architecture grounded in Nonaka and Takeuchi's (1995) Socialisation, Externalisation, Combination and Internalisation (SECI) model, and demonstrates a proof-of-concept implementation using Design Science Research (DSR) methodology. Measuring the enterprise benefit of federated tacit expertise sharing remains an open task for future work."
+        },
+        {
+          "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
+          "url": "https://arxiv.org/abs/2611.20956",
+          "arxivId": "2611.20956",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "As AI agents are increasingly deployed in real-world applications and take on social roles, dynamic social intelligence, the ability to continuously perceive multimodal cues, infer latent cognitive states, intervene through embodied actions, and ultimately achieve social goals, has become essential. However, existing evaluations largely fragment social intelligence into text-based abstractions, static reasoning tasks, or embodied simulators that lack social dynamics. These approaches fail to capture the multimodal, continuous, and interpersonal complexity of authentic human interactions. To bridge this gap, we introduce ALIVE-World, an embodied simulation environment supporting dynamic multimodal interactions encompassing egocentric vision, language, and non-verbal action. To provide socially grounded interactive feedback, we populate this environment with counterpart agents driven by a profile-conditioned, dual-system (intuitive-affective and logical-cognitive) architecture. Building upon this platform, we propose ALIVE-Bench to transform the assessment of social intelligence into a trackable quantitative framework. By deeply leveraging underlying environmental states and agents' internal variables, ALIVE-Bench systematically evaluates Vision-Language Model (VLM) agents across four critical dimensions: perception, understanding, influence, and outcome. Extensive evaluations reveal that dynamic social intelligence is fundamentally multi-dimensional and scenario-dependent. We identify a critical bottleneck between upstream perception and downstream social intervention, exposing VLM vulnerabilities in fine-grained proxemic awareness, adaptive intervention, and multi-party coordination. By uncovering these limitations and the diverse interaction strategies they produce, this benchmark provides actionable insights for the future behavioral alignment of multimodal agents."
+        },
+        {
+          "title": "LEDGER: Auditable Agent Memory Under Change",
+          "url": "https://arxiv.org/abs/2611.20927",
+          "arxivId": "2611.20927",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.PF",
+            "cs.SE"
+          ],
+          "abstract": "Agent memory systems are mostly evaluated on fixed histories, and only their final answers are scored. In real use, facts change, sources differ in reliability, and users ask the agent to forget things. We present LEDGER, a memory layer in which a language model proposes facts and explicit rules decide which value is current, which source to trust, and what to delete. Each fact keeps its source and the period in which it held. LEDGER+EP adds a search over raw conversation turns for questions the ledger does not cover, and scrubs these turns on deletion. We compare both against no memory, full-history replay, retrieval over raw transcripts, and Mem0, with the same answering model and prompt, on a synthetic multi-session coding-agent workload and a 210-question subset of LongMemEval, and we score both the evidence each memory sends to the model and the answer. On the coding workload, LEDGER+EP in fallback mode answers 94.3% of questions correctly on five development seeds and 91.1% on five held-out seeds, against 82.1% and 83.3% for full replay, the strongest baseline. When a deletion request only describes the fact, no deleted value reached our systems' evidence in any evaluated probe. On LongMemEval, LEDGER+EP in augment mode has the same observed accuracy as full replay (74.8%) with 1% of its context. The main limitation is that the coding workload is synthetic and built by us; on LongMemEval, the differences between the strongest systems are within the confidence intervals."
+        },
+        {
+          "title": "When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence",
+          "url": "https://arxiv.org/abs/2611.20773",
+          "arxivId": "2611.20773",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "abstract": "Multi-agent systems combine distributed information through interaction, which can improve performance but also spread errors or suppress useful differences. Predicting when interaction helps is central to understanding and designing collective intelligence. We investigate whether a few dimensionless parameters can predict gains over explicitly defined non-communicating baselines across group sizes, network structures, and tasks, toward a Reynolds-number-like description of collective intelligence. Using distributed classification tasks, stochastic tracking networks, and neural cellular automata, we combine analytical and empirical evidence to examine information sufficiency, dynamical applicability, and finite-sample prediction. We construct inference systems with bounded random variables and matching specified joint moments up to total degree three, yet opposite interaction gains under a fixed readout. These moments alone cannot generally determine the gain sign. Tracking networks likewise exhibit gain reversals despite matched candidate parameters when task power occupies different spectral modes. Under concentrated task spectra and aligned observation noise, however, we derive a low-dimensional similarity relation with an explicit zero-delay error bound and test it across network sizes and topologies under frozen protocols. The relation does not directly apply to the neural cellular systems, where a separate moment-based predictor underperforms direct gain measurement at matched calibration sample budgets. These results establish conditions and limits for low-dimensional gain prediction, providing a restricted similarity law while leaving a general Reynolds-number-like description of collective intelligence open."
+        },
+        {
+          "title": "Borrowed Strength, Imported Risk: Capability Gaps and Reception Govern Heterogeneous LLM Debate",
+          "url": "https://arxiv.org/abs/2611.20649",
+          "arxivId": "2611.20649",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "cs.MA"
+          ],
+          "abstract": "Heterogeneous LLM debate is often attributed to collective reasoning that creates capability beyond any member. In the matched panels we study, the aggregate gain is dominated by capability transfer: a peer supplies task competence and receivers absorb a measurable fraction. Across nine matched directions, honest benefit and first-exchange adversarial exposure open when the peer has a positive same-task advantage, and honest gain is closely described by the empirical decomposition $ΔA_d^{\\mathrm{hon}}\\approxκΓ_d^+ρ_d$, the product of that advantage and the receiver's reception. Two fixed-receiver directions provide held-out validation without refitting: reception remains stable within uncertainty as a larger peer advantage produces a larger gain. A matched, single-direction open-answer MuSiQue scope probe reaches the negative-gap side of the same gate. Qwen-7B trails the Gemma-3-12B receivers by 10.78 points; despite 62.50% reception, it produces only +1.17 points of controlled first-exchange gain. Reception cannot substitute for positive aggregate peer advantage. When an influential peer is assigned an adversarial role, the same influential peer slot removes the borrowed gain and can push the panel below homogeneous debate. Across all five full-reference settings, the best observed majority correctness does not exceed the influential member's best observed accuracy, despite unused complementary answers. Heterogeneous debate is therefore a measurable transfer decision with a measurable failure mode, not a benefit conferred by diversity alone."
+        },
+        {
+          "title": "Learning Design Taste through Verifiable Synthetic Environments and Agentic Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2611.20612",
+          "arxivId": "2611.20612",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.HC"
+          ],
+          "abstract": "Code-generating language models produce user interfaces that build and run, but the pages are often weak in hierarchy, spacing, typography and composition. We study whether a small code model can learn design taste through reinforcement learning in verifiable synthetic environments. The method has three components. First, a layered verification framework splits design quality into hard gates, render-grounded metrics, rubric judges, within-group relative preference and a blinded expert panel. A signal enters the reward only if it passes an admission protocol that tests agreement with experts, causal sensitivity, resistance to hack traps and stability. Second, following SCALER [1], synthetic design environments are parameterised generators with measured difficulty ladders: base pages are written once by an agentic coder, and instances are produced by syntax-tree perturbation operators and constraint samplers, scheduled by an adaptive curriculum with a quarantine rule against reward over-optimisation. Third, a 4B code model is trained with agentic reinforcement learning over multi-turn episodes in which it edits and builds a repository and reads a textual report of its own render, while hidden graders compute the reward. The admission protocol admits 7 of 16 render signals and 6 of 10 rubric dimensions. On TD-Bench, agentic training raises the Taste Index from 0.630 to 0.795 in-family and from 0.598 to 0.700 on held-out families, and wins 0.600 of blinded expert comparisons against the base model and 0.569 against a single-turn control. Most of the advantage depends on the inference-time loop, and cross-brief distinctiveness falls slightly below that of the base model, the only success criterion not met."
+        }
+      ],
+      "scoreBatches": [
+        {
+          "startIndex": 0,
+          "inputPapers": [
+            {
+              "title": "Premise Recovery in Software Design: What Does This Decision Rest On?",
+              "url": "https://arxiv.org/abs/2611.21367",
+              "arxivId": "2611.21367",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.SE",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "Design decisions shape software architecture, and writing them down preserves the reasons behind it. Architecture decision records (ADRs) capture them, each with its context, choice, and consequences. A decision can depend on earlier ones: reversing one of them would force its review. We call these its premises. Yet ADRs do not always name their premises. When a decision is reversed, engineers supersede its ADR and search by hand for what it affects. That search can miss ADRs resting on an unnamed premise. We frame this as premise recovery: given an ADR with identifiers masked, find its premises among earlier records. We collect 1,060 ADRs from 36 repositories and label 1,529 candidate pairs for 60 target ADRs. Two LLM annotators agree at \\k{appa} = 0.859. An independent human annotator, blind to their labels, agrees with the stated/implicit tag on 30 of 32 premises (\\k{appa} = 0.875). We compare 7 open-weight models with 2 baselines that use no LLM. Qwen3.8-27B reaches F1 0.756, against 0.466 for word overlap; 2 models added post hoc score similarly. On the 11 premises whose titles barely overlap the target, it finds 0.758, while word overlap finds none. Reasoning raises its recall of implicit premises but not its F1. Word overlap with as many predictions gains 69% as much. We find only 2 to 3 stale dependents, though we searched for unlinked ones in only 30 of 66 supersessions. Open models could thus suggest unwritten premises when a decision is reversed, with precision between 0.68 and 0.78."
+            },
+            {
+              "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+              "url": "https://arxiv.org/abs/2611.21277",
+              "arxivId": "2611.21277",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "We study \\textsc{$r$-Connected Unlabeled Multi-agent Pathfinding} ($r$CUMAPF), a variant of MAPF where interchangeable agents have a proximity range $r\\in \\mathbb{N}$, and agents must form a single group in a given graph $G$ through limited-range communication at all times. The problem arises in fundamental applications such as self-reconfiguration and platooning, while standard MAPF does not capture proximity constraints. For the problem of finding a makespan-optimal solution, prior work shows \\NP-hardness for $r=1$ and polynomial-time solvability when $r$ is sufficiently large; the complexity for the intermediate case $2\\le r$ is largely unknown. To narrow this gap, we show that finding a solution to $r$CUMAPF with makespan at most $2$ is \\NP-hard for $2\\le r= O(|V|^{1-\\varepsilon})$, where $0<\\varepsilon\\le 1$ is a fixed constant and $|V|$ is the number of vertices. As a consequence, we show that the labeled analogue of $r$CUMAPF is also \\NP-hard under the same condition."
+            },
+            {
+              "title": "Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks",
+              "url": "https://arxiv.org/abs/2611.21259",
+              "arxivId": "2611.21259",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We evaluate LangChain, LangGraph, AutoGen, and OpenClaw through twelve experiments mapped to the OWASP Top 10 for Agentic Applications using a common LLM (gpt-4o-mini). The experiments cover prompt injection, unauthorized resource access and command execution, memory poisoning, and inter-agent trust and identity attacks. Adversarial inputs induced unauthorized tool invocation, while tool chaining, stale filesystem validation, encoded instructions, and inter-agent delegation exposed weaknesses in authorization across component boundaries. Memory poisoning showed that untrusted state can influence responses, a risk distinct from conventional access-control violations. In the evaluated protected configurations, explicit authorization, controlled capability assignment, filesystem containment, and execution safeguards prevented specific unauthorized operations. The findings emphasize preserving authorization and information-trust boundaries throughout agentic workflows rather than treating framework capabilities or model-level instructions as sufficient security guarantees."
+            },
+            {
+              "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+              "url": "https://arxiv.org/abs/2611.21250",
+              "arxivId": "2611.21250",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "abstract": "In this work, we view multi-agent reasoning as a process of seeking a collective equilibrium of implicit belief dynamics and introduce Stream of Belief (SoB), where agents maintain continuous latent beliefs and iteratively refine them through communication and reflection. Our method seeks a collective belief state of a multi-agent system where further communication induces no meaningful information propagation. Through extensive experiments, we demonstrate the generalization of SoB across tasks and model families. More Broadly, our results suggest a new perspective on scaling multi-agent reasoning from belief dynamics."
+            },
+            {
+              "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+              "url": "https://arxiv.org/abs/2611.21235",
+              "arxivId": "2611.21235",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.MA",
+                "cs.SI"
+              ],
+              "abstract": "Language-model agents' beliefs can be manipulated through open channels such as social media, even when the information they receive is truthful. When agents fill gaps between fragments with self-induced relationships, they may accept those relationships as established facts and pass the resulting rumours to others. Drawing on cognitive theory of narrative understanding and film theory of montage, we introduce Generative Montage to operationalize this failure, termed narrative overfitting, by coordinating agents to arrange truthful fragments into misleading narratives. Across 1,090 rumour targets from six Twitter events, agents often accepted rumours overconfidently, with overall acceptance exceeding 65 percent in twelve of fourteen models. Acceptance remained above 50 percent after majority voting or review of the same evidence, showing how errors can reach downstream decisions. To explain this susceptibility, fragment interventions identify posts that influence belief within complete narratives. Synthetic controls then show that similar response patterns arise from valid evidence, separating belief influence from evidential support. This distinction motivates Grounded Monitor, a proof-of-concept neuro-symbolic runtime monitor that checks direct evidential support to guide agents' judgements, improving decision accuracy by 5.6 to 29.0 percentage points across original and anonymized settings. These findings expose a cognitive route to rumour amplification and support monitoring inferred relationships before agent-generated conclusions guide public decisions."
+            },
+            {
+              "title": "CoopDistill: Equilibrium-Guided Multi-Agent Policy Distillation for Cooperative Driving",
+              "url": "https://arxiv.org/abs/2611.21069",
+              "arxivId": "2611.21069",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA"
+              ],
+              "abstract": "Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints but often fix paths to simplify multi-vehicle planning, limiting spatial flexibility. Multi-agent reinforcement learning (MARL) explores alternatives through interaction, but coordinated learning and safe execution remain challenging. Their integration nevertheless faces challenges in exploration efficiency, experience allocation, and execution reliability. To address these challenges, this paper proposes CoopDistill, an equilibrium-guided multi-agent policy distillation framework. A potential-game (PG) formulation provides a fixed-path longitudinal reference, around which a residual MARL policy learns longitudinal acceleration, conflict-approach timing, and lateral path corrections. A hard-case curriculum concentrates experience on interactions that PG leaves unresolved or substantially delayed. A comparative rollout selector evaluates the joint consequences of learned corrections against PG before choosing the executed action. Experiments in merging, roundabout, and intersection scenarios compare CoopDistill with six baselines at four connected automated vehicle penetration levels. Relative to PG, success improves by 2.1--27.1 percentage points and delay decreases by 7.3--27.3\\%, with no observed collisions. Code is available at https://github.com/FanGShiYuu/CoopDistill"
+            },
+            {
+              "title": "OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction",
+              "url": "https://arxiv.org/abs/2611.20997",
+              "arxivId": "2611.20997",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Constructing multi-agent system (MAS) applications across domains requires translating diverse requirements into executable systems, involving task decomposition, agent and tool selection, and execution organization. Existing studies have explored individual aspects of MAS construction, including agent generation, architecture design, workflow generation, and component selection. However, these methods are often developed and evaluated independently, using different task specifications, component resources, and execution settings. This makes it difficult to compare their construction capabilities or determine how they can be applied to different domains. To address this problem, we propose OpenMAS-GApp, a One-for-All benchmark for MAS application construction across diverse domains. It standardizes task inputs, component resources, construction interfaces, and execution environments to support MAS construction under consistent conditions. Within OpenMAS-GApp, we provide Graph Harness as a reference construction method that derives task dependencies, selects compatible agents and tools, and organizes their interactions into executable graphs. We evaluate construction methods across 19 benchmark datasets under 20 evaluation settings spanning four application types and four professional domains."
+            },
+            {
+              "title": "Hivemind: A Federated Protocol for AI-Mediated Tacit Knowledge Sharing in Organisations",
+              "url": "https://arxiv.org/abs/2611.20988",
+              "arxivId": "2611.20988",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "abstract": "This paper presents Hivemind, a federated protocol that enables AI agents to exchange tacit knowledge on behalf of their users, asynchronously and without requiring any direct human interaction. Individual AI memory systems capture the decisions, reasoning, and contextual knowledge that surface during AI-assisted work. Hivemind creates the shared space in which this captured knowledge can flow between individuals across team and departmental boundaries, addressing a structural gap that neither centralised knowledge repositories nor existing AI tooling closes, even where partial solutions such as expert-finding systems exist. The paper evaluates centralised versus decentralised design approaches, proposes a federated architecture grounded in Nonaka and Takeuchi's (1995) Socialisation, Externalisation, Combination and Internalisation (SECI) model, and demonstrates a proof-of-concept implementation using Design Science Research (DSR) methodology. Measuring the enterprise benefit of federated tacit expertise sharing remains an open task for future work."
+            },
+            {
+              "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
+              "url": "https://arxiv.org/abs/2611.20956",
+              "arxivId": "2611.20956",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "As AI agents are increasingly deployed in real-world applications and take on social roles, dynamic social intelligence, the ability to continuously perceive multimodal cues, infer latent cognitive states, intervene through embodied actions, and ultimately achieve social goals, has become essential. However, existing evaluations largely fragment social intelligence into text-based abstractions, static reasoning tasks, or embodied simulators that lack social dynamics. These approaches fail to capture the multimodal, continuous, and interpersonal complexity of authentic human interactions. To bridge this gap, we introduce ALIVE-World, an embodied simulation environment supporting dynamic multimodal interactions encompassing egocentric vision, language, and non-verbal action. To provide socially grounded interactive feedback, we populate this environment with counterpart agents driven by a profile-conditioned, dual-system (intuitive-affective and logical-cognitive) architecture. Building upon this platform, we propose ALIVE-Bench to transform the assessment of social intelligence into a trackable quantitative framework. By deeply leveraging underlying environmental states and agents' internal variables, ALIVE-Bench systematically evaluates Vision-Language Model (VLM) agents across four critical dimensions: perception, understanding, influence, and outcome. Extensive evaluations reveal that dynamic social intelligence is fundamentally multi-dimensional and scenario-dependent. We identify a critical bottleneck between upstream perception and downstream social intervention, exposing VLM vulnerabilities in fine-grained proxemic awareness, adaptive intervention, and multi-party coordination. By uncovering these limitations and the diverse interaction strategies they produce, this benchmark provides actionable insights for the future behavioral alignment of multimodal agents."
+            },
+            {
+              "title": "LEDGER: Auditable Agent Memory Under Change",
+              "url": "https://arxiv.org/abs/2611.20927",
+              "arxivId": "2611.20927",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.PF",
+                "cs.SE"
+              ],
+              "abstract": "Agent memory systems are mostly evaluated on fixed histories, and only their final answers are scored. In real use, facts change, sources differ in reliability, and users ask the agent to forget things. We present LEDGER, a memory layer in which a language model proposes facts and explicit rules decide which value is current, which source to trust, and what to delete. Each fact keeps its source and the period in which it held. LEDGER+EP adds a search over raw conversation turns for questions the ledger does not cover, and scrubs these turns on deletion. We compare both against no memory, full-history replay, retrieval over raw transcripts, and Mem0, with the same answering model and prompt, on a synthetic multi-session coding-agent workload and a 210-question subset of LongMemEval, and we score both the evidence each memory sends to the model and the answer. On the coding workload, LEDGER+EP in fallback mode answers 94.3% of questions correctly on five development seeds and 91.1% on five held-out seeds, against 82.1% and 83.3% for full replay, the strongest baseline. When a deletion request only describes the fact, no deleted value reached our systems' evidence in any evaluated probe. On LongMemEval, LEDGER+EP in augment mode has the same observed accuracy as full replay (74.8%) with 1% of its context. The main limitation is that the coding workload is synthetic and built by us; on LongMemEval, the differences between the strongest systems are within the confidence intervals."
+            },
+            {
+              "title": "When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence",
+              "url": "https://arxiv.org/abs/2611.20773",
+              "arxivId": "2611.20773",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "abstract": "Multi-agent systems combine distributed information through interaction, which can improve performance but also spread errors or suppress useful differences. Predicting when interaction helps is central to understanding and designing collective intelligence. We investigate whether a few dimensionless parameters can predict gains over explicitly defined non-communicating baselines across group sizes, network structures, and tasks, toward a Reynolds-number-like description of collective intelligence. Using distributed classification tasks, stochastic tracking networks, and neural cellular automata, we combine analytical and empirical evidence to examine information sufficiency, dynamical applicability, and finite-sample prediction. We construct inference systems with bounded random variables and matching specified joint moments up to total degree three, yet opposite interaction gains under a fixed readout. These moments alone cannot generally determine the gain sign. Tracking networks likewise exhibit gain reversals despite matched candidate parameters when task power occupies different spectral modes. Under concentrated task spectra and aligned observation noise, however, we derive a low-dimensional similarity relation with an explicit zero-delay error bound and test it across network sizes and topologies under frozen protocols. The relation does not directly apply to the neural cellular systems, where a separate moment-based predictor underperforms direct gain measurement at matched calibration sample budgets. These results establish conditions and limits for low-dimensional gain prediction, providing a restricted similarity law while leaving a general Reynolds-number-like description of collective intelligence open."
+            },
+            {
+              "title": "Borrowed Strength, Imported Risk: Capability Gaps and Reception Govern Heterogeneous LLM Debate",
+              "url": "https://arxiv.org/abs/2611.20649",
+              "arxivId": "2611.20649",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "cs.MA"
+              ],
+              "abstract": "Heterogeneous LLM debate is often attributed to collective reasoning that creates capability beyond any member. In the matched panels we study, the aggregate gain is dominated by capability transfer: a peer supplies task competence and receivers absorb a measurable fraction. Across nine matched directions, honest benefit and first-exchange adversarial exposure open when the peer has a positive same-task advantage, and honest gain is closely described by the empirical decomposition $ΔA_d^{\\mathrm{hon}}\\approxκΓ_d^+ρ_d$, the product of that advantage and the receiver's reception. Two fixed-receiver directions provide held-out validation without refitting: reception remains stable within uncertainty as a larger peer advantage produces a larger gain. A matched, single-direction open-answer MuSiQue scope probe reaches the negative-gap side of the same gate. Qwen-7B trails the Gemma-3-12B receivers by 10.78 points; despite 62.50% reception, it produces only +1.17 points of controlled first-exchange gain. Reception cannot substitute for positive aggregate peer advantage. When an influential peer is assigned an adversarial role, the same influential peer slot removes the borrowed gain and can push the panel below homogeneous debate. Across all five full-reference settings, the best observed majority correctness does not exceed the influential member's best observed accuracy, despite unused complementary answers. Heterogeneous debate is therefore a measurable transfer decision with a measurable failure mode, not a benefit conferred by diversity alone."
+            },
+            {
+              "title": "Learning Design Taste through Verifiable Synthetic Environments and Agentic Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2611.20612",
+              "arxivId": "2611.20612",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.HC"
+              ],
+              "abstract": "Code-generating language models produce user interfaces that build and run, but the pages are often weak in hierarchy, spacing, typography and composition. We study whether a small code model can learn design taste through reinforcement learning in verifiable synthetic environments. The method has three components. First, a layered verification framework splits design quality into hard gates, render-grounded metrics, rubric judges, within-group relative preference and a blinded expert panel. A signal enters the reward only if it passes an admission protocol that tests agreement with experts, causal sensitivity, resistance to hack traps and stability. Second, following SCALER [1], synthetic design environments are parameterised generators with measured difficulty ladders: base pages are written once by an agentic coder, and instances are produced by syntax-tree perturbation operators and constraint samplers, scheduled by an adaptive curriculum with a quarantine rule against reward over-optimisation. Third, a 4B code model is trained with agentic reinforcement learning over multi-turn episodes in which it edits and builds a repository and reads a textual report of its own render, while hidden graders compute the reward. The admission protocol admits 7 of 16 render signals and 6 of 10 rubric dimensions. On TD-Bench, agentic training raises the Taste Index from 0.630 to 0.795 in-family and from 0.598 to 0.700 on held-out families, and wins 0.600 of blinded expert comparisons against the base model and 0.569 against a single-turn control. Most of the advantage depends on the inference-time loop, and cross-brief distinctiveness falls slightly below that of the base model, the only success criterion not met."
+            }
+          ],
+          "provider": "qwen",
+          "rawOutput": {
+            "items": [
+              {
+                "index": 0,
+                "scores": {
+                  "importance": 3,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 1,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 8,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 2,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 3,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 3,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -3
+                }
+              },
+              {
+                "index": 4,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 5,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 6,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 5,
+                  "clarity": 5,
+                  "theoreticalDepth": 2,
+                  "overall": 3,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 7,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 4,
+                  "theoreticalDepth": 2,
+                  "overall": 2,
+                  "penalty": -2
+                }
+              },
+              {
+                "index": 8,
+                "scores": {
+                  "importance": 6,
+                  "horizonValue": 6,
+                  "clarity": 6,
+                  "theoreticalDepth": 4,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 9,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 3,
+                  "overall": 4,
+                  "penalty": -1
+                }
+              },
+              {
+                "index": 10,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 6,
+                  "clarity": 5,
+                  "theoreticalDepth": 7,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 11,
+                "scores": {
+                  "importance": 5,
+                  "horizonValue": 5,
+                  "clarity": 6,
+                  "theoreticalDepth": 5,
+                  "overall": 4,
+                  "penalty": 0
+                }
+              },
+              {
+                "index": 12,
+                "scores": {
+                  "importance": 4,
+                  "horizonValue": 4,
+                  "clarity": 5,
+                  "theoreticalDepth": 3,
+                  "overall": 3,
+                  "penalty": -2
+                }
+              }
+            ]
+          },
+          "scoredPapers": [
+            {
+              "title": "Premise Recovery in Software Design: What Does This Decision Rest On?",
+              "url": "https://arxiv.org/abs/2611.21367",
+              "arxivId": "2611.21367",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.SE",
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 3.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 15.0,
+                "total": 15.0
+              }
+            },
+            {
+              "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+              "url": "https://arxiv.org/abs/2611.21277",
+              "arxivId": "2611.21277",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 8.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks",
+              "url": "https://arxiv.org/abs/2611.21259",
+              "arxivId": "2611.21259",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 24.0,
+                "total": 24.0
+              }
+            },
+            {
+              "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+              "url": "https://arxiv.org/abs/2611.21250",
+              "arxivId": "2611.21250",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 3.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -3.0,
+                "baseTotal": 12.0,
+                "total": 12.0
+              }
+            },
+            {
+              "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+              "url": "https://arxiv.org/abs/2611.21235",
+              "arxivId": "2611.21235",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.CL",
+                "cs.MA",
+                "cs.SI"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "CoopDistill: Equilibrium-Guided Multi-Agent Policy Distillation for Cooperative Driving",
+              "url": "https://arxiv.org/abs/2611.21069",
+              "arxivId": "2611.21069",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.RO",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 19.0,
+                "total": 19.0
+              }
+            },
+            {
+              "title": "OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction",
+              "url": "https://arxiv.org/abs/2611.20997",
+              "arxivId": "2611.20997",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 5.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 2.0,
+                "overall": 3.0,
+                "penalty": -1.0,
+                "baseTotal": 18.0,
+                "total": 18.0
+              }
+            },
+            {
+              "title": "Hivemind: A Federated Protocol for AI-Mediated Tacit Knowledge Sharing in Organisations",
+              "url": "https://arxiv.org/abs/2611.20988",
+              "arxivId": "2611.20988",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.AI",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 4.0,
+                "theoreticalDepth": 2.0,
+                "overall": 2.0,
+                "penalty": -2.0,
+                "baseTotal": 14.0,
+                "total": 14.0
+              }
+            },
+            {
+              "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
+              "url": "https://arxiv.org/abs/2611.20956",
+              "arxivId": "2611.20956",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 6.0,
+                "horizonValue": 6.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 4.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 26.0,
+                "total": 26.0
+              }
+            },
+            {
+              "title": "LEDGER: Auditable Agent Memory Under Change",
+              "url": "https://arxiv.org/abs/2611.20927",
+              "arxivId": "2611.20927",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.PF",
+                "cs.SE"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 3.0,
+                "overall": 4.0,
+                "penalty": -1.0,
+                "baseTotal": 22.0,
+                "total": 22.0
+              }
+            },
+            {
+              "title": "When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence",
+              "url": "https://arxiv.org/abs/2611.20773",
+              "arxivId": "2611.20773",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 6.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 7.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 27.0,
+                "total": 27.0
+              }
+            },
+            {
+              "title": "Borrowed Strength, Imported Risk: Capability Gaps and Reception Govern Heterogeneous LLM Debate",
+              "url": "https://arxiv.org/abs/2611.20649",
+              "arxivId": "2611.20649",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "physics.soc-ph",
+                "cs.MA"
+              ],
+              "scores": {
+                "importance": 5.0,
+                "horizonValue": 5.0,
+                "clarity": 6.0,
+                "theoreticalDepth": 5.0,
+                "overall": 4.0,
+                "penalty": 0.0,
+                "baseTotal": 25.0,
+                "total": 25.0
+              }
+            },
+            {
+              "title": "Learning Design Taste through Verifiable Synthetic Environments and Agentic Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2611.20612",
+              "arxivId": "2611.20612",
+              "date": "2026-11-16",
+              "source": "arXiv",
+              "categories": [
+                "cs.MA",
+                "cs.HC"
+              ],
+              "scores": {
+                "importance": 4.0,
+                "horizonValue": 4.0,
+                "clarity": 5.0,
+                "theoreticalDepth": 3.0,
+                "overall": 3.0,
+                "penalty": -2.0,
+                "baseTotal": 17.0,
+                "total": 17.0
+              }
+            }
+          ]
+        }
+      ],
+      "allScoredPapers": [
+        {
+          "title": "Premise Recovery in Software Design: What Does This Decision Rest On?",
+          "url": "https://arxiv.org/abs/2611.21367",
+          "arxivId": "2611.21367",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 3.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 15.0,
+            "total": 15.0
+          }
+        },
+        {
+          "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+          "url": "https://arxiv.org/abs/2611.21277",
+          "arxivId": "2611.21277",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks",
+          "url": "https://arxiv.org/abs/2611.21259",
+          "arxivId": "2611.21259",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 24.0,
+            "total": 24.0
+          }
+        },
+        {
+          "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+          "url": "https://arxiv.org/abs/2611.21250",
+          "arxivId": "2611.21250",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 3.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -3.0,
+            "baseTotal": 12.0,
+            "total": 12.0
+          }
+        },
+        {
+          "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+          "url": "https://arxiv.org/abs/2611.21235",
+          "arxivId": "2611.21235",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA",
+            "cs.SI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "CoopDistill: Equilibrium-Guided Multi-Agent Policy Distillation for Cooperative Driving",
+          "url": "https://arxiv.org/abs/2611.21069",
+          "arxivId": "2611.21069",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.RO",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 19.0,
+            "total": 19.0
+          }
+        },
+        {
+          "title": "OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction",
+          "url": "https://arxiv.org/abs/2611.20997",
+          "arxivId": "2611.20997",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 2.0,
+            "overall": 3.0,
+            "penalty": -1.0,
+            "baseTotal": 18.0,
+            "total": 18.0
+          }
+        },
+        {
+          "title": "Hivemind: A Federated Protocol for AI-Mediated Tacit Knowledge Sharing in Organisations",
+          "url": "https://arxiv.org/abs/2611.20988",
+          "arxivId": "2611.20988",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 4.0,
+            "theoreticalDepth": 2.0,
+            "overall": 2.0,
+            "penalty": -2.0,
+            "baseTotal": 14.0,
+            "total": 14.0
+          }
+        },
+        {
+          "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
+          "url": "https://arxiv.org/abs/2611.20956",
+          "arxivId": "2611.20956",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "LEDGER: Auditable Agent Memory Under Change",
+          "url": "https://arxiv.org/abs/2611.20927",
+          "arxivId": "2611.20927",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.PF",
+            "cs.SE"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 3.0,
+            "overall": 4.0,
+            "penalty": -1.0,
+            "baseTotal": 22.0,
+            "total": 22.0
+          }
+        },
+        {
+          "title": "When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence",
+          "url": "https://arxiv.org/abs/2611.20773",
+          "arxivId": "2611.20773",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Borrowed Strength, Imported Risk: Capability Gaps and Reception Govern Heterogeneous LLM Debate",
+          "url": "https://arxiv.org/abs/2611.20649",
+          "arxivId": "2611.20649",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        },
+        {
+          "title": "Learning Design Taste through Verifiable Synthetic Environments and Agentic Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2611.20612",
+          "arxivId": "2611.20612",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA",
+            "cs.HC"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 4.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 3.0,
+            "overall": 3.0,
+            "penalty": -2.0,
+            "baseTotal": 17.0,
+            "total": 17.0
+          }
+        }
+      ],
+      "selectedForOutput": [
+        {
+          "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+          "url": "https://arxiv.org/abs/2611.21277",
+          "arxivId": "2611.21277",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 4.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence",
+          "url": "https://arxiv.org/abs/2611.20773",
+          "arxivId": "2611.20773",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          }
+        },
+        {
+          "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+          "url": "https://arxiv.org/abs/2611.21235",
+          "arxivId": "2611.21235",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA",
+            "cs.SI"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 5.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
+          "url": "https://arxiv.org/abs/2611.20956",
+          "arxivId": "2611.20956",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 4.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          }
+        },
+        {
+          "title": "Borrowed Strength, Imported Risk: Capability Gaps and Reception Govern Heterogeneous LLM Debate",
+          "url": "https://arxiv.org/abs/2611.20649",
+          "arxivId": "2611.20649",
+          "date": "2026-11-16",
+          "source": "arXiv",
+          "categories": [
+            "physics.soc-ph",
+            "cs.MA"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 25.0,
+            "total": 25.0
+          }
+        }
+      ],
+      "enrichOutputs": [
+        {
+          "paper": {
+            "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+            "url": "https://arxiv.org/abs/2611.21277",
+            "arxivId": "2611.21277",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "即使宽松的邻近约束也让工期最优的无标签多智能体路径规划变得困难",
+            "researchParadigmTags": [
+              "复杂度分析",
+              "算法设计",
+              "理论推导"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "路径规划",
+              "邻近约束"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体路径规划（MAPF）通常假设全局通信，但在实际场景中，智能体只能通过有限范围的通信保持连接。本文研究一种带邻近约束的无标签MAPF变体rCUMAPF，其中智能体必须始终构成一个在通信半径r内的连通图。已知r=1时问题难解，r足够大时可解，但中间情况的复杂性未知，本文旨在填补这一空白。",
+              "modelAndSetup": "问题定义在无向图上，给定初始和目标顶点集合，要求找到从初始到目标的配置序列，每个时间步移动至多一步，并避免碰撞，同时所有占据顶点在扩展图Gr中保持连通。研究聚焦于是否存在长度不超过2的可行计划，输入为图G、起点集S、终点集T及整数r，输出为判定该问题是否可解。",
+              "contributionsAndResults": "论文证明当2≤r=O(|V|¹⁻ε)时，判断rCUMAPF是否存在工期至多为2的解是NP难的，即使图的最大度数为3。这一结果将已知的难解范围从r=1大幅扩展到次线性r值，揭示即使较松散的连通性要求也足以导致计算困难，并进一步推出标记版本同样难解。",
+              "methodsAndTechniques": "作者通过将SAT问题规约到rCUMAPF来证明硬度。构造包含变量、子句、连接和出现四种 gadget 的图结构，利用距离设计确保：变量赋值由中间配置决定，子句满足性依赖于特定顶点是否被访问。关键在于强制中间状态Q₁必须维持r-连通性，从而编码布尔可满足性。",
+              "limitationsAndReadingValue": "规约仅适用于makespan≤2的情形，无法直接推广到更长工期；且存在O(log D(G))的可解与难解区间间隙。尽管如此，论文清晰展示了邻近约束带来的本质难度跃迁。最值得阅读的是其精巧的规约构造和对连通性传播机制的设计，对理解分布式协同系统的理论边界极具启发。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "即使宽松的邻近约束也让工期最优的无标签多智能体路径规划变得困难",
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体路径规划（MAPF）通常假设全局通信，但在实际场景中，智能体只能通过有限范围的通信保持连接。本文研究一种带邻近约束的无标签MAPF变体rCUMAPF，其中智能体必须始终构成一个在通信半径r内的连通图。已知r=1时问题难解，r足够大时可解，但中间情况的复杂性未知，本文旨在填补这一空白。",
+              "modelAndSetup": "问题定义在无向图上，给定初始和目标顶点集合，要求找到从初始到目标的配置序列，每个时间步移动至多一步，并避免碰撞，同时所有占据顶点在扩展图Gr中保持连通。研究聚焦于是否存在长度不超过2的可行计划，输入为图G、起点集S、终点集T及整数r，输出为判定该问题是否可解。",
+              "contributionsAndResults": "论文证明当2≤r=O(|V|¹⁻ε)时，判断rCUMAPF是否存在工期至多为2的解是NP难的，即使图的最大度数为3。这一结果将已知的难解范围从r=1大幅扩展到次线性r值，揭示即使较松散的连通性要求也足以导致计算困难，并进一步推出标记版本同样难解。",
+              "methodsAndTechniques": "作者通过将SAT问题规约到rCUMAPF来证明硬度。构造包含变量、子句、连接和出现四种 gadget 的图结构，利用距离设计确保：变量赋值由中间配置决定，子句满足性依赖于特定顶点是否被访问。关键在于强制中间状态Q₁必须维持r-连通性，从而编码布尔可满足性。",
+              "limitationsAndReadingValue": "规约仅适用于makespan≤2的情形，无法直接推广到更长工期；且存在O(log D(G))的可解与难解区间间隙。尽管如此，论文清晰展示了邻近约束带来的本质难度跃迁。最值得阅读的是其精巧的规约构造和对连通性传播机制的设计，对理解分布式协同系统的理论边界极具启发。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "路径规划",
+              "邻近约束"
+            ],
+            "researchParadigmTags": [
+              "复杂度分析",
+              "算法设计",
+              "理论推导"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence",
+            "url": "https://arxiv.org/abs/2611.20773",
+            "arxivId": "2611.20773",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "交互何时有益？迈向集体智能的雷诺数",
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "机制设计",
+              "基准评测"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "集体智能",
+              "交互增益",
+              "分布式推理",
+              "神经细胞自动机"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统通过交互整合信息，但交互既可能提升性能也可能传播错误。核心问题是：能否用少数无量纲参数预测交互带来的增益？这类似于流体力学中的雷诺数，旨在建立跨规模、拓扑和任务的统一预测规律。现有方法难以区分增益正负，也缺乏对预测条件的清晰界定。",
+              "modelAndSetup": "论文在三类系统中研究交互增益：基于固定解码器的双节点有界推理模型、线性跟踪网络和冻结权重的神经细胞自动机定位系统。输入为局部观测，输出为个体响应，最终通过全局读出函数评估质量差。增益定义为交互系统与非通信基线的期望得分差，并在相同校准样本下比较不同预测器的表现。",
+              "contributionsAndResults": "论文构造了联合矩至三阶相同的系统却表现出相反增益，证明低维统计量不足以确定增益符号。在特定条件下推导出带误差界的低维相似律，可在谱集中且噪声对齐时预测增益。但在神经细胞系统中，基于矩的预测器不如直接估计，揭示了理论假设在实际非线性系统中的适用边界。",
+              "methodsAndTechniques": "采用分层验证框架：先构造反例说明信息充分性障碍，再在线性跟踪系统中利用谱分析推导条件相似律并设置零延迟误差界，最后在真实训练的细胞自动机上测试预测器实用性。通过冻结协议、匹配校准预算和结构检查，分离了种群充分性、动态适用性和估计效率三个层面的问题。",
+              "limitationsAndReadingValue": "条件相似律依赖于理想化的谱对齐与时序结构，在现实非线性系统中不成立。神经细胞系统的预测失败表明当前描述无法直接迁移。结果未证明通用控制参数的存在。最值得读的是其严谨的三层分析框架、反例构造和对‘何时交互有益’这一根本问题的量化边界探索。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "交互何时有益？迈向集体智能的雷诺数",
+            "summarySections": {
+              "backgroundAndQuestion": "多智能体系统通过交互整合信息，但交互既可能提升性能也可能传播错误。核心问题是：能否用少数无量纲参数预测交互带来的增益？这类似于流体力学中的雷诺数，旨在建立跨规模、拓扑和任务的统一预测规律。现有方法难以区分增益正负，也缺乏对预测条件的清晰界定。",
+              "modelAndSetup": "论文在三类系统中研究交互增益：基于固定解码器的双节点有界推理模型、线性跟踪网络和冻结权重的神经细胞自动机定位系统。输入为局部观测，输出为个体响应，最终通过全局读出函数评估质量差。增益定义为交互系统与非通信基线的期望得分差，并在相同校准样本下比较不同预测器的表现。",
+              "contributionsAndResults": "论文构造了联合矩至三阶相同的系统却表现出相反增益，证明低维统计量不足以确定增益符号。在特定条件下推导出带误差界的低维相似律，可在谱集中且噪声对齐时预测增益。但在神经细胞系统中，基于矩的预测器不如直接估计，揭示了理论假设在实际非线性系统中的适用边界。",
+              "methodsAndTechniques": "采用分层验证框架：先构造反例说明信息充分性障碍，再在线性跟踪系统中利用谱分析推导条件相似律并设置零延迟误差界，最后在真实训练的细胞自动机上测试预测器实用性。通过冻结协议、匹配校准预算和结构检查，分离了种群充分性、动态适用性和估计效率三个层面的问题。",
+              "limitationsAndReadingValue": "条件相似律依赖于理想化的谱对齐与时序结构，在现实非线性系统中不成立。神经细胞系统的预测失败表明当前描述无法直接迁移。结果未证明通用控制参数的存在。最值得读的是其严谨的三层分析框架、反例构造和对‘何时交互有益’这一根本问题的量化边界探索。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "集体智能",
+              "交互增益",
+              "分布式推理",
+              "神经细胞自动机"
+            ],
+            "researchParadigmTags": [
+              "理论推导",
+              "实验验证",
+              "机制设计",
+              "基准评测"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+            "url": "https://arxiv.org/abs/2611.21235",
+            "arxivId": "2611.21235",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.AI",
+              "cs.CL",
+              "cs.MA",
+              "cs.SI"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "语言模型智能体的信念可通过开放通道中的真实证据被操纵",
+            "researchParadigmTags": [
+              "实验验证",
+              "机制设计",
+              "评测方法",
+              "系统框架",
+              "数据集构建"
+            ],
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "智能体",
+              "安全性",
+              "认知偏差"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "人类和语言模型都会通过填补信息碎片间的空白来构建连贯叙事，但这种能力可能导致将未经证实的关系误认为事实。本文关注的问题是：即使所有信息片段真实，恶意方能否通过精心排列组合诱导模型形成错误信念？这揭示了传统真实性验证的局限——仅检查语句真假不足以防止误导，关键在于关系推断过程的安全。",
+              "modelAndSetup": "研究在模拟社交媒体环境中测试14种主流语言模型，使用‘生成蒙太奇’框架从真实事件中提取可信片段，并构造看似合理但结论未被支持的叙事。模型作为信息分析师接收这些动态信息流，先自由解读，再判断特定主张是否成立。评估包括个体接受率、置信度及下游多数投票或裁判模型的决策一致性。",
+              "contributionsAndResults": "实验证明，12/14模型对虚假叙事的整体接受率超65%，高置信接受也普遍存在，且多数投票与裁判审查未能有效纠正错误。这表明当前模型存在‘叙事过拟合’认知缺陷，即把自洽推论当作确证事实。更严重的是，此类错误可在多智能体协作中被放大为表面共识，误导最终决策。",
+              "methodsAndTechniques": "核心方法‘生成蒙太奇’受电影蒙太奇理论启发，由三个角色协同：撰写者选取真实片段，编辑安排顺序与节奏，导演确保事实合规并引导修订。该机制实现了‘认知共谋’——不直接陈述谎言，而是诱导模型自行补全漏洞。配套提出的‘根基监控器’通过神经-符号结合方式，区分直接支持与推测性连接，显著提升判断准确性。",
+              "limitationsAndReadingValue": "研究依赖人工构造攻击样本，虽具现实事件基础，但仍属理想化设定；且监控器需外部分类器介入，尚未完全自动化。然而，其揭示的认知路径操纵风险极为深刻，值得重视。最应细读的是问题设定本身及其对现有安全防御体系的根本性质疑，其次是生成蒙太奇的设计逻辑与实验分析深度。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "语言模型智能体的信念可通过开放通道中的真实证据被操纵",
+            "summarySections": {
+              "backgroundAndQuestion": "人类和语言模型都会通过填补信息碎片间的空白来构建连贯叙事，但这种能力可能导致将未经证实的关系误认为事实。本文关注的问题是：即使所有信息片段真实，恶意方能否通过精心排列组合诱导模型形成错误信念？这揭示了传统真实性验证的局限——仅检查语句真假不足以防止误导，关键在于关系推断过程的安全。",
+              "modelAndSetup": "研究在模拟社交媒体环境中测试14种主流语言模型，使用‘生成蒙太奇’框架从真实事件中提取可信片段，并构造看似合理但结论未被支持的叙事。模型作为信息分析师接收这些动态信息流，先自由解读，再判断特定主张是否成立。评估包括个体接受率、置信度及下游多数投票或裁判模型的决策一致性。",
+              "contributionsAndResults": "实验证明，12/14模型对虚假叙事的整体接受率超65%，高置信接受也普遍存在，且多数投票与裁判审查未能有效纠正错误。这表明当前模型存在‘叙事过拟合’认知缺陷，即把自洽推论当作确证事实。更严重的是，此类错误可在多智能体协作中被放大为表面共识，误导最终决策。",
+              "methodsAndTechniques": "核心方法‘生成蒙太奇’受电影蒙太奇理论启发，由三个角色协同：撰写者选取真实片段，编辑安排顺序与节奏，导演确保事实合规并引导修订。该机制实现了‘认知共谋’——不直接陈述谎言，而是诱导模型自行补全漏洞。配套提出的‘根基监控器’通过神经-符号结合方式，区分直接支持与推测性连接，显著提升判断准确性。",
+              "limitationsAndReadingValue": "研究依赖人工构造攻击样本，虽具现实事件基础，但仍属理想化设定；且监控器需外部分类器介入，尚未完全自动化。然而，其揭示的认知路径操纵风险极为深刻，值得重视。最应细读的是问题设定本身及其对现有安全防御体系的根本性质疑，其次是生成蒙太奇的设计逻辑与实验分析深度。"
+            },
+            "contentTags": [
+              "大语言模型",
+              "生成式AI",
+              "智能体",
+              "安全性",
+              "认知偏差"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "机制设计",
+              "评测方法",
+              "系统框架",
+              "数据集构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
+            "url": "https://arxiv.org/abs/2611.20956",
+            "arxivId": "2611.20956",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "从视觉到交互：在ALIVE-World中评估VLM代理的动态社交智能",
+            "researchParadigmTags": [
+              "基准评测",
+              "系统框架",
+              "实验验证",
+              "模型构建",
+              "数据集构建"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "评测方法",
+              "社交智能"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "当前AI代理虽被用于服务、协作等社交场景，但其动态社交智能缺乏真实评估。现有方法多依赖文本抽象、静态推理或忽略社交演化的模拟环境，难以捕捉人类互动中多模态、连续性和人际反馈的复杂性。本文指出，真正动态的社交能力需涵盖从感知到干预再到结果的全过程，而现有评测无法反映这一闭环过程。",
+              "modelAndSetup": "论文构建了ALIVE-World，一个支持第一人称视觉、语言与非语言动作的具身交互环境，并引入具备情感与认知双系统的虚拟交互伙伴，以生成动态社会反馈。在此基础上提出ALIVE-Bench，通过四个维度——感知、理解、影响与结果——对VLM代理进行量化评估。输入为多模态观察流，输出为具身行为序列，评价基于底层状态与内部变量的透明追踪。",
+              "contributionsAndResults": "核心贡献在于建立了首个融合动态社交演化与具身交互的评测体系。实验揭示当前VLM代理存在‘感知-结果’断层：尽管部分模型在感知上表现良好，却难以转化为有效的社交干预。不同前沿模型展现出差异化社交策略，如社交敏感型、目标导向型与逻辑驱动型，说明动态社交智能是多维且情境依赖的。",
+              "methodsAndTechniques": "关键创新是双系统交互代理架构，结合直觉-情感与逻辑-认知通路，使虚拟角色能随互动持续更新情绪与意图。ALIVE-Bench利用环境内部状态实现白盒测量，将抽象社交能力映射为可量化的轨迹指标。并发异步动作机制支持真实中断、延迟响应等社会现象，增强了交互生态效度。",
+              "limitationsAndReadingValue": "局限在于目前仅覆盖两种人工设计场景，社会行为多样性受限。虽然人类评估验证了交互真实性，但结论外推至更广社会情境仍需谨慎。最值得阅读的是其系统设计与评测框架，尤其是如何建模动态社会反馈及解耦社交能力维度，为未来多模态代理的行为对齐提供了可操作路径。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "从视觉到交互：在ALIVE-World中评估VLM代理的动态社交智能",
+            "summarySections": {
+              "backgroundAndQuestion": "当前AI代理虽被用于服务、协作等社交场景，但其动态社交智能缺乏真实评估。现有方法多依赖文本抽象、静态推理或忽略社交演化的模拟环境，难以捕捉人类互动中多模态、连续性和人际反馈的复杂性。本文指出，真正动态的社交能力需涵盖从感知到干预再到结果的全过程，而现有评测无法反映这一闭环过程。",
+              "modelAndSetup": "论文构建了ALIVE-World，一个支持第一人称视觉、语言与非语言动作的具身交互环境，并引入具备情感与认知双系统的虚拟交互伙伴，以生成动态社会反馈。在此基础上提出ALIVE-Bench，通过四个维度——感知、理解、影响与结果——对VLM代理进行量化评估。输入为多模态观察流，输出为具身行为序列，评价基于底层状态与内部变量的透明追踪。",
+              "contributionsAndResults": "核心贡献在于建立了首个融合动态社交演化与具身交互的评测体系。实验揭示当前VLM代理存在‘感知-结果’断层：尽管部分模型在感知上表现良好，却难以转化为有效的社交干预。不同前沿模型展现出差异化社交策略，如社交敏感型、目标导向型与逻辑驱动型，说明动态社交智能是多维且情境依赖的。",
+              "methodsAndTechniques": "关键创新是双系统交互代理架构，结合直觉-情感与逻辑-认知通路，使虚拟角色能随互动持续更新情绪与意图。ALIVE-Bench利用环境内部状态实现白盒测量，将抽象社交能力映射为可量化的轨迹指标。并发异步动作机制支持真实中断、延迟响应等社会现象，增强了交互生态效度。",
+              "limitationsAndReadingValue": "局限在于目前仅覆盖两种人工设计场景，社会行为多样性受限。虽然人类评估验证了交互真实性，但结论外推至更广社会情境仍需谨慎。最值得阅读的是其系统设计与评测框架，尤其是如何建模动态社会反馈及解耦社交能力维度，为未来多模态代理的行为对齐提供了可操作路径。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "智能体",
+              "评测方法",
+              "社交智能"
+            ],
+            "researchParadigmTags": [
+              "基准评测",
+              "系统框架",
+              "实验验证",
+              "模型构建",
+              "数据集构建"
+            ]
+          }
+        },
+        {
+          "paper": {
+            "title": "Borrowed Strength, Imported Risk: Capability Gaps and Reception Govern Heterogeneous LLM Debate",
+            "url": "https://arxiv.org/abs/2611.20649",
+            "arxivId": "2611.20649",
+            "date": "2026-11-16",
+            "source": "arXiv",
+            "categories": [
+              "physics.soc-ph",
+              "cs.MA"
+            ]
+          },
+          "usedPdf": true,
+          "provider": "qwen",
+          "rawOutput": {
+            "titleZh": "借来的力量，引入的风险：能力差距与接收度主导异构大语言模型辩论",
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "机制设计",
+              "基准评测",
+              "系统框架"
+            ],
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生成式AI",
+              "鲁棒性",
+              "安全性"
+            ],
+            "summarySections": {
+              "backgroundAndQuestion": "异构大语言模型（LLM）辩论常被认为通过多样性产生超越个体的集体推理能力。然而近期研究发现其常不如单模型推理高效。本文质疑‘多样性创造能力’的默认假设，指出真正驱动收益的是能力转移而非组合创新。核心问题是：何时异构辩论能带来净增益？其边界和风险何在？这触及生成式AI系统中关于协作、评测与部署的根本假设。",
+              "modelAndSetup": "研究采用三人小组设定，固定接收者与同伴模型，在数学与多跳问答任务上对比同质、诚实异质及对抗异质面板的表现。关键变量是同伴相对于接收者的准确率优势（能力差距）和接收者采纳正确信号的概率（接收度）。通过控制角色指令仅改变同伴行为，精确测量第一轮交互中的修正与腐蚀效应，从而分离出能力供给与接收机制的作用。",
+              "contributionsAndResults": "论文揭示异构辩论的本质是可测量的能力转移过程，而非多样性红利。实证表明净收益几乎完全由‘能力差距×接收度’乘积决定，且仅当同伴具备正向优势时成立。更关键的是，一旦该同伴转为对抗角色，不仅增益消失，还会导致整体表现低于同质辩论，暴露出系统性风险。这一发现挑战了对异构系统的乐观预期。",
+              "methodsAndTechniques": "作者设计了一套匹配实验框架，通过比较四类面板（同质、同伴基准、诚实混合、对抗混合）来解耦影响因素。核心在于定义‘接收力’作为接收者从同伴正确答案中受益的概率，并结合能力差距构建两因子分解模型。该模型在九个方向上拟合优度达R²=.995，并被两个固定接收者的新增实验无偏预测，验证了其泛化性。",
+              "limitationsAndReadingValue": "结论基于特定三成员同步辩论协议，未涵盖动态路由、自组织或多轮协同攻击等更广场景。模型身份与风格差异未完全解耦，且跨任务推广性有待验证。尽管如此，本文提供了评估异构系统的新范式——应将其视为供给-接收-完整性问题。最值得细读的是其实验设计逻辑与对‘借用天花板’的经验观测，这对构建可靠AI系统极具指导意义。"
+            }
+          },
+          "finalPaper": {
+            "titleZh": "借来的力量，引入的风险：能力差距与接收度主导异构大语言模型辩论",
+            "summarySections": {
+              "backgroundAndQuestion": "异构大语言模型（LLM）辩论常被认为通过多样性产生超越个体的集体推理能力。然而近期研究发现其常不如单模型推理高效。本文质疑‘多样性创造能力’的默认假设，指出真正驱动收益的是能力转移而非组合创新。核心问题是：何时异构辩论能带来净增益？其边界和风险何在？这触及生成式AI系统中关于协作、评测与部署的根本假设。",
+              "modelAndSetup": "研究采用三人小组设定，固定接收者与同伴模型，在数学与多跳问答任务上对比同质、诚实异质及对抗异质面板的表现。关键变量是同伴相对于接收者的准确率优势（能力差距）和接收者采纳正确信号的概率（接收度）。通过控制角色指令仅改变同伴行为，精确测量第一轮交互中的修正与腐蚀效应，从而分离出能力供给与接收机制的作用。",
+              "contributionsAndResults": "论文揭示异构辩论的本质是可测量的能力转移过程，而非多样性红利。实证表明净收益几乎完全由‘能力差距×接收度’乘积决定，且仅当同伴具备正向优势时成立。更关键的是，一旦该同伴转为对抗角色，不仅增益消失，还会导致整体表现低于同质辩论，暴露出系统性风险。这一发现挑战了对异构系统的乐观预期。",
+              "methodsAndTechniques": "作者设计了一套匹配实验框架，通过比较四类面板（同质、同伴基准、诚实混合、对抗混合）来解耦影响因素。核心在于定义‘接收力’作为接收者从同伴正确答案中受益的概率，并结合能力差距构建两因子分解模型。该模型在九个方向上拟合优度达R²=.995，并被两个固定接收者的新增实验无偏预测，验证了其泛化性。",
+              "limitationsAndReadingValue": "结论基于特定三成员同步辩论协议，未涵盖动态路由、自组织或多轮协同攻击等更广场景。模型身份与风格差异未完全解耦，且跨任务推广性有待验证。尽管如此，本文提供了评估异构系统的新范式——应将其视为供给-接收-完整性问题。最值得细读的是其实验设计逻辑与对‘借用天花板’的经验观测，这对构建可靠AI系统极具指导意义。"
+            },
+            "contentTags": [
+              "多智能体系统",
+              "大语言模型",
+              "生成式AI",
+              "鲁棒性",
+              "安全性"
+            ],
+            "researchParadigmTags": [
+              "实验验证",
+              "评测方法",
+              "机制设计",
+              "基准评测",
+              "系统框架"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "sectionCounts": {
+    "recent-agt": 5,
+    "recent-ai": 5
+  }
+}
