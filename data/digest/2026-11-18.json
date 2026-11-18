@@ -1,0 +1,705 @@
+{
+  "date": "2026-11-18",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-11-18T10:45:40.556875+00:00",
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Virtual Double Oracle: Faster Convergence by Leveraging Strategies That Were Watching All Along (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Reserve Systems in Dynamic Settings: Account Design and Inherited Rights (HTTP Error 400: Bad Request)"
+  ],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 12,
+      "papers": [
+        {
+          "title": "Virtual Double Oracle: Faster Convergence by Leveraging Strategies That Were Watching All Along",
+          "titleZh": "",
+          "authors": [
+            "Ruilan Wang",
+            "Francisco Aristi Reina",
+            "Katerina Papadaki"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.22806",
+          "abstract": "Double Oracle (DO) and PSRO approximate Nash equilibria in two-player zero-sum games by iteratively expanding a strategy population with best responses supplied by an oracle. Online Double Oracle (ODO) interleaves multiplicative weights updates (MWU) with population discovery and obtains an $O(\\sqrt{k\\ln k/T})$ rate, where $T$ is the number of learning rounds and $k$ is the larger of the two players' final population sizes. We identify the reinitialisation step as an underexplored design choice: at each expansion, MWU-based methods reset newly discovered strategies to a uniform prior. We introduce Virtual Double Oracle (VDO), which exploits a bilinear identity (a strategy's full hindsight loss history collapses to its utility against the time-averaged opponent) to initialise each new strategy with the MWU weight it would have had from the start. We prove that VDO achieves $O(\\sqrt{k/T})$ exploitability over the discovered population as it grows, provided the cumulative cost of adding strategies is at most linear in $k$, a condition supported by our empirical measurements. Discounted VDO (dVDO) moderates historical preferences to reduce over-concentration at reinitialisation. Experiments across matrix games, poker, and Goofspiel show that, with a suitable discount, dVDO can substantially reduce finite-horizon exploitability relative to both VDO and uniform-reset ODO, and can improve the discovered strategy populations.",
+          "summarySections": {
+            "backgroundAndQuestion": "Double Oracle (DO) and PSRO approximate Nash equilibria in two-player zero-sum games by iteratively expanding a strategy population with best responses supplied by an oracle. Online Double Oracle (ODO) interleaves multiplicative weights updates (MWU) with popu...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 8.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 7.2,
+            "total": 30.8
+          },
+          "ids": {
+            "arxiv": "2611.22806"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.GT",
+              "cs.MA"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "Exploiting Aggregate Feedback for Decentralized Equilibrium Learning in Markov Games: A Smart Grid Application",
+          "titleZh": "利用聚合反馈进行马尔可夫博弈中的去中心化均衡学习：一种智能电网应用",
+          "authors": [
+            "Siying Huang",
+            "Yifen Mu",
+            "Ge Chen",
+            "Qingshan Jia"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.22762",
+          "abstract": "In many multi-agent systems, an agent's payoff depends on its own action and an aggregate of other agents' actions, rather than their individual decisions. This paper investigates decentralized equilibrium learning in Markov games (MGs) with such aggregative reward structures. However, existing decentralized learning algorithms for general MGs typically rely on bandit feedback, without exploiting the additional information available from aggregate observations. To exploit this information, we develop an aggregation-predictive stage-based V-learning algorithm with hybrid-feedback Exp3-IX. Using known local reward functions and observed aggregate quantities, each agent evaluates the immediate rewards of all candidate actions and predicts their immediate losses from historical aggregate feedback, while continuation values are learned from selected-action state transitions. The algorithm requires neither opponents' individual information nor knowledge of the transition kernel. We establish a high-probability regret bound that explicitly depends on aggregate prediction errors and retains the standard worst-case order. Under a regularity condition on adaptive stage lengths, the algorithm learns an $ε$-approximate coarse correlated equilibrium (CCE) within $\\widetilde O(SA_{\\max}T^5/ε^2)$ episodes and extends to correlated equilibrium (CE) learning. We further apply the algorithm to a renewable-rich microgrid with strategic prosumers and shared energy storage. Numerical results show smaller deviation gaps and lower gap-AUC than three learning baselines. Compared with representative demand-response rules, the learned policies exhibit weaker incentives for unilateral deviations while maintaining favorable user rewards, high renewable utilization, and relatively stable electricity prices.",
+          "summarySections": {
+            "backgroundAndQuestion": "许多多智能体系统中，个体收益仅取决于自身行为和他人行为的聚合量，而非具体个体决策。传统去中心化学习算法通常仅利用带臂反馈，未能有效利用聚合观测带来的额外信息。本文旨在解决如何在马尔可夫博弈中利用聚合反馈提升均衡学习效率的问题，尤其关注在缺乏对手个体信息和状态转移核的情况下，能否实现高效且稳定的均衡收敛。",
+            "modelAndSetup": "文章研究了一类特殊的马尔可夫博弈——聚合马尔可夫博弈（AMG），其中每个代理的奖励函数仅依赖于其自身动作和对手动作的聚合值。代理拥有本地奖励函数知识，并能观察到公共聚合量，从而推断出对手的聚合行为。学习过程为去中心化设置，无通信，仅通过公共状态和聚合反馈进行协调，目标是学习粗相关均衡（CCE）和相关均衡（CE）。",
+            "contributionsAndResults": "本文提出了一个基于聚合预测的阶段式V-learning算法，结合混合反馈Exp3-IX机制，在无需对手个体信息或转移核的前提下，实现了高概率的后悔界保证。算法在O(SA_max T^5/ε²)轮次内收敛至ε-近似CCE，样本复杂度与现有最优算法相当。数值实验表明，该方法在智能电网应用中显著降低了偏离差距和训练间隙面积，同时保持良好的用户收益与可再生能源利用率。",
+            "methodsAndTechniques": "算法采用双时间尺度设计：慢速更新的自适应阶段用于稳定值估计，快速更新的策略学习则利用历史聚合反馈预测即时损失。通过运行均值预测机制，代理能评估所有候选动作的即时回报，并结合隐式探索（IX）估计延续值。理论分析结合了后悔分析、集中不等式与递归误差传播，建立了显式依赖于聚合预测误差的高概率界限。",
+            "limitationsAndReadingValue": "算法依赖于已知的本地奖励函数和聚合恢复机制，限制了其在完全未知环境下的直接应用。此外，理论保证基于理想化的阶段划分与预测误差假设。尽管如此，本文在聚合结构利用、去中心化学习效率与实际能源系统应用之间建立了坚实桥梁，其聚合预测机制与混合反馈设计对后续研究具有启发价值，值得深入阅读其模型构建与证明技巧。"
+          },
+          "researchParadigmTags": [
+            "算法设计",
+            "理论推导",
+            "均衡分析",
+            "后悔分析",
+            "实验验证"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "多智能体系统",
+            "机制设计",
+            "智能电网",
+            "强化学习"
+          ],
+          "tags": [
+            "博弈学习",
+            "多智能体系统",
+            "机制设计",
+            "智能电网",
+            "强化学习",
+            "算法设计",
+            "理论推导",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 7.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 9.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 7.8,
+            "total": 30.4
+          },
+          "ids": {
+            "arxiv": "2611.22762"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "Settling the Time and Structural Complexity of Bertrand Networks",
+          "titleZh": "解决伯川德网络的时间与结构复杂性",
+          "authors": [
+            "MohammadTaghi Hajiaghayi",
+            "Suho Shin"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.22216",
+          "abstract": "In the seminal Bertrand network game introduced by Babaioff et al. (2013), each seller posts a single price to captive buyers and to the markets it shares with neighboring sellers, where sellers cannot price discriminate across the markets. Although the existence of equilibria and polynomial-time algorithms to compute them in trees (Babaioff et al. (2013)) have been known, it has been a major open problem whether there exist efficient algorithms to compute them for general graphs. In this paper, we resolve this open question negatively by proving that computing any constant-error approximate Nash equilibrium in a Bertrand network is $\\PPAD$-complete. This hardness holds even on sparse bipartite graphs of maximum degree five with constant integer market weights. Complementing our hardness result, we design an efficient polynomial-time approximation scheme (EPTAS) when both the maximum degree and the number of sellers with captive buyers are bounded. Beyond time complexity, since exact equilibria require randomizing prices over continuous intervals, another fundamental question left open by Babaioff et al. (2013) is whether an exact equilibrium can always be represented with a finite number of price intervals, \\ie whether its structural complexity is finite. We resolve this question affirmatively by proving that every achievable equilibrium revenue profile can be realized by an equilibrium with structural complexity $O(2^n)$, which leads to an exact algorithm running in doubly exponential time. We further show that this bound is tight: there exist instances for which the unique equilibrium realizing target revenue profiles has structural complexity $Ω(2^n)$.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么计算伯川德网络中的均衡如此困难？该模型刻画了卖家在共享与专属买家市场之间的权衡：降价可赢得竞争市场，却会损失来自忠诚买家的收入。尽管树状网络上的均衡可在多项式时间内求解，但一般图上的计算复杂性长期未知。本文聚焦两个核心问题：是否存在高效算法计算近似均衡？以及精确均衡能否用有限区间描述，即其结构复杂性是否有限。",
+            "modelAndSetup": "模型将卖家表示为无向图的顶点，边代表共享市场，顶点权重代表专属买家规模。每个卖家选择单一价格，不能进行价格歧视。共享市场上由报价更低的卖家获胜，所有买家最大支付意愿为1。卖家收益取决于其价格及对手定价分布。均衡是各卖家独立选择价格分布的混合策略组合，使得无人能通过单方面改变策略显著提升收益。",
+            "contributionsAndResults": "论文取得两项突破：首先，计算任意常数误差近似纳什均衡是PPAD-完全的，即使在最大度为五的稀疏二分图上也成立，否定了高效算法的存在可能；其次，任何可实现的均衡收益配置均可由一个结构复杂的均衡实现，其价格分布的累积分布函数在至多2^n个区间上关于1/p呈仿射关系，并证明此指数界是紧的。",
+            "methodsAndTechniques": "作者通过从双动作多项式博弈归约来证明PPAD-完全性，设计了复制同步路径与价格锚定装置以强制连续价格模拟离散行为。对于结构复杂性，引入倒数价格变换，将均衡条件转化为带互补松弛性的连续线性规划问题，利用凹性论证斜率变化次数受限于活跃卖方子集的数量，从而导出指数上界。",
+            "limitationsAndReadingValue": "虽然下界针对特定收益向量，但上界适用于所有情形，表明最坏情况下的结构性复杂不可避免。结果揭示了此类连续策略博弈的本质难度。论文最值得读的是其精巧的归约构造、对连续均衡结构的深刻刻画，以及将博弈问题转化为优化视角的方法，对理解复杂市场中的策略交互具有深远意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "均衡分析",
+            "算法设计"
+          ],
+          "contentTags": [
+            "市场/匹配",
+            "博弈学习",
+            "多智能体系统",
+            "机制设计"
+          ],
+          "tags": [
+            "市场/匹配",
+            "博弈学习",
+            "多智能体系统",
+            "机制设计",
+            "理论推导",
+            "复杂度分析",
+            "均衡分析",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.22216"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS",
+              "econ.TH"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "Computational Hardness of Online Stochastic Matching",
+          "titleZh": "在线随机匹配的计算复杂性",
+          "authors": [
+            "Yifeng Teng",
+            "Zongjun Yang"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23157",
+          "abstract": "In the online stochastic matching problem on a bipartite graph, offline vertices are given in advance, and online requests arrive sequentially from known distributions, each matched immediately and irrevocably to a free neighbor or rejected. Computational hardness results of the optimal online strategy have been known only for instances where online vertices have a fixed arrival order [Papadimitriou et al., 2024]. For random-order arrivals or even i.i.d. arrivals, it has been long open since the problem was proposed [Feldman et al., 2009]. In this paper, we give the first computational hardness results for online stochastic matching with random-order arrivals. In particular, we prove that for known i.i.d. arrivals, computing the online optimum is APX-hard, ruling out a Polynomial-Time Approximation Scheme unless P = NP, even in unweighted graphs with two offline neighbors per online vertex. For random-order arrivals, even when there is only one offline node (i.e., the prophet secretary setting), computing the optimal online policy is #P-hard, resolving an open problem since [Dütting et al., 2023].",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么计算最优在线策略如此困难？尽管在线随机匹配已被广泛研究，但以往的计算复杂性结果仅适用于固定到达顺序的情形。对于更自然的随机顺序或独立同分布到达模型，最优策略的计算难度长期悬而未决。本文聚焦这一理论缺口，探究随机性是否真的使问题更易解，还是反而隐藏了深层的计算障碍。",
+            "modelAndSetup": "模型考虑一个二分图，离线顶点预先给定，线上请求从已知分布中依次到达，必须立即且不可逆地匹配或拒绝。研究两种设定：一是独立同分布（i.i.d.）到达，所有请求来自同一分布；二是随机顺序到达，不同分布的请求以均匀随机顺序出现。特别地，单个离线节点情形对应于先知秘书问题，构成分析的特例。",
+            "contributionsAndResults": "论文首次证明，在i.i.d.到达模型下，即使图无权且每个请求最多有两个邻居，逼近在线最优期望匹配数也是APX-难的，排除了多项式时间近似方案的存在可能。而在随机顺序模型中，即便只有一个离线节点，计算最优策略本身也是#P-难的。这两个结果解决了该领域长期开放的问题，表明随机性并未降低计算难度。",
+            "methodsAndTechniques": "作者通过归约技术证明硬度。对于i.i.d.模型，从最大割问题出发，构造带顶点和边类型的匹配实例，并利用泊松化与图膨胀技术控制自适应策略的优势。对于先知秘书问题，则归约自#SUBSET SUM，通过分析最优值关于确定性奖励的斜率变化来编码解的数量，巧妙结合概率分析与计数复杂性。",
+            "limitationsAndReadingValue": "结果依赖于精心构造的归约实例，实际应用中的难度可能较低。然而，论文的价值在于揭示了在线随机优化中‘决策’与‘计算’的根本张力：即使信息结构看似简化（如随机顺序），精确求解仍可能极难。最值得阅读的是其创新的归约方法，尤其是如何用斜率跳跃捕捉#P-难计数问题，这对相关领域的复杂性研究具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "复杂度分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "在线算法",
+            "市场/匹配",
+            "计算复杂性"
+          ],
+          "tags": [
+            "在线算法",
+            "市场/匹配",
+            "计算复杂性",
+            "理论推导",
+            "复杂度分析",
+            "模型构建"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "bonus": 0.0,
+            "total": 25.2
+          },
+          "ids": {
+            "arxiv": "2611.23157"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.DS",
+              "cs.CC",
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.DS",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "Reserve Systems in Dynamic Settings: Account Design and Inherited Rights",
+          "titleZh": "",
+          "authors": [
+            "Tayfun Sönmez",
+            "M. Utku Ünver"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.22116",
+          "abstract": "Research on reserve systems mainly considers static settings, formulating and studying choice rules for a given allocation problem. Dynamic settings are different in that the problem is not given. Over time, more positions become available, and each time the institution must build the current problem from its past. We distinguish the ledger, which stores information about earlier allocations, the account, which transforms these data into the current problem, and the choice rule, which selects an outcome for that problem. The same choice rule can implement very different policies under different accounts. If each new batch is assigned while holding earlier recipients and their categories fixed, then as batches shrink, over-and-above, the most generous reserve policy we study, can select nearly the same recipients as minimum guarantee, the most conservative one. Cumulative implementation uses a different account, which reconsiders the categories of earlier recipients, and prevents this compression. We characterize it by resource-release invariance. With arrivals or changes in priorities, the ordinary choice rule might reject an earlier recipient whose appointment has to be honored. We introduce and characterize retain, reassign, and boost (RRB) choice rules, under which every incumbent retains her appointment and can have her category changed. Combining RRB with individual-proposing deferred acceptance gives a strategy-proof mechanism under which each incumbent keeps her appointment or receives one she prefers. Applications include waiting lists in school and university admissions, public recruitment, and court-ordered corrections.",
+          "summarySections": {
+            "backgroundAndQuestion": "Research on reserve systems mainly considers static settings, formulating and studying choice rules for a given allocation problem. Dynamic settings are different in that the problem is not given. Over time, more positions become available, and each time the i...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 8.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "bonus": 0.0,
+            "total": 20.8
+          },
+          "ids": {
+            "arxiv": "2611.22116"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.CL）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+          "titleZh": "偏见头在测量什么？头层级偏见归因中的不可识别性",
+          "authors": [
+            "S. M Seefat Alam"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23218",
+          "abstract": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that breaks the length-label coupling rejects this reading: with the prompt held fixed, response length explains 1% of the statistic's variance. What does explain it is prompt identity, at 64% of variance, in an ordering that is not monotonic in length. Within any fixed prompt the fairness label, response length and the presence of a protected-group token are collinear at $φ= 0.95$, partly by definition of the labelling rule, so no observational analysis can attribute the map to any of them, and no method in this family performs an experiment that could. The substantive claims fail independently: bias selectivity is not late-layer-concentrated on either model under either reference reading, and no head set we tested reduces the unfairness rate when ablated. Its complement, scored on the opposite label, reliably destroys refusal behaviour ($p = 2.7\\times10^{-5}$), demonstrating that the pipeline detects effects at this scale.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么现有方法无法可靠定位大模型中的社会偏见？当前主流做法试图通过识别并移除特定注意力头来减轻偏见，并依赖下游公平性指标验证效果，却从未检验这些头评分本身是否真正在测量偏见。本文指出，这类方法面临根本性挑战：所选头可能只是捕捉到了响应长度、提示模板等表面混淆因素，而非真正的偏见机制。",
+            "modelAndSetup": "论文在两个主流指令模型上复现了头级偏见归因流程：通过直接回答（DA）与思维链（CoT）提示生成回应，由裁判标注其是否‘公平’，再计算各注意力头对不公平回应的贡献得分。关键设定在于使用相同评分函数但基于不同分组（如响应长短）构建对照图谱，并通过干预实验打破标签与长度间的耦合，以检验归因结果的真正驱动因素。",
+            "contributionsAndResults": "研究发现所谓的‘偏见头’图谱实际上与响应长度高度相关，但进一步干预实验证明这仅是虚假关联。真正主导评分的是提示身份本身，而在固定提示下，公平标签、受保护群体提及和响应长度三者高度共线，导致无法区分归因目标。此外，声称有效的头集合在消融后并未降低不公平率，其反向集合反而一致破坏拒绝行为，揭示原方法缺乏因果效力。",
+            "methodsAndTechniques": "作者采用了一种诊断性实验设计：先构建基于非偏见变量（如响应长度）的对照评分图谱，观察其与原始偏见图谱的相关性；随后通过操控提示鼓励长短相反的回应组合，打破原有数据中的耦合结构，从而检验评分是否仍跟随长度变化。结合层匹配随机基线、互补集控制和退化检测，形成多重证据链，验证归因结果的真实性与可分离性。",
+            "limitationsAndReadingValue": "受限于问题本身的共线性结构，在当前评分与标注框架下，几乎不可能将‘偏见’从形式特征中分离出来。尽管使用了更小的数据集和规则化标注器，核心结论稳健。最值得阅读的是其对归因研究范式的批判性分析，尤其是如何设计干预实验来检验隐含假设，这对未来可信赖的模型解释研究具有重要指导意义。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "评测方法",
+            "机制设计"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "公平性",
+            "注意力机制",
+            "对齐",
+            "评测方法"
+          ],
+          "tags": [
+            "大语言模型",
+            "公平性",
+            "注意力机制",
+            "对齐",
+            "评测方法",
+            "实验验证",
+            "机制设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.23218"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "The Illusion of Grounding: Do Vision-Language Models Weigh Retrieved Text and Images Like an Ideal Observer?",
+          "titleZh": "The Illusion of Grounding: Do Vision-Language Models Weigh Retrieved Text and Images Like an Ideal Observer?",
+          "authors": [
+            "Basavaraj R M",
+            "Harshal Chandel"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23127",
+          "abstract": "Retrieval-augmented vision-language models (VLMs) answer from two sources of evidence that can each fail: the retrieved text can be wrong or noisy, and the image can be degraded or contradicted. We introduce GIB-200K, 200,000 image-question items built from COCO and Visual Genome, each expanded into controlled stress conditions: hard-negative retrieval noise (1-20 documents), visual ambiguity (Gaussian and motion blur, low-resource crops) and cross-modal conflict with counterfactual flip pairs. Instead of only measuring degradation, we ask how models combine the two modalities. From ideal Bayesian cue combination we derive a testable prediction that yields formal definitions of Knowledge Inertia (text over-weighted relative to the model's own image evidence) and Sensory Capture (the reverse), and we estimate the weights with a measurement-error-corrected regression whose recovery of known weights we verify. A counterfactual flip decomposition separates modality bias from concept priors, and a Grounding Illusion Score measures how much clean accuracy is not grounded in the image. We evaluate 4 open models on one frozen, seeded evaluation split of 2,000 GIB-200K items. All models are accurate on clean inputs (92.5%-94.2%) but adverse accuracy falls to 41.3%-59.9%. The two LLaVA models over-weight the text (Knowledge Inertia, w_T/w_I = 1.229 and 1.322), whereas InternVL3 favours the image (w_T/w_I = 0.680); between 34.8% and 71.4% of the clean answers that are correct are abandoned when the document lies. A training-free consistency check that compares the answer with and without retrieval trades coverage for accuracy under misleading documents, while falling back to the image fails when the image is heavily degraded. All per-instance outputs, code, and an audit that recomputes every reported open-model number are released.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有视觉语言模型常结合图像与检索文本作答，但两者可能冲突或失真。传统评测仅看准确率下降，无法判断模型是否合理权衡两种证据。本文关注核心问题：模型在图文矛盾时是否像理想观察者一样，根据各自可靠性动态调整权重？这揭示了当前系统在多模态推理中的根本缺陷。",
+            "modelAndSetup": "研究基于新构建的 GIB-200K 数据集，在受控条件下测试模型对检索噪声、图像模糊和跨模态冲突的响应。输入为图像加误导性文本，输出为答案及置信度。通过对比有无文本时的答案变化，并引入反事实配对设计，分离出文本依赖、图像感知与概念先验的影响，全面评估四种开源模型的表现。",
+            "contributionsAndResults": "论文提出‘知识惯性’与‘感官捕获’形式化定义，发现不同模型存在显著偏差：LLaVA 系列过度信任文本，InternVL3 则偏向图像。结果显示高达71%的正确答案实由文档支撑而非图像理解，暴露‘接地幻觉’。这些发现挑战了当前对模型鲁棒性的认知，强调需超越表面准确率。",
+            "methodsAndTechniques": "方法基于理想观察者的贝叶斯线索整合理论，通过测量单模态证据强度预测双模态行为。采用重复测量校正估计误差，利用反事实翻转分解概念先验与模态偏好。Grounding Illusion Score 和一致性检验进一步量化非理想决策模式，形成可复现的诊断链条。",
+            "limitationsAndReadingValue": "受限于量化模型与子集评测，结论外推需谨慎；未设人类基线，难以判断偏差是否符合人类直觉。但其问题设定极具现实意义，实验设计严谨，审计透明。最值得读的是其诊断框架本身——它提供了一套解析多模态模型决策机制的新工具。"
+          },
+          "researchParadigmTags": [
+            "基准评测",
+            "实验验证",
+            "数据集构建",
+            "机制分析"
+          ],
+          "contentTags": [
+            "视觉语言模型",
+            "检索增强",
+            "模态融合",
+            "幻觉评测",
+            "感知偏差"
+          ],
+          "tags": [
+            "视觉语言模型",
+            "检索增强",
+            "模态融合",
+            "幻觉评测",
+            "感知偏差",
+            "基准评测",
+            "实验验证",
+            "数据集构建"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.23127"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL",
+              "cs.CV"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "Contract-Explicit Evaluation: From Auditing Learned Readers to Scoped Certificates",
+          "titleZh": "合同显式评估：从审计学习型阅读器到范围证书",
+          "authors": [
+            "Hao Lu",
+            "Weixing Zhu",
+            "Ruiyang Li"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.22665",
+          "abstract": "Evaluation readings of document-level relation extraction (DocRE) systems depend jointly on the model and the evaluation contract: gold version, scoring function, threshold. Rankings reverse across contracts, yet no existing method determines which comparisons survive the reversal. We address this gap with contract-explicit evaluation: a preregistered five-step protocol (Declare, Measure, Scope, Certify, Hedge), operationalizing the classical concordance decomposition of Kendall's rank correlation, that scopes certifiable regions and delivers distribution-free census certificates across two ecosystems. In the DocRE audit (44 training runs of one in-house architecture family), the scoring dimension scopes to a census certificate (three flagged instances, Clopper--Pearson upper bound 0.146); the confirmatory record includes registered negatives, and the audit prices its own simplification finding---the calibration dial's entire margin is one withdrawn commit. In an LLM-judge census (17 judges, 49,938 battles), 12.25% of leaderboard comparisons require hedging at the pre-declared split criterion (bound 0.124; panel-robust 0.143), with an exploratory two-tier reading certifying 69% at a bound \\le 0.072 and a validity decomposition against released human labels (65% of contested battles are judge error, not ambiguity). The cross-model certificate is withdrawn on real confidence scores; the failure spectrum maps the boundary. The protocol, map, ledger, and per-instance artifacts are released.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有评测方法常假设模型性能是单一固定值，但实际上评测结果高度依赖于‘评估合同’（如标注版本、评分函数、阈值）的选择。不同合同会导致排名反转，使得比较不可靠。本文指出，性能读数是模型与合同的联合属性，而非模型独有特性，因此需要一种能识别哪些比较在合同变化下依然稳健的新评估范式。",
+            "modelAndSetup": "研究基于冻结的预测池，在多个评估合同下生成模型读数，并通过一个学习型聚合器整合这些读数。输入是不同合同下的模型表现向量，输出是对模型能力的稳定排序。评估采用预注册协议，使用翻转率、一致性、覆盖率和错误承诺等指标衡量稳定性，并在文档级关系抽取和LLM裁判两个生态系统中进行验证。",
+            "contributionsAndResults": "论文提出了‘合同显式评估’五步协议（声明、测量、范围界定、认证、对冲），实现了可证范围内的稳定评估。在44次训练运行中，得分维度被限定为普查证书（3个标记实例，Clopper-Pearson上界0.146）。结果显示，许多排行榜比较需被对冲，且共识聚合的有效性取决于合同间的可交换性。",
+            "methodsAndTechniques": "方法核心是将Kendall秩相关的一致性分解转化为可操作的范围界定原则。通过计算各维度翻转密度，确定可颁发证书的区域。学习型阅读器以合同共识为目标训练，结合留一合同外惩罚提升稳定性。决策层引入符合共形预测的风险控制机制，仅在置信度达标且方向一致时做出承诺，否则标记为需对冲。",
+            "limitationsAndReadingValue": "结论受限于注册库规模，小样本下统计功效不足，无法认证强对比。跨模型证书在真实置信度下失效，暴露出方法边界。最值得读的是其失败案例与协议演化过程，展示了如何从审计中提炼出可推广的评估纪律，尤其对高风险系统评测具有指导意义。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "评测方法",
+            "机制设计",
+            "系统框架",
+            "基准评测"
+          ],
+          "contentTags": [
+            "评测方法",
+            "鲁棒性",
+            "大语言模型",
+            "文档级关系抽取",
+            "生成式AI"
+          ],
+          "tags": [
+            "评测方法",
+            "鲁棒性",
+            "大语言模型",
+            "文档级关系抽取",
+            "生成式AI",
+            "实验验证",
+            "机制设计",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.22665"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.CL",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "Large-scale Neuron Community Discovery Reveals Neuron-Sparse Behaviors in Language Models",
+          "titleZh": "大规模神经元社区发现揭示语言模型中的稀疏神经元行为",
+          "authors": [
+            "Igor Shilov",
+            "Thomas Fel",
+            "Tal Haklay",
+            "Lucius Bushnaq",
+            "Owen Lewis"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23112",
+          "abstract": "What reusable units of computation can we discover within a language model's neurons? Prior work has shown that individual forward passes can often be sparsified post-hoc to small groups of neurons, but it has been unclear whether these groups form coherent computational entities reused across inputs. We introduce neuron community discovery, an unsupervised method for finding neuron groups that recur across prompts and are causally necessary and sufficient, within the layers they span, for common computations. The method combines gradient-based attribution, a graph connecting neurons that are repeatedly attributed together, and community detection. Applied to Llama-3.1-8B using ten million prompts, it discovers thousands of candidate communities. We evaluate them on held-out prompts through three causal tests: community necessity, sufficiency within a layer subset, and layer necessity. These tests identify groups whose removal disrupts predictions and whose retention preserves predictions despite ablating the remaining MLP neurons in the tested layers. Discovered communities support functions like grammatical agreement, token-probability calibration, fixed phrases, in-context copying, addition, and multiplication. With communities capped at 128 neurons across all layers, 10.3% of held-out prompts have at least one layer's contribution explained on a neuron-sparse basis. Coverage remains 8.7% when requiring at least four layers and 3.3% when requiring at least twelve. These results show that small groups of existing neurons can provide reusable computational components across prompts, and that such groups can be discovered at scale.",
+          "summarySections": {
+            "backgroundAndQuestion": "当前语言模型的内部计算单元尚不明确，尽管已有方法如稀疏自编码器试图解析模型表示，但它们重建激活而非捕捉实际计算过程。本文关注一个核心问题：是否存在跨不同输入被重复使用的、功能一致的小规模神经元群组？这触及可解释性的根本挑战——如何从黑箱模型中发现自然形成的、可复用的功能模块。",
+            "modelAndSetup": "研究基于Llama-3.1-8B模型，在千万级多样化文本提示上进行分析。通过梯度归因识别关键神经元，构建共现图并使用Leiden算法发现神经元社区。随后在独立测试集上实施因果干预，评估社区对预测的必要性和充分性。整个流程结合了归因、图聚类与干预验证，旨在自动化地发现并验证功能性神经元群组。",
+            "contributionsAndResults": "论文首次实现了大规模神经元社区的无监督发现，并证实这些小规模群组（最多128个神经元）在至少一层中能解释10.3%的测试样本预测行为。这些社区支持语法一致、固定搭配、数值运算等功能，且通过因果测试验证其必要性与充分性，表明语言模型中存在可识别的、稀疏的、可复用的计算单元。",
+            "methodsAndTechniques": "方法结合梯度归因与神经元共现图，利用z-score校正频率偏差后进行多分辨率社区检测。关键创新在于将‘反复共同激活’作为功能关联的代理，并通过三层因果测试（必要性、层必要性、充分性）筛选真实功能单元。该流程无需预设任务，能自动发现跨提示复用的计算模式。",
+            "limitationsAndReadingValue": "局限包括仅分析末位置、忽略跨位置动态，且社区划分强制互斥，可能割裂多功能神经元。此外，覆盖率仍有限，多数行为未被解释。最值得阅读的是其方法设计与因果验证框架，为探索模型内部机制提供了可扩展的新范式，尤其适合研究高频、精确的语言行为如何被分布式实现。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "机制设计",
+            "算法设计",
+            "基准评测",
+            "系统框架"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "可解释性",
+            "神经网络机制",
+            "稀疏性",
+            "因果干预"
+          ],
+          "tags": [
+            "大语言模型",
+            "可解释性",
+            "神经网络机制",
+            "稀疏性",
+            "因果干预",
+            "实验验证",
+            "机制设计",
+            "算法设计"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.23112"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        },
+        {
+          "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+          "titleZh": "分辨率假说：智能体进化的关键是识别改进",
+          "authors": [
+            "Yuanhao Zeng",
+            "Shaocheng Lan",
+            "Ao Lu",
+            "Kuang Yan",
+            "Heng Lin",
+            "Xinang Xu",
+            "Yuan Luo",
+            "Yueting Wang",
+            "Yexin Li",
+            "Ruo Shan",
+            "Kan Ren"
+          ],
+          "date": "2026-11-17",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23068",
+          "abstract": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and evaluate self-improving agents, from designing ever more candidate improvement systems to making true improvements detectable and accumulable.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么智能体自我进化常无法持续提升性能？当前方法虽能生成潜在更优的提示、技能或记忆等外部构件，但在实际演化过程中常停滞不前。核心问题并非缺乏改进建议能力，而是评估机制难以可靠识别哪些构件真正有益。由于评估本身存在噪声，导致错误积累，使得看似有效的改进实则随机，阻碍了性能的稳定积累。",
+            "modelAndSetup": "论文研究在固定大模型权重下，通过迭代生成并筛选外部构件（如技能、提示）来提升智能体表现的演化流程。输入是任务轨迹与当前构件，输出是更新后的构件。评估基于任务成功率，实验覆盖七种演化方法、六种模型及多个基准，在超过千万次大模型调用中系统测量评估噪声与演化稳定性。",
+            "contributionsAndResults": "论文提出‘分辨率假说’：智能体演化的瓶颈在于评估无法可靠分辨微小改进。实验证明，现有方法间的典型差距小于单次运行波动，且选择机制在区分优劣候选时近乎随机。已报告的重大增益多源于利用评估漏洞的单一规则，修复后即消失，说明当前演化常捕获虚假而非真实进步。",
+            "methodsAndTechniques": "作者通过方差分解分离评估噪声与跨轮次差异，并设计受控实验检验提议与选择阶段。构建离线候选池以冻结提议质量，独立测试选择器可靠性；重评演化轨迹以追踪误差累积。发现即使存在优质候选，选择过程因高噪声而失效，且错误随轮次复合，导致结果不可复现。",
+            "limitationsAndReadingValue": "结论主要基于文本类构件与特定基准，是否适用于代码级演化或更强模型尚不明确。实验未涵盖权重更新的演化路径。尽管如此，其对评估噪声的系统分析极具启发性。最值得阅读的是其对评估分辨率的诊断方法、误差累积机制及对现有增益的审计逻辑，为构建可靠自进化系统提供了关键视角。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "基准评测",
+            "机制分析",
+            "系统框架"
+          ],
+          "contentTags": [
+            "智能体",
+            "大语言模型",
+            "评测方法",
+            "自进化",
+            "噪声评估"
+          ],
+          "tags": [
+            "智能体",
+            "大语言模型",
+            "评测方法",
+            "自进化",
+            "噪声评估",
+            "实验验证",
+            "基准评测",
+            "机制分析"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.23068"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.AI",
+              "cs.CL"
+            ],
+            "primaryCategory": "cs.AI",
+            "published": "2026-11-17",
+            "updated": "2026-11-17"
+          }
+        }
+      ]
+    }
+  ]
+}
