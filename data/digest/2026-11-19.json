@@ -1,0 +1,646 @@
+{
+  "date": "2026-11-19",
+  "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
+  "generatedAt": "2026-11-19T10:50:18.379087+00:00",
+  "warnings": [
+    "LLM 精读生成失败，使用 Mock fallback：Counterfactual World Models: JEPAs That Reason About \"What If\" (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Communications-free Collective Intelligence Via Allocentric Belief (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Teaching VLMs What to Say, Not How to Reason: Rethinking Counterfactual Reasoning in Autonomous Driving (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：CommDreamer: Radio-Geometric World Models for Mapless Cellular-Connected UAV Trajectory Planning (HTTP Error 400: Bad Request)"
+  ],
+  "llm": {
+    "enabled": true,
+    "provider": "qwen",
+    "scoreModel": "qwen-plus",
+    "enrichModel": "qwen-long"
+  },
+  "scoreLabels": {
+    "importance": "重要性",
+    "horizonValue": "视野价值",
+    "clarity": "清晰度",
+    "theoreticalDepth": "理论深度",
+    "overall": "整体判断",
+    "modelNaturalness": "问题与模型自然性",
+    "theoreticalStrength": "理论结果强度",
+    "guaranteeQuality": "保证与假设质量",
+    "readingValue": "相关性与阅读收益",
+    "aiRelevance": "AI 相关度",
+    "agtRelevance": "AGT/EconCS 相关度",
+    "penalty": "惩罚",
+    "baseTotal": "基础分",
+    "bonus": "AI 相关奖励",
+    "total": "总分"
+  },
+  "scoreMaxima": {
+    "recent-ai": {
+      "importance": 6.0,
+      "horizonValue": 6.0,
+      "clarity": 6.0,
+      "theoreticalDepth": 8.0,
+      "overall": 4.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "total": 30.0
+    },
+    "recent-agt": {
+      "modelNaturalness": 8.0,
+      "theoreticalStrength": 10.0,
+      "guaranteeQuality": 6.0,
+      "readingValue": 6.0,
+      "aiRelevance": 10.0,
+      "agtRelevance": 10.0,
+      "penalty": 5.0,
+      "baseTotal": 30.0,
+      "bonus": 10.0,
+      "total": 40.0
+    }
+  },
+  "sections": [
+    {
+      "id": "recent-agt",
+      "title": "近期 AGT 新论文",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 7,
+      "papers": [
+        {
+          "title": "On the equilibrium lattice of supermodular games",
+          "titleZh": "超模博弈中的均衡格结构",
+          "authors": [
+            "Philip R. Neary"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24614",
+          "abstract": "This paper shows how the meet and join of any pair of equilibria in a super- modular game can be constructed. The method relies on two one-directional best-response processes that I call contagion up and contagion down. Starting from any action profile, applying this pair of processes in opposite orders produces two equilibria that define its equilibrium envelope. The endpoints of the envelope are precisely the least and greatest equilibria reachable through arbitrary asynchronous best-response dynamics, and can only move closer together as players revise their actions. These and other results show how appending one-directional adjustment processes to the familiar equilibrium lattice structure allows us to explore the relationships between equilibria further.",
+          "summarySections": {
+            "backgroundAndQuestion": "已知超模博弈的纯策略纳什均衡构成一个完全格，但经典结论并未说明如何构造任意两个均衡的交与并。本文旨在填补这一理论空白，并进一步探究在异步最佳响应动态下哪些均衡可达。核心问题是：不同均衡之间的关系能否通过具体的调整过程来刻画？这触及了均衡选择、路径依赖与动态收敛边界的根本挑战。",
+            "modelAndSetup": "模型考虑有限玩家的二元动作超模博弈，每个玩家的策略空间为{a,b}，收益具有递增差异性，确保最佳响应单调。引入两种单向调整过程——‘向上传染’（仅允许a→b的最佳响应）和‘向下传染’（仅允许b→a）。任何初始行为配置经这两个过程相继作用后终止于特定均衡，形成所谓的‘均衡包络’。",
+            "contributionsAndResults": "论文证明了任意两个均衡的格交与格并可通过分别对它们的逐分量最小值和最大值应用向下和向上传染过程来构造。更进一步，从任一初始配置出发，先下后上或先上后下的传染序列总收敛到一对有序均衡，恰好界定该配置下所有可能到达的均衡范围，即均衡包络。包络随动态演进而单调收缩，最终稳定。",
+            "methodsAndTechniques": "关键方法在于利用超模性保证单向传染过程的序无关性和单调性，从而构造出可达均衡的上下界。通过结合两个方向的传染操作，作者建立了初始状态与极限均衡之间的映射关系。技术核心是证明包络端点本身就是纳什均衡，并借助算子的幂等性与单调性分析其演化路径，本质上是一种离散型李雅普诺夫函数论证。",
+            "limitationsAndReadingValue": "主要限制在于多数结果虽可推广至全序动作集，但生成任意均衡区间的定理依赖二元动作假设，扩展仍为开放问题。尽管如此，论文提供了理解均衡结构与动态可达性的全新视角。最值得阅读的是其清晰的算子构造思想与对均衡包络动态演变的深刻洞察，这对研究学习动态与信息设计具有启发意义。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "均衡分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "博弈学习",
+            "超模博弈",
+            "信息设计",
+            "战略互补"
+          ],
+          "tags": [
+            "博弈学习",
+            "超模博弈",
+            "信息设计",
+            "战略互补",
+            "理论推导",
+            "均衡分析",
+            "模型构建"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.24614"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "Sharp Complexity Thresholds for Network Cournot Competition",
+          "titleZh": "网络古诺竞争的尖锐复杂度阈值",
+          "authors": [
+            "Mohammad Hajiaghayi",
+            "Mohammad Mahdavi"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24931",
+          "abstract": "We determine the approximation complexity of network Cournot equilibrium as a function of demand degree and the number of firms sharing a market. For common, nonincreasing concave polynomial inverse demands, convex quadratic costs of firms' allocation vectors, and rational total capacities, high-precision approximation is polynomial-time solvable for cubic demands, regardless of market size. Quartic demands remain tractable when each market has at most three firms, and quintic demands remain tractable with at most two. These thresholds are exact: approximation at a fixed positive profit-regret tolerance is PPAD-hard for quartic demands with four firms per market, quintic demands with three, and sextic demands with two. Each hardness result uses one fixed demand curve in every market, a constant number of markets per firm, and globally nondecreasing strongly convex quadratic costs. We also give a polynomial-time algorithm for arbitrary-degree nonincreasing concave polynomial demands when each firm's convex polynomial cost depends only on its total production. The algorithm applies to arbitrary access graphs and permits firm-specific inverse demands. Its running time is polynomial in the input size and the logarithm of the inverse accuracy. The algorithm assigns one marginal charge to each firm and adjusts the charges until each firm's total sales approximate the quantity it would produce at that charge.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么网络古诺竞争的均衡计算难度会随需求函数非线性程度急剧上升？本文探究在何种非线性条件下，均衡从多项式时间可解变为PPAD-hard。这触及了博弈论中一个根本问题：战略互动的计算复杂性何时因收益结构的微小变化而发生质变，尤其在网络市场中企业跨区域竞争的背景下。",
+            "modelAndSetup": "模型考虑一个二分图结构的网络古诺竞争，其中企业向可访问的市场供应产品，市场价格由总供给通过一个非增凹多项式反需求函数决定，企业成本为其分配向量的凸二次函数。核心变量是反需求函数的次数和每个市场的参与企业数，研究这两者如何共同决定计算复杂性。",
+            "contributionsAndResults": "论文给出了精确的复杂度分类：当反需求为三次时，任意市场规模下均有多项式时间算法；四次时，仅当每市场至多三家企业可解；五次时，仅当至多两家可解；更高次则迅速变为PPAD-hard。该分类是紧的，揭示了非线性程度与市场竞争激烈程度之间的微妙平衡决定了计算可行性。",
+            "methodsAndTechniques": "对于易解情形，作者利用低次多项式需求的曲率性质，证明负边际利润映射的单调性，从而将其转化为变分不等式求解。对于难解情形，则通过精心构造的中继链（relay chain）归约，将双人两动作多项式博弈的硬度嵌入到高次需求的古诺经济中，利用价格斜率变化放大战略影响。",
+            "limitationsAndReadingValue": "结果依赖于特定的成本结构（如总产量成本与分配成本的区分）和全局固定的需求曲线，实际市场可能更异质。尽管如此，论文的价值在于其清晰的相变刻画和精巧的硬度归约技术，非常值得为理解博弈计算复杂性的边界、单调性在均衡搜索中的作用以及网络效应建模而深入阅读。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "算法设计",
+            "复杂度分析",
+            "均衡分析"
+          ],
+          "contentTags": [
+            "市场/匹配",
+            "博弈学习",
+            "多智能体系统"
+          ],
+          "tags": [
+            "市场/匹配",
+            "博弈学习",
+            "多智能体系统",
+            "理论推导",
+            "算法设计",
+            "复杂度分析",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.24931"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "Temporal Fair Division: Simultaneous Guarantees for Goods and Chores",
+          "titleZh": "Temporal Fair Division: Simultaneous Guarantees for Goods and Chores",
+          "authors": [
+            "Tianqi Chen"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23782",
+          "abstract": "We study temporal fair division of indivisible items in both the goods and chores settings, with $n \\ge 2$ agents and nonnegative additive values or costs. Items arrive one at a time and must be assigned immediately and irrevocably. The arrival order and all agents' values or costs are known in advance, and the cumulative allocation must satisfy the fairness requirements after each arrival. For goods, we give a polynomial-time algorithm that simultaneously achieves exact temporal proportionality up to one item (TPROP1), a $1/n$ approximation to temporal maximin share (TMMS), and a $1/(n-1)$ approximation to temporal envy-freeness up to one item (TEF1). The TMMS factor is optimal. For chores, we give a polynomial-time algorithm that simultaneously achieves exact TPROP1 and a $2-1/n$ approximation to TMMS. Classical scheduling lower bounds based on fixed sequences carry over to chores TMMS, establishing the optimality of this factor for $n=2,3$. For every $n \\ge 2$, we further show that $2-1/n$ is the optimal TMMS factor subject to exact TPROP1. For every fixed $n \\ge 3$ and every finite $β\\ge 1$, we construct an instance of chores admitting no $β$-TEF1 allocation.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在物品随时间逐个到达时，仍需保证每个时刻的分配都是公平的？传统公平分配关注最终结果，但现实中资源是逐步释放的，早期不公平可能已造成实际损害。本文研究在完全预知序列的情况下，能否对不可分割的物品（无论是带来收益的商品还是带来负担的任务）进行实时分配，使得每一前缀都满足多种公平性标准。",
+            "modelAndSetup": "模型中有 n 个代理和 m 个按序到达的物品，每个代理对每个物品有已知的非负加法价值或成本。物品一旦到达就必须立即且不可撤销地分配。目标是设计一个单一的分配方案，使其在每一个前缀上同时满足时间公平性要求，如 TPROP1（比例性至多差一件）、TEF1（无嫉妒至多差一件）和 TMMS（最大最小份额）等，且所有信息在开始前均已知。",
+            "contributionsAndResults": "论文给出了商品和任务两类情形下的统一算法框架。对于商品，提出了多项式时间算法，同时实现精确 TPROP1、最优的 1/n-TMMS 和 1/(n-1)-TEF1。对于任务，则实现了精确 TPROP1 和 (2-1/n)-TMMS，并证明该因子在满足 TPROP1 下是最优的。最关键的是，证明了当代理数不少于 3 时，任何有限的 TEF1 近似都无法保证。",
+            "methodsAndTechniques": "两种算法均采用逆向构造法。商品情形通过‘预算过程’分解价值并维护代表物，利用最大剩余预算规则控制比较包的价值；任务情形则将成本视为服务需求，构造虚拟服务区间并用深度限制确保重叠不超过 n 层，再通过逆向贪心选择互不相交的区间来完成分配。关键技术在于通过预处理建立下界或上界，从而在动态过程中维持公平性。",
+            "limitationsAndReadingValue": "结果依赖于完全预知假设，在真实预测不准的场景中可能难以应用。此外，任务情形下无法实现任何有限 TEF1 是强不可能性结果，揭示了任务与商品的本质差异。最值得读的是其逆向构造思想和对 TEF1 不可能性的指数级反例构造，这对理解动态公平分配的根本极限具有深刻启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "contentTags": [
+            "公平性",
+            "在线算法",
+            "多智能体系统",
+            "机制设计"
+          ],
+          "tags": [
+            "公平性",
+            "在线算法",
+            "多智能体系统",
+            "机制设计",
+            "理论推导",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 26.1
+          },
+          "ids": {
+            "arxiv": "2611.23782"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "The Optimal Competitive Ratio for Subadditive Online Combinatorial Auctions is Less Than 1/2",
+          "titleZh": "子可加性在线组合拍卖的最优竞争比小于 1/2",
+          "authors": [
+            "Andrés Cristi",
+            "Jiechen Zhang"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24920",
+          "abstract": "We construct a four-buyer online combinatorial auction with independent subadditive valuations and a fixed, known arrival order in which every online rule earns strictly less than $1/2$ of the expected offline optimum. A common partition, revealed at the third arrival, gives the first three buyers one unit of welfare per item. If the rule uses three distinct partitions, either an item allocated early contributes zero or the fourth buyer's expected value for the remaining bundle is one less than its size. We compute the optimal online and offline welfare exactly and show that a $1/2$ guarantee always holds with at most three buyers.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么在线组合拍卖的竞争比不能达到 1/2？该问题源于子可加估值下在线分配能否逼近离线最优的长期猜想。此前研究已证明 XOS 或特定分布下可达 1/2，但在更一般的子可加估值中是否成立尚无定论。本文旨在填补这一理论空白，挑战普遍预期的竞争比上限。",
+            "modelAndSetup": "模型考虑四个买家按固定顺序到达，每个买家拥有独立的子可加估值函数，物品不可分且需即时分配。前三位买家基于网格单元访问特定物品集合，第四位买家的估值依赖于是否保留一个‘块’结构。机制必须在线决定分配，目标是最大化总福利，并与知晓全部估值的离线最优进行比较。",
+            "contributionsAndResults": "论文证明了在四买家情形下，任何在线分配规则的期望福利严格小于离线最优的一半，从而首次确立子可加环境下 1/2 竞争比不可达。同时证明三买家时仍可保证 1/2，表明四是最小反例规模。这一结果修正了对该类问题性能极限的理解，揭示了买家数量增加带来的本质困难。",
+            "methodsAndTechniques": "作者通过构造一个精确可计算的四买家实例来实现分离。关键在于设计前三位买家的选项结构，使得不同分配路径会破坏第四位买家的价值潜力。分析结合条件期望、单调性和子可加性质，利用格点结构和块交集特性推导出紧的上下界，最终精确计算出渐近竞争比低于 1/2。",
+            "limitationsAndReadingValue": "结果依赖精心构造的反例，结构较为特殊，可能限制其在一般市场中的直接应用。然而，该构造展示了子可加性中信息与分配顺序交互的新机制，对理解在线决策瓶颈具有深刻启示。最值得阅读的是其反例设计逻辑与紧确界分析技巧，为后续研究提供了新工具和方向。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "算法设计"
+          ],
+          "contentTags": [
+            "机制设计",
+            "拍卖理论",
+            "在线算法"
+          ],
+          "tags": [
+            "机制设计",
+            "拍卖理论",
+            "在线算法",
+            "理论推导",
+            "模型构建",
+            "算法设计"
+          ],
+          "scores": {
+            "modelNaturalness": 7.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          },
+          "ids": {
+            "arxiv": "2611.24920"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "Platform Recommendation and Competition in Search Markets",
+          "titleZh": "搜索市场中的平台推荐与竞争",
+          "authors": [
+            "Sanxi Li",
+            "Jun Yu",
+            "Mingsheng Zhang"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24464",
+          "abstract": "Recommendation rules affect both sellers' incentives and the alternatives consumers expect to find. We develop a framework for evaluating these rules with heterogeneous sellers, endogenous pricing and advertising, and costly consumer search. For a broad class of separable recommendation scores, we establish conditions under which a unique market equilibrium exists. Three applications illustrate the use of the framework. A stronger reward for low prices does not necessarily lower equilibrium prices and benefit consumers when products are sufficiently differentiated in qualities. Quality guidance can lower the price of each product and benefit consumers while raising the average transaction price. With heterogeneous match distributions, a reward for the best initial inspection can help consumers with advertising fixed and harm them when advertising adjusts. A two-type design extension shows that no finite optimum over implementable outcomes uses positive weights on both quality and low prices, even when the platform values consumer surplus.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么加强低价奖励不一定降低价格？本文研究平台推荐规则如何同时影响卖家定价与消费者搜索行为。现实中，平台通过调整曝光权重来引导消费，但卖家会策略性地改变价格和广告投入，从而重塑消费者面临的备选集。问题核心在于：推荐规则的直接激励效应可能被市场层面的间接反馈所抵消，尤其是当产品间存在质量差异时。",
+            "modelAndSetup": "模型刻画了一个包含异质卖家、理性消费者与承诺推荐规则的平台的三阶段博弈。卖家属于不同类型，具有不同成本、质量和匹配分布；平台基于公开特征、价格和广告支出设定推荐分数；消费者依次查看商品并决定是否购买。均衡中，卖家先选择广告支出，再定价，消费者则进行最优序贯搜寻，整个系统形成内生的访问率与停止规则。",
+            "contributionsAndResults": "论文发现，增强对低价的奖励反而可能导致所有均衡价格上涨，因为优质高价商品失去曝光削弱了消费者的议价能力。相反，提升质量权重虽不直接影响定价，却能改善搜索机会，使消费者更挑剔，最终压低各商品价格。此外，当广告响应可变时，奖励‘最佳初次体验’的产品也可能适得其反。",
+            "methodsAndTechniques": "作者构建了一个两步均衡求解框架：先固定消费者保留效用，求解各类型的条件最优价格与广告反应；再通过市场一致性方程确定实际的保留效用。关键技术是分离价格与广告对需求的影响，并利用协方差项捕捉推荐变化如何重配访问量，从而分析其对搜索价值的净效应。",
+            "limitationsAndReadingValue": "模型依赖较强的可分性假设，且唯一性条件较为技术化。尽管如此，论文的价值在于清晰揭示了推荐政策的双重作用路径——直接影响与通过改变竞争环境的间接反馈。最值得读的是其分析框架与反直觉结论，对理解平台治理与市场竞争具有深刻启示。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "机制设计"
+          ],
+          "contentTags": [
+            "平台推荐",
+            "消费者搜索",
+            "企业异质性",
+            "广告竞争",
+            "价格竞争"
+          ],
+          "tags": [
+            "平台推荐",
+            "消费者搜索",
+            "企业异质性",
+            "广告竞争",
+            "价格竞争",
+            "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 8.0,
+            "guaranteeQuality": 5.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 9.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "bonus": 0.0,
+            "total": 24.3
+          },
+          "ids": {
+            "arxiv": "2611.24464"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-ai",
+      "title": "近期 AI 新论文（cs.RO）",
+      "source": "arxiv-llm-ranked",
+      "fetchedCount": 50,
+      "papers": [
+        {
+          "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+          "titleZh": "",
+          "authors": [
+            "Randall Balestriero",
+            "Yann LeCun",
+            "Kerda Varaku"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24778",
+          "abstract": "World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question follows: what would have happened under a different action, subject to the same disturbance? Its answer separates bad decisions from bad luck. We prove that world models trained on factual transitions cannot answer it on their own, whatever their data or capacity. For many physical systems, the observed outcome and a simple property of the dynamics suffice: natura non facit saltus, nature makes no leaps. When actions and disturbances act as separate forces, their interaction is second-order in time, so the counterfactual outcome is, to first order, the observed outcome plus the difference between the world model's predictions under the alternative and factual actions. This yields a counterfactual world model with no counterfactual data, extra parameters, or retraining. For transitions of duration $h$, we prove an $O(h^2)$ bound on the counterfactual error relative to the disturbance variance, establish a matching minimax lower bound from unpaired factual data, and characterize failures at discontinuities, coordinate folds, and disturbances that scale the command. We validate these predictions from pixels with JEPA world models on frozen DINOv2 and masked autoencoder (MAE) encoders. On four rendered simulators, our approach improves counterfactual $R^2$ from $38$--$46\\%$ to $86$--$96\\%$ with the same world models; on a fifth, an underwater vehicle, it reaches $90$--$94\\%$ with sixteen times more factual data. Four further frozen encoders, DINOv3, SigLIP~2, CLIP and EVA-02, give $81$--$95\\%$ on the same simulators. In hindsight planning, it finds the action that would have reached the goal in $35$--$69\\%$ of events, against $14$--$23\\%$ for an oracle planner that knows the simulator but not the outcome.",
+          "summarySections": {
+            "backgroundAndQuestion": "World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question follows: what would have happened under a different action, subject to the same...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 8.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.24778"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.AI",
+              "cs.CV",
+              "cs.RO",
+              "stat.ML"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "Communications-free Collective Intelligence Via Allocentric Belief",
+          "titleZh": "",
+          "authors": [
+            "Cameron Mehlman",
+            "Arjun Mulchandani",
+            "Hovik Grigoryan",
+            "Anurag Koyyada",
+            "Gregory Falco"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24858",
+          "abstract": "A team of skilled card players share no information amongst each other, and yet still are able to coordinate their play by watching the same players and reading the same tells. Autonomous systems have failed to exploit this logic, relying instead on explicit communication or complex state estimation schemes that can fail when it matters most. Without it, decentralized agents diverge in their world beliefs, and coordination collapses. Here we show that anchoring all agents to a single shared external actor, a common witness whose reactions encode team state, produces spontaneous, communication-free coordination. An allocentric belief network trained on witness behavior allows each agent to independently reconstruct full team state, keeping group beliefs consistent with no inter-agent exchange. Across five competitive environments allocentric belief alignment outperforms egocentric approaches in collective performance, and even scales to sixty-agent teams where standard methods fail. These results establish a new principle for collective intelligence: in the absence of communication, a shared gaze replaces a shared channel.",
+          "summarySections": {
+            "backgroundAndQuestion": "A team of skilled card players share no information amongst each other, and yet still are able to coordinate their play by watching the same players and reading the same tells. Autonomous systems have failed to exploit this logic, relying instead on explicit c...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.24858"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "eess.SY"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "Teaching VLMs What to Say, Not How to Reason: Rethinking Counterfactual Reasoning in Autonomous Driving",
+          "titleZh": "",
+          "authors": [
+            "Hayeon Oh",
+            "Donghwan Lee"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24376",
+          "abstract": "End-to-end autonomous driving systems have been shown to suffer from shortcut learning and causal confusion, limiting their ability to generalize robustly under distribution shift. To mitigate these limitations, recent works based on Vision-Language Models (VLMs) have explored incorporating linguistic reasoning capabilities into driving decision-making, reporting improvements in driving performance. In particular, counterfactual (CF) reasoning has been proposed to enable self-reflective, high-level causal understanding. However, it remains unclear whether the language-based reasoning mitigates shortcut learning or merely shifts it from visual representations to linguistic patterns, creating an illusion of causal understanding. Moreover, existing approaches often conflate intervention-based reasoning with CF reasoning, leaving the effects of genuine CF reasoning unexplored. In this work, we examine what CF reasoning actually induces in VLM-based autonomous driving and observe that it shifts the action distribution toward more conservative behaviors while increasing uncertainty in reasoning and decision-making. This effect persists under reinforcement fine-tuning, suggesting that it is not merely a transient artifact. Furthermore, visual attention analysis shows that CF reasoning does not alter visual grounding, while causal intervention experiments reveal that masking causally relevant and non-causal factors in accident scenarios results in comparable decision change rates. Overall, these results suggest that CF reasoning does not induce genuine causal reasoning grounded in visual evidence. Instead, it acts as a linguistic shortcut that reshapes the action distribution, teaching models what to say but not how to reason, highlighting a gap between language-based reasoning and causal understanding in autonomous driving.",
+          "summarySections": {
+            "backgroundAndQuestion": "End-to-end autonomous driving systems have been shown to suffer from shortcut learning and causal confusion, limiting their ability to generalize robustly under distribution shift. To mitigate these limitations, recent works based on Vision-Language Models (VL...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.24376"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "CommDreamer: Radio-Geometric World Models for Mapless Cellular-Connected UAV Trajectory Planning",
+          "titleZh": "",
+          "authors": [
+            "Yuqi Ping",
+            "Tianhao Liang",
+            "Tingting Zhang"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24244",
+          "abstract": "Reliable cellular connectivity and collision-free flight are essential for unmanned aerial vehicle (UAV) operations in low-altitude urban canyons, where dense 3D buildings obstruct flight clearance, shadow serving base stations, and create strong co-channel interference at street intersections. Existing planners either require prior 3D city meshes and channel knowledge maps unavailable onboard, or rely on model-free reinforcement learning with low sample efficiency and poor cross-city generalization. We propose CommDreamer, a mapless radio-geometric world model that fuses raw onboard 3D LiDAR scans, multicell cellular reports, and shift-invariant relative kinematics to jointly infer local obstacle clearance and directional signal-to-interference-plus-noise ratio (SINR) dynamics. Using a categorical recurrent state-space model, CommDreamer compresses multimodal measurement histories into a coordinate-invariant latent belief, enabling the UAV to foresee deep shadow zones and train a lightweight online policy purely via multi-step latent imagination without prior maps or antenna patterns. Zero-shot evaluations across unseen urban morphologies in our open-source ray-tracing simulator, AeroCity-RT, show that CommDreamer converges within 150 episodes where model-free reinforcement learning fails to complete flights, achieving 100.0% mission success with zero collisions while lifting median route SINR to 8.02 dB and cutting effective SINR outage by over 50% relative to radio-blind world-model and reactive LiDAR baselines.",
+          "summarySections": {
+            "backgroundAndQuestion": "Reliable cellular connectivity and collision-free flight are essential for unmanned aerial vehicle (UAV) operations in low-altitude urban canyons, where dense 3D buildings obstruct flight clearance, shadow serving base stations, and create strong co-channel in...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 27.0,
+            "total": 27.0
+          },
+          "ids": {
+            "arxiv": "2611.24244"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.RO",
+              "eess.SY"
+            ],
+            "primaryCategory": "cs.RO",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        },
+        {
+          "title": "Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving",
+          "titleZh": "行动重要吗？探究动作条件语义预测作为自动驾驶的世界模型",
+          "authors": [
+            "Binay Kumar Singh",
+            "Niels Da Vitoria Lobo"
+          ],
+          "date": "2026-11-18",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24840",
+          "abstract": "World models are increasingly used in autonomous driving to predict how a scene evolves under the ego vehicle's actions, supporting counterfactual reasoning and model-based planning. However, existing evaluations focus on prediction fidelity and planning performance, and rarely verify that the predictions depend on the conditioning action. In this paper, we study action dependence in action-conditioned semantic forecasting, which predicts future semantic segmentation from past segmentations and the ego action. We compare a forecaster with feature-wise and input-level action conditioning against an identical model without action input, and measure action dependence with test-time action interventions scored by standard segmentation metrics. The evaluation is validated in a synthetic environment with known action-dependent dynamics and applied to Cityscapes and BDD100K, both within each dataset and across the two vehicle platforms. Experiments show that the executed action improves mid-term mIoU by at most 2.5 points on Cityscapes and 0.6 points on BDD100K, whereas a wrong action reduces it by up to 23.2 and 7.0 points, below the model without action input. On real data, feature-wise conditioning depends 1.6 times more on the action than input-level conditioning at similar accuracy, whereas both depend on it equally in the synthetic environment, where the history does not determine the action. These results show that an accuracy gain indicates that a driving world model uses its action, but not how strongly its forecasts depend on it. Code is available at https://github.com/binayksingh/does-action-matter.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有自动驾驶世界模型常依赖未来动作预测场景演化，但评估多关注预测质量或下游规划性能，很少验证预测是否真正依赖动作输入。由于车辆运动具有强自相关性，模型可能仅靠历史帧就能准确预测，从而忽略动作信号，形成类似‘惯性’或‘模仿’的捷径学习。这导致即使模型精度提升，也无法确定其是否真正利用了动作信息，构成评测盲区。",
+            "modelAndSetup": "论文研究动作条件语义预测任务：给定过去几帧语义图和当前动作，预测未来语义布局。输入为历史语义分割序列与速度/偏航率动作，输出为未来帧的语义概率图。模型基于U-Net架构，比较无动作输入、输入拼接、特征调制（FiLM）三种变体。通过测试时替换未来动作并观察预测性能变化，来量化动作依赖程度。",
+            "contributionsAndResults": "论文提出一种直接衡量动作依赖性的干预评测方法，在合成环境验证其有效性后应用于Cityscapes和BDD100K数据集。结果显示，虽然加入动作仅使中期mIoU最多提升2.5点，但使用错误动作会导致性能暴跌达23点，甚至低于无动作模型。这说明精度增益只能证明动作被使用，不能反映依赖强度，必须显式评测依赖性。",
+            "methodsAndTechniques": "核心方法是在测试阶段对未来的动作输入进行干预，如替换为随机序列、零偏航、停止指令或均值动作，并用标准分割指标（mIoU）衡量预测退化程度。该方法无需新指标，直接揭示模型对动作的敏感性。在真实数据中，FiLM机制比输入拼接更依赖动作（约1.6倍），但在合成环境中两者相当，说明机制差异受数据特性影响。",
+            "limitationsAndReadingValue": "研究局限于单目相机、短期预测（0.6秒内）、语义级而非像素级生成，且BDD100K使用伪标签可能影响绝对结论。跨平台迁移实验显示动作依赖性随训练平台转移。最值得读的是其提出的干预评测范式——它揭示了传统精度指标的局限，提醒研究者在训练世界模型时应显式验证因果依赖，而非仅报告性能提升。"
+          },
+          "researchParadigmTags": [
+            "实验验证",
+            "评测方法",
+            "模型构建",
+            "基准评测"
+          ],
+          "contentTags": [
+            "世界模型",
+            "动作条件预测",
+            "语义分割",
+            "自动驾驶",
+            "因果干预"
+          ],
+          "tags": [
+            "世界模型",
+            "动作条件预测",
+            "语义分割",
+            "自动驾驶",
+            "因果干预",
+            "实验验证",
+            "评测方法",
+            "模型构建"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          },
+          "ids": {
+            "arxiv": "2611.24840"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.CV",
+              "cs.AI",
+              "cs.LG",
+              "cs.RO"
+            ],
+            "primaryCategory": "cs.CV",
+            "published": "2026-11-18",
+            "updated": "2026-11-18"
+          }
+        }
+      ]
+    }
+  ]
+}
