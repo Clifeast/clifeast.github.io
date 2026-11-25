@@ -1,9 +1,11 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "pipelineVersion": "recent-arxiv-v4-title-zh-counts",
-  "generatedAt": "2026-11-24T12:55:14.770451+00:00",
+  "generatedAt": "2026-11-25T11:47:43.324302+00:00",
   "warnings": [
-    "近期 AI 新论文 arXiv 抓取失败：HTTP Error 429: Too Many Requests"
+    "LLM 精读生成失败，使用 Mock fallback：Improved Downward-Closed Delegation Bounds (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：Speculative Decoding for Semantic-ID-Based Generative Recommendations (HTTP Error 400: Bad Request)",
+    "LLM 精读生成失败，使用 Mock fallback：See the Answer, Learn to Embed: Learning Universal Multimodal Embeddings from Hindsight (HTTP Error 400: Bad Request)"
   ],
   "llm": {
     "enabled": true,
@@ -60,174 +62,299 @@
       "fetchedCount": 12,
       "papers": [
         {
-          "title": "Principal Revelations of the Revelation Principle",
-          "titleZh": "揭示揭示原理的主要启示",
-          "authors": [
-            "Mark Whitmeyer"
-          ],
-          "date": "2026-11-23",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.30612",
-          "abstract": "I prove a converse to the revelation principle, arguing that it is a principle of optimism: if it must hold for all environments (in fact, even just those with private values and independent types) the principal must assume her favorite equilibrium is played by the agents. When the principal knows only that the prior lies in some set, she must additionally assume it is her favorite one. With private values, independent types, and quasilinear payoffs, however, unrestricted transfers allow the principal to approximate any mechanism's equilibrium payoff via a direct mechanism whose unique equilibrium is truthful.",
-          "summarySections": {
-            "backgroundAndQuestion": "为什么揭示原理成立会反映设计者的信念？传统观点认为揭示原理简化了机制设计，允许用直接机制替代任意复杂机制而不损失效果。但该原理成立的前提是，设计者必须相信参与者会选择对自己最有利的均衡，尤其是当环境不确定时。本文追问：揭示原理的普遍有效性究竟揭示了设计者怎样的评估准则？",
-            "modelAndSetup": "模型设定包含一个拥有共同先验的委托人和若干代理人，代理人观察自身类型后同时发送消息。机制由消息空间和结果规则构成，诱导出贝叶斯纳什均衡集合。委托人通过一个连续且介于最小最大值之间的函数评估机制的所有可能均衡收益。扩展情形下，委托人仅知先验位于某紧致集合内，需进一步处理先验不确定性。",
-            "contributionsAndResults": "论文证明揭示原理普遍成立当且仅当委托人采用最乐观的评估方式——即总是假定最优均衡被选中。即使在私人价值与独立类型的环境中，这一结论依然成立。若先验未知，则还需满足‘共同事后信念’条件，且两层评估均需取最大值。而在可自由转移支付的情形下，任何机制的收益均可被唯一真实报告的直接机制逼近。",
-            "methodsAndTechniques": "作者通过构造特定协调博弈环境来展示非乐观评估无法复制间接机制的表现。关键技术在于设计具有多重严格均衡的直接机制，并利用间接机制实现唯一高效均衡。随后借助Hausdorff连续性和紧致性论证逼近性质。对于转移支付情形，则通过对激励相容支付进行扰动，消除非真实均衡。",
-            "limitationsAndReadingValue": "结果高度依赖于完全信息结构和乐观预期假设，在现实多主体系统中可能难以满足。虽在理论上澄清了揭示原理背后的隐含前提，但机制构造较理想化，缺乏实际部署考量。最值得阅读的是其对机制设计哲学层面的反思，以及关于均衡选择与信念结构之间关系的深刻洞察。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "模型构建",
-            "均衡分析"
-          ],
-          "contentTags": [
-            "机制设计",
-            "信息设计",
-            "博弈论"
-          ],
-          "tags": [
-            "机制设计",
-            "信息设计",
-            "博弈论",
-            "理论推导",
-            "模型构建",
-            "均衡分析"
-          ],
-          "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 9.0,
-            "guaranteeQuality": 6.0,
-            "readingValue": 6.0,
-            "aiRelevance": 2.0,
-            "agtRelevance": 10.0,
-            "penalty": 0.0,
-            "baseTotal": 29.0,
-            "bonus": 1.9,
-            "total": 30.9
-          },
-          "ids": {
-            "arxiv": "2611.30612"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "econ.TH",
-              "cs.GT"
-            ],
-            "primaryCategory": "econ.TH",
-            "published": "2026-11-23",
-            "updated": "2026-11-23"
-          }
-        },
-        {
-          "title": "Optimal Regret Lower Bounds in Matrix Games",
-          "titleZh": "矩阵博弈中的最优后悔下界",
-          "authors": [
-            "Taira Tsuchiya"
-          ],
-          "date": "2026-11-23",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.31149",
-          "abstract": "We study learning in two-player zero-sum games, also known as matrix games, in which two players with $m$ and $n$ actions repeatedly select mixed strategies for $T$ rounds. The learning dynamics based on optimistic Hedge guarantee regrets of $O(\\log(mn))$, which improve to $O(\\sqrt{\\log m\\log n})$ if each player knows the number of actions of the opponent, whereas matching regret lower bounds have been known only for specific learning dynamics. We prove that, for every deterministic learning dynamic, there exists a payoff matrix for which the maximum individual regret is $Ω(\\sqrt{\\log m\\log n})$ for a wide range of $m$ and $n$. Together with the upper bound $O(\\sqrt{\\log m\\log n})$, this lower bound shows that the minimax regret of deterministic learning dynamics in matrix games is $Θ(\\sqrt{\\log m\\log n})$ in this regime. For all $m$, $n$, and $T$, we also prove the lower bound $Ω(\\min\\{T,\\log\\min\\{m,n\\}\\})$. These lower bounds hold even if each player also observes the strategies and the feedback of the opponent. Our main technical contribution is an adaptive construction of the payoff matrix. While running the algorithms of the two players, we add in each round a rank-one matrix that keeps the feedback of the previous rounds unchanged and increases a lower bound on the sum of the regrets of the two players. As by-products, we obtain lower bounds on the rate at which the average strategies converge to a Nash equilibrium and on the query complexity of matrix-vector products that deterministic algorithms need to compute an approximate Nash equilibrium.",
-          "summarySections": {
-            "backgroundAndQuestion": "本文研究两人零和博弈（又称矩阵博弈）中的学习动态，旨在回答确定性学习算法所能达到的最小遗憾是否存在紧的下界。现有研究已知乐观镜像下降等算法可实现O(log(mn))甚至O(√log m log n)的上界，但缺乏对任意学习动态成立的匹配下界。这导致我们不清楚当前算法是否已达最优，从而引出核心问题：在最坏情况下，任何确定性学习过程的个体遗憾最低能有多高？",
-            "modelAndSetup": "模型考虑两个玩家在未知m×n支付矩阵上重复博弈T轮，每轮选择混合策略并观察对手策略下的期望收益向量。双方目标是最小化外部遗憾，即实际累积收益与最佳固定策略收益之差。学习动态由确定性算法构成，其策略选择仅依赖历史策略与反馈，不使用内部随机化。文中特别关注社会遗憾与最大个体遗憾，并通过构造对抗性支付矩阵来分析性能极限。",
-            "contributionsAndResults": "论文证明了对于任意确定性学习动态，存在支付矩阵使得最大个体遗憾至少为Ω(√log m log n)，当m≥n且log m ≤ n^α时该下界与已知上界匹配，确立了Θ(√log m log n)的极小极大遗憾。此外还得到更一般的Ω(min{T, log min{m,n}})下界。这些结果表明，在信息对称条件下，当前最优算法的遗憾阶数已无法被进一步改进，揭示了确定性学习的本质局限。",
-            "methodsAndTechniques": "核心技术是自适应构造支付矩阵：在模拟算法运行的前k轮中，每轮基于当前策略正交地添加一个秩一矩阵项，确保后续更新不影响前期反馈，从而使确定性算法行为不变。通过精心设计这些向量，使某一纯策略始终为纳什均衡，同时逐步增加两方遗憾之和的下界。该构造允许精确控制均衡性质与遗憾增长，是获得紧下界的關鍵。",
-            "limitationsAndReadingValue": "局限在于结果仅适用于确定性算法，含内部随机化的学习动态是否同样受限仍是开放问题。此外，当n=2时存在常数遗憾算法，说明下界对动作数有敏感依赖。最值得读的是其精巧的矩阵构造技巧与对学习-均衡关系的深刻洞察，不仅解决了长期遗留的极小极大遗憾问题，也为查询复杂度等衍生课题提供了新工具。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "复杂度分析",
-            "后悔分析",
-            "均衡分析",
-            "算法设计"
-          ],
-          "contentTags": [
-            "博弈学习",
-            "多智能体系统",
-            "在线算法",
-            "机制设计",
-            "零和博弈"
-          ],
-          "tags": [
-            "博弈学习",
-            "多智能体系统",
-            "在线算法",
-            "机制设计",
-            "零和博弈",
-            "理论推导",
-            "复杂度分析",
-            "后悔分析"
-          ],
-          "scores": {
-            "modelNaturalness": 7.0,
-            "theoreticalStrength": 10.0,
-            "guaranteeQuality": 6.0,
-            "readingValue": 6.0,
-            "aiRelevance": 4.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 29.0,
-            "bonus": 3.9,
-            "total": 29.6
-          },
-          "ids": {
-            "arxiv": "2611.31149"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT",
-              "cs.LG"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-11-23",
-            "updated": "2026-11-23"
-          }
-        },
-        {
-          "title": "Optimal Matroid Prophets against Almighty Adversaries and Delegation",
-          "titleZh": "对抗全能对手的最优拟阵预言机与委托",
+          "title": "Improved Downward-Closed Delegation Bounds",
+          "titleZh": "",
           "authors": [
             "Hamed Abdi",
             "Kiarash Banihashem",
             "MohammadTaghi Hajiaghayi",
             "Danny Mittal"
           ],
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.30933",
-          "abstract": "We prove an optimal one-half matroid prophet inequality against an almighty ordering adversary: the adversary observes every realized value before choosing the arrival order, whereas the algorithm sees values only as they arrive and must accept irrevocably. The algorithm is deterministic, and its guarantee holds against the stronger ex-ante relaxation. Before any values are revealed, it partitions the ground set, replaces the matroid by a stricter direct sum of minors, and fixes one threshold for each part. It then accepts greedily subject to these fixed tests. The main lemma bounds the expected value of the least valuable basis of the eligible elements. An element contributes either through the rank spanned by eligible elements or through excess value that every eligible basis must retain. This bound holds simultaneously for all bases and therefore permits the arrival order to depend on the entire realization. The same construction gives a deterministic, agent-oblivious mechanism for (possibly correlated) matroid delegation, improving the $1/4$ guarantee to the optimal $1/2$ factor. The principal values are independent, while the strictly positive agent utilities may have arbitrary dependence on the principal values and on one another. The guarantee holds for every best response, including ties resolved against the principal. Both factors are tight already in rank one. For rational finite-support distributions, preprocessing takes polynomial time; each eligible online arrival requires at most one query to the original matroid's independence oracle.",
+          "url": "https://arxiv.org/abs/2611.33095",
+          "abstract": "We study delegated choice under a downward-closed feasibility constraint, where the principal and agent values of each item may be arbitrarily correlated but items are independent. We give a deterministic, agent-oblivious menu that guarantees the principal more than $29/70\\approx0.41429$ of the expected offline optimum under every best response, including ties resolved against the principal. The menu depends only on the feasible family and the principal's value distributions, and verifies a proposal using only its items and their principal values. The previous best guarantee for downward-closed constraints was $0.1098$. Matroid constraints admit a guarantee of one half, which is tight already in rank one, but downward-closed constraints do not: a five-item knapsack instance bounds every deterministic menu by $500/1011$ of the optimum, and no rule with randomized acceptance, even one that knows the agent's utilities, can guarantee more than $30/61$. An explicit computer-assisted family of instances lowers the bound to $0.48105$ for all such rules. The guarantee is proved by contradiction. If every menu in a fixed family earns at most a $29/70$ fraction of the optimum, then a normalized instance satisfies a finite system of affine inequalities among the survival functions, stop-loss transforms and overshoot means of its clipped optima. An exact rational certificate shows that the system is infeasible. We also give a short analytic proof that a single threshold on the reported total value guarantees $3/10$.",
           "summarySections": {
-            "backgroundAndQuestion": "为什么在随机值到达顺序被强大对手操控时仍能保证决策质量？传统预言机不等式假设到达顺序独立于数值，但现实中信息丰富的代理可能按自身偏好排序提案，导致顺序泄露价值信息。本文关注一个全能对手可基于全部取值决定到达顺序的情形，这使得经典方法失效，亟需能在最坏顺序下仍保持性能的机制。",
-            "modelAndSetup": "模型考虑一个拟阵约束下的在线选择问题：每个元素有独立非负价值，算法按对手选定的顺序逐个观测并不可撤销地接受或拒绝，需维持所选集合独立。对手在看到全部取值后选择最坏顺序。委托场景中，代理人知晓双方效用并提交方案，委托人仅基于预设菜单做验证性决策，不观察未提交项的价值。",
-            "contributionsAndResults": "论文证明了对抗全能对手的1/2拟阵预言机不等式是紧的，且可通过确定性算法实现。该算法预先将拟阵分解为子块并设定固定阈值，在线时按块贪婪接受满足阈值且保持可行性的元素。相同构造也解决了相关效用下的委托问题，将此前1/4保证提升至最优1/2，且适用于任意效用相关性。",
-            "methodsAndTechniques": "核心技术是通过预处理将原拟阵分解为一系列收缩后的子拟阵，并为每块设定阈值，使得每块内合格元素的最小基期望值不低于其预算。关键在于利用闭包与强制包含事件来同时控制阈值收益与超额收益，从而在不依赖数值独立性的前提下，对所有实现和顺序统一成立界限。",
-            "limitationsAndReadingValue": "结果依赖拟阵结构特性（如基数相等性、收缩性质），难以直接推广到一般向下封闭约束。虽对理性有限分布可在多项式时间实现，但通用情形仅为存在性结论。最值得阅读的是其统一处理预言机与委托的视角，以及通过结构分解获得紧界的技术路径。"
+            "backgroundAndQuestion": "We study delegated choice under a downward-closed feasibility constraint, where the principal and agent values of each item may be arbitrarily correlated but items are independent. We give a deterministic, agent-oblivious menu that guarantees the principal mor...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.33095"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.DS"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "Query-Sample Tradeoffs for Revenue Maximization",
+          "titleZh": "收入最大化中的查询-样本权衡",
+          "authors": [
+            "Yaonan Jin",
+            "Wei Tang",
+            "Yifan Wang",
+            "Mengxiao Zhang"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.31982",
+          "abstract": "We introduce and study the full query-sample tradeoff for revenue maximization with a single buyer whose value follows an unknown distribution. A learner may adaptively combine value samples, which reveal full buyer values, with pricing queries, which reveal only whether a fresh buyer accepts a selected price. The goal is to learn a price that achieves a $(1-\\varepsilon)$-multiplicative approximation to optimal revenue with high probability. We ask when, and by how much, reducing the sample budget increases the number of pricing queries required. We establish tight tradeoff bounds for monotone-hazard-rate (MHR), regular, and quasi-monotone-hazard-rate (quasi-MHR) distributions, and almost tight bounds for quasi-regular distributions. Our results reveal sharply different benefits from combining the two information sources. Quasi-MHR distributions admit a smooth intermediate tradeoff: additional samples can reduce the query requirement by polynomial factors. For MHR and regular distributions, however, a sufficiently small constant fraction of the sample-only requirement still leaves the learner facing the full asymptotic query cost attainable with one sample. Our upper bounds are achieved by algorithms that collect all value samples before making queries, while our lower bounds hold even under arbitrary adaptive interleaving of the two forms of access. Along the way, we also fully characterize the sample-only and single-sample query complexities for all four families, eliminating the extra logarithmic dependence on $1/\\varepsilon$ in the literature.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么仅靠价格实验或样本数据不足以高效学习最优定价？该问题源于卖家在未知买家估值分布下进行收益最大化时面临的信息获取成本困境。现有研究分别分析了样本复杂度与查询复杂度，但二者结合时的协同效应尚不明确。本文旨在刻画在不同分布假设下，减少样本预算会如何影响所需的价格查询次数。",
+            "modelAndSetup": "模型考虑一个卖方通过两种方式获取信息：一是直接观察买家估值的样本（value sample），二是试探性报价并观察是否成交（pricing query）。目标是以高概率找到接近最优期望收益的价格。学习者可自适应地交替使用两类访问，研究在满足PAC学习标准下，样本数S与查询数Q之间的权衡关系，并针对MHR、正则、拟MHR和拟正则四类分布展开分析。",
+            "contributionsAndResults": "论文建立了四类分布下的紧确查询-样本权衡边界。发现拟MHR分布存在平滑过渡：增加样本可多项式级降低查询需求；而MHR与正则分布则呈现阈值效应——即使样本量仅为样本独占模式的常数倍，仍需承受完整的渐近查询代价。此外，首次消除了以往结果中多余的log(1/ε)因子，实现了端点复杂度的精确刻画。",
+            "methodsAndTechniques": "作者通过构造性算法与信息论下界相结合的方法完成分析。上界采用‘先采样后查询’策略，利用单个样本估计收益尺度，再结合结构化搜索（如噪声二分查找、中位数消除）缩小候选价格空间。下界基于KL散度论证，设计难区分的硬实例分布族，并通过加权信息累积证明查询效率受限于样本提供的全局信息增益。",
+            "limitationsAndReadingValue": "结果高度依赖于分布类别假设，且下界证明中非均匀权重的设计虽巧妙但可能缺乏普适性。机制本身对实际部署有一定指导意义，但算法细节较复杂。最值得阅读的是其对信息源互补性的精细刻画、tight bound的证明技巧以及对相关文献中log因子冗余的澄清，适合关注学习与机制交互的研究者精读。"
           },
           "researchParadigmTags": [
             "理论推导",
-            "机制设计",
             "算法设计",
+            "复杂度分析",
+            "模型构建"
+          ],
+          "contentTags": [
+            "机制设计",
+            "拍卖理论",
+            "博弈学习",
+            "信息设计",
+            "在线算法"
+          ],
+          "tags": [
+            "机制设计",
+            "拍卖理论",
+            "博弈学习",
+            "信息设计",
+            "在线算法",
+            "理论推导",
+            "算法设计",
+            "复杂度分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.31982"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "Contests versus Contracts in Innovation Procurement",
+          "titleZh": "创新采购中的竞赛与合同",
+          "authors": [
+            "Xiaoyun Qiu",
+            "Christopher Snyder"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.31829",
+          "abstract": "How much competition should a designer introduce when procuring innovation? We study a designer funding multiple technological approaches whose feasibility is learned through experimentation. Between independent contracts and contests, we introduce interdependent contracts, which combine approach-specific rewards with continuation decisions that depend on rivals' outcomes. When both breakthroughs and breakdowns are contractable, these contracts implement the optimum by extracting firms' rents and coordinating experimentation across approaches. When only breakthroughs are contractable, we compare simple mechanisms with constant contractual payments. Under technological symmetry, optimal interdependent contracts terminate experimentation at a success cutoff or deadline. Fixed-prize contests can implement the same innovation outcomes, but their relative expenditure depends on the experimentation horizon: for interior success cutoffs, contests are more expensive when the horizon is short and less expensive when it is sufficiently long. Rank-contingent contests can weakly outperform constant-payment interdependent contracts, but technological heterogeneity can reverse this ranking because individualized contracts better tailor incentives to different approaches. We further characterize optimal interdependent contracts with time-varying payments, extending the comparison beyond simple mechanisms. Our results show how outcome contractability, technological heterogeneity, and payment flexibility shape the desirable form of competition in innovation procurement.",
+          "summarySections": {
+            "backgroundAndQuestion": "创新采购常需同时资助多种技术路径，但如何平衡激励成本与创新价值尚不明确。现有研究多聚焦独立合同或完全竞争性竞赛，却忽视了中间形态——即延续决策依对手进展而定，但奖励仍个体化的安排。本文追问：在采购中应引入何种程度的竞争？其核心在于协调探索进程与提供激励之间的权衡。",
+            "modelAndSetup": "模型设一个采购方资助多家企业研发不同技术，各技术可行性未知，通过实验可能取得突破或发现不可行。企业仅观察自身进展，采购方可观测全局并决定信息披露与合同终止。比较三类机制：独立合同、依对手结果调整终止的互依合同、及奖励共享或依排名分配的竞赛，目标是最优化创新收益减去支付总额。",
+            "contributionsAndResults": "当突破与失败均可签约时，互依合同可实现最优：通过失败补偿消除信息租金，并依对手成果协调终止时机。若仅突破可签约，则固定奖金竞赛在短期更贵、长期更省；而依成功次序设奖的竞赛可弱优于互依合同。技术异质性会逆转此结论，因个性化合同更能适配不同激励需求。",
+            "methodsAndTechniques": "作者采用动态机制设计框架，结合指数型单臂老虎机学习过程建模技术不确定性。关键技巧是将努力激励与组合选择分离：利用后验信念动态刻画参与方预期，并通过构建等价支出的奖励池比较不同机制。最优停止规则由边际创新价值与时间递增的实施成本阈值比较得出。",
+            "limitationsAndReadingValue": "模型假设采购方可承诺信息披露与终止规则，且企业风险中性，这在现实中可能受限。机制虽具启发性，但实施需精细设计。最值得读的是其对‘竞争维度’的拆解——将延续依赖与支付依赖分开分析，提供了比传统‘合同vs竞赛’二分法更细粒度的设计视角。"
+          },
+          "researchParadigmTags": [
+            "理论推导",
+            "模型构建",
+            "机制设计",
             "均衡分析"
           ],
           "contentTags": [
             "机制设计",
-            "在线算法",
-            "委托问题",
-            "拟阵",
-            "预言机不等式"
+            "创新采购",
+            "动态合约",
+            "竞赛机制",
+            "信息设计"
           ],
           "tags": [
             "机制设计",
-            "在线算法",
-            "委托问题",
-            "拟阵",
-            "预言机不等式",
+            "创新采购",
+            "动态合约",
+            "竞赛机制",
+            "信息设计",
             "理论推导",
+            "模型构建",
+            "均衡分析"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 10.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 30.0,
+            "bonus": 0.0,
+            "total": 30.0
+          },
+          "ids": {
+            "arxiv": "2611.31829"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "econ.TH"
+            ],
+            "primaryCategory": "econ.TH",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "Envy-Free Cake-Cutting for Five Agents",
+          "titleZh": "五人无妒忌蛋糕切割",
+          "authors": [
+            "Aris Filos-Ratsikas",
+            "Alexandros Hollender",
+            "Mohamad Latifian",
+            "Giannis Tyrovolas"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.33149",
+          "abstract": "We study the envy-free cake-cutting problem, in which a divisible resource must be divided among a set of agents with heterogeneous preferences in a way that ensures that no agent envies the piece obtained by another. Remarkably, under some mild continuity assumptions on the agent valuations, it is known that an envy-free division where each agent receives a \\emph{connected} piece of the cake is always guaranteed to exist. When the valuations are monotone, prior work has shown that a connected $\\varepsilon$-envy-free division can be obtained using $\\poly(\\log(1/\\varepsilon))$ queries for up to four agents, leaving the case of five or more agents open. In this work, we develop a new simpler approach that yields such an efficient algorithm for five agents. Our algorithm uses $\\mathcal{O}(\\log^3(1/\\varepsilon))$ queries and also yields a novel proof of existence for five agents that does not rely on any fixed-point theorems beyond the intermediate value theorem.",
+          "summarySections": {
+            "backgroundAndQuestion": "为什么无法用已知方法高效实现五人无妒忌蛋糕分割？此前研究虽证明了连通份额下无妒忌分配的存在性，但仅对至多四人提供了多项式对数查询复杂度的近似算法。五人情形长期开放，因传统基于固定点或偏好不变性的构造失效。本文旨在填补这一理论空白，解决单调估值下高效近似协议的设计难题。",
+            "modelAndSetup": "模型考虑五个代理人对区间[0,1]上的蛋糕进行分割，每人获得一个连通子区间。代理人具有单调、Lipschitz连续的估值函数，通过价值查询获取信息。目标是设计一个机制，在允许少量加性妒忌（ε-envy-free）的前提下，用尽可能少的查询找到分配方案，且不依赖割刀查询或密度假设。",
+            "contributionsAndResults": "论文证明了对于五名代理人，存在一种确定性算法，可在O(log⁵(1/ε))次价值查询内计算出ε-无妒忌分配。这首次实现了五人情形下的poly(log(1/ε))查询复杂度，并给出了不依赖不动点定理的新颖存在性证明，仅基于中间值定理，增强了构造性和算法可实现性。",
+            "methodsAndTechniques": "作者引入‘锚点切分’m与四段保留区间P₁,P₂,P₃,P₄的结构，定义‘稳健性’——任一代理人离开后，剩余四人仍可无妒忌分配。通过连续移动m并维护稳健划分，结合中间值定理论证存在某m*使新增的右段R成为某代理人的最爱，从而完成分配。算法采用嵌套二分搜索实现。",
+            "limitationsAndReadingValue": "结果局限于五人情形，未推广到六人及以上；算法虽多项式对数查询，但指数级于ε，实际效率受限。然而其新架构绕开了传统固定点依赖，为后续研究提供新路径。最值得阅读的是其简洁的存在性论证与可转化为算法的构造性思路。"
+          },
+          "researchParadigmTags": [
             "算法设计",
+            "理论推导",
+            "复杂度分析",
+            "存在性证明"
+          ],
+          "contentTags": [
+            "公平性",
+            "机制设计",
+            "社会选择",
+            "多智能体系统"
+          ],
+          "tags": [
+            "公平性",
+            "机制设计",
+            "社会选择",
+            "多智能体系统",
+            "算法设计",
+            "理论推导",
+            "复杂度分析",
+            "存在性证明"
+          ],
+          "scores": {
+            "modelNaturalness": 8.0,
+            "theoreticalStrength": 9.0,
+            "guaranteeQuality": 6.0,
+            "readingValue": 6.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "bonus": 0.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.33149"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.GT",
+              "cs.CC"
+            ],
+            "primaryCategory": "cs.GT",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "The Oracle Is Not Enough: Secure Settlement for Prediction Markets",
+          "titleZh": "预言机还不够：预测市场的安全结算",
+          "authors": [
+            "Jiayu Liu",
+            "Sen Yang",
+            "Xueyuan Zhao",
+            "Kartik Nayak",
+            "Fan Zhang"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.31866",
+          "abstract": "Prediction markets are becoming an important mechanism for aggregating information and forecasting uncertain real-world events. As they grow in scale and value, reliable settlement becomes critical because settlement determines the winning outcome and allocation of market collateral. Yet many heterogeneous markets require market-specific evidence and interpretation, and incorrect settlement can create direct financial incentives for manipulation. In this paper, we ask how to settle heterogeneous markets correctly and efficiently at scale. We first compare existing settlement designs in their support for heterogeneous markets, reliance on direct operator intervention, and resistance to manipulation, motivating a layered architecture that combines incentivized crowdsourcing with stake-backed voting and selective post-settlement review. Building on this architecture, we develop a stake-backed settlement protocol that provides economic security and settlement liveness under market-specific verification costs. Specifically, we prove that manipulation is unprofitable for every settled market and give two constructions that support sufficient self-enforcing participation with controlled reward expenditure. Using historical Polymarket and UMA data, we evaluate the protocol under real-world conditions. We find that 99% of admitted markets can be settled with modest participation rewards even under high verification costs.",
+          "summarySections": {
+            "backgroundAndQuestion": "预测市场通过聚合分散信息来预测现实事件，但其结算过程面临异质性、操纵风险和效率三重挑战。现有方案要么依赖中心化操作员干预，要么无法抵御投票操纵。本文关注如何在无需持续人工介入的前提下，确保大量异构市场的结算既正确又抗攻击。",
+            "modelAndSetup": "模型包含提议者、理性投票者和第二层审查方。每个市场有明确的正确结果，投票者需付出异质性验证成本才能获知真相。协议采用质押投票机制，结合挑战-投票-申诉流程，并通过奖励规则激励参与。关键设定是质押可重复使用（restaking），且操纵收益与验证成本均市场特定。",
+            "contributionsAndResults": "论文提出一种分层结算架构，证明只要满足‘准入证书’——即总质押足够覆盖操纵收益且个体累积负载不超限——则任何合谋操纵都无法获利。同时设计两种奖励机制，在控制支出前提下保障足够的诚实参与，使绝大多数市场可用小额奖励安全结算。",
+            "methodsAndTechniques": "作者通过构建‘攻击配置’与‘收费机制’证明经济安全性，利用比例负载分配处理质押复用问题。对于参与激励，提出贪心扫描与保护层构造两种方法，前者用于单市场均衡求解，后者通过保守预算解决多市场耦合难题，确保承诺组合仍满足安全条件。",
+            "limitationsAndReadingValue": "模型假设第二层审查总能纠正错误，现实中可能受限于其可信度；且结果依赖于精确的成本估计。尽管如此，该文对去中心化预言机的设计极具指导意义，尤其在机制抽象、激励兼容性分析和分层问责结构方面提供了可复用的理论框架。"
+          },
+          "researchParadigmTags": [
+            "机制设计",
+            "理论推导",
+            "模型构建",
+            "均衡分析",
+            "系统框架"
+          ],
+          "contentTags": [
+            "预测市场",
+            "机制设计",
+            "安全性",
+            "激励机制",
+            "去中心化系统"
+          ],
+          "tags": [
+            "预测市场",
+            "机制设计",
+            "安全性",
+            "激励机制",
+            "去中心化系统",
+            "理论推导",
+            "模型构建",
             "均衡分析"
           ],
           "scores": {
@@ -235,168 +362,339 @@
             "theoreticalStrength": 9.0,
             "guaranteeQuality": 6.0,
             "readingValue": 6.0,
-            "aiRelevance": 3.0,
-            "agtRelevance": 9.0,
+            "aiRelevance": 0.0,
+            "agtRelevance": 10.0,
             "penalty": 0.0,
             "baseTotal": 29.0,
-            "bonus": 2.9,
-            "total": 28.7
+            "bonus": 0.0,
+            "total": 29.0
           },
           "ids": {
-            "arxiv": "2611.30933"
+            "arxiv": "2611.31866"
           },
           "metadata": {
             "provider": "arxiv",
             "categories": [
-              "cs.DS",
+              "cs.CR",
               "cs.GT"
             ],
-            "primaryCategory": "cs.DS",
-            "published": "2026-11-23",
-            "updated": "2026-11-23"
-          }
-        },
-        {
-          "title": "Stay or Switch? Metric Distortion with Online Candidate Arrivals",
-          "titleZh": "留任还是更换？在线候选人到达下的度量扭曲",
-          "authors": [
-            "Kaito Fujii",
-            "Yeeseok Oh",
-            "Shinsaku Sakaue"
-          ],
-          "date": "2026-11-23",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.30683",
-          "abstract": "We study metric distortion in sequential elections with online candidate arrivals. In each round, a newly arriving challenger competes against the incumbent, and a voting rule must select one of the two based on voters' pairwise preferences. Our goal is to guarantee low metric distortion at every round, relative to the best candidate among all those that have arrived so far. For deterministic rules, we establish an asymptotically optimal bound of $Θ(\\sqrt{t})$ at round $t$, achieved by a threshold rule favoring the incumbent. In contrast, randomization allows constant distortion. We show that persistent randomized dictatorship achieves optimal distortion of $5$ against adaptive adversaries, which observe previous winners, and $3$ against oblivious adversaries, which do not. Finally, we generalize the model along two dimensions, the available information and the action space, and establish distortion guarantees for each setting.",
-          "summarySections": {
-            "backgroundAndQuestion": "为什么在候选人陆续出现的选举中难以选出最优代表？传统社会选择理论假设所有候选人同时存在，但现实中立法修正、连任竞选等场景都是现任者与挑战者逐轮对决。这种‘留任或更换’结构限制了选民信息和选择自由，可能导致长期累积的决策偏差。本文探究在此类动态过程中，能否通过合理机制始终逼近理想候选人的社会成本。",
-            "modelAndSetup": "作者构建了一个在线选举模型：每轮一个新候选人作为挑战者到来，与当前胜者（现任者）竞争，仅基于二者间的偏好进行投票。目标是在每个时刻使当选者的社会成本相对于已出现的所有候选人中的最优者尽可能小。考虑两种信息设定——仅知现任与挑战者比较（部分信息），或知道所有已到候选人的完整排序（完全信息），以及两种行动空间——只能二选一或可回溯旧候选人。",
-            "contributionsAndResults": "论文发现，在部分信息下，确定性规则的最佳度量扭曲为Θ(√t)，由偏向现任者的阈值规则实现；而随机化规则可通过持久随机独裁机制达到常数级扭曲：对抗适应性对手为5，对抗无视性对手为3，并证明这些界限紧致。在完全信息下，确定性规则也能实现常数扭曲2+√5，优于随机规则在适应性环境下的表现。",
-            "methodsAndTechniques": "作者采用对抗性构造与势函数分析来证明下界。对于上界，设计了基于加权不可覆盖集的确定性规则和持久随机独裁机制。关键技术包括利用三角不等式分解社会成本、构造一致度量以匹配偏好、通过期望分析处理随机化与自适应对手的交互，并使用分块路径论证处理累积误差。",
-            "limitationsAndReadingValue": "模型假设候选人顺序由对手决定，可能弱化实际适用性；且在完全信息下随机规则未超越确定性规则，留下开放问题。最值得阅读的是其新颖的在线社会选择框架、对信息与行动双重维度的系统刻画，以及紧确界证明的技术深度，尤其适合关注动态机制设计与算法社会选择的研究者。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "模型构建",
-            "算法设计",
-            "机制设计",
-            "复杂度分析"
-          ],
-          "contentTags": [
-            "社会选择",
-            "在线算法",
-            "机制设计",
-            "度量扭曲",
-            "投票理论"
-          ],
-          "tags": [
-            "社会选择",
-            "在线算法",
-            "机制设计",
-            "度量扭曲",
-            "投票理论",
-            "理论推导",
-            "模型构建",
-            "算法设计"
-          ],
-          "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 8.0,
-            "guaranteeQuality": 5.0,
-            "readingValue": 6.0,
-            "aiRelevance": 3.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 27.0,
-            "bonus": 2.7,
-            "total": 26.7
-          },
-          "ids": {
-            "arxiv": "2611.30683"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-11-23",
-            "updated": "2026-11-23"
-          }
-        },
-        {
-          "title": "Proper and Optimal Scoring Rules for Risk-Averse Agents",
-          "titleZh": "面向风险规避代理人的恰当且最优评分规则",
-          "authors": [
-            "Ying Liu",
-            "Raimundo Saona"
-          ],
-          "date": "2026-11-23",
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2611.30563",
-          "abstract": "Scoring rules are used to elicit probabilistic beliefs through payments that depend on reports and realised outcomes. We ask how these rules should be designed to induce truthful reporting and incentivise costly information acquisition when the agent is risk averse. For agents with entropic risk preferences in finite state spaces, we characterise proper scoring rules through an exponential transformation, derive optimal structures for information acquisition under bounded payments, and obtain explicit optimal coefficients in the binary case. The risk-neutral limit preserves properness and, in the binary case, optimality, while recovering the optimal betting structure for nonbinary states. For optimal design in the binary model, it suffices to focus on rules whose associated concave function is affine on each side of the prior. The optimal coefficients depend only on the prior and the risk-aversion parameter. The binary optimal rules we construct also admit an exact transformation from a particular risk-neutral optimal rule. In the nonbinary model, optimal design reduces to choosing the best prior bound in a transformed betting mechanism.",
-          "summarySections": {
-            "backgroundAndQuestion": "传统评分规则假设代理人是风险中性的，但在现实中代理人往往规避风险，这会导致他们扭曲报告以换取更稳定的支付。本文研究如何设计评分规则，使得风险规避的代理人仍愿意真实报告信念，并且有足够动力去进行成本高昂的信息获取。核心问题是：在支付有界的情况下，如何同时解决激励相容与信息获取激励不足的问题。",
-            "modelAndSetup": "模型中有两个参与方：承诺支付规则的主（principal）和决定是否获取信号并报告信念的代理人（agent）。代理人具有指数效用函数，体现常数绝对风险规避（CARA），其确定性等价采用熵形式。状态空间有限，信号分布已知，支付被限制在[0,1]之间。代理人先决定是否支付固定成本观察信号，然后报告信念，最终根据结果获得支付。",
-            "contributionsAndResults": "论文给出了风险规避下恰当评分规则的特征：通过指数变换，恰当性等价于一个正凹函数的支撑超平面。对于二元状态，最优规则的结构呈倒V形，仅依赖于先验和风险厌恶参数，且可通过特定风险中性最优规则经显式变换得到。在多元状态下，最优设计归结为选择最佳先验约束的赌博机制。",
-            "methodsAndTechniques": "作者利用熵确定性等价的平移不变性和时间一致性，将优化问题转化为对凹函数的期望比值最小化。关键技巧是通过指数变换将风险规避下的恰当性还原为风险中性下的凸函数支撑结构。在二元情形，通过分段线性逼近证明最优函数的V形结构；在多元情形，则构造一个变换后的赌博机制，将最优设计简化为单变量搜索。",
-            "limitationsAndReadingValue": "论文聚焦弱恰当规则，允许非唯一最优报告，可能不适用于需精确识别信念的场景。结果依赖指数效用和已知后验分布的强假设。尽管如此，其清晰的结构化结果和从风险中性到风险规避的连续过渡极具启发性，最值得阅读的是其机制构造逻辑、最优性证明的技术路径以及对信息获取激励的深刻刻画。"
-          },
-          "researchParadigmTags": [
-            "理论推导",
-            "机制设计",
-            "模型构建"
-          ],
-          "contentTags": [
-            "机制设计",
-            "信息设计",
-            "评分规则",
-            "风险规避",
-            "信息获取激励"
-          ],
-          "tags": [
-            "机制设计",
-            "信息设计",
-            "评分规则",
-            "风险规避",
-            "信息获取激励",
-            "理论推导",
-            "模型构建"
-          ],
-          "scores": {
-            "modelNaturalness": 8.0,
-            "theoreticalStrength": 8.0,
-            "guaranteeQuality": 5.0,
-            "readingValue": 6.0,
-            "aiRelevance": 3.0,
-            "agtRelevance": 9.0,
-            "penalty": 0.0,
-            "baseTotal": 27.0,
-            "bonus": 2.7,
-            "total": 26.7
-          },
-          "ids": {
-            "arxiv": "2611.30563"
-          },
-          "metadata": {
-            "provider": "arxiv",
-            "categories": [
-              "cs.GT",
-              "math.OC"
-            ],
-            "primaryCategory": "cs.GT",
-            "published": "2026-11-23",
-            "updated": "2026-11-23"
+            "primaryCategory": "cs.CR",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
           }
         }
       ]
     },
     {
       "id": "recent-ai",
-      "title": "近期 AI 新论文（cs.CL）",
+      "title": "近期 AI 新论文（cs.IR）",
       "source": "arxiv-llm-ranked",
-      "fetchedCount": 0,
-      "papers": []
+      "fetchedCount": 14,
+      "papers": [
+        {
+          "title": "Speculative Decoding for Semantic-ID-Based Generative Recommendations",
+          "titleZh": "",
+          "authors": [
+            "Harshal A. Chaudhari"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.32855",
+          "abstract": "Generative recommender systems with Semantic IDs (SIDs) represent each item as a short sequence of $L$ discrete tokens and use a sequence model to predict the next item's tokens from a user's history. Industry-scale deployments typically use these models to retrieve multiple candidates per request with constrained beam search. However, this incurs a fixed cost of $L$ sequential model calls per request, and accuracy degrades as the SID generator becomes less sharp, without a guarantee on how close the output is to the exact top-$K$. Production systems therefore cannot detect degraded retrieval for individual requests. We propose SIDECAR, which uses approximate draft candidates and a tree-attention pass to score the entire draft in a single model call, memory permitting. This pass bounds the probability of every unexplored SID prefix and certifies the exact top-$K$ if the draft contains them. Otherwise, a branch-and-bound fallback expands only the parts of the trie that can still change the output, reaching certification within at most $L$ calls for any draft. Moreover, under a budget of $M$ tokens per call and $Y$ calls, which for $Y = L$ matches the resources of a beam search of width $M$, SIDECAR announces a factor $1 + δ$ within which its list will be exact at every rank. Depending on model sharpness, SIDECAR returns the exact top-$K$ using a fraction of beam search's calls or memory. Even when the budget is too small to recover the exact top-$K$, SIDECAR, unlike beam search, reports the announced factor, allowing the serving system to stop early once a quality target or latency limit is reached.",
+          "summarySections": {
+            "backgroundAndQuestion": "Generative recommender systems with Semantic IDs (SIDs) represent each item as a short sequence of $L$ discrete tokens and use a sequence model to predict the next item's tokens from a user's history. Industry-scale deployments typically use these models to re...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 7.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 29.0,
+            "total": 29.0
+          },
+          "ids": {
+            "arxiv": "2611.32855"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.IR"
+            ],
+            "primaryCategory": "cs.IR",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "OmniEVIE: Evidence-Vector-Informed Embedding for Multi-modal Retrieval",
+          "titleZh": "OmniEVIE: 面向多模态检索的证据向量感知嵌入",
+          "authors": [
+            "Zifei Wang",
+            "Wei Wen",
+            "Qiang Ji",
+            "Qian-Wen Zhang",
+            "Ruizhi Qiao",
+            "He Liu",
+            "Xing Sun",
+            "Qiang Lin"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.32203",
+          "abstract": "Multimodal retrieval must match dense pages, fine-grained entities, ordered video, and agent tools and memory. Single-vector embeddings lose local evidence, cross-encoders reread every recalled item online, and uncompressed late interaction is too large to serve. We present OmniEVIE, a 4.5B multi-vector embedding model covering text, images, visual documents, video, and tools with one compressed index and a three-stage retriever. Each record stores at most 128 int8 vectors of dimension 64 (9,472 bytes, or 8.82 GiB per million records), providing a mean vector, 1-bit signs, and int8 multi-vectors for coarse, middle, and final search while localizing each hit to a page region or video interval. Training, merging, indexing, and retrieval are co-designed: all tasks share one retrieval format, a three-grade evidence check removes false negatives, dynamic sampling follows the baseline-teacher gap, candidates are compressed with ST-HAC during training to match the index, stage-wise and specialist models are merged by parameter block, and a saliency gate with a noise floor refines query scoring. Trained on public datasets, OmniEVIE scores 60.68 (full d=2048 sequence) and 60.06 (K128 x d64 int8 index) on MMEB-V3 (190 tasks), 77.96 on MMEB-V2 (78 tasks), and 62.96 on ViDoRe V3 (48 tasks). On 1M and 5M records, a single-thread query takes 54.2 ms and 120.2 ms (11.1x and 25.3x faster than exact 4096-d single-vector search; 236x and 532x faster than full int8 MaxSim). Video is encoded directly from frames without a parsing model: on QVHighlights (1,083 queries), the peak falls inside the labeled segment for 78.0% of queries and the returned span (18% of video length) intersects it for 94.3% vs. 44.9% random. Weights and code: https://huggingface.co/tencent/OmniEVIE-4B and https://github.com/Tencent/OmniEVIE.",
+          "summarySections": {
+            "backgroundAndQuestion": "传统单向量检索难以应对多模态场景中依赖局部证据的匹配需求，如视频动作顺序或文档细粒度区域。现有晚期交互虽能保留细节，但高维向量索引开销巨大，无法实用。本文聚焦于如何在压缩存储的同时保留决定性局部证据，解决多模态检索中精度与效率的根本矛盾。",
+            "modelAndSetup": "模型接收文本、图像、视频或工具文档作为候选，与多模态查询进行匹配。训练基于57个公开数据集，统一建模为检索样本，并引入三等级证据标注机制筛选负例。推理采用三级压缩索引，在千万级语料中定位相关页面区域或视频时间段，评估涵盖跨模态分类、问答、定位等综合任务。",
+            "contributionsAndResults": "提出OmniEVIE，一个45亿参数的多向量嵌入模型，通过单一压缩索引支持文本、图像、视觉文档、视频和工具检索。在百万级语料上单线程查询仅需54毫秒，比全量搜索快236倍，同时在MMEB-V3等综合基准上达到60.06分，接近未压缩上限，显著优于同类系统。",
+            "methodsAndTechniques": "核心是ST-HAC聚类与三阶段检索协同设计：训练时对token向量进行时空感知的层次聚类，保留孤立关键证据；索引存储均值、符号位和int8中心点；检索时依次用均值粗筛、汉明距离中选、int8向量精排，既保持证据可定位性又大幅降低计算量。",
+            "limitationsAndReadingValue": "模型优势集中在需局部匹配的任务，对全局语义判别提升有限，且压缩过程仍增加约20ms处理延迟。最值得阅读的是其系统级设计思想——从训练、压缩到检索全流程协同优化，为实用化多模态检索提供了可扩展范本，尤其适合长文档与视频场景。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "系统框架",
+            "实验验证",
+            "基准评测",
+            "机制设计"
+          ],
+          "contentTags": [
+            "多模态检索",
+            "表示学习",
+            "信息检索",
+            "智能体系统",
+            "高效推理"
+          ],
+          "tags": [
+            "多模态检索",
+            "表示学习",
+            "信息检索",
+            "智能体系统",
+            "高效推理",
+            "模型构建",
+            "系统框架",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 28.0,
+            "total": 28.0
+          },
+          "ids": {
+            "arxiv": "2611.32203"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.IR",
+              "cs.AI"
+            ],
+            "primaryCategory": "cs.IR",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "See the Answer, Learn to Embed: Learning Universal Multimodal Embeddings from Hindsight",
+          "titleZh": "",
+          "authors": [
+            "Yoonki Cho",
+            "Youngju Na",
+            "Taegeun Yang",
+            "Jinhwan Seo",
+            "Sung-Eui Yoon"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.32439",
+          "abstract": "Universal Multimodal Embedding (UME) models map heterogeneous multimodal inputs into a shared embedding space, where pairwise similarity supports diverse downstream tasks. Recent reasoning-driven UME approaches use intermediate reasoning to generate additional context for embedding, but often incur extra computation at inference. In this paper, we explore the matched candidate (i.e., the paired target) as an alternative source of context, asking whether a model can \"see the answer\" during training and \"learn to embed\" without it at inference. However, direct conditioning on this privileged context can introduce candidate-specific information unavailable from the query alone or cause the candidate-conditioned query representation to collapse toward the candidate embedding. To address this, we introduce Hindsight-Enhanced Multimodal Embeddings (HEME), which learns query-grounded hindsight representations from such candidate context. HEME first trains a hindsight teacher with a hindsight attention mask, mismatched-candidate conditioning, and query-token alignment to limit excessive reliance on the candidate. It then freezes the teacher and distills its hindsight representation and similarity distribution into a standalone student embedder. At inference, the student independently encodes queries and candidates without candidate conditioning or the hindsight teacher. Experiments on MMEB-V2 and the agent and text tasks of MMEB-V3 demonstrate the effectiveness of HEME and show that it enables more efficient inference than explicit reasoning-driven methods.",
+          "summarySections": {
+            "backgroundAndQuestion": "Universal Multimodal Embedding (UME) models map heterogeneous multimodal inputs into a shared embedding space, where pairwise similarity supports diverse downstream tasks. Recent reasoning-driven UME approaches use intermediate reasoning to generate additional...",
+            "modelAndSetup": "Mock fallback 未读取完整论文，暂以摘要信息保守占位。",
+            "contributionsAndResults": "Mock fallback 未生成贡献细节。",
+            "methodsAndTechniques": "Mock fallback 未生成技术路线。",
+            "limitationsAndReadingValue": "Mock fallback 未生成局限与阅读价值判断。"
+          },
+          "researchParadigmTags": [],
+          "contentTags": [],
+          "tags": [],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 6.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          },
+          "ids": {
+            "arxiv": "2611.32439"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.LG",
+              "cs.AI",
+              "cs.CV",
+              "cs.IR"
+            ],
+            "primaryCategory": "cs.LG",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "LARF: Learning-aligned Reasoning Framework for Search Relevance",
+          "titleZh": "LARF：面向搜索相关性的学习对齐推理框架",
+          "authors": [
+            "Tian Tang",
+            "Guo Chen",
+            "Reed Li",
+            "Hao Wang",
+            "Yu Lu",
+            "Haijin Liang",
+            "Haibo Shi"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.32125",
+          "abstract": "Query-document relevance estimation is a core component of AI-native search systems, where a model must assess whether retrieved documents satisfy users' information needs under complex, multi-dimensional criteria. However, directly applying large language models (LLMs) to this task remains challenging because conventional supervised fine-tuning (SFT) provides limited supervision for domain-specific judgment rationales, while standard trajectory-level reinforcement learning (RL) objectives do not explicitly enforce margin separation among adjacent ordinal relevance labels. Moreover, although such reasoning can be useful during training, chain-of-thought (CoT) reasoning is impractical for latency-sensitive online ranking. These challenges make it difficult to resolve ambiguous decision boundaries. We propose a three-stage framework LARF (Learning-Aligned Reasoning Framework for Search Relevance): it first performs cold-start SFT on strategically selected samples with multi-agent guided CoT rationales, then applies discriminative GRPO with attribute-wise, list-wise, and rule-consistency rewards together with a margin loss on the terminal relevance token, and finally distills the teacher into a dual-head student whose classification heads are retained for non-autoregressive inference. On a human-annotated web search relevance benchmark with approximately 300K training and 16K test instances, LARF-8B improves six-class classification accuracy by 5.78 percentage points and NDCG by 5.05 points, while the classification-only serving path reduces inference latency by 82.9\\%. These results indicate that aligning structured reasoning, terminal decision optimization, and classification-head distillation can provide an effective accuracy--efficiency trade-off for industrial search relevance modeling.",
+          "summarySections": {
+            "backgroundAndQuestion": "现有大语言模型在搜索相关性判断中难以兼顾细粒度决策与线上效率。传统监督微调缺乏对判断依据的结构化监督，而强化学习仅优化整个推理路径，无法显式区分相邻相关性等级。同时，链式思维推理延迟高，不适合实时排序。这导致模型在模糊边界上决策不稳定，亟需一种既能学习深层判断逻辑又能高效服务的统一框架。",
+            "modelAndSetup": "论文研究的是基于多维序数分类的查询-文档相关性建模任务。输入为查询、文档及其元数据，输出为六级相关性评分及四个维度的判断理由。训练使用约30万人工标注样本，结合多智能体生成的链式思维理由进行三阶段学习；推理时仅保留分类头进行非自回归预测。评估采用准确率、NDCG及线上A/B测试满意度指标。",
+            "contributionsAndResults": "提出LARF框架，通过冷启动微调、判别式强化学习与双头蒸馏三阶段设计，在保持高精度的同时大幅降低延迟。在六类分类准确率上提升5.78个百分点，NDCG提高5.05点，且推理延迟下降82.9%。线上测试显著提升用户满意度，证明其在工业级搜索系统中实现了有效的精度-效率权衡。",
+            "methodsAndTechniques": "方法核心在于分离训练与推理路径：先利用多智能体链式思维提供结构化监督，再通过属性级、列表级和规则一致性奖励联合优化，并引入终端标记的间隔损失直接拉大类别间距；最后将推理能力蒸馏至仅含多维分类头的学生模型。这种设计使模型学会复杂判断逻辑却不依赖自回归生成。",
+            "limitationsAndReadingValue": "实验集中在特定搜索产品，跨域泛化性待验证；消融虽充分但未测试更小模型容量下的性能极限；高成本的多智能体数据构建可能限制复现。最值得阅读的是其系统级设计思路——如何将复杂的推理学习转化为高效的分类服务，这对工业级LLM应用具有强借鉴意义。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "系统框架",
+            "实验验证",
+            "基准评测"
+          ],
+          "contentTags": [
+            "大语言模型",
+            "强化学习",
+            "搜索相关性",
+            "推理对齐",
+            "知识蒸馏"
+          ],
+          "tags": [
+            "大语言模型",
+            "强化学习",
+            "搜索相关性",
+            "推理对齐",
+            "知识蒸馏",
+            "模型构建",
+            "算法设计",
+            "系统框架"
+          ],
+          "scores": {
+            "importance": 6.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 5.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          },
+          "ids": {
+            "arxiv": "2611.32125"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.IR"
+            ],
+            "primaryCategory": "cs.IR",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        },
+        {
+          "title": "MELODI: Similarity-Identity Decoupling for Lightweight Ranking",
+          "titleZh": "MELODI：用于轻量级排序的相似性-身份解耦",
+          "authors": [
+            "Quoc Phong Nguyen",
+            "Vuong Le",
+            "Volodymyr Vaskovych",
+            "Julien Monteil"
+          ],
+          "date": "2026-11-24",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.31940",
+          "abstract": "For latency-constrained candidate ranking, we propose a similarity-identity decoupling framework that separates target-history compatibility from target-only information. We study two orders for computing pooled similarity, similarity-then-pool and pool-then-similarity, and identify linearity of the similarity operator in its history argument, for each fixed target, as sufficient for their equivalence, justifying the cheaper pool-then-similarity form. We instantiate the framework as multi-head efficient lightweight operator for decoupling identity and similarity (MELODI), whose similarity branch combines target-conditioned multi-head history pooling with a single residual-free cross layer that is linear in its pooled-history input and whose identity branch is problem-dependent. On public benchmark datasets, MELODI matches or surpasses the evaluated target-aware and target-agnostic baselines. On two large-scale industrial datasets, its area under the precision-recall curve (AUPRC), normalised discounted cumulative gain (NDCG), and recall values are equal to or higher than those of the evaluated target-aware baselines. Processor measurements show lower latency than the evaluated candidate-conditioned baselines at large candidate counts, further reduced by request-local history reuse.",
+          "summarySections": {
+            "backgroundAndQuestion": "在延迟受限的候选排序任务中，传统方法难以兼顾个性化匹配与计算效率。现有目标感知模型虽能捕捉用户对不同候选的兴趣差异，但通常需为每个候选独立处理历史序列，导致高延迟。论文核心问题是：如何在保持细粒度用户-候选兼容性建模的同时，实现可重用的历史编码路径，以支持大规模候选集的高效排序。",
+            "modelAndSetup": "论文研究基于用户近期交互历史对候选集进行打分排序的任务。输入为固定历史序列与动态候选集合，输出为每个候选的排序得分。模型采用端到端训练，使用点击预测常用的BPR损失，并在公开与工业数据集上评估AUPRC、NDCG等指标。推理阶段特别关注候选数量增长下的延迟表现，对比多种基线模型在不同服务模式下的质量-延迟权衡。",
+            "contributionsAndResults": "提出相似性-身份解耦框架及其实例化模型MELODI，其关键贡献在于通过理论保证的池化顺序等价性，实现了历史信息的可重用编码。实验表明，MELODI在多个数据集上达到或超越强基线的排序性能，同时在大候选集下显著降低延迟，尤其结合请求级历史复用后优势更明显，验证了解耦设计在实际系统中的有效性。",
+            "methodsAndTechniques": "方法核心是将用户-候选匹配信号拆分为相似性分支与身份分支。相似性分支利用跨注意力聚合历史信息，并通过一个在历史输入上线性的交叉操作确保‘先池化后相似’的等价性，从而允许共享历史编码。身份分支单独建模候选自身属性。该机制使模型能在一次历史编码后批量处理所有候选，大幅减少重复计算。",
+            "limitationsAndReadingValue": "论文局限在于依赖离线日志数据，未进行线上A/B测试，且工业数据不可公开。延迟测量仅基于单一处理器类型。尽管如此，其提出的解耦原则与高效架构设计对工业级推荐系统具有明确指导意义，最值得阅读的是问题抽象方式、理论条件推导与真实场景下的系统优化实践。"
+          },
+          "researchParadigmTags": [
+            "模型构建",
+            "算法设计",
+            "实验验证",
+            "系统框架",
+            "基准评测"
+          ],
+          "contentTags": [
+            "推荐系统",
+            "学习排序",
+            "用户行为建模",
+            "交叉注意力",
+            "高效推理"
+          ],
+          "tags": [
+            "推荐系统",
+            "学习排序",
+            "用户行为建模",
+            "交叉注意力",
+            "高效推理",
+            "模型构建",
+            "算法设计",
+            "实验验证"
+          ],
+          "scores": {
+            "importance": 5.0,
+            "horizonValue": 5.0,
+            "clarity": 6.0,
+            "theoreticalDepth": 6.0,
+            "overall": 4.0,
+            "penalty": 0.0,
+            "baseTotal": 26.0,
+            "total": 26.0
+          },
+          "ids": {
+            "arxiv": "2611.31940"
+          },
+          "metadata": {
+            "provider": "arxiv",
+            "categories": [
+              "cs.IR",
+              "cs.LG"
+            ],
+            "primaryCategory": "cs.IR",
+            "published": "2026-11-24",
+            "updated": "2026-11-24"
+          }
+        }
+      ]
     }
   ]
 }
