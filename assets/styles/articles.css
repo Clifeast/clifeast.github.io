@@ -1,115 +1,176 @@
-.article-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+/* ==========================================================================
+   Article Reading Page — Scholarly Literary Typography
+   ========================================================================== */
 
 .article-main {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(2rem, 5vw, 3rem);
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 52px 24px 40px;
 }
 
 .article-container {
-  max-width: 880px;
+  max-width: 740px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: clamp(1.4rem, 4vw, 2rem);
+  gap: 28px;
 }
 
 .article-header {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  text-align: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-eyebrow {
+  margin-bottom: 2px;
 }
 
 .article-title {
-  font-size: clamp(2rem, 5vw, 2.6rem);
   margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 4.4vw, 2.55rem);
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.02em;
+  color: var(--text);
 }
 
 .article-meta {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 0.94rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
 }
 
 .article-body {
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-soft);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
-  padding: clamp(1.6rem, 5vw, 2.4rem) clamp(1.5rem, 4vw, 2.6rem);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: clamp(26px, 4.5vw, 40px) clamp(22px, 4.5vw, 42px);
   display: flex;
   flex-direction: column;
-  gap: clamp(1.2rem, 3vw, 1.8rem);
-}
-
-.article-actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .article-body p {
   margin: 0;
   text-indent: 2em;
+  font-family: var(--font-serif);
   font-size: 1.05rem;
-  color: var(--text-primary);
+  line-height: 1.95;
+  color: var(--text);
 }
 
 .article-body h2 {
-  margin: 1.6rem 0 0.6rem;
-  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  margin: 1.4rem 0 0.4rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 3.2vw, 1.55rem);
+  font-weight: 500;
+  color: var(--text);
   text-align: center;
+  letter-spacing: 0.04em;
 }
 
 .article-body h3 {
-  margin: 1.4rem 0 0.4rem;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin: 1.2rem 0 0.3rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.12rem, 2.8vw, 1.3rem);
+  font-weight: 500;
+  color: var(--text);
+}
+
+.article-body a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-border);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.article-body a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .image-container {
   text-align: center;
-  margin: clamp(1.4rem, 3vw, 2rem) 0;
+  margin: 0.8rem 0 0.4rem;
   display: flex;
   justify-content: center;
-  gap: clamp(1rem, 4vw, 2rem);
+  align-items: flex-start;
+  gap: clamp(12px, 3vw, 20px);
   flex-wrap: wrap;
 }
 
-.image-container img {
+.image-container img,
+.article-body img {
   border-radius: var(--radius-md);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.25);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  cursor: zoom-in;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color var(--transition), box-shadow var(--transition);
 }
 
-.image-caption {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+.image-container img:hover,
+.image-container img:focus-visible,
+.article-body img:hover,
+.article-body img:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-frame);
+}
+
+.article-body img:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.article-body .image-caption {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--text-muted);
   text-align: center;
-  margin-top: 0.5rem;
+  margin: -0.45rem 0 0.4rem;
   text-indent: 0;
 }
 
 blockquote {
-  margin: 0;
-  padding: 1.2rem 1.6rem;
-  border-left: 4px solid rgba(47, 133, 90, 0.45);
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: var(--radius-md);
+  margin: 0.4rem 0;
+  padding: 14px 20px;
+  border-left: 2px solid var(--accent);
+  background: var(--bg-subtle);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   color: var(--text-secondary);
+  font-family: var(--font-serif);
   font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+  .article-main {
+    padding: 36px 18px 28px;
+  }
+
   .article-body {
-    padding: clamp(1.4rem, 6vw, 2rem) clamp(1rem, 5vw, 1.8rem);
+    padding: 22px 18px;
   }
 
   .article-body p {
     text-indent: 1.5em;
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .image-container img {
+    width: 100% !important;
   }
 }

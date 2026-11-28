@@ -1,11 +1,12 @@
 name: Build daily digest
 
 on:
-  schedule:
-    # UTC 02:30 = Asia/Shanghai 10:30. arXiv announcements land on
-    # Beijing-time weekday mornings, so weekdays are enough here.
-    - cron: "34 2 * * *"
-    - cron: "19 3 * * *"
+  # 暂时停用每日定时构建，如需恢复取消下方注释即可
+  # schedule:
+  #   # UTC 02:30 = Asia/Shanghai 10:30. arXiv announcements land on
+  #   # Beijing-time weekday mornings, so weekdays are enough here.
+  #   - cron: "34 2 * * *"
+  #   - cron: "19 3 * * *"
   workflow_dispatch:
     inputs:
       date:

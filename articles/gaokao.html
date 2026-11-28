@@ -8,6 +8,29 @@
   <meta name="description" content="又到高考 · 草树之后" />
   <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Theme initialization before paint to prevent flicker -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved === "dark" || saved === "light" ? saved : (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="/assets/styles/general.css" />
   <link rel="stylesheet" href="/assets/styles/index.css" />
   <link rel="stylesheet" href="/assets/styles/articles.css" />
@@ -18,9 +41,13 @@
   <div class="page article-page">
     <header class="site-header" data-component="site-header"></header>
 
-    <main class="content article-main">
+    <main id="top" class="article-main">
       <div class="article-container">
         <header class="article-header">
+          <div class="eyebrow article-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>草树之后 · 随笔</span>
+          </div>
           <h1 class="article-title">又到高考</h1>
           <p class="article-meta">2023年6月7日 · 清华三教</p>
         </header>
@@ -57,11 +84,6 @@
               听过有人说“当一个人突然开始恋旧了，就说明他老了”，我这个年纪也实在说不上老，但确实是上大学之后才突然意识到，有些日子是真的再也找不回来。刚刚在学堂路上骑着车，想着这六年的高考往事，仿佛又回到了几年前老爸骑着摩托车呜呜呜地把我从联中载到师范的场景。写作间扭头看看旁边的三教，好像就是那天晚上亮着灯的紫光楼的大厅。但当幻觉消失的一刹那，却真真实实地感受到巨大的空虚和失落。最近才听到一句话说“你无法同时拥有青春和对青春的感受”。的确，这些瞬间确实就是简简单单的日常琐事，甚至现在写起来也就像记流水账，但回忆它们的时候确实让人想掉下泪来。有的时候陷入回忆，就想把高中发生的每一个小小的片段都像这样记下来，但好像时间和精力上也不现实，记下来也少有时间会去翻看，翻看了也不一定再能找得回当时的感受了。只好安慰自己，这些时刻只能用心去体验。但，难说时间会冲淡我对这些片段的记忆，抚平我对它们的情感。也许会有一天，我转乘数趟地铁，走过几个路口，爬上几节台阶，终于坐在沙发上，才猛然想起来“噢，今天又有一群人高考了”。如果真有这一天的话，我希望它慢点到来。
             </p>
         </article>
-
-        <div class="article-actions">
-          <a class="btn btn-ghost" href="/articles/">返回文章列表</a>
-          <a class="btn btn-primary" href="/#latest">查看最新文章</a>
-        </div>
       </div>
     </main>
 

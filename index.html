@@ -8,6 +8,29 @@
   <meta name="description" content="赏鹤阳的个人博客，在这里记录文字、旅行与生活思考。" />
   <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Theme initialization before paint to prevent flicker -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved === "dark" || saved === "light" ? saved : (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="/assets/styles/general.css" />
   <link rel="stylesheet" href="/assets/styles/index.css" />
   <script defer src="/assets/scripts/layout.js"></script>
@@ -18,106 +41,192 @@
   <div class="page">
     <header class="site-header" data-component="site-header"></header>
 
-    <main class="content">
-      <a class="hero hero--link" href="/articles/" aria-label="浏览全部文章">
-        <div class="hero__inner">
-          <!-- <span class="tag">写作与生活观察</span> -->
-          <h1 class="hero-title">草树之后</h1>
-          <p class="hero-description">
-            高中时有两本随笔本，高一的叫“草”，高二的叫“树”。
-            本专栏得名于此。
-          </p>
-          <!-- <div class="hero-actions">
-            <a class="btn btn-primary" href="/articles/">浏览全部文章</a>
-            <a class="btn btn-primary" href="https://heyangshang.github.io/" target="_blank" rel="noreferrer">我的学术主页</a>
-          </div> -->
-        </div>
-      </a>
-
-      <section class="digest-gateway" aria-labelledby="digest-gateway-title">
-        <a class="digest-gateway__link" href="/digest/">
-          <div class="digest-gateway__copy">
-            <span class="digest-gateway__kicker">Daily Research Brief</span>
-            <h2 class="digest-gateway__title" id="digest-gateway-title">论文日报</h2>
-            <p class="digest-gateway__summary">
-              每天整理 arXiv 上的 AGT 与 AI 新论文。
-            </p>
-          </div>
-          <span class="digest-gateway__action">查看</span>
-        </a>
-      </section>
-
-      <section id="about" class="section">
-        <div class="section-header">
-          <h2 class="section-title">关于我</h2>
-          <!-- <p class="section-subtitle">
-            赏鹤阳，现居北京。写作关于旅行、教育、城市与真实的日常体验。
-          </p> -->
-        </div>
-        <div class="split-section">
-          <article class="card about-card">
-            <h3>我是谁？</h3>
-            <p>
-              是写作者。在这个博客里记录我的文字。<br>
-              也是准博士生。点击<a href="https://heyangshang.github.io/" target="_blank" rel="noreferrer">这里</a>查看我的学术主页。
-            </p>
-          </article>
-          <article class="card about-card">
-            <h3>近期动态</h3>
-            <p>
-              学术日报功能更新了。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="latest" class="section">
-        <div class="section-header">
-          <h2 class="section-title">最新文章</h2>
-          <a class="post-card__link" href="/articles/">查看全部文章 →</a>
-        </div>
-        <div class="latest-posts" id="latest-posts" data-articles-view="latest">
-          <article class="card post-card">
-            <span class="post-card__date">加载中…</span>
-            <h3 class="post-card__title">请稍候</h3>
-            <p class="post-card__description">
-              正在整理最新的文章，如果长时间没有加载，请刷新页面。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="section-header">
-          <h2 class="section-title">联系我</h2>
-          <!-- <p class="section-subtitle">
-            如果你对我的文字有任何想法，或希望邀请我合作，欢迎随时写信。
-          </p> -->
-        </div>
-        <div class="split-section">
-          <div class="card newsletter">
-            <h3>Keep in touch!</h3>
-            <p>
-              欢迎与我联系！<br>你可以在右边找到我的邮箱，也可以关注我的微信公众号，更方便地接收更新讯息，以及在后台给我留言。
-            </p>
-          </div>
-          <div class="card">
-            <div class="contact-list">
-              <div class="contact-item">
-                <span>Email</span>
-                <a href="mailto:shanghy22@gmail.com">shanghy22@gmail.com</a>
+    <main id="top" class="site-main">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="eyebrow">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span>Personal Blog · 写作与生活观察</span>
               </div>
-              <div class="contact-item">
-                <span>微信公众号</span>
-                <a href="https://mp.weixin.qq.com/s/g0UQEn71s5NIU8yhCjJFfA" target="_blank" rel="noreferrer">草树之后</a>
+
+              <h1 class="hero-title">
+                草树之后
+                <span class="hero-sub">赏鹤阳</span>
+              </h1>
+
+              <div class="bio-prose">
+                <p>
+                  高中时有两本随笔本，高一的叫“草”，高二的叫“树”。本专栏得名于此。
+                </p>
+                <p>
+                  在这里记录文字、旅行与生活思考。
+                </p>
+              </div>
+
+              <div class="hero-actions">
+                <a class="action-pill action-pill-primary" href="/articles/">
+                  <span>浏览全部文章</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+                <a class="action-pill" href="https://heyangshang.top/" target="_blank" rel="noopener noreferrer">
+                  <span>学术主页</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                  </svg>
+                </a>
               </div>
             </div>
+
+            <figure class="hero-visual-wrap">
+              <button
+                type="button"
+                class="visual-frame"
+                id="visualTrigger"
+                aria-label="放大查看麦田摄影"
+                title="点击查看大图"
+              >
+                <img
+                  src="/assets/images/bg.jpg"
+                  alt="晴空下的青翠麦田"
+                  class="visual-img"
+                  fetchpriority="high"
+                />
+                <span class="visual-zoom-hint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 3 6 6"></path>
+                    <path d="M21 3h-6"></path>
+                    <path d="M21 3v6"></path>
+                    <path d="m9 21-6-6"></path>
+                    <path d="M3 21h6"></path>
+                    <path d="M3 21v-6"></path>
+                  </svg>
+                </span>
+              </button>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 01: About -->
+      <section id="about" class="content-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-title-group">
+              <span class="section-index" aria-hidden="true">01</span>
+              <h2 class="section-title">关于我</h2>
+            </div>
+          </div>
+
+          <div class="split-section">
+            <article class="card about-card">
+              <span class="about-card__kicker">Profile</span>
+              <h3>我是谁？</h3>
+              <p>
+                是写作者。在这个博客里记录我的文字。<br />
+                也是准博士生。点击<a href="https://heyangshang.top/" target="_blank" rel="noopener noreferrer">这里</a>查看我的学术主页。
+              </p>
+            </article>
+            <article class="card about-card">
+              <span class="about-card__kicker">Updates</span>
+              <h3>近期动态</h3>
+              <p>
+                博客刚刚完成了一次样式更新。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 02: Latest Articles -->
+      <section id="latest" class="content-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-title-group">
+              <span class="section-index" aria-hidden="true">02</span>
+              <h2 class="section-title">最新文章</h2>
+            </div>
+            <a class="section-link" href="/articles/">查看全部文章 →</a>
+          </div>
+
+          <div class="latest-posts" id="latest-posts" data-articles-view="latest">
+            <article class="card post-card">
+              <span class="post-card__date">加载中…</span>
+              <h3 class="post-card__title">请稍候</h3>
+              <p class="post-card__description">
+                正在整理最新的文章，如果长时间没有加载，请刷新页面。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 03: Contact -->
+      <section id="contact" class="content-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-title-group">
+              <span class="section-index" aria-hidden="true">03</span>
+              <h2 class="section-title">联系我</h2>
+            </div>
+          </div>
+
+          <p class="contact-intro">
+            欢迎与我联系！你可以通过下方邮箱写信给我，也可以关注我的微信公众号，更方便地接收更新讯息，以及在后台给我留言。
+          </p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:shanghy22@gmail.com">
+              <div class="contact-item__meta">
+                <span class="contact-item__label">Email</span>
+                <span class="contact-item__value">shanghy22@gmail.com</span>
+              </div>
+              <span class="contact-item__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://mp.weixin.qq.com/s/g0UQEn71s5NIU8yhCjJFfA" target="_blank" rel="noopener noreferrer">
+              <div class="contact-item__meta">
+                <span class="contact-item__label">微信公众号</span>
+                <span class="contact-item__value">草树之后</span>
+              </div>
+              <span class="contact-item__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer" data-component="site-footer"></footer>
+  </div>
+
+  <!-- Lightbox for Hero Visual -->
+  <div class="lightbox" id="visualLightbox" role="dialog" aria-modal="true" aria-label="草树之后麦田摄影大图" hidden>
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="关闭大图预览">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+      <img src="/assets/images/bg.jpg" alt="晴空下的青翠麦田" class="lightbox-img" />
+    </div>
   </div>
 </body>
 

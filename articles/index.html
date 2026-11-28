@@ -8,6 +8,29 @@
   <meta name="description" content="赏鹤阳的文章索引，浏览全部博文。" />
   <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Theme initialization before paint to prevent flicker -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved === "dark" || saved === "light" ? saved : (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="/assets/styles/general.css" />
   <link rel="stylesheet" href="/assets/styles/index.css" />
   <link rel="stylesheet" href="/assets/styles/article-list.css" />
@@ -19,11 +42,17 @@
   <div class="list-page">
     <header class="site-header" data-component="site-header"></header>
 
-    <main class="list-content">
-      <h1 class="page-title">全部文章</h1>
-      <p class="page-description">
-        所有文章按照发布时间顺序排列。点击卡片即可跳转到对应的全文页面。
-      </p>
+    <main id="top" class="list-content">
+      <header class="page-header">
+        <div class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          <span>Archive · 随笔索引</span>
+        </div>
+        <h1 class="page-title">全部文章</h1>
+        <p class="page-description">
+          所有文章按照发布时间顺序排列。点击下方入口即可跳转到对应的全文页面。
+        </p>
+      </header>
 
       <div class="article-feed" id="article-feed" data-articles-view="list">
         <article class="card article-card">

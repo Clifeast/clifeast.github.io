@@ -49,19 +49,22 @@
 
   function createLatestCard(post) {
     const card = createElement("article", "card post-card");
+    const meta = createElement("div", "post-card__meta");
     const title = createElement("h3", "post-card__title", post.title);
+    const footer = createElement("div", "post-card__footer");
     const link = createElement("a", "post-card__link", "阅读全文 →");
 
     link.href = post.link;
 
-    card.append(createElement("span", "post-card__date", post.date));
-    card.append(title);
+    meta.append(createElement("span", "post-card__date", post.date));
+    card.append(meta, title);
 
     if (post.description) {
       card.append(createElement("p", "post-card__description", post.description));
     }
 
-    card.append(link);
+    footer.append(link);
+    card.append(footer);
     return card;
   }
 
@@ -69,7 +72,7 @@
     const card = createElement("article", "card article-card");
     const header = createElement("div", "article-card__header");
     const actions = createElement("div", "article-card__actions");
-    const link = createElement("a", "btn btn-primary", "阅读全文");
+    const link = createElement("a", "article-read-btn", "阅读全文 →");
 
     link.href = article.link;
 

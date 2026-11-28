@@ -8,6 +8,29 @@
   <meta name="description" content="2024年十一假期游沈阳、长春、通化后作。" />
   <link rel="icon" type="image/png" href="/assets/images/profileblack.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Theme initialization before paint to prevent flicker -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved === "dark" || saved === "light" ? saved : (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="/assets/styles/general.css" />
   <link rel="stylesheet" href="/assets/styles/index.css" />
   <link rel="stylesheet" href="/assets/styles/articles.css" />
@@ -18,9 +41,13 @@
   <div class="page article-page">
     <header class="site-header" data-component="site-header"></header>
 
-    <main class="content article-main">
+    <main id="top" class="article-main">
       <div class="article-container">
         <header class="article-header">
+          <div class="eyebrow article-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>草树之后 · 随笔</span>
+          </div>
           <h1 class="article-title">东北行记</h1>
           <p class="article-meta">2024年10月8日</p>
         </header>
@@ -291,11 +318,6 @@
               未知当然就蕴含了随机，通化美食意外的物美价廉当然令人愉悦，漫步通化街头时的感受当然也有着诸多可能——无聊感就是其中一种。不能期望旅途中每个出乎意料之处都是惊喜，所以当踏上旅程的第一步时，就要做好迎接未知的准备。追根溯源，探索未知远方的这份好奇，本就是旅行的一大驱动力所在。
             </p>
         </article>
-
-        <div class="article-actions">
-          <a class="btn btn-ghost" href="/articles/">返回文章列表</a>
-          <a class="btn btn-primary" href="/#latest">查看最新文章</a>
-        </div>
       </div>
     </main>
 
